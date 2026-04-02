@@ -1,0 +1,5 @@
+interface:
+  display_name: "发布补视频"
+  short_description: "发布前补互动图表与 motion 视频。"
+  default_prompt: "Use $dasheng-stage-publish-video to generate pre-publish interactive chart videos and motion narrative videos per topic."
+
