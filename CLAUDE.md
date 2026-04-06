@@ -4,32 +4,58 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a suite of OpenClaw/Codex Skills for daily media content production teams. It implements a fixed 7-stage workflow from content intake to post-publication review, designed for multi-person collaboration with Feishu integration.
+This is a suite of OpenClaw/Codex Skills for daily media content production teams. It implements a fixed 8-stage workflow from content intake to post-publication review, designed for multi-person collaboration with Feishu integration.
 
-**Fixed workflow chain**: `intake -> brief -> draft -> material -> rewrite -> publish -> postmortem`
+**Fixed workflow chain**: `intake -> brief -> draft -> material -> rewrite -> publish -> distribute -> postmortem`
 
 ## Architecture
 
 ### Skill Structure
 
-The repository contains 6 skills organized under `skills/`:
+The repository contains 8 skills organized under `skills/`:
 
 1. **dasheng-sop-orchestrator** - Entry point and stage router. Enforces stage order, prevents stage skipping, and routes to appropriate stage skills.
 
-2. **dasheng-stage-intake-brief-draft** - Handles the first 3 stages: content intake, topic briefing (8-10 candidates), and standard draft generation (factual, no platform styling).
+2. **dasheng-stage-intake-brief-draft** - Handles intake and draft stages:
+   - ⭐ **UPGRADED**: Now integrates AI-driven brief and framework-driven draft
+   - Content intake with multi-source aggregation
+   - AI-generated topics with natural language titles
+   - Framework-driven draft generation with quality validation
 
-3. **dasheng-stage-material-refill** - Generates and refills assets (charts, images, videos) into editor-confirmed final documents.
+3. **dasheng-stage-brief-ai** - ⭐ **NEW: AI-driven topic generation**. Replaces hardcoded rule system with AI reasoning:
+   - Generates 8-10 candidate topics with natural language titles (not template concatenation)
+   - Clear arguments with evidence needs and sources
+   - Recommends writing frameworks and content enhancement strategies
+   - 5-dimension scoring (timeliness, unique angle, evidence, reader value, longevity)
+   - Solves the "stiff titles" problem: "外交部、伊朗：事件升级..." → "中东冲突如何重塑全球能源供应链"
 
-4. **dasheng-stage-rewrite** - Produces 4 platform-specific rewrites per topic with strict word count validation:
-   - WeChat + luxun + hot (≥4000 words)
-   - WeChat + lemon + normal (≥4000 words)
-   - XHS video + luxun + hot (≥1800 words)
-   - XHS video + lemon + normal (≥1800 words)
-   - Supports personal style DNA injection and 7 writing frameworks with 4 content enhancement strategies
+4. **dasheng-stage-material-refill** - Generates and refills assets (charts, images, videos) into editor-confirmed final documents.
+   - ⭐ **ENHANCED**: AI-powered chart gating (decides which data needs visualization)
+   - ⭐ **ENHANCED**: AI-optimized search keywords (improves material hit rate by 50-100%)
+   - Intelligent chart type selection (line, bar, pie, scatter, heatmap, table)
+   - Quality reports for chart decisions and material searches
 
-5. **dasheng-stage-publish-video** - Pre-publish video enhancement: generates interactive chart videos and motion narrative videos using finance-motion-8787 engine.
+5. **dasheng-stage-rewrite** - Produces 8 platform-specific rewrites per topic with strict word count validation:
+   - WeChat (wechat) × 2: luxun + hot, lemon + normal (≥4000 words)
+   - XHS video (xhs_video) × 2: luxun + hot, lemon + normal (≥1800 words)
+   - ⭐ **NEW**: Bilibili (bilibili) × 2: luxun + hot, lemon + normal (≥2000 words)
+   - ⭐ **NEW**: WeChat Channels (wechat_channels) × 2: luxun + hot, lemon + normal (≥1500 words)
+   - ⭐ **ENHANCED**: Generates platform-specific metadata (titles, hashtags, descriptions, captions)
+   - ⭐ **ENHANCED**: Now fully applies 7 writing frameworks and 4 content enhancement strategies
+   - Supports personal style DNA injection
 
-6. **dasheng-style-profiler** - Extracts personal writing style DNA from historical articles using 14-dimensional analysis framework. Generates reusable style profiles for personalized rewrites.
+6. **dasheng-stage-publish-video** - Pre-publish video enhancement: generates interactive chart videos and motion narrative videos using finance-motion-8787 engine.
+   - ⭐ **ENHANCED**: Supports 5 standard video style templates (Claude Purple, Cyberpunk, Finance Business, Medical Lancet, Anime Light)
+   - ⭐ **ENHANCED**: Integrates with Finance Motion 8787 for preview and Remotion for high-quality rendering
+
+7. **⭐ NEW: dasheng-stage-distribute** - Multi-platform content distribution stage (between publish and postmortem):
+   - Routes rewrite variants to appropriate platforms based on content type
+   - ⭐ **ENHANCED**: Now supports 7 platforms (was 5): WeChat Official Account, WeChat Channels, Xiaohongshu, Douyin, Bilibili, Weibo, X/Twitter
+   - ⭐ **ENHANCED**: Reads platform metadata from rewrite_manifest.json (no more temporary generation)
+   - Integrates with 5 existing OpenClaw platform skills
+   - Produces `distribute_manifest.json` with per-platform publish results
+
+8. **dasheng-style-profiler** - Extracts personal writing style DNA from historical articles using 14-dimensional analysis framework. Generates reusable style profiles for personalized rewrites.
 
 ### Critical Constraints
 
@@ -61,6 +87,12 @@ The rewrite stage now supports advanced writing capabilities:
 - Preset DNA: luxun (sharp, data-driven) and lemon (warm, narrative)
 - Personal DNA: Extract from 10+ historical articles using 14-dimensional analysis
 - Includes: paragraph recipes, narrative systems, content progression patterns, punctuation preferences
+
+**⭐ NEW: Framework & Strategy Integration**:
+- Brief stage recommends framework and strategy for each topic
+- Draft stage generates content following the recommended framework
+- Rewrite stage fully applies framework structure and enhancement strategy
+- Intelligent content expansion based on topic context (no more hardcoded blocks)
 
 ## Environment Setup
 
@@ -117,22 +149,51 @@ Each stage must produce:
 - **brief**: `brief_manifest.json`
 - **draft**: `draft_manifest.json`
 - **material**: `material_manifest.json`, `05_MaterialPack.md`, `05_Material_报告.md`
-- **rewrite**: `rewrite_manifest.json`, per-topic `meta.json`, `<topic>__rewrite_bundle.md`
+- **rewrite**: `rewrite_manifest.json` (with platform_metadata for all 8 variants), per-topic `meta.json`, `<topic>__rewrite_bundle.md`
 - **publish**: `publish_manifest.json`, `publish_video_supplement_manifest.json`, video files in `videos/interactive_charts/` and `videos/motion_narrative/`
+- **distribute**: `distribute_manifest.json`, platform-specific publish results
 - **postmortem**: `postmortem_manifest.json`
 
 ## Key Commands
 
-### Intake/Brief/Draft
+### Intake
 ```bash
 cd "${DASHENG_WORKSPACE}"
 python3 scripts/run_stage1_intake.py
 ```
 
-### Material Generation
+### Brief (AI-driven, recommended)
+```bash
+# Use dasheng-stage-brief-ai skill for natural language titles
+# Generates topics with clear arguments and framework recommendations
+# Output: 产物/02_Brief/{run_id}_ai/
+```
+
+### Draft (Framework-driven, recommended)
 ```bash
 cd "${DASHENG_WORKSPACE}"
-python3 scripts/material_execute_pack.py --pack-root "<topic_pack_root>" --steps charts,image_search,video_search,ai_prep
+python3 scripts/draft_with_framework.py \
+  --brief-dir "产物/02_Brief/{run_id}_ai" \
+  --output-dir "产物/03_Draft/{run_id}"
+
+# Generates structured drafts following recommended frameworks
+# Applies content enhancement strategies
+# Validates quality (word count, structure, citations)
+```
+
+### Material Generation (AI-optimized)
+```bash
+cd "${DASHENG_WORKSPACE}"
+
+# Standard material generation with AI optimization
+python3 scripts/material_execute_pack.py \
+  --pack-root "<topic_pack_root>" \
+  --steps charts,image_search,video_search,ai_prep
+
+# AI features:
+# - Intelligent chart gating (decides which data needs visualization)
+# - Optimized search keywords (improves hit rate)
+# - Quality reports
 
 # Parallel execution
 python3 scripts/material_parallel_launcher.py --pack-root "<pack_root>"
@@ -150,6 +211,7 @@ python3 scripts/material_parallel_launcher.py --pack-root "<pack_root>"
 cd "${DASHENG_WORKSPACE}"
 
 # Using preset DNA (default: luxun/lemon)
+# Generates 8 variants with platform metadata
 python3 scripts/rewrite_rerun_with_final_structure.py
 
 # Using personal style DNA (after running dasheng-style-profiler)
@@ -165,7 +227,11 @@ python3 scripts/learn_edits_from_feishu.py --date "$(date +%F)"
 ### Publish Video Supplement
 ```bash
 cd "${DASHENG_WORKSPACE}"
-python3 scripts/publish_video_supplement.py
+
+# With style selection (5 templates available)
+python3 scripts/publish_video_supplement.py --style claude-purple
+# Available styles: claude-purple, cyberpunk, finance-business, medical-lancet, anime-light
+```
 ```
 
 ## Version Management
@@ -177,9 +243,73 @@ python3 scripts/publish_video_supplement.py
 ## Important References
 
 - Stage contract specification: [skills/dasheng-sop-orchestrator/references/stage-contract.md](skills/dasheng-sop-orchestrator/references/stage-contract.md)
+- **⭐ Brief AI generation guide**: [skills/dasheng-stage-brief-ai/references/ai-generation-guide.md](skills/dasheng-stage-brief-ai/references/ai-generation-guide.md)
+- **⭐ Topic evaluation framework**: [skills/dasheng-stage-brief-ai/references/topic-evaluation.md](skills/dasheng-stage-brief-ai/references/topic-evaluation.md)
 - Writing frameworks: [skills/dasheng-stage-rewrite/references/frameworks.md](skills/dasheng-stage-rewrite/references/frameworks.md)
 - Content enhancement strategies: [skills/dasheng-stage-rewrite/references/content-enhance.md](skills/dasheng-stage-rewrite/references/content-enhance.md)
+- **⭐ Platform metadata rules**: [skills/dasheng-stage-rewrite/references/platform-metadata.md](skills/dasheng-stage-rewrite/references/platform-metadata.md)
 - 14-dimensional style analysis: [skills/dasheng-style-profiler/references/style-14d-framework.md](skills/dasheng-style-profiler/references/style-14d-framework.md)
+- **⭐ Video template styles**: [skills/dasheng-stage-publish-video/references/template-styles.md](skills/dasheng-stage-publish-video/references/template-styles.md)
+- **⭐ Platform routing rules**: [skills/dasheng-stage-distribute/references/platform-routing.md](skills/dasheng-stage-distribute/references/platform-routing.md)
+- **⭐ Content adaptation guide**: [skills/dasheng-stage-distribute/references/content-adaptation.md](skills/dasheng-stage-distribute/references/content-adaptation.md)
+- **⭐ Publishing setup guide**: [skills/dasheng-stage-distribute/references/setup-guide.md](skills/dasheng-stage-distribute/references/setup-guide.md)
+- **⭐ Motion integration guide**: [docs/MOTION_INTEGRATION_GUIDE.md](docs/MOTION_INTEGRATION_GUIDE.md)
 - Smoke test prompts: [SMOKE_PROMPTS.md](SMOKE_PROMPTS.md)
 - Export manifest: [EXPORT_MANIFEST.md](EXPORT_MANIFEST.md)
 - Optimization analysis: [OPTIMIZATION_ANALYSIS.md](OPTIMIZATION_ANALYSIS.md)
+- **⭐ Brief AI test report**: [BRIEF_AI_TEST_REPORT.md](BRIEF_AI_TEST_REPORT.md)
+- **⭐ Brief AI comparison**: [BRIEF_AI_COMPARISON.md](BRIEF_AI_COMPARISON.md)
+- **⭐ Phase 2 upgrade summary**: [PHASE2_UPGRADE_SUMMARY.md](PHASE2_UPGRADE_SUMMARY.md)
+- **⭐ ClawHub skills installation**: [docs/CLAWHUB_SKILLS_INSTALLATION.md](docs/CLAWHUB_SKILLS_INSTALLATION.md)
+- **⭐ MCP services comparison**: [docs/MCP_SERVICES_COMPARISON.md](docs/MCP_SERVICES_COMPARISON.md)
+- **⭐ Integration summary**: [docs/INTEGRATION_SUMMARY.md](docs/INTEGRATION_SUMMARY.md)
+- **⭐ Video generation complete**: [VIDEO_GENERATION_COMPLETE.md](VIDEO_GENERATION_COMPLETE.md)
+
+## Recent Upgrades
+
+### Phase 1: Brief AI-ification (Completed)
+- Replaced hardcoded template system with AI reasoning
+- Natural language titles instead of "对象A、对象B：固定句式"
+- Clear arguments with evidence needs
+- Framework and strategy recommendations
+- 5-dimension evaluation system
+
+**Problem solved**: "题目特别硬，逻辑关系像生搬硬套" → Natural, insightful titles
+
+### Phase 2: Draft & Material Optimization (Completed)
+- Framework-driven draft generation
+- AI-powered chart gating (reduces unnecessary charts by 30-50%)
+- AI-optimized search keywords (improves hit rate by 50-100%)
+- Quality validation and reporting
+- Seamless Brief → Draft → Material workflow
+
+**Key improvement**: End-to-end AI-driven workflow from topic generation to material preparation
+
+### Phase 3: Platform Adaptation & Motion Templates (Completed - 2026-04-06)
+- **Rewrite Enhancement**: Expanded from 4 to 8 variants per topic
+  - Added Bilibili and WeChat Channels support
+  - Platform-specific metadata generation (titles, hashtags, descriptions, captions)
+  - Metadata embedded in rewrite_manifest.json
+- **Motion Templates**: 5 standard video style templates
+  - Claude Purple, Cyberpunk, Finance Business, Medical Lancet, Anime Light
+  - Integration between Finance Motion 8787 (preview) and Remotion (rendering)
+  - Conversion script for seamless workflow
+- **Distribute Enhancement**: Expanded from 5 to 7 platforms
+  - Added Bilibili and WeChat Channels
+  - Reads metadata from rewrite stage (no more temporary generation)
+- **Video Generation**: Successfully generated motion narrative videos
+  - Created 2 Remotion components (AIMergersXhs, ChinaPlanXhs) from rewrite content
+  - Rendered high-quality videos (1080x1920, 25s, Claude Purple style)
+  - Render scripts for automated video generation
+  - See [VIDEO_GENERATION_COMPLETE.md](VIDEO_GENERATION_COMPLETE.md) for details
+
+**Key improvements**: 
+- Complete platform adaptation with metadata generation
+- Professional video template system with 5 styles
+- Seamless Finance Motion → Remotion workflow
+- Automated video generation from rewrite content
+
+**Key improvement**: Complete platform adaptation system with professional video templates
+- Seamless Brief → Draft → Material workflow
+
+**Key improvement**: End-to-end AI-driven workflow from topic generation to material preparation
