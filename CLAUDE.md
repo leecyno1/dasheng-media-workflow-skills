@@ -264,6 +264,7 @@ python3 scripts/publish_video_supplement.py --style claude-purple
 - **⭐ MCP services comparison**: [docs/MCP_SERVICES_COMPARISON.md](docs/MCP_SERVICES_COMPARISON.md)
 - **⭐ Integration summary**: [docs/INTEGRATION_SUMMARY.md](docs/INTEGRATION_SUMMARY.md)
 - **⭐ Video generation complete**: [VIDEO_GENERATION_COMPLETE.md](VIDEO_GENERATION_COMPLETE.md)
+- **⭐ Xiaohongshu publish integration**: [docs/XIAOHONGSHU_PUBLISH_INTEGRATION.md](docs/XIAOHONGSHU_PUBLISH_INTEGRATION.md)
 
 ## Recent Upgrades
 
