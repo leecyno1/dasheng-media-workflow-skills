@@ -181,7 +181,7 @@ python3 scripts/draft_with_framework.py \
 # Validates quality (word count, structure, citations)
 ```
 
-### Material Generation (AI-optimized)
+### Material Generation (AI-optimized, 2026-04-06 enhanced)
 ```bash
 cd "${DASHENG_WORKSPACE}"
 
@@ -198,6 +198,12 @@ python3 scripts/material_execute_pack.py \
 # Parallel execution
 python3 scripts/material_parallel_launcher.py --pack-root "<pack_root>"
 ```
+
+**2026-04-06 优化**：
+- ✅ **扁平化文件结构**：所有素材在单层目录，无多级子目录
+- ✅ **描述性命名**：图表_、图片_、视频_ 中文前缀，便于编辑人员查找
+- ✅ **视频自动下载**：默认每个查询下载 3 个视频，无需手动指定参数
+- 详见：[MATERIAL_FLAT_STRUCTURE_IMPLEMENTATION.md](docs/MATERIAL_FLAT_STRUCTURE_IMPLEMENTATION.md)
 
 ### Style DNA Extraction (Optional, before first rewrite)
 ```bash
@@ -303,14 +309,15 @@ python3 scripts/publish_video_supplement.py --style claude-purple
   - Rendered high-quality videos (1080x1920, 25s, Claude Purple style)
   - Render scripts for automated video generation
   - See [VIDEO_GENERATION_COMPLETE.md](VIDEO_GENERATION_COMPLETE.md) for details
+- **Material Stage Optimization**: Flat structure and auto-download
+  - Flat single-level directory structure (no subdirectories)
+  - Descriptive Chinese-prefixed naming (图表_, 图片_, 视频_)
+  - Video auto-download (default 3 per query)
+  - See [MATERIAL_FLAT_STRUCTURE_IMPLEMENTATION.md](docs/MATERIAL_FLAT_STRUCTURE_IMPLEMENTATION.md) for details
 
 **Key improvements**: 
 - Complete platform adaptation with metadata generation
 - Professional video template system with 5 styles
 - Seamless Finance Motion → Remotion workflow
 - Automated video generation from rewrite content
-
-**Key improvement**: Complete platform adaptation system with professional video templates
-- Seamless Brief → Draft → Material workflow
-
-**Key improvement**: End-to-end AI-driven workflow from topic generation to material preparation
+- Editor-friendly material organization with flat structure and descriptive naming
