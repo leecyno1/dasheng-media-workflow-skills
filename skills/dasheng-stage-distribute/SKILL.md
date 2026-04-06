@@ -154,16 +154,29 @@ npx -y bun scripts/x-browser.ts "{主推文内容}" --image "产物/04_Material/
 
 #### 3d. 小红书
 
-调用 `xiaohongshu-auto`：
+使用自动化脚本 `distribute_xiaohongshu.py`：
 
 ```bash
-cd ${OPENCLAW_SKILLS}/xiaohongshu-auto
-# 需根据 xiaohongshu-auto 实际 CLI 格式调用
-# 传入：标题、脚本文字（前300字作封面文案）、视频文件路径、话题标签
+cd /Volumes/PSSD/Projects/dasheng-media-workflow-skills
+
+# 预览发布计划（dry run）
+python3 scripts/distribute_xiaohongshu.py {run_id} --dry-run
+
+# 正式发布
+python3 scripts/distribute_xiaohongshu.py {run_id}
 ```
 
-- 每日上限5篇，两篇之间随机间隔 5-30 分钟
-- 先发一个选题，确认无误后再发第二个
+脚本功能：
+- 自动读取 rewrite_manifest.json 中的小红书变体和平台元数据
+- 自动匹配视频文件（如果 publish 阶段已完成）
+- 调用 xiaohongshu-auto skill 执行发布
+- 每篇之间随机间隔 5-30 分钟（避免限流）
+- 保存发布结果到 `产物/08_Distribute/{run_id}/xiaohongshu_distribute_result.json`
+
+注意事项：
+- 每日上限5篇
+- 首次使用需要手动登录小红书（Cookie 有效期约 30 天）
+- 详见：[小红书发布集成文档](../../docs/XIAOHONGSHU_PUBLISH_INTEGRATION.md)
 
 #### 3e. 抖音
 
