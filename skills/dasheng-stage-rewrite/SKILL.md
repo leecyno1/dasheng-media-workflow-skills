@@ -11,12 +11,25 @@ description: Use when generating the 4-variant rewrite set per topic with hard w
 
 ## 阶段目标
 
-每题生成 4 版改写，并继承终稿框架：
+每题生成 8 版改写，并继承终稿框架：
 
+**微信系列**：
 - wechat + luxun + hot
 - wechat + lemon + normal
+
+**小红书系列**：
 - xhs_video + luxun + hot
 - xhs_video + lemon + normal
+
+**B站系列**（新增）：
+- bilibili + luxun + hot
+- bilibili + lemon + normal
+
+**视频号系列**（新增）：
+- wechat_channels + luxun + hot
+- wechat_channels + lemon + normal
+
+每个变体包含平台特定元数据（标题、话题标签、描述等），详见 `references/platform-metadata.md`
 
 ## 推荐命令
 
@@ -71,6 +84,19 @@ node scripts/feishu_rewrite_push.js "$(date +%F)"
 
 - 公众号两版：`>=4000`（且不应无故超过 `8000`）
 - 小红书视频两版：`>=1800`
+- B站两版：`>=2000`（适合横版视频，内容更详细）
+- 视频号两版：`>=1500`（适合短视频，简洁有力）
+
+## 平台元数据生成
+
+每个变体必须生成符合平台规则的元数据，包括：
+
+- **小红书**：标题（≤20字）+ 话题标签（5-8个）+ 封面文案（前300字）
+- **抖音**：描述（≤1000字）+ 字幕脚本（≤15字/段，带时间轴）
+- **B站**：标题（≤80字）+ 简介（≤2000字）+ 标签（≤10个）+ 分区
+- **视频号**：标题（≤30字）+ 描述（≤1000字）+ 话题（1-3个）
+
+详细规则见 `references/platform-metadata.md`
 
 ## 强约束
 
@@ -78,12 +104,14 @@ node scripts/feishu_rewrite_push.js "$(date +%F)"
 2. 不同题目必须独立目录、独立 bundle、独立 meta。
 3. 字数未达标不得推送飞书。
 4. 使用个人 DNA 时，必须严格遵循风格画像中的段落配方、叙述方法体系、标点符号偏好。
+5. **每个变体必须生成平台元数据**，并包含在 `rewrite_manifest.json` 中。
+6. **元数据必须符合平台规则**（字数限制、格式要求等），详见 `references/platform-metadata.md`。
 
 ## 交付要求
 
 - `<topic>__rewrite_bundle.md`
 - `meta.json`（需包含使用的 DNA 类型和框架类型）
-- `rewrite_manifest.json`
+- `rewrite_manifest.json`（必须包含所有变体的 `platform_metadata` 字段）
 
 ## 学习飞轮（可选）
 
