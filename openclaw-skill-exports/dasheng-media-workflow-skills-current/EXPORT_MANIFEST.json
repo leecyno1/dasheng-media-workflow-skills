@@ -1,0 +1,166 @@
+{
+  "export_version": "2.0.0",
+  "export_date": "2026-04-17",
+  "source_repo": "/Volumes/PSSD/Projects/公众号文章",
+  "formal_skills": [
+    "dasheng-media-sop",
+    "dasheng-stage-publish",
+    "dasheng-daily-intake",
+    "dasheng-daily-phase2",
+    "dasheng-stage-draft",
+    "dasheng-daily-material",
+    "dasheng-stage-rewrite-v3",
+    "dasheng-daily-postmortem",
+    "dasheng-style-profiler",
+    "feishu-doc-creator"
+  ],
+  "stage_mapping": {
+    "1": "dasheng-daily-intake",
+    "2": "dasheng-daily-phase2",
+    "3": "dasheng-stage-draft",
+    "4": "dasheng-daily-material",
+    "5": "dasheng-stage-rewrite-v3",
+    "6": "dasheng-stage-publish",
+    "7": "dasheng-daily-postmortem"
+  },
+  "skill_metadata": {
+    "dasheng-media-sop": {
+      "type": "orchestrator",
+      "description": "Main workflow orchestrator",
+      "version": "4.0.0"
+    },
+    "dasheng-stage-publish": {
+      "type": "stage",
+      "stage_number": 6,
+      "description": "Stage 6 Publish - 渠道分发",
+      "version": "1.0.0"
+    },
+    "dasheng-daily-intake": {
+      "type": "stage",
+      "stage_number": 1,
+      "description": "Stage 1 Intake - 内容采集",
+      "version": "4.1.0"
+    },
+    "dasheng-daily-phase2": {
+      "type": "stage",
+      "stage_number": 2,
+      "description": "Stage 2 Brief - 选题分析",
+      "version": "3.0.0"
+    },
+    "dasheng-stage-draft": {
+      "type": "stage",
+      "stage_number": 3,
+      "description": "Stage 3 Draft - 初稿生成",
+      "version": "1.0.0"
+    },
+    "dasheng-daily-material": {
+      "type": "stage",
+      "stage_number": 4,
+      "description": "Stage 4 Material - 素材收集",
+      "version": "3.1.0",
+      "deprecated": true,
+      "replacement": "dasheng-media-sop"
+    },
+    "dasheng-stage-rewrite-v3": {
+      "type": "stage",
+      "stage_number": 5,
+      "description": "Stage 5 Rewrite - 渠道改写",
+      "version": "3.0.0"
+    },
+    "dasheng-daily-postmortem": {
+      "type": "stage",
+      "stage_number": 7,
+      "description": "Stage 7 Postmortem - 分析复盘",
+      "version": "1.0.0"
+    },
+    "dasheng-style-profiler": {
+      "type": "utility",
+      "description": "Style analysis and profiling",
+      "version": "1.0.0"
+    },
+    "feishu-doc-creator": {
+      "type": "utility",
+      "description": "Feishu document creation",
+      "version": "1.0.0"
+    }
+  },
+  "docs": [
+    "README_自媒体工作台.md",
+    "STAGE_INTERFACES.md",
+    "INSTALLATION.md",
+    "API_REFERENCE.md",
+    "SKILL_CONFIG_SCHEMA.md"
+  ],
+  "exported": [
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/skills/dasheng-media-sop",
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/skills/dasheng-stage-publish",
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/skills/dasheng-daily-intake",
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/skills/dasheng-daily-phase2",
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/skills/dasheng-stage-draft",
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/skills/dasheng-daily-material",
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/skills/dasheng-stage-rewrite-v3",
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/skills/dasheng-daily-postmortem",
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/skills/dasheng-style-profiler",
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/skills/feishu-doc-creator",
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/docs/README_自媒体工作台.md",
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/docs/STAGE_INTERFACES.md",
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/docs/INSTALLATION.md",
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/docs/API_REFERENCE.md",
+    "/Volumes/PSSD/Projects/公众号文章/openclaw-skill-exports/dasheng-media-workflow-skills-current/docs/SKILL_CONFIG_SCHEMA.md"
+  ],
+  "dependencies": {
+    "python": ">=3.10",
+    "node": ">=18.0.0",
+    "anthropic": ">=0.18.0",
+    "packages": {
+      "python": [
+        "requests",
+        "beautifulsoup4",
+        "matplotlib",
+        "pandas",
+        "tushare",
+        "akshare"
+      ],
+      "node": []
+    }
+  },
+  "installation": {
+    "openclaw": {
+      "command": "openclaw skill install dasheng-media-workflow-skills-current",
+      "config_required": [
+        "DASHENG_PROJECT_ROOT",
+        "DASHENG_DESKTOP_ROOT",
+        "DASHENG_FEISHU_CONFIG"
+      ]
+    },
+    "hermes": {
+      "command": "hermes module install dasheng-media-workflow-skills-current",
+      "config_required": [
+        "DASHENG_PROJECT_ROOT",
+        "DASHENG_DESKTOP_ROOT"
+      ]
+    }
+  },
+  "changelog": {
+    "2.0.0": {
+      "date": "2026-04-17",
+      "changes": [
+        "Unified config.json schema across all skills",
+        "Added stage_number and stage fields to stage-based skills",
+        "Added upstream_gate and output_gate fields",
+        "Added dependencies and inputs/outputs fields",
+        "Added quality_requirements fields",
+        "Moved skill-specific config to metadata field",
+        "Added INSTALLATION.md, API_REFERENCE.md, SKILL_CONFIG_SCHEMA.md",
+        "Updated all skills to use standardized format"
+      ]
+    },
+    "1.0.0": {
+      "date": "2025-12-01",
+      "changes": [
+        "Initial export with 10 skills",
+        "Basic config.json format"
+      ]
+    }
+  }
+}
