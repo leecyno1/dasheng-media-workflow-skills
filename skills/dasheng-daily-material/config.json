@@ -1,0 +1,111 @@
+{
+  "name": "dasheng-daily-material",
+  "version": "3.1.0",
+  "description": "Stage 4 Material - 素材收集（归档入口：真实 material 阶段请经由 dasheng-media-sop 主链调度）",
+  "stage": "material",
+  "stage_number": 4,
+  "runner": "python",
+  "upstream_gate": "final_structure_snapshot.json",
+  "output_gate": "material_acceptance.json",
+  "hitl": true,
+  "trigger": {
+    "keyword": "下一步",
+    "previous_step": null
+  },
+  "deprecated": true,
+  "replacement": "dasheng-media-sop",
+  "aliases": [
+    "material",
+    "素材收集",
+    "第四环节"
+  ],
+  "dependencies": {
+    "python": ">=3.10",
+    "packages": ["matplotlib", "pandas", "tushare", "akshare"]
+  },
+  "inputs": {
+    "required": [
+      "draft_manifest.json",
+      "final_structure_snapshot.json"
+    ],
+    "optional": [
+      "03_ReasoningSheet_<topic>.json"
+    ]
+  },
+  "outputs": {
+    "documents": [
+      "05_MaterialPack.md"
+    ],
+    "manifests": [
+      "material_manifest.json",
+      "material_acceptance.json"
+    ],
+    "gates": [
+      "material_acceptance.json"
+    ]
+  },
+  "metadata": {
+    "chat_id": "<REPLACE_ME>",
+    "material": {
+      "types": [
+        "images",
+        "videos",
+        "quotes",
+        "data",
+        "references",
+        "layer5"
+      ],
+      "max_items_per_topic": 32,
+      "defaults": {
+        "image_search_queries": 10,
+        "video_search_queries": 8,
+        "comic_frames_per_video": 10,
+        "meme_prompts_per_topic": 3
+      }
+    },
+    "output": {
+      "type": "artifact_pack",
+      "doc_name": "04_MaterialPack"
+    },
+    "layer5": {
+      "enabled": true,
+      "worldmonitor_project": "/Volumes/PSSD/Projects/worldmonitor",
+      "proxy_port": 8787,
+      "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+      "inputs_manifest_file": "layer5_inputs.json",
+      "topic_inputs_file": "layer5/layer5_inputs.json",
+      "logic_relations_file": "layer5/logic_relations.json",
+      "template_strategy": {
+        "finance_macro": {
+          "template_id": "market_story",
+          "required_fields": [
+            "chart_csvs",
+            "chart_pngs",
+            "key_metrics",
+            "risk_scenarios",
+            "scene_plan"
+          ]
+        },
+        "geopolitics": {
+          "template_id": "geo_timeline_map",
+          "required_fields": [
+            "event_timeline_json",
+            "map_layers_json",
+            "chart_csvs",
+            "chart_pngs",
+            "scene_plan"
+          ]
+        },
+        "default": {
+          "template_id": "story_page",
+          "required_fields": [
+            "chart_csvs",
+            "chart_pngs",
+            "logic_relations_json",
+            "scene_plan"
+          ]
+        }
+      }
+    }
+  }
+}
