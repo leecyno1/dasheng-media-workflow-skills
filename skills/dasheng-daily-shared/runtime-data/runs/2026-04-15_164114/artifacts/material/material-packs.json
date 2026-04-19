@@ -1,0 +1,444 @@
+[
+  {
+    "meta": {
+      "id": "2026-04-15_164114:material:topic-ai-真正拉开差距的是功能演示还是工作流落地",
+      "object_type": "MaterialPack",
+      "run_id": "2026-04-15_164114",
+      "version": "3.1.0",
+      "status": "ready",
+      "generated_by": "dasheng-daily-material",
+      "input_digest": "d2e8d895185729deed4e077ca7c98807ceccd850",
+      "upstream_ids": [
+        "2026-04-15_164114:material-input:topic-ai-真正拉开差距的是功能演示还是工作流落地"
+      ],
+      "doc_refs": [],
+      "created_at": "2026-04-15T12:08:42.604Z",
+      "updated_at": "2026-04-15T12:08:42.604Z"
+    },
+    "topic_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+    "title": "AI：真正拉开差距的是功能演示还是工作流落地",
+    "topic_type": "industry_tech",
+    "upstream_object_type": "MaterialInput",
+    "claim_bindings": [
+      {
+        "claim_id": "c1",
+        "section_id": "section-02",
+        "statement": "功能演示往往局限于理想场景的单一任务，缺乏对复杂业务流程的适配，不能体现AI技术的真实价值。真正的价值在于AI能否深度嵌入企业工作流，实现端到端协作和自动化。",
+        "counterpoint": "市场热衷功能数量和炫酷演示，容易误判AI能力，忽略了背后复杂的工作流整合和维护成本。",
+        "missing_proof": [
+          "权威机构或监管部门关于AI落地结构变量的官方定义或政策文件",
+          "主流财经媒体关于功能演示与工作流落地差异的实证报道"
+        ],
+        "chart_need": null
+      },
+      {
+        "claim_id": "c2",
+        "section_id": "section-03",
+        "statement": "AI系统的部署远非即插即用，涉及复杂的数据接口异构、权限合规、多系统集成和多角色协作，且维护和迭代成本高昂，是隐形但关键的技术风险点。",
+        "counterpoint": "厂商宣传零代码部署和即插即用，实际落地需投入大量技术和业务整合资源。",
+        "missing_proof": [
+          "权威财经报告或案例分析，展示安装接入和维护成本的具体数据和影响",
+          "主流媒体对AI系统集成复杂性的深入报道"
+        ],
+        "chart_need": null
+      },
+      {
+        "claim_id": "c3",
+        "section_id": "section-04",
+        "statement": "功能演示是单点、孤立的任务展示，缺乏系统联动和多角色协作，难以支撑复杂业务流程；而工作流能力则实现了流程自动化、多部门协同和动态闭环，是真正释放AI价值的关键。",
+        "counterpoint": "仅靠功能演示难以形成生产力闭环，容易沦为技术样板或花瓶工具。",
+        "missing_proof": [
+          "权威案例分析和实证数据，证明工作流能力优于功能演示的业务价值",
+          "跨行业对比图表，展示功能演示与工作流落地的效率和效果差异"
+        ],
+        "chart_need": null
+      }
+    ],
+    "materials": {
+      "images": [
+        {
+          "claim_id": "c1",
+          "section_id": "section-02",
+          "usage_type": "image",
+          "relevance_score": 0.88,
+          "editor_status": "pending_review",
+          "title": "封面图",
+          "asset_type": "image",
+          "source_type": "ai_generated",
+          "file": "images/generated/ai_visual_plan.json",
+          "purpose": "主封面"
+        },
+        {
+          "claim_id": "c1",
+          "section_id": "section-02",
+          "usage_type": "image",
+          "relevance_score": 0.88,
+          "editor_status": "pending_review",
+          "title": "图片检索 1",
+          "asset_type": "image",
+          "source_type": "web_search",
+          "query": "AI技术落地企业工作流协作会议现场",
+          "file": "images/web_search/image_search_queries.json"
+        },
+        {
+          "claim_id": "c2",
+          "section_id": "section-03",
+          "usage_type": "image",
+          "relevance_score": 0.85,
+          "editor_status": "pending_review",
+          "title": "图片检索 2",
+          "asset_type": "image",
+          "source_type": "web_search",
+          "query": "知名AI厂商技术团队工作场景",
+          "file": "images/web_search/image_search_queries.json"
+        },
+        {
+          "claim_id": "c3",
+          "section_id": "section-04",
+          "usage_type": "image",
+          "relevance_score": 0.82,
+          "editor_status": "pending_review",
+          "title": "图片检索 3",
+          "asset_type": "image",
+          "source_type": "web_search",
+          "query": "企业数字化转型中AI项目负责人肖像",
+          "file": "images/web_search/image_search_queries.json"
+        },
+        {
+          "claim_id": "c1",
+          "section_id": "section-02",
+          "usage_type": "news_screenshot",
+          "relevance_score": 0.88,
+          "editor_status": "pending_review",
+          "title": "新闻截图检索 1",
+          "asset_type": "image",
+          "source_type": "news_screenshot",
+          "query": "权威财经媒体报道AI落地结构变量和成本挑战",
+          "file": "images/web_search/news_screenshot_queries.json"
+        },
+        {
+          "claim_id": "c2",
+          "section_id": "section-03",
+          "usage_type": "news_screenshot",
+          "relevance_score": 0.85,
+          "editor_status": "pending_review",
+          "title": "新闻截图检索 2",
+          "asset_type": "image",
+          "source_type": "news_screenshot",
+          "query": "官方监管机构发布AI应用规范和政策文件",
+          "file": "images/web_search/news_screenshot_queries.json"
+        }
+      ],
+      "videos": [
+        {
+          "claim_id": "c1",
+          "section_id": "section-02",
+          "usage_type": "video",
+          "relevance_score": 0.84,
+          "editor_status": "pending_review",
+          "title": "从DAU到Token：AI Agent时代，商业文明的度量衡重塑",
+          "asset_type": "video",
+          "source_type": "provided_link",
+          "url": "https://www.bilibili.com/video/BV17zXWBbETz",
+          "source": "B站"
+        },
+        {
+          "claim_id": "c2",
+          "section_id": "section-03",
+          "usage_type": "video",
+          "relevance_score": 0.81,
+          "editor_status": "pending_review",
+          "title": "AI冲击下的房地产市场",
+          "asset_type": "video",
+          "source_type": "provided_link",
+          "url": "https://www.bilibili.com/video/BV1GG93BpEkM",
+          "source": "B站"
+        },
+        {
+          "claim_id": "c1",
+          "section_id": "section-02",
+          "usage_type": "video_search",
+          "relevance_score": 0.88,
+          "editor_status": "pending_review",
+          "title": "视频检索 1",
+          "asset_type": "video",
+          "source_type": "web_search",
+          "query": "AI工作流自动化企业案例介绍",
+          "file": "videos/web_search/video_search_queries.json"
+        },
+        {
+          "claim_id": "c2",
+          "section_id": "section-03",
+          "usage_type": "video_search",
+          "relevance_score": 0.85,
+          "editor_status": "pending_review",
+          "title": "视频检索 2",
+          "asset_type": "video",
+          "source_type": "web_search",
+          "query": "AI系统集成与维护挑战实录",
+          "file": "videos/web_search/video_search_queries.json"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "AI技术的真正竞争力不在于功能演示的丰富多样，而在于其能否深度嵌入企业工作流，实现端到端的自动化协作和持续迭代维护，形成真正的生产力提升。",
+          "source": "brief.core_claim"
+        },
+        {
+          "text": "全文重点在于理论框架构建和流程拆解，缺乏具体数据指标和案例量化分析，故不适合强制补充图表。已有结构变量分析和流程对比表格已具备说明力，视频素材可辅助理解但非必需。缺乏明确权威机构官方政策文件和主流财经报道的直接引用，建议后续补充相关权威来源后再考虑图表制作。",
+          "source": "brief.risk_notes.0"
+        }
+      ],
+      "data_points": [
+        {
+          "claim_id": "c1",
+          "section_id": "section-02",
+          "usage_type": "chart",
+          "relevance_score": 0.96,
+          "editor_status": "pending_review",
+          "asset_type": "chart",
+          "label": "主判断核心变量趋势图",
+          "title": "主判断核心变量趋势图",
+          "value": "line",
+          "data_sources": [
+            "akshare",
+            "tushare",
+            "官方统计",
+            "FRED"
+          ],
+          "purpose": "验证主线变量是否在中期趋势上成立"
+        },
+        {
+          "claim_id": "c2",
+          "section_id": "section-03",
+          "usage_type": "chart",
+          "relevance_score": 0.93,
+          "editor_status": "pending_review",
+          "asset_type": "chart",
+          "label": "事件冲击与市场反应对照图",
+          "title": "事件冲击与市场反应对照图",
+          "value": "dual_axis",
+          "data_sources": [
+            "akshare",
+            "tushare",
+            "新浪财经"
+          ],
+          "purpose": "把事件与价格/情绪/利率变化放在同一时间轴"
+        },
+        {
+          "claim_id": "c3",
+          "section_id": "section-04",
+          "usage_type": "chart",
+          "relevance_score": 0.9,
+          "editor_status": "pending_review",
+          "asset_type": "chart",
+          "label": "结构拆解图",
+          "title": "结构拆解图",
+          "value": "bar",
+          "data_sources": [
+            "官方统计",
+            "研究报告",
+            "手工整理 CSV"
+          ],
+          "purpose": "把总判断拆成 3-5 个支撑维度"
+        },
+        {
+          "claim_id": "c1",
+          "section_id": "section-02",
+          "usage_type": "chart",
+          "relevance_score": 0.87,
+          "editor_status": "pending_review",
+          "asset_type": "chart",
+          "label": "风险情景图",
+          "title": "风险情景图",
+          "value": "scenario",
+          "data_sources": [
+            "手工整理 CSV"
+          ],
+          "purpose": "给出不同情景下的观察变量与触发条件"
+        }
+      ],
+      "references": [
+        {
+          "evidence_id": "ai-technology-adoption-e01",
+          "claim_id": "c1",
+          "title": "从DAU到Token：AI Agent时代，商业文明的度量衡重塑",
+          "url": "https://www.bilibili.com/video/BV17zXWBbETz",
+          "source_type": "B站",
+          "source_tier": null,
+          "evidence_type": "article_link",
+          "platform": "",
+          "note": "从DAU到Token：AI Agent时代，商业文明的度量衡重塑；热度代理=27"
+        },
+        {
+          "evidence_id": "ai-technology-adoption-e02",
+          "claim_id": "c2",
+          "title": "AI冲击下的房地产市场",
+          "url": "https://www.bilibili.com/video/BV1GG93BpEkM",
+          "source_type": "B站",
+          "source_tier": null,
+          "evidence_type": "article_link",
+          "platform": "",
+          "note": "AI冲击下的房地产市场；热度代理=36"
+        },
+        {
+          "evidence_id": "source-hint-1",
+          "claim_id": "c1",
+          "title": "source_hint_1",
+          "note": "akshare",
+          "source_type": "recommended_source",
+          "evidence_type": "source_hint"
+        },
+        {
+          "evidence_id": "source-hint-2",
+          "claim_id": "c2",
+          "title": "source_hint_2",
+          "note": "tushare",
+          "source_type": "recommended_source",
+          "evidence_type": "source_hint"
+        },
+        {
+          "evidence_id": "source-hint-3",
+          "claim_id": "c3",
+          "title": "source_hint_3",
+          "note": "新浪财经",
+          "source_type": "recommended_source",
+          "evidence_type": "source_hint"
+        },
+        {
+          "evidence_id": "source-hint-4",
+          "claim_id": "c1",
+          "title": "source_hint_4",
+          "note": "人民网",
+          "source_type": "recommended_source",
+          "evidence_type": "source_hint"
+        },
+        {
+          "evidence_id": "source-hint-5",
+          "claim_id": "c2",
+          "title": "source_hint_5",
+          "note": "新华社",
+          "source_type": "recommended_source",
+          "evidence_type": "source_hint"
+        },
+        {
+          "evidence_id": "source-hint-6",
+          "claim_id": "c3",
+          "title": "source_hint_6",
+          "note": "公开官方声明",
+          "source_type": "recommended_source",
+          "evidence_type": "source_hint"
+        },
+        {
+          "evidence_id": "source-hint-7",
+          "claim_id": "c1",
+          "title": "source_hint_7",
+          "note": "https://www.bilibili.com/video/BV17zXWBbETz",
+          "source_type": "recommended_source",
+          "evidence_type": "source_hint"
+        },
+        {
+          "evidence_id": "source-hint-8",
+          "claim_id": "c2",
+          "title": "source_hint_8",
+          "note": "https://www.bilibili.com/video/BV1GG93BpEkM",
+          "source_type": "recommended_source",
+          "evidence_type": "source_hint"
+        }
+      ]
+    },
+    "coverage_notes": [
+      "生成依据：final_doc_ai_reading",
+      "已覆盖主张：AI技术的真正竞争力不在于功能演示的丰富多样，而在于其能否深度嵌入企业工作流，实现端到端的自动化协作和持续迭代维护，形成真正的生产力提升。",
+      "建议媒介：image, news_screenshot, video",
+      "AI 图像分支：连环画 0 张 / 梗图 0 张 / 搞笑人物 0 张",
+      "Layer 5：story_page",
+      "视频质检：不设固定分辨率门槛，允许新闻直播/访谈，过滤口播自媒体"
+    ],
+    "gaps": [
+      "全文重点在于理论框架构建和流程拆解，缺乏具体数据指标和案例量化分析，故不适合强制补充图表。已有结构变量分析和流程对比表格已具备说明力，视频素材可辅助理解但非必需。缺乏明确权威机构官方政策文件和主流财经报道的直接引用，建议后续补充相关权威来源后再考虑图表制作。",
+      "图表位已规划，但仍需在下一轮用 akshare / tushare / 官方数据补齐真实序列。",
+      "视频检索词已生成：允许新闻直播/访谈，但需持续拦截口播自媒体与截图拼视频素材。",
+      "原始链接型证据不足 3 条，需在 material 执行阶段继续补证据源。"
+    ],
+    "asset_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-15_164114/artifacts/material/pack_assets/topic-ai-真正拉开差距的是功能演示还是工作流落地",
+    "layer5_delivery": {
+      "template_id": "story_page",
+      "template_name": "通用故事面板 (Story Page)",
+      "worldmonitor_project": "/Volumes/PSSD/Projects/worldmonitor",
+      "worldmonitor_data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+      "worldmonitor_public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+      "worldmonitor_entry": "index.html",
+      "proxy_port": 8787,
+      "current_status": "inactive",
+      "inputs": [
+        "article.md",
+        "chart_gallery.json",
+        "scene_plan.json"
+      ],
+      "preferred_components": [
+        "CountryTimeline"
+      ],
+      "page_modules": [
+        "hero-summary",
+        "chart-gallery",
+        "media-gallery"
+      ],
+      "chart_anchor_ids": [
+        "chart-01",
+        "chart-02",
+        "chart-03",
+        "chart-04"
+      ],
+      "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+      "artifact_tag": "layer5_story_page",
+      "topic_slug": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+      "topic_title": "AI：真正拉开差距的是功能演示还是工作流落地",
+      "core_claim": "AI技术的真正竞争力不在于功能演示的丰富多样，而在于其能否深度嵌入企业工作流，实现端到端的自动化协作和持续迭代维护，形成真正的生产力提升。",
+      "required_csvs": [
+        "charts/csv/chart-01.csv",
+        "charts/csv/chart-02.csv",
+        "charts/csv/chart-03.csv",
+        "charts/csv/chart-04.csv"
+      ],
+      "required_pngs": [
+        "charts/png/chart-01.png",
+        "charts/png/chart-02.png",
+        "charts/png/chart-03.png",
+        "charts/png/chart-04.png"
+      ],
+      "narrative_schema": "thesis_then_evidence_then_risks",
+      "data_granularity": "monthly",
+      "risk_scenarios": [],
+      "key_metrics_to_emit": [],
+      "layout_hint": "chart_gallery_centered"
+    },
+    "generated_visuals": {
+      "cover_prompt": "A conceptual illustration showing AI technology integrating seamlessly into complex business workflows, symbolizing automation, collaboration, and data flow in a modern enterprise.",
+      "infographic_prompts": [],
+      "comic_storyboard": [],
+      "meme_prompts": [],
+      "funny_comic_character_prompts": []
+    },
+    "video_quality_policy": {
+      "min_height": 0,
+      "min_duration_seconds": 8,
+      "min_scene_changes": 2,
+      "min_scene_change_rate": 0.08,
+      "allow_news_live_or_interview": true,
+      "block_self_media_talking_head": true,
+      "reject_screenshot_montage": true,
+      "report_fields": [
+        "source_category",
+        "source_ok",
+        "resolution_height",
+        "duration_seconds",
+        "scene_changes",
+        "scene_change_rate",
+        "anti_screenshot_montage_pass",
+        "final_pass",
+        "fail_reasons"
+      ]
+    }
+  }
+]

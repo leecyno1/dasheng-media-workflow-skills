@@ -1,0 +1,82 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "t001",
+    "topic_name": "鲍威尔讲话终结加息预期引发市场转向降息押注",
+    "topic_kind": "independent",
+    "mother_topic_id": "t001",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 2,
+    "topic_id": "t002",
+    "topic_name": "中东冲突与霍尔木兹海峡封锁导致油价坚挺形成全球能源供应链风险",
+    "topic_kind": "independent",
+    "mother_topic_id": "t002",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 3,
+    "topic_id": "t003",
+    "topic_name": "全球央行大规模抛售美债引发金融市场系统性风险担忧",
+    "topic_kind": "independent",
+    "mother_topic_id": "t003",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 4,
+    "topic_id": "t004",
+    "topic_name": "特朗普在中东停火谈判中的摇摆态度加剧局势脆弱性",
+    "topic_kind": "independent",
+    "mother_topic_id": "t004",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 5,
+    "topic_id": "t005",
+    "topic_name": "俄罗斯拒绝向日本供油体现地缘政治制裁的反噬效应",
+    "topic_kind": "independent",
+    "mother_topic_id": "t005",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 6,
+    "topic_id": "t006",
+    "topic_name": "AI技术发展与央行降息预期交织形成宏观经济新变量",
+    "topic_kind": "independent",
+    "mother_topic_id": "t006",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 7,
+    "topic_id": "t007",
+    "topic_name": "日本自卫队士兵闯入中国使馆事件加剧日中外交紧张",
+    "topic_kind": "independent",
+    "mother_topic_id": "t007",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 8,
+    "topic_id": "t008",
+    "topic_name": "日本高龄工程师投递中国车企简历反映中日人才流动与老龄化挑战",
+    "topic_kind": "independent",
+    "mother_topic_id": "t008",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 9,
+    "topic_id": "t009",
+    "topic_name": "OpenAI英国项目暂停暴露AI产业落地面临能源与监管瓶颈",
+    "topic_kind": "independent",
+    "mother_topic_id": "t009",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 10,
+    "topic_id": "t010",
+    "topic_name": "美债规模创新高引发市场对违约风险和财政稳定性的关键拐点担忧",
+    "topic_kind": "independent",
+    "mother_topic_id": "t010",
+    "source_status": "ai_generated"
+  }
+]

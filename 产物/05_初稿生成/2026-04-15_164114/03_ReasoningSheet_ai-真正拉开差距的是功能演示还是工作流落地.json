@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "id": "2026-04-15_164114:topic-ai-真正拉开差距的是功能演示还是工作流落地:reasoning",
+    "object_type": "ReasoningSheet",
+    "run_id": "2026-04-15_164114",
+    "version": "1.0.0",
+    "status": "ready",
+    "generated_by": "build_stage3_draft.py",
+    "input_digest": "topic-ai-真正拉开差距的是功能演示还是工作流落地::AI：真正拉开差距的是功能演示还是工作流落地",
+    "upstream_ids": [
+      "2026-04-04_204231:topic-ai-真正拉开差距的是功能演示还是工作流落地"
+    ],
+    "doc_refs": [],
+    "created_at": "2026-04-15T17:24:14.995345+08:00",
+    "updated_at": "2026-04-15T17:24:14.995345+08:00"
+  },
+  "topic_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+  "title": "AI：真正拉开差距的是功能演示还是工作流落地",
+  "core_thesis": "围绕AI，证明“真正拉开差距的是功能演示还是工作流落地”，而不是继续复述表面热度。",
+  "editor_note": "",
+  "selection_reason": "",
+  "claims": [
+    {
+      "claim_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地-claim-01",
+      "section_id": "section-01",
+      "statement": "先界定 AI 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "counterpoint": "真正拉开差距的是功能演示还是工作流落地",
+      "missing_proof": [
+        "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+        "缺少主流媒体交叉印证，需要补英文或权威财经报道。"
+      ],
+      "chart_need": "流程对比图"
+    },
+    {
+      "claim_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地-claim-02",
+      "section_id": "section-02",
+      "statement": "拆开 AI 的安装、接线、协作和维护成本，而不是只演示功能。",
+      "counterpoint": "真正拉开差距的是功能演示还是工作流落地",
+      "missing_proof": [
+        "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+        "缺少主流媒体交叉印证，需要补英文或权威财经报道。"
+      ],
+      "chart_need": "接入链路图"
+    },
+    {
+      "claim_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地-claim-03",
+      "section_id": "section-03",
+      "statement": "证明哪些方案是工作流能力，哪些只是功能演示。",
+      "counterpoint": "真正拉开差距的是功能演示还是工作流落地",
+      "missing_proof": [
+        "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+        "缺少主流媒体交叉印证，需要补英文或权威财经报道。"
+      ],
+      "chart_need": null
+    }
+  ],
+  "evidence_items": [
+    {
+      "evidence_id": "ai-technology-adoption-e01",
+      "title": "从DAU到Token：AI Agent时代，商业文明的度量衡重塑",
+      "url": "https://www.bilibili.com/video/BV17zXWBbETz",
+      "source_type": "B站",
+      "source_tier": "platform_hotspot",
+      "evidence_type": "article_link",
+      "note": "从DAU到Token：AI Agent时代，商业文明的度量衡重塑；热度代理=27"
+    },
+    {
+      "evidence_id": "ai-technology-adoption-e02",
+      "title": "AI冲击下的房地产市场",
+      "url": "https://www.bilibili.com/video/BV1GG93BpEkM",
+      "source_type": "B站",
+      "source_tier": "platform_hotspot",
+      "evidence_type": "article_link",
+      "note": "AI冲击下的房地产市场；热度代理=36"
+    }
+  ],
+  "structure_contract": {
+    "max_primary_sections": 4,
+    "inherit_from_topic_card": true,
+    "source_of_truth": "selected_topics.json + topic_cards.json"
+  }
+}

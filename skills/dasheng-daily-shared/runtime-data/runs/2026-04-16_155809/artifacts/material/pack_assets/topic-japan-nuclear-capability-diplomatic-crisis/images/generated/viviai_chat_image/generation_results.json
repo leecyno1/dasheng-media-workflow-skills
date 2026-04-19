@@ -1,0 +1,38 @@
+[
+  {
+    "ok": true,
+    "image_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/images/generated/viviai_chat_image/cover.png",
+    "response_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/images/generated/viviai_chat_image/cover.response.json",
+    "task_id": "cover",
+    "prompt_files": [
+      "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/prompts/ai/cover.md"
+    ]
+  },
+  {
+    "ok": false,
+    "error": "chat_completion_missing_image_payload",
+    "response_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/images/generated/viviai_chat_image/infographic_1.response.json",
+    "task_id": "infographic_1",
+    "prompt_files": [
+      "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/prompts/ai/infographic_1.md"
+    ]
+  },
+  {
+    "ok": true,
+    "image_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/images/generated/viviai_chat_image/infographic_2.png",
+    "response_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/images/generated/viviai_chat_image/infographic_2.response.json",
+    "task_id": "infographic_2",
+    "prompt_files": [
+      "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/prompts/ai/infographic_2.md"
+    ]
+  },
+  {
+    "ok": false,
+    "error": "chat_completion_missing_image_payload",
+    "response_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/images/generated/viviai_chat_image/infographic_3.response.json",
+    "task_id": "infographic_3",
+    "prompt_files": [
+      "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/prompts/ai/infographic_3.md"
+    ]
+  }
+]

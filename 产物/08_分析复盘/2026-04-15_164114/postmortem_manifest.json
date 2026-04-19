@@ -1,0 +1,27 @@
+{
+  "run_id": "2026-04-15_164114",
+  "stage": "postmortem",
+  "status": "completed",
+  "generated_at": "2026-04-16T15:24:07",
+  "upstream": {
+    "publish_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-15_164114/publish_manifest.json"
+  },
+  "topics": [],
+  "performance_metrics": [],
+  "writeback": {
+    "topic_pattern_library": {
+      "selected_channel_counts": {},
+      "published_topics": 0
+    },
+    "evidence_pattern_library": {
+      "interactive_chart_ok_topics": 0,
+      "motion_narrative_ok_topics": 0
+    },
+    "visual_pattern_library": {
+      "topics_with_cover_candidates": 0
+    },
+    "channel_pattern_library": {
+      "channel_frequency": {}
+    }
+  }
+}

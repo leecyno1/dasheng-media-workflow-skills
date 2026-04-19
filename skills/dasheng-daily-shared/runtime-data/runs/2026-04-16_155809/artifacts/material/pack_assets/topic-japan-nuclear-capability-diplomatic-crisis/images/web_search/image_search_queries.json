@@ -1,0 +1,30 @@
+[
+  {
+    "query": "日本官方披露核武器能力新闻发布会现场",
+    "entity_type": "event",
+    "entity": "日本核能力披露",
+    "priority": null,
+    "channel": "新闻图片库"
+  },
+  {
+    "query": "岸田文雄 日本首相 正式演讲",
+    "entity_type": "person",
+    "entity": "岸田文雄",
+    "priority": null,
+    "channel": "新闻图片库"
+  },
+  {
+    "query": "中国外交部新闻发布会 2026年4月",
+    "entity_type": "event",
+    "entity": "中国外交部回应日本核能力",
+    "priority": null,
+    "channel": "新闻图片库"
+  },
+  {
+    "query": "东京新宿 反战集会 2026年4月",
+    "entity_type": "event",
+    "entity": "日本民众反战集会",
+    "priority": null,
+    "channel": "新闻图片库"
+  }
+]

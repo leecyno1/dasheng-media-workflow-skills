@@ -1,0 +1,13 @@
+{
+  "run_id": "2026-03-22_200511",
+  "phase": "08_分析复盘",
+  "generated_at": "2026-03-23T08:25:00+08:00",
+  "input": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-03-22_200511",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/08_分析复盘/2026-03-22_200511",
+  "artifacts": [
+    "08_分析复盘_底稿.md",
+    "08_表现数据看板模板.md",
+    "08_分析复盘_报告.md"
+  ],
+  "l1_writeback_target": "/Volumes/PSSD/Projects/公众号文章/引擎/01_调性分析引擎/STYLE_KNOWLEDGE_BASE.md"
+}

@@ -1,0 +1,166 @@
+{
+  "LocalLLaMA": {
+    "status": "ok",
+    "entries": [
+      {
+        "title": "Announcing LocalLlama discord server & bot!",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1mpk2va/announcing_localllama_discord_server_bot/",
+        "updated": "2025-08-13T23:21:05+00:00",
+        "author": "/u/HOLUPREDICTIONS"
+      },
+      {
+        "title": "Gemma 4 on Llama.cpp should be stable now",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1sgl3qz/gemma_4_on_llamacpp_should_be_stable_now/",
+        "updated": "2026-04-09T09:48:52+00:00",
+        "author": "/u/ilintar"
+      },
+      {
+        "title": "Local (small) LLMs found the same vulnerabilities as Mythos",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1sgrfp1/local_small_llms_found_the_same_vulnerabilities/",
+        "updated": "2026-04-09T14:36:58+00:00",
+        "author": "/u/CyberAttacked"
+      },
+      {
+        "title": "The Mythos Preview \"Safety\" Gaslight: Anthropic is just hiding insane compute costs. Open models are already doing this.",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1sgoy17/the_mythos_preview_safety_gaslight_anthropic_is/",
+        "updated": "2026-04-09T13:00:17+00:00",
+        "author": "/u/GWGSYT"
+      },
+      {
+        "title": "It's insane how lobotomized Opus 4.6 is right now. Even Gemma 4 31B UD IQ3 XXS beat it on the carwash test on my 5070 TI.",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1sgd7fp/its_insane_how_lobotomized_opus_46_is_right_now/",
+        "updated": "2026-04-09T02:34:15+00:00",
+        "author": "/u/FrozenFishEnjoyer"
+      },
+      {
+        "title": "Hugging Face launches a new repo type: Kernels",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1sgq6h9/hugging_face_launches_a_new_repo_type_kernels/",
+        "updated": "2026-04-09T13:49:48+00:00",
+        "author": "/u/clem59480"
+      }
+    ]
+  },
+  "OpenAI": {
+    "status": "ok",
+    "entries": [
+      {
+        "title": "Sora 2 megathread (part 3)",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1o8kmg9/sora_2_megathread_part_3/",
+        "updated": "2025-10-16T22:41:55+00:00",
+        "author": "/u/WithoutReason1729"
+      },
+      {
+        "title": "AMA on our DevDay Launches",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1o1j23g/ama_on_our_devday_launches/",
+        "updated": "2025-10-08T18:39:36+00:00",
+        "author": "/u/OpenAI"
+      },
+      {
+        "title": "A private company now has powerful zero-day exploits of almost every software project you've heard of.",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1sgojy9/a_private_company_now_has_powerful_zeroday/",
+        "updated": "2026-04-09T12:43:26+00:00",
+        "author": "/u/EchoOfOppenheimer"
+      },
+      {
+        "title": "OpenAI 'pauses' its Stargate UK data center plan",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1sgpv38/openai_pauses_its_stargate_uk_data_center_plan/",
+        "updated": "2026-04-09T13:37:17+00:00",
+        "author": "/u/hulk14"
+      },
+      {
+        "title": "In 2017, Altman straight up lied to US officials that China had launched an \"AGI Manhattan Project\". He claimed he needed billions in government funding to keep pace. An intelligence official concluded: \"It was just being used as a sales pitch.\"",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1sgldnx/in_2017_altman_straight_up_lied_to_us_officials/",
+        "updated": "2026-04-09T10:04:54+00:00",
+        "author": "/u/EchoOfOppenheimer"
+      },
+      {
+        "title": "Monetization truly doesn’t care how big your user base is. People will always pay for what is working best for them in the moment. Entrepreneurial lesson of this era",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1sftdkl/monetization_truly_doesnt_care_how_big_your_user/",
+        "updated": "2026-04-08T13:48:26+00:00",
+        "author": "/u/py-net"
+      }
+    ]
+  },
+  "ClaudeAI": {
+    "status": "ok",
+    "entries": [
+      {
+        "title": "r/ClaudeAI List of Ongoing Megathreads",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1s7fepn/rclaudeai_list_of_ongoing_megathreads/",
+        "updated": "2026-03-30T03:18:44+00:00",
+        "author": "/u/sixbillionthsheep"
+      },
+      {
+        "title": "Introducing Claude Managed Agents, now in public beta.",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1sfz7a5/introducing_claude_managed_agents_now_in_public/",
+        "updated": "2026-04-08T17:16:42+00:00",
+        "author": "/u/ClaudeOfficial"
+      },
+      {
+        "title": "BREAKING: Anthropic’s new “Mythos” model reportedly found the One Piece before the Straw Hats",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1sgs0b4/breaking_anthropics_new_mythos_model_reportedly/",
+        "updated": "2026-04-09T14:57:43+00:00",
+        "author": "/u/hencha"
+      },
+      {
+        "title": "New: Context usage warning on session resume",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1sgkju2/new_context_usage_warning_on_session_resume/",
+        "updated": "2026-04-09T09:15:25+00:00",
+        "author": "/u/drinksbeerdaily"
+      },
+      {
+        "title": "Something happened to Opus 4.6's reasoning effort",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1sfw9b5/something_happened_to_opus_46s_reasoning_effort/",
+        "updated": "2026-04-08T15:32:50+00:00",
+        "author": "/u/RealSuperdau"
+      },
+      {
+        "title": "Passed Anthropic's Claude Certified Architect (893/1000)",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1sgn0cf/passed_anthropics_claude_certified_architect/",
+        "updated": "2026-04-09T11:32:19+00:00",
+        "author": "/u/Suspicious_Low7612"
+      }
+    ]
+  },
+  "singularity": {
+    "status": "ok",
+    "entries": [
+      {
+        "title": "The era of human coding is over",
+        "url": "https://www.reddit.com/r/singularity/comments/1rweoq5/the_era_of_human_coding_is_over/",
+        "updated": "2026-03-17T18:20:20+00:00",
+        "author": "/u/Particular-Habit9442"
+      },
+      {
+        "title": "Fascinating story: Tech Entrepreneur in Australia, using ChatGPT, AlphaFold, and a custom made mRNA vaccine, treats his dog's cancer. With the help of researchers (who all seem so excited) he was able to significantly reduce tumour size just weeks after the first injection",
+        "url": "https://www.reddit.com/r/singularity/comments/1rtmmpe/fascinating_story_tech_entrepreneur_in_australia/",
+        "updated": "2026-03-14T15:41:54+00:00",
+        "author": "/u/TFenrir"
+      },
+      {
+        "title": "From Inside the Meat - short film",
+        "url": "https://www.reddit.com/r/singularity/comments/1sg07os/from_inside_the_meat_short_film/",
+        "updated": "2026-04-08T17:52:25+00:00",
+        "author": "/u/Anen-o-me"
+      },
+      {
+        "title": "Chinese AI companies are shipping faster and cheaper than anyone expected and I'm not sure the west has a good answer for it",
+        "url": "https://www.reddit.com/r/singularity/comments/1sgov6y/chinese_ai_companies_are_shipping_faster_and/",
+        "updated": "2026-04-09T12:56:53+00:00",
+        "author": "/u/Far_Suit575"
+      },
+      {
+        "title": "Claude Opus vs Mythos",
+        "url": "https://www.reddit.com/r/singularity/comments/1sg2wwj/claude_opus_vs_mythos/",
+        "updated": "2026-04-08T19:29:10+00:00",
+        "author": "/u/policyweb"
+      },
+      {
+        "title": "Ronan Farrow on Sam Altman: \"We interviewed more than 100 people... a majority did say some variation on the theme of: he's a pathological liar\"",
+        "url": "https://www.reddit.com/r/singularity/comments/1sgaijv/ronan_farrow_on_sam_altman_we_interviewed_more/",
+        "updated": "2026-04-09T00:31:35+00:00",
+        "author": "/u/realmvp77"
+      }
+    ]
+  }
+}

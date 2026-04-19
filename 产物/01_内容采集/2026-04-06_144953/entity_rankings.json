@@ -1,0 +1,228 @@
+{
+  "run_id": "2026-04-06_144953",
+  "generated_at": "2026-04-06T14:49:53.517602+08:00",
+  "categories": {
+    "dynamic_tokens": [
+      {
+        "name": "热度代理",
+        "count": 180
+      },
+      {
+        "name": "伊朗",
+        "count": 26
+      },
+      {
+        "name": "美国",
+        "count": 22
+      },
+      {
+        "name": "日本",
+        "count": 19
+      },
+      {
+        "name": "黄金",
+        "count": 17
+      },
+      {
+        "name": "特朗普",
+        "count": 16
+      },
+      {
+        "name": "score",
+        "count": 16
+      },
+      {
+        "name": "the",
+        "count": 15
+      },
+      {
+        "name": "bili",
+        "count": 15
+      },
+      {
+        "name": "市场",
+        "count": 14
+      },
+      {
+        "name": "来自",
+        "count": 14
+      },
+      {
+        "name": "定向样本",
+        "count": 14
+      },
+      {
+        "name": "reports",
+        "count": 13
+      },
+      {
+        "name": "中国",
+        "count": 11
+      },
+      {
+        "name": "宏观/市场情绪",
+        "count": 9
+      }
+    ],
+    "orgs": [
+      {
+        "name": "美联储",
+        "count": 5
+      },
+      {
+        "name": "FED",
+        "count": 3
+      },
+      {
+        "name": "外交部",
+        "count": 2
+      },
+      {
+        "name": "国务院",
+        "count": 1
+      },
+      {
+        "name": "微软",
+        "count": 1
+      },
+      {
+        "name": "英伟达",
+        "count": 1
+      }
+    ],
+    "commodities": [
+      {
+        "name": "黄金",
+        "count": 17
+      },
+      {
+        "name": "油价",
+        "count": 6
+      },
+      {
+        "name": "原油",
+        "count": 3
+      },
+      {
+        "name": "白银",
+        "count": 2
+      }
+    ],
+    "countries": [
+      {
+        "name": "伊朗",
+        "count": 26
+      },
+      {
+        "name": "美国",
+        "count": 22
+      },
+      {
+        "name": "日本",
+        "count": 19
+      },
+      {
+        "name": "中国",
+        "count": 13
+      },
+      {
+        "name": "俄罗斯",
+        "count": 6
+      },
+      {
+        "name": "中东",
+        "count": 4
+      },
+      {
+        "name": "以色列",
+        "count": 3
+      },
+      {
+        "name": "欧洲",
+        "count": 1
+      }
+    ],
+    "sectors": [
+      {
+        "name": "AI",
+        "count": 7
+      },
+      {
+        "name": "半导体",
+        "count": 7
+      },
+      {
+        "name": "封测",
+        "count": 5
+      },
+      {
+        "name": "人工智能",
+        "count": 2
+      },
+      {
+        "name": "新能源",
+        "count": 2
+      },
+      {
+        "name": "航运",
+        "count": 1
+      },
+      {
+        "name": "芯片",
+        "count": 1
+      }
+    ],
+    "people": [
+      {
+        "name": "特朗普",
+        "count": 16
+      },
+      {
+        "name": "高市早苗",
+        "count": 6
+      },
+      {
+        "name": "鲍威尔",
+        "count": 2
+      },
+      {
+        "name": "马斯克",
+        "count": 2
+      }
+    ],
+    "policies": [
+      {
+        "name": "加息",
+        "count": 7
+      },
+      {
+        "name": "降息",
+        "count": 3
+      },
+      {
+        "name": "停火",
+        "count": 2
+      },
+      {
+        "name": "预算",
+        "count": 1
+      },
+      {
+        "name": "制裁",
+        "count": 1
+      },
+      {
+        "name": "补贴",
+        "count": 1
+      },
+      {
+        "name": "宽松",
+        "count": 1
+      },
+      {
+        "name": "关税",
+        "count": 1
+      }
+    ]
+  }
+}

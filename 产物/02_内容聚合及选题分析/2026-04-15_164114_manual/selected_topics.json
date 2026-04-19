@@ -1,0 +1,145 @@
+{
+  "run_id": "2026-04-15_164114",
+  "gate": "Brief Gate",
+  "status": "approved",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "未被选中的题请写入 rejected_topic_ids 或保留空值。",
+    "只有 selected_topics 非空且状态为 approved，draft 才允许执行。"
+  ],
+  "selected_topics": [
+    {
+      "topic_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+      "title": "AI：真正拉开差距的是功能演示还是工作流落地",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+      "angle_variant_of": null,
+      "article_use": "结构稿",
+      "changed_dimension": "",
+      "core_proposition": "围绕AI，证明\"真正拉开差距的是功能演示还是工作流落地\"，而不是继续复述表面热度。",
+      "source_status": "自然入选",
+      "composite_score": 6.66
+    }
+  ],
+  "rejected_topic_ids": [
+    "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+    "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升-variant-外交部-中东这条线若换个切口-最该补的证据会不会",
+    "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+    "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆-variant-鲍威尔-美联储这条线若换个切口-最该补的证据会不",
+    "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+    "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估-variant-黄金-降息这条线若换个切口-最该补的证据会不会完",
+    "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+    "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏-variant-半导体-封测这条线若换个切口-最该补的证据会不会"
+  ],
+  "candidate_topics": [
+    {
+      "topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+      "title": "外交部、伊朗：事件升级之外，长期秩序成本在怎样上升",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+      "angle_variant_of": null,
+      "article_use": "结构稿",
+      "changed_dimension": "",
+      "core_proposition": "围绕外交部、伊朗，证明“事件升级之外，长期秩序成本在怎样上升”，而不是继续复述表面热度。",
+      "source_status": "自然入选",
+      "composite_score": 7.9
+    },
+    {
+      "topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升-variant-外交部-中东这条线若换个切口-最该补的证据会不会",
+      "title": "外交部、中东这条线若换个切口，最该补的证据会不会完全不同",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+      "angle_variant_of": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+      "article_use": "结构稿",
+      "changed_dimension": "objects",
+      "core_proposition": "围绕外交部、中东，证明“事件升级之外，长期秩序成本在怎样上升”，而不是继续复述表面热度。",
+      "source_status": "自然入选",
+      "composite_score": 7.14
+    },
+    {
+      "topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+      "title": "美联储、中东这条线，市场是否低估了再通胀与利率预期回摆",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+      "angle_variant_of": null,
+      "article_use": "判断稿",
+      "changed_dimension": "",
+      "core_proposition": "围绕美联储、中东，证明“市场是否低估了再通胀与利率预期回摆”，而不是继续复述表面热度。",
+      "source_status": "自然入选",
+      "composite_score": 7.75
+    },
+    {
+      "topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆-variant-鲍威尔-美联储这条线若换个切口-最该补的证据会不",
+      "title": "鲍威尔、美联储这条线若换个切口，最该补的证据会不会完全不同",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+      "angle_variant_of": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+      "article_use": "判断稿",
+      "changed_dimension": "objects",
+      "core_proposition": "围绕鲍威尔、美联储，证明“市场是否低估了再通胀与利率预期回摆”，而不是继续复述表面热度。",
+      "source_status": "自然入选",
+      "composite_score": 7.3
+    },
+    {
+      "topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+      "title": "川普、美国这条线，风险溢价究竟在围绕什么变量重估",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+      "angle_variant_of": null,
+      "article_use": "判断稿",
+      "changed_dimension": "",
+      "core_proposition": "围绕川普、美国，证明“风险溢价究竟在围绕什么变量重估”，而不是继续复述表面热度。",
+      "source_status": "自然入选",
+      "composite_score": 6.95
+    },
+    {
+      "topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估-variant-黄金-降息这条线若换个切口-最该补的证据会不会完",
+      "title": "黄金、降息这条线若换个切口，最该补的证据会不会完全不同",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+      "angle_variant_of": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+      "article_use": "判断稿",
+      "changed_dimension": "objects",
+      "core_proposition": "围绕黄金、降息，证明“风险溢价究竟在围绕什么变量重估”，而不是继续复述表面热度。",
+      "source_status": "自然入选",
+      "composite_score": 7.04
+    },
+    {
+      "topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+      "title": "英伟达、半导体：真正值得写的是局部修复会不会被误读成全面复苏",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+      "angle_variant_of": null,
+      "article_use": "解释稿",
+      "changed_dimension": "",
+      "core_proposition": "围绕英伟达、半导体，证明“局部修复会不会被误读成全面复苏”，而不是继续复述表面热度。",
+      "source_status": "自然入选",
+      "composite_score": 6.76
+    },
+    {
+      "topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏-variant-半导体-封测这条线若换个切口-最该补的证据会不会",
+      "title": "半导体、封测这条线若换个切口，最该补的证据会不会完全不同",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+      "angle_variant_of": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+      "article_use": "解释稿",
+      "changed_dimension": "objects",
+      "core_proposition": "围绕半导体、封测，证明“局部修复会不会被误读成全面复苏”，而不是继续复述表面热度。",
+      "source_status": "自然入选",
+      "composite_score": 7.24
+    },
+    {
+      "topic_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+      "title": "AI：真正拉开差距的是功能演示还是工作流落地",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+      "angle_variant_of": null,
+      "article_use": "结构稿",
+      "changed_dimension": "",
+      "core_proposition": "围绕AI，证明“真正拉开差距的是功能演示还是工作流落地”，而不是继续复述表面热度。",
+      "source_status": "自然入选",
+      "composite_score": 6.66
+    }
+  ],
+  "editor_note": ""
+}

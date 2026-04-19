@@ -1,0 +1,9 @@
+{
+  "run_id": "2026-04-15_164114",
+  "stage": "publish",
+  "layer": "channel_adaptation",
+  "generated_at": "2026-04-16T15:22:25",
+  "status": "pending_channel_preflight",
+  "blockers": [],
+  "topics": []
+}

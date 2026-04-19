@@ -1,0 +1,82 @@
+{
+  "topic": "takaichi",
+  "generated_at": "2026-03-30T21:41:58+0800",
+  "policy": {
+    "min_height": 480,
+    "min_duration_seconds": 8,
+    "min_scene_changes": 2,
+    "min_scene_change_rate": 0.08,
+    "allow_news_live_or_interview": true,
+    "block_self_media_talking_head": true,
+    "reject_screenshot_montage": true
+  },
+  "audit_fields": {
+    "candidate_level": [
+      "source_category",
+      "source_ok",
+      "resolution_height",
+      "duration_seconds_hint",
+      "pre_download_pass",
+      "reject_reasons"
+    ],
+    "file_level": [
+      "source_traceable",
+      "resolution_height",
+      "duration_seconds",
+      "scene_changes",
+      "scene_change_rate",
+      "anti_screenshot_montage_pass",
+      "final_pass",
+      "fail_reasons"
+    ]
+  },
+  "query_quality_summary": [
+    {
+      "query": "Japan election rally crowd Tokyo 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "Japanese parliament diet building b roll",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "Tokyo crowd crossing 4k documentary",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "Japan military drill coast guard 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "Japan aging society elderly crowd street 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  ],
+  "summary": {
+    "candidate_total": 15,
+    "candidate_qualified": 15,
+    "candidate_rejected": 0,
+    "candidate_reject_reason_counts": {},
+    "download_attempts": 1,
+    "download_passed": 0,
+    "download_failed": 1,
+    "download_fail_reason_counts": {
+      "resolution_below_480p": 1
+    }
+  }
+}

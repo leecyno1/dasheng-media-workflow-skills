@@ -1,0 +1,171 @@
+{
+  "run_id": "2026-04-09_234213",
+  "generated_at": "2026-04-09T23:42:13.999064+08:00",
+  "items": [
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Show HN: AI agents are bad at API integrations – we fixed it",
+      "url": "https://www.apimatic.io/product/context-plugins/showcase",
+      "author_name": "sohaibtariq",
+      "created_at": "2026-04-09T15:06:54Z",
+      "summary": "Hacker News 查询：OpenAI",
+      "score": 10.8,
+      "provider_meta": {
+        "query": "OpenAI",
+        "points": 3.0,
+        "num_comments": 2.0
+      },
+      "rank_score": 13.2404
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "With Claude Managed Agents, Anthropic wants to run your AI agents for you",
+      "url": "https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/",
+      "author_name": "Brajeshwar",
+      "created_at": "2026-04-09T14:27:05Z",
+      "summary": "Hacker News 查询：Anthropic Claude",
+      "score": 2.4,
+      "provider_meta": {
+        "query": "Anthropic Claude",
+        "points": 1.0,
+        "num_comments": 0.0
+      },
+      "rank_score": 13.0953
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Show HN: Linggen – Open-source AI agent with P2P remote access from your phone",
+      "url": "https://linggen.dev/",
+      "author_name": "linggen",
+      "created_at": "2026-04-08T21:43:31Z",
+      "summary": "Hacker News 查询：Llama",
+      "score": 11.4,
+      "provider_meta": {
+        "query": "Llama",
+        "points": 4.0,
+        "num_comments": 1.0
+      },
+      "rank_score": 12.9671
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Anthropics Mythos Model Sparks Fears of AI Doomsday",
+      "url": "https://nypost.com/2026/04/08/business/anthropics-claude-mythos-model-sparks-fears-of-ai-doomsday-wave-of-devastating-hacks/",
+      "author_name": "silexia",
+      "created_at": "2026-04-09T05:14:37Z",
+      "summary": "Hacker News 查询：Anthropic Claude",
+      "score": 6.6,
+      "provider_meta": {
+        "query": "Anthropic Claude",
+        "points": 2.0,
+        "num_comments": 1.0
+      },
+      "rank_score": 12.7342
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Show HN: I built an open source multi-agent harness in Go",
+      "url": "https://github.com/AndreBaltazar8/artificial",
+      "author_name": "AndreBaltazar",
+      "created_at": "2026-04-08T22:19:10Z",
+      "summary": "Hacker News 查询：Anthropic Claude",
+      "score": 7.2,
+      "provider_meta": {
+        "query": "Anthropic Claude",
+        "points": 3.0,
+        "num_comments": 0.0
+      },
+      "rank_score": 12.6675
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Show HN: Postagent – Postman CLI, but for AI Agents",
+      "url": "https://github.com/actionbook/postagent",
+      "author_name": "adcent",
+      "created_at": "2026-04-09T14:43:53Z",
+      "summary": "Hacker News 查询：AI agents",
+      "score": 13.8,
+      "provider_meta": {
+        "query": "AI agents",
+        "points": 5.0,
+        "num_comments": 1.0
+      },
+      "rank_score": 12.6035
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "New Anthropic model is too dangerous to release publicly",
+      "url": "https://www.nbcnews.com/tech/security/anthropic-project-glasswing-mythos-preview-claude-gets-limited-release-rcna267234",
+      "author_name": "hackyhacky",
+      "created_at": "2026-04-08T22:10:35Z",
+      "summary": "Hacker News 查询：Anthropic Claude",
+      "score": 20.4,
+      "provider_meta": {
+        "query": "Anthropic Claude",
+        "points": 4.0,
+        "num_comments": 6.0
+      },
+      "rank_score": 12.5844
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Claude Mythos Preview [pdf]",
+      "url": "https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf",
+      "author_name": "andsoitis",
+      "created_at": "2026-04-08T22:53:56Z",
+      "summary": "Hacker News 查询：Anthropic Claude",
+      "score": 19.2,
+      "provider_meta": {
+        "query": "Anthropic Claude",
+        "points": 5.0,
+        "num_comments": 4.0
+      },
+      "rank_score": 12.554
+    },
+    {
+      "provider": "bili",
+      "source": "ai_hot/bili",
+      "title": "美股启动修复趋势？Meta要大涨了？Anthropic砸盘软件！但也开启了AI新篇章！",
+      "url": "https://www.bilibili.com/video/BV1wUDHBoELZ",
+      "author_name": "美投侃热点",
+      "created_at": "2026-04-09 23:28:56",
+      "summary": "美股启动修复趋势？Meta要大涨了？Anthropic砸盘软件！但也开启了AI新篇章！；B站 AI 热门；score=191",
+      "score": 191.0,
+      "provider_meta": {
+        "platform": "bili"
+      },
+      "rank_score": 12.5431
+    },
+    {
+      "provider": "reddit",
+      "source": "ai_hot/reddit",
+      "title": "Introducing Claude Managed Agents, now in public beta.",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1sfz7a5/introducing_claude_managed_agents_now_in_public/",
+      "author_name": "/u/ClaudeOfficial",
+      "created_at": "2026-04-08T17:16:42+00:00",
+      "summary": "Reddit r/ClaudeAI 热门讨论",
+      "score": 108,
+      "provider_meta": {
+        "subreddit": "ClaudeAI",
+        "rank": 2
+      },
+      "rank_score": 12.5179
+    }
+  ],
+  "meta": {
+    "candidate_total": 55,
+    "providers": {
+      "hn": 8,
+      "bili": 1,
+      "reddit": 1
+    }
+  }
+}

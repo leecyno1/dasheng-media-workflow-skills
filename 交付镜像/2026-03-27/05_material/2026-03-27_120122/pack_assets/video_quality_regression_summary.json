@@ -1,0 +1,72 @@
+{
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets",
+  "executed": [
+    {
+      "topic_dir": "reinflation",
+      "returncode": 0,
+      "stdout": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/execution_manifest.json\n",
+      "stderr": "",
+      "command": "/Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.sh --pack-root /Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets --topic-dir reinflation --steps video_search --video-download-limit 1"
+    },
+    {
+      "topic_dir": "takaichi",
+      "returncode": 0,
+      "stdout": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/execution_manifest.json\n",
+      "stderr": "",
+      "command": "/Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.sh --pack-root /Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets --topic-dir takaichi --steps video_search --video-download-limit 1"
+    }
+  ],
+  "topics": [
+    {
+      "topic_dir": "reinflation",
+      "topic_slug": "reinflation",
+      "report_path": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/reinflation/videos/web_search/video_quality_audit_report.json",
+      "report_exists": true,
+      "candidate_total": 15,
+      "candidate_qualified": 13,
+      "candidate_rejected": 2,
+      "download_attempts": 1,
+      "download_passed": 0,
+      "download_failed": 1,
+      "candidate_reject_reason_counts": {
+        "resolution_below_480p": 2
+      },
+      "download_fail_reason_counts": {
+        "resolution_below_480p": 1,
+        "low_frame_variation_possible_screenshot_montage": 1
+      }
+    },
+    {
+      "topic_dir": "takaichi",
+      "topic_slug": "takaichi",
+      "report_path": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/videos/web_search/video_quality_audit_report.json",
+      "report_exists": true,
+      "candidate_total": 15,
+      "candidate_qualified": 15,
+      "candidate_rejected": 0,
+      "download_attempts": 1,
+      "download_passed": 0,
+      "download_failed": 1,
+      "candidate_reject_reason_counts": {},
+      "download_fail_reason_counts": {
+        "resolution_below_480p": 1
+      }
+    }
+  ],
+  "overall": {
+    "topic_count": 2,
+    "candidate_total": 30,
+    "candidate_qualified": 28,
+    "candidate_rejected": 2,
+    "download_attempts": 2,
+    "download_passed": 0,
+    "download_failed": 2,
+    "candidate_reject_reason_counts": {
+      "resolution_below_480p": 2
+    },
+    "download_fail_reason_counts": {
+      "resolution_below_480p": 2,
+      "low_frame_variation_possible_screenshot_montage": 1
+    }
+  }
+}

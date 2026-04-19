@@ -1,0 +1,138 @@
+{
+  "run_id": "2026-04-15_164114",
+  "generated_at": "2026-04-15T16:41:14.030840+08:00",
+  "categories": {
+    "sectors": [
+      {
+        "name": "AI",
+        "count": 10
+      },
+      {
+        "name": "半导体",
+        "count": 2
+      },
+      {
+        "name": "航运",
+        "count": 1
+      },
+      {
+        "name": "芯片",
+        "count": 1
+      }
+    ],
+    "dynamic_tokens": [
+      {
+        "name": "公众号最新文章",
+        "count": 11
+      },
+      {
+        "name": "ai",
+        "count": 10
+      },
+      {
+        "name": "来自",
+        "count": 10
+      },
+      {
+        "name": "agent",
+        "count": 8
+      },
+      {
+        "name": "伊朗",
+        "count": 8
+      },
+      {
+        "name": "reports",
+        "count": 8
+      },
+      {
+        "name": "openclaw",
+        "count": 7
+      },
+      {
+        "name": "定向样本",
+        "count": 7
+      },
+      {
+        "name": "openai",
+        "count": 6
+      },
+      {
+        "name": "hermes",
+        "count": 6
+      },
+      {
+        "name": "draco正在vibecoding",
+        "count": 6
+      },
+      {
+        "name": "to",
+        "count": 4
+      },
+      {
+        "name": "谈判",
+        "count": 4
+      },
+      {
+        "name": "最新外链",
+        "count": 4
+      },
+      {
+        "name": "特朗普",
+        "count": 4
+      }
+    ],
+    "people": [
+      {
+        "name": "OpenAI",
+        "count": 6
+      },
+      {
+        "name": "特朗普",
+        "count": 4
+      },
+      {
+        "name": "普京",
+        "count": 1
+      }
+    ],
+    "orgs": [
+      {
+        "name": "OpenAI",
+        "count": 6
+      },
+      {
+        "name": "英伟达",
+        "count": 1
+      }
+    ],
+    "commodities": [
+      {
+        "name": "黄金",
+        "count": 2
+      },
+      {
+        "name": "原油",
+        "count": 1
+      }
+    ],
+    "countries": [
+      {
+        "name": "伊朗",
+        "count": 8
+      },
+      {
+        "name": "美国",
+        "count": 4
+      },
+      {
+        "name": "以色列",
+        "count": 4
+      },
+      {
+        "name": "中国",
+        "count": 2
+      }
+    ]
+  }
+}

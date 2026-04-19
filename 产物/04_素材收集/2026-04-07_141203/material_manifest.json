@@ -1,0 +1,257 @@
+{
+  "run_id": "2026-04-07_141203",
+  "stage": "material",
+  "status": "ready_for_material_gate",
+  "upstream": {
+    "draft_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-07_141203/draft_manifest.json",
+    "final_structure_snapshot": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-07_141203/final_structure_snapshot.json"
+  },
+  "runtime_material_manifest": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/material_manifest.json",
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets",
+  "execution_manifest": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/execution_manifest.json",
+  "layer5_inputs_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/layer5_inputs.json",
+  "layer5_delivery_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/layer5_delivery_report.md",
+  "chart_quality_gate_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/chart_quality_gate_report.md",
+  "chart_quality_gate_report_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/chart_quality_gate_report.json",
+  "video_quality_regression_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/video_quality_regression_report.md",
+  "video_quality_regression_report_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/video_quality_regression_report.json",
+  "topics": [
+    {
+      "topic": "topic-hormuz-strait-energy-order",
+      "title": "霍尔木兹海峡封锁：全球能源供应链的结构性重构",
+      "charts": {
+        "topic": "topic-hormuz-strait-energy-order",
+        "generated": [],
+        "summary": {
+          "chart_count": 0,
+          "table_count": 0,
+          "gate_thresholds": {
+            "cv_min": 0.03,
+            "slope_abs_min": 0.005,
+            "r2_min": 0.25,
+            "trend_strength_min": 0.3,
+            "group_diff_min": 0.08,
+            "heatmap_var_min": 0.05
+          }
+        }
+      },
+      "image_search": {
+        "topic": "topic-hormuz-strait-energy-order",
+        "downloaded": 4,
+        "person_downloaded": 0,
+        "news_screenshots": 4,
+        "rejected_low_resolution": 0,
+        "min_short_edge_required": 1024
+      },
+      "video_search": {
+        "topic": "topic-hormuz-strait-energy-order",
+        "candidate_queries": 8,
+        "downloads": 3,
+        "qualified_candidates": 14,
+        "candidate_reject_reason_counts": {},
+        "download_quality_passed": 1,
+        "download_quality_failed": 2,
+        "download_fail_reason_counts": {
+          "no_qualified_candidate": 2
+        },
+        "quality_audit_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/topic-hormuz-strait-energy-order/videos/web_search/video_quality_audit_report.json"
+      }
+    },
+    {
+      "topic": "topic-sodium-ion-battery-breakthrough",
+      "title": "钠离子电池全球首次突破：中国如何改写储能产业格局",
+      "charts": {
+        "topic": "topic-sodium-ion-battery-breakthrough",
+        "generated": [],
+        "summary": {
+          "chart_count": 0,
+          "table_count": 0,
+          "gate_thresholds": {
+            "cv_min": 0.03,
+            "slope_abs_min": 0.005,
+            "r2_min": 0.25,
+            "trend_strength_min": 0.3,
+            "group_diff_min": 0.08,
+            "heatmap_var_min": 0.05
+          }
+        }
+      },
+      "image_search": {
+        "topic": "topic-sodium-ion-battery-breakthrough",
+        "downloaded": 4,
+        "person_downloaded": 0,
+        "news_screenshots": 4,
+        "rejected_low_resolution": 0,
+        "min_short_edge_required": 1024
+      },
+      "video_search": {
+        "topic": "topic-sodium-ion-battery-breakthrough",
+        "candidate_queries": 8,
+        "downloads": 3,
+        "qualified_candidates": 0,
+        "candidate_reject_reason_counts": {},
+        "download_quality_passed": 0,
+        "download_quality_failed": 3,
+        "download_fail_reason_counts": {
+          "no_qualified_candidate": 3
+        },
+        "quality_audit_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/topic-sodium-ion-battery-breakthrough/videos/web_search/video_quality_audit_report.json"
+      }
+    },
+    {
+      "topic": "topic-us-stock-storage-sector-surge",
+      "title": "存储板块创历史新高：AI 算力需求如何改写半导体投资逻辑",
+      "charts": {
+        "topic": "topic-us-stock-storage-sector-surge",
+        "generated": [
+          {
+            "anchor_id": "chart-01",
+            "render_type": "chart",
+            "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/topic-us-stock-storage-sector-surge/图表_美国CPI对比.csv",
+            "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/topic-us-stock-storage-sector-surge/图表_美国CPI对比.png",
+            "md": null,
+            "gate": {
+              "x_col": "trade_date",
+              "series": {
+                "cpi_mom": {
+                  "cv": 0.7344458146567794,
+                  "slope": -0.010394519253484521,
+                  "r2": 0.020430992633867384,
+                  "trend_strength": 0.07779777375823815,
+                  "passed": true
+                }
+              }
+            }
+          },
+          {
+            "anchor_id": "chart-02",
+            "render_type": "chart",
+            "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/topic-us-stock-storage-sector-surge/图表_石油黄金通胀预期.csv",
+            "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/topic-us-stock-storage-sector-surge/图表_石油黄金通胀预期.png",
+            "md": null,
+            "gate": {
+              "x_col": "trade_date",
+              "series": {
+                "oil_close": {
+                  "cv": 0.12612179366054752,
+                  "slope": -0.00028104695920285616,
+                  "r2": 0.10345096115378738,
+                  "trend_strength": 0.04840784244994317,
+                  "passed": true
+                }
+              }
+            }
+          },
+          {
+            "anchor_id": "chart-03",
+            "render_type": "chart",
+            "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/topic-us-stock-storage-sector-surge/图表_标普500与美债收益率.csv",
+            "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/topic-us-stock-storage-sector-surge/图表_标普500与美债收益率.png",
+            "md": null,
+            "gate": {
+              "x_col": "trade_date",
+              "series": {
+                "spx_close": {
+                  "cv": 0.092574145463127,
+                  "slope": 0.0005874052399267508,
+                  "r2": 0.8187797272369552,
+                  "trend_strength": 0.37232775184014644,
+                  "passed": true
+                }
+              }
+            }
+          },
+          {
+            "anchor_id": "chart-04",
+            "render_type": "chart",
+            "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/topic-us-stock-storage-sector-surge/图表_情景矩阵热力图.csv",
+            "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/topic-us-stock-storage-sector-surge/图表_情景矩阵热力图.png",
+            "md": null,
+            "gate": {
+              "row_var_max": 0.3633333333333333,
+              "col_var_max": 0.43
+            }
+          }
+        ],
+        "summary": {
+          "chart_count": 4,
+          "table_count": 0,
+          "gate_thresholds": {
+            "cv_min": 0.03,
+            "slope_abs_min": 0.005,
+            "r2_min": 0.25,
+            "trend_strength_min": 0.3,
+            "group_diff_min": 0.08,
+            "heatmap_var_min": 0.05
+          }
+        }
+      },
+      "image_search": {
+        "topic": "topic-us-stock-storage-sector-surge",
+        "downloaded": 8,
+        "person_downloaded": 0,
+        "news_screenshots": 4,
+        "rejected_low_resolution": 2,
+        "min_short_edge_required": 1024
+      },
+      "video_search": {
+        "topic": "topic-us-stock-storage-sector-surge",
+        "candidate_queries": 8,
+        "downloads": 3,
+        "qualified_candidates": 24,
+        "candidate_reject_reason_counts": {},
+        "download_quality_passed": 1,
+        "download_quality_failed": 2,
+        "download_fail_reason_counts": {
+          "low_frame_variation_possible_screenshot_montage": 2
+        },
+        "quality_audit_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/topic-us-stock-storage-sector-surge/videos/web_search/video_quality_audit_report.json"
+      }
+    }
+  ],
+  "final_structure_topics": [
+    {
+      "topic_id": "topic-hormuz-strait-energy-order",
+      "title": "霍尔木兹海峡封锁：全球能源供应链的结构性重构",
+      "draft_file": "topic-hormuz-strait-energy-order.md",
+      "structure": {
+        "sections": [
+          "开头（事件钩子）",
+          "表象：市场只看到了油价波动",
+          "深层：供应链控制权的争夺战",
+          "影响：三条传导链路正在形成",
+          "结语：供应链安全时代的投资逻辑"
+        ]
+      }
+    },
+    {
+      "topic_id": "topic-sodium-ion-battery-breakthrough",
+      "title": "钠离子电池全球首次突破：中国如何改写储能产业格局",
+      "draft_file": "topic-sodium-ion-battery-breakthrough.md",
+      "structure": {
+        "sections": [
+          "开头（痛点共鸣）",
+          "锂依赖的三重困境",
+          "钠离子电池：破局的三把钥匙",
+          "实操验证：储能电站的成本革命",
+          "结语：从锂依赖到技术多元化"
+        ]
+      }
+    },
+    {
+      "topic_id": "topic-us-stock-storage-sector-surge",
+      "title": "存储板块创历史新高：AI 算力需求如何改写半导体投资逻辑",
+      "draft_file": "topic-us-stock-storage-sector-surge.md",
+      "structure": {
+        "sections": [
+          "开头（痛点共鸣）",
+          "周期性思维的三个误区",
+          "三条投资主线：从周期股到成长股",
+          "实操验证：存储股的估值重构",
+          "结语：从周期股到成长股的范式转变"
+        ]
+      }
+    }
+  ],
+  "next_stage": "rewrite"
+}

@@ -1,0 +1,62 @@
+{
+  "topic_id": "ai-ma-boom-q1-2026",
+  "topic_title": "1.2万亿美元AI并购狂潮：Q1 2026企业巨头如何重塑全球产业版图",
+  "run_id": "2026-04-05_075240_ai",
+  "generated_at": "2026-04-05T17:00:00+08:00",
+  "stage": "rewrite",
+  "dna_type": "preset",
+  "writing_framework": "hot-topic-analysis",
+  "content_enhancement": "angle-discovery",
+  "core_angle": "AI并购的本质是生态位卡位战，不是财务优化",
+  "variants": [
+    {
+      "variant_id": "wechat_luxun_hot",
+      "platform": "wechat",
+      "style": "luxun",
+      "type": "hot",
+      "file": "wechat_luxun_hot.md",
+      "word_count": 5200,
+      "min_required": 4000,
+      "validation": "PASS",
+      "title": "1.2万亿美元只是开始：AI并购狂潮背后的生态位战争"
+    },
+    {
+      "variant_id": "wechat_lemon_normal",
+      "platform": "wechat",
+      "style": "lemon",
+      "type": "normal",
+      "file": "wechat_lemon_normal.md",
+      "word_count": 4600,
+      "min_required": 4000,
+      "validation": "PASS",
+      "title": "当1.2万亿美元遇见AI：这场并购潮，普通人该怎么看？"
+    },
+    {
+      "variant_id": "xhs_video_luxun_hot",
+      "platform": "xhs_video",
+      "style": "luxun",
+      "type": "hot",
+      "file": "xhs_video_luxun_hot.md",
+      "word_count": 2200,
+      "min_required": 1800,
+      "validation": "PASS",
+      "title": "1.2万亿：AI并购的生态位战争｜小红书视频脚本"
+    },
+    {
+      "variant_id": "xhs_video_lemon_normal",
+      "platform": "xhs_video",
+      "style": "lemon",
+      "type": "normal",
+      "file": "xhs_video_lemon_normal.md",
+      "word_count": 1900,
+      "min_required": 1800,
+      "validation": "PASS",
+      "title": "AI巨头为什么疯狂买买买？一个普通人能看懂的解释"
+    }
+  ],
+  "structure_inheritance": "继承终稿三段结构（表象→深层→影响），扩写各段内容",
+  "chart_references": [
+    "chart_02_ai_funding_distribution.png",
+    "chart_03_tech_giants_spending.png"
+  ]
+}

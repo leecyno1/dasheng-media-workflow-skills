@@ -1,0 +1,61 @@
+{
+  "topic": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+  "generated_at": "2026-04-16T07:24:48+0800",
+  "policy": {
+    "min_height": 0,
+    "min_duration_seconds": 8,
+    "min_scene_changes": 2,
+    "min_scene_change_rate": 0.08,
+    "allow_news_live_or_interview": true,
+    "block_self_media_talking_head": true,
+    "reject_screenshot_montage": true
+  },
+  "audit_fields": {
+    "candidate_level": [
+      "source_category",
+      "source_ok",
+      "resolution_height",
+      "duration_seconds_hint",
+      "pre_download_pass",
+      "reject_reasons"
+    ],
+    "file_level": [
+      "source_traceable",
+      "resolution_height",
+      "duration_seconds",
+      "scene_changes",
+      "scene_change_rate",
+      "anti_screenshot_montage_pass",
+      "final_pass",
+      "fail_reasons"
+    ]
+  },
+  "query_quality_summary": [
+    {
+      "query": "AI工作流自动化企业案例介绍",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "AI系统集成与维护挑战实录",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  ],
+  "summary": {
+    "candidate_total": 3,
+    "candidate_qualified": 3,
+    "candidate_rejected": 0,
+    "candidate_reject_reason_counts": {},
+    "download_attempts": 2,
+    "download_passed": 1,
+    "download_failed": 1,
+    "download_fail_reason_counts": {
+      "no_qualified_candidate": 1
+    }
+  }
+}

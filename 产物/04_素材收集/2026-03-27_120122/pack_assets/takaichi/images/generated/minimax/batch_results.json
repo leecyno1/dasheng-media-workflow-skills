@@ -1,0 +1,83 @@
+{
+  "stdout": {
+    "mode": "batch",
+    "total": 7,
+    "succeeded": 7,
+    "failed": 0,
+    "results": [
+      {
+        "id": "comic-05",
+        "provider": "minimax",
+        "model": "image-01",
+        "outputPath": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/images/generated/comic-05.png",
+        "success": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "id": "comic-06",
+        "provider": "minimax",
+        "model": "image-01",
+        "outputPath": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/images/generated/comic-06.png",
+        "success": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "id": "comic-07",
+        "provider": "minimax",
+        "model": "image-01",
+        "outputPath": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/images/generated/comic-07.png",
+        "success": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "id": "comic-08",
+        "provider": "minimax",
+        "model": "image-01",
+        "outputPath": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/images/generated/comic-08.png",
+        "success": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "id": "meme_1",
+        "provider": "minimax",
+        "model": "image-01",
+        "outputPath": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/images/generated/meme_1.png",
+        "success": true,
+        "attempts": 2,
+        "error": null
+      },
+      {
+        "id": "meme_2",
+        "provider": "minimax",
+        "model": "image-01",
+        "outputPath": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/images/generated/meme_2.png",
+        "success": true,
+        "attempts": 1,
+        "error": null
+      },
+      {
+        "id": "meme_3",
+        "provider": "minimax",
+        "model": "image-01",
+        "outputPath": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/images/generated/meme_3.png",
+        "success": true,
+        "attempts": 2,
+        "error": null
+      }
+    ]
+  },
+  "stderr": "Batch mode: 7 tasks, 1 workers, parallel mode enabled.\n- replicate: concurrency=5, startIntervalMs=700\n- google: concurrency=3, startIntervalMs=1100\n- openai: concurrency=3, startIntervalMs=1100\n- openrouter: concurrency=3, startIntervalMs=1100\n- dashscope: concurrency=3, startIntervalMs=1100\n- jimeng: concurrency=3, startIntervalMs=1100\n- seedream: concurrency=3, startIntervalMs=1100\n- azure: concurrency=3, startIntervalMs=1100\nUsing minimax / image-01 for comic-05\nSwitch model: --model <id> | EXTEND.md default_model.minimax | env MINIMAX_IMAGE_MODEL\nUsing minimax / image-01 for comic-06\nSwitch model: --model <id> | EXTEND.md default_model.minimax | env MINIMAX_IMAGE_MODEL\nUsing minimax / image-01 for comic-07\nSwitch model: --model <id> | EXTEND.md default_model.minimax | env MINIMAX_IMAGE_MODEL\nUsing minimax / image-01 for comic-08\nSwitch model: --model <id> | EXTEND.md default_model.minimax | env MINIMAX_IMAGE_MODEL\nUsing minimax / image-01 for meme_1\nSwitch model: --model <id> | EXTEND.md default_model.minimax | env MINIMAX_IMAGE_MODEL\n[meme_1] Attempt 1/3 failed, retrying...\nUsing minimax / image-01 for meme_2\nSwitch model: --model <id> | EXTEND.md default_model.minimax | env MINIMAX_IMAGE_MODEL\nUsing minimax / image-01 for meme_3\nSwitch model: --model <id> | EXTEND.md default_model.minimax | env MINIMAX_IMAGE_MODEL\n[meme_3] Attempt 1/3 failed, retrying...\n\nBatch generation summary:\n- Total: 7\n- Succeeded: 7\n- Failed: 0\n",
+  "generated_files": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/images/generated/comic-05.png",
+    "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/images/generated/comic-06.png",
+    "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/images/generated/comic-07.png",
+    "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/images/generated/comic-08.png",
+    "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/images/generated/meme_1.png",
+    "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/images/generated/meme_2.png",
+    "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/images/generated/meme_3.png"
+  ]
+}

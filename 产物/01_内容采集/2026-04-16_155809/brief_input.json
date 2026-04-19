@@ -1,0 +1,2460 @@
+{
+  "run_id": "2026-04-16_155809",
+  "generated_at": "2026-04-16T15:58:09.472596+08:00",
+  "channel_top10": {
+    "x": [
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "B",
+        "heat_score": 69.25,
+        "title": "A roadshow after the roadshow! Making today’s Nagercoil visit even more specia",
+        "url": "https://x.com/narendramodi/status/2044454111173873792",
+        "author_or_account": "narendramodi",
+        "publish_time": "2026-04-16 06:12:14",
+        "excerpt": "A roadshow after the roadshow! Making today’s Nagercoil visit even mo…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-df1a49eaf674c3cc",
+        "event_key": "roadshow-after",
+        "note": "账号：narendramodi；时间：2026-04-16 06:12:14；摘要：A roadshow after the roadshow! Making today’s Nagercoil visit even mo…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "B",
+        "heat_score": 65.3,
+        "title": "🚨🌍 Michael Olise Bayern Munich 4-3 Real Madrid. Follow @FootyFlixx for every",
+        "url": "https://x.com/FootyFlixx/status/2044520411925209269",
+        "author_or_account": "FootyFlixx",
+        "publish_time": "2026-04-16 06:12:14",
+        "excerpt": "🚨🌍 Michael Olise Bayern Munich 4-3 Real Madrid. Follow @FootyFlixx fo…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-01b20bace03993a2",
+        "event_key": "footyflixx-michael",
+        "note": "账号：FootyFlixx；时间：2026-04-16 06:12:14；摘要：🚨🌍 Michael Olise Bayern Munich 4-3 Real Madrid. Follow @FootyFlixx fo…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "B",
+        "heat_score": 64.56,
+        "title": "On the campaign trail in 2024, President Trump promised the American people that",
+        "url": "https://x.com/PressSec/status/2044498781974958562",
+        "author_or_account": "PressSec",
+        "publish_time": "2026-04-16 06:12:14",
+        "excerpt": "On the campaign trail in 2024, President Trump promised the American …",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-ccd8dbfd545a5557",
+        "event_key": "the-on",
+        "note": "账号：PressSec；时间：2026-04-16 06:12:14；摘要：On the campaign trail in 2024, President Trump promised the American …"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "B",
+        "heat_score": 57.61,
+        "title": "General Loco has entered the battlefield. The wieners are NOT impressed. 🐾⚔️ #Wi",
+        "url": "https://x.com/starhoundstudio/status/2044455635924775166",
+        "author_or_account": "starhoundstudio",
+        "publish_time": "2026-04-16 06:12:14",
+        "excerpt": "General Loco has entered the battlefield. The wieners are NOT impress…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-69f7b948ea9157bb",
+        "event_key": "the-general",
+        "note": "账号：starhoundstudio；时间：2026-04-16 06:12:14；摘要：General Loco has entered the battlefield. The wieners are NOT impress…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "C",
+        "heat_score": 53.87,
+        "title": "THREAD 🧵 It's been 3 years since Sudan's war began, after a power struggle betw",
+        "url": "https://x.com/AJEnglish/status/2044528145961750803",
+        "author_or_account": "AJEnglish",
+        "publish_time": "2026-04-16 06:12:14",
+        "excerpt": "THREAD 🧵 It's been 3 years since Sudan's war began, after a power str…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-e7e47dc25d85fc2f",
+        "event_key": "thread-it",
+        "note": "账号：AJEnglish；时间：2026-04-16 06:12:14；摘要：THREAD 🧵 It's been 3 years since Sudan's war began, after a power str…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "C",
+        "heat_score": 50.0,
+        "title": "True currency is steadfast friendship",
+        "url": "https://x.com/elonmusk/status/2043752073079161078",
+        "author_or_account": "elonmusk",
+        "publish_time": "2026-04-16 06:10:19",
+        "excerpt": "True currency is steadfast friendship；热度代理=331878",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-1e739abb18eb93e6",
+        "event_key": "true-currency",
+        "note": "账号：elonmusk；时间：2026-04-16 06:10:19；摘要：True currency is steadfast friendship；热度代理=331878"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "C",
+        "heat_score": 49.2,
+        "title": "Pre-tax 401(k) contributions lower your taxes while helping you save for retirem",
+        "url": "https://x.com/Vanguard_Group/status/2044437115958616372",
+        "author_or_account": "Vanguard_Group",
+        "publish_time": "2026-04-16 06:12:14",
+        "excerpt": "Pre-tax 401(k) contributions lower your taxes while helping you save …",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-2bfd51fcd3adda87",
+        "event_key": "pre-tax",
+        "note": "账号：Vanguard_Group；时间：2026-04-16 06:12:14；摘要：Pre-tax 401(k) contributions lower your taxes while helping you save …"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "C",
+        "heat_score": 45.85,
+        "title": "529s can be used for tuition, computers, books, housing, or other qualified educ",
+        "url": "https://x.com/Vanguard_Group/status/2044437121474138440",
+        "author_or_account": "Vanguard_Group",
+        "publish_time": "2026-04-16 06:12:14",
+        "excerpt": "529s can be used for tuition, computers, books, housing, or other qua…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-807f7143b45cf8ae",
+        "event_key": "can-be",
+        "note": "账号：Vanguard_Group；时间：2026-04-16 06:12:14；摘要：529s can be used for tuition, computers, books, housing, or other qua…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "C",
+        "heat_score": 44.0,
+        "title": "A health savings account (HSA) lets you make pre-tax contributions, grow your ea",
+        "url": "https://x.com/Vanguard_Group/status/2044437119335018936",
+        "author_or_account": "Vanguard_Group",
+        "publish_time": "2026-04-16 06:12:14",
+        "excerpt": "A health savings account (HSA) lets you make pre-tax contributions, g…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-5db8b3e6632f7b95",
+        "event_key": "health-savings",
+        "note": "账号：Vanguard_Group；时间：2026-04-16 06:12:14；摘要：A health savings account (HSA) lets you make pre-tax contributions, g…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "C",
+        "heat_score": 44.0,
+        "title": "https://t.co/6x9hxDsmIk",
+        "url": "https://x.com/AJEnglish/status/2044528148688089232",
+        "author_or_account": "AJEnglish",
+        "publish_time": "2026-04-16 06:12:14",
+        "excerpt": "https://t.co/6x9hxDsmIk；热度代理=0",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-f4aebb08dbd967fa",
+        "event_key": "https-co",
+        "note": "账号：AJEnglish；时间：2026-04-16 06:12:14；摘要：https://t.co/6x9hxDsmIk；热度代理=0"
+      }
+    ],
+    "wb": [
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 52.46,
+        "title": "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞之际，俄罗斯将考虑各国",
+        "url": "https://m.weibo.cn/detail/5282653734437870",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:28",
+        "excerpt": "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-8595e62bc01cd08d",
+        "event_key": "中东-俄罗斯-diplomacy-conflict-油价-地缘冲突",
+        "note": "账号：未知；时间：2026-04-03 20:45:28；摘要：#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 50.07,
+        "title": "【中新社： #俄罗斯重新将28名日本人列为战犯# #俄方重新将28名日本人列为战犯# 】据中新社2日报道：俄罗斯外交部发言人扎哈罗娃4月1日表示，俄方近期重新将",
+        "url": "https://m.weibo.cn/detail/5283383100050229",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:28",
+        "excerpt": "【中新社： #俄罗斯重新将28名日本人列为战犯# #俄方重新将28名日本人列为战犯# 】据中新社2日报道：俄罗斯外交部发言人扎哈罗娃4月1…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-bc4984d19c33e515",
+        "event_key": "俄罗斯-日本-diplomacy-conflict-日本-使馆-外交",
+        "note": "账号：未知；时间：2026-04-03 20:45:28；摘要：【中新社： #俄罗斯重新将28名日本人列为战犯# #俄方重新将28名日本人列为战犯# 】据中新社2日报道：俄罗斯外交部发言人扎哈罗娃4月1…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 50.0,
+        "title": "我的观点一致，人类不是神，就是会犯错的生物，会乌龙，会迷糊，会在没有主观恶意的情况下对其他人造成伤害。 那犯了错怎么办？认错，赔偿，受罚，尽力求得谅解。一个人因",
+        "url": "https://m.weibo.cn/detail/5282877524676277",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:39",
+        "excerpt": "我的观点一致，人类不是神，就是会犯错的生物，会乌龙，会迷糊，会在没有主观恶意的情况下对其他人造成伤害。 那犯了错怎么办？认错，赔偿，受罚，…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-df9fab3235571d3f",
+        "event_key": "我的观点一致-人类不是神",
+        "note": "账号：未知；时间：2026-04-03 20:45:39；摘要：我的观点一致，人类不是神，就是会犯错的生物，会乌龙，会迷糊，会在没有主观恶意的情况下对其他人造成伤害。 那犯了错怎么办？认错，赔偿，受罚，…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 44.09,
+        "title": "很多人都以为调整不影响自己的账户，其实着观点是错误的。能穿越调整，账户资金逆势上涨的非常少的。明白666 ​",
+        "url": "https://m.weibo.cn/detail/5283579816838520",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:39",
+        "excerpt": "很多人都以为调整不影响自己的账户，其实着观点是错误的。能穿越调整，账户资金逆势上涨的非常少的。明白666 ​；热度代理=9206",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-b90b26defe23ce8b",
+        "event_key": "market-sentiment-上涨",
+        "note": "账号：未知；时间：2026-04-03 20:45:39；摘要：很多人都以为调整不影响自己的账户，其实着观点是错误的。能穿越调整，账户资金逆势上涨的非常少的。明白666 ​；热度代理=9206"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 43.92,
+        "title": "麻烦大家看一看这条！ 日推现在正在大规模的进行对南京大屠杀和对中国犯下的罪行的历史修正运动，不是以往的小规模扩散而是几十万上百万的点赞和点击率的大规模传播。 而",
+        "url": "https://m.weibo.cn/detail/5283601537304059",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:28",
+        "excerpt": "麻烦大家看一看这条！ 日推现在正在大规模的进行对南京大屠杀和对中国犯下的罪行的历史修正运动，不是以往的小规模扩散而是几十万上百万的点赞和点…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c5b3eba22136d6d0",
+        "event_key": "中国-的大规模传播",
+        "note": "账号：未知；时间：2026-04-03 20:45:28；摘要：麻烦大家看一看这条！ 日推现在正在大规模的进行对南京大屠杀和对中国犯下的罪行的历史修正运动，不是以往的小规模扩散而是几十万上百万的点赞和点…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 43.64,
+        "title": "【 #丈夫离婚前挥霍百万算作已分得财产# ，剩余同等价值财产全归妻子】3月31日，北京市平谷区人民法院召开离婚纠纷案件新闻通报会，披露近三年审判数据并发布六起典",
+        "url": "https://m.weibo.cn/detail/5283176617610285",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:45",
+        "excerpt": "【 #丈夫离婚前挥霍百万算作已分得财产# ，剩余同等价值财产全归妻子】3月31日，北京市平谷区人民法院召开离婚纠纷案件新闻通报会，披露近三…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-e1f516e8cf2a3fe5",
+        "event_key": "发布-月31日",
+        "note": "账号：未知；时间：2026-04-03 20:45:45；摘要：【 #丈夫离婚前挥霍百万算作已分得财产# ，剩余同等价值财产全归妻子】3月31日，北京市平谷区人民法院召开离婚纠纷案件新闻通报会，披露近三…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 42.58,
+        "title": "说起李荣浩之文科生技巧，我觉得不如称之为“阳刚语文策略”。 这种策略的关键是——释放过剩的攻击性以取得路人的信任。 比如说，他认为“侵权”必定是单依纯本人的决定",
+        "url": "https://m.weibo.cn/detail/5283554532525102",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:42",
+        "excerpt": "说起李荣浩之文科生技巧，我觉得不如称之为“阳刚语文策略”。 这种策略的关键是——释放过剩的攻击性以取得路人的信任。 比如说，他认为“侵权”…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-708f884f7b1a125c",
+        "event_key": "我觉得不如称之为-阳刚语文策略",
+        "note": "账号：未知；时间：2026-04-03 20:45:42；摘要：说起李荣浩之文科生技巧，我觉得不如称之为“阳刚语文策略”。 这种策略的关键是——释放过剩的攻击性以取得路人的信任。 比如说，他认为“侵权”…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 42.45,
+        "title": "最近老板夸我写策略能力大有提升。其实是因为我掌握了一个最新prompt，就是把自己写的方案发给AI，然后说：你好，这是我仇人写的，帮我挑挑刺。AI会给出又犀利又",
+        "url": "https://m.weibo.cn/detail/5282635978907325",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:42",
+        "excerpt": "最近老板夸我写策略能力大有提升。其实是因为我掌握了一个最新prompt，就是把自己写的方案发给AI，然后说：你好，这是我仇人写的，帮我挑挑…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c961e82420619ca0",
+        "event_key": "ai-ai工具-工作流",
+        "note": "账号：未知；时间：2026-04-03 20:45:42；摘要：最近老板夸我写策略能力大有提升。其实是因为我掌握了一个最新prompt，就是把自己写的方案发给AI，然后说：你好，这是我仇人写的，帮我挑挑…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 42.39,
+        "title": "话题讨论：儿子再婚领证办酒，还用出彩礼和三金吗？ 案例讨论：吴律，我儿子今年33，在大学当辅导员，结婚1年，和前儿媳性格不合离婚2年，前儿媳偷吃避孕药没孩子，离",
+        "url": "https://m.weibo.cn/detail/5283003627741979",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:45",
+        "excerpt": "话题讨论：儿子再婚领证办酒，还用出彩礼和三金吗？ 案例讨论：吴律，我儿子今年33，在大学当辅导员，结婚1年，和前儿媳性格不合离婚2年，前儿…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-17ade0c2d02752bf",
+        "event_key": "话题讨论-儿子再婚领证办酒",
+        "note": "账号：未知；时间：2026-04-03 20:45:45；摘要：话题讨论：儿子再婚领证办酒，还用出彩礼和三金吗？ 案例讨论：吴律，我儿子今年33，在大学当辅导员，结婚1年，和前儿媳性格不合离婚2年，前儿…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 41.61,
+        "title": "一个有点钱的日本人分享了一件让自己震惊的事，自己的女儿在国际学校，从英国老师那学习了南京大屠杀的历史，进而感到羞愧，于是他家紧急召开家庭会议，想给女儿洗脑说大屠",
+        "url": "https://m.weibo.cn/detail/5283532655558815",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:28",
+        "excerpt": "一个有点钱的日本人分享了一件让自己震惊的事，自己的女儿在国际学校，从英国老师那学习了南京大屠杀的历史，进而感到羞愧，于是他家紧急召开家庭会…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-b62144e28a672408",
+        "event_key": "日本-diplomacy-conflict-日本-使馆-外交",
+        "note": "账号：未知；时间：2026-04-03 20:45:28；摘要：一个有点钱的日本人分享了一件让自己震惊的事，自己的女儿在国际学校，从英国老师那学习了南京大屠杀的历史，进而感到羞愧，于是他家紧急召开家庭会…"
+      }
+    ],
+    "xhs": [
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "S",
+        "heat_score": 92.0,
+        "title": "当所有台词都是一个声母......",
+        "url": "https://www.xiaohongshu.com/explore/64369c26000000001402511b?xsec_token=AB6DeaQ6zZk4H1MBOXG_8A1D5mTV4ke4Te3fMHGW8-EMM%3D&xsec_source=pc_feed",
+        "author_or_account": "妮妮酱",
+        "publish_time": "2026-04-15 23:01:10",
+        "excerpt": "当所有台词都是一个声母......；热度代理=100000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-923437e653d4280c",
+        "event_key": "妮妮酱",
+        "note": "账号：妮妮酱；时间：2026-04-15 23:01:10；摘要：当所有台词都是一个声母......；热度代理=100000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "S",
+        "heat_score": 91.42,
+        "title": "方圆脸自拍vs他拍谁懂？上镜技巧给我使劲背",
+        "url": "https://www.xiaohongshu.com/explore/63eb664c000000001301179c?xsec_token=AB_3kOMs_urjn_ENNb8Rbb340ACIMfnJPrZgJRWHzmViI%3D&xsec_source=pc_feed",
+        "author_or_account": "卡卡宝贝贝",
+        "publish_time": "2026-04-15 23:01:10",
+        "excerpt": "方圆脸自拍vs他拍谁懂？上镜技巧给我使劲背；热度代理=93000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-1d788637f4869be4",
+        "event_key": "方圆脸自拍vs他拍谁懂-卡卡宝贝贝",
+        "note": "账号：卡卡宝贝贝；时间：2026-04-15 23:01:10；摘要：方圆脸自拍vs他拍谁懂？上镜技巧给我使劲背；热度代理=93000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "S",
+        "heat_score": 89.7,
+        "title": "6个微胖女生秋季购衣雷区❌这几类千万别买",
+        "url": "https://www.xiaohongshu.com/explore/64c627dc0000000010033bcb?xsec_token=ABgv3ObCWZR3Y5XQIFg1vc7sWrLo9lXol5uN4KKvwqG5g%3D&xsec_source=pc_feed",
+        "author_or_account": "黑娃呦～",
+        "publish_time": "2026-04-15 23:01:10",
+        "excerpt": "6个微胖女生秋季购衣雷区❌这几类千万别买；热度代理=75000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-f69805e533251533",
+        "event_key": "这几类千万别买-黑娃呦",
+        "note": "账号：黑娃呦～；时间：2026-04-15 23:01:10；摘要：6个微胖女生秋季购衣雷区❌这几类千万别买；热度代理=75000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "S",
+        "heat_score": 89.59,
+        "title": "瘦了20斤劝减脂的姐妹这些减肥智商税别信‼️",
+        "url": "https://www.xiaohongshu.com/explore/643695b600000000130363d2?xsec_token=AB6DeaQ6zZk4H1MBOXG_8A1Ce2a7TNUcdGuuh_rhIaYJ8%3D&xsec_source=pc_feed",
+        "author_or_account": "马可乐cora",
+        "publish_time": "2026-04-15 23:01:10",
+        "excerpt": "瘦了20斤劝减脂的姐妹这些减肥智商税别信‼️；热度代理=74000",
+        "noise_tags": [
+          "irrelevant_life"
+        ],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c99550f58fec85f2",
+        "event_key": "瘦了20斤劝减脂的姐妹这些减肥智商税别信-马可乐cora",
+        "note": "账号：马可乐cora；时间：2026-04-15 23:01:10；摘要：瘦了20斤劝减脂的姐妹这些减肥智商税别信‼️；热度代理=74000；噪音标签：irrelevant_life"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "S",
+        "heat_score": 86.13,
+        "title": "你以为的法医vs现实中的法医 | 法医秦明",
+        "url": "https://www.xiaohongshu.com/explore/641162a80000000013000985?xsec_token=ABZ7EPKB48I4cHyuF1_IJfDD8nnqzU0flZZt92iYhB1PM%3D&xsec_source=pc_feed",
+        "author_or_account": "法医秦明",
+        "publish_time": "2026-04-15 23:01:10",
+        "excerpt": "你以为的法医vs现实中的法医 | 法医秦明；热度代理=48000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-74ce4634f7e643ad",
+        "event_key": "法医秦明-你以为的法医vs现实中的法医",
+        "note": "账号：法医秦明；时间：2026-04-15 23:01:10；摘要：你以为的法医vs现实中的法医 | 法医秦明；热度代理=48000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "S",
+        "heat_score": 85.06,
+        "title": "这....不比床头柜好使？？",
+        "url": "https://www.xiaohongshu.com/explore/647dd4b7000000002701256d?xsec_token=ABeLGP-ks9jGZj3D3NM-wEn83z-R8mqaj--LJGYdY22RY%3D&xsec_source=pc_feed",
+        "author_or_account": "卓后",
+        "publish_time": "2026-04-15 23:01:10",
+        "excerpt": "这....不比床头柜好使？？；热度代理=42000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-fcddbb95e5123154",
+        "event_key": "不比床头柜好使-卓后",
+        "note": "账号：卓后；时间：2026-04-15 23:01:10；摘要：这....不比床头柜好使？？；热度代理=42000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "A",
+        "heat_score": 82.1,
+        "title": "当代年轻人的反向攀比",
+        "url": "https://www.xiaohongshu.com/explore/63e4524b000000001b01c524?xsec_token=ABIWQhYx3wD4EtuUmM9hfHoHWvwhjY0A474N6SEX5IZ1I%3D&xsec_source=pc_feed",
+        "author_or_account": "大美李的日常",
+        "publish_time": "2026-04-15 23:01:10",
+        "excerpt": "当代年轻人的反向攀比；热度代理=29000",
+        "noise_tags": [
+          "irrelevant_life"
+        ],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-1b60d38cb4deec45",
+        "event_key": "大美李的日常",
+        "note": "账号：大美李的日常；时间：2026-04-15 23:01:10；摘要：当代年轻人的反向攀比；热度代理=29000；噪音标签：irrelevant_life"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "A",
+        "heat_score": 80.91,
+        "title": "有些人的破碎感是天生的～",
+        "url": "https://www.xiaohongshu.com/explore/64cb3092000000001700c45b?xsec_token=ABxOB0xE4ODEP-E25svFJ5EArsV_nmBIQWq7TWtxsC1hM%3D&xsec_source=pc_feed",
+        "author_or_account": "小米果儿",
+        "publish_time": "2026-04-15 23:01:10",
+        "excerpt": "有些人的破碎感是天生的～；热度代理=25000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-32dada955f358b52",
+        "event_key": "小米果儿",
+        "note": "账号：小米果儿；时间：2026-04-15 23:01:10；摘要：有些人的破碎感是天生的～；热度代理=25000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "A",
+        "heat_score": 80.24,
+        "title": "😭她真的......我哭死......❗❗❗",
+        "url": "https://www.xiaohongshu.com/explore/648893de0000000027012ae4?xsec_token=ABYzw9s_H_rNCIYFddc2KLdds3xYOAt3-v5EXtKks17mc%3D&xsec_source=pc_feed",
+        "author_or_account": "小小的日常",
+        "publish_time": "2026-04-15 23:01:10",
+        "excerpt": "😭她真的......我哭死......❗❗❗；热度代理=23000",
+        "noise_tags": [
+          "irrelevant_life"
+        ],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-755da1671b614b01",
+        "event_key": "她真的-我哭死",
+        "note": "账号：小小的日常；时间：2026-04-15 23:01:10；摘要：😭她真的......我哭死......❗❗❗；热度代理=23000；噪音标签：irrelevant_life"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "A",
+        "heat_score": 79.52,
+        "title": "救命啊，到底有没有穿越这件事？",
+        "url": "https://www.xiaohongshu.com/explore/6479b7bf000000001203116e?xsec_token=ABtkcQnFP-73URrNUeGSyeTTy-2rALOaUrq1svm-76ZiE%3D&xsec_source=pc_feed",
+        "author_or_account": "我是房东有房出租",
+        "publish_time": "2026-04-15 23:01:10",
+        "excerpt": "救命啊，到底有没有穿越这件事？；热度代理=21000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-1b3c92a0b7f99b0c",
+        "event_key": "救命啊-我是房东有房出租",
+        "note": "账号：我是房东有房出租；时间：2026-04-15 23:01:10；摘要：救命啊，到底有没有穿越这件事？；热度代理=21000"
+      }
+    ],
+    "douyin": [
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "S",
+        "heat_score": 92.0,
+        "title": "原来假期的时候都是天鹅在喂小鱼#黑天鹅 #每一帧都是热爱 #万物有灵",
+        "url": "https://www.douyin.com/video/7270076967905479999",
+        "author_or_account": "小张同学_📸",
+        "publish_time": "2026-04-16 06:12:25",
+        "excerpt": "原来假期的时候都是天鹅在喂小鱼#黑天鹅 #每一帧都是热爱 #万物有灵；热度代理=2101494",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-d98563d14c3d1ec6",
+        "event_key": "黑天鹅-每一帧都是热爱",
+        "note": "账号：小张同学_📸；时间：2026-04-16 06:12:25；摘要：原来假期的时候都是天鹅在喂小鱼#黑天鹅 #每一帧都是热爱 #万物有灵；热度代理=2101494"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "S",
+        "heat_score": 85.59,
+        "title": "#黑天鹅#颐和园团城湖黑天鹅新出生一窝三只小鹅宝，黑天鹅夫妇背着鹅宝宝游玩戏水，温馨画面给冬日带来一丝温暖，愿鹅宝宝们茁壮成长，平安过冬！感谢大家支持#原创视频#@原创联盟 @DOU+小助手",
+        "url": "https://www.douyin.com/video/7440786946420378907",
+        "author_or_account": "爱蝴蝶🦋",
+        "publish_time": "2026-04-16 06:12:25",
+        "excerpt": "#黑天鹅#颐和园团城湖黑天鹅新出生一窝三只小鹅宝，黑天鹅夫妇背着鹅宝宝游玩戏水，温馨画面给冬日带来一丝温暖，愿鹅宝宝们茁壮成长，平安过冬！…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-8664c270c6489aa0",
+        "event_key": "黑天鹅-平安过冬",
+        "note": "账号：爱蝴蝶🦋；时间：2026-04-16 06:12:25；摘要：#黑天鹅#颐和园团城湖黑天鹅新出生一窝三只小鹅宝，黑天鹅夫妇背着鹅宝宝游玩戏水，温馨画面给冬日带来一丝温暖，愿鹅宝宝们茁壮成长，平安过冬！…"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 83.02,
+        "title": "当菲神遇到黑天鹅#菲菲菲菲啊 #黑天鹅中国行 #traineattt",
+        "url": "https://www.douyin.com/video/7310918524187200780",
+        "author_or_account": "菲菲菲菲啊",
+        "publish_time": "2026-04-16 06:12:25",
+        "excerpt": "当菲神遇到黑天鹅#菲菲菲菲啊 #黑天鹅中国行 #traineattt；热度代理=101809",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-6ebbb66e4af065ad",
+        "event_key": "中国-菲菲菲菲啊-当菲神遇到黑天鹅",
+        "note": "账号：菲菲菲菲啊；时间：2026-04-16 06:12:25；摘要：当菲神遇到黑天鹅#菲菲菲菲啊 #黑天鹅中国行 #traineattt；热度代理=101809"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 82.78,
+        "title": "北京酒吧咬人事件 到底谁能管一管小骗书？？ #黑天鹅 #北京酒吧",
+        "url": "https://www.douyin.com/video/7495715827595267385",
+        "author_or_account": "是圈总",
+        "publish_time": "2026-04-16 06:12:25",
+        "excerpt": "北京酒吧咬人事件 到底谁能管一管小骗书？？ #黑天鹅 #北京酒吧；热度代理=93624",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-3b122d8fd37ca18c",
+        "event_key": "北京酒吧咬人事件-黑天鹅",
+        "note": "账号：是圈总；时间：2026-04-16 06:12:25；摘要：北京酒吧咬人事件 到底谁能管一管小骗书？？ #黑天鹅 #北京酒吧；热度代理=93624"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 82.62,
+        "title": "鬼背还得黑天鹅#健身氮泵 #健身",
+        "url": "https://www.douyin.com/video/7399977121201835327",
+        "author_or_account": "肥仔儒",
+        "publish_time": "2026-04-16 06:12:25",
+        "excerpt": "鬼背还得黑天鹅#健身氮泵 #健身；热度代理=88693",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-105df8c898bb8566",
+        "event_key": "鬼背还得黑天鹅-健身氮泵",
+        "note": "账号：肥仔儒；时间：2026-04-16 06:12:25；摘要：鬼背还得黑天鹅#健身氮泵 #健身；热度代理=88693"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 79.17,
+        "title": "复旦大学副教授谈如何保护孩子安全：教会孩子不随意去“第二现场”，大量研究发现，危险常常在“第二现场”发生。#安全教育 #儿童安全 #防范意识 @沈老师",
+        "url": "https://www.douyin.com/video/7481268854933441827",
+        "author_or_account": "人民日报",
+        "publish_time": "2026-04-15 06:02:48",
+        "excerpt": "复旦大学副教授谈如何保护孩子安全：教会孩子不随意去“第二现场”，大量研究发现，危险常常在“第二现场”发生。#安全教育 #儿童安全 #防范意…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-68f4a2686aa19165",
+        "event_key": "第二现场-教会孩子不随意去",
+        "note": "账号：人民日报；时间：2026-04-15 06:02:48；摘要：复旦大学副教授谈如何保护孩子安全：教会孩子不随意去“第二现场”，大量研究发现，危险常常在“第二现场”发生。#安全教育 #儿童安全 #防范意…"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 78.08,
+        "title": "炒股新手最容易踩的12个坑 #股民 #新手股民 #股票干货",
+        "url": "https://www.douyin.com/video/7533566511844248891",
+        "author_or_account": "宇菠萝",
+        "publish_time": "2026-04-15 06:02:48",
+        "excerpt": "炒股新手最容易踩的12个坑 #股民 #新手股民 #股票干货；热度代理=494079",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-56cf3944e1066a5c",
+        "event_key": "宏观-市场情绪-炒股新手最容易踩的12个坑-股民",
+        "note": "账号：宇菠萝；时间：2026-04-15 06:02:48；摘要：炒股新手最容易踩的12个坑 #股民 #新手股民 #股票干货；热度代理=494079"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 76.04,
+        "title": "#对冲 #财商教育 #亲子教育 如何利用对冲来规避风险…",
+        "url": "https://www.douyin.com/video/7530535064716496166",
+        "author_or_account": "佑佑的财商日记",
+        "publish_time": "2026-04-15 06:02:48",
+        "excerpt": "#对冲 #财商教育 #亲子教育 如何利用对冲来规避风险…；热度代理=248438",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-85dbc7b0d8d32c72",
+        "event_key": "对冲-财商教育",
+        "note": "账号：佑佑的财商日记；时间：2026-04-15 06:02:48；摘要：#对冲 #财商教育 #亲子教育 如何利用对冲来规避风险…；热度代理=248438"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 75.34,
+        "title": "风险和利益是成正比的，一味求稳，利益就最小，富和贵都要靠冒险才能得到！#王健林 #老板#企业家 #富贵险中求 #与我合拍",
+        "url": "https://www.douyin.com/video/7008017595391610149",
+        "author_or_account": "顶级商业思维",
+        "publish_time": "2026-04-15 06:02:48",
+        "excerpt": "风险和利益是成正比的，一味求稳，利益就最小，富和贵都要靠冒险才能得到！#王健林 #老板#企业家 #富贵险中求 #与我合拍；热度代理=196…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-f5ef6d317d1c569a",
+        "event_key": "一味求稳-利益就最小",
+        "note": "账号：顶级商业思维；时间：2026-04-15 06:02:48；摘要：风险和利益是成正比的，一味求稳，利益就最小，富和贵都要靠冒险才能得到！#王健林 #老板#企业家 #富贵险中求 #与我合拍；热度代理=196…"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 75.19,
+        "title": "河南的春天是这样的#享受大自然 #河南麦田 #一望无际的麦田 #河南的春天",
+        "url": "https://www.douyin.com/video/7626358517662505457",
+        "author_or_account": "黑天鹅✈️",
+        "publish_time": "2026-04-15 06:02:51",
+        "excerpt": "河南的春天是这样的#享受大自然 #河南麦田 #一望无际的麦田 #河南的春天；热度代理=186804",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-ce022f89c12fb952",
+        "event_key": "享受大自然-河南麦田",
+        "note": "账号：黑天鹅✈️；时间：2026-04-15 06:02:51；摘要：河南的春天是这样的#享受大自然 #河南麦田 #一望无际的麦田 #河南的春天；热度代理=186804"
+      }
+    ],
+    "bili": [
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "B",
+        "heat_score": 64.46,
+        "title": "为什么你的龙虾（openclaw）不如别人的好用？3个方法解决 | 龙虾饲养指南",
+        "url": "https://www.bilibili.com/video/BV1PYD4BVEaz",
+        "author_or_account": "卡卡老师讲数据科学",
+        "publish_time": "2026-04-16 06:12:44",
+        "excerpt": "为什么你的龙虾（openclaw）不如别人的好用？3个方法解决 | 龙虾饲养指南；热度代理=424",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-b52e7b4a4aec6d85",
+        "event_key": "technology-adoption-ai工具-工作流",
+        "note": "账号：卡卡老师讲数据科学；时间：2026-04-16 06:12:44；摘要：为什么你的龙虾（openclaw）不如别人的好用？3个方法解决 | 龙虾饲养指南；热度代理=424"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "B",
+        "heat_score": 62.0,
+        "title": "盐水万物指南：牛肉、排骨、猪肉、鸡胸，定量定时全面解决方案【解构家常菜】",
+        "url": "https://www.bilibili.com/video/BV1BSDQBBEaQ",
+        "author_or_account": "杨光_建厨师",
+        "publish_time": "2026-04-16 06:12:44",
+        "excerpt": "盐水万物指南：牛肉、排骨、猪肉、鸡胸，定量定时全面解决方案【解构家常菜】；热度代理=23241",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-774dda1ca1193f06",
+        "event_key": "盐水万物指南-牛肉",
+        "note": "账号：杨光_建厨师；时间：2026-04-16 06:12:44；摘要：盐水万物指南：牛肉、排骨、猪肉、鸡胸，定量定时全面解决方案【解构家常菜】；热度代理=23241"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "B",
+        "heat_score": 61.78,
+        "title": "来到印度最大的城市，传说中的孟买到底什么样？体验婆罗门的一天。",
+        "url": "https://www.bilibili.com/video/BV1FkQvBAERh",
+        "author_or_account": "杜克环游世界",
+        "publish_time": "2026-04-16 06:12:44",
+        "excerpt": "来到印度最大的城市，传说中的孟买到底什么样？体验婆罗门的一天。；热度代理=21821",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-8922f010560cbbce",
+        "event_key": "体验婆罗门的一天-杜克环游世界",
+        "note": "账号：杜克环游世界；时间：2026-04-16 06:12:44；摘要：来到印度最大的城市，传说中的孟买到底什么样？体验婆罗门的一天。；热度代理=21821"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "B",
+        "heat_score": 56.78,
+        "title": "【生化档案馆】斯宾塞的一生",
+        "url": "https://www.bilibili.com/video/BV1hQ9TBuEvX",
+        "author_or_account": "从新手村出发面对生活",
+        "publish_time": "2026-04-16 06:12:46",
+        "excerpt": "【生化档案馆】斯宾塞的一生；热度代理=4961",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-14ccefebde2c3c84",
+        "event_key": "生化档案馆-斯宾塞的一生",
+        "note": "账号：从新手村出发面对生活；时间：2026-04-16 06:12:46；摘要：【生化档案馆】斯宾塞的一生；热度代理=4961"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "B",
+        "heat_score": 56.13,
+        "title": "你们红夫人玩家都是挂？",
+        "url": "https://www.bilibili.com/video/BV1du6BBwE7U",
+        "author_or_account": "屠见笑-红夫人干货",
+        "publish_time": "2026-04-16 06:03:07",
+        "excerpt": "你们红夫人玩家都是挂？；热度代理=4968",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-1f15e9a217e27cf4",
+        "event_key": "屠见笑-红夫人干货",
+        "note": "账号：屠见笑-红夫人干货；时间：2026-04-16 06:03:07；摘要：你们红夫人玩家都是挂？；热度代理=4968"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "C",
+        "heat_score": 52.56,
+        "title": "最危险阶段结束，房地产调整出现重大转变，下半场的核心是什么？【宏观解读系列】",
+        "url": "https://www.bilibili.com/video/BV1XHQABxE8t",
+        "author_or_account": "分析师Boden",
+        "publish_time": "2026-04-16 06:04:22",
+        "excerpt": "最危险阶段结束，房地产调整出现重大转变，下半场的核心是什么？【宏观解读系列】；热度代理=1681",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-da8aa4cffb33e3d4",
+        "event_key": "最危险阶段结束-宏观解读系列",
+        "note": "账号：分析师Boden；时间：2026-04-16 06:04:22；摘要：最危险阶段结束，房地产调整出现重大转变，下半场的核心是什么？【宏观解读系列】；热度代理=1681"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "C",
+        "heat_score": 50.7,
+        "title": "加息机率崩塌！日元逼近160的真相：日本央行为何突然「踩煞车」？谁在背后操控这场全球资本博弈？",
+        "url": "https://www.bilibili.com/video/BV1TLQ7BoECr",
+        "author_or_account": "世界经济实战派",
+        "publish_time": "2026-04-16 06:02:42",
+        "excerpt": "加息机率崩塌！日元逼近160的真相：日本央行为何突然「踩煞车」？谁在背后操控这场全球资本博弈？；热度代理=15",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-ed1c8af1362c1198",
+        "event_key": "日本-日本央行-policy-inflation-diplomacy-conflict",
+        "note": "账号：世界经济实战派；时间：2026-04-16 06:02:42；摘要：加息机率崩塌！日元逼近160的真相：日本央行为何突然「踩煞车」？谁在背后操控这场全球资本博弈？；热度代理=15"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "C",
+        "heat_score": 45.5,
+        "title": "还在因为不知道用什么监管上分而烦恼吗",
+        "url": "https://www.bilibili.com/video/BV1VCDCB6EFt",
+        "author_or_account": "愈乐ovo",
+        "publish_time": "2026-04-16 06:03:06",
+        "excerpt": "还在因为不知道用什么监管上分而烦恼吗；热度代理=213",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-dbb92c5690c34137",
+        "event_key": "愈乐ovo",
+        "note": "账号：愈乐ovo；时间：2026-04-16 06:03:06；摘要：还在因为不知道用什么监管上分而烦恼吗；热度代理=213"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "C",
+        "heat_score": 43.08,
+        "title": "倒数6天！全球石油库存即将耗尽，摩根大通警告：2026全面失控的石油危机！",
+        "url": "https://www.bilibili.com/video/BV1RCQ7BqEsX",
+        "author_or_account": "向陽說",
+        "publish_time": "2026-04-16 06:04:00",
+        "excerpt": "倒数6天！全球石油库存即将耗尽，摩根大通警告：2026全面失控的石油危机！；热度代理=102",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-4693744d0072deb4",
+        "event_key": "supply-order-倒数6天-摩根大通警告",
+        "note": "账号：向陽說；时间：2026-04-16 06:04:00；摘要：倒数6天！全球石油库存即将耗尽，摩根大通警告：2026全面失控的石油危机！；热度代理=102"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "C",
+        "heat_score": 43.03,
+        "title": "什么是复苏？一轮经济复苏到底是怎么开始的？｜美林时钟系列",
+        "url": "https://www.bilibili.com/video/BV1sCQtBEEyN",
+        "author_or_account": "苏涵Susuhan",
+        "publish_time": "2026-04-16 06:02:46",
+        "excerpt": "什么是复苏？一轮经济复苏到底是怎么开始的？｜美林时钟系列；热度代理=103",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-13f417e2932cc95a",
+        "event_key": "复苏-宏观-市场情绪",
+        "note": "账号：苏涵Susuhan；时间：2026-04-16 06:02:46；摘要：什么是复苏？一轮经济复苏到底是怎么开始的？｜美林时钟系列；热度代理=103"
+      }
+    ],
+    "content_research": [
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "B",
+        "heat_score": 64.0,
+        "title": "2026年日本又有士兵走丢：但是闯入老中使馆？",
+        "url": "https://www.bilibili.com/video/BV154QrBqEXG",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 21:17:06",
+        "excerpt": "2026年日本又有士兵走丢：但是闯入老中使馆？；score=36.88",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-793c97ae8d7686a7",
+        "event_key": "日本-diplomacy-conflict-日本-使馆-外交",
+        "note": "账号：bili；时间：2026-03-24 21:17:06；摘要：2026年日本又有士兵走丢：但是闯入老中使馆？；score=36.88"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "B",
+        "heat_score": 58.77,
+        "title": "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】",
+        "url": "https://www.bilibili.com/video/BV1CCQqBuEt8",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 18:00:00",
+        "excerpt": "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】；score=36.62",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c908b156c76dea64",
+        "event_key": "伊朗-特朗普-diplomacy-conflict-油价-地缘冲突",
+        "note": "账号：bili；时间：2026-03-24 18:00:00；摘要：特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】；score=36.62"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "B",
+        "heat_score": 58.37,
+        "title": "一名自称为日本自卫队现役官员闯入我大使馆威胁杀人",
+        "url": "https://www.bilibili.com/video/BV17EQzBNEBB",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 16:59:50",
+        "excerpt": "一名自称为日本自卫队现役官员闯入我大使馆威胁杀人；score=36.6",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-449049e30a686369",
+        "event_key": "日本-diplomacy-conflict-日本-使馆-外交",
+        "note": "账号：bili；时间：2026-03-24 16:59:50；摘要：一名自称为日本自卫队现役官员闯入我大使馆威胁杀人；score=36.6"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "B",
+        "heat_score": 55.34,
+        "title": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸",
+        "url": "https://www.bilibili.com/video/BV1WJQBByE12",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 19:27:44",
+        "excerpt": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-e3793376fb53537f",
+        "event_key": "以色列-伊朗-supply-order-diplomacy-conflict",
+        "note": "账号：bili；时间：2026-03-24 19:27:44；摘要：【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美…"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "C",
+        "heat_score": 53.92,
+        "title": "平平不无奇！OPPO Find N6使用体验",
+        "url": "https://www.bilibili.com/video/BV1hkQoBrEeP",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-23 19:43:51",
+        "excerpt": "平平不无奇！OPPO Find N6使用体验；score=36.38",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-cbcf38cc86150652",
+        "event_key": "平平不无奇-oppo",
+        "note": "账号：bili；时间：2026-03-23 19:43:51；摘要：平平不无奇！OPPO Find N6使用体验；score=36.38"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "C",
+        "heat_score": 53.72,
+        "title": "伊朗战争，和全球能源格局",
+        "url": "https://www.bilibili.com/video/BV1QGXABxEbq",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 11:30:00",
+        "excerpt": "伊朗战争，和全球能源格局；score=36.37",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-d67999ce7ea42429",
+        "event_key": "伊朗-diplomacy-conflict-油价-地缘冲突",
+        "note": "账号：bili；时间：2026-03-24 11:30:00；摘要：伊朗战争，和全球能源格局；score=36.37"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "C",
+        "heat_score": 53.31,
+        "title": "懂王狂画k线！精准抛售600万桶原油，伊朗提停火条件！",
+        "url": "https://www.bilibili.com/video/BV1RWQrBBEtF",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 21:06:11",
+        "excerpt": "懂王狂画k线！精准抛售600万桶原油，伊朗提停火条件！；score=36.35",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-5a80c4dfdcaf4ed9",
+        "event_key": "伊朗-原油-supply-order-diplomacy-conflict",
+        "note": "账号：bili；时间：2026-03-24 21:06:11；摘要：懂王狂画k线！精准抛售600万桶原油，伊朗提停火条件！；score=36.35"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "C",
+        "heat_score": 52.7,
+        "title": "特朗普一个帖子让国际油价闪崩13%，特朗普称同伊朗对话完美，伊朗否认，一顿分析猛如虎，涨跌全看特朗普",
+        "url": "https://www.bilibili.com/video/BV1EDQqBvEQs",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 13:04:11",
+        "excerpt": "特朗普一个帖子让国际油价闪崩13%，特朗普称同伊朗对话完美，伊朗否认，一顿分析猛如虎，涨跌全看特朗普；score=36.32",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c2044058af3aecba",
+        "event_key": "伊朗-油价-supply-order-diplomacy-conflict",
+        "note": "账号：bili；时间：2026-03-24 13:04:11；摘要：特朗普一个帖子让国际油价闪崩13%，特朗普称同伊朗对话完美，伊朗否认，一顿分析猛如虎，涨跌全看特朗普；score=36.32"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "C",
+        "heat_score": 46.78,
+        "title": "【RAY评】周杰伦新歌《太阳之子》，完全想不到............",
+        "url": "https://www.bilibili.com/video/BV1T9QiBCEWj",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 15:25:46",
+        "excerpt": "【RAY评】周杰伦新歌《太阳之子》，完全想不到............；score=36.03",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-17dc77cd17efad31",
+        "event_key": "ray评-周杰伦新歌",
+        "note": "账号：bili；时间：2026-03-24 15:25:46；摘要：【RAY评】周杰伦新歌《太阳之子》，完全想不到............；score=36.03"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "C",
+        "heat_score": 44.32,
+        "title": "特朗普又“TACO”？美国为何推迟“最后通牒”？",
+        "url": "https://www.bilibili.com/video/BV1MRQBBDE1A",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 18:58:18",
+        "excerpt": "特朗普又“TACO”？美国为何推迟“最后通牒”？；score=35.91",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-a904f23e7d5541f6",
+        "event_key": "美国-特朗普-diplomacy-conflict",
+        "note": "账号：bili；时间：2026-03-24 18:58:18；摘要：特朗普又“TACO”？美国为何推迟“最后通牒”？；score=35.91"
+      }
+    ],
+    "ai_hot": [
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/bili",
+        "heat_level": "S",
+        "heat_score": 90.31,
+        "title": "为什么你的龙虾（openclaw）不如别人的好用？3个方法解决 | 龙虾饲养指南",
+        "url": "https://www.bilibili.com/video/BV1PYD4BVEaz",
+        "author_or_account": "卡卡老师讲数据科学",
+        "publish_time": "2026-04-16 06:12:44",
+        "excerpt": "为什么你的龙虾（openclaw）不如别人的好用？3个方法解决 | 龙虾饲养指南；为什么你的龙虾（openclaw）不如别人的好用？3个方…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-b52e7b4a4aec6d85",
+        "event_key": "ai-technology-adoption-ai工具-工作流",
+        "note": "账号：卡卡老师讲数据科学；时间：2026-04-16 06:12:44；摘要：为什么你的龙虾（openclaw）不如别人的好用？3个方法解决 | 龙虾饲养指南；为什么你的龙虾（openclaw）不如别人的好用？3个方…"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/reddit",
+        "heat_level": "C",
+        "heat_score": 47.41,
+        "title": "Claude had enough of this user",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1smu2rk/claude_had_enough_of_this_user",
+        "author_or_account": "/u/EchoOfOppenheimer",
+        "publish_time": "2026-04-16T05:11:00+00:00",
+        "excerpt": "Claude had enough of this user；Reddit r/OpenAI 热门讨论",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-2b2db48768a2ba9d",
+        "event_key": "openai-ai工具-工作流",
+        "note": "账号：/u/EchoOfOppenheimer；时间：2026-04-16T05:11:00+00:00；摘要：Claude had enough of this user；Reddit r/OpenAI 热门讨论"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "D",
+        "heat_score": 38.07,
+        "title": "Show HN: Agent Armor, a Rust runtime that enforces policies on AI agent actions",
+        "url": "https://github.com/EdoardoBambini/Agent-Armor-Iaga",
+        "author_or_account": "edoardobambini-",
+        "publish_time": "2026-04-16T07:03:19Z",
+        "excerpt": "Show HN: Agent Armor, a Rust runtime that enforces policies on AI age…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-177c516fb07c4b37",
+        "event_key": "ai-technology-adoption-ai工具-工作流",
+        "note": "账号：edoardobambini-；时间：2026-04-16T07:03:19Z；摘要：Show HN: Agent Armor, a Rust runtime that enforces policies on AI age…"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/reddit",
+        "heat_level": "D",
+        "heat_score": 29.34,
+        "title": "Vibe change",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1smiol3/vibe_change",
+        "author_or_account": "/u/Just-Grocery-2229",
+        "publish_time": "2026-04-15T20:55:19+00:00",
+        "excerpt": "Vibe change；Reddit r/OpenAI 热门讨论",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-23ee4361ce684359",
+        "event_key": "openai-vibe-change",
+        "note": "账号：/u/Just-Grocery-2229；时间：2026-04-15T20:55:19+00:00；摘要：Vibe change；Reddit r/OpenAI 热门讨论"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "D",
+        "heat_score": 25.84,
+        "title": "Shouldn't we have an agent.lock file for AI coding agents?",
+        "url": "https://srajangupta.substack.com/p/where-is-my-agentlock-file",
+        "author_or_account": "srajan_gupta",
+        "publish_time": "2026-04-16T05:58:36Z",
+        "excerpt": "Shouldn't we have an agent.lock file for AI coding agents?；Hacker New…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-bc3e98c56b4453c4",
+        "event_key": "ai-technology-adoption-ai工具-工作流",
+        "note": "账号：srajan_gupta；时间：2026-04-16T05:58:36Z；摘要：Shouldn't we have an agent.lock file for AI coding agents?；Hacker New…"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/reddit",
+        "heat_level": "D",
+        "heat_score": 23.67,
+        "title": "Me when Claude already wrote like 3k lines of code and I notice an error on my prompt",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1smciwx/me_when_claude_already_wrote_like_3k_lines_of",
+        "author_or_account": "/u/Technical-Relation-9",
+        "publish_time": "2026-04-15T17:18:41+00:00",
+        "excerpt": "Me when Claude already wrote like 3k lines of code and I notice an er…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-1b6c1734d0ada1fd",
+        "event_key": "ai工具-工作流-me-when",
+        "note": "账号：/u/Technical-Relation-9；时间：2026-04-15T17:18:41+00:00；摘要：Me when Claude already wrote like 3k lines of code and I notice an er…"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "D",
+        "heat_score": 22.56,
+        "title": "Show HN: Tokanban, an agent-first task management system",
+        "url": "https://tokanban.com",
+        "author_or_account": "clippy99",
+        "publish_time": "2026-04-16T02:27:01Z",
+        "excerpt": "Show HN: Tokanban, an agent-first task management system；Hacker News …",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-a056c7f6853e435b",
+        "event_key": "ai-technology-adoption-ai工具-工作流",
+        "note": "账号：clippy99；时间：2026-04-16T02:27:01Z；摘要：Show HN: Tokanban, an agent-first task management system；Hacker News …"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "D",
+        "heat_score": 19.49,
+        "title": "The next evolution of the Agents SDK",
+        "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk",
+        "author_or_account": "meetpateltech",
+        "publish_time": "2026-04-15T17:08:59Z",
+        "excerpt": "The next evolution of the Agents SDK；Hacker News 查询：OpenAI",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-7efa4d51fbd8df59",
+        "event_key": "openai-the-next",
+        "note": "账号：meetpateltech；时间：2026-04-15T17:08:59Z；摘要：The next evolution of the Agents SDK；Hacker News 查询：OpenAI"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "D",
+        "heat_score": 19.16,
+        "title": "PeonPing: Sound packs for Claude, Codex, Cursor, and other AI coding agents",
+        "url": "https://www.peonping.com",
+        "author_or_account": "tawb",
+        "publish_time": "2026-04-16T00:45:04Z",
+        "excerpt": "PeonPing: Sound packs for Claude, Codex, Cursor, and other AI coding …",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-976c1bb503444ad8",
+        "event_key": "ai-ai工具-工作流",
+        "note": "账号：tawb；时间：2026-04-16T00:45:04Z；摘要：PeonPing: Sound packs for Claude, Codex, Cursor, and other AI coding …"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "D",
+        "heat_score": 11.66,
+        "title": "Show HN: Tine – Drive Wayland Around with Agents",
+        "url": "https://github.com/smythp/tine",
+        "author_or_account": "tarboreus",
+        "publish_time": "2026-04-15T17:02:53Z",
+        "excerpt": "Show HN: Tine – Drive Wayland Around with Agents；Hacker News 查询：Anthr…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c47b0bf65ecae312",
+        "event_key": "ai工具-工作流-show-hn",
+        "note": "账号：tarboreus；时间：2026-04-15T17:02:53Z；摘要：Show HN: Tine – Drive Wayland Around with Agents；Hacker News 查询：Anthr…"
+      }
+    ],
+    "reports": [
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "C",
+        "heat_score": 52.0,
+        "title": "2026年一季度GDP同比增长5.0%",
+        "url": "https://s.weibo.com/weibo?q=%232026%E5%B9%B4%E4%B8%80%E5%AD%A3%E5%BA%A6GDP%E5%90%8C%E6%AF%94%E5%A2%9E%E9%95%BF5.0%25%23&amp%3Bt=31&amp%3Bband_rank=3&amp%3BRefer=top",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "2026年一季度GDP同比增长5.0%；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-1a6c217293ac71cd",
+        "event_key": "年一季度gdp同比增长5-来自",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：2026年一季度GDP同比增长5.0%；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "C",
+        "heat_score": 50.0,
+        "title": "美财长称中国“不可靠”会影响特朗普访华吗？外交部回应",
+        "url": "https://m.thepaper.cn/newsDetail_forward_32975598",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "美财长称中国“不可靠”会影响特朗普访华吗？外交部回应；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-d5767ef0a822b76d",
+        "event_key": "中国-外交部-diplomacy-conflict-日本-使馆-外交",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：美财长称中国“不可靠”会影响特朗普访华吗？外交部回应；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "D",
+        "heat_score": 36.0,
+        "title": "9名中国人在斯里兰卡被捕？中方回应",
+        "url": "https://www.toutiao.com/trending/7629254204678213163",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "9名中国人在斯里兰卡被捕？中方回应；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-324662dccf7000e2",
+        "event_key": "中国-中方回应-来自",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：9名中国人在斯里兰卡被捕？中方回应；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "D",
+        "heat_score": 36.0,
+        "title": "外籍乘客偷拍部队 司机果断开向军营",
+        "url": "https://www.baidu.com/s?wd=%E5%A4%96%E7%B1%8D%E4%B9%98%E5%AE%A2%E5%81%B7%E6%8B%8D%E9%83%A8%E9%98%9F+%E5%8F%B8%E6%9C%BA%E6%9E%9C%E6%96%AD%E5%BC%80%E5%90%91%E5%86%9B%E8%90%A5",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "外籍乘客偷拍部队 司机果断开向军营；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-49d49bc1fca81cbc",
+        "event_key": "外籍乘客偷拍部队-司机果断开向军营",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：外籍乘客偷拍部队 司机果断开向军营；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "D",
+        "heat_score": 36.0,
+        "title": "如何评价 NASA 登月计划译名「阿尔忒弥斯」被吐槽生僻拗口？为什么一定要用「忒」字？",
+        "url": "https://www.zhihu.com/question/2027420369590514147",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "如何评价 NASA 登月计划译名「阿尔忒弥斯」被吐槽生僻拗口？为什么一定要用「忒」字？；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-862bdba36b39b24e",
+        "event_key": "如何评价-nasa",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：如何评价 NASA 登月计划译名「阿尔忒弥斯」被吐槽生僻拗口？为什么一定要用「忒」字？；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "D",
+        "heat_score": 36.0,
+        "title": "华尔街见闻早餐FM-Radio | 2026年4月16日",
+        "url": "https://wallstreetcn.com/articles/3770078",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "华尔街见闻早餐FM-Radio | 2026年4月16日；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-861712df6ba3be88",
+        "event_key": "华尔街见闻早餐fm-radio",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：华尔街见闻早餐FM-Radio | 2026年4月16日；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "D",
+        "heat_score": 36.0,
+        "title": "一季度我国重点领域投资较快增长",
+        "url": "https://www.toutiao.com/trending/7629176086833102889",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "一季度我国重点领域投资较快增长；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-091634611b3aa484",
+        "event_key": "来自-reports",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：一季度我国重点领域投资较快增长；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "D",
+        "heat_score": 36.0,
+        "title": "内塔尼亚胡：对伊朗战事可能再度爆发",
+        "url": "https://news.ifeng.com/c/8sMUKrSfaoi",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "内塔尼亚胡：对伊朗战事可能再度爆发；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-49dce367359e7e95",
+        "event_key": "伊朗-diplomacy-conflict-油价-地缘冲突",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：内塔尼亚胡：对伊朗战事可能再度爆发；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "D",
+        "heat_score": 36.0,
+        "title": "封锁霍尔木兹海峡后，美释放双重信号",
+        "url": "https://news.ifeng.com/c/8sMTVq6sTBR",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "封锁霍尔木兹海峡后，美释放双重信号；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-912a24bb2d020e37",
+        "event_key": "supply-order-油价-地缘冲突",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：封锁霍尔木兹海峡后，美释放双重信号；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "D",
+        "heat_score": 36.0,
+        "title": "美伊很快达成协议？特朗普给出“时间表”：4月下旬！",
+        "url": "https://www.cls.cn/detail/2345537",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "美伊很快达成协议？特朗普给出“时间表”：4月下旬！；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-bd6a2120dbf26fdf",
+        "event_key": "特朗普-diplomacy-conflict",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：美伊很快达成协议？特朗普给出“时间表”：4月下旬！；来自 reports 最新外链"
+      }
+    ],
+    "wechat": [
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "谈判大概率会破裂？",
+        "url": "https://mp.weixin.qq.com/s/SdU0_57oIJ8jtnV6FXSF3A",
+        "author_or_account": "表舅是养基大户",
+        "publish_time": "2026-04-09 21:33:07",
+        "excerpt": "谈判大概率会破裂？；表舅是养基大户 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-51b07324055e70e7",
+        "event_key": "谈判-谈判大概率会破裂-表舅是养基大户",
+        "note": "账号：表舅是养基大户；时间：2026-04-09 21:33:07；摘要：谈判大概率会破裂？；表舅是养基大户 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "听说今天机构加仓很猛",
+        "url": "https://mp.weixin.qq.com/s/lH8p4VLvMW5FjIr6MLXcig",
+        "author_or_account": "表舅是养基大户",
+        "publish_time": "2026-04-08 21:34:15",
+        "excerpt": "听说今天机构加仓很猛；表舅是养基大户 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-322ee5fba351ac9d",
+        "event_key": "表舅是养基大户-定向样本",
+        "note": "账号：表舅是养基大户；时间：2026-04-08 21:34:15；摘要：听说今天机构加仓很猛；表舅是养基大户 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "央妈为何狂买黄金？",
+        "url": "https://mp.weixin.qq.com/s/_IpyPNK16iCBnZOVLDiNzg",
+        "author_or_account": "表舅是养基大户",
+        "publish_time": "2026-04-07 21:31:31",
+        "excerpt": "央妈为何狂买黄金？；表舅是养基大户 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-2646b4f06434b32a",
+        "event_key": "黄金-market-sentiment-黄金-白银-贵金属",
+        "note": "账号：表舅是养基大户；时间：2026-04-07 21:31:31；摘要：央妈为何狂买黄金？；表舅是养基大户 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "卧槽！这些基金涨幅已经近300%了",
+        "url": "https://mp.weixin.qq.com/s/7m1sLTBeGkgOHt87z5JZDQ",
+        "author_or_account": "硬核姬老板",
+        "publish_time": "2026-04-10 14:40:50",
+        "excerpt": "卧槽！这些基金涨幅已经近300%了；硬核姬老板 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-3036ced932a05ce8",
+        "event_key": "market-sentiment-卧槽-这些基金涨幅已经近300",
+        "note": "账号：硬核姬老板；时间：2026-04-10 14:40:50；摘要：卧槽！这些基金涨幅已经近300%了；硬核姬老板 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "又一个公募老将奔私了",
+        "url": "https://mp.weixin.qq.com/s/V_yWBRymxAFT69X69lu8dA",
+        "author_or_account": "硬核姬老板",
+        "publish_time": "2026-04-09 12:23:58",
+        "excerpt": "又一个公募老将奔私了；硬核姬老板 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-0b689e5e8c0e1799",
+        "event_key": "硬核姬老板-定向样本",
+        "note": "账号：硬核姬老板；时间：2026-04-09 12:23:58；摘要：又一个公募老将奔私了；硬核姬老板 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "很好，终于有基金经理聚焦在了半导体自主可控了",
+        "url": "https://mp.weixin.qq.com/s/-P7kYmK-kSdjRFjtSnY8Rg",
+        "author_or_account": "硬核姬老板",
+        "publish_time": "2026-04-08 11:22:00",
+        "excerpt": "很好，终于有基金经理聚焦在了半导体自主可控了；硬核姬老板 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-8222d676d9ebe4ae",
+        "event_key": "半导体-semiconductor-cycle-market-sentiment-半导体-国产芯片",
+        "note": "账号：硬核姬老板；时间：2026-04-08 11:22:00；摘要：很好，终于有基金经理聚焦在了半导体自主可控了；硬核姬老板 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "Hermes Agent相关资源汇总",
+        "url": "https://mp.weixin.qq.com/s/2tHnf8QQ52EKWM68KAoSTQ",
+        "author_or_account": "Draco正在VibeCoding",
+        "publish_time": "2026-04-09 23:44:12",
+        "excerpt": "Hermes Agent相关资源汇总；Draco正在VibeCoding 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-f60a72cfc798478d",
+        "event_key": "technology-adoption-ai工具-工作流",
+        "note": "账号：Draco正在VibeCoding；时间：2026-04-09 23:44:12；摘要：Hermes Agent相关资源汇总；Draco正在VibeCoding 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "一文看懂：Hermes Agent与OpenClaw全维度对比",
+        "url": "https://mp.weixin.qq.com/s/JWHBaFVvLE8S1t5jRXQxrg",
+        "author_or_account": "Draco正在VibeCoding",
+        "publish_time": "2026-04-08 20:29:15",
+        "excerpt": "一文看懂：Hermes Agent与OpenClaw全维度对比；Draco正在VibeCoding 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c992621817add710",
+        "event_key": "technology-adoption-ai工具-工作流",
+        "note": "账号：Draco正在VibeCoding；时间：2026-04-08 20:29:15；摘要：一文看懂：Hermes Agent与OpenClaw全维度对比；Draco正在VibeCoding 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 14.0,
+        "title": "简单聊一下开盘前的情况",
+        "url": "https://mp.weixin.qq.com/s/aYu2yutu5EijI7CYLO1YFw",
+        "author_or_account": "表舅是养基大户",
+        "publish_time": "2026-04-06 22:02:19",
+        "excerpt": "简单聊一下开盘前的情况；表舅是养基大户 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-9a5925d818ae4187",
+        "event_key": "表舅是养基大户-定向样本",
+        "note": "账号：表舅是养基大户；时间：2026-04-06 22:02:19；摘要：简单聊一下开盘前的情况；表舅是养基大户 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 14.0,
+        "title": "今天的两个大利好",
+        "url": "https://mp.weixin.qq.com/s/tOtcyLEKEROaYOhloKGm6Q",
+        "author_or_account": "表舅是养基大户",
+        "publish_time": "2026-04-01 21:31:14",
+        "excerpt": "今天的两个大利好；表舅是养基大户 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-49f7d492e7766ffb",
+        "event_key": "今天的两个大利好-表舅是养基大户",
+        "note": "账号：表舅是养基大户；时间：2026-04-01 21:31:14；摘要：今天的两个大利好；表舅是养基大户 定向样本"
+      }
+    ]
+  },
+  "event_candidates": [
+    {
+      "cluster_id": "日本-diplomacy-conflict-日本-使馆-外交",
+      "cluster_title_candidate": "日本 / 日本/使馆/外交",
+      "cluster_summary": "围绕 日本 / 日本/使馆/外交 的高频讨论，当前样本 12 条，涉及 4 个渠道、12 个去重组。",
+      "count": 12,
+      "source_mix": {
+        "x": 3,
+        "wb": 6,
+        "content_research": 2,
+        "reports": 1
+      },
+      "source_diversity": 4,
+      "dedupe_depth": 12,
+      "priority_score": 87.045,
+      "dominant_entities": [
+        "日本"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0833,
+      "freshness_score": 1.124,
+      "authority_score": 0.938,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "#モーサテ チェック♪ ●日経平均↑ 58,134 +256 サントリー 第一三共ヘルスケア買収 日本特殊陶業↑ 上場来高値 プラグ センサー ●米 ダウ↓ 4",
+        "日本はモノが豊かになり過ぎて、皆、日々の生活を当たり前だと思っています。若い人はオイルショックも知りません。震災やコロナの時にいっとき買い占めはありましたが、今",
+        "@sunpolis 日本的经验 适应老龄化需要40年，出生率持续下行和老龄化持续上行 这些人出生50-70年代没有存过养老金 看病养老的钱得政府套 而台海外贸砍"
+      ],
+      "representative_links": [
+        "https://x.com/Kumashiro_21/status/2044537748842025347",
+        "https://x.com/ozawa_jimusho/status/2044320945670951204",
+        "https://x.com/MyDream668/status/2044533597365850148"
+      ]
+    },
+    {
+      "cluster_id": "technology-adoption-ai工具-工作流",
+      "cluster_title_candidate": "AI工具/工作流 / draco正在vibecoding",
+      "cluster_summary": "围绕 AI工具/工作流 / draco正在vibecoding 的高频讨论，当前样本 11 条，涉及 2 个渠道、8 个去重组。",
+      "count": 11,
+      "source_mix": {
+        "bili": 1,
+        "wechat": 10
+      },
+      "source_diversity": 2,
+      "dedupe_depth": 8,
+      "priority_score": 67.209,
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.918,
+      "authority_score": 0.886,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "为什么你的龙虾（openclaw）不如别人的好用？3个方法解决 | 龙虾饲养指南",
+        "Hermes Agent相关资源汇总",
+        "一文看懂：Hermes Agent与OpenClaw全维度对比"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1PYD4BVEaz",
+        "https://mp.weixin.qq.com/s/2tHnf8QQ52EKWM68KAoSTQ",
+        "https://mp.weixin.qq.com/s/JWHBaFVvLE8S1t5jRXQxrg"
+      ]
+    },
+    {
+      "cluster_id": "ai-ai工具-工作流",
+      "cluster_title_candidate": "AI / AI工具/工作流",
+      "cluster_summary": "围绕 AI / AI工具/工作流 的高频讨论，当前样本 6 条，涉及 5 个渠道、6 个去重组。",
+      "count": 6,
+      "source_mix": {
+        "x": 1,
+        "wb": 1,
+        "douyin": 1,
+        "ai_hot": 1,
+        "wechat": 2
+      },
+      "source_diversity": 5,
+      "dedupe_depth": 6,
+      "priority_score": 60.474,
+      "dominant_entities": [
+        "AI"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.077,
+      "authority_score": 0.902,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "🔥 Your AI edge could win you $100 USDT! We’re giving away $5,000 USDT to the com",
+        "最近老板夸我写策略能力大有提升。其实是因为我掌握了一个最新prompt，就是把自己写的方案发给AI，然后说：你好，这是我仇人写的，帮我挑挑刺。AI会给出又犀利又",
+        "4.11 下一次金融危机的“主角”？ #金融AI风险 #Anthropic #Mythos"
+      ],
+      "representative_links": [
+        "https://x.com/Bybit_Official/status/2044445898680185190",
+        "https://m.weibo.cn/detail/5282635978907325",
+        "https://www.douyin.com/video/7627303628394764721"
+      ]
+    },
+    {
+      "cluster_id": "黄金-market-sentiment-黄金-白银-贵金属",
+      "cluster_title_candidate": "黄金 / 黄金/白银/贵金属",
+      "cluster_summary": "围绕 黄金 / 黄金/白银/贵金属 的高频讨论，当前样本 9 条，涉及 2 个渠道、8 个去重组。",
+      "count": 9,
+      "source_mix": {
+        "bili": 7,
+        "wechat": 2
+      },
+      "source_diversity": 2,
+      "dedupe_depth": 8,
+      "priority_score": 59.426,
+      "dominant_entities": [
+        "黄金"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.949,
+      "authority_score": 0.934,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "黄金不避险反大跌？专家称：它已是风险本身",
+        "老王来了：黄金最新走势分析！老王为哈逐步淡出油管？潘石屹发长文，在暗示谁？微博爆料王石出事，是真的吗？",
+        "【福利赠送，交易思路奉上】0415黄金走势推演"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1kBQGBiEuX",
+        "https://www.bilibili.com/video/BV1Q9QJBBEes",
+        "https://www.bilibili.com/video/BV1tCQnBNEV6"
+      ]
+    },
+    {
+      "cluster_id": "market-sentiment-宏观-市场情绪",
+      "cluster_title_candidate": "宏观/市场情绪 / a股",
+      "cluster_summary": "围绕 宏观/市场情绪 / a股 的高频讨论，当前样本 6 条，涉及 3 个渠道、6 个去重组。",
+      "count": 6,
+      "source_mix": {
+        "wb": 3,
+        "douyin": 1,
+        "bili": 2
+      },
+      "source_diversity": 3,
+      "dedupe_depth": 6,
+      "priority_score": 53.893,
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.983,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "2026年的A股，震荡磨底、板块快速轮动，很多散户越操作越亏，天天追热点、换股票，最后本金越做越少。大家总觉得赚钱要靠复杂技术、内幕消息、精准择时，其实真相特别",
+        "《别人难受 咱们舒服》 今日复盘 A股跌一般， 昨天跌，但咱们是红的。 前天也红 所以代表就是红两天，绿一天。 那还是赚啊 ，哈哈哈哈哈 ， 外面哭天喊地跌的难",
+        "#林耘有话说# 4.3看盘印象：A股盘面异动，周期股明显转弱，市场或担心滞胀，同时，机构躲到高价热门硬科技股里抱团。 ​"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5282785947549955",
+        "https://m.weibo.cn/detail/5283634846106281",
+        "https://m.weibo.cn/detail/5283568911911039"
+      ]
+    },
+    {
+      "cluster_id": "伊朗-diplomacy-conflict-油价-地缘冲突",
+      "cluster_title_candidate": "伊朗 / 油价/地缘冲突",
+      "cluster_summary": "围绕 伊朗 / 油价/地缘冲突 的高频讨论，当前样本 4 条，涉及 4 个渠道、4 个去重组。",
+      "count": 4,
+      "source_mix": {
+        "bili": 1,
+        "content_research": 1,
+        "reports": 1,
+        "wechat": 1
+      },
+      "source_diversity": 4,
+      "dedupe_depth": 4,
+      "priority_score": 49.345,
+      "dominant_entities": [
+        "伊朗"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.25,
+      "freshness_score": 1.195,
+      "authority_score": 0.895,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "伊朗战争正在杀死石油美元，世界再也不可能回到战前！",
+        "伊朗战争，和全球能源格局",
+        "内塔尼亚胡：对伊朗战事可能再度爆发"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1atQEBqEd6",
+        "https://www.bilibili.com/video/BV1QGXABxEbq",
+        "https://news.ifeng.com/c/8sMUKrSfaoi"
+      ]
+    },
+    {
+      "cluster_id": "油价-美联储-policy-inflation-supply-order",
+      "cluster_title_candidate": "美联储 / 油价 / 油价/地缘冲突 / 上涨",
+      "cluster_summary": "围绕 美联储 / 油价 / 油价/地缘冲突 / 上涨 的高频讨论，当前样本 6 条，涉及 2 个渠道、6 个去重组。",
+      "count": 6,
+      "source_mix": {
+        "x": 5,
+        "wb": 1
+      },
+      "source_diversity": 2,
+      "dedupe_depth": 6,
+      "priority_score": 47.422,
+      "dominant_entities": [
+        "美联储",
+        "油价",
+        "鲍威尔",
+        "加息"
+      ],
+      "dominant_actions": [
+        "上涨",
+        "加息"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "本信息由 https://t.co/FEDsLGMwLc 小编收集整理: 美联储穆萨莱姆表示，油价波动可能推动核心通胀上升，预计年底核心通胀将接近3%。 #B",
+        "本信息由 https://t.co/mdwuneib5x 小编收集整理: 美联储穆萨莱姆表示，油价的上涨将推动核心通胀接近3%，预计将在年底前达到这一水平。",
+        "本信息由 https://t.co/uVvWdht7pV 小编收集整理: 美联储穆萨莱姆表示，近期油价上涨可能推动核心通胀接近3%。预计到年底，核心通胀将进"
+      ],
+      "representative_links": [
+        "https://x.com/xnrdl48332872/status/2044532615940620445",
+        "https://x.com/elainenc2005/status/2044532988260515958",
+        "https://x.com/kjh140991/status/2044533580437528820"
+      ]
+    },
+    {
+      "cluster_id": "伊朗-美国-diplomacy-conflict-油价-地缘冲突",
+      "cluster_title_candidate": "伊朗 / 美国 / 油价/地缘冲突",
+      "cluster_summary": "围绕 伊朗 / 美国 / 油价/地缘冲突 的高频讨论，当前样本 4 条，涉及 3 个渠道、4 个去重组。",
+      "count": 4,
+      "source_mix": {
+        "x": 1,
+        "wb": 2,
+        "wechat": 1
+      },
+      "source_diversity": 3,
+      "dedupe_depth": 4,
+      "priority_score": 43.25,
+      "dominant_entities": [
+        "伊朗",
+        "美国"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.975,
+      "authority_score": 0.932,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "伊朗战争，推动世界能源中心发生转移，美国正以创纪录的出口量，跃升为全球石油新中心：上周，美国每天出口超过500万桶石油，创历史新高，正值伊朗战争期间。总体而言，",
+        "我预言，战争将起码持续3个月，有人说2-3周结束，我认为不可能。从目前伊朗方面的表现来说，抵抗和反击非常有力，美国仅凭现在的军事行动，很显然无法制服伊朗。接下来",
+        "最近很多人在谈美军要“冲滩登陆”，干一票大的。 这是好事啊，应当鼓励美国。 伊朗是个好地方，160万平方公里，人口接近一亿，拥有比较完整的工业体系，不缺能源，不"
+      ],
+      "representative_links": [
+        "https://x.com/Kunluntalk/status/2044537670505054233",
+        "https://m.weibo.cn/detail/5283254786852233",
+        "https://m.weibo.cn/detail/5283607788652951"
+      ]
+    },
+    {
+      "cluster_id": "ai-technology-adoption-ai工具-工作流",
+      "cluster_title_candidate": "AI / AI工具/工作流",
+      "cluster_summary": "围绕 AI / AI工具/工作流 的高频讨论，当前样本 4 条，涉及 1 个渠道、4 个去重组。",
+      "count": 4,
+      "source_mix": {
+        "ai_hot": 4
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 4,
+      "priority_score": 43.038,
+      "dominant_entities": [
+        "AI"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.65,
+      "authority_score": 0.837,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "为什么你的龙虾（openclaw）不如别人的好用？3个方法解决 | 龙虾饲养指南",
+        "Show HN: Agent Armor, a Rust runtime that enforces policies on AI agent actions",
+        "Shouldn't we have an agent.lock file for AI coding agents?"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1PYD4BVEaz",
+        "https://github.com/EdoardoBambini/Agent-Armor-Iaga",
+        "https://srajangupta.substack.com/p/where-is-my-agentlock-file"
+      ]
+    },
+    {
+      "cluster_id": "policy-inflation-宏观-市场情绪",
+      "cluster_title_candidate": "宏观/市场情绪 / 通胀",
+      "cluster_summary": "围绕 宏观/市场情绪 / 通胀 的高频讨论，当前样本 4 条，涉及 2 个渠道、4 个去重组。",
+      "count": 4,
+      "source_mix": {
+        "wb": 3,
+        "bili": 1
+      },
+      "source_diversity": 2,
+      "dedupe_depth": 4,
+      "priority_score": 40.785,
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.99,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "抗通胀这不是拉起来吗？拉起来就卖掉，掉下去再买回来。 不要逆反着做，你又不是天生反动派。 ​",
+        "当然，还有一个潜在的问题实际上是我们这么多年对外经济结构很多贸易占比是在非美以及第三世界做的增量，但是这些国家对于能源的外部依赖更强，对于输入性通胀的压力更大。",
+        "#楼市第一线# 大通胀是不是已经到来了？如果开闸放水，大通胀就会降临，它是解决债务，经济，消费的万能药。 如果债务太多，偿还不了怎么办？靠通胀解决，因为债务不可"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283559742898359",
+        "https://m.weibo.cn/detail/5283556951598039",
+        "https://m.weibo.cn/detail/5283177264578861"
+      ]
+    },
+    {
+      "cluster_id": "以色列-伊朗-diplomacy-conflict-油价-地缘冲突",
+      "cluster_title_candidate": "以色列 / 伊朗 / 油价/地缘冲突",
+      "cluster_summary": "围绕 以色列 / 伊朗 / 油价/地缘冲突 的高频讨论，当前样本 3 条，涉及 3 个渠道、3 个去重组。",
+      "count": 3,
+      "source_mix": {
+        "wb": 1,
+        "reports": 1,
+        "wechat": 1
+      },
+      "source_diversity": 3,
+      "dedupe_depth": 3,
+      "priority_score": 40.087,
+      "dominant_entities": [
+        "以色列",
+        "伊朗",
+        "美国"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.3333,
+      "freshness_score": 1.083,
+      "authority_score": 0.877,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "家人们，美国头大了！失算了！ 美以联军不仅打不赢伊朗，还激活了抵抗之弧！ 你们看看，美以被揍的有多狼狈…… 以色列遭开战以来最大规模导弹袭击，胡塞、真主党等多方",
+        "伊朗战争丨伊朗：美国已成以色列“第7个行政区”",
+        "一觉醒来，美国伊朗以色列三方画k线"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283370596830111",
+        "https://news.ifeng.com/loc/timeline/event/8r727OWpK5W",
+        "https://mp.weixin.qq.com/s/bI7JkXZEZ-h9HSKAGOeFsA"
+      ]
+    },
+    {
+      "cluster_id": "美国-特朗普-diplomacy-conflict",
+      "cluster_title_candidate": "特朗普 / 美国",
+      "cluster_summary": "围绕 特朗普 / 美国 的高频讨论，当前样本 3 条，涉及 2 个渠道、3 个去重组。",
+      "count": 3,
+      "source_mix": {
+        "wb": 2,
+        "content_research": 1
+      },
+      "source_diversity": 2,
+      "dedupe_depth": 3,
+      "priority_score": 38.793,
+      "dominant_entities": [
+        "特朗普",
+        "美国"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.19,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "【 #特朗普称民生是小事没时间管# 政府在忙着打仗呢】 #美民众生活成本暴增议员建议兼个职# 美国50个州爆发大规模抗议，900万民众走上街头高呼“美国不需要国",
+        "🔻特朗普：“我要把主要精力放在军事上，我们是一个大国。我们正在打仗。美国无法兼顾日托、医疗补助和医疗保险，各州应该自行加税并自行买单。” 🔻鲁比奥：“设想一下，",
+        "特朗普又“TACO”？美国为何推迟“最后通牒”？"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283606832352020",
+        "https://m.weibo.cn/detail/5283303662813625",
+        "https://www.bilibili.com/video/BV1MRQBBDE1A"
+      ]
+    },
+    {
+      "cluster_id": "中国-日本-diplomacy-conflict-日本-使馆-外交",
+      "cluster_title_candidate": "中国 / 日本 / 日本/使馆/外交",
+      "cluster_summary": "围绕 中国 / 日本 / 日本/使馆/外交 的高频讨论，当前样本 3 条，涉及 2 个渠道、3 个去重组。",
+      "count": 3,
+      "source_mix": {
+        "wb": 2,
+        "content_research": 1
+      },
+      "source_diversity": 2,
+      "dedupe_depth": 3,
+      "priority_score": 37.927,
+      "dominant_entities": [
+        "中国",
+        "日本",
+        "高市早苗"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.19,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "大批日本人向中方致歉，在街头高呼口号反对高市早苗！ 3月28日，约1400名日本民众在东京新宿举行反战集会，高举“向中国道歉”“高市下台”等标语，齐声高喊“中国",
+        "这几天小日本有不少民众走上街头抗议，他们高呼高市早苗辱国高市早苗下台，红色旗子上写着中国对不起 #日本终于露出獠牙# #海外新鲜事# #热点现场# L 南归孤夷",
+        "中国开始清理日本部署多年的间谍【乌鸦校尉】"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283338748434069",
+        "https://m.weibo.cn/detail/5283302766018628",
+        "https://www.bilibili.com/video/BV16pcUzRE2k"
+      ]
+    },
+    {
+      "cluster_id": "policy-inflation-market-sentiment-宏观-市场情绪",
+      "cluster_title_candidate": "宏观/市场情绪 / 刷到这条视频",
+      "cluster_summary": "围绕 宏观/市场情绪 / 刷到这条视频 的高频讨论，当前样本 2 条，涉及 2 个渠道、2 个去重组。",
+      "count": 2,
+      "source_mix": {
+        "wb": 1,
+        "douyin": 1
+      },
+      "source_diversity": 2,
+      "dedupe_depth": 2,
+      "priority_score": 36.328,
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.99,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "刷到这条视频，把低利率周期里最典型的三类投资者画像讲得特别准。一类是赌行情加杠杆的“杠杆武士”，无视尾部风险无脑梭哈，一轮极端波动就可能直接出局；一类是死守定存",
+        "纳指📉了，但这不是天塌了，是典型的利率压估值加杠杆清洗，美债收益率高位不下来，科技就被迫回调，这是市场在洗浮筹，洗高杠杆，不是趋势反转。从技术面看，纳指刚好📉回到前支撑带，量能没放大，情绪却先崩了，反而说明这梗像1⃣️次正常回踩，等美债利率回落1⃣️点，市场确认1⃣️步政策方向，科技板块又会重新抬头，📉是为了甩人，稳住仓位，别被甩下车。笑到最后才是赢家"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283296200363581",
+        "https://www.douyin.com/video/7575398891026373541"
+      ]
+    },
+    {
+      "cluster_id": "白银-黄金-market-sentiment-黄金-白银-贵金属",
+      "cluster_title_candidate": "白银 / 黄金 / 黄金/白银/贵金属",
+      "cluster_summary": "围绕 白银 / 黄金 / 黄金/白银/贵金属 的高频讨论，当前样本 2 条，涉及 2 个渠道、2 个去重组。",
+      "count": 2,
+      "source_mix": {
+        "douyin": 1,
+        "bili": 1
+      },
+      "source_diversity": 2,
+      "dedupe_depth": 2,
+      "priority_score": 36.114,
+      "dominant_entities": [
+        "白银",
+        "黄金"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.97,
+      "authority_score": 1.15,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "#投资#黄金#白银#股市#股票",
+        "全球央行疯狂囤金真相曝光!一个绕开美元的结算系统已经悄悄运行了六个月 你却还不知道!"
+      ],
+      "representative_links": [
+        "https://www.douyin.com/video/7628744386008848499",
+        "https://www.bilibili.com/video/BV1pQQnBfEq9"
+      ]
+    }
+  ],
+  "top_entities": {
+    "dynamic_tokens": [
+      {
+        "name": "伊朗",
+        "count": 24
+      },
+      {
+        "name": "日本",
+        "count": 22
+      },
+      {
+        "name": "美国",
+        "count": 21
+      },
+      {
+        "name": "黄金",
+        "count": 19
+      },
+      {
+        "name": "特朗普",
+        "count": 18
+      },
+      {
+        "name": "bili",
+        "count": 16
+      },
+      {
+        "name": "油价",
+        "count": 14
+      },
+      {
+        "name": "宏观/市场情绪",
+        "count": 13
+      },
+      {
+        "name": "ai",
+        "count": 11
+      },
+      {
+        "name": "原油",
+        "count": 11
+      }
+    ],
+    "sectors": [
+      {
+        "name": "AI",
+        "count": 12
+      },
+      {
+        "name": "人工智能",
+        "count": 2
+      },
+      {
+        "name": "半导体",
+        "count": 2
+      },
+      {
+        "name": "新能源",
+        "count": 1
+      },
+      {
+        "name": "算力",
+        "count": 1
+      },
+      {
+        "name": "芯片",
+        "count": 1
+      }
+    ],
+    "orgs": [
+      {
+        "name": "美联储",
+        "count": 11
+      },
+      {
+        "name": "外交部",
+        "count": 3
+      },
+      {
+        "name": "OpenAI",
+        "count": 3
+      },
+      {
+        "name": "FED",
+        "count": 1
+      },
+      {
+        "name": "日本央行",
+        "count": 1
+      }
+    ],
+    "commodities": [
+      {
+        "name": "黄金",
+        "count": 19
+      },
+      {
+        "name": "油价",
+        "count": 14
+      },
+      {
+        "name": "原油",
+        "count": 11
+      },
+      {
+        "name": "白银",
+        "count": 3
+      }
+    ],
+    "countries": [
+      {
+        "name": "伊朗",
+        "count": 24
+      },
+      {
+        "name": "日本",
+        "count": 22
+      },
+      {
+        "name": "美国",
+        "count": 21
+      },
+      {
+        "name": "中国",
+        "count": 11
+      },
+      {
+        "name": "以色列",
+        "count": 7
+      },
+      {
+        "name": "中东",
+        "count": 3
+      },
+      {
+        "name": "俄罗斯",
+        "count": 3
+      }
+    ],
+    "people": [
+      {
+        "name": "特朗普",
+        "count": 18
+      },
+      {
+        "name": "高市早苗",
+        "count": 6
+      },
+      {
+        "name": "OpenAI",
+        "count": 3
+      },
+      {
+        "name": "川普",
+        "count": 2
+      },
+      {
+        "name": "鲍威尔",
+        "count": 2
+      },
+      {
+        "name": "马斯克",
+        "count": 2
+      }
+    ],
+    "policies": [
+      {
+        "name": "降息",
+        "count": 9
+      },
+      {
+        "name": "停火",
+        "count": 5
+      },
+      {
+        "name": "加息",
+        "count": 4
+      },
+      {
+        "name": "关税",
+        "count": 1
+      },
+      {
+        "name": "制裁",
+        "count": 1
+      }
+    ]
+  },
+  "ai_hot_candidates": [
+    {
+      "title": "为什么你的龙虾（openclaw）不如别人的好用？3个方法解决 | 龙虾饲养指南",
+      "url": "https://www.bilibili.com/video/BV1PYD4BVEaz",
+      "heat_level": "S",
+      "heat_score": 90.31,
+      "event_key": "ai-technology-adoption-ai工具-工作流",
+      "excerpt": "为什么你的龙虾（openclaw）不如别人的好用？3个方法解决 | 龙虾饲养指南；为什么你的龙虾（openclaw）不如别人的好用？3个方…"
+    },
+    {
+      "title": "Claude had enough of this user",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1smu2rk/claude_had_enough_of_this_user",
+      "heat_level": "C",
+      "heat_score": 47.41,
+      "event_key": "openai-ai工具-工作流",
+      "excerpt": "Claude had enough of this user；Reddit r/OpenAI 热门讨论"
+    },
+    {
+      "title": "Show HN: Agent Armor, a Rust runtime that enforces policies on AI agent actions",
+      "url": "https://github.com/EdoardoBambini/Agent-Armor-Iaga",
+      "heat_level": "D",
+      "heat_score": 38.07,
+      "event_key": "ai-technology-adoption-ai工具-工作流",
+      "excerpt": "Show HN: Agent Armor, a Rust runtime that enforces policies on AI age…"
+    },
+    {
+      "title": "Vibe change",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1smiol3/vibe_change",
+      "heat_level": "D",
+      "heat_score": 29.34,
+      "event_key": "openai-vibe-change",
+      "excerpt": "Vibe change；Reddit r/OpenAI 热门讨论"
+    },
+    {
+      "title": "Shouldn't we have an agent.lock file for AI coding agents?",
+      "url": "https://srajangupta.substack.com/p/where-is-my-agentlock-file",
+      "heat_level": "D",
+      "heat_score": 25.84,
+      "event_key": "ai-technology-adoption-ai工具-工作流",
+      "excerpt": "Shouldn't we have an agent.lock file for AI coding agents?；Hacker New…"
+    },
+    {
+      "title": "Me when Claude already wrote like 3k lines of code and I notice an error on my prompt",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1smciwx/me_when_claude_already_wrote_like_3k_lines_of",
+      "heat_level": "D",
+      "heat_score": 23.67,
+      "event_key": "ai工具-工作流-me-when",
+      "excerpt": "Me when Claude already wrote like 3k lines of code and I notice an er…"
+    },
+    {
+      "title": "Show HN: Tokanban, an agent-first task management system",
+      "url": "https://tokanban.com",
+      "heat_level": "D",
+      "heat_score": 22.56,
+      "event_key": "ai-technology-adoption-ai工具-工作流",
+      "excerpt": "Show HN: Tokanban, an agent-first task management system；Hacker News …"
+    },
+    {
+      "title": "The next evolution of the Agents SDK",
+      "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk",
+      "heat_level": "D",
+      "heat_score": 19.49,
+      "event_key": "openai-the-next",
+      "excerpt": "The next evolution of the Agents SDK；Hacker News 查询：OpenAI"
+    },
+    {
+      "title": "PeonPing: Sound packs for Claude, Codex, Cursor, and other AI coding agents",
+      "url": "https://www.peonping.com",
+      "heat_level": "D",
+      "heat_score": 19.16,
+      "event_key": "ai-ai工具-工作流",
+      "excerpt": "PeonPing: Sound packs for Claude, Codex, Cursor, and other AI coding …"
+    },
+    {
+      "title": "Show HN: Tine – Drive Wayland Around with Agents",
+      "url": "https://github.com/smythp/tine",
+      "heat_level": "D",
+      "heat_score": 11.66,
+      "event_key": "ai工具-工作流-show-hn",
+      "excerpt": "Show HN: Tine – Drive Wayland Around with Agents；Hacker News 查询：Anthr…"
+    }
+  ],
+  "trendradar_candidates": [
+    {
+      "title": "2026年一季度GDP同比增长5.0%",
+      "url": "https://s.weibo.com/weibo?q=%232026%E5%B9%B4%E4%B8%80%E5%AD%A3%E5%BA%A6GDP%E5%90%8C%E6%AF%94%E5%A2%9E%E9%95%BF5.0%25%23&amp%3Bt=31&amp%3Bband_rank=3&amp%3BRefer=top",
+      "heat_level": "C",
+      "heat_score": 52.0,
+      "event_key": "年一季度gdp同比增长5-来自"
+    },
+    {
+      "title": "美财长称中国“不可靠”会影响特朗普访华吗？外交部回应",
+      "url": "https://m.thepaper.cn/newsDetail_forward_32975598",
+      "heat_level": "C",
+      "heat_score": 50.0,
+      "event_key": "中国-外交部-diplomacy-conflict-日本-使馆-外交"
+    },
+    {
+      "title": "9名中国人在斯里兰卡被捕？中方回应",
+      "url": "https://www.toutiao.com/trending/7629254204678213163",
+      "heat_level": "D",
+      "heat_score": 36.0,
+      "event_key": "中国-中方回应-来自"
+    },
+    {
+      "title": "外籍乘客偷拍部队 司机果断开向军营",
+      "url": "https://www.baidu.com/s?wd=%E5%A4%96%E7%B1%8D%E4%B9%98%E5%AE%A2%E5%81%B7%E6%8B%8D%E9%83%A8%E9%98%9F+%E5%8F%B8%E6%9C%BA%E6%9E%9C%E6%96%AD%E5%BC%80%E5%90%91%E5%86%9B%E8%90%A5",
+      "heat_level": "D",
+      "heat_score": 36.0,
+      "event_key": "外籍乘客偷拍部队-司机果断开向军营"
+    },
+    {
+      "title": "如何评价 NASA 登月计划译名「阿尔忒弥斯」被吐槽生僻拗口？为什么一定要用「忒」字？",
+      "url": "https://www.zhihu.com/question/2027420369590514147",
+      "heat_level": "D",
+      "heat_score": 36.0,
+      "event_key": "如何评价-nasa"
+    },
+    {
+      "title": "华尔街见闻早餐FM-Radio | 2026年4月16日",
+      "url": "https://wallstreetcn.com/articles/3770078",
+      "heat_level": "D",
+      "heat_score": 36.0,
+      "event_key": "华尔街见闻早餐fm-radio"
+    },
+    {
+      "title": "一季度我国重点领域投资较快增长",
+      "url": "https://www.toutiao.com/trending/7629176086833102889",
+      "heat_level": "D",
+      "heat_score": 36.0,
+      "event_key": "来自-reports"
+    },
+    {
+      "title": "内塔尼亚胡：对伊朗战事可能再度爆发",
+      "url": "https://news.ifeng.com/c/8sMUKrSfaoi",
+      "heat_level": "D",
+      "heat_score": 36.0,
+      "event_key": "伊朗-diplomacy-conflict-油价-地缘冲突"
+    },
+    {
+      "title": "封锁霍尔木兹海峡后，美释放双重信号",
+      "url": "https://news.ifeng.com/c/8sMTVq6sTBR",
+      "heat_level": "D",
+      "heat_score": 36.0,
+      "event_key": "supply-order-油价-地缘冲突"
+    },
+    {
+      "title": "美伊很快达成协议？特朗普给出“时间表”：4月下旬！",
+      "url": "https://www.cls.cn/detail/2345537",
+      "heat_level": "D",
+      "heat_score": 36.0,
+      "event_key": "特朗普-diplomacy-conflict"
+    }
+  ],
+  "cross_channel_events": [
+    {
+      "cluster_id": "日本-diplomacy-conflict-日本-使馆-外交",
+      "cluster_title_candidate": "日本 / 日本/使馆/外交",
+      "source_mix": {
+        "x": 3,
+        "wb": 6,
+        "content_research": 2,
+        "reports": 1
+      }
+    },
+    {
+      "cluster_id": "technology-adoption-ai工具-工作流",
+      "cluster_title_candidate": "AI工具/工作流 / draco正在vibecoding",
+      "source_mix": {
+        "bili": 1,
+        "wechat": 10
+      }
+    },
+    {
+      "cluster_id": "ai-ai工具-工作流",
+      "cluster_title_candidate": "AI / AI工具/工作流",
+      "source_mix": {
+        "x": 1,
+        "wb": 1,
+        "douyin": 1,
+        "ai_hot": 1,
+        "wechat": 2
+      }
+    },
+    {
+      "cluster_id": "黄金-market-sentiment-黄金-白银-贵金属",
+      "cluster_title_candidate": "黄金 / 黄金/白银/贵金属",
+      "source_mix": {
+        "bili": 7,
+        "wechat": 2
+      }
+    },
+    {
+      "cluster_id": "market-sentiment-宏观-市场情绪",
+      "cluster_title_candidate": "宏观/市场情绪 / a股",
+      "source_mix": {
+        "wb": 3,
+        "douyin": 1,
+        "bili": 2
+      }
+    },
+    {
+      "cluster_id": "伊朗-diplomacy-conflict-油价-地缘冲突",
+      "cluster_title_candidate": "伊朗 / 油价/地缘冲突",
+      "source_mix": {
+        "bili": 1,
+        "content_research": 1,
+        "reports": 1,
+        "wechat": 1
+      }
+    },
+    {
+      "cluster_id": "油价-美联储-policy-inflation-supply-order",
+      "cluster_title_candidate": "美联储 / 油价 / 油价/地缘冲突 / 上涨",
+      "source_mix": {
+        "x": 5,
+        "wb": 1
+      }
+    },
+    {
+      "cluster_id": "伊朗-美国-diplomacy-conflict-油价-地缘冲突",
+      "cluster_title_candidate": "伊朗 / 美国 / 油价/地缘冲突",
+      "source_mix": {
+        "x": 1,
+        "wb": 2,
+        "wechat": 1
+      }
+    }
+  ],
+  "manual_additions": [],
+  "editor_note": "",
+  "notes": [
+    "intake 阶段只提供真实样本、渠道热度和候选事件簇，不替 brief 做观点判断。",
+    "若人工指定题目，应补到 manual_additions 并保留真实标题、原始链接与原因。"
+  ]
+}

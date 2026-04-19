@@ -1,0 +1,65 @@
+{
+  "run_id": "2026-04-03_102859",
+  "gate": "Intake Gate",
+  "status": "pending_review",
+  "generated_at": "2026-04-03T10:28:59.994746+08:00",
+  "instructions": [
+    "删除明显广告、生活方式、低信息密度、重复搬运样本。",
+    "保留能形成事件线索、人物线索、议题线索的样本。",
+    "如需补链，直接在 additions 中新增。"
+  ],
+  "noise_candidates": [
+    {
+      "title": "生活到底对我们两口子做了什么？！",
+      "url": "https://www.xiaohongshu.com/explore/64718c2d0000000012030f18?xsec_token=ABrtj6WWKntX-NsHZYowrMD5JWN6wPulC2LwO0frajaC0=&xsec_source=pc_feed",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/xhs"
+    },
+    {
+      "title": "《SMC聪明钱课程》第6/30课 买方流动性与卖方流动性，内部与外部流动性\n本课深度解析市场流动性的核心分类与驱动逻辑，聚焦买方流动性（需求主导）与卖方流动性（供应主导）的动态博弈，以及内部流动性（机构资金、做市商行为）与外部流动性（宏观环境、市场情绪）的交互影响。通过案例拆解流动性分布对价格波动、趋势延续及反转的底层作用，教授识别流动性聚集与枯竭的实战方法，涵盖趋势分析、资金流向追踪及多维度验证策略。课程旨在帮助交易者预判市场失衡节点，优化进出场时机选择，适配外汇黄金、比特币、股票、期货及主流加密货币等高流动性市场。适合中高阶交易者提升对市场微观结构的认知与策略适应性。#ICT交易技术 #SMC聪明钱 #交易人生 #交易心得 #黄金外汇",
+      "url": "https://www.douyin.com/video/7573773799574233011",
+      "noise_tags": [
+        "ad_promotional"
+      ],
+      "source": "5173/douyin"
+    },
+    {
+      "title": "分享一个能应对所有人生风险的顶级思维 #认知 #独立思考 #个人成长 #提升自己 #在拍一种很新的vlog",
+      "url": "https://www.douyin.com/video/7571502661833411866",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/douyin"
+    },
+    {
+      "title": "4月3日 川普说要把伊朗打回石器时代，美股直接下跌！",
+      "url": "https://www.bilibili.com/video/BV16f9cBgESR",
+      "noise_tags": [
+        "likely_repost"
+      ],
+      "source": "5173/bili"
+    },
+    {
+      "title": "蹭风有风险，跟骑需谨慎，注意安全，保持车距！瓜车平路会不会被公路车拉爆？骑行vlog",
+      "url": "https://www.bilibili.com/video/BV1AC411h7yd",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/bili"
+    },
+    {
+      "title": "朋友骑车坠入山崖 可能以后无法骑车上山了 越野有风险 骑行需谨慎",
+      "url": "https://www.bilibili.com/video/BV16oXzYQEnw",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/bili"
+    }
+  ],
+  "remove_ids": [],
+  "keep_ids": [],
+  "additions": [],
+  "editor_note": ""
+}

@@ -1,0 +1,671 @@
+{
+  "run_id": "2026-03-29_105535",
+  "run_date": "2026-03-29",
+  "workflow_name": "dasheng-daily",
+  "workflow_version": "3.0.0",
+  "status": "completed",
+  "current_step": "publish",
+  "completed_steps": [
+    "intake",
+    "brief",
+    "material"
+  ],
+  "failed_steps": [],
+  "skipped_steps": [],
+  "folder": {
+    "token": "BC9mfiWkjlqAtRdWOzMcIdJ1nTE",
+    "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/BC9mfiWkjlqAtRdWOzMcIdJ1nTE",
+    "name": "2026-03-29"
+  },
+  "artifacts": [
+    {
+      "step": "brief",
+      "object_type": "ContentBrief",
+      "count": 3,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/inputs/content_briefs_selected.json",
+      "doc_url": null
+    },
+    {
+      "step": "material",
+      "object_type": "MaterialPack",
+      "count": 3,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/material-packs.json",
+      "doc_url": null
+    },
+    {
+      "step": "material",
+      "object_type": "MaterialMarkdown",
+      "count": 1,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/05_MaterialPack.md",
+      "doc_url": "https://ccnokd2fmz4u.feishu.cn/docx/ZExYdvyXio6UFGxSqMPcdaNRn5f"
+    },
+    {
+      "step": "material",
+      "object_type": "MaterialReport",
+      "count": 1,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/05_Material_报告.md",
+      "doc_url": "https://ccnokd2fmz4u.feishu.cn/docx/F0Odd3FZfoP1B4xybJCcTnUOnWg"
+    },
+    {
+      "step": "material",
+      "object_type": "MaterialManifest",
+      "count": 1,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/material_manifest.json",
+      "doc_url": null
+    }
+  ],
+  "selection_state": {
+    "selected_topic_ids": [
+      "topic-6",
+      "topic-10",
+      "topic-11"
+    ],
+    "rejected_topic_ids": []
+  },
+  "operator_decisions": [],
+  "retry_state": {},
+  "message_refs": [
+    {
+      "kind": "feishu_doc",
+      "token": "VdfVd1nfXowk2oxJjTzcrBPynrz",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/VdfVd1nfXowk2oxJjTzcrBPynrz",
+      "title": "01_内容采集_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "FvG4dd8UjoY1tsxci8Sc3uNenOg",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/FvG4dd8UjoY1tsxci8Sc3uNenOg",
+      "title": "02_编辑Brief库"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "DRkddn2B6oJSbqx4ZNacne4dnLJ",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/DRkddn2B6oJSbqx4ZNacne4dnLJ",
+      "title": "02_编辑Brief_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "YiI9dlH4FoNeZFxjMeTclF3oncc",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/YiI9dlH4FoNeZFxjMeTclF3oncc",
+      "title": "03_标准初稿"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "LBaKdUwGnoEzfyxyk4DcS7Ugn3c",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/LBaKdUwGnoEzfyxyk4DcS7Ugn3c",
+      "title": "03_初稿_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "HoUOdTUreoTcPsxprkkcoNiRnOe",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/HoUOdTUreoTcPsxprkkcoNiRnOe",
+      "title": "05_MaterialPack"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "QtVndkOCPofIzcxhBZKcnQ0jnrg",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/QtVndkOCPofIzcxhBZKcnQ0jnrg",
+      "title": "05_Material_报告"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53bfe5b440a8b211dae984c767d",
+      "url": "feishu://message/om_x100b53bfe5b440a8b211dae984c767d",
+      "title": "intake 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53bfe54da8a8b3923369f8d7dab",
+      "url": "feishu://message/om_x100b53bfe54da8a8b3923369f8d7dab",
+      "title": "brief 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53bfe5486ca0b3b6ea7a4910ffe",
+      "url": "feishu://message/om_x100b53bfe5486ca0b3b6ea7a4910ffe",
+      "title": "draft 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53bfe54640a0b3141c8e12a022a",
+      "url": "feishu://message/om_x100b53bfe54640a0b3141c8e12a022a",
+      "title": "material 审核通知"
+    },
+    {
+      "kind": "feishu_upload",
+      "token": "EJxIfDaCQlvwJmdcksZcsSkCnAe",
+      "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/EJxIfDaCQlvwJmdcksZcsSkCnAe",
+      "title": "2026-03-29_素材包"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "XWszdhb28ot49nxN9wucPSlunzi",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/XWszdhb28ot49nxN9wucPSlunzi",
+      "title": "01_内容采集_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "HIcpdohSAoJbRox5MNqcySrPnae",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/HIcpdohSAoJbRox5MNqcySrPnae",
+      "title": "02_编辑Brief库"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "MFqadpsqRoL3zZxlVLDch7Sennn",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/MFqadpsqRoL3zZxlVLDch7Sennn",
+      "title": "02_编辑Brief_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "GCuud4agEov36VxZ0PfclKRvn8f",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/GCuud4agEov36VxZ0PfclKRvn8f",
+      "title": "03_标准初稿"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "J4lidSQxhoz590xfFeocNOBKnrh",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/J4lidSQxhoz590xfFeocNOBKnrh",
+      "title": "03_初稿_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "BjiedybeSovJSXx1Yuhc4Wy7nTg",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/BjiedybeSovJSXx1Yuhc4Wy7nTg",
+      "title": "05_MaterialPack"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "Fp9QdzRkFo6NyMx6mX6cWGlsnhb",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/Fp9QdzRkFo6NyMx6mX6cWGlsnhb",
+      "title": "05_Material_报告"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53bf8d9680a4b289d9db1b40f6b",
+      "url": "feishu://message/om_x100b53bf8d9680a4b289d9db1b40f6b",
+      "title": "intake 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53bf8dac94a8b2de2c7c943e1c1",
+      "url": "feishu://message/om_x100b53bf8dac94a8b2de2c7c943e1c1",
+      "title": "brief 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53bf8da598a4b319716387fdaea",
+      "url": "feishu://message/om_x100b53bf8da598a4b319716387fdaea",
+      "title": "draft 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53bf8da3d4b0b4995918d4f9ddf",
+      "url": "feishu://message/om_x100b53bf8da3d4b0b4995918d4f9ddf",
+      "title": "material 审核通知"
+    },
+    {
+      "kind": "feishu_upload",
+      "token": "WF0ifVNRXlaydAdVYIVcsbSOnLf",
+      "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/WF0ifVNRXlaydAdVYIVcsbSOnLf",
+      "title": "2026-03-29_素材包"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "AdTTd5sGso9bScx3IdAcuofNnFf",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/AdTTd5sGso9bScx3IdAcuofNnFf",
+      "title": "01_内容采集_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "QURyddqQioKnyOxsWSrcgP6TnTd",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/QURyddqQioKnyOxsWSrcgP6TnTd",
+      "title": "02_编辑Brief库"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "MFQSdeWqWoHKR1xKMjrck8FhnD3",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/MFQSdeWqWoHKR1xKMjrck8FhnD3",
+      "title": "02_编辑Brief_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "IbzCd5zQTo4F5ixWUsQcqv8Hnfx",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/IbzCd5zQTo4F5ixWUsQcqv8Hnfx",
+      "title": "03_标准初稿"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "FD0QdQu5EoiYoSxoCEbcfYjZndf",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/FD0QdQu5EoiYoSxoCEbcfYjZndf",
+      "title": "03_初稿_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "FW2ydx33loZgzex1D7Uc5fdJnXc",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/FW2ydx33loZgzex1D7Uc5fdJnXc",
+      "title": "05_MaterialPack"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "WKw5d3OA3oxi3kxhPPHcg83nngc",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/WKw5d3OA3oxi3kxhPPHcg83nngc",
+      "title": "05_Material_报告"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53bf9992a8a8b35947985c1a16a",
+      "url": "feishu://message/om_x100b53bf9992a8a8b35947985c1a16a",
+      "title": "intake 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53bf99a860a0b4bd0aee987523e",
+      "url": "feishu://message/om_x100b53bf99a860a0b4bd0aee987523e",
+      "title": "brief 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53bf99a194acb21b749c01552aa",
+      "url": "feishu://message/om_x100b53bf99a194acb21b749c01552aa",
+      "title": "draft 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53bf99be84b8b25eae38ec55883",
+      "url": "feishu://message/om_x100b53bf99be84b8b25eae38ec55883",
+      "title": "material 审核通知"
+    },
+    {
+      "kind": "feishu_upload",
+      "token": "LH2qf09a9lulOtd3gMuco8nAnUe",
+      "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/LH2qf09a9lulOtd3gMuco8nAnUe",
+      "title": "2026-03-29_素材包"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "JhBDdJDQToQNspxPoKWcXoeTnze",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/JhBDdJDQToQNspxPoKWcXoeTnze",
+      "title": "01_内容采集_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "Bz5fdahOEoOhQpxbsj0c04VjnRh",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/Bz5fdahOEoOhQpxbsj0c04VjnRh",
+      "title": "02_编辑Brief库"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "MpYYdTgSLoewx4xPU2WcL8Zjnge",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/MpYYdTgSLoewx4xPU2WcL8Zjnge",
+      "title": "02_编辑Brief_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "DvLvdONQBozLbwxcUlTc75nKnMd",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/DvLvdONQBozLbwxcUlTc75nKnMd",
+      "title": "03_标准初稿"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "G625dEH98oUtGKxVMDecRfCLnde",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/G625dEH98oUtGKxVMDecRfCLnde",
+      "title": "03_初稿_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "VTPldWmH2ou5RWxew2YcmBcMnld",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/VTPldWmH2ou5RWxew2YcmBcMnld",
+      "title": "05_改写稿"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "HNmZdVvSZoiosVxckyLcWGWNn1g",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/HNmZdVvSZoiosVxckyLcWGWNn1g",
+      "title": "05_改写_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "Flr1dQJTOoPiRQxwidgckHvCnxu",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/Flr1dQJTOoPiRQxwidgckHvCnxu",
+      "title": "05_MaterialPack"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "JJEndcLNboRp07xx7vJceBOdnud",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/JJEndcLNboRp07xx7vJceBOdnud",
+      "title": "05_Material_报告"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53b9c9d9dcacb3c3fee5cf8e327",
+      "url": "feishu://message/om_x100b53b9c9d9dcacb3c3fee5cf8e327",
+      "title": "intake 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53b9c9d7e0b4b4cfcc4f46d488c",
+      "url": "feishu://message/om_x100b53b9c9d7e0b4b4cfcc4f46d488c",
+      "title": "brief 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53b9c9ecec80b36abeddef4181f",
+      "url": "feishu://message/om_x100b53b9c9ecec80b36abeddef4181f",
+      "title": "draft 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53b9c9ea9ca8b4b2283061410a1",
+      "url": "feishu://message/om_x100b53b9c9ea9ca8b4b2283061410a1",
+      "title": "rewrite 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53b9c9e048a8b39276cd11da27c",
+      "url": "feishu://message/om_x100b53b9c9e048a8b39276cd11da27c",
+      "title": "material 审核通知"
+    },
+    {
+      "kind": "feishu_upload",
+      "token": "Vr9ofrM7jli4IXdpvezcfKLmn1b",
+      "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/Vr9ofrM7jli4IXdpvezcfKLmn1b",
+      "title": "2026-03-29_素材包"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "ImBjd3VzvozqEExMlsCcmXzZnlg",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/ImBjd3VzvozqEExMlsCcmXzZnlg",
+      "title": "01_内容采集_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "H0KcdEUVNoTp3wxJB7icciqVn2f",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/H0KcdEUVNoTp3wxJB7icciqVn2f",
+      "title": "02_编辑Brief库"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "O5QwdpEAboFbTwxAFyHcXOXwnJd",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/O5QwdpEAboFbTwxAFyHcXOXwnJd",
+      "title": "02_编辑Brief_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "DITmdoEIHoAxN3xNV0ncag2Lnig",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/DITmdoEIHoAxN3xNV0ncag2Lnig",
+      "title": "03 标准初稿｜一键安装 OpenClaw + 常用 skills：把“能跑起来”变成“可复用、可审计、可回滚”"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "UF2bdM9ZqosP5mxqPEQc2y32nCd",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/UF2bdM9ZqosP5mxqPEQc2y32nCd",
+      "title": "03 标准初稿｜半导体突然很热闹，但行业最危险的误判可能才刚开始"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "SPhZdroIuoqp46xActEcdhhsngO",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/SPhZdroIuoqp46xActEcdhhsngO",
+      "title": "03 标准初稿｜如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "Uc6EdoilQo8DYLxpcg9c30RGnKd",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/Uc6EdoilQo8DYLxpcg9c30RGnKd",
+      "title": "03_初稿_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "JuI9djR1GokTmMxEfpfc6RNynUh",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/JuI9djR1GokTmMxEfpfc6RNynUh",
+      "title": "05_改写稿"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "OfS6dBncSodMZKx1xj8ch1FYnNb",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/OfS6dBncSodMZKx1xj8ch1FYnNb",
+      "title": "05_改写_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "Eld3dtqmzoLHjJxF3yIchk1nnnh",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/Eld3dtqmzoLHjJxF3yIchk1nnnh",
+      "title": "05_MaterialPack"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "M04ed7YenowU1oxhp7Oc8sKSnve",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/M04ed7YenowU1oxhp7Oc8sKSnve",
+      "title": "05_Material_报告"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b5395800bb884b4ad41e485a8b7f",
+      "url": "feishu://message/om_x100b5395800bb884b4ad41e485a8b7f",
+      "title": "intake 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b539580036c88b3be0dddbc9feeb",
+      "url": "feishu://message/om_x100b539580036c88b3be0dddbc9feeb",
+      "title": "brief 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b5395801ac094b2cc6f0e0b53c82",
+      "url": "feishu://message/om_x100b5395801ac094b2cc6f0e0b53c82",
+      "title": "draft 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53958012a4b4b31bc218b537983",
+      "url": "feishu://message/om_x100b53958012a4b4b31bc218b537983",
+      "title": "rewrite 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b5395802500b4b28f348bdc98930",
+      "url": "feishu://message/om_x100b5395802500b4b28f348bdc98930",
+      "title": "material 审核通知"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "J7xidndbrobWm6xiTT9cICG2nlf",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/J7xidndbrobWm6xiTT9cICG2nlf",
+      "title": "01_内容采集_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "SNB0dkLURom71fxkn37cFGPonSc",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/SNB0dkLURom71fxkn37cFGPonSc",
+      "title": "02_编辑Brief库"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "Yt25dCB7UoPfLQxo5vZcC5bMnoc",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/Yt25dCB7UoPfLQxo5vZcC5bMnoc",
+      "title": "02_编辑Brief_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "H14YdnSSJobwJRxzjAMcNmSZn06",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/H14YdnSSJobwJRxzjAMcNmSZn06",
+      "title": "03 标准初稿｜一键安装 OpenClaw + 常用 skills：把“能跑起来”变成“可复用、可审计、可回滚”"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "ThqWdhueAoaP2PxIxpuceu2Vnmd",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/ThqWdhueAoaP2PxIxpuceu2Vnmd",
+      "title": "03 标准初稿｜半导体突然很热闹，但行业最危险的误判可能才刚开始"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "VREEdPUIfoktdZxIbAWciigznLd",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/VREEdPUIfoktdZxIbAWciigznLd",
+      "title": "03 标准初稿｜如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "KMvDd4ahSosolQxbqDqcqAJtnVh",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/KMvDd4ahSosolQxbqDqcqAJtnVh",
+      "title": "03_初稿_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "QvbbdXfUIo3b4Qx8b8AcSt3WnYc",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/QvbbdXfUIo3b4Qx8b8AcSt3WnYc",
+      "title": "05_改写稿"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "MCVldFVtYoNUWKxp8vUcXKqMnhK",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/MCVldFVtYoNUWKxp8vUcXKqMnhK",
+      "title": "05_改写_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "ZQRvd2TrMoCS2nxYWpZcLUx1nDc",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/ZQRvd2TrMoCS2nxYWpZcLUx1nDc",
+      "title": "05_MaterialPack"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "WrondnNjBoIf8AxxULCcwWCZnOy",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/WrondnNjBoIf8AxxULCcwWCZnOy",
+      "title": "05_Material_报告"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53964cf680a8b35ea5a80841a92",
+      "url": "feishu://message/om_x100b53964cf680a8b35ea5a80841a92",
+      "title": "intake 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53964c89f894b32dbf74f717b93",
+      "url": "feishu://message/om_x100b53964c89f894b32dbf74f717b93",
+      "title": "brief 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53964c817470b32b23e804faebe",
+      "url": "feishu://message/om_x100b53964c817470b32b23e804faebe",
+      "title": "draft 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53964c95d4a0b27ae413e67fd1a",
+      "url": "feishu://message/om_x100b53964c95d4a0b27ae413e67fd1a",
+      "title": "rewrite 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b53964caf98acb3170be308621d1",
+      "url": "feishu://message/om_x100b53964caf98acb3170be308621d1",
+      "title": "material 审核通知"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "KmAddADdGoCpoqxk4mpc1YGSnMp",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/KmAddADdGoCpoqxk4mpc1YGSnMp",
+      "title": "01_内容采集_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "SYMzdBSRSoQ5FVxllIfcvTJhnBc",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/SYMzdBSRSoQ5FVxllIfcvTJhnBc",
+      "title": "02_编辑Brief库"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "TsxCdIRzFovyzrxSbH5cIWNanbh",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/TsxCdIRzFovyzrxSbH5cIWNanbh",
+      "title": "02_编辑Brief_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "NfNSdRRhFoqpK3xFZpEc35lKnGh",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/NfNSdRRhFoqpK3xFZpEc35lKnGh",
+      "title": "03 标准初稿｜一键安装 OpenClaw + 常用 skills：把“能跑起来”变成“可复用、可审计、可回滚”"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "JuDzdvqypoDDrixsn6rc2vJ3nGT",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/JuDzdvqypoDDrixsn6rc2vJ3nGT",
+      "title": "03 标准初稿｜半导体突然很热闹，但行业最危险的误判可能才刚开始"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "IxsNdUZqkoGe45xfjyhcpLT4nxb",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/IxsNdUZqkoGe45xfjyhcpLT4nxb",
+      "title": "03 标准初稿｜如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "W0EWdfBkaoK9YRxGEpYcTtGvnih",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/W0EWdfBkaoK9YRxGEpYcTtGvnih",
+      "title": "03_初稿_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "ERwWdRqcRoqUfCx0mc3cnXQbnmd",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/ERwWdRqcRoqUfCx0mc3cnXQbnmd",
+      "title": "05_改写稿"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "TSQQd4dufok9WjxYvXhcKQjyn4d",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/TSQQd4dufok9WjxYvXhcKQjyn4d",
+      "title": "05_改写_报告"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "ZExYdvyXio6UFGxSqMPcdaNRn5f",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/ZExYdvyXio6UFGxSqMPcdaNRn5f",
+      "title": "05_MaterialPack"
+    },
+    {
+      "kind": "feishu_doc",
+      "token": "F0Odd3FZfoP1B4xybJCcTnUOnWg",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/F0Odd3FZfoP1B4xybJCcTnUOnWg",
+      "title": "05_Material_报告"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b5396642c6498b3d0ceec1ea1252",
+      "url": "feishu://message/om_x100b5396642c6498b3d0ceec1ea1252",
+      "title": "intake 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b5396642404acb27234ddaed0004",
+      "url": "feishu://message/om_x100b5396642404acb27234ddaed0004",
+      "title": "brief 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b5396643fd0ccb10535e16e29599",
+      "url": "feishu://message/om_x100b5396643fd0ccb10535e16e29599",
+      "title": "draft 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b539664378cccb4a1779f5e9499b",
+      "url": "feishu://message/om_x100b539664378cccb4a1779f5e9499b",
+      "title": "rewrite 审核通知"
+    },
+    {
+      "kind": "feishu_message",
+      "token": "om_x100b539665cfc4bcb4a4334d161991b",
+      "url": "feishu://message/om_x100b539665cfc4bcb4a4334d161991b",
+      "title": "material 审核通知"
+    },
+    {
+      "kind": "feishu_upload",
+      "token": "L9d1f3xcNl0rKxdvvN9cLy2InHb",
+      "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/L9d1f3xcNl0rKxdvvN9cLy2InHb",
+      "title": "2026-03-29_素材包"
+    }
+  ],
+  "created_at": "2026-03-29T13:25:50.506354",
+  "updated_at": "2026-03-31T09:11:08.350Z"
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "T1",
+    "topic_name": "鲍威尔转向降息预期逆转市场加息押注",
+    "topic_kind": "independent",
+    "mother_topic_id": "T1",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 2,
+    "topic_id": "T2",
+    "topic_name": "俄罗斯断供日本石油加剧全球能源地缘风险",
+    "topic_kind": "independent",
+    "mother_topic_id": "T2",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 3,
+    "topic_id": "T3",
+    "topic_name": "霍尔木兹海峡封锁推升美通胀并考验全球能源安全",
+    "topic_kind": "independent",
+    "mother_topic_id": "T3",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 4,
+    "topic_id": "T4",
+    "topic_name": "美以联军军事失利激活中东抵抗力量逆转局势",
+    "topic_kind": "independent",
+    "mother_topic_id": "T4",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 5,
+    "topic_id": "T5",
+    "topic_name": "美联储降息预期激活贵金属避险资金流入",
+    "topic_kind": "independent",
+    "mother_topic_id": "T5",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 6,
+    "topic_id": "T6",
+    "topic_name": "美军抢夺伊朗核材料极端军事计划揭露风险升级",
+    "topic_kind": "independent",
+    "mother_topic_id": "T6",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 7,
+    "topic_id": "T7",
+    "topic_name": "伊朗控制霍尔木兹海峡构成实质核威慑",
+    "topic_kind": "independent",
+    "mother_topic_id": "T7",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 8,
+    "topic_id": "T8",
+    "topic_name": "中东停火斡旋卡塔尔退出加剧冲突不确定性",
+    "topic_kind": "independent",
+    "mother_topic_id": "T8",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 9,
+    "topic_id": "T9",
+    "topic_name": "中国散户大规模买入反映市场信心回暖",
+    "topic_kind": "independent",
+    "mother_topic_id": "T9",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 10,
+    "topic_id": "T10",
+    "topic_name": "国务院多部门联动强化平台企业监管",
+    "topic_kind": "independent",
+    "mother_topic_id": "T10",
+    "source_status": "ai_generated"
+  }
+]

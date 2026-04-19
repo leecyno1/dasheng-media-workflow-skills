@@ -1,0 +1,195 @@
+{
+  "core_claim": "日本核武器能力披露反映了其从战后和平宪法约束向实质军事化的结构性转变，伴随法律松绑、技术储备和地缘政治驱动，导致东亚安全格局深刻变化和多重风险。",
+  "topic_type": "geopolitics",
+  "article_summary": "文章分析了2026年日本官方披露具备制造核武器能力的背景与深层结构变量，指出这不仅是技术信息公开，更是和平宪法约束向军事化转型的标志。通过技术储备（钚库存）、法律松绑（和平宪法突破）和地缘政治驱动（美日同盟重构、中国崛起）三大维度，揭示日本军事化的系统性演变。文章对比了战后和平体系与当前军事化政策差异，强调三重风险：历史创伤激活、地区军备竞赛加剧和核扩散多米诺效应。最后呼吁关注政策动态，避免表面热度，警惕东亚安全结构性裂变。",
+  "skip_notes": "全文结构清晰，论据层次分明，除个别引用待补充外，整体内容充分。无需补充漫画、梗图或视频素材。图片需求聚焦于具体事件、机构和数据图表，图表数量控制在4个以内以突出重点。视频素材不适用，因文章为深度分析，无动态现场报道需求。",
+  "claims": [
+    {
+      "claim_id": "claim-01",
+      "section_id": "section-02",
+      "heading": "技术储备：钚库存的战略意义",
+      "statement": "日本拥有约47吨分离钚，足以制造6000枚核弹头，这些钚主要来自核电站乏燃料后处理，构成潜在核武器原料库。",
+      "counterpoint": "钚虽为核武器原料，但是否转化为武器取决于政治意愿和国际压力。",
+      "missing_proof": [
+        "IAEA关于日本钚库存的最新报告"
+      ],
+      "chart_need": true
+    },
+    {
+      "claim_id": "claim-02",
+      "section_id": "section-02",
+      "heading": "法律松绑：和平宪法的实质性突破",
+      "statement": "近年来日本通过安保法案及提出反击能力概念，实质突破了和平宪法第九条中战争权和专守防卫的限制。",
+      "counterpoint": "修宪尚未完成，部分法律仍有争议，实际军事运用仍受制约。",
+      "missing_proof": [
+        "日本防卫白皮书2025完整版",
+        "日本修宪进程的国会辩论记录"
+      ],
+      "chart_need": false
+    },
+    {
+      "claim_id": "claim-03",
+      "section_id": "section-02",
+      "heading": "地缘驱动：美日同盟重构与中国崛起",
+      "statement": "美国战略收缩背景下，日本防卫预算大幅增长，反映其承担更多防务责任以应对中国崛起。",
+      "counterpoint": "预算增长不完全等同于军事化，部分资金用于防御性装备和技术升级。",
+      "missing_proof": [
+        "日本财务省防卫预算历年数据",
+        "东亚各国防卫预算对比数据"
+      ],
+      "chart_need": true
+    },
+    {
+      "claim_id": "claim-04",
+      "section_id": "section-03",
+      "heading": "战后和平体系与当前军事化转变对比",
+      "statement": "从宪法约束、政策、防卫理念到民意基础，日本经历了从严格和平体系向军事化的系统性转变。",
+      "counterpoint": "社会内部仍存在反战力量，军事化进程并非全盘接受，存在一定阻力。",
+      "missing_proof": [],
+      "chart_need": true
+    },
+    {
+      "claim_id": "claim-05",
+      "section_id": "section-04",
+      "heading": "三重风险：历史创伤、军备竞赛、核扩散",
+      "statement": "日本核能力披露激活历史创伤记忆，引发中韩警惕，推动东亚军备竞赛加剧，并威胁全球核不扩散体系。",
+      "counterpoint": "具体反应和政策调整仍在演变中，风险存在不确定性。",
+      "missing_proof": [
+        "中韩官方对日本核能力的正式声明"
+      ],
+      "chart_need": true
+    }
+  ],
+  "chart_anchors": [
+    {
+      "anchor_id": "chart-01",
+      "section_id": "section-02",
+      "title": "日本钚库存量历史趋势图（1990-2026）",
+      "purpose": "展示日本钚库存的增长趋势及其核武器潜力",
+      "data_sources": [
+        "IAEA年度报告2025",
+        "日本核能机构数据"
+      ],
+      "chart_type": "折线图",
+      "only_if_worth_chart": true
+    },
+    {
+      "anchor_id": "chart-02",
+      "section_id": "section-02",
+      "title": "日本防卫预算增长曲线（2010-2026）",
+      "purpose": "反映日本防卫预算的持续增长，体现军事化趋势",
+      "data_sources": [
+        "日本财务省数据"
+      ],
+      "chart_type": "折线图",
+      "only_if_worth_chart": true
+    },
+    {
+      "anchor_id": "chart-03",
+      "section_id": "section-03",
+      "title": "战后和平体系vs当前军事化对比表",
+      "purpose": "对比日本战后和平体系与当前军事化政策的结构性差异",
+      "data_sources": [
+        "日本宪法文本",
+        "安保法案资料",
+        "防卫白皮书"
+      ],
+      "chart_type": "对比表格",
+      "only_if_worth_chart": true
+    },
+    {
+      "anchor_id": "chart-04",
+      "section_id": "section-04",
+      "title": "东亚安全格局失衡示意图",
+      "purpose": "展示日本核能力公开后，东亚地区军备竞赛和核扩散风险的地缘政治影响",
+      "data_sources": [
+        "公开安全分析报告",
+        "区域防务预算数据"
+      ],
+      "chart_type": "示意图/地图",
+      "only_if_worth_chart": true
+    }
+  ],
+  "image_queries": [
+    {
+      "query": "日本官方披露核武器能力新闻发布会现场",
+      "entity_type": "event",
+      "entity": "日本核能力披露",
+      "priority": "high",
+      "channel": "新闻图片库"
+    },
+    {
+      "query": "岸田文雄 日本首相 正式演讲",
+      "entity_type": "person",
+      "entity": "岸田文雄",
+      "priority": "medium",
+      "channel": "新闻图片库"
+    },
+    {
+      "query": "中国外交部新闻发布会 2026年4月",
+      "entity_type": "event",
+      "entity": "中国外交部回应日本核能力",
+      "priority": "medium",
+      "channel": "新闻图片库"
+    },
+    {
+      "query": "东京新宿 反战集会 2026年4月",
+      "entity_type": "event",
+      "entity": "日本民众反战集会",
+      "priority": "medium",
+      "channel": "新闻图片库"
+    }
+  ],
+  "news_screenshot_queries": [
+    {
+      "query": "新华社 2026年4月10日 中国外交部对日本核能力声明",
+      "priority": "high",
+      "channel": "新闻网站"
+    },
+    {
+      "query": "韩国国会紧急听证会 日本核能力议题",
+      "priority": "medium",
+      "channel": "新闻网站"
+    }
+  ],
+  "video_queries": [],
+  "generated_visuals": {
+    "cover_prompt": "日本国旗背景下的核弹头隐喻，展现和平宪法与军事化转变的矛盾冲突，风格严肃深沉",
+    "infographic_prompts": [
+      "日本钚库存量增长趋势及其核武潜力，结合核电站乏燃料处理示意",
+      "日本防卫预算增长曲线与美日同盟关系图解",
+      "战后和平体系与当前军事化政策对比表格，突出宪法、政策、核能力、民意变化",
+      "东亚安全格局变化示意图，突出日本核能力公开后中韩反应及军备竞赛风险"
+    ],
+    "comic_storyboard": [],
+    "meme_prompts": [],
+    "funny_comic_character_prompts": []
+  },
+  "scene_plan": [
+    {
+      "title": "日本核能力披露的历史节点",
+      "visual": "日本核能力披露时间线图",
+      "caption": "展示日本从核材料积累到公开核能力的关键时间节点"
+    },
+    {
+      "title": "钚库存与核武潜力",
+      "visual": "日本钚库存量历史趋势图",
+      "caption": "日本钚库存量持续增长，构筑核武器潜在基础"
+    },
+    {
+      "title": "军事预算与政策转型",
+      "visual": "日本防卫预算增长曲线",
+      "caption": "日本防卫预算大幅提升，反映军事化趋势"
+    },
+    {
+      "title": "战后和平体系与当前军事化对比",
+      "visual": "战后和平体系vs当前军事化对比表",
+      "caption": "对比日本和平宪法体系与军事化转型的关键差异"
+    },
+    {
+      "title": "东亚安全格局风险",
+      "visual": "东亚安全格局失衡示意图",
+      "caption": "日本核能力公开引发的地区军备竞赛和核扩散风险"
+    }
+  ]
+}

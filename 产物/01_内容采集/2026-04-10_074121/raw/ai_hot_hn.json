@@ -1,0 +1,1722 @@
+{
+  "OpenAI": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Aianback"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Memoriki is a template for building personal knowledge bases where the LLM does all the maintenance work.<p>It combines Karpathy's LLM Wiki pattern (structured markdown wiki maintained by an LLM) with MemPalace (an MCP server that adds semantic search and a temporal knowledge graph).<p>Three layers:\n- Wiki pages with [[wiki-links]] and YAML frontmatter - the LLM creates and maintains these\n- Semantic search via embeddings (ChromaDB) - find things by meaning, not keywords\n- Knowledge graph with typed relationships and date validity - &quot;what changed since last month?&quot;<p>It's not RAG. RAG re-derives answers from raw chunks every time. Here the LLM compiles knowledge into wiki pages once, keeps them current as new sources arrive, and the graph tracks how everything connects.<p>Works with any MCP-compatible agent (Claude Code, <em>OpenAI</em> Codex, Cursor, Gemini CLI).<p><a href=\"https://github.com/AyanbekDos/memoriki\" rel=\"nofollow\">https://github.com/AyanbekDos/memoriki</a>"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Memoriki – LLM Wiki+MemPalace for persistent personal knowledge bases"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Aianback",
+          "story_47711037",
+          "show_hn"
+        ],
+        "author": "Aianback",
+        "created_at": "2026-04-09T22:22:20Z",
+        "created_at_i": 1775773340,
+        "num_comments": 0,
+        "objectID": "47711037",
+        "points": 4,
+        "story_id": 47711037,
+        "story_text": "Memoriki is a template for building personal knowledge bases where the LLM does all the maintenance work.<p>It combines Karpathy&#x27;s LLM Wiki pattern (structured markdown wiki maintained by an LLM) with MemPalace (an MCP server that adds semantic search and a temporal knowledge graph).<p>Three layers:\n- Wiki pages with [[wiki-links]] and YAML frontmatter - the LLM creates and maintains these\n- Semantic search via embeddings (ChromaDB) - find things by meaning, not keywords\n- Knowledge graph with typed relationships and date validity - &quot;what changed since last month?&quot;<p>It&#x27;s not RAG. RAG re-derives answers from raw chunks every time. Here the LLM compiles knowledge into wiki pages once, keeps them current as new sources arrive, and the graph tracks how everything connects.<p>Works with any MCP-compatible agent (Claude Code, OpenAI Codex, Cursor, Gemini CLI).<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;AyanbekDos&#x2F;memoriki\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;AyanbekDos&#x2F;memoriki</a>",
+        "title": "Show HN: Memoriki – LLM Wiki+MemPalace for persistent personal knowledge bases",
+        "updated_at": "2026-04-09T22:45:03Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "sea-gold"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Hosted AI API Gateway – smart routing across Google, <em>OpenAI</em>, Anthropic, and more"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://api.lxg2it.com"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_sea-gold",
+          "story_47710909"
+        ],
+        "author": "sea-gold",
+        "children": [
+          47711029,
+          47710910
+        ],
+        "created_at": "2026-04-09T22:10:16Z",
+        "created_at_i": 1775772616,
+        "num_comments": 2,
+        "objectID": "47710909",
+        "points": 1,
+        "story_id": 47710909,
+        "title": "Hosted AI API Gateway – smart routing across Google, OpenAI, Anthropic, and more",
+        "updated_at": "2026-04-09T22:44:04Z",
+        "url": "https://api.lxg2it.com"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "surprisetalk"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "CyberAgent moves faster with ChatGPT Enterprise and Codex"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://<em>openai</em>.com/index/cyber-agent"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_surprisetalk",
+          "story_47710577"
+        ],
+        "author": "surprisetalk",
+        "created_at": "2026-04-09T21:44:28Z",
+        "created_at_i": 1775771068,
+        "num_comments": 0,
+        "objectID": "47710577",
+        "points": 3,
+        "story_id": 47710577,
+        "title": "CyberAgent moves faster with ChatGPT Enterprise and Codex",
+        "updated_at": "2026-04-09T22:10:03Z",
+        "url": "https://openai.com/index/cyber-agent"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "HiroProtagonist"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "<em>OpenAI</em> looks to take on Anthropic with $100 per month ChatGPT Pro subscriptions"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.cnbc.com/2026/04/09/<em>openai</em>-chatgpt-pro-subscription-anthropic-claude-code.html"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_HiroProtagonist",
+          "story_47710397"
+        ],
+        "author": "HiroProtagonist",
+        "created_at": "2026-04-09T21:27:28Z",
+        "created_at_i": 1775770048,
+        "num_comments": 0,
+        "objectID": "47710397",
+        "points": 1,
+        "story_id": 47710397,
+        "title": "OpenAI looks to take on Anthropic with $100 per month ChatGPT Pro subscriptions",
+        "updated_at": "2026-04-09T21:33:05Z",
+        "url": "https://www.cnbc.com/2026/04/09/openai-chatgpt-pro-subscription-anthropic-claude-code.html"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "joshghent"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "RepoWarden monitors your repos and opens PRs for dependency updates and security patches automatically. I got tired of manually managing Dependabot PRs across dozens of repos, so I built something that handles the whole lifecycle - from detecting outdated deps to <em>openi</em>ng well-described PRs.<p>I’ve taken a lot of care to ensure security of this app. Each “run” exists in a fresh container in cloudflare with its own network. And there are a myriad of protections against dependency poisoning and other attacks.<p>I’ve been dogfooding this app for about a month and has merged over 50 PR’s for me and found and fixed security issues for me.<p>Hope you find it useful :)\nFree for open source folk of course"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: RepoWarden – Autopilot for your GitHub dependency updates"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://repowarden.dev/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_joshghent",
+          "story_47708725",
+          "show_hn"
+        ],
+        "author": "joshghent",
+        "created_at": "2026-04-09T19:40:56Z",
+        "created_at_i": 1775763656,
+        "num_comments": 0,
+        "objectID": "47708725",
+        "points": 2,
+        "story_id": 47708725,
+        "story_text": "RepoWarden monitors your repos and opens PRs for dependency updates and security patches automatically. I got tired of manually managing Dependabot PRs across dozens of repos, so I built something that handles the whole lifecycle - from detecting outdated deps to opening well-described PRs.<p>I’ve taken a lot of care to ensure security of this app. Each “run” exists in a fresh container in cloudflare with its own network. And there are a myriad of protections against dependency poisoning and other attacks.<p>I’ve been dogfooding this app for about a month and has merged over 50 PR’s for me and found and fixed security issues for me.<p>Hope you find it useful :)\nFree for open source folk of course",
+        "title": "Show HN: RepoWarden – Autopilot for your GitHub dependency updates",
+        "updated_at": "2026-04-09T20:07:04Z",
+        "url": "https://repowarden.dev/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Bender"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "<em>OpenAI</em> puts Stargate UK on ice, blames energy costs and red tape"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.theregister.com/2026/04/09/<em>openai</em>_puts_stargate_uk_on/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Bender",
+          "story_47708593"
+        ],
+        "author": "Bender",
+        "children": [
+          47710226,
+          47709383,
+          47710144,
+          47710113,
+          47709569,
+          47709340,
+          47708992,
+          47710850,
+          47710177,
+          47710015,
+          47709053
+        ],
+        "created_at": "2026-04-09T19:29:59Z",
+        "created_at_i": 1775762999,
+        "num_comments": 33,
+        "objectID": "47708593",
+        "points": 55,
+        "story_id": 47708593,
+        "title": "OpenAI puts Stargate UK on ice, blames energy costs and red tape",
+        "updated_at": "2026-04-09T23:19:18Z",
+        "url": "https://www.theregister.com/2026/04/09/openai_puts_stargate_uk_on/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "ZeidJ"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "<em>OpenAI</em> introduces $100/month Pro plan aimed at Codex users"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://9to5mac.com/2026/04/09/<em>openai</em>-introduces-100-month-pro-plan-aimed-at-codex-users-heres-what-it-includes/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_ZeidJ",
+          "story_47708321"
+        ],
+        "author": "ZeidJ",
+        "created_at": "2026-04-09T19:12:29Z",
+        "created_at_i": 1775761949,
+        "num_comments": 0,
+        "objectID": "47708321",
+        "points": 3,
+        "story_id": 47708321,
+        "title": "OpenAI introduces $100/month Pro plan aimed at Codex users",
+        "updated_at": "2026-04-09T19:25:19Z",
+        "url": "https://9to5mac.com/2026/04/09/openai-introduces-100-month-pro-plan-aimed-at-codex-users-heres-what-it-includes/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "BiraIgnacio"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "<em>OpenAI</em> Ad Settings"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://chatgpt.com/#settings/Advertising"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_BiraIgnacio",
+          "story_47706500"
+        ],
+        "author": "BiraIgnacio",
+        "created_at": "2026-04-09T17:23:40Z",
+        "created_at_i": 1775755420,
+        "num_comments": 0,
+        "objectID": "47706500",
+        "points": 1,
+        "story_id": 47706500,
+        "title": "OpenAI Ad Settings",
+        "updated_at": "2026-04-09T17:26:48Z",
+        "url": "https://chatgpt.com/#settings/Advertising"
+      }
+    ]
+  },
+  "Anthropic Claude": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "HiroProtagonist"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "anthropic"
+            ],
+            "value": "OpenAI looks to take on <em>Anthropic</em> with $100 per month ChatGPT Pro subscriptions"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://www.cnbc.com/2026/04/09/openai-chatgpt-pro-subscription-<em>anthropic</em>-<em>claude</em>-code.html"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_HiroProtagonist",
+          "story_47710397"
+        ],
+        "author": "HiroProtagonist",
+        "created_at": "2026-04-09T21:27:28Z",
+        "created_at_i": 1775770048,
+        "num_comments": 0,
+        "objectID": "47710397",
+        "points": 1,
+        "story_id": 47710397,
+        "title": "OpenAI looks to take on Anthropic with $100 per month ChatGPT Pro subscriptions",
+        "updated_at": "2026-04-09T21:33:05Z",
+        "url": "https://www.cnbc.com/2026/04/09/openai-chatgpt-pro-subscription-anthropic-claude-code.html"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "TedDallas"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "Coverage of <em>Anthropic</em>'s <em>Claude</em> Mythos Preview and Project Glasswing has focused almost entirely on software vulnerabilities. That is where the demos are and where controlled release maps cleanly onto existing disclosure practice. I have not seen anyone engage with the next obvious question: what happens when a Mythos-class model is given detailed hardware architecture documentation and asked to do a security-oriented review? My intuition is the hardware case is meaningfully worse, for reasons beyond &quot;hardware is harder.&quot;<p>The tight feedback loop that makes Mythos effective on software partially breaks on hardware: no sandbox, no instant PoC iteration. But this is actually where an LLM could shine. Fusing disparate technical sources is what these models are unusually good at, and hardware security is bottlenecked by how few humans can hold all the context in their heads at once. Spectre, Meltdown, Downfall, Zenbleed, and LVI were all found by tiny teams of specialists. A model that can tirelessly cross-reference an ISA manual against errata against an RTL description is the tool that class of research has been waiting for.<p>The consequences are asymmetric in the attacker's favor. You cannot patch a logic flaw baked into a fab mask. The best you usually get is a microcode mitigation that costs performance, or an OS-level band-aid. For deep flaws the only real fix is a new silicon revision. Deployed hardware lives for a decade or more. A Chrome zero-day is patched by Tuesday. A zero-day in a 2021 Xeon is essentially permanent.<p>The defender coordination model does not map either. Glasswing works for software because Microsoft, Google, and Apple can push fixes to billions of devices in weeks. There is no Patch Tuesday for an Arm core already shipped in two billion phones. The vendors who would need to participate in a hardware equivalent — Intel, AMD, Arm, Qualcomm, Apple, TSMC, Samsung — have historically been far more secretive about internals than software vendors. The open collaborative disclosure model is much harder to replicate at that layer. And hardware implementation flaws are closer to strategic weapons than software bugs: usable against an adversary's entire installed base with no meaningful patching option.<p>One nuance: architecture review from published specs is the easier half of the hardware problem, and the half most exposed to current model capabilities. Finding logical flaws in a spec — race conditions in cache coherency, ambiguous memory ordering, speculation leaks — is something a capable model plausibly can do today. What it cannot do alone is analog behavior, physical side channels, fault injection, and bugs that only manifest at specific process corners. Those need silicon in a lab. But pair a Mythos-class model with a well-equipped hardware security lab and you have compressed PhD-years of work into weeks.<p>Constitutional training works against obvious malicious requests. But models can be induced to assist with offensive work when requesters segment the task and frame components as legitimate engineering questions. An end-to-end &quot;help me exploit this chip&quot; request gets refused. A hundred individually defensible questions about memory ordering, speculative corner cases, and cache timing variability may not. Humans fall for the same pattern. Models are not immune, which is likely part of why <em>Anthropic</em> is being as cautious as they are.<p>Software is where AI operates end-to-end autonomously today. Hardware is where the same capability produces more durable consequences, fewer remediation options, and a weaker disclosure ecosystem to absorb the shock. Whether anyone is seriously thinking about a hardware-focused Glasswing equivalent is something I have not seen addressed. Curious whether people here working in hardware security or silicon red-teaming think this is overstated, understated, or already being quietly worked on."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Mythos, Glasswing, and the hardware disclosure problem nobody is discussing"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_TedDallas",
+          "story_47708711",
+          "ask_hn"
+        ],
+        "author": "TedDallas",
+        "created_at": "2026-04-09T19:39:08Z",
+        "created_at_i": 1775763548,
+        "num_comments": 0,
+        "objectID": "47708711",
+        "points": 1,
+        "story_id": 47708711,
+        "story_text": "Coverage of Anthropic&#x27;s Claude Mythos Preview and Project Glasswing has focused almost entirely on software vulnerabilities. That is where the demos are and where controlled release maps cleanly onto existing disclosure practice. I have not seen anyone engage with the next obvious question: what happens when a Mythos-class model is given detailed hardware architecture documentation and asked to do a security-oriented review? My intuition is the hardware case is meaningfully worse, for reasons beyond &quot;hardware is harder.&quot;<p>The tight feedback loop that makes Mythos effective on software partially breaks on hardware: no sandbox, no instant PoC iteration. But this is actually where an LLM could shine. Fusing disparate technical sources is what these models are unusually good at, and hardware security is bottlenecked by how few humans can hold all the context in their heads at once. Spectre, Meltdown, Downfall, Zenbleed, and LVI were all found by tiny teams of specialists. A model that can tirelessly cross-reference an ISA manual against errata against an RTL description is the tool that class of research has been waiting for.<p>The consequences are asymmetric in the attacker&#x27;s favor. You cannot patch a logic flaw baked into a fab mask. The best you usually get is a microcode mitigation that costs performance, or an OS-level band-aid. For deep flaws the only real fix is a new silicon revision. Deployed hardware lives for a decade or more. A Chrome zero-day is patched by Tuesday. A zero-day in a 2021 Xeon is essentially permanent.<p>The defender coordination model does not map either. Glasswing works for software because Microsoft, Google, and Apple can push fixes to billions of devices in weeks. There is no Patch Tuesday for an Arm core already shipped in two billion phones. The vendors who would need to participate in a hardware equivalent — Intel, AMD, Arm, Qualcomm, Apple, TSMC, Samsung — have historically been far more secretive about internals than software vendors. The open collaborative disclosure model is much harder to replicate at that layer. And hardware implementation flaws are closer to strategic weapons than software bugs: usable against an adversary&#x27;s entire installed base with no meaningful patching option.<p>One nuance: architecture review from published specs is the easier half of the hardware problem, and the half most exposed to current model capabilities. Finding logical flaws in a spec — race conditions in cache coherency, ambiguous memory ordering, speculation leaks — is something a capable model plausibly can do today. What it cannot do alone is analog behavior, physical side channels, fault injection, and bugs that only manifest at specific process corners. Those need silicon in a lab. But pair a Mythos-class model with a well-equipped hardware security lab and you have compressed PhD-years of work into weeks.<p>Constitutional training works against obvious malicious requests. But models can be induced to assist with offensive work when requesters segment the task and frame components as legitimate engineering questions. An end-to-end &quot;help me exploit this chip&quot; request gets refused. A hundred individually defensible questions about memory ordering, speculative corner cases, and cache timing variability may not. Humans fall for the same pattern. Models are not immune, which is likely part of why Anthropic is being as cautious as they are.<p>Software is where AI operates end-to-end autonomously today. Hardware is where the same capability produces more durable consequences, fewer remediation options, and a weaker disclosure ecosystem to absorb the shock. Whether anyone is seriously thinking about a hardware-focused Glasswing equivalent is something I have not seen addressed. Curious whether people here working in hardware security or silicon red-teaming think this is overstated, understated, or already being quietly worked on.",
+        "title": "Mythos, Glasswing, and the hardware disclosure problem nobody is discussing",
+        "updated_at": "2026-04-09T19:43:04Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "alcazar"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "<em>Claude</em> Mythos is the first model <em>Anthropic</em> didn't really release"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://blog.alcazarsec.com/tech/posts/<em>claude</em>-mythos-the-first-model-<em>anthropic</em>-didnt-really-release"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_alcazar",
+          "story_47704838"
+        ],
+        "author": "alcazar",
+        "children": [
+          47705241
+        ],
+        "created_at": "2026-04-09T15:14:36Z",
+        "created_at_i": 1775747676,
+        "num_comments": 2,
+        "objectID": "47704838",
+        "points": 1,
+        "story_id": 47704838,
+        "title": "Claude Mythos is the first model Anthropic didn't really release",
+        "updated_at": "2026-04-09T16:26:34Z",
+        "url": "https://blog.alcazarsec.com/tech/posts/claude-mythos-the-first-model-anthropic-didnt-really-release"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Brajeshwar"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "With <em>Claude</em> Managed Agents, <em>Anthropic</em> wants to run your AI agents for you"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://thenewstack.io/with-<em>claude</em>-managed-agents-<em>anthropic</em>-wants-to-run-your-ai-agents-for-you/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Brajeshwar",
+          "story_47704213"
+        ],
+        "author": "Brajeshwar",
+        "created_at": "2026-04-09T14:27:05Z",
+        "created_at_i": 1775744825,
+        "num_comments": 0,
+        "objectID": "47704213",
+        "points": 1,
+        "story_id": 47704213,
+        "title": "With Claude Managed Agents, Anthropic wants to run your AI agents for you",
+        "updated_at": "2026-04-09T14:28:17Z",
+        "url": "https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "cientifico"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Bring Buddy Back"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://github.com/<em>anthropics</em>/<em>claude</em>-code/issues/45596"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_cientifico",
+          "story_47701239"
+        ],
+        "author": "cientifico",
+        "created_at": "2026-04-09T09:26:15Z",
+        "created_at_i": 1775726775,
+        "num_comments": 0,
+        "objectID": "47701239",
+        "points": 3,
+        "story_id": 47701239,
+        "title": "Bring Buddy Back",
+        "updated_at": "2026-04-09T11:10:01Z",
+        "url": "https://github.com/anthropics/claude-code/issues/45596"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "silexia"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "anthropic"
+            ],
+            "value": "<em>Anthropics</em> Mythos Model Sparks Fears of AI Doomsday"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://nypost.com/2026/04/08/business/<em>anthropics</em>-<em>claude</em>-mythos-model-sparks-fears-of-ai-doomsday-wave-of-devastating-hacks/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_silexia",
+          "story_47699531"
+        ],
+        "author": "silexia",
+        "children": [
+          47699662
+        ],
+        "created_at": "2026-04-09T05:14:37Z",
+        "created_at_i": 1775711677,
+        "num_comments": 1,
+        "objectID": "47699531",
+        "points": 2,
+        "story_id": 47699531,
+        "title": "Anthropics Mythos Model Sparks Fears of AI Doomsday",
+        "updated_at": "2026-04-09T05:36:45Z",
+        "url": "https://nypost.com/2026/04/08/business/anthropics-claude-mythos-model-sparks-fears-of-ai-doomsday-wave-of-devastating-hacks/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "jablongo"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "claude"
+            ],
+            "value": "Alignment Risk Update for <em>Claude</em> Mythos [pdf]"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "anthropic"
+            ],
+            "value": "https://www-cdn.<em>anthropic</em>.com/79c2d46d997783b9d2fb3241de43218158e5f25c.pdf"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_jablongo",
+          "story_47699202"
+        ],
+        "author": "jablongo",
+        "created_at": "2026-04-09T04:14:28Z",
+        "created_at_i": 1775708068,
+        "num_comments": 0,
+        "objectID": "47699202",
+        "points": 1,
+        "story_id": 47699202,
+        "title": "Alignment Risk Update for Claude Mythos [pdf]",
+        "updated_at": "2026-04-09T04:19:46Z",
+        "url": "https://www-cdn.anthropic.com/79c2d46d997783b9d2fb3241de43218158e5f25c.pdf"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "andsoitis"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "claude"
+            ],
+            "value": "<em>Claude</em> Mythos Preview [pdf]"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "anthropic"
+            ],
+            "value": "https://www-cdn.<em>anthropic</em>.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_andsoitis",
+          "story_47697253"
+        ],
+        "author": "andsoitis",
+        "children": [
+          47697376,
+          47699167
+        ],
+        "created_at": "2026-04-08T22:53:56Z",
+        "created_at_i": 1775688836,
+        "num_comments": 4,
+        "objectID": "47697253",
+        "points": 5,
+        "story_id": 47697253,
+        "title": "Claude Mythos Preview [pdf]",
+        "updated_at": "2026-04-09T07:30:45Z",
+        "url": "https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf"
+      }
+    ]
+  },
+  "Llama": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "drcursor"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "After trying multiple apps that promised full automatic local transcription of meetings but ended up using remote AI, OpenRouter, or requiring <em>Ollama</em> to be running in the background.<p>I decided to fork another project and make it as straightforward to use as possible.<p>It just runs on the background, and transcripts calls automatically when they happen and saves them as md files I can use in obsidian or anywhere else.<p>I still need to fix some tech issues, and make local AI summaries actually useful, but in the meantime, I have the app I've wished for a long time. Hope others find it useful."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: HushScribe – Self-contained local meeting transcription for macOS"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/drcursor/HushScribe"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_drcursor",
+          "story_47704147",
+          "show_hn"
+        ],
+        "author": "drcursor",
+        "created_at": "2026-04-09T14:22:23Z",
+        "created_at_i": 1775744543,
+        "num_comments": 0,
+        "objectID": "47704147",
+        "points": 2,
+        "story_id": 47704147,
+        "story_text": "After trying multiple apps that promised full automatic local transcription of meetings but ended up using remote AI, OpenRouter, or requiring Ollama to be running in the background.<p>I decided to fork another project and make it as straightforward to use as possible.<p>It just runs on the background, and transcripts calls automatically when they happen and saves them as md files I can use in obsidian or anywhere else.<p>I still need to fix some tech issues, and make local AI summaries actually useful, but in the meantime, I have the app I&#x27;ve wished for a long time. Hope others find it useful.",
+        "title": "Show HN: HushScribe – Self-contained local meeting transcription for macOS",
+        "updated_at": "2026-04-09T14:28:31Z",
+        "url": "https://github.com/drcursor/HushScribe"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "pdrgds"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "I built a Rust CLI that takes an EPUB and rewrites it at a target CEFR level (A1–C2) using an LLM. Give it a German novel and ask for Portuguese at A2 — it produces a new EPUB ready for your Kindle.<p>For beginner levels (A1/A2), it runs a two-pass pipeline: first simplify in the source language, then translate. This produced 15–25% better vocabulary coverage than doing both in one shot.<p>It uses Groq or <em>Ollama</em> (local) as backends. A sample book (Kafka's Metamorphosis) is included so you can try it immediately."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Nheengatu – CLI tool to simplify books to your language level with LLMs"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/pdrgds/nheengatu"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_pdrgds",
+          "story_47703706",
+          "show_hn"
+        ],
+        "author": "pdrgds",
+        "created_at": "2026-04-09T13:46:13Z",
+        "created_at_i": 1775742373,
+        "num_comments": 0,
+        "objectID": "47703706",
+        "points": 1,
+        "story_id": 47703706,
+        "story_text": "I built a Rust CLI that takes an EPUB and rewrites it at a target CEFR level (A1–C2) using an LLM. Give it a German novel and ask for Portuguese at A2 — it produces a new EPUB ready for your Kindle.<p>For beginner levels (A1&#x2F;A2), it runs a two-pass pipeline: first simplify in the source language, then translate. This produced 15–25% better vocabulary coverage than doing both in one shot.<p>It uses Groq or Ollama (local) as backends. A sample book (Kafka&#x27;s Metamorphosis) is included so you can try it immediately.",
+        "title": "Show HN: Nheengatu – CLI tool to simplify books to your language level with LLMs",
+        "updated_at": "2026-04-09T13:51:35Z",
+        "url": "https://github.com/pdrgds/nheengatu"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "benbojangles"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Gemini-CLI, zeroclaw, <em>Llama</em>.cpp, Qwen3.5 on TK1"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "https://forums.developer.nvidia.com/t/gemini-cli-zeroclaw-<em>llama</em>-cpp-qwen3-5-on-tk1/365653"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_benbojangles",
+          "story_47701187"
+        ],
+        "author": "benbojangles",
+        "children": [
+          47701188
+        ],
+        "created_at": "2026-04-09T09:21:31Z",
+        "created_at_i": 1775726491,
+        "num_comments": 1,
+        "objectID": "47701187",
+        "points": 1,
+        "story_id": 47701187,
+        "title": "Gemini-CLI, zeroclaw, Llama.cpp, Qwen3.5 on TK1",
+        "updated_at": "2026-04-09T09:24:01Z",
+        "url": "https://forums.developer.nvidia.com/t/gemini-cli-zeroclaw-llama-cpp-qwen3-5-on-tk1/365653"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "vektormemory"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Massive Upgrades: 1.4.6:<p>28 Claude Mcp tools\nCloak Stealth Browser\nD3 Graph\nCustom Ink Cli\n<em>Ollama</em> Support\nGrog, Claude, Openai,Gemini Mistral Support\nResearch Tools \nBetter Sqlite Db\nOnnx embedding\nLocal first memory migration\nAudn memory eval\nRem dream cycle\nInstant hyper intel memory curation and retention<p>Review Vektor:\n<a href=\"https://github.com/Vektor-Memory/Vektor-memory\" rel=\"nofollow\">https://github.com/Vektor-Memory/Vektor-memory</a>"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: D3 4 Layer Magma Graph – Cloak Stealth Browser"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://vektormemory.com/docs/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_vektormemory",
+          "story_47700390",
+          "show_hn"
+        ],
+        "author": "vektormemory",
+        "created_at": "2026-04-09T07:27:34Z",
+        "created_at_i": 1775719654,
+        "num_comments": 0,
+        "objectID": "47700390",
+        "points": 1,
+        "story_id": 47700390,
+        "story_text": "Massive Upgrades: 1.4.6:<p>28 Claude Mcp tools\nCloak Stealth Browser\nD3 Graph\nCustom Ink Cli\nOllama Support\nGrog, Claude, Openai,Gemini Mistral Support\nResearch Tools \nBetter Sqlite Db\nOnnx embedding\nLocal first memory migration\nAudn memory eval\nRem dream cycle\nInstant hyper intel memory curation and retention<p>Review Vektor:\n<a href=\"https:&#x2F;&#x2F;github.com&#x2F;Vektor-Memory&#x2F;Vektor-memory\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;Vektor-Memory&#x2F;Vektor-memory</a>",
+        "title": "Show HN: D3 4 Layer Magma Graph – Cloak Stealth Browser",
+        "updated_at": "2026-04-09T07:34:30Z",
+        "url": "https://vektormemory.com/docs/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "a_t48"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Hey HN!<p>I've built clipper.dev -  the fastest container repository in the world. (Big claim, I know.) It deduplicates at a file/chunk level, rather than at the layer level.<p>I get around 10-20% faster pulls than docker (when using containerd for both) for fresh pulls. \nFor some workflows, I see 80-90% faster patch pulls (think v0.17.5 -&gt; 0.17.6).<p>Here's a best case scenario for me (and worst case for dockerhub)<p><pre><code>    docker&gt; time sudo nerdctl pull <em>ollama</em>/<em>ollama</em>:0.17.5\n    docker.io/<em>ollama</em>/<em>ollama</em>:0.17.5:\n    elapsed: 244.1s total:  2.9 Gi (12.3 MiB/s)                                      \n\n    real 4m4.172s\n    user 0m0.115s\n    sys 0m0.227s\n    docker&gt; time sudo nerdctl pull <em>ollama</em>/<em>ollama</em>:0.17.6\n    docker.io/<em>ollama</em>/<em>ollama</em>:0.17.6:\n    elapsed: 234.9s total:  2.8 Gi (12.3 MiB/s)                                      \n\n    real 3m54.965s\n    user 0m0.051s\n    sys 0m0.275s\n</code></pre>\n---<p><pre><code>    clipper&gt; time sudo clipper pull clipper/<em>ollama</em>:0.17.5\n    using containerd runtime at /run/containerd/containerd.sock\n    fetching manifest clipper.dev/clipper/<em>ollama</em>:0.17.5 ...\n    image created: clipper.dev/clipper/<em>ollama</em>:0.17.5\n    fetched 46 chunks (2.2 GB, 11.7 MB/s), took 3m16.134s\n    done — clipper.dev/clipper/<em>ollama</em>:0.17.5\n\n    real 3m17.532s\n    user 0m0.006s\n    sys 0m0.012s\n\n    clipper&gt; time sudo clipper pull clipper/<em>ollama</em>:0.17.6\n    using containerd runtime at /run/containerd/containerd.sock\n    fetching manifest clipper.dev/clipper/<em>ollama</em>:0.17.6 ...\n    image created: clipper.dev/clipper/<em>ollama</em>:0.17.6\n    fetched 6 chunks (599.2 MB, 7.7 MB/s), took 1m17.48s\n    done — clipper.dev/clipper/<em>ollama</em>:0.17.6\n\n    real 1m19.061s\n    user 0m0.005s\n    sys 0m0.016s\n</code></pre>\nThe first two layers of 0.17.6 are shared with 0.17.5, but everything else has to be transported again with docker, but not with clipper. The exact speedup depends on how fast my wifi is feeling at the time, but I'm pulling 1.5 GB less than dockerhub can do. This is _huge_ for robotics workflows or anyone else pulling docker images on poor connections. (This is not even as fast as it could be - there's other optimizations like chunking within files or using BytePort that could make this go even faster).<p>I built this because at multiple companies I've been at, pulling new images for updates has been...very painful. Robotics Dockerfiles tend to have a lot of dependencies stuffed into a small amount of layers. Adding one new dependency means shipping the bytes for every other dependency, even with perfect pinning. Additionally, the Dockerfiles are oftentimes...not well written, compounding the problem. So I decided to fix the tool to fit the user, rather than the inverse.<p>There's some other side benefits to using clipper:\n - Moving a file or changing permissions is &quot;free&quot;: another layer already has the bytes\n - The on-disk structure lends itself much better to P2P device updates than docker's layout<p>I do intend this to be a commercial product, but pricing is still up in the air. I'm currently targeting robotics companies as they feel the most pain here. There's some other possible fields that I'm interested in that might find use in this: IoT, edge AI, space datacenters/etc, developmer tooling.<p>Please give it a try. If you don't want to upload an image, these repos should be publically pullable once you register an account:<p><pre><code>    clipper/ubuntu: 20.04, 22.04, 24.04\n    clipper/<em>ollama</em>: 0.17.5, 0.17.6\n    clipper/python: 3.13, 3.14</code></pre>"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Clipper – The World's Fastest Container Registry"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://clipper.dev"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_a_t48",
+          "story_47697338",
+          "show_hn"
+        ],
+        "author": "a_t48",
+        "created_at": "2026-04-08T23:05:24Z",
+        "created_at_i": 1775689524,
+        "num_comments": 0,
+        "objectID": "47697338",
+        "points": 1,
+        "story_id": 47697338,
+        "story_text": "Hey HN!<p>I&#x27;ve built clipper.dev -  the fastest container repository in the world. (Big claim, I know.) It deduplicates at a file&#x2F;chunk level, rather than at the layer level.<p>I get around 10-20% faster pulls than docker (when using containerd for both) for fresh pulls. \nFor some workflows, I see 80-90% faster patch pulls (think v0.17.5 -&gt; 0.17.6).<p>Here&#x27;s a best case scenario for me (and worst case for dockerhub)<p><pre><code>    docker&gt; time sudo nerdctl pull ollama&#x2F;ollama:0.17.5\n    docker.io&#x2F;ollama&#x2F;ollama:0.17.5:\n    elapsed: 244.1s total:  2.9 Gi (12.3 MiB&#x2F;s)                                      \n\n    real 4m4.172s\n    user 0m0.115s\n    sys 0m0.227s\n    docker&gt; time sudo nerdctl pull ollama&#x2F;ollama:0.17.6\n    docker.io&#x2F;ollama&#x2F;ollama:0.17.6:\n    elapsed: 234.9s total:  2.8 Gi (12.3 MiB&#x2F;s)                                      \n\n    real 3m54.965s\n    user 0m0.051s\n    sys 0m0.275s\n</code></pre>\n---<p><pre><code>    clipper&gt; time sudo clipper pull clipper&#x2F;ollama:0.17.5\n    using containerd runtime at &#x2F;run&#x2F;containerd&#x2F;containerd.sock\n    fetching manifest clipper.dev&#x2F;clipper&#x2F;ollama:0.17.5 ...\n    image created: clipper.dev&#x2F;clipper&#x2F;ollama:0.17.5\n    fetched 46 chunks (2.2 GB, 11.7 MB&#x2F;s), took 3m16.134s\n    done — clipper.dev&#x2F;clipper&#x2F;ollama:0.17.5\n\n    real 3m17.532s\n    user 0m0.006s\n    sys 0m0.012s\n\n    clipper&gt; time sudo clipper pull clipper&#x2F;ollama:0.17.6\n    using containerd runtime at &#x2F;run&#x2F;containerd&#x2F;containerd.sock\n    fetching manifest clipper.dev&#x2F;clipper&#x2F;ollama:0.17.6 ...\n    image created: clipper.dev&#x2F;clipper&#x2F;ollama:0.17.6\n    fetched 6 chunks (599.2 MB, 7.7 MB&#x2F;s), took 1m17.48s\n    done — clipper.dev&#x2F;clipper&#x2F;ollama:0.17.6\n\n    real 1m19.061s\n    user 0m0.005s\n    sys 0m0.016s\n</code></pre>\nThe first two layers of 0.17.6 are shared with 0.17.5, but everything else has to be transported again with docker, but not with clipper. The exact speedup depends on how fast my wifi is feeling at the time, but I&#x27;m pulling 1.5 GB less than dockerhub can do. This is _huge_ for robotics workflows or anyone else pulling docker images on poor connections. (This is not even as fast as it could be - there&#x27;s other optimizations like chunking within files or using BytePort that could make this go even faster).<p>I built this because at multiple companies I&#x27;ve been at, pulling new images for updates has been...very painful. Robotics Dockerfiles tend to have a lot of dependencies stuffed into a small amount of layers. Adding one new dependency means shipping the bytes for every other dependency, even with perfect pinning. Additionally, the Dockerfiles are oftentimes...not well written, compounding the problem. So I decided to fix the tool to fit the user, rather than the inverse.<p>There&#x27;s some other side benefits to using clipper:\n - Moving a file or changing permissions is &quot;free&quot;: another layer already has the bytes\n - The on-disk structure lends itself much better to P2P device updates than docker&#x27;s layout<p>I do intend this to be a commercial product, but pricing is still up in the air. I&#x27;m currently targeting robotics companies as they feel the most pain here. There&#x27;s some other possible fields that I&#x27;m interested in that might find use in this: IoT, edge AI, space datacenters&#x2F;etc, developmer tooling.<p>Please give it a try. If you don&#x27;t want to upload an image, these repos should be publically pullable once you register an account:<p><pre><code>    clipper&#x2F;ubuntu: 20.04, 22.04, 24.04\n    clipper&#x2F;ollama: 0.17.5, 0.17.6\n    clipper&#x2F;python: 3.13, 3.14</code></pre>",
+        "title": "Show HN: Clipper – The World's Fastest Container Registry",
+        "updated_at": "2026-04-08T23:09:59Z",
+        "url": "https://clipper.dev"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "<em>llama</em>theollama"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Prisoner's Dilemma – An Extension (from game theory)"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://pd.luthira.com/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_llamatheollama",
+          "story_47696730"
+        ],
+        "author": "llamatheollama",
+        "created_at": "2026-04-08T21:50:43Z",
+        "created_at_i": 1775685043,
+        "num_comments": 0,
+        "objectID": "47696730",
+        "points": 2,
+        "story_id": 47696730,
+        "title": "Prisoner's Dilemma – An Extension (from game theory)",
+        "updated_at": "2026-04-08T22:05:32Z",
+        "url": "https://pd.luthira.com/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "linggen"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Hi HN, I built Linggen — a local-first, open-source AI coding agent written in Rust.<p><pre><code>  What's new in 0.9.2:\n  - P2P remote access via WebRTC — control your agent from your phone, no port forwarding or cloud relay needed. Just\n  `ling login` and scan a QR code.\n  - Plan mode — the agent proposes a step-by-step plan before writing code, you approve or edit before execution.\n  - Works with any model — <em>Ollama</em>, OpenAI-compatible APIs, Gemini, DeepSeek. Bring your own keys or run fully local.\n\n  It's like Claude Code but model-agnostic, extensible through skills (markdown files), and now accessible from\n  anywhere.\n\n  Demo video on the landing page showing install → plan → build → mobile sync.\n\n  Install: curl -fsSL https://linggen.dev/install.sh | bash\n\n  GitHub: https://github.com/linggen/linggen</code></pre>"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Linggen – Open-source AI agent with P2P remote access from your phone"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://linggen.dev/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_linggen",
+          "story_47696666",
+          "show_hn"
+        ],
+        "author": "linggen",
+        "children": [
+          47704278
+        ],
+        "created_at": "2026-04-08T21:43:31Z",
+        "created_at_i": 1775684611,
+        "num_comments": 1,
+        "objectID": "47696666",
+        "points": 4,
+        "story_id": 47696666,
+        "story_text": "Hi HN, I built Linggen — a local-first, open-source AI coding agent written in Rust.<p><pre><code>  What&#x27;s new in 0.9.2:\n  - P2P remote access via WebRTC — control your agent from your phone, no port forwarding or cloud relay needed. Just\n  `ling login` and scan a QR code.\n  - Plan mode — the agent proposes a step-by-step plan before writing code, you approve or edit before execution.\n  - Works with any model — Ollama, OpenAI-compatible APIs, Gemini, DeepSeek. Bring your own keys or run fully local.\n\n  It&#x27;s like Claude Code but model-agnostic, extensible through skills (markdown files), and now accessible from\n  anywhere.\n\n  Demo video on the landing page showing install → plan → build → mobile sync.\n\n  Install: curl -fsSL https:&#x2F;&#x2F;linggen.dev&#x2F;install.sh | bash\n\n  GitHub: https:&#x2F;&#x2F;github.com&#x2F;linggen&#x2F;linggen</code></pre>",
+        "title": "Show HN: Linggen – Open-source AI agent with P2P remote access from your phone",
+        "updated_at": "2026-04-09T14:33:32Z",
+        "url": "https://linggen.dev/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "GreenGames"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Hey there, we fused all 24 layers of Qwen3.5-0.8B (a hybrid DeltaNet + Attention model) into a single CUDA kernel launch and made it open-source for everyone to try it.<p>On an RTX 3090 power-limited to 220W:\n- 411 tok/s vs 229 tok/s on M5 Max (1.8x)\n- 1.87 tok/J, beating M5 Max efficiency\n- 1.55x faster decode than <em>llama</em>.cpp on the same GPU\n- 3.4x faster prefill<p>The RTX 3090 launched in 2020. Everyone calls it power-hungry. It isn't, the software is.\nThe conventional wisdom NVIDIA is fast but thirsty. Apple Silicon is slow but sips power. Pick a side.<p>With stock frameworks, the numbers back that up:\nSetup                | tok/s | Power | tok/J\nRTX 3090 (<em>llama</em>.cpp) | 267   | 350W  | 0.76\nM5 Max (LM Studio)   | 229   | ~130W | 1.76<p>Case closed. Except the 3090 has 936 GB/s of bandwidth and 142 TFLOPS of FP16 compute, and <em>llama</em>.cpp extracts 267 tok/s out of it. That ratio is absurd.<p>Traditional inference dispatches one kernel per operation. For 24 layers, that's roughly 100 launches per token. Every boundary means:\n- Return control to the CPU\n- Dispatch the next kernel\n- Re-fetch weights from global memory\n- Synchronize threads<p>Why nobody had done this yet?\nQwen3.5-0.8B isn't a vanilla transformer. It alternates:\n- 18 DeltaNet layers: linear attention with a learned recurrence\n- 6 Full Attention layers: standard MHA<p>This hybrid pattern is where frontier models are heading: Qwen3-Next, Kimi Linear, all of them. DeltaNet scales linearly with context length instead of quadratically.<p>It's new, and nobody has shipped a fused kernel for it. MLX doesn't have DeltaNet kernels at all. <em>llama</em>.cpp supports it generically. Everyone else is waiting. The 267 tok/s wasn't a hardware ceiling, it was the software ceiling for a brand-new architecture.<p>We wrote a single CUDA kernel that runs the entire forward pass in one dispatch. Data stays in registers and shared memory as it flows through the network. Zero CPU round-trips, zero redundant memory fetches.<p>- 82 blocks x 512 threads, all SMs occupied\n- BF16 weights and activations, FP32 accumulation\nDeltaNet recurrence runs in warp-cooperative F32 registers\n- Full attention fuses QKV, RoPE, causal softmax, and output projection\n- Cooperative grid sync replaces kernel launches between layers<p>Results on the same RTX 3090, same model, same weights:\nSetup          | Prefill (pp520) | Decode (tg128)\nMegakernel     | 37,800 tok/s    | 413 tok/s\n<em>llama</em>.cpp BF16 | 11,247 tok/s    | 267 tok/s\nPyTorch + HF   | 7,578 tok/s     | 108 tok/s<p>Then we turned the power down\nFewer wasted cycles means less heat, so we swept nvidia-smi -pl:\nPower limit  | Clock    | Draw | tok/s | tok/J | Notes\n420W (stock) | 1980 MHz | 314W | 433   | 1.38  | baseline\n300W         | 1935 MHz | 299W | 432   | 1.44  | -5% power, 99.8% speed\n220W         | 1635 MHz | 220W | 411   | 1.87  | -30% power, 95% speed\n150W         | 405 MHz  | 150W | 194   | 1.29  | clock cliff, too aggressive<p>At 220W we hit the sweet spot: 95% of the throughput for 70% of the power. Tighter execution converts almost directly into saved watts.\nMeasurement: NVML energy counters for NVIDIA, powermetrics for Apple Silicon, matching Hazy Research's Intelligence Per Watt methodology. Accelerator power only, not wall draw.<p>Without the megakernel the 3090 barely edges out a laptop chip. With it, a five-year-old GPU beats Apple's latest on throughput, matches it on efficiency, and costs a quarter as much.\nThe NVIDIA vs Apple efficiency gap isn't silicon. It's software.<p>Try it\ngit clone <a href=\"https://github.com/Luce-Org/luce-megakernel.git\" rel=\"nofollow\">https://github.com/Luce-Org/luce-megakernel.git</a>\ncd luce-megakernel\npip install -e .\npython bench_pp_tg.py<p>Requires: NVIDIA Ampere+ (tested on 3090), CUDA 12+, PyTorch 2.0+, ~1.5GB VRAM.<p>Code is open source (MIT): <a href=\"https://github.com/Luce-Org/luce-megakernel\" rel=\"nofollow\">https://github.com/Luce-Org/luce-megakernel</a><p>Let us know if you have any feedback"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: OS Megakernel that match M5 Max Tok/w at 2x the Throughput on RTX 3090"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/Luce-Org/luce-megakernel"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_GreenGames",
+          "story_47691182",
+          "show_hn"
+        ],
+        "author": "GreenGames",
+        "children": [
+          47691804
+        ],
+        "created_at": "2026-04-08T15:00:51Z",
+        "created_at_i": 1775660451,
+        "num_comments": 1,
+        "objectID": "47691182",
+        "points": 5,
+        "story_id": 47691182,
+        "story_text": "Hey there, we fused all 24 layers of Qwen3.5-0.8B (a hybrid DeltaNet + Attention model) into a single CUDA kernel launch and made it open-source for everyone to try it.<p>On an RTX 3090 power-limited to 220W:\n- 411 tok&#x2F;s vs 229 tok&#x2F;s on M5 Max (1.8x)\n- 1.87 tok&#x2F;J, beating M5 Max efficiency\n- 1.55x faster decode than llama.cpp on the same GPU\n- 3.4x faster prefill<p>The RTX 3090 launched in 2020. Everyone calls it power-hungry. It isn&#x27;t, the software is.\nThe conventional wisdom NVIDIA is fast but thirsty. Apple Silicon is slow but sips power. Pick a side.<p>With stock frameworks, the numbers back that up:\nSetup                | tok&#x2F;s | Power | tok&#x2F;J\nRTX 3090 (llama.cpp) | 267   | 350W  | 0.76\nM5 Max (LM Studio)   | 229   | ~130W | 1.76<p>Case closed. Except the 3090 has 936 GB&#x2F;s of bandwidth and 142 TFLOPS of FP16 compute, and llama.cpp extracts 267 tok&#x2F;s out of it. That ratio is absurd.<p>Traditional inference dispatches one kernel per operation. For 24 layers, that&#x27;s roughly 100 launches per token. Every boundary means:\n- Return control to the CPU\n- Dispatch the next kernel\n- Re-fetch weights from global memory\n- Synchronize threads<p>Why nobody had done this yet?\nQwen3.5-0.8B isn&#x27;t a vanilla transformer. It alternates:\n- 18 DeltaNet layers: linear attention with a learned recurrence\n- 6 Full Attention layers: standard MHA<p>This hybrid pattern is where frontier models are heading: Qwen3-Next, Kimi Linear, all of them. DeltaNet scales linearly with context length instead of quadratically.<p>It&#x27;s new, and nobody has shipped a fused kernel for it. MLX doesn&#x27;t have DeltaNet kernels at all. llama.cpp supports it generically. Everyone else is waiting. The 267 tok&#x2F;s wasn&#x27;t a hardware ceiling, it was the software ceiling for a brand-new architecture.<p>We wrote a single CUDA kernel that runs the entire forward pass in one dispatch. Data stays in registers and shared memory as it flows through the network. Zero CPU round-trips, zero redundant memory fetches.<p>- 82 blocks x 512 threads, all SMs occupied\n- BF16 weights and activations, FP32 accumulation\nDeltaNet recurrence runs in warp-cooperative F32 registers\n- Full attention fuses QKV, RoPE, causal softmax, and output projection\n- Cooperative grid sync replaces kernel launches between layers<p>Results on the same RTX 3090, same model, same weights:\nSetup          | Prefill (pp520) | Decode (tg128)\nMegakernel     | 37,800 tok&#x2F;s    | 413 tok&#x2F;s\nllama.cpp BF16 | 11,247 tok&#x2F;s    | 267 tok&#x2F;s\nPyTorch + HF   | 7,578 tok&#x2F;s     | 108 tok&#x2F;s<p>Then we turned the power down\nFewer wasted cycles means less heat, so we swept nvidia-smi -pl:\nPower limit  | Clock    | Draw | tok&#x2F;s | tok&#x2F;J | Notes\n420W (stock) | 1980 MHz | 314W | 433   | 1.38  | baseline\n300W         | 1935 MHz | 299W | 432   | 1.44  | -5% power, 99.8% speed\n220W         | 1635 MHz | 220W | 411   | 1.87  | -30% power, 95% speed\n150W         | 405 MHz  | 150W | 194   | 1.29  | clock cliff, too aggressive<p>At 220W we hit the sweet spot: 95% of the throughput for 70% of the power. Tighter execution converts almost directly into saved watts.\nMeasurement: NVML energy counters for NVIDIA, powermetrics for Apple Silicon, matching Hazy Research&#x27;s Intelligence Per Watt methodology. Accelerator power only, not wall draw.<p>Without the megakernel the 3090 barely edges out a laptop chip. With it, a five-year-old GPU beats Apple&#x27;s latest on throughput, matches it on efficiency, and costs a quarter as much.\nThe NVIDIA vs Apple efficiency gap isn&#x27;t silicon. It&#x27;s software.<p>Try it\ngit clone <a href=\"https:&#x2F;&#x2F;github.com&#x2F;Luce-Org&#x2F;luce-megakernel.git\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;Luce-Org&#x2F;luce-megakernel.git</a>\ncd luce-megakernel\npip install -e .\npython bench_pp_tg.py<p>Requires: NVIDIA Ampere+ (tested on 3090), CUDA 12+, PyTorch 2.0+, ~1.5GB VRAM.<p>Code is open source (MIT): <a href=\"https:&#x2F;&#x2F;github.com&#x2F;Luce-Org&#x2F;luce-megakernel\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;Luce-Org&#x2F;luce-megakernel</a><p>Let us know if you have any feedback",
+        "title": "Show HN: OS Megakernel that match M5 Max Tok/w at 2x the Throughput on RTX 3090",
+        "updated_at": "2026-04-09T08:10:31Z",
+        "url": "https://github.com/Luce-Org/luce-megakernel"
+      }
+    ]
+  },
+  "AI agents": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "somethingsome"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "agents"
+            ],
+            "value": "Trinity-Large-Thinking: Scaling an Open Source Frontier <em>Agent</em>"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai"
+            ],
+            "value": "https://www.arcee.<em>ai</em>/blog/trinity-large-thinking"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_somethingsome",
+          "story_47711651"
+        ],
+        "author": "somethingsome",
+        "created_at": "2026-04-09T23:30:22Z",
+        "created_at_i": 1775777422,
+        "num_comments": 0,
+        "objectID": "47711651",
+        "points": 1,
+        "story_id": 47711651,
+        "title": "Trinity-Large-Thinking: Scaling an Open Source Frontier Agent",
+        "updated_at": "2026-04-09T23:33:33Z",
+        "url": "https://www.arcee.ai/blog/trinity-large-thinking"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "andrewfhou"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "In my opinion the best way to learn a language (outside of moving to a different country) is to get a personal tutor and have consistent 1 on 1 lessons. I used Preply or iTalki for this back in the day but had issues with flexibility and pricing.<p>I've been trying to simulate the experiences that I had on those platforms with a voice <em>agent</em>.<p>You can try a demo for free here (or watch a video of me using it on the landing page):<p><a href=\"https://lingle.ai/tryout/lingle-showcase\" rel=\"nofollow\">https://lingle.<em>ai</em>/tryout/lingle-showcase</a><p>Right now the <em>agent</em> can plan a lesson with visuals and a conversation focus, guides the user through the lesson - correcting and explaining things on a whiteboard if necessary, and asks relatively engaging questions. There is also a long term user model that builds over time, that maintains memory of the user's produced vocabulary, grammar, and skills, meant to make each lesson informed by the past and build on the user's knowledge (obviously this is still relatively fragile in practice).<p>The voice <em>agent</em> itself has actually decent latency, especially given that turn detection was a bit of a challenge given that language learners often speak slowly and struggle when they're thinking, so I had to build with that in mind.<p>Anyways I wanted to get some feedback on the product. I think it's quite a different take on language learning tools than those that currently exist."
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "agents"
+            ],
+            "value": "Show HN: Lingle – Voice <em>agent</em> to simulate zoom-based personal language lessons"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai"
+            ],
+            "value": "https://lingle.<em>ai</em>/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_andrewfhou",
+          "story_47711087",
+          "show_hn"
+        ],
+        "author": "andrewfhou",
+        "children": [
+          47711345,
+          47711115
+        ],
+        "created_at": "2026-04-09T22:28:24Z",
+        "created_at_i": 1775773704,
+        "num_comments": 5,
+        "objectID": "47711087",
+        "points": 3,
+        "story_id": 47711087,
+        "story_text": "In my opinion the best way to learn a language (outside of moving to a different country) is to get a personal tutor and have consistent 1 on 1 lessons. I used Preply or iTalki for this back in the day but had issues with flexibility and pricing.<p>I&#x27;ve been trying to simulate the experiences that I had on those platforms with a voice agent.<p>You can try a demo for free here (or watch a video of me using it on the landing page):<p><a href=\"https:&#x2F;&#x2F;lingle.ai&#x2F;tryout&#x2F;lingle-showcase\" rel=\"nofollow\">https:&#x2F;&#x2F;lingle.ai&#x2F;tryout&#x2F;lingle-showcase</a><p>Right now the agent can plan a lesson with visuals and a conversation focus, guides the user through the lesson - correcting and explaining things on a whiteboard if necessary, and asks relatively engaging questions. There is also a long term user model that builds over time, that maintains memory of the user&#x27;s produced vocabulary, grammar, and skills, meant to make each lesson informed by the past and build on the user&#x27;s knowledge (obviously this is still relatively fragile in practice).<p>The voice agent itself has actually decent latency, especially given that turn detection was a bit of a challenge given that language learners often speak slowly and struggle when they&#x27;re thinking, so I had to build with that in mind.<p>Anyways I wanted to get some feedback on the product. I think it&#x27;s quite a different take on language learning tools than those that currently exist.",
+        "title": "Show HN: Lingle – Voice agent to simulate zoom-based personal language lessons",
+        "updated_at": "2026-04-09T23:14:33Z",
+        "url": "https://lingle.ai/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "luispa"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Camofox-browser: Anti-detection browser for <em>AI</em> <em>agents</em>, powered by Camoufox"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/jo-inc/camofox-browser"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_luispa",
+          "story_47710568"
+        ],
+        "author": "luispa",
+        "created_at": "2026-04-09T21:44:06Z",
+        "created_at_i": 1775771046,
+        "num_comments": 0,
+        "objectID": "47710568",
+        "points": 2,
+        "story_id": 47710568,
+        "title": "Camofox-browser: Anti-detection browser for AI agents, powered by Camoufox",
+        "updated_at": "2026-04-09T22:05:19Z",
+        "url": "https://github.com/jo-inc/camofox-browser"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "wicket"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "goose has a new home – the <em>Agenti</em>c <em>AI</em> Foundation (AAIF)"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai"
+            ],
+            "value": "https://goose-docs.<em>ai</em>/blog/2026/04/07/goose-moves-to-aaif/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_wicket",
+          "story_47710438"
+        ],
+        "author": "wicket",
+        "created_at": "2026-04-09T21:31:42Z",
+        "created_at_i": 1775770302,
+        "num_comments": 0,
+        "objectID": "47710438",
+        "points": 2,
+        "story_id": 47710438,
+        "title": "goose has a new home – the Agentic AI Foundation (AAIF)",
+        "updated_at": "2026-04-09T22:05:19Z",
+        "url": "https://goose-docs.ai/blog/2026/04/07/goose-moves-to-aaif/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "manveerc"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Secure <em>AI</em> <em>Agent</em> Connections to Enterprise Tools"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "https://www.arcade.dev/blog/connect-<em>ai</em>-<em>agents</em>-enterprise-tools/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_manveerc",
+          "story_47710000"
+        ],
+        "author": "manveerc",
+        "children": [
+          47710275
+        ],
+        "created_at": "2026-04-09T20:59:37Z",
+        "created_at_i": 1775768377,
+        "num_comments": 0,
+        "objectID": "47710000",
+        "points": 2,
+        "story_id": 47710000,
+        "title": "Secure AI Agent Connections to Enterprise Tools",
+        "updated_at": "2026-04-09T21:25:34Z",
+        "url": "https://www.arcade.dev/blog/connect-ai-agents-enterprise-tools/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "amoriodi"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "My path over the last year or so:<p><pre><code>  Cursor → Windsurf → VSCode + Claude → Warp → cmux → nvim + Claude Code\n </code></pre>\nShort version of what didn't stick:<p>- Cursor: felt like a worse VSCode with <em>AI</em> bolted on<p>- Windsurf: laggy enough to break flow<p>- VSCode + Claude extension: actually the best of the bunch for\n  a while, but started feeling like overkill once I realized\n  90% of what I used was the editor + chat sidebar<p>- Warp: opinionated block UI and telemetry never sat right<p>- cmux: lags unbearably, and I ended up babysitting parallel\n  <em>agents</em> more than coding<p>Dropped all the way down to nvim with Claude Code as a sidebar and that's been the stickiest by a wide margin. Feels closer to pair programming than to orchestration or autocomplete.<p>Current stack:<p>- Ghostty (native splits, no multiplexer) + moonfly theme<p>- zsh + Starship, zoxide/eza/bat/fd/rg, fzf history<p>- Neovim on kickstart.nvim with lualine, neo-tree, telescope<p>- Claude Code as an nvim sidebar, via subscription (not API)<p>Dotfiles: https://github.com/Doldrums/dotfiles<p>Questions:<p>1. Anyone else went through the carousel and came back to a plain editor? Or did one of them actually stick?<p>2. Sidebar chat vs inline Cursor-style vs ghost autocomplete which mode of <em>AI</em> actually helps you ship?<p>3. For people still on VSCode + Claude extension, am I missing something by dropping to nvim, or is it really just taste?<p>4. Anything I haven't tried that I should? Helix, Zed, Aider, Continue, I keep seeing these mentioned but haven't made the jump.<p>What did you try that didn't stick?"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai"
+            ],
+            "value": "Ask HN: Anyone else went through the <em>AI</em>-editor carousel back to the terminal?"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_amoriodi",
+          "story_47709343",
+          "ask_hn"
+        ],
+        "author": "amoriodi",
+        "created_at": "2026-04-09T20:23:06Z",
+        "created_at_i": 1775766186,
+        "num_comments": 0,
+        "objectID": "47709343",
+        "points": 2,
+        "story_id": 47709343,
+        "story_text": "My path over the last year or so:<p><pre><code>  Cursor → Windsurf → VSCode + Claude → Warp → cmux → nvim + Claude Code\n </code></pre>\nShort version of what didn&#x27;t stick:<p>- Cursor: felt like a worse VSCode with AI bolted on<p>- Windsurf: laggy enough to break flow<p>- VSCode + Claude extension: actually the best of the bunch for\n  a while, but started feeling like overkill once I realized\n  90% of what I used was the editor + chat sidebar<p>- Warp: opinionated block UI and telemetry never sat right<p>- cmux: lags unbearably, and I ended up babysitting parallel\n  agents more than coding<p>Dropped all the way down to nvim with Claude Code as a sidebar and that&#x27;s been the stickiest by a wide margin. Feels closer to pair programming than to orchestration or autocomplete.<p>Current stack:<p>- Ghostty (native splits, no multiplexer) + moonfly theme<p>- zsh + Starship, zoxide&#x2F;eza&#x2F;bat&#x2F;fd&#x2F;rg, fzf history<p>- Neovim on kickstart.nvim with lualine, neo-tree, telescope<p>- Claude Code as an nvim sidebar, via subscription (not API)<p>Dotfiles: https:&#x2F;&#x2F;github.com&#x2F;Doldrums&#x2F;dotfiles<p>Questions:<p>1. Anyone else went through the carousel and came back to a plain editor? Or did one of them actually stick?<p>2. Sidebar chat vs inline Cursor-style vs ghost autocomplete which mode of AI actually helps you ship?<p>3. For people still on VSCode + Claude extension, am I missing something by dropping to nvim, or is it really just taste?<p>4. Anything I haven&#x27;t tried that I should? Helix, Zed, Aider, Continue, I keep seeing these mentioned but haven&#x27;t made the jump.<p>What did you try that didn&#x27;t stick?",
+        "title": "Ask HN: Anyone else went through the AI-editor carousel back to the terminal?",
+        "updated_at": "2026-04-09T21:51:49Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Bender"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Linux 7.0 Adds Support for New Keys on Upcoming Laptops for Expanded <em>AI</em> <em>Agent</em>"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "https://www.phoronix.com/news/Linux-7.0-New-<em>AI</em>-<em>Agent</em>-Keys"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Bender",
+          "story_47709057"
+        ],
+        "author": "Bender",
+        "created_at": "2026-04-09T20:05:36Z",
+        "created_at_i": 1775765136,
+        "num_comments": 0,
+        "objectID": "47709057",
+        "points": 2,
+        "story_id": 47709057,
+        "title": "Linux 7.0 Adds Support for New Keys on Upcoming Laptops for Expanded AI Agent",
+        "updated_at": "2026-04-09T20:09:20Z",
+        "url": "https://www.phoronix.com/news/Linux-7.0-New-AI-Agent-Keys"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "johndebord"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Hi HN. I built Piecely, a marketplace for digital content where creators publish encrypted content, set a price or funding goal, and buyers pay to unlock it.<p>There are three funding types:<p>- Pay to Reveal: fixed price, instant access\n- Traditional Crowdfund: goal + deadline, full refund if it doesn't hit\n- Dominant Assurance: creators put up their own money as a commitment. If the goal isn't met, backers get a refund plus a share of the creator's commitment as a bonus. Backing is a dominant strategy. This is based on Alex Tabarrok's 1998 paper &quot;The Private Provision of Public Goods via Dominant Assurance Contracts&quot; (<a href=\"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4682\" rel=\"nofollow\">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4682</a>).<p>One modification I made to the original DAC: backers can withdraw (&quot;unback&quot;) at any time before the deadline, and the outcome is determined solely by the total at the deadline. Without this, a creator could fund their own Piece from another wallet to hit the goal and never pay the refund bonus. With unbacking, that attack doesn't work -- backers who see suspicious activity can pull out, forcing the creator to either fully fund it every time (releasing the content, so the audience wins) or risk getting caught short at the deadline and paying the bonus.<p>The contracts run on an EVM chain, payments in USDC. There's also an API for <em>AI</em> <em>agents</em> and a ChatGPT integration (<a href=\"https://chatgpt.com/g/g-69c869434cec8191b72f10ce3b390d72-piecely\" rel=\"nofollow\">https://chatgpt.com/g/g-69c869434cec8191b72f10ce3b390d72-pie...</a>). One interesting finding: <em>agents</em> immediately recognize the dominant strategy in the DAC model without explanation and prefer it if given a choice. Humans generally need the simpler funding types first.<p>Test mode with mock USDC if anyone wants to try it without real money. Happy to answer questions about the mechanism design or the contracts."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Piecely – Content marketplace using dominant assurance contracts"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://piecely.app/johndebord/iyVsG23NbWv9xv2RJz2Tyv"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_johndebord",
+          "story_47708908",
+          "show_hn"
+        ],
+        "author": "johndebord",
+        "created_at": "2026-04-09T19:55:33Z",
+        "created_at_i": 1775764533,
+        "num_comments": 0,
+        "objectID": "47708908",
+        "points": 2,
+        "story_id": 47708908,
+        "story_text": "Hi HN. I built Piecely, a marketplace for digital content where creators publish encrypted content, set a price or funding goal, and buyers pay to unlock it.<p>There are three funding types:<p>- Pay to Reveal: fixed price, instant access\n- Traditional Crowdfund: goal + deadline, full refund if it doesn&#x27;t hit\n- Dominant Assurance: creators put up their own money as a commitment. If the goal isn&#x27;t met, backers get a refund plus a share of the creator&#x27;s commitment as a bonus. Backing is a dominant strategy. This is based on Alex Tabarrok&#x27;s 1998 paper &quot;The Private Provision of Public Goods via Dominant Assurance Contracts&quot; (<a href=\"https:&#x2F;&#x2F;papers.ssrn.com&#x2F;sol3&#x2F;papers.cfm?abstract_id=4682\" rel=\"nofollow\">https:&#x2F;&#x2F;papers.ssrn.com&#x2F;sol3&#x2F;papers.cfm?abstract_id=4682</a>).<p>One modification I made to the original DAC: backers can withdraw (&quot;unback&quot;) at any time before the deadline, and the outcome is determined solely by the total at the deadline. Without this, a creator could fund their own Piece from another wallet to hit the goal and never pay the refund bonus. With unbacking, that attack doesn&#x27;t work -- backers who see suspicious activity can pull out, forcing the creator to either fully fund it every time (releasing the content, so the audience wins) or risk getting caught short at the deadline and paying the bonus.<p>The contracts run on an EVM chain, payments in USDC. There&#x27;s also an API for AI agents and a ChatGPT integration (<a href=\"https:&#x2F;&#x2F;chatgpt.com&#x2F;g&#x2F;g-69c869434cec8191b72f10ce3b390d72-piecely\" rel=\"nofollow\">https:&#x2F;&#x2F;chatgpt.com&#x2F;g&#x2F;g-69c869434cec8191b72f10ce3b390d72-pie...</a>). One interesting finding: agents immediately recognize the dominant strategy in the DAC model without explanation and prefer it if given a choice. Humans generally need the simpler funding types first.<p>Test mode with mock USDC if anyone wants to try it without real money. Happy to answer questions about the mechanism design or the contracts.",
+        "title": "Show HN: Piecely – Content marketplace using dominant assurance contracts",
+        "updated_at": "2026-04-09T20:06:37Z",
+        "url": "https://piecely.app/johndebord/iyVsG23NbWv9xv2RJz2Tyv"
+      }
+    ]
+  },
+  "Vibe Coding": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "high_byte"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "what are some <em>vibecoding</em> horror stories?<p>we always hear how the marketing guy replaced the fortune 500 product by <em>vibe coding</em> 2 hours and whatnot<p>but what are examples when it went wrong?"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "What are some <em>vibecoding</em> horror stories?"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_high_byte",
+          "story_47707681",
+          "ask_hn"
+        ],
+        "author": "high_byte",
+        "children": [
+          47708881
+        ],
+        "created_at": "2026-04-09T18:33:13Z",
+        "created_at_i": 1775759593,
+        "num_comments": 1,
+        "objectID": "47707681",
+        "points": 4,
+        "story_id": 47707681,
+        "story_text": "what are some vibecoding horror stories?<p>we always hear how the marketing guy replaced the fortune 500 product by vibe coding 2 hours and whatnot<p>but what are examples when it went wrong?",
+        "title": "What are some vibecoding horror stories?",
+        "updated_at": "2026-04-09T19:53:51Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "young_mete"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "<em>Vibe</em> <em>coding</em> is akin to gaming. So why is there no social layer?"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://metedata.substack.com/p/metedata-digest-005-<em>vibe</em>-<em>coding</em>-wants"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_young_mete",
+          "story_47704232"
+        ],
+        "author": "young_mete",
+        "created_at": "2026-04-09T14:28:22Z",
+        "created_at_i": 1775744902,
+        "num_comments": 0,
+        "objectID": "47704232",
+        "points": 1,
+        "story_id": 47704232,
+        "title": "Vibe coding is akin to gaming. So why is there no social layer?",
+        "updated_at": "2026-04-09T14:33:32Z",
+        "url": "https://metedata.substack.com/p/metedata-digest-005-vibe-coding-wants"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "fcpguru"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "The Weekly <em>Vibe</em> – podcast with taout.tv founders about <em>vibecoding</em> [video]"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.taout.tv/view-podcast/1cdc7765-f8ea-4a4d-8099-9731e82f191d"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_fcpguru",
+          "story_47702954"
+        ],
+        "author": "fcpguru",
+        "created_at": "2026-04-09T12:41:52Z",
+        "created_at_i": 1775738512,
+        "num_comments": 0,
+        "objectID": "47702954",
+        "points": 1,
+        "story_id": 47702954,
+        "title": "The Weekly Vibe – podcast with taout.tv founders about vibecoding [video]",
+        "updated_at": "2026-04-09T12:43:17Z",
+        "url": "https://www.taout.tv/view-podcast/1cdc7765-f8ea-4a4d-8099-9731e82f191d"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "henryrobbins00"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "TL;DR: I built a website that allows users to track the concerts they've been to. If you have strong opinions about engineering/design or how shows should be tracked (festivals, venues, etc...), I'd love to get your input!<p>For the past ~5 years, I've been tracking the shows I attend on my personal website (<a href=\"https://love-music-will-travel.henryrobbins.com\" rel=\"nofollow\">https://love-music-will-travel.henryrobbins.com</a>). It's fun to see things like distance traveled and how many times I've been to certain venues. I know many friends who also track their shows through notes, ticket stubs, Excel, etc... It always bummed me out that I couldn't pore through their concert data myself...<p>showcount.com is my solution to that desire. It's essentially a public version of my old personal website, where anyone can make an account and manage a show list (mine is <a href=\"https://www.showcount.com/user/love-music-will-travel\" rel=\"nofollow\">https://www.showcount.com/user/love-music-will-travel</a>).<p>I'm currently on the lookout for other live music lovers and/or data nerds to try out the site and give opinions on various design choices. If any of the following topics are of interest to you, please reach out!<p>- How should venue name/location changes be handled?\n- How should music festivals be handled?\n- I have an initial version of an AI parser for loading in existing show lists; how can this be made more robust?\n- What else should have first-class tracking support (e.g., friends in attendance)?<p>As an aside, this project is also my first experiment with full-on <em>vibe</em>-<em>coding</em> / harness-engineering. I began the project with Cursor and then switched to Claude Code. I've been programming for the better part of a decade, mostly Python and Java. Full-stack development is relatively new to me. I include the tech stack below. Most decisions were made pragmatically based on what I thought would get me to a first version of the site as quickly as possible.<p>- Next.js web app hosted on Vercel\n- Fast API backend service (for the AI parsing) hosted on Railway\n- Supabase\n- Observability through Axiom (logging), PostHog (analytics), and Sentry (monitoring)\n- Clerk for user authentication\n- Google Maps API for venue locations\n- Claude API for the AI parser\n- Terraform for infra-as-code"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: A website to track live music attendance"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.showcount.com/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_henryrobbins00",
+          "story_47695993",
+          "show_hn"
+        ],
+        "author": "henryrobbins00",
+        "created_at": "2026-04-08T20:42:40Z",
+        "created_at_i": 1775680960,
+        "num_comments": 0,
+        "objectID": "47695993",
+        "points": 3,
+        "story_id": 47695993,
+        "story_text": "TL;DR: I built a website that allows users to track the concerts they&#x27;ve been to. If you have strong opinions about engineering&#x2F;design or how shows should be tracked (festivals, venues, etc...), I&#x27;d love to get your input!<p>For the past ~5 years, I&#x27;ve been tracking the shows I attend on my personal website (<a href=\"https:&#x2F;&#x2F;love-music-will-travel.henryrobbins.com\" rel=\"nofollow\">https:&#x2F;&#x2F;love-music-will-travel.henryrobbins.com</a>). It&#x27;s fun to see things like distance traveled and how many times I&#x27;ve been to certain venues. I know many friends who also track their shows through notes, ticket stubs, Excel, etc... It always bummed me out that I couldn&#x27;t pore through their concert data myself...<p>showcount.com is my solution to that desire. It&#x27;s essentially a public version of my old personal website, where anyone can make an account and manage a show list (mine is <a href=\"https:&#x2F;&#x2F;www.showcount.com&#x2F;user&#x2F;love-music-will-travel\" rel=\"nofollow\">https:&#x2F;&#x2F;www.showcount.com&#x2F;user&#x2F;love-music-will-travel</a>).<p>I&#x27;m currently on the lookout for other live music lovers and&#x2F;or data nerds to try out the site and give opinions on various design choices. If any of the following topics are of interest to you, please reach out!<p>- How should venue name&#x2F;location changes be handled?\n- How should music festivals be handled?\n- I have an initial version of an AI parser for loading in existing show lists; how can this be made more robust?\n- What else should have first-class tracking support (e.g., friends in attendance)?<p>As an aside, this project is also my first experiment with full-on vibe-coding &#x2F; harness-engineering. I began the project with Cursor and then switched to Claude Code. I&#x27;ve been programming for the better part of a decade, mostly Python and Java. Full-stack development is relatively new to me. I include the tech stack below. Most decisions were made pragmatically based on what I thought would get me to a first version of the site as quickly as possible.<p>- Next.js web app hosted on Vercel\n- Fast API backend service (for the AI parsing) hosted on Railway\n- Supabase\n- Observability through Axiom (logging), PostHog (analytics), and Sentry (monitoring)\n- Clerk for user authentication\n- Google Maps API for venue locations\n- Claude API for the AI parser\n- Terraform for infra-as-code",
+        "title": "Show HN: A website to track live music attendance",
+        "updated_at": "2026-04-08T21:04:30Z",
+        "url": "https://www.showcount.com/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "latexr"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "The Devil's Dictionary of <em>Vibe</em> <em>Coding</em>"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://gist.github.com/artfwo/63eaaffdb47cbba342b04f989bd9463b"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_latexr",
+          "story_47688951"
+        ],
+        "author": "latexr",
+        "created_at": "2026-04-08T11:55:35Z",
+        "created_at_i": 1775649335,
+        "num_comments": 0,
+        "objectID": "47688951",
+        "points": 4,
+        "story_id": 47688951,
+        "title": "The Devil's Dictionary of Vibe Coding",
+        "updated_at": "2026-04-08T13:12:29Z",
+        "url": "https://gist.github.com/artfwo/63eaaffdb47cbba342b04f989bd9463b"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "meub"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "<em>Vibe</em> <em>Coding</em> Tools Are a BattleMech"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://alexmeub.com/<em>vibe</em>-<em>coding</em>-tools-are-a-battlemech/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_meub",
+          "story_47678674"
+        ],
+        "author": "meub",
+        "created_at": "2026-04-07T17:32:42Z",
+        "created_at_i": 1775583162,
+        "num_comments": 0,
+        "objectID": "47678674",
+        "points": 4,
+        "story_id": 47678674,
+        "title": "Vibe Coding Tools Are a BattleMech",
+        "updated_at": "2026-04-07T18:25:56Z",
+        "url": "https://alexmeub.com/vibe-coding-tools-are-a-battlemech/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "namanyayg"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "<em>Vibe</em> <em>Coding</em> Is an Existential Threat to B2B SaaS"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://nmn.gl/blog/<em>vibe</em>-<em>coding</em>-threat-b2b-saas"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_namanyayg",
+          "story_47677671"
+        ],
+        "author": "namanyayg",
+        "children": [
+          47677879
+        ],
+        "created_at": "2026-04-07T16:21:06Z",
+        "created_at_i": 1775578866,
+        "num_comments": 1,
+        "objectID": "47677671",
+        "points": 2,
+        "story_id": 47677671,
+        "title": "Vibe Coding Is an Existential Threat to B2B SaaS",
+        "updated_at": "2026-04-07T16:42:40Z",
+        "url": "https://nmn.gl/blog/vibe-coding-threat-b2b-saas"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "mooreds"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "Stop <em>Vibecoding</em> [video]"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.youtube.com/shorts/cgD-bTTe20I"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_mooreds",
+          "story_47677435"
+        ],
+        "author": "mooreds",
+        "created_at": "2026-04-07T16:05:27Z",
+        "created_at_i": 1775577927,
+        "num_comments": 0,
+        "objectID": "47677435",
+        "points": 1,
+        "story_id": 47677435,
+        "title": "Stop Vibecoding [video]",
+        "updated_at": "2026-04-07T16:09:26Z",
+        "url": "https://www.youtube.com/shorts/cgD-bTTe20I"
+      }
+    ]
+  }
+}

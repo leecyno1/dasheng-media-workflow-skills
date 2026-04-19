@@ -1,0 +1,19 @@
+{
+  "run_id": "2026-03-26_123247",
+  "stage": "material",
+  "selected_topics": [
+    "表面在交易事件，真正的主线会不会其实是再通胀？",
+    "高市早苗跳梁的背后：用脚投票下日本极右势力复兴"
+  ],
+  "upstream_brief": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-26_080504_standardized/02_编辑Brief库.md",
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/03_MaterialPack.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/03_Material_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/material_manifest.json"
+  ],
+  "source_counts": {
+    "reinflation": 9,
+    "takaichi": 11
+  },
+  "status": "ready_for_draft"
+}

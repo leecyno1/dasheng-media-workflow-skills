@@ -1,0 +1,368 @@
+[
+  {
+    "query": "oil price inflation animation shipping route documentary",
+    "candidates": [
+      {
+        "title": "Petroleum - Modern history of oil on a Map",
+        "url": "https://www.youtube.com/watch?v=xMQUGSrnbP8",
+        "duration": 856.0,
+        "channel": "Geo History",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 856,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Global oil, gas shipping costs surge as Iran closes Strait of Hormuz",
+        "url": "https://www.youtube.com/watch?v=0HM65JXtvQg",
+        "duration": 102.0,
+        "channel": "Reuters",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 101,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "History of the Major Trade Routes - Summary on a Map",
+        "url": "https://www.youtube.com/watch?v=Q7xp1-VvtZ0",
+        "duration": 1182.0,
+        "channel": "Geo History",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 2160,
+          "resolution_width": 3840,
+          "duration_seconds_hint": 1181,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "oil price inflation animation shipping route documentary",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "federal reserve building exterior meeting b roll",
+    "candidates": [
+      {
+        "title": "DRS/S2/E1/KING FED JUSTICE BLDG",
+        "url": "https://www.youtube.com/watch?v=chwSgbbTSIQ",
+        "duration": 22.0,
+        "channel": "CNN",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 21,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "FEDERAL RESERVE BOARD",
+        "url": "https://www.youtube.com/watch?v=H6oPi75_soc",
+        "duration": 16.0,
+        "channel": "CNN",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 15,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "GN B roll headquarters outdoor drone shoot",
+        "url": "https://www.youtube.com/watch?v=VUlJaLzHqZ4",
+        "duration": 65.0,
+        "channel": "GN Group",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 65,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "federal reserve building exterior meeting b roll",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "container shipping port cranes aerial 4k",
+    "candidates": [
+      {
+        "title": "Drone Video of Gdynia Container Port (4K)",
+        "url": "https://www.youtube.com/watch?v=1zfYtVyLVEo",
+        "duration": 175.0,
+        "channel": "Robin (Cybersoc)",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 2160,
+          "resolution_width": 3840,
+          "duration_seconds_hint": 175,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Container Port Cranes (Free 4k Stock Video)",
+        "url": "https://www.youtube.com/watch?v=HjijZV1bpuA",
+        "duration": 28.0,
+        "channel": "Free4k Videos",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 2160,
+          "resolution_width": 3840,
+          "duration_seconds_hint": 27,
+          "fps_hint": 24.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Container Port Cranes by River | Drone View | Drone Shots",
+        "url": "https://www.youtube.com/watch?v=6dYPbZ4BhEo",
+        "duration": 28.0,
+        "channel": "Drone Shots",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 2160,
+          "resolution_width": 3840,
+          "duration_seconds_hint": 27,
+          "fps_hint": 24.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "container shipping port cranes aerial 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "oil refinery aerial 4k documentary",
+    "candidates": [
+      {
+        "title": "Venezuela: Oil Giant & Angel Falls Adventure | 4K HD",
+        "url": "https://www.youtube.com/watch?v=BSLYveB_IYU",
+        "duration": 388.0,
+        "channel": "World Adventure Explorers ",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 387,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Amazing Oil Refinery Aerial Shots",
+        "url": "https://www.youtube.com/watch?v=MW1jiHMRKJo",
+        "duration": 489.0,
+        "channel": "AERONAUTICS TV",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 488,
+          "fps_hint": 24.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "At the largest oil refinery in the world | Andrew Scheer",
+        "url": "https://www.youtube.com/watch?v=nzr5gLVdmQo",
+        "duration": 142.0,
+        "channel": "Andrew Scheer",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 141,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "oil refinery aerial 4k documentary",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "stock market trading floor b roll screen crowd",
+    "candidates": [
+      {
+        "title": "Watch Citadel's high-speed trading in action",
+        "url": "https://www.youtube.com/watch?v=2u007Msq1qo",
+        "duration": 171.0,
+        "channel": "CNN",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 360,
+          "resolution_width": 640,
+          "duration_seconds_hint": 171,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": false,
+          "reject_reasons": [
+            "resolution_below_480p"
+          ]
+        },
+        "eligible_for_download": false
+      },
+      {
+        "title": "WRAP Asia markets up after gains on Wall St, analyst, Tokyo and HKong closing",
+        "url": "https://www.youtube.com/watch?v=MsQzyhhkCco",
+        "duration": 140.0,
+        "channel": "AP Archive",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 360,
+          "resolution_width": 640,
+          "duration_seconds_hint": 139,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": false,
+          "reject_reasons": [
+            "resolution_below_480p"
+          ]
+        },
+        "eligible_for_download": false
+      },
+      {
+        "title": "Investors and traders transact at the New York Stock Exchange during the stock ma...HD Stock Footage",
+        "url": "https://www.youtube.com/watch?v=jnVGqF1urPY",
+        "duration": 94.0,
+        "channel": "CriticalPast",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 94,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "stock market trading floor b roll screen crowd",
+      "candidate_count": 3,
+      "qualified_count": 1,
+      "rejected_count": 2,
+      "reject_reason_counts": {
+        "resolution_below_480p": 2
+      }
+    }
+  }
+]

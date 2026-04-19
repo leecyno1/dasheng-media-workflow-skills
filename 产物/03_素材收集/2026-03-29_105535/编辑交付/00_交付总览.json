@@ -1,0 +1,97 @@
+{
+  "rewrite_dir": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-29_105535",
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付",
+  "topics": [
+    {
+      "title": "半导体突然很热闹，但行业最危险的误判可能才刚开始",
+      "folder": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判",
+      "standard_draft": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/00_标准稿.md",
+      "cover": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-10/images/generated/cover.png",
+      "asset_count": 17,
+      "anchor_count": 10,
+      "videos": [],
+      "files": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/00_标准稿.md",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/半导体误判_封面.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/半导体误判_图表01_global_market_size.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/半导体误判_数据01_global_market_size.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/半导体误判_图表02_platform_mix.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/半导体误判_数据02_platform_mix.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/半导体误判_图表03_fab_capex.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/半导体误判_数据03_fab_capex.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/半导体误判_图表04_segment_growth_index.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/半导体误判_数据04_segment_growth_index.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/半导体误判_图片01_连环画01.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/半导体误判_图片02_连环画02.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/半导体误判_图片04_信息图01.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/半导体误判_图片05_信息图02.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/半导体误判_图片06_信息图03.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/00_人工回填指引.md",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/01_半导体误判/00_素材清单.md"
+      ]
+    },
+    {
+      "title": "一键安装 OpenClaw + 常用 skills：把“能跑起来”变成“可复用、可审计、可回滚”",
+      "folder": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装",
+      "standard_draft": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/00_标准稿.md",
+      "cover": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/images/generated/cover.png",
+      "asset_count": 17,
+      "anchor_count": 10,
+      "videos": [],
+      "files": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/00_标准稿.md",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/OpenClaw一键安装_封面.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/OpenClaw一键安装_图表01_安装流程图.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/OpenClaw一键安装_数据01_安装流程节点数据.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/OpenClaw一键安装_图表02_安全边界矩阵.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/OpenClaw一键安装_数据02_安全边界数据.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/OpenClaw一键安装_图表03_团队治理闭环.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/OpenClaw一键安装_数据03_治理闭环节点数据.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/OpenClaw一键安装_图表04_故障排查树.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/OpenClaw一键安装_数据04_故障排查节点数据.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/OpenClaw一键安装_图片01_连环画01.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/OpenClaw一键安装_图片02_连环画02.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/OpenClaw一键安装_图片04_信息图01.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/OpenClaw一键安装_图片05_信息图02.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/OpenClaw一键安装_图片06_信息图03.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/00_人工回填指引.md",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/02_OpenClaw一键安装/00_素材清单.md"
+      ]
+    },
+    {
+      "title": "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+      "folder": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估",
+      "standard_draft": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/00_标准稿.md",
+      "cover": null,
+      "asset_count": 19,
+      "anchor_count": 10,
+      "videos": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_视频01_01_4KFreeStockFoot.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_视频02_02_Oiltanker-Drone.mp4"
+      ],
+      "files": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/00_标准稿.md",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_图表01_cpi_core.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_数据01_cpi_core.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_图表02_oil_gold_breakeven.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_数据02_oil_gold_breakeven.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_图表03_spx_us10y.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_数据03_spx_us10y.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_图表04_scenario_heatmap.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_数据04_scenario_heatmap.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_图片01_01_oil_tanker_aerial.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_图片02_02_gold_bullion_vaul.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_图片03_05_federal_reserve_b.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_图片04_06_oil_refinery_aeri.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_图片05_07_shipping_port_cra.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_图片06_10_inflation_rates_c.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_视频01_01_4KFreeStockFoot.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/供给秩序重估_视频02_02_Oiltanker-Drone.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/00_人工回填指引.md",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/编辑交付/03_供给秩序重估/00_素材清单.md"
+      ]
+    }
+  ],
+  "mode": "manual_refill_flat_delivery"
+}

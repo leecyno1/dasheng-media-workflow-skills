@@ -1,0 +1,1240 @@
+{
+  "run_id": "2026-04-15_164114",
+  "generated_at": "2026-04-15T16:41:14.030840+08:00",
+  "channel_top10": {
+    "ai_hot": [
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "A",
+        "heat_score": 80.61,
+        "title": "OpenAI's $852B valuation faces investor scrutiny amid strategy shift, FT reports",
+        "url": "https://www.reuters.com/legal/transactional/openai-investors-question-852-billion-valuation-strategy-shifts-ft-reports-2026-04-14",
+        "author_or_account": "abdelhousni",
+        "publish_time": "2026-04-15T01:36:22Z",
+        "excerpt": "OpenAI's $852B valuation faces investor scrutiny amid strategy shift,…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-740326a7e789d6f9",
+        "event_key": "openai-valuation-faces",
+        "note": "账号：abdelhousni；时间：2026-04-15T01:36:22Z；摘要：OpenAI's $852B valuation faces investor scrutiny amid strategy shift,…"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/reddit",
+        "heat_level": "A",
+        "heat_score": 74.03,
+        "title": "Anthropic has come out against a proposed Illinois law backed by OpenAI that would shield AI labs from liability if their systems are used to cause large-scale harm, like mass casualties or more than $1 billion in property damage.",
+        "url": "https://www.reddit.com/r/singularity/comments/1sly077/anthropic_has_come_out_against_a_proposed",
+        "author_or_account": "/u/soldierofcinema",
+        "publish_time": "2026-04-15T06:28:31+00:00",
+        "excerpt": "Anthropic has come out against a proposed Illinois law backed by Open…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-2ac30b80bcbe2672",
+        "event_key": "openai-ai-ai工具-工作流",
+        "note": "账号：/u/soldierofcinema；时间：2026-04-15T06:28:31+00:00；摘要：Anthropic has come out against a proposed Illinois law backed by Open…"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "B",
+        "heat_score": 69.95,
+        "title": "Trusted access for the next era of cyber defense",
+        "url": "https://openai.com/index/scaling-trusted-access-for-cyber-defense",
+        "author_or_account": "surprisetalk",
+        "publish_time": "2026-04-14T20:07:20Z",
+        "excerpt": "Trusted access for the next era of cyber defense；Hacker News 查询：OpenAI",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-cbd7a93b4650fbec",
+        "event_key": "openai-trusted-access",
+        "note": "账号：surprisetalk；时间：2026-04-14T20:07:20Z；摘要：Trusted access for the next era of cyber defense；Hacker News 查询：OpenAI"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "B",
+        "heat_score": 65.17,
+        "title": "The Death of an AI Whistleblower",
+        "url": "https://www.thenation.com/article/society/open-ai-suchir-balaji-whistleblowers",
+        "author_or_account": "SLHamlet",
+        "publish_time": "2026-04-15T06:56:56Z",
+        "excerpt": "The Death of an AI Whistleblower；Hacker News 查询：OpenAI",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-57e5a71b5200a3bf",
+        "event_key": "openai-ai-ai工具-工作流",
+        "note": "账号：SLHamlet；时间：2026-04-15T06:56:56Z；摘要：The Death of an AI Whistleblower；Hacker News 查询：OpenAI"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "B",
+        "heat_score": 64.0,
+        "title": "An AI Vibe Coding Horror Story",
+        "url": "https://www.tobru.ch/an-ai-vibe-coding-horror-story",
+        "author_or_account": "teichmann",
+        "publish_time": "2026-04-14T08:35:45Z",
+        "excerpt": "An AI Vibe Coding Horror Story；Hacker News 查询：Vibe Coding",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-025b0b95a44b6ee4",
+        "event_key": "ai-ai工具-工作流",
+        "note": "账号：teichmann；时间：2026-04-14T08:35:45Z；摘要：An AI Vibe Coding Horror Story；Hacker News 查询：Vibe Coding"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/reddit",
+        "heat_level": "B",
+        "heat_score": 59.4,
+        "title": "🔥BREAKING: OpenAI rolls out GPT-5.4-Cyber to limited group for testing, seeks to rival Claude Mythos",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1slmujp/breaking_openai_rolls_out_gpt54cyber_to_limited",
+        "author_or_account": "/u/etherd0t",
+        "publish_time": "2026-04-14T21:54:07+00:00",
+        "excerpt": "🔥BREAKING: OpenAI rolls out GPT-5.4-Cyber to limited group for testin…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-952ad1ca2b545d92",
+        "event_key": "openai-ai工具-工作流",
+        "note": "账号：/u/etherd0t；时间：2026-04-14T21:54:07+00:00；摘要：🔥BREAKING: OpenAI rolls out GPT-5.4-Cyber to limited group for testin…"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "B",
+        "heat_score": 55.18,
+        "title": "Show HN: Make sure your OpenClaw isn't doing things it's not supposed to",
+        "url": "https://claw.armoriq.ai",
+        "author_or_account": "vaibhavb007",
+        "publish_time": "2026-04-15T03:26:03Z",
+        "excerpt": "Show HN: Make sure your OpenClaw isn't doing things it's not supposed…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-92731e9a47236f1f",
+        "event_key": "ai-technology-adoption-ai工具-工作流",
+        "note": "账号：vaibhavb007；时间：2026-04-15T03:26:03Z；摘要：Show HN: Make sure your OpenClaw isn't doing things it's not supposed…"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/reddit",
+        "heat_level": "B",
+        "heat_score": 55.14,
+        "title": "Anthropic is set to release Claude Opus 4.7 and a new AI design tool as early as this week",
+        "url": "https://www.reddit.com/r/singularity/comments/1slh72j/anthropic_is_set_to_release_claude_opus_47_and_a",
+        "author_or_account": "/u/Outside-Iron-8242",
+        "publish_time": "2026-04-14T18:30:07+00:00",
+        "excerpt": "Anthropic is set to release Claude Opus 4.7 and a new AI design tool …",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-8da80b4ae4e8197f",
+        "event_key": "ai-ai工具-工作流",
+        "note": "账号：/u/Outside-Iron-8242；时间：2026-04-14T18:30:07+00:00；摘要：Anthropic is set to release Claude Opus 4.7 and a new AI design tool …"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "C",
+        "heat_score": 53.99,
+        "title": "Show HN: Agent Citizen – Your AI agents are sitting around doing nothing",
+        "url": "https://agent-citizen.vercel.app",
+        "author_or_account": "daltonlcarr",
+        "publish_time": "2026-04-15T03:44:38Z",
+        "excerpt": "Show HN: Agent Citizen – Your AI agents are sitting around doing noth…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-97f55447ebdf371d",
+        "event_key": "ai-technology-adoption-ai工具-工作流",
+        "note": "账号：daltonlcarr；时间：2026-04-15T03:44:38Z；摘要：Show HN: Agent Citizen – Your AI agents are sitting around doing noth…"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "C",
+        "heat_score": 50.23,
+        "title": "Show HN: OpenRig – agent harness that runs Claude Code and Codex as one system",
+        "url": "https://github.com/mvschwarz/openrig",
+        "author_or_account": "mschwarz",
+        "publish_time": "2026-04-14T23:46:40Z",
+        "excerpt": "Show HN: OpenRig – agent harness that runs Claude Code and Codex as o…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-3024b017386b351a",
+        "event_key": "openai-technology-adoption-ai工具-工作流",
+        "note": "账号：mschwarz；时间：2026-04-14T23:46:40Z；摘要：Show HN: OpenRig – agent harness that runs Claude Code and Codex as o…"
+      }
+    ],
+    "reports": [
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "B",
+        "heat_score": 66.0,
+        "title": "美伊和谈预期升温，标普大涨近新高，纳指十连涨，原油大跌7%，人民币升破6.81",
+        "url": "https://wallstreetcn.com/articles/3769897",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "美伊和谈预期升温，标普大涨近新高，纳指十连涨，原油大跌7%，人民币升破6.81；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-5c5e6daecac8cace",
+        "event_key": "原油-supply-order-油价-地缘冲突",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：美伊和谈预期升温，标普大涨近新高，纳指十连涨，原油大跌7%，人民币升破6.81；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "B",
+        "heat_score": 66.0,
+        "title": "如何看待同济大学王教授的百万经费 Nature 论文被指数据造假？",
+        "url": "https://www.zhihu.com/question/2025756646962468381",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "如何看待同济大学王教授的百万经费 Nature 论文被指数据造假？；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-0036b0c057fea58c",
+        "event_key": "nature-论文被指数据造假",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：如何看待同济大学王教授的百万经费 Nature 论文被指数据造假？；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "B",
+        "heat_score": 66.0,
+        "title": "网民平均每人每天刷视频超200分钟",
+        "url": "https://s.weibo.com/weibo?q=%23%E7%BD%91%E6%B0%91%E5%B9%B3%E5%9D%87%E6%AF%8F%E4%BA%BA%E6%AF%8F%E5%A4%A9%E5%88%B7%E8%A7%86%E9%A2%91%E8%B6%85200%E5%88%86%E9%92%9F%23&amp%3Bt=31&amp%3Bband_rank=3&amp%3BRefer=top",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "网民平均每人每天刷视频超200分钟；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-1a6c217293ac71cd",
+        "event_key": "网民平均每人每天刷视频超200分钟-来自",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：网民平均每人每天刷视频超200分钟；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "B",
+        "heat_score": 66.0,
+        "title": "西方媒体：美伊本周开启新一轮谈判，伊朗火速辟谣：报道“毫无根据”！",
+        "url": "https://wallstreetcn.com/articles/3769921",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "西方媒体：美伊本周开启新一轮谈判，伊朗火速辟谣：报道“毫无根据”！；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-055e00353df6b31f",
+        "event_key": "伊朗-diplomacy-conflict-谈判-油价-地缘冲突",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：西方媒体：美伊本周开启新一轮谈判，伊朗火速辟谣：报道“毫无根据”！；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "B",
+        "heat_score": 66.0,
+        "title": "华尔街见闻早餐FM-Radio | 2026年4月15日",
+        "url": "https://wallstreetcn.com/articles/3769978",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "华尔街见闻早餐FM-Radio | 2026年4月15日；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-035ebffafaca7386",
+        "event_key": "华尔街见闻早餐fm-radio",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：华尔街见闻早餐FM-Radio | 2026年4月15日；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "B",
+        "heat_score": 66.0,
+        "title": "俄外长：普京将于今年上半年访华",
+        "url": "https://www.toutiao.com/trending/7628859250894458414",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "俄外长：普京将于今年上半年访华；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-9ab8281a7a527fc2",
+        "event_key": "普京-俄外长-来自",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：俄外长：普京将于今年上半年访华；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "B",
+        "heat_score": 66.0,
+        "title": "如何看待 B 太花 18 万为贵州山区孩子建房，却发现对方虚构家庭困境？公益帮扶咋识别真实需求避免善意被消耗？",
+        "url": "https://www.zhihu.com/question/2027511533572286109",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "如何看待 B 太花 18 万为贵州山区孩子建房，却发现对方虚构家庭困境？公益帮扶咋识别真实需求避免善意被消耗？；来自 reports 最新…",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-27e4749a5782e7b8",
+        "event_key": "如何看待-太花",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：如何看待 B 太花 18 万为贵州山区孩子建房，却发现对方虚构家庭困境？公益帮扶咋识别真实需求避免善意被消耗？；来自 reports 最新…"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "B",
+        "heat_score": 66.0,
+        "title": "报道：伊朗考虑暂停霍尔木兹航运，为新一轮谈判争取空间",
+        "url": "https://wallstreetcn.com/articles/3769943",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "报道：伊朗考虑暂停霍尔木兹航运，为新一轮谈判争取空间；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-1f4eee66bd2aa5b1",
+        "event_key": "伊朗-航运-supply-order-diplomacy-conflict",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：报道：伊朗考虑暂停霍尔木兹航运，为新一轮谈判争取空间；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "B",
+        "heat_score": 66.0,
+        "title": "永辉超市仲裁胜诉：王健林、孙喜双等需承担连带保证责任及支付超38亿元",
+        "url": "https://m.thepaper.cn/newsDetail_forward_32969086",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "永辉超市仲裁胜诉：王健林、孙喜双等需承担连带保证责任及支付超38亿元；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-bca6b764a594b4c4",
+        "event_key": "永辉超市仲裁胜诉-王健林",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：永辉超市仲裁胜诉：王健林、孙喜双等需承担连带保证责任及支付超38亿元；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "B",
+        "heat_score": 66.0,
+        "title": "国台办：统一后台湾无需在防务上巨额支出",
+        "url": "https://www.cls.cn/detail/2344442",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "国台办：统一后台湾无需在防务上巨额支出；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-1fc329c5b7687a3e",
+        "event_key": "国台办-来自",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：国台办：统一后台湾无需在防务上巨额支出；来自 reports 最新外链"
+      }
+    ],
+    "wechat": [
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "谈判大概率会破裂？",
+        "url": "https://mp.weixin.qq.com/s/SdU0_57oIJ8jtnV6FXSF3A",
+        "author_or_account": "表舅是养基大户",
+        "publish_time": "2026-04-09 21:33:07",
+        "excerpt": "谈判大概率会破裂？；表舅是养基大户 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-51b07324055e70e7",
+        "event_key": "谈判-谈判大概率会破裂-表舅是养基大户",
+        "note": "账号：表舅是养基大户；时间：2026-04-09 21:33:07；摘要：谈判大概率会破裂？；表舅是养基大户 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "听说今天机构加仓很猛",
+        "url": "https://mp.weixin.qq.com/s/lH8p4VLvMW5FjIr6MLXcig",
+        "author_or_account": "表舅是养基大户",
+        "publish_time": "2026-04-08 21:34:15",
+        "excerpt": "听说今天机构加仓很猛；表舅是养基大户 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-322ee5fba351ac9d",
+        "event_key": "表舅是养基大户-定向样本",
+        "note": "账号：表舅是养基大户；时间：2026-04-08 21:34:15；摘要：听说今天机构加仓很猛；表舅是养基大户 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "央妈为何狂买黄金？",
+        "url": "https://mp.weixin.qq.com/s/_IpyPNK16iCBnZOVLDiNzg",
+        "author_or_account": "表舅是养基大户",
+        "publish_time": "2026-04-07 21:31:31",
+        "excerpt": "央妈为何狂买黄金？；表舅是养基大户 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-2646b4f06434b32a",
+        "event_key": "黄金-market-sentiment-黄金-白银-贵金属",
+        "note": "账号：表舅是养基大户；时间：2026-04-07 21:31:31；摘要：央妈为何狂买黄金？；表舅是养基大户 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "卧槽！这些基金涨幅已经近300%了",
+        "url": "https://mp.weixin.qq.com/s/7m1sLTBeGkgOHt87z5JZDQ",
+        "author_or_account": "硬核姬老板",
+        "publish_time": "2026-04-10 14:40:50",
+        "excerpt": "卧槽！这些基金涨幅已经近300%了；硬核姬老板 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-3036ced932a05ce8",
+        "event_key": "market-sentiment-卧槽-这些基金涨幅已经近300",
+        "note": "账号：硬核姬老板；时间：2026-04-10 14:40:50；摘要：卧槽！这些基金涨幅已经近300%了；硬核姬老板 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "又一个公募老将奔私了",
+        "url": "https://mp.weixin.qq.com/s/V_yWBRymxAFT69X69lu8dA",
+        "author_or_account": "硬核姬老板",
+        "publish_time": "2026-04-09 12:23:58",
+        "excerpt": "又一个公募老将奔私了；硬核姬老板 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-0b689e5e8c0e1799",
+        "event_key": "硬核姬老板-定向样本",
+        "note": "账号：硬核姬老板；时间：2026-04-09 12:23:58；摘要：又一个公募老将奔私了；硬核姬老板 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "很好，终于有基金经理聚焦在了半导体自主可控了",
+        "url": "https://mp.weixin.qq.com/s/-P7kYmK-kSdjRFjtSnY8Rg",
+        "author_or_account": "硬核姬老板",
+        "publish_time": "2026-04-08 11:22:00",
+        "excerpt": "很好，终于有基金经理聚焦在了半导体自主可控了；硬核姬老板 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-8222d676d9ebe4ae",
+        "event_key": "半导体-semiconductor-cycle-market-sentiment-半导体-国产芯片",
+        "note": "账号：硬核姬老板；时间：2026-04-08 11:22:00；摘要：很好，终于有基金经理聚焦在了半导体自主可控了；硬核姬老板 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "Hermes Agent相关资源汇总",
+        "url": "https://mp.weixin.qq.com/s/2tHnf8QQ52EKWM68KAoSTQ",
+        "author_or_account": "Draco正在VibeCoding",
+        "publish_time": "2026-04-09 23:44:12",
+        "excerpt": "Hermes Agent相关资源汇总；Draco正在VibeCoding 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-f60a72cfc798478d",
+        "event_key": "technology-adoption-ai工具-工作流",
+        "note": "账号：Draco正在VibeCoding；时间：2026-04-09 23:44:12；摘要：Hermes Agent相关资源汇总；Draco正在VibeCoding 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 30.0,
+        "title": "一文看懂：Hermes Agent与OpenClaw全维度对比",
+        "url": "https://mp.weixin.qq.com/s/JWHBaFVvLE8S1t5jRXQxrg",
+        "author_or_account": "Draco正在VibeCoding",
+        "publish_time": "2026-04-08 20:29:15",
+        "excerpt": "一文看懂：Hermes Agent与OpenClaw全维度对比；Draco正在VibeCoding 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c992621817add710",
+        "event_key": "technology-adoption-ai工具-工作流",
+        "note": "账号：Draco正在VibeCoding；时间：2026-04-08 20:29:15；摘要：一文看懂：Hermes Agent与OpenClaw全维度对比；Draco正在VibeCoding 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 14.0,
+        "title": "简单聊一下开盘前的情况",
+        "url": "https://mp.weixin.qq.com/s/aYu2yutu5EijI7CYLO1YFw",
+        "author_or_account": "表舅是养基大户",
+        "publish_time": "2026-04-06 22:02:19",
+        "excerpt": "简单聊一下开盘前的情况；表舅是养基大户 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-9a5925d818ae4187",
+        "event_key": "表舅是养基大户-定向样本",
+        "note": "账号：表舅是养基大户；时间：2026-04-06 22:02:19；摘要：简单聊一下开盘前的情况；表舅是养基大户 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "D",
+        "heat_score": 14.0,
+        "title": "今天的两个大利好",
+        "url": "https://mp.weixin.qq.com/s/tOtcyLEKEROaYOhloKGm6Q",
+        "author_or_account": "表舅是养基大户",
+        "publish_time": "2026-04-01 21:31:14",
+        "excerpt": "今天的两个大利好；表舅是养基大户 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-49f7d492e7766ffb",
+        "event_key": "今天的两个大利好-表舅是养基大户",
+        "note": "账号：表舅是养基大户；时间：2026-04-01 21:31:14；摘要：今天的两个大利好；表舅是养基大户 定向样本"
+      }
+    ]
+  },
+  "event_candidates": [
+    {
+      "cluster_id": "technology-adoption-ai工具-工作流",
+      "cluster_title_candidate": "AI工具/工作流 / draco正在vibecoding",
+      "cluster_summary": "围绕 AI工具/工作流 / draco正在vibecoding 的高频讨论，当前样本 10 条，涉及 1 个渠道、7 个去重组。",
+      "count": 10,
+      "source_mix": {
+        "wechat": 10
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 7,
+      "priority_score": 58.142,
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.914,
+      "authority_score": 0.88,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "Hermes Agent相关资源汇总",
+        "一文看懂：Hermes Agent与OpenClaw全维度对比",
+        "为飞书文档生成HERO Image & 公众号封面图的skill：article-to-wechat-cover"
+      ],
+      "representative_links": [
+        "https://mp.weixin.qq.com/s/2tHnf8QQ52EKWM68KAoSTQ",
+        "https://mp.weixin.qq.com/s/JWHBaFVvLE8S1t5jRXQxrg",
+        "https://mp.weixin.qq.com/s/iq-kV_kCHtOb4h5UWw79nQ"
+      ]
+    },
+    {
+      "cluster_id": "ai-ai工具-工作流",
+      "cluster_title_candidate": "AI / AI工具/工作流",
+      "cluster_summary": "围绕 AI / AI工具/工作流 的高频讨论，当前样本 5 条，涉及 3 个渠道、5 个去重组。",
+      "count": 5,
+      "source_mix": {
+        "ai_hot": 2,
+        "reports": 2,
+        "wechat": 1
+      },
+      "source_diversity": 3,
+      "dedupe_depth": 5,
+      "priority_score": 56.163,
+      "dominant_entities": [
+        "AI"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.4,
+      "freshness_score": 1.38,
+      "authority_score": 0.816,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "An AI Vibe Coding Horror Story",
+        "Anthropic is set to release Claude Opus 4.7 and a new AI design tool as early as this week",
+        "AI承诺赔10万,用户索赔败诉"
+      ],
+      "representative_links": [
+        "https://www.tobru.ch/an-ai-vibe-coding-horror-story",
+        "https://www.reddit.com/r/singularity/comments/1slh72j/anthropic_is_set_to_release_claude_opus_47_and_a",
+        "https://tieba.baidu.com/hottopic/browse/hottopic?topic_id=28353249&amp%3Bamp%3Btopic_name=AI%E6%89%BF%E8%AF%BA%E8%B5%9410%E4%B8%87%2C%E7%94%A8%E6%88%B7%E7%B4%A2%E8%B5%94%E8%B4%A5%E8%AF%89"
+      ]
+    },
+    {
+      "cluster_id": "openai-ai-ai工具-工作流",
+      "cluster_title_candidate": "OpenAI / AI / AI工具/工作流",
+      "cluster_summary": "围绕 OpenAI / AI / AI工具/工作流 的高频讨论，当前样本 2 条，涉及 1 个渠道、2 个去重组。",
+      "count": 2,
+      "source_mix": {
+        "ai_hot": 2
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 2,
+      "priority_score": 39.312,
+      "dominant_entities": [
+        "OpenAI",
+        "AI"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.65,
+      "authority_score": 0.8,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "Anthropic has come out against a proposed Illinois law backed by OpenAI that would shield AI labs from liability if their systems are used to cause large-scale harm, like mass casualties or more than $1 billion in property damage.",
+        "The Death of an AI Whistleblower"
+      ],
+      "representative_links": [
+        "https://www.reddit.com/r/singularity/comments/1sly077/anthropic_has_come_out_against_a_proposed",
+        "https://www.thenation.com/article/society/open-ai-suchir-balaji-whistleblowers"
+      ]
+    },
+    {
+      "cluster_id": "ai-technology-adoption-ai工具-工作流",
+      "cluster_title_candidate": "AI / AI工具/工作流",
+      "cluster_summary": "围绕 AI / AI工具/工作流 的高频讨论，当前样本 2 条，涉及 1 个渠道、2 个去重组。",
+      "count": 2,
+      "source_mix": {
+        "ai_hot": 2
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 2,
+      "priority_score": 36.21,
+      "dominant_entities": [
+        "AI"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.68,
+      "authority_score": 0.8,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "Show HN: Make sure your OpenClaw isn't doing things it's not supposed to",
+        "Show HN: Agent Citizen – Your AI agents are sitting around doing nothing"
+      ],
+      "representative_links": [
+        "https://claw.armoriq.ai",
+        "https://agent-citizen.vercel.app"
+      ]
+    },
+    {
+      "cluster_id": "伊朗-美国-diplomacy-conflict-油价-地缘冲突",
+      "cluster_title_candidate": "伊朗 / 美国 / 油价/地缘冲突",
+      "cluster_summary": "围绕 伊朗 / 美国 / 油价/地缘冲突 的高频讨论，当前样本 2 条，涉及 2 个渠道、2 个去重组。",
+      "count": 2,
+      "source_mix": {
+        "reports": 1,
+        "wechat": 1
+      },
+      "source_diversity": 2,
+      "dedupe_depth": 2,
+      "priority_score": 34.84,
+      "dominant_entities": [
+        "伊朗",
+        "美国",
+        "特朗普"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.5,
+      "freshness_score": 1.125,
+      "authority_score": 0.84,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "特朗普：美国对伊朗的战争已经结束",
+        "伊朗赢了，美国赢了，一赢各表"
+      ],
+      "representative_links": [
+        "https://www.cls.cn/detail/2344245",
+        "https://mp.weixin.qq.com/s/JdoinTDGmUl6dzlzecK73g"
+      ]
+    },
+    {
+      "cluster_id": "原油-supply-order-油价-地缘冲突",
+      "cluster_title_candidate": "原油 / 油价/地缘冲突",
+      "cluster_summary": "围绕 原油 / 油价/地缘冲突 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "reports": 1
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 1,
+      "priority_score": 28.52,
+      "dominant_entities": [
+        "原油"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 1.0,
+      "freshness_score": 1.35,
+      "authority_score": 0.8,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "美伊和谈预期升温，标普大涨近新高，纳指十连涨，原油大跌7%，人民币升破6.81"
+      ],
+      "representative_links": [
+        "https://wallstreetcn.com/articles/3769897"
+      ]
+    },
+    {
+      "cluster_id": "伊朗-diplomacy-conflict-谈判-油价-地缘冲突",
+      "cluster_title_candidate": "伊朗 / 油价/地缘冲突 / 谈判",
+      "cluster_summary": "围绕 伊朗 / 油价/地缘冲突 / 谈判 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "reports": 1
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 1,
+      "priority_score": 28.52,
+      "dominant_entities": [
+        "伊朗"
+      ],
+      "dominant_actions": [
+        "谈判"
+      ],
+      "trendradar_coverage": 1.0,
+      "freshness_score": 1.35,
+      "authority_score": 0.8,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "西方媒体：美伊本周开启新一轮谈判，伊朗火速辟谣：报道“毫无根据”！"
+      ],
+      "representative_links": [
+        "https://wallstreetcn.com/articles/3769921"
+      ]
+    },
+    {
+      "cluster_id": "普京-俄外长-来自",
+      "cluster_title_candidate": "普京 / 俄外长",
+      "cluster_summary": "围绕 普京 / 俄外长 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "reports": 1
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 1,
+      "priority_score": 28.52,
+      "dominant_entities": [
+        "普京"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 1.0,
+      "freshness_score": 1.35,
+      "authority_score": 0.8,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "俄外长：普京将于今年上半年访华"
+      ],
+      "representative_links": [
+        "https://www.toutiao.com/trending/7628859250894458414"
+      ]
+    },
+    {
+      "cluster_id": "伊朗-航运-supply-order-diplomacy-conflict",
+      "cluster_title_candidate": "伊朗 / 航运 / 油价/地缘冲突 / 谈判",
+      "cluster_summary": "围绕 伊朗 / 航运 / 油价/地缘冲突 / 谈判 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "reports": 1
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 1,
+      "priority_score": 28.52,
+      "dominant_entities": [
+        "伊朗",
+        "航运"
+      ],
+      "dominant_actions": [
+        "谈判"
+      ],
+      "trendradar_coverage": 1.0,
+      "freshness_score": 1.35,
+      "authority_score": 0.8,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "报道：伊朗考虑暂停霍尔木兹航运，为新一轮谈判争取空间"
+      ],
+      "representative_links": [
+        "https://wallstreetcn.com/articles/3769943"
+      ]
+    },
+    {
+      "cluster_id": "中国-中方回应美财长-中国不可靠",
+      "cluster_title_candidate": "中国 / 中方回应美财长",
+      "cluster_summary": "围绕 中国 / 中方回应美财长 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "reports": 1
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 1,
+      "priority_score": 28.52,
+      "dominant_entities": [
+        "中国"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 1.0,
+      "freshness_score": 1.35,
+      "authority_score": 0.8,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "中方回应美财长“中国不可靠”言论"
+      ],
+      "representative_links": [
+        "https://www.toutiao.com/trending/7628886103948496411"
+      ]
+    },
+    {
+      "cluster_id": "美国-特朗普-diplomacy-conflict-谈判",
+      "cluster_title_candidate": "特朗普 / 美国 / 谈判",
+      "cluster_summary": "围绕 特朗普 / 美国 / 谈判 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "reports": 1
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 1,
+      "priority_score": 28.52,
+      "dominant_entities": [
+        "特朗普",
+        "美国"
+      ],
+      "dominant_actions": [
+        "谈判"
+      ],
+      "trendradar_coverage": 1.0,
+      "freshness_score": 1.35,
+      "authority_score": 0.8,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "特朗普最新表态：美国对伊战争已结束 未来两天或重返谈判桌"
+      ],
+      "representative_links": [
+        "https://www.cls.cn/detail/2344264"
+      ]
+    },
+    {
+      "cluster_id": "中国-中国银行一员工年薪超1800万元-来自",
+      "cluster_title_candidate": "中国 / 中国银行一员工年薪超1800万元",
+      "cluster_summary": "围绕 中国 / 中国银行一员工年薪超1800万元 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "reports": 1
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 1,
+      "priority_score": 28.52,
+      "dominant_entities": [
+        "中国"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 1.0,
+      "freshness_score": 1.35,
+      "authority_score": 0.8,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "中国银行一员工年薪超1800万元"
+      ],
+      "representative_links": [
+        "https://www.toutiao.com/trending/7628000740484595762"
+      ]
+    },
+    {
+      "cluster_id": "伊朗-特朗普-diplomacy-conflict-谈判",
+      "cluster_title_candidate": "特朗普 / 伊朗 / 油价/地缘冲突 / 谈判",
+      "cluster_summary": "围绕 特朗普 / 伊朗 / 油价/地缘冲突 / 谈判 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "reports": 1
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 1,
+      "priority_score": 28.52,
+      "dominant_entities": [
+        "特朗普",
+        "伊朗"
+      ],
+      "dominant_actions": [
+        "谈判"
+      ],
+      "trendradar_coverage": 1.0,
+      "freshness_score": 1.35,
+      "authority_score": 0.8,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "特朗普称“未来两天内”可能再与伊朗谈判，上轮谈判一度谈到80%仍破裂，伊外长：因为内塔尼亚胡给万斯打了电话"
+      ],
+      "representative_links": [
+        "https://wallstreetcn.com/articles/3769962"
+      ]
+    },
+    {
+      "cluster_id": "英伟达-ai-semiconductor-cycle-半导体-国产芯片",
+      "cluster_title_candidate": "英伟达 / AI / 半导体/国产芯片",
+      "cluster_summary": "围绕 英伟达 / AI / 半导体/国产芯片 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "reports": 1
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 1,
+      "priority_score": 28.52,
+      "dominant_entities": [
+        "英伟达",
+        "AI",
+        "芯片"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 1.0,
+      "freshness_score": 1.35,
+      "authority_score": 0.8,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "全球AI芯片被一家味精厂卡脖子？份额超95%，英伟达也得排队抢产能"
+      ],
+      "representative_links": [
+        "https://wallstreetcn.com/articles/3769939"
+      ]
+    },
+    {
+      "cluster_id": "半导体-semiconductor-cycle-market-sentiment-半导体-国产芯片",
+      "cluster_title_candidate": "半导体 / 半导体/国产芯片",
+      "cluster_summary": "围绕 半导体 / 半导体/国产芯片 的高频讨论，当前样本 2 条，涉及 1 个渠道、1 个去重组。",
+      "count": 2,
+      "source_mix": {
+        "wechat": 2
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 1,
+      "priority_score": 25.53,
+      "dominant_entities": [
+        "半导体"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.91,
+      "authority_score": 0.88,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "很好，终于有基金经理聚焦在了半导体自主可控了",
+        "很好，终于有基金经理聚焦在了半导体自主可控了"
+      ],
+      "representative_links": [
+        "https://mp.weixin.qq.com/s/-P7kYmK-kSdjRFjtSnY8Rg",
+        "https://mp.weixin.qq.com/s/-P7kYmK-kSdjRFjtSnY8Rg"
+      ]
+    }
+  ],
+  "top_entities": {
+    "sectors": [
+      {
+        "name": "AI",
+        "count": 10
+      },
+      {
+        "name": "半导体",
+        "count": 2
+      },
+      {
+        "name": "航运",
+        "count": 1
+      },
+      {
+        "name": "芯片",
+        "count": 1
+      }
+    ],
+    "dynamic_tokens": [
+      {
+        "name": "公众号最新文章",
+        "count": 11
+      },
+      {
+        "name": "ai",
+        "count": 10
+      },
+      {
+        "name": "来自",
+        "count": 10
+      },
+      {
+        "name": "agent",
+        "count": 8
+      },
+      {
+        "name": "伊朗",
+        "count": 8
+      },
+      {
+        "name": "reports",
+        "count": 8
+      },
+      {
+        "name": "openclaw",
+        "count": 7
+      },
+      {
+        "name": "定向样本",
+        "count": 7
+      },
+      {
+        "name": "openai",
+        "count": 6
+      },
+      {
+        "name": "hermes",
+        "count": 6
+      }
+    ],
+    "people": [
+      {
+        "name": "OpenAI",
+        "count": 6
+      },
+      {
+        "name": "特朗普",
+        "count": 4
+      },
+      {
+        "name": "普京",
+        "count": 1
+      }
+    ],
+    "orgs": [
+      {
+        "name": "OpenAI",
+        "count": 6
+      },
+      {
+        "name": "英伟达",
+        "count": 1
+      }
+    ],
+    "commodities": [
+      {
+        "name": "黄金",
+        "count": 2
+      },
+      {
+        "name": "原油",
+        "count": 1
+      }
+    ],
+    "countries": [
+      {
+        "name": "伊朗",
+        "count": 8
+      },
+      {
+        "name": "美国",
+        "count": 4
+      },
+      {
+        "name": "以色列",
+        "count": 4
+      },
+      {
+        "name": "中国",
+        "count": 2
+      }
+    ]
+  },
+  "ai_hot_candidates": [
+    {
+      "title": "OpenAI's $852B valuation faces investor scrutiny amid strategy shift, FT reports",
+      "url": "https://www.reuters.com/legal/transactional/openai-investors-question-852-billion-valuation-strategy-shifts-ft-reports-2026-04-14",
+      "heat_level": "A",
+      "heat_score": 80.61,
+      "event_key": "openai-valuation-faces",
+      "excerpt": "OpenAI's $852B valuation faces investor scrutiny amid strategy shift,…"
+    },
+    {
+      "title": "Anthropic has come out against a proposed Illinois law backed by OpenAI that would shield AI labs from liability if their systems are used to cause large-scale harm, like mass casualties or more than $1 billion in property damage.",
+      "url": "https://www.reddit.com/r/singularity/comments/1sly077/anthropic_has_come_out_against_a_proposed",
+      "heat_level": "A",
+      "heat_score": 74.03,
+      "event_key": "openai-ai-ai工具-工作流",
+      "excerpt": "Anthropic has come out against a proposed Illinois law backed by Open…"
+    },
+    {
+      "title": "Trusted access for the next era of cyber defense",
+      "url": "https://openai.com/index/scaling-trusted-access-for-cyber-defense",
+      "heat_level": "B",
+      "heat_score": 69.95,
+      "event_key": "openai-trusted-access",
+      "excerpt": "Trusted access for the next era of cyber defense；Hacker News 查询：OpenAI"
+    },
+    {
+      "title": "The Death of an AI Whistleblower",
+      "url": "https://www.thenation.com/article/society/open-ai-suchir-balaji-whistleblowers",
+      "heat_level": "B",
+      "heat_score": 65.17,
+      "event_key": "openai-ai-ai工具-工作流",
+      "excerpt": "The Death of an AI Whistleblower；Hacker News 查询：OpenAI"
+    },
+    {
+      "title": "An AI Vibe Coding Horror Story",
+      "url": "https://www.tobru.ch/an-ai-vibe-coding-horror-story",
+      "heat_level": "B",
+      "heat_score": 64.0,
+      "event_key": "ai-ai工具-工作流",
+      "excerpt": "An AI Vibe Coding Horror Story；Hacker News 查询：Vibe Coding"
+    },
+    {
+      "title": "🔥BREAKING: OpenAI rolls out GPT-5.4-Cyber to limited group for testing, seeks to rival Claude Mythos",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1slmujp/breaking_openai_rolls_out_gpt54cyber_to_limited",
+      "heat_level": "B",
+      "heat_score": 59.4,
+      "event_key": "openai-ai工具-工作流",
+      "excerpt": "🔥BREAKING: OpenAI rolls out GPT-5.4-Cyber to limited group for testin…"
+    },
+    {
+      "title": "Show HN: Make sure your OpenClaw isn't doing things it's not supposed to",
+      "url": "https://claw.armoriq.ai",
+      "heat_level": "B",
+      "heat_score": 55.18,
+      "event_key": "ai-technology-adoption-ai工具-工作流",
+      "excerpt": "Show HN: Make sure your OpenClaw isn't doing things it's not supposed…"
+    },
+    {
+      "title": "Anthropic is set to release Claude Opus 4.7 and a new AI design tool as early as this week",
+      "url": "https://www.reddit.com/r/singularity/comments/1slh72j/anthropic_is_set_to_release_claude_opus_47_and_a",
+      "heat_level": "B",
+      "heat_score": 55.14,
+      "event_key": "ai-ai工具-工作流",
+      "excerpt": "Anthropic is set to release Claude Opus 4.7 and a new AI design tool …"
+    },
+    {
+      "title": "Show HN: Agent Citizen – Your AI agents are sitting around doing nothing",
+      "url": "https://agent-citizen.vercel.app",
+      "heat_level": "C",
+      "heat_score": 53.99,
+      "event_key": "ai-technology-adoption-ai工具-工作流",
+      "excerpt": "Show HN: Agent Citizen – Your AI agents are sitting around doing noth…"
+    },
+    {
+      "title": "Show HN: OpenRig – agent harness that runs Claude Code and Codex as one system",
+      "url": "https://github.com/mvschwarz/openrig",
+      "heat_level": "C",
+      "heat_score": 50.23,
+      "event_key": "openai-technology-adoption-ai工具-工作流",
+      "excerpt": "Show HN: OpenRig – agent harness that runs Claude Code and Codex as o…"
+    }
+  ],
+  "trendradar_candidates": [
+    {
+      "title": "美伊和谈预期升温，标普大涨近新高，纳指十连涨，原油大跌7%，人民币升破6.81",
+      "url": "https://wallstreetcn.com/articles/3769897",
+      "heat_level": "B",
+      "heat_score": 66.0,
+      "event_key": "原油-supply-order-油价-地缘冲突"
+    },
+    {
+      "title": "如何看待同济大学王教授的百万经费 Nature 论文被指数据造假？",
+      "url": "https://www.zhihu.com/question/2025756646962468381",
+      "heat_level": "B",
+      "heat_score": 66.0,
+      "event_key": "nature-论文被指数据造假"
+    },
+    {
+      "title": "网民平均每人每天刷视频超200分钟",
+      "url": "https://s.weibo.com/weibo?q=%23%E7%BD%91%E6%B0%91%E5%B9%B3%E5%9D%87%E6%AF%8F%E4%BA%BA%E6%AF%8F%E5%A4%A9%E5%88%B7%E8%A7%86%E9%A2%91%E8%B6%85200%E5%88%86%E9%92%9F%23&amp%3Bt=31&amp%3Bband_rank=3&amp%3BRefer=top",
+      "heat_level": "B",
+      "heat_score": 66.0,
+      "event_key": "网民平均每人每天刷视频超200分钟-来自"
+    },
+    {
+      "title": "西方媒体：美伊本周开启新一轮谈判，伊朗火速辟谣：报道“毫无根据”！",
+      "url": "https://wallstreetcn.com/articles/3769921",
+      "heat_level": "B",
+      "heat_score": 66.0,
+      "event_key": "伊朗-diplomacy-conflict-谈判-油价-地缘冲突"
+    },
+    {
+      "title": "华尔街见闻早餐FM-Radio | 2026年4月15日",
+      "url": "https://wallstreetcn.com/articles/3769978",
+      "heat_level": "B",
+      "heat_score": 66.0,
+      "event_key": "华尔街见闻早餐fm-radio"
+    },
+    {
+      "title": "俄外长：普京将于今年上半年访华",
+      "url": "https://www.toutiao.com/trending/7628859250894458414",
+      "heat_level": "B",
+      "heat_score": 66.0,
+      "event_key": "普京-俄外长-来自"
+    },
+    {
+      "title": "如何看待 B 太花 18 万为贵州山区孩子建房，却发现对方虚构家庭困境？公益帮扶咋识别真实需求避免善意被消耗？",
+      "url": "https://www.zhihu.com/question/2027511533572286109",
+      "heat_level": "B",
+      "heat_score": 66.0,
+      "event_key": "如何看待-太花"
+    },
+    {
+      "title": "报道：伊朗考虑暂停霍尔木兹航运，为新一轮谈判争取空间",
+      "url": "https://wallstreetcn.com/articles/3769943",
+      "heat_level": "B",
+      "heat_score": 66.0,
+      "event_key": "伊朗-航运-supply-order-diplomacy-conflict"
+    },
+    {
+      "title": "永辉超市仲裁胜诉：王健林、孙喜双等需承担连带保证责任及支付超38亿元",
+      "url": "https://m.thepaper.cn/newsDetail_forward_32969086",
+      "heat_level": "B",
+      "heat_score": 66.0,
+      "event_key": "永辉超市仲裁胜诉-王健林"
+    },
+    {
+      "title": "国台办：统一后台湾无需在防务上巨额支出",
+      "url": "https://www.cls.cn/detail/2344442",
+      "heat_level": "B",
+      "heat_score": 66.0,
+      "event_key": "国台办-来自"
+    }
+  ],
+  "cross_channel_events": [
+    {
+      "cluster_id": "ai-ai工具-工作流",
+      "cluster_title_candidate": "AI / AI工具/工作流",
+      "source_mix": {
+        "ai_hot": 2,
+        "reports": 2,
+        "wechat": 1
+      }
+    },
+    {
+      "cluster_id": "伊朗-美国-diplomacy-conflict-油价-地缘冲突",
+      "cluster_title_candidate": "伊朗 / 美国 / 油价/地缘冲突",
+      "source_mix": {
+        "reports": 1,
+        "wechat": 1
+      }
+    }
+  ],
+  "manual_additions": [],
+  "editor_note": "",
+  "notes": [
+    "intake 阶段只提供真实样本、渠道热度和候选事件簇，不替 brief 做观点判断。",
+    "若人工指定题目，应补到 manual_additions 并保留真实标题、原始链接与原因。"
+  ]
+}

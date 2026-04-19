@@ -1,0 +1,118 @@
+{
+  "run_id": "2026-04-15_164114",
+  "stage": "publish",
+  "status": "blocked",
+  "rewrite_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-15_164114/rewrite_manifest.json",
+  "material_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-15_164114/material_manifest.json",
+  "publish_decision": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-15_164114/publish_decision.json",
+  "video_supplement_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-15_164114/video_supplement/publish_video_supplement_manifest.json",
+  "video_supplement_report": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-15_164114/video_supplement/publish_video_supplement_report.md",
+  "publish_skill_stack": {
+    "video_supplement": [
+      {
+        "skill": "dasheng-stage-publish-video",
+        "role": "chart_and_narrative_video",
+        "source": "repo-local"
+      },
+      {
+        "skill": "remotion",
+        "role": "motion_best_practice",
+        "source": "openclaw-default"
+      },
+      {
+        "skill": "remotion-video",
+        "role": "motion_workflow",
+        "source": "openclaw-default"
+      },
+      {
+        "skill": "remotion-video-toolkit",
+        "role": "motion_toolkit",
+        "source": "openclaw-default"
+      }
+    ],
+    "wechat": [
+      {
+        "skill": "baoyu-post-to-wechat",
+        "role": "primary_executor",
+        "source": "openclaw-default"
+      },
+      {
+        "skill": "wechat-multi-publisher",
+        "role": "batch_draft_executor",
+        "source": "openclaw-default"
+      },
+      {
+        "skill": "md2wechat",
+        "role": "html_preprocessor",
+        "source": "codex-local"
+      },
+      {
+        "skill": "wechat-public-cli",
+        "role": "cli_executor_fallback",
+        "source": "openclaw-default"
+      }
+    ],
+    "weibo": [
+      {
+        "skill": "weibo-manager",
+        "role": "approval_flow_executor",
+        "source": "openclaw-default"
+      },
+      {
+        "skill": "baoyu-post-to-weibo",
+        "role": "article_executor",
+        "source": "openclaw-default"
+      }
+    ],
+    "x": [
+      {
+        "skill": "baoyu-post-to-x",
+        "role": "x_executor",
+        "source": "openclaw-default"
+      }
+    ],
+    "xiaohongshu": [
+      {
+        "skill": "xiaohongshu-auto",
+        "role": "publish_executor",
+        "source": "openclaw-default"
+      },
+      {
+        "skill": "xiaohongshu-ops",
+        "role": "ops_helper",
+        "source": "openclaw-default"
+      }
+    ],
+    "douyin": [
+      {
+        "skill": "douyin-upload-skill",
+        "role": "publish_executor",
+        "source": "openclaw-default"
+      }
+    ],
+    "zhihu": [
+      {
+        "skill": "zhihu-post",
+        "role": "publish_executor",
+        "source": "openclaw-default"
+      }
+    ],
+    "manual_support": [
+      {
+        "skill": "bilibili-youtube-watcher",
+        "role": "bilibili_manual_research",
+        "source": "openclaw-default"
+      },
+      {
+        "skill": "publish-guard",
+        "role": "post_publish_verifier",
+        "source": "openclaw-default"
+      }
+    ]
+  },
+  "channel_adaptation_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-15_164114/channel_adaptation_manifest.json",
+  "channel_execution_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-15_164114/channel_execution_manifest.json",
+  "publish_verification_report": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-15_164114/publish_verification_report.json",
+  "channel_packs": [],
+  "next_stage": null
+}

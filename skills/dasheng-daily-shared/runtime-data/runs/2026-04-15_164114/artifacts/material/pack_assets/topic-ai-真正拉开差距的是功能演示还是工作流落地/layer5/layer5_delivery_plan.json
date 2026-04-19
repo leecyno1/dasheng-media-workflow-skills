@@ -1,0 +1,51 @@
+{
+  "template_id": "story_page",
+  "template_name": "通用故事面板 (Story Page)",
+  "worldmonitor_project": "/Volumes/PSSD/Projects/worldmonitor",
+  "worldmonitor_data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+  "worldmonitor_public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+  "worldmonitor_entry": "index.html",
+  "proxy_port": 8787,
+  "current_status": "inactive",
+  "inputs": [
+    "article.md",
+    "chart_gallery.json",
+    "scene_plan.json"
+  ],
+  "preferred_components": [
+    "CountryTimeline"
+  ],
+  "page_modules": [
+    "hero-summary",
+    "chart-gallery",
+    "media-gallery"
+  ],
+  "chart_anchor_ids": [
+    "chart-01",
+    "chart-02",
+    "chart-03",
+    "chart-04"
+  ],
+  "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+  "artifact_tag": "layer5_story_page",
+  "topic_slug": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+  "topic_title": "AI：真正拉开差距的是功能演示还是工作流落地",
+  "core_claim": "AI技术的真正竞争力不在于功能演示的丰富多样，而在于其能否深度嵌入企业工作流，实现端到端的自动化协作和持续迭代维护，形成真正的生产力提升。",
+  "required_csvs": [
+    "charts/csv/chart-01.csv",
+    "charts/csv/chart-02.csv",
+    "charts/csv/chart-03.csv",
+    "charts/csv/chart-04.csv"
+  ],
+  "required_pngs": [
+    "charts/png/chart-01.png",
+    "charts/png/chart-02.png",
+    "charts/png/chart-03.png",
+    "charts/png/chart-04.png"
+  ],
+  "narrative_schema": "thesis_then_evidence_then_risks",
+  "data_granularity": "monthly",
+  "risk_scenarios": [],
+  "key_metrics_to_emit": [],
+  "layout_hint": "chart_gallery_centered"
+}

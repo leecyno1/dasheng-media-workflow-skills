@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-04-04_235930",
+  "generated_at": "2026-04-04T23:36:15.382410",
+  "stage": "brief",
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-04_204231/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_235930",
+  "manual_topics": [],
+  "candidate_topics": [
+    "伊朗冲突升级背后，长期地区秩序成本正持续攀升",
+    "中东局势升级下，外交部需关注的长期秩序风险新变量",
+    "中东冲突引发的油价波动，市场是否低估了再通胀与利率预期反转？",
+    "鲍威尔讲话暗示的政策转向，如何改变市场对通胀与利率的预期？",
+    "川普相关风险溢价，市场到底在重新定价哪些真正变化的变量？",
+    "黄金与降息预期，风险溢价重估的另一条关键",
+    "英伟达和半导体产业局部回暖，是否被市场误判为全面复苏？",
+    "半导体封测环节的局部复苏，是否被误判为产业全面回暖？",
+    "AI竞争的关键不在功能炫技，而是工作流的深度整合与落地"
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_235930/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_235930/02_研究Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_235930/02_编辑Brief_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_235930/topic_cards.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_235930/selected_topics.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_235930/selected_topics.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_235930/brief_manifest.json"
+  ],
+  "next_stage": "draft"
+}

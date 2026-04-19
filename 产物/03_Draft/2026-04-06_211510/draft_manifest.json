@@ -1,0 +1,66 @@
+{
+  "stage": "draft",
+  "run_id": "2026-04-06_211510",
+  "status": "completed",
+  "input_source": "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-06_211510_ai",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-06_211510",
+  "generated_at": "2026-04-06T22:00:00+08:00",
+  "topics_completed": 3,
+  "drafts": [
+      {
+        "topic_id": "topic-russia-japan-oil-cutoff",
+        "title": "俄罗斯对日断供石油：能源武器化如何重塑东北亚地缘格局",
+        "file": "topic-russia-japan-oil-cutoff_draft.md",
+        "reasoning_sheet_json": "topic-russia-japan-oil-cutoff/reasoning_sheet.json",
+        "word_count": 4850,
+        "framework": "结构型",
+        "strategy": "密度强化",
+        "validation": {
+          "word_count_ok": true,
+          "structure_ok": true,
+          "evidence_ok": true
+        }
+      },
+      {
+        "topic_id": "topic-japan-bonds-crisis-market-outlook",
+        "title": "日本国债异动引发全球市场震荡：下周投资策略与避险指南",
+        "file": "topic-japan-bonds-crisis-market-outlook_final.md",
+        "reasoning_sheet_json": "topic-japan-bonds-crisis-market-outlook/reasoning_sheet.json",
+        "word_count": 6200,
+        "framework": "清单型",
+        "strategy": "密度强化",
+        "validation": {
+          "word_count_ok": true,
+          "structure_ok": true,
+          "evidence_ok": true
+        }
+      },
+      {
+        "topic_id": "topic-lobster-tech-comparison",
+        "title": "龙虾技术全景解析：本地/云端/变体架构对比与大圣龙虾优势",
+        "file": "topic-lobster-tech-comparison_draft.md",
+        "reasoning_sheet_json": "topic-lobster-tech-comparison/reasoning_sheet.json",
+        "word_count": 5400,
+        "framework": "对比型",
+        "strategy": "密度强化",
+        "validation": {
+          "word_count_ok": true,
+          "structure_ok": true,
+          "evidence_ok": true
+        }
+      }
+    ],
+  "quality_summary": {
+    "total_word_count": 16450,
+    "avg_word_count": 5483,
+    "all_frameworks_applied": true,
+    "all_strategies_applied": true,
+    "all_evidence_cited": true
+  },
+  "next_stage": "material",
+  "next_stage_requirements": [
+    "编辑审核 draft 内容",
+    "确认需要补充的素材（图表、图片、视频）",
+    "进入 material 阶段生成素材"
+  ]
+}

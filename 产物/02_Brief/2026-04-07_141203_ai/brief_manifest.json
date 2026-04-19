@@ -1,0 +1,23 @@
+{
+  "run_id": "2026-04-07_141203",
+  "generated_at": "2026-04-07T14:15:00+08:00",
+  "stage": "brief",
+  "object_type": "Run",
+  "generation_method": "ai",
+  "input_source": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-07_141203",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-07_141203_ai",
+  "candidate_count": 8,
+  "avg_composite_score": 8.19,
+  "top_score": 8.9,
+  "artifacts": [
+    "selected_topics.json",
+    "02_编辑Brief库.md",
+    "brief_manifest.json"
+  ],
+  "next_stage": "draft",
+  "next_stage_requirements": [
+    "编辑审核候选选题",
+    "在 selected_topics.json 中标记选中的题目",
+    "将状态改为 approved"
+  ]
+}

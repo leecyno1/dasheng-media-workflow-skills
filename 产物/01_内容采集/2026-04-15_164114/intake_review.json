@@ -1,0 +1,18 @@
+{
+  "run_id": "2026-04-15_164114",
+  "gate": "Intake Gate",
+  "status": "pending_review",
+  "generated_at": "2026-04-15T16:41:14.030840+08:00",
+  "instructions": [
+    "删除明显广告、生活方式、低信息密度、重复搬运样本。",
+    "保留能形成事件线索、人物线索、议题线索的样本。",
+    "如需补链，直接在 additions 中新增。",
+    "若人工指定必须进入 brief 的样本，请追加到 must_include_urls。"
+  ],
+  "noise_candidates": [],
+  "remove_ids": [],
+  "keep_ids": [],
+  "additions": [],
+  "must_include_urls": [],
+  "editor_note": ""
+}

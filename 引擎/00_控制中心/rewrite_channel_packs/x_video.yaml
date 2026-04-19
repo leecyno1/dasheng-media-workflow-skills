@@ -1,0 +1,10 @@
+channel_pack:
+  channel_id: x_video
+  display_name: X 视频
+  content_type: video
+  word_range: 1800-2800
+  title_range: 8-16
+  hook_style: 强观点或反差结论
+  paragraph_style: 短段口播
+  structure: 强钩子-结论前置-6到8个口播段-收束CTA
+  cta: reply、follow、save

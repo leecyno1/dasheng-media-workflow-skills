@@ -1,0 +1,169 @@
+{
+  "run_id": "2026-04-16_154836",
+  "generated_at": "2026-04-16T15:48:36.951035+08:00",
+  "items": [
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "PeonPing: Sound packs for Claude, Codex, Cursor, and other AI coding agents",
+      "url": "https://www.peonping.com/",
+      "author_name": "tawb",
+      "created_at": "2026-04-16T00:45:04Z",
+      "summary": "Hacker News 查询：AI agents",
+      "score": 4.8,
+      "provider_meta": {
+        "query": "AI agents",
+        "points": 2.0,
+        "num_comments": 0.0
+      },
+      "rank_score": 14.1922
+    },
+    {
+      "provider": "bili",
+      "source": "ai_hot/bili",
+      "title": "为什么你的龙虾（openclaw）不如别人的好用？3个方法解决 | 龙虾饲养指南",
+      "url": "https://www.bilibili.com/video/BV1PYD4BVEaz",
+      "author_name": "卡卡老师讲数据科学",
+      "created_at": "2026-04-16 06:12:44",
+      "summary": "为什么你的龙虾（openclaw）不如别人的好用？3个方法解决 | 龙虾饲养指南；B站 AI 热门；score=424",
+      "score": 424.0,
+      "provider_meta": {
+        "platform": "bili"
+      },
+      "rank_score": 13.9104
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Show HN: Agent Armor, a Rust runtime that enforces policies on AI agent actions",
+      "url": "https://github.com/EdoardoBambini/Agent-Armor-Iaga",
+      "author_name": "edoardobambini-",
+      "created_at": "2026-04-16T07:03:19Z",
+      "summary": "Hacker News 查询：AI agents",
+      "score": 13.2,
+      "provider_meta": {
+        "query": "AI agents",
+        "points": 4.0,
+        "num_comments": 2.0
+      },
+      "rank_score": 13.3763
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "The next evolution of the Agents SDK",
+      "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/",
+      "author_name": "meetpateltech",
+      "created_at": "2026-04-15T17:08:59Z",
+      "summary": "Hacker News 查询：OpenAI",
+      "score": 51.6,
+      "provider_meta": {
+        "query": "OpenAI",
+        "points": 20.0,
+        "num_comments": 2.0
+      },
+      "rank_score": 13.3101
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Show HN: Tine – Drive Wayland Around with Agents",
+      "url": "https://github.com/smythp/tine",
+      "author_name": "tarboreus",
+      "created_at": "2026-04-15T17:02:53Z",
+      "summary": "Hacker News 查询：Anthropic Claude",
+      "score": 16.8,
+      "provider_meta": {
+        "query": "Anthropic Claude",
+        "points": 4.0,
+        "num_comments": 4.0
+      },
+      "rank_score": 13.2956
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Shouldn't we have an agent.lock file for AI coding agents?",
+      "url": "https://srajangupta.substack.com/p/where-is-my-agentlock-file",
+      "author_name": "srajan_gupta",
+      "created_at": "2026-04-16T05:58:36Z",
+      "summary": "Hacker News 查询：AI agents",
+      "score": 2.4,
+      "provider_meta": {
+        "query": "AI agents",
+        "points": 1.0,
+        "num_comments": 0.0
+      },
+      "rank_score": 13.0849
+    },
+    {
+      "provider": "reddit",
+      "source": "ai_hot/reddit",
+      "title": "Claude had enough of this user",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1smu2rk/claude_had_enough_of_this_user/",
+      "author_name": "/u/EchoOfOppenheimer",
+      "created_at": "2026-04-16T05:11:00+00:00",
+      "summary": "Reddit r/OpenAI 热门讨论",
+      "score": 90,
+      "provider_meta": {
+        "subreddit": "OpenAI",
+        "rank": 3
+      },
+      "rank_score": 12.7361
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Show HN: Tokanban, an agent-first task management system",
+      "url": "https://tokanban.com/",
+      "author_name": "clippy99",
+      "created_at": "2026-04-16T02:27:01Z",
+      "summary": "Hacker News 查询：AI agents",
+      "score": 4.8,
+      "provider_meta": {
+        "query": "AI agents",
+        "points": 2.0,
+        "num_comments": 0.0
+      },
+      "rank_score": 12.6225
+    },
+    {
+      "provider": "reddit",
+      "source": "ai_hot/reddit",
+      "title": "Me when Claude already wrote like 3k lines of code and I notice an error on my prompt",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1smciwx/me_when_claude_already_wrote_like_3k_lines_of/",
+      "author_name": "/u/Technical-Relation-9",
+      "created_at": "2026-04-15T17:18:41+00:00",
+      "summary": "Reddit r/ClaudeAI 热门讨论",
+      "score": 90,
+      "provider_meta": {
+        "subreddit": "ClaudeAI",
+        "rank": 3
+      },
+      "rank_score": 12.5241
+    },
+    {
+      "provider": "reddit",
+      "source": "ai_hot/reddit",
+      "title": "Vibe change",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1smiol3/vibe_change/",
+      "author_name": "/u/Just-Grocery-2229",
+      "created_at": "2026-04-15T20:55:19+00:00",
+      "summary": "Reddit r/OpenAI 热门讨论",
+      "score": 72,
+      "provider_meta": {
+        "subreddit": "OpenAI",
+        "rank": 4
+      },
+      "rank_score": 12.4232
+    }
+  ],
+  "meta": {
+    "candidate_total": 51,
+    "providers": {
+      "hn": 6,
+      "bili": 1,
+      "reddit": 3
+    }
+  }
+}

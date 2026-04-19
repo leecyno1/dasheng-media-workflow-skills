@@ -1,0 +1,70 @@
+{
+  "run_id": "2026-04-02_210702",
+  "stage": "material",
+  "upstream_type": "DraftManifest",
+  "upstream_entry": "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/draft/draft_manifest.json",
+  "upstream_files": [
+    "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/draft/draft_manifest.json",
+    "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/draft/03_ReasoningSheet_这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化.json"
+  ],
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets",
+  "selected_topics": [
+    "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化"
+  ],
+  "topic_types": [
+    {
+      "topic_id": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+      "topic_type": "general_commentary",
+      "layer5_template": "story_page",
+      "video_quality_policy": {
+        "min_height": 0,
+        "min_duration_seconds": 8,
+        "min_scene_changes": 2,
+        "min_scene_change_rate": 0.08,
+        "allow_news_live_or_interview": true,
+        "block_self_media_talking_head": true,
+        "reject_screenshot_montage": true,
+        "report_fields": [
+          "source_category",
+          "source_ok",
+          "resolution_height",
+          "duration_seconds",
+          "scene_changes",
+          "scene_change_rate",
+          "anti_screenshot_montage_pass",
+          "final_pass",
+          "fail_reasons"
+        ]
+      },
+      "claim_bindings": 3
+    }
+  ],
+  "asset_counts": [
+    {
+      "topic_id": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+      "image_items": 34,
+      "video_items": 12,
+      "chart_items": 4,
+      "reference_items": 14
+    }
+  ],
+  "asset_binding_contract": [
+    "claim_id",
+    "section_id",
+    "usage_type",
+    "relevance_score",
+    "editor_status"
+  ],
+  "quality_audit_expected_fields": [
+    "source_category",
+    "source_ok",
+    "resolution_height",
+    "duration_seconds",
+    "scene_changes",
+    "scene_change_rate",
+    "anti_screenshot_montage_pass",
+    "final_pass",
+    "fail_reasons"
+  ],
+  "status": "ready_for_material_execution"
+}

@@ -1,0 +1,14 @@
+{
+  "provider": "vectorengine",
+  "base_url": "https://api.vectorengine.ai/v1/chat/completions",
+  "model": "gemini-3.1-flash-image-preview",
+  "status": "disabled_by_provider",
+  "checked_at": "2026-03-26",
+  "http_status": 403,
+  "message": "该渠道已被禁用",
+  "fallbacks": [
+    "python_infographic_renderer",
+    "network_image_collection",
+    "future_baoyu_skill_adapter"
+  ]
+}

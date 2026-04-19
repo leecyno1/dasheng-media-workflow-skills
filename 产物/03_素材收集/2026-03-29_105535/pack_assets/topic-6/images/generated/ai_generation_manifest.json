@@ -1,0 +1,147 @@
+{
+  "provider_status": {
+    "vectorengine": {
+      "provider": "vectorengine",
+      "base_url": "https://api.vectorengine.ai/v1/chat/completions",
+      "model": "gemini-3.1-flash-image-preview",
+      "status": "disabled_by_provider",
+      "checked_at": "2026-03-26",
+      "http_status": 403,
+      "message": "该渠道已被禁用",
+      "fallbacks": [
+        "python_infographic_renderer",
+        "network_image_collection",
+        "future_baoyu_skill_adapter"
+      ]
+    },
+    "gemini_generate_content": {
+      "provider": "vectorengine_gemini_generate_content",
+      "base_url": "https://api.vectorengine.ai",
+      "model": "gemini-3.1-flash-image-preview",
+      "api_key_present": true,
+      "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+    },
+    "optional_fallbacks": {
+      "qhaigc_images": {
+        "base_url": "https://api.qhaigc.net",
+        "primary_model": "seedream-5",
+        "fallback_model": "seedream-4.6",
+        "chat_model": "gemini-2.5-flash-image",
+        "api_key_present": true,
+        "api_style": [
+          "/v1/images/generations",
+          "/v1/chat/completions"
+        ],
+        "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+      },
+      "gitee_images": {
+        "base_url": "https://ai.gitee.com",
+        "qwen_model": "Qwen-Image",
+        "glm_model": "GLM-Image",
+        "api_key_present": true,
+        "api_style": [
+          "/v1/images/generations"
+        ],
+        "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+      },
+      "vectorengine_images": {
+        "base_url": "https://api.vectorengine.ai",
+        "model": "doubao-seedream-5-0-260128",
+        "api_key_present": true,
+        "api_style": [
+          "/v1/images/generations"
+        ],
+        "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+      }
+    },
+    "minimax_env": true,
+    "priority_order": [
+      "qhaigc_seedream5",
+      "qhaigc_seedream46",
+      "gitee_qwen_image",
+      "gitee_glm_image",
+      "vectorengine_seedream",
+      "minimax",
+      "gemini_generate_content"
+    ]
+  },
+  "batch_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/baoyu_batch.json",
+  "task_count": 17,
+  "live_generation": {
+    "qhaigc_seedream5": {
+      "enabled": true,
+      "provider": "qhaigc_seedream5",
+      "model": "seedream-5",
+      "base_url": "https://api.qhaigc.net",
+      "attempted": 1,
+      "succeeded": 1,
+      "results_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/qhaigc_seedream5/generation_results.json",
+      "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/qhaigc_seedream5"
+    },
+    "qhaigc_seedream46": {
+      "enabled": true,
+      "provider": "qhaigc_seedream46",
+      "model": "seedream-4.6",
+      "base_url": "https://api.qhaigc.net",
+      "attempted": 1,
+      "succeeded": 1,
+      "results_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/qhaigc_seedream46/generation_results.json",
+      "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/qhaigc_seedream46"
+    },
+    "gitee_qwen_image": {
+      "enabled": true,
+      "provider": "gitee_qwen_image",
+      "model": "Qwen-Image",
+      "base_url": "https://ai.gitee.com",
+      "attempted": 1,
+      "succeeded": 1,
+      "results_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/gitee_qwen_image/generation_results.json",
+      "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/gitee_qwen_image"
+    },
+    "gitee_glm_image": {
+      "enabled": true,
+      "provider": "gitee_glm_image",
+      "model": "GLM-Image",
+      "base_url": "https://ai.gitee.com",
+      "attempted": 1,
+      "succeeded": 1,
+      "results_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/gitee_glm_image/generation_results.json",
+      "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/gitee_glm_image"
+    },
+    "vectorengine_seedream": {
+      "enabled": true,
+      "provider": "vectorengine_seedream",
+      "model": "doubao-seedream-5-0-260128",
+      "base_url": "https://api.vectorengine.ai",
+      "attempted": 1,
+      "succeeded": 1,
+      "results_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/vectorengine_seedream/generation_results.json",
+      "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/vectorengine_seedream"
+    },
+    "minimax": {
+      "enabled": true,
+      "provider": "minimax",
+      "model": "image-01",
+      "base_url": "https://api.minimaxi.com",
+      "attempted": 0,
+      "returncode": 1,
+      "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/minimax",
+      "tmp_batch_file": "/var/folders/jm/n87m6j597zz0prppdnfvt8p40000gn/T/tmpzgdxkhve.json",
+      "stdout": null,
+      "stderr_tail": "Batch file does not contain any tasks.\n",
+      "results_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/minimax/batch_results.json",
+      "generated_files": [],
+      "succeeded": 0
+    },
+    "gemini": {
+      "enabled": true,
+      "provider": "vectorengine_gemini_generate_content",
+      "model": "gemini-3.1-flash-image-preview",
+      "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/gemini",
+      "attempted": 0,
+      "succeeded": 0,
+      "results_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/images/generated/gemini/generation_results.json"
+    }
+  },
+  "note": "已生成批处理与 fallback 图；当前优先链路为 QHAIGC / Gitee / VectorEngine Seedream / MiniMax，Gemini generateContent 仅保留兼容性探测。"
+}

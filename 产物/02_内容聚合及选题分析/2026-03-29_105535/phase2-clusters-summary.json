@@ -1,0 +1,348 @@
+{
+  "run_id": "2026-03-29_105535",
+  "generated_at": "2026-03-29T11:26:15.812121",
+  "stats": {
+    "input_records": 390,
+    "cluster_count": 7,
+    "topn_count": 3
+  },
+  "clusters": [
+    {
+      "cluster_id": "macro_policy",
+      "cluster_name": "宏观政策与再通胀",
+      "count": 29,
+      "platforms": [
+        "5173/bili",
+        "5173/douyin",
+        "5173/wb"
+      ],
+      "avg_heat": 2070.8,
+      "composite_heat": 1495.96,
+      "top_keywords": [
+        "热度",
+        "宏观",
+        "市场情绪",
+        "财经知识",
+        "经济学视角看世界",
+        "其他观察",
+        "油价",
+        "地缘冲突"
+      ],
+      "top_items": [
+        {
+          "title": "一口气深度解读：四中全会公报，传递出什么经济信号？ #媒体精选计划 #零距离看懂财经 #我在十四五这五年",
+          "url": "https://www.douyin.com/video/7564368786292215066",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "风暴来临前最后的宁静：达利欧发出重磅预警 #财经知识 #经济学视角看世界 #硬核深度计划 #世界局势",
+          "url": "https://www.douyin.com/video/7621114033218866442",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "69年盈利神话终结！巨亏百亿背后：谁杀死了日本制造？#魏牌 #魏牌高山 #财经知识 #经济学视角看世界",
+          "url": "https://www.douyin.com/video/7620660208234138943",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "教育改革进入新阶段？ #财经知识 #经济学视角看世界 #硬核深度计划 #社会",
+          "url": "https://www.douyin.com/video/7620419727348731187",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "为什么有钱人集体“隐身”？ #白小T #好T恤当然白小T #白小T水光魔术T #财经知识#经济学视角看世界",
+          "url": "https://www.douyin.com/video/7620055809707599971",
+          "source": "5173/douyin"
+        }
+      ]
+    },
+    {
+      "cluster_id": "other",
+      "cluster_name": "其他高频观察",
+      "count": 236,
+      "platforms": [
+        "18080/news",
+        "5173/bili",
+        "5173/content_research",
+        "5173/douyin",
+        "5173/wb",
+        "5173/x",
+        "5173/xhs",
+        "8001/wechat_curated"
+      ],
+      "avg_heat": 1524.591,
+      "composite_heat": 1444.814,
+      "top_keywords": [
+        "热度",
+        "其他观察",
+        "the",
+        "in",
+        "is",
+        "of",
+        "to",
+        "and"
+      ],
+      "top_items": [
+        {
+          "title": "女孩子理想中的小别墅🏡92平迷你款！ #别墅 #买房 #好房推荐 #新房",
+          "url": "https://www.douyin.com/video/7530244236358585657",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "今天，教育部发布通知，开展基础教育规范管理巩固年行动，亮出“20条负面清单”，为基础教育划定了清晰的行为红线。#主播说联播",
+          "url": "https://www.douyin.com/video/7621931617904266547",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "回复 @帅气的靓仔的评论 论背部细节还得看黑天鹅#黑天鹅 #健身 #奥赛名场面 #精神氮泵 #肌肉 #毫无训练痕迹 #秀肌肉",
+          "url": "https://www.douyin.com/video/7107138624189140237",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "不是...她现在真的好会选裤子啊！！！",
+          "url": "https://www.xiaohongshu.com/explore/640947560000000013017406?xsec_token=ABZoT5JPfqY7yyLvMjOIAS6mzz0M2U7nKwROp1rkoRyHw=&xsec_source=pc_feed",
+          "source": "5173/xhs"
+        },
+        {
+          "title": "爸爸给圆鼓鼓的幼崽量身高❤️萌化了😍",
+          "url": "https://www.xiaohongshu.com/explore/64b89ea800000000150335b1?xsec_token=AB5nijiA-VcXeOH2WmPaQCYBrdYtGXAPP6_HR9mDEEW3o=&xsec_source=pc_feed",
+          "source": "5173/xhs"
+        }
+      ]
+    },
+    {
+      "cluster_id": "content_growth",
+      "cluster_name": "内容运营与增长方法",
+      "count": 2,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "avg_heat": 616.55,
+      "composite_heat": 434.785,
+      "top_keywords": [
+        "北京国贤府park",
+        "北五环爆款红盘",
+        "明日正式开盘",
+        "坐拥政企共建优质板块",
+        "全龄教育",
+        "双地铁",
+        "滨水园林配套齐全",
+        "户型硬核"
+      ],
+      "top_items": [
+        {
+          "title": "北五环爆款红盘——北京国贤府PARK，**明日正式开盘**！\n坐拥政企共建优质板块，全龄教育、双地铁、滨水园林配套齐全，户型硬核，高得房率、宽南向面宽，双套房设计贴心，国际精妆交付。项目于3.29日正式开盘，感兴趣的老板们要抓紧了！\n#北京国贤府park #明日开盘 #北京买房 #地产酵母#北京新房",
+          "url": "https://www.douyin.com/video/7622177830315292153",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "Rui 荐书：黑天鹅来袭？（上）部分删减未完待续，#内容过于真实 #认知觉醒",
+          "url": "https://www.douyin.com/video/7620331785099941478",
+          "source": "5173/douyin"
+        }
+      ]
+    },
+    {
+      "cluster_id": "gold_oil_geo",
+      "cluster_name": "黄金、原油与地缘风险",
+      "count": 57,
+      "platforms": [
+        "18080/news",
+        "5173/bili",
+        "5173/content_research",
+        "5173/douyin",
+        "5173/wb",
+        "5173/x",
+        "8001/wechat_curated"
+      ],
+      "avg_heat": 160.747,
+      "composite_heat": 203.723,
+      "top_keywords": [
+        "热度",
+        "油价",
+        "地缘冲突",
+        "黄金",
+        "白银",
+        "贵金属",
+        "gold",
+        "2026"
+      ],
+      "top_items": [
+        {
+          "title": "美国之殇：后院起火引发的危机 #中东局势 #美国 #能源 #零距离看懂财经 #燃起来了大国重器",
+          "url": "https://www.douyin.com/video/7622221725895314694",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "油价上涨后，第一批扛不住的国家出来了 #经济 #油价 #东南亚",
+          "url": "https://www.douyin.com/video/7621951675674152255",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "特朗普：“霍尔木兹海峡”更名为“特朗普海峡”",
+          "url": "https://www.bilibili.com/video/BV1PPXVBkE5r",
+          "source": "5173/bili"
+        },
+        {
+          "title": "特朗普老家被偷，选情告急，再下令增兵伊朗，誓要快速结束战争",
+          "url": "https://www.bilibili.com/video/BV1CBQ2BeEVm",
+          "source": "5173/bili"
+        },
+        {
+          "title": "美国以色列侵略伊朗的战争，进入了一个枯燥重复的状态，美国扔铁炸弹，伊朗飞无人机射导弹，而以色列一直在挨揍。 以色列现在禁止居民拍摄导弹袭击的画面，他们甚至把特拉",
+          "url": "https://m.weibo.cn/detail/5275689184923503",
+          "source": "5173/wb"
+        }
+      ]
+    },
+    {
+      "cluster_id": "ai_workflow",
+      "cluster_name": "AI 工具与工作流接入",
+      "count": 28,
+      "platforms": [
+        "5173/bili",
+        "5173/wb",
+        "5173/x",
+        "5173/xhs",
+        "8001/wechat_curated"
+      ],
+      "avg_heat": 168.279,
+      "composite_heat": 162.595,
+      "top_keywords": [
+        "the",
+        "ai工具",
+        "工作流",
+        "热度",
+        "of",
+        "is",
+        "as",
+        "on"
+      ],
+      "top_items": [
+        {
+          "title": "in the corner straight up “losin it\" and by “it” , haha, well lets just say... M",
+          "url": "https://x.com/EdgarPoop1/status/2036104459168686395",
+          "source": "5173/x"
+        },
+        {
+          "title": "一个视频讲清楚，Openclaw到底是啥！怎么就爆火了？（非广 放心看～）",
+          "url": "https://www.bilibili.com/video/BV15RQ2BXEMw",
+          "source": "5173/bili"
+        },
+        {
+          "title": "全球失业真相：始于30年前 终于AI降临【世界经济观察15】",
+          "url": "https://www.bilibili.com/video/BV1DJXTBTEL9",
+          "source": "5173/bili"
+        },
+        {
+          "title": "哪张照片是AI生成的？｜人类基准测试",
+          "url": "https://www.xiaohongshu.com/explore/645cfce70000000013002576?xsec_token=ABho-zF_Jgw0LOiTT7J_5Y4xTiQDf7BVd6Gc9tDKb05sA=&xsec_source=pc_feed",
+          "source": "5173/xhs"
+        },
+        {
+          "title": "B站强推！这才是2026年最全最细的AI产品经理教程，从零到精通，字节大佬整理的内部版，通俗易懂，学完即就业！！！ 大模型 | LLM",
+          "url": "https://www.bilibili.com/video/BV1vyPrzMEme",
+          "source": "5173/bili"
+        }
+      ]
+    },
+    {
+      "cluster_id": "market_sentiment",
+      "cluster_name": "市场情绪与资金误判",
+      "count": 30,
+      "platforms": [
+        "5173/douyin",
+        "5173/wb",
+        "8001/wechat_curated"
+      ],
+      "avg_heat": 62.71,
+      "composite_heat": 91.897,
+      "top_keywords": [
+        "热度",
+        "宏观",
+        "市场情绪",
+        "其他观察",
+        "定向样本",
+        "a股",
+        "财经",
+        "股票"
+      ],
+      "top_items": [
+        {
+          "title": "3月28日闲聊市场破局龙出现后新主线在哪里#金融 #财经 #股票 #股市 #情绪周期",
+          "url": "https://www.douyin.com/video/7622202290921226484",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "情绪是交易员进阶的关键 #股票 #期货 #交易 #交易员 #交易人生",
+          "url": "https://www.douyin.com/video/7351710709991886131",
+          "source": "5173/douyin"
+        },
+        {
+          "title": " 基金超话 #a股# 1，通胀要抬头了，能做的方向不多，纳指今年还是绿的… 图2，今天帖子正常发了的，发一次那啥一次，第二次刚好卡在3点，不是没发哦。 图3，",
+          "url": "https://m.weibo.cn/detail/5272505891953257",
+          "source": "5173/wb"
+        },
+        {
+          "title": "必须给！不给告你 开个玩笑！ 这如果是真的！我立马清仓！ 注销微博！辞职！ 找个地方！ 安度晚年！ #基金# #a股# #财经# ​",
+          "url": "https://m.weibo.cn/detail/5275666316528369",
+          "source": "5173/wb"
+        },
+        {
+          "title": "各位股友，真的非常对不起！ 这一波行情我也全部清仓离场了，账面亏损非常惨重，心里又自责又难受。更让我过意不去的是，因为我的判断和分享，让不少信任我的朋友一起跟着",
+          "url": "https://m.weibo.cn/detail/5275941137286508",
+          "source": "5173/wb"
+        }
+      ]
+    },
+    {
+      "cluster_id": "semiconductor",
+      "cluster_name": "半导体与科技产业分化",
+      "count": 8,
+      "platforms": [
+        "18080/news",
+        "5173/wb",
+        "8001/wechat_curated"
+      ],
+      "avg_heat": 11.875,
+      "composite_heat": 21.113,
+      "top_keywords": [
+        "其他观察",
+        "半导体封测",
+        "定向样本",
+        "一下涨化工",
+        "一下涨电池",
+        "一下轮电力",
+        "一下又窜到存储",
+        "房产消费又出来打下酱油"
+      ],
+      "top_items": [
+        {
+          "title": "一下涨化工，一下涨电池、一下轮电力、一下又窜到存储，房产消费又出来打下酱油，这板块轮动也太快了。 ​",
+          "url": "https://m.weibo.cn/detail/5275962192168571",
+          "source": "5173/wb"
+        },
+        {
+          "title": "史诗级跳涨，现在卖方拍的价格已经跟不上市场涨价的速度了 3.9比较新的一场探讨光纤的机构调研电话会议，反复强调3个观点: 1、涨价预期：一而再再而三远超预期，贯",
+          "url": "https://m.weibo.cn/detail/5275779242132603",
+          "source": "5173/wb"
+        },
+        {
+          "title": "游客给妻子拍照因设备太专业被驱赶，景区回应系禁止商业拍摄，如何看待此事？此类规定怎样能执行得更合情理？",
+          "url": "https://www.zhihu.com/question/2020633228688500416",
+          "source": "18080/news"
+        },
+        {
+          "title": "80多家电子元器件半导体原厂涨价声明及通知！",
+          "url": "https://mp.weixin.qq.com/s/8mamcmx5C6Lt8oInMpDrTg",
+          "source": "8001/wechat_curated"
+        },
+        {
+          "title": "突破百亿！晶合集成发布2025年报",
+          "url": "https://mp.weixin.qq.com/s/ascMoeINqHCv7Mo_LKvpdA",
+          "source": "8001/wechat_curated"
+        }
+      ]
+    }
+  ]
+}

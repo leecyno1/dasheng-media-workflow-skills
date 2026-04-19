@@ -1,0 +1,48 @@
+{
+  "reinflation": {
+    "source_link_videos": [
+      "https://www.bilibili.com/video/BV1aPQBBREoH",
+      "https://www.bilibili.com/video/BV1CCQqBuEt8",
+      "https://www.douyin.com/video/7620045154070437626"
+    ],
+    "youtube_queries": [
+      "oil price inflation animation shipping route documentary",
+      "federal reserve building exterior meeting b roll",
+      "container shipping port cranes aerial 4k",
+      "oil refinery aerial 4k documentary",
+      "stock market trading floor b roll screen crowd"
+    ],
+    "x_queries": [
+      "site:x.com oil refinery fire video port congestion video fed building video"
+    ],
+    "baidu_image_queries": [
+      "美联储 大楼 图片",
+      "布伦特 原油 价格 图",
+      "港口 集装箱 航运 图片",
+      "原油 炼油厂 航拍",
+      "美国 通胀 图示"
+    ]
+  },
+  "takaichi": {
+    "source_link_videos": [
+      "https://www.pbs.org/newshour/world/japanese-prime-ministers-party-secures-supermajority-in-a-key-parliamentary-election"
+    ],
+    "youtube_queries": [
+      "Japan election rally crowd Tokyo 4k",
+      "Japanese parliament diet building b roll",
+      "Tokyo crowd crossing 4k documentary",
+      "Japan military drill coast guard 4k",
+      "Japan aging society elderly crowd street 4k"
+    ],
+    "x_queries": [
+      "site:x.com Sanae Takaichi rally video Japan parliament video Tokyo crowd video"
+    ],
+    "baidu_image_queries": [
+      "高市早苗 图片",
+      "日本 国会 大厦 图片",
+      "日本 老龄化 人口 图片",
+      "日本 选举 集会 图片",
+      "台海 日本 安全 地图"
+    ]
+  }
+}

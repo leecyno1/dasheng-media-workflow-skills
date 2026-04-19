@@ -1,0 +1,26 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "topic-1",
+    "topic_name": "表面在交易事件，真正的主线会不会其实是再通胀？",
+    "cluster_name": "宏观政策与再通胀",
+    "composite_heat": 1495.96,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 2,
+    "topic_id": "topic-2",
+    "topic_name": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+    "cluster_name": "其他高频观察",
+    "composite_heat": 1444.814,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 3,
+    "topic_id": "topic-3",
+    "topic_name": "真正拉开内容差距的，不是勤奋，而是选题进入成稿前的结构化处理",
+    "cluster_name": "内容运营与增长方法",
+    "composite_heat": 434.785,
+    "source_status": "自然入选"
+  }
+]

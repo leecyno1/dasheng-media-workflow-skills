@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-04-01T10:09:38",
+  "source_root": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-31_三篇独立改写",
+  "final_root": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-31_终稿抓取源",
+  "output_root": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写",
+  "topics": [
+    {
+      "topic": "topic10_半导体误判",
+      "topic_prefix": "topic10",
+      "generated_at": "2026-04-01T10:09:38",
+      "final_source": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-31_终稿抓取源/topic10__final_source.md",
+      "framework_labels": {
+        "open_label": "这轮半导体确实很热，但“很热”不是“全面景气”",
+        "part1_label": "总量的确在抬升，但拉动行业的不是“普涨”，而是“集中式景气”",
+        "part2_label": "真正昂贵的误判，不是一条，而是三条叠加",
+        "part3_label": "真正能降低误判的，不是更热情，而是把研究单位从“行业”降到“环节”",
+        "end_label": "真正危险的不是看错方向，而是用错颗粒度"
+      },
+      "variants": [
+        {
+          "variant": "wechat_lemon_normal",
+          "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic10_半导体误判/topic10__wechat_lemon_normal.md",
+          "char_count": 4265,
+          "min_chars": 4000,
+          "pass": true,
+          "h2_count": 5
+        },
+        {
+          "variant": "wechat_luxun_hot",
+          "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic10_半导体误判/topic10__wechat_luxun_hot.md",
+          "char_count": 4934,
+          "min_chars": 4000,
+          "pass": true,
+          "h2_count": 5
+        },
+        {
+          "variant": "xhs_video_lemon_normal",
+          "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic10_半导体误判/topic10__xhs_video_lemon_normal.md",
+          "char_count": 1805,
+          "min_chars": 1800,
+          "pass": true,
+          "h2_count": 1
+        },
+        {
+          "variant": "xhs_video_luxun_hot",
+          "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic10_半导体误判/topic10__xhs_video_luxun_hot.md",
+          "char_count": 1973,
+          "min_chars": 1800,
+          "pass": true,
+          "h2_count": 1
+        }
+      ],
+      "all_passed": true
+    },
+    {
+      "topic": "topic11_openclaw安装",
+      "topic_prefix": "topic11",
+      "generated_at": "2026-04-01T10:09:38",
+      "final_source": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-31_终稿抓取源/topic11__final_source.md",
+      "framework_labels": {
+        "open_label": "多数人不是卡在“不会用 AI”，而是卡在“根本装不起来”",
+        "part1_label": "过去的安装复杂度，不在一个点，而在一整条链",
+        "part2_label": "真正合格的一键安装，不能只图方便，还必须守住安全边界",
+        "part3_label": "这个项目真正的优势，不是吹“简单”，而是把复杂流程做成标准化入口",
+        "end_label": "真正降低门槛的，不是一句“很简单”，而是确定性"
+      },
+      "variants": [
+        {
+          "variant": "wechat_lemon_normal",
+          "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic11_openclaw安装/topic11__wechat_lemon_normal.md",
+          "char_count": 4372,
+          "min_chars": 4000,
+          "pass": true,
+          "h2_count": 5
+        },
+        {
+          "variant": "wechat_luxun_hot",
+          "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic11_openclaw安装/topic11__wechat_luxun_hot.md",
+          "char_count": 4463,
+          "min_chars": 4000,
+          "pass": true,
+          "h2_count": 5
+        },
+        {
+          "variant": "xhs_video_lemon_normal",
+          "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic11_openclaw安装/topic11__xhs_video_lemon_normal.md",
+          "char_count": 1843,
+          "min_chars": 1800,
+          "pass": true,
+          "h2_count": 9
+        },
+        {
+          "variant": "xhs_video_luxun_hot",
+          "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic11_openclaw安装/topic11__xhs_video_luxun_hot.md",
+          "char_count": 1839,
+          "min_chars": 1800,
+          "pass": true,
+          "h2_count": 8
+        }
+      ],
+      "all_passed": true
+    },
+    {
+      "topic": "topic6_供给秩序重估",
+      "topic_prefix": "topic6",
+      "generated_at": "2026-04-01T10:09:38",
+      "final_source": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-31_终稿抓取源/topic6__final_source.md",
+      "framework_labels": {
+        "open_label": "真正贵起来的，从来不是新闻本身，而是“稳定供应”",
+        "part1_label": "事件可以过去，秩序成本不会自动回去",
+        "part2_label": "为什么“供给过剩”叙事和“再通胀”叙事会同时存在",
+        "part3_label": "真正该做的，不是追战报，而是搭一个秩序跟踪框架",
+        "end_label": "真正要重估的，是“稳定供应原来并不便宜”"
+      },
+      "variants": [
+        {
+          "variant": "wechat_lemon_normal",
+          "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic6_供给秩序重估/topic6__wechat_lemon_normal.md",
+          "char_count": 4237,
+          "min_chars": 4000,
+          "pass": true,
+          "h2_count": 5
+        },
+        {
+          "variant": "wechat_luxun_hot",
+          "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic6_供给秩序重估/topic6__wechat_luxun_hot.md",
+          "char_count": 4130,
+          "min_chars": 4000,
+          "pass": true,
+          "h2_count": 5
+        },
+        {
+          "variant": "xhs_video_lemon_normal",
+          "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic6_供给秩序重估/topic6__xhs_video_lemon_normal.md",
+          "char_count": 1819,
+          "min_chars": 1800,
+          "pass": true,
+          "h2_count": 0
+        },
+        {
+          "variant": "xhs_video_luxun_hot",
+          "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic6_供给秩序重估/topic6__xhs_video_luxun_hot.md",
+          "char_count": 1821,
+          "min_chars": 1800,
+          "pass": true,
+          "h2_count": 0
+        }
+      ],
+      "all_passed": true
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+    "topic_name": "伊朗冲突升级背后，长期地区秩序成本正在无声攀升",
+    "cluster_name": "外交部 / 伊朗 / 停火",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+    "composite_score": 7.9,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 2,
+    "topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升-variant-外交部-中东这条线若换个切口-最该补的证据会不会",
+    "topic_name": "中东局势变动中，外交部关注的长期秩序成本路径有何异同",
+    "cluster_name": "外交部 / 中东",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+    "composite_score": 7.14,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 3,
+    "topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+    "topic_name": "中东冲突引发的油价波动，美联储政策与市场通胀预期被低估了吗？",
+    "cluster_name": "美联储 / 中东 / 降息",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+    "composite_score": 7.75,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 4,
+    "topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆-variant-鲍威尔-美联储这条线若换个切口-最该补的证据会不",
+    "topic_name": "鲍威尔言论下，美联储政策预期与市场再通胀判断的差异何在？",
+    "cluster_name": "鲍威尔 / 美联储 / 加息",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+    "composite_score": 7.3,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 5,
+    "topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+    "topic_name": "川普言论背后，美国风险溢价的核心重估变量是什么？",
+    "cluster_name": "川普 / 美国",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+    "composite_score": 6.95,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 6,
+    "topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估-variant-黄金-降息这条线若换个切口-最该补的证据会不会完",
+    "topic_name": "黄金与降息预期，风险溢价重估背后不同变量的作用有多大？",
+    "cluster_name": "黄金 / 降息 / 降息",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+    "composite_score": 7.04,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 7,
+    "topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+    "topic_name": "英伟达业绩回暖，半导体行业局部修复是否被误读为全面复苏？",
+    "cluster_name": "英伟达 / 半导体",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+    "composite_score": 6.76,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 8,
+    "topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏-variant-半导体-封测这条线若换个切口-最该补的证据会不会",
+    "topic_name": "半导体封测环节的复苏信号，是否容易被误判为行业整体回暖？",
+    "cluster_name": "半导体 / 封测",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+    "composite_score": 7.24,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 9,
+    "topic_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+    "topic_name": "AI竞争的关键不在功能炫技，而是能否真正融入工作流",
+    "cluster_name": "AI",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+    "composite_score": 6.66,
+    "source_status": "自然入选"
+  }
+]

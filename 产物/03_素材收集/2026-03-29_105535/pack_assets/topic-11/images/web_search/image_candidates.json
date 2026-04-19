@@ -1,0 +1,72 @@
+[
+  {
+    "query": "一键安装OpenClaw parliament speech crowd",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "一键安装OpenClaw rally crowd",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "一键安装OpenClaw military drill",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "一键安装OpenClaw shipping route map",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "一键安装OpenClaw parliament building exterior",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "一键安装OpenClaw elderly crowd city",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "一键安装OpenClaw port aerial",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "一键安装OpenClaw diplomatic meeting",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "一键安装OpenClaw protest crowd",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "一键安装OpenClaw border checkpoint",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  }
+]

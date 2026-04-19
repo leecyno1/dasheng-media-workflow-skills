@@ -1,0 +1,2408 @@
+{
+  "run_id": "2026-04-09_234213",
+  "generated_at": "2026-04-09T23:42:13.999064+08:00",
+  "channel_top10": {
+    "x": [
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "A",
+        "heat_score": 74.97,
+        "title": "LONDON IS VERY ANGRY 🚨Right now, Londoners block roads around the Israeli Embas",
+        "url": "https://x.com/hippyygoat/status/2041975800962957533",
+        "author_or_account": "hippyygoat",
+        "publish_time": "2026-04-09 06:10:03",
+        "excerpt": "LONDON IS VERY ANGRY 🚨Right now, Londoners block roads around the Isr…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-b8c0771d8a506e57",
+        "event_key": "london-is",
+        "note": "账号：hippyygoat；时间：2026-04-09 06:10:03；摘要：LONDON IS VERY ANGRY 🚨Right now, Londoners block roads around the Isr…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "A",
+        "heat_score": 71.65,
+        "title": "Zohran Mamdani walked 6 miles home last night from the New York City Hall to rou",
+        "url": "https://x.com/PopBase/status/2041993576104784070",
+        "author_or_account": "PopBase",
+        "publish_time": "2026-04-09 06:10:03",
+        "excerpt": "Zohran Mamdani walked 6 miles home last night from the New York City …",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-4997c85c67c83b84",
+        "event_key": "zohran-mamdani",
+        "note": "账号：PopBase；时间：2026-04-09 06:10:03；摘要：Zohran Mamdani walked 6 miles home last night from the New York City …"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "A",
+        "heat_score": 70.66,
+        "title": "NO WAY, THIS KID IS THE BEST FOOTBALLER IN THE WORLD https://t.co/ZphKpC3BiA",
+        "url": "https://x.com/speedlinexx/status/2041973140352286948",
+        "author_or_account": "speedlinexx",
+        "publish_time": "2026-04-09 06:10:03",
+        "excerpt": "NO WAY, THIS KID IS THE BEST FOOTBALLER IN THE WORLD https://t.co/Zph…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-afa0d8890442a76c",
+        "event_key": "the-no",
+        "note": "账号：speedlinexx；时间：2026-04-09 06:10:03；摘要：NO WAY, THIS KID IS THE BEST FOOTBALLER IN THE WORLD https://t.co/Zph…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "B",
+        "heat_score": 69.47,
+        "title": "大谷翔平、25回1/3連続無失点で日本人先発投手の連続無失点記録を更新🔥 1位:大谷翔平 25回1/3連続無失点 3位:ダルビッシュ 25回 3位:岩隈久志",
+        "url": "https://x.com/30R9gmaMUy3guDJ/status/2041974267940892944",
+        "author_or_account": "30R9gmaMUy3guDJ",
+        "publish_time": "2026-04-09 06:10:03",
+        "excerpt": "大谷翔平、25回1/3連続無失点で日本人先発投手の連続無失点記録を更新🔥 1位:大谷翔平 25回1/3連続無失点 3位:ダルビッシュ 25…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-460771522cb83a7a",
+        "event_key": "日本-diplomacy-conflict-日本-使馆-外交",
+        "note": "账号：30R9gmaMUy3guDJ；时间：2026-04-09 06:10:03；摘要：大谷翔平、25回1/3連続無失点で日本人先発投手の連続無失点記録を更新🔥 1位:大谷翔平 25回1/3連続無失点 3位:ダルビッシュ 25…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "B",
+        "heat_score": 67.7,
+        "title": "JUST IN: FedEx driver who is accused of abducting and strangling a seven-year-ol",
+        "url": "https://x.com/DailyLoud/status/2041970795774132620",
+        "author_or_account": "DailyLoud",
+        "publish_time": "2026-04-09 06:10:03",
+        "excerpt": "JUST IN: FedEx driver who is accused of abducting and strangling a se…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-ad53e762bd454d8c",
+        "event_key": "just-in",
+        "note": "账号：DailyLoud；时间：2026-04-09 06:10:03；摘要：JUST IN: FedEx driver who is accused of abducting and strangling a se…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "B",
+        "heat_score": 66.3,
+        "title": "This is the perfect reaction https://t.co/knxjtSpq0c",
+        "url": "https://x.com/HumansNoContext/status/2041972899968430272",
+        "author_or_account": "HumansNoContext",
+        "publish_time": "2026-04-09 06:10:03",
+        "excerpt": "This is the perfect reaction https://t.co/knxjtSpq0c；热度代理=1278",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-ab6181fc012d5a16",
+        "event_key": "this-is",
+        "note": "账号：HumansNoContext；时间：2026-04-09 06:10:03；摘要：This is the perfect reaction https://t.co/knxjtSpq0c；热度代理=1278"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "B",
+        "heat_score": 65.77,
+        "title": "Hugo bit his boyfriend, so they had to put him down. 😂😂 https://t.co/F7zjSbg43h",
+        "url": "https://x.com/TheFigen_/status/2041982927001567741",
+        "author_or_account": "TheFigen_",
+        "publish_time": "2026-04-09 06:10:03",
+        "excerpt": "Hugo bit his boyfriend, so they had to put him down. 😂😂 https://t.co/…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-ee0b599ef852942a",
+        "event_key": "hugo-bit",
+        "note": "账号：TheFigen_；时间：2026-04-09 06:10:03；摘要：Hugo bit his boyfriend, so they had to put him down. 😂😂 https://t.co/…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "B",
+        "heat_score": 63.31,
+        "title": "大谷翔平が3回1失点 サンチェスにタイムリーを打たれる 本日は制球面にやや苦労している状況 連続無失点は25回1/3でストップ 3回60球3安打2奪三振1四",
+        "url": "https://x.com/30R9gmaMUy3guDJ/status/2041971528066330970",
+        "author_or_account": "30R9gmaMUy3guDJ",
+        "publish_time": "2026-04-09 06:10:03",
+        "excerpt": "大谷翔平が3回1失点 サンチェスにタイムリーを打たれる 本日は制球面にやや苦労している状況 連続無失点は25回1/3でストップ 3回60球…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-d5ef693d2af9abb7",
+        "event_key": "大谷翔平-回1失点",
+        "note": "账号：30R9gmaMUy3guDJ；时间：2026-04-09 06:10:03；摘要：大谷翔平が3回1失点 サンチェスにタイムリーを打たれる 本日は制球面にやや苦労している状況 連続無失点は25回1/3でストップ 3回60球…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "C",
+        "heat_score": 51.75,
+        "title": "Iran’s FM Abbas Araghchi says it is now up to Washington to decide whether the f",
+        "url": "https://x.com/AJEnglish/status/2042001751352733957",
+        "author_or_account": "AJEnglish",
+        "publish_time": "2026-04-09 06:10:03",
+        "excerpt": "Iran’s FM Abbas Araghchi says it is now up to Washington to decide wh…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-e61bd2d446adf91f",
+        "event_key": "to-iran",
+        "note": "账号：AJEnglish；时间：2026-04-09 06:10:03；摘要：Iran’s FM Abbas Araghchi says it is now up to Washington to decide wh…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "C",
+        "heat_score": 50.0,
+        "title": "Experience the magic of our Moon mission wherever you go! ✨ Download free, mobi",
+        "url": "https://x.com/NASA/status/2041915225776009742",
+        "author_or_account": "NASA",
+        "publish_time": "2026-04-09 06:07:53",
+        "excerpt": "Experience the magic of our Moon mission wherever you go! ✨ Download …",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-14f2f8ee9dd523f3",
+        "event_key": "experience-the",
+        "note": "账号：NASA；时间：2026-04-09 06:07:53；摘要：Experience the magic of our Moon mission wherever you go! ✨ Download …"
+      }
+    ],
+    "wb": [
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 52.46,
+        "title": "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞之际，俄罗斯将考虑各国",
+        "url": "https://m.weibo.cn/detail/5282653734437870",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:28",
+        "excerpt": "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-8595e62bc01cd08d",
+        "event_key": "中东-俄罗斯-diplomacy-conflict-油价-地缘冲突",
+        "note": "账号：未知；时间：2026-04-03 20:45:28；摘要：#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 50.07,
+        "title": "【中新社： #俄罗斯重新将28名日本人列为战犯# #俄方重新将28名日本人列为战犯# 】据中新社2日报道：俄罗斯外交部发言人扎哈罗娃4月1日表示，俄方近期重新将",
+        "url": "https://m.weibo.cn/detail/5283383100050229",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:28",
+        "excerpt": "【中新社： #俄罗斯重新将28名日本人列为战犯# #俄方重新将28名日本人列为战犯# 】据中新社2日报道：俄罗斯外交部发言人扎哈罗娃4月1…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-bc4984d19c33e515",
+        "event_key": "俄罗斯-日本-diplomacy-conflict-日本-使馆-外交",
+        "note": "账号：未知；时间：2026-04-03 20:45:28；摘要：【中新社： #俄罗斯重新将28名日本人列为战犯# #俄方重新将28名日本人列为战犯# 】据中新社2日报道：俄罗斯外交部发言人扎哈罗娃4月1…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 50.0,
+        "title": "我的观点一致，人类不是神，就是会犯错的生物，会乌龙，会迷糊，会在没有主观恶意的情况下对其他人造成伤害。 那犯了错怎么办？认错，赔偿，受罚，尽力求得谅解。一个人因",
+        "url": "https://m.weibo.cn/detail/5282877524676277",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:39",
+        "excerpt": "我的观点一致，人类不是神，就是会犯错的生物，会乌龙，会迷糊，会在没有主观恶意的情况下对其他人造成伤害。 那犯了错怎么办？认错，赔偿，受罚，…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-df9fab3235571d3f",
+        "event_key": "我的观点一致-人类不是神",
+        "note": "账号：未知；时间：2026-04-03 20:45:39；摘要：我的观点一致，人类不是神，就是会犯错的生物，会乌龙，会迷糊，会在没有主观恶意的情况下对其他人造成伤害。 那犯了错怎么办？认错，赔偿，受罚，…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 44.09,
+        "title": "很多人都以为调整不影响自己的账户，其实着观点是错误的。能穿越调整，账户资金逆势上涨的非常少的。明白666 ​",
+        "url": "https://m.weibo.cn/detail/5283579816838520",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:39",
+        "excerpt": "很多人都以为调整不影响自己的账户，其实着观点是错误的。能穿越调整，账户资金逆势上涨的非常少的。明白666 ​；热度代理=9206",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-b90b26defe23ce8b",
+        "event_key": "market-sentiment-上涨",
+        "note": "账号：未知；时间：2026-04-03 20:45:39；摘要：很多人都以为调整不影响自己的账户，其实着观点是错误的。能穿越调整，账户资金逆势上涨的非常少的。明白666 ​；热度代理=9206"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 43.92,
+        "title": "麻烦大家看一看这条！ 日推现在正在大规模的进行对南京大屠杀和对中国犯下的罪行的历史修正运动，不是以往的小规模扩散而是几十万上百万的点赞和点击率的大规模传播。 而",
+        "url": "https://m.weibo.cn/detail/5283601537304059",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:28",
+        "excerpt": "麻烦大家看一看这条！ 日推现在正在大规模的进行对南京大屠杀和对中国犯下的罪行的历史修正运动，不是以往的小规模扩散而是几十万上百万的点赞和点…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c5b3eba22136d6d0",
+        "event_key": "中国-的大规模传播",
+        "note": "账号：未知；时间：2026-04-03 20:45:28；摘要：麻烦大家看一看这条！ 日推现在正在大规模的进行对南京大屠杀和对中国犯下的罪行的历史修正运动，不是以往的小规模扩散而是几十万上百万的点赞和点…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 43.64,
+        "title": "【 #丈夫离婚前挥霍百万算作已分得财产# ，剩余同等价值财产全归妻子】3月31日，北京市平谷区人民法院召开离婚纠纷案件新闻通报会，披露近三年审判数据并发布六起典",
+        "url": "https://m.weibo.cn/detail/5283176617610285",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:45",
+        "excerpt": "【 #丈夫离婚前挥霍百万算作已分得财产# ，剩余同等价值财产全归妻子】3月31日，北京市平谷区人民法院召开离婚纠纷案件新闻通报会，披露近三…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-e1f516e8cf2a3fe5",
+        "event_key": "发布-月31日",
+        "note": "账号：未知；时间：2026-04-03 20:45:45；摘要：【 #丈夫离婚前挥霍百万算作已分得财产# ，剩余同等价值财产全归妻子】3月31日，北京市平谷区人民法院召开离婚纠纷案件新闻通报会，披露近三…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 42.58,
+        "title": "说起李荣浩之文科生技巧，我觉得不如称之为“阳刚语文策略”。 这种策略的关键是——释放过剩的攻击性以取得路人的信任。 比如说，他认为“侵权”必定是单依纯本人的决定",
+        "url": "https://m.weibo.cn/detail/5283554532525102",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:42",
+        "excerpt": "说起李荣浩之文科生技巧，我觉得不如称之为“阳刚语文策略”。 这种策略的关键是——释放过剩的攻击性以取得路人的信任。 比如说，他认为“侵权”…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-708f884f7b1a125c",
+        "event_key": "我觉得不如称之为-阳刚语文策略",
+        "note": "账号：未知；时间：2026-04-03 20:45:42；摘要：说起李荣浩之文科生技巧，我觉得不如称之为“阳刚语文策略”。 这种策略的关键是——释放过剩的攻击性以取得路人的信任。 比如说，他认为“侵权”…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 42.45,
+        "title": "最近老板夸我写策略能力大有提升。其实是因为我掌握了一个最新prompt，就是把自己写的方案发给AI，然后说：你好，这是我仇人写的，帮我挑挑刺。AI会给出又犀利又",
+        "url": "https://m.weibo.cn/detail/5282635978907325",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:42",
+        "excerpt": "最近老板夸我写策略能力大有提升。其实是因为我掌握了一个最新prompt，就是把自己写的方案发给AI，然后说：你好，这是我仇人写的，帮我挑挑…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c961e82420619ca0",
+        "event_key": "ai-ai工具-工作流",
+        "note": "账号：未知；时间：2026-04-03 20:45:42；摘要：最近老板夸我写策略能力大有提升。其实是因为我掌握了一个最新prompt，就是把自己写的方案发给AI，然后说：你好，这是我仇人写的，帮我挑挑…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 42.39,
+        "title": "话题讨论：儿子再婚领证办酒，还用出彩礼和三金吗？ 案例讨论：吴律，我儿子今年33，在大学当辅导员，结婚1年，和前儿媳性格不合离婚2年，前儿媳偷吃避孕药没孩子，离",
+        "url": "https://m.weibo.cn/detail/5283003627741979",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:45",
+        "excerpt": "话题讨论：儿子再婚领证办酒，还用出彩礼和三金吗？ 案例讨论：吴律，我儿子今年33，在大学当辅导员，结婚1年，和前儿媳性格不合离婚2年，前儿…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-17ade0c2d02752bf",
+        "event_key": "话题讨论-儿子再婚领证办酒",
+        "note": "账号：未知；时间：2026-04-03 20:45:45；摘要：话题讨论：儿子再婚领证办酒，还用出彩礼和三金吗？ 案例讨论：吴律，我儿子今年33，在大学当辅导员，结婚1年，和前儿媳性格不合离婚2年，前儿…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "C",
+        "heat_score": 41.61,
+        "title": "一个有点钱的日本人分享了一件让自己震惊的事，自己的女儿在国际学校，从英国老师那学习了南京大屠杀的历史，进而感到羞愧，于是他家紧急召开家庭会议，想给女儿洗脑说大屠",
+        "url": "https://m.weibo.cn/detail/5283532655558815",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:28",
+        "excerpt": "一个有点钱的日本人分享了一件让自己震惊的事，自己的女儿在国际学校，从英国老师那学习了南京大屠杀的历史，进而感到羞愧，于是他家紧急召开家庭会…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-b62144e28a672408",
+        "event_key": "日本-diplomacy-conflict-日本-使馆-外交",
+        "note": "账号：未知；时间：2026-04-03 20:45:28；摘要：一个有点钱的日本人分享了一件让自己震惊的事，自己的女儿在国际学校，从英国老师那学习了南京大屠杀的历史，进而感到羞愧，于是他家紧急召开家庭会…"
+      }
+    ],
+    "xhs": [
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "S",
+        "heat_score": 92.0,
+        "title": "我可太会找淡颜系口红了！妥妥的清透白开水！",
+        "url": "https://www.xiaohongshu.com/explore/64104634000000000800d7c8?xsec_token=ABiKahsJveydyvyBLdalMttlASK8T8gUMKecdi_6H6CF0%3D&xsec_source=pc_feed",
+        "author_or_account": "川川别熬夜",
+        "publish_time": "2026-04-08 06:00:38",
+        "excerpt": "我可太会找淡颜系口红了！妥妥的清透白开水！；热度代理=100000",
+        "noise_tags": [
+          "irrelevant_life"
+        ],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c663056c66bd9764",
+        "event_key": "妥妥的清透白开水-川川别熬夜",
+        "note": "账号：川川别熬夜；时间：2026-04-08 06:00:38；摘要：我可太会找淡颜系口红了！妥妥的清透白开水！；热度代理=100000；噪音标签：irrelevant_life"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "S",
+        "heat_score": 86.69,
+        "title": "这应该是全网最长的刀了吧！",
+        "url": "https://www.xiaohongshu.com/explore/6412621f000000001203e0fa?xsec_token=ABqfxjLVe_EvtbZv0mhqXTbVyEZfJnVNHKGI7U7PqkuIk%3D&xsec_source=pc_feed",
+        "author_or_account": "含亮老师",
+        "publish_time": "2026-04-08 06:00:38",
+        "excerpt": "这应该是全网最长的刀了吧！；热度代理=50000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-1edf82708d010ee0",
+        "event_key": "含亮老师",
+        "note": "账号：含亮老师；时间：2026-04-08 06:00:38；摘要：这应该是全网最长的刀了吧！；热度代理=50000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "S",
+        "heat_score": 86.05,
+        "title": "不用卷发工具，也能头包脸",
+        "url": "https://www.xiaohongshu.com/explore/63e61f5c0000000013011754?xsec_token=ABXeg8fuoIzxb1trFJoiTy8kZvtRBxgxmE5Wp8C8RXhds%3D&xsec_source=pc_feed",
+        "author_or_account": "加元",
+        "publish_time": "2026-04-08 06:00:38",
+        "excerpt": "不用卷发工具，也能头包脸；热度代理=46000",
+        "noise_tags": [
+          "irrelevant_life"
+        ],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-1ed2ba71952baccd",
+        "event_key": "不用卷发工具-也能头包脸",
+        "note": "账号：加元；时间：2026-04-08 06:00:38；摘要：不用卷发工具，也能头包脸；热度代理=46000；噪音标签：irrelevant_life"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "A",
+        "heat_score": 84.17,
+        "title": "拉伸",
+        "url": "https://www.xiaohongshu.com/explore/6468101700000000270011cc?xsec_token=ABj9FK8NIfF2WRdemnU7yuG-ZG4efco5jhR63DFUDVPnI%3D&xsec_source=pc_feed",
+        "author_or_account": "他的店",
+        "publish_time": "2026-04-08 06:00:38",
+        "excerpt": "拉伸；热度代理=36000",
+        "noise_tags": [
+          "irrelevant_life"
+        ],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-78d3d27c8544ae70",
+        "event_key": "拉伸-他的店",
+        "note": "账号：他的店；时间：2026-04-08 06:00:38；摘要：拉伸；热度代理=36000；噪音标签：irrelevant_life"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "A",
+        "heat_score": 83.5,
+        "title": "随意搭配",
+        "url": "https://www.xiaohongshu.com/explore/640d99e5000000001303716e?xsec_token=ABDhb0tLEyG-h7GadFcad3JVpl7nVHz5PXprjC3oKz0Rs%3D&xsec_source=pc_feed",
+        "author_or_account": "打工小🐏",
+        "publish_time": "2026-04-08 06:00:38",
+        "excerpt": "随意搭配；热度代理=33000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c27ec665d4db19da",
+        "event_key": "随意搭配-打工小",
+        "note": "账号：打工小🐏；时间：2026-04-08 06:00:38；摘要：随意搭配；热度代理=33000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "A",
+        "heat_score": 80.73,
+        "title": "现在的大学生用的都是香奈儿迪奥…😰",
+        "url": "https://www.xiaohongshu.com/explore/646225260000000014026efe?xsec_token=ABwbzJPYb2oTvUrXhUbp35R_E7MCzNnDKpHprdXtR48MI%3D&xsec_source=pc_feed",
+        "author_or_account": "YEiS同学",
+        "publish_time": "2026-04-08 06:00:38",
+        "excerpt": "现在的大学生用的都是香奈儿迪奥…😰；热度代理=23000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-79ec099839dd8736",
+        "event_key": "yeis同学",
+        "note": "账号：YEiS同学；时间：2026-04-08 06:00:38；摘要：现在的大学生用的都是香奈儿迪奥…😰；热度代理=23000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "A",
+        "heat_score": 80.39,
+        "title": "吃撒尿牛丸，把汁滋领导眼睛里了……",
+        "url": "https://www.xiaohongshu.com/explore/64bb6174000000000800c259?xsec_token=ABnHK9_5i3BnakyZmKnBg4_0H6vrbR70IJVxWl0mi_S2Y%3D&xsec_source=pc_feed",
+        "author_or_account": "羊不",
+        "publish_time": "2026-04-08 06:00:38",
+        "excerpt": "吃撒尿牛丸，把汁滋领导眼睛里了……；热度代理=22000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-3c16a0ebeb1b1dfd",
+        "event_key": "吃撒尿牛丸-羊不",
+        "note": "账号：羊不；时间：2026-04-08 06:00:38；摘要：吃撒尿牛丸，把汁滋领导眼睛里了……；热度代理=22000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "A",
+        "heat_score": 77.46,
+        "title": "豆瓣9.5❗️居然有这么多我没看懂的细节❗️",
+        "url": "https://www.xiaohongshu.com/explore/645320a90000000013000bce?xsec_token=ABmEUv4MbDhlwDICDI6NNR8V2Tob4lygELHgt1Kiqp1g8%3D&xsec_source=pc_feed",
+        "author_or_account": "七号厅",
+        "publish_time": "2026-04-08 06:00:38",
+        "excerpt": "豆瓣9.5❗️居然有这么多我没看懂的细节❗️；热度代理=15000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-54beb53cc279b7e6",
+        "event_key": "豆瓣9-七号厅",
+        "note": "账号：七号厅；时间：2026-04-08 06:00:38；摘要：豆瓣9.5❗️居然有这么多我没看懂的细节❗️；热度代理=15000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "A",
+        "heat_score": 75.08,
+        "title": "养眼的颜色",
+        "url": "https://www.xiaohongshu.com/explore/647c4c160000000012032923?xsec_token=ABvvRuiLLcRDW6fisNkcMiPhEn_Gr0p2wcRqGs2QCadGg%3D&xsec_source=pc_feed",
+        "author_or_account": "久缘创意设计",
+        "publish_time": "2026-04-08 06:00:38",
+        "excerpt": "养眼的颜色；热度代理=11000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-bc7de5f9c2f97c44",
+        "event_key": "养眼的颜色-久缘创意设计",
+        "note": "账号：久缘创意设计；时间：2026-04-08 06:00:38；摘要：养眼的颜色；热度代理=11000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "A",
+        "heat_score": 73.47,
+        "title": "婚礼上千万别做这🔟个动作❌拍照丑到哭",
+        "url": "https://www.xiaohongshu.com/explore/64c5dc7e000000000c036e01?xsec_token=ABRH0_UusgNiDq6Fh2Atan5L3fL4EvGnU1bIKmPfaeuXU%3D&xsec_source=pc_feed",
+        "author_or_account": "雨雨TT",
+        "publish_time": "2026-04-08 06:00:38",
+        "excerpt": "婚礼上千万别做这🔟个动作❌拍照丑到哭；热度代理=8918",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-02d17c708eab5a77",
+        "event_key": "婚礼上千万别做这-个动作",
+        "note": "账号：雨雨TT；时间：2026-04-08 06:00:38；摘要：婚礼上千万别做这🔟个动作❌拍照丑到哭；热度代理=8918"
+      }
+    ],
+    "douyin": [
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 79.75,
+        "title": "一个月撤离820亿美元！ 全球央行狂卖美债",
+        "url": "https://www.douyin.com/video/7623360302066765083",
+        "author_or_account": "国际金融报",
+        "publish_time": "2026-04-09 23:04:15",
+        "excerpt": "一个月撤离820亿美元！ 全球央行狂卖美债；热度代理=4348",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-58e2f7c9cf45d827",
+        "event_key": "一个月撤离820亿美元-全球央行狂卖美债",
+        "note": "账号：国际金融报；时间：2026-04-09 23:04:15；摘要：一个月撤离820亿美元！ 全球央行狂卖美债；热度代理=4348"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 78.61,
+        "title": "美债引发连锁危机！机构+央行已然行动，你该如何应对？ #投资 #股票 #财经 #经济 #金融",
+        "url": "https://www.douyin.com/video/7597557110058126598",
+        "author_or_account": "美投讲美股",
+        "publish_time": "2026-04-09 23:04:15",
+        "excerpt": "美债引发连锁危机！机构+央行已然行动，你该如何应对？ #投资 #股票 #财经 #经济 #金融；热度代理=3334",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-352a431eafb87557",
+        "event_key": "宏观-市场情绪-美债引发连锁危机-机构-央行已然行动",
+        "note": "账号：美投讲美股；时间：2026-04-09 23:04:15；摘要：美债引发连锁危机！机构+央行已然行动，你该如何应对？ #投资 #股票 #财经 #经济 #金融；热度代理=3334"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 78.0,
+        "title": "300年不违约的美国，即将还不上钱！ #财经 #美国债务违约倒计时 #经济",
+        "url": "https://www.douyin.com/video/7234061473213926659",
+        "author_or_account": "N小黑财经",
+        "publish_time": "2026-04-09 23:04:13",
+        "excerpt": "300年不违约的美国，即将还不上钱！ #财经 #美国债务违约倒计时 #经济；热度代理=74457",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-2e0d029f76a311e1",
+        "event_key": "美国-diplomacy-conflict-宏观-市场情绪",
+        "note": "账号：N小黑财经；时间：2026-04-09 23:04:13；摘要：300年不违约的美国，即将还不上钱！ #财经 #美国债务违约倒计时 #经济；热度代理=74457"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 77.64,
+        "title": "美元疯涨 收割全球...#2022半年盘点与展望",
+        "url": "https://www.douyin.com/video/7149106939031604521",
+        "author_or_account": "章蕾",
+        "publish_time": "2026-04-09 23:04:09",
+        "excerpt": "美元疯涨 收割全球...#2022半年盘点与展望；热度代理=68477",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-e34a3fa0899ab861",
+        "event_key": "美元疯涨-收割全球",
+        "note": "账号：章蕾；时间：2026-04-09 23:04:09；摘要：美元疯涨 收割全球...#2022半年盘点与展望；热度代理=68477"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 75.8,
+        "title": "全球资产大逃杀！美股罕见暴跌！“七巨头”市值近一月蒸发12万亿元#美国 #财经 （编辑：杨）",
+        "url": "https://www.douyin.com/video/7399130693474749759",
+        "author_or_account": "风口财经",
+        "publish_time": "2026-04-09 23:03:57",
+        "excerpt": "全球资产大逃杀！美股罕见暴跌！“七巨头”市值近一月蒸发12万亿元#美国 #财经 （编辑：杨）；热度代理=44735",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-39692d7e79b84abe",
+        "event_key": "美国-diplomacy-conflict",
+        "note": "账号：风口财经；时间：2026-04-09 23:03:57；摘要：全球资产大逃杀！美股罕见暴跌！“七巨头”市值近一月蒸发12万亿元#美国 #财经 （编辑：杨）；热度代理=44735"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 75.12,
+        "title": "美债已经突破37万亿美元，会违约吗？要客观理性看待#美债 #金融",
+        "url": "https://www.douyin.com/video/7538249548007771442",
+        "author_or_account": "向松祚商业观察",
+        "publish_time": "2026-04-09 23:04:13",
+        "excerpt": "美债已经突破37万亿美元，会违约吗？要客观理性看待#美债 #金融；热度代理=38178",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-1217bb2057f944bf",
+        "event_key": "美债已经突破37万亿美元-会违约吗",
+        "note": "账号：向松祚商业观察；时间：2026-04-09 23:04:13；摘要：美债已经突破37万亿美元，会违约吗？要客观理性看待#美债 #金融；热度代理=38178"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 71.77,
+        "title": "第977期：美债“庞氏骗局”还能玩多久？#财经 #韩秀云",
+        "url": "https://www.douyin.com/video/7234122644235324709",
+        "author_or_account": "韩秀云讲经济",
+        "publish_time": "2026-04-09 23:04:13",
+        "excerpt": "第977期：美债“庞氏骗局”还能玩多久？#财经 #韩秀云；热度代理=17554",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-886893526aea29be",
+        "event_key": "宏观-市场情绪-第977期-美债",
+        "note": "账号：韩秀云讲经济；时间：2026-04-09 23:04:13；摘要：第977期：美债“庞氏骗局”还能玩多久？#财经 #韩秀云；热度代理=17554"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 71.56,
+        "title": "4.9 有些蹊跷 #石油美元 #美元新体系 #加密货币",
+        "url": "https://www.douyin.com/video/7626707498565277809",
+        "author_or_account": "艾丽的无废话财经",
+        "publish_time": "2026-04-09 23:04:09",
+        "excerpt": "4.9 有些蹊跷 #石油美元 #美元新体系 #加密货币；热度代理=16707",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-15f7d5d33336aedc",
+        "event_key": "有些蹊跷-石油美元",
+        "note": "账号：艾丽的无废话财经；时间：2026-04-09 23:04:09；摘要：4.9 有些蹊跷 #石油美元 #美元新体系 #加密货币；热度代理=16707"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 71.09,
+        "title": "美国国债深度解读，39万亿如何影响我们普通人 #燃起来了大国重器 #零距离看懂财经 #美债 #美国 #国债",
+        "url": "https://www.douyin.com/video/7615964733610528036",
+        "author_or_account": "静姐财富经",
+        "publish_time": "2026-04-09 23:04:13",
+        "excerpt": "美国国债深度解读，39万亿如何影响我们普通人 #燃起来了大国重器 #零距离看懂财经 #美债 #美国 #国债；热度代理=14989",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-cebf245436e7b1c4",
+        "event_key": "美国-diplomacy-conflict",
+        "note": "账号：静姐财富经；时间：2026-04-09 23:04:13；摘要：美国国债深度解读，39万亿如何影响我们普通人 #燃起来了大国重器 #零距离看懂财经 #美债 #美国 #国债；热度代理=14989"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "A",
+        "heat_score": 70.78,
+        "title": "美债疯狂倒挂，危机要来了？#财经 #美债 #doudream创作者计划 #我在抖音说财经 #财经成长计划",
+        "url": "https://www.douyin.com/video/7083888494308904206",
+        "author_or_account": "许琼娜",
+        "publish_time": "2026-04-09 23:04:13",
+        "excerpt": "美债疯狂倒挂，危机要来了？#财经 #美债 #doudream创作者计划 #我在抖音说财经 #财经成长计划；热度代理=13966",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-6915ccdcd97b2875",
+        "event_key": "美债疯狂倒挂-危机要来了",
+        "note": "账号：许琼娜；时间：2026-04-09 23:04:13；摘要：美债疯狂倒挂，危机要来了？#财经 #美债 #doudream创作者计划 #我在抖音说财经 #财经成长计划；热度代理=13966"
+      }
+    ],
+    "bili": [
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "A",
+        "heat_score": 77.01,
+        "title": "美股启动修复趋势？Meta要大涨了？Anthropic砸盘软件！但也开启了AI新篇章！",
+        "url": "https://www.bilibili.com/video/BV1wUDHBoELZ",
+        "author_or_account": "美投侃热点",
+        "publish_time": "2026-04-09 23:28:56",
+        "excerpt": "美股启动修复趋势？Meta要大涨了？Anthropic砸盘软件！但也开启了AI新篇章！；热度代理=191",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-9bce70a344afa86f",
+        "event_key": "ai-ai工具-工作流",
+        "note": "账号：美投侃热点；时间：2026-04-09 23:28:56；摘要：美股启动修复趋势？Meta要大涨了？Anthropic砸盘软件！但也开启了AI新篇章！；热度代理=191"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "A",
+        "heat_score": 76.0,
+        "title": "在化债完成之前，任何可能大规模虹吸存款资金的市场，都会被有意无意地压制。相比存银行亏一点购买力，你更怕把钱取出来，投进那个可能让你血本无归的市场里。这就是现实。",
+        "url": "https://www.bilibili.com/video/BV1G7D7BaENZ",
+        "author_or_account": "老陌Ss",
+        "publish_time": "2026-04-09 23:32:06",
+        "excerpt": "在化债完成之前，任何可能大规模虹吸存款资金的市场，都会被有意无意地压制。相比存银行亏一点购买力，你更怕把钱取出来，投进那个可能让你血本无归…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-d32e49b26350064b",
+        "event_key": "market-sentiment-在化债完成之前-你更怕把钱取出来",
+        "note": "账号：老陌Ss；时间：2026-04-09 23:32:06；摘要：在化债完成之前，任何可能大规模虹吸存款资金的市场，都会被有意无意地压制。相比存银行亏一点购买力，你更怕把钱取出来，投进那个可能让你血本无归…"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "B",
+        "heat_score": 68.32,
+        "title": "美股投资全攻略，建议一键三连。",
+        "url": "https://www.bilibili.com/video/BV1nc411Q7Xn",
+        "author_or_account": "李二二全球投资",
+        "publish_time": "2026-04-09 23:29:06",
+        "excerpt": "美股投资全攻略，建议一键三连。；热度代理=1448",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-13d00032fe62e5bf",
+        "event_key": "美股投资全攻略-建议一键三连",
+        "note": "账号：李二二全球投资；时间：2026-04-09 23:29:06；摘要：美股投资全攻略，建议一键三连。；热度代理=1448"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "B",
+        "heat_score": 66.8,
+        "title": "“社保基金”的投资成绩公布了，这才是真股神！！",
+        "url": "https://www.bilibili.com/video/BV1ikDpBSEpj",
+        "author_or_account": "研究员雷牛牛",
+        "publish_time": "2026-04-09 23:28:59",
+        "excerpt": "“社保基金”的投资成绩公布了，这才是真股神！！；热度代理=951",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-33fdaa8993671281",
+        "event_key": "market-sentiment-社保基金-的投资成绩公布了",
+        "note": "账号：研究员雷牛牛；时间：2026-04-09 23:28:59；摘要：“社保基金”的投资成绩公布了，这才是真股神！！；热度代理=951"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "B",
+        "heat_score": 65.88,
+        "title": "【深度】拆解美元霸权：从SWIFT核弹到CIPS突围，中国如何日拱一卒？",
+        "url": "https://www.bilibili.com/video/BV1QVDsB7E5F",
+        "author_or_account": "孽畜畜",
+        "publish_time": "2026-04-09 23:30:23",
+        "excerpt": "【深度】拆解美元霸权：从SWIFT核弹到CIPS突围，中国如何日拱一卒？；热度代理=737",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-168960dd1d88c98d",
+        "event_key": "中国-深度-拆解美元霸权",
+        "note": "账号：孽畜畜；时间：2026-04-09 23:30:23；摘要：【深度】拆解美元霸权：从SWIFT核弹到CIPS突围，中国如何日拱一卒？；热度代理=737"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "B",
+        "heat_score": 64.59,
+        "title": "霍尔木兹海峡已再次关闭：伊朗已叫停霍尔木兹海峡油轮通行",
+        "url": "https://www.bilibili.com/video/BV1pGDWBFETW",
+        "author_or_account": "达芬奇矩阵",
+        "publish_time": "2026-04-09 23:31:10",
+        "excerpt": "霍尔木兹海峡已再次关闭：伊朗已叫停霍尔木兹海峡油轮通行；热度代理=516",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-4b435da7b38bed02",
+        "event_key": "伊朗-supply-order-diplomacy-conflict-油价-地缘冲突",
+        "note": "账号：达芬奇矩阵；时间：2026-04-09 23:31:10；摘要：霍尔木兹海峡已再次关闭：伊朗已叫停霍尔木兹海峡油轮通行；热度代理=516"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "B",
+        "heat_score": 63.22,
+        "title": "（第581天）即将满600天！每天定投纳斯达克、沪深300、黄金，收益情况披露",
+        "url": "https://www.bilibili.com/video/BV1wnDTBSEwS",
+        "author_or_account": "请叫我小白Wik",
+        "publish_time": "2026-04-09 23:29:33",
+        "excerpt": "（第581天）即将满600天！每天定投纳斯达克、沪深300、黄金，收益情况披露；热度代理=353",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-69930af3216ece2a",
+        "event_key": "黄金-market-sentiment-黄金-白银-贵金属",
+        "note": "账号：请叫我小白Wik；时间：2026-04-09 23:29:33；摘要：（第581天）即将满600天！每天定投纳斯达克、沪深300、黄金，收益情况披露；热度代理=353"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "B",
+        "heat_score": 62.13,
+        "title": "明天行情还能反弹吗？原油还能上车吗？",
+        "url": "https://www.bilibili.com/video/BV1UsD4BmELg",
+        "author_or_account": "长赢之道研究院",
+        "publish_time": "2026-04-09 23:31:12",
+        "excerpt": "明天行情还能反弹吗？原油还能上车吗？；热度代理=261",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-437e4265a90362a5",
+        "event_key": "原油-supply-order-反弹-油价-地缘冲突",
+        "note": "账号：长赢之道研究院；时间：2026-04-09 23:31:12；摘要：明天行情还能反弹吗？原油还能上车吗？；热度代理=261"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "B",
+        "heat_score": 61.44,
+        "title": "川普停火前15分钟5.8亿美元做空原油 WTI暴跌15%至95美元现货仍在110美元 摩根大通二元定价陷阱曝光 CTA趋势跟踪全线爆仓 霍尔木兹海峡10亿桶供给",
+        "url": "https://www.bilibili.com/video/BV1DgDpBrECr",
+        "author_or_account": "ypsdz",
+        "publish_time": "2026-04-09 23:31:07",
+        "excerpt": "川普停火前15分钟5.8亿美元做空原油 WTI暴跌15%至95美元现货仍在110美元 摩根大通二元定价陷阱曝光 CTA趋势跟踪全线爆仓 霍…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-9bae32f5d3788b9a",
+        "event_key": "原油-川普-supply-order-diplomacy-conflict",
+        "note": "账号：ypsdz；时间：2026-04-09 23:31:07；摘要：川普停火前15分钟5.8亿美元做空原油 WTI暴跌15%至95美元现货仍在110美元 摩根大通二元定价陷阱曝光 CTA趋势跟踪全线爆仓 霍…"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "B",
+        "heat_score": 60.59,
+        "title": "美元霸权和人民币国际化",
+        "url": "https://www.bilibili.com/video/BV1cdDxBBEDz",
+        "author_or_account": "杨华说天下",
+        "publish_time": "2026-04-09 23:30:26",
+        "excerpt": "美元霸权和人民币国际化；热度代理=170",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-09d687dd6a69da66",
+        "event_key": "杨华说天下",
+        "note": "账号：杨华说天下；时间：2026-04-09 23:30:26；摘要：美元霸权和人民币国际化；热度代理=170"
+      }
+    ],
+    "content_research": [
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "B",
+        "heat_score": 64.0,
+        "title": "2026年日本又有士兵走丢：但是闯入老中使馆？",
+        "url": "https://www.bilibili.com/video/BV154QrBqEXG",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 21:17:06",
+        "excerpt": "2026年日本又有士兵走丢：但是闯入老中使馆？；score=36.88",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-793c97ae8d7686a7",
+        "event_key": "日本-diplomacy-conflict-日本-使馆-外交",
+        "note": "账号：bili；时间：2026-03-24 21:17:06；摘要：2026年日本又有士兵走丢：但是闯入老中使馆？；score=36.88"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "B",
+        "heat_score": 58.77,
+        "title": "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】",
+        "url": "https://www.bilibili.com/video/BV1CCQqBuEt8",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 18:00:00",
+        "excerpt": "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】；score=36.62",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c908b156c76dea64",
+        "event_key": "伊朗-特朗普-diplomacy-conflict-油价-地缘冲突",
+        "note": "账号：bili；时间：2026-03-24 18:00:00；摘要：特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】；score=36.62"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "B",
+        "heat_score": 58.37,
+        "title": "一名自称为日本自卫队现役官员闯入我大使馆威胁杀人",
+        "url": "https://www.bilibili.com/video/BV17EQzBNEBB",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 16:59:50",
+        "excerpt": "一名自称为日本自卫队现役官员闯入我大使馆威胁杀人；score=36.6",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-449049e30a686369",
+        "event_key": "日本-diplomacy-conflict-日本-使馆-外交",
+        "note": "账号：bili；时间：2026-03-24 16:59:50；摘要：一名自称为日本自卫队现役官员闯入我大使馆威胁杀人；score=36.6"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "B",
+        "heat_score": 55.34,
+        "title": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸",
+        "url": "https://www.bilibili.com/video/BV1WJQBByE12",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 19:27:44",
+        "excerpt": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-e3793376fb53537f",
+        "event_key": "以色列-伊朗-supply-order-diplomacy-conflict",
+        "note": "账号：bili；时间：2026-03-24 19:27:44；摘要：【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美…"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "C",
+        "heat_score": 53.92,
+        "title": "平平不无奇！OPPO Find N6使用体验",
+        "url": "https://www.bilibili.com/video/BV1hkQoBrEeP",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-23 19:43:51",
+        "excerpt": "平平不无奇！OPPO Find N6使用体验；score=36.38",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-cbcf38cc86150652",
+        "event_key": "平平不无奇-oppo",
+        "note": "账号：bili；时间：2026-03-23 19:43:51；摘要：平平不无奇！OPPO Find N6使用体验；score=36.38"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "C",
+        "heat_score": 53.72,
+        "title": "伊朗战争，和全球能源格局",
+        "url": "https://www.bilibili.com/video/BV1QGXABxEbq",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 11:30:00",
+        "excerpt": "伊朗战争，和全球能源格局；score=36.37",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-d67999ce7ea42429",
+        "event_key": "伊朗-diplomacy-conflict-油价-地缘冲突",
+        "note": "账号：bili；时间：2026-03-24 11:30:00；摘要：伊朗战争，和全球能源格局；score=36.37"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "C",
+        "heat_score": 53.31,
+        "title": "懂王狂画k线！精准抛售600万桶原油，伊朗提停火条件！",
+        "url": "https://www.bilibili.com/video/BV1RWQrBBEtF",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 21:06:11",
+        "excerpt": "懂王狂画k线！精准抛售600万桶原油，伊朗提停火条件！；score=36.35",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-5a80c4dfdcaf4ed9",
+        "event_key": "伊朗-原油-supply-order-diplomacy-conflict",
+        "note": "账号：bili；时间：2026-03-24 21:06:11；摘要：懂王狂画k线！精准抛售600万桶原油，伊朗提停火条件！；score=36.35"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "C",
+        "heat_score": 52.7,
+        "title": "特朗普一个帖子让国际油价闪崩13%，特朗普称同伊朗对话完美，伊朗否认，一顿分析猛如虎，涨跌全看特朗普",
+        "url": "https://www.bilibili.com/video/BV1EDQqBvEQs",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 13:04:11",
+        "excerpt": "特朗普一个帖子让国际油价闪崩13%，特朗普称同伊朗对话完美，伊朗否认，一顿分析猛如虎，涨跌全看特朗普；score=36.32",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c2044058af3aecba",
+        "event_key": "伊朗-油价-supply-order-diplomacy-conflict",
+        "note": "账号：bili；时间：2026-03-24 13:04:11；摘要：特朗普一个帖子让国际油价闪崩13%，特朗普称同伊朗对话完美，伊朗否认，一顿分析猛如虎，涨跌全看特朗普；score=36.32"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "C",
+        "heat_score": 46.78,
+        "title": "【RAY评】周杰伦新歌《太阳之子》，完全想不到............",
+        "url": "https://www.bilibili.com/video/BV1T9QiBCEWj",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 15:25:46",
+        "excerpt": "【RAY评】周杰伦新歌《太阳之子》，完全想不到............；score=36.03",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-17dc77cd17efad31",
+        "event_key": "ray评-周杰伦新歌",
+        "note": "账号：bili；时间：2026-03-24 15:25:46；摘要：【RAY评】周杰伦新歌《太阳之子》，完全想不到............；score=36.03"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "C",
+        "heat_score": 44.32,
+        "title": "特朗普又“TACO”？美国为何推迟“最后通牒”？",
+        "url": "https://www.bilibili.com/video/BV1MRQBBDE1A",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 18:58:18",
+        "excerpt": "特朗普又“TACO”？美国为何推迟“最后通牒”？；score=35.91",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-a904f23e7d5541f6",
+        "event_key": "美国-特朗普-diplomacy-conflict",
+        "note": "账号：bili；时间：2026-03-24 18:58:18；摘要：特朗普又“TACO”？美国为何推迟“最后通牒”？；score=35.91"
+      }
+    ],
+    "ai_hot": [
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/bili",
+        "heat_level": "S",
+        "heat_score": 92.0,
+        "title": "美股启动修复趋势？Meta要大涨了？Anthropic砸盘软件！但也开启了AI新篇章！",
+        "url": "https://www.bilibili.com/video/BV1wUDHBoELZ",
+        "author_or_account": "美投侃热点",
+        "publish_time": "2026-04-09 23:28:56",
+        "excerpt": "美股启动修复趋势？Meta要大涨了？Anthropic砸盘软件！但也开启了AI新篇章！；美股启动修复趋势？Meta要大涨了？Anthrop…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-9bce70a344afa86f",
+        "event_key": "ai-ai工具-工作流",
+        "note": "账号：美投侃热点；时间：2026-04-09 23:28:56；摘要：美股启动修复趋势？Meta要大涨了？Anthropic砸盘软件！但也开启了AI新篇章！；美股启动修复趋势？Meta要大涨了？Anthrop…"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "D",
+        "heat_score": 39.18,
+        "title": "Show HN: Postagent – Postman CLI, but for AI Agents",
+        "url": "https://github.com/actionbook/postagent",
+        "author_or_account": "adcent",
+        "publish_time": "2026-04-09T14:43:53Z",
+        "excerpt": "Show HN: Postagent – Postman CLI, but for AI Agents；Hacker News 查询：AI…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-323ea2f635b84f7e",
+        "event_key": "ai-ai工具-工作流",
+        "note": "账号：adcent；时间：2026-04-09T14:43:53Z；摘要：Show HN: Postagent – Postman CLI, but for AI Agents；Hacker News 查询：AI…"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "D",
+        "heat_score": 37.75,
+        "title": "Show HN: AI agents are bad at API integrations – we fixed it",
+        "url": "https://www.apimatic.io/product/context-plugins/showcase",
+        "author_or_account": "sohaibtariq",
+        "publish_time": "2026-04-09T15:06:54Z",
+        "excerpt": "Show HN: AI agents are bad at API integrations – we fixed it；Hacker N…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-dcb405ce950062f8",
+        "event_key": "openai-ai-ai工具-工作流",
+        "note": "账号：sohaibtariq；时间：2026-04-09T15:06:54Z；摘要：Show HN: AI agents are bad at API integrations – we fixed it；Hacker N…"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/reddit",
+        "heat_level": "D",
+        "heat_score": 29.23,
+        "title": "Introducing Claude Managed Agents, now in public beta.",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1sfz7a5/introducing_claude_managed_agents_now_in_public",
+        "author_or_account": "/u/ClaudeOfficial",
+        "publish_time": "2026-04-08T17:16:42+00:00",
+        "excerpt": "Introducing Claude Managed Agents, now in public beta.；Reddit r/Claud…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-945f625f9cc4ef25",
+        "event_key": "ai工具-工作流-introducing-claude",
+        "note": "账号：/u/ClaudeOfficial；时间：2026-04-08T17:16:42+00:00；摘要：Introducing Claude Managed Agents, now in public beta.；Reddit r/Claud…"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "D",
+        "heat_score": 22.04,
+        "title": "Claude Mythos Preview [pdf]",
+        "url": "https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf",
+        "author_or_account": "andsoitis",
+        "publish_time": "2026-04-08T22:53:56Z",
+        "excerpt": "Claude Mythos Preview [pdf]；Hacker News 查询：Anthropic Claude",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-906b99853f8e2375",
+        "event_key": "ai工具-工作流-claude-mythos",
+        "note": "账号：andsoitis；时间：2026-04-08T22:53:56Z；摘要：Claude Mythos Preview [pdf]；Hacker News 查询：Anthropic Claude"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "D",
+        "heat_score": 21.62,
+        "title": "New Anthropic model is too dangerous to release publicly",
+        "url": "https://www.nbcnews.com/tech/security/anthropic-project-glasswing-mythos-preview-claude-gets-limited-release-rcna267234",
+        "author_or_account": "hackyhacky",
+        "publish_time": "2026-04-08T22:10:35Z",
+        "excerpt": "New Anthropic model is too dangerous to release publicly；Hacker News …",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-5608c95f9d467209",
+        "event_key": "ai工具-工作流-anthropic-new",
+        "note": "账号：hackyhacky；时间：2026-04-08T22:10:35Z；摘要：New Anthropic model is too dangerous to release publicly；Hacker News …"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "D",
+        "heat_score": 16.46,
+        "title": "Show HN: Linggen – Open-source AI agent with P2P remote access from your phone",
+        "url": "https://linggen.dev",
+        "author_or_account": "linggen",
+        "publish_time": "2026-04-08T21:43:31Z",
+        "excerpt": "Show HN: Linggen – Open-source AI agent with P2P remote access from y…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-600fec482d969e97",
+        "event_key": "ai-technology-adoption-ai工具-工作流",
+        "note": "账号：linggen；时间：2026-04-08T21:43:31Z；摘要：Show HN: Linggen – Open-source AI agent with P2P remote access from y…"
+      },
+      {
+        "channel": "ai_hot",
+        "channel_label": "AI热点",
+        "source": "ai_hot/hn",
+        "heat_level": "D",
+        "heat_score": 13.71,
+        "title": "Show HN: I built an open source multi-agent harness in Go",
+        "url": "https://github.com/AndreBaltazar8/artificial",
+        "author_or_account": "AndreBaltazar",
+        "publish_time": "2026-04-08T22:19:10Z",
+        "excerpt": "Show HN: I built an open source multi-agent harness in Go；Hacker News…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-fec4df68436462a0",
+        "event_key": "technology-adoption-ai工具-工作流",
+        "note": "账号：AndreBaltazar；时间：2026-04-08T22:19:10Z；摘要：Show HN: I built an open source multi-agent harness in Go；Hacker News…"
+      }
+    ],
+    "reports": [
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "B",
+        "heat_score": 66.0,
+        "title": "13条举措加快建设分级诊疗体系",
+        "url": "https://s.weibo.com/weibo?q=%2313%E6%9D%A1%E4%B8%BE%E6%8E%AA%E5%8A%A0%E5%BF%AB%E5%BB%BA%E8%AE%BE%E5%88%86%E7%BA%A7%E8%AF%8A%E7%96%97%E4%BD%93%E7%B3%BB%23&amp%3Bt=31&amp%3Bband_rank=3&amp%3BRefer=top",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "13条举措加快建设分级诊疗体系；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-1a6c217293ac71cd",
+        "event_key": "来自-reports",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：13条举措加快建设分级诊疗体系；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "B",
+        "heat_score": 66.0,
+        "title": "2947人的投资群里2946人是“托”",
+        "url": "https://www.baidu.com/s?wd=2947%E4%BA%BA%E7%9A%84%E6%8A%95%E8%B5%84%E7%BE%A4%E9%87%8C2946%E4%BA%BA%E6%98%AF%E2%80%9C%E6%89%98%E2%80%9D",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "2947人的投资群里2946人是“托”；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-49d49bc1fca81cbc",
+        "event_key": "人的投资群里2946人是-来自",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：2947人的投资群里2946人是“托”；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "C",
+        "heat_score": 50.0,
+        "title": "IG放走Jwei,EDG捡漏成功",
+        "url": "https://tieba.baidu.com/hottopic/browse/hottopic?topic_id=28353014&amp%3Bamp%3Btopic_name=IG%E6%94%BE%E8%B5%B0Jwei%2CEDG%E6%8D%A1%E6%BC%8F%E6%88%90%E5%8A%9F",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "IG放走Jwei,EDG捡漏成功；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-c6c557d81a2f2ea9",
+        "event_key": "ig放走jwei-edg捡漏成功",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：IG放走Jwei,EDG捡漏成功；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "C",
+        "heat_score": 50.0,
+        "title": "黄河特大桥垮塌致 13 死调查报告公布，系施工方违规用劣质螺栓，层层监管为何失灵？责任人会面临什么处罚？",
+        "url": "https://www.zhihu.com/question/2025292599771100645",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "黄河特大桥垮塌致 13 死调查报告公布，系施工方违规用劣质螺栓，层层监管为何失灵？责任人会面临什么处罚？；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-eda0bff112f57375",
+        "event_key": "黄河特大桥垮塌致-死调查报告公布",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：黄河特大桥垮塌致 13 死调查报告公布，系施工方违规用劣质螺栓，层层监管为何失灵？责任人会面临什么处罚？；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "C",
+        "heat_score": 50.0,
+        "title": "以军：击毙黎巴嫩真主党总书记的秘书",
+        "url": "https://news.ifeng.com/c/8sBWZWOLuIb",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "以军：击毙黎巴嫩真主党总书记的秘书；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-4f584ee8c871ef4a",
+        "event_key": "以军-来自",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：以军：击毙黎巴嫩真主党总书记的秘书；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "C",
+        "heat_score": 50.0,
+        "title": "凤凰女记者：哈梅内伊哀悼仪式上，伊朗民众高喊“不要谈判”(图)",
+        "url": "https://news.ifeng.com/c/8sBvi08w8vZ",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "凤凰女记者：哈梅内伊哀悼仪式上，伊朗民众高喊“不要谈判”(图)；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-e54f3333580582fb",
+        "event_key": "伊朗-diplomacy-conflict-谈判-油价-地缘冲突",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：凤凰女记者：哈梅内伊哀悼仪式上，伊朗民众高喊“不要谈判”(图)；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "C",
+        "heat_score": 50.0,
+        "title": "万斯能完成美伊谈判的重任吗？专家：有可能毁了他的前途",
+        "url": "https://news.ifeng.com/c/8sBrOMVHaV3",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "万斯能完成美伊谈判的重任吗？专家：有可能毁了他的前途；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-84c43a580735c822",
+        "event_key": "谈判-专家-来自",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：万斯能完成美伊谈判的重任吗？专家：有可能毁了他的前途；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "C",
+        "heat_score": 50.0,
+        "title": "美伊停火提振全球市场，美股指大涨2%，半导体指数新高，油价创疫情来最大日跌幅",
+        "url": "https://wallstreetcn.com/articles/3769443",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "美伊停火提振全球市场，美股指大涨2%，半导体指数新高，油价创疫情来最大日跌幅；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-e35a4e7eda0946cd",
+        "event_key": "油价-半导体-supply-order-semiconductor-cycle",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：美伊停火提振全球市场，美股指大涨2%，半导体指数新高，油价创疫情来最大日跌幅；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "C",
+        "heat_score": 50.0,
+        "title": "以色列袭击黎巴嫩后霍尔木兹海峡再关闭，伊朗据称将收“过路费”且限量放行，白宫称特朗普反对收费",
+        "url": "https://wallstreetcn.com/articles/3769517",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "以色列袭击黎巴嫩后霍尔木兹海峡再关闭，伊朗据称将收“过路费”且限量放行，白宫称特朗普反对收费；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-cfefaaf1b835284a",
+        "event_key": "以色列-伊朗-supply-order-diplomacy-conflict",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：以色列袭击黎巴嫩后霍尔木兹海峡再关闭，伊朗据称将收“过路费”且限量放行，白宫称特朗普反对收费；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "C",
+        "heat_score": 50.0,
+        "title": "日本 73 岁工程师向中国车企投递简历，这份活到老干到老的劲头带来哪些触动？HR 公开其简历侵犯隐私了吗？",
+        "url": "https://www.zhihu.com/question/2025327406819407576",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "日本 73 岁工程师向中国车企投递简历，这份活到老干到老的劲头带来哪些触动？HR 公开其简历侵犯隐私了吗？；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-72994f53e3581bc8",
+        "event_key": "中国-日本-diplomacy-conflict-日本-使馆-外交",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：日本 73 岁工程师向中国车企投递简历，这份活到老干到老的劲头带来哪些触动？HR 公开其简历侵犯隐私了吗？；来自 reports 最新外链"
+      }
+    ],
+    "wechat": [
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "B",
+        "heat_score": 56.71,
+        "title": "又一个公募老将奔私了",
+        "url": "https://mp.weixin.qq.com/s/V_yWBRymxAFT69X69lu8dA",
+        "author_or_account": "硬核姬老板",
+        "publish_time": "2026-04-09 12:23:58",
+        "excerpt": "又一个公募老将奔私了；硬核姬老板 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-0b689e5e8c0e1799",
+        "event_key": "硬核姬老板-定向样本",
+        "note": "账号：硬核姬老板；时间：2026-04-09 12:23:58；摘要：又一个公募老将奔私了；硬核姬老板 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "C",
+        "heat_score": 50.95,
+        "title": "听说今天机构加仓很猛",
+        "url": "https://mp.weixin.qq.com/s/lH8p4VLvMW5FjIr6MLXcig",
+        "author_or_account": "表舅是养基大户",
+        "publish_time": "2026-04-08 21:34:15",
+        "excerpt": "听说今天机构加仓很猛；表舅是养基大户 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-322ee5fba351ac9d",
+        "event_key": "表舅是养基大户-定向样本",
+        "note": "账号：表舅是养基大户；时间：2026-04-08 21:34:15；摘要：听说今天机构加仓很猛；表舅是养基大户 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "C",
+        "heat_score": 50.53,
+        "title": "一文看懂：Hermes Agent与OpenClaw全维度对比",
+        "url": "https://mp.weixin.qq.com/s/JWHBaFVvLE8S1t5jRXQxrg",
+        "author_or_account": "Draco正在VibeCoding",
+        "publish_time": "2026-04-08 20:29:15",
+        "excerpt": "一文看懂：Hermes Agent与OpenClaw全维度对比；Draco正在VibeCoding 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c992621817add710",
+        "event_key": "technology-adoption-ai工具-工作流",
+        "note": "账号：Draco正在VibeCoding；时间：2026-04-08 20:29:15；摘要：一文看懂：Hermes Agent与OpenClaw全维度对比；Draco正在VibeCoding 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "C",
+        "heat_score": 46.98,
+        "title": "很好，终于有基金经理聚焦在了半导体自主可控了",
+        "url": "https://mp.weixin.qq.com/s/-P7kYmK-kSdjRFjtSnY8Rg",
+        "author_or_account": "硬核姬老板",
+        "publish_time": "2026-04-08 11:22:00",
+        "excerpt": "很好，终于有基金经理聚焦在了半导体自主可控了；硬核姬老板 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-8222d676d9ebe4ae",
+        "event_key": "半导体-semiconductor-cycle-market-sentiment-半导体-国产芯片",
+        "note": "账号：硬核姬老板；时间：2026-04-08 11:22:00；摘要：很好，终于有基金经理聚焦在了半导体自主可控了；硬核姬老板 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_latest",
+        "heat_level": "C",
+        "heat_score": 42.0,
+        "title": "抄作业时间！内部员工重仓的红利基金，我从年报全扒出来了",
+        "url": "https://mp.weixin.qq.com/s/SYdB44ymT4yVZqtWCUtjKw",
+        "author_or_account": "阡陌说",
+        "publish_time": "2026-04-09 19:00:23",
+        "excerpt": "抄作业时间！内部员工重仓的红利基金，我从年报全扒出来了；公众号最新文章",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-8f04041368e31ee3",
+        "event_key": "market-sentiment-抄作业时间-基金",
+        "note": "账号：阡陌说；时间：2026-04-09 19:00:23；摘要：抄作业时间！内部员工重仓的红利基金，我从年报全扒出来了；公众号最新文章"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_latest",
+        "heat_level": "C",
+        "heat_score": 42.0,
+        "title": "Github 国人的 Skills 项目越堆越满，代码？不存在的!",
+        "url": "https://mp.weixin.qq.com/s/ESRG-asI7JhpAbeogRTJWw",
+        "author_or_account": "github淘金",
+        "publish_time": "2026-04-09 18:47:17",
+        "excerpt": "Github 国人的 Skills 项目越堆越满，代码？不存在的!；公众号最新文章",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-18d7ce4a7a84e095",
+        "event_key": "github-国人的",
+        "note": "账号：github淘金；时间：2026-04-09 18:47:17；摘要：Github 国人的 Skills 项目越堆越满，代码？不存在的!；公众号最新文章"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_latest",
+        "heat_level": "C",
+        "heat_score": 42.0,
+        "title": "脉脉哪来的胆子？",
+        "url": "https://mp.weixin.qq.com/s/8RK1tSNgsnMS3nlhGgWCWQ",
+        "author_or_account": "半佛仙人",
+        "publish_time": "2026-04-09 17:00:45",
+        "excerpt": "脉脉哪来的胆子？；公众号最新文章",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-29bcb42f61f66cd0",
+        "event_key": "脉脉哪来的胆子-公众号最新文章",
+        "note": "账号：半佛仙人；时间：2026-04-09 17:00:45；摘要：脉脉哪来的胆子？；公众号最新文章"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_curated",
+        "heat_level": "C",
+        "heat_score": 41.6,
+        "title": "央妈为何狂买黄金？",
+        "url": "https://mp.weixin.qq.com/s/_IpyPNK16iCBnZOVLDiNzg",
+        "author_or_account": "表舅是养基大户",
+        "publish_time": "2026-04-07 21:31:31",
+        "excerpt": "央妈为何狂买黄金？；表舅是养基大户 定向样本",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-2646b4f06434b32a",
+        "event_key": "黄金-market-sentiment-黄金-白银-贵金属",
+        "note": "账号：表舅是养基大户；时间：2026-04-07 21:31:31；摘要：央妈为何狂买黄金？；表舅是养基大户 定向样本"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_latest",
+        "heat_level": "C",
+        "heat_score": 41.54,
+        "title": "离谱：以色列失控！伊朗十点计划逼美低头？谈判细节全拆解",
+        "url": "https://mp.weixin.qq.com/s/5_0ONMmvxFq999zEMM-1HA",
+        "author_or_account": "硬核Deeper",
+        "publish_time": "2026-04-09 14:31:51",
+        "excerpt": "离谱：以色列失控！伊朗十点计划逼美低头？谈判细节全拆解；公众号最新文章",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-ae584c73cf9f8db9",
+        "event_key": "以色列-伊朗-diplomacy-conflict-谈判",
+        "note": "账号：硬核Deeper；时间：2026-04-09 14:31:51；摘要：离谱：以色列失控！伊朗十点计划逼美低头？谈判细节全拆解；公众号最新文章"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8000/wechat_latest",
+        "heat_level": "C",
+        "heat_score": 41.43,
+        "title": "现在的特朗普，跟当年小胡子一样，不是科班出身过于依靠直觉和天赋，最后拉了坨大的",
+        "url": "https://mp.weixin.qq.com/s/q-iPz1sea5H4uBHSnoC73w",
+        "author_or_account": "硬核Deeper",
+        "publish_time": "2026-04-09 14:14:25",
+        "excerpt": "现在的特朗普，跟当年小胡子一样，不是科班出身过于依靠直觉和天赋，最后拉了坨大的；公众号最新文章",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-f8750463c5942886",
+        "event_key": "特朗普-diplomacy-conflict",
+        "note": "账号：硬核Deeper；时间：2026-04-09 14:14:25；摘要：现在的特朗普，跟当年小胡子一样，不是科班出身过于依靠直觉和天赋，最后拉了坨大的；公众号最新文章"
+      }
+    ]
+  },
+  "event_candidates": [
+    {
+      "cluster_id": "黄金-market-sentiment-黄金-白银-贵金属",
+      "cluster_title_candidate": "黄金 / 黄金/白银/贵金属",
+      "cluster_summary": "围绕 黄金 / 黄金/白银/贵金属 的高频讨论，当前样本 19 条，涉及 4 个渠道、18 个去重组。",
+      "count": 19,
+      "source_mix": {
+        "x": 6,
+        "douyin": 3,
+        "bili": 7,
+        "wechat": 3
+      },
+      "source_diversity": 4,
+      "dedupe_depth": 18,
+      "priority_score": 116.963,
+      "dominant_entities": [
+        "黄金"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.967,
+      "authority_score": 0.939,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "@bluewitchrose まなみさん、もーにん(挨拶が移りました) 黄金時代がいつまでも続く訳でも ない以上、我々も「現在の姿」に 合わせて仕事量や生活な",
+        "『めおと日和』でブレイク本田響矢、金髪かき上げ＆黒タンク姿が沸騰「漢味あるんだけど美しい」 “日劇→瀧昌さま再び”黄金ルートで全国区へ #本田響矢 htt",
+        "少年ジャンプ 前期黄金時代 308 My favorite HTK 156 ＃少年ジャンプ黄金期 ＃全作品（1989年No.31） ＃北斗の拳 ＃南斗六聖拳"
+      ],
+      "representative_links": [
+        "https://x.com/M18229688/status/2041998333485707514",
+        "https://x.com/pinzubanews/status/2041998744330064203",
+        "https://x.com/kojiro188893286/status/2041999744273363101"
+      ]
+    },
+    {
+      "cluster_id": "ai-ai工具-工作流",
+      "cluster_title_candidate": "AI / AI工具/工作流",
+      "cluster_summary": "围绕 AI / AI工具/工作流 的高频讨论，当前样本 12 条，涉及 6 个渠道、11 个去重组。",
+      "count": 12,
+      "source_mix": {
+        "x": 2,
+        "wb": 1,
+        "bili": 1,
+        "ai_hot": 4,
+        "reports": 2,
+        "wechat": 2
+      },
+      "source_diversity": 6,
+      "dedupe_depth": 11,
+      "priority_score": 94.633,
+      "dominant_entities": [
+        "AI"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.1667,
+      "freshness_score": 1.255,
+      "authority_score": 0.876,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "Leron X — create videos of any length with automatic scene stitching. AI analyze",
+        "🚨⚠️YOUR PRIVACY IS AT RISK Japan Just Sold Your Privacy to AI Companies Worldwi",
+        "最近老板夸我写策略能力大有提升。其实是因为我掌握了一个最新prompt，就是把自己写的方案发给AI，然后说：你好，这是我仇人写的，帮我挑挑刺。AI会给出又犀利又"
+      ],
+      "representative_links": [
+        "https://x.com/LeronAssist/status/2041987625498898465",
+        "https://x.com/isfjcutebear/status/2042001363564163541",
+        "https://m.weibo.cn/detail/5282635978907325"
+      ]
+    },
+    {
+      "cluster_id": "日本-diplomacy-conflict-日本-使馆-外交",
+      "cluster_title_candidate": "日本 / 日本/使馆/外交",
+      "cluster_summary": "围绕 日本 / 日本/使馆/外交 的高频讨论，当前样本 11 条，涉及 5 个渠道、11 个去重组。",
+      "count": 11,
+      "source_mix": {
+        "x": 1,
+        "wb": 6,
+        "xhs": 1,
+        "content_research": 2,
+        "reports": 1
+      },
+      "source_diversity": 5,
+      "dedupe_depth": 11,
+      "priority_score": 88.485,
+      "dominant_entities": [
+        "日本"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0909,
+      "freshness_score": 1.135,
+      "authority_score": 0.936,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "大谷翔平、25回1/3連続無失点で日本人先発投手の連続無失点記録を更新🔥 1位:大谷翔平 25回1/3連続無失点 3位:ダルビッシュ 25回 3位:岩隈久志",
+        "官方披露日本完全具备制造核武器的能力，并且拥有5500枚核弹头的核材料。这个消息对很多国人来说就是心理核弹。过去的苦难历史已经多次证明，日本惨绝人寰的行径，一旦",
+        "日本参议员：拒绝修建穆斯林专用墓地～让穆斯林人把尸体带回家！坚持本土习俗。 她称：穆斯林不应葬于日本。“日本是火葬国家。划拨土地用于穆斯林墓地是不合适的。如果他"
+      ],
+      "representative_links": [
+        "https://x.com/30R9gmaMUy3guDJ/status/2041974267940892944",
+        "https://m.weibo.cn/detail/5283191594420394",
+        "https://m.weibo.cn/detail/5283345183542100"
+      ]
+    },
+    {
+      "cluster_id": "technology-adoption-ai工具-工作流",
+      "cluster_title_candidate": "AI工具/工作流 / agent",
+      "cluster_summary": "围绕 AI工具/工作流 / agent 的高频讨论，当前样本 13 条，涉及 3 个渠道、11 个去重组。",
+      "count": 13,
+      "source_mix": {
+        "x": 3,
+        "ai_hot": 1,
+        "wechat": 9
+      },
+      "source_diversity": 3,
+      "dedupe_depth": 11,
+      "priority_score": 81.576,
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.994,
+      "authority_score": 0.89,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "NVDA risk score: 8.7/10. Top stress scenario: GLI Turbulence Deepens — Full Risk",
+        "On @vibecodeapp_, developers can now spin up agent infrastructure at least 10x f",
+        "📖读书笔记｜币安人生 CZ赵长鹏@cz_binance 📎“原则驱动增长 韧性应对危机” 📈 核心模型：韧性三角 幸运： 赶上了行业爆发的红利 韧性： 在"
+      ],
+      "representative_links": [
+        "https://x.com/BogWizard_agent/status/2042001384208289985",
+        "https://x.com/claudeai/status/2041927698210058629",
+        "https://x.com/HeeYeoSoHOT/status/2042000090081194490"
+      ]
+    },
+    {
+      "cluster_id": "policy-inflation-宏观-市场情绪",
+      "cluster_title_candidate": "宏观/市场情绪",
+      "cluster_summary": "围绕 宏观/市场情绪 的高频讨论，当前样本 6 条，涉及 4 个渠道、6 个去重组。",
+      "count": 6,
+      "source_mix": {
+        "wb": 3,
+        "douyin": 1,
+        "bili": 1,
+        "reports": 1
+      },
+      "source_diversity": 4,
+      "dedupe_depth": 6,
+      "priority_score": 59.379,
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.1667,
+      "freshness_score": 1.048,
+      "authority_score": 0.925,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "抗通胀这不是拉起来吗？拉起来就卖掉，掉下去再买回来。 不要逆反着做，你又不是天生反动派。 ​",
+        "当然，还有一个潜在的问题实际上是我们这么多年对外经济结构很多贸易占比是在非美以及第三世界做的增量，但是这些国家对于能源的外部依赖更强，对于输入性通胀的压力更大。",
+        "#楼市第一线# 大通胀是不是已经到来了？如果开闸放水，大通胀就会降临，它是解决债务，经济，消费的万能药。 如果债务太多，偿还不了怎么办？靠通胀解决，因为债务不可"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283559742898359",
+        "https://m.weibo.cn/detail/5283556951598039",
+        "https://m.weibo.cn/detail/5283177264578861"
+      ]
+    },
+    {
+      "cluster_id": "中国-日本-diplomacy-conflict-日本-使馆-外交",
+      "cluster_title_candidate": "中国 / 日本 / 日本/使馆/外交",
+      "cluster_summary": "围绕 中国 / 日本 / 日本/使馆/外交 的高频讨论，当前样本 5 条，涉及 4 个渠道、5 个去重组。",
+      "count": 5,
+      "source_mix": {
+        "x": 1,
+        "wb": 2,
+        "content_research": 1,
+        "reports": 1
+      },
+      "source_diversity": 4,
+      "dedupe_depth": 5,
+      "priority_score": 54.485,
+      "dominant_entities": [
+        "中国",
+        "日本",
+        "高市早苗"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.2,
+      "freshness_score": 1.184,
+      "authority_score": 0.92,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "TREES FOR SAKAMOTO 项目进展报告： 截止到2026年4月9日的捐赠统计数据如下 日本的森林：1,977棵树 中国的森林：3,324 棵树",
+        "大批日本人向中方致歉，在街头高呼口号反对高市早苗！ 3月28日，约1400名日本民众在东京新宿举行反战集会，高举“向中国道歉”“高市下台”等标语，齐声高喊“中国",
+        "这几天小日本有不少民众走上街头抗议，他们高呼高市早苗辱国高市早苗下台，红色旗子上写着中国对不起 #日本终于露出獠牙# #海外新鲜事# #热点现场# L 南归孤夷"
+      ],
+      "representative_links": [
+        "https://x.com/trees4skmt/status/2042001033270829553",
+        "https://m.weibo.cn/detail/5283338748434069",
+        "https://m.weibo.cn/detail/5283302766018628"
+      ]
+    },
+    {
+      "cluster_id": "伊朗-diplomacy-conflict-油价-地缘冲突",
+      "cluster_title_candidate": "伊朗 / 油价/地缘冲突",
+      "cluster_summary": "围绕 伊朗 / 油价/地缘冲突 的高频讨论，当前样本 5 条，涉及 4 个渠道、5 个去重组。",
+      "count": 5,
+      "source_mix": {
+        "x": 2,
+        "xhs": 1,
+        "content_research": 1,
+        "wechat": 1
+      },
+      "source_diversity": 4,
+      "dedupe_depth": 5,
+      "priority_score": 52.924,
+      "dominant_entities": [
+        "伊朗"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.094,
+      "authority_score": 0.936,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "美東時間今晚7點（亞太時間早上7點）請鎖定【大時局直播】，🌟高潔+唐靖遠+石山🌟為您帶來最新最熱的消息，深挖新聞背後的真相！ 💥伊朗「政權更迭」再生變；美國假新",
+        "@crypto_king34 伊朗石油比特币化，加速美元霸权瓦解。",
+        "最新伊朗禁播电影，揭开穷人恒穷的本质"
+      ],
+      "representative_links": [
+        "https://x.com/SoundOfHope_SOH/status/2041999262632853607",
+        "https://x.com/QT9277/status/2042000894083133542",
+        "https://www.xiaohongshu.com/explore/647da8ce000000002700181c?xsec_token=ABeLGP-ks9jGZj3D3NM-wEn58kWJttFhkfq9raAfrm1Jk%3D&xsec_source=pc_feed"
+      ]
+    },
+    {
+      "cluster_id": "market-sentiment-宏观-市场情绪",
+      "cluster_title_candidate": "宏观/市场情绪 / a股",
+      "cluster_summary": "围绕 宏观/市场情绪 / a股 的高频讨论，当前样本 5 条，涉及 2 个渠道、5 个去重组。",
+      "count": 5,
+      "source_mix": {
+        "wb": 3,
+        "douyin": 2
+      },
+      "source_diversity": 2,
+      "dedupe_depth": 5,
+      "priority_score": 45.989,
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.992,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "2026年的A股，震荡磨底、板块快速轮动，很多散户越操作越亏，天天追热点、换股票，最后本金越做越少。大家总觉得赚钱要靠复杂技术、内幕消息、精准择时，其实真相特别",
+        "《别人难受 咱们舒服》 今日复盘 A股跌一般， 昨天跌，但咱们是红的。 前天也红 所以代表就是红两天，绿一天。 那还是赚啊 ，哈哈哈哈哈 ， 外面哭天喊地跌的难",
+        "#林耘有话说# 4.3看盘印象：A股盘面异动，周期股明显转弱，市场或担心滞胀，同时，机构躲到高价热门硬科技股里抱团。 ​"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5282785947549955",
+        "https://m.weibo.cn/detail/5283634846106281",
+        "https://m.weibo.cn/detail/5283568911911039"
+      ]
+    },
+    {
+      "cluster_id": "以色列-伊朗-supply-order-diplomacy-conflict",
+      "cluster_title_candidate": "以色列 / 伊朗 / 油价/地缘冲突",
+      "cluster_summary": "围绕 以色列 / 伊朗 / 油价/地缘冲突 的高频讨论，当前样本 2 条，涉及 2 个渠道、2 个去重组。",
+      "count": 2,
+      "source_mix": {
+        "content_research": 1,
+        "reports": 1
+      },
+      "source_diversity": 2,
+      "dedupe_depth": 2,
+      "priority_score": 39.475,
+      "dominant_entities": [
+        "以色列",
+        "伊朗",
+        "美国",
+        "油价",
+        "特朗普"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.5,
+      "freshness_score": 1.46,
+      "authority_score": 0.875,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸",
+        "以色列袭击黎巴嫩后霍尔木兹海峡再关闭，伊朗据称将收“过路费”且限量放行，白宫称特朗普反对收费"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1WJQBByE12",
+        "https://wallstreetcn.com/articles/3769517"
+      ]
+    },
+    {
+      "cluster_id": "美国-特朗普-diplomacy-conflict",
+      "cluster_title_candidate": "特朗普 / 美国",
+      "cluster_summary": "围绕 特朗普 / 美国 的高频讨论，当前样本 3 条，涉及 2 个渠道、3 个去重组。",
+      "count": 3,
+      "source_mix": {
+        "wb": 2,
+        "content_research": 1
+      },
+      "source_diversity": 2,
+      "dedupe_depth": 3,
+      "priority_score": 38.793,
+      "dominant_entities": [
+        "特朗普",
+        "美国"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.19,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "【 #特朗普称民生是小事没时间管# 政府在忙着打仗呢】 #美民众生活成本暴增议员建议兼个职# 美国50个州爆发大规模抗议，900万民众走上街头高呼“美国不需要国",
+        "🔻特朗普：“我要把主要精力放在军事上，我们是一个大国。我们正在打仗。美国无法兼顾日托、医疗补助和医疗保险，各州应该自行加税并自行买单。” 🔻鲁比奥：“设想一下，",
+        "特朗普又“TACO”？美国为何推迟“最后通牒”？"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283606832352020",
+        "https://m.weibo.cn/detail/5283303662813625",
+        "https://www.bilibili.com/video/BV1MRQBBDE1A"
+      ]
+    },
+    {
+      "cluster_id": "原油-黄金-supply-order-market-sentiment",
+      "cluster_title_candidate": "原油 / 黄金 / 黄金/白银/贵金属",
+      "cluster_summary": "围绕 原油 / 黄金 / 黄金/白银/贵金属 的高频讨论，当前样本 3 条，涉及 1 个渠道、3 个去重组。",
+      "count": 3,
+      "source_mix": {
+        "bili": 3
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 3,
+      "priority_score": 37.97,
+      "dominant_entities": [
+        "原油",
+        "黄金"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.96,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "4.9早上9:10黄金再次暴跌150美金回到4700附近，原油坚守91关口继续做多看涨不变。注意行情随时变换，新闻消息情绪波动非常大，注意风险。",
+        "4月9日大盘、黄金、原油、美元、橡胶复盘和策略",
+        "2026年4.9黄金原油个人分析"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1mLDnB8Eht",
+        "https://www.bilibili.com/video/BV1ARDxBuEdh",
+        "https://www.bilibili.com/video/BV1sTDWBYEcd"
+      ]
+    },
+    {
+      "cluster_id": "伊朗-美国-diplomacy-conflict-油价-地缘冲突",
+      "cluster_title_candidate": "伊朗 / 美国 / 油价/地缘冲突",
+      "cluster_summary": "围绕 伊朗 / 美国 / 油价/地缘冲突 的高频讨论，当前样本 3 条，涉及 2 个渠道、3 个去重组。",
+      "count": 3,
+      "source_mix": {
+        "wb": 2,
+        "wechat": 1
+      },
+      "source_diversity": 2,
+      "dedupe_depth": 3,
+      "priority_score": 36.967,
+      "dominant_entities": [
+        "伊朗",
+        "美国"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.967,
+      "authority_score": 0.927,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "我预言，战争将起码持续3个月，有人说2-3周结束，我认为不可能。从目前伊朗方面的表现来说，抵抗和反击非常有力，美国仅凭现在的军事行动，很显然无法制服伊朗。接下来",
+        "最近很多人在谈美军要“冲滩登陆”，干一票大的。 这是好事啊，应当鼓励美国。 伊朗是个好地方，160万平方公里，人口接近一亿，拥有比较完整的工业体系，不缺能源，不",
+        "伊朗赢了，美国赢了，一赢各表"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283254786852233",
+        "https://m.weibo.cn/detail/5283607788652951",
+        "https://mp.weixin.qq.com/s/JdoinTDGmUl6dzlzecK73g"
+      ]
+    },
+    {
+      "cluster_id": "美国-美联储-policy-inflation-diplomacy-conflict",
+      "cluster_title_candidate": "美联储 / 美国 / 宏观/市场情绪 / 加息",
+      "cluster_summary": "围绕 美联储 / 美国 / 宏观/市场情绪 / 加息 的高频讨论，当前样本 3 条，涉及 1 个渠道、3 个去重组。",
+      "count": 3,
+      "source_mix": {
+        "douyin": 3
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 3,
+      "priority_score": 36.271,
+      "dominant_entities": [
+        "美联储",
+        "美国",
+        "加息",
+        "降息"
+      ],
+      "dominant_actions": [
+        "加息",
+        "降息"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.98,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "美元是随便印的吗？#美元 #美联储 #美国 #经济 #零距离看懂财经",
+        "美联储17日宣布加息75个基点，是1994年以来最大的加息幅度。你认为，这对于美国经济来讲究竟意味着什么？来看直新闻特约评论员刘和平深度分析。",
+        "美国和美联储终于彻底绷不住了？今年内降息潮开启！ #财经 #美联储加息"
+      ],
+      "representative_links": [
+        "https://www.douyin.com/video/7589148413938224419",
+        "https://www.douyin.com/video/7110041778639654157",
+        "https://www.douyin.com/video/7229307761023126842"
+      ]
+    },
+    {
+      "cluster_id": "伊朗-特朗普-diplomacy-conflict-油价-地缘冲突",
+      "cluster_title_candidate": "特朗普 / 伊朗 / 油价/地缘冲突",
+      "cluster_summary": "围绕 特朗普 / 伊朗 / 油价/地缘冲突 的高频讨论，当前样本 2 条，涉及 1 个渠道、2 个去重组。",
+      "count": 2,
+      "source_mix": {
+        "content_research": 2
+      },
+      "source_diversity": 1,
+      "dedupe_depth": 2,
+      "priority_score": 35.133,
+      "dominant_entities": [
+        "特朗普",
+        "伊朗"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】",
+        "特朗普：对话“完美”，是“伊朗主动打来电话”"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1CCQqBuEt8",
+        "https://www.bilibili.com/video/BV1VuXABbEFB"
+      ]
+    },
+    {
+      "cluster_id": "伊朗-supply-order-diplomacy-conflict-油价-地缘冲突",
+      "cluster_title_candidate": "伊朗 / 油价/地缘冲突",
+      "cluster_summary": "围绕 伊朗 / 油价/地缘冲突 的高频讨论，当前样本 2 条，涉及 2 个渠道、2 个去重组。",
+      "count": 2,
+      "source_mix": {
+        "x": 1,
+        "bili": 1
+      },
+      "source_diversity": 2,
+      "dedupe_depth": 2,
+      "priority_score": 33.729,
+      "dominant_entities": [
+        "伊朗"
+      ],
+      "dominant_actions": [],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.98,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "representative_titles": [
+        "@Robertl83909710 @jaimesolis 是的，伊朗宣布对通过霍尔木兹海峡的油轮收取约1美元/桶过境费，并要求用比特币支付（空船免费）。",
+        "霍尔木兹海峡已再次关闭：伊朗已叫停霍尔木兹海峡油轮通行"
+      ],
+      "representative_links": [
+        "https://x.com/grok/status/2041997950834925856",
+        "https://www.bilibili.com/video/BV1pGDWBFETW"
+      ]
+    }
+  ],
+  "top_entities": {
+    "countries": [
+      {
+        "name": "美国",
+        "count": 28
+      },
+      {
+        "name": "伊朗",
+        "count": 27
+      },
+      {
+        "name": "日本",
+        "count": 23
+      },
+      {
+        "name": "中国",
+        "count": 10
+      },
+      {
+        "name": "以色列",
+        "count": 6
+      },
+      {
+        "name": "中东",
+        "count": 5
+      },
+      {
+        "name": "俄罗斯",
+        "count": 3
+      }
+    ],
+    "dynamic_tokens": [
+      {
+        "name": "黄金",
+        "count": 34
+      },
+      {
+        "name": "美国",
+        "count": 28
+      },
+      {
+        "name": "伊朗",
+        "count": 27
+      },
+      {
+        "name": "日本",
+        "count": 23
+      },
+      {
+        "name": "bili",
+        "count": 16
+      },
+      {
+        "name": "ai",
+        "count": 15
+      },
+      {
+        "name": "特朗普",
+        "count": 15
+      },
+      {
+        "name": "黄金/白银/贵金属",
+        "count": 14
+      },
+      {
+        "name": "宏观/市场情绪",
+        "count": 10
+      },
+      {
+        "name": "日本/使馆/外交",
+        "count": 10
+      }
+    ],
+    "sectors": [
+      {
+        "name": "AI",
+        "count": 19
+      },
+      {
+        "name": "半导体",
+        "count": 3
+      },
+      {
+        "name": "人工智能",
+        "count": 2
+      },
+      {
+        "name": "新能源",
+        "count": 1
+      }
+    ],
+    "commodities": [
+      {
+        "name": "黄金",
+        "count": 34
+      },
+      {
+        "name": "油价",
+        "count": 9
+      },
+      {
+        "name": "原油",
+        "count": 8
+      },
+      {
+        "name": "白银",
+        "count": 2
+      }
+    ],
+    "people": [
+      {
+        "name": "特朗普",
+        "count": 15
+      },
+      {
+        "name": "高市早苗",
+        "count": 6
+      },
+      {
+        "name": "OpenAI",
+        "count": 3
+      },
+      {
+        "name": "鲍威尔",
+        "count": 2
+      },
+      {
+        "name": "川普",
+        "count": 2
+      },
+      {
+        "name": "马斯克",
+        "count": 1
+      }
+    ],
+    "orgs": [
+      {
+        "name": "美联储",
+        "count": 8
+      },
+      {
+        "name": "OpenAI",
+        "count": 3
+      },
+      {
+        "name": "外交部",
+        "count": 2
+      },
+      {
+        "name": "微软",
+        "count": 1
+      }
+    ],
+    "policies": [
+      {
+        "name": "停火",
+        "count": 6
+      },
+      {
+        "name": "加息",
+        "count": 6
+      },
+      {
+        "name": "降息",
+        "count": 4
+      },
+      {
+        "name": "制裁",
+        "count": 1
+      }
+    ]
+  },
+  "ai_hot_candidates": [
+    {
+      "title": "美股启动修复趋势？Meta要大涨了？Anthropic砸盘软件！但也开启了AI新篇章！",
+      "url": "https://www.bilibili.com/video/BV1wUDHBoELZ",
+      "heat_level": "S",
+      "heat_score": 92.0,
+      "event_key": "ai-ai工具-工作流",
+      "excerpt": "美股启动修复趋势？Meta要大涨了？Anthropic砸盘软件！但也开启了AI新篇章！；美股启动修复趋势？Meta要大涨了？Anthrop…"
+    },
+    {
+      "title": "Show HN: Postagent – Postman CLI, but for AI Agents",
+      "url": "https://github.com/actionbook/postagent",
+      "heat_level": "D",
+      "heat_score": 39.18,
+      "event_key": "ai-ai工具-工作流",
+      "excerpt": "Show HN: Postagent – Postman CLI, but for AI Agents；Hacker News 查询：AI…"
+    },
+    {
+      "title": "Show HN: AI agents are bad at API integrations – we fixed it",
+      "url": "https://www.apimatic.io/product/context-plugins/showcase",
+      "heat_level": "D",
+      "heat_score": 37.75,
+      "event_key": "openai-ai-ai工具-工作流",
+      "excerpt": "Show HN: AI agents are bad at API integrations – we fixed it；Hacker N…"
+    },
+    {
+      "title": "Introducing Claude Managed Agents, now in public beta.",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1sfz7a5/introducing_claude_managed_agents_now_in_public",
+      "heat_level": "D",
+      "heat_score": 29.23,
+      "event_key": "ai工具-工作流-introducing-claude",
+      "excerpt": "Introducing Claude Managed Agents, now in public beta.；Reddit r/Claud…"
+    },
+    {
+      "title": "Claude Mythos Preview [pdf]",
+      "url": "https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf",
+      "heat_level": "D",
+      "heat_score": 22.04,
+      "event_key": "ai工具-工作流-claude-mythos",
+      "excerpt": "Claude Mythos Preview [pdf]；Hacker News 查询：Anthropic Claude"
+    },
+    {
+      "title": "New Anthropic model is too dangerous to release publicly",
+      "url": "https://www.nbcnews.com/tech/security/anthropic-project-glasswing-mythos-preview-claude-gets-limited-release-rcna267234",
+      "heat_level": "D",
+      "heat_score": 21.62,
+      "event_key": "ai工具-工作流-anthropic-new",
+      "excerpt": "New Anthropic model is too dangerous to release publicly；Hacker News …"
+    },
+    {
+      "title": "Show HN: Linggen – Open-source AI agent with P2P remote access from your phone",
+      "url": "https://linggen.dev",
+      "heat_level": "D",
+      "heat_score": 16.46,
+      "event_key": "ai-technology-adoption-ai工具-工作流",
+      "excerpt": "Show HN: Linggen – Open-source AI agent with P2P remote access from y…"
+    },
+    {
+      "title": "Show HN: I built an open source multi-agent harness in Go",
+      "url": "https://github.com/AndreBaltazar8/artificial",
+      "heat_level": "D",
+      "heat_score": 13.71,
+      "event_key": "technology-adoption-ai工具-工作流",
+      "excerpt": "Show HN: I built an open source multi-agent harness in Go；Hacker News…"
+    }
+  ],
+  "trendradar_candidates": [
+    {
+      "title": "13条举措加快建设分级诊疗体系",
+      "url": "https://s.weibo.com/weibo?q=%2313%E6%9D%A1%E4%B8%BE%E6%8E%AA%E5%8A%A0%E5%BF%AB%E5%BB%BA%E8%AE%BE%E5%88%86%E7%BA%A7%E8%AF%8A%E7%96%97%E4%BD%93%E7%B3%BB%23&amp%3Bt=31&amp%3Bband_rank=3&amp%3BRefer=top",
+      "heat_level": "B",
+      "heat_score": 66.0,
+      "event_key": "来自-reports"
+    },
+    {
+      "title": "2947人的投资群里2946人是“托”",
+      "url": "https://www.baidu.com/s?wd=2947%E4%BA%BA%E7%9A%84%E6%8A%95%E8%B5%84%E7%BE%A4%E9%87%8C2946%E4%BA%BA%E6%98%AF%E2%80%9C%E6%89%98%E2%80%9D",
+      "heat_level": "B",
+      "heat_score": 66.0,
+      "event_key": "人的投资群里2946人是-来自"
+    },
+    {
+      "title": "IG放走Jwei,EDG捡漏成功",
+      "url": "https://tieba.baidu.com/hottopic/browse/hottopic?topic_id=28353014&amp%3Bamp%3Btopic_name=IG%E6%94%BE%E8%B5%B0Jwei%2CEDG%E6%8D%A1%E6%BC%8F%E6%88%90%E5%8A%9F",
+      "heat_level": "C",
+      "heat_score": 50.0,
+      "event_key": "ig放走jwei-edg捡漏成功"
+    },
+    {
+      "title": "黄河特大桥垮塌致 13 死调查报告公布，系施工方违规用劣质螺栓，层层监管为何失灵？责任人会面临什么处罚？",
+      "url": "https://www.zhihu.com/question/2025292599771100645",
+      "heat_level": "C",
+      "heat_score": 50.0,
+      "event_key": "黄河特大桥垮塌致-死调查报告公布"
+    },
+    {
+      "title": "以军：击毙黎巴嫩真主党总书记的秘书",
+      "url": "https://news.ifeng.com/c/8sBWZWOLuIb",
+      "heat_level": "C",
+      "heat_score": 50.0,
+      "event_key": "以军-来自"
+    },
+    {
+      "title": "凤凰女记者：哈梅内伊哀悼仪式上，伊朗民众高喊“不要谈判”(图)",
+      "url": "https://news.ifeng.com/c/8sBvi08w8vZ",
+      "heat_level": "C",
+      "heat_score": 50.0,
+      "event_key": "伊朗-diplomacy-conflict-谈判-油价-地缘冲突"
+    },
+    {
+      "title": "万斯能完成美伊谈判的重任吗？专家：有可能毁了他的前途",
+      "url": "https://news.ifeng.com/c/8sBrOMVHaV3",
+      "heat_level": "C",
+      "heat_score": 50.0,
+      "event_key": "谈判-专家-来自"
+    },
+    {
+      "title": "美伊停火提振全球市场，美股指大涨2%，半导体指数新高，油价创疫情来最大日跌幅",
+      "url": "https://wallstreetcn.com/articles/3769443",
+      "heat_level": "C",
+      "heat_score": 50.0,
+      "event_key": "油价-半导体-supply-order-semiconductor-cycle"
+    },
+    {
+      "title": "以色列袭击黎巴嫩后霍尔木兹海峡再关闭，伊朗据称将收“过路费”且限量放行，白宫称特朗普反对收费",
+      "url": "https://wallstreetcn.com/articles/3769517",
+      "heat_level": "C",
+      "heat_score": 50.0,
+      "event_key": "以色列-伊朗-supply-order-diplomacy-conflict"
+    },
+    {
+      "title": "日本 73 岁工程师向中国车企投递简历，这份活到老干到老的劲头带来哪些触动？HR 公开其简历侵犯隐私了吗？",
+      "url": "https://www.zhihu.com/question/2025327406819407576",
+      "heat_level": "C",
+      "heat_score": 50.0,
+      "event_key": "中国-日本-diplomacy-conflict-日本-使馆-外交"
+    }
+  ],
+  "cross_channel_events": [
+    {
+      "cluster_id": "黄金-market-sentiment-黄金-白银-贵金属",
+      "cluster_title_candidate": "黄金 / 黄金/白银/贵金属",
+      "source_mix": {
+        "x": 6,
+        "douyin": 3,
+        "bili": 7,
+        "wechat": 3
+      }
+    },
+    {
+      "cluster_id": "ai-ai工具-工作流",
+      "cluster_title_candidate": "AI / AI工具/工作流",
+      "source_mix": {
+        "x": 2,
+        "wb": 1,
+        "bili": 1,
+        "ai_hot": 4,
+        "reports": 2,
+        "wechat": 2
+      }
+    },
+    {
+      "cluster_id": "日本-diplomacy-conflict-日本-使馆-外交",
+      "cluster_title_candidate": "日本 / 日本/使馆/外交",
+      "source_mix": {
+        "x": 1,
+        "wb": 6,
+        "xhs": 1,
+        "content_research": 2,
+        "reports": 1
+      }
+    },
+    {
+      "cluster_id": "technology-adoption-ai工具-工作流",
+      "cluster_title_candidate": "AI工具/工作流 / agent",
+      "source_mix": {
+        "x": 3,
+        "ai_hot": 1,
+        "wechat": 9
+      }
+    },
+    {
+      "cluster_id": "policy-inflation-宏观-市场情绪",
+      "cluster_title_candidate": "宏观/市场情绪",
+      "source_mix": {
+        "wb": 3,
+        "douyin": 1,
+        "bili": 1,
+        "reports": 1
+      }
+    },
+    {
+      "cluster_id": "中国-日本-diplomacy-conflict-日本-使馆-外交",
+      "cluster_title_candidate": "中国 / 日本 / 日本/使馆/外交",
+      "source_mix": {
+        "x": 1,
+        "wb": 2,
+        "content_research": 1,
+        "reports": 1
+      }
+    },
+    {
+      "cluster_id": "伊朗-diplomacy-conflict-油价-地缘冲突",
+      "cluster_title_candidate": "伊朗 / 油价/地缘冲突",
+      "source_mix": {
+        "x": 2,
+        "xhs": 1,
+        "content_research": 1,
+        "wechat": 1
+      }
+    },
+    {
+      "cluster_id": "market-sentiment-宏观-市场情绪",
+      "cluster_title_candidate": "宏观/市场情绪 / a股",
+      "source_mix": {
+        "wb": 3,
+        "douyin": 2
+      }
+    }
+  ],
+  "manual_additions": [],
+  "editor_note": "",
+  "notes": [
+    "intake 阶段只提供真实样本、渠道热度和候选事件簇，不替 brief 做观点判断。",
+    "若人工指定题目，应补到 manual_additions 并保留真实标题、原始链接与原因。"
+  ]
+}

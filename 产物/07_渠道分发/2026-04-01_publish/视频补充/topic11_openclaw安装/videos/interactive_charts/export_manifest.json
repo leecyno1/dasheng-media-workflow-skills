@@ -1,0 +1,46 @@
+{
+  "input_scenes": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic11_openclaw安装/inputs/interactive_charts_deck.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic11_openclaw安装/videos/interactive_charts",
+  "base_url": "http://127.0.0.1:8787",
+  "started_at": "2026-04-01T03:13:43.402Z",
+  "finished_at": "2026-04-01T03:14:17.200Z",
+  "scene_count": 4,
+  "exported": [
+    {
+      "scene_id": "topic11-chart-01",
+      "scene_label": "图表：install flow nodes",
+      "template": "barGrow",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic11_openclaw安装/videos/interactive_charts/01__topic11-chart-01__图表-install-flow-nodes.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic11_openclaw安装/videos/interactive_charts/01__topic11-chart-01__图表-install-flow-nodes.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic11_openclaw安装/videos/interactive_charts/01__topic11-chart-01__图表-install-flow-nodes.png"
+    },
+    {
+      "scene_id": "topic11-chart-02",
+      "scene_label": "图表：security boundary",
+      "template": "barGrow",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic11_openclaw安装/videos/interactive_charts/02__topic11-chart-02__图表-security-boundary.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic11_openclaw安装/videos/interactive_charts/02__topic11-chart-02__图表-security-boundary.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic11_openclaw安装/videos/interactive_charts/02__topic11-chart-02__图表-security-boundary.png"
+    },
+    {
+      "scene_id": "topic11-chart-03",
+      "scene_label": "图表：team governance nodes",
+      "template": "barGrow",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic11_openclaw安装/videos/interactive_charts/03__topic11-chart-03__图表-team-governance-nodes.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic11_openclaw安装/videos/interactive_charts/03__topic11-chart-03__图表-team-governance-nodes.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic11_openclaw安装/videos/interactive_charts/03__topic11-chart-03__图表-team-governance-nodes.png"
+    },
+    {
+      "scene_id": "topic11-chart-04",
+      "scene_label": "图表：troubleshoot nodes",
+      "template": "barGrow",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic11_openclaw安装/videos/interactive_charts/04__topic11-chart-04__图表-troubleshoot-nodes.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic11_openclaw安装/videos/interactive_charts/04__topic11-chart-04__图表-troubleshoot-nodes.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic11_openclaw安装/videos/interactive_charts/04__topic11-chart-04__图表-troubleshoot-nodes.png"
+    }
+  ]
+}

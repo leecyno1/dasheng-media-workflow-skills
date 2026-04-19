@@ -1,0 +1,65 @@
+{
+  "template_id": "market_story",
+  "template_name": "市场叙事面板 (Market Story Panel)",
+  "worldmonitor_project": "/Volumes/PSSD/Projects/worldmonitor",
+  "worldmonitor_data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+  "worldmonitor_public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+  "worldmonitor_entry": "index.html",
+  "proxy_port": 8787,
+  "current_status": "inactive",
+  "inputs": [
+    "article.md",
+    "scene_plan.json",
+    "charts/*.csv",
+    "charts/*.png",
+    "key_metrics.json"
+  ],
+  "preferred_components": [
+    "MarketPanel",
+    "EconomicPanel",
+    "CountryTimeline"
+  ],
+  "page_modules": [
+    "hero-summary",
+    "key-metrics-strip",
+    "timeline-repricing",
+    "chart-gallery",
+    "embedded-video"
+  ],
+  "chart_anchor_ids": [
+    "chart01",
+    "chart02",
+    "chart03"
+  ],
+  "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+  "artifact_tag": "layer5_finance_market_story",
+  "topic_slug": "t003",
+  "topic_title": "全球央行大规模抛售美债引发金融市场系统性风险担忧",
+  "core_claim": "全球央行大规模抛售美债反映出对美债安全性和美国财政稳健性的深层质疑，已引发全球金融市场系统性风险的显著担忧，影响全球资本流动、市场流动性及投资者资产配置策略。",
+  "required_csvs": [
+    "charts/csv/chart01.csv",
+    "charts/csv/chart02.csv",
+    "charts/csv/chart03.csv"
+  ],
+  "required_pngs": [
+    "charts/png/chart01.png",
+    "charts/png/chart02.png",
+    "charts/png/chart03.png"
+  ],
+  "narrative_schema": "timeline_then_signals",
+  "data_granularity": "daily",
+  "risk_scenarios": [
+    "再通胀抬升",
+    "增长走弱",
+    "利率高位钝化",
+    "风险偏好回升"
+  ],
+  "key_metrics_to_emit": [
+    "SPX",
+    "US10Y",
+    "Oil",
+    "Gold",
+    "Breakeven10Y"
+  ],
+  "layout_hint": "market_panel_left + chart_gallery_right + metrics_strip_bottom"
+}

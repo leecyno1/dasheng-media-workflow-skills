@@ -1,0 +1,82 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "tc001",
+    "topic_name": "鲍威尔讲话逆转加息预期，缓解特朗普经济压力",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc001",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 2,
+    "topic_id": "tc002",
+    "topic_name": "俄罗斯断供日本油气，加剧全球能源地缘政治风险",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc002",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 3,
+    "topic_id": "tc003",
+    "topic_name": "中东冲突激化推升油价，市场押注美联储延续降息周期",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc003",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 4,
+    "topic_id": "tc004",
+    "topic_name": "伊朗对霍尔木兹海峡的控制成为其战略“核武器”",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc004",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 5,
+    "topic_id": "tc005",
+    "topic_name": "美以联军在伊朗遭遇挫败，抵抗力量激活“抵抗之弧”",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc005",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 6,
+    "topic_id": "tc006",
+    "topic_name": "多国央行降息开启宽松周期，应对经济下行压力",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc006",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 7,
+    "topic_id": "tc007",
+    "topic_name": "中国散户3月大幅净买入股票，反映市场风险偏好回升",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc007",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 8,
+    "topic_id": "tc008",
+    "topic_name": "美军极端军事计划曝光，彰显美伊冲突升级风险",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc008",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 9,
+    "topic_id": "tc009",
+    "topic_name": "俄罗斯重新列28名日本人为战犯，俄日关系紧张升级",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc009",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 10,
+    "topic_id": "tc010",
+    "topic_name": "英伟达期权异动反映AI芯片行业估值重估",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc010",
+    "source_status": "ai_generated"
+  }
+]

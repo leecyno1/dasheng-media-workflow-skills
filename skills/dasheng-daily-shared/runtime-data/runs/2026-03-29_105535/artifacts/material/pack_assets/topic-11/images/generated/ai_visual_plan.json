@@ -1,0 +1,75 @@
+{
+  "cover_prompt": "围绕“一键安装OpenClaw+常用skills，你奶奶5分钟也能用上龙虾”生成封面，突出 一键安装OpenClaw 与 常用skills 的冲突感，适合财经/时政深度内容封面，避免口播截图感。",
+  "infographic_prompts": [
+    "基于题目“一键安装OpenClaw+常用skills，你奶奶5分钟也能用上龙虾”生成一张 dense-modules 信息图，拆出 4 个核心观点、4 个证据位、2 个风险位。",
+    "基于主判断“核心不是“能不能装上”，而是把高门槛环境配置降维成可复用、可审计、可回滚的标准化流程。”生成一张 hierarchical-layers 信息图，把表象、机制、影响、建议四层可视化。",
+    "为“一键安装OpenClaw+常用skills，你奶奶5分钟也能用上龙虾”生成一张 winding-roadmap 或 map 叙事信息图，展示事件推进、角色、地区外溢。"
+  ],
+  "comic_storyboard": [
+    {
+      "frame_id": "comic-01",
+      "title": "Hook",
+      "visual_prompt": "连环画第 1 格：一键安装OpenClaw 相关冲突现场，多人场景，动态感强。风格统一，适合视频插画，不要真人采访截图感。",
+      "caption_hint": "先抛问题：一键安装OpenClaw+常用skills，你奶奶5分钟也能用上龙虾"
+    },
+    {
+      "frame_id": "comic-02",
+      "title": "Thesis",
+      "visual_prompt": "连环画第 2 格：一键安装OpenClaw 与 常用skills 的对峙式构图。风格统一，适合视频插画，不要真人采访截图感。",
+      "caption_hint": "给判断：核心不是“能不能装上”，而是把高门槛环境配置降维成可复用、可审计、可回滚的标准化流程。"
+    },
+    {
+      "frame_id": "comic-03",
+      "title": "Mechanism-1",
+      "visual_prompt": "连环画第 3 格：机制拆解信息图，突出 一键安装OpenClaw。风格统一，适合视频插画，不要真人采访截图感。",
+      "caption_hint": "第一层机制"
+    },
+    {
+      "frame_id": "comic-04",
+      "title": "Mechanism-2",
+      "visual_prompt": "连环画第 4 格：关键变量图表与群体场景并置。风格统一，适合视频插画，不要真人采访截图感。",
+      "caption_hint": "第二层机制"
+    },
+    {
+      "frame_id": "comic-05",
+      "title": "Evidence-1",
+      "visual_prompt": "连环画第 5 格：议会/演讲/军演/港口四宫格场景。风格统一，适合视频插画，不要真人采访截图感。",
+      "caption_hint": "证据 1"
+    },
+    {
+      "frame_id": "comic-06",
+      "title": "Evidence-2",
+      "visual_prompt": "连环画第 6 格：东亚或中东风险地图，航运线与节点清晰。风格统一，适合视频插画，不要真人采访截图感。",
+      "caption_hint": "证据 2"
+    },
+    {
+      "frame_id": "comic-07",
+      "title": "Conflict",
+      "visual_prompt": "连环画第 7 格：多方拉扯场景，增强对立与张力。风格统一，适合视频插画，不要真人采访截图感。",
+      "caption_hint": "冲突升级"
+    },
+    {
+      "frame_id": "comic-08",
+      "title": "Risk",
+      "visual_prompt": "连环画第 8 格：风险分叉图或情景树。风格统一，适合视频插画，不要真人采访截图感。",
+      "caption_hint": "如果继续演化会怎样"
+    },
+    {
+      "frame_id": "comic-09",
+      "title": "Advice",
+      "visual_prompt": "连环画第 9 格：投资/观察清单卡片。风格统一，适合视频插画，不要真人采访截图感。",
+      "caption_hint": "给建议或观察变量"
+    },
+    {
+      "frame_id": "comic-10",
+      "title": "CTA",
+      "visual_prompt": "连环画第 10 格：回到主问题的封口画面。风格统一，适合视频插画，不要真人采访截图感。",
+      "caption_hint": "结尾收束与 CTA"
+    }
+  ],
+  "meme_prompts": [
+    "梗图：熊猫、鹰和武士在地图边上拉扯航运线，表达“安全叙事外溢到贸易与供应链”。",
+    "梗图：政客在舞台上高喊强硬口号，后台堆满老龄化、外劳、财政压力账单，表达“强硬叙事背后的结构困境”。",
+    "梗图：多国棋手围着东亚地图下棋，棋盘边缘是油轮和芯片，表达“地区安全波动影响全球市场”。"
+  ]
+}

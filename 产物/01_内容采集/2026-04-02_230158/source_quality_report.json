@@ -1,0 +1,47 @@
+{
+  "run_id": "2026-04-02_230158",
+  "generated_at": "2026-04-02T23:01:58.139654+08:00",
+  "tier_distribution": {
+    "platform_hotspot": 368,
+    "official": 11,
+    "mainstream_media": 3
+  },
+  "top_sources": [
+    {
+      "source": "5173/x",
+      "count": 100
+    },
+    {
+      "source": "5173/wb",
+      "count": 100
+    },
+    {
+      "source": "5173/xhs",
+      "count": 50
+    },
+    {
+      "source": "5173/douyin",
+      "count": 50
+    },
+    {
+      "source": "5173/bili",
+      "count": 50
+    },
+    {
+      "source": "8001/wechat_curated",
+      "count": 20
+    },
+    {
+      "source": "5173/content_research",
+      "count": 12
+    }
+  ],
+  "noise_sample_ratio": 0.0131,
+  "tier_notes": {
+    "official": "官方与监管/机构源，可优先用于证据链。",
+    "mainstream_media": "主流媒体与权威财经媒体。",
+    "platform_hotspot": "平台热度源，适合发现话题，不适合直接下结论。",
+    "self_media": "垂类公众号/自媒体，适合视角参考。",
+    "personal_opinion": "个人表达，应谨慎入正文。"
+  }
+}

@@ -1,0 +1,1775 @@
+{
+  "OpenAI": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "fuglede_"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Nvidia Ising – <em>Open AI</em> Models for Quantum Computing"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.nvidia.com/en-us/solutions/quantum-computing/ising/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_fuglede_",
+          "story_47789224"
+        ],
+        "author": "fuglede_",
+        "created_at": "2026-04-16T06:01:23Z",
+        "created_at_i": 1776319283,
+        "num_comments": 0,
+        "objectID": "47789224",
+        "points": 1,
+        "story_id": 47789224,
+        "title": "Nvidia Ising – Open AI Models for Quantum Computing",
+        "updated_at": "2026-04-16T06:03:28Z",
+        "url": "https://www.nvidia.com/en-us/solutions/quantum-computing/ising/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "petethomas"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Why Anthropic and <em>OpenAI</em> are locking up their latest models"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.economist.com/business/2026/04/15/why-anthropic-and-<em>openai</em>-are-locking-up-their-latest-models"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_petethomas",
+          "story_47788934"
+        ],
+        "author": "petethomas",
+        "created_at": "2026-04-16T05:20:47Z",
+        "created_at_i": 1776316847,
+        "num_comments": 0,
+        "objectID": "47788934",
+        "points": 2,
+        "story_id": 47788934,
+        "title": "Why Anthropic and OpenAI are locking up their latest models",
+        "updated_at": "2026-04-16T05:33:58Z",
+        "url": "https://www.economist.com/business/2026/04/15/why-anthropic-and-openai-are-locking-up-their-latest-models"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "andsoitis"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Why Anthropic and <em>OpenAI</em> are locking up their latest models"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://economist.com/business/2026/04/15/why-anthropic-and-<em>openai</em>-are-locking-up-their-latest-models"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_andsoitis",
+          "story_47788589"
+        ],
+        "author": "andsoitis",
+        "created_at": "2026-04-16T04:14:53Z",
+        "created_at_i": 1776312893,
+        "num_comments": 0,
+        "objectID": "47788589",
+        "points": 2,
+        "story_id": 47788589,
+        "title": "Why Anthropic and OpenAI are locking up their latest models",
+        "updated_at": "2026-04-16T04:18:28Z",
+        "url": "https://economist.com/business/2026/04/15/why-anthropic-and-openai-are-locking-up-their-latest-models"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "clevengermatt"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "One interface, every protocol"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://<em>openbi</em>ndings.com/blog/one-interface-every-protocol"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_clevengermatt",
+          "story_47784397"
+        ],
+        "author": "clevengermatt",
+        "children": [
+          47784436,
+          47789577,
+          47784425,
+          47788713,
+          47787613,
+          47788441
+        ],
+        "created_at": "2026-04-15T19:56:36Z",
+        "created_at_i": 1776282996,
+        "num_comments": 8,
+        "objectID": "47784397",
+        "points": 48,
+        "story_id": 47784397,
+        "title": "One interface, every protocol",
+        "updated_at": "2026-04-16T07:09:43Z",
+        "url": "https://openbindings.com/blog/one-interface-every-protocol"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Brajeshwar"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Anthropic's rise is giving some <em>OpenAI</em> investors second thoughts"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://techcrunch.com/2026/04/14/anthropics-rise-is-giving-some-<em>openai</em>-investors-second-thoughts/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Brajeshwar",
+          "story_47783100"
+        ],
+        "author": "Brajeshwar",
+        "children": [
+          47783511
+        ],
+        "created_at": "2026-04-15T18:23:06Z",
+        "created_at_i": 1776277386,
+        "num_comments": 1,
+        "objectID": "47783100",
+        "points": 3,
+        "story_id": 47783100,
+        "title": "Anthropic's rise is giving some OpenAI investors second thoughts",
+        "updated_at": "2026-04-15T19:10:12Z",
+        "url": "https://techcrunch.com/2026/04/14/anthropics-rise-is-giving-some-openai-investors-second-thoughts/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "jmclai"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Show HN: Slack killed their <em>OpenAPI</em> spec, so we reverse engineered it"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://github.com/connectstrata/slack-<em>openapi</em>-generator"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_jmclai",
+          "story_47782449",
+          "show_hn"
+        ],
+        "author": "jmclai",
+        "children": [
+          47782846
+        ],
+        "created_at": "2026-04-15T17:37:03Z",
+        "created_at_i": 1776274623,
+        "num_comments": 1,
+        "objectID": "47782449",
+        "points": 7,
+        "story_id": 47782449,
+        "title": "Show HN: Slack killed their OpenAPI spec, so we reverse engineered it",
+        "updated_at": "2026-04-15T22:53:42Z",
+        "url": "https://github.com/connectstrata/slack-openapi-generator"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "razvan_maftei"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Hi HN,<p>I’m the creator of agentfab, a distributed agentic platform that features task decomposition, multi-agent orchestration, model heterogeneity with custom agentic fabrics, bounded review loops, and a bespoke self-curating memory system that enable shared context.<p>My background is in engineering at hyperscalers where I worked extensively with foundational distributed systems. I started agentfab because I wanted an agentic coding tool that could effectively decompose and parallelize work across different model providers and agent profiles. agentfab will run locally on your machine, on your VM fleet, on your K8s cluster, or any distributed compute environment.<p>The clear benefit over existing agentic coding tools is that agentfab is able to fan out work across many different agents from various model providers (<em>OpenAI</em>, OAI-compatible, Google, Anthropic) with shared context - it’s able to break down large scope tasks into subtasks and assign the appropriate agent for each; it handles bounded review loops, artifact streaming between agents, and uses OS-level sandboxing and secure communication between agents.<p>You are in full control of your agent &quot;fabric&quot; - simply define YAML agents and specify which tools, capabilities, and special knowledge they have and the platform will know how to make use of them during task decomposition. There are 4 default agents that cover most software development tasks.<p>agentfab has an interactive CLI with taskgraphs and progress tracking - you can prompt agentfab to execute on end-to-end projects or chat with any of the agents in the fabric to query against their knowledge.<p>If you want to read more about agentfab, check out this blog: <a href=\"https://razvanmaftei.me/article?slug=agentfab-stateful-multi-agent-orchestration\" rel=\"nofollow\">https://razvanmaftei.me/article?slug=agentfab-stateful-multi...</a><p>Check out the GitHub repo if you want to try it out. Looking forward to hearing your thoughts.<p>Thanks!"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Agentfab – A Distributed Agentic Platform"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/RazvanMaftei9/agentfab"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_razvan_maftei",
+          "story_47782234",
+          "show_hn"
+        ],
+        "author": "razvan_maftei",
+        "children": [
+          47788104
+        ],
+        "created_at": "2026-04-15T17:24:34Z",
+        "created_at_i": 1776273874,
+        "num_comments": 1,
+        "objectID": "47782234",
+        "points": 2,
+        "story_id": 47782234,
+        "story_text": "Hi HN,<p>I’m the creator of agentfab, a distributed agentic platform that features task decomposition, multi-agent orchestration, model heterogeneity with custom agentic fabrics, bounded review loops, and a bespoke self-curating memory system that enable shared context.<p>My background is in engineering at hyperscalers where I worked extensively with foundational distributed systems. I started agentfab because I wanted an agentic coding tool that could effectively decompose and parallelize work across different model providers and agent profiles. agentfab will run locally on your machine, on your VM fleet, on your K8s cluster, or any distributed compute environment.<p>The clear benefit over existing agentic coding tools is that agentfab is able to fan out work across many different agents from various model providers (OpenAI, OAI-compatible, Google, Anthropic) with shared context - it’s able to break down large scope tasks into subtasks and assign the appropriate agent for each; it handles bounded review loops, artifact streaming between agents, and uses OS-level sandboxing and secure communication between agents.<p>You are in full control of your agent &quot;fabric&quot; - simply define YAML agents and specify which tools, capabilities, and special knowledge they have and the platform will know how to make use of them during task decomposition. There are 4 default agents that cover most software development tasks.<p>agentfab has an interactive CLI with taskgraphs and progress tracking - you can prompt agentfab to execute on end-to-end projects or chat with any of the agents in the fabric to query against their knowledge.<p>If you want to read more about agentfab, check out this blog: <a href=\"https:&#x2F;&#x2F;razvanmaftei.me&#x2F;article?slug=agentfab-stateful-multi-agent-orchestration\" rel=\"nofollow\">https:&#x2F;&#x2F;razvanmaftei.me&#x2F;article?slug=agentfab-stateful-multi...</a><p>Check out the GitHub repo if you want to try it out. Looking forward to hearing your thoughts.<p>Thanks!",
+        "title": "Show HN: Agentfab – A Distributed Agentic Platform",
+        "updated_at": "2026-04-16T02:55:28Z",
+        "url": "https://github.com/RazvanMaftei9/agentfab"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "meetpateltech"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "The next evolution of the Agents SDK"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://<em>openai</em>.com/index/the-next-evolution-of-the-agents-sdk/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_meetpateltech",
+          "story_47782022"
+        ],
+        "author": "meetpateltech",
+        "children": [
+          47783045,
+          47782400
+        ],
+        "created_at": "2026-04-15T17:08:59Z",
+        "created_at_i": 1776272939,
+        "num_comments": 2,
+        "objectID": "47782022",
+        "points": 20,
+        "story_id": 47782022,
+        "title": "The next evolution of the Agents SDK",
+        "updated_at": "2026-04-16T00:49:27Z",
+        "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/"
+      }
+    ]
+  },
+  "Anthropic Claude": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "IndignantTyrant"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "anthropic"
+            ],
+            "value": "<em>Anthropic</em>: Stop Shipping. Seriously."
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "claude"
+            ],
+            "value": "https://www.reddit.com/r/<em>Claude</em>AI/s/C9WM4DHtqt"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_IndignantTyrant",
+          "story_47786737"
+        ],
+        "author": "IndignantTyrant",
+        "created_at": "2026-04-15T23:30:57Z",
+        "created_at_i": 1776295857,
+        "num_comments": 0,
+        "objectID": "47786737",
+        "points": 4,
+        "story_id": 47786737,
+        "title": "Anthropic: Stop Shipping. Seriously.",
+        "updated_at": "2026-04-16T04:04:58Z",
+        "url": "https://www.reddit.com/r/ClaudeAI/s/C9WM4DHtqt"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "guyegentstien"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "claude"
+            ],
+            "value": "<em>Claude</em> Code Desktop Redesign Parallel Agents with Drag-and-Drop Layout"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://ai-tldr.dev/releases/<em>anthropic</em>-<em>claude</em>-code-desktop-redesign/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_guyegentstien",
+          "story_47785875"
+        ],
+        "author": "guyegentstien",
+        "created_at": "2026-04-15T21:58:32Z",
+        "created_at_i": 1776290312,
+        "num_comments": 0,
+        "objectID": "47785875",
+        "points": 1,
+        "story_id": 47785875,
+        "title": "Claude Code Desktop Redesign Parallel Agents with Drag-and-Drop Layout",
+        "updated_at": "2026-04-15T22:00:28Z",
+        "url": "https://ai-tldr.dev/releases/anthropic-claude-code-desktop-redesign/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "rpcope1"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "<em>Anthropic</em> Revises <em>Claude</em> Enterprise Pricing Structure"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://letsdatascience.com/news/<em>anthropic</em>-revises-<em>claude</em>-enterprise-pricing-structure-f3022a32"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_rpcope1",
+          "story_47783863"
+        ],
+        "author": "rpcope1",
+        "created_at": "2026-04-15T19:16:15Z",
+        "created_at_i": 1776280575,
+        "num_comments": 0,
+        "objectID": "47783863",
+        "points": 1,
+        "story_id": 47783863,
+        "title": "Anthropic Revises Claude Enterprise Pricing Structure",
+        "updated_at": "2026-04-15T19:17:43Z",
+        "url": "https://letsdatascience.com/news/anthropic-revises-claude-enterprise-pricing-structure-f3022a32"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Brajeshwar"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "<em>Anthropic</em> Rebuilds <em>Claude</em> Code Desktop App Around Parallel Sessions"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://www.macrumors.com/2026/04/15/<em>anthropic</em>-rebuilds-<em>claude</em>-code-desktop-app/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Brajeshwar",
+          "story_47782883"
+        ],
+        "author": "Brajeshwar",
+        "created_at": "2026-04-15T18:04:46Z",
+        "created_at_i": 1776276286,
+        "num_comments": 0,
+        "objectID": "47782883",
+        "points": 2,
+        "story_id": 47782883,
+        "title": "Anthropic Rebuilds Claude Code Desktop App Around Parallel Sessions",
+        "updated_at": "2026-04-15T19:10:42Z",
+        "url": "https://www.macrumors.com/2026/04/15/anthropic-rebuilds-claude-code-desktop-app/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "tarboreus"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "So recently <em>Anthropic</em> came out with tools that let you drive Windows and Mac OS around. But I don't use Windows or MacOS, and was curious about some Wayland internals stuff and whether it would be possible to build something usable on a relatively restrictive platform like Wayland. So I made Tine.<p>Tine is a GNOME extension and CLI that lets an agent (I have used <em>Claude</em> but in theory any agent that can access the CLI) drive the desktop around using SPI trees (AT-SPI2), OCR, and visual fallbacks. Agent can do work with the a11y (AT-SPI2) trees, take screenshots, zoom in on a grid, click, enter text using a uinput device, and generally bumble their way around a Wayland Linux desktop.<p>This project would probably have been way easier in x11 but Wayland is teh future!!!111 Thanks for any thoughts and feedback and feels good to release something here after a decade of lurking. Decade plus but who's counting / I'm not old."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Tine – Drive Wayland Around with Agents"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/smythp/tine"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_tarboreus",
+          "story_47781944",
+          "show_hn"
+        ],
+        "author": "tarboreus",
+        "children": [
+          47782427
+        ],
+        "created_at": "2026-04-15T17:02:53Z",
+        "created_at_i": 1776272573,
+        "num_comments": 4,
+        "objectID": "47781944",
+        "points": 4,
+        "story_id": 47781944,
+        "story_text": "So recently Anthropic came out with tools that let you drive Windows and Mac OS around. But I don&#x27;t use Windows or MacOS, and was curious about some Wayland internals stuff and whether it would be possible to build something usable on a relatively restrictive platform like Wayland. So I made Tine.<p>Tine is a GNOME extension and CLI that lets an agent (I have used Claude but in theory any agent that can access the CLI) drive the desktop around using SPI trees (AT-SPI2), OCR, and visual fallbacks. Agent can do work with the a11y (AT-SPI2) trees, take screenshots, zoom in on a grid, click, enter text using a uinput device, and generally bumble their way around a Wayland Linux desktop.<p>This project would probably have been way easier in x11 but Wayland is teh future!!!111 Thanks for any thoughts and feedback and feels good to release something here after a decade of lurking. Decade plus but who&#x27;s counting &#x2F; I&#x27;m not old.",
+        "title": "Show HN: Tine – Drive Wayland Around with Agents",
+        "updated_at": "2026-04-15T18:26:12Z",
+        "url": "https://github.com/smythp/tine"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "elliotykim"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "Native macOS menu-bar app for tracking <em>Claude</em> Code usage and <em>Anthropic</em> service status. Built using <em>Claude</em> Code, naturally."
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "claude"
+            ],
+            "value": "Show HN: Mac menu bar app for <em>Claude</em> Code rate limits"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/elliotykim/claudewatch"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_elliotykim",
+          "story_47781940",
+          "show_hn"
+        ],
+        "author": "elliotykim",
+        "created_at": "2026-04-15T17:02:35Z",
+        "created_at_i": 1776272555,
+        "num_comments": 0,
+        "objectID": "47781940",
+        "points": 4,
+        "story_id": 47781940,
+        "story_text": "Native macOS menu-bar app for tracking Claude Code usage and Anthropic service status. Built using Claude Code, naturally.",
+        "title": "Show HN: Mac menu bar app for Claude Code rate limits",
+        "updated_at": "2026-04-15T19:10:12Z",
+        "url": "https://github.com/elliotykim/claudewatch"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "mariansorca"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "<em>Claude</em> Code Goes Full Workstation: <em>Anthropic</em> Redesigns the Desktop App"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://abz.global/technology/<em>claude</em>-code-goes-full-workstation-<em>anthropic</em>-redesigns-the-desktop-app-for-parallel-agents"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_mariansorca",
+          "story_47778141"
+        ],
+        "author": "mariansorca",
+        "created_at": "2026-04-15T12:32:07Z",
+        "created_at_i": 1776256327,
+        "num_comments": 0,
+        "objectID": "47778141",
+        "points": 1,
+        "story_id": 47778141,
+        "title": "Claude Code Goes Full Workstation: Anthropic Redesigns the Desktop App",
+        "updated_at": "2026-04-15T12:33:42Z",
+        "url": "https://abz.global/technology/claude-code-goes-full-workstation-anthropic-redesigns-the-desktop-app-for-parallel-agents"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "sahli"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "It feels like most <em>Claude</em> Code users have already noticed a quality drop in the <em>Claude</em> models. As a <em>Claude</em> Pro subscriber (Web version; I don't use <em>Claude</em> Code), I’ve seen a clear decline over the last couple of weeks. I can’t complete tasks in a single turn anymore. <em>Claude</em> often stops streaming because it hits some internal tool-call/turn limit, so I have to keep pressing “Continue.” Each continuation has to re-feed context, which quickly burns through tokens and quota. The model also makes more mistakes and fails to fully complete tasks it used to handle reliably.<p>This is especially frustrating because Sonnet 4.6 was a real step up: it could produce long, correct code in one pass much more often. That seems basically gone now.<p>As a paying Pro user, I honestly find myself using free alternatives like DeepSeek and Z.ai (GLM) more than <em>Claude</em> lately. I’ve also stopped touching Opus entirely—it’s so token-hungry that it drains my weekly quota too fast to be practical.<p>Is <em>Anthropic</em> trying to limit usage or drive people away?"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "claude"
+            ],
+            "value": "Ask HN: Is <em>Claude</em> Getting Worse?"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_sahli",
+          "story_47778035",
+          "ask_hn"
+        ],
+        "author": "sahli",
+        "children": [
+          47778404,
+          47778226,
+          47787222,
+          47778294,
+          47778091,
+          47778194,
+          47778190,
+          47778241,
+          47786971,
+          47778251
+        ],
+        "created_at": "2026-04-15T12:20:05Z",
+        "created_at_i": 1776255605,
+        "num_comments": 13,
+        "objectID": "47778035",
+        "points": 6,
+        "story_id": 47778035,
+        "story_text": "It feels like most Claude Code users have already noticed a quality drop in the Claude models. As a Claude Pro subscriber (Web version; I don&#x27;t use Claude Code), I’ve seen a clear decline over the last couple of weeks. I can’t complete tasks in a single turn anymore. Claude often stops streaming because it hits some internal tool-call&#x2F;turn limit, so I have to keep pressing “Continue.” Each continuation has to re-feed context, which quickly burns through tokens and quota. The model also makes more mistakes and fails to fully complete tasks it used to handle reliably.<p>This is especially frustrating because Sonnet 4.6 was a real step up: it could produce long, correct code in one pass much more often. That seems basically gone now.<p>As a paying Pro user, I honestly find myself using free alternatives like DeepSeek and Z.ai (GLM) more than Claude lately. I’ve also stopped touching Opus entirely—it’s so token-hungry that it drains my weekly quota too fast to be practical.<p>Is Anthropic trying to limit usage or drive people away?",
+        "title": "Ask HN: Is Claude Getting Worse?",
+        "updated_at": "2026-04-16T06:16:28Z"
+      }
+    ]
+  },
+  "Llama": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Zetaphor"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Stop Using <em>Ollama</em>"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "https://sleepingrobots.com/dreams/stop-using-<em>ollama</em>/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Zetaphor",
+          "story_47788385",
+          "front_page"
+        ],
+        "author": "Zetaphor",
+        "children": [
+          47789569,
+          47789906,
+          47789393,
+          47789947,
+          47788389,
+          47788835,
+          47789458,
+          47790024,
+          47789481,
+          47789908,
+          47789803,
+          47789485,
+          47789322,
+          47789671,
+          47789880,
+          47789429,
+          47789892,
+          47789364,
+          47789952,
+          47789845,
+          47789888,
+          47789350,
+          47789319,
+          47789772,
+          47789778,
+          47789605,
+          47789339,
+          47789850,
+          47789986,
+          47789933
+        ],
+        "created_at": "2026-04-16T03:35:11Z",
+        "created_at_i": 1776310511,
+        "num_comments": 62,
+        "objectID": "47788385",
+        "points": 292,
+        "story_id": 47788385,
+        "title": "Stop Using Ollama",
+        "updated_at": "2026-04-16T07:58:29Z",
+        "url": "https://sleepingrobots.com/dreams/stop-using-ollama/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "SvReenen"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Show HN Deskdrop: An Android Keyboard with Local AI Support (<em>Ollama</em>, LM Studio)"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/SvReenen/Deskdrop"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_SvReenen",
+          "story_47782560",
+          "show_hn"
+        ],
+        "author": "SvReenen",
+        "children": [
+          47784251,
+          47782966,
+          47782561
+        ],
+        "created_at": "2026-04-15T17:44:01Z",
+        "created_at_i": 1776275041,
+        "num_comments": 2,
+        "objectID": "47782560",
+        "points": 3,
+        "story_id": 47782560,
+        "title": "Show HN Deskdrop: An Android Keyboard with Local AI Support (Ollama, LM Studio)",
+        "updated_at": "2026-04-15T19:47:12Z",
+        "url": "https://github.com/SvReenen/Deskdrop"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "s1lv3rj1nx"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "I'm a software engineer who works with LLMs professionally (Forward Deployed Engineer at TrueFoundry). Over the past year I built up implementations of five LLM architectures from scratch and wrote a book around them.<p>The progression:<p>- Ch1: Vanilla encoder-decoder transformer (English to Hindi translation)\n- Ch2: GPT-2 124M from scratch, loads real OpenAI pretrained weights\n- Ch3: <em>Llama</em> 3.2-3B by swapping 4 components of GPT-2 (LayerNorm to RMSNorm, learned PE to RoPE, GELU to SwiGLU, MHA to GQA), loads Meta's pretrained weights\n- Ch4: KV cache, MQA, GQA (inference optimisation)\n- Ch5: DeepSeek MLA (absorption trick, decoupled RoPE), DeepSeekMoE, Multi-Token Prediction, FP8 quantisation<p>All code is open source: <a href=\"https://github.com/S1LV3RJ1NX/mal-code\" rel=\"nofollow\">https://github.com/S1LV3RJ1NX/mal-code</a><p>The book provides the explanations, derivations, diagrams, and narrative: <a href=\"https://leanpub.com/adventures-with-llms\" rel=\"nofollow\">https://leanpub.com/adventures-with-llms</a> (free sample available)<p>I wrote it because most resources stop at GPT-2 and I wanted something that covered what's actually in production models today. Happy to answer questions about any of the implementations."
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Show HN: A book that builds GPT-2, <em>Llama</em> 3, DeepSeek from scratch in PyTorch"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_s1lv3rj1nx",
+          "story_47779084",
+          "show_hn"
+        ],
+        "author": "s1lv3rj1nx",
+        "children": [
+          47782072
+        ],
+        "created_at": "2026-04-15T14:01:34Z",
+        "created_at_i": 1776261694,
+        "num_comments": 1,
+        "objectID": "47779084",
+        "points": 2,
+        "story_id": 47779084,
+        "story_text": "I&#x27;m a software engineer who works with LLMs professionally (Forward Deployed Engineer at TrueFoundry). Over the past year I built up implementations of five LLM architectures from scratch and wrote a book around them.<p>The progression:<p>- Ch1: Vanilla encoder-decoder transformer (English to Hindi translation)\n- Ch2: GPT-2 124M from scratch, loads real OpenAI pretrained weights\n- Ch3: Llama 3.2-3B by swapping 4 components of GPT-2 (LayerNorm to RMSNorm, learned PE to RoPE, GELU to SwiGLU, MHA to GQA), loads Meta&#x27;s pretrained weights\n- Ch4: KV cache, MQA, GQA (inference optimisation)\n- Ch5: DeepSeek MLA (absorption trick, decoupled RoPE), DeepSeekMoE, Multi-Token Prediction, FP8 quantisation<p>All code is open source: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;S1LV3RJ1NX&#x2F;mal-code\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;S1LV3RJ1NX&#x2F;mal-code</a><p>The book provides the explanations, derivations, diagrams, and narrative: <a href=\"https:&#x2F;&#x2F;leanpub.com&#x2F;adventures-with-llms\" rel=\"nofollow\">https:&#x2F;&#x2F;leanpub.com&#x2F;adventures-with-llms</a> (free sample available)<p>I wrote it because most resources stop at GPT-2 and I wanted something that covered what&#x27;s actually in production models today. Happy to answer questions about any of the implementations.",
+        "title": "Show HN: A book that builds GPT-2, Llama 3, DeepSeek from scratch in PyTorch",
+        "updated_at": "2026-04-15T17:13:12Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "sensarts"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Converting spreadsheets to graph databases (Neo4j, Neptune, etc.) usually means manually defining nodes, relationships, and writing Cypher from scratch. It's tedious.<p>So I built GraphifyAI – it infers nodes, relationships, and properties from your column structure and generates ready-to-run import scripts for 8 graph databases + LangChain/<em>Llama</em>Index integrations.<p>Looking for feedback on the schema inference – especially from people building knowledge graphs for RAG."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: GraphifyAI – Turn Any CSV/Excel into a Neo4j or LangChain Graph"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://graphify.midlantics.com"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_sensarts",
+          "story_47778079",
+          "show_hn"
+        ],
+        "author": "sensarts",
+        "created_at": "2026-04-15T12:24:33Z",
+        "created_at_i": 1776255873,
+        "num_comments": 0,
+        "objectID": "47778079",
+        "points": 1,
+        "story_id": 47778079,
+        "story_text": "Converting spreadsheets to graph databases (Neo4j, Neptune, etc.) usually means manually defining nodes, relationships, and writing Cypher from scratch. It&#x27;s tedious.<p>So I built GraphifyAI – it infers nodes, relationships, and properties from your column structure and generates ready-to-run import scripts for 8 graph databases + LangChain&#x2F;LlamaIndex integrations.<p>Looking for feedback on the schema inference – especially from people building knowledge graphs for RAG.",
+        "title": "Show HN: GraphifyAI – Turn Any CSV/Excel into a Neo4j or LangChain Graph",
+        "updated_at": "2026-04-15T12:28:26Z",
+        "url": "https://graphify.midlantics.com"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "fullyHighlighted": true,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "<em>Dlama</em>"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Nice Models Finish Last"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://medium.com/@diwaslama/nice-models-finish-last-c32277803999"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Dlama",
+          "story_47777271"
+        ],
+        "author": "Dlama",
+        "children": [
+          47777272
+        ],
+        "created_at": "2026-04-15T10:49:14Z",
+        "created_at_i": 1776250154,
+        "num_comments": 0,
+        "objectID": "47777271",
+        "points": 1,
+        "story_id": 47777271,
+        "title": "Nice Models Finish Last",
+        "updated_at": "2026-04-15T10:53:55Z",
+        "url": "https://medium.com/@diwaslama/nice-models-finish-last-c32277803999"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "<em>llma</em>cpu"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Anodot Breach Lessons: When Your Vendor Is the Vulnerability"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.reco.ai/blog/anodot-breach-lessons-vendor-risk-snowflake"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_llmacpu",
+          "story_47776698"
+        ],
+        "author": "llmacpu",
+        "created_at": "2026-04-15T09:27:52Z",
+        "created_at_i": 1776245272,
+        "num_comments": 0,
+        "objectID": "47776698",
+        "points": 1,
+        "story_id": 47776698,
+        "title": "Anodot Breach Lessons: When Your Vendor Is the Vulnerability",
+        "updated_at": "2026-04-15T09:29:55Z",
+        "url": "https://www.reco.ai/blog/anodot-breach-lessons-vendor-risk-snowflake"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "bonsuaq"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Show HN: Scryptian – A lightweight, local AI bar (Python and <em>Ollama</em>)"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/adrianium/Scryptian"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_bonsuaq",
+          "story_47764747",
+          "show_hn"
+        ],
+        "author": "bonsuaq",
+        "children": [
+          47764760
+        ],
+        "created_at": "2026-04-14T12:28:39Z",
+        "created_at_i": 1776169719,
+        "num_comments": 1,
+        "objectID": "47764747",
+        "points": 1,
+        "story_id": 47764747,
+        "title": "Show HN: Scryptian – A lightweight, local AI bar (Python and Ollama)",
+        "updated_at": "2026-04-14T14:14:52Z",
+        "url": "https://github.com/adrianium/Scryptian"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "modinfo"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Talking to a local LLM in the Firefox sidebar"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "https://code.mendhak.com/firefox-local-chatbot-<em>ollama</em>/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_modinfo",
+          "story_47763240"
+        ],
+        "author": "modinfo",
+        "children": [
+          47775181,
+          47763435,
+          47763267
+        ],
+        "created_at": "2026-04-14T09:24:54Z",
+        "created_at_i": 1776158694,
+        "num_comments": 4,
+        "objectID": "47763240",
+        "points": 1,
+        "story_id": 47763240,
+        "title": "Talking to a local LLM in the Firefox sidebar",
+        "updated_at": "2026-04-15T05:56:54Z",
+        "url": "https://code.mendhak.com/firefox-local-chatbot-ollama/"
+      }
+    ]
+  },
+  "AI agents": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "edoardobambini-"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Show HN: <em>Agent</em> Armor, a Rust runtime that enforces policies on <em>AI</em> <em>agent</em> actions"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "agents"
+            ],
+            "value": "https://github.com/EdoardoBambini/<em>Agent</em>-Armor-Iaga"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_edoardobambini-",
+          "story_47789627",
+          "show_hn"
+        ],
+        "author": "edoardobambini-",
+        "children": [
+          47789638,
+          47789649,
+          47789629
+        ],
+        "created_at": "2026-04-16T07:03:19Z",
+        "created_at_i": 1776322999,
+        "num_comments": 2,
+        "objectID": "47789627",
+        "points": 4,
+        "story_id": 47789627,
+        "title": "Show HN: Agent Armor, a Rust runtime that enforces policies on AI agent actions",
+        "updated_at": "2026-04-16T07:39:44Z",
+        "url": "https://github.com/EdoardoBambini/Agent-Armor-Iaga"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "srajan_gupta"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Shouldn't we have an <em>agent</em>.lock file for <em>AI</em> coding <em>agents</em>?"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://srajangupta.substack.com/p/where-is-my-agentlock-file"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_srajan_gupta",
+          "story_47789205"
+        ],
+        "author": "srajan_gupta",
+        "created_at": "2026-04-16T05:58:36Z",
+        "created_at_i": 1776319116,
+        "num_comments": 0,
+        "objectID": "47789205",
+        "points": 1,
+        "story_id": 47789205,
+        "title": "Shouldn't we have an agent.lock file for AI coding agents?",
+        "updated_at": "2026-04-16T06:03:28Z",
+        "url": "https://srajangupta.substack.com/p/where-is-my-agentlock-file"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "tkocmathla"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Teaching <em>AI</em> <em>Agents</em> to Speak Hardware"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai"
+            ],
+            "value": "https://quadric.<em>ai</em>/blog/mcp-<em>ai</em>-coding-assistant"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_tkocmathla",
+          "story_47789196"
+        ],
+        "author": "tkocmathla",
+        "created_at": "2026-04-16T05:57:25Z",
+        "created_at_i": 1776319045,
+        "num_comments": 0,
+        "objectID": "47789196",
+        "points": 1,
+        "story_id": 47789196,
+        "title": "Teaching AI Agents to Speak Hardware",
+        "updated_at": "2026-04-16T05:58:14Z",
+        "url": "https://quadric.ai/blog/mcp-ai-coding-assistant"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "dhruv_ahuja"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "I kept getting 401 'token expired' errors on my existing Qwen session. Attempting to resume it after quitting, I got:<p><pre><code>    qwen resume                                        \n    [API Error: 401 invalid access token or token expired]\n    [API Error: 401 invalid access token or token expired][API Error: [API Error: 401 invalid access token or token expired]]\n    An unexpected critical error occurred:\n    Error: [API Error: 401 invalid access token or token expired]\n        at file:///opt/homebrew/lib/node_modules/@qwen-code/qwen-code/cli.js:459092:19\n        at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n        at async main (file:///opt/homebrew/lib/node_modules/@qwen-code/qwen-code/cli.js:513740:5)\n</code></pre>\nTo attempt to refresh the token, I ran `qwen` which brought up the <em>agent</em> without errors. Assuming the issue to be fixed, I attempted resuming my previous session again:<p><pre><code>    qwen resume\n    Qwen OAuth free tier was discontinued on 2026-04-15. Run /auth to switch to Coding Plan, OpenRouter, Fireworks <em>AI</em>, or another provider.\n</code></pre>\nIt's official: Qwen free tier is dead. It was great while it lasted, especially with the latest 3.6 plus model."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Tell HN: Qwen Free Tier Is Discontinued"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_dhruv_ahuja",
+          "story_47789014",
+          "ask_hn"
+        ],
+        "author": "dhruv_ahuja",
+        "children": [
+          47789352,
+          47789750,
+          47789602
+        ],
+        "created_at": "2026-04-16T05:32:11Z",
+        "created_at_i": 1776317531,
+        "num_comments": 3,
+        "objectID": "47789014",
+        "points": 5,
+        "story_id": 47789014,
+        "story_text": "I kept getting 401 &#x27;token expired&#x27; errors on my existing Qwen session. Attempting to resume it after quitting, I got:<p><pre><code>    qwen resume                                        \n    [API Error: 401 invalid access token or token expired]\n    [API Error: 401 invalid access token or token expired][API Error: [API Error: 401 invalid access token or token expired]]\n    An unexpected critical error occurred:\n    Error: [API Error: 401 invalid access token or token expired]\n        at file:&#x2F;&#x2F;&#x2F;opt&#x2F;homebrew&#x2F;lib&#x2F;node_modules&#x2F;@qwen-code&#x2F;qwen-code&#x2F;cli.js:459092:19\n        at process.processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:104:5)\n        at async main (file:&#x2F;&#x2F;&#x2F;opt&#x2F;homebrew&#x2F;lib&#x2F;node_modules&#x2F;@qwen-code&#x2F;qwen-code&#x2F;cli.js:513740:5)\n</code></pre>\nTo attempt to refresh the token, I ran `qwen` which brought up the agent without errors. Assuming the issue to be fixed, I attempted resuming my previous session again:<p><pre><code>    qwen resume\n    Qwen OAuth free tier was discontinued on 2026-04-15. Run &#x2F;auth to switch to Coding Plan, OpenRouter, Fireworks AI, or another provider.\n</code></pre>\nIt&#x27;s official: Qwen free tier is dead. It was great while it lasted, especially with the latest 3.6 plus model.",
+        "title": "Tell HN: Qwen Free Tier Is Discontinued",
+        "updated_at": "2026-04-16T07:55:28Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "clippy99"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "We built an <em>agent</em>-first task management system because legacy tools weren't cutting it<p>We've been building with <em>AI</em> coding <em>agents</em> daily, and task management kept being a friction point. Markdown file collections, bolted-on MCPs for Jira/Linear, sluggish APIs — or just having <em>agents</em> create work items directly, bypassing whatever UI we were supposedly using.<p>These tools were never designed with <em>agents</em> in mind. So we rethought it from scratch: <em>agent</em>-first, minimal clutter, built around what you and your <em>agent</em> actually need.\nThe result is Tokanban — simple, scalable, performant, and free."
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "agents"
+            ],
+            "value": "Show HN: Tokanban, an <em>agent</em>-first task management system"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://tokanban.com/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_clippy99",
+          "story_47787943",
+          "show_hn"
+        ],
+        "author": "clippy99",
+        "created_at": "2026-04-16T02:27:01Z",
+        "created_at_i": 1776306421,
+        "num_comments": 0,
+        "objectID": "47787943",
+        "points": 2,
+        "story_id": 47787943,
+        "story_text": "We built an agent-first task management system because legacy tools weren&#x27;t cutting it<p>We&#x27;ve been building with AI coding agents daily, and task management kept being a friction point. Markdown file collections, bolted-on MCPs for Jira&#x2F;Linear, sluggish APIs — or just having agents create work items directly, bypassing whatever UI we were supposedly using.<p>These tools were never designed with agents in mind. So we rethought it from scratch: agent-first, minimal clutter, built around what you and your agent actually need.\nThe result is Tokanban — simple, scalable, performant, and free.",
+        "title": "Show HN: Tokanban, an agent-first task management system",
+        "updated_at": "2026-04-16T03:23:43Z",
+        "url": "https://tokanban.com/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "SkylerJi"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai"
+            ],
+            "value": "Aggregated interviews on how YC W26 founders build internal <em>AI</em> employees"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "https://www.humanbehavior.co/blog/topic/<em>ai</em>-employees-inside-founders-<em>agent</em>-workflows"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_SkylerJi",
+          "story_47787326"
+        ],
+        "author": "SkylerJi",
+        "children": [
+          47787327
+        ],
+        "created_at": "2026-04-16T00:46:01Z",
+        "created_at_i": 1776300361,
+        "num_comments": 1,
+        "objectID": "47787326",
+        "points": 1,
+        "story_id": 47787326,
+        "title": "Aggregated interviews on how YC W26 founders build internal AI employees",
+        "updated_at": "2026-04-16T00:48:27Z",
+        "url": "https://www.humanbehavior.co/blog/topic/ai-employees-inside-founders-agent-workflows"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "tawb"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "PeonPing: Sound packs for Claude, Codex, Cursor, and other <em>AI</em> coding <em>agents</em>"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.peonping.com/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_tawb",
+          "story_47787323"
+        ],
+        "author": "tawb",
+        "created_at": "2026-04-16T00:45:04Z",
+        "created_at_i": 1776300304,
+        "num_comments": 0,
+        "objectID": "47787323",
+        "points": 2,
+        "story_id": 47787323,
+        "title": "PeonPing: Sound packs for Claude, Codex, Cursor, and other AI coding agents",
+        "updated_at": "2026-04-16T03:25:43Z",
+        "url": "https://www.peonping.com/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "thewillmoss"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Sharing this as a warning to anyone using Cloudflare Durable Objects with alarms.<p>Root cause:<p>My DO <em>agent's</em> onStart() handler called this.ctx.storage.setAlarm() on every wake-up without checking whether an alarm was already scheduled. Combined with 60+ preview Worker deployments each creating independent DO instances, this created a runaway self-health-check loop.<p>Timeline:\n- April 3: loop began (zero DO usage before this date)<p>- April 4-5: peaked at ~930 billion row reads/day<p>- April 11: found it, fixed it<p>- April 15: $34,895 invoice due with no billing response yet<p>The fix:<p>// Before (dangerous)\nasync onStart() {\n  await this.ctx.storage.setAlarm(Date.now() + 60_000)\n}<p>// After (safe)\nasync onStart() {\nconst existing = await this.ctx.storage.getAlarm()\n  if (!existing) {\n    await this.ctx.storage.setAlarm(Date.now() + 60_000)\n  }\n}<p>Other things worth doing:\n- Strip DO bindings from preview environments entirely\n- Deploy a budget monitor kill switch Worker\n- Add a circuit breaker that checks alarm state before scheduling<p>Why I had no warning:<p>Cloudflare's Workers Usage Notifications only monitors CPU time. Not Durable Object row reads or writes. There is also no hard spending cap for DO operations available in the dashboard or Wrangler config. Nothing would have fired an alert during this runaway. I found out when the bill showed up.<p>This is worth knowing if you're using DO alarms. The platform will not tell you when DO row reads/writes go exponential. You have to build your own kill switch.<p>One more thing that I think deserves more attention than it's getting: this is <em>Agents</em> Week. Cloudflare is running a dedicated marketing push right now to get individual developers building <em>AI</em> <em>agents</em> on Durable Objects. Blog posts, announcements, the whole thing. That is a deliberate effort to onboard solo developers and indie founders into a product that can silently generate a five-figure bill with zero platform warning. There is no spending cap for DO operations. The usage notification system doesn't cover DO reads or writes. Cloudflare knows this. Running <em>Agents</em> Week while that gap exists is not a neutral decision.<p>I've filed Case 02067725. I'm a pre-launch sole proprietor who put all my personal savings into this startup. This bill would financially destroy me for usage that generated zero business value. Sharing here both as a technical warning and because I need help getting this in front of someone at Cloudflare who can make a decision.<p>Has anyone escalated a billing dispute with Cloudflare successfully?"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Durable Object alarm loop: $34k in 8 days, zero users, no platform warning"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_thewillmoss",
+          "story_47787042",
+          "ask_hn"
+        ],
+        "author": "thewillmoss",
+        "created_at": "2026-04-16T00:08:59Z",
+        "created_at_i": 1776298139,
+        "num_comments": 0,
+        "objectID": "47787042",
+        "points": 13,
+        "story_id": 47787042,
+        "story_text": "Sharing this as a warning to anyone using Cloudflare Durable Objects with alarms.<p>Root cause:<p>My DO agent&#x27;s onStart() handler called this.ctx.storage.setAlarm() on every wake-up without checking whether an alarm was already scheduled. Combined with 60+ preview Worker deployments each creating independent DO instances, this created a runaway self-health-check loop.<p>Timeline:\n- April 3: loop began (zero DO usage before this date)<p>- April 4-5: peaked at ~930 billion row reads&#x2F;day<p>- April 11: found it, fixed it<p>- April 15: $34,895 invoice due with no billing response yet<p>The fix:<p>&#x2F;&#x2F; Before (dangerous)\nasync onStart() {\n  await this.ctx.storage.setAlarm(Date.now() + 60_000)\n}<p>&#x2F;&#x2F; After (safe)\nasync onStart() {\nconst existing = await this.ctx.storage.getAlarm()\n  if (!existing) {\n    await this.ctx.storage.setAlarm(Date.now() + 60_000)\n  }\n}<p>Other things worth doing:\n- Strip DO bindings from preview environments entirely\n- Deploy a budget monitor kill switch Worker\n- Add a circuit breaker that checks alarm state before scheduling<p>Why I had no warning:<p>Cloudflare&#x27;s Workers Usage Notifications only monitors CPU time. Not Durable Object row reads or writes. There is also no hard spending cap for DO operations available in the dashboard or Wrangler config. Nothing would have fired an alert during this runaway. I found out when the bill showed up.<p>This is worth knowing if you&#x27;re using DO alarms. The platform will not tell you when DO row reads&#x2F;writes go exponential. You have to build your own kill switch.<p>One more thing that I think deserves more attention than it&#x27;s getting: this is Agents Week. Cloudflare is running a dedicated marketing push right now to get individual developers building AI agents on Durable Objects. Blog posts, announcements, the whole thing. That is a deliberate effort to onboard solo developers and indie founders into a product that can silently generate a five-figure bill with zero platform warning. There is no spending cap for DO operations. The usage notification system doesn&#x27;t cover DO reads or writes. Cloudflare knows this. Running Agents Week while that gap exists is not a neutral decision.<p>I&#x27;ve filed Case 02067725. I&#x27;m a pre-launch sole proprietor who put all my personal savings into this startup. This bill would financially destroy me for usage that generated zero business value. Sharing here both as a technical warning and because I need help getting this in front of someone at Cloudflare who can make a decision.<p>Has anyone escalated a billing dispute with Cloudflare successfully?",
+        "title": "Durable Object alarm loop: $34k in 8 days, zero users, no platform warning",
+        "updated_at": "2026-04-16T07:26:44Z"
+      }
+    ]
+  },
+  "Vibe Coding": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "psiinon"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "<em>Vibe</em> <em>Coding</em> Security Fixes"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://www.zaproxy.org/blog/2026-04-15-<em>vibe</em>-<em>coding</em>-security-fixes/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_psiinon",
+          "story_47781532"
+        ],
+        "author": "psiinon",
+        "created_at": "2026-04-15T16:34:59Z",
+        "created_at_i": 1776270899,
+        "num_comments": 0,
+        "objectID": "47781532",
+        "points": 1,
+        "story_id": 47781532,
+        "title": "Vibe Coding Security Fixes",
+        "updated_at": "2026-04-15T16:40:13Z",
+        "url": "https://www.zaproxy.org/blog/2026-04-15-vibe-coding-security-fixes/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "maxim_bg"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "Instruction-Driven Development vs. Outcome-Driven Development vs. <em>Vibe</em> <em>Coding</em>"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://o1maxim.substack.com/p/instruction-driven-development-vs"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_maxim_bg",
+          "story_47781491"
+        ],
+        "author": "maxim_bg",
+        "created_at": "2026-04-15T16:31:59Z",
+        "created_at_i": 1776270719,
+        "num_comments": 0,
+        "objectID": "47781491",
+        "points": 1,
+        "story_id": 47781491,
+        "title": "Instruction-Driven Development vs. Outcome-Driven Development vs. Vibe Coding",
+        "updated_at": "2026-04-15T16:34:57Z",
+        "url": "https://o1maxim.substack.com/p/instruction-driven-development-vs"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "10keane"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "i am using claude to maintain an agent loop, which will pause to ask for users' approval before important tool call. while doing some bug fixes，i have identified some clear patterns and reasons why <em>vibe</em> <em>coding</em> can fail for people who dont have technical knowledge and architecture expertise.<p>let me describe my workflow first - this has been my workflow across hundreds of successful sessions: \n1. identify bugs through dogfooding\n2. ask claude code to investigate the codebase for three potential root causes.\n3. paste the root causes and proposed fixes to claude project where i store all architecture doc and design decision for it to evaluate\n4. discuss with claude in project to write detailed task spec - the task spec will have a specified format with all sorts of test\n5. give it back to claude code to implement the fix<p>in today's session, the root cause analysis was still great, but the proposed fixes are so bad that i really think that's how most of <em>vibe</em> coded project lost maintainability in the long run.<p>there is two of the root causes and proposed fix:<p>bug: agent asks for user approval, but sometimes the approval popup doesnt show up. i tried sending a message to unstick it. message got silently swallowed. agent looks dead. and i needed to restart the entire thing.<p>claude's evaluation:\nroot cause 1:\nthe approval popup is sent once over a live connection. if the user's ui isn't connected at that moment — page refresh, phone backgrounded, flaky connection — they never see it. no retry, no recovery.<p>this is actually true.<p>proposed fix\n&quot;let's save approval state to disk so it survives crashes&quot;. sounds fine but then the key is by design, if things crashes, the agent will cold-resume from the session log, and it wont pick up the approval state anyway. the fix just add schema complexity and it's completely useless<p>root cause 2:\nwhen an approval gets interrupted (daemon crash, user restart), there's an orphan tool_call in the session history with no matching tool_result.<p>proposed fix:\n&quot;write a synthetic tool_result to keep the session file structurally valid.&quot; sounds clean. but i asked: who actually breaks on this? the LLM API? no, it handles missing results. the session replay? no, it reads what's there. the orphan tool_call accurately represents what happened: the tool was called but never completed. that's the truth. writing a fake result to paper over it introduces a new write-coordination concern (when exactly do you write the fake result? what if the daemon crashes during the write?) to solve a problem that doesn't exist. the session file isn't &quot;broken.&quot; it's accurate.<p>claude had full architecture docs, the codebase, and over a hundred sessions of project history in context. it still reaches for the complex solution because it LOOKS like good engineering. it never asked &quot;does it even matter after a restart?&quot;<p>i have personally encounterd this preference for seemingly more robust over-engineering multiple times. and i genuinely believe that this is where human operate actually should step in, instead of giving an one-sentence requirement and watches agents to do all sorts of &quot;robust&quot; engineering."
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "Why <em>Vibe</em> <em>Coding</em> Fails"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_10keane",
+          "story_47778946",
+          "ask_hn"
+        ],
+        "author": "10keane",
+        "children": [
+          47779128,
+          47778971
+        ],
+        "created_at": "2026-04-15T13:50:04Z",
+        "created_at_i": 1776261004,
+        "num_comments": 4,
+        "objectID": "47778946",
+        "points": 7,
+        "story_id": 47778946,
+        "story_text": "i am using claude to maintain an agent loop, which will pause to ask for users&#x27; approval before important tool call. while doing some bug fixes，i have identified some clear patterns and reasons why vibe coding can fail for people who dont have technical knowledge and architecture expertise.<p>let me describe my workflow first - this has been my workflow across hundreds of successful sessions: \n1. identify bugs through dogfooding\n2. ask claude code to investigate the codebase for three potential root causes.\n3. paste the root causes and proposed fixes to claude project where i store all architecture doc and design decision for it to evaluate\n4. discuss with claude in project to write detailed task spec - the task spec will have a specified format with all sorts of test\n5. give it back to claude code to implement the fix<p>in today&#x27;s session, the root cause analysis was still great, but the proposed fixes are so bad that i really think that&#x27;s how most of vibe coded project lost maintainability in the long run.<p>there is two of the root causes and proposed fix:<p>bug: agent asks for user approval, but sometimes the approval popup doesnt show up. i tried sending a message to unstick it. message got silently swallowed. agent looks dead. and i needed to restart the entire thing.<p>claude&#x27;s evaluation:\nroot cause 1:\nthe approval popup is sent once over a live connection. if the user&#x27;s ui isn&#x27;t connected at that moment — page refresh, phone backgrounded, flaky connection — they never see it. no retry, no recovery.<p>this is actually true.<p>proposed fix\n&quot;let&#x27;s save approval state to disk so it survives crashes&quot;. sounds fine but then the key is by design, if things crashes, the agent will cold-resume from the session log, and it wont pick up the approval state anyway. the fix just add schema complexity and it&#x27;s completely useless<p>root cause 2:\nwhen an approval gets interrupted (daemon crash, user restart), there&#x27;s an orphan tool_call in the session history with no matching tool_result.<p>proposed fix:\n&quot;write a synthetic tool_result to keep the session file structurally valid.&quot; sounds clean. but i asked: who actually breaks on this? the LLM API? no, it handles missing results. the session replay? no, it reads what&#x27;s there. the orphan tool_call accurately represents what happened: the tool was called but never completed. that&#x27;s the truth. writing a fake result to paper over it introduces a new write-coordination concern (when exactly do you write the fake result? what if the daemon crashes during the write?) to solve a problem that doesn&#x27;t exist. the session file isn&#x27;t &quot;broken.&quot; it&#x27;s accurate.<p>claude had full architecture docs, the codebase, and over a hundred sessions of project history in context. it still reaches for the complex solution because it LOOKS like good engineering. it never asked &quot;does it even matter after a restart?&quot;<p>i have personally encounterd this preference for seemingly more robust over-engineering multiple times. and i genuinely believe that this is where human operate actually should step in, instead of giving an one-sentence requirement and watches agents to do all sorts of &quot;robust&quot; engineering.",
+        "title": "Why Vibe Coding Fails",
+        "updated_at": "2026-04-15T21:33:12Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "zonked45"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "EML operator family, 52-74% node reduction, and empirical results from 36 hours of building\nWe spent 36 hours implementing and extending arXiv:2603.21852 (Odrzywołek, 2026 — the &quot;NAND gate for continuous math&quot; paper that was on the front page two days ago).\nWhat we found: phantom attractors in EML symbolic regression, a Lambert W fixed point governing right-chain trees, two new operators (EDL, EXL), a HybridOperator that cuts node counts 52-74%, and machine-precision Taylor sin(x) at 108 nodes.\nnpm install monogate / pip install monogate\nLive explorer: <a href=\"https://explorer.monogate.dev/\" rel=\"nofollow\">https://explorer.monogate.dev/</a>\nChallenge board: monogate.dev\nPaper draft: github.com/almaguer1986/monogate/blob/main/python/PAPER.md<p>just <em>vibe</em> <em>coding</em> this with claude and grok<p>hopefully this is helpful or useful to someone"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Monogate – EML operator family, hybrid framework, 108-node sin(x)"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.monogate.dev/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_zonked45",
+          "story_47778156",
+          "show_hn"
+        ],
+        "author": "zonked45",
+        "created_at": "2026-04-15T12:33:56Z",
+        "created_at_i": 1776256436,
+        "num_comments": 0,
+        "objectID": "47778156",
+        "points": 1,
+        "story_id": 47778156,
+        "story_text": "EML operator family, 52-74% node reduction, and empirical results from 36 hours of building\nWe spent 36 hours implementing and extending arXiv:2603.21852 (Odrzywołek, 2026 — the &quot;NAND gate for continuous math&quot; paper that was on the front page two days ago).\nWhat we found: phantom attractors in EML symbolic regression, a Lambert W fixed point governing right-chain trees, two new operators (EDL, EXL), a HybridOperator that cuts node counts 52-74%, and machine-precision Taylor sin(x) at 108 nodes.\nnpm install monogate &#x2F; pip install monogate\nLive explorer: <a href=\"https:&#x2F;&#x2F;explorer.monogate.dev&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;explorer.monogate.dev&#x2F;</a>\nChallenge board: monogate.dev\nPaper draft: github.com&#x2F;almaguer1986&#x2F;monogate&#x2F;blob&#x2F;main&#x2F;python&#x2F;PAPER.md<p>just vibe coding this with claude and grok<p>hopefully this is helpful or useful to someone",
+        "title": "Show HN: Monogate – EML operator family, hybrid framework, 108-node sin(x)",
+        "updated_at": "2026-04-15T12:38:56Z",
+        "url": "https://www.monogate.dev/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "_zer0c00l_"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "Show HN: We're rebuilding Google, YouTube and 3 more giant apps with <em>vibe</em> <em>coding</em>"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.rebuildtheinternet.com"
+          }
+        },
+        "_tags": [
+          "story",
+          "author__zer0c00l_",
+          "story_47778128",
+          "show_hn"
+        ],
+        "author": "_zer0c00l_",
+        "created_at": "2026-04-15T12:30:49Z",
+        "created_at_i": 1776256249,
+        "num_comments": 0,
+        "objectID": "47778128",
+        "points": 1,
+        "story_id": 47778128,
+        "title": "Show HN: We're rebuilding Google, YouTube and 3 more giant apps with vibe coding",
+        "updated_at": "2026-04-15T12:33:42Z",
+        "url": "https://www.rebuildtheinternet.com"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "d0able"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "vibe"
+            ],
+            "value": "There are a lot of great fonts out there, but what's missing?<p>On my list:\n- show nonprintable / zero width characters\n- &quot;relaxing&quot; <em>vibe</em>?"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "coding"
+            ],
+            "value": "What do you want out of a <em>coding</em> monospace font?"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_d0able",
+          "story_47773594",
+          "ask_hn"
+        ],
+        "author": "d0able",
+        "children": [
+          47788359,
+          47773846,
+          47787873,
+          47773721,
+          47773787,
+          47773959,
+          47779697
+        ],
+        "created_at": "2026-04-15T01:31:01Z",
+        "created_at_i": 1776216661,
+        "num_comments": 7,
+        "objectID": "47773594",
+        "points": 2,
+        "story_id": 47773594,
+        "story_text": "There are a lot of great fonts out there, but what&#x27;s missing?<p>On my list:\n- show nonprintable &#x2F; zero width characters\n- &quot;relaxing&quot; vibe?",
+        "title": "What do you want out of a coding monospace font?",
+        "updated_at": "2026-04-16T07:12:43Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "niwid"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "<em>Vibe</em> <em>Coding</em> doesn't democratize software engineering – it democratizes liability"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://widal.substack.com/p/<em>vibe</em>-<em>coding</em>-doesnt-democratize-software"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_niwid",
+          "story_47773495"
+        ],
+        "author": "niwid",
+        "children": [
+          47773496
+        ],
+        "created_at": "2026-04-15T01:14:30Z",
+        "created_at_i": 1776215670,
+        "num_comments": 0,
+        "objectID": "47773495",
+        "points": 3,
+        "story_id": 47773495,
+        "title": "Vibe Coding doesn't democratize software engineering – it democratizes liability",
+        "updated_at": "2026-04-15T02:28:54Z",
+        "url": "https://widal.substack.com/p/vibe-coding-doesnt-democratize-software"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "TechSquidTV"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "Hey all,<p>To be up-front, this is a <em>vibe</em>-coded project. I have been developing a large number of personal tools that I have had in my backlog for years, finally realized by <em>vibe</em> <em>coding</em>. That said, I have been a developer for somewhere around 20 years.<p>This is a simple Vite/React app with a tiny Node.js proxy for authenticating with Plex (and other media servers). Run the docker image on the same network as your Plex media server, load up the currently playing video file, and make your clip.<p>Here's a tiny video of it: <a href=\"https://x.com/TechSquidTV/status/2043886838658552136\" rel=\"nofollow\">https://x.com/TechSquidTV/status/2043886838658552136</a>"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Cliparr – Export clips from your personal media server"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/TechSquidTV/Cliparr"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_TechSquidTV",
+          "story_47767280",
+          "show_hn"
+        ],
+        "author": "TechSquidTV",
+        "created_at": "2026-04-14T15:52:22Z",
+        "created_at_i": 1776181942,
+        "num_comments": 0,
+        "objectID": "47767280",
+        "points": 2,
+        "story_id": 47767280,
+        "story_text": "Hey all,<p>To be up-front, this is a vibe-coded project. I have been developing a large number of personal tools that I have had in my backlog for years, finally realized by vibe coding. That said, I have been a developer for somewhere around 20 years.<p>This is a simple Vite&#x2F;React app with a tiny Node.js proxy for authenticating with Plex (and other media servers). Run the docker image on the same network as your Plex media server, load up the currently playing video file, and make your clip.<p>Here&#x27;s a tiny video of it: <a href=\"https:&#x2F;&#x2F;x.com&#x2F;TechSquidTV&#x2F;status&#x2F;2043886838658552136\" rel=\"nofollow\">https:&#x2F;&#x2F;x.com&#x2F;TechSquidTV&#x2F;status&#x2F;2043886838658552136</a>",
+        "title": "Show HN: Cliparr – Export clips from your personal media server",
+        "updated_at": "2026-04-14T16:45:38Z",
+        "url": "https://github.com/TechSquidTV/Cliparr"
+      }
+    ]
+  }
+}

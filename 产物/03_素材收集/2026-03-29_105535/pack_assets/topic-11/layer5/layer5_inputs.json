@@ -1,0 +1,65 @@
+{
+  "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+  "topic": {
+    "slug": "topic-11",
+    "title": "一键安装OpenClaw+常用skills，你奶奶5分钟也能用上龙虾",
+    "topic_type": "geopolitics",
+    "topic_root": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11"
+  },
+  "template": {
+    "selected_id": "geo_timeline_map",
+    "selected_name": "地缘时政时间线地图 (Geo Timeline Map)",
+    "selection_reason": [
+      "主题包含地缘冲突/政策演进",
+      "需要事件时间线与地图风险层联动",
+      "适配 DeckGLMap 与 StrategicRiskPanel"
+    ],
+    "required_fields": [
+      "event_timeline_json",
+      "map_layers_json",
+      "chart_csvs",
+      "chart_pngs",
+      "scene_plan"
+    ],
+    "available_fields": [
+      "chart_anchor_ids",
+      "current_status",
+      "inputs",
+      "page_modules",
+      "preferred_components",
+      "proxy_port",
+      "template_id",
+      "worldmonitor_project"
+    ]
+  },
+  "assets": {
+    "chart_csvs": [
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/csv/chart-01_install_flow_nodes.csv",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/csv/chart-02_security_boundary.csv",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/csv/chart-03_team_governance_nodes.csv",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/csv/chart-04_troubleshoot_nodes.csv",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/csv/chart_anchor_plan.csv"
+    ],
+    "chart_pngs": [
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/png/chart-01_install_flow.png",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/png/chart-02_security_boundary_matrix.png",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/png/chart-03_team_governance_loop.png",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/png/chart-04_troubleshoot_tree.png"
+    ],
+    "logic_relations_json": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/layer5/logic_relations.json",
+    "scene_plan_json": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/videos/scene_plan.json",
+    "layer5_delivery_plan_json": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/layer5/layer5_delivery_plan.json",
+    "layer5_delivery_inputs_json": "",
+    "layer5_inputs_json": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/layer5/layer5_inputs.json"
+  },
+  "worldmonitor": {
+    "project": "/Volumes/PSSD/Projects/worldmonitor",
+    "data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+    "public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+    "entry": "index.html",
+    "proxy_port": 8787
+  },
+  "key_metrics_to_emit": [],
+  "risk_scenarios": [],
+  "generated_at": "2026-03-31T17:03:57+0800"
+}

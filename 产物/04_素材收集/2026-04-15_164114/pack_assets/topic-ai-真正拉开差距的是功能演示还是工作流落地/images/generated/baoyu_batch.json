@@ -1,0 +1,15 @@
+{
+  "jobs": 2,
+  "tasks": [
+    {
+      "id": "cover",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-15_164114/artifacts/material/pack_assets/topic-ai-真正拉开差距的是功能演示还是工作流落地/prompts/ai/cover.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-15_164114/artifacts/material/pack_assets/topic-ai-真正拉开差距的是功能演示还是工作流落地/images/generated/cover.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    }
+  ]
+}

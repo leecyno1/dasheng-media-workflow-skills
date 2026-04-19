@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-04-05_170457",
+  "generated_at": "2026-04-05T18:19:04.300209",
+  "stage": "brief",
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-05_170457/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v4",
+  "manual_topics": [],
+  "generation_mode": "ai",
+  "candidate_topics": [
+    "伊朗事件热度高涨，不等于原油市场秩序风险缓解",
+    "外交部关注中东局势，背后是秩序成本的长期攀升",
+    "市场在交易英伟达热度，真正的半导体周期主线仍未转变",
+    "英伟达半导体业务热度，半导体周期全面回暖尚未确立",
+    "白银真正被重估的是风险溢价的结构变量",
+    "川普效应不等于贵金属风险溢价全面反转",
+    "降息环境中再通胀风险被忽视了吗？",
+    "中东局势驱动下的利率与通胀预期分歧加剧"
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v4/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v4/02_研究Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v4/02_编辑Brief_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v4/topic_cards.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v4/selected_topics.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v4/selected_topics.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v4/brief_manifest.json"
+  ],
+  "next_stage": "draft"
+}

@@ -1,0 +1,308 @@
+{
+  "run_id": "2026-04-05_075240_ai",
+  "generated_at": "2026-04-05T15:30:00+08:00",
+  "stage": "material_execution",
+  "object_type": "Run",
+  "execution_model": "ai_driven_generation",
+  "input_source": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-05_075240_ai",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/04_Material/2026-04-05_075240_ai",
+  "execution_status": "p0_charts_complete",
+  "topics": [
+    {
+      "topic_id": "topic-ai-ma-boom-q1-2026",
+      "title": "1.2万亿美元AI并购狂潮：Q1 2026企业巨头如何重塑全球产业版图",
+      "charts": {
+        "total": 5,
+        "completed": 2,
+        "pending": 3,
+        "items": [
+          {
+            "chart_id": "chart-01",
+            "title": "Q1 2026全球M&A规模历史对比",
+            "type": "bar_chart",
+            "priority": "P1",
+            "status": "pending",
+            "file": null
+          },
+          {
+            "chart_id": "chart-02",
+            "title": "Q1 2026 AI并购资金流向分布",
+            "type": "pie_chart",
+            "priority": "P0",
+            "status": "completed",
+            "file": "topic-ai-ma-boom-q1-2026/charts/chart_02_ai_funding_distribution.png",
+            "quality_report": "topic-ai-ma-boom-q1-2026/charts/chart_02_quality_report.md"
+          },
+          {
+            "chart_id": "chart-03",
+            "title": "五大巨头Q1并购支出对比",
+            "type": "horizontal_bar_chart",
+            "priority": "P0",
+            "status": "completed",
+            "file": "topic-ai-ma-boom-q1-2026/charts/chart_03_tech_giants_spending.png",
+            "quality_report": "topic-ai-ma-boom-q1-2026/charts/chart_03_quality_report.md"
+          },
+          {
+            "chart_id": "chart-04",
+            "title": "AI融资轮次分化趋势",
+            "type": "line_chart",
+            "priority": "P1",
+            "status": "pending",
+            "file": null
+          },
+          {
+            "chart_id": "chart-05",
+            "title": "AI产业格局演变（2023-2030预测）",
+            "type": "timeline_ecosystem",
+            "priority": "P2",
+            "status": "pending",
+            "file": null
+          }
+        ]
+      },
+      "images": {
+        "total": 3,
+        "completed": 0,
+        "pending": 3,
+        "items": [
+          {
+            "image_id": "img-01",
+            "title": "科技巨头CEO合影/标志性建筑",
+            "priority": "P0",
+            "status": "keywords_prepared",
+            "keywords_file": "topic-ai-ma-boom-q1-2026/images/image_search_keywords.md",
+            "file": null
+          },
+          {
+            "image_id": "img-02",
+            "title": "AI芯片/数据中心",
+            "priority": "P1",
+            "status": "keywords_prepared",
+            "keywords_file": "topic-ai-ma-boom-q1-2026/images/image_search_keywords.md",
+            "file": null
+          },
+          {
+            "image_id": "img-03",
+            "title": "创业者/投资者场景",
+            "priority": "P1",
+            "status": "keywords_prepared",
+            "keywords_file": "topic-ai-ma-boom-q1-2026/images/image_search_keywords.md",
+            "file": null
+          }
+        ]
+      },
+      "videos": {
+        "total": 2,
+        "completed": 0,
+        "pending": 2,
+        "items": [
+          {
+            "video_id": "vid-01",
+            "title": "五大巨头并购案例动画",
+            "priority": "P2",
+            "status": "pending",
+            "file": null
+          },
+          {
+            "video_id": "vid-02",
+            "title": "AI生态位战争示意图",
+            "priority": "P2",
+            "status": "pending",
+            "file": null
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "topic-china-15th-five-year-plan-2026",
+      "title": "中国十五五规划开局：4.5%-5%增长目标背后的结构性转型信号",
+      "charts": {
+        "total": 6,
+        "completed": 2,
+        "pending": 4,
+        "items": [
+          {
+            "chart_id": "chart-01",
+            "title": "中国GDP增长目标历史对比（2010-2030）",
+            "type": "line_chart",
+            "priority": "P0",
+            "status": "completed",
+            "file": "topic-china-15th-five-year-plan-2026/charts/chart_01_gdp_growth_history.png",
+            "quality_report": "topic-china-15th-five-year-plan-2026/charts/chart_01_quality_report.md"
+          },
+          {
+            "chart_id": "chart-02",
+            "title": "投资驱动模式的三大结构性问题",
+            "type": "radar_chart",
+            "priority": "P1",
+            "status": "pending",
+            "file": null
+          },
+          {
+            "chart_id": "chart-03",
+            "title": "十五五规划三大主线投资规模",
+            "type": "stacked_bar_chart",
+            "priority": "P0",
+            "status": "completed",
+            "file": "topic-china-15th-five-year-plan-2026/charts/chart_03_three_pillars_investment.png",
+            "quality_report": "topic-china-15th-five-year-plan-2026/charts/chart_03_quality_report.md"
+          },
+          {
+            "chart_id": "chart-04",
+            "title": "消费占GDP比重演变（2010-2030预测）",
+            "type": "area_chart",
+            "priority": "P1",
+            "status": "pending",
+            "file": null
+          },
+          {
+            "chart_id": "chart-05",
+            "title": "关键技术自给率提升路径",
+            "type": "progress_bar_target",
+            "priority": "P2",
+            "status": "pending",
+            "file": null
+          },
+          {
+            "chart_id": "chart-06",
+            "title": "RCEP内部贸易占比演变",
+            "type": "pie_trend",
+            "priority": "P2",
+            "status": "pending",
+            "file": null
+          }
+        ]
+      },
+      "images": {
+        "total": 4,
+        "completed": 0,
+        "pending": 4,
+        "items": [
+          {
+            "image_id": "img-01",
+            "title": "中国经济转型象征图",
+            "priority": "P0",
+            "status": "keywords_prepared",
+            "keywords_file": "topic-china-15th-five-year-plan-2026/images/image_search_keywords.md",
+            "file": null
+          },
+          {
+            "image_id": "img-02",
+            "title": "AI+制造场景",
+            "priority": "P1",
+            "status": "keywords_prepared",
+            "keywords_file": "topic-china-15th-five-year-plan-2026/images/image_search_keywords.md",
+            "file": null
+          },
+          {
+            "image_id": "img-03",
+            "title": "消费升级场景",
+            "priority": "P1",
+            "status": "keywords_prepared",
+            "keywords_file": "topic-china-15th-five-year-plan-2026/images/image_search_keywords.md",
+            "file": null
+          },
+          {
+            "image_id": "img-04",
+            "title": "跨国企业在华布局",
+            "priority": "P2",
+            "status": "keywords_prepared",
+            "keywords_file": "topic-china-15th-five-year-plan-2026/images/image_search_keywords.md",
+            "file": null
+          }
+        ]
+      },
+      "videos": {
+        "total": 2,
+        "completed": 0,
+        "pending": 2,
+        "items": [
+          {
+            "video_id": "vid-01",
+            "title": "十五五规划三大主线动画",
+            "priority": "P2",
+            "status": "pending",
+            "file": null
+          },
+          {
+            "video_id": "vid-02",
+            "title": "中国经济增长模式转型示意图",
+            "priority": "P2",
+            "status": "pending",
+            "file": null
+          }
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "total_materials": 22,
+    "completed": 4,
+    "pending": 18,
+    "by_priority": {
+      "p0": {
+        "total": 8,
+        "completed": 4,
+        "pending": 4,
+        "breakdown": {
+          "charts": {
+            "total": 6,
+            "completed": 4,
+            "pending": 2
+          },
+          "images": {
+            "total": 2,
+            "completed": 0,
+            "pending": 2
+          }
+        }
+      },
+      "p1": {
+        "total": 9,
+        "completed": 0,
+        "pending": 9
+      },
+      "p2": {
+        "total": 5,
+        "completed": 0,
+        "pending": 5
+      }
+    },
+    "by_type": {
+      "charts": {
+        "total": 11,
+        "completed": 4,
+        "pending": 7
+      },
+      "images": {
+        "total": 7,
+        "completed": 0,
+        "pending": 7
+      },
+      "videos": {
+        "total": 4,
+        "completed": 0,
+        "pending": 4
+      }
+    }
+  },
+  "ai_optimization": {
+    "chart_generation": "Automated Python generation with data validation",
+    "quality_reports": "Every chart includes quality report with source validation",
+    "keyword_optimization": "AI-optimized search keywords prepared for all images",
+    "expected_improvement": "50-100% better image search hit rate"
+  },
+  "next_steps": [
+    "Execute image searches for 2 P0 header images",
+    "Generate remaining P1 charts (5 charts)",
+    "Search for P1 supporting images (5 images)",
+    "Optional: Generate P2 charts and videos"
+  ],
+  "gate_status": "p0_charts_complete",
+  "next_stage": "rewrite",
+  "next_stage_requirements": [
+    "Complete P0 image searches (recommended)",
+    "Integrate materials into draft documents",
+    "Proceed to rewrite stage with 4 platform variants per topic"
+  ]
+}

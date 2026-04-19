@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "object_type": "Layer5Inputs",
+    "topic_slug": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+    "topic_type": "general_commentary",
+    "title": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+    "generated_at": "2026-04-02T23:20:51.075Z"
+  },
+  "template": {
+    "template_id": "story_page",
+    "template_name": "通用故事面板 (Story Page)",
+    "narrative_schema": "thesis_then_evidence_then_risks",
+    "data_granularity": "monthly",
+    "layout_hint": "chart_gallery_centered"
+  },
+  "worldmonitor": {
+    "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+    "project_root": "/Volumes/PSSD/Projects/worldmonitor",
+    "data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+    "public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+    "entry": "index.html",
+    "proxy_port": 8787
+  },
+  "required_assets": {
+    "chart_anchor_ids": [
+      "chart-01",
+      "chart-02",
+      "chart-03",
+      "chart-04"
+    ],
+    "chart_csvs": [
+      "charts/csv/chart-01.csv",
+      "charts/csv/chart-02.csv",
+      "charts/csv/chart-03.csv",
+      "charts/csv/chart-04.csv"
+    ],
+    "chart_pngs": [
+      "charts/png/chart-01.png",
+      "charts/png/chart-02.png",
+      "charts/png/chart-03.png",
+      "charts/png/chart-04.png"
+    ],
+    "scene_plan": "videos/scene_plan.json",
+    "source_links": "videos/source_links/source_link_candidates.json"
+  },
+  "key_metrics_to_emit": [],
+  "risk_scenarios": [],
+  "preferred_components": [
+    "CountryTimeline"
+  ],
+  "page_modules": [
+    "hero-summary",
+    "chart-gallery",
+    "media-gallery"
+  ]
+}

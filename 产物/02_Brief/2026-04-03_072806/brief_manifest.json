@@ -1,0 +1,30 @@
+{
+  "run_id": "2026-04-03_072806",
+  "generated_at": "2026-04-03T07:57:47.163726",
+  "stage": "brief",
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-03_072806/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-03_072806",
+  "manual_topics": [],
+  "candidate_topics": [
+    "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+    "停火预期反复下，黄金、原油和风险资产正在被怎样重新定价？",
+    "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+    "AI 工具与工作流接入里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+    "黄金、原油与地缘风险里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+    "表面在交易事件，真正的主线会不会其实是再通胀？",
+    "宏观政策与再通胀里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+    "其他高频观察里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+    "一键安装 OpenClaw + 常用 skills，为什么比“会用 AI”更重要的是“能不能接进工作流”",
+    "半导体突然很热闹，但行业最危险的误判可能才刚开始"
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-03_072806/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-03_072806/02_研究Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-03_072806/02_编辑Brief_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-03_072806/topic_cards.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-03_072806/selected_topics.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-03_072806/selected_topics.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-03_072806/brief_manifest.json"
+  ],
+  "next_stage": "draft"
+}

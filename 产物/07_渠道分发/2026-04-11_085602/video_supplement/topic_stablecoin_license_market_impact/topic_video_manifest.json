@@ -1,0 +1,33 @@
+{
+  "topic_id": "topic-stablecoin-license-market-impact",
+  "topic": "稳定币牌照落地:加密市场的'银行牌照时刻'",
+  "topic_prefix": "topic_stablecoin_license_market_impact",
+  "rewrite_source": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_稳定币牌照落地-加密_xiaohongshu_hot.md",
+  "material_pack_topic_dir": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/稳定币牌照",
+  "chart_csvs": [],
+  "decks": {
+    "interactive_charts_deck": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/inputs/interactive_charts_deck.json",
+    "motion_narrative_deck": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/inputs/motion_narrative_deck.json"
+  },
+  "exports": {
+    "interactive_charts": {
+      "ok": true,
+      "skipped": true,
+      "reason": "no_scenes",
+      "command": null,
+      "stdout": "",
+      "stderr": "",
+      "returncode": 0,
+      "timed_out": false
+    },
+    "motion_narrative": {
+      "ok": true,
+      "command": "node /Volumes/PSSD/Projects/finance-motion-8787/dashboard/scripts/export-scene-videos.mjs --scenes /Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/inputs/motion_narrative_deck.json --out /Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative",
+      "stdout": "{\n  \"ok\": true,\n  \"manifest\": \"/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/export_manifest.json\",\n  \"output\": \"/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative\"\n}\n",
+      "stderr": "",
+      "returncode": 0,
+      "timed_out": false
+    }
+  },
+  "topic_video_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/topic_video_manifest.json"
+}

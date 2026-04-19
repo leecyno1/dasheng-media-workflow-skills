@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Claude新模型引发华尔街紧急会议:AI对金融业的风险在哪｜互动图表视频",
+    "description": "来自历史图表 CSV 的动态图表视频补充",
+    "version": "2026.04.14"
+  },
+  "global": {
+    "factoryVersion": "v1.0.0",
+    "autoplay": true,
+    "autoplayGapMs": 800,
+    "tabSwitchRestart": true
+  },
+  "scenes": []
+}

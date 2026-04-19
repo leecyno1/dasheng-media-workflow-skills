@@ -1,0 +1,60 @@
+{
+  "run_id": "2026-04-07_141203",
+  "created_at": "2026-04-07T14:12:03+08:00",
+  "updated_at": "2026-04-07T14:35:38.011Z",
+  "status": "running",
+  "current_stage": "material",
+  "stages": {
+    "intake": {
+      "status": "completed",
+      "completed_at": "2026-04-07T14:12:03+08:00"
+    },
+    "brief": {
+      "status": "completed",
+      "completed_at": "2026-04-07T14:15:00+08:00"
+    },
+    "draft": {
+      "status": "completed",
+      "completed_at": "2026-04-07T15:10:00+08:00"
+    },
+    "material": {
+      "status": "in_progress",
+      "started_at": "2026-04-07T22:30:00+08:00"
+    }
+  },
+  "artifacts": [
+    {
+      "step": "material",
+      "object_type": "MaterialPack",
+      "count": 3,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/material-packs.json",
+      "doc_url": null
+    },
+    {
+      "step": "material",
+      "object_type": "MaterialMarkdown",
+      "count": 1,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/05_MaterialPack.md",
+      "doc_url": null
+    },
+    {
+      "step": "material",
+      "object_type": "MaterialReport",
+      "count": 1,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/05_Material_报告.md",
+      "doc_url": null
+    },
+    {
+      "step": "material",
+      "object_type": "MaterialManifest",
+      "count": 1,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/material_manifest.json",
+      "doc_url": null
+    }
+  ],
+  "completed_steps": [
+    "material"
+  ],
+  "failed_steps": [],
+  "current_step": "rewrite"
+}

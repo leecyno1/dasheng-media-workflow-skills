@@ -1,0 +1,70 @@
+{
+  "run_id": "2026-04-16_155809",
+  "stage": "material",
+  "upstream_type": "MaterialInput[]",
+  "upstream_entry": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/material_ai_inputs.json",
+  "upstream_files": [
+    "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/material_ai_inputs.json"
+  ],
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets",
+  "generation_basis": "final_doc_ai_reading",
+  "selected_topics": [
+    "日本核武器能力披露背后：从和平宪法到军事化的结构性转变"
+  ],
+  "topic_types": [
+    {
+      "topic_id": "topic-japan-nuclear-capability-diplomatic-crisis",
+      "topic_type": "geopolitics",
+      "layer5_template": "geo_timeline_map",
+      "video_quality_policy": {
+        "min_height": 0,
+        "min_duration_seconds": 8,
+        "min_scene_changes": 2,
+        "min_scene_change_rate": 0.08,
+        "allow_news_live_or_interview": true,
+        "block_self_media_talking_head": true,
+        "reject_screenshot_montage": true,
+        "report_fields": [
+          "source_category",
+          "source_ok",
+          "resolution_height",
+          "duration_seconds",
+          "scene_changes",
+          "scene_change_rate",
+          "anti_screenshot_montage_pass",
+          "final_pass",
+          "fail_reasons"
+        ]
+      },
+      "claim_bindings": 5
+    }
+  ],
+  "asset_counts": [
+    {
+      "topic_id": "topic-japan-nuclear-capability-diplomatic-crisis",
+      "image_items": 11,
+      "video_items": 8,
+      "chart_items": 4,
+      "reference_items": 6
+    }
+  ],
+  "asset_binding_contract": [
+    "claim_id",
+    "section_id",
+    "usage_type",
+    "relevance_score",
+    "editor_status"
+  ],
+  "quality_audit_expected_fields": [
+    "source_category",
+    "source_ok",
+    "resolution_height",
+    "duration_seconds",
+    "scene_changes",
+    "scene_change_rate",
+    "anti_screenshot_montage_pass",
+    "final_pass",
+    "fail_reasons"
+  ],
+  "status": "ready_for_material_execution"
+}

@@ -1,0 +1,640 @@
+{
+  "run_id": "2026-04-11_085602",
+  "stage": "publish",
+  "layer": "channel_execution",
+  "generated_at": "2026-04-14T10:32:50",
+  "status": "ready_for_channel_execution",
+  "blockers": [],
+  "executions": [
+    {
+      "topic_id": "topic-ai-financial-risk-regulation",
+      "topic_name": "Claude新模型引发华尔街紧急会议：AI对金融业的风险在哪",
+      "channel": "wechat_article",
+      "variant": "wechat_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_claude新模型引_wechat_hot.md",
+      "executor_skill": "baoyu-post-to-wechat",
+      "source_skill_path": null,
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "semi_automated",
+      "mode": "draft_or_browser_confirm",
+      "status": "pending_user_confirmation",
+      "manual_action_required": true,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [],
+      "title_candidates": [
+        "Claude把华尔街吓到了，真正的风险不是模型更强",
+        "华尔街为何因Claude开紧急会：AI金融风险开始进入实战区",
+        "AI进了金融深水区，华尔街最怕的不是失业而是失控"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/claude华尔街紧急会议/01_claude华尔街紧急会议_纽约联储大楼.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/claude华尔街紧急会议/claude华尔街紧急会议_manga.png"
+      ],
+      "publish_time": "2026-04-14T09:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-ai-financial-risk-regulation",
+      "topic_name": "Claude新模型引发华尔街紧急会议：AI对金融业的风险在哪",
+      "channel": "weibo_post",
+      "variant": "wechat_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_claude新模型引_wechat_hot.md",
+      "executor_skill": "weibo-manager",
+      "source_skill_path": null,
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "approval_required",
+      "mode": "request_approve_execute",
+      "status": "pending_approval_request",
+      "manual_action_required": true,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [],
+      "title_candidates": [
+        "Claude把华尔街吓到了，真正的风险不是模型更强",
+        "华尔街为何因Claude开紧急会：AI金融风险开始进入实战区",
+        "AI进了金融深水区，华尔街最怕的不是失业而是失控"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/claude华尔街紧急会议/01_claude华尔街紧急会议_纽约联储大楼.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/claude华尔街紧急会议/claude华尔街紧急会议_manga.png"
+      ],
+      "publish_time": "2026-04-14T09:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-ai-financial-risk-regulation",
+      "topic_name": "Claude新模型引发华尔街紧急会议：AI对金融业的风险在哪",
+      "channel": "x_post",
+      "variant": "wechat_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_claude新模型引_wechat_hot.md",
+      "executor_skill": "baoyu-post-to-x",
+      "source_skill_path": null,
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "semi_automated",
+      "mode": "browser_confirm",
+      "status": "pending_user_confirmation",
+      "manual_action_required": true,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [],
+      "title_candidates": [
+        "Claude把华尔街吓到了，真正的风险不是模型更强",
+        "华尔街为何因Claude开紧急会：AI金融风险开始进入实战区",
+        "AI进了金融深水区，华尔街最怕的不是失业而是失控"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/claude华尔街紧急会议/01_claude华尔街紧急会议_纽约联储大楼.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/claude华尔街紧急会议/claude华尔街紧急会议_manga.png"
+      ],
+      "publish_time": "2026-04-14T09:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-ai-financial-risk-regulation",
+      "topic_name": "Claude新模型引发华尔街紧急会议：AI对金融业的风险在哪",
+      "channel": "xiaohongshu_video",
+      "variant": "xhs_video_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_claude新模型引_xiaohongshu_hot.md",
+      "executor_skill": "xiaohongshu-auto",
+      "source_skill_path": "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/xiaohongshu-auto/SKILL.md",
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "automated",
+      "mode": "auto_publish",
+      "status": "pending_execution",
+      "manual_action_required": false,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/01__topic_ai_financial_risk_regulation-narrative-01__框架精华-结构时间线.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/01__topic_ai_financial_risk_regulation-narrative-01__框架精华-结构时间线.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/01__topic_ai_financial_risk_regulation-narrative-01__框架精华-结构时间线.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/02__topic_ai_financial_risk_regulation-narrative-02__关键数据-滚动条.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/02__topic_ai_financial_risk_regulation-narrative-02__关键数据-滚动条.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/02__topic_ai_financial_risk_regulation-narrative-02__关键数据-滚动条.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/03__topic_ai_financial_risk_regulation-narrative-03__风险强度评估.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/03__topic_ai_financial_risk_regulation-narrative-03__风险强度评估.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/03__topic_ai_financial_risk_regulation-narrative-03__风险强度评估.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/04__topic_ai_financial_risk_regulation-narrative-04__执行优先级.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/04__topic_ai_financial_risk_regulation-narrative-04__执行优先级.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/04__topic_ai_financial_risk_regulation-narrative-04__执行优先级.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/export_manifest.json"
+      ],
+      "title_candidates": [
+        "Claude把华尔街吓到了，真正的风险不是模型更强",
+        "华尔街为何因Claude开紧急会：AI金融风险开始进入实战区",
+        "AI进了金融深水区，华尔街最怕的不是失业而是失控"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/claude华尔街紧急会议/01_claude华尔街紧急会议_纽约联储大楼.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/claude华尔街紧急会议/claude华尔街紧急会议_manga.png"
+      ],
+      "publish_time": "2026-04-14T09:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-ai-financial-risk-regulation",
+      "topic_name": "Claude新模型引发华尔街紧急会议：AI对金融业的风险在哪",
+      "channel": "douyin_video",
+      "variant": "xhs_video_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_claude新模型引_xiaohongshu_hot.md",
+      "executor_skill": "douyin-upload-skill",
+      "source_skill_path": "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/douyin-upload-skill/SKILL.md",
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "automated",
+      "mode": "official_api_or_fallback",
+      "status": "pending_execution",
+      "manual_action_required": false,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/01__topic_ai_financial_risk_regulation-narrative-01__框架精华-结构时间线.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/01__topic_ai_financial_risk_regulation-narrative-01__框架精华-结构时间线.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/01__topic_ai_financial_risk_regulation-narrative-01__框架精华-结构时间线.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/02__topic_ai_financial_risk_regulation-narrative-02__关键数据-滚动条.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/02__topic_ai_financial_risk_regulation-narrative-02__关键数据-滚动条.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/02__topic_ai_financial_risk_regulation-narrative-02__关键数据-滚动条.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/03__topic_ai_financial_risk_regulation-narrative-03__风险强度评估.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/03__topic_ai_financial_risk_regulation-narrative-03__风险强度评估.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/03__topic_ai_financial_risk_regulation-narrative-03__风险强度评估.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/04__topic_ai_financial_risk_regulation-narrative-04__执行优先级.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/04__topic_ai_financial_risk_regulation-narrative-04__执行优先级.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/04__topic_ai_financial_risk_regulation-narrative-04__执行优先级.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/export_manifest.json"
+      ],
+      "title_candidates": [
+        "Claude把华尔街吓到了，真正的风险不是模型更强",
+        "华尔街为何因Claude开紧急会：AI金融风险开始进入实战区",
+        "AI进了金融深水区，华尔街最怕的不是失业而是失控"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/claude华尔街紧急会议/01_claude华尔街紧急会议_纽约联储大楼.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/claude华尔街紧急会议/claude华尔街紧急会议_manga.png"
+      ],
+      "publish_time": "2026-04-14T09:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-ai-financial-risk-regulation",
+      "topic_name": "Claude新模型引发华尔街紧急会议：AI对金融业的风险在哪",
+      "channel": "bilibili_video",
+      "variant": "xhs_video_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_claude新模型引_xiaohongshu_hot.md",
+      "executor_skill": null,
+      "source_skill_path": null,
+      "supporting_skill": "bilibili-youtube-watcher",
+      "supporting_skill_path": "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/bilibili-youtube-watcher/SKILL.md",
+      "automation_level": "manual_only",
+      "mode": "export_only",
+      "status": "manual_only",
+      "manual_action_required": true,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/01__topic_ai_financial_risk_regulation-narrative-01__框架精华-结构时间线.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/01__topic_ai_financial_risk_regulation-narrative-01__框架精华-结构时间线.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/01__topic_ai_financial_risk_regulation-narrative-01__框架精华-结构时间线.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/02__topic_ai_financial_risk_regulation-narrative-02__关键数据-滚动条.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/02__topic_ai_financial_risk_regulation-narrative-02__关键数据-滚动条.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/02__topic_ai_financial_risk_regulation-narrative-02__关键数据-滚动条.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/03__topic_ai_financial_risk_regulation-narrative-03__风险强度评估.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/03__topic_ai_financial_risk_regulation-narrative-03__风险强度评估.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/03__topic_ai_financial_risk_regulation-narrative-03__风险强度评估.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/04__topic_ai_financial_risk_regulation-narrative-04__执行优先级.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/04__topic_ai_financial_risk_regulation-narrative-04__执行优先级.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/04__topic_ai_financial_risk_regulation-narrative-04__执行优先级.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_ai_financial_risk_regulation/videos/motion_narrative/export_manifest.json"
+      ],
+      "title_candidates": [
+        "Claude把华尔街吓到了，真正的风险不是模型更强",
+        "华尔街为何因Claude开紧急会：AI金融风险开始进入实战区",
+        "AI进了金融深水区，华尔街最怕的不是失业而是失控"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/claude华尔街紧急会议/01_claude华尔街紧急会议_纽约联储大楼.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/claude华尔街紧急会议/claude华尔街紧急会议_manga.png"
+      ],
+      "publish_time": "2026-04-14T09:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-stablecoin-license-market-impact",
+      "topic_name": "稳定币牌照落地：加密市场的“银行牌照时刻”",
+      "channel": "wechat_article",
+      "variant": "wechat_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_稳定币牌照落地-加密_wechat_hot.md",
+      "executor_skill": "baoyu-post-to-wechat",
+      "source_skill_path": null,
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "semi_automated",
+      "mode": "draft_or_browser_confirm",
+      "status": "pending_user_confirmation",
+      "manual_action_required": true,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [],
+      "title_candidates": [
+        "稳定币牌照落地，真正变天的不是币圈而是金融入口",
+        "稳定币走到发牌照这一步，市场拼的已不是概念",
+        "这次稳定币不是又一轮炒作，它更像一次准银行化重组"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/稳定币牌照/01_稳定币牌照_金融科技.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/稳定币牌照/稳定币牌照_manga.png"
+      ],
+      "publish_time": "2026-04-14T12:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-stablecoin-license-market-impact",
+      "topic_name": "稳定币牌照落地：加密市场的“银行牌照时刻”",
+      "channel": "weibo_post",
+      "variant": "wechat_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_稳定币牌照落地-加密_wechat_hot.md",
+      "executor_skill": "weibo-manager",
+      "source_skill_path": null,
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "approval_required",
+      "mode": "request_approve_execute",
+      "status": "pending_approval_request",
+      "manual_action_required": true,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [],
+      "title_candidates": [
+        "稳定币牌照落地，真正变天的不是币圈而是金融入口",
+        "稳定币走到发牌照这一步，市场拼的已不是概念",
+        "这次稳定币不是又一轮炒作，它更像一次准银行化重组"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/稳定币牌照/01_稳定币牌照_金融科技.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/稳定币牌照/稳定币牌照_manga.png"
+      ],
+      "publish_time": "2026-04-14T12:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-stablecoin-license-market-impact",
+      "topic_name": "稳定币牌照落地：加密市场的“银行牌照时刻”",
+      "channel": "x_post",
+      "variant": "wechat_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_稳定币牌照落地-加密_wechat_hot.md",
+      "executor_skill": "baoyu-post-to-x",
+      "source_skill_path": null,
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "semi_automated",
+      "mode": "browser_confirm",
+      "status": "pending_user_confirmation",
+      "manual_action_required": true,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [],
+      "title_candidates": [
+        "稳定币牌照落地，真正变天的不是币圈而是金融入口",
+        "稳定币走到发牌照这一步，市场拼的已不是概念",
+        "这次稳定币不是又一轮炒作，它更像一次准银行化重组"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/稳定币牌照/01_稳定币牌照_金融科技.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/稳定币牌照/稳定币牌照_manga.png"
+      ],
+      "publish_time": "2026-04-14T12:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-stablecoin-license-market-impact",
+      "topic_name": "稳定币牌照落地：加密市场的“银行牌照时刻”",
+      "channel": "xiaohongshu_video",
+      "variant": "xhs_video_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_稳定币牌照落地-加密_xiaohongshu_hot.md",
+      "executor_skill": "xiaohongshu-auto",
+      "source_skill_path": "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/xiaohongshu-auto/SKILL.md",
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "automated",
+      "mode": "auto_publish",
+      "status": "pending_execution",
+      "manual_action_required": false,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/01__topic_stablecoin_license_market_impact-narrative-01__框架精华-结构时间线.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/01__topic_stablecoin_license_market_impact-narrative-01__框架精华-结构时间线.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/01__topic_stablecoin_license_market_impact-narrative-01__框架精华-结构时间线.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/02__topic_stablecoin_license_market_impact-narrative-02__关键数据-滚动条.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/02__topic_stablecoin_license_market_impact-narrative-02__关键数据-滚动条.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/02__topic_stablecoin_license_market_impact-narrative-02__关键数据-滚动条.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/03__topic_stablecoin_license_market_impact-narrative-03__风险强度评估.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/03__topic_stablecoin_license_market_impact-narrative-03__风险强度评估.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/03__topic_stablecoin_license_market_impact-narrative-03__风险强度评估.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/04__topic_stablecoin_license_market_impact-narrative-04__执行优先级.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/04__topic_stablecoin_license_market_impact-narrative-04__执行优先级.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/04__topic_stablecoin_license_market_impact-narrative-04__执行优先级.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/export_manifest.json"
+      ],
+      "title_candidates": [
+        "稳定币牌照落地，真正变天的不是币圈而是金融入口",
+        "稳定币走到发牌照这一步，市场拼的已不是概念",
+        "这次稳定币不是又一轮炒作，它更像一次准银行化重组"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/稳定币牌照/01_稳定币牌照_金融科技.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/稳定币牌照/稳定币牌照_manga.png"
+      ],
+      "publish_time": "2026-04-14T12:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-stablecoin-license-market-impact",
+      "topic_name": "稳定币牌照落地：加密市场的“银行牌照时刻”",
+      "channel": "douyin_video",
+      "variant": "xhs_video_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_稳定币牌照落地-加密_xiaohongshu_hot.md",
+      "executor_skill": "douyin-upload-skill",
+      "source_skill_path": "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/douyin-upload-skill/SKILL.md",
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "automated",
+      "mode": "official_api_or_fallback",
+      "status": "pending_execution",
+      "manual_action_required": false,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/01__topic_stablecoin_license_market_impact-narrative-01__框架精华-结构时间线.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/01__topic_stablecoin_license_market_impact-narrative-01__框架精华-结构时间线.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/01__topic_stablecoin_license_market_impact-narrative-01__框架精华-结构时间线.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/02__topic_stablecoin_license_market_impact-narrative-02__关键数据-滚动条.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/02__topic_stablecoin_license_market_impact-narrative-02__关键数据-滚动条.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/02__topic_stablecoin_license_market_impact-narrative-02__关键数据-滚动条.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/03__topic_stablecoin_license_market_impact-narrative-03__风险强度评估.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/03__topic_stablecoin_license_market_impact-narrative-03__风险强度评估.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/03__topic_stablecoin_license_market_impact-narrative-03__风险强度评估.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/04__topic_stablecoin_license_market_impact-narrative-04__执行优先级.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/04__topic_stablecoin_license_market_impact-narrative-04__执行优先级.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/04__topic_stablecoin_license_market_impact-narrative-04__执行优先级.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/export_manifest.json"
+      ],
+      "title_candidates": [
+        "稳定币牌照落地，真正变天的不是币圈而是金融入口",
+        "稳定币走到发牌照这一步，市场拼的已不是概念",
+        "这次稳定币不是又一轮炒作，它更像一次准银行化重组"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/稳定币牌照/01_稳定币牌照_金融科技.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/稳定币牌照/稳定币牌照_manga.png"
+      ],
+      "publish_time": "2026-04-14T12:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-stablecoin-license-market-impact",
+      "topic_name": "稳定币牌照落地：加密市场的“银行牌照时刻”",
+      "channel": "bilibili_video",
+      "variant": "xhs_video_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_稳定币牌照落地-加密_xiaohongshu_hot.md",
+      "executor_skill": null,
+      "source_skill_path": null,
+      "supporting_skill": "bilibili-youtube-watcher",
+      "supporting_skill_path": "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/bilibili-youtube-watcher/SKILL.md",
+      "automation_level": "manual_only",
+      "mode": "export_only",
+      "status": "manual_only",
+      "manual_action_required": true,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/01__topic_stablecoin_license_market_impact-narrative-01__框架精华-结构时间线.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/01__topic_stablecoin_license_market_impact-narrative-01__框架精华-结构时间线.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/01__topic_stablecoin_license_market_impact-narrative-01__框架精华-结构时间线.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/02__topic_stablecoin_license_market_impact-narrative-02__关键数据-滚动条.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/02__topic_stablecoin_license_market_impact-narrative-02__关键数据-滚动条.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/02__topic_stablecoin_license_market_impact-narrative-02__关键数据-滚动条.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/03__topic_stablecoin_license_market_impact-narrative-03__风险强度评估.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/03__topic_stablecoin_license_market_impact-narrative-03__风险强度评估.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/03__topic_stablecoin_license_market_impact-narrative-03__风险强度评估.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/04__topic_stablecoin_license_market_impact-narrative-04__执行优先级.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/04__topic_stablecoin_license_market_impact-narrative-04__执行优先级.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/04__topic_stablecoin_license_market_impact-narrative-04__执行优先级.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_stablecoin_license_market_impact/videos/motion_narrative/export_manifest.json"
+      ],
+      "title_candidates": [
+        "稳定币牌照落地，真正变天的不是币圈而是金融入口",
+        "稳定币走到发牌照这一步，市场拼的已不是概念",
+        "这次稳定币不是又一轮炒作，它更像一次准银行化重组"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/稳定币牌照/01_稳定币牌照_金融科技.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/稳定币牌照/稳定币牌照_manga.png"
+      ],
+      "publish_time": "2026-04-14T12:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-japan-embassy-incident-analysis",
+      "topic_name": "日本士兵闯使馆事件背后：个体极端行为还是系统性问题？",
+      "channel": "wechat_article",
+      "variant": "wechat_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_日本士兵闯使馆事件背_wechat_hot.md",
+      "executor_skill": "baoyu-post-to-wechat",
+      "source_skill_path": null,
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "semi_automated",
+      "mode": "draft_or_browser_confirm",
+      "status": "pending_user_confirmation",
+      "manual_action_required": true,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [],
+      "title_candidates": [
+        "日本士兵闯使馆，不该只当成一次个人失控",
+        "这起闯馆事件最危险的，不是冲动而是它背后的土壤",
+        "当日本士兵闯进使馆，我们该警惕的不是情绪而是结构"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/日本士兵闯使馆/02_日本士兵闯使馆_中国驻日大使馆.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/日本士兵闯使馆/日本士兵闯使馆_manga.png"
+      ],
+      "publish_time": "2026-04-14T18:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-japan-embassy-incident-analysis",
+      "topic_name": "日本士兵闯使馆事件背后：个体极端行为还是系统性问题？",
+      "channel": "weibo_post",
+      "variant": "wechat_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_日本士兵闯使馆事件背_wechat_hot.md",
+      "executor_skill": "weibo-manager",
+      "source_skill_path": null,
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "approval_required",
+      "mode": "request_approve_execute",
+      "status": "pending_approval_request",
+      "manual_action_required": true,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [],
+      "title_candidates": [
+        "日本士兵闯使馆，不该只当成一次个人失控",
+        "这起闯馆事件最危险的，不是冲动而是它背后的土壤",
+        "当日本士兵闯进使馆，我们该警惕的不是情绪而是结构"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/日本士兵闯使馆/02_日本士兵闯使馆_中国驻日大使馆.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/日本士兵闯使馆/日本士兵闯使馆_manga.png"
+      ],
+      "publish_time": "2026-04-14T18:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-japan-embassy-incident-analysis",
+      "topic_name": "日本士兵闯使馆事件背后：个体极端行为还是系统性问题？",
+      "channel": "x_post",
+      "variant": "wechat_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_日本士兵闯使馆事件背_wechat_hot.md",
+      "executor_skill": "baoyu-post-to-x",
+      "source_skill_path": null,
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "semi_automated",
+      "mode": "browser_confirm",
+      "status": "pending_user_confirmation",
+      "manual_action_required": true,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [],
+      "title_candidates": [
+        "日本士兵闯使馆，不该只当成一次个人失控",
+        "这起闯馆事件最危险的，不是冲动而是它背后的土壤",
+        "当日本士兵闯进使馆，我们该警惕的不是情绪而是结构"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/日本士兵闯使馆/02_日本士兵闯使馆_中国驻日大使馆.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/日本士兵闯使馆/日本士兵闯使馆_manga.png"
+      ],
+      "publish_time": "2026-04-14T18:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-japan-embassy-incident-analysis",
+      "topic_name": "日本士兵闯使馆事件背后：个体极端行为还是系统性问题？",
+      "channel": "xiaohongshu_video",
+      "variant": "xhs_video_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_日本士兵闯使馆事件背_xiaohongshu_hot.md",
+      "executor_skill": "xiaohongshu-auto",
+      "source_skill_path": "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/xiaohongshu-auto/SKILL.md",
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "automated",
+      "mode": "auto_publish",
+      "status": "pending_execution",
+      "manual_action_required": false,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/01__topic_japan_embassy_incident_analysis-narrative-01__框架精华-结构时间线.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/01__topic_japan_embassy_incident_analysis-narrative-01__框架精华-结构时间线.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/01__topic_japan_embassy_incident_analysis-narrative-01__框架精华-结构时间线.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/02__topic_japan_embassy_incident_analysis-narrative-02__关键数据-滚动条.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/02__topic_japan_embassy_incident_analysis-narrative-02__关键数据-滚动条.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/02__topic_japan_embassy_incident_analysis-narrative-02__关键数据-滚动条.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/03__topic_japan_embassy_incident_analysis-narrative-03__风险强度评估.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/03__topic_japan_embassy_incident_analysis-narrative-03__风险强度评估.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/03__topic_japan_embassy_incident_analysis-narrative-03__风险强度评估.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/04__topic_japan_embassy_incident_analysis-narrative-04__执行优先级.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/04__topic_japan_embassy_incident_analysis-narrative-04__执行优先级.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/04__topic_japan_embassy_incident_analysis-narrative-04__执行优先级.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/export_manifest.json"
+      ],
+      "title_candidates": [
+        "日本士兵闯使馆，不该只当成一次个人失控",
+        "这起闯馆事件最危险的，不是冲动而是它背后的土壤",
+        "当日本士兵闯进使馆，我们该警惕的不是情绪而是结构"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/日本士兵闯使馆/02_日本士兵闯使馆_中国驻日大使馆.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/日本士兵闯使馆/日本士兵闯使馆_manga.png"
+      ],
+      "publish_time": "2026-04-14T18:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-japan-embassy-incident-analysis",
+      "topic_name": "日本士兵闯使馆事件背后：个体极端行为还是系统性问题？",
+      "channel": "douyin_video",
+      "variant": "xhs_video_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_日本士兵闯使馆事件背_xiaohongshu_hot.md",
+      "executor_skill": "douyin-upload-skill",
+      "source_skill_path": "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/douyin-upload-skill/SKILL.md",
+      "supporting_skill": null,
+      "supporting_skill_path": null,
+      "automation_level": "automated",
+      "mode": "official_api_or_fallback",
+      "status": "pending_execution",
+      "manual_action_required": false,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/01__topic_japan_embassy_incident_analysis-narrative-01__框架精华-结构时间线.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/01__topic_japan_embassy_incident_analysis-narrative-01__框架精华-结构时间线.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/01__topic_japan_embassy_incident_analysis-narrative-01__框架精华-结构时间线.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/02__topic_japan_embassy_incident_analysis-narrative-02__关键数据-滚动条.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/02__topic_japan_embassy_incident_analysis-narrative-02__关键数据-滚动条.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/02__topic_japan_embassy_incident_analysis-narrative-02__关键数据-滚动条.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/03__topic_japan_embassy_incident_analysis-narrative-03__风险强度评估.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/03__topic_japan_embassy_incident_analysis-narrative-03__风险强度评估.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/03__topic_japan_embassy_incident_analysis-narrative-03__风险强度评估.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/04__topic_japan_embassy_incident_analysis-narrative-04__执行优先级.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/04__topic_japan_embassy_incident_analysis-narrative-04__执行优先级.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/04__topic_japan_embassy_incident_analysis-narrative-04__执行优先级.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/export_manifest.json"
+      ],
+      "title_candidates": [
+        "日本士兵闯使馆，不该只当成一次个人失控",
+        "这起闯馆事件最危险的，不是冲动而是它背后的土壤",
+        "当日本士兵闯进使馆，我们该警惕的不是情绪而是结构"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/日本士兵闯使馆/02_日本士兵闯使馆_中国驻日大使馆.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/日本士兵闯使馆/日本士兵闯使馆_manga.png"
+      ],
+      "publish_time": "2026-04-14T18:30:00+08:00"
+    },
+    {
+      "topic_id": "topic-japan-embassy-incident-analysis",
+      "topic_name": "日本士兵闯使馆事件背后：个体极端行为还是系统性问题？",
+      "channel": "bilibili_video",
+      "variant": "xhs_video_luxun_hot",
+      "variant_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-11_085602/06_改写_日本士兵闯使馆事件背_xiaohongshu_hot.md",
+      "executor_skill": null,
+      "source_skill_path": null,
+      "supporting_skill": "bilibili-youtube-watcher",
+      "supporting_skill_path": "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/bilibili-youtube-watcher/SKILL.md",
+      "automation_level": "manual_only",
+      "mode": "export_only",
+      "status": "manual_only",
+      "manual_action_required": true,
+      "platform_url": null,
+      "platform_post_id": null,
+      "available_videos": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/01__topic_japan_embassy_incident_analysis-narrative-01__框架精华-结构时间线.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/01__topic_japan_embassy_incident_analysis-narrative-01__框架精华-结构时间线.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/01__topic_japan_embassy_incident_analysis-narrative-01__框架精华-结构时间线.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/02__topic_japan_embassy_incident_analysis-narrative-02__关键数据-滚动条.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/02__topic_japan_embassy_incident_analysis-narrative-02__关键数据-滚动条.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/02__topic_japan_embassy_incident_analysis-narrative-02__关键数据-滚动条.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/03__topic_japan_embassy_incident_analysis-narrative-03__风险强度评估.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/03__topic_japan_embassy_incident_analysis-narrative-03__风险强度评估.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/03__topic_japan_embassy_incident_analysis-narrative-03__风险强度评估.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/04__topic_japan_embassy_incident_analysis-narrative-04__执行优先级.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/04__topic_japan_embassy_incident_analysis-narrative-04__执行优先级.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/04__topic_japan_embassy_incident_analysis-narrative-04__执行优先级.webm",
+        "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/video_supplement/topic_japan_embassy_incident_analysis/videos/motion_narrative/export_manifest.json"
+      ],
+      "title_candidates": [
+        "日本士兵闯使馆，不该只当成一次个人失控",
+        "这起闯馆事件最危险的，不是冲动而是它背后的土壤",
+        "当日本士兵闯进使馆，我们该警惕的不是情绪而是结构"
+      ],
+      "cover_candidates": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/日本士兵闯使馆/02_日本士兵闯使馆_中国驻日大使馆.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/日本士兵闯使馆/日本士兵闯使馆_manga.png"
+      ],
+      "publish_time": "2026-04-14T18:30:00+08:00"
+    }
+  ]
+}

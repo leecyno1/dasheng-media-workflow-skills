@@ -1,0 +1,92 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "topic-mother-伊朗-diplomacy-conflict",
+    "topic_name": "停火背后，伊朗原油秩序成本的上升",
+    "cluster_name": "伊朗 / 原油 / 停火",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-mother-伊朗-diplomacy-conflict",
+    "composite_score": 7.3,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 2,
+    "topic_id": "topic-mother-伊朗-diplomacy-conflict-variant-外交部-中东-diplomacy-c",
+    "topic_name": "外交部关注的中东冲突新秩序成本",
+    "cluster_name": "外交部 / 中东",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-mother-伊朗-diplomacy-conflict",
+    "composite_score": 7.14,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 3,
+    "topic_id": "topic-mother-英伟达-ai-semiconductor-cycle",
+    "topic_name": "半导体周期中的英伟达，局部复苏还是全面回暖？",
+    "cluster_name": "英伟达 / AI",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-mother-英伟达-ai-semiconductor-cycle",
+    "composite_score": 7.06,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 4,
+    "topic_id": "topic-mother-英伟达-ai-semiconductor-cycle-variant-英伟达-半导体-semiconduc",
+    "topic_name": "英伟达引领半导体行业局部景气的真相",
+    "cluster_name": "英伟达 / 半导体",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-mother-英伟达-ai-semiconductor-cycle",
+    "composite_score": 6.72,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 5,
+    "topic_id": "topic-mother-白银-贵金属-risk-pricing-降息",
+    "topic_name": "剖析白银贵金属市场风险溢价的驱动因素",
+    "cluster_name": "白银 / 贵金属 / 降息",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-mother-白银-贵金属-risk-pricing-降息",
+    "composite_score": 7.16,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 6,
+    "topic_id": "topic-mother-白银-贵金属-risk-pricing-降息-variant-川普-特朗普-risk-pricin",
+    "topic_name": "川普因素下贵金属风险溢价的结构变化",
+    "cluster_name": "川普 / 特朗普",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-mother-白银-贵金属-risk-pricing-降息",
+    "composite_score": 6.76,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 7,
+    "topic_id": "topic-mother-宽松-降息-policy-inflation-降息",
+    "topic_name": "特朗普与鲍威尔政策下的再通胀与利率预期回摆",
+    "cluster_name": "特朗普 / 鲍威尔 / 降息",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-mother-宽松-降息-policy-inflation-降息",
+    "composite_score": 7.24,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 8,
+    "topic_id": "topic-mother-宽松-降息-policy-inflation-降息-variant-美联储-中东-policy-infl",
+    "topic_name": "中东局势下美联储降息预期与通胀压力分析",
+    "cluster_name": "美联储 / 中东 / 降息",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-mother-宽松-降息-policy-inflation-降息",
+    "composite_score": 7.39,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 9,
+    "topic_id": "topic-mother-制裁-supply-order-制裁",
+    "topic_name": "价格波动之外，制裁引发的供给秩序变革",
+    "cluster_name": "制裁 / 制裁",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-mother-制裁-supply-order-制裁",
+    "composite_score": 6.99,
+    "source_status": "自然入选"
+  }
+]

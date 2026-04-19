@@ -1,0 +1,29 @@
+{
+  "collection_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts",
+  "batch_count": 1,
+  "totals": {
+    "chart_count": 0,
+    "table_count": 0
+  },
+  "batches": [
+    {
+      "batch_id": "material",
+      "pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets",
+      "chart_count": 0,
+      "table_count": 0,
+      "topic_count": 1,
+      "chart_quality_gate_report_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets/chart_quality_gate_report.json"
+    }
+  ],
+  "topics": [
+    {
+      "topic_slug": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+      "topic_title": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+      "chart_count": 0,
+      "table_count": 0,
+      "batches": [
+        "material"
+      ]
+    }
+  ]
+}

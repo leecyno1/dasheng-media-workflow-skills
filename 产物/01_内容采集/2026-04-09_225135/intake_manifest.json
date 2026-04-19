@@ -1,0 +1,153 @@
+{
+  "run_id": "2026-04-09_225135",
+  "generated_at": "2026-04-09T22:51:35.248591+08:00",
+  "stage": "intake",
+  "object_type": "Run",
+  "execution_model": "agent-driven",
+  "ports": {
+    "reports": {
+      "status": "ok",
+      "base": "http://45.197.148.64:8080"
+    },
+    "5173": {
+      "status": "ok",
+      "base": "http://127.0.0.1:18000"
+    },
+    "8001": {
+      "status": "error",
+      "base": "http://45.197.148.64:8001",
+      "issues": [
+        "502 Server Error: Bad Gateway for url: http://45.197.148.64:8001/api/v1/wx/auth/token"
+      ],
+      "attempts": 3,
+      "waited_seconds": 16
+    }
+  },
+  "counts": {
+    "x_total": 13024,
+    "wb_total": 2414,
+    "xhs_total": 8328,
+    "douyin_total": 3102,
+    "bili_total": 5377,
+    "content_research_candidates": 81,
+    "trendradar_reports": 2324,
+    "trendradar_links": 20,
+    "wemprss_channels_total": 0,
+    "wemprss_articles_total": 0,
+    "curated_articles": 0,
+    "selected_records": 390,
+    "channel_top10_total": 70,
+    "valid_linked_records": 390
+  },
+  "analysis_pool": {
+    "selected_records": 390,
+    "analysis_records": 147,
+    "analysis_ratio": 0.3769,
+    "analysis_channels": {
+      "x": 22,
+      "wb": 42,
+      "xhs": 2,
+      "douyin": 22,
+      "bili": 28,
+      "content_research": 20,
+      "reports": 11
+    },
+    "analysis_tiers": {
+      "platform_hotspot": 133,
+      "official": 4,
+      "personal_opinion": 10
+    },
+    "analysis_labels": {
+      "油价/地缘冲突": 41,
+      "宏观/市场情绪": 34,
+      "黄金/白银/贵金属": 28,
+      "日本/使馆/外交": 27,
+      "AI工具/工作流": 15,
+      "半导体/国产芯片": 3
+    }
+  },
+  "channel_tasks": {
+    "x": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 13024
+    },
+    "wb": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 2414
+    },
+    "xhs": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 8328
+    },
+    "douyin": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 3102
+    },
+    "bili": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 5377
+    },
+    "content_research": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 81
+    },
+    "reports": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 20
+    },
+    "wechat": {
+      "status": "error",
+      "attempts": 3,
+      "waited_seconds": 16,
+      "issues": [
+        "502 Server Error: Bad Gateway for url: http://45.197.148.64:8001/api/v1/wx/auth/token"
+      ],
+      "total": 0
+    }
+  },
+  "artifacts": [
+    "raw/mediacrawler_latest_x.json",
+    "raw/mediacrawler_latest_xhs.json",
+    "raw/mediacrawler_latest_douyin.json",
+    "raw/mediacrawler_latest_wb.json",
+    "raw/mediacrawler_latest_bili.json",
+    "raw/mediacrawler_topnotes_content_research.json",
+    "raw/trendradar_reports.json",
+    "raw/trendradar_latest_report.html",
+    "raw/trendradar_top_links.json",
+    "raw/wemprss_public_channels.json",
+    "raw/wemprss_articles_latest.json",
+    "raw/intake_records.json",
+    "entity_rankings.json",
+    "event_clusters.json",
+    "source_quality_report.json",
+    "channel_top10.json",
+    "brief_input.json",
+    "channel_tasks.json",
+    "intake_review.json",
+    "notes/01_内容采集_报告.md",
+    "notes/01_内容采集_底稿.md"
+  ],
+  "next_stage": "brief"
+}

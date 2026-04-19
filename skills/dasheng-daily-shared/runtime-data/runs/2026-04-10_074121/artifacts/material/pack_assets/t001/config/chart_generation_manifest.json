@@ -1,0 +1,85 @@
+{
+  "topic": "t001",
+  "generated": [
+    {
+      "anchor_id": "chart-01",
+      "render_type": "chart",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-10_074121/artifacts/material/pack_assets/t001/图表_美国CPI对比.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-10_074121/artifacts/material/pack_assets/t001/图表_美国CPI对比.png",
+      "md": null,
+      "gate": {
+        "x_col": "trade_date",
+        "series": {
+          "cpi_mom": {
+            "cv": 0.7344458146567794,
+            "slope": -0.010394519253484521,
+            "r2": 0.020430992633867384,
+            "trend_strength": 0.07779777375823815,
+            "passed": true
+          }
+        }
+      }
+    },
+    {
+      "anchor_id": "chart-02",
+      "render_type": "chart",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-10_074121/artifacts/material/pack_assets/t001/图表_石油黄金通胀预期.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-10_074121/artifacts/material/pack_assets/t001/图表_石油黄金通胀预期.png",
+      "md": null,
+      "gate": {
+        "x_col": "trade_date",
+        "series": {
+          "oil_close": {
+            "cv": 0.12717836532147006,
+            "slope": -0.0002486463978762902,
+            "r2": 0.07963333286263063,
+            "trend_strength": 0.0374760660141673,
+            "passed": true
+          }
+        }
+      }
+    },
+    {
+      "anchor_id": "chart-03",
+      "render_type": "chart",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-10_074121/artifacts/material/pack_assets/t001/图表_标普500与美债收益率.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-10_074121/artifacts/material/pack_assets/t001/图表_标普500与美债收益率.png",
+      "md": null,
+      "gate": {
+        "x_col": "trade_date",
+        "series": {
+          "spx_close": {
+            "cv": 0.09211403324946438,
+            "slope": 0.0005835261673398062,
+            "r2": 0.8160935537049738,
+            "trend_strength": 0.37109337187168095,
+            "passed": true
+          }
+        }
+      }
+    },
+    {
+      "anchor_id": "chart-04",
+      "render_type": "chart",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-10_074121/artifacts/material/pack_assets/t001/图表_情景矩阵热力图.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-10_074121/artifacts/material/pack_assets/t001/图表_情景矩阵热力图.png",
+      "md": null,
+      "gate": {
+        "row_var_max": 0.3633333333333333,
+        "col_var_max": 0.43
+      }
+    }
+  ],
+  "summary": {
+    "chart_count": 4,
+    "table_count": 0,
+    "gate_thresholds": {
+      "cv_min": 0.03,
+      "slope_abs_min": 0.005,
+      "r2_min": 0.25,
+      "trend_strength_min": 0.3,
+      "group_diff_min": 0.08,
+      "heatmap_var_min": 0.05
+    }
+  }
+}

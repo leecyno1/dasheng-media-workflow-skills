@@ -1,0 +1,18 @@
+{
+  "run_id": "2026-04-02_210702",
+  "gate": "Final Structure Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "编辑完成标准稿修订后，在本文件写入最终保留的一级/二级结构。",
+    "material 与 rewrite 必须以该文件为上游结构快照。"
+  ],
+  "topics": [
+    {
+      "topic_id": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+      "title": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+      "doc_file": "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/draft/03_标准初稿_这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化.md",
+      "final_primary_sections": [],
+      "editor_note": ""
+    }
+  ]
+}

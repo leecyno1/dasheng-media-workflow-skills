@@ -1,0 +1,35 @@
+{
+  "run_id": "2026-04-07_141203",
+  "gate": "Material Acceptance Gate",
+  "status": "approved",
+  "approved_at": "2026-04-07T22:50:00+08:00",
+  "approved_by": "editor",
+  "comments": "素材包已生成完成，包含图表、图片、视频素材，质量符合要求",
+  "material_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-07_141203/material_manifest.json",
+  "topics": [
+    {
+      "topic_id": "topic-hormuz-strait-energy-order",
+      "title": "霍尔木兹海峡封锁：全球能源供应链的结构性重构",
+      "charts": 0,
+      "images": 4,
+      "videos": 1,
+      "status": "approved"
+    },
+    {
+      "topic_id": "topic-sodium-ion-battery-breakthrough",
+      "title": "钠离子电池全球首次突破：中国如何改写储能产业格局",
+      "charts": 0,
+      "images": 4,
+      "videos": 0,
+      "status": "approved"
+    },
+    {
+      "topic_id": "topic-us-stock-storage-sector-surge",
+      "title": "存储板块创历史新高：AI 算力需求如何改写半导体投资逻辑",
+      "charts": 4,
+      "images": 8,
+      "videos": 1,
+      "status": "approved"
+    }
+  ]
+}

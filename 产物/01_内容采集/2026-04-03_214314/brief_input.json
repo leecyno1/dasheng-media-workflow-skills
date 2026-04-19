@@ -1,0 +1,1172 @@
+{
+  "run_id": "2026-04-03_214314",
+  "generated_at": "2026-04-03T21:43:14.972120+08:00",
+  "candidate_clusters": [
+    {
+      "cluster_id": "你认为呢-财富",
+      "cluster_title_candidate": "你认为呢 / 财富",
+      "cluster_summary": "围绕 你认为呢 / 财富 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "douyin": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "影响房价的黑天鹅是什么？你认为呢？（本视频仅代表个人思考无特殊意义）#财富 #认知 #房 #黑天鹅 #暴跌"
+      ],
+      "representative_links": [
+        "https://www.douyin.com/video/7060821785012358437"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 92.0
+    },
+    {
+      "cluster_id": "今日说法-案中有案局中有局",
+      "cluster_title_candidate": "今日说法 / 案中有案局中有局",
+      "cluster_summary": "围绕 今日说法 / 案中有案局中有局 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "bili": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "《今日说法》最曲折离奇的案件之一，案中有案局中有局，最终三案并查揪出暗中真凶"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1NF411w7Wi"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 92.0
+    },
+    {
+      "cluster_id": "美国-深度-分钟看懂",
+      "cluster_title_candidate": "美国 / 深度 / 分钟看懂",
+      "cluster_summary": "围绕 美国 / 深度 / 分钟看懂 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "bili": 1
+      },
+      "dominant_entities": [
+        "美国"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "【深度】40分钟看懂- 4次美国金融危机（ 预言图一乐勿当真）"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1Ts4y1S7jh"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 90.97
+    },
+    {
+      "cluster_id": "开年第一大案-热度代理",
+      "cluster_title_candidate": "开年第一大案 / 热度代理",
+      "cluster_summary": "围绕 开年第一大案 / 热度代理 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "bili": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "2026开年第一大案，原来她一直在当年失踪的地方！"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1PuPhzpEmL"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 90.35
+    },
+    {
+      "cluster_id": "补钙长高高-热度代理",
+      "cluster_title_candidate": "补钙长高高 / 热度代理",
+      "cluster_summary": "围绕 补钙长高高 / 热度代理 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "xhs": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "孩子超爱吃的时蔬鲜虾饼，补钙长高高‼️"
+      ],
+      "representative_links": [
+        "https://www.xiaohongshu.com/explore/64215aef000000001203ce63?xsec_token=ABe4gWUH7BK_r6Kgr8MkH2KO7_VKMmEarPEc3aJK-5ubE%3D&xsec_source=pc_feed"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 89.41
+    },
+    {
+      "cluster_id": "三个习惯不改-再多存款也会返贫",
+      "cluster_title_candidate": "三个习惯不改 / 再多存款也会返贫",
+      "cluster_summary": "围绕 三个习惯不改 / 再多存款也会返贫 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "douyin": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "三个习惯不改，再多存款也会返贫 #财富 #认知 #商业思维 #返贫"
+      ],
+      "representative_links": [
+        "https://www.douyin.com/video/7585124307076943130"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 89.24
+    },
+    {
+      "cluster_id": "黑天鹅-万字解读",
+      "cluster_title_candidate": "黑天鹅 / 万字解读",
+      "cluster_summary": "围绕 黑天鹅 / 万字解读 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "douyin": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "万字解读《黑天鹅》:揭开世界运转的真相，别让直觉误导你的人生 @小A读书圈 #财经 #知识分享 #读书 #黑天鹅 #一口气看懂经济学"
+      ],
+      "representative_links": [
+        "https://www.douyin.com/video/7437473246519282995"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 89.01
+    },
+    {
+      "cluster_id": "绝命老铁-经济",
+      "cluster_title_candidate": "绝命老铁 / 经济",
+      "cluster_summary": "围绕 绝命老铁 / 经济 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "douyin": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "资本家是怎么转移风险的 #经济 #历史 #绝命老铁 #涨知识 @DOU+小助手"
+      ],
+      "representative_links": [
+        "https://www.douyin.com/video/6909878862214171916"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 88.26
+    },
+    {
+      "cluster_id": "恶魔邻居-八名少女殒命宿舍",
+      "cluster_title_candidate": "恶魔邻居 / 八名少女殒命宿舍",
+      "cluster_summary": "围绕 恶魔邻居 / 八名少女殒命宿舍 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "bili": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "恶魔邻居，八名少女殒命宿舍，石景山特大入室杀人案"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1CXV3zXEnf"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 87.48
+    },
+    {
+      "cluster_id": "abs-资产证券化",
+      "cluster_title_candidate": "abs / 资产证券化",
+      "cluster_summary": "围绕 abs / 资产证券化 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "douyin": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "ABS 资产证券化 #青年创作者成长计划 #青年创作者计划 #掘金计划2026 #零距离看懂财经 #金融"
+      ],
+      "representative_links": [
+        "https://www.douyin.com/video/7622315296535219462"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 87.15
+    },
+    {
+      "cluster_id": "joe-方小宝",
+      "cluster_title_candidate": "joe / 方小宝",
+      "cluster_summary": "围绕 joe / 方小宝 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "xhs": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "Joe‘s 方小宝🪲"
+      ],
+      "representative_links": [
+        "https://www.xiaohongshu.com/explore/64c8c3e2000000001700ea7f?xsec_token=ABqTibgiC7dKFrgi-l4qUCFWOFrTZa1cK427gkoHxl2c0%3D&xsec_source=pc_feed"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 86.7
+    },
+    {
+      "cluster_id": "资本的故事-全60集",
+      "cluster_title_candidate": "资本的故事 / 全60集",
+      "cluster_summary": "围绕 资本的故事 / 全60集 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "bili": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "《资本的故事》1~3季 全60集 国语中字 720P"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1mW411J7ED"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 87.13
+    },
+    {
+      "cluster_id": "热度代理-吃一口大面包",
+      "cluster_title_candidate": "热度代理 / 吃一口大面包",
+      "cluster_summary": "围绕 热度代理 / 吃一口大面包 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "xhs": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "🤩这颜值放在整个蛋糕界也是相当炸裂的"
+      ],
+      "representative_links": [
+        "https://www.xiaohongshu.com/explore/641d63070000000013012fb5?xsec_token=ABm2t24JDR3esni55egnOcYrIs6wtp7edTM4veqRn6Yjw%3D&xsec_source=pc_feed"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 85.58
+    },
+    {
+      "cluster_id": "黑天鹅-世界的真相",
+      "cluster_title_candidate": "黑天鹅 / 世界的真相",
+      "cluster_summary": "围绕 黑天鹅 / 世界的真相 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "douyin": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "《黑天鹅》01:世界的真相，为什么你的努力没能换来财富？ #知识分享 #读书 #黑天鹅 #一口气看懂经济学"
+      ],
+      "representative_links": [
+        "https://www.douyin.com/video/7432123289272683788"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 85.61
+    },
+    {
+      "cluster_id": "宏观经济-趋势分析",
+      "cluster_title_candidate": "宏观经济 / 趋势分析",
+      "cluster_summary": "围绕 宏观经济 / 趋势分析 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "douyin": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "2026或迎全球最惨金融危机 #宏观经济 #趋势分析 #经济"
+      ],
+      "representative_links": [
+        "https://www.douyin.com/video/7599990582596881710"
+      ],
+      "trendradar_coverage": 0.0,
+      "avg_heat_score": 85.59
+    }
+  ],
+  "priority_entities": {
+    "dynamic_tokens": [
+      {
+        "name": "热度代理",
+        "count": 166
+      },
+      {
+        "name": "伊朗",
+        "count": 22
+      },
+      {
+        "name": "the",
+        "count": 19
+      },
+      {
+        "name": "美国",
+        "count": 19
+      },
+      {
+        "name": "来自",
+        "count": 18
+      },
+      {
+        "name": "日本",
+        "count": 17
+      },
+      {
+        "name": "reports",
+        "count": 16
+      },
+      {
+        "name": "黑天鹅",
+        "count": 16
+      },
+      {
+        "name": "score",
+        "count": 16
+      },
+      {
+        "name": "特朗普",
+        "count": 15
+      },
+      {
+        "name": "bili",
+        "count": 15
+      },
+      {
+        "name": "市场",
+        "count": 14
+      },
+      {
+        "name": "定向样本",
+        "count": 14
+      },
+      {
+        "name": "to",
+        "count": 11
+      },
+      {
+        "name": "is",
+        "count": 11
+      }
+    ],
+    "sectors": [
+      {
+        "name": "AI",
+        "count": 7
+      },
+      {
+        "name": "半导体",
+        "count": 5
+      },
+      {
+        "name": "封测",
+        "count": 5
+      },
+      {
+        "name": "人工智能",
+        "count": 2
+      },
+      {
+        "name": "芯片",
+        "count": 2
+      },
+      {
+        "name": "新能源",
+        "count": 1
+      },
+      {
+        "name": "算力",
+        "count": 1
+      }
+    ],
+    "orgs": [
+      {
+        "name": "美联储",
+        "count": 4
+      },
+      {
+        "name": "外交部",
+        "count": 3
+      },
+      {
+        "name": "FED",
+        "count": 1
+      },
+      {
+        "name": "英伟达",
+        "count": 1
+      }
+    ],
+    "countries": [
+      {
+        "name": "伊朗",
+        "count": 22
+      },
+      {
+        "name": "美国",
+        "count": 19
+      },
+      {
+        "name": "日本",
+        "count": 17
+      },
+      {
+        "name": "中国",
+        "count": 9
+      },
+      {
+        "name": "以色列",
+        "count": 4
+      },
+      {
+        "name": "俄罗斯",
+        "count": 4
+      },
+      {
+        "name": "中东",
+        "count": 3
+      },
+      {
+        "name": "欧洲",
+        "count": 1
+      }
+    ],
+    "people": [
+      {
+        "name": "特朗普",
+        "count": 15
+      },
+      {
+        "name": "高市早苗",
+        "count": 6
+      },
+      {
+        "name": "鲍威尔",
+        "count": 2
+      },
+      {
+        "name": "川普",
+        "count": 1
+      },
+      {
+        "name": "马斯克",
+        "count": 1
+      }
+    ],
+    "commodities": [
+      {
+        "name": "油价",
+        "count": 7
+      },
+      {
+        "name": "黄金",
+        "count": 7
+      },
+      {
+        "name": "原油",
+        "count": 2
+      },
+      {
+        "name": "白银",
+        "count": 1
+      }
+    ],
+    "policies": [
+      {
+        "name": "加息",
+        "count": 4
+      },
+      {
+        "name": "停火",
+        "count": 3
+      },
+      {
+        "name": "降息",
+        "count": 3
+      },
+      {
+        "name": "预算",
+        "count": 1
+      },
+      {
+        "name": "制裁",
+        "count": 1
+      },
+      {
+        "name": "关税",
+        "count": 1
+      }
+    ]
+  },
+  "channel_top10_summary": {
+    "x": [
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "C",
+        "heat_score": 50.0,
+        "title": "in the corner straight up “losin it\" and by “it” , haha, well lets just say... M",
+        "url": "https://x.com/EdgarPoop1/status/2036104459168686395",
+        "author_or_account": "EdgarPoop1",
+        "publish_time": "2026-03-24 13:16:42",
+        "excerpt": "in the corner straight up “losin it\" and by “it” , haha, well lets ju…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-1aa0580ed8eafa9f",
+        "note": "账号：EdgarPoop1；时间：2026-03-24 13:16:42；摘要：in the corner straight up “losin it\" and by “it” , haha, well lets ju…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "C",
+        "heat_score": 49.72,
+        "title": "They Designed a System You Can Never Escape “Every country on Earth is in debt…",
+        "url": "https://x.com/henri_fjord/status/1987487313551904906",
+        "author_or_account": "henri_fjord",
+        "publish_time": "2026-03-24 13:16:42",
+        "excerpt": "They Designed a System You Can Never Escape “Every country on Earth i…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-68beb78244f1a45c",
+        "note": "账号：henri_fjord；时间：2026-03-24 13:16:42；摘要：They Designed a System You Can Never Escape “Every country on Earth i…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "C",
+        "heat_score": 48.7,
+        "title": "Strategy has acquired 1,031 BTC for ~$76.6 million at ~$74,326 per bitcoin. As o",
+        "url": "https://x.com/saylor/status/2036051094309068931",
+        "author_or_account": "saylor",
+        "publish_time": "2026-03-24 13:16:42",
+        "excerpt": "Strategy has acquired 1,031 BTC for ~$76.6 million at ~$74,326 per bi…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-549e6c028685092d",
+        "note": "账号：saylor；时间：2026-03-24 13:16:42；摘要：Strategy has acquired 1,031 BTC for ~$76.6 million at ~$74,326 per bi…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "C",
+        "heat_score": 42.94,
+        "title": "OpenAl is offering private-equity firms a guaranteed minimum return of 17.5%, as",
+        "url": "https://x.com/AndrewCurran_/status/2036043793968083192",
+        "author_or_account": "AndrewCurran_",
+        "publish_time": "2026-03-24 13:16:42",
+        "excerpt": "OpenAl is offering private-equity firms a guaranteed minimum return o…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-16825d33a085d936",
+        "note": "账号：AndrewCurran_；时间：2026-03-24 13:16:42；摘要：OpenAl is offering private-equity firms a guaranteed minimum return o…"
+      },
+      {
+        "channel": "x",
+        "channel_label": "X",
+        "source": "5173/x",
+        "heat_level": "D",
+        "heat_score": 35.97,
+        "title": "🚨 Byju’s, once India’s most valuable startup, has gone from a $22 billion valuat",
+        "url": "https://x.com/IndianTechGuide/status/2036307057494683648",
+        "author_or_account": "IndianTechGuide",
+        "publish_time": "2026-03-24 13:16:42",
+        "excerpt": "🚨 Byju’s, once India’s most valuable startup, has gone from a $22 bil…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-9024caefc9a6c6c7",
+        "note": "账号：IndianTechGuide；时间：2026-03-24 13:16:42；摘要：🚨 Byju’s, once India’s most valuable startup, has gone from a $22 bil…"
+      }
+    ],
+    "wb": [
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "A",
+        "heat_score": 80.46,
+        "title": "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞之际，俄罗斯将考虑各国",
+        "url": "https://m.weibo.cn/detail/5282653734437870",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:28",
+        "excerpt": "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-8595e62bc01cd08d",
+        "note": "账号：未知；时间：2026-04-03 20:45:28；摘要：#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "A",
+        "heat_score": 78.07,
+        "title": "【中新社： #俄罗斯重新将28名日本人列为战犯# #俄方重新将28名日本人列为战犯# 】据中新社2日报道：俄罗斯外交部发言人扎哈罗娃4月1日表示，俄方近期重新将",
+        "url": "https://m.weibo.cn/detail/5283383100050229",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:28",
+        "excerpt": "【中新社： #俄罗斯重新将28名日本人列为战犯# #俄方重新将28名日本人列为战犯# 】据中新社2日报道：俄罗斯外交部发言人扎哈罗娃4月1…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-bc4984d19c33e515",
+        "note": "账号：未知；时间：2026-04-03 20:45:28；摘要：【中新社： #俄罗斯重新将28名日本人列为战犯# #俄方重新将28名日本人列为战犯# 】据中新社2日报道：俄罗斯外交部发言人扎哈罗娃4月1…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "A",
+        "heat_score": 78.0,
+        "title": "我的观点一致，人类不是神，就是会犯错的生物，会乌龙，会迷糊，会在没有主观恶意的情况下对其他人造成伤害。 那犯了错怎么办？认错，赔偿，受罚，尽力求得谅解。一个人因",
+        "url": "https://m.weibo.cn/detail/5282877524676277",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:39",
+        "excerpt": "我的观点一致，人类不是神，就是会犯错的生物，会乌龙，会迷糊，会在没有主观恶意的情况下对其他人造成伤害。 那犯了错怎么办？认错，赔偿，受罚，…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-df9fab3235571d3f",
+        "note": "账号：未知；时间：2026-04-03 20:45:39；摘要：我的观点一致，人类不是神，就是会犯错的生物，会乌龙，会迷糊，会在没有主观恶意的情况下对其他人造成伤害。 那犯了错怎么办？认错，赔偿，受罚，…"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "A",
+        "heat_score": 72.09,
+        "title": "很多人都以为调整不影响自己的账户，其实着观点是错误的。能穿越调整，账户资金逆势上涨的非常少的。明白666 ​",
+        "url": "https://m.weibo.cn/detail/5283579816838520",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:39",
+        "excerpt": "很多人都以为调整不影响自己的账户，其实着观点是错误的。能穿越调整，账户资金逆势上涨的非常少的。明白666 ​；热度代理=9206",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-b90b26defe23ce8b",
+        "note": "账号：未知；时间：2026-04-03 20:45:39；摘要：很多人都以为调整不影响自己的账户，其实着观点是错误的。能穿越调整，账户资金逆势上涨的非常少的。明白666 ​；热度代理=9206"
+      },
+      {
+        "channel": "wb",
+        "channel_label": "微博",
+        "source": "5173/wb",
+        "heat_level": "A",
+        "heat_score": 71.92,
+        "title": "麻烦大家看一看这条！ 日推现在正在大规模的进行对南京大屠杀和对中国犯下的罪行的历史修正运动，不是以往的小规模扩散而是几十万上百万的点赞和点击率的大规模传播。 而",
+        "url": "https://m.weibo.cn/detail/5283601537304059",
+        "author_or_account": "",
+        "publish_time": "2026-04-03 20:45:28",
+        "excerpt": "麻烦大家看一看这条！ 日推现在正在大规模的进行对南京大屠杀和对中国犯下的罪行的历史修正运动，不是以往的小规模扩散而是几十万上百万的点赞和点…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c5b3eba22136d6d0",
+        "note": "账号：未知；时间：2026-04-03 20:45:28；摘要：麻烦大家看一看这条！ 日推现在正在大规模的进行对南京大屠杀和对中国犯下的罪行的历史修正运动，不是以往的小规模扩散而是几十万上百万的点赞和点…"
+      }
+    ],
+    "xhs": [
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "S",
+        "heat_score": 89.41,
+        "title": "孩子超爱吃的时蔬鲜虾饼，补钙长高高‼️",
+        "url": "https://www.xiaohongshu.com/explore/64215aef000000001203ce63?xsec_token=ABe4gWUH7BK_r6Kgr8MkH2KO7_VKMmEarPEc3aJK-5ubE%3D&xsec_source=pc_feed",
+        "author_or_account": "左右的小饭桌",
+        "publish_time": "2026-04-03 09:36:14",
+        "excerpt": "孩子超爱吃的时蔬鲜虾饼，补钙长高高‼️；热度代理=86000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-dce5d07958a83deb",
+        "note": "账号：左右的小饭桌；时间：2026-04-03 09:36:14；摘要：孩子超爱吃的时蔬鲜虾饼，补钙长高高‼️；热度代理=86000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "S",
+        "heat_score": 86.7,
+        "title": "Joe‘s 方小宝🪲",
+        "url": "https://www.xiaohongshu.com/explore/64c8c3e2000000001700ea7f?xsec_token=ABqTibgiC7dKFrgi-l4qUCFWOFrTZa1cK427gkoHxl2c0%3D&xsec_source=pc_feed",
+        "author_or_account": "曾舜晞",
+        "publish_time": "2026-04-03 07:22:03",
+        "excerpt": "Joe‘s 方小宝🪲；热度代理=65000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-bbe59e60b1691f28",
+        "note": "账号：曾舜晞；时间：2026-04-03 07:22:03；摘要：Joe‘s 方小宝🪲；热度代理=65000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "S",
+        "heat_score": 85.58,
+        "title": "🤩这颜值放在整个蛋糕界也是相当炸裂的",
+        "url": "https://www.xiaohongshu.com/explore/641d63070000000013012fb5?xsec_token=ABm2t24JDR3esni55egnOcYrIs6wtp7edTM4veqRn6Yjw%3D&xsec_source=pc_feed",
+        "author_or_account": "吃一口大面包",
+        "publish_time": "2026-04-03 09:36:14",
+        "excerpt": "🤩这颜值放在整个蛋糕界也是相当炸裂的；热度代理=48000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-85e43abbf04e7b95",
+        "note": "账号：吃一口大面包；时间：2026-04-03 09:36:14；摘要：🤩这颜值放在整个蛋糕界也是相当炸裂的；热度代理=48000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "A",
+        "heat_score": 83.99,
+        "title": "不会有人不会炸油条吧？☺️",
+        "url": "https://www.xiaohongshu.com/explore/6482baba0000000013004777?xsec_token=ABQU-nYjUIede0YPwnsXnlwQmwDyHu8wchhat5E3zJYRs%3D&xsec_source=pc_feed",
+        "author_or_account": "纽约的杜师傅",
+        "publish_time": "2026-04-03 07:22:03",
+        "excerpt": "不会有人不会炸油条吧？☺️；热度代理=43000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-cd0d445696315c89",
+        "note": "账号：纽约的杜师傅；时间：2026-04-03 07:22:03；摘要：不会有人不会炸油条吧？☺️；热度代理=43000"
+      },
+      {
+        "channel": "xhs",
+        "channel_label": "小红书",
+        "source": "5173/xhs",
+        "heat_level": "A",
+        "heat_score": 81.84,
+        "title": "你们喜欢吃虾吗❓可乐虾仁真的巨巨巨好吃❗",
+        "url": "https://www.xiaohongshu.com/explore/64c8c9aa000000000a019e3e?xsec_token=ABqTibgiC7dKFrgi-l4qUCFeOOvsLln-M5doVISepnBzM%3D&xsec_source=pc_feed",
+        "author_or_account": "一块热豆腐",
+        "publish_time": "2026-04-03 07:22:03",
+        "excerpt": "你们喜欢吃虾吗❓可乐虾仁真的巨巨巨好吃❗；热度代理=31000",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-e8d8050d7c44ff9a",
+        "note": "账号：一块热豆腐；时间：2026-04-03 07:22:03；摘要：你们喜欢吃虾吗❓可乐虾仁真的巨巨巨好吃❗；热度代理=31000"
+      }
+    ],
+    "douyin": [
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "S",
+        "heat_score": 92.0,
+        "title": "影响房价的黑天鹅是什么？你认为呢？（本视频仅代表个人思考无特殊意义）#财富 #认知 #房 #黑天鹅 #暴跌",
+        "url": "https://www.douyin.com/video/7060821785012358437",
+        "author_or_account": "财智先生",
+        "publish_time": "2026-04-03 07:13:03",
+        "excerpt": "影响房价的黑天鹅是什么？你认为呢？（本视频仅代表个人思考无特殊意义）#财富 #认知 #房 #黑天鹅 #暴跌；热度代理=237103",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-0c358448e631389f",
+        "note": "账号：财智先生；时间：2026-04-03 07:13:03；摘要：影响房价的黑天鹅是什么？你认为呢？（本视频仅代表个人思考无特殊意义）#财富 #认知 #房 #黑天鹅 #暴跌；热度代理=237103"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "S",
+        "heat_score": 89.24,
+        "title": "三个习惯不改，再多存款也会返贫 #财富 #认知 #商业思维 #返贫",
+        "url": "https://www.douyin.com/video/7585124307076943130",
+        "author_or_account": "蛟哥",
+        "publish_time": "2026-04-03 07:12:29",
+        "excerpt": "三个习惯不改，再多存款也会返贫 #财富 #认知 #商业思维 #返贫；热度代理=115927",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-32a3fe1318032d91",
+        "note": "账号：蛟哥；时间：2026-04-03 07:12:29；摘要：三个习惯不改，再多存款也会返贫 #财富 #认知 #商业思维 #返贫；热度代理=115927"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "S",
+        "heat_score": 89.01,
+        "title": "万字解读《黑天鹅》:揭开世界运转的真相，别让直觉误导你的人生 @小A读书圈 #财经 #知识分享 #读书 #黑天鹅 #一口气看懂经济学",
+        "url": "https://www.douyin.com/video/7437473246519282995",
+        "author_or_account": "小A学财经",
+        "publish_time": "2026-04-03 07:13:00",
+        "excerpt": "万字解读《黑天鹅》:揭开世界运转的真相，别让直觉误导你的人生 @小A读书圈 #财经 #知识分享 #读书 #黑天鹅 #一口气看懂经济学；热度…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-261a6ae21922b8d2",
+        "note": "账号：小A学财经；时间：2026-04-03 07:13:00；摘要：万字解读《黑天鹅》:揭开世界运转的真相，别让直觉误导你的人生 @小A读书圈 #财经 #知识分享 #读书 #黑天鹅 #一口气看懂经济学；热度…"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "S",
+        "heat_score": 88.26,
+        "title": "资本家是怎么转移风险的 #经济 #历史 #绝命老铁 #涨知识 @DOU+小助手",
+        "url": "https://www.douyin.com/video/6909878862214171916",
+        "author_or_account": "绝命老铁",
+        "publish_time": "2026-04-03 07:12:29",
+        "excerpt": "资本家是怎么转移风险的 #经济 #历史 #绝命老铁 #涨知识 @DOU+小助手；热度代理=89805",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-edd4c682e4c3a49b",
+        "note": "账号：绝命老铁；时间：2026-04-03 07:12:29；摘要：资本家是怎么转移风险的 #经济 #历史 #绝命老铁 #涨知识 @DOU+小助手；热度代理=89805"
+      },
+      {
+        "channel": "douyin",
+        "channel_label": "抖音",
+        "source": "5173/douyin",
+        "heat_level": "S",
+        "heat_score": 87.15,
+        "title": "ABS 资产证券化 #青年创作者成长计划 #青年创作者计划 #掘金计划2026 #零距离看懂财经 #金融",
+        "url": "https://www.douyin.com/video/7622315296535219462",
+        "author_or_account": "David聊财经",
+        "publish_time": "2026-04-03 07:12:26",
+        "excerpt": "ABS 资产证券化 #青年创作者成长计划 #青年创作者计划 #掘金计划2026 #零距离看懂财经 #金融；热度代理=67168",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-09b24a1d1ef2707f",
+        "note": "账号：David聊财经；时间：2026-04-03 07:12:26；摘要：ABS 资产证券化 #青年创作者成长计划 #青年创作者计划 #掘金计划2026 #零距离看懂财经 #金融；热度代理=67168"
+      }
+    ],
+    "bili": [
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "S",
+        "heat_score": 92.0,
+        "title": "《今日说法》最曲折离奇的案件之一，案中有案局中有局，最终三案并查揪出暗中真凶",
+        "url": "https://www.bilibili.com/video/BV1NF411w7Wi",
+        "author_or_account": "奇闻观察室",
+        "publish_time": "2026-04-03 20:42:53",
+        "excerpt": "《今日说法》最曲折离奇的案件之一，案中有案局中有局，最终三案并查揪出暗中真凶；热度代理=134294",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-1d2e507b703179db",
+        "note": "账号：奇闻观察室；时间：2026-04-03 20:42:53；摘要：《今日说法》最曲折离奇的案件之一，案中有案局中有局，最终三案并查揪出暗中真凶；热度代理=134294"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "S",
+        "heat_score": 90.97,
+        "title": "【深度】40分钟看懂- 4次美国金融危机（ 预言图一乐勿当真）",
+        "url": "https://www.bilibili.com/video/BV1Ts4y1S7jh",
+        "author_or_account": "钞能力毛毛",
+        "publish_time": "2026-04-03 20:42:38",
+        "excerpt": "【深度】40分钟看懂- 4次美国金融危机（ 预言图一乐勿当真）；热度代理=95819",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-6cd4b610d4d168bd",
+        "note": "账号：钞能力毛毛；时间：2026-04-03 20:42:38；摘要：【深度】40分钟看懂- 4次美国金融危机（ 预言图一乐勿当真）；热度代理=95819"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "S",
+        "heat_score": 90.35,
+        "title": "2026开年第一大案，原来她一直在当年失踪的地方！",
+        "url": "https://www.bilibili.com/video/BV1PuPhzpEmL",
+        "author_or_account": "我是大佬K",
+        "publish_time": "2026-04-03 20:42:56",
+        "excerpt": "2026开年第一大案，原来她一直在当年失踪的地方！；热度代理=78298",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-2127fb1de13286d5",
+        "note": "账号：我是大佬K；时间：2026-04-03 20:42:56；摘要：2026开年第一大案，原来她一直在当年失踪的地方！；热度代理=78298"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "S",
+        "heat_score": 87.48,
+        "title": "恶魔邻居，八名少女殒命宿舍，石景山特大入室杀人案",
+        "url": "https://www.bilibili.com/video/BV1CXV3zXEnf",
+        "author_or_account": "英大吉",
+        "publish_time": "2026-04-03 20:42:54",
+        "excerpt": "恶魔邻居，八名少女殒命宿舍，石景山特大入室杀人案；热度代理=30640",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-3dff5b23c38ff23f",
+        "note": "账号：英大吉；时间：2026-04-03 20:42:54；摘要：恶魔邻居，八名少女殒命宿舍，石景山特大入室杀人案；热度代理=30640"
+      },
+      {
+        "channel": "bili",
+        "channel_label": "B站",
+        "source": "5173/bili",
+        "heat_level": "S",
+        "heat_score": 87.13,
+        "title": "《资本的故事》1~3季 全60集 国语中字 720P",
+        "url": "https://www.bilibili.com/video/BV1mW411J7ED",
+        "author_or_account": "戏如人生8",
+        "publish_time": "2026-04-03 20:42:54",
+        "excerpt": "《资本的故事》1~3季 全60集 国语中字 720P；热度代理=27330",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-9ef1b013b3571ee9",
+        "note": "账号：戏如人生8；时间：2026-04-03 20:42:54；摘要：《资本的故事》1~3季 全60集 国语中字 720P；热度代理=27330"
+      }
+    ],
+    "content_research": [
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "B",
+        "heat_score": 64.0,
+        "title": "2026年日本又有士兵走丢：但是闯入老中使馆？",
+        "url": "https://www.bilibili.com/video/BV154QrBqEXG",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 21:17:06",
+        "excerpt": "2026年日本又有士兵走丢：但是闯入老中使馆？；score=36.88",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-793c97ae8d7686a7",
+        "note": "账号：bili；时间：2026-03-24 21:17:06；摘要：2026年日本又有士兵走丢：但是闯入老中使馆？；score=36.88"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "B",
+        "heat_score": 58.77,
+        "title": "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】",
+        "url": "https://www.bilibili.com/video/BV1CCQqBuEt8",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 18:00:00",
+        "excerpt": "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】；score=36.62",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-c908b156c76dea64",
+        "note": "账号：bili；时间：2026-03-24 18:00:00；摘要：特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】；score=36.62"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "B",
+        "heat_score": 58.37,
+        "title": "一名自称为日本自卫队现役官员闯入我大使馆威胁杀人",
+        "url": "https://www.bilibili.com/video/BV17EQzBNEBB",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 16:59:50",
+        "excerpt": "一名自称为日本自卫队现役官员闯入我大使馆威胁杀人；score=36.6",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-449049e30a686369",
+        "note": "账号：bili；时间：2026-03-24 16:59:50；摘要：一名自称为日本自卫队现役官员闯入我大使馆威胁杀人；score=36.6"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "B",
+        "heat_score": 55.34,
+        "title": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸",
+        "url": "https://www.bilibili.com/video/BV1WJQBByE12",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-24 19:27:44",
+        "excerpt": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-e3793376fb53537f",
+        "note": "账号：bili；时间：2026-03-24 19:27:44；摘要：【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美…"
+      },
+      {
+        "channel": "content_research",
+        "channel_label": "5173 Content Research",
+        "source": "5173/content_research",
+        "heat_level": "C",
+        "heat_score": 53.92,
+        "title": "平平不无奇！OPPO Find N6使用体验",
+        "url": "https://www.bilibili.com/video/BV1hkQoBrEeP",
+        "author_or_account": "bili",
+        "publish_time": "2026-03-23 19:43:51",
+        "excerpt": "平平不无奇！OPPO Find N6使用体验；score=36.38",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-cbcf38cc86150652",
+        "note": "账号：bili；时间：2026-03-23 19:43:51；摘要：平平不无奇！OPPO Find N6使用体验；score=36.38"
+      }
+    ],
+    "reports": [
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "B",
+        "heat_score": 66.0,
+        "title": "外媒称伊朗已向中国寻求安全保障，如果这些保障能够提供，美以伊或能达成停火协议，外交部：中方支持一切有利于和平的努力",
+        "url": "https://wallstreetcn.com/articles/3769089",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "外媒称伊朗已向中国寻求安全保障，如果这些保障能够提供，美以伊或能达成停火协议，外交部：中方支持一切有利于和平的努力；来自 reports …",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-a86ca5afa79220ef",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：外媒称伊朗已向中国寻求安全保障，如果这些保障能够提供，美以伊或能达成停火协议，外交部：中方支持一切有利于和平的努力；来自 reports …"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "C",
+        "heat_score": 52.0,
+        "title": "美以伊战争丨疑似美军机搜救飞行员画面曝光",
+        "url": "https://news.ifeng.com/loc/timeline/event/8r727OWpK5W",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "美以伊战争丨疑似美军机搜救飞行员画面曝光；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-ea8f7bdf13ef7493",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：美以伊战争丨疑似美军机搜救飞行员画面曝光；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "C",
+        "heat_score": 52.0,
+        "title": "工信部首提“算力银行”“算力超市” 降低中小企业用算门槛",
+        "url": "https://www.cls.cn/detail/2333703",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "工信部首提“算力银行”“算力超市” 降低中小企业用算门槛；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-02044930fb5afedf",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：工信部首提“算力银行”“算力超市” 降低中小企业用算门槛；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "C",
+        "heat_score": 52.0,
+        "title": "刑满释放后仍继续犯罪，人贩子王某文拐卖十余名儿童已被执行死刑",
+        "url": "https://m.thepaper.cn/newsDetail_forward_32877520",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "刑满释放后仍继续犯罪，人贩子王某文拐卖十余名儿童已被执行死刑；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-e38991969e6b07c2",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：刑满释放后仍继续犯罪，人贩子王某文拐卖十余名儿童已被执行死刑；来自 reports 最新外链"
+      },
+      {
+        "channel": "reports",
+        "channel_label": "TrendRadar / Reports",
+        "source": "reports/news",
+        "heat_level": "C",
+        "heat_score": 52.0,
+        "title": "特朗普自行宣称：对伊朗战事取得“压倒性胜利”，未来两到三周将开展极其猛烈的打击",
+        "url": "https://wallstreetcn.com/articles/3769051",
+        "author_or_account": "TrendRadar聚合",
+        "publish_time": "",
+        "excerpt": "特朗普自行宣称：对伊朗战事取得“压倒性胜利”，未来两到三周将开展极其猛烈的打击；来自 reports 最新外链",
+        "noise_tags": [],
+        "trendradar_signal": true,
+        "dedupe_group_id": "url-68b78f0cffc6610f",
+        "note": "账号：TrendRadar聚合；时间：未知；摘要：特朗普自行宣称：对伊朗战事取得“压倒性胜利”，未来两到三周将开展极其猛烈的打击；来自 reports 最新外链"
+      }
+    ],
+    "wechat": [
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8001/wechat_latest",
+        "heat_level": "B",
+        "heat_score": 58.0,
+        "title": "Hundreds of millions at risk from Chinese shopping app malware",
+        "url": "https://cnn.it/40OSomK",
+        "author_or_account": "CNN.com - RSS Channel - App International Edition",
+        "publish_time": "2026-04-03 21:00:05",
+        "excerpt": "Hundreds of millions at risk from Chinese shopping app malware；公众号最新文章",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-3b58f53e728baa97",
+        "note": "账号：CNN.com - RSS Channel - App International Edition；时间：2026-04-03 21:00:05；摘要：Hundreds of millions at risk from Chinese shopping app malware；公众号最新文章"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8001/wechat_latest",
+        "heat_level": "B",
+        "heat_score": 58.0,
+        "title": "Russian authorities detain suspect over St. Petersburg cafe blast",
+        "url": "https://edition.cnn.com/webview/europe/live-news/russia-ukraine-war-news-04-03-23/index.html",
+        "author_or_account": "CNN.com - RSS Channel - App International Edition",
+        "publish_time": "2026-04-03 21:00:05",
+        "excerpt": "Russian authorities detain suspect over St. Petersburg cafe blast；公众号…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-7089137b9cdb859d",
+        "note": "账号：CNN.com - RSS Channel - App International Edition；时间：2026-04-03 21:00:05；摘要：Russian authorities detain suspect over St. Petersburg cafe blast；公众号…"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8001/wechat_latest",
+        "heat_level": "B",
+        "heat_score": 58.0,
+        "title": "READ: Trump indictment related to hush money payment",
+        "url": "https://cnn.it/411KYN7",
+        "author_or_account": "CNN.com - RSS Channel - App International Edition",
+        "publish_time": "2026-04-03 21:00:05",
+        "excerpt": "READ: Trump indictment related to hush money payment；公众号最新文章",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-e495aead6b69e405",
+        "note": "账号：CNN.com - RSS Channel - App International Edition；时间：2026-04-03 21:00:05；摘要：READ: Trump indictment related to hush money payment；公众号最新文章"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8001/wechat_latest",
+        "heat_level": "B",
+        "heat_score": 58.0,
+        "title": "Trump pleads not guilty to 34 felony counts",
+        "url": "https://edition.cnn.com/webview/politics/live-news/trump-indictment-stormy-daniels-news-04-03-23/index.html",
+        "author_or_account": "CNN.com - RSS Channel - App International Edition",
+        "publish_time": "2026-04-03 21:00:05",
+        "excerpt": "Trump pleads not guilty to 34 felony counts；公众号最新文章",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-68e3683fa0107f43",
+        "note": "账号：CNN.com - RSS Channel - App International Edition；时间：2026-04-03 21:00:05；摘要：Trump pleads not guilty to 34 felony counts；公众号最新文章"
+      },
+      {
+        "channel": "wechat",
+        "channel_label": "公众号",
+        "source": "8001/wechat_latest",
+        "heat_level": "C",
+        "heat_score": 44.0,
+        "title": "The ABS Challenge System is exposing the worst umpire in baseball",
+        "url": "https://www.theverge.com/entertainment/906151/mlb-abs-challenge-system-cb-bucknor-worst-umpire-baseball",
+        "author_or_account": "The Verge",
+        "publish_time": "2026-04-03 20:57:47",
+        "excerpt": "The ABS Challenge System is exposing the worst umpire in baseball；公众号…",
+        "noise_tags": [],
+        "trendradar_signal": false,
+        "dedupe_group_id": "url-f50e6ee4a7ba1749",
+        "note": "账号：The Verge；时间：2026-04-03 20:57:47；摘要：The ABS Challenge System is exposing the worst umpire in baseball；公众号…"
+      }
+    ]
+  },
+  "manual_slots": {
+    "must_include": [],
+    "remove": [],
+    "add": []
+  },
+  "notes": [
+    "intake 阶段只提供真实样本、渠道热度和候选事件簇，不替 brief 做观点判断。",
+    "若人工指定题目，应在 manual_slots.must_include 中补充，并保留原始链接。"
+  ]
+}

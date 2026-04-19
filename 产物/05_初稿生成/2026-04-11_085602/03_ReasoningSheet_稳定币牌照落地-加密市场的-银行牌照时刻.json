@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "id": "2026-04-11_085602:topic-stablecoin-license-market-impact:reasoning",
+    "object_type": "ReasoningSheet",
+    "run_id": "2026-04-11_085602",
+    "version": "1.0.0",
+    "status": "ready",
+    "generated_by": "build_stage3_draft.py",
+    "input_digest": "topic-stablecoin-license-market-impact::稳定币牌照落地:加密市场的'银行牌照时刻'",
+    "upstream_ids": [
+      "topic-stablecoin-license-market-impact"
+    ],
+    "doc_refs": [],
+    "created_at": "2026-04-11T09:37:22.663670+08:00",
+    "updated_at": "2026-04-11T09:37:22.663670+08:00"
+  },
+  "topic_id": "topic-stablecoin-license-market-impact",
+  "title": "稳定币牌照落地:加密市场的'银行牌照时刻'",
+  "core_thesis": "稳定币牌照的发放标志着加密货币从野蛮生长进入持牌经营时代,这将重塑行业格局并为传统金融机构打开新的竞争赛道",
+  "editor_note": "",
+  "selection_reason": "",
+  "claims": [
+    {
+      "claim_id": "topic-stablecoin-license-market-impact-claim-01",
+      "section_id": "section-01",
+      "statement": "稳定币牌照的具体要求和门槛",
+      "counterpoint": "稳定币牌照公布后券商股闻声大涨,显示市场对传统金融机构进入加密领域的预期。这不是简单的监管政策,而是类似于互联网金融时代'银行牌照'的关键节点,将决定谁能在下一轮竞争中占据先机。",
+      "missing_proof": [
+        "稳定币牌照的具体要求和门槛",
+        "当前稳定币市场的规模和主要玩家"
+      ],
+      "chart_need": null
+    },
+    {
+      "claim_id": "topic-stablecoin-license-market-impact-claim-02",
+      "section_id": "section-02",
+      "statement": "当前稳定币市场的规模和主要玩家",
+      "counterpoint": "稳定币牌照公布后券商股闻声大涨,显示市场对传统金融机构进入加密领域的预期。这不是简单的监管政策,而是类似于互联网金融时代'银行牌照'的关键节点,将决定谁能在下一轮竞争中占据先机。",
+      "missing_proof": [
+        "稳定币牌照的具体要求和门槛",
+        "当前稳定币市场的规模和主要玩家"
+      ],
+      "chart_need": null
+    },
+    {
+      "claim_id": "topic-stablecoin-license-market-impact-claim-03",
+      "section_id": "section-03",
+      "statement": "传统金融机构的布局动作和时间表",
+      "counterpoint": "稳定币牌照公布后券商股闻声大涨,显示市场对传统金融机构进入加密领域的预期。这不是简单的监管政策,而是类似于互联网金融时代'银行牌照'的关键节点,将决定谁能在下一轮竞争中占据先机。",
+      "missing_proof": [
+        "稳定币牌照的具体要求和门槛",
+        "当前稳定币市场的规模和主要玩家"
+      ],
+      "chart_need": null
+    }
+  ],
+  "evidence_items": [],
+  "structure_contract": {
+    "max_primary_sections": 4,
+    "inherit_from_topic_card": true,
+    "source_of_truth": "selected_topics.json + topic_cards.json"
+  }
+}

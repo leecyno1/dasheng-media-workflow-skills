@@ -1,0 +1,68 @@
+{
+  "template_id": "market_story",
+  "template_name": "市场叙事面板 (Market Story Panel)",
+  "worldmonitor_project": "/Volumes/PSSD/Projects/worldmonitor",
+  "worldmonitor_data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+  "worldmonitor_public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+  "worldmonitor_entry": "index.html",
+  "proxy_port": 8787,
+  "current_status": "inactive",
+  "inputs": [
+    "article.md",
+    "scene_plan.json",
+    "charts/*.csv",
+    "charts/*.png",
+    "key_metrics.json"
+  ],
+  "preferred_components": [
+    "MarketPanel",
+    "EconomicPanel",
+    "CountryTimeline"
+  ],
+  "page_modules": [
+    "hero-summary",
+    "key-metrics-strip",
+    "timeline-repricing",
+    "chart-gallery",
+    "embedded-video"
+  ],
+  "chart_anchor_ids": [
+    "chart1",
+    "chart2",
+    "chart3",
+    "chart4"
+  ],
+  "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+  "artifact_tag": "layer5_finance_market_story",
+  "topic_slug": "t001",
+  "topic_title": "鲍威尔讲话终结加息预期引发市场转向降息押注",
+  "core_claim": "鲍威尔讲话确认通胀放缓并关闭加息窗口，市场迅速由加息预期转向降息押注，推动资产配置和风险偏好显著变化，标志美联储货币政策进入新周期。",
+  "required_csvs": [
+    "charts/csv/chart1.csv",
+    "charts/csv/chart2.csv",
+    "charts/csv/chart3.csv",
+    "charts/csv/chart4.csv"
+  ],
+  "required_pngs": [
+    "charts/png/chart1.png",
+    "charts/png/chart2.png",
+    "charts/png/chart3.png",
+    "charts/png/chart4.png"
+  ],
+  "narrative_schema": "timeline_then_signals",
+  "data_granularity": "daily",
+  "risk_scenarios": [
+    "再通胀抬升",
+    "增长走弱",
+    "利率高位钝化",
+    "风险偏好回升"
+  ],
+  "key_metrics_to_emit": [
+    "SPX",
+    "US10Y",
+    "Oil",
+    "Gold",
+    "Breakeven10Y"
+  ],
+  "layout_hint": "market_panel_left + chart_gallery_right + metrics_strip_bottom"
+}

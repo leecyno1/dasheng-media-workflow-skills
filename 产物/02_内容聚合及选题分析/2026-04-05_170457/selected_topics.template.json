@@ -1,0 +1,123 @@
+{
+  "run_id": "2026-04-05_170457",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "未被选中的题请写入 rejected_topic_ids 或保留空值。",
+    "只有 selected_topics 非空且状态为 approved，draft 才允许执行。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升",
+      "title": "伊朗冲突升级，真正变贵的是地区秩序成本",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升",
+      "angle_variant_of": null,
+      "article_use": "解释稿",
+      "changed_dimension": "强化逻辑张力，将关注点从事件本身转向长期秩序成本的结构性变化。",
+      "core_proposition": "不止于报道伊朗冲突的表面升级，重点揭示长期地区秩序成本如何因冲突不断累积并加剧风险。",
+      "source_status": "自然入选",
+      "composite_score": 7.3
+    },
+    {
+      "topic_id": "topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升-variant-外交部-中东这题换个写法-更该写成一篇结构稿",
+      "title": "中东冲突升级，外交部关注的长期秩序成本风险",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升",
+      "angle_variant_of": "topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升",
+      "article_use": "结构稿",
+      "changed_dimension": "观察对象从伊朗与原油转向外交部与中东，文章用途由解释稿调整为结构稿。",
+      "core_proposition": "通过外交部和中东冲突的视角，剖析事件升级之外，长期秩序成本如何在外交互动中加剧。",
+      "source_status": "自然入选",
+      "composite_score": 7.14
+    },
+    {
+      "topic_id": "topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏",
+      "title": "英伟达回暖，不等于半导体全面复苏",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏",
+      "angle_variant_of": null,
+      "article_use": "解释稿",
+      "changed_dimension": "聚焦产业链分化，强化对局部与全面复苏预期差异的逻辑分析。",
+      "core_proposition": "聚焦英伟达业绩回暖，揭示投资者可能将局部修复误读为半导体行业整体复苏的风险。",
+      "source_status": "自然入选",
+      "composite_score": 7.06
+    },
+    {
+      "topic_id": "topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏-variant-英伟达-半导体这条线若换个切口-最该补的证据会不",
+      "title": "从半导体全链条看英伟达局部修复的局限",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏",
+      "angle_variant_of": "topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏",
+      "article_use": "解释稿",
+      "changed_dimension": "从单一视角转向多维切口，强调证据和判断的差异化。",
+      "core_proposition": "以英伟达和半导体为观察对象，探讨不同切口下需要补充的关键证据及其对复苏判断的影响。",
+      "source_status": "自然入选",
+      "composite_score": 6.72
+    },
+    {
+      "topic_id": "topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估",
+      "title": "白银和贵金属风险溢价，背后重估的真正变化的变量是什么？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估",
+      "angle_variant_of": null,
+      "article_use": "判断稿",
+      "changed_dimension": "从表面行情转向核心变量的结构性重估，强化逻辑深度。",
+      "core_proposition": "围绕白银和贵金属，解析风险溢价重估背后的核心变量，避免表面价格波动的误导。",
+      "source_status": "自然入选",
+      "composite_score": 7.16
+    },
+    {
+      "topic_id": "topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估-variant-川普-特朗普这条线若换个切口-最该补的证据会不会",
+      "title": "川普时代的风险溢价，贵金属市场的隐形变量",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估",
+      "angle_variant_of": "topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估",
+      "article_use": "判断稿",
+      "changed_dimension": "从市场和资产角度转向政治变量，强化证据和视角的多样性。",
+      "core_proposition": "以川普及其政策为切入，探讨贵金属风险溢价重估的核心变量和证据，避免泛泛而谈。",
+      "source_status": "自然入选",
+      "composite_score": 6.76
+    },
+    {
+      "topic_id": "topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆",
+      "title": "市场低估了再通胀？特朗普与鲍威尔的政策信号解读",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆",
+      "angle_variant_of": null,
+      "article_use": "判断稿",
+      "changed_dimension": "强化政策人物与市场预期之间的张力，深化逻辑分析。",
+      "core_proposition": "围绕特朗普和鲍威尔的政策与言论，分析市场是否低估了再通胀和利率预期的回摆风险。",
+      "source_status": "自然入选",
+      "composite_score": 7.24
+    },
+    {
+      "topic_id": "topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆-variant-美联储-中东这条线若换个切口-最该补的证据会不会",
+      "title": "再通胀风险加剧，美联储与地缘政治的复杂互动",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆",
+      "angle_variant_of": "topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆",
+      "article_use": "判断稿",
+      "changed_dimension": "从单一政策人物转向政策与地缘政治交织，增强复杂性和多维度。",
+      "core_proposition": "从美联储和中东局势双重视角，分析市场是否低估了再通胀与利率预期的回摆风险。",
+      "source_status": "自然入选",
+      "composite_score": 7.39
+    },
+    {
+      "topic_id": "topic-制裁-供给秩序重估会不会比价格波动更重要",
+      "title": "制裁冲击下，供给链秩序的重塑比价格波动更关键",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-制裁-供给秩序重估会不会比价格波动更重要",
+      "angle_variant_of": null,
+      "article_use": "结构稿",
+      "changed_dimension": "从价格波动转向供给秩序的结构性重估，提升逻辑张力。",
+      "core_proposition": "围绕制裁对产业链供给秩序的深刻重估，强调其结构性影响超过短期价格波动的事实。",
+      "source_status": "自然入选",
+      "composite_score": 6.99
+    }
+  ],
+  "editor_note": ""
+}

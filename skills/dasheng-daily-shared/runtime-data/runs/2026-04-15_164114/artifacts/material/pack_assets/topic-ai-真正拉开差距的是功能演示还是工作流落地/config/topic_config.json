@@ -1,0 +1,361 @@
+{
+  "topic_slug": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+  "topic_type": "industry_tech",
+  "title": "AI：真正拉开差距的是功能演示还是工作流落地",
+  "thesis": "AI技术的真正竞争力不在于功能演示的丰富多样，而在于其能否深度嵌入企业工作流，实现端到端的自动化协作和持续迭代维护，形成真正的生产力提升。",
+  "generation_basis": "final_doc_ai_reading",
+  "article_source": {
+    "type": "local_markdown",
+    "path": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-15_164114/03_标准初稿_ai-真正拉开差距的是功能演示还是工作流落地.md",
+    "final_primary_sections": [
+      "AI价值的真正结构变量：超越表面消息的深层逻辑",
+      "拆解AI的安装、接线、协作与维护成本",
+      "功能演示与工作流能力的本质区别",
+      "结语：盯紧工作流变量，摈弃表面热度"
+    ]
+  },
+  "article_markdown": "# AI：真正拉开差距的是功能演示还是工作流落地\n\n人工智能（AI）如今几乎成为各行各业创新升级的代名词。每当一款新模型推出，市场上便充斥着各种功能演示视频、技术亮点介绍和炫酷应用案例，仿佛只要AI功能越多越强，企业和产品的竞争优势就会水涨船高。然而，事实远比这复杂得多。真正拉开差距的，并非是“功能花样”的多少，而是AI技术能否深度嵌入企业的核心工作流，实现端到端的协作与自动化，带来持续且实实在在的生产力提升。\n\n本文试图破除一个常见误判：企业和投资者在判断AI价值时，过于关注表面上的功能演示，却忽视了AI落地背后极其复杂的工作流整合、数据接入、协作链路和维护迭代成本。我们将从结构变量的视角，厘清AI真正对应的是哪些核心变革要素，拆解功能演示与工作流落地的本质差异，帮助读者建立科学的评估框架，避免被“表面热度”蒙蔽，找到AI方案价值的真实所在。\n\n---\n\n## AI价值的真正结构变量：超越表面消息的深层逻辑\n\n### 误判根源：功能演示的迷雾\n\n当前AI市场的活跃度常以“功能数量”作为衡量标准。各厂商纷纷推出自动写作、图像合成、语音识别、代码生成等看似“无所不能”的功能，每一次演示都能引发舆论和资本市场的强烈关注。这种现象在一定程度上塑造了一个认知假象：只要功能越多越炫，AI技术的应用价值就一定更大。\n\n然而，功能演示往往发生在“理想场景”或“实验环境”，缺乏对复杂业务场景的适配和支持。它们大多聚焦于单一任务，输入输出明确且固定，且不涉及多环节、多角色、多系统的协作。所谓“功能强大”，实则是“孤立展示”。这不仅导致外界对AI能力的误判，也让企业在尝试导入时遭遇巨大落差。\n\n举例来说，市场上许多自动文案生成工具可以快速输出高质量文本，但若要集成到企业销售、客户关系管理、合同审核等复杂流程中，则需要远超文本生成的能力——包括数据权限控制、任务分配、进度追踪、审批闭环等。而这些，是简单功能演示无法覆盖的。\n\n因此，功能数量和花样本身并非衡量AI价值的核心指标。它们更像是技术门面，或者说是“敲门砖”，而不是企业竞争力的根本来源。\n\n### 深层结构变量：AI落地的核心维度\n\n为了更科学地评价AI技术的实际价值，必须回归“结构变量”（structural variables）的分析视角。结构变量指的是影响企业运营效率和业务协同的根本因素，是技术变革真正切入的点。\n\n围绕AI技术落地，以下四个结构变量尤为关键：\n\n- **工作流整合能力**  \n  AI能否紧密嵌入现有业务流程，打通各环节任务，形成端到端自动化和智能决策链路。它要求AI不仅是辅助工具，更是流程驱动的活跃参与者。\n\n- **数据接入与处理链路**  \n  AI表现的基础是数据。数据的采集、清洗、转换和权限管控构成了AI系统的神经网络。数据链路的稳定性、实时性和安全性直接决定模型的有效性和合规性。\n\n- **维护与迭代成本**  \n  AI系统不是“买断式产品”，而是一个需要持续投入和优化的动态系统。模型的训练、验证、更新及异常监控，都是维持系统高效运行的必要成本。\n\n- **协作与权限管理**  \n  AI的落地往往涉及跨部门、多角色的协同工作。一个成熟的AI方案必须支持复杂的权限体系、信息共享和多方协作，确保业务运营的顺畅和合规。\n\n这四个结构变量构成了评估AI方案落地能力的核心框架，远远重于功能数量。\n\n### 流程对比：传统工作流、功能演示与工作流落地的差异\n\n| 维度           | 传统工作流                         | AI功能演示                         | AI工作流落地                        |\n|----------------|----------------------------------|----------------------------------|----------------------------------|\n| 流程连续性     | 手工驱动，环节割裂               | 单点功能，孤立展示               | 流程自动化，端到端协作           |\n| 信息流通       | 信息孤岛，沟通成本高             | 静态演示，缺少互动               | 动态适应，信息实时流转           |\n| 协作机制       | 人工协调，层级繁多               | 功能独立，缺乏多角色协作         | 多角色权限分明，协作闭环         |\n| 维护成本       | 高维护成本，更新滞后             | 一次性开发，难以扩展             | 持续迭代，自动化维护             |\n| 业务适应性     | 依赖人员经验，灵活性受限         | 受限于预设场景                   | 支持业务变化，快速响应           |\n\n此流程对比图不仅揭示了AI技术应用的三种典型状态，也明确指出了企业应重点关注的落地环节。功能演示只是“局部优化”，无法替代传统工作流，而真正的价值在于通过AI实现业务流程的深度改造和自动化协同。\n\n---\n\n## 拆解AI的安装、接线、协作与维护成本\n\n### 安装与接入的复杂性：远非“即插即用”\n\n尽管AI厂商往往宣传自家产品“零代码部署”、“即插即用”，但现实中企业面对的安装和接入难度却远超预期，主要体现在以下几个方面：\n\n- **数据接口的异构性**  \n  企业内部信息系统繁多，数据格式千差万别。AI系统必须实现对各种异构数据源的兼容和转换，这包括结构化数据与非结构化数据的统一处理。数据清洗、格式标准化和实时同步是耗时费力的工作，任何环节的疏漏都可能引发AI输出质量下降。\n\n- **权限与合规的复杂性**  \n  企业对数据安全和隐私合规有严格要求。AI接入必须实现多层权限控制和数据访问审计，防止数据泄露和违规使用。不同业务线和部门间权限策略多样，复杂度高，增加了系统设计和实施难度。\n\n- **多系统集成的技术挑战**  \n  企业业务涉及ERP、CRM、供应链管理、财务系统等多个独立平台。AI系统若要发挥真正价值，必须实现跨系统集成，保证信息流畅、功能连贯。这往往需要针对各系统的API接口、数据同步机制和版本兼容进行深度定制。\n\n这些均表明，AI产品的“部署”过程实际上是一个技术与业务深度融合的系统集成项目，非简单软件安装或API调用。\n\n### 协作链路的搭建：多角色、多步骤的协调难题\n\nAI应用的落地往往不是单用户体验，而是涉及多岗位、多部门的协同工作。构建高效的协作链路，需要克服以下挑战：\n\n- **任务自动分配与流程监控**  \n  AI需根据业务规则自动将任务分发给对应人员，且实时跟踪任务状态。复杂业务流程对任务优先级、依赖关系的管理要求极高。\n\n- **信息同步与多版本管理**  \n  多人协作常导致信息不同步、文档版本混乱。AI系统必须提供统一的协作平台，支持实时更新和历史版本追溯。\n\n- **审批流程与责任链闭环**  \n  AI辅助决策必须嵌入多级审批环节，确保符合合规要求和审计追踪。责任和权限的明确界定，是制度化工作的前提。\n\n如果忽视这些协作机制建设，即使AI功能再强，也难以形成真正的生产力闭环，容易沦为“花瓶”工具。\n\n### 维护与迭代：持续成本是隐形杀手\n\nAI系统投入使用后，并非一成不变，而是需要持续的维护和迭代：\n\n- **模型再训练与微调**  \n  随着业务环境和数据分布变化，模型表现会退化。定期的模型再训练和参数调优成为必需，否则AI输出将失真，降低信任度。\n\n- **数据质量监控**  \n  脏数据、异常数据会导致AI误判。必须建立持续的数据质检机制，自动发现并修正数据异常。\n\n- **系统稳定性与性能保障**  \n  AI系统要保证高可用和低延迟，防止服务中断影响业务流程。运维团队需要实时监控系统状态，及时应对故障。\n\n不容忽视的是，维护迭代的成本常被低估，导致部分企业后期因技术债务累积选择放弃或重构，影响AI项目的长期ROI。\n\n### 接入链路拆解表\n\n| 环节         | 关键挑战                     | 典型影响                     |\n|--------------|------------------------------|------------------------------|\n| 数据接口     | 格式不兼容、权限受限         | 交付延迟，数据不一致         |\n| 系统集成     | 多平台协议差异、技术标准不同 | 功能割裂，体验不连贯         |\n| 协作管理     | 权限复杂、多角色协调难       | 决策缓慢，执行效率低         |\n| 维护迭代     | 缺乏自动化工具和流程         | 成本飙升，更新停滞           |\n\n这张拆解表体现了AI落地过程中不易察觉但极具决定性的隐形成本，是评估技术方案时必须重点关注的风险点。\n\n---\n\n## 功能演示与工作流能力的本质区别\n\n### 功能演示：单点突破，缺少系统联动\n\nAI厂商的功能演示往往聚焦于单一任务的快速完成，比如自动撰写一段文案、生成一幅图片或识别一句话的情绪。这类演示的共性包括：\n\n- **输入输出固定，场景单一**  \n  功能演示通常基于预设示例，缺少多样化输入和复杂业务流程的验证。\n\n- **操作独立，无上下游依赖**  \n  任务在孤立环境中完成，不涉及与其他任务的协调。\n\n- **无多角色协作支持**  \n  演示多为单用户操作，缺乏权限管理和跨部门协作功能。\n\n- **难以形成动态优化闭环**  \n  演示过程缺少实时反馈机制，难以根据业务变化调整。\n\n功能演示适合展现技术可行性和模型能力，但在企业复杂业务环境中，其价值有限，更多是“技术样板”。\n\n### 工作流能力：嵌入业务，形成闭环价值\n\n真正的AI竞争优势来源于“工作流能力”——即AI技术能够成为业务流程的核心驱动力，具体表现为：\n\n- **流程驱动的自动化执行**  \n  AI不仅完成单点任务，更能自动识别业务需求，分发和协调任务，跟踪执行进度，实现端到端流程自动化。\n\n- **多角色、多部门协同作业**  \n  支持不同业务角色按权限访问和操作，促进跨部门协作，提升整体效率。\n\n- **实时反馈与模型迭代**  \n  通过监控业务数据和流程状态，持续优化AI模型和业务规则，形成动态自适应体系。\n\n- **业务闭环保障合规与风险控制**  \n  AI辅助决策嵌入审批流程，确保操作合规，风险可控，且有完整审计轨迹。\n\n这种工作流能力将AI从“辅助工具”提升为“业务伙伴”，真正释放技术潜力。\n\n### 案例对比（示意）\n\n| 方案类型         | 描述                           | 业务价值                         |\n|------------------|--------------------------------|---------------------------------|\n| 功能演示         | 单次文本生成、图像合成等       | 技术展示，无法直接支撑业务流程   |\n| 工作流能力       | 客户管理、合同审批、市场分析等 | 流程自动化，跨部门协作闭环       |\n\n以房地产行业为例，某些AI助理不仅能生成客户沟通文本，更能参与客户信息管理、合同自动审批、市场趋势分析等流程，形成端到端闭环，极大优化业务效率和客户体验。这种场景远非单点功能演示所能覆盖。\n\n---\n\n## 结语：盯紧工作流变量，摈弃表面热度\n\n当前AI市场的“光环”往往掩盖了技术落地的复杂真实。对于企业决策者和投资者而言，理解并盯紧AI应用的核心结构变量，是避免被表面热度迷惑的关键：\n\n- **深度嵌入业务流程，形成端到端闭环**，而非孤立的功能模块  \n- **构建完整、安全、实时的数据接入链路**，确保模型表现稳定可靠  \n- **搭建多角色、多部门的协作机制**，保证信息流和任务流的顺畅  \n- **合理控制维护和迭代成本**，防止技术债务积累和项目失败\n\n那些仅靠花哨功能和单点演示吸引眼球的方案，应理性审视其实际落地能力和长期价值。未来AI领域的竞争，归根结底是工作流能力的竞争，而非功能数量的攀比。唯有真正掌握工作流架构和协作机制的企业，才能在这场技术变革中赢得先机，打造可持续的竞争优势。\n\n---\n\n## 引用与待补源\n\n- 已有来源  \n  - 《从DAU到Token：AI Agent时代，商业文明的度量衡重塑》，Bilibili视频，https://www.bilibili.com/video/BV17zXWBbETz  \n  - 《AI冲击下的房地产市场》，Bilibili视频，https://www.bilibili.com/video/BV1GG93BpEkM  \n\n- 待补证明  \n  - 官方及监管机构关于AI落地结构变量的权威定义及政策文件  \n  - 主流财经媒体和权威报告关于AI安装、接线、协作和维护成本的交叉验证数据  \n  - 案例层面对功能演示与工作流能力的权威分析与实证数据支持  \n  - 流程对比图、接入链路图的实证图表与数据来源  \n\n---\n\n> 本文旨在帮助读者跳脱AI技术表象，深入理解其落地机制，通过结构变量的视角，实现对AI方案价值的精准判断。未来的AI竞争，终究是工作流能力的竞争，而非功能花哨的比拼。",
+  "material_decision_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-15_164114/artifacts/material/material_ai_decisions.json",
+  "claim_bindings": [
+    {
+      "claim_id": "c1",
+      "section_id": "section-02",
+      "statement": "功能演示往往局限于理想场景的单一任务，缺乏对复杂业务流程的适配，不能体现AI技术的真实价值。真正的价值在于AI能否深度嵌入企业工作流，实现端到端协作和自动化。",
+      "counterpoint": "市场热衷功能数量和炫酷演示，容易误判AI能力，忽略了背后复杂的工作流整合和维护成本。",
+      "missing_proof": [
+        "权威机构或监管部门关于AI落地结构变量的官方定义或政策文件",
+        "主流财经媒体关于功能演示与工作流落地差异的实证报道"
+      ],
+      "chart_need": null
+    },
+    {
+      "claim_id": "c2",
+      "section_id": "section-03",
+      "statement": "AI系统的部署远非即插即用，涉及复杂的数据接口异构、权限合规、多系统集成和多角色协作，且维护和迭代成本高昂，是隐形但关键的技术风险点。",
+      "counterpoint": "厂商宣传零代码部署和即插即用，实际落地需投入大量技术和业务整合资源。",
+      "missing_proof": [
+        "权威财经报告或案例分析，展示安装接入和维护成本的具体数据和影响",
+        "主流媒体对AI系统集成复杂性的深入报道"
+      ],
+      "chart_need": null
+    },
+    {
+      "claim_id": "c3",
+      "section_id": "section-04",
+      "statement": "功能演示是单点、孤立的任务展示，缺乏系统联动和多角色协作，难以支撑复杂业务流程；而工作流能力则实现了流程自动化、多部门协同和动态闭环，是真正释放AI价值的关键。",
+      "counterpoint": "仅靠功能演示难以形成生产力闭环，容易沦为技术样板或花瓶工具。",
+      "missing_proof": [
+        "权威案例分析和实证数据，证明工作流能力优于功能演示的业务价值",
+        "跨行业对比图表，展示功能演示与工作流落地的效率和效果差异"
+      ],
+      "chart_need": null
+    }
+  ],
+  "evidence_items": [
+    {
+      "id": "ai-technology-adoption-e01",
+      "title": "从DAU到Token：AI Agent时代，商业文明的度量衡重塑",
+      "url": "https://www.bilibili.com/video/BV17zXWBbETz",
+      "source": "B站",
+      "platform": "",
+      "note": "从DAU到Token：AI Agent时代，商业文明的度量衡重塑；热度代理=27",
+      "heat": null
+    },
+    {
+      "id": "ai-technology-adoption-e02",
+      "title": "AI冲击下的房地产市场",
+      "url": "https://www.bilibili.com/video/BV1GG93BpEkM",
+      "source": "B站",
+      "platform": "",
+      "note": "AI冲击下的房地产市场；热度代理=36",
+      "heat": null
+    }
+  ],
+  "chart_anchors": [
+    {
+      "anchor_id": "chart-01",
+      "title": "主判断核心变量趋势图",
+      "purpose": "验证主线变量是否在中期趋势上成立",
+      "data_sources": [
+        "akshare",
+        "tushare",
+        "官方统计",
+        "FRED"
+      ],
+      "chart_type": "line"
+    },
+    {
+      "anchor_id": "chart-02",
+      "title": "事件冲击与市场反应对照图",
+      "purpose": "把事件与价格/情绪/利率变化放在同一时间轴",
+      "data_sources": [
+        "akshare",
+        "tushare",
+        "新浪财经"
+      ],
+      "chart_type": "dual_axis"
+    },
+    {
+      "anchor_id": "chart-03",
+      "title": "结构拆解图",
+      "purpose": "把总判断拆成 3-5 个支撑维度",
+      "data_sources": [
+        "官方统计",
+        "研究报告",
+        "手工整理 CSV"
+      ],
+      "chart_type": "bar"
+    },
+    {
+      "anchor_id": "chart-04",
+      "title": "风险情景图",
+      "purpose": "给出不同情景下的观察变量与触发条件",
+      "data_sources": [
+        "手工整理 CSV"
+      ],
+      "chart_type": "scenario"
+    }
+  ],
+  "chart_quality_gate": {
+    "enabled": true,
+    "version": "1.0",
+    "thresholds": {
+      "cv_min": 0.03,
+      "slope_abs_min": 0.005,
+      "r2_min": 0.25,
+      "trend_strength_min": 0.3,
+      "heatmap_var_min": 0.05
+    },
+    "fallback": {
+      "mode": "logical_relation_table",
+      "outputs": [
+        "charts/csv/*.csv",
+        "charts/markdown/*.md"
+      ],
+      "trigger_rule": "当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格"
+    }
+  },
+  "web_search": {
+    "image_queries": [
+      {
+        "query": "AI技术落地企业工作流协作会议现场",
+        "entity_type": "event",
+        "entity": "AI工作流落地",
+        "priority": null,
+        "channel": "news"
+      },
+      {
+        "query": "知名AI厂商技术团队工作场景",
+        "entity_type": "organization",
+        "entity": "AI厂商",
+        "priority": null,
+        "channel": "news"
+      },
+      {
+        "query": "企业数字化转型中AI项目负责人肖像",
+        "entity_type": "person",
+        "entity": "AI项目负责人",
+        "priority": null,
+        "channel": "news"
+      }
+    ],
+    "news_screenshot_queries": [
+      {
+        "query": "权威财经媒体报道AI落地结构变量和成本挑战",
+        "channel": "finance",
+        "priority": null
+      },
+      {
+        "query": "官方监管机构发布AI应用规范和政策文件",
+        "channel": "government",
+        "priority": null
+      }
+    ],
+    "video_queries": [
+      "AI工作流自动化企业案例介绍",
+      "AI系统集成与维护挑战实录"
+    ]
+  },
+  "video_quality_policy": {
+    "min_height": 0,
+    "min_duration_seconds": 8,
+    "min_scene_changes": 2,
+    "min_scene_change_rate": 0.08,
+    "allow_news_live_or_interview": true,
+    "block_self_media_talking_head": true,
+    "reject_screenshot_montage": true,
+    "report_fields": [
+      "source_category",
+      "source_ok",
+      "resolution_height",
+      "duration_seconds",
+      "scene_changes",
+      "scene_change_rate",
+      "anti_screenshot_montage_pass",
+      "final_pass",
+      "fail_reasons"
+    ]
+  },
+  "entity_signals": {
+    "top_keywords": [
+      {
+        "term": "功能演示是单点",
+        "count": 6
+      },
+      {
+        "term": "孤立的任务展示",
+        "count": 6
+      },
+      {
+        "term": "权限合规",
+        "count": 6
+      },
+      {
+        "term": "真正的价值在于AI能否深度嵌入企业工作流",
+        "count": 3
+      },
+      {
+        "term": "功能演示往往局限于理想场景的单一任务",
+        "count": 3
+      },
+      {
+        "term": "而工作流能力则实现了流程自动化",
+        "count": 3
+      },
+      {
+        "term": "不能体现AI技术的真实价值",
+        "count": 3
+      },
+      {
+        "term": "AI系统的部署远非即插即用",
+        "count": 3
+      }
+    ],
+    "people": [
+      {
+        "name": "程的适配",
+        "count": 3
+      },
+      {
+        "name": "任务",
+        "count": 3
+      },
+      {
+        "name": "高昂",
+        "count": 3
+      },
+      {
+        "name": "时代",
+        "count": 2
+      }
+    ],
+    "countries": [],
+    "orgs": [
+      {
+        "name": "多部门协同和动态闭环",
+        "count": 3
+      },
+      {
+        "name": "功能演示往往局限",
+        "count": 3
+      },
+      {
+        "name": "系统的部署远非即",
+        "count": 3
+      },
+      {
+        "name": "多部门协同和动态",
+        "count": 3
+      },
+      {
+        "name": "AI",
+        "count": 3
+      }
+    ]
+  },
+  "generated": {
+    "cover_prompt": "A conceptual illustration showing AI technology integrating seamlessly into complex business workflows, symbolizing automation, collaboration, and data flow in a modern enterprise.",
+    "infographic_prompts": [],
+    "comic_storyboard": [],
+    "meme_prompts": [],
+    "funny_comic_character_prompts": []
+  },
+  "layer5": {
+    "template_id": "story_page",
+    "template_name": "通用故事面板 (Story Page)",
+    "worldmonitor_project": "/Volumes/PSSD/Projects/worldmonitor",
+    "worldmonitor_data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+    "worldmonitor_public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+    "worldmonitor_entry": "index.html",
+    "proxy_port": 8787,
+    "current_status": "inactive",
+    "inputs": [
+      "article.md",
+      "chart_gallery.json",
+      "scene_plan.json"
+    ],
+    "preferred_components": [
+      "CountryTimeline"
+    ],
+    "page_modules": [
+      "hero-summary",
+      "chart-gallery",
+      "media-gallery"
+    ],
+    "chart_anchor_ids": [
+      "chart-01",
+      "chart-02",
+      "chart-03",
+      "chart-04"
+    ],
+    "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+    "artifact_tag": "layer5_story_page",
+    "topic_slug": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+    "topic_title": "AI：真正拉开差距的是功能演示还是工作流落地",
+    "core_claim": "AI技术的真正竞争力不在于功能演示的丰富多样，而在于其能否深度嵌入企业工作流，实现端到端的自动化协作和持续迭代维护，形成真正的生产力提升。",
+    "required_csvs": [
+      "charts/csv/chart-01.csv",
+      "charts/csv/chart-02.csv",
+      "charts/csv/chart-03.csv",
+      "charts/csv/chart-04.csv"
+    ],
+    "required_pngs": [
+      "charts/png/chart-01.png",
+      "charts/png/chart-02.png",
+      "charts/png/chart-03.png",
+      "charts/png/chart-04.png"
+    ],
+    "narrative_schema": "thesis_then_evidence_then_risks",
+    "data_granularity": "monthly",
+    "risk_scenarios": [],
+    "key_metrics_to_emit": [],
+    "layout_hint": "chart_gallery_centered"
+  },
+  "recommended_sources": [
+    "akshare",
+    "tushare",
+    "新浪财经",
+    "人民网",
+    "新华社",
+    "公开官方声明",
+    "https://www.bilibili.com/video/BV17zXWBbETz",
+    "https://www.bilibili.com/video/BV1GG93BpEkM"
+  ],
+  "scene_plan": [
+    {
+      "title": "AI工作流落地协作现场",
+      "visual": "图片",
+      "caption": "展示企业内部多部门协作，AI技术嵌入核心业务流程的会议或工作场景。"
+    },
+    {
+      "title": "AI系统安装与集成挑战",
+      "visual": "视频",
+      "caption": "介绍AI系统接入异构数据源和多平台集成的复杂过程。"
+    },
+    {
+      "title": "功能演示与工作流能力对比",
+      "visual": "图片",
+      "caption": "通过示意图展示功能演示的单点任务与工作流能力的端到端协作差异。"
+    }
+  ]
+}

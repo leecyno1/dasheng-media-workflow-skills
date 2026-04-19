@@ -1,0 +1,107 @@
+{
+  "topic": "topic-6",
+  "generated_at": "2026-03-31T14:37:51+0800",
+  "policy": {
+    "min_height": 0,
+    "min_duration_seconds": 8,
+    "min_scene_changes": 2,
+    "min_scene_change_rate": 0.08,
+    "allow_news_live_or_interview": true,
+    "block_self_media_talking_head": true,
+    "reject_screenshot_montage": true
+  },
+  "audit_fields": {
+    "candidate_level": [
+      "source_category",
+      "source_ok",
+      "resolution_height",
+      "duration_seconds_hint",
+      "pre_download_pass",
+      "reject_reasons"
+    ],
+    "file_level": [
+      "source_traceable",
+      "resolution_height",
+      "duration_seconds",
+      "scene_changes",
+      "scene_change_rate",
+      "anti_screenshot_montage_pass",
+      "final_pass",
+      "fail_reasons"
+    ]
+  },
+  "query_quality_summary": [
+    {
+      "query": "stock market b roll 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "oil tanker aerial 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "refinery aerial 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "gold vault documentary 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "federal reserve exterior b roll",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "commodities trading floor 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "shipping port cranes aerial 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "investors crowd b roll 4k",
+      "candidate_count": 3,
+      "qualified_count": 2,
+      "rejected_count": 1,
+      "reject_reason_counts": {
+        "unknown_resolution": 1
+      }
+    }
+  ],
+  "summary": {
+    "candidate_total": 24,
+    "candidate_qualified": 23,
+    "candidate_rejected": 1,
+    "candidate_reject_reason_counts": {
+      "unknown_resolution": 1
+    },
+    "download_attempts": 2,
+    "download_passed": 0,
+    "download_failed": 2,
+    "download_fail_reason_counts": {
+      "low_frame_variation_possible_screenshot_montage": 2
+    }
+  }
+}

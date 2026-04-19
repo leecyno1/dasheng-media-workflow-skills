@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "id": "topic-russia-japan-oil-cutoff:reasoning",
+    "object_type": "ReasoningSheet",
+    "run_id": "2026-04-06_211510",
+    "version": "1.0.0",
+    "status": "ready",
+    "generated_by": "dasheng-stage-brief-ai"
+  },
+  "topic_id": "topic-russia-japan-oil-cutoff",
+  "title": "俄罗斯对日断供石油：能源武器化如何重塑东北亚地缘格局",
+  "core_thesis": "俄罗斯以「友好国家优先」为由拒绝向日本供油，标志着能源从商品属性向地缘工具的彻底转变",
+  "claims": [
+    {
+      "claim_id": "topic-russia-japan-oil-cutoff-claim-01",
+      "section_id": "section-01",
+      "statement": "日本对俄罗斯石油的依赖度数据和历史进口量",
+      "counterpoint": null,
+      "missing_proof": [],
+      "chart_need": "日本石油进口来源结构图"
+    },
+    {
+      "claim_id": "topic-russia-japan-oil-cutoff-claim-02",
+      "section_id": "section-02",
+      "statement": "日本当前的石油储备量和替代供应渠道",
+      "counterpoint": null,
+      "missing_proof": [],
+      "chart_need": "日本能源供应链替代方案对比"
+    },
+    {
+      "claim_id": "topic-russia-japan-oil-cutoff-claim-03",
+      "section_id": "section-03",
+      "statement": "俄罗斯石油出口结构的变化趋势",
+      "counterpoint": null,
+      "missing_proof": [],
+      "chart_need": "俄罗斯石油出口目的地变化趋势"
+    }
+  ],
+  "evidence_items": [],
+  "structure_contract": {}
+}

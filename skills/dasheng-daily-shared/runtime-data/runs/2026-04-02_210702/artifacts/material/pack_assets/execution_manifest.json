@@ -1,0 +1,34 @@
+{
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets",
+  "steps": [
+    "charts"
+  ],
+  "topics": [
+    {
+      "topic": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+      "title": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+      "charts": {
+        "topic": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+        "generated": [],
+        "summary": {
+          "chart_count": 0,
+          "table_count": 0,
+          "gate_thresholds": {
+            "cv_min": 0.03,
+            "slope_abs_min": 0.005,
+            "r2_min": 0.25,
+            "trend_strength_min": 0.3,
+            "group_diff_min": 0.08,
+            "heatmap_var_min": 0.05
+          }
+        }
+      }
+    }
+  ],
+  "layer5_inputs_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets/layer5_inputs.json",
+  "layer5_delivery_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets/layer5_delivery_report.md",
+  "chart_quality_gate_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets/chart_quality_gate_report.md",
+  "chart_quality_gate_report_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets/chart_quality_gate_report.json",
+  "chart_quality_gate_overview_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/chart_quality_gate_overview.json",
+  "chart_quality_gate_overview_md": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/chart_quality_gate_overview.md"
+}

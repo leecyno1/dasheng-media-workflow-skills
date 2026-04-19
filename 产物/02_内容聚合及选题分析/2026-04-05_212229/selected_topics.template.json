@@ -1,0 +1,114 @@
+{
+  "run_id": "2026-04-05_170457",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "没有 selected_topics 或未批准状态，不允许进入下游阶段。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "T001",
+      "title": "鲍威尔讲话促使市场由加息预期转向降息押注",
+      "topic_kind": "independent",
+      "mother_topic_id": "T001",
+      "angle_variant_of": null,
+      "article_use": "财经深度解析、市场策略指导、投资者教育材料。",
+      "core_proposition": "鲍威尔讲话中通胀迹象不明显，加之人工智能发展预期，使得投资者重新评估货币政策方向，转向降息押注。",
+      "one_line_judgment": "美联储主席鲍威尔最新表态削弱了加息预期，推动市场普遍押注未来将降息。"
+    },
+    {
+      "topic_id": "T002",
+      "title": "俄罗斯拒绝向日本供油凸显能源外交战略调整",
+      "topic_kind": "independent",
+      "mother_topic_id": "T002",
+      "angle_variant_of": null,
+      "article_use": "国际关系专题、能源市场分析、地缘政治研究。",
+      "core_proposition": "在中东局势紧张背景下，俄罗斯利用能源出口作为外交筹码，强化对特定国家的供应控制，影响国际能源市场。",
+      "one_line_judgment": "俄罗斯将能源出口限制于友好国家，拒绝向日本等不友好国家供油，加剧区域能源安全紧张。"
+    },
+    {
+      "topic_id": "T003",
+      "title": "中东冲突引发油价剧烈波动冲击全球货币政策",
+      "topic_kind": "independent",
+      "mother_topic_id": "T003",
+      "angle_variant_of": null,
+      "article_use": "宏观经济分析、国际能源市场专题、货币政策研究。",
+      "core_proposition": "地缘冲突导致能源价格上升，加剧通胀压力，迫使美联储和其他央行重新考量利率路径及经济增长预期。",
+      "one_line_judgment": "以色列与伊朗冲突推动油价大幅震荡，全球通胀预期与美联储货币政策面临重大再评估。"
+    },
+    {
+      "topic_id": "T004",
+      "title": "霍尔木兹海峡控制权成伊朗核战略核心",
+      "topic_kind": "independent",
+      "mother_topic_id": "T004",
+      "angle_variant_of": null,
+      "article_use": "国际安全专题、能源地缘政治分析、战略研究报告。",
+      "core_proposition": "伊朗强化对霍尔木兹海峡的控制能力，借此作为核战略延伸，威胁全球能源运输安全，提升地缘政治风险。",
+      "one_line_judgment": "美媒认为伊朗对霍尔木兹海峡的控制相当于其“真正意义上的核武器”，重塑国际能源安全格局。"
+    },
+    {
+      "topic_id": "T005",
+      "title": "央行大规模降息引发全球资本市场结构变局",
+      "topic_kind": "independent",
+      "mother_topic_id": "T005",
+      "angle_variant_of": null,
+      "article_use": "宏观经济政策解读、资本市场分析、投资策略指导。",
+      "core_proposition": "降息政策打破利率僵局，影响投资者行为和市场风险偏好，成为资本市场转折的重要催化剂。",
+      "one_line_judgment": "央行果断降息开启宽松周期，释放经济刺激信号，促使资金流向和资产配置发生结构性调整。"
+    },
+    {
+      "topic_id": "T006",
+      "title": "美军极端计划暴露美伊冲突升级风险",
+      "topic_kind": "independent",
+      "mother_topic_id": "T006",
+      "angle_variant_of": null,
+      "article_use": "国际军事分析、地缘政治风险评估、安全战略研究。",
+      "core_proposition": "美军空投特种兵抢夺核材料计划显示美国对伊朗采取极端军事行动的意图，可能引发更大规模冲突。",
+      "one_line_judgment": "五角大楼拟抢夺伊朗核材料的军事计划暴露美伊冲突可能升级，区域安全与全球战略稳定面临严峻考验。"
+    },
+    {
+      "topic_id": "T007",
+      "title": "俄方将日本人重新列为战犯加剧中俄日外交紧张",
+      "topic_kind": "independent",
+      "mother_topic_id": "T007",
+      "angle_variant_of": null,
+      "article_use": "国际关系专题分析、东亚安全形势研究、外交政策解读。",
+      "core_proposition": "此举体现俄罗斯对日本态度强硬，可能激化中俄日三边外交摩擦，影响区域合作与安全稳定。",
+      "one_line_judgment": "俄罗斯近期重新将28名日本人列为战犯，反映三国历史遗留问题与现实地缘政治纠葛加剧，区域安全环境恶化。"
+    },
+    {
+      "topic_id": "T008",
+      "title": "AI与新能源驱动第六轮康波周期加速经济结构转型",
+      "topic_kind": "independent",
+      "mother_topic_id": "T008",
+      "angle_variant_of": null,
+      "article_use": "经济周期解读、产业升级分析、投资策略指导。",
+      "core_proposition": "技术与能源变革带来长期经济增长动力，促使产业升级和资本重新布局，形成新投资逻辑。",
+      "one_line_judgment": "人工智能与新能源成为第六轮康波周期的核心动力，推动全球经济结构性转型与产业链重塑。"
+    },
+    {
+      "topic_id": "T009",
+      "title": "英伟达期权异动反映市场对AI芯片行业未来增长重估",
+      "topic_kind": "independent",
+      "mother_topic_id": "T009",
+      "angle_variant_of": null,
+      "article_use": "科技行业分析、投资策略解读、市场情绪研究。",
+      "core_proposition": "期权异动反映市场对英伟达及AI芯片技术的增长潜力重新定价，可能引发半导体行业整体估值调整。",
+      "one_line_judgment": "英伟达期权交易活跃揭示市场对AI芯片需求及行业增长前景的乐观预期，推动半导体板块估值重构。"
+    },
+    {
+      "topic_id": "T010",
+      "title": "国务院约谈平台企业反映数字经济治理加强",
+      "topic_kind": "independent",
+      "mother_topic_id": "T010",
+      "angle_variant_of": null,
+      "article_use": "政策解读、行业监管分析、企业合规指导。",
+      "core_proposition": "监管部门通过约谈强化平台企业合规责任，推动数字经济治理体系完善，影响行业发展环境。",
+      "one_line_judgment": "国务院多部门约谈平台企业，体现国家对数字平台监管和市场秩序维护力度的持续加强。"
+    }
+  ],
+  "editor_note": ""
+}

@@ -1,0 +1,30 @@
+{
+  "run_id": "2026-04-04_204231",
+  "generated_at": "2026-04-04T22:30:00.000000",
+  "stage": "brief",
+  "generation_method": "ai",
+  "input_sources": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-04_204231/brief_input.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-04_204231/event_clusters.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-04_204231/channel_top10.json"
+  ],
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-04_204231_ai",
+  "candidate_count": 5,
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-04_204231_ai/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-04_204231_ai/selected_topics.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-04_204231_ai/brief_manifest.json"
+  ],
+  "next_stage": "draft",
+  "comparison": {
+    "rule_based_output": "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-04_204231",
+    "ai_based_output": "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-04_204231_ai",
+    "key_improvements": [
+      "标题使用自然语言，不再是模板拼接",
+      "每个选题都有明确的核心论点",
+      "提供详细的证据需求和来源",
+      "推荐适合的写作框架和内容增强策略",
+      "5维评分体系更科学"
+    ]
+  }
+}

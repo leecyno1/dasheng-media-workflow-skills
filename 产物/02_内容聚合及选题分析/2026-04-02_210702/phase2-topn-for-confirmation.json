@@ -1,0 +1,26 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "topic-1",
+    "topic_name": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+    "cluster_name": "其他高频观察",
+    "composite_heat": 1122.174,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 2,
+    "topic_id": "topic-2",
+    "topic_name": "停火预期反复下，黄金、原油和风险资产正在被怎样重新定价？",
+    "cluster_name": "黄金、原油与地缘风险",
+    "composite_heat": 359.604,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 3,
+    "topic_id": "topic-3",
+    "topic_name": "避险资产为什么总会在最需要避险的时候先剧烈波动？",
+    "cluster_name": "黄金、原油与地缘风险",
+    "composite_heat": 359.604,
+    "source_status": "自然入选"
+  }
+]

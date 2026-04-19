@@ -1,0 +1,31 @@
+{
+  "run_id": "2026-04-05_170457",
+  "generated_at": "2026-04-05T20:20:50.113744",
+  "count": 3,
+  "items": [
+    {
+      "rank": 1,
+      "topic_id": "topic_001",
+      "topic_name": "俄罗斯断供日本石油加剧全球能源供应链分化",
+      "topic_kind": "independent",
+      "mother_topic_id": "topic_001",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 2,
+      "topic_id": "topic_002",
+      "topic_name": "美伊冲突激化推升油价波动引发美联储货币政策转向预期",
+      "topic_kind": "independent",
+      "mother_topic_id": "topic_002",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 3,
+      "topic_id": "topic_003",
+      "topic_name": "伊朗强化霍尔木兹海峡控制成核谈判关键筹码",
+      "topic_kind": "independent",
+      "mother_topic_id": "topic_003",
+      "source_status": "ai_generated"
+    }
+  ]
+}

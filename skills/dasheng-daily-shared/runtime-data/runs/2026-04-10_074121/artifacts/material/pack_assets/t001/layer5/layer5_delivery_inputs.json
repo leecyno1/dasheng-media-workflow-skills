@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "object_type": "Layer5Inputs",
+    "topic_slug": "t001",
+    "topic_type": "finance_macro",
+    "title": "鲍威尔讲话终结加息预期引发市场转向降息押注",
+    "generated_at": "2026-04-10T14:51:41.853Z"
+  },
+  "template": {
+    "template_id": "market_story",
+    "template_name": "市场叙事面板 (Market Story Panel)",
+    "narrative_schema": "timeline_then_signals",
+    "data_granularity": "daily",
+    "layout_hint": "market_panel_left + chart_gallery_right + metrics_strip_bottom"
+  },
+  "worldmonitor": {
+    "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+    "project_root": "/Volumes/PSSD/Projects/worldmonitor",
+    "data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+    "public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+    "entry": "index.html",
+    "proxy_port": 8787
+  },
+  "required_assets": {
+    "chart_anchor_ids": [
+      "chart1",
+      "chart2",
+      "chart3",
+      "chart4"
+    ],
+    "chart_csvs": [
+      "charts/csv/chart1.csv",
+      "charts/csv/chart2.csv",
+      "charts/csv/chart3.csv",
+      "charts/csv/chart4.csv"
+    ],
+    "chart_pngs": [
+      "charts/png/chart1.png",
+      "charts/png/chart2.png",
+      "charts/png/chart3.png",
+      "charts/png/chart4.png"
+    ],
+    "scene_plan": "videos/scene_plan.json",
+    "source_links": "videos/source_links/source_link_candidates.json"
+  },
+  "key_metrics_to_emit": [
+    "SPX",
+    "US10Y",
+    "Oil",
+    "Gold",
+    "Breakeven10Y"
+  ],
+  "risk_scenarios": [
+    "再通胀抬升",
+    "增长走弱",
+    "利率高位钝化",
+    "风险偏好回升"
+  ],
+  "preferred_components": [
+    "MarketPanel",
+    "EconomicPanel",
+    "CountryTimeline"
+  ],
+  "page_modules": [
+    "hero-summary",
+    "key-metrics-strip",
+    "timeline-repricing",
+    "chart-gallery",
+    "embedded-video"
+  ]
+}

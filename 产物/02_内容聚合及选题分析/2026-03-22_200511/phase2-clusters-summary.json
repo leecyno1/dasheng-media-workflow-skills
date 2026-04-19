@@ -1,0 +1,635 @@
+{
+  "run_id": "2026-03-22_200511",
+  "generated_at": "2026-03-22T21:51:26.367942",
+  "input_stage1_dir": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-03-22_200511",
+  "stats": {
+    "input_records": 140,
+    "cluster_count": 5,
+    "topn_count": 3
+  },
+  "clusters": [
+    {
+      "cluster_id": "other_general",
+      "cluster_name": "其他泛资讯",
+      "count": 94,
+      "platforms": [
+        "cnn",
+        "nytimes",
+        "trendradar",
+        "wechat"
+      ],
+      "sources": [
+        "trendradar_excerpt",
+        "trendradar_report",
+        "wemprss_article"
+      ],
+      "avg_heat": 2.9638,
+      "composite_heat": 39.0337,
+      "top_keywords": [],
+      "top_items": [
+        {
+          "record_id": "tre:output/index.html:1",
+          "cluster_id": "other_general",
+          "cluster_name": "其他泛资讯",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "英国曼彻斯特桥洞下惊现中国烧烤摊",
+          "url": "http://127.0.0.1:18080/output/index.html",
+          "author": "TrendRadar",
+          "heat": 3.3,
+          "keyword_hits": 0,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "output/index.html",
+            "snippet_index": 1
+          }
+        },
+        {
+          "record_id": "tre:output/index.html:2",
+          "cluster_id": "other_general",
+          "cluster_name": "其他泛资讯",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "英国桥洞现中国烧烤摊 烤茄子卖41元",
+          "url": "http://127.0.0.1:18080/output/index.html",
+          "author": "TrendRadar",
+          "heat": 3.3,
+          "keyword_hits": 0,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "output/index.html",
+            "snippet_index": 2
+          }
+        },
+        {
+          "record_id": "tre:output/index.html:3",
+          "cluster_id": "other_general",
+          "cluster_name": "其他泛资讯",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "日媒：中国车企全球销量首次居榜首",
+          "url": "http://127.0.0.1:18080/output/index.html",
+          "author": "TrendRadar",
+          "heat": 3.3,
+          "keyword_hits": 0,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "output/index.html",
+            "snippet_index": 3
+          }
+        },
+        {
+          "record_id": "tre:output/index.html:5",
+          "cluster_id": "other_general",
+          "cluster_name": "其他泛资讯",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "如果取消中国足协，解散中超、中甲，各省自己搞省超，那么十年后，中国足球能拿亚洲冠军吗？",
+          "url": "http://127.0.0.1:18080/output/index.html",
+          "author": "TrendRadar",
+          "heat": 3.3,
+          "keyword_hits": 0,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "output/index.html",
+            "snippet_index": 5
+          }
+        },
+        {
+          "record_id": "tre:output/index.html:6",
+          "cluster_id": "other_general",
+          "cluster_name": "其他泛资讯",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "伊朗称国产防空系统击中美军 F-35 战机，可能是用什么武器击中的？F-35 神话破灭了吗？",
+          "url": "http://127.0.0.1:18080/output/index.html",
+          "author": "TrendRadar",
+          "heat": 3.3,
+          "keyword_hits": 0,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "output/index.html",
+            "snippet_index": 6
+          }
+        }
+      ]
+    },
+    {
+      "cluster_id": "ai_tools_open_source",
+      "cluster_name": "AI工具与开源效率",
+      "count": 24,
+      "platforms": [
+        "cnn",
+        "tech",
+        "trendradar",
+        "xhs"
+      ],
+      "sources": [
+        "mediacrawler",
+        "trendradar_excerpt",
+        "wemprss_article"
+      ],
+      "avg_heat": 19.3514,
+      "composite_heat": 21.9081,
+      "top_keywords": [
+        "ai",
+        "开源",
+        "工具",
+        "人工智能",
+        "github",
+        "效率",
+        "模型",
+        "手机"
+      ],
+      "top_items": [
+        {
+          "record_id": "mc:7969",
+          "cluster_id": "ai_tools_open_source",
+          "cluster_name": "AI工具与开源效率",
+          "source": "mediacrawler",
+          "platform": "xhs",
+          "title": "一款无代码的开源爬虫工具",
+          "url": "https://www.xiaohongshu.com/explore/686155c2000000000b01efb7?xsec_token=ABHLp29mtD3X3mE0Af3pkB4RJcnSo91n0wnysjZECsZFA=&xsec_source=pc_feed",
+          "author": "开源项目盘点",
+          "heat": 43.9072,
+          "keyword_hits": 20,
+          "signal": 5.4072,
+          "raw": {
+            "id": 7969,
+            "content_id": "686155c2000000000b01efb7",
+            "title": "一款无代码的开源爬虫工具",
+            "content": "每天认识一款高质量开源项目【第10期】——crawl4ai。它是一款为AI而生的数据爬虫开源项目，在GitHub上拥有4万star。它不仅速度快、反爬能力强，还支持抓取多个 URL，支持提取图像、音频以及视频等媒体数据，完全开源免费，爬取数据格式支持Markdown、JSON、HTML等#开源项目[话题]# #github[话题]# #爬虫[话题]# #AI[话题]# #python[话题]# #编程[话题]# #crawl4ai[话题]# #爬虫[话题]# #网络爬虫[话题]# #爬虫工具[话题]#",
+            "url": "https://www.xiaohongshu.com/explore/686155c2000000000b01efb7?xsec_token=ABHLp29mtD3X3mE0Af3pkB4RJcnSo91n0wnysjZECsZFA=&xsec_source=pc_feed",
+            "author_id": "683faa0c000000001b01a4ba",
+            "author_name": "开源项目盘点",
+            "source_task": "[默认任务组] 博主主页",
+            "source_task_meta": "{\"platform\":\"xhs\",\"crawler_type\":\"creator\",\"task_id\":\"20260322084250\",\"task_group\":\"默认任务组\",\"keywords\":\"683faa0c000000001b01a4ba,63ddcd4e000000002500157a,64a14c9d000000001c028bf2\",\"max_count\":20,\"comment_limit\":0}",
+            "source_task_type": "creator",
+            "source_task_id": "20260322084250",
+            "liked_count": "42",
+            "collected_count": "58",
+            "comment_count": "",
+            "share_count": "16",
+            "tag_list": "开源项目,github,爬虫,AI,python,编程,crawl4ai,网络爬虫,爬虫工具",
+            "note_type": "video",
+            "video_url": "http://sns-video-qc.xhscdn.com/stream/79/110/259/01e861550c6653ad0103700397bc393594_259.mp4?sign=d98b9c00805b7c61000b50f8900df834&t=69c448e0",
+            "image_list": "http://sns-webpic-qc.xhscdn.com/202603221643/acebfba0daacb19fcbbaaf044c3e1a0c/1040g2sg31janndhn2ic05q1vl866r95q3b9s8n0!nd_dft_wlteh_webp_3",
+            "ocr_status": "pending",
+            "ocr_text": null,
+            "ocr_task_id": "",
+            "transcript_status": "none",
+            "transcript_text": null,
+            "transcript_task_id": null,
+            "platform": "xhs",
+            "created_at": "2025-06-29 23:03:30",
+            "fetched_at": "2026-03-22 15:29:28",
+            "task_group": "默认任务组"
+          }
+        },
+        {
+          "record_id": "mc:7973",
+          "cluster_id": "ai_tools_open_source",
+          "cluster_name": "AI工具与开源效率",
+          "source": "mediacrawler",
+          "platform": "xhs",
+          "title": "让AI控制你的手机，操控50+APP人工智能 开源项目 agent AI智能体",
+          "url": "https://www.xiaohongshu.com/explore/693972fd000000001e030f29?xsec_token=ABkLuJqhU1q_kh5rHFGjU9fCv40a8PR--hM8CqJs0xjRY=&xsec_source=pc_feed",
+          "author": "开源项目盘点",
+          "heat": 41.148,
+          "keyword_hits": 18,
+          "signal": 6.248,
+          "raw": {
+            "id": 7973,
+            "content_id": "693972fd000000001e030f29",
+            "title": "让AI控制你的手机，操控50+APP人工智能 开源项目 agent AI智能体",
+            "content": "让AI控制你的手机，操控50+APP人工智能 开源项目 agent AI智能体",
+            "url": "https://www.xiaohongshu.com/explore/693972fd000000001e030f29?xsec_token=ABkLuJqhU1q_kh5rHFGjU9fCv40a8PR--hM8CqJs0xjRY=&xsec_source=pc_feed",
+            "author_id": "683faa0c000000001b01a4ba",
+            "author_name": "开源项目盘点",
+            "source_task": "[默认任务组] 博主主页",
+            "source_task_meta": "{\"platform\":\"xhs\",\"crawler_type\":\"creator\",\"task_id\":\"20260322084312\",\"task_group\":\"默认任务组\",\"keywords\":\"683faa0c000000001b01a4ba,63ddcd4e000000002500157a,64a14c9d000000001c028bf2\",\"max_count\":20,\"comment_limit\":0}",
+            "source_task_type": "creator",
+            "source_task_id": "20260322084312",
+            "liked_count": "78",
+            "collected_count": "170",
+            "comment_count": "2",
+            "share_count": "23",
+            "tag_list": "人工智能,agent,AI智能体,黑科技,AI工具,GitHub,开源项目,AI控制,手机",
+            "note_type": "video",
+            "video_url": "http://sns-video-qc.xhscdn.com/stream/1/110/259/01e9396b3027567f010370039b0869b772_259.mp4?sign=05eb956fe5c8fcc4ea4ea0b5396459d8&t=69c448cc",
+            "image_list": "http://sns-webpic-qc.xhscdn.com/202603221643/1e71b7d85fe7940005833b915d79cdb3/spectrum/1040g0k031ptpb7jq3q705q1vl866r95qf7qra6g!nc_n_webp_mw_1",
+            "ocr_status": "pending",
+            "ocr_text": null,
+            "ocr_task_id": "",
+            "transcript_status": "none",
+            "transcript_text": null,
+            "transcript_task_id": null,
+            "platform": "xhs",
+            "created_at": "1970-01-21 20:49:29",
+            "fetched_at": "2026-03-22 15:29:28",
+            "task_group": "默认任务组"
+          }
+        },
+        {
+          "record_id": "mc:7983",
+          "cluster_id": "ai_tools_open_source",
+          "cluster_name": "AI工具与开源效率",
+          "source": "mediacrawler",
+          "platform": "xhs",
+          "title": "一个自动生成影视级运镜效果AI工具人工智能 AI工具 AI视频 视频生成 视频特",
+          "url": "https://www.xiaohongshu.com/explore/69241b1e000000001e005c1e?xsec_token=AB0DYpcGxQfvjroeZbyI46_ztBKzl524PFUviqRefvlvU=&xsec_source=pc_feed",
+          "author": "开源项目盘点",
+          "heat": 34.5352,
+          "keyword_hits": 14,
+          "signal": 6.8352,
+          "raw": {
+            "id": 7983,
+            "content_id": "69241b1e000000001e005c1e",
+            "title": "一个自动生成影视级运镜效果AI工具人工智能 AI工具 AI视频 视频生成 视频特",
+            "content": "一个自动生成影视级运镜效果AI工具人工智能 AI工具 AI视频 视频生成 视频特",
+            "url": "https://www.xiaohongshu.com/explore/69241b1e000000001e005c1e?xsec_token=AB0DYpcGxQfvjroeZbyI46_ztBKzl524PFUviqRefvlvU=&xsec_source=pc_feed",
+            "author_id": "683faa0c000000001b01a4ba",
+            "author_name": "开源项目盘点",
+            "source_task": "[默认任务组] 博主主页",
+            "source_task_meta": "{\"platform\":\"xhs\",\"crawler_type\":\"creator\",\"task_id\":\"20260322084312\",\"task_group\":\"默认任务组\",\"keywords\":\"683faa0c000000001b01a4ba,63ddcd4e000000002500157a,64a14c9d000000001c028bf2\",\"max_count\":20,\"comment_limit\":0}",
+            "source_task_type": "creator",
+            "source_task_id": "20260322084312",
+            "liked_count": "929",
+            "collected_count": "",
+            "comment_count": "",
+            "share_count": "",
+            "tag_list": "",
+            "note_type": "video",
+            "video_url": "",
+            "image_list": "http://sns-webpic-qc.xhscdn.com/202603221643/5917ccb73aa4e8b9fd9884ff47804b08/1040g2sg31p8uda2nicjg5q1vl866r95qfqt55m8!nc_n_webp_mw_1",
+            "ocr_status": "pending",
+            "ocr_text": null,
+            "ocr_task_id": "",
+            "transcript_status": "none",
+            "transcript_text": null,
+            "transcript_task_id": null,
+            "platform": "xhs",
+            "created_at": "1970-01-21 20:49:29",
+            "fetched_at": "2026-03-22 16:43:28",
+            "task_group": "默认任务组"
+          }
+        },
+        {
+          "record_id": "mc:7985",
+          "cluster_id": "ai_tools_open_source",
+          "cluster_name": "AI工具与开源效率",
+          "source": "mediacrawler",
+          "platform": "xhs",
+          "title": "一行代码让AI给你打电话 微软开源黑科技开源项目 github 效率工具 人工智",
+          "url": "https://www.xiaohongshu.com/explore/691b2f160000000004029323?xsec_token=ABl5ImrHBRbweaO00vSNhjH9grsYNkEDI9Aj-2VuZMBQ8=&xsec_source=pc_feed",
+          "author": "开源项目盘点",
+          "heat": 30.5345,
+          "keyword_hits": 12,
+          "signal": 6.4345,
+          "raw": {
+            "id": 7985,
+            "content_id": "691b2f160000000004029323",
+            "title": "一行代码让AI给你打电话 微软开源黑科技开源项目 github 效率工具 人工智",
+            "content": "一行代码让AI给你打电话 微软开源黑科技开源项目 github 效率工具 人工智",
+            "url": "https://www.xiaohongshu.com/explore/691b2f160000000004029323?xsec_token=ABl5ImrHBRbweaO00vSNhjH9grsYNkEDI9Aj-2VuZMBQ8=&xsec_source=pc_feed",
+            "author_id": "683faa0c000000001b01a4ba",
+            "author_name": "开源项目盘点",
+            "source_task": "[默认任务组] 博主主页",
+            "source_task_meta": "{\"platform\":\"xhs\",\"crawler_type\":\"creator\",\"task_id\":\"20260322084312\",\"task_group\":\"默认任务组\",\"keywords\":\"683faa0c000000001b01a4ba,63ddcd4e000000002500157a,64a14c9d000000001c028bf2\",\"max_count\":20,\"comment_limit\":0}",
+            "source_task_type": "creator",
+            "source_task_id": "20260322084312",
+            "liked_count": "622",
+            "collected_count": "",
+            "comment_count": "",
+            "share_count": "",
+            "tag_list": "",
+            "note_type": "video",
+            "video_url": "",
+            "image_list": "http://sns-webpic-qc.xhscdn.com/202603221643/5a01c383fdfc0cd553843f5a6df44969/1040g00831p07oedmi4505q1vl866r95q4o6nbsg!nc_n_webp_mw_1",
+            "ocr_status": "pending",
+            "ocr_text": null,
+            "ocr_task_id": "",
+            "transcript_status": "none",
+            "transcript_text": null,
+            "transcript_task_id": null,
+            "platform": "xhs",
+            "created_at": "1970-01-21 20:49:29",
+            "fetched_at": "2026-03-22 16:43:28",
+            "task_group": "默认任务组"
+          }
+        },
+        {
+          "record_id": "mc:7967",
+          "cluster_id": "ai_tools_open_source",
+          "cluster_name": "AI工具与开源效率",
+          "source": "mediacrawler",
+          "platform": "xhs",
+          "title": "零成本快速生成网站的强大开源工具",
+          "url": "https://www.xiaohongshu.com/explore/68640d880000000010010695?xsec_token=ABcxDNsHK582afw6-qoO5NdIjXqJGwlZpcXPD0YtvL8Gk=&xsec_source=pc_feed",
+          "author": "开源项目盘点",
+          "heat": 26.8315,
+          "keyword_hits": 10,
+          "signal": 6.3315,
+          "raw": {
+            "id": 7967,
+            "content_id": "68640d880000000010010695",
+            "title": "零成本快速生成网站的强大开源工具",
+            "content": "每天认识一款高质量开源项目【第13期】，无需服务器，零成本搭建个人博客/企业官网！ Hugo基于Go语言，每秒生成上千页面，比传统工具快10倍！ 支持Markdown写作、多语言SEO、300+主题一键切换，轻松托管到GitHub/Vercel。\n适合开发者、作家、创业者！从安装到上线仅需5条命令，点击视频解锁高效建站秘籍！\n#Web开发[话题]# #静态网站[话题]# #技术教程[话题]# #开源项目[话题]# #github[话题]# #网站开发[话题]# #网站生成[话题]# #网站搭建[话题]# #Hugo[话题]#",
+            "url": "https://www.xiaohongshu.com/explore/68640d880000000010010695?xsec_token=ABcxDNsHK582afw6-qoO5NdIjXqJGwlZpcXPD0YtvL8Gk=&xsec_source=pc_feed",
+            "author_id": "683faa0c000000001b01a4ba",
+            "author_name": "开源项目盘点",
+            "source_task": "[默认任务组] 详情抓取",
+            "source_task_meta": "{\"platform\":\"xhs\",\"crawler_type\":\"detail\",\"task_id\":\"20260322084250\",\"task_group\":\"默认任务组\",\"keywords\":\"https://www.xiaohongshu.com/explore/693972fd000000001e030f29?xsec_token=ABkLuJqhU1q_kh5rHFGjU9fCv40a8PR--hM8CqJs0xjRY=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/693d80f3000000001d03a46b?xsec_token=AB9dV1UDOHSYQoPGeQ_qF1sSMqTiXzsZ6cFAm__8GDnbk=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/693e303d000000001e017933?xsec_token=ABnFB7aKYViJidrf0dA7drR3Flq0cd3xhgBDDC2OImwPc=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/69440cf9000000001e03203d?xsec_token=ABpjVFPWzwdGcmqaXaPuWQV0J1skJdy_D_ZynJRNZgFrA=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/69455a0c000000000d037c68?xsec_token=ABQj9VI7LsIfbHKA7ZtUwtlLKG_cbRD7W2MoPR72q22Qs=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/69464a38000000001e02aacf?xsec_token=ABUPkMcxL6EGdumuqp1K_at0A0nsgKrniDxDb9k4xrMN0=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/69488763000000001e009a4e?xsec_token=ABLJZ7G-LXdQ9Wu89ApLoacTNFxQMuYKB3GSGT0eTlVm8=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/69491143000000001f00a2bd?xsec_token=ABAlq9WJNIHyE2FzNoYF0BveDx_rRm51cMfxcmG7HBhIo=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/685d6a700000000011001caa?xsec_token=ABGp54fjZBzm5qqczcXPUsvKAqaigaeBRLYnrcwMoHfxk=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/686155c2000000000b01efb7?xsec_token=ABHLp29mtD3X3mE0Af3pkB4RJcnSo91n0wnysjZECsZFA=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/6862b460000000000b02f64d?xsec_token=ABLaGlKtBB-rTip8yrL6_KbKqr1fYn4i_li3b-eX3jTEs=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/68640d880000000010010695?xsec_token=ABcxDNsHK582afw6-qoO5NdIjXqJGwlZpcXPD0YtvL8Gk=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/6865576f000000000b02ca72?xsec_token=ABYGjDKimTw4NGo7TpUNPCPOhtcS1Cs5CZ38sojbtp-lg=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/6866a56a00000000100130be?xsec_token=AB4gfs3PEbvOYtNepnXklUm5i8bEI64bKaxypYMdjyEiE=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/686a9c24000000000d018488?xsec_token=ABbsX5v7fWO-7GeQJN-M--N6cVKvg5io9yyVPmvMDjO_4=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/686d3fe7000000000b01cd28?xsec_token=ABgwlJJKEVqL9b6ebZN00pG_HsVTnKbS7n4se0sEhH890=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/6873a43100000000100270d5?xsec_token=ABalduxlHMjrgQOuElUS5EKikcyjvJ-cfqy3NrHVF5uhg=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/68791837000000000d01b96e?xsec_token=ABja1BAM05OLS1HkGCB8GLK6uAnY0dBHu9pS6QSs7_b24=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/687e5d0000000000100243cc?xsec_token=ABIqHAHKcobqpA_qDZilrmhdBBYfF9ZmTDyo7PpMi8ziM=&xsec_source=pc_feed,https://www.xiaohongshu.com/explore/687fb10f0000000010010d71?xsec_token=ABcOgXwaI7C3ISvEkQmZm6Bcn0jjr4fkofbtlivSTgSVY=&xsec_source=pc_feed\",\"max_count\":20,\"comment_limit\":0}",
+            "source_task_type": "detail",
+            "source_task_id": "20260322084250",
+            "liked_count": "131",
+            "collected_count": "187",
+            "comment_count": "",
+            "share_count": "14",
+            "tag_list": "Web开发,静态网站,技术教程,开源项目,github,网站开发,网站生成,网站搭建,Hugo",
+            "note_type": "video",
+            "video_url": "http://sns-video-qc.xhscdn.com/stream/1/110/259/01e8640d04170eaf0103700397c6d540bf_259.mp4?sign=19766c0536bddc27c3b4810d018f963d&t=69c448dc",
+            "image_list": "http://sns-webpic-qc.xhscdn.com/202603221643/20a33c2cc9b735ba245c1a2fb72ed38c/1040g00831jdcqivm2a7g5q1vl866r95qmro5v2o!nd_dft_wlteh_webp_3",
+            "ocr_status": "pending",
+            "ocr_text": null,
+            "ocr_task_id": "",
+            "transcript_status": "none",
+            "transcript_text": null,
+            "transcript_task_id": null,
+            "platform": "xhs",
+            "created_at": "2025-07-02 00:32:08",
+            "fetched_at": "2026-03-22 15:29:28",
+            "task_group": "默认任务组"
+          }
+        }
+      ]
+    },
+    {
+      "cluster_id": "tech_industry_hardware",
+      "cluster_name": "科技产业与硬件竞争",
+      "count": 12,
+      "platforms": [
+        "trendradar"
+      ],
+      "sources": [
+        "trendradar_excerpt"
+      ],
+      "avg_heat": 6.0,
+      "composite_heat": 8.1,
+      "top_keywords": [
+        "云",
+        "算力",
+        "芯片",
+        "发布"
+      ],
+      "top_items": [
+        {
+          "record_id": "tre:html/2026-03-22/18-31.html:14",
+          "cluster_id": "tech_industry_hardware",
+          "cluster_name": "科技产业与硬件竞争",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "华为发布新一代算力芯片，单卡算力达H20的2.87倍，国内唯一支持FP4推理产品",
+          "url": "http://127.0.0.1:18080/output/html/2026-03-22/18-31.html",
+          "author": "TrendRadar",
+          "heat": 10.5,
+          "keyword_hits": 4,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "html/2026-03-22/18-31.html",
+            "snippet_index": 14
+          }
+        },
+        {
+          "record_id": "tre:html/2026-03-22/19-31.html:11",
+          "cluster_id": "tech_industry_hardware",
+          "cluster_name": "科技产业与硬件竞争",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "马斯克正式发布Terafab项目：目标年产1太瓦算力 主要于太空部署",
+          "url": "http://127.0.0.1:18080/output/html/2026-03-22/19-31.html",
+          "author": "TrendRadar",
+          "heat": 6.9,
+          "keyword_hits": 2,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "html/2026-03-22/19-31.html",
+            "snippet_index": 11
+          }
+        },
+        {
+          "record_id": "tre:html/2026-03-22/19-01.html:10",
+          "cluster_id": "tech_industry_hardware",
+          "cluster_name": "科技产业与硬件竞争",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "马斯克正式发布Terafab项目：目标年产1太瓦算力 主要于太空部署",
+          "url": "http://127.0.0.1:18080/output/html/2026-03-22/19-01.html",
+          "author": "TrendRadar",
+          "heat": 6.9,
+          "keyword_hits": 2,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "html/2026-03-22/19-01.html",
+            "snippet_index": 10
+          }
+        },
+        {
+          "record_id": "tre:html/2026-03-22/18-31.html:9",
+          "cluster_id": "tech_industry_hardware",
+          "cluster_name": "科技产业与硬件竞争",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "马斯克正式发布Terafab项目：目标年产1太瓦算力 主要于太空部署",
+          "url": "http://127.0.0.1:18080/output/html/2026-03-22/18-31.html",
+          "author": "TrendRadar",
+          "heat": 6.9,
+          "keyword_hits": 2,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "html/2026-03-22/18-31.html",
+            "snippet_index": 9
+          }
+        },
+        {
+          "record_id": "tre:output/index.html:4",
+          "cluster_id": "tech_industry_hardware",
+          "cluster_name": "科技产业与硬件竞争",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "中国发展高层论坛召开，潘功胜、李云泽、吴清出席",
+          "url": "http://127.0.0.1:18080/output/index.html",
+          "author": "TrendRadar",
+          "heat": 5.1,
+          "keyword_hits": 1,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "output/index.html",
+            "snippet_index": 4
+          }
+        }
+      ]
+    },
+    {
+      "cluster_id": "geopolitics_security",
+      "cluster_name": "地缘政治与安全冲突",
+      "count": 8,
+      "platforms": [
+        "trendradar"
+      ],
+      "sources": [
+        "trendradar_excerpt"
+      ],
+      "avg_heat": 6.9,
+      "composite_heat": 7.105,
+      "top_keywords": [
+        "制裁",
+        "发布",
+        "战争",
+        "原油",
+        "军事",
+        "中东"
+      ],
+      "top_items": [
+        {
+          "record_id": "tre:html/2026-03-22/20-01.html:13",
+          "cluster_id": "geopolitics_security",
+          "cluster_name": "地缘政治与安全冲突",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "美国发布伊朗石油30天制裁豁免令 贝森特：将向全球供油约1.4亿桶",
+          "url": "http://127.0.0.1:18080/output/html/2026-03-22/20-01.html",
+          "author": "TrendRadar",
+          "heat": 6.9,
+          "keyword_hits": 2,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "html/2026-03-22/20-01.html",
+            "snippet_index": 13
+          }
+        },
+        {
+          "record_id": "tre:html/2026-03-22/20-01.html:14",
+          "cluster_id": "geopolitics_security",
+          "cluster_name": "地缘政治与安全冲突",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "美国或向中东增派数千士兵，特朗普先称不想停火、后称考虑对伊军事行动逐步降级，伊朗威胁毁灭性打击美以“邪恶官员”",
+          "url": "http://127.0.0.1:18080/output/html/2026-03-22/20-01.html",
+          "author": "TrendRadar",
+          "heat": 6.9,
+          "keyword_hits": 2,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "html/2026-03-22/20-01.html",
+            "snippet_index": 14
+          }
+        },
+        {
+          "record_id": "tre:html/2026-03-22/19-31.html:5",
+          "cluster_id": "geopolitics_security",
+          "cluster_name": "地缘政治与安全冲突",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "美国发布伊朗石油30天制裁豁免令 贝森特：将向全球供油约1.4亿桶",
+          "url": "http://127.0.0.1:18080/output/html/2026-03-22/19-31.html",
+          "author": "TrendRadar",
+          "heat": 6.9,
+          "keyword_hits": 2,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "html/2026-03-22/19-31.html",
+            "snippet_index": 5
+          }
+        },
+        {
+          "record_id": "tre:html/2026-03-22/19-31.html:7",
+          "cluster_id": "geopolitics_security",
+          "cluster_name": "地缘政治与安全冲突",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "伊朗战争已三周，美国“稳油价”的牌“几乎打完”，原油“期现价差”越拉越大",
+          "url": "http://127.0.0.1:18080/output/html/2026-03-22/19-31.html",
+          "author": "TrendRadar",
+          "heat": 6.9,
+          "keyword_hits": 2,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "html/2026-03-22/19-31.html",
+            "snippet_index": 7
+          }
+        },
+        {
+          "record_id": "tre:html/2026-03-22/19-01.html:0",
+          "cluster_id": "geopolitics_security",
+          "cluster_name": "地缘政治与安全冲突",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "美国发布伊朗石油30天制裁豁免令 贝森特：将向全球供油约1.4亿桶",
+          "url": "http://127.0.0.1:18080/output/html/2026-03-22/19-01.html",
+          "author": "TrendRadar",
+          "heat": 6.9,
+          "keyword_hits": 2,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "html/2026-03-22/19-01.html",
+            "snippet_index": 0
+          }
+        }
+      ]
+    },
+    {
+      "cluster_id": "macro_policy_markets",
+      "cluster_name": "宏观政策与市场波动",
+      "count": 2,
+      "platforms": [
+        "trendradar"
+      ],
+      "sources": [
+        "trendradar_excerpt"
+      ],
+      "avg_heat": 6.9,
+      "composite_heat": 5.005,
+      "top_keywords": [
+        "宏观",
+        "交易"
+      ],
+      "top_items": [
+        {
+          "record_id": "tre:html/2026-03-22/19-01.html:14",
+          "cluster_id": "macro_policy_markets",
+          "cluster_name": "宏观政策与市场波动",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "高盛宏观交易员警告：各国央行错失了稳定市场的机会，&quot;能源正在驱动一切&quot;",
+          "url": "http://127.0.0.1:18080/output/html/2026-03-22/19-01.html",
+          "author": "TrendRadar",
+          "heat": 6.9,
+          "keyword_hits": 2,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "html/2026-03-22/19-01.html",
+            "snippet_index": 14
+          }
+        },
+        {
+          "record_id": "tre:html/2026-03-22/18-31.html:13",
+          "cluster_id": "macro_policy_markets",
+          "cluster_name": "宏观政策与市场波动",
+          "source": "trendradar_excerpt",
+          "platform": "trendradar",
+          "title": "高盛宏观交易员警告：各国央行错失了稳定市场的机会，&quot;能源正在驱动一切&quot;",
+          "url": "http://127.0.0.1:18080/output/html/2026-03-22/18-31.html",
+          "author": "TrendRadar",
+          "heat": 6.9,
+          "keyword_hits": 2,
+          "signal": 1.1,
+          "raw": {
+            "report_id": "html/2026-03-22/18-31.html",
+            "snippet_index": 13
+          }
+        }
+      ]
+    }
+  ]
+}

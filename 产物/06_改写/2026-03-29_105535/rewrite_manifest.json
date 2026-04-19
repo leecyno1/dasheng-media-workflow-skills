@@ -1,0 +1,163 @@
+{
+  "run_id": "2026-03-29_105535",
+  "generated_at": "2026-03-29T19:54:02.469741",
+  "total": 12,
+  "outputs": [
+    {
+      "topic_id": "6",
+      "topic_slug": "topic-6",
+      "title": "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+      "variant": {
+        "dna": "luxun",
+        "channel": "wechat_article",
+        "emotion": "hot",
+        "label": "鲁迅+公众号+热烈"
+      },
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-29_105535/topic6_wechat_article_luxun_hot.md",
+      "anchors": 10
+    },
+    {
+      "topic_id": "6",
+      "topic_slug": "topic-6",
+      "title": "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+      "variant": {
+        "dna": "lemon",
+        "channel": "wechat_article",
+        "emotion": "normal",
+        "label": "lemon+公众号+正常"
+      },
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-29_105535/topic6_wechat_article_lemon_normal.md",
+      "anchors": 10
+    },
+    {
+      "topic_id": "6",
+      "topic_slug": "topic-6",
+      "title": "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+      "variant": {
+        "dna": "luxun",
+        "channel": "xiaohongshu_video",
+        "emotion": "hot",
+        "label": "鲁迅+小红书视频+热烈"
+      },
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-29_105535/topic6_xiaohongshu_video_luxun_hot.md",
+      "anchors": 7
+    },
+    {
+      "topic_id": "6",
+      "topic_slug": "topic-6",
+      "title": "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+      "variant": {
+        "dna": "lemon",
+        "channel": "xiaohongshu_video",
+        "emotion": "normal",
+        "label": "lemon+小红书视频+正常"
+      },
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-29_105535/topic6_xiaohongshu_video_lemon_normal.md",
+      "anchors": 7
+    },
+    {
+      "topic_id": "10",
+      "topic_slug": "topic-10",
+      "title": "半导体突然很热闹，但行业最危险的误判可能才刚开始",
+      "variant": {
+        "dna": "luxun",
+        "channel": "wechat_article",
+        "emotion": "hot",
+        "label": "鲁迅+公众号+热烈"
+      },
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-29_105535/topic10_wechat_article_luxun_hot.md",
+      "anchors": 10
+    },
+    {
+      "topic_id": "10",
+      "topic_slug": "topic-10",
+      "title": "半导体突然很热闹，但行业最危险的误判可能才刚开始",
+      "variant": {
+        "dna": "lemon",
+        "channel": "wechat_article",
+        "emotion": "normal",
+        "label": "lemon+公众号+正常"
+      },
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-29_105535/topic10_wechat_article_lemon_normal.md",
+      "anchors": 10
+    },
+    {
+      "topic_id": "10",
+      "topic_slug": "topic-10",
+      "title": "半导体突然很热闹，但行业最危险的误判可能才刚开始",
+      "variant": {
+        "dna": "luxun",
+        "channel": "xiaohongshu_video",
+        "emotion": "hot",
+        "label": "鲁迅+小红书视频+热烈"
+      },
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-29_105535/topic10_xiaohongshu_video_luxun_hot.md",
+      "anchors": 5
+    },
+    {
+      "topic_id": "10",
+      "topic_slug": "topic-10",
+      "title": "半导体突然很热闹，但行业最危险的误判可能才刚开始",
+      "variant": {
+        "dna": "lemon",
+        "channel": "xiaohongshu_video",
+        "emotion": "normal",
+        "label": "lemon+小红书视频+正常"
+      },
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-29_105535/topic10_xiaohongshu_video_lemon_normal.md",
+      "anchors": 5
+    },
+    {
+      "topic_id": "11",
+      "topic_slug": "topic-11",
+      "title": "一键安装 OpenClaw + 常用 skills：把“能跑起来”变成“可复用、可审计、可回滚”",
+      "variant": {
+        "dna": "luxun",
+        "channel": "wechat_article",
+        "emotion": "hot",
+        "label": "鲁迅+公众号+热烈"
+      },
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-29_105535/topic11_wechat_article_luxun_hot.md",
+      "anchors": 10
+    },
+    {
+      "topic_id": "11",
+      "topic_slug": "topic-11",
+      "title": "一键安装 OpenClaw + 常用 skills：把“能跑起来”变成“可复用、可审计、可回滚”",
+      "variant": {
+        "dna": "lemon",
+        "channel": "wechat_article",
+        "emotion": "normal",
+        "label": "lemon+公众号+正常"
+      },
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-29_105535/topic11_wechat_article_lemon_normal.md",
+      "anchors": 10
+    },
+    {
+      "topic_id": "11",
+      "topic_slug": "topic-11",
+      "title": "一键安装 OpenClaw + 常用 skills：把“能跑起来”变成“可复用、可审计、可回滚”",
+      "variant": {
+        "dna": "luxun",
+        "channel": "xiaohongshu_video",
+        "emotion": "hot",
+        "label": "鲁迅+小红书视频+热烈"
+      },
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-29_105535/topic11_xiaohongshu_video_luxun_hot.md",
+      "anchors": 5
+    },
+    {
+      "topic_id": "11",
+      "topic_slug": "topic-11",
+      "title": "一键安装 OpenClaw + 常用 skills：把“能跑起来”变成“可复用、可审计、可回滚”",
+      "variant": {
+        "dna": "lemon",
+        "channel": "xiaohongshu_video",
+        "emotion": "normal",
+        "label": "lemon+小红书视频+正常"
+      },
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-29_105535/topic11_xiaohongshu_video_lemon_normal.md",
+      "anchors": 5
+    }
+  ]
+}

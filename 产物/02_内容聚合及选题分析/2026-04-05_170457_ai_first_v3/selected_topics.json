@@ -1,0 +1,123 @@
+{
+  "run_id": "2026-04-05_170457",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "未被选中的题请写入 rejected_topic_ids 或保留空值。",
+    "只有 selected_topics 非空且状态为 approved，draft 才允许执行。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "topic-mother-伊朗-diplomacy-conflict",
+      "title": "伊朗原油停火热度背后，真正被重估的是长期秩序成本",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-mother-伊朗-diplomacy-conflict",
+      "angle_variant_of": null,
+      "article_use": "解释稿",
+      "changed_dimension": "",
+      "core_proposition": "当前伊朗与原油相关的外交冲突表面上围绕停火展开，但真正影响市场和地缘政治的是长期秩序成本的变化，这一结构变量决定了后续风险与机遇。",
+      "source_status": "自然入选",
+      "composite_score": 7.3
+    },
+    {
+      "topic_id": "topic-mother-伊朗-diplomacy-conflict-variant-外交部-中东-diplomacy-c",
+      "title": "外交部中东表态热议，背后真正决定风险的长期秩序成本",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-mother-伊朗-diplomacy-conflict",
+      "angle_variant_of": "topic-mother-伊朗-diplomacy-conflict",
+      "article_use": "结构稿",
+      "changed_dimension": "objects",
+      "core_proposition": "虽然外交部关于中东局势的表态引发关注，但真正影响区域稳定和市场风险的是长期秩序成本的变化，这一结构变量决定了事件的深远影响。",
+      "source_status": "自然入选",
+      "composite_score": 7.14
+    },
+    {
+      "topic_id": "topic-mother-英伟达-ai-semiconductor-cycle",
+      "title": "AI驱动英伟达走强，不等于半导体周期已经反转",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-mother-英伟达-ai-semiconductor-cycle",
+      "angle_variant_of": null,
+      "article_use": "解释稿",
+      "changed_dimension": "",
+      "core_proposition": "英伟达因AI需求表现出局部修复迹象，但半导体行业整体是否全面复苏仍存争议，投资者容易将局部信号误读为全面景气转折。",
+      "source_status": "自然入选",
+      "composite_score": 7.06
+    },
+    {
+      "topic_id": "topic-mother-英伟达-ai-semiconductor-cycle-variant-英伟达-半导体-semiconduc",
+      "title": "半导体局部活跃不等于全行业反转，英伟达表现需理性看待",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-mother-英伟达-ai-semiconductor-cycle",
+      "angle_variant_of": "topic-mother-英伟达-ai-semiconductor-cycle",
+      "article_use": "解释稿",
+      "changed_dimension": "objects",
+      "core_proposition": "英伟达在半导体领域的表现显示局部活跃迹象，但整体行业是否进入全面复苏阶段仍需更多数据佐证，投资者容易将局部信号误读为全行业景气回升。",
+      "source_status": "自然入选",
+      "composite_score": 6.72
+    },
+    {
+      "topic_id": "topic-mother-白银-贵金属-risk-pricing-降息",
+      "title": "白银热度背后，真正被重估的是风险溢价的定价变量",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-mother-白银-贵金属-risk-pricing-降息",
+      "angle_variant_of": null,
+      "article_use": "判断稿",
+      "changed_dimension": "",
+      "core_proposition": "围绕白银和贵金属市场，核心在于厘清风险溢价究竟围绕哪些结构变量被重新定价，而非简单复述降息带动买盘的表象。",
+      "source_status": "自然入选",
+      "composite_score": 7.16
+    },
+    {
+      "topic_id": "topic-mother-白银-贵金属-risk-pricing-降息-variant-川普-特朗普-risk-pricin",
+      "title": "川普事件热度不等于白银风险溢价已全面反转",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-mother-白银-贵金属-risk-pricing-降息",
+      "angle_variant_of": "topic-mother-白银-贵金属-risk-pricing-降息",
+      "article_use": "判断稿",
+      "changed_dimension": "objects",
+      "core_proposition": "以川普及特朗普相关事件为观察对象，探讨风险溢价在白银及贵金属市场围绕哪些核心结构变量被重新定价，避免停留在表面新闻层面。",
+      "source_status": "自然入选",
+      "composite_score": 6.76
+    },
+    {
+      "topic_id": "topic-mother-宽松-降息-policy-inflation-降息",
+      "title": "表面宽松不等于通胀压力消退，利率预期正悄然回摆",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-mother-宽松-降息-policy-inflation-降息",
+      "angle_variant_of": null,
+      "article_use": "判断稿",
+      "changed_dimension": "",
+      "core_proposition": "围绕特朗普和鲍威尔的宽松政策，判断市场是否低估了再通胀压力和利率预期的调整，影响资产价格的分化。",
+      "source_status": "自然入选",
+      "composite_score": 7.24
+    },
+    {
+      "topic_id": "topic-mother-宽松-降息-policy-inflation-降息-variant-美联储-中东-policy-infl",
+      "title": "油价飙升背景下，市场对通胀压力的误判正在加剧",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-mother-宽松-降息-policy-inflation-降息",
+      "angle_variant_of": "topic-mother-宽松-降息-policy-inflation-降息",
+      "article_use": "判断稿",
+      "changed_dimension": "objects",
+      "core_proposition": "以美联储和中东局势为观察对象，探讨市场是否低估了再通胀压力及利率预期回摆的风险，影响资产价格走向。",
+      "source_status": "自然入选",
+      "composite_score": 7.39
+    },
+    {
+      "topic_id": "topic-mother-制裁-supply-order-制裁",
+      "title": "制裁热度背后，真正被重估的是供给秩序而非价格波动",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-mother-制裁-supply-order-制裁",
+      "angle_variant_of": null,
+      "article_use": "结构稿",
+      "changed_dimension": "",
+      "core_proposition": "当前围绕制裁的讨论应聚焦于其对供给链秩序的影响，而非仅仅盯着表面的价格波动，供给链的库存、运输和现金流环节才是判断市场趋势的关键变量。",
+      "source_status": "自然入选",
+      "composite_score": 6.99
+    }
+  ],
+  "editor_note": ""
+}

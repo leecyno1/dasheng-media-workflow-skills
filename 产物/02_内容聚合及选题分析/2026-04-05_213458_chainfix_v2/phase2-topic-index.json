@@ -1,0 +1,82 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "T1",
+    "topic_name": "鲍威尔讲话促使市场预期从加息转向降息，短期内美股反弹但长期通胀走势存不确定性",
+    "topic_kind": "independent",
+    "mother_topic_id": "T1",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 2,
+    "topic_id": "T2",
+    "topic_name": "俄罗斯拒绝向日本等“不友好国家”供应能源，能源外交成为地缘政治新焦点",
+    "topic_kind": "independent",
+    "mother_topic_id": "T2",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 3,
+    "topic_id": "T3",
+    "topic_name": "中东冲突引发油价剧烈波动，加剧全球输入性通胀压力与美联储货币政策难题",
+    "topic_kind": "independent",
+    "mother_topic_id": "T3",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 4,
+    "topic_id": "T4",
+    "topic_name": "伊朗控制霍尔木兹海峡构筑实质性战略威慑，停火谈判陷入僵局加剧全球能源安全风险",
+    "topic_kind": "independent",
+    "mother_topic_id": "T4",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 5,
+    "topic_id": "T5",
+    "topic_name": "美以军事行动未达预期，激活中东“抵抗之弧”，以色列遭遇史上最大规模导弹袭击",
+    "topic_kind": "independent",
+    "mother_topic_id": "T5",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 6,
+    "topic_id": "T6",
+    "topic_name": "中国散户逆势大规模买入，反映资本市场风险偏好重构与结构性机会窗口开启",
+    "topic_kind": "independent",
+    "mother_topic_id": "T6",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 7,
+    "topic_id": "T7",
+    "topic_name": "美联储降息预期引发贵金属投资热潮，黄金白银价格面临新一轮结构性上涨压力",
+    "topic_kind": "independent",
+    "mother_topic_id": "T7",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 8,
+    "topic_id": "T8",
+    "topic_name": "中俄对日本战略压力升级，间谍清理与战犯重新列名加剧区域安全紧张",
+    "topic_kind": "independent",
+    "mother_topic_id": "T8",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 9,
+    "topic_id": "T9",
+    "topic_name": "国务院强化数字经济平台监管，推动合规与市场秩序深度整顿",
+    "topic_kind": "independent",
+    "mother_topic_id": "T9",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 10,
+    "topic_id": "T10",
+    "topic_name": "伊朗境内核设施遭美以多次轰炸，俄罗斯紧急撤离人员，核风险加剧全球能源安全担忧",
+    "topic_kind": "independent",
+    "mother_topic_id": "T10",
+    "source_status": "ai_generated"
+  }
+]

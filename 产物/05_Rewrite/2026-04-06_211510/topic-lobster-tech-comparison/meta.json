@@ -1,0 +1,80 @@
+{
+  "topic": "topic-lobster-tech-comparison",
+  "topic_prefix": "topic-lobster-tech-comparison",
+  "generated_at": "2026-04-07T11:02:10",
+  "final_source": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-06_211510/topic-lobster-tech-comparison_draft.md",
+  "framework_labels": {
+    "open_label": "开篇",
+    "part1_label": "第一部分：核心判断",
+    "part2_label": "第二部分：证据与机制",
+    "part3_label": "第三部分：执行框架",
+    "end_label": "结尾：行动与边界"
+  },
+  "variants": [
+    {
+      "variant": "bilibili_lemon_normal",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/05_Rewrite/2026-04-06_211510/topic-lobster-tech-comparison/topic-lobster-tech-comparison__bilibili_lemon_normal.md",
+      "char_count": 7189,
+      "min_chars": 2000,
+      "pass": true,
+      "h2_count": 7
+    },
+    {
+      "variant": "bilibili_luxun_hot",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/05_Rewrite/2026-04-06_211510/topic-lobster-tech-comparison/topic-lobster-tech-comparison__bilibili_luxun_hot.md",
+      "char_count": 7189,
+      "min_chars": 2000,
+      "pass": true,
+      "h2_count": 7
+    },
+    {
+      "variant": "wechat_channels_lemon_normal",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/05_Rewrite/2026-04-06_211510/topic-lobster-tech-comparison/topic-lobster-tech-comparison__wechat_channels_lemon_normal.md",
+      "char_count": 7189,
+      "min_chars": 1500,
+      "pass": true,
+      "h2_count": 7
+    },
+    {
+      "variant": "wechat_channels_luxun_hot",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/05_Rewrite/2026-04-06_211510/topic-lobster-tech-comparison/topic-lobster-tech-comparison__wechat_channels_luxun_hot.md",
+      "char_count": 7189,
+      "min_chars": 1500,
+      "pass": true,
+      "h2_count": 7
+    },
+    {
+      "variant": "wechat_lemon_normal",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/05_Rewrite/2026-04-06_211510/topic-lobster-tech-comparison/topic-lobster-tech-comparison__wechat_lemon_normal.md",
+      "char_count": 7244,
+      "min_chars": 4000,
+      "pass": true,
+      "h2_count": 5
+    },
+    {
+      "variant": "wechat_luxun_hot",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/05_Rewrite/2026-04-06_211510/topic-lobster-tech-comparison/topic-lobster-tech-comparison__wechat_luxun_hot.md",
+      "char_count": 7244,
+      "min_chars": 4000,
+      "pass": true,
+      "h2_count": 5
+    },
+    {
+      "variant": "xhs_video_lemon_normal",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/05_Rewrite/2026-04-06_211510/topic-lobster-tech-comparison/topic-lobster-tech-comparison__xhs_video_lemon_normal.md",
+      "char_count": 7189,
+      "min_chars": 1800,
+      "pass": true,
+      "h2_count": 7
+    },
+    {
+      "variant": "xhs_video_luxun_hot",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/05_Rewrite/2026-04-06_211510/topic-lobster-tech-comparison/topic-lobster-tech-comparison__xhs_video_luxun_hot.md",
+      "char_count": 7189,
+      "min_chars": 1800,
+      "pass": true,
+      "h2_count": 7
+    }
+  ],
+  "all_passed": true
+}

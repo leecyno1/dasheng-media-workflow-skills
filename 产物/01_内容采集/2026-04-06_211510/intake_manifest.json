@@ -1,0 +1,129 @@
+{
+  "run_id": "2026-04-06_211510",
+  "generated_at": "2026-04-06T21:15:10.620909+08:00",
+  "stage": "intake",
+  "object_type": "Run",
+  "execution_model": "agent-driven",
+  "ports": {
+    "reports": {
+      "status": "error",
+      "base": "http://45.197.148.64:8080",
+      "error": "HTTPConnectionPool(host='127.0.0.1', port=7890): Read timed out. (read timeout=30)"
+    },
+    "5173": {
+      "status": "ok",
+      "base": "http://127.0.0.1:18000"
+    },
+    "8001": {
+      "status": "error",
+      "base": "http://45.197.148.64:8001",
+      "issues": [
+        "HTTPConnectionPool(host='127.0.0.1', port=7890): Read timed out. (read timeout=30)"
+      ],
+      "attempts": 3,
+      "waited_seconds": 16
+    }
+  },
+  "counts": {
+    "x_total": 12620,
+    "wb_total": 2414,
+    "xhs_total": 8304,
+    "douyin_total": 2976,
+    "bili_total": 5155,
+    "content_research_candidates": 81,
+    "trendradar_reports": 0,
+    "trendradar_links": 0,
+    "wemprss_channels_total": 0,
+    "wemprss_articles_total": 0,
+    "curated_articles": 0,
+    "selected_records": 370,
+    "channel_top10_total": 60,
+    "valid_linked_records": 370
+  },
+  "channel_tasks": {
+    "x": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 12620
+    },
+    "wb": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 2414
+    },
+    "xhs": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 8304
+    },
+    "douyin": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 2976
+    },
+    "bili": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 5155
+    },
+    "content_research": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 81
+    },
+    "reports": {
+      "status": "error",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [
+        "HTTPConnectionPool(host='127.0.0.1', port=7890): Read timed out. (read timeout=30)"
+      ],
+      "total": 0
+    },
+    "wechat": {
+      "status": "error",
+      "attempts": 3,
+      "waited_seconds": 16,
+      "issues": [
+        "HTTPConnectionPool(host='127.0.0.1', port=7890): Read timed out. (read timeout=30)"
+      ],
+      "total": 0
+    }
+  },
+  "artifacts": [
+    "raw/mediacrawler_latest_x.json",
+    "raw/mediacrawler_latest_xhs.json",
+    "raw/mediacrawler_latest_douyin.json",
+    "raw/mediacrawler_latest_wb.json",
+    "raw/mediacrawler_latest_bili.json",
+    "raw/mediacrawler_topnotes_content_research.json",
+    "raw/trendradar_reports.json",
+    "raw/trendradar_latest_report.html",
+    "raw/trendradar_top_links.json",
+    "raw/wemprss_public_channels.json",
+    "raw/wemprss_articles_latest.json",
+    "raw/intake_records.json",
+    "entity_rankings.json",
+    "event_clusters.json",
+    "source_quality_report.json",
+    "channel_top10.json",
+    "brief_input.json",
+    "channel_tasks.json",
+    "intake_review.json",
+    "notes/01_内容采集_报告.md",
+    "notes/01_内容采集_底稿.md"
+  ],
+  "next_stage": "brief"
+}

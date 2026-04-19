@@ -1,0 +1,170 @@
+{
+  "run_id": "2026-04-15_164114",
+  "generated_at": "2026-04-15T16:41:14.030840+08:00",
+  "items": [
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "An AI Vibe Coding Horror Story",
+      "url": "https://www.tobru.ch/an-ai-vibe-coding-horror-story/",
+      "author_name": "teichmann",
+      "created_at": "2026-04-14T08:35:45Z",
+      "summary": "Hacker News 查询：Vibe Coding",
+      "score": 859.8,
+      "provider_meta": {
+        "query": "Vibe Coding",
+        "points": 206.0,
+        "num_comments": 203.0
+      },
+      "rank_score": 16.0381
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "OpenAI's $852B valuation faces investor scrutiny amid strategy shift, FT reports",
+      "url": "https://www.reuters.com/legal/transactional/openai-investors-question-852-billion-valuation-strategy-shifts-ft-reports-2026-04-14/",
+      "author_name": "abdelhousni",
+      "created_at": "2026-04-15T01:36:22Z",
+      "summary": "Hacker News 查询：OpenAI",
+      "score": 468.0,
+      "provider_meta": {
+        "query": "OpenAI",
+        "points": 105.0,
+        "num_comments": 120.0
+      },
+      "rank_score": 14.2864
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Trusted access for the next era of cyber defense",
+      "url": "https://openai.com/index/scaling-trusted-access-for-cyber-defense/",
+      "author_name": "surprisetalk",
+      "created_at": "2026-04-14T20:07:20Z",
+      "summary": "Hacker News 查询：OpenAI",
+      "score": 286.2,
+      "provider_meta": {
+        "query": "OpenAI",
+        "points": 78.0,
+        "num_comments": 55.0
+      },
+      "rank_score": 13.8207
+    },
+    {
+      "provider": "reddit",
+      "source": "ai_hot/reddit",
+      "title": "Anthropic has come out against a proposed Illinois law backed by OpenAI that would shield AI labs from liability if their systems are used to cause large-scale harm, like mass casualties or more than $1 billion in property damage.",
+      "url": "https://www.reddit.com/r/singularity/comments/1sly077/anthropic_has_come_out_against_a_proposed/",
+      "author_name": "/u/soldierofcinema",
+      "created_at": "2026-04-15T06:28:31+00:00",
+      "summary": "Reddit r/singularity 热门讨论",
+      "score": 90,
+      "provider_meta": {
+        "subreddit": "singularity",
+        "rank": 3
+      },
+      "rank_score": 13.5435
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Show HN: Make sure your OpenClaw isn't doing things it's not supposed to",
+      "url": "https://claw.armoriq.ai/",
+      "author_name": "vaibhavb007",
+      "created_at": "2026-04-15T03:26:03Z",
+      "summary": "Hacker News 查询：AI agents",
+      "score": 12.0,
+      "provider_meta": {
+        "query": "AI agents",
+        "points": 5.0,
+        "num_comments": 0.0
+      },
+      "rank_score": 13.2298
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Show HN: OpenRig – agent harness that runs Claude Code and Codex as one system",
+      "url": "https://github.com/mvschwarz/openrig",
+      "author_name": "mschwarz",
+      "created_at": "2026-04-14T23:46:40Z",
+      "summary": "Hacker News 查询：OpenAI",
+      "score": 11.4,
+      "provider_meta": {
+        "query": "OpenAI",
+        "points": 4.0,
+        "num_comments": 1.0
+      },
+      "rank_score": 13.1291
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Show HN: Agent Citizen – Your AI agents are sitting around doing nothing",
+      "url": "https://agent-citizen.vercel.app",
+      "author_name": "daltonlcarr",
+      "created_at": "2026-04-15T03:44:38Z",
+      "summary": "Hacker News 查询：AI agents",
+      "score": 9.6,
+      "provider_meta": {
+        "query": "AI agents",
+        "points": 4.0,
+        "num_comments": 0.0
+      },
+      "rank_score": 13.0823
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "The Death of an AI Whistleblower",
+      "url": "https://www.thenation.com/article/society/open-ai-suchir-balaji-whistleblowers/",
+      "author_name": "SLHamlet",
+      "created_at": "2026-04-15T06:56:56Z",
+      "summary": "Hacker News 查询：OpenAI",
+      "score": 25.8,
+      "provider_meta": {
+        "query": "OpenAI",
+        "points": 10.0,
+        "num_comments": 1.0
+      },
+      "rank_score": 13.0352
+    },
+    {
+      "provider": "reddit",
+      "source": "ai_hot/reddit",
+      "title": "🔥BREAKING: OpenAI rolls out GPT-5.4-Cyber to limited group for testing, seeks to rival Claude Mythos",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1slmujp/breaking_openai_rolls_out_gpt54cyber_to_limited/",
+      "author_name": "/u/etherd0t",
+      "created_at": "2026-04-14T21:54:07+00:00",
+      "summary": "Reddit r/OpenAI 热门讨论",
+      "score": 54,
+      "provider_meta": {
+        "subreddit": "OpenAI",
+        "rank": 5
+      },
+      "rank_score": 13.0128
+    },
+    {
+      "provider": "reddit",
+      "source": "ai_hot/reddit",
+      "title": "Anthropic is set to release Claude Opus 4.7 and a new AI design tool as early as this week",
+      "url": "https://www.reddit.com/r/singularity/comments/1slh72j/anthropic_is_set_to_release_claude_opus_47_and_a/",
+      "author_name": "/u/Outside-Iron-8242",
+      "created_at": "2026-04-14T18:30:07+00:00",
+      "summary": "Reddit r/singularity 热门讨论",
+      "score": 54,
+      "provider_meta": {
+        "subreddit": "singularity",
+        "rank": 5
+      },
+      "rank_score": 12.9521
+    }
+  ],
+  "meta": {
+    "candidate_total": 53,
+    "providers": {
+      "hn": 7,
+      "reddit": 3
+    }
+  }
+}

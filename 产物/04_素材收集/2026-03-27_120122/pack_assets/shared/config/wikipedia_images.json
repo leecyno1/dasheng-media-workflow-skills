@@ -1,0 +1,14 @@
+{
+  "images": [
+    { "topic": "reinflation", "anchor": "oil_price_inflation_expectation", "title": "Federal Reserve", "slug": "federal_reserve" },
+    { "topic": "reinflation", "anchor": "oil_price_inflation_expectation", "title": "Oil refinery", "slug": "oil_refinery" },
+    { "topic": "reinflation", "anchor": "oil_price_inflation_expectation", "title": "Container port", "slug": "container_port" },
+    { "topic": "reinflation", "anchor": "asset_repricing_map", "title": "New York Stock Exchange", "slug": "nyse" },
+    { "topic": "reinflation", "anchor": "fed_stagflation_signal", "title": "Inflation", "slug": "inflation" },
+    { "topic": "takaichi", "anchor": "coalition_right_shift", "title": "Sanae Takaichi", "slug": "sanae_takaichi" },
+    { "topic": "takaichi", "anchor": "coalition_right_shift", "title": "National Diet Building", "slug": "national_diet_building" },
+    { "topic": "takaichi", "anchor": "aging_labor_gap", "title": "Demographics of Japan", "slug": "demographics_of_japan" },
+    { "topic": "takaichi", "anchor": "security_taiwan_impact", "title": "Japan Coast Guard", "slug": "japan_coast_guard" },
+    { "topic": "takaichi", "anchor": "coalition_right_shift", "title": "Shibuya Crossing", "slug": "shibuya_crossing" }
+  ]
+}

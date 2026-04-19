@@ -1,0 +1,57 @@
+{
+  "run_id": "2026-04-02_230158",
+  "gate": "Intake Gate",
+  "status": "pending_review",
+  "generated_at": "2026-04-02T23:01:58.139654+08:00",
+  "instructions": [
+    "删除明显广告、生活方式、低信息密度、重复搬运样本。",
+    "保留能形成事件线索、人物线索、议题线索的样本。",
+    "如需补链，直接在 additions 中新增。"
+  ],
+  "noise_candidates": [
+    {
+      "title": "生活到底对我们两口子做了什么？！",
+      "url": "https://www.xiaohongshu.com/explore/64718c2d0000000012030f18?xsec_token=ABrtj6WWKntX-NsHZYowrMD5JWN6wPulC2LwO0frajaC0=&xsec_source=pc_feed",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/xhs"
+    },
+    {
+      "title": "秋冬的不露腿合集来啦! 🍂",
+      "url": "https://www.xiaohongshu.com/explore/64c922b10000000010033d51?xsec_token=AB9lIMx0mpFcdcfsbiG4aCgkXgIV6RMlIr_ZB9zl-tTfc=&xsec_source=pc_feed",
+      "noise_tags": [
+        "likely_repost"
+      ],
+      "source": "5173/xhs"
+    },
+    {
+      "title": "🌊",
+      "url": "https://www.xiaohongshu.com/explore/643a72440000000027001cd2?xsec_token=ABwMlOi53Bwe0jUAImDKByPXOFALa7XAU-okWR5haON5g=&xsec_source=pc_feed",
+      "noise_tags": [
+        "low_info_density"
+      ],
+      "source": "5173/xhs"
+    },
+    {
+      "title": "盒子助手飞牛版 | ADB 助手 | 索尼 TCL 电视 快速批量安装应用",
+      "url": "https://www.bilibili.com/video/BV12CXSBDESC",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/bili"
+    },
+    {
+      "title": "4月2日劲爆消息！四大战区发声，日本全境变战场，解放军说话算话：日网友看到结局",
+      "url": "https://www.bilibili.com/video/BV1dW9HB9E3K",
+      "noise_tags": [
+        "likely_repost"
+      ],
+      "source": "5173/bili"
+    }
+  ],
+  "remove_ids": [],
+  "keep_ids": [],
+  "additions": [],
+  "editor_note": ""
+}

@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "日本士兵闯使馆事件背后:个体极端行为还是系统性问题｜互动图表视频",
+    "description": "来自历史图表 CSV 的动态图表视频补充",
+    "version": "2026.04.14"
+  },
+  "global": {
+    "factoryVersion": "v1.0.0",
+    "autoplay": true,
+    "autoplayGapMs": 800,
+    "tabSwitchRestart": true
+  },
+  "scenes": []
+}

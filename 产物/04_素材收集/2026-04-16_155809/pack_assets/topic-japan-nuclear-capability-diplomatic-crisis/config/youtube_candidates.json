@@ -1,0 +1,579 @@
+[
+  {
+    "query": "Japan politics parliament session 4k",
+    "candidates": [
+      {
+        "title": "Japan: Kishida’s coalition wins absolute majority in parliament",
+        "url": "https://www.youtube.com/watch?v=qWMI8lKw-YA",
+        "duration": 92.0,
+        "channel": "CGTN Africa",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 92,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Japan′s controversial security bills expected to pass full assembly Friday   일본",
+        "url": "https://www.youtube.com/watch?v=IX4F84m9Ta8",
+        "duration": 122.0,
+        "channel": "Arirang News",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 720,
+          "resolution_width": 1280,
+          "duration_seconds_hint": 122,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Japan ruling party on track to keep parliamentary majority",
+        "url": "https://www.youtube.com/watch?v=L_50ssNgp6g",
+        "duration": 77.0,
+        "channel": "AP Archive",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 360,
+          "resolution_width": 640,
+          "duration_seconds_hint": 76,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "Japan politics parliament session 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "Japan politics election rally crowd 4k live feed",
+    "candidates": [
+      {
+        "title": "Moment Shinzo Abe shot during campaign speech in Japan",
+        "url": "https://www.youtube.com/watch?v=i7PFVpZVRBc",
+        "duration": 97.0,
+        "channel": "The Telegraph",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": null,
+          "resolution_width": null,
+          "duration_seconds_hint": 97,
+          "fps_hint": null,
+          "extractor": "",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": [],
+          "metadata_error": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/"
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Abe shooting 'truly shocking' during election campaign says Japan politics expert | ABC News",
+        "url": "https://www.youtube.com/watch?v=Cn1ufk7OSOg",
+        "duration": 924.0,
+        "channel": "ABC News (Australia)",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 923,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "BREAKING!!! Smoke bomb thrown at Japan PM Fumio Kishida during election campaign event",
+        "url": "https://www.youtube.com/watch?v=JzRY1SifExo",
+        "duration": 65.0,
+        "channel": "ShanghaiEye魔都眼",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 1440,
+          "resolution_width": 1080,
+          "duration_seconds_hint": 64,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "Japan politics election rally crowd 4k live feed",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "Japan politics military drill 4k",
+    "candidates": [
+      {
+        "title": "US B-52 Bombers, Japan Jets Roar After China-Russia Drill, \"Don't Make a Fuss\" Xi Warns Takaichi |4K",
+        "url": "https://www.youtube.com/watch?v=vW9MSnx00YM",
+        "duration": 601.0,
+        "channel": "CRUX and CNN-News18",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 2026,
+          "resolution_width": 3840,
+          "duration_seconds_hint": 601,
+          "fps_hint": 24.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "US Withdraws Typhon Missile System From Japan Amid Taiwan Row, China's Invasion Forces 'Spotted' |4K",
+        "url": "https://www.youtube.com/watch?v=SgO2G_RmKX8",
+        "duration": 500.0,
+        "channel": "CRUX and CNN-News18",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 2026,
+          "resolution_width": 3840,
+          "duration_seconds_hint": 499,
+          "fps_hint": 24.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Japan, US hold joint drill over Sea of Japan",
+        "url": "https://www.youtube.com/watch?v=k2-36BBMWBk",
+        "duration": 44.0,
+        "channel": "Nippon Television News Japan",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 720,
+          "resolution_width": 1280,
+          "duration_seconds_hint": 43,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "Japan politics military drill 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "Japan politics navy fleet aerial 4k",
+    "candidates": [
+      {
+        "title": "How Modern Navies Respond in the Taiwan Strait | US–Japan–China Naval Scenario Simulation",
+        "url": "https://www.youtube.com/watch?v=68J5dFJzOWk",
+        "duration": 578.0,
+        "channel": "IronTide Studios",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 577,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "\"Drone's Eye View: Exploring Mikasa Battleship\"  4K",
+        "url": "https://www.youtube.com/watch?v=glXgSRy9O3M",
+        "duration": 132.0,
+        "channel": "Bubblefish tv",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 2160,
+          "resolution_width": 3840,
+          "duration_seconds_hint": 132,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "CFAY Yokosuka drone flight",
+        "url": "https://www.youtube.com/watch?v=bujeKyzcKGM",
+        "duration": 145.0,
+        "channel": "JapanBrats",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 720,
+          "resolution_width": 1280,
+          "duration_seconds_hint": 144,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "Japan politics navy fleet aerial 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "Japan politics port shipping lane 4k",
+    "candidates": [
+      {
+        "title": "How Vulnerable Are Global Shipping Lanes?",
+        "url": "https://www.youtube.com/watch?v=3grjQwP_XVs",
+        "duration": 224.0,
+        "channel": "TRT World",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 223,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "MOST BUSY Shipping Ports in the World",
+        "url": "https://www.youtube.com/watch?v=ACTDVKYXqDk",
+        "duration": 1193.0,
+        "channel": "Top Fives",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 1192,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Life Inside Massive Car Carrier Ship: How the World's Largest Car Carrier Carrying 1.5 Million Cars",
+        "url": "https://www.youtube.com/watch?v=lmysgVsy5_4",
+        "duration": 528.0,
+        "channel": "Nauctis",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 527,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "Japan politics port shipping lane 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "Japan politics government building exterior 4k news live",
+    "candidates": [
+      {
+        "title": "Fumio Kishida wins race to become Japan's next prime minister | The World",
+        "url": "https://www.youtube.com/watch?v=sxObDIRS_i8",
+        "duration": 309.0,
+        "channel": "ABC News (Australia)",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 309,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Upper house polls underway in Japan, voters queue up in polling booths | World News | WION",
+        "url": "https://www.youtube.com/watch?v=tFfJp5C3FHg",
+        "duration": 155.0,
+        "channel": "WION",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 154,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Security stepped up on last day of Japan's election campaigning",
+        "url": "https://www.youtube.com/watch?v=5uxfI-f0zDw",
+        "duration": 189.0,
+        "channel": "CNA",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 720,
+          "resolution_width": 1280,
+          "duration_seconds_hint": 189,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "Japan politics government building exterior 4k news live",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "Japan politics city crowd documentary 4k",
+    "candidates": [
+      {
+        "title": "Tokyo: A City That Feels Like Another Planet",
+        "url": "https://www.youtube.com/watch?v=BhBcICoRY6Q",
+        "duration": 2849.0,
+        "channel": "CoolVision",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 2160,
+          "resolution_width": 3840,
+          "duration_seconds_hint": 2848,
+          "fps_hint": 60.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Life Inside the Busy Cities of the World | The Travel Edit",
+        "url": "https://www.youtube.com/watch?v=HnOzp8lo-IQ",
+        "duration": 2291.0,
+        "channel": "The Travel Edit",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 2291,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "I Traveled Across China To See The Truth (Full Documentary)",
+        "url": "https://www.youtube.com/watch?v=EbrJxh_OQrM",
+        "duration": 4970.0,
+        "channel": "David G",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 2160,
+          "resolution_width": 3840,
+          "duration_seconds_hint": 4970,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "Japan politics city crowd documentary 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "Japan politics diplomatic summit interview raw footage",
+    "candidates": [
+      {
+        "title": "Prospects for trilateral summit dim after Chinese FM tells Japan to face up to h",
+        "url": "https://www.youtube.com/watch?v=mkEN5BiXc8w",
+        "duration": 120.0,
+        "channel": "Arirang News",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 720,
+          "resolution_width": 1280,
+          "duration_seconds_hint": 119,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Yoon, Kishida to discuss bilateral sticking points, resume direct diplomacy at NATO summit",
+        "url": "https://www.youtube.com/watch?v=4U_gy_T1te8",
+        "duration": 49.0,
+        "channel": "Arirang News",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 720,
+          "resolution_width": 1280,
+          "duration_seconds_hint": 48,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "China-Japan summit talks being arranged for July on sidelines of G20",
+        "url": "https://www.youtube.com/watch?v=EcxllcMPWdk",
+        "duration": 38.0,
+        "channel": "Arirang News",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 720,
+          "resolution_width": 1280,
+          "duration_seconds_hint": 37,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "Japan politics diplomatic summit interview raw footage",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  }
+]

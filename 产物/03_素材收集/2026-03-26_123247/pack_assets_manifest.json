@@ -1,0 +1,92 @@
+{
+  "run_id": "2026-03-26_123247",
+  "root": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets",
+  "counts": {
+    "source_link_video_files": 3,
+    "web_search_video_files": 7,
+    "network_images": 10,
+    "generated_infographics": 6,
+    "chart_png": 6,
+    "chart_csv": 6
+  },
+  "topics": {
+    "reinflation": {
+      "videos": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/videos/source_links/source_link_01__bilibili_oil_macro_meeting.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/videos/source_links/source_link_02__bilibili_geopolitics_commentary.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/videos/web_search/fed_stagflation_signal__youtube_federal_reserve_broll.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/videos/web_search/oil_price_inflation_expectation__youtube_container_port_aerial.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/videos/web_search/oil_price_inflation_expectation__youtube_refinery_aerial.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/videos/web_search/youtube_candidates.json"
+      ],
+      "images": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/images/generated/asset_repricing_map_infographic.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/images/generated/fed_stagflation_signal_infographic.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/images/generated/oil_price_inflation_expectation_infographic.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/images/web_search/asset_repricing_map__nyse.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/images/web_search/fed_stagflation_signal__inflation.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/images/web_search/oil_price_inflation_expectation__container_port.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/images/web_search/oil_price_inflation_expectation__federal_reserve.svg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/images/web_search/oil_price_inflation_expectation__oil_refinery.JPG"
+      ],
+      "charts": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/charts/csv/asset_repricing_map.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/charts/csv/fed_stagflation_signal.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/charts/csv/oil_price_inflation_expectation.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/charts/png/asset_repricing_map.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/charts/png/fed_stagflation_signal.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/reinflation/charts/png/oil_price_inflation_expectation.png"
+      ]
+    },
+    "takaichi": {
+      "videos": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/videos/source_links/source_link_03_douyin_failure_note.md",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/videos/source_links/source_link_fallback_04__youtube_reuters_far_right_crowd.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/videos/web_search/aging_labor_gap__youtube_japan_aging_society.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/videos/web_search/coalition_right_shift__youtube_reuters_far_right_crowd.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/videos/web_search/coalition_right_shift__youtube_shibuya_crossing.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/videos/web_search/security_taiwan_impact__youtube_japan_us_joint_drill.mp4",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/videos/web_search/youtube_candidates.json"
+      ],
+      "images": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/images/generated/aging_labor_gap_infographic.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/images/generated/coalition_right_shift_infographic.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/images/generated/security_taiwan_impact_infographic.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/images/web_search/aging_labor_gap__demographics_of_japan.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/images/web_search/coalition_right_shift__national_diet_building.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/images/web_search/coalition_right_shift__sanae_takaichi.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/images/web_search/coalition_right_shift__shibuya_crossing.jpg",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/images/web_search/security_taiwan_impact__japan_coast_guard.svg"
+      ],
+      "charts": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/charts/csv/aging_labor_gap.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/charts/csv/coalition_right_shift.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/charts/csv/security_taiwan_impact.csv",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/charts/png/aging_labor_gap.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/charts/png/coalition_right_shift.png",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/takaichi/charts/png/security_taiwan_impact.png"
+      ]
+    }
+  },
+  "shared": {
+    "config_files": [
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/config/chart_manifest.json",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/config/image_download_results.json",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/config/image_generation_status.json",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/config/media_queries.json",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/config/pack_topics.json",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/config/selected_videos.json",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/config/vectorengine_gemini_image.env",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/config/video_download_results.json",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/config/wikipedia_images.json"
+    ],
+    "scripts": [
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/scripts/download_selected_videos.py",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/scripts/download_wikipedia_images.py",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/scripts/generate_anchor_charts.py",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/scripts/generate_python_infographics.py",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/scripts/search_youtube_candidates.py",
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/scripts/vectorengine_image_client.py"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-15_164114/artifacts/material/pack_assets",
+  "topic_count": 1,
+  "totals": {
+    "candidate_total": 3,
+    "candidate_qualified": 3,
+    "candidate_rejected": 0,
+    "download_attempts": 2,
+    "download_passed": 1,
+    "download_failed": 1
+  },
+  "candidate_reject_reason_counts": {},
+  "download_fail_reason_counts": {
+    "no_qualified_candidate": 1
+  },
+  "topics": [
+    {
+      "topic_slug": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+      "topic_title": "AI：真正拉开差距的是功能演示还是工作流落地",
+      "candidate_queries": 2,
+      "candidate_total": 3,
+      "candidate_qualified": 3,
+      "candidate_rejected": 0,
+      "download_attempts": 2,
+      "download_passed": 1,
+      "download_failed": 1,
+      "candidate_reject_reason_counts": {},
+      "download_fail_reason_counts": {
+        "no_qualified_candidate": 1
+      },
+      "quality_audit_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-15_164114/artifacts/material/pack_assets/topic-ai-真正拉开差距的是功能演示还是工作流落地/config/video_quality_audit_report.json"
+    }
+  ]
+}

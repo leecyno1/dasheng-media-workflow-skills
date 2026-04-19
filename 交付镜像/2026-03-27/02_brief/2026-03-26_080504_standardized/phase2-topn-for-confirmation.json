@@ -1,0 +1,26 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "topic-1",
+    "topic_name": "行业复苏里最危险的误判",
+    "cluster_name": "宏观政策与再通胀",
+    "composite_heat": 393.81,
+    "source_status": "手动指定"
+  },
+  {
+    "rank": 2,
+    "topic_id": "topic-2",
+    "topic_name": "表面在交易事件，真正的主线会不会其实是再通胀？",
+    "cluster_name": "宏观政策与再通胀",
+    "composite_heat": 393.81,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 3,
+    "topic_id": "topic-3",
+    "topic_name": "模糊消息为什么总能先于事实，影响市场情绪定价？",
+    "cluster_name": "市场情绪与资金误判",
+    "composite_heat": 76.15,
+    "source_status": "自然入选"
+  }
+]

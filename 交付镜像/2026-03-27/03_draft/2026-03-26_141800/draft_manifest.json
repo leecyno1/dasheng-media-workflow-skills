@@ -1,0 +1,13 @@
+{
+  "run_id": "2026-03-26_141800",
+  "workflow_order_note": "temporary order switched to intake -> brief -> draft -> material",
+  "drafts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-03-26_141800/04_标准初稿_再通胀.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-03-26_141800/04_标准初稿_高市早苗.md"
+  ],
+  "upstream": {
+    "brief": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-26_080504_standardized/02_编辑Brief库.md",
+    "material": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/03_MaterialPack.md"
+  },
+  "status": "ready_for_review"
+}

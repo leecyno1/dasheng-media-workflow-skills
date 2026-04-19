@@ -1,0 +1,103 @@
+{
+  "topic": "topic-10",
+  "generated_at": "2026-03-31T14:36:19+0800",
+  "policy": {
+    "min_height": 0,
+    "min_duration_seconds": 8,
+    "min_scene_changes": 2,
+    "min_scene_change_rate": 0.08,
+    "allow_news_live_or_interview": true,
+    "block_self_media_talking_head": true,
+    "reject_screenshot_montage": true
+  },
+  "audit_fields": {
+    "candidate_level": [
+      "source_category",
+      "source_ok",
+      "resolution_height",
+      "duration_seconds_hint",
+      "pre_download_pass",
+      "reject_reasons"
+    ],
+    "file_level": [
+      "source_traceable",
+      "resolution_height",
+      "duration_seconds",
+      "scene_changes",
+      "scene_change_rate",
+      "anti_screenshot_montage_pass",
+      "final_pass",
+      "fail_reasons"
+    ]
+  },
+  "query_quality_summary": [
+    {
+      "query": "半导体突然很热闹 documentary b roll 4k",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "半导体突然很热闹 city aerial 4k",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "半导体突然很热闹 public crowd 4k",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "半导体突然很热闹 government meeting 4k",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "半导体突然很热闹 news conference 4k",
+      "candidate_count": 1,
+      "qualified_count": 1,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "半导体突然很热闹 industrial aerial 4k",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "半导体突然很热闹 street crowd 4k",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "半导体突然很热闹 dramatic scene 4k",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  ],
+  "summary": {
+    "candidate_total": 1,
+    "candidate_qualified": 1,
+    "candidate_rejected": 0,
+    "candidate_reject_reason_counts": {},
+    "download_attempts": 2,
+    "download_passed": 0,
+    "download_failed": 2,
+    "download_fail_reason_counts": {
+      "no_qualified_candidate": 2
+    }
+  }
+}

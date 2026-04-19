@@ -1,0 +1,31 @@
+{
+  "run_id": "2026-04-05_170457",
+  "generated_at": "2026-04-05T21:23:31.345674",
+  "count": 3,
+  "items": [
+    {
+      "rank": 1,
+      "topic_id": "T001",
+      "topic_name": "鲍威尔讲话促使市场由加息预期转向降息押注",
+      "topic_kind": "independent",
+      "mother_topic_id": "T001",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 2,
+      "topic_id": "T002",
+      "topic_name": "俄罗斯拒绝向日本供油凸显能源外交战略调整",
+      "topic_kind": "independent",
+      "mother_topic_id": "T002",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 3,
+      "topic_id": "T003",
+      "topic_name": "中东冲突引发油价剧烈波动冲击全球货币政策",
+      "topic_kind": "independent",
+      "mother_topic_id": "T003",
+      "source_status": "ai_generated"
+    }
+  ]
+}

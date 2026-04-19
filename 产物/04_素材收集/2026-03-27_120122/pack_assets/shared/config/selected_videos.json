@@ -1,0 +1,66 @@
+{
+  "source_link_videos": [
+    {
+      "topic": "reinflation",
+      "anchor": "source_link_01",
+      "label": "bilibili_oil_macro_meeting",
+      "url": "https://www.bilibili.com/video/BV1aPQBBREoH"
+    },
+    {
+      "topic": "reinflation",
+      "anchor": "source_link_02",
+      "label": "bilibili_geopolitics_commentary",
+      "url": "https://www.bilibili.com/video/BV1CCQqBuEt8"
+    },
+    {
+      "topic": "reinflation",
+      "anchor": "source_link_03",
+      "label": "douyin_macro_reinflation_trigger",
+      "url": "https://www.douyin.com/video/7620045154070437626"
+    }
+  ],
+  "web_search_videos": [
+    {
+      "topic": "reinflation",
+      "anchor": "oil_price_inflation_expectation",
+      "label": "youtube_refinery_aerial",
+      "url": "https://www.youtube.com/watch?v=PotxwiHtTc0"
+    },
+    {
+      "topic": "reinflation",
+      "anchor": "oil_price_inflation_expectation",
+      "label": "youtube_container_port_aerial",
+      "url": "https://www.youtube.com/watch?v=1zfYtVyLVEo"
+    },
+    {
+      "topic": "reinflation",
+      "anchor": "fed_stagflation_signal",
+      "label": "youtube_federal_reserve_broll",
+      "url": "https://www.youtube.com/watch?v=H6oPi75_soc"
+    },
+    {
+      "topic": "takaichi",
+      "anchor": "coalition_right_shift",
+      "label": "youtube_reuters_far_right_crowd",
+      "url": "https://www.youtube.com/watch?v=YcGNdyqWvZI"
+    },
+    {
+      "topic": "takaichi",
+      "anchor": "coalition_right_shift",
+      "label": "youtube_shibuya_crossing",
+      "url": "https://www.youtube.com/watch?v=Od6EeCWytZo"
+    },
+    {
+      "topic": "takaichi",
+      "anchor": "security_taiwan_impact",
+      "label": "youtube_japan_us_joint_drill",
+      "url": "https://www.youtube.com/watch?v=PcmQWsTH9OM"
+    },
+    {
+      "topic": "takaichi",
+      "anchor": "aging_labor_gap",
+      "label": "youtube_japan_aging_society",
+      "url": "https://www.youtube.com/watch?v=lk8VElZgxNM"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+# 热闹的不是主线，真正被市场重新计价的，其实是再通胀
+
+![热闹的不是主线，真正被市场重新计价的，其实是再通胀 封面](/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/cover.png)
+
+> 改写参数：`lemon` + `wechat_article` + `normal`
+
+如果你最近看盘有一种很强的感受——消息特别多、节奏特别快、市场总像在追着下一个突发事件跑——那这篇基本就是写给你的。
+
+因为这段时间，表面上最吸睛的变量确实很多：关税、地缘冲突、油价、航运、供应链、避险情绪，几乎轮着来。但越是在这种信息密度高的时候，越容易把“热闹”误会成“主线”。而这轮市场里，我觉得最值得认真拆开的地方是：大家好像在交易事件，其实很多时候真正交易的是这些事件会不会把通胀和利率路径重新推偏。
+
+换句话说，市场未必是在重写一个新故事，它更像是在重新翻出一本旧账——通胀到底有没有真的结束。
+
+## 一、为什么现在要重新讨论再通胀
+
+先把这个词解释清楚。
+
+所谓“再通胀”，不是说美国通胀已经重新失控了，也不是说市场马上就要回到全面滞胀的状态。更准确的理解是：通胀虽然从高位回落了，但还没有回到一个足以让市场彻底放心的程度。只要这种不确定性还在，利率就很难像很多投资者此前想象的那样一路顺畅地下来。
+
+这件事为什么重要？因为过去一段时间，很多资产的估值想象，本来就是建立在一个隐含前提上的：未来利率会逐渐回落，贴现率压力会慢慢变轻，风险偏好就能被重新抬起来。这个前提一旦松动，资产定价逻辑就会跟着一起松动。
+
+美联储 2025 年 3 月关于前景不确定性上升的表述，其实已经很能说明问题。它听起来像一句标准政策措辞，但如果结合当时的通胀、增长和利率环境去看，意思并不难翻译：增长和通胀两边都还没有完全稳住。
+
+如果经济很强、通胀也很强，那市场知道怎么解释；如果经济很弱、通胀也很弱，市场也能大致预判后面的政策方向。最麻烦的，恰恰是现在这种状态：增长看起来有点放缓，价格压力却还留着一点黏性。这会让“低利率很快回来”这件事，突然没那么确定。
+
+[素材锚点-图表-01：美国 CPI 与 Core CPI｜第一部分第5段后｜折线图｜`/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/charts/png/chart-01_cpi_core.png`]
+
+![美国 CPI 与 Core CPI](/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/charts/png/chart-01_cpi_core.png)
+
+[素材锚点-图片-01：美联储与类滞胀信号信息图｜第一部分第6段后｜信息图｜`/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/fed_stagflation_signal_infographic.png`]
+
+![美联储与类滞胀信号信息图](/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/fed_stagflation_signal_infographic.png)
+
+所以，再通胀真正麻烦的地方，不是它听起来有多吓人，而是它会让一整套基于“利率会慢慢更舒服”的资产假设重新被质疑。
+
+## 二、为什么市场会把油价、关税和供应链重新连到一起
+
+很多人会觉得，这段时间市场总绕不开能源、关税和运输，看起来像是在被事件牵着走。其实这恰恰说明，市场正在重新盯价格传导。
+
+比如关税。如果它只是一条政策新闻，那当然只是消息面扰动；但如果它逐渐进入进口价格、企业成本、终端售价和居民预期，它就不再只是新闻，而会成为通胀链条里的一环。Powell 对关税冲击的公开提醒，本质上就是在告诉市场：不要把所有政策变化都当作短期噪音，因为它们是有可能重新进入价格系统的。
+
+再比如油价。油价的典型特征，就是它非常容易在短时间内改写市场对未来几个月通胀的想象。它不一定非得长期单边上涨，但只要波动够明显，市场就会立刻重新去问：接下来的通胀读数会不会变得更难看？运输和化工成本会不会再抬一轮？输入型价格压力会不会重新进入叙事？
+
+航运也是同一个逻辑。很多时候，市场看似在聊港口、海峡和航线，底层聊的其实仍然是成本、交付和预期。一旦运输时间、保险费用或者供应链稳定性出问题，价格压力就会被重新预支到交易里。
+
+[素材锚点-图表-02：油价、黄金与通胀预期｜第二部分第5段后｜折线图｜`/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/charts/png/chart-02_oil_gold_breakeven.png`]
+
+![油价、黄金与通胀预期](/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/charts/png/chart-02_oil_gold_breakeven.png)
+
+[素材锚点-图片-02：油价冲击与通胀预期信息图｜第二部分第6段后｜信息图｜`/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/oil_price_inflation_expectation_infographic.png`]
+
+![油价冲击与通胀预期信息图](/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/oil_price_inflation_expectation_infographic.png)
+
+所以你会发现，市场表面在盯消息，实质上盯的是这些消息会不会进入价格系统，并最终影响利率路径。
+
+## 三、再通胀会怎么改变资产的舒服区
+
+这部分其实是最关键的，因为任何宏观叙事，最后都要落到资产定价上。
+
+先说债券。只要通胀预期稍微往上抬一点，或者市场开始担心央行不会很快转向，长端收益率就很难痛快地下来。对于久期资产来说，真正的压力不是某一天的剧烈波动，而是市场对未来利率中枢的理解被持续改写。
+
+再说股票。这里不会是简单的“股市都不行了”，而是分化会明显加大。高估值成长资产最依赖的是低贴现率环境，一旦贴现率中枢抬高，它们的估值空间就会先被压缩。相对来说，那些更有资源属性、更有成本转嫁能力，或者本身受益于价格上行的方向，反而会更能适应这种环境。
+
+商品更复杂。油、金、铜常常会被市场一锅端地拿出来讲，但其实驱动完全不同。油更偏供给、运输和通胀传导；黄金则还要看实际利率、美元和避险情绪。如果后续继续写大类资产，就不能只用“商品会涨”这种话糊过去，而要拆开各自的主驱动。
+
+[素材锚点-图表-03：SPX 与美债收益率重估｜第三部分第5段后｜折线图｜`/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/charts/png/chart-03_spx_us10y.png`]
+
+![SPX 与美债收益率重估](/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/charts/png/chart-03_spx_us10y.png)
+
+[素材锚点-图片-03：资产重估路径图｜第三部分第6段后｜信息图｜`/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/asset_repricing_map_infographic.png`]
+
+![资产重估路径图](/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/asset_repricing_map_infographic.png)
+
+[素材锚点-图片-04：商品分化与资产映射｜第三部分第7段后｜信息图｜`/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/infographic_3.png`]
+
+![商品分化与资产映射](/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/infographic_3.png)
+
+一句话总结就是：再通胀不是让所有资产一起涨跌，而是会让市场重新分辨，谁更依赖低利率，谁更能适应高成本环境。
+
+## 四、市场最容易误会的地方是什么
+
+我觉得这轮市场里，最容易被误会的地方，是把“新闻”直接写成“结论”。
+
+比如一次油价上冲，就被直接翻译成“高通胀回来了”；一次短线回落，又被翻译成“风险已经结束了”。这种判断最大的问题，是只看情绪，不看变量。看上去立场很明确，实际上没有框架。
+
+真正值得跟踪的，至少有四件事：
+
+1. 能源价格能不能稳定回落。
+2. 核心通胀是不是继续降温。
+3. 居民和市场的预期会不会重新抬高。
+4. 长端利率会不会因此再次上修。
+
+只要这四件事里，有几件仍然不老实，再通胀就不会只是一个“讨论题”，而会继续影响估值和风险偏好。反过来，如果这些变量同步改善，那么市场对再通胀的担心自然会退潮。
+
+[素材锚点-图表-04：再通胀情景矩阵｜第四部分第6段后｜热力图｜`/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/charts/png/chart-04_scenario_heatmap.png`]
+
+![再通胀情景矩阵](/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/charts/png/chart-04_scenario_heatmap.png)
+
+这也是为什么，真正懂市场的人，通常不会把所有新闻都当成趋势。他们更关心的是，新闻背后的变量有没有开始共振。
+
+## 五、如果要把这条主线看清楚，观察顺序比情绪更重要
+
+再通胀这个题最容易被写坏的地方，是大家喜欢先带情绪，再找依据。其实顺序应该反过来：先看变量，再谈结论；先看传导，再谈立场。
+
+我会建议把观察顺序分成四层：
+
+第一层，看价格端。能源、运价、进口成本这些是不是重新抬头。
+
+第二层，看核心项。尤其是服务、工资和那些最不容易快速回落的部分。
+
+第三层，看预期端。包括 breakeven、消费者调查、美联储表述和市场的降息定价。
+
+第四层，看资产反应。成长股、长债、资源股和避险资产之间是否开始出现一致的再定价方向。
+
+如果四层里有两三层同时出现变化，那就不能再把市场理解成“情绪太多”。那说明主线真的在重估。
+
+[素材锚点-图片-05：再通胀连环画 01｜第五部分第4段后｜插图｜`/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/comic-01.png`]
+
+![再通胀连环画 01](/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/comic-01.png)
+
+[素材锚点-图片-06：再通胀连环画 02｜第五部分第5段后｜插图｜`/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/comic-02.png`]
+
+![再通胀连环画 02](/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/comic-02.png)
+
+反过来，如果只有新闻在动，变量并没有形成传导，那就更像是短期脉冲，而不是大主线。
+
+## 六、结尾：市场最该重估的，可能不是事件，而是想当然
+
+我觉得这轮市场最值得警惕的一点是，很多人不是没有看到风险，而是太想把风险重新解释成“很快就会过去”。
+
+但问题在于，只要通胀没有彻底离场，只要利率没有真正回到更舒服的下行轨道，资产就不可能完全按旧剧本来报价。
+
+所以这篇文章真正想说的，不是“通胀回来了”，而是：市场不能再假装通胀问题已经完结。只要这个前提还没有被真正验证，再通胀就仍然是未来一段时间绕不过去的一条主线。
+
+也许它不会每天都上热搜，但它会一直躲在估值和利率背后，默默决定市场愿意给什么价格。
+
+## 互动收束
+
+如果你也在看宏观和资产，可以留言聊聊：
+
+- 你现在最担心的是油价，还是长端利率？
+- 你觉得这轮市场最大的误判，到底是什么？
+- 如果只能盯两个指标，你会盯哪两个？
+
+## 视频素材包
+- 视频 1：[ source_link_01__bilibili_oil_macro_meeting.mp4 ](file:///Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/videos/source_links/source_link_01__bilibili_oil_macro_meeting.mp4)
+- 视频 2：[ source_link_02__bilibili_geopolitics_commentary.mp4 ](file:///Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/videos/source_links/source_link_02__bilibili_geopolitics_commentary.mp4)
+- 视频 3：[ 01__Global oil, gas shipping costs surge as Iran closes Strait of Hormuz.mp4 ](file:///Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/videos/web_search/01__Global oil, gas shipping costs surge as Iran closes Strait of Hormuz.mp4)
+- 视频 4：[ 01__Petroleum - Modern history of oil on a Map.mp4 ](file:///Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/videos/web_search/01__Petroleum - Modern history of oil on a Map.mp4)
+- 视频 5：[ 02__DRS⧸S2⧸E1⧸KING FED JUSTICE BLDG.mp4 ](file:///Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/videos/web_search/02__DRS⧸S2⧸E1⧸KING FED JUSTICE BLDG.mp4)
+- 视频 6：[ 03__Drone Video of Gdynia Container Port (4K).mp4 ](file:///Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/videos/web_search/03__Drone Video of Gdynia Container Port (4K).mp4)

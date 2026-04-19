@@ -1,0 +1,172 @@
+{
+  "run_id": "2026-04-11_085602",
+  "generated_at": "2026-04-11T08:56:02.241147+08:00",
+  "items": [
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Molotov cocktail is hurled at home of Sam Altman",
+      "url": "https://www.nytimes.com/2026/04/10/us/open-ai-sam-altman-molotov-cocktail.html",
+      "author_name": "enraged_camel",
+      "created_at": "2026-04-10T18:48:24Z",
+      "summary": "Hacker News 查询：OpenAI",
+      "score": 1263.6,
+      "provider_meta": {
+        "query": "OpenAI",
+        "points": 189.0,
+        "num_comments": 450.0
+      },
+      "rank_score": 15.0474
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "A public Agent Sandbox with Hermes inside",
+      "url": "https://sandbox-sba1ad15f841c32f2f.treadstone-ai.dev/",
+      "author_name": "earayu",
+      "created_at": "2026-04-10T22:38:50Z",
+      "summary": "Hacker News 查询：AI agents",
+      "score": 13.2,
+      "provider_meta": {
+        "query": "AI agents",
+        "points": 4.0,
+        "num_comments": 2.0
+      },
+      "rank_score": 14.149
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Anthropic's Claude Mythos isn't a sentient super-hacker, it's a sales pitch",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-claude-mythos-isnt-a-sentient-super-hacker-its-a-sales-pitch-claims-of-thousands-of-severe-zero-days-rely-on-just-198-manual-reviews",
+      "author_name": "edwardsrobbie",
+      "created_at": "2026-04-10T13:49:50Z",
+      "summary": "Hacker News 查询：Anthropic Claude",
+      "score": 117.6,
+      "provider_meta": {
+        "query": "Anthropic Claude",
+        "points": 34.0,
+        "num_comments": 20.0
+      },
+      "rank_score": 13.9835
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "AI Agent Proxy to help reduce token usage (Anthropic Only)",
+      "url": "https://github.com/Wuzu11517/agentic-proxy",
+      "author_name": "Wuzu",
+      "created_at": "2026-04-10T23:54:53Z",
+      "summary": "Hacker News 查询：AI agents",
+      "score": 6.6,
+      "provider_meta": {
+        "query": "AI agents",
+        "points": 2.0,
+        "num_comments": 1.0
+      },
+      "rank_score": 13.7028
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Bluesky users are mastering the fine art of blaming everything on \"vibe coding\"",
+      "url": "https://arstechnica.com/ai/2026/04/bluesky-users-are-mastering-the-fine-art-of-blaming-everything-on-vibe-coding/",
+      "author_name": "ulrischa",
+      "created_at": "2026-04-10T14:35:05Z",
+      "summary": "Hacker News 查询：Vibe Coding",
+      "score": 73.2,
+      "provider_meta": {
+        "query": "Vibe Coding",
+        "points": 26.0,
+        "num_comments": 6.0
+      },
+      "rank_score": 13.6452
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "With Claude Managed Agents, Anthropic wants to run your AI agents for you",
+      "url": "https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/",
+      "author_name": "mooreds",
+      "created_at": "2026-04-10T16:54:26Z",
+      "summary": "Hacker News 查询：Anthropic Claude",
+      "score": 4.8,
+      "provider_meta": {
+        "query": "Anthropic Claude",
+        "points": 2.0,
+        "num_comments": 0.0
+      },
+      "rank_score": 13.375
+    },
+    {
+      "provider": "reddit",
+      "source": "ai_hot/reddit",
+      "title": "GPT-5.4-x-high is worse than GPT-5.2-high (and many other models) in agentic coding on independent METR benchmark - one area where 5.4 was supposed to be ambiguously better than 5.2 it fails due to reward hacking",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1si0nmr/gpt54xhigh_is_worse_than_gpt52high_and_many_other/",
+      "author_name": "/u/Alex__007",
+      "created_at": "2026-04-10T22:02:03+00:00",
+      "summary": "Reddit r/OpenAI 热门讨论",
+      "score": 72,
+      "provider_meta": {
+        "subreddit": "OpenAI",
+        "rank": 4
+      },
+      "rank_score": 13.366
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Maki – the efficient coder (AI agent)",
+      "url": "https://maki.sh/",
+      "author_name": "simjnd",
+      "created_at": "2026-04-10T23:35:02Z",
+      "summary": "Hacker News 查询：AI agents",
+      "score": 11.4,
+      "provider_meta": {
+        "query": "AI agents",
+        "points": 4.0,
+        "num_comments": 1.0
+      },
+      "rank_score": 13.2641
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Show HN: Ark – AI agent runtime in Go that tracks cost per decision step",
+      "url": "https://github.com/atripati/ark",
+      "author_name": "atripat6",
+      "created_at": "2026-04-10T23:10:30Z",
+      "summary": "Hacker News 查询：AI agents",
+      "score": 9.0,
+      "provider_meta": {
+        "query": "AI agents",
+        "points": 3.0,
+        "num_comments": 1.0
+      },
+      "rank_score": 13.0954
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Anthropic injects reasoning_effort=25 into Claude.ai consumer system prompts",
+      "url": "https://imgur.com/AOAs7Aq",
+      "author_name": "JunePanda",
+      "created_at": "2026-04-10T23:08:31Z",
+      "summary": "Hacker News 查询：Anthropic Claude",
+      "score": 9.0,
+      "provider_meta": {
+        "query": "Anthropic Claude",
+        "points": 3.0,
+        "num_comments": 1.0
+      },
+      "rank_score": 13.0949
+    }
+  ],
+  "meta": {
+    "candidate_total": 55,
+    "providers": {
+      "hn": 9,
+      "reddit": 1
+    }
+  }
+}

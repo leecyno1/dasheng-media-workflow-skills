@@ -1,0 +1,19 @@
+{
+  "run_id": "2026-04-16_155809",
+  "gate": "Material Gate",
+  "status": "pending_editor_review",
+  "topics": [
+    {
+      "topic_id": "topic-1",
+      "title": "日本核武器能力披露背后：从和平宪法到军事化的结构性转变",
+      "editor_status": "pending_review",
+      "accepted_assets": [],
+      "replace_assets": [],
+      "rejected_assets": []
+    }
+  ],
+  "instructions": [
+    "编辑确认可用素材后，将 status 改为 approved / accepted / finalized。",
+    "rewrite 只能读取 canonical material_manifest.json + material_acceptance.json。"
+  ]
+}

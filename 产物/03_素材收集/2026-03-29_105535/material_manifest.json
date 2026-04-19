@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-03-29_105535",
+  "stage": "material",
+  "upstream_brief": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/inputs/content_briefs_selected.json",
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets",
+  "selected_topics": [
+    "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+    "半导体突然很热闹，但行业最危险的误判可能才刚开始",
+    "一键安装OpenClaw+常用skills，你奶奶5分钟也能用上龙虾"
+  ],
+  "topic_types": [
+    {
+      "topic_id": "topic-6",
+      "topic_type": "finance_macro",
+      "layer5_template": "market_story"
+    },
+    {
+      "topic_id": "topic-10",
+      "topic_type": "general_commentary",
+      "layer5_template": "story_page"
+    },
+    {
+      "topic_id": "topic-11",
+      "topic_type": "geopolitics",
+      "layer5_template": "geo_timeline_map"
+    }
+  ],
+  "asset_counts": {
+    "csv": 7,
+    "png": 41,
+    "jpg": 5,
+    "mp4": 2,
+    "json": 54
+  },
+  "status": "material_executed",
+  "execution_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/execution_manifest.json",
+  "updated_at": "2026-03-29T13:51:46.479749"
+}

@@ -1,0 +1,537 @@
+{
+  "topic_slug": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+  "topic_type": "general_commentary",
+  "title": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+  "thesis": "如果一类信息反复出现，重点应从单条新闻转向结构变量。",
+  "claim_bindings": [
+    {
+      "claim_id": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化-claim-01",
+      "section_id": "section-01",
+      "statement": "证明反复出现的共同变量是什么。",
+      "counterpoint": "热闹只是入口，结构才是正文。",
+      "missing_proof": [
+        "缺少官方或监管口径，需要补权威原文或原始数据。",
+        "缺少主流媒体交叉印证，需要补英文或权威财经报道。"
+      ],
+      "chart_need": "核心变量趋势图"
+    },
+    {
+      "claim_id": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化-claim-02",
+      "section_id": "section-02",
+      "statement": "证明为什么它不只是单条热点。",
+      "counterpoint": "热闹只是入口，结构才是正文。",
+      "missing_proof": [
+        "缺少官方或监管口径，需要补权威原文或原始数据。",
+        "缺少主流媒体交叉印证，需要补英文或权威财经报道。"
+      ],
+      "chart_need": null
+    },
+    {
+      "claim_id": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化-claim-03",
+      "section_id": "section-03",
+      "statement": "证明读者能从中获得稳定判断框架。",
+      "counterpoint": "热闹只是入口，结构才是正文。",
+      "missing_proof": [
+        "缺少官方或监管口径，需要补权威原文或原始数据。",
+        "缺少主流媒体交叉印证，需要补英文或权威财经报道。"
+      ],
+      "chart_need": null
+    }
+  ],
+  "evidence_items": [
+    {
+      "id": "other-e01",
+      "title": "📊 Evening Market Summary\n\nBTC: $70,931 (🟢 0.32%)\nETH: $2,162 (🟢 0.92%)\n\nMarket i",
+      "url": "https://x.com/smfuns/status/2036427999000797367",
+      "source": "采集来源",
+      "platform": "",
+      "note": "📊 Evening Market Summary BTC: $70,931 (🟢 0.32%) ETH: $2,162 (🟢 0.92%) Market i；热度=1",
+      "heat": null
+    },
+    {
+      "id": "other-e02",
+      "title": "Want to spot crypto moves early? Watch sentiment shifts, RSI divergences, and vo",
+      "url": "https://x.com/CForecast65602/status/2036428458549543143",
+      "source": "采集来源",
+      "platform": "",
+      "note": "Want to spot crypto moves early? Watch sentiment shifts, RSI divergences, and vo；热度=1",
+      "heat": null
+    },
+    {
+      "id": "other-e03",
+      "title": "📊 GM Green but weak\n\nCrypto opens green but sentiment still behind price\n\n• BTC",
+      "url": "https://x.com/Amelia_loov/status/2036427968436723978",
+      "source": "采集来源",
+      "platform": "",
+      "note": "📊 GM Green but weak Crypto opens green but sentiment still behind price • BTC；热度=2",
+      "heat": null
+    },
+    {
+      "id": "other-e04",
+      "title": "🚨Bitcoin -\n\nBTC sitting at $71,000👀\nWho’s in LONGS🟢\nWho’s in SHORTS🔴\nComment dow",
+      "url": "https://x.com/adityatradelive/status/2036429737808240921",
+      "source": "采集来源",
+      "platform": "",
+      "note": "🚨Bitcoin - BTC sitting at $71,000👀 Who’s in LONGS🟢 Who’s in SHORTS🔴 Comment dow；热度=2",
+      "heat": null
+    }
+  ],
+  "chart_anchors": [
+    {
+      "anchor_id": "chart-01",
+      "title": "主判断核心变量趋势图",
+      "purpose": "验证主线变量是否在中期趋势上成立",
+      "data_sources": [
+        "akshare",
+        "tushare",
+        "官方统计",
+        "FRED"
+      ],
+      "chart_type": "line"
+    },
+    {
+      "anchor_id": "chart-02",
+      "title": "事件冲击与市场反应对照图",
+      "purpose": "把事件与价格/情绪/利率变化放在同一时间轴",
+      "data_sources": [
+        "akshare",
+        "tushare",
+        "新浪财经"
+      ],
+      "chart_type": "dual_axis"
+    },
+    {
+      "anchor_id": "chart-03",
+      "title": "结构拆解图",
+      "purpose": "把总判断拆成 3-5 个支撑维度",
+      "data_sources": [
+        "官方统计",
+        "研究报告",
+        "手工整理 CSV"
+      ],
+      "chart_type": "bar"
+    },
+    {
+      "anchor_id": "chart-04",
+      "title": "风险情景图",
+      "purpose": "给出不同情景下的观察变量与触发条件",
+      "data_sources": [
+        "手工整理 CSV"
+      ],
+      "chart_type": "scenario"
+    }
+  ],
+  "chart_quality_gate": {
+    "enabled": true,
+    "version": "1.0",
+    "thresholds": {
+      "cv_min": 0.03,
+      "slope_abs_min": 0.005,
+      "r2_min": 0.25,
+      "trend_strength_min": 0.3,
+      "heatmap_var_min": 0.05
+    },
+    "fallback": {
+      "mode": "logical_relation_table",
+      "outputs": [
+        "charts/csv/*.csv",
+        "charts/markdown/*.md"
+      ],
+      "trigger_rule": "当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格"
+    }
+  },
+  "web_search": {
+    "image_queries": [
+      {
+        "query": "管线 portrait news photo",
+        "entity_type": "person",
+        "entity": "管线",
+        "priority": 300,
+        "channel": "wikimedia"
+      },
+      {
+        "query": "管线 speech press conference",
+        "entity_type": "person",
+        "entity": "管线",
+        "priority": 299,
+        "channel": "wikimedia"
+      },
+      {
+        "query": "印证 portrait news photo",
+        "entity_type": "person",
+        "entity": "印证",
+        "priority": 298,
+        "channel": "wikimedia"
+      },
+      {
+        "query": "印证 speech press conference",
+        "entity_type": "person",
+        "entity": "印证",
+        "priority": 297,
+        "channel": "wikimedia"
+      },
+      {
+        "query": "BTC headquarters exterior",
+        "entity_type": "org",
+        "entity": "BTC",
+        "priority": 210,
+        "channel": "wikimedia"
+      },
+      {
+        "query": "SHORTS headquarters exterior",
+        "entity_type": "org",
+        "entity": "SHORTS",
+        "priority": 209,
+        "channel": "wikimedia"
+      },
+      {
+        "query": "LONGS headquarters exterior",
+        "entity_type": "org",
+        "entity": "LONGS",
+        "priority": 208,
+        "channel": "wikimedia"
+      },
+      {
+        "query": "这轮高频讨论里 news conference",
+        "entity_type": "topic",
+        "entity": "",
+        "priority": 100,
+        "channel": "wikimedia"
+      },
+      {
+        "query": "这轮高频讨论里 city crowd",
+        "entity_type": "topic",
+        "entity": "",
+        "priority": 99,
+        "channel": "wikimedia"
+      },
+      {
+        "query": "这轮高频讨论里 office team",
+        "entity_type": "topic",
+        "entity": "",
+        "priority": 98,
+        "channel": "wikimedia"
+      }
+    ],
+    "news_screenshot_queries": [
+      {
+        "query": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化 新闻",
+        "channel": "news_screenshot",
+        "priority": 180
+      },
+      {
+        "query": "这轮高频讨论里 latest news",
+        "channel": "news_screenshot",
+        "priority": 179
+      },
+      {
+        "query": "管线 最新新闻",
+        "channel": "news_screenshot",
+        "priority": 178
+      },
+      {
+        "query": "印证 最新新闻",
+        "channel": "news_screenshot",
+        "priority": 177
+      }
+    ],
+    "video_queries": [
+      "这轮高频讨论里 documentary b roll 4k",
+      "这轮高频讨论里 city aerial 4k",
+      "这轮高频讨论里 public crowd 4k",
+      "这轮高频讨论里 government meeting 4k",
+      "这轮高频讨论里 news conference 4k live",
+      "这轮高频讨论里 industrial aerial 4k",
+      "这轮高频讨论里 interview raw footage",
+      "这轮高频讨论里 official briefing live stream"
+    ]
+  },
+  "video_quality_policy": {
+    "min_height": 0,
+    "min_duration_seconds": 8,
+    "min_scene_changes": 2,
+    "min_scene_change_rate": 0.08,
+    "allow_news_live_or_interview": true,
+    "block_self_media_talking_head": true,
+    "reject_screenshot_montage": true,
+    "report_fields": [
+      "source_category",
+      "source_ok",
+      "resolution_height",
+      "duration_seconds",
+      "scene_changes",
+      "scene_change_rate",
+      "anti_screenshot_montage_pass",
+      "final_pass",
+      "fail_reasons"
+    ]
+  },
+  "entity_signals": {
+    "top_keywords": [
+      {
+        "term": "热闹只是入口",
+        "count": 6
+      },
+      {
+        "term": "结构才是正文",
+        "count": 6
+      },
+      {
+        "term": "BTC",
+        "count": 6
+      },
+      {
+        "term": "sentiment",
+        "count": 4
+      },
+      {
+        "term": "Market",
+        "count": 4
+      },
+      {
+        "term": "but",
+        "count": 4
+      },
+      {
+        "term": "Who",
+        "count": 4
+      },
+      {
+        "term": "in",
+        "count": 4
+      }
+    ],
+    "people": [
+      {
+        "name": "管线",
+        "count": 2
+      },
+      {
+        "name": "印证",
+        "count": 1
+      }
+    ],
+    "countries": [],
+    "orgs": [
+      {
+        "name": "BTC",
+        "count": 6
+      },
+      {
+        "name": "SHORTS",
+        "count": 2
+      },
+      {
+        "name": "LONGS",
+        "count": 2
+      },
+      {
+        "name": "ETH",
+        "count": 2
+      },
+      {
+        "name": "RSI",
+        "count": 2
+      },
+      {
+        "name": "GM",
+        "count": 2
+      }
+    ]
+  },
+  "generated": {
+    "cover_prompt": "围绕“这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化”生成封面，突出 这轮高频讨论里 与 真正值得写的不是表面热度 的冲突感，适合财经/时政深度内容封面，避免口播截图感。",
+    "infographic_prompts": [
+      "基于题目“这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化”生成一张 dense-modules 信息图，拆出 4 个核心观点、4 个证据位、2 个风险位。",
+      "基于主判断“如果一类信息反复出现，重点应从单条新闻转向结构变量。”生成一张 hierarchical-layers 信息图，把表象、机制、影响、建议四层可视化。",
+      "为“这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化”生成一张 dashboard 风格信息图，包含关键指标、关键事件、关键结论。"
+    ],
+    "comic_storyboard": [
+      {
+        "frame_id": "comic-01",
+        "title": "Hook",
+        "visual_prompt": "连环画第 1 格：这轮高频讨论里 相关冲突现场，多人场景，动态感强。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "先抛问题：这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化"
+      },
+      {
+        "frame_id": "comic-02",
+        "title": "Thesis",
+        "visual_prompt": "连环画第 2 格：这轮高频讨论里 与 真正值得写的不是表面热度 的对峙式构图。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "给判断：如果一类信息反复出现，重点应从单条新闻转向结构变量。"
+      },
+      {
+        "frame_id": "comic-03",
+        "title": "Mechanism-1",
+        "visual_prompt": "连环画第 3 格：机制拆解信息图，突出 这轮高频讨论里。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "第一层机制"
+      },
+      {
+        "frame_id": "comic-04",
+        "title": "Mechanism-2",
+        "visual_prompt": "连环画第 4 格：关键变量图表与群体场景并置。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "第二层机制"
+      },
+      {
+        "frame_id": "comic-05",
+        "title": "Evidence-1",
+        "visual_prompt": "连环画第 5 格：数据面板 + 人群/市场/议会现场。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "证据 1"
+      },
+      {
+        "frame_id": "comic-06",
+        "title": "Evidence-2",
+        "visual_prompt": "连环画第 6 格：地图/路线/结构图。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "证据 2"
+      },
+      {
+        "frame_id": "comic-07",
+        "title": "Conflict",
+        "visual_prompt": "连环画第 7 格：多方拉扯场景，增强对立与张力。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "冲突升级"
+      },
+      {
+        "frame_id": "comic-08",
+        "title": "Risk",
+        "visual_prompt": "连环画第 8 格：风险分叉图或情景树。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "如果继续演化会怎样"
+      },
+      {
+        "frame_id": "comic-09",
+        "title": "Advice",
+        "visual_prompt": "连环画第 9 格：投资/观察清单卡片。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "给建议或观察变量"
+      },
+      {
+        "frame_id": "comic-10",
+        "title": "CTA",
+        "visual_prompt": "连环画第 10 格：回到主问题的封口画面。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "结尾收束与 CTA"
+      }
+    ],
+    "meme_prompts": [
+      "梗图：两拨人对着同一新闻各喊各的，最后图表从背后砸下来，表达“观点要回到证据”。",
+      "梗图：作者追着热点跑，数据在后面追作者，表达“别只看情绪，先看变量”。",
+      "梗图：一篇稿子前半段像吵架，后半段被图表收束，表达“讨论最终要回到结构”。"
+    ],
+    "funny_comic_character_prompts": [
+      "搞笑漫画人物设定 1：新闻主播，主题“这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化”，围绕 这轮高频讨论里 / 真正值得写的不是表面热度。简单卡通线条、纯色背景、轻松表情、低细节，不要复杂光影与写实质感。",
+      "搞笑漫画人物设定 2：数据分析师，主题“这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化”，围绕 这轮高频讨论里 / 真正值得写的不是表面热度。简单卡通线条、纯色背景、轻松表情、低细节，不要复杂光影与写实质感。",
+      "搞笑漫画人物设定 3：路人评论员，主题“这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化”，围绕 这轮高频讨论里 / 真正值得写的不是表面热度。简单卡通线条、纯色背景、轻松表情、低细节，不要复杂光影与写实质感。"
+    ]
+  },
+  "layer5": {
+    "template_id": "story_page",
+    "template_name": "通用故事面板 (Story Page)",
+    "worldmonitor_project": "/Volumes/PSSD/Projects/worldmonitor",
+    "worldmonitor_data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+    "worldmonitor_public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+    "worldmonitor_entry": "index.html",
+    "proxy_port": 8787,
+    "current_status": "inactive",
+    "inputs": [
+      "article.md",
+      "chart_gallery.json",
+      "scene_plan.json"
+    ],
+    "preferred_components": [
+      "CountryTimeline"
+    ],
+    "page_modules": [
+      "hero-summary",
+      "chart-gallery",
+      "media-gallery"
+    ],
+    "chart_anchor_ids": [
+      "chart-01",
+      "chart-02",
+      "chart-03",
+      "chart-04"
+    ],
+    "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+    "artifact_tag": "layer5_story_page",
+    "topic_slug": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+    "topic_title": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+    "core_claim": "如果一类信息反复出现，重点应从单条新闻转向结构变量。",
+    "required_csvs": [
+      "charts/csv/chart-01.csv",
+      "charts/csv/chart-02.csv",
+      "charts/csv/chart-03.csv",
+      "charts/csv/chart-04.csv"
+    ],
+    "required_pngs": [
+      "charts/png/chart-01.png",
+      "charts/png/chart-02.png",
+      "charts/png/chart-03.png",
+      "charts/png/chart-04.png"
+    ],
+    "narrative_schema": "thesis_then_evidence_then_risks",
+    "data_granularity": "monthly",
+    "risk_scenarios": [],
+    "key_metrics_to_emit": [],
+    "layout_hint": "chart_gallery_centered"
+  },
+  "recommended_sources": [
+    "akshare",
+    "tushare",
+    "新浪财经",
+    "人民网",
+    "新华社",
+    "公开官方声明",
+    "https://x.com/smfuns/status/2036427999000797367",
+    "https://x.com/CForecast65602/status/2036428458549543143",
+    "https://x.com/Amelia_loov/status/2036427968436723978",
+    "https://x.com/adityatradelive/status/2036429737808240921"
+  ],
+  "scene_plan": [
+    {
+      "title": "Hook",
+      "visual": "这轮高频讨论里 相关冲突现场，多人场景，动态感强",
+      "caption": "先抛问题：这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化"
+    },
+    {
+      "title": "Thesis",
+      "visual": "这轮高频讨论里 与 真正值得写的不是表面热度 的对峙式构图",
+      "caption": "给判断：如果一类信息反复出现，重点应从单条新闻转向结构变量。"
+    },
+    {
+      "title": "Mechanism-1",
+      "visual": "机制拆解信息图，突出 这轮高频讨论里",
+      "caption": "第一层机制"
+    },
+    {
+      "title": "Mechanism-2",
+      "visual": "关键变量图表与群体场景并置",
+      "caption": "第二层机制"
+    },
+    {
+      "title": "Evidence-1",
+      "visual": "数据面板 + 人群/市场/议会现场",
+      "caption": "证据 1"
+    },
+    {
+      "title": "Evidence-2",
+      "visual": "地图/路线/结构图",
+      "caption": "证据 2"
+    },
+    {
+      "title": "Conflict",
+      "visual": "多方拉扯场景，增强对立与张力",
+      "caption": "冲突升级"
+    },
+    {
+      "title": "Risk",
+      "visual": "风险分叉图或情景树",
+      "caption": "如果继续演化会怎样"
+    },
+    {
+      "title": "Advice",
+      "visual": "投资/观察清单卡片",
+      "caption": "给建议或观察变量"
+    },
+    {
+      "title": "CTA",
+      "visual": "回到主问题的封口画面",
+      "caption": "结尾收束与 CTA"
+    }
+  ]
+}

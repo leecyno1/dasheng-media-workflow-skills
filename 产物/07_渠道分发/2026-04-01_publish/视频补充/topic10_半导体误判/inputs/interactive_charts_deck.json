@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "topic10_半导体误判｜互动图表视频",
+    "description": "来自历史图表 CSV 的动态图表视频补充",
+    "version": "2026.04.01"
+  },
+  "global": {
+    "factoryVersion": "v1.0.0",
+    "autoplay": true,
+    "autoplayGapMs": 800,
+    "tabSwitchRestart": true
+  },
+  "scenes": [
+    {
+      "id": "topic10-chart-01",
+      "template": "barGrow",
+      "label": "图表：global market size",
+      "tag": "interactive-chart",
+      "durationMs": 6800,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6800,
+        "enter": {
+          "type": "grow",
+          "durationMs": 3400,
+          "staggerMs": 140,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "bars": [
+          1,
+          2
+        ],
+        "labels": [
+          "772.2",
+          "975.5"
+        ]
+      }
+    },
+    {
+      "id": "topic10-chart-02",
+      "template": "barGrow",
+      "label": "图表：platform mix",
+      "tag": "interactive-chart",
+      "durationMs": 6800,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6800,
+        "enter": {
+          "type": "grow",
+          "durationMs": 3400,
+          "staggerMs": 140,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "bars": [
+          59.0,
+          28.0,
+          5.0,
+          5.0,
+          3.0
+        ],
+        "labels": [
+          "HPC",
+          "Smartphone",
+          "IoT",
+          "Automotive",
+          "Others"
+        ]
+      }
+    },
+    {
+      "id": "topic10-chart-03",
+      "template": "barGrow",
+      "label": "图表：fab capex",
+      "tag": "interactive-chart",
+      "durationMs": 6800,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6800,
+        "enter": {
+          "type": "grow",
+          "durationMs": 3400,
+          "staggerMs": 140,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "bars": [
+          1,
+          2
+        ],
+        "labels": [
+          "110",
+          "130"
+        ]
+      }
+    },
+    {
+      "id": "topic10-chart-04",
+      "template": "barGrow",
+      "label": "图表：segment growth index",
+      "tag": "interactive-chart",
+      "durationMs": 6800,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6800,
+        "enter": {
+          "type": "grow",
+          "durationMs": 3400,
+          "staggerMs": 140,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "bars": [
+          135.0,
+          128.0,
+          108.0,
+          106.0,
+          105.0
+        ],
+        "labels": [
+          "Memory",
+          "Logic",
+          "Analog",
+          "Sensors",
+          "Discrete"
+        ]
+      }
+    }
+  ]
+}

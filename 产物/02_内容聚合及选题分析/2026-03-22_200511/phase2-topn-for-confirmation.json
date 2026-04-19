@@ -1,0 +1,49 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "ai_tools_open_source",
+    "topic_name": "AI工具与开源效率",
+    "composite_heat": 21.9081,
+    "count": 24,
+    "platform_count": 4,
+    "source_count": 3,
+    "top_keywords": [
+      "ai",
+      "开源",
+      "工具",
+      "人工智能",
+      "github"
+    ]
+  },
+  {
+    "rank": 3,
+    "topic_id": "tech_industry_hardware",
+    "topic_name": "科技产业与硬件竞争",
+    "composite_heat": 8.1,
+    "count": 12,
+    "platform_count": 1,
+    "source_count": 1,
+    "top_keywords": [
+      "云",
+      "算力",
+      "芯片",
+      "发布"
+    ]
+  },
+  {
+    "rank": 4,
+    "topic_id": "geopolitics_security",
+    "topic_name": "地缘政治与安全冲突",
+    "composite_heat": 7.105,
+    "count": 8,
+    "platform_count": 1,
+    "source_count": 1,
+    "top_keywords": [
+      "制裁",
+      "发布",
+      "战争",
+      "原油",
+      "军事"
+    ]
+  }
+]

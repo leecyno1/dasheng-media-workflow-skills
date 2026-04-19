@@ -1,0 +1,103 @@
+{
+  "topic": "topic-japan-nuclear-capability-diplomatic-crisis",
+  "generated_at": "2026-04-16T21:08:05+0800",
+  "policy": {
+    "min_height": 0,
+    "min_duration_seconds": 8,
+    "min_scene_changes": 2,
+    "min_scene_change_rate": 0.08,
+    "allow_news_live_or_interview": true,
+    "block_self_media_talking_head": true,
+    "reject_screenshot_montage": true
+  },
+  "audit_fields": {
+    "candidate_level": [
+      "source_category",
+      "source_ok",
+      "resolution_height",
+      "duration_seconds_hint",
+      "pre_download_pass",
+      "reject_reasons"
+    ],
+    "file_level": [
+      "source_traceable",
+      "resolution_height",
+      "duration_seconds",
+      "scene_changes",
+      "scene_change_rate",
+      "anti_screenshot_montage_pass",
+      "final_pass",
+      "fail_reasons"
+    ]
+  },
+  "query_quality_summary": [
+    {
+      "query": "Japan politics parliament session 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "Japan politics election rally crowd 4k live feed",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "Japan politics military drill 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "Japan politics navy fleet aerial 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "Japan politics port shipping lane 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "Japan politics government building exterior 4k news live",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "Japan politics city crowd documentary 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    },
+    {
+      "query": "Japan politics diplomatic summit interview raw footage",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  ],
+  "summary": {
+    "candidate_total": 24,
+    "candidate_qualified": 24,
+    "candidate_rejected": 0,
+    "candidate_reject_reason_counts": {},
+    "download_attempts": 3,
+    "download_passed": 2,
+    "download_failed": 1,
+    "download_fail_reason_counts": {
+      "download_failed_or_missing_file": 1
+    }
+  }
+}

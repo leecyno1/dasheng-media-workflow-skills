@@ -1,0 +1,57 @@
+{
+  "run_id": "2026-04-07_141203",
+  "gate": "Final Structure Gate",
+  "status": "approved",
+  "generated_at": "2026-04-07T15:10:00+08:00",
+  "instructions": [
+    "编辑确认文章结构后，将状态改为 approved",
+    "只有状态为 approved，material 阶段才能执行"
+  ],
+  "topics": [
+    {
+      "topic_id": "topic-hormuz-strait-energy-order",
+      "title": "霍尔木兹海峡封锁：全球能源供应链的结构性重构",
+      "draft_file": "topic-hormuz-strait-energy-order.md",
+      "doc_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-07_141203/topic-hormuz-strait-energy-order.md",
+      "structure": {
+        "sections": [
+          "开头（事件钩子）",
+          "表象：市场只看到了油价波动",
+          "深层：供应链控制权的争夺战",
+          "影响：三条传导链路正在形成",
+          "结语：供应链安全时代的投资逻辑"
+        ]
+      }
+    },
+    {
+      "topic_id": "topic-sodium-ion-battery-breakthrough",
+      "title": "钠离子电池全球首次突破：中国如何改写储能产业格局",
+      "draft_file": "topic-sodium-ion-battery-breakthrough.md",
+      "doc_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-07_141203/topic-sodium-ion-battery-breakthrough.md",
+      "structure": {
+        "sections": [
+          "开头（痛点共鸣）",
+          "锂依赖的三重困境",
+          "钠离子电池：破局的三把钥匙",
+          "实操验证：储能电站的成本革命",
+          "结语：从锂依赖到技术多元化"
+        ]
+      }
+    },
+    {
+      "topic_id": "topic-us-stock-storage-sector-surge",
+      "title": "存储板块创历史新高：AI 算力需求如何改写半导体投资逻辑",
+      "draft_file": "topic-us-stock-storage-sector-surge.md",
+      "doc_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-07_141203/topic-us-stock-storage-sector-surge.md",
+      "structure": {
+        "sections": [
+          "开头（痛点共鸣）",
+          "周期性思维的三个误区",
+          "三条投资主线：从周期股到成长股",
+          "实操验证：存储股的估值重构",
+          "结语：从周期股到成长股的范式转变"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-04-05_000150",
+  "generated_at": "2026-04-04T23:46:14.365984",
+  "stage": "brief",
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-04_204231/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_000150",
+  "manual_topics": [],
+  "candidate_topics": [
+    "伊朗冲突升级，真正变贵的是地区秩序成本",
+    "中东局势背后，外交部关注的长期稳定代价",
+    "油价攀升背后，市场忽视了利率预期的潜在回摆",
+    "鲍威尔的通胀压力与市场利率预期裂痕",
+    "美国风险溢价变动，川普因素驱动的变量重构",
+    "黄金价格波动反映的降息风险溢价重估",
+    "英伟达回暖，不等于半导体行业全面复苏",
+    "半导体封测投资回暖，行业复苏仍存不确定性",
+    "AI这波，真正拉开差距的不是功能，而是工作流的落地能力"
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_000150/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_000150/02_研究Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_000150/02_编辑Brief_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_000150/topic_cards.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_000150/selected_topics.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_000150/selected_topics.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_000150/brief_manifest.json"
+  ],
+  "next_stage": "draft"
+}

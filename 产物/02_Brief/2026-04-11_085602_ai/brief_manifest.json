@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-04-11_085602",
+  "stage": "brief",
+  "generation_method": "ai",
+  "generated_at": "2026-04-11T09:00:00+08:00",
+  "input_sources": {
+    "brief_input": "产物/01_内容采集/2026-04-11_085602/brief_input.json",
+    "channel_top10": "产物/01_内容采集/2026-04-11_085602/channel_top10.json",
+    "event_clusters": "产物/01_内容采集/2026-04-11_085602/event_clusters.json"
+  },
+  "outputs": {
+    "topic_cards": "产物/02_Brief/2026-04-11_085602_ai/topic_cards.json",
+    "selected_topics_gate": "产物/02_Brief/2026-04-11_085602_ai/selected_topics.json",
+    "editor_brief": "产物/02_Brief/2026-04-11_085602_ai/02_编辑Brief库.md"
+  },
+  "statistics": {
+    "candidate_topics_count": 8,
+    "selected_topics_count": 0,
+    "avg_composite_score": 8.1
+  },
+  "gate_status": "pending_editor_review",
+  "next_stage": "draft",
+  "notes": [
+    "AI生成的选题已按综合评分排序",
+    "编辑需要从候选题中选择2-3个进入初稿阶段",
+    "选择完成后需更新selected_topics.json的status为approved"
+  ]
+}

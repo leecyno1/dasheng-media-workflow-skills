@@ -1,0 +1,212 @@
+{
+  "run_id": "2026-04-16_155809",
+  "generated_at": "2026-04-16T15:58:09.472596+08:00",
+  "categories": {
+    "dynamic_tokens": [
+      {
+        "name": "伊朗",
+        "count": 24
+      },
+      {
+        "name": "日本",
+        "count": 22
+      },
+      {
+        "name": "美国",
+        "count": 21
+      },
+      {
+        "name": "黄金",
+        "count": 19
+      },
+      {
+        "name": "特朗普",
+        "count": 18
+      },
+      {
+        "name": "bili",
+        "count": 16
+      },
+      {
+        "name": "油价",
+        "count": 14
+      },
+      {
+        "name": "宏观/市场情绪",
+        "count": 13
+      },
+      {
+        "name": "ai",
+        "count": 11
+      },
+      {
+        "name": "原油",
+        "count": 11
+      },
+      {
+        "name": "油价/地缘冲突",
+        "count": 11
+      },
+      {
+        "name": "美联储",
+        "count": 11
+      },
+      {
+        "name": "公众号最新文章",
+        "count": 11
+      },
+      {
+        "name": "日本/使馆/外交",
+        "count": 10
+      },
+      {
+        "name": "https",
+        "count": 9
+      }
+    ],
+    "sectors": [
+      {
+        "name": "AI",
+        "count": 12
+      },
+      {
+        "name": "人工智能",
+        "count": 2
+      },
+      {
+        "name": "半导体",
+        "count": 2
+      },
+      {
+        "name": "新能源",
+        "count": 1
+      },
+      {
+        "name": "算力",
+        "count": 1
+      },
+      {
+        "name": "芯片",
+        "count": 1
+      }
+    ],
+    "orgs": [
+      {
+        "name": "美联储",
+        "count": 11
+      },
+      {
+        "name": "外交部",
+        "count": 3
+      },
+      {
+        "name": "OpenAI",
+        "count": 3
+      },
+      {
+        "name": "FED",
+        "count": 1
+      },
+      {
+        "name": "日本央行",
+        "count": 1
+      }
+    ],
+    "commodities": [
+      {
+        "name": "黄金",
+        "count": 19
+      },
+      {
+        "name": "油价",
+        "count": 14
+      },
+      {
+        "name": "原油",
+        "count": 11
+      },
+      {
+        "name": "白银",
+        "count": 3
+      }
+    ],
+    "countries": [
+      {
+        "name": "伊朗",
+        "count": 24
+      },
+      {
+        "name": "日本",
+        "count": 22
+      },
+      {
+        "name": "美国",
+        "count": 21
+      },
+      {
+        "name": "中国",
+        "count": 11
+      },
+      {
+        "name": "以色列",
+        "count": 7
+      },
+      {
+        "name": "中东",
+        "count": 3
+      },
+      {
+        "name": "俄罗斯",
+        "count": 3
+      }
+    ],
+    "people": [
+      {
+        "name": "特朗普",
+        "count": 18
+      },
+      {
+        "name": "高市早苗",
+        "count": 6
+      },
+      {
+        "name": "OpenAI",
+        "count": 3
+      },
+      {
+        "name": "川普",
+        "count": 2
+      },
+      {
+        "name": "鲍威尔",
+        "count": 2
+      },
+      {
+        "name": "马斯克",
+        "count": 2
+      }
+    ],
+    "policies": [
+      {
+        "name": "降息",
+        "count": 9
+      },
+      {
+        "name": "停火",
+        "count": 5
+      },
+      {
+        "name": "加息",
+        "count": 4
+      },
+      {
+        "name": "关税",
+        "count": 1
+      },
+      {
+        "name": "制裁",
+        "count": 1
+      }
+    ]
+  }
+}

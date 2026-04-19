@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "id": "2026-04-10_074121:t003:reasoning",
+    "object_type": "ReasoningSheet",
+    "run_id": "2026-04-10_074121",
+    "version": "1.0.0",
+    "status": "ready",
+    "generated_by": "build_stage3_draft.py",
+    "input_digest": "t003::全球央行大规模抛售美债引发金融市场系统性风险担忧",
+    "upstream_ids": [
+      "2026-04-10_074121:t003:topic-card"
+    ],
+    "doc_refs": [],
+    "created_at": "2026-04-10T09:41:05.781832+08:00",
+    "updated_at": "2026-04-10T09:41:05.781832+08:00"
+  },
+  "topic_id": "t003",
+  "title": "全球央行大规模抛售美债引发金融市场系统性风险担忧",
+  "core_thesis": "央行层面集体抛售美债非零星事件，反映对美债安全性的信心动摇，可能触发市场剧烈震荡及资本重构。",
+  "editor_note": "保持独立成稿，不与其他题混写。",
+  "selection_reason": "按用户指令直接进入第三阶段，分别生成独立 AI 标准初稿。",
+  "claims": [
+    {
+      "claim_id": "t003-claim-01",
+      "section_id": "section-01",
+      "statement": "央行美债持仓和交易数据",
+      "counterpoint": "基于权威官方信号，体现央行行为对美债市场及全球金融格局的冲击，区别于普通市场传闻。",
+      "missing_proof": [
+        "央行美债持仓和交易数据",
+        "市场流动性与资金流向监测"
+      ],
+      "chart_need": "美债抛售热度地图"
+    },
+    {
+      "claim_id": "t003-claim-02",
+      "section_id": "section-02",
+      "statement": "市场流动性与资金流向监测",
+      "counterpoint": "基于权威官方信号，体现央行行为对美债市场及全球金融格局的冲击，区别于普通市场传闻。",
+      "missing_proof": [
+        "央行美债持仓和交易数据",
+        "市场流动性与资金流向监测"
+      ],
+      "chart_need": "市场流动性指标时间序列"
+    },
+    {
+      "claim_id": "t003-claim-03",
+      "section_id": "section-03",
+      "statement": "美债信用评级及违约相关信息",
+      "counterpoint": "基于权威官方信号，体现央行行为对美债市场及全球金融格局的冲击，区别于普通市场传闻。",
+      "missing_proof": [
+        "央行美债持仓和交易数据",
+        "市场流动性与资金流向监测"
+      ],
+      "chart_need": "美债与其他主权债券收益率对比"
+    }
+  ],
+  "evidence_items": [
+    {
+      "title": "一个月撤离820亿美元！ 全球央行狂卖美债",
+      "url": "https://www.douyin.com/video/7623360302066765083",
+      "source_type": "抖音",
+      "source_tier": "official",
+      "note": "一个月撤离820亿美元！ 全球央行狂卖美债；热度代理=4348",
+      "logic_chain_id": "一个月撤离820亿美元-全球央行狂卖美债-国际金融报",
+      "signal_score": 11.065
+    },
+    {
+      "title": "美债引发连锁危机！机构+央行已然行动，你该如何应对？ #投资 #股票 #财经 #经济 #金融",
+      "url": "https://www.douyin.com/video/7597557110058126598",
+      "source_type": "抖音",
+      "source_tier": "official",
+      "note": "美债引发连锁危机！机构+央行已然行动，你该如何应对？ #投资 #股票 #财经 #经济 #金融；热度代理=3334",
+      "logic_chain_id": "美债引发连锁危机-机构-央行已然行动-你该如何应对",
+      "signal_score": 11.027
+    }
+  ],
+  "structure_contract": {
+    "max_primary_sections": 4,
+    "inherit_from_topic_card": true,
+    "source_of_truth": "selected_topics.json + topic_cards.json"
+  }
+}

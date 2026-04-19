@@ -1,0 +1,82 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "T001",
+    "topic_name": "央行果断降息能否有效开启新一轮宽松周期并刺激经济？",
+    "topic_kind": "independent",
+    "mother_topic_id": "T001",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 2,
+    "topic_id": "T002",
+    "topic_name": "俄罗斯拒绝向日本供油是否标志着地缘政治紧张新阶段？",
+    "topic_kind": "independent",
+    "mother_topic_id": "T002",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 3,
+    "topic_id": "T003",
+    "topic_name": "伊朗拒绝与美国停火谈判是否加剧区域和平前景的不确定性？",
+    "topic_kind": "independent",
+    "mother_topic_id": "T003",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 4,
+    "topic_id": "T004",
+    "topic_name": "美军飞机被击落事件如何反映中东军事与外交复杂博弈？",
+    "topic_kind": "independent",
+    "mother_topic_id": "T004",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 5,
+    "topic_id": "T005",
+    "topic_name": "多地公共停车位免费政策是否有效缓解城市交通与经济压力？",
+    "topic_kind": "independent",
+    "mother_topic_id": "T005",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 6,
+    "topic_id": "T006",
+    "topic_name": "直播带货“自用好物”翻车责任如何界定及法律监管效力？",
+    "topic_kind": "independent",
+    "mother_topic_id": "T006",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 7,
+    "topic_id": "T007",
+    "topic_name": "日本自卫队人员频繁“走失”事件是否暴露军事管理与安全隐患？",
+    "topic_kind": "independent",
+    "mother_topic_id": "T007",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 8,
+    "topic_id": "T008",
+    "topic_name": "社交平台关于社会主义与财富流失的争论如何映射社会经济分歧？",
+    "topic_kind": "independent",
+    "mother_topic_id": "T008",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 9,
+    "topic_id": "T009",
+    "topic_name": "中国市场监管部门约谈平台企业如何推动行业规范重塑？",
+    "topic_kind": "independent",
+    "mother_topic_id": "T009",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 10,
+    "topic_id": "T010",
+    "topic_name": "霍尔木兹海峡新通行方案是否改变美传统盟友的航运安全格局？",
+    "topic_kind": "independent",
+    "mother_topic_id": "T010",
+    "source_status": "ai_generated"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "query": "Japan election rally crowd Tokyo 4k",
+    "url": "https://www.youtube.com/watch?v=BsZ6TPY3fpU",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": "[youtube] Extracting URL: https://www.youtube.com/watch?v=BsZ6TPY3fpU\n[youtube] BsZ6TPY3fpU: Downloading webpage\n[youtube] BsZ6TPY3fpU: Downloading android vr player API JSON\n[info] BsZ6TPY3fpU: Downloading 1 format(s): 18\n[download] /Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/takaichi/videos/web_search/01__Crowds line Tokyo streets to mourn former Prime Minister Shinzo Abe.mp4 has already been downloaded\n\n[download] 100% of    1.55MiB\n"
+  },
+  {
+    "query": "Japanese parliament diet building b roll",
+    "url": "https://www.youtube.com/watch?v=Mr7YAO14cKg",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": "  7.95MiB at  294.87KiB/s ETA 00:27\n[download]   3.1% of    7.95MiB at  473.59KiB/s ETA 00:16\n[download]   6.3% of    7.95MiB at  790.25KiB/s ETA 00:09\n[download]  12.6% of    7.95MiB at    1.18MiB/s ETA 00:05\n[download]  25.1% of    7.95MiB at    1.26MiB/s ETA 00:04\n[download]  42.1% of    7.95MiB at    1.88MiB/s ETA 00:02\n[download]  76.0% of    7.95MiB at    2.12MiB/s ETA 00:00\n[download] 100.0% of    7.95MiB at    2.17MiB/s ETA 00:00\n[download] 100% of    7.95MiB in 00:00:05 at 1.41MiB/s   \n"
+  },
+  {
+    "query": "Tokyo crowd crossing 4k documentary",
+    "url": "https://www.youtube.com/watch?v=Od6EeCWytZo",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": "  7.24MiB at  351.70KiB/s ETA 00:20\n[download]   3.4% of    7.24MiB at  514.28KiB/s ETA 00:13\n[download]   6.9% of    7.24MiB at  828.19KiB/s ETA 00:08\n[download]  13.8% of    7.24MiB at    1.33MiB/s ETA 00:04\n[download]  27.6% of    7.24MiB at    1.53MiB/s ETA 00:03\n[download]  52.6% of    7.24MiB at    1.69MiB/s ETA 00:02\n[download]  79.1% of    7.24MiB at    1.78MiB/s ETA 00:00\n[download] 100.0% of    7.24MiB at    1.91MiB/s ETA 00:00\n[download] 100% of    7.24MiB in 00:00:05 at 1.30MiB/s   \n"
+  }
+]

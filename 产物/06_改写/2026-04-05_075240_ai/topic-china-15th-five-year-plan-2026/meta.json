@@ -1,0 +1,62 @@
+{
+  "topic_id": "china-15th-five-year-plan-2026",
+  "topic_title": "中国十五五规划开局：4.5%-5%增长目标背后的结构性转型信号",
+  "run_id": "2026-04-05_075240_ai",
+  "generated_at": "2026-04-05T17:30:00+08:00",
+  "stage": "rewrite",
+  "dna_type": "preset",
+  "writing_framework": "opinion-and-hot-topic-analysis",
+  "content_enhancement": "angle-discovery",
+  "core_angle": "4.5%是战略换挡，不是能力失速；国务院发展研究中心数据证明可以实现6%+但主动选择不做",
+  "variants": [
+    {
+      "variant_id": "wechat_luxun_hot",
+      "platform": "wechat",
+      "style": "luxun",
+      "type": "hot",
+      "file": "wechat_luxun_hot.md",
+      "word_count": 5400,
+      "min_required": 4000,
+      "validation": "PASS",
+      "title": "中国\"主动降速\"：十五五的4.5%背后，藏着一场你看不透的换挡"
+    },
+    {
+      "variant_id": "wechat_lemon_normal",
+      "platform": "wechat",
+      "style": "lemon",
+      "type": "normal",
+      "file": "wechat_lemon_normal.md",
+      "word_count": 4400,
+      "min_required": 4000,
+      "validation": "PASS",
+      "title": "中国十五五：那个让全球媒体误读的4.5%，其实说的是这件事"
+    },
+    {
+      "variant_id": "xhs_video_luxun_hot",
+      "platform": "xhs_video",
+      "style": "luxun",
+      "type": "hot",
+      "file": "xhs_video_luxun_hot.md",
+      "word_count": 2100,
+      "min_required": 1800,
+      "validation": "PASS",
+      "title": "全球媒体都误读了中国的4.5%！"
+    },
+    {
+      "variant_id": "xhs_video_lemon_normal",
+      "platform": "xhs_video",
+      "style": "lemon",
+      "type": "normal",
+      "file": "xhs_video_lemon_normal.md",
+      "word_count": 1900,
+      "min_required": 1800,
+      "validation": "PASS",
+      "title": "中国经济\"降速\"了？其实是在做一件很难的事"
+    }
+  ],
+  "structure_inheritance": "继承终稿三段结构（表象→深层三条主线→影响），扩写各段内容，鲁迅版增加强观点论证，柠檬版增加比喻和普通人视角",
+  "chart_references": [
+    "chart_01_gdp_growth_history.png",
+    "chart_03_three_pillars_investment.png"
+  ]
+}

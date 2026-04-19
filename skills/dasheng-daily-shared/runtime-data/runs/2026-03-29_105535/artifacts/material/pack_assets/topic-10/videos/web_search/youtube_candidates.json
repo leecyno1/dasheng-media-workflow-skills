@@ -1,0 +1,41 @@
+[
+  {
+    "query": "半导体突然很热闹 documentary b roll 4k",
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 city aerial 4k",
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 public crowd 4k",
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 government meeting 4k",
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 news conference 4k",
+    "candidates": [
+      {
+        "title": "裴洛西\"不讓中國孤立台灣\"!  記者會上展現堅決挺台態度 不讓北京輕舉妄動｜記者 黃瓊慧｜【國際局勢】20220811｜三立iNEWS",
+        "url": "https://www.youtube.com/watch?v=sR2AbSuxLfc",
+        "duration": 99.0,
+        "channel": "三立iNEWS"
+      }
+    ]
+  },
+  {
+    "query": "半导体突然很热闹 industrial aerial 4k",
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 street crowd 4k",
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 dramatic scene 4k",
+    "candidates": []
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "run_id": "2026-04-05_170457",
+  "generated_at": "2026-04-05T18:47:23.938353",
+  "stage": "brief",
+  "status": "ready",
+  "generation_mode": "ai_only",
+  "failure_reason": null,
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-05_170457/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_184609",
+  "candidate_topics": [
+    "央行果断降息能否有效开启新一轮宽松周期并刺激经济？",
+    "俄罗斯拒绝向日本供油是否标志着地缘政治紧张新阶段？",
+    "伊朗拒绝与美国停火谈判是否加剧区域和平前景的不确定性？",
+    "美军飞机被击落事件如何反映中东军事与外交复杂博弈？",
+    "多地公共停车位免费政策是否有效缓解城市交通与经济压力？",
+    "直播带货“自用好物”翻车责任如何界定及法律监管效力？",
+    "日本自卫队人员频繁“走失”事件是否暴露军事管理与安全隐患？",
+    "社交平台关于社会主义与财富流失的争论如何映射社会经济分歧？",
+    "中国市场监管部门约谈平台企业如何推动行业规范重塑？",
+    "霍尔木兹海峡新通行方案是否改变美传统盟友的航运安全格局？"
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_184609/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_184609/02_研究Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_184609/02_编辑Brief_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_184609/topic_cards.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_184609/selected_topics.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_184609/selected_topics.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_184609/phase2-clusters-summary.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_184609/phase2-topic-index.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_184609/phase2-editorial-briefs.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_184609/phase2-topn-for-confirmation.json"
+  ],
+  "next_stage": "draft"
+}

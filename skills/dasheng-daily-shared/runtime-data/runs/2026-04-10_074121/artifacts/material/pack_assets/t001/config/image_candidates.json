@@ -1,0 +1,22 @@
+[
+  {
+    "query": "Jerome Powell Federal Reserve Chairman speech 2024",
+    "channel": "wikimedia",
+    "error": "HTTPSConnectionPool(host='commons.wikimedia.org', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+    "query": "Federal Reserve official policy meeting press conference 2024",
+    "channel": "wikimedia",
+    "error": "HTTPSConnectionPool(host='commons.wikimedia.org', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+    "query": "Wall Street trading floor reaction to Federal Reserve speech 2024",
+    "channel": "wikimedia",
+    "error": "HTTPSConnectionPool(host='commons.wikimedia.org', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+    "query": "Jerome Powell Federal Reserve speech highlights 2024",
+    "channel": "news_screenshot",
+    "error": "HTTPSConnectionPool(host='duckduckgo.com', port=443): Max retries exceeded with url: /html/?q=Jerome+Powell+Federal+Reserve+speech+highlights+2024 (Caused by ConnectTimeoutError(<HTTPSConnection(host='duckduckgo.com', port=443) at 0x148bd2dd0>, 'Connection to duckduckgo.com timed out. (connect timeout=10)'))"
+  }
+]

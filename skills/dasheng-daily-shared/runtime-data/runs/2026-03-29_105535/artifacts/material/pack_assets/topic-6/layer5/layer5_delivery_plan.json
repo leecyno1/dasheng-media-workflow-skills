@@ -1,0 +1,31 @@
+{
+  "template_id": "market_story",
+  "worldmonitor_project": "/Volumes/PSSD/Projects/worldmonitor",
+  "proxy_port": 8787,
+  "current_status": "inactive",
+  "inputs": [
+    "article.md",
+    "scene_plan.json",
+    "charts/*.csv",
+    "charts/*.png",
+    "key_metrics.json"
+  ],
+  "preferred_components": [
+    "MarketPanel",
+    "EconomicPanel",
+    "CountryTimeline"
+  ],
+  "page_modules": [
+    "hero-summary",
+    "key-metrics-strip",
+    "timeline-repricing",
+    "chart-gallery",
+    "embedded-video"
+  ],
+  "chart_anchor_ids": [
+    "chart-01",
+    "chart-02",
+    "chart-03",
+    "chart-04"
+  ]
+}

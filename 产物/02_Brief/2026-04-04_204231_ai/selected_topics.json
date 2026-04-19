@@ -1,0 +1,185 @@
+{
+  "run_id": "2026-04-04_204231",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "generation_method": "ai",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "未被选中的题请写入 rejected_topic_ids。",
+    "只有 selected_topics 非空且状态为 approved，draft 才允许执行。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "topic-middle-east-energy-supply-chain",
+      "title": "中东冲突如何重塑全球能源供应链",
+      "core_argument": "当前市场关注油价短期波动，但真正的结构性变化是霍尔木兹海峡封锁风险正在重构全球能源供应秩序",
+      "why_now": "伊朗与美国的冲突升级不仅推高油价，更重要的是暴露了全球能源供应链对单一通道的依赖。这种结构性脆弱性被短期价格波动掩盖，但对长期投资决策和企业战略至关重要。当前正是理解这一转变的关键时点。",
+      "target_audience": "宏观投资者、商品交易员、能源行业从业者、供应链管理者",
+      "evidence_needs": [
+        "霍尔木兹海峡的历史通行量数据和当前封锁风险评估",
+        "全球主要能源进口国（中国、日本、韩国、印度）的供应链依赖度",
+        "替代航线（好望角航线）的成本和时间增量",
+        "历史上类似事件（1990年海湾战争、2019年油轮袭击）对供给秩序的影响",
+        "主要能源公司和航运公司的应对策略"
+      ],
+      "evidence_sources": [
+        "官方：国际能源署(IEA)、美国能源信息署(EIA)、中国海关总署",
+        "行业：航运数据平台（Kpler、Vortexa）、能源咨询公司报告",
+        "媒体：Bloomberg、Reuters、FT 关于中东冲突和能源供应的深度报道",
+        "学术：能源安全研究机构的分析报告"
+      ],
+      "recommended_framework": "结构型",
+      "framework_reason": "需要拆解从海峡封锁到全球能源价格的完整传导链路，帮助读者理解复杂的供应链结构和风险传导机制",
+      "recommended_strategy": "密度强化",
+      "strategy_application": "提供具体数据（每日通行量、依赖度百分比）、拆解传导链路（海峡→航运→库存→炼厂→零售）、给出可操作的判断框架（投资者应关注的关键指标）",
+      "scores": {
+        "timeliness": 9.0,
+        "unique_angle": 8.5,
+        "evidence": 8.0,
+        "reader_value": 9.0,
+        "longevity": 8.5,
+        "composite": 8.6
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成"
+    },
+    {
+      "topic_id": "topic-fed-inflation-rate-path",
+      "title": "中东冲突推高油价，美联储降息预期为何一再落空",
+      "core_argument": "市场低估了中东冲突对再通胀的影响，油价上涨正在改变美联储的利率路径，降息预期需要重新定价",
+      "why_now": "市场年初押注美联储多次降息，但中东冲突引发的油价上涨正在改变这一预期。当前市场仍在用旧的通胀模型定价，但能源价格的结构性上涨可能迫使美联储维持高利率更长时间。这个预期差距为投资者提供了重要的交易机会。",
+      "target_audience": "宏观投资者、债券交易员、基金经理、关注美联储政策的投资者",
+      "evidence_needs": [
+        "油价上涨对核心通胀的历史传导时滞和幅度",
+        "美联储最新会议纪要中对能源价格和通胀的表态",
+        "市场对美联储降息次数和时点的定价变化（利率期货数据）",
+        "历史上类似情景（1990年、2008年）美联储的政策反应",
+        "当前通胀数据（CPI、PCE）和就业数据的最新变化"
+      ],
+      "evidence_sources": [
+        "官方：美联储会议纪要、FOMC成员讲话、美国劳工部通胀数据",
+        "市场：CME利率期货、债券收益率曲线",
+        "研究：高盛、摩根士丹利等投行的宏观研究报告",
+        "媒体：Bloomberg、WSJ、FT关于美联储政策的分析"
+      ],
+      "recommended_framework": "热点解读型",
+      "framework_reason": "需要结合当前热点事件（中东冲突）分析其对宏观政策的影响，帮助读者理解事件背后的政策逻辑",
+      "recommended_strategy": "角度发现",
+      "strategy_application": "找到市场共识的盲点（低估再通胀风险），用数据证明这个角度的价值，提供与主流观点不同的判断框架",
+      "scores": {
+        "timeliness": 9.0,
+        "unique_angle": 8.0,
+        "evidence": 8.5,
+        "reader_value": 8.5,
+        "longevity": 7.5,
+        "composite": 8.3
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成"
+    },
+    {
+      "topic_id": "topic-geopolitical-risk-premium",
+      "title": "黄金突破历史新高背后：市场在为什么定价",
+      "core_argument": "黄金价格上涨不仅是避险需求，更反映了市场对地缘政治风险长期化和美元信用体系重构的定价",
+      "why_now": "黄金价格突破历史新高，但市场对上涨原因的解读仍停留在短期避险。实际上，中东冲突、美国财政赤字、去美元化趋势等多重因素正在改变黄金的定价逻辑。理解这一变化对资产配置至关重要。",
+      "target_audience": "宏观投资者、商品交易员、资产配置经理、关注避险资产的投资者",
+      "evidence_needs": [
+        "黄金价格与传统驱动因素（美元指数、实际利率）的相关性变化",
+        "各国央行黄金储备变化（特别是新兴市场国家）",
+        "黄金ETF持仓变化和实物黄金需求数据",
+        "历史上地缘政治风险对黄金价格的影响持续时间",
+        "美元在国际贸易结算中的份额变化"
+      ],
+      "evidence_sources": [
+        "官方：世界黄金协会(WGC)、各国央行储备数据、IMF数据",
+        "市场：COMEX黄金期货、黄金ETF持仓数据",
+        "研究：贵金属研究机构报告、投行大宗商品研究",
+        "媒体：Bloomberg、Reuters关于黄金市场的分析"
+      ],
+      "recommended_framework": "纯观点型",
+      "framework_reason": "需要提出明确的观点（黄金定价逻辑正在改变），并用充分的证据论证这一判断",
+      "recommended_strategy": "角度发现",
+      "strategy_application": "超越表面的避险叙事，挖掘更深层的结构性变化（去美元化、央行购金、财政赤字），提供独特的分析视角",
+      "scores": {
+        "timeliness": 8.5,
+        "unique_angle": 8.5,
+        "evidence": 8.0,
+        "reader_value": 8.0,
+        "longevity": 8.0,
+        "composite": 8.2
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成"
+    },
+    {
+      "topic_id": "topic-semiconductor-recovery-reality",
+      "title": "半导体行业：局部修复不等于全面复苏",
+      "core_argument": "当前半导体行业呈现结构性分化，AI芯片需求强劲但消费电子仍然疲软，投资者容易将局部热点误读为全面复苏",
+      "why_now": "英伟达等AI芯片公司业绩亮眼，带动半导体板块整体上涨。但这掩盖了行业内部的巨大分化：AI相关需求确实强劲，但占比更大的消费电子、汽车芯片等领域仍在去库存。理解这种分化对投资决策至关重要。",
+      "target_audience": "科技投资者、产业分析师、半导体行业从业者",
+      "evidence_needs": [
+        "不同细分领域（AI芯片、消费电子、汽车芯片）的订单和出货量数据",
+        "主要半导体公司（英伟达、台积电、三星、英特尔）的业绩指引和产能利用率",
+        "半导体设备订单数据（ASML、应用材料等）",
+        "库存周期数据（各环节的库存天数变化）",
+        "资本开支数据（晶圆厂、封测厂的投资计划）"
+      ],
+      "evidence_sources": [
+        "官方：SEMI（国际半导体产业协会）、各国半导体协会",
+        "公司：主要半导体公司财报和业绩说明会",
+        "研究：Gartner、IDC等研究机构的行业报告",
+        "媒体：EE Times、Semiconductor Engineering等专业媒体"
+      ],
+      "recommended_framework": "对比型",
+      "framework_reason": "需要对比不同细分领域的表现，帮助读者理解行业内部的分化，避免简单的全面复苏判断",
+      "recommended_strategy": "密度强化",
+      "strategy_application": "提供各细分领域的具体数据（订单、出货、库存），拆解产业链各环节的状态，给出判断复苏真伪的具体指标",
+      "scores": {
+        "timeliness": 8.0,
+        "unique_angle": 8.0,
+        "evidence": 8.5,
+        "reader_value": 8.5,
+        "longevity": 7.5,
+        "composite": 8.1
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成"
+    },
+    {
+      "topic_id": "topic-ai-workflow-integration",
+      "title": "AI工具普及后，真正拉开差距的是什么",
+      "core_argument": "AI工具的真正壁垒不在功能数量，而在工作流集成能力。能否将AI无缝嵌入现有工作流程，决定了效率提升的天花板",
+      "why_now": "AI工具层出不穷，每个都宣称能提升效率。但实际使用中，大多数人发现工具之间的切换、数据的导入导出、流程的重新设计反而降低了效率。真正的差距不在于用了多少AI工具，而在于是否建立了完整的AI工作流。",
+      "target_audience": "AI工具用户、内容创作者、自媒体作者、知识工作者、效率工具爱好者",
+      "evidence_needs": [
+        "主流AI工具的功能对比和集成能力评估",
+        "真实用户的工作流案例（从单点工具到完整工作流的演进）",
+        "工具切换成本的量化分析（时间、学习成本、数据迁移成本）",
+        "成功的AI工作流案例（具体的效率提升数据）",
+        "工作流集成平台（Zapier、Make等）的使用数据"
+      ],
+      "evidence_sources": [
+        "用户：真实用户访谈、社区讨论（Reddit、Twitter、即刻）",
+        "产品：各AI工具的官方文档和API能力",
+        "案例：成功实践者的分享（博客、视频、播客）",
+        "研究：效率工具使用情况调研报告"
+      ],
+      "recommended_framework": "痛点型",
+      "framework_reason": "从用户的真实痛点（工具太多反而降低效率）出发，提供解决方案（建立完整工作流），帮助读者提升实际效率",
+      "recommended_strategy": "细节锚定",
+      "strategy_application": "用真实的工作流案例和具体的效率数据增强说服力，让读者看到从单点工具到完整工作流的实际差异",
+      "scores": {
+        "timeliness": 8.5,
+        "unique_angle": 8.5,
+        "evidence": 7.5,
+        "reader_value": 9.0,
+        "longevity": 8.5,
+        "composite": 8.4
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成"
+    }
+  ]
+}

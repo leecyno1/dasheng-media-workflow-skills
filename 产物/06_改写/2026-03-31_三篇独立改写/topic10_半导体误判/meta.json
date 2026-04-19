@@ -1,0 +1,28 @@
+{
+  "topic": "topic10_半导体误判",
+  "source_file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-31_终稿抓取源/topic10__final_source.md",
+  "output_root": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-31_三篇独立改写/topic10_半导体误判",
+  "count_rule": "non-whitespace character count",
+  "files": [
+    {
+      "file": "topic10__rewrite_bundle.md",
+      "chars": 12884
+    },
+    {
+      "file": "topic10__wechat_luxun_hot.md",
+      "chars": 4786
+    },
+    {
+      "file": "topic10__wechat_lemon_normal.md",
+      "chars": 4115
+    },
+    {
+      "file": "topic10__xhs_video_luxun_hot.md",
+      "chars": 1973
+    },
+    {
+      "file": "topic10__xhs_video_lemon_normal.md",
+      "chars": 1805
+    }
+  ]
+}

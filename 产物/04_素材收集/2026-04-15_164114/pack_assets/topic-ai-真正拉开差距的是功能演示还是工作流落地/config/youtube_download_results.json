@@ -1,0 +1,63 @@
+[
+  {
+    "query": "AI工作流自动化企业案例介绍",
+    "url": "https://www.youtube.com/watch?v=UkcMNFxeVKk",
+    "title": "Claude Cowork: 零基礎也能搭建你的AI自動化團隊 | 附5個真實案例演示",
+    "channel": "李厂长来了",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": "[youtube] Extracting URL: https://www.youtube.com/watch?v=UkcMNFxeVKk\n[youtube] UkcMNFxeVKk: Downloading webpage\n[youtube] UkcMNFxeVKk: Downloading android vr player API JSON\n[info] UkcMNFxeVKk: Downloading 1 format(s): 18\n[download] /Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-15_164114/artifacts/material/pack_assets/topic-ai-真正拉开差距的是功能演示还是工作流落地/视频_ai工作流自动化企业案例介绍.mp4 has already been downloaded\n\n[download] 100% of   36.45MiB\n",
+    "selected_candidate_quality": {
+      "source_category": "general_footage",
+      "source_ok": true,
+      "resolution_height": 2160,
+      "resolution_width": 3840,
+      "duration_seconds_hint": 969,
+      "fps_hint": 30.0,
+      "extractor": "youtube",
+      "source_domain": "www.youtube.com",
+      "min_height_required": null,
+      "pre_download_pass": true,
+      "reject_reasons": []
+    },
+    "file_quality_audit": {
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-15_164114/artifacts/material/pack_assets/topic-ai-真正拉开差距的是功能演示还是工作流落地/视频_ai工作流自动化企业案例介绍.mp4",
+      "source_url": "https://www.youtube.com/watch?v=UkcMNFxeVKk",
+      "source_domain": "www.youtube.com",
+      "source_traceable": true,
+      "source_category": "general_footage",
+      "extractor": "youtube",
+      "resolution_height": 360,
+      "resolution_width": 640,
+      "fps": 30.0,
+      "codec": "h264",
+      "duration_seconds": 969.4,
+      "scene_changes": 171,
+      "scene_change_rate": 5.7,
+      "analysis_window_seconds": 30.0,
+      "duration_ok": true,
+      "resolution_ok": true,
+      "frame_variation_ok": true,
+      "anti_screenshot_montage_pass": true,
+      "final_pass": true,
+      "fail_reasons": [],
+      "ffmpeg_error": ""
+    }
+  },
+  {
+    "query": "AI系统集成与维护挑战实录",
+    "url": "",
+    "title": "",
+    "channel": "",
+    "returncode": -1,
+    "stderr": "",
+    "stdout": "",
+    "selected_candidate_quality": {},
+    "file_quality_audit": {
+      "final_pass": false,
+      "fail_reasons": [
+        "no_qualified_candidate"
+      ]
+    }
+  }
+]

@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "title": "日本士兵闯使馆事件背后:个体极端行为还是系统性问题｜改写稿框架动画",
+    "description": "基于改写稿框架精华与关键数据的 motion 动画视频",
+    "version": "2026.04.14"
+  },
+  "global": {
+    "factoryVersion": "v1.0.0",
+    "autoplay": true,
+    "autoplayGapMs": 800,
+    "tabSwitchRestart": true
+  },
+  "scenes": [
+    {
+      "id": "topic_japan_embassy_incident_analysis-narrative-01",
+      "template": "timeline",
+      "label": "框架精华：结构时间线",
+      "tag": "motion-summary",
+      "durationMs": 7600,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 7600,
+        "enter": {
+          "type": "slide",
+          "durationMs": 4200,
+          "staggerMs": 180,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "events": [
+          {
+            "time": "段落1",
+            "title": "一、自卫队纪律事故的频发与管理困境"
+          },
+          {
+            "time": "段落2",
+            "title": "二、日本右翼势力的抬头与军队内部的潜在渗透"
+          },
+          {
+            "time": "段落3",
+            "title": "三、网络空间的历史修正主义传播：极端思想的温床"
+          },
+          {
+            "time": "段落4",
+            "title": "结语：从极端个体行为到系统性风险的警示"
+          },
+          {
+            "time": "段落5",
+            "title": "引用与待补源"
+          }
+        ]
+      }
+    },
+    {
+      "id": "topic_japan_embassy_incident_analysis-narrative-02",
+      "template": "ticker",
+      "label": "关键数据：滚动条",
+      "tag": "motion-summary",
+      "durationMs": 7200,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 7200,
+        "enter": {
+          "type": "slide",
+          "durationMs": 3200,
+          "staggerMs": 0,
+          "easing": "linear"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "items": [
+          {
+            "title": "# 日本士兵闯使馆事件背后：个体极端行为还是系统性问题",
+            "score": 58
+          },
+          {
+            "title": "最近,日本自卫队一名士兵未经许可擅自闯入中国驻日大使馆,扬言\"威胁杀人\",这事儿在中",
+            "score": 64
+          },
+          {
+            "title": "表面看是个别士兵的极端行为,但深挖下去,背后反映的是日本自卫队纪律体系、国内右翼势力",
+            "score": 70
+          },
+          {
+            "title": "这单一事件的爆发,或许正是日本社会和军队管理深层次问题的一个缩影",
+            "score": 76
+          },
+          {
+            "title": "## 一、自卫队纪律事故的频发与管理困境",
+            "score": 82
+          }
+        ]
+      }
+    },
+    {
+      "id": "topic_japan_embassy_incident_analysis-narrative-03",
+      "template": "gauge",
+      "label": "风险强度评估",
+      "tag": "motion-summary",
+      "durationMs": 6200,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6200,
+        "enter": {
+          "type": "slide",
+          "durationMs": 3000,
+          "staggerMs": 0,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "score": 58,
+        "label": "Narrative Risk"
+      }
+    },
+    {
+      "id": "topic_japan_embassy_incident_analysis-narrative-04",
+      "template": "donutKpi",
+      "label": "执行优先级",
+      "tag": "motion-summary",
+      "durationMs": 6200,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6200,
+        "enter": {
+          "type": "draw",
+          "durationMs": 3200,
+          "staggerMs": 0,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "value": 79,
+        "target": 85,
+        "label": "Action Priority"
+      }
+    }
+  ]
+}

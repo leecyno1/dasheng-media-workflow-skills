@@ -1,0 +1,23 @@
+[
+  {
+    "query": "oil price inflation animation shipping route documentary",
+    "url": "https://www.youtube.com/watch?v=xMQUGSrnbP8",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": " 53.06MiB at  267.32KiB/s ETA 00:14\n[download]  92.9% of   53.06MiB at  441.31KiB/s ETA 00:08\n[download]  93.2% of   53.06MiB at  601.32KiB/s ETA 00:06\n[download]  93.6% of   53.06MiB at  714.70KiB/s ETA 00:04\n[download]  94.6% of   53.06MiB at    1.10MiB/s ETA 00:02\n[download]  96.5% of   53.06MiB at    1.36MiB/s ETA 00:01\n[download]  99.8% of   53.06MiB at    1.43MiB/s ETA 00:00\n[download] 100.0% of   53.06MiB at    1.48MiB/s ETA 00:00\n[download] 100% of   53.06MiB in 00:00:42 at 1.25MiB/s   \n"
+  },
+  {
+    "query": "federal reserve building exterior meeting b roll",
+    "url": "https://www.youtube.com/watch?v=chwSgbbTSIQ",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": "[youtube] Extracting URL: https://www.youtube.com/watch?v=chwSgbbTSIQ\n[youtube] chwSgbbTSIQ: Downloading webpage\n[youtube] chwSgbbTSIQ: Downloading android vr player API JSON\n[info] chwSgbbTSIQ: Downloading 1 format(s): 18\n[download] /Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/videos/web_search/02__DRS⧸S2⧸E1⧸KING FED JUSTICE BLDG.mp4 has already been downloaded\n\n[download] 100% of  832.72KiB\n"
+  },
+  {
+    "query": "container shipping port cranes aerial 4k",
+    "url": "https://www.youtube.com/watch?v=1zfYtVyLVEo",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": " 12.97MiB at  399.34KiB/s ETA 00:08\n[download]  75.1% of   12.97MiB at  472.74KiB/s ETA 00:07\n[download]  75.5% of   12.97MiB at  641.58KiB/s ETA 00:05\n[download]  76.5% of   12.97MiB at  974.17KiB/s ETA 00:03\n[download]  78.4% of   12.97MiB at    1.58MiB/s ETA 00:01\n[download]  82.3% of   12.97MiB at    1.48MiB/s ETA 00:01\n[download]  90.0% of   12.97MiB at    1.81MiB/s ETA 00:00\n[download] 100.0% of   12.97MiB at    2.53MiB/s ETA 00:00\n[download] 100% of   12.97MiB in 00:00:10 at 1.27MiB/s   \n"
+  }
+]

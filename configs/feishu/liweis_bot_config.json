@@ -1,0 +1,127 @@
+{
+  "source_app_name": "贾维斯",
+  "source_app_id": "cli_a93a0c3e72789bd4",
+  "target_app_name": "李维斯",
+  "target_app_id": "cli_a94d22306138dbc2",
+  "captured_at": "2026-03-28",
+  "bot": {
+    "enable": true,
+    "cardCallbackMode": 1,
+    "cardRequestUrl": "",
+    "botMenuEnable": true,
+    "botMenuDisplayStrategy": 3,
+    "botMenuConfig": [
+      {
+        "defaultName": "/status",
+        "i18nBotMenuName": {
+          "zh_cn": "/status"
+        },
+        "menuContentType": 4,
+        "childNodes": []
+      },
+      {
+        "defaultName": "压缩",
+        "i18nBotMenuName": {
+          "zh_cn": "压缩"
+        },
+        "menuContentType": 3,
+        "childNodes": [
+          {
+            "defaultName": "/stop",
+            "i18nBotMenuName": {
+              "zh_cn": "/stop"
+            },
+            "menuContentType": 4,
+            "udIcon": {
+              "token": "bitablekanban_outlined"
+            }
+          },
+          {
+            "defaultName": "/new",
+            "i18nBotMenuName": {
+              "zh_cn": "/new"
+            },
+            "menuContentType": 4,
+            "udIcon": {
+              "token": "area-chart-smooth_outlined"
+            }
+          },
+          {
+            "defaultName": "/compact",
+            "i18nBotMenuName": {
+              "zh_cn": "/compact"
+            },
+            "menuContentType": 4
+          }
+        ]
+      },
+      {
+        "defaultName": "汇报进度",
+        "i18nBotMenuName": {
+          "zh_cn": "汇报进度"
+        },
+        "menuContentType": 4,
+        "childNodes": []
+      },
+      {
+        "defaultName": "操作",
+        "i18nBotMenuName": {
+          "zh_cn": "操作"
+        },
+        "menuContentType": 3,
+        "childNodes": [
+          {
+            "defaultName": "将以上的工作流总结成skill，并放入库，进行命名，供以后类似工作流调用",
+            "i18nBotMenuName": {
+              "zh_cn": "将以上的工作流总结成skill，并放入库，进行命名，供以后类似工作流调用"
+            },
+            "menuContentType": 4,
+            "udIcon": {
+              "token": "bitablegantt_outlined"
+            }
+          },
+          {
+            "defaultName": "将上述对话写入日志记录，并将重要事项写入memory",
+            "i18nBotMenuName": {
+              "zh_cn": "将上述对话写入日志记录，并将重要事项写入memory"
+            },
+            "menuContentType": 4,
+            "udIcon": {
+              "token": "bitablegrid_outlined"
+            }
+          }
+        ]
+      },
+      {
+        "defaultName": "自媒体",
+        "i18nBotMenuName": {
+          "zh_cn": "自媒体"
+        },
+        "menuContentType": 3,
+        "childNodes": [
+          {
+            "defaultName": "采集话题：调用大圣skills采集过去24小时的素材",
+            "i18nBotMenuName": {
+              "zh_cn": "采集话题：调用大圣skills采集过去24小时的素材"
+            },
+            "menuContentType": 4,
+            "udIcon": {
+              "token": "doc-search_outlined"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "events": {
+    "eventMode": 4,
+    "events": [
+      "20",
+      "im.chat.access_event.bot_p2p_chat_entered_v1",
+      "im.message.receive_v1"
+    ],
+    "encryptKey": "",
+    "verificationToken": "IMsgniEz3CqMLBi2ZRIR9gRaLccg0AYH",
+    "verificationStatus": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "topic": "topic-6",
+  "generated": [
+    {
+      "anchor_id": "chart-01",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-6/charts/csv/chart-01_cpi_core.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-6/charts/png/chart-01_cpi_core.png"
+    },
+    {
+      "anchor_id": "chart-02",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-6/charts/csv/chart-02_oil_gold_breakeven.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-6/charts/png/chart-02_oil_gold_breakeven.png"
+    },
+    {
+      "anchor_id": "chart-03",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-6/charts/csv/chart-03_spx_us10y.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-6/charts/png/chart-03_spx_us10y.png"
+    },
+    {
+      "anchor_id": "chart-04",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-6/charts/csv/chart-04_scenario_heatmap.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-6/charts/png/chart-04_scenario_heatmap.png"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets",
+  "topics": [
+    "topic-10",
+    "topic-11",
+    "topic-6"
+  ],
+  "max_workers": 3,
+  "steps": "ai_prep",
+  "layer5_only": false,
+  "video_download_limit": 0,
+  "started_at_epoch": 1774947583.10111,
+  "duration_seconds": 314.79,
+  "ok_count": 3,
+  "failed_count": 0,
+  "results": [
+    {
+      "topic": "topic-10",
+      "command": [
+        "python3",
+        "/Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py",
+        "--pack-root",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets",
+        "--topic-dir",
+        "topic-10",
+        "--video-download-limit",
+        "0",
+        "--steps",
+        "ai_prep"
+      ],
+      "returncode": 0,
+      "duration_seconds": 220.47,
+      "stdout_tail": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/execution_manifest.json\n",
+      "stderr_tail": "",
+      "status": "ok"
+    },
+    {
+      "topic": "topic-11",
+      "command": [
+        "python3",
+        "/Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py",
+        "--pack-root",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets",
+        "--topic-dir",
+        "topic-11",
+        "--video-download-limit",
+        "0",
+        "--steps",
+        "ai_prep"
+      ],
+      "returncode": 0,
+      "duration_seconds": 254.08,
+      "stdout_tail": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/execution_manifest.json\n",
+      "stderr_tail": "",
+      "status": "ok"
+    },
+    {
+      "topic": "topic-6",
+      "command": [
+        "python3",
+        "/Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py",
+        "--pack-root",
+        "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets",
+        "--topic-dir",
+        "topic-6",
+        "--video-download-limit",
+        "0",
+        "--steps",
+        "ai_prep"
+      ],
+      "returncode": 0,
+      "duration_seconds": 314.79,
+      "stdout_tail": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/execution_manifest.json\n",
+      "stderr_tail": "",
+      "status": "ok"
+    }
+  ]
+}

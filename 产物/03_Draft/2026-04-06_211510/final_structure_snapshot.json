@@ -1,0 +1,141 @@
+{
+  "stage": "draft",
+  "run_id": "2026-04-06_211510",
+  "snapshot_type": "final_structure",
+  "created_at": "2026-04-06T22:00:00+08:00",
+  "topics": [
+    {
+      "topic_id": "topic-russia-japan-oil-cutoff",
+      "title": "俄罗斯对日断供石油：能源武器化如何重塑东北亚地缘格局",
+      "draft_file": "topic-russia-japan-oil-cutoff_draft.md",
+      "doc_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-06_211510/topic-russia-japan-oil-cutoff_draft.md",
+      "structure": {
+        "framework": "结构型",
+        "sections": [
+          {
+            "level": 2,
+            "title": "事件钩子：俄罗斯对日断供石油的直接冲击",
+            "content_type": "introduction"
+          },
+          {
+            "level": 2,
+            "title": "表象分析：供应链脆弱性与成本传导",
+            "content_type": "analysis"
+          },
+          {
+            "level": 2,
+            "title": "深层解读：能源武器化与地缘博弈",
+            "content_type": "deep_analysis"
+          },
+          {
+            "level": 2,
+            "title": "影响分析：东北亚能源格局重塑",
+            "content_type": "impact"
+          },
+          {
+            "level": 2,
+            "title": "投资建议：如何应对能源地缘风险",
+            "content_type": "recommendation"
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "topic-japan-bonds-crisis-market-outlook",
+      "title": "日本国债异动引发全球市场震荡：下周投资策略与避险指南",
+      "draft_file": "topic-japan-bonds-crisis-market-outlook_final.md",
+      "doc_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-06_211510/topic-japan-bonds-crisis-market-outlook_final.md",
+      "structure": {
+        "framework": "清单型",
+        "sections": [
+          {
+            "level": 2,
+            "title": "价值承诺：为什么这篇文章值得你读完",
+            "content_type": "introduction"
+          },
+          {
+            "level": 2,
+            "title": "信号1：日本国债流动性拐点",
+            "content_type": "signal"
+          },
+          {
+            "level": 2,
+            "title": "信号2：中东地缘风险升级",
+            "content_type": "signal"
+          },
+          {
+            "level": 2,
+            "title": "信号3：外资流向与A股韧性",
+            "content_type": "signal"
+          },
+          {
+            "level": 2,
+            "title": "信号4：美股泡沫与科技股分化",
+            "content_type": "signal"
+          },
+          {
+            "level": 2,
+            "title": "信号5：技术面与市场情绪",
+            "content_type": "signal"
+          },
+          {
+            "level": 2,
+            "title": "下周投资策略：7类资产配置建议",
+            "content_type": "recommendation"
+          },
+          {
+            "level": 2,
+            "title": "总结彩蛋：我的个人配置",
+            "content_type": "conclusion"
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "topic-lobster-tech-comparison",
+      "title": "龙虾技术全景解析：本地/云端/变体架构对比与大圣龙虾优势",
+      "draft_file": "topic-lobster-tech-comparison_draft.md",
+      "doc_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-06_211510/topic-lobster-tech-comparison_draft.md",
+      "structure": {
+        "framework": "对比型",
+        "sections": [
+          {
+            "level": 2,
+            "title": "选择困境：为什么龙虾技术让人纠结",
+            "content_type": "introduction"
+          },
+          {
+            "level": 2,
+            "title": "本地龙虾：完全控制的代价",
+            "content_type": "option_analysis"
+          },
+          {
+            "level": 2,
+            "title": "云端龙虾：便捷背后的隐忧",
+            "content_type": "option_analysis"
+          },
+          {
+            "level": 2,
+            "title": "变体龙虾：开源社区的创新尝试",
+            "content_type": "option_analysis"
+          },
+          {
+            "level": 2,
+            "title": "对比总结：三种架构的适用场景",
+            "content_type": "comparison"
+          },
+          {
+            "level": 2,
+            "title": "大圣龙虾的三大优势",
+            "content_type": "recommendation"
+          },
+          {
+            "level": 2,
+            "title": "我的建议：如何选择适合你的方案",
+            "content_type": "conclusion"
+          }
+        ]
+      }
+    }
+  ]
+}

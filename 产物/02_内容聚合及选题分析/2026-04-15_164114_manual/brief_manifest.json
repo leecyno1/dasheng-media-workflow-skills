@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-04-04_204231",
+  "generated_at": "2026-04-04T20:48:22.483112",
+  "stage": "brief",
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-04_204231/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_204231",
+  "manual_topics": [],
+  "candidate_topics": [
+    "外交部、伊朗：事件升级之外，长期秩序成本在怎样上升",
+    "外交部、中东这条线若换个切口，最该补的证据会不会完全不同",
+    "美联储、中东这条线，市场是否低估了再通胀与利率预期回摆",
+    "鲍威尔、美联储这条线若换个切口，最该补的证据会不会完全不同",
+    "川普、美国这条线，风险溢价究竟在围绕什么变量重估",
+    "黄金、降息这条线若换个切口，最该补的证据会不会完全不同",
+    "英伟达、半导体：真正值得写的是局部修复会不会被误读成全面复苏",
+    "半导体、封测这条线若换个切口，最该补的证据会不会完全不同",
+    "AI：真正拉开差距的是功能演示还是工作流落地"
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_204231/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_204231/02_研究Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_204231/02_编辑Brief_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_204231/topic_cards.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_204231/selected_topics.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_204231/selected_topics.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-04_204231/brief_manifest.json"
+  ],
+  "next_stage": "draft"
+}

@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "title": "topic6_供给秩序重估｜改写稿框架动画",
+    "description": "基于改写稿框架精华与关键数据的 motion 动画视频",
+    "version": "2026.04.01"
+  },
+  "global": {
+    "factoryVersion": "v1.0.0",
+    "autoplay": true,
+    "autoplayGapMs": 800,
+    "tabSwitchRestart": true
+  },
+  "scenes": [
+    {
+      "id": "topic6-narrative-01",
+      "template": "timeline",
+      "label": "框架精华：结构时间线",
+      "tag": "motion-summary",
+      "durationMs": 7600,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 7600,
+        "enter": {
+          "type": "slide",
+          "durationMs": 4200,
+          "staggerMs": 180,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "events": [
+          {
+            "time": "段落1",
+            "title": "# 小红书视频口播稿｜鲁迅感+热烈版"
+          },
+          {
+            "time": "段落2",
+            "title": "你有没有发现，最近市场最会演的戏，就是“新闻降温，价格不"
+          },
+          {
+            "time": "段落3",
+            "title": "白天刷战报，晚上看K线，第二天你会问："
+          },
+          {
+            "time": "段落4",
+            "title": "我给你一个更扎心的答案："
+          },
+          {
+            "time": "段落5",
+            "title": "你盯着的是新闻，市场盯着的是秩序"
+          }
+        ]
+      }
+    },
+    {
+      "id": "topic6-narrative-02",
+      "template": "ticker",
+      "label": "关键数据：滚动条",
+      "tag": "motion-summary",
+      "durationMs": 7200,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 7200,
+        "enter": {
+          "type": "slide",
+          "durationMs": 3200,
+          "staggerMs": 0,
+          "easing": "linear"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "items": [
+          {
+            "title": "源稿里提到：2025年上半年，全球石油及相关液体供给大约1.044亿桶/日",
+            "score": 58
+          },
+          {
+            "title": "源稿里提到：2025年上半年，全球石油及相关液体供给大约1.044亿桶/日",
+            "score": 64
+          },
+          {
+            "title": "其中，约7980万桶/日要靠海运",
+            "score": 70
+          },
+          {
+            "title": "源稿提到，2026年3月，美联储维持联邦基金利率目标区间在3.5%-3.75%",
+            "score": 76
+          },
+          {
+            "title": "源稿提到，2026年3月，美联储维持联邦基金利率目标区间在3.5%-3.75%",
+            "score": 82
+          }
+        ]
+      }
+    },
+    {
+      "id": "topic6-narrative-03",
+      "template": "gauge",
+      "label": "风险强度评估",
+      "tag": "motion-summary",
+      "durationMs": 6200,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6200,
+        "enter": {
+          "type": "slide",
+          "durationMs": 3000,
+          "staggerMs": 0,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "score": 86,
+        "label": "Narrative Risk"
+      }
+    },
+    {
+      "id": "topic6-narrative-04",
+      "template": "donutKpi",
+      "label": "执行优先级",
+      "tag": "motion-summary",
+      "durationMs": 6200,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6200,
+        "enter": {
+          "type": "draw",
+          "durationMs": 3200,
+          "staggerMs": 0,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "value": 64,
+        "target": 85,
+        "label": "Action Priority"
+      }
+    }
+  ]
+}

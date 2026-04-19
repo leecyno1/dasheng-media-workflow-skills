@@ -1,0 +1,1141 @@
+[
+  {
+    "meta": {
+      "id": "2026-04-04_204231:topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-04_204231",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "外交部-伊朗-diplomacy-conflict-停火::外交部、伊朗：事件升级之外，长期秩序成本在怎样上升",
+      "upstream_ids": [
+        "intake-20260404204231-379"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "外交部-伊朗-diplomacy-conflict-停火",
+          "url": "",
+          "title": "外交部、伊朗：事件升级之外，长期秩序成本在怎样上升"
+        }
+      ],
+      "created_at": "2026-04-04T23:45:41.801742+08:00",
+      "updated_at": "2026-04-04T23:45:41.801742+08:00"
+    },
+    "topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+    "mother_topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "伊朗冲突升级，真正变贵的是地区秩序成本",
+    "source_status": "自然入选",
+    "cluster_name": "外交部 / 伊朗 / 停火",
+    "cluster_id": "外交部-伊朗-diplomacy-conflict-停火",
+    "core_thesis": "当前伊朗冲突不仅是事件激化，更是地区秩序成本不断攀升的信号。",
+    "core_proposition": "聚焦伊朗与外交部立场，拆解冲突升级以外，地区秩序成本不断积累的传导机制，揭示未来局势风险的结构性变化。",
+    "conflict_axis": "冲突升级之外，地区秩序成本如何持续走高",
+    "one_line_judgment": "当前伊朗冲突不仅是事件激化，更是地区秩序成本不断攀升的信号。",
+    "counterintuitive_angle": "冲突升级之外，地区秩序成本如何持续走高",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `1.4`，来源质量分 `1.35`。",
+    "reader_value": "适合 时政、宏观、国际关系读者。，重点是帮助读者从表面冲突转向对地区长期稳定成本的判断，理解未来风险隐患和政策路径。。",
+    "reader_payoff": "帮助读者从表面冲突转向对地区长期稳定成本的判断，理解未来风险隐患和政策路径。",
+    "audience": "时政、宏观、国际关系读者。",
+    "proof_requirements": [
+      "先界定 外交部、伊朗 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件叙事和秩序成本的传导链路。",
+      "给出下一步最值得跟踪的国家、机构和变量。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "外交部-伊朗-diplomacy-conflict-停火-e01",
+        "title": "外交部回应伊朗桥梁遭袭：中方反对袭击民用设施 有关方应立即停火",
+        "url": "https://www.cls.cn/detail/2334610",
+        "source_type": "聚合新闻",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "外交部回应伊朗桥梁遭袭：中方反对袭击民用设施 有关方应立即停火；来自 reports 最新外链"
+      }
+    ],
+    "missing_evidence": [
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少官方表态与关键时间线对照，需要补政策与外交原文。"
+    ],
+    "chart_needs": [
+      "事件时间线",
+      "参与方与影响路径图"
+    ],
+    "image_needs": [
+      "外交现场、地图、官方发布会"
+    ],
+    "video_needs": [
+      "新闻直播、发布会、现场素材"
+    ],
+    "recommended_data_angles": [
+      "事件时间线",
+      "参与方与影响路径图"
+    ],
+    "recommended_visual_angles": [
+      "外交现场、地图、官方发布会",
+      "新闻直播、发布会、现场素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "外交部"
+    ],
+    "priority_news_queries": [
+      "外交部 外交部、伊朗：事件升级之外，长期秩序 latest news",
+      "伊朗 外交部、伊朗：事件升级之外，长期秩序 latest news",
+      "停火 外交部、伊朗：事件升级之外，长期秩序 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：事件叙事与长期秩序成本是否正在分化。",
+      "part_1": "先界定 外交部、伊朗 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件叙事和秩序成本的传导链路。",
+      "part_3": "给出下一步最值得跟踪的国家、机构和变量。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 6.82,
+      "sharpness": 7.85,
+      "evidence": 10.0,
+      "longevity": 7.1,
+      "reader_value": 7.86,
+      "distinctiveness": 7.3,
+      "composite": 7.9
+    },
+    "cluster_quality_score": 35.38,
+    "topic_value_score": 7.9,
+    "distinctiveness_reason": "以伊朗与外交部为核心观察点，聚焦冲突背后的结构性成本变化，区别于单纯事件报道。",
+    "why_not_duplicate_of": "本题为该系列中对伊朗冲突长期影响的最高质量结构化表达，具备独特观察对象和深度分析。",
+    "trendradar_support": {
+      "coverage": 1.0,
+      "coverage_text": "TrendRadar 覆盖 `100%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少官方表态与关键时间线对照，需要补政策与外交原文。",
+    "article_use": "结构稿",
+    "changed_dimension": "强化逻辑张力，将焦点从事件升级本身转移到长期秩序成本的结构性上升。",
+    "extendability": "更适合单篇深稿",
+    "title_candidates": [
+      "伊朗冲突升级，地区秩序成本持续攀升",
+      "事件升级背后，伊朗局势推高长期地区秩序代价",
+      "伊朗冲突之外，地区稳定付出更大代价"
+    ]
+  },
+  {
+    "meta": {
+      "id": "2026-04-04_204231:topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升-variant-外交部-中东这条线若换个切口-最该补的证据会不会",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-04_204231",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "外交部-中东-diplomacy-conflict::外交部、中东这条线若换个切口，最该补的证据会不会完全不同",
+      "upstream_ids": [
+        "intake-20260404204231-164"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "外交部-中东-diplomacy-conflict",
+          "url": "",
+          "title": "外交部、中东这条线若换个切口，最该补的证据会不会完全不同"
+        }
+      ],
+      "created_at": "2026-04-04T23:45:41.801815+08:00",
+      "updated_at": "2026-04-04T23:45:41.801815+08:00"
+    },
+    "topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升-variant-外交部-中东这条线若换个切口-最该补的证据会不会",
+    "mother_topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+    "topic_kind": "variant",
+    "angle_variant_of": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+    "title": "中东局势背后，外交部关注的长期稳定代价",
+    "source_status": "自然入选",
+    "cluster_name": "外交部 / 中东",
+    "cluster_id": "外交部-中东-diplomacy-conflict",
+    "core_thesis": "外交部关注的中东局势，不止是冲突激化，更是秩序成本隐忧不断加剧。",
+    "core_proposition": "围绕外交部对中东整体局势的观察，分析不仅仅是事件冲突升级，更是地区秩序成本结构性上升的过程。",
+    "conflict_axis": "中东冲突升级之外，地区秩序成本的演变趋势",
+    "one_line_judgment": "外交部关注的中东局势，不止是冲突激化，更是秩序成本隐忧不断加剧。",
+    "counterintuitive_angle": "中东冲突升级之外，地区秩序成本的演变趋势",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `1.0`，来源质量分 `1.35`。",
+    "reader_value": "适合 时政、宏观、国际关系读者。，重点是帮助读者理解外交部如何从全局视角把握中东风险，识别结构性秩序成本变化的关键变量。。",
+    "reader_payoff": "帮助读者理解外交部如何从全局视角把握中东风险，识别结构性秩序成本变化的关键变量。",
+    "audience": "时政、宏观、国际关系读者。",
+    "proof_requirements": [
+      "先界定 外交部、中东 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件叙事和秩序成本的传导链路。",
+      "给出下一步最值得跟踪的国家、机构和变量。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "外交部-中东-diplomacy-conflict-e01",
+        "title": "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞之际，俄罗斯将考虑各国",
+        "url": "https://m.weibo.cn/detail/5282653734437870",
+        "source_type": "微博",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞之际，俄罗斯将考虑各国；热度代理=1843"
+      }
+    ],
+    "missing_evidence": [
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少官方表态与关键时间线对照，需要补政策与外交原文。"
+    ],
+    "chart_needs": [
+      "事件时间线",
+      "参与方与影响路径图"
+    ],
+    "image_needs": [
+      "外交现场、地图、官方发布会"
+    ],
+    "video_needs": [
+      "新闻直播、发布会、现场素材"
+    ],
+    "recommended_data_angles": [
+      "事件时间线",
+      "参与方与影响路径图"
+    ],
+    "recommended_visual_angles": [
+      "外交现场、地图、官方发布会",
+      "新闻直播、发布会、现场素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "外交部"
+    ],
+    "priority_news_queries": [
+      "外交部 外交部、中东这条线若换个切口，最该补 latest news",
+      "中东 外交部、中东这条线若换个切口，最该补 latest news",
+      "俄罗斯 外交部、中东这条线若换个切口，最该补 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：事件叙事与长期秩序成本是否正在分化。",
+      "part_1": "先界定 外交部、中东 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件叙事和秩序成本的传导链路。",
+      "part_3": "给出下一步最值得跟踪的国家、机构和变量。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.91,
+      "sharpness": 7.3,
+      "evidence": 10.0,
+      "longevity": 7.1,
+      "reader_value": 7.72,
+      "distinctiveness": 6.8,
+      "composite": 7.14
+    },
+    "cluster_quality_score": 31.06,
+    "topic_value_score": 7.14,
+    "distinctiveness_reason": "区别于以伊朗为核心的母题，本题以中东整体为观察对象，视角更广泛，证据需求不同。",
+    "why_not_duplicate_of": "虽然共享大矛盾，但因观察对象由伊朗扩展至中东整体，故为有效备选切口。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少官方表态与关键时间线对照，需要补政策与外交原文。",
+    "article_use": "结构稿",
+    "changed_dimension": "观察对象由单一国家伊朗扩展到整个中东地区，聚焦更广泛的秩序成本变化。",
+    "extendability": "更适合单篇深稿",
+    "title_candidates": [
+      "中东冲突升级，外交部如何评估地区秩序成本变化",
+      "外交部的中东，冲突之外的秩序成本压力",
+      "中东局势背后，外交部关注的长期稳定代价"
+    ]
+  },
+  {
+    "meta": {
+      "id": "2026-04-04_204231:topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-04_204231",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "美联储-中东-policy-inflation-降息::美联储、中东这条线，市场是否低估了再通胀与利率预期回摆",
+      "upstream_ids": [
+        "intake-20260404204231-182",
+        "intake-20260404204231-375"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "美联储-中东-policy-inflation-降息",
+          "url": "",
+          "title": "美联储、中东这条线，市场是否低估了再通胀与利率预期回摆"
+        }
+      ],
+      "created_at": "2026-04-04T23:45:41.801854+08:00",
+      "updated_at": "2026-04-04T23:45:41.801854+08:00"
+    },
+    "topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+    "mother_topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "油价攀升背后，市场忽视了利率预期的潜在回摆",
+    "source_status": "自然入选",
+    "cluster_name": "美联储 / 中东 / 降息",
+    "cluster_id": "美联储-中东-policy-inflation-降息",
+    "core_thesis": "市场尚未充分计入中东冲突带来的再通胀与利率预期回摆风险。",
+    "core_proposition": "分析中东冲突如何通过油价影响美联储政策预期，揭示市场对再通胀和利率回调风险的系统性低估。",
+    "conflict_axis": "市场是否正确反映了中东冲突引发的再通胀及利率预期变化",
+    "one_line_judgment": "市场尚未充分计入中东冲突带来的再通胀与利率预期回摆风险。",
+    "counterintuitive_angle": "市场是否正确反映了中东冲突引发的再通胀及利率预期变化",
+    "why_now": "当前样本 `2` 条，来源 `2` 类，时效分 `1.0`，来源质量分 `0.95`。",
+    "reader_value": "适合 宏观资产配置、债券、基金读者。，重点是为投资者提供判断资产配置时应重点关注的政策与通胀变量，避免盲目跟风市场情绪。。",
+    "reader_payoff": "为投资者提供判断资产配置时应重点关注的政策与通胀变量，避免盲目跟风市场情绪。",
+    "audience": "宏观资产配置、债券、基金读者。",
+    "proof_requirements": [
+      "先界定 美联储、中东 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "说明 美联储、中东 如何传导到通胀、利率或资产定价预期。",
+      "给出股债商品在不同情景下的分化边界。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "美联储-中东-policy-inflation-降息-e01",
+        "title": "参考1990年石油危机，美联储终将降息 随着中东冲突引爆油价，并令通胀担忧中燃，全球利率市场近期发生了戏剧性的“鹰派再定价”——市场从年初押注美联储多次降息转向",
+        "url": "https://m.weibo.cn/detail/5282569275049549",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "参考1990年石油危机，美联储终将降息 随着中东冲突引爆油价，并令通胀担忧中燃，全球利率市场近期发生了戏剧性的“鹰派再定价”——市场从年初押注美联储多次降息转向；热度代理=36"
+      },
+      {
+        "evidence_id": "美联储-中东-policy-inflation-降息-e02",
+        "title": "就在今晚！中东战火下首份非农出炉：美联储会倒向降息还是加息？",
+        "url": "https://www.cls.cn/detail/2334455",
+        "source_type": "聚合新闻",
+        "source_tier": "personal_opinion",
+        "evidence_type": "article_link",
+        "note": "就在今晚！中东战火下首份非农出炉：美联储会倒向降息还是加息？；来自 reports 最新外链"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少通胀、利率或就业等硬数据，需要补可直接验证的序列。"
+    ],
+    "chart_needs": [
+      "通胀/利率/商品三联图",
+      "股债商品情景矩阵"
+    ],
+    "image_needs": [
+      "央行、交易员、财经屏幕"
+    ],
+    "video_needs": [
+      "议息会、交易大厅、财经新闻"
+    ],
+    "recommended_data_angles": [
+      "通胀/利率/商品三联图",
+      "股债商品情景矩阵"
+    ],
+    "recommended_visual_angles": [
+      "央行、交易员、财经屏幕",
+      "议息会、交易大厅、财经新闻"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "美联储"
+    ],
+    "priority_news_queries": [
+      "美联储 美联储、中东这条线，市场是否低估了再 latest news",
+      "中东 美联储、中东这条线，市场是否低估了再 latest news",
+      "降息 美联储、中东这条线，市场是否低估了再 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：主线会不会其实是再通胀。",
+      "part_1": "先界定 美联储、中东 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "说明 美联储、中东 如何传导到通胀、利率或资产定价预期。",
+      "part_3": "给出股债商品在不同情景下的分化边界。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.83,
+      "sharpness": 8.55,
+      "evidence": 9.66,
+      "longevity": 8.7,
+      "reader_value": 8.49,
+      "distinctiveness": 7.3,
+      "composite": 7.75
+    },
+    "cluster_quality_score": 29.57,
+    "topic_value_score": 7.75,
+    "distinctiveness_reason": "聚焦美联储与油价互动，深度剖析政策预期与市场反应的错配，区别于单纯事件报道。",
+    "why_not_duplicate_of": "该题为同类话题中对政策与市场预期关系的最完整表达，具备独特分析框架。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少通胀、利率或就业等硬数据，需要补可直接验证的序列。",
+    "article_use": "判断稿",
+    "changed_dimension": "强化对政策与市场预期错配的逻辑分析，突出资产配置判断价值。",
+    "extendability": "可延展成系列稿",
+    "title_candidates": [
+      "中东冲突推升油价，市场低估通胀与利率回调风险",
+      "美联储面临中东冲击，市场对再通胀反应不足",
+      "油价攀升背后，市场忽视了利率预期的潜在回摆"
+    ]
+  },
+  {
+    "meta": {
+      "id": "2026-04-04_204231:topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆-variant-鲍威尔-美联储这条线若换个切口-最该补的证据会不",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-04_204231",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "鲍威尔-美联储-policy-inflation-加息::鲍威尔、美联储这条线若换个切口，最该补的证据会不会完全不同",
+      "upstream_ids": [
+        "intake-20260404204231-184"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "鲍威尔-美联储-policy-inflation-加息",
+          "url": "",
+          "title": "鲍威尔、美联储这条线若换个切口，最该补的证据会不会完全不同"
+        }
+      ],
+      "created_at": "2026-04-04T23:45:41.801896+08:00",
+      "updated_at": "2026-04-04T23:45:41.801896+08:00"
+    },
+    "topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆-variant-鲍威尔-美联储这条线若换个切口-最该补的证据会不",
+    "mother_topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+    "topic_kind": "variant",
+    "angle_variant_of": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+    "title": "鲍威尔的通胀压力与市场利率预期裂痕",
+    "source_status": "自然入选",
+    "cluster_name": "鲍威尔 / 美联储 / 加息",
+    "cluster_id": "鲍威尔-美联储-policy-inflation-加息",
+    "core_thesis": "鲍威尔的政策表达与市场预期存在明显差距，影响资产定价逻辑。",
+    "core_proposition": "以鲍威尔为核心观察点，分析其言论如何影响市场对再通胀和利率预期的判断，揭示市场与政策信号的错位。",
+    "conflict_axis": "市场是否正确解读了鲍威尔及美联储的通胀和利率政策信号",
+    "one_line_judgment": "鲍威尔的政策表达与市场预期存在明显差距，影响资产定价逻辑。",
+    "counterintuitive_angle": "市场是否正确解读了鲍威尔及美联储的通胀和利率政策信号",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `1.0`，来源质量分 `0.95`。",
+    "reader_value": "适合 宏观资产配置、债券、基金读者。，重点是帮助读者厘清政策领导人言论对市场预期的影响，避免盲目跟随市场情绪波动。。",
+    "reader_payoff": "帮助读者厘清政策领导人言论对市场预期的影响，避免盲目跟随市场情绪波动。",
+    "audience": "宏观资产配置、债券、基金读者。",
+    "proof_requirements": [
+      "先界定 鲍威尔、美联储 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "说明 鲍威尔、美联储 如何传导到通胀、利率或资产定价预期。",
+      "给出股债商品在不同情景下的分化边界。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "鲍威尔-美联储-policy-inflation-加息-e01",
+        "title": "如果我判断是对的，油价逐步掉头，那自然不用多说。即便我错了油价还有冲高，那也不怕，因为鬼故事的逻辑已经被证伪了，鲍威尔说的。美联储观察都不预期加息了。综合来说不",
+        "url": "https://m.weibo.cn/detail/5283276935663470",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "如果我判断是对的，油价逐步掉头，那自然不用多说。即便我错了油价还有冲高，那也不怕，因为鬼故事的逻辑已经被证伪了，鲍威尔说的。美联储观察都不预期加息了。综合来说不；热度代理=757"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少通胀、利率或就业等硬数据，需要补可直接验证的序列。"
+    ],
+    "chart_needs": [
+      "通胀/利率/商品三联图",
+      "股债商品情景矩阵"
+    ],
+    "image_needs": [
+      "央行、交易员、财经屏幕"
+    ],
+    "video_needs": [
+      "议息会、交易大厅、财经新闻"
+    ],
+    "recommended_data_angles": [
+      "通胀/利率/商品三联图",
+      "股债商品情景矩阵"
+    ],
+    "recommended_visual_angles": [
+      "央行、交易员、财经屏幕",
+      "议息会、交易大厅、财经新闻"
+    ],
+    "priority_people": [
+      "鲍威尔"
+    ],
+    "priority_orgs": [
+      "美联储"
+    ],
+    "priority_news_queries": [
+      "鲍威尔 鲍威尔、美联储这条线若换个切口，最该 latest news",
+      "美联储 鲍威尔、美联储这条线若换个切口，最该 latest news",
+      "油价 鲍威尔、美联储这条线若换个切口，最该 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：主线会不会其实是再通胀。",
+      "part_1": "先界定 鲍威尔、美联储 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "说明 鲍威尔、美联储 如何传导到通胀、利率或资产定价预期。",
+      "part_3": "给出股债商品在不同情景下的分化边界。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.33,
+      "sharpness": 8.55,
+      "evidence": 9.21,
+      "longevity": 7.6,
+      "reader_value": 8.29,
+      "distinctiveness": 6.8,
+      "composite": 7.3
+    },
+    "cluster_quality_score": 28.82,
+    "topic_value_score": 7.3,
+    "distinctiveness_reason": "区别于以整体美联储为观察对象，本题聚焦鲍威尔个人言论及其对市场的特殊影响。",
+    "why_not_duplicate_of": "同属大矛盾下的细分视角，因关注点人物不同而具备独立价值。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少通胀、利率或就业等硬数据，需要补可直接验证的序列。",
+    "article_use": "判断稿",
+    "changed_dimension": "观察焦点由美联储整体转向主席鲍威尔个体言论及其市场影响。",
+    "extendability": "更适合单篇深稿",
+    "title_candidates": [
+      "鲍威尔表态引发市场对通胀与利率预期的新一轮调整",
+      "美联储主席鲍威尔言论揭示市场对政策走向的误判",
+      "鲍威尔的通胀压力与市场利率预期裂痕"
+    ]
+  },
+  {
+    "meta": {
+      "id": "2026-04-04_204231:topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-04_204231",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "川普-美国-risk-pricing::川普、美国这条线，风险溢价究竟在围绕什么变量重估",
+      "upstream_ids": [
+        "intake-20260404204231-343"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "川普-美国-risk-pricing",
+          "url": "",
+          "title": "川普、美国这条线，风险溢价究竟在围绕什么变量重估"
+        }
+      ],
+      "created_at": "2026-04-04T23:45:41.801930+08:00",
+      "updated_at": "2026-04-04T23:45:41.801930+08:00"
+    },
+    "topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+    "mother_topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "美国风险溢价变动，川普因素驱动的变量重构",
+    "source_status": "自然入选",
+    "cluster_name": "川普 / 美国",
+    "cluster_id": "川普-美国-risk-pricing",
+    "core_thesis": "川普相关因素正引导市场风险溢价围绕核心变量进行深度重估。",
+    "core_proposition": "剖析川普相关事件如何驱动美国市场风险溢价围绕具体经济和政策变量重新定价，超越表面新闻。",
+    "conflict_axis": "市场风险溢价围绕哪些变量在川普影响下被重新评估",
+    "one_line_judgment": "川普相关因素正引导市场风险溢价围绕核心变量进行深度重估。",
+    "counterintuitive_angle": "市场风险溢价围绕哪些变量在川普影响下被重新评估",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `0.96`，来源质量分 `0.95`。",
+    "reader_value": "适合 宏观、商品、基金配置读者。，重点是为投资者提供识别风险溢价变动背后真实驱动力的框架，提升资产配置判断精准度。。",
+    "reader_payoff": "为投资者提供识别风险溢价变动背后真实驱动力的框架，提升资产配置判断精准度。",
+    "audience": "宏观、商品、基金配置读者。",
+    "proof_requirements": [
+      "先界定 川普、美国 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "给出哪些资产还在联动，哪些已经先一步分化。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "川普-美国-risk-pricing-e01",
+        "title": "川普演讲，油价单月暴涨60%！ 1200万桶原油断供，美国到底在下什么大棋？",
+        "url": "https://www.bilibili.com/video/BV1rK9MBfEkG",
+        "source_type": "B站",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "川普演讲，油价单月暴涨60%！ 1200万桶原油断供，美国到底在下什么大棋？；热度代理=1"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。"
+    ],
+    "chart_needs": [
+      "价格与利率联动图",
+      "事件时间线与市场反应对照图"
+    ],
+    "image_needs": [
+      "交易屏、商品、外交现场"
+    ],
+    "video_needs": [
+      "新闻直播、交易画面、场景素材"
+    ],
+    "recommended_data_angles": [
+      "价格与利率联动图",
+      "事件时间线与市场反应对照图"
+    ],
+    "recommended_visual_angles": [
+      "交易屏、商品、外交现场",
+      "新闻直播、交易画面、场景素材"
+    ],
+    "priority_people": [
+      "川普"
+    ],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "川普 川普、美国这条线，风险溢价究竟在围绕 latest news",
+      "美国 川普、美国这条线，风险溢价究竟在围绕 latest news",
+      "原油 川普、美国这条线，风险溢价究竟在围绕 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：表面事件和真实定价链条是否正在背离。",
+      "part_1": "先界定 川普、美国 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "part_3": "给出哪些资产还在联动，哪些已经先一步分化。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.22,
+      "sharpness": 8.0,
+      "evidence": 9.31,
+      "longevity": 6.5,
+      "reader_value": 7.72,
+      "distinctiveness": 7.3,
+      "composite": 6.95
+    },
+    "cluster_quality_score": 28.228,
+    "topic_value_score": 6.95,
+    "distinctiveness_reason": "以川普及其政策影响为核心，深入拆解风险溢价背后的变量结构，区别于泛泛风险讨论。",
+    "why_not_duplicate_of": "该题为同类主题中对风险溢价变量重估的最高质量表达，具备独特视角。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。",
+    "article_use": "判断稿",
+    "changed_dimension": "聚焦风险溢价重估的核心变量及其与川普因素的关联，提升逻辑深度。",
+    "extendability": "更适合单篇深稿",
+    "title_candidates": [
+      "川普影响下，美国风险溢价重估的真正要补的变量解析",
+      "美国风险溢价变动，川普因素驱动的变量重构",
+      "风险溢价重估中，川普与美国市场的变量博弈"
+    ]
+  },
+  {
+    "meta": {
+      "id": "2026-04-04_204231:topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估-variant-黄金-降息这条线若换个切口-最该补的证据会不会完",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-04_204231",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "黄金-降息-risk-pricing-降息::黄金、降息这条线若换个切口，最该补的证据会不会完全不同",
+      "upstream_ids": [
+        "intake-20260404204231-336"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "黄金-降息-risk-pricing-降息",
+          "url": "",
+          "title": "黄金、降息这条线若换个切口，最该补的证据会不会完全不同"
+        }
+      ],
+      "created_at": "2026-04-04T23:45:41.801961+08:00",
+      "updated_at": "2026-04-04T23:45:41.801961+08:00"
+    },
+    "topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估-variant-黄金-降息这条线若换个切口-最该补的证据会不会完",
+    "mother_topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+    "topic_kind": "variant",
+    "angle_variant_of": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+    "title": "黄金价格波动反映的降息风险溢价重估",
+    "source_status": "自然入选",
+    "cluster_name": "黄金 / 降息 / 降息",
+    "cluster_id": "黄金-降息-risk-pricing-降息",
+    "core_thesis": "黄金市场风险溢价正在围绕降息预期进行结构性重估。",
+    "core_proposition": "围绕黄金与降息预期，揭示风险溢价重估的另一条重要路径，区别于川普因素下的市场解读。",
+    "conflict_axis": "风险溢价如何在黄金与降息预期之间被重新评估",
+    "one_line_judgment": "黄金市场风险溢价正在围绕降息预期进行结构性重估。",
+    "counterintuitive_angle": "风险溢价如何在黄金与降息预期之间被重新评估",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `0.96`，来源质量分 `0.95`。",
+    "reader_value": "适合 宏观、商品、基金配置读者。，重点是帮助读者理解黄金市场风险溢价背后的降息预期变量，优化资产风险判断。。",
+    "reader_payoff": "帮助读者理解黄金市场风险溢价背后的降息预期变量，优化资产风险判断。",
+    "audience": "宏观、商品、基金配置读者。",
+    "proof_requirements": [
+      "先界定 黄金、降息 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "给出哪些资产还在联动，哪些已经先一步分化。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "黄金-降息-risk-pricing-降息-e01",
+        "title": "突发！非农数据3倍暴击黄金暴跌160亿，17.8万就业炸碎降息美梦，你的黄金还能拿住吗？",
+        "url": "https://www.bilibili.com/video/BV1VrDTBKEat",
+        "source_type": "B站",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "突发！非农数据3倍暴击黄金暴跌160亿，17.8万就业炸碎降息美梦，你的黄金还能拿住吗？；热度代理=1"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。"
+    ],
+    "chart_needs": [
+      "价格与利率联动图",
+      "事件时间线与市场反应对照图"
+    ],
+    "image_needs": [
+      "交易屏、商品、外交现场"
+    ],
+    "video_needs": [
+      "新闻直播、交易画面、场景素材"
+    ],
+    "recommended_data_angles": [
+      "价格与利率联动图",
+      "事件时间线与市场反应对照图"
+    ],
+    "recommended_visual_angles": [
+      "交易屏、商品、外交现场",
+      "新闻直播、交易画面、场景素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "黄金 黄金、降息这条线若换个切口，最该补的 latest news",
+      "降息 黄金、降息这条线若换个切口，最该补的 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：表面事件和真实定价链条是否正在背离。",
+      "part_1": "先界定 黄金、降息 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "part_3": "给出哪些资产还在联动，哪些已经先一步分化。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 2.87,
+      "sharpness": 8.55,
+      "evidence": 9.04,
+      "longevity": 7.6,
+      "reader_value": 7.2,
+      "distinctiveness": 6.8,
+      "composite": 7.04
+    },
+    "cluster_quality_score": 26.728,
+    "topic_value_score": 7.04,
+    "distinctiveness_reason": "观察对象从川普因素转向黄金与降息预期，提供风险溢价重估的多维视角。",
+    "why_not_duplicate_of": "虽共享风险溢价主题，但因核心变量和市场不同，具备独立价值。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。",
+    "article_use": "判断稿",
+    "changed_dimension": "观察对象由川普及美国整体市场切换到黄金与降息预期，聚焦不同变量。",
+    "extendability": "更适合单篇深稿",
+    "title_candidates": [
+      "降息预期驱动下，黄金市场风险溢价如何重构",
+      "黄金价格波动反映的降息风险溢价重估",
+      "降息预期变化中，黄金市场风险溢价的深层逻辑"
+    ]
+  },
+  {
+    "meta": {
+      "id": "2026-04-04_204231:topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-04_204231",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "英伟达-半导体-semiconductor-cycle::英伟达、半导体：真正值得写的是局部修复会不会被误读成全面复苏",
+      "upstream_ids": [
+        "intake-20260404204231-415"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "英伟达-半导体-semiconductor-cycle",
+          "url": "",
+          "title": "英伟达、半导体：真正值得写的是局部修复会不会被误读成全面复苏"
+        }
+      ],
+      "created_at": "2026-04-04T23:45:41.801984+08:00",
+      "updated_at": "2026-04-04T23:45:41.801984+08:00"
+    },
+    "topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+    "mother_topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "英伟达回暖，不等于半导体行业全面复苏",
+    "source_status": "自然入选",
+    "cluster_name": "英伟达 / 半导体",
+    "cluster_id": "英伟达-半导体-semiconductor-cycle",
+    "core_thesis": "英伟达的回暖只是半导体行业局部改善，整体复苏尚未确立。",
+    "core_proposition": "拆解英伟达业绩回暖背后的产业链信号，辨别哪些环节真正改善，避免误读为整个半导体行业全面复苏。",
+    "conflict_axis": "局部业绩修复是否被市场误判为半导体行业整体复苏",
+    "one_line_judgment": "英伟达的回暖只是半导体行业局部改善，整体复苏尚未确立。",
+    "counterintuitive_angle": "局部业绩修复是否被市场误判为半导体行业整体复苏",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `0.9`，来源质量分 `0.88`。",
+    "reader_value": "适合 产业观察型、科技投资型读者。，重点是帮助读者识别半导体产业链中的结构性分化，避免投资决策基于情绪化解读。。",
+    "reader_payoff": "帮助读者识别半导体产业链中的结构性分化，避免投资决策基于情绪化解读。",
+    "audience": "产业观察型、科技投资型读者。",
+    "proof_requirements": [
+      "先界定 英伟达、半导体 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开 英伟达、半导体 背后的设备、订单、价格和资本开支信号。",
+      "指出投资者最容易把什么误读成全面景气。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "英伟达-半导体-semiconductor-cycle-e01",
+        "title": "英伟达、英特尔等成“打击目标”！警告员工：立即撤离保命！",
+        "url": "https://mp.weixin.qq.com/s/OJYVRhhfMMvhk_kQFpae2w",
+        "source_type": "公众号文章",
+        "source_tier": "self_media",
+        "evidence_type": "article_link",
+        "note": "英伟达、英特尔等成“打击目标”！警告员工：立即撤离保命！；半导体封测 定向样本"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少价格、订单、资本开支或出货变量，需要补产业链分环节数据。"
+    ],
+    "chart_needs": [
+      "分环节景气图",
+      "订单与价格对照图"
+    ],
+    "image_needs": [
+      "晶圆厂、洁净室、设备、工程师"
+    ],
+    "video_needs": [
+      "工厂、产线、行业会议、访谈"
+    ],
+    "recommended_data_angles": [
+      "分环节景气图",
+      "订单与价格对照图"
+    ],
+    "recommended_visual_angles": [
+      "晶圆厂、洁净室、设备、工程师",
+      "工厂、产线、行业会议、访谈"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "英伟达"
+    ],
+    "priority_news_queries": [
+      "英伟达 英伟达、半导体：真正值得写的是局部修 latest news",
+      "半导体 英伟达、半导体：真正值得写的是局部修 latest news",
+      "封测 英伟达、半导体：真正值得写的是局部修 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：热闹信号会不会被误读成全面复苏。",
+      "part_1": "先界定 英伟达、半导体 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开 英伟达、半导体 背后的设备、订单、价格和资本开支信号。",
+      "part_3": "指出投资者最容易把什么误读成全面景气。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 2.7,
+      "sharpness": 8.0,
+      "evidence": 8.67,
+      "longevity": 6.5,
+      "reader_value": 8.12,
+      "distinctiveness": 7.3,
+      "composite": 6.76
+    },
+    "cluster_quality_score": 27.354,
+    "topic_value_score": 6.76,
+    "distinctiveness_reason": "以英伟达为切入点，深入分析半导体产业链的分化和误读风险，区别于泛泛复苏讨论。",
+    "why_not_duplicate_of": "该题为半导体行业复苏讨论中最具逻辑张力和深度的表达。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少价格、订单、资本开支或出货变量，需要补产业链分环节数据。",
+    "article_use": "解释稿",
+    "changed_dimension": "聚焦产业链分化与市场误读，强化对局部与整体复苏的区分。",
+    "extendability": "更适合单篇深稿",
+    "title_candidates": [
+      "半导体局部复苏信号被放大，行业全面回暖尚未到来",
+      "英伟达表现强劲，半导体产业链分化加剧",
+      "别被英伟达带偏，半导体行业复苏仍存结构性差异"
+    ]
+  },
+  {
+    "meta": {
+      "id": "2026-04-04_204231:topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏-variant-半导体-封测这条线若换个切口-最该补的证据会不会",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-04_204231",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "半导体-封测-semiconductor-cycle::半导体、封测这条线若换个切口，最该补的证据会不会完全不同",
+      "upstream_ids": [
+        "intake-20260404204231-411",
+        "intake-20260404204231-412",
+        "intake-20260404204231-413",
+        "intake-20260404204231-414"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "半导体-封测-semiconductor-cycle",
+          "url": "",
+          "title": "半导体、封测这条线若换个切口，最该补的证据会不会完全不同"
+        }
+      ],
+      "created_at": "2026-04-04T23:45:41.802015+08:00",
+      "updated_at": "2026-04-04T23:45:41.802015+08:00"
+    },
+    "topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏-variant-半导体-封测这条线若换个切口-最该补的证据会不会",
+    "mother_topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+    "topic_kind": "variant",
+    "angle_variant_of": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+    "title": "半导体封测投资回暖，行业复苏仍存不确定性",
+    "source_status": "自然入选",
+    "cluster_name": "半导体 / 封测",
+    "cluster_id": "半导体-封测-semiconductor-cycle",
+    "core_thesis": "封测环节的复苏尚不足以支撑半导体行业整体回暖的判断。",
+    "core_proposition": "聚焦半导体封测环节，分析其复苏信号的真实性与局限性，判断是否能代表整个半导体行业的复苏态势。",
+    "conflict_axis": "封测环节的改善是否能被误读为半导体行业全面复苏",
+    "one_line_judgment": "封测环节的复苏尚不足以支撑半导体行业整体回暖的判断。",
+    "counterintuitive_angle": "封测环节的改善是否能被误读为半导体行业全面复苏",
+    "why_now": "当前样本 `4` 条，来源 `1` 类，时效分 `0.9`，来源质量分 `0.88`。",
+    "reader_value": "适合 产业观察型、科技投资型读者。，重点是帮助读者拆解产业链不同环节的信号差异，避免投资判断盲目乐观。。",
+    "reader_payoff": "帮助读者拆解产业链不同环节的信号差异，避免投资判断盲目乐观。",
+    "audience": "产业观察型、科技投资型读者。",
+    "proof_requirements": [
+      "先界定 半导体、封测 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开 半导体、封测 背后的设备、订单、价格和资本开支信号。",
+      "指出投资者最容易把什么误读成全面景气。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "半导体-封测-semiconductor-cycle-e01",
+        "title": "恭喜！贵州煜晖电子二期，正式开工",
+        "url": "https://mp.weixin.qq.com/s/mYA-d4r8K9VUqxfN1V0Tjw",
+        "source_type": "公众号文章",
+        "source_tier": "self_media",
+        "evidence_type": "article_link",
+        "note": "恭喜！贵州煜晖电子二期，正式开工；半导体封测 定向样本"
+      },
+      {
+        "evidence_id": "半导体-封测-semiconductor-cycle-e02",
+        "title": "新进展！南芯半导体年产40亿颗先进半导体芯片封测项目",
+        "url": "https://mp.weixin.qq.com/s/Hpt3aS2ITdZMp2LBHV1Ehw",
+        "source_type": "公众号文章",
+        "source_tier": "self_media",
+        "evidence_type": "article_link",
+        "note": "新进展！南芯半导体年产40亿颗先进半导体芯片封测项目；半导体封测 定向样本"
+      },
+      {
+        "evidence_id": "半导体-封测-semiconductor-cycle-e03",
+        "title": "深圳一项目奠基，总投资13.34 亿！",
+        "url": "https://mp.weixin.qq.com/s/JaO7pWdlDrvUeB-lWEXWRA",
+        "source_type": "公众号文章",
+        "source_tier": "self_media",
+        "evidence_type": "article_link",
+        "note": "深圳一项目奠基，总投资13.34 亿！；半导体封测 定向样本"
+      },
+      {
+        "evidence_id": "半导体-封测-semiconductor-cycle-e04",
+        "title": "中微公司业绩创新高！去年净利润21.1亿元，同比增长30.69%",
+        "url": "https://mp.weixin.qq.com/s/6NRu17LS07-WSxrEYsoXSg",
+        "source_type": "公众号文章",
+        "source_tier": "self_media",
+        "evidence_type": "article_link",
+        "note": "中微公司业绩创新高！去年净利润21.1亿元，同比增长30.69%；半导体封测 定向样本"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少价格、订单、资本开支或出货变量，需要补产业链分环节数据。"
+    ],
+    "chart_needs": [
+      "分环节景气图",
+      "订单与价格对照图"
+    ],
+    "image_needs": [
+      "晶圆厂、洁净室、设备、工程师"
+    ],
+    "video_needs": [
+      "工厂、产线、行业会议、访谈"
+    ],
+    "recommended_data_angles": [
+      "分环节景气图",
+      "订单与价格对照图"
+    ],
+    "recommended_visual_angles": [
+      "晶圆厂、洁净室、设备、工程师",
+      "工厂、产线、行业会议、访谈"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "半导体 半导体、封测这条线若换个切口，最该补 latest news",
+      "封测 半导体、封测这条线若换个切口，最该补 latest news",
+      "芯片 半导体、封测这条线若换个切口，最该补 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：热闹信号会不会被误读成全面复苏。",
+      "part_1": "先界定 半导体、封测 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开 半导体、封测 背后的设备、订单、价格和资本开支信号。",
+      "part_3": "指出投资者最容易把什么误读成全面景气。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 4.07,
+      "sharpness": 7.9,
+      "evidence": 10.0,
+      "longevity": 6.5,
+      "reader_value": 8.12,
+      "distinctiveness": 6.8,
+      "composite": 7.24
+    },
+    "cluster_quality_score": 26.268,
+    "topic_value_score": 7.24,
+    "distinctiveness_reason": "观察对象由英伟达转向封测环节，提供对产业链复苏的更细分视角。",
+    "why_not_duplicate_of": "虽共享整体复苏主题，但因聚焦封测环节，具备独立分析价值。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少价格、订单、资本开支或出货变量，需要补产业链分环节数据。",
+    "article_use": "解释稿",
+    "changed_dimension": "观察对象由芯片设计龙头转为产业链下游封测环节，更细化产业链分析。",
+    "extendability": "更适合单篇深稿",
+    "title_candidates": [
+      "封测领域的复苏是否预示半导体行业整体转机？",
+      "半导体封测投资回暖，行业复苏仍存不确定性",
+      "从封测项目看半导体产业链复苏的真实边界"
+    ]
+  },
+  {
+    "meta": {
+      "id": "2026-04-04_204231:topic-ai-真正拉开差距的是功能演示还是工作流落地",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-04_204231",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "ai-technology-adoption::AI：真正拉开差距的是功能演示还是工作流落地",
+      "upstream_ids": [
+        "intake-20260404204231-346",
+        "intake-20260404204231-350"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "ai-technology-adoption",
+          "url": "",
+          "title": "AI：真正拉开差距的是功能演示还是工作流落地"
+        }
+      ],
+      "created_at": "2026-04-04T23:45:41.802048+08:00",
+      "updated_at": "2026-04-04T23:45:41.802048+08:00"
+    },
+    "topic_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+    "mother_topic_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "AI这波，真正拉开差距的不是功能，而是工作流的落地能力",
+    "source_status": "自然入选",
+    "cluster_name": "AI",
+    "cluster_id": "ai-technology-adoption",
+    "core_thesis": "AI行业差距由工作流整合能力决定，功能演示只是基础门槛。",
+    "core_proposition": "拆解AI技术的表面功能与实际工作流整合的区别，论证真正决定竞争格局的是工作流落地能力而非单一功能演示。",
+    "conflict_axis": "AI竞争优势是来自功能多样性还是工作流落地的实际能力",
+    "one_line_judgment": "AI行业差距由工作流整合能力决定，功能演示只是基础门槛。",
+    "counterintuitive_angle": "AI竞争优势是来自功能多样性还是工作流落地的实际能力",
+    "why_now": "当前样本 `2` 条，来源 `1` 类，时效分 `0.96`，来源质量分 `0.95`。",
+    "reader_value": "适合 AI 工具用户、自媒体作者、效率型读者。，重点是帮助读者判断AI方案的真实价值，避免被花哨功能误导，聚焦落地效果。。",
+    "reader_payoff": "帮助读者判断AI方案的真实价值，避免被花哨功能误导，聚焦落地效果。",
+    "audience": "AI 工具用户、自媒体作者、效率型读者。",
+    "proof_requirements": [
+      "先界定 AI 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开 AI 的安装、接线、协作和维护成本，而不是只演示功能。",
+      "证明哪些方案是工作流能力，哪些只是功能演示。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "ai-technology-adoption-e01",
+        "title": "从DAU到Token：AI Agent时代，商业文明的度量衡重塑",
+        "url": "https://www.bilibili.com/video/BV17zXWBbETz",
+        "source_type": "B站",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "从DAU到Token：AI Agent时代，商业文明的度量衡重塑；热度代理=27"
+      },
+      {
+        "evidence_id": "ai-technology-adoption-e02",
+        "title": "AI冲击下的房地产市场",
+        "url": "https://www.bilibili.com/video/BV1GG93BpEkM",
+        "source_type": "B站",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "AI冲击下的房地产市场；热度代理=36"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少真实安装、维护和协作成本案例，需要补落地证据。"
+    ],
+    "chart_needs": [
+      "流程对比图",
+      "接入链路图"
+    ],
+    "image_needs": [
+      "终端、协作、自动化面板"
+    ],
+    "video_needs": [
+      "屏幕录制、协作场景、产品演示"
+    ],
+    "recommended_data_angles": [
+      "流程对比图",
+      "接入链路图"
+    ],
+    "recommended_visual_angles": [
+      "终端、协作、自动化面板",
+      "屏幕录制、协作场景、产品演示"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "AI AI：真正拉开差距的是功能演示还是工 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：真正的壁垒是功能数量还是工作流落地。",
+      "part_1": "先界定 AI 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开 AI 的安装、接线、协作和维护成本，而不是只演示功能。",
+      "part_3": "证明哪些方案是工作流能力，哪些只是功能演示。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.05,
+      "sharpness": 7.1,
+      "evidence": 9.09,
+      "longevity": 7.1,
+      "reader_value": 6.72,
+      "distinctiveness": 7.3,
+      "composite": 6.66
+    },
+    "cluster_quality_score": 22.706,
+    "topic_value_score": 6.66,
+    "distinctiveness_reason": "以AI落地为核心，突破常见功能炫技讨论，强调实际应用效率和协同成本。",
+    "why_not_duplicate_of": "该题为AI技术差异化讨论中最具逻辑张力和实践指导意义的表达。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少真实安装、维护和协作成本案例，需要补落地证据。",
+    "article_use": "结构稿",
+    "changed_dimension": "由功能展示转向工作流落地，强化实际应用层面的竞争判断。",
+    "extendability": "更适合单篇深稿",
+    "title_candidates": [
+      "AI竞争核心在于工作流整合，而非单纯功能展示",
+      "功能演示泛滥，AI落地关键在于工作流协同效率",
+      "AI价值取决于工作流落地，功能只是入门门槛"
+    ]
+  }
+]

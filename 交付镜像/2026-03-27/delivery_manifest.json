@@ -1,0 +1,37 @@
+{
+  "01_intake": {
+    "exported": false,
+    "source": "",
+    "desktop_path": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/01_intake"
+  },
+  "02_brief": {
+    "exported": true,
+    "source": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-26_080504_standardized",
+    "desktop_path": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/02_brief/2026-03-26_080504_standardized"
+  },
+  "03_draft": {
+    "exported": true,
+    "source": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-03-26_141800",
+    "desktop_path": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/03_draft/2026-03-26_141800"
+  },
+  "04_rewrite": {
+    "exported": false,
+    "source": "",
+    "desktop_path": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/04_rewrite"
+  },
+  "05_material": {
+    "exported": true,
+    "source": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122",
+    "desktop_path": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122"
+  },
+  "06_publish": {
+    "exported": false,
+    "source": "",
+    "desktop_path": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/06_publish"
+  },
+  "07_postmortem": {
+    "exported": false,
+    "source": "",
+    "desktop_path": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/07_postmortem"
+  }
+}

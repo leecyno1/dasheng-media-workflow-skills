@@ -1,0 +1,29 @@
+{
+  "collection_root": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集",
+  "batch_count": 1,
+  "totals": {
+    "chart_count": 4,
+    "table_count": 0
+  },
+  "batches": [
+    {
+      "batch_id": "2026-03-29_105535",
+      "pack_root": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets",
+      "chart_count": 4,
+      "table_count": 0,
+      "topic_count": 1,
+      "chart_quality_gate_report_json": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/chart_quality_gate_report.json"
+    }
+  ],
+  "topics": [
+    {
+      "topic_slug": "topic-6",
+      "topic_title": "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+      "chart_count": 4,
+      "table_count": 0,
+      "batches": [
+        "2026-03-29_105535"
+      ]
+    }
+  ]
+}

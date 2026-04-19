@@ -1,0 +1,114 @@
+{
+  "run_id": "2026-04-05_170457",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "没有 selected_topics 或未批准状态，不允许进入下游阶段。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "topic_001",
+      "title": "俄罗斯断供日本石油加剧全球能源供应链分化",
+      "topic_kind": "independent",
+      "mother_topic_id": "topic_001",
+      "angle_variant_of": null,
+      "article_use": "适合写成地缘政治与能源市场连动的深度分析稿，结合俄罗斯外交政策与中东局势解读。",
+      "core_proposition": "在中东战火背景下，俄罗斯断供日本体现了能源供应被地缘政治深度绑架，可能引发全球能源市场结构性调整。",
+      "one_line_judgment": "俄罗斯拒绝向被视为不友好国家日本供油，推动能源供应链政治化与分裂。"
+    },
+    {
+      "topic_id": "topic_002",
+      "title": "美伊冲突激化推升油价波动引发美联储货币政策转向预期",
+      "topic_kind": "independent",
+      "mother_topic_id": "topic_002",
+      "angle_variant_of": null,
+      "article_use": "适合做宏观经济与地缘政治联动分析，结合美联储政策动向与油价波动解析。",
+      "core_proposition": "美伊冲突直接触发油价震荡，美联储官员讲话配合市场情绪，促成利率预期结构性调整。",
+      "one_line_judgment": "中东局势紧张导致油价剧烈波动，促使市场重新评估美联储未来货币政策路径，转向降息预期。"
+    },
+    {
+      "topic_id": "topic_003",
+      "title": "伊朗强化霍尔木兹海峡控制成核谈判关键筹码",
+      "topic_kind": "independent",
+      "mother_topic_id": "topic_003",
+      "angle_variant_of": null,
+      "article_use": "适合写地缘政治与能源安全深度分析，结合伊朗核谈判与能源通道控制权解读。",
+      "core_proposition": "伊朗拒绝停火斡旋，实质上通过掌握全球重要能源通道加强谈判地位，影响全球能源安全与价格。",
+      "one_line_judgment": "伊朗通过强化霍尔木兹海峡控制，利用能源运输通道作为核战略与国际谈判的核心杠杆。"
+    },
+    {
+      "topic_id": "topic_004",
+      "title": "美以联军军事行动激活中东抵抗力量，区域安全持续恶化",
+      "topic_kind": "independent",
+      "mother_topic_id": "topic_004",
+      "angle_variant_of": null,
+      "article_use": "适合做中东地缘政治冲突动态与多方武装力量博弈的深度专题。",
+      "core_proposition": "持续轰炸和军事打击未能压制抵抗力量，反而激活“抵抗之弧”，加剧地区多方力量博弈与不稳定。",
+      "one_line_judgment": "美以针对伊朗境内目标的军事行动激化多方抵抗，导致中东地区安全形势复杂且长期不可控。"
+    },
+    {
+      "topic_id": "topic_005",
+      "title": "多地央行降息开启全球宽松周期，金融市场结构性调整窗口打开",
+      "topic_kind": "independent",
+      "mother_topic_id": "topic_005",
+      "angle_variant_of": null,
+      "article_use": "适合做宏观经济政策变动与资本市场结构调整的专题解读。",
+      "core_proposition": "央行降息同步发生并被市场积极响应，预示货币环境松动，催生资产配置与风险偏好调整。",
+      "one_line_judgment": "多地央行果断降息释放宽松信号，标志全球货币政策进入调整新阶段，资本流动与资产定价面临结构变革。"
+    },
+    {
+      "topic_id": "topic_006",
+      "title": "美军无人机失事暴露美伊冲突升级风险与复杂性",
+      "topic_kind": "independent",
+      "mother_topic_id": "topic_006",
+      "angle_variant_of": null,
+      "article_use": "适合写成军事安全事件解析及其对国际局势冲击的专题报道。",
+      "core_proposition": "该事件成为局势升级的信号，凸显军事行动对国际政治局势的直接影响与风险不可控性。",
+      "one_line_judgment": "美军无人机被击落及飞行员失踪事件标志美伊冲突进入新风险节点，军事与外交紧张关系更加复杂。"
+    },
+    {
+      "topic_id": "topic_007",
+      "title": "特朗普言论引发油价剧烈波动反映市场对美伊局势高度敏感",
+      "topic_kind": "independent",
+      "mother_topic_id": "topic_007",
+      "angle_variant_of": null,
+      "article_use": "适合写成政治言论与市场波动关联分析专题，辅以历史数据比较。",
+      "core_proposition": "政治人物言论成为市场情绪的直接触发器，强化了油价作为地缘政治风险晴雨表的角色。",
+      "one_line_judgment": "特朗普公开言论导致油价闪崩，显示市场对政治信号的短期过度反应与极端波动性。"
+    },
+    {
+      "topic_id": "topic_008",
+      "title": "俄罗斯将28名日本人重新列为战犯加剧俄日外交紧张",
+      "topic_kind": "independent",
+      "mother_topic_id": "topic_008",
+      "angle_variant_of": null,
+      "article_use": "适合写成俄日外交历史争议与现实冲突分析专题。",
+      "core_proposition": "历史争议被重新政治化，成为当前俄日外交紧张的重要因素，影响地区安全与国际合作。",
+      "one_line_judgment": "俄罗斯官方重新列28名日本人为战犯，激化历史遗留问题，导致俄日外交关系进一步恶化。"
+    },
+    {
+      "topic_id": "topic_009",
+      "title": "中东冲突激发全球贵金属避险需求，黄金白银价格显著上涨",
+      "topic_kind": "independent",
+      "mother_topic_id": "topic_009",
+      "angle_variant_of": null,
+      "article_use": "适合写成全球金融市场避险资产动态分析及投资策略专题。",
+      "core_proposition": "中东局势动荡引发投资者避险转向贵金属，强化其作为全球避险资产的核心地位。",
+      "one_line_judgment": "地缘政治紧张推动贵金属市场避险情绪升温，黄金白银需求及价格显著上扬。"
+    },
+    {
+      "topic_id": "topic_010",
+      "title": "美媒曝光五角大楼极端军事计划揭示美伊冲突风险升级",
+      "topic_kind": "independent",
+      "mother_topic_id": "topic_010",
+      "angle_variant_of": null,
+      "article_use": "适合写成军事战略决策揭秘及其地缘政治风险分析专题。",
+      "core_proposition": "极端军事方案曝光反映美国对伊朗策略的激进性，增加地区冲突不可预测性与风险管理难度。",
+      "one_line_judgment": "美国五角大楼曾考虑抢夺伊朗核材料的极端军事行动，显示冲突升级风险和战略决策激烈化。"
+    }
+  ],
+  "editor_note": ""
+}

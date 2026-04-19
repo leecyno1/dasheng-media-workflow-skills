@@ -1,0 +1,30 @@
+{
+  "run_id": "2026-03-26_080504",
+  "generated_at": "2026-03-26T11:12:37.166755",
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-03-26_080504/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-26_080504_standardized",
+  "manual_topics": [
+    "行业复苏里最危险的误判"
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-26_080504_standardized/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-26_080504_standardized/02_编辑Brief_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-26_080504_standardized/brief_manifest.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-26_080504_standardized/phase2-clusters-summary.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-26_080504_standardized/phase2-topic-index.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-26_080504_standardized/phase2-editorial-briefs.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-26_080504_standardized/phase2-topn-for-confirmation.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-26_080504_standardized/phase2-brief-library.md"
+  ],
+  "candidate_topics": [
+    "行业复苏里最危险的误判",
+    "表面在交易事件，真正的主线会不会其实是再通胀？",
+    "模糊消息为什么总能先于事实，影响市场情绪定价？",
+    "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+    "停火预期反复下，黄金、原油和风险资产正在被怎样重新定价？",
+    "避险资产为什么总会在最需要避险的时候先剧烈波动？",
+    "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+    "AI 工具今年更值得写的，不是大全，而是“接进工作流”的案例",
+    "OpenClaw、skills、知识库接入，为什么适合做连续栏目？"
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "run_id": "2026-04-09_234213",
+  "generated_at": "2026-04-09T23:42:13.999064+08:00",
+  "stage": "intake",
+  "object_type": "Run",
+  "execution_model": "agent-driven",
+  "ports": {
+    "reports": {
+      "status": "ok",
+      "base": "http://45.197.148.64:8080"
+    },
+    "5173": {
+      "status": "ok",
+      "base": "http://127.0.0.1:18000"
+    },
+    "8000": {
+      "status": "ok",
+      "base": "http://45.197.148.64:8000/api/v1",
+      "issues": [],
+      "attempts": 1,
+      "waited_seconds": 0
+    }
+  },
+  "counts": {
+    "x_total": 13024,
+    "wb_total": 2414,
+    "xhs_total": 8328,
+    "douyin_total": 3134,
+    "bili_total": 5415,
+    "content_research_candidates": 81,
+    "ai_hot_total": 10,
+    "trendradar_reports": 2334,
+    "trendradar_links": 20,
+    "wemprss_channels_total": 45,
+    "wemprss_articles_total": 75,
+    "curated_articles": 24,
+    "selected_records": 454,
+    "channel_top10_total": 88,
+    "valid_linked_records": 454
+  },
+  "analysis_pool": {
+    "selected_records": 454,
+    "analysis_records": 176,
+    "analysis_ratio": 0.3877,
+    "analysis_channels": {
+      "x": 22,
+      "wb": 42,
+      "xhs": 2,
+      "douyin": 18,
+      "bili": 28,
+      "content_research": 20,
+      "ai_hot": 10,
+      "reports": 10,
+      "wechat": 24
+    },
+    "analysis_tiers": {
+      "platform_hotspot": 130,
+      "official": 3,
+      "personal_opinion": 19,
+      "self_media": 24
+    },
+    "analysis_labels": {
+      "油价/地缘冲突": 46,
+      "AI工具/工作流": 37,
+      "黄金/白银/贵金属": 34,
+      "宏观/市场情绪": 34,
+      "日本/使馆/外交": 24,
+      "半导体/国产芯片": 4
+    }
+  },
+  "channel_tasks": {
+    "x": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 13024
+    },
+    "wb": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 2414
+    },
+    "xhs": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 8328
+    },
+    "douyin": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 3134
+    },
+    "bili": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 5415
+    },
+    "content_research": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 81
+    },
+    "ai_hot": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 10
+    },
+    "reports": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 20
+    },
+    "wechat": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 54
+    }
+  },
+  "artifacts": [
+    "raw/mediacrawler_latest_x.json",
+    "raw/mediacrawler_latest_xhs.json",
+    "raw/mediacrawler_latest_douyin.json",
+    "raw/mediacrawler_latest_wb.json",
+    "raw/mediacrawler_latest_bili.json",
+    "raw/mediacrawler_topnotes_content_research.json",
+    "raw/ai_hot_reddit.json",
+    "raw/ai_hot_hn.json",
+    "raw/trendradar_reports.json",
+    "raw/trendradar_latest_report.html",
+    "raw/trendradar_top_links.json",
+    "raw/wemprss_public_channels.json",
+    "raw/wemprss_articles_latest.json",
+    "raw/intake_records.json",
+    "ai_hot_topics.json",
+    "entity_rankings.json",
+    "event_clusters.json",
+    "source_quality_report.json",
+    "channel_top10.json",
+    "brief_input.json",
+    "channel_tasks.json",
+    "intake_review.json",
+    "notes/01_内容采集_报告.md",
+    "notes/01_内容采集_底稿.md"
+  ],
+  "next_stage": "brief"
+}

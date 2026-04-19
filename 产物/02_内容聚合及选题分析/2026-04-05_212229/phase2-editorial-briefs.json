@@ -1,0 +1,583 @@
+[
+  {
+    "topic_id": "T001",
+    "mother_topic_id": "T001",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "鲍威尔讲话促使市场由加息预期转向降息押注",
+    "one_line_judgment": "美联储主席鲍威尔最新表态削弱了加息预期，推动市场普遍押注未来将降息。",
+    "core_proposition": "鲍威尔讲话中通胀迹象不明显，加之人工智能发展预期，使得投资者重新评估货币政策方向，转向降息押注。",
+    "why_now": "近期鲍威尔讲话后市场波动明显，股市反弹和交易员押注转变成为近期金融市场焦点。",
+    "reader_payoff": "读者能理解美联储政策调整背后的逻辑，判断未来利率走势及其对资本市场的潜在影响。",
+    "article_use": "财经深度解析、市场策略指导、投资者教育材料。",
+    "distinctiveness_reason": "结合货币政策声明与市场反应，揭示政策预期转变的内在因果关系。",
+    "evidence_gap_summary": "需更多官方数据验证通胀水平及美联储中长期决策方向。",
+    "proof_requirements": [
+      "美联储官方会议纪要",
+      "市场利率变动数据",
+      "通胀统计数据"
+    ],
+    "recommended_data_angles": [
+      "利率期货价格变化",
+      "股市反弹幅度",
+      "通胀指标趋势"
+    ],
+    "recommended_visual_angles": [
+      "政策声明与市场反应时间线",
+      "利率预期演变曲线"
+    ],
+    "priority_people": [
+      "鲍威尔",
+      "美联储交易员"
+    ],
+    "priority_orgs": [
+      "美联储"
+    ],
+    "priority_news_queries": [
+      "鲍威尔讲话",
+      "美联储降息预期",
+      "加息转降息"
+    ],
+    "existing_evidence": [
+      {
+        "title": "鲍威尔今晚的讲话，救了特朗普半条命，通胀不明显，人工智能 666，加息不存在",
+        "url": "https://m.weibo.cn/detail/5282444644189214",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "note": "鲍威尔讲话引导市场转向降息预期"
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍鲍威尔近期讲话背景及市场初步反应",
+      "part_1": "详细剖析讲话内容对加息预期的影响",
+      "part_2": "结合人工智能发展预期对市场的推动作用",
+      "part_3": "分析市场由加息转向降息押注的逻辑链",
+      "ending": "总结政策变动对未来市场的长期影响"
+    },
+    "logic_chain_id": "鲍威尔-美联储-特朗普"
+  },
+  {
+    "topic_id": "T002",
+    "mother_topic_id": "T002",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "俄罗斯拒绝向日本供油凸显能源外交战略调整",
+    "one_line_judgment": "俄罗斯将能源出口限制于友好国家，拒绝向日本等不友好国家供油，加剧区域能源安全紧张。",
+    "core_proposition": "在中东局势紧张背景下，俄罗斯利用能源出口作为外交筹码，强化对特定国家的供应控制，影响国际能源市场。",
+    "why_now": "俄罗斯外交部最新声明明确拒绝供油，叠加中东局势复杂，能源安全成为地缘政治关键变量。",
+    "reader_payoff": "帮助读者把握能源供应与外交政策的互动，理解区域安全变化对全球能源市场的潜在冲击。",
+    "article_use": "国际关系专题、能源市场分析、地缘政治研究。",
+    "distinctiveness_reason": "结合官方声明与地缘政治背景，揭示能源作为战略武器的现实应用。",
+    "evidence_gap_summary": "缺乏具体能源供应量及对市场价格影响的详细数据。",
+    "proof_requirements": [
+      "俄罗斯官方声明",
+      "日本能源进口数据",
+      "国际能源价格波动数据"
+    ],
+    "recommended_data_angles": [
+      "能源供应链变化",
+      "区域进口依赖分析",
+      "能源价格走势"
+    ],
+    "recommended_visual_angles": [
+      "能源供应国家地图",
+      "供油限制影响曲线"
+    ],
+    "priority_people": [
+      "安德烈·鲁登科",
+      "俄罗斯外交部官员"
+    ],
+    "priority_orgs": [
+      "俄罗斯外交部"
+    ],
+    "priority_news_queries": [
+      "俄罗斯拒绝日本供油",
+      "俄罗斯能源外交",
+      "中东能源局势"
+    ],
+    "existing_evidence": [
+      {
+        "title": "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】",
+        "url": "https://m.weibo.cn/detail/5282653734437870",
+        "source_type": "微博",
+        "source_tier": "official",
+        "note": "俄罗斯外交部副部长声明拒绝给日本供油"
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍俄罗斯最新能源出口政策及声明",
+      "part_1": "分析能源供应限制的外交目的",
+      "part_2": "探讨中东局势对能源市场的影响",
+      "part_3": "评估此举对国际能源安全的长期影响",
+      "ending": "总结能源外交调整对区域及全球稳定的意义"
+    },
+    "logic_chain_id": "misc"
+  },
+  {
+    "topic_id": "T003",
+    "mother_topic_id": "T003",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "中东冲突引发油价剧烈波动冲击全球货币政策",
+    "one_line_judgment": "以色列与伊朗冲突推动油价大幅震荡，全球通胀预期与美联储货币政策面临重大再评估。",
+    "core_proposition": "地缘冲突导致能源价格上升，加剧通胀压力，迫使美联储和其他央行重新考量利率路径及经济增长预期。",
+    "why_now": "近期以色列与伊朗冲突升级，油价单日大幅波动，美联储政策预期亦出现调整，市场关注度高。",
+    "reader_payoff": "理解地缘政治如何通过能源市场传导影响全球宏观经济及货币政策环境。",
+    "article_use": "宏观经济分析、国际能源市场专题、货币政策研究。",
+    "distinctiveness_reason": "聚焦冲突—油价—货币政策的因果链，提供跨领域综合视角。",
+    "evidence_gap_summary": "需更多冲突事件细节及其直接对宏观经济数据的影响数据。",
+    "proof_requirements": [
+      "冲突事件时间线",
+      "油价波动数据",
+      "央行政策声明及市场反应"
+    ],
+    "recommended_data_angles": [
+      "油价历史波动比较",
+      "通胀指标变化",
+      "央行政策调整频率"
+    ],
+    "recommended_visual_angles": [
+      "冲突—油价—政策时序图",
+      "油价与通胀关联图"
+    ],
+    "priority_people": [
+      "美联储官员",
+      "中东冲突相关决策者"
+    ],
+    "priority_orgs": [
+      "美联储",
+      "国际能源署"
+    ],
+    "priority_news_queries": [
+      "中东冲突油价",
+      "美联储货币政策调整"
+    ],
+    "existing_evidence": [
+      {
+        "title": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了",
+        "url": "https://www.bilibili.com/video/BV1WJQBByE12",
+        "source_type": "聚合新闻",
+        "source_tier": "platform_hotspot",
+        "note": "以色列和伊朗冲突引发油价波动"
+      },
+      {
+        "title": "参考1990年石油危机，美联储终将降息",
+        "url": "https://m.weibo.cn/detail/5282569275049549",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "note": "美联储或因油价压力调整货币政策"
+      }
+    ],
+    "structure_hint": {
+      "opening": "描绘中东冲突升级背景与油价反应",
+      "part_1": "分析油价波动对全球通胀的传导效应",
+      "part_2": "梳理美联储货币政策的应对逻辑",
+      "part_3": "探讨冲突背景下的经济增长预期变化",
+      "ending": "总结冲突与宏观政策交织影响的未来展望"
+    },
+    "logic_chain_id": "misc"
+  },
+  {
+    "topic_id": "T004",
+    "mother_topic_id": "T004",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "霍尔木兹海峡控制权成伊朗核战略核心",
+    "one_line_judgment": "美媒认为伊朗对霍尔木兹海峡的控制相当于其“真正意义上的核武器”，重塑国际能源安全格局。",
+    "core_proposition": "伊朗强化对霍尔木兹海峡的控制能力，借此作为核战略延伸，威胁全球能源运输安全，提升地缘政治风险。",
+    "why_now": "美伊停火谈判僵局加剧，伊朗海峡控制意图明显，国际社会对此高度关注。",
+    "reader_payoff": "把握海峡控制权在核战略和能源安全中的地位，理解其对全球市场和地缘政治的深远影响。",
+    "article_use": "国际安全专题、能源地缘政治分析、战略研究报告。",
+    "distinctiveness_reason": "揭示能源通道安全作为核战略工具的新视角，深化对中东局势的理解。",
+    "evidence_gap_summary": "缺少伊朗具体军事部署与海峡控制实效性数据。",
+    "proof_requirements": [
+      "美媒报道原文",
+      "伊朗军事实力分析",
+      "国际能源运输统计"
+    ],
+    "recommended_data_angles": [
+      "海峡货运量",
+      "军事力量部署",
+      "国际能源依赖度"
+    ],
+    "recommended_visual_angles": [
+      "霍尔木兹海峡地图",
+      "海峡控制权演变时间线"
+    ],
+    "priority_people": [
+      "伊朗军事专家",
+      "美媒记者"
+    ],
+    "priority_orgs": [
+      "美国智库",
+      "国际能源组织"
+    ],
+    "priority_news_queries": [
+      "霍尔木兹海峡控制",
+      "伊朗核战略",
+      "中东能源安全"
+    ],
+    "existing_evidence": [
+      {
+        "title": "【美媒： #伊朗真正意义上的核武器# ——控制霍尔木兹海峡】",
+        "url": "https://m.weibo.cn/detail/5283356866778950",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "note": "美媒将海峡控制视为伊朗核武器战略核心"
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍霍尔木兹海峡战略地位及伊朗控制背景",
+      "part_1": "解读美媒对海峡控制的核战略比喻",
+      "part_2": "分析海峡控制对国际能源运输的影响",
+      "part_3": "评估地缘政治风险及国际社会反应",
+      "ending": "展望未来海峡局势及核战略演变"
+    },
+    "logic_chain_id": "misc"
+  },
+  {
+    "topic_id": "T005",
+    "mother_topic_id": "T005",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "央行大规模降息引发全球资本市场结构变局",
+    "one_line_judgment": "央行果断降息开启宽松周期，释放经济刺激信号，促使资金流向和资产配置发生结构性调整。",
+    "core_proposition": "降息政策打破利率僵局，影响投资者行为和市场风险偏好，成为资本市场转折的重要催化剂。",
+    "why_now": "央行官方渠道发布降息消息后，市场反应强烈，宽松空间被普遍看好。",
+    "reader_payoff": "理解降息背后的政策逻辑及其对资本市场资产配置的深远影响。",
+    "article_use": "宏观经济政策解读、资本市场分析、投资策略指导。",
+    "distinctiveness_reason": "将政策动作与市场结构调整联系，揭示宏观政策对微观市场的传导机制。",
+    "evidence_gap_summary": "需要更多具体资金流向和资产价格变化的量化数据支持。",
+    "proof_requirements": [
+      "央行政策文件",
+      "市场资金流动数据",
+      "资产价格走势统计"
+    ],
+    "recommended_data_angles": [
+      "利率变化",
+      "股债资金流",
+      "资产价格分布"
+    ],
+    "recommended_visual_angles": [
+      "降息与资金流动关系图",
+      "资产配置变迁热力图"
+    ],
+    "priority_people": [
+      "央行决策者",
+      "资管机构分析师"
+    ],
+    "priority_orgs": [
+      "央行",
+      "主要金融机构"
+    ],
+    "priority_news_queries": [
+      "央行降息",
+      "宽松周期",
+      "资本市场结构调整"
+    ],
+    "existing_evidence": [
+      {
+        "title": "央行果断降息，各方注意了‼️进一步宽松的空间已经打",
+        "url": "https://www.douyin.com/video/7054565568447401219",
+        "source_type": "抖音",
+        "source_tier": "official",
+        "note": "央行降息视频解读"
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍降息背景及官方宣布情况",
+      "part_1": "分析降息对宏观经济的刺激作用",
+      "part_2": "探讨资金流向与市场结构的变化",
+      "part_3": "评估投资者行为调整及未来走向",
+      "ending": "总结降息对全球资本市场的长期影响"
+    },
+    "logic_chain_id": "misc"
+  },
+  {
+    "topic_id": "T006",
+    "mother_topic_id": "T006",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "美军极端计划暴露美伊冲突升级风险",
+    "one_line_judgment": "五角大楼拟抢夺伊朗核材料的军事计划暴露美伊冲突可能升级，区域安全与全球战略稳定面临严峻考验。",
+    "core_proposition": "美军空投特种兵抢夺核材料计划显示美国对伊朗采取极端军事行动的意图，可能引发更大规模冲突。",
+    "why_now": "五角大楼相关计划曝光与当前伊朗局势紧张叠加，冲突升级风险显著提升。",
+    "reader_payoff": "理解美伊冲突的潜在升级路径及其对全球能源和安全局势的影响。",
+    "article_use": "国际军事分析、地缘政治风险评估、安全战略研究。",
+    "distinctiveness_reason": "基于具体军事计划披露，揭示冲突潜在演变的具体路径。",
+    "evidence_gap_summary": "缺乏更多计划细节及伊朗方面的应对策略信息。",
+    "proof_requirements": [
+      "五角大楼内部文件或权威报道",
+      "伊朗军事反应情报",
+      "区域安全评估报告"
+    ],
+    "recommended_data_angles": [
+      "军事部署动态",
+      "冲突事件频率",
+      "能源市场反应"
+    ],
+    "recommended_visual_angles": [
+      "军事行动步骤图",
+      "冲突升级时间轴"
+    ],
+    "priority_people": [
+      "五角大楼官员",
+      "伊朗安全分析师"
+    ],
+    "priority_orgs": [
+      "五角大楼",
+      "国际安全智库"
+    ],
+    "priority_news_queries": [
+      "美军抢夺伊朗核材料",
+      "美伊冲突升级风险"
+    ],
+    "existing_evidence": [
+      {
+        "title": "美国有史以来考虑过的最疯狂的军事计划 #美伊以冲突#",
+        "url": "https://m.weibo.cn/detail/5283658987475614",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "note": "曝光美军抢夺伊朗核材料计划"
+      }
+    ],
+    "structure_hint": {
+      "opening": "披露五角大楼军事计划背景",
+      "part_1": "具体介绍抢夺核材料行动步骤",
+      "part_2": "分析该计划对冲突风险的影响",
+      "part_3": "探讨全球能源和安全格局潜在变化",
+      "ending": "展望冲突升级的可能后果和应对措施"
+    },
+    "logic_chain_id": "misc"
+  },
+  {
+    "topic_id": "T007",
+    "mother_topic_id": "T007",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "俄方将日本人重新列为战犯加剧中俄日外交紧张",
+    "one_line_judgment": "俄罗斯近期重新将28名日本人列为战犯，反映三国历史遗留问题与现实地缘政治纠葛加剧，区域安全环境恶化。",
+    "core_proposition": "此举体现俄罗斯对日本态度强硬，可能激化中俄日三边外交摩擦，影响区域合作与安全稳定。",
+    "why_now": "俄外交部4月初发言人声明后，相关报道引发国际关注，正值地区紧张局势升温时期。",
+    "reader_payoff": "帮助读者理解中俄日关系的复杂性及历史与现实因素交织的影响。",
+    "article_use": "国际关系专题分析、东亚安全形势研究、外交政策解读。",
+    "distinctiveness_reason": "结合官方声明与历史遗留问题，深度剖析区域安全风险。",
+    "evidence_gap_summary": "缺少日本及第三方对此事的官方反应及后续外交行动信息。",
+    "proof_requirements": [
+      "俄罗斯外交部声明",
+      "日本政府立场",
+      "第三方安全分析报告"
+    ],
+    "recommended_data_angles": [
+      "外交声明比较",
+      "区域安全事件频率",
+      "历史纠纷时间线"
+    ],
+    "recommended_visual_angles": [
+      "中俄日关系地图",
+      "战犯名单及影响示意"
+    ],
+    "priority_people": [
+      "扎哈罗娃",
+      "日本外交官"
+    ],
+    "priority_orgs": [
+      "俄罗斯外交部",
+      "日本外务省"
+    ],
+    "priority_news_queries": [
+      "俄罗斯列日本人战犯",
+      "中俄日外交紧张"
+    ],
+    "existing_evidence": [
+      {
+        "title": "【中新社： #俄罗斯重新将28名日本人列为战犯# 】",
+        "url": "https://m.weibo.cn/detail/5283383100050229",
+        "source_type": "微博",
+        "source_tier": "official",
+        "note": "俄外交部发言人声明相关事项"
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍俄罗斯重新列战犯的官方声明",
+      "part_1": "分析历史遗留问题与现实政治纠葛",
+      "part_2": "探讨三国关系及区域安全形势影响",
+      "part_3": "评估可能的外交和安全风险",
+      "ending": "总结对未来区域稳定的启示"
+    },
+    "logic_chain_id": "misc"
+  },
+  {
+    "topic_id": "T008",
+    "mother_topic_id": "T008",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "AI与新能源驱动第六轮康波周期加速经济结构转型",
+    "one_line_judgment": "人工智能与新能源成为第六轮康波周期的核心动力，推动全球经济结构性转型与产业链重塑。",
+    "core_proposition": "技术与能源变革带来长期经济增长动力，促使产业升级和资本重新布局，形成新投资逻辑。",
+    "why_now": "亚布力论坛及企业高管最新表态结合当前技术突破及政策支持，成为经济发展关键变量。",
+    "reader_payoff": "理解新经济周期的驱动因素，把握未来产业与投资趋势。",
+    "article_use": "经济周期解读、产业升级分析、投资策略指导。",
+    "distinctiveness_reason": "聚焦技术与能源融合推动的经济长期趋势，超越短期市场波动。",
+    "evidence_gap_summary": "需更多宏观经济数据及产业链具体变革案例支撑。",
+    "proof_requirements": [
+      "宏观经济增长数据",
+      "AI与新能源产业发展报告",
+      "资本市场投资流向数据"
+    ],
+    "recommended_data_angles": [
+      "产业增长率",
+      "技术投资比例",
+      "政策支持力度"
+    ],
+    "recommended_visual_angles": [
+      "经济周期发展图",
+      "AI与新能源产业链图谱"
+    ],
+    "priority_people": [
+      "物美集团CEO张斌",
+      "经济学家"
+    ],
+    "priority_orgs": [
+      "亚布力论坛",
+      "行业协会"
+    ],
+    "priority_news_queries": [
+      "第六轮康波周期",
+      "AI经济影响",
+      "新能源产业升级"
+    ],
+    "existing_evidence": [
+      {
+        "title": "第六轮康波周期来了！AI+新能源，这波红利普通人怎么抓住？",
+        "url": "https://m.weibo.cn/detail/5282192880306084",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "note": "亚布力论坛及企业高管表态"
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍第六轮康波周期及核心驱动力",
+      "part_1": "剖析AI与新能源技术突破",
+      "part_2": "讨论产业链结构重塑和资本流向",
+      "part_3": "评估经济长期增长与投资机会",
+      "ending": "总结技术能源融合对未来经济的深远影响"
+    },
+    "logic_chain_id": "misc"
+  },
+  {
+    "topic_id": "T009",
+    "mother_topic_id": "T009",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "英伟达期权异动反映市场对AI芯片行业未来增长重估",
+    "one_line_judgment": "英伟达期权交易活跃揭示市场对AI芯片需求及行业增长前景的乐观预期，推动半导体板块估值重构。",
+    "core_proposition": "期权异动反映市场对英伟达及AI芯片技术的增长潜力重新定价，可能引发半导体行业整体估值调整。",
+    "why_now": "近期英伟达期权交易量剧增，结合AI产业热度，成为科技和投资领域关注焦点。",
+    "reader_payoff": "帮助投资者理解AI芯片行业的市场情绪及潜在投资机会。",
+    "article_use": "科技行业分析、投资策略解读、市场情绪研究。",
+    "distinctiveness_reason": "利用期权市场数据洞察行业增长预期，具备较强前瞻性。",
+    "evidence_gap_summary": "缺乏企业业绩和技术发展详细数据支持期权市场预期。",
+    "proof_requirements": [
+      "期权交易数据",
+      "企业财报及技术路线图",
+      "行业需求预测"
+    ],
+    "recommended_data_angles": [
+      "期权成交量与价格",
+      "芯片出货量",
+      "竞争对手动态"
+    ],
+    "recommended_visual_angles": [
+      "期权交易活跃度曲线",
+      "行业增长预测图"
+    ],
+    "priority_people": [
+      "英伟达高管",
+      "半导体分析师"
+    ],
+    "priority_orgs": [
+      "英伟达",
+      "半导体行业协会"
+    ],
+    "priority_news_queries": [
+      "英伟达期权异动",
+      "AI芯片市场预期"
+    ],
+    "existing_evidence": [
+      {
+        "title": "NVDA期权异动：抄底？#NVDA #英伟达 #期权交易",
+        "url": "https://www.bilibili.com/video/BV1z5DgBnEez",
+        "source_type": "B站",
+        "source_tier": "platform_hotspot",
+        "note": "期权交易数据及市场分析"
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍英伟达期权异动背景及市场反应",
+      "part_1": "解析期权数据反映的市场预期变化",
+      "part_2": "讨论AI芯片行业增长潜力及竞争格局",
+      "part_3": "评估对半导体板块估值的影响",
+      "ending": "总结投资者应关注的关键风险与机会"
+    },
+    "logic_chain_id": "misc"
+  },
+  {
+    "topic_id": "T010",
+    "mother_topic_id": "T010",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "国务院约谈平台企业反映数字经济治理加强",
+    "one_line_judgment": "国务院多部门约谈平台企业，体现国家对数字平台监管和市场秩序维护力度的持续加强。",
+    "core_proposition": "监管部门通过约谈强化平台企业合规责任，推动数字经济治理体系完善，影响行业发展环境。",
+    "why_now": "官方权威渠道近期发布约谈消息，响应数字经济监管趋势，市场关注度提升。",
+    "reader_payoff": "理解数字经济监管趋势对平台企业运营及市场秩序的影响，预判行业发展方向。",
+    "article_use": "政策解读、行业监管分析、企业合规指导。",
+    "distinctiveness_reason": "基于官方约谈事件，揭示国家数字经济治理新动向。",
+    "evidence_gap_summary": "需更多具体监管政策文件及企业响应案例。",
+    "proof_requirements": [
+      "国务院约谈公告",
+      "平台企业合规报告",
+      "市场监管政策分析"
+    ],
+    "recommended_data_angles": [
+      "监管处罚案例",
+      "行业合规率",
+      "政策变化时间线"
+    ],
+    "recommended_visual_angles": [
+      "监管事件时间轴",
+      "数字经济治理架构图"
+    ],
+    "priority_people": [
+      "国务院官员",
+      "平台企业负责人"
+    ],
+    "priority_orgs": [
+      "国务院",
+      "市场监管总局"
+    ],
+    "priority_news_queries": [
+      "数字经济监管",
+      "平台企业约谈",
+      "市场秩序维护"
+    ],
+    "existing_evidence": [
+      {
+        "title": "国务院食安办、市场监管总局、海关总署约谈3家平台企业",
+        "url": "https://www.douyin.com/video/7624178333126905123",
+        "source_type": "抖音",
+        "source_tier": "official",
+        "note": "官方约谈视频"
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍国务院约谈背景及涉及部门",
+      "part_1": "分析数字经济监管的新要求",
+      "part_2": "讨论对平台企业合规的影响",
+      "part_3": "展望数字经济治理体系的完善路径",
+      "ending": "总结监管趋势对行业和市场秩序的意义"
+    },
+    "logic_chain_id": "misc"
+  }
+]

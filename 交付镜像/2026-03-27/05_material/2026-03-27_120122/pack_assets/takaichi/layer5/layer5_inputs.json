@@ -1,0 +1,61 @@
+{
+  "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+  "topic": {
+    "slug": "takaichi",
+    "title": "高市早苗跳梁的背后：用脚投票下日本极右势力复兴",
+    "topic_type": "geopolitics",
+    "topic_root": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi"
+  },
+  "template": {
+    "selected_id": "geo_timeline_map",
+    "selected_name": "地缘时政时间线地图 (Geo Timeline Map)",
+    "selection_reason": [
+      "主题包含地缘冲突/政策演进",
+      "需要事件时间线与地图风险层联动",
+      "适配 DeckGLMap 与 StrategicRiskPanel"
+    ],
+    "required_fields": [
+      "event_timeline_json",
+      "map_layers_json",
+      "chart_csvs",
+      "chart_pngs",
+      "scene_plan"
+    ],
+    "available_fields": []
+  },
+  "assets": {
+    "chart_csvs": [
+      "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/charts/csv/aging_labor_gap.csv",
+      "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/charts/csv/chart-01_population_aging.csv",
+      "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/charts/csv/chart-02_military_gdp.csv",
+      "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/charts/csv/chart-03_security_timeline.csv",
+      "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/charts/csv/chart-04_risk_matrix.csv",
+      "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/charts/csv/coalition_right_shift.csv",
+      "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/charts/csv/security_taiwan_impact.csv"
+    ],
+    "chart_pngs": [
+      "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/charts/png/aging_labor_gap.png",
+      "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/charts/png/chart-01_population_aging.png",
+      "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/charts/png/chart-02_military_gdp.png",
+      "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/charts/png/chart-03_security_timeline.png",
+      "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/charts/png/chart-04_risk_matrix.png",
+      "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/charts/png/coalition_right_shift.png",
+      "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/charts/png/security_taiwan_impact.png"
+    ],
+    "logic_relations_json": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/layer5/logic_relations.json",
+    "scene_plan_json": "",
+    "layer5_delivery_plan_json": "",
+    "layer5_delivery_inputs_json": "",
+    "layer5_inputs_json": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/layer5/layer5_inputs.json"
+  },
+  "worldmonitor": {
+    "project": "/Volumes/PSSD/Projects/worldmonitor",
+    "data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+    "public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+    "entry": "index.html",
+    "proxy_port": 8787
+  },
+  "key_metrics_to_emit": [],
+  "risk_scenarios": [],
+  "generated_at": "2026-03-30T21:41:58+0800"
+}

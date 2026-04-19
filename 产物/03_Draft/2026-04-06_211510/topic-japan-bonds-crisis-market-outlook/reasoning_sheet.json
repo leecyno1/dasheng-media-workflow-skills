@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "id": "topic-japan-bonds-crisis-market-outlook:reasoning",
+    "object_type": "ReasoningSheet",
+    "run_id": "2026-04-06_211510",
+    "version": "1.0.0",
+    "status": "ready",
+    "generated_by": "dasheng-stage-brief-ai"
+  },
+  "topic_id": "topic-japan-bonds-crisis-market-outlook",
+  "title": "日本国债异动引发全球市场震荡：下周投资策略与避险指南",
+  "core_thesis": "日本国债市场异动是全球流动性拐点的信号，结合中东地缘风险，投资者需要重新配置资产以应对波动加剧",
+  "claims": [
+    {
+      "claim_id": "topic-japan-bonds-crisis-market-outlook-claim-01",
+      "section_id": "section-01",
+      "statement": "日本国债收益率异动的具体数据和历史对比",
+      "counterpoint": null,
+      "missing_proof": [],
+      "chart_need": "日本国债收益率历史走势图"
+    },
+    {
+      "claim_id": "topic-japan-bonds-crisis-market-outlook-claim-02",
+      "section_id": "section-02",
+      "statement": "A股和港股的资金流向和外资持仓变化",
+      "counterpoint": null,
+      "missing_proof": [],
+      "chart_need": "北向资金流向趋势图"
+    },
+    {
+      "claim_id": "topic-japan-bonds-crisis-market-outlook-claim-03",
+      "section_id": "section-03",
+      "statement": "当前各大类资产的估值水平和性价比",
+      "counterpoint": null,
+      "missing_proof": [],
+      "chart_need": "大类资产估值对比表"
+    }
+  ],
+  "evidence_items": [],
+  "structure_contract": {}
+}

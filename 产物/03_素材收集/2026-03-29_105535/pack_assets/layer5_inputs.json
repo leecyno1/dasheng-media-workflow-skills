@@ -1,0 +1,73 @@
+{
+  "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets",
+  "execution_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/execution_manifest.json",
+  "topic_count": 1,
+  "topics": [
+    {
+      "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+      "topic": {
+        "slug": "topic-6",
+        "title": "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+        "topic_type": "finance_macro",
+        "topic_root": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6"
+      },
+      "template": {
+        "selected_id": "market_story",
+        "selected_name": "市场叙事面板 (Market Story Panel)",
+        "selection_reason": [
+          "主题属于宏观/资产定价链路",
+          "需要时间序列 + 风险情景并排展示",
+          "适配 worldmonitor 的 MarketPanel 与 EconomicPanel"
+        ],
+        "required_fields": [
+          "chart_csvs",
+          "chart_pngs",
+          "key_metrics",
+          "risk_scenarios",
+          "scene_plan"
+        ],
+        "available_fields": [
+          "chart_anchor_ids",
+          "current_status",
+          "inputs",
+          "page_modules",
+          "preferred_components",
+          "proxy_port",
+          "template_id",
+          "worldmonitor_project"
+        ]
+      },
+      "assets": {
+        "chart_csvs": [
+          "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/charts/csv/chart-01_cpi_core.csv",
+          "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/charts/csv/chart-02_oil_gold_breakeven.csv",
+          "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/charts/csv/chart-03_spx_us10y.csv",
+          "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/charts/csv/chart-04_scenario_heatmap.csv",
+          "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/charts/csv/chart_anchor_plan.csv"
+        ],
+        "chart_pngs": [
+          "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/charts/png/chart-01_cpi_core.png",
+          "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/charts/png/chart-02_oil_gold_breakeven.png",
+          "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/charts/png/chart-03_spx_us10y.png",
+          "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/charts/png/chart-04_scenario_heatmap.png"
+        ],
+        "logic_relations_json": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/layer5/logic_relations.json",
+        "scene_plan_json": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/videos/scene_plan.json",
+        "layer5_delivery_plan_json": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/layer5/layer5_delivery_plan.json",
+        "layer5_delivery_inputs_json": "",
+        "layer5_inputs_json": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/layer5/layer5_inputs.json"
+      },
+      "worldmonitor": {
+        "project": "/Volumes/PSSD/Projects/worldmonitor",
+        "data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+        "public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+        "entry": "index.html",
+        "proxy_port": 8787
+      },
+      "key_metrics_to_emit": [],
+      "risk_scenarios": [],
+      "generated_at": "2026-03-31T17:04:57+0800"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "query": "Japan election rally crowd Tokyo 4k",
+    "url": "https://www.youtube.com/watch?v=YcGNdyqWvZI",
+    "title": "Hundreds celebrate Japan's far-right Sanseito party election gains | REUTERS",
+    "channel": "Reuters",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": "  3.16MiB at  129.63KiB/s ETA 00:24\n[download]   1.9% of    3.16MiB at  240.02KiB/s ETA 00:13\n[download]   3.9% of    3.16MiB at  378.03KiB/s ETA 00:08\n[download]   7.9% of    3.16MiB at  668.15KiB/s ETA 00:04\n[download]  15.8% of    3.16MiB at    1.14MiB/s ETA 00:02\n[download]  31.6% of    3.16MiB at    2.00MiB/s ETA 00:01\n[download]  63.3% of    3.16MiB at    3.07MiB/s ETA 00:00\n[download] 100.0% of    3.16MiB at    2.70MiB/s ETA 00:00\n[download] 100% of    3.16MiB in 00:00:08 at 366.39KiB/s \n",
+    "selected_candidate_quality": {
+      "source_category": "general_footage",
+      "source_ok": true,
+      "resolution_height": 1080,
+      "resolution_width": 1920,
+      "duration_seconds_hint": 56,
+      "fps_hint": 30.0,
+      "extractor": "youtube",
+      "source_domain": "www.youtube.com",
+      "min_height_required": 480,
+      "pre_download_pass": true,
+      "reject_reasons": []
+    },
+    "file_quality_audit": {
+      "file": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/takaichi/videos/web_search/01__Hundreds celebrate Japan's far-right Sanseito party election gains ｜ REUTERS.mp4",
+      "source_url": "https://www.youtube.com/watch?v=YcGNdyqWvZI",
+      "source_domain": "www.youtube.com",
+      "source_traceable": true,
+      "source_category": "general_footage",
+      "extractor": "youtube",
+      "resolution_height": 360,
+      "resolution_width": 640,
+      "fps": 29.97,
+      "codec": "h264",
+      "duration_seconds": 55.689,
+      "scene_changes": 13,
+      "scene_change_rate": 0.4333,
+      "analysis_window_seconds": 30.0,
+      "duration_ok": true,
+      "resolution_ok": false,
+      "frame_variation_ok": true,
+      "anti_screenshot_montage_pass": true,
+      "final_pass": false,
+      "fail_reasons": [
+        "resolution_below_480p"
+      ],
+      "ffmpeg_error": ""
+    }
+  }
+]

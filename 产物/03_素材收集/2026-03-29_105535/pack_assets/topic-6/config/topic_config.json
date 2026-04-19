@@ -1,0 +1,260 @@
+{
+  "topic_slug": "topic-6",
+  "topic_type": "finance_macro",
+  "title": "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+  "thesis": "作为宏观框架主稿之一，重点放在供给、运输、通胀秩序重估。",
+  "evidence_items": [
+    {
+      "id": "source-1",
+      "title": "https://www.douyin.com/video/7622221725895314694",
+      "url": "",
+      "source": "brief"
+    },
+    {
+      "id": "source-2",
+      "title": "https://www.douyin.com/video/7621951675674152255",
+      "url": "",
+      "source": "brief"
+    },
+    {
+      "id": "source-3",
+      "title": "https://www.bilibili.com/video/BV1PPXVBkE5r",
+      "url": "",
+      "source": "brief"
+    }
+  ],
+  "chart_anchors": [
+    {
+      "anchor_id": "chart-01",
+      "title": "通胀 / 利率 / 核心资产三联图",
+      "purpose": "判断再通胀叙事是否进入资产定价主线",
+      "data_sources": [
+        "FRED",
+        "tushare",
+        "akshare"
+      ],
+      "chart_type": "multi_line"
+    },
+    {
+      "anchor_id": "chart-02",
+      "title": "商品价格与通胀预期联动图",
+      "purpose": "识别油价、金价、breakeven、实际利率之间的牵引关系",
+      "data_sources": [
+        "FRED",
+        "tushare",
+        "akshare"
+      ],
+      "chart_type": "dual_axis"
+    },
+    {
+      "anchor_id": "chart-03",
+      "title": "ETF/持仓/成交热度图",
+      "purpose": "补交易层证据，而不只停留在宏观判断",
+      "data_sources": [
+        "tushare",
+        "新浪财经",
+        "交易所数据"
+      ],
+      "chart_type": "bar"
+    },
+    {
+      "anchor_id": "chart-04",
+      "title": "情景收益矩阵",
+      "purpose": "给出黄金、白银、原油、长债、权益在不同通胀路径下的映射",
+      "data_sources": [
+        "手工整理 CSV"
+      ],
+      "chart_type": "heatmap"
+    }
+  ],
+  "web_search": {
+    "image_queries": [
+      "oil tanker aerial",
+      "gold bullion vault",
+      "futures trading screen",
+      "stock market floor crowd",
+      "federal reserve building exterior",
+      "oil refinery aerial",
+      "shipping port cranes aerial",
+      "commodity warehouse barrels",
+      "investor crowd watching market",
+      "inflation rates chart screen"
+    ],
+    "video_queries": [
+      "stock market b roll 4k",
+      "oil tanker aerial 4k",
+      "refinery aerial 4k",
+      "gold vault documentary 4k",
+      "federal reserve exterior b roll",
+      "commodities trading floor 4k",
+      "shipping port cranes aerial 4k",
+      "investors crowd b roll 4k"
+    ]
+  },
+  "generated": {
+    "cover_prompt": "围绕“如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序”生成封面，突出 reinflation 与 inflation rates 的冲突感，适合财经/时政深度内容封面，避免口播截图感。",
+    "infographic_prompts": [
+      "基于题目“如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序”生成一张 dense-modules 信息图，拆出 4 个核心观点、4 个证据位、2 个风险位。",
+      "基于主判断“作为宏观框架主稿之一，重点放在供给、运输、通胀秩序重估。”生成一张 hierarchical-layers 信息图，把表象、机制、影响、建议四层可视化。",
+      "为“如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序”生成一张 dashboard 风格信息图，包含关键指标、关键事件、关键结论。"
+    ],
+    "comic_storyboard": [
+      {
+        "frame_id": "comic-01",
+        "title": "Hook",
+        "visual_prompt": "连环画第 1 格：reinflation 相关冲突现场，多人场景，动态感强。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "先抛问题：如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序"
+      },
+      {
+        "frame_id": "comic-02",
+        "title": "Thesis",
+        "visual_prompt": "连环画第 2 格：reinflation 与 inflation rates 的对峙式构图。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "给判断：作为宏观框架主稿之一，重点放在供给、运输、通胀秩序重估。"
+      },
+      {
+        "frame_id": "comic-03",
+        "title": "Mechanism-1",
+        "visual_prompt": "连环画第 3 格：机制拆解信息图，突出 reinflation。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "第一层机制"
+      },
+      {
+        "frame_id": "comic-04",
+        "title": "Mechanism-2",
+        "visual_prompt": "连环画第 4 格：关键变量图表与群体场景并置。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "第二层机制"
+      },
+      {
+        "frame_id": "comic-05",
+        "title": "Evidence-1",
+        "visual_prompt": "连环画第 5 格：数据面板 + 人群/市场/议会现场。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "证据 1"
+      },
+      {
+        "frame_id": "comic-06",
+        "title": "Evidence-2",
+        "visual_prompt": "连环画第 6 格：地图/路线/结构图。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "证据 2"
+      },
+      {
+        "frame_id": "comic-07",
+        "title": "Conflict",
+        "visual_prompt": "连环画第 7 格：多方拉扯场景，增强对立与张力。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "冲突升级"
+      },
+      {
+        "frame_id": "comic-08",
+        "title": "Risk",
+        "visual_prompt": "连环画第 8 格：风险分叉图或情景树。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "如果继续演化会怎样"
+      },
+      {
+        "frame_id": "comic-09",
+        "title": "Advice",
+        "visual_prompt": "连环画第 9 格：投资/观察清单卡片。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "给建议或观察变量"
+      },
+      {
+        "frame_id": "comic-10",
+        "title": "CTA",
+        "visual_prompt": "连环画第 10 格：回到主问题的封口画面。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "结尾收束与 CTA"
+      }
+    ],
+    "meme_prompts": [
+      "梗图：熊猫与鹰围着一桶原油拉扯，旁边金条和债券在打架，表达“市场表面交易事件，底层在交易通胀与利率”。",
+      "梗图：交易员看着油价、金价、利率三块屏幕同时爆红，表情崩溃，表达“再通胀不是单线行情”。",
+      "梗图：美联储像交通警察同时拦增长和通胀两辆失控汽车，表达“higher inflation and slower growth”。"
+    ]
+  },
+  "layer5": {
+    "template_id": "market_story",
+    "worldmonitor_project": "/Volumes/PSSD/Projects/worldmonitor",
+    "proxy_port": 8787,
+    "current_status": "inactive",
+    "inputs": [
+      "article.md",
+      "scene_plan.json",
+      "charts/*.csv",
+      "charts/*.png",
+      "key_metrics.json"
+    ],
+    "preferred_components": [
+      "MarketPanel",
+      "EconomicPanel",
+      "CountryTimeline"
+    ],
+    "page_modules": [
+      "hero-summary",
+      "key-metrics-strip",
+      "timeline-repricing",
+      "chart-gallery",
+      "embedded-video"
+    ],
+    "chart_anchor_ids": [
+      "chart-01",
+      "chart-02",
+      "chart-03",
+      "chart-04"
+    ]
+  },
+  "recommended_sources": [
+    "akshare",
+    "tushare",
+    "FRED",
+    "BLS",
+    "BEA",
+    "新浪财经"
+  ],
+  "scene_plan": [
+    {
+      "title": "Hook",
+      "visual": "reinflation 相关冲突现场，多人场景，动态感强",
+      "caption": "先抛问题：如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序"
+    },
+    {
+      "title": "Thesis",
+      "visual": "reinflation 与 inflation rates 的对峙式构图",
+      "caption": "给判断：作为宏观框架主稿之一，重点放在供给、运输、通胀秩序重估。"
+    },
+    {
+      "title": "Mechanism-1",
+      "visual": "机制拆解信息图，突出 reinflation",
+      "caption": "第一层机制"
+    },
+    {
+      "title": "Mechanism-2",
+      "visual": "关键变量图表与群体场景并置",
+      "caption": "第二层机制"
+    },
+    {
+      "title": "Evidence-1",
+      "visual": "数据面板 + 人群/市场/议会现场",
+      "caption": "证据 1"
+    },
+    {
+      "title": "Evidence-2",
+      "visual": "地图/路线/结构图",
+      "caption": "证据 2"
+    },
+    {
+      "title": "Conflict",
+      "visual": "多方拉扯场景，增强对立与张力",
+      "caption": "冲突升级"
+    },
+    {
+      "title": "Risk",
+      "visual": "风险分叉图或情景树",
+      "caption": "如果继续演化会怎样"
+    },
+    {
+      "title": "Advice",
+      "visual": "投资/观察清单卡片",
+      "caption": "给建议或观察变量"
+    },
+    {
+      "title": "CTA",
+      "visual": "回到主问题的封口画面",
+      "caption": "结尾收束与 CTA"
+    }
+  ]
+}

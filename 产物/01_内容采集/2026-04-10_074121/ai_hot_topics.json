@@ -1,0 +1,172 @@
+{
+  "run_id": "2026-04-10_074121",
+  "generated_at": "2026-04-10T07:41:21.252224+08:00",
+  "items": [
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "OpenAI puts Stargate UK on ice, blames energy costs and red tape",
+      "url": "https://www.theregister.com/2026/04/09/openai_puts_stargate_uk_on/",
+      "author_name": "Bender",
+      "created_at": "2026-04-09T19:29:59Z",
+      "summary": "Hacker News 查询：OpenAI",
+      "score": 191.4,
+      "provider_meta": {
+        "query": "OpenAI",
+        "points": 55.0,
+        "num_comments": 33.0
+      },
+      "rank_score": 13.6698
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Show HN: Lingle – Voice agent to simulate zoom-based personal language lessons",
+      "url": "https://lingle.ai/",
+      "author_name": "andrewfhou",
+      "created_at": "2026-04-09T22:28:24Z",
+      "summary": "Hacker News 查询：AI agents",
+      "score": 16.2,
+      "provider_meta": {
+        "query": "AI agents",
+        "points": 3.0,
+        "num_comments": 5.0
+      },
+      "rank_score": 13.5119
+    },
+    {
+      "provider": "reddit",
+      "source": "ai_hot/reddit",
+      "title": "AI agents can now open their own bank accounts",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1sh2qm1/ai_agents_can_now_open_their_own_bank_accounts/",
+      "author_name": "/u/Significant-Doubt648",
+      "created_at": "2026-04-09T21:21:22+00:00",
+      "summary": "Reddit r/OpenAI 热门讨论",
+      "score": 54,
+      "provider_meta": {
+        "subreddit": "OpenAI",
+        "rank": 5
+      },
+      "rank_score": 13.1637
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "With Claude Managed Agents, Anthropic wants to run your AI agents for you",
+      "url": "https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/",
+      "author_name": "Brajeshwar",
+      "created_at": "2026-04-09T14:27:05Z",
+      "summary": "Hacker News 查询：Anthropic Claude",
+      "score": 2.4,
+      "provider_meta": {
+        "query": "Anthropic Claude",
+        "points": 1.0,
+        "num_comments": 0.0
+      },
+      "rank_score": 12.9528
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Hosted AI API Gateway – smart routing across Google, OpenAI, Anthropic, and more",
+      "url": "https://api.lxg2it.com",
+      "author_name": "sea-gold",
+      "created_at": "2026-04-09T22:10:16Z",
+      "summary": "Hacker News 查询：OpenAI",
+      "score": 6.0,
+      "provider_meta": {
+        "query": "OpenAI",
+        "points": 1.0,
+        "num_comments": 2.0
+      },
+      "rank_score": 12.8322
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Show HN: Linggen – Open-source AI agent with P2P remote access from your phone",
+      "url": "https://linggen.dev/",
+      "author_name": "linggen",
+      "created_at": "2026-04-08T21:43:31Z",
+      "summary": "Hacker News 查询：Llama",
+      "score": 11.4,
+      "provider_meta": {
+        "query": "Llama",
+        "points": 4.0,
+        "num_comments": 1.0
+      },
+      "rank_score": 12.8245
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Secure AI Agent Connections to Enterprise Tools",
+      "url": "https://www.arcade.dev/blog/connect-ai-agents-enterprise-tools/",
+      "author_name": "manveerc",
+      "created_at": "2026-04-09T20:59:37Z",
+      "summary": "Hacker News 查询：AI agents",
+      "score": 4.8,
+      "provider_meta": {
+        "query": "AI agents",
+        "points": 2.0,
+        "num_comments": 0.0
+      },
+      "rank_score": 12.6701
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Linux 7.0 Adds Support for New Keys on Upcoming Laptops for Expanded AI Agent",
+      "url": "https://www.phoronix.com/news/Linux-7.0-New-AI-Agent-Keys",
+      "author_name": "Bender",
+      "created_at": "2026-04-09T20:05:36Z",
+      "summary": "Hacker News 查询：AI agents",
+      "score": 4.8,
+      "provider_meta": {
+        "query": "AI agents",
+        "points": 2.0,
+        "num_comments": 0.0
+      },
+      "rank_score": 12.6541
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Anthropics Mythos Model Sparks Fears of AI Doomsday",
+      "url": "https://nypost.com/2026/04/08/business/anthropics-claude-mythos-model-sparks-fears-of-ai-doomsday-wave-of-devastating-hacks/",
+      "author_name": "silexia",
+      "created_at": "2026-04-09T05:14:37Z",
+      "summary": "Hacker News 查询：Anthropic Claude",
+      "score": 6.6,
+      "provider_meta": {
+        "query": "Anthropic Claude",
+        "points": 2.0,
+        "num_comments": 1.0
+      },
+      "rank_score": 12.5916
+    },
+    {
+      "provider": "hn",
+      "source": "ai_hot/hn",
+      "title": "Claude Mythos Preview [pdf]",
+      "url": "https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf",
+      "author_name": "andsoitis",
+      "created_at": "2026-04-08T22:53:56Z",
+      "summary": "Hacker News 查询：Anthropic Claude",
+      "score": 19.2,
+      "provider_meta": {
+        "query": "Anthropic Claude",
+        "points": 5.0,
+        "num_comments": 4.0
+      },
+      "rank_score": 12.4115
+    }
+  ],
+  "meta": {
+    "candidate_total": 51,
+    "providers": {
+      "hn": 9,
+      "reddit": 1
+    }
+  }
+}

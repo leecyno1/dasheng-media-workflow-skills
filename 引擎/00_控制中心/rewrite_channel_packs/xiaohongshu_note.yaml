@@ -1,0 +1,10 @@
+channel_pack:
+  channel_id: xiaohongshu_note
+  display_name: 小红书图文笔记
+  content_type: note
+  word_range: 600-1200
+  title_range: 14-20
+  hook_style: 第一行直接给结果或痛点
+  paragraph_style: 短句短段
+  structure: 结论-3到5点拆解-总结
+  cta: 收藏、评论、私信、蹲后续

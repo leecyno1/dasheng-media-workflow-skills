@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "id": "topic-sodium-ion-battery-breakthrough:reasoning",
+    "object_type": "ReasoningSheet",
+    "run_id": "2026-04-07_141203",
+    "version": "1.0.0",
+    "generated_at": "2026-04-07T15:10:00+08:00"
+  },
+  "topic_id": "topic-sodium-ion-battery-breakthrough",
+  "title": "钠离子电池全球首次突破：中国如何改写储能产业格局",
+  "core_claim": "中国钠离子电池的重大突破不仅是技术进步，更是对锂资源依赖的战略性突围",
+  "why_now": "全球首次实现钠离子电池重大突破的消息刚刚发布，这是储能领域的重要里程碑",
+  "target_audience": "新能源投资者、储能行业从业者、产业政策研究者",
+  "proof_requirements": [
+    "钠离子电池的技术突破具体内容（能量密度、循环寿命、成本）",
+    "与锂离子电池的性能和成本对比",
+    "钠资源储量和分布（相比锂资源的优势）",
+    "钠离子电池的应用场景和市场规模预测",
+    "中国在钠离子电池领域的专利和产业链布局"
+  ],
+  "evidence_sources": [
+    "官方：中国科学院、工信部相关报告",
+    "行业：宁德时代、中科海钠等企业公告",
+    "研究：财联社、36氪的行业分析报告"
+  ],
+  "claims": [
+    {
+      "claim_id": "topic-sodium-ion-battery-breakthrough-claim-01",
+      "section_id": "section-01",
+      "statement": "锂资源依赖的三重困境",
+      "counterpoint": "锂价波动才是最大的敌人",
+      "missing_proof": [
+        "锂资源对外依存度数据",
+        "锂价波动历史数据",
+        "电池厂利润率变化"
+      ],
+      "chart_need": "锂价波动和电池厂利润率对比"
+    },
+    {
+      "claim_id": "topic-sodium-ion-battery-breakthrough-claim-02",
+      "section_id": "section-02",
+      "statement": "钠离子电池性能突破覆盖80%应用场景",
+      "counterpoint": null,
+      "missing_proof": [
+        "钠离子vs锂离子性能对比",
+        "应用场景分析",
+        "成本对比"
+      ],
+      "chart_need": "钠离子电池与锂离子电池性能对比表"
+    },
+    {
+      "claim_id": "topic-sodium-ion-battery-breakthrough-claim-03",
+      "section_id": "section-03",
+      "statement": "储能电站成本革命",
+      "counterpoint": null,
+      "missing_proof": [
+        "储能项目IRR计算",
+        "成本下降曲线"
+      ],
+      "chart_need": "钠离子vs磷酸铁锂储能项目经济性对比"
+    }
+  ],
+  "recommended_framework": "痛点型",
+  "recommended_strategy": "密度强化",
+  "structure_contract": {
+    "sections": [
+      "开头（痛点共鸣）",
+      "锂依赖的三重困境",
+      "钠离子电池：破局的三把钥匙",
+      "实操验证：储能电站的成本革命",
+      "结语：从锂依赖到技术多元化"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-03-22_200511",
+  "generated_at": "2026-03-22T22:00:00+08:00",
+  "input_phase2": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-22_200511",
+  "selected_topic": {
+    "topic_id": "ai_tools_open_source",
+    "topic_name": "AI工具与开源效率",
+    "headline": "AI工具与开源效率：一周内值得实测的3类AI工作流",
+    "core_judgement": "不是AI工具不够多，而是缺少按使用场景筛选的低成本实测框架。"
+  },
+  "alternatives": [
+    {
+      "topic_id": "tech_industry_hardware",
+      "topic_name": "科技产业与硬件竞争",
+      "reason": "可承接政策与算力话题，但当前读者即时可执行价值弱于主选题。"
+    },
+    {
+      "topic_id": "geopolitics_security",
+      "topic_name": "地缘政治与安全冲突",
+      "reason": "信息价值高，但证据链仍偏目录级，阶段4补证据后更合适。"
+    }
+  ],
+  "content_goal": [
+    "可执行",
+    "可复现",
+    "可转发"
+  ],
+  "risk_boundary": [
+    "不做无实测排名",
+    "不做收益承诺",
+    "不以单平台样本外推全局"
+  ]
+}

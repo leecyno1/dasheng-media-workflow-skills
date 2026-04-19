@@ -1,0 +1,30 @@
+{
+  "run_id": "2026-04-05_170457",
+  "generated_at": "2026-04-05T18:10:10.053888",
+  "stage": "brief",
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-05_170457/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v2",
+  "manual_topics": [],
+  "generation_mode": "ai",
+  "candidate_topics": [
+    "停火背后，伊朗原油秩序成本的上升",
+    "外交部关注的中东冲突新秩序成本",
+    "半导体周期中的英伟达，局部复苏还是全面回暖？",
+    "英伟达引领半导体行业局部景气的真相",
+    "剖析白银贵金属市场风险溢价的驱动因素",
+    "川普因素下贵金属风险溢价的结构变化",
+    "特朗普与鲍威尔政策下的再通胀与利率预期回摆",
+    "中东局势下美联储降息预期与通胀压力分析",
+    "价格波动之外，制裁引发的供给秩序变革"
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v2/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v2/02_研究Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v2/02_编辑Brief_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v2/topic_cards.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v2/selected_topics.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v2/selected_topics.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v2/brief_manifest.json"
+  ],
+  "next_stage": "draft"
+}

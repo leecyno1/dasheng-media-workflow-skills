@@ -1,0 +1,273 @@
+{
+  "run_id": "2026-04-16_155809",
+  "stage": "material",
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets",
+  "steps": [
+    "ai_prep",
+    "charts",
+    "image_search",
+    "video_search"
+  ],
+  "topics": [
+    {
+      "topic": "topic-japan-nuclear-capability-diplomatic-crisis",
+      "title": "日本核武器能力披露背后：从和平宪法到军事化的结构性转变",
+      "charts": {
+        "topic": "topic-japan-nuclear-capability-diplomatic-crisis",
+        "generated": [
+          {
+            "anchor_id": "chart-01",
+            "render_type": "chart",
+            "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-01_population_aging.csv",
+            "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-01_population_aging.png",
+            "md": null,
+            "gate": {
+              "x_col": "year",
+              "series": {
+                "population": {
+                  "cv": 0.009358380298795509,
+                  "slope": -0.001464835089794353,
+                  "r2": 0.8146437685902708,
+                  "trend_strength": 0.3762576074582646,
+                  "passed": true
+                }
+              }
+            }
+          },
+          {
+            "anchor_id": "chart-02",
+            "render_type": "chart",
+            "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-02_military_gdp.csv",
+            "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-02_military_gdp.png",
+            "md": null,
+            "gate": {
+              "x_col": "year",
+              "series": {
+                "military_gdp_pct": {
+                  "cv": 0.10728853171309596,
+                  "slope": 0.013031771714139962,
+                  "r2": 0.49055981915718183,
+                  "trend_strength": 0.3067616119340556,
+                  "passed": true
+                }
+              }
+            }
+          },
+          {
+            "anchor_id": "chart-03",
+            "render_type": "chart",
+            "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-03_security_timeline.csv",
+            "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-03_security_timeline.png",
+            "md": null,
+            "gate": {
+              "group_diff_ratio": 1.19999999999952
+            }
+          },
+          {
+            "anchor_id": "chart-04",
+            "render_type": "chart",
+            "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-04_risk_matrix.csv",
+            "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-04_risk_matrix.png",
+            "md": null,
+            "gate": {
+              "row_var_max": 0.046666666666666655,
+              "col_var_max": 0.09583333333333334
+            }
+          }
+        ],
+        "summary": {
+          "chart_count": 4,
+          "table_count": 0,
+          "gate_thresholds": {
+            "cv_min": 0.03,
+            "slope_abs_min": 0.005,
+            "r2_min": 0.25,
+            "trend_strength_min": 0.3,
+            "group_diff_min": 0.08,
+            "heatmap_var_min": 0.05
+          }
+        }
+      },
+      "image_search": {
+        "topic": "topic-japan-nuclear-capability-diplomatic-crisis",
+        "downloaded": 0,
+        "person_downloaded": 0,
+        "news_screenshots": 0,
+        "rejected_low_resolution": 0,
+        "min_short_edge_required": 1024,
+        "wikimedia_download_limit": 6
+      },
+      "video_search": {
+        "topic": "topic-japan-nuclear-capability-diplomatic-crisis",
+        "candidate_queries": 8,
+        "downloads": 3,
+        "qualified_candidates": 24,
+        "candidate_reject_reason_counts": {},
+        "download_quality_passed": 2,
+        "download_quality_failed": 1,
+        "download_fail_reason_counts": {
+          "download_failed_or_missing_file": 1
+        },
+        "quality_audit_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/config/video_quality_audit_report.json"
+      },
+      "ai_prep": {
+        "provider_status": {
+          "vectorengine": {
+            "provider": "vectorengine",
+            "base_url": "https://api.vectorengine.ai/v1/chat/completions",
+            "model": "gemini-3.1-flash-image-preview",
+            "status": "disabled_by_provider",
+            "checked_at": "2026-03-26",
+            "http_status": 403,
+            "message": "该渠道已被禁用",
+            "fallbacks": [
+              "python_infographic_renderer",
+              "network_image_collection",
+              "future_baoyu_skill_adapter"
+            ]
+          },
+          "gemini_generate_content": {
+            "provider": "vectorengine_gemini_generate_content",
+            "base_url": "https://api.vectorengine.ai",
+            "model": "gemini-3.1-flash-image-preview",
+            "api_key_present": true,
+            "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+          },
+          "optional_fallbacks": {
+            "viviai_chat_image": {
+              "base_url": "https://api.viviai.cc/v1/chat/completions",
+              "model": "gemini-3.1-flash-image-preview",
+              "api_key_present": true,
+              "api_style": [
+                "/v1/chat/completions"
+              ],
+              "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+            },
+            "vectorengine_chat_image": {
+              "base_url": "https://api.vectorengine.ai/v1/chat/completions",
+              "model": "gemini-3.1-flash-image-preview",
+              "api_key_present": true,
+              "api_style": [
+                "/v1/chat/completions"
+              ],
+              "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+            },
+            "qhaigc_images": {
+              "base_url": "https://api.qhaigc.net",
+              "primary_model": "seedream-5",
+              "fallback_model": "seedream-4.6",
+              "chat_model": "gemini-2.5-flash-image",
+              "api_key_present": true,
+              "api_style": [
+                "/v1/images/generations",
+                "/v1/chat/completions"
+              ],
+              "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+            },
+            "gitee_images": {
+              "base_url": "https://ai.gitee.com",
+              "qwen_model": "Qwen-Image",
+              "glm_model": "GLM-Image",
+              "api_key_present": true,
+              "api_style": [
+                "/v1/images/generations"
+              ],
+              "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+            },
+            "vectorengine_images": {
+              "base_url": "https://api.vectorengine.ai",
+              "model": "doubao-seedream-5-0-260128",
+              "api_key_present": true,
+              "api_style": [
+                "/v1/images/generations"
+              ],
+              "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+            }
+          },
+          "minimax_env": true,
+          "priority_order": [
+            "viviai_chat_image",
+            "vectorengine_chat_image",
+            "qhaigc_seedream5",
+            "qhaigc_seedream46",
+            "gitee_qwen_image",
+            "gitee_glm_image",
+            "vectorengine_seedream",
+            "minimax",
+            "gemini_generate_content"
+          ]
+        },
+        "batch_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/images/generated/baoyu_batch.json",
+        "task_count": 5,
+        "live_generation": {
+          "viviai_chat_image": {
+            "enabled": true,
+            "provider": "viviai_chat_image",
+            "model": "gemini-3.1-flash-image-preview",
+            "base_url": "https://api.viviai.cc/v1/chat/completions",
+            "attempted": 4,
+            "succeeded": 2,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/images/generated/viviai_chat_image/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/images/generated/viviai_chat_image"
+          },
+          "vectorengine_chat_image": {
+            "enabled": false,
+            "skipped": true,
+            "reason": "skipped_after_success:viviai_chat_image"
+          },
+          "qhaigc_seedream5": {
+            "enabled": false,
+            "skipped": true,
+            "reason": "skipped_after_success:viviai_chat_image"
+          },
+          "qhaigc_seedream46": {
+            "enabled": false,
+            "skipped": true,
+            "reason": "skipped_after_success:viviai_chat_image"
+          },
+          "gitee_qwen_image": {
+            "enabled": false,
+            "skipped": true,
+            "reason": "skipped_after_success:viviai_chat_image"
+          },
+          "gitee_glm_image": {
+            "enabled": false,
+            "skipped": true,
+            "reason": "skipped_after_success:viviai_chat_image"
+          },
+          "vectorengine_seedream": {
+            "enabled": false,
+            "skipped": true,
+            "reason": "skipped_after_success:viviai_chat_image"
+          },
+          "minimax": {
+            "enabled": false,
+            "skipped": true,
+            "reason": "skipped_after_success:viviai_chat_image"
+          },
+          "gemini": {
+            "enabled": false,
+            "skipped": true,
+            "reason": "skipped_after_success:viviai_chat_image"
+          }
+        },
+        "selected_provider": "viviai_chat_image",
+        "stop_after_first_success": true,
+        "note": "已生成批处理与 fallback 图；默认按 ViviAI Chat → VectorEngine Chat → QHAIGC → Gitee → VectorEngine Seedream → MiniMax → Gemini 的优先链路执行，命中首个成功提供方后停止后续实生成。"
+      }
+    }
+  ],
+  "draft_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-16_155809/draft_manifest.json",
+  "final_structure_snapshot": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-16_155809/final_structure_snapshot.json",
+  "material_ai_inputs_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/material_ai_inputs.json",
+  "material_ai_decisions_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/material_ai_decisions.json",
+  "material_manifest": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/material_manifest.json",
+  "layer5_inputs_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/layer5_inputs.json",
+  "layer5_delivery_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/layer5_delivery_report.md",
+  "chart_quality_gate_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/chart_quality_gate_report.md",
+  "chart_quality_gate_report_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/chart_quality_gate_report.json",
+  "chart_quality_gate_overview_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/chart_quality_gate_overview.json",
+  "chart_quality_gate_overview_md": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/chart_quality_gate_overview.md",
+  "video_quality_regression_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/video_quality_regression_report.md",
+  "video_quality_regression_report_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/video_quality_regression_report.json"
+}

@@ -1,0 +1,114 @@
+{
+  "run_id": "2026-04-05_213021",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "没有 selected_topics 或未批准状态，不允许进入下游阶段。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "T1",
+      "title": "鲍威尔转向降息预期逆转市场加息押注",
+      "topic_kind": "independent",
+      "mother_topic_id": "T1",
+      "angle_variant_of": null,
+      "article_use": "深度政策解读稿件，结合美联储声明与市场反应分析宏观经济影响。",
+      "core_proposition": "美联储政策预期由加息转向降息，成为全球资本市场短期重大拐点。",
+      "one_line_judgment": "鲍威尔讲话明确放弃加息预期，导致交易员快速调整押注方向，重新聚焦降息可能。"
+    },
+    {
+      "topic_id": "T2",
+      "title": "俄罗斯断供日本石油加剧全球能源地缘风险",
+      "topic_kind": "independent",
+      "mother_topic_id": "T2",
+      "angle_variant_of": null,
+      "article_use": "地缘政治与能源市场专题分析，结合外交声明与市场反应。",
+      "core_proposition": "俄罗斯断供日本石油是能源外交武器化的明显表现，推动全球能源供应链调整。",
+      "one_line_judgment": "俄罗斯以‘敌对国家’身份拒绝向日本供油，反映俄日关系恶化并加剧中东能源出口格局紧张。"
+    },
+    {
+      "topic_id": "T3",
+      "title": "霍尔木兹海峡封锁推升美通胀并考验全球能源安全",
+      "topic_kind": "independent",
+      "mother_topic_id": "T3",
+      "angle_variant_of": null,
+      "article_use": "宏观经济与地缘政治融合分析，结合能源供应链与通胀数据。",
+      "core_proposition": "能源运输瓶颈引发价格上涨，传导至美国经济，挑战通胀控制与全球经济稳定。",
+      "one_line_judgment": "伊朗封锁霍尔木兹海峡导致油价急涨，直接加剧美国通胀压力，凸显全球能源运输风险。"
+    },
+    {
+      "topic_id": "T4",
+      "title": "美以联军军事失利激活中东抵抗力量逆转局势",
+      "topic_kind": "independent",
+      "mother_topic_id": "T4",
+      "angle_variant_of": null,
+      "article_use": "中东安全局势专题，结合军事事件与政治动态深度分析。",
+      "core_proposition": "军事行动失利加剧地区冲突复杂性，抵抗势力联合增强，动摇美以战略优势。",
+      "one_line_judgment": "美以联军未能有效控制伊朗，反而激活多方抵抗力量，导致地区安全格局出现战略逆转。"
+    },
+    {
+      "topic_id": "T5",
+      "title": "美联储降息预期激活贵金属避险资金流入",
+      "topic_kind": "independent",
+      "mother_topic_id": "T5",
+      "angle_variant_of": null,
+      "article_use": "金融市场专题，结合政策信号与投资行为分析贵金属走势。",
+      "core_proposition": "降息预期重塑资金流向，贵金属市场迎来新一轮避险资金阶段。",
+      "one_line_judgment": "市场押注美联储降息，带动黄金白银等贵金属价格上涨，体现投资者避险需求扩大。"
+    },
+    {
+      "topic_id": "T6",
+      "title": "美军抢夺伊朗核材料极端军事计划揭露风险升级",
+      "topic_kind": "independent",
+      "mother_topic_id": "T6",
+      "angle_variant_of": null,
+      "article_use": "军事与地缘政治专题，披露美伊冲突最新动态与潜在风险。",
+      "core_proposition": "极端军事计划曝光预示地区冲突可能进入新阶段，提升全球安全不确定性。",
+      "one_line_judgment": "五角大楼向特朗普提出激进军事方案，意图抢夺伊朗核材料，显示冲突升级风险和美方战略冒险性。"
+    },
+    {
+      "topic_id": "T7",
+      "title": "伊朗控制霍尔木兹海峡构成实质核威慑",
+      "topic_kind": "independent",
+      "mother_topic_id": "T7",
+      "angle_variant_of": null,
+      "article_use": "地缘政治与能源安全专题，结合美媒分析与停火谈判现状。",
+      "core_proposition": "霍尔木兹海峡控制权提升伊朗地缘政治筹码，增加冲突复杂度与全球能源风险。",
+      "one_line_judgment": "美媒称伊朗将霍尔木兹海峡控制视作其‘核武器’，该能源通道掌控权成为核心战略资产。"
+    },
+    {
+      "topic_id": "T8",
+      "title": "中东停火斡旋卡塔尔退出加剧冲突不确定性",
+      "topic_kind": "independent",
+      "mother_topic_id": "T8",
+      "angle_variant_of": null,
+      "article_use": "国际关系专题，聚焦中东停火进程与多方博弈分析。",
+      "core_proposition": "斡旋机制受挫直接加剧中东冲突不稳定，未来冲突可能进一步升级。",
+      "one_line_judgment": "主要停火斡旋方卡塔尔退出后，停火谈判陷入僵局，区域安全风险明显提升。"
+    },
+    {
+      "topic_id": "T9",
+      "title": "中国散户大规模买入反映市场信心回暖",
+      "topic_kind": "independent",
+      "mother_topic_id": "T9",
+      "angle_variant_of": null,
+      "article_use": "资本市场专题，结合资金流向数据分析市场情绪和投资趋势。",
+      "core_proposition": "散户资金流入增强市场韧性，反映投资者信心恢复及潜在反弹动力。",
+      "one_line_judgment": "3月散户净买入1.25万亿资金，显示国内投资者对市场回调持积极买入态度，资本市场活跃度提升。"
+    },
+    {
+      "topic_id": "T10",
+      "title": "国务院多部门联动强化平台企业监管",
+      "topic_kind": "independent",
+      "mother_topic_id": "T10",
+      "angle_variant_of": null,
+      "article_use": "政策监管专题，解读政府监管动作及对平台经济的影响。",
+      "core_proposition": "多部门联合监管提升平台企业合规标准，推动消费市场规范化发展。",
+      "one_line_judgment": "国务院食安办、市场监管总局和海关总署约谈平台企业，显示政府多部门协同加大市场监管力度。"
+    }
+  ],
+  "editor_note": ""
+}

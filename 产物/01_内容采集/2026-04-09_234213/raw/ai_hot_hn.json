@@ -1,0 +1,1728 @@
+{
+  "OpenAI": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "sohaibtariq"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Hi, we're Sohaib and Hannan from APIMatic. We've been building tools to help Developers integrate with APIs for 5+ years at APIMatic. We're now trying to help AI agents do the same.<p>This started from a conversation at PayPal DevDay 2025. The PayPal developer experience team were monitoring developers using AI agents to integrate PayPal APIs, and the agents kept reaching for outdated docs and deprecated SDK versions, often falling back to training data instead of reading the current API documentation.<p>We tested this ourselves with Cursor. Across multiple iterations, 87% of runs fetched outdated reference docs using web search, and 13% of implementations used a deprecated SDK version.<p>What we built:<p>We built Context Plugins - given an <em>OpenAPI</em> spec, we generate SDKs and a remote MCP server that exposes language-specific API context (auth flows, method signatures, error handling, pagination, integration patterns from the API team) packaged and optimised for LLM consumption. Instead of guessing from training data or relying on web search, coding agents get the correct SDK methods and integration patterns they need to build API integrations.<p>We've just launched in Beta with PayPal: <a href=\"https://developer.paypal.com/serversdk/java/getting-started/how-to-get-started/?ide=claudeCode&amp;isContextPlugin=true\" rel=\"nofollow\">https://developer.paypal.com/serversdk/java/getting-started/...</a><p>We benchmarked Context Plugins on two codebases, nopCommerce (a mature ASP.NET e-commerce platform) and Microsoft's eShop reference app, and saw 2x faster integration time, 65% lower token usage, and near-zero hallucinations.<p>Getting started:<p>- We've published ready-to-use Context Plugins for Spotify, Twilio, Slack, and other APIs; the Show HN link takes you to our product showcase with one-click install for popular AI agents.<p>- Want to generate Context Plugins from your own spec? Sign up for a free 2-week trial on the APIMatic website, no credit card required.<p>- Want to dive deeper into the data? Read more here <a href=\"https://www.apimatic.io/product/context-plugins/case-study\" rel=\"nofollow\">https://www.apimatic.io/product/context-plugins/case-study</a><p>We're really looking forward to hearing the community's feedback on this. We're particularly interested in hearing from API platform teams seeing this problem with their users, developers who've fought this problem manually or anyone who's tried building something similar.<p>What are we missing? What would make this more useful?"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: AI agents are bad at API integrations – we fixed it"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.apimatic.io/product/context-plugins/showcase"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_sohaibtariq",
+          "story_47704728",
+          "show_hn"
+        ],
+        "author": "sohaibtariq",
+        "children": [
+          47704819
+        ],
+        "created_at": "2026-04-09T15:06:54Z",
+        "created_at_i": 1775747214,
+        "num_comments": 2,
+        "objectID": "47704728",
+        "points": 3,
+        "story_id": 47704728,
+        "story_text": "Hi, we&#x27;re Sohaib and Hannan from APIMatic. We&#x27;ve been building tools to help Developers integrate with APIs for 5+ years at APIMatic. We&#x27;re now trying to help AI agents do the same.<p>This started from a conversation at PayPal DevDay 2025. The PayPal developer experience team were monitoring developers using AI agents to integrate PayPal APIs, and the agents kept reaching for outdated docs and deprecated SDK versions, often falling back to training data instead of reading the current API documentation.<p>We tested this ourselves with Cursor. Across multiple iterations, 87% of runs fetched outdated reference docs using web search, and 13% of implementations used a deprecated SDK version.<p>What we built:<p>We built Context Plugins - given an OpenAPI spec, we generate SDKs and a remote MCP server that exposes language-specific API context (auth flows, method signatures, error handling, pagination, integration patterns from the API team) packaged and optimised for LLM consumption. Instead of guessing from training data or relying on web search, coding agents get the correct SDK methods and integration patterns they need to build API integrations.<p>We&#x27;ve just launched in Beta with PayPal: <a href=\"https:&#x2F;&#x2F;developer.paypal.com&#x2F;serversdk&#x2F;java&#x2F;getting-started&#x2F;how-to-get-started&#x2F;?ide=claudeCode&amp;isContextPlugin=true\" rel=\"nofollow\">https:&#x2F;&#x2F;developer.paypal.com&#x2F;serversdk&#x2F;java&#x2F;getting-started&#x2F;...</a><p>We benchmarked Context Plugins on two codebases, nopCommerce (a mature ASP.NET e-commerce platform) and Microsoft&#x27;s eShop reference app, and saw 2x faster integration time, 65% lower token usage, and near-zero hallucinations.<p>Getting started:<p>- We&#x27;ve published ready-to-use Context Plugins for Spotify, Twilio, Slack, and other APIs; the Show HN link takes you to our product showcase with one-click install for popular AI agents.<p>- Want to generate Context Plugins from your own spec? Sign up for a free 2-week trial on the APIMatic website, no credit card required.<p>- Want to dive deeper into the data? Read more here <a href=\"https:&#x2F;&#x2F;www.apimatic.io&#x2F;product&#x2F;context-plugins&#x2F;case-study\" rel=\"nofollow\">https:&#x2F;&#x2F;www.apimatic.io&#x2F;product&#x2F;context-plugins&#x2F;case-study</a><p>We&#x27;re really looking forward to hearing the community&#x27;s feedback on this. We&#x27;re particularly interested in hearing from API platform teams seeing this problem with their users, developers who&#x27;ve fought this problem manually or anyone who&#x27;s tried building something similar.<p>What are we missing? What would make this more useful?",
+        "title": "Show HN: AI agents are bad at API integrations – we fixed it",
+        "updated_at": "2026-04-09T15:24:02Z",
+        "url": "https://www.apimatic.io/product/context-plugins/showcase"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "michaelquigley"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "MCP servers work great locally over stdio... until you need one on another machine, or want to share tools across a team. Most approaches to that involve exposing endpoints and managing network access. I built a tool that keeps remote MCP as simple and secure as local stdio.<p>mcp-bridge wraps any stdio MCP server in one command and shares it over a zrok/<em>OpenZi</em>ti overlay. mcp-gateway aggregates multiple backends... local stdio servers and remote shares... into a single connection with a unified, namespaced tool registry. Permission filtering removes tools from the schema entirely... they're not checked at runtime, they're gone from the registry. No listening ports, no VPN, no port forwarding. Your MCP server doesn't change.<p>Go, Apache 2.0, single binaries, part of the <em>OpenZi</em>ti project. Works seamlessly with the llm-gateway I introduced a couple of weeks ago."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: MCP Gateway – Zero-Trust Access to MCP Tool Servers"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://github.com/<em>openzi</em>ti/mcp-gateway"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_michaelquigley",
+          "story_47704652",
+          "show_hn"
+        ],
+        "author": "michaelquigley",
+        "created_at": "2026-04-09T15:00:07Z",
+        "created_at_i": 1775746807,
+        "num_comments": 0,
+        "objectID": "47704652",
+        "points": 4,
+        "story_id": 47704652,
+        "story_text": "MCP servers work great locally over stdio... until you need one on another machine, or want to share tools across a team. Most approaches to that involve exposing endpoints and managing network access. I built a tool that keeps remote MCP as simple and secure as local stdio.<p>mcp-bridge wraps any stdio MCP server in one command and shares it over a zrok&#x2F;OpenZiti overlay. mcp-gateway aggregates multiple backends... local stdio servers and remote shares... into a single connection with a unified, namespaced tool registry. Permission filtering removes tools from the schema entirely... they&#x27;re not checked at runtime, they&#x27;re gone from the registry. No listening ports, no VPN, no port forwarding. Your MCP server doesn&#x27;t change.<p>Go, Apache 2.0, single binaries, part of the OpenZiti project. Works seamlessly with the llm-gateway I introduced a couple of weeks ago.",
+        "title": "Show HN: MCP Gateway – Zero-Trust Access to MCP Tool Servers",
+        "updated_at": "2026-04-09T15:28:17Z",
+        "url": "https://github.com/openziti/mcp-gateway"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "jeltz"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Cirrus Labs to Join <em>OpenAI</em>"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://cirruslabs.org/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_jeltz",
+          "story_47704497"
+        ],
+        "author": "jeltz",
+        "children": [
+          47704498,
+          47704864
+        ],
+        "created_at": "2026-04-09T14:48:32Z",
+        "created_at_i": 1775746112,
+        "num_comments": 2,
+        "objectID": "47704497",
+        "points": 3,
+        "story_id": 47704497,
+        "title": "Cirrus Labs to Join OpenAI",
+        "updated_at": "2026-04-09T15:21:20Z",
+        "url": "https://cirruslabs.org/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "mellosouls"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "<em>OpenAI</em> pulls out of landmark £31B UK investment package"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.theguardian.com/technology/2026/apr/09/<em>openai</em>-pulls-out-of-landmark-31bn-uk-investment"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_mellosouls",
+          "story_47704137"
+        ],
+        "author": "mellosouls",
+        "children": [
+          47705051
+        ],
+        "created_at": "2026-04-09T14:21:42Z",
+        "created_at_i": 1775744502,
+        "num_comments": 0,
+        "objectID": "47704137",
+        "points": 5,
+        "story_id": 47704137,
+        "title": "OpenAI pulls out of landmark £31B UK investment package",
+        "updated_at": "2026-04-09T15:35:18Z",
+        "url": "https://www.theguardian.com/technology/2026/apr/09/openai-pulls-out-of-landmark-31bn-uk-investment"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Tyyps"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "<em>OpenAI</em>: Short proofs in combinatorics, probability and number theory II"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://arxiv.org/abs/2604.06609"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Tyyps",
+          "story_47703838"
+        ],
+        "author": "Tyyps",
+        "created_at": "2026-04-09T13:55:57Z",
+        "created_at_i": 1775742957,
+        "num_comments": 0,
+        "objectID": "47703838",
+        "points": 3,
+        "story_id": 47703838,
+        "title": "OpenAI: Short proofs in combinatorics, probability and number theory II",
+        "updated_at": "2026-04-09T14:15:47Z",
+        "url": "https://arxiv.org/abs/2604.06609"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "MattSayar"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Anthropic Just Passed <em>OpenAI</em> in Revenue While Spending 4x Less"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.the-ai-corner.com/p/anthropic-30b-arr-passed-<em>openai</em>-revenue-2026"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_MattSayar",
+          "story_47703760"
+        ],
+        "author": "MattSayar",
+        "created_at": "2026-04-09T13:50:17Z",
+        "created_at_i": 1775742617,
+        "num_comments": 0,
+        "objectID": "47703760",
+        "points": 2,
+        "story_id": 47703760,
+        "title": "Anthropic Just Passed OpenAI in Revenue While Spending 4x Less",
+        "updated_at": "2026-04-09T14:16:17Z",
+        "url": "https://www.the-ai-corner.com/p/anthropic-30b-arr-passed-openai-revenue-2026"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Brajeshwar"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "<em>OpenAI</em> halts UK stargate project amid regulatory and energy price concerns"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.cnbc.com/2026/04/09/<em>openai</em>-halts-uk-stargate-project.html"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Brajeshwar",
+          "story_47703130"
+        ],
+        "author": "Brajeshwar",
+        "created_at": "2026-04-09T12:57:37Z",
+        "created_at_i": 1775739457,
+        "num_comments": 0,
+        "objectID": "47703130",
+        "points": 5,
+        "story_id": 47703130,
+        "title": "OpenAI halts UK stargate project amid regulatory and energy price concerns",
+        "updated_at": "2026-04-09T15:09:48Z",
+        "url": "https://www.cnbc.com/2026/04/09/openai-halts-uk-stargate-project.html"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "tosh"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "<em>OpenAI</em> eyes staggered rollout of new model over cybersecurity risk"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.axios.com/2026/04/09/<em>openai</em>-new-model-cyber-mythos-anthopic"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_tosh",
+          "story_47701629"
+        ],
+        "author": "tosh",
+        "created_at": "2026-04-09T10:15:07Z",
+        "created_at_i": 1775729707,
+        "num_comments": 0,
+        "objectID": "47701629",
+        "points": 2,
+        "story_id": 47701629,
+        "title": "OpenAI eyes staggered rollout of new model over cybersecurity risk",
+        "updated_at": "2026-04-09T10:56:16Z",
+        "url": "https://www.axios.com/2026/04/09/openai-new-model-cyber-mythos-anthopic"
+      }
+    ]
+  },
+  "Anthropic Claude": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "alcazar"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "<em>Claude</em> Mythos is the first model <em>Anthropic</em> didn't really release"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://blog.alcazarsec.com/tech/posts/<em>claude</em>-mythos-the-first-model-<em>anthropic</em>-didnt-really-release"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_alcazar",
+          "story_47704838"
+        ],
+        "author": "alcazar",
+        "created_at": "2026-04-09T15:14:36Z",
+        "created_at_i": 1775747676,
+        "num_comments": 0,
+        "objectID": "47704838",
+        "points": 1,
+        "story_id": 47704838,
+        "title": "Claude Mythos is the first model Anthropic didn't really release",
+        "updated_at": "2026-04-09T15:29:47Z",
+        "url": "https://blog.alcazarsec.com/tech/posts/claude-mythos-the-first-model-anthropic-didnt-really-release"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Brajeshwar"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "With <em>Claude</em> Managed Agents, <em>Anthropic</em> wants to run your AI agents for you"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://thenewstack.io/with-<em>claude</em>-managed-agents-<em>anthropic</em>-wants-to-run-your-ai-agents-for-you/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Brajeshwar",
+          "story_47704213"
+        ],
+        "author": "Brajeshwar",
+        "created_at": "2026-04-09T14:27:05Z",
+        "created_at_i": 1775744825,
+        "num_comments": 0,
+        "objectID": "47704213",
+        "points": 1,
+        "story_id": 47704213,
+        "title": "With Claude Managed Agents, Anthropic wants to run your AI agents for you",
+        "updated_at": "2026-04-09T14:28:17Z",
+        "url": "https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "cientifico"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Bring Buddy Back"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://github.com/<em>anthropics</em>/<em>claude</em>-code/issues/45596"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_cientifico",
+          "story_47701239"
+        ],
+        "author": "cientifico",
+        "created_at": "2026-04-09T09:26:15Z",
+        "created_at_i": 1775726775,
+        "num_comments": 0,
+        "objectID": "47701239",
+        "points": 3,
+        "story_id": 47701239,
+        "title": "Bring Buddy Back",
+        "updated_at": "2026-04-09T11:10:01Z",
+        "url": "https://github.com/anthropics/claude-code/issues/45596"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "silexia"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "anthropic"
+            ],
+            "value": "<em>Anthropics</em> Mythos Model Sparks Fears of AI Doomsday"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://nypost.com/2026/04/08/business/<em>anthropics</em>-<em>claude</em>-mythos-model-sparks-fears-of-ai-doomsday-wave-of-devastating-hacks/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_silexia",
+          "story_47699531"
+        ],
+        "author": "silexia",
+        "children": [
+          47699662
+        ],
+        "created_at": "2026-04-09T05:14:37Z",
+        "created_at_i": 1775711677,
+        "num_comments": 1,
+        "objectID": "47699531",
+        "points": 2,
+        "story_id": 47699531,
+        "title": "Anthropics Mythos Model Sparks Fears of AI Doomsday",
+        "updated_at": "2026-04-09T05:36:45Z",
+        "url": "https://nypost.com/2026/04/08/business/anthropics-claude-mythos-model-sparks-fears-of-ai-doomsday-wave-of-devastating-hacks/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "jablongo"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "claude"
+            ],
+            "value": "Alignment Risk Update for <em>Claude</em> Mythos [pdf]"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "anthropic"
+            ],
+            "value": "https://www-cdn.<em>anthropic</em>.com/79c2d46d997783b9d2fb3241de43218158e5f25c.pdf"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_jablongo",
+          "story_47699202"
+        ],
+        "author": "jablongo",
+        "created_at": "2026-04-09T04:14:28Z",
+        "created_at_i": 1775708068,
+        "num_comments": 0,
+        "objectID": "47699202",
+        "points": 1,
+        "story_id": 47699202,
+        "title": "Alignment Risk Update for Claude Mythos [pdf]",
+        "updated_at": "2026-04-09T04:19:46Z",
+        "url": "https://www-cdn.anthropic.com/79c2d46d997783b9d2fb3241de43218158e5f25c.pdf"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "andsoitis"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "claude"
+            ],
+            "value": "<em>Claude</em> Mythos Preview [pdf]"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "anthropic"
+            ],
+            "value": "https://www-cdn.<em>anthropic</em>.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_andsoitis",
+          "story_47697253"
+        ],
+        "author": "andsoitis",
+        "children": [
+          47697376,
+          47699167
+        ],
+        "created_at": "2026-04-08T22:53:56Z",
+        "created_at_i": 1775688836,
+        "num_comments": 4,
+        "objectID": "47697253",
+        "points": 5,
+        "story_id": 47697253,
+        "title": "Claude Mythos Preview [pdf]",
+        "updated_at": "2026-04-09T07:30:45Z",
+        "url": "https://www-cdn.anthropic.com/8b8380204f74670be75e81c820ca8dda846ab289.pdf"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "AndreBaltazar"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "Hey HN. I built an AI agent harness over the past few months and I'm open sourcing it today.<p>Some context on why. I've been building with <em>Claude</em> Code daily using this harness. It orchestrates multiple AI agents as a team, with a dashboard, chat, kanban board, the works. I used it to build a full SaaS product (MyUpMonitor, <a href=\"https://myupmonitor.com\" rel=\"nofollow\">https://myupmonitor.com</a>) in about 24 hours of focused coding.<p>Then yesterday <em>Anthropic</em> announced Mythos and decided to keep it behind closed doors. Meanwhile I'm paying for <em>Claude</em> and I can't access their best model. I don't think that is nice at all...<p>So I'm open sourcing the harness with support for both <em>Claude</em> Code and OpenAI Codex. The whole point is that you shouldn't be dependent on one company's API to run your AI workflow.<p>What this harness does:\n- Spawns and manages multiple AI agents in parallel\n- Each agent gets a persona, role, and communication channels\n- CEO agent that can hire/fire workers on its own\n- Web dashboard with chat, kanban board, and live terminal output\n- Supports <em>Claude</em> Code, OpenAI Codex, Cursor Agent, opencode, and local models\n- MCP server per worker for tool access\n- Written in Go. Two binaries. SQLite. No heavy deps.<p>Would love feedback from anyone working on multi-agent setups or just what you think in general. Thank you!"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: I built an open source multi-agent harness in Go"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/AndreBaltazar8/artificial"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_AndreBaltazar",
+          "story_47697020",
+          "show_hn"
+        ],
+        "author": "AndreBaltazar",
+        "created_at": "2026-04-08T22:19:10Z",
+        "created_at_i": 1775686750,
+        "num_comments": 0,
+        "objectID": "47697020",
+        "points": 3,
+        "story_id": 47697020,
+        "story_text": "Hey HN. I built an AI agent harness over the past few months and I&#x27;m open sourcing it today.<p>Some context on why. I&#x27;ve been building with Claude Code daily using this harness. It orchestrates multiple AI agents as a team, with a dashboard, chat, kanban board, the works. I used it to build a full SaaS product (MyUpMonitor, <a href=\"https:&#x2F;&#x2F;myupmonitor.com\" rel=\"nofollow\">https:&#x2F;&#x2F;myupmonitor.com</a>) in about 24 hours of focused coding.<p>Then yesterday Anthropic announced Mythos and decided to keep it behind closed doors. Meanwhile I&#x27;m paying for Claude and I can&#x27;t access their best model. I don&#x27;t think that is nice at all...<p>So I&#x27;m open sourcing the harness with support for both Claude Code and OpenAI Codex. The whole point is that you shouldn&#x27;t be dependent on one company&#x27;s API to run your AI workflow.<p>What this harness does:\n- Spawns and manages multiple AI agents in parallel\n- Each agent gets a persona, role, and communication channels\n- CEO agent that can hire&#x2F;fire workers on its own\n- Web dashboard with chat, kanban board, and live terminal output\n- Supports Claude Code, OpenAI Codex, Cursor Agent, opencode, and local models\n- MCP server per worker for tool access\n- Written in Go. Two binaries. SQLite. No heavy deps.<p>Would love feedback from anyone working on multi-agent setups or just what you think in general. Thank you!",
+        "title": "Show HN: I built an open source multi-agent harness in Go",
+        "updated_at": "2026-04-09T01:50:15Z",
+        "url": "https://github.com/AndreBaltazar8/artificial"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "hackyhacky"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "anthropic"
+            ],
+            "value": "New <em>Anthropic</em> model is too dangerous to release publicly"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://www.nbcnews.com/tech/security/<em>anthropic</em>-project-glasswing-mythos-preview-<em>claude</em>-gets-limited-release-rcna267234"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_hackyhacky",
+          "story_47696944"
+        ],
+        "author": "hackyhacky",
+        "children": [
+          47701409,
+          47697383,
+          47697883,
+          47698328,
+          47697454,
+          47697886
+        ],
+        "created_at": "2026-04-08T22:10:35Z",
+        "created_at_i": 1775686235,
+        "num_comments": 6,
+        "objectID": "47696944",
+        "points": 4,
+        "story_id": 47696944,
+        "title": "New Anthropic model is too dangerous to release publicly",
+        "updated_at": "2026-04-09T10:26:01Z",
+        "url": "https://www.nbcnews.com/tech/security/anthropic-project-glasswing-mythos-preview-claude-gets-limited-release-rcna267234"
+      }
+    ]
+  },
+  "Llama": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "drcursor"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "After trying multiple apps that promised full automatic local transcription of meetings but ended up using remote AI, OpenRouter, or requiring <em>Ollama</em> to be running in the background.<p>I decided to fork another project and make it as straightforward to use as possible.<p>It just runs on the background, and transcripts calls automatically when they happen and saves them as md files I can use in obsidian or anywhere else.<p>I still need to fix some tech issues, and make local AI summaries actually useful, but in the meantime, I have the app I've wished for a long time. Hope others find it useful."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: HushScribe – Self-contained local meeting transcription for macOS"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/drcursor/HushScribe"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_drcursor",
+          "story_47704147",
+          "show_hn"
+        ],
+        "author": "drcursor",
+        "created_at": "2026-04-09T14:22:23Z",
+        "created_at_i": 1775744543,
+        "num_comments": 0,
+        "objectID": "47704147",
+        "points": 2,
+        "story_id": 47704147,
+        "story_text": "After trying multiple apps that promised full automatic local transcription of meetings but ended up using remote AI, OpenRouter, or requiring Ollama to be running in the background.<p>I decided to fork another project and make it as straightforward to use as possible.<p>It just runs on the background, and transcripts calls automatically when they happen and saves them as md files I can use in obsidian or anywhere else.<p>I still need to fix some tech issues, and make local AI summaries actually useful, but in the meantime, I have the app I&#x27;ve wished for a long time. Hope others find it useful.",
+        "title": "Show HN: HushScribe – Self-contained local meeting transcription for macOS",
+        "updated_at": "2026-04-09T14:28:31Z",
+        "url": "https://github.com/drcursor/HushScribe"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "pdrgds"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "I built a Rust CLI that takes an EPUB and rewrites it at a target CEFR level (A1–C2) using an LLM. Give it a German novel and ask for Portuguese at A2 — it produces a new EPUB ready for your Kindle.<p>For beginner levels (A1/A2), it runs a two-pass pipeline: first simplify in the source language, then translate. This produced 15–25% better vocabulary coverage than doing both in one shot.<p>It uses Groq or <em>Ollama</em> (local) as backends. A sample book (Kafka's Metamorphosis) is included so you can try it immediately."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Nheengatu – CLI tool to simplify books to your language level with LLMs"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/pdrgds/nheengatu"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_pdrgds",
+          "story_47703706",
+          "show_hn"
+        ],
+        "author": "pdrgds",
+        "created_at": "2026-04-09T13:46:13Z",
+        "created_at_i": 1775742373,
+        "num_comments": 0,
+        "objectID": "47703706",
+        "points": 1,
+        "story_id": 47703706,
+        "story_text": "I built a Rust CLI that takes an EPUB and rewrites it at a target CEFR level (A1–C2) using an LLM. Give it a German novel and ask for Portuguese at A2 — it produces a new EPUB ready for your Kindle.<p>For beginner levels (A1&#x2F;A2), it runs a two-pass pipeline: first simplify in the source language, then translate. This produced 15–25% better vocabulary coverage than doing both in one shot.<p>It uses Groq or Ollama (local) as backends. A sample book (Kafka&#x27;s Metamorphosis) is included so you can try it immediately.",
+        "title": "Show HN: Nheengatu – CLI tool to simplify books to your language level with LLMs",
+        "updated_at": "2026-04-09T13:51:35Z",
+        "url": "https://github.com/pdrgds/nheengatu"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "benbojangles"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Gemini-CLI, zeroclaw, <em>Llama</em>.cpp, Qwen3.5 on TK1"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "https://forums.developer.nvidia.com/t/gemini-cli-zeroclaw-<em>llama</em>-cpp-qwen3-5-on-tk1/365653"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_benbojangles",
+          "story_47701187"
+        ],
+        "author": "benbojangles",
+        "children": [
+          47701188
+        ],
+        "created_at": "2026-04-09T09:21:31Z",
+        "created_at_i": 1775726491,
+        "num_comments": 1,
+        "objectID": "47701187",
+        "points": 1,
+        "story_id": 47701187,
+        "title": "Gemini-CLI, zeroclaw, Llama.cpp, Qwen3.5 on TK1",
+        "updated_at": "2026-04-09T09:24:01Z",
+        "url": "https://forums.developer.nvidia.com/t/gemini-cli-zeroclaw-llama-cpp-qwen3-5-on-tk1/365653"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "vektormemory"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Massive Upgrades: 1.4.6:<p>28 Claude Mcp tools\nCloak Stealth Browser\nD3 Graph\nCustom Ink Cli\n<em>Ollama</em> Support\nGrog, Claude, Openai,Gemini Mistral Support\nResearch Tools \nBetter Sqlite Db\nOnnx embedding\nLocal first memory migration\nAudn memory eval\nRem dream cycle\nInstant hyper intel memory curation and retention<p>Review Vektor:\n<a href=\"https://github.com/Vektor-Memory/Vektor-memory\" rel=\"nofollow\">https://github.com/Vektor-Memory/Vektor-memory</a>"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: D3 4 Layer Magma Graph – Cloak Stealth Browser"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://vektormemory.com/docs/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_vektormemory",
+          "story_47700390",
+          "show_hn"
+        ],
+        "author": "vektormemory",
+        "created_at": "2026-04-09T07:27:34Z",
+        "created_at_i": 1775719654,
+        "num_comments": 0,
+        "objectID": "47700390",
+        "points": 1,
+        "story_id": 47700390,
+        "story_text": "Massive Upgrades: 1.4.6:<p>28 Claude Mcp tools\nCloak Stealth Browser\nD3 Graph\nCustom Ink Cli\nOllama Support\nGrog, Claude, Openai,Gemini Mistral Support\nResearch Tools \nBetter Sqlite Db\nOnnx embedding\nLocal first memory migration\nAudn memory eval\nRem dream cycle\nInstant hyper intel memory curation and retention<p>Review Vektor:\n<a href=\"https:&#x2F;&#x2F;github.com&#x2F;Vektor-Memory&#x2F;Vektor-memory\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;Vektor-Memory&#x2F;Vektor-memory</a>",
+        "title": "Show HN: D3 4 Layer Magma Graph – Cloak Stealth Browser",
+        "updated_at": "2026-04-09T07:34:30Z",
+        "url": "https://vektormemory.com/docs/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "a_t48"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Hey HN!<p>I've built clipper.dev -  the fastest container repository in the world. (Big claim, I know.) It deduplicates at a file/chunk level, rather than at the layer level.<p>I get around 10-20% faster pulls than docker (when using containerd for both) for fresh pulls. \nFor some workflows, I see 80-90% faster patch pulls (think v0.17.5 -&gt; 0.17.6).<p>Here's a best case scenario for me (and worst case for dockerhub)<p><pre><code>    docker&gt; time sudo nerdctl pull <em>ollama</em>/<em>ollama</em>:0.17.5\n    docker.io/<em>ollama</em>/<em>ollama</em>:0.17.5:\n    elapsed: 244.1s total:  2.9 Gi (12.3 MiB/s)                                      \n\n    real 4m4.172s\n    user 0m0.115s\n    sys 0m0.227s\n    docker&gt; time sudo nerdctl pull <em>ollama</em>/<em>ollama</em>:0.17.6\n    docker.io/<em>ollama</em>/<em>ollama</em>:0.17.6:\n    elapsed: 234.9s total:  2.8 Gi (12.3 MiB/s)                                      \n\n    real 3m54.965s\n    user 0m0.051s\n    sys 0m0.275s\n</code></pre>\n---<p><pre><code>    clipper&gt; time sudo clipper pull clipper/<em>ollama</em>:0.17.5\n    using containerd runtime at /run/containerd/containerd.sock\n    fetching manifest clipper.dev/clipper/<em>ollama</em>:0.17.5 ...\n    image created: clipper.dev/clipper/<em>ollama</em>:0.17.5\n    fetched 46 chunks (2.2 GB, 11.7 MB/s), took 3m16.134s\n    done — clipper.dev/clipper/<em>ollama</em>:0.17.5\n\n    real 3m17.532s\n    user 0m0.006s\n    sys 0m0.012s\n\n    clipper&gt; time sudo clipper pull clipper/<em>ollama</em>:0.17.6\n    using containerd runtime at /run/containerd/containerd.sock\n    fetching manifest clipper.dev/clipper/<em>ollama</em>:0.17.6 ...\n    image created: clipper.dev/clipper/<em>ollama</em>:0.17.6\n    fetched 6 chunks (599.2 MB, 7.7 MB/s), took 1m17.48s\n    done — clipper.dev/clipper/<em>ollama</em>:0.17.6\n\n    real 1m19.061s\n    user 0m0.005s\n    sys 0m0.016s\n</code></pre>\nThe first two layers of 0.17.6 are shared with 0.17.5, but everything else has to be transported again with docker, but not with clipper. The exact speedup depends on how fast my wifi is feeling at the time, but I'm pulling 1.5 GB less than dockerhub can do. This is _huge_ for robotics workflows or anyone else pulling docker images on poor connections. (This is not even as fast as it could be - there's other optimizations like chunking within files or using BytePort that could make this go even faster).<p>I built this because at multiple companies I've been at, pulling new images for updates has been...very painful. Robotics Dockerfiles tend to have a lot of dependencies stuffed into a small amount of layers. Adding one new dependency means shipping the bytes for every other dependency, even with perfect pinning. Additionally, the Dockerfiles are oftentimes...not well written, compounding the problem. So I decided to fix the tool to fit the user, rather than the inverse.<p>There's some other side benefits to using clipper:\n - Moving a file or changing permissions is &quot;free&quot;: another layer already has the bytes\n - The on-disk structure lends itself much better to P2P device updates than docker's layout<p>I do intend this to be a commercial product, but pricing is still up in the air. I'm currently targeting robotics companies as they feel the most pain here. There's some other possible fields that I'm interested in that might find use in this: IoT, edge AI, space datacenters/etc, developmer tooling.<p>Please give it a try. If you don't want to upload an image, these repos should be publically pullable once you register an account:<p><pre><code>    clipper/ubuntu: 20.04, 22.04, 24.04\n    clipper/<em>ollama</em>: 0.17.5, 0.17.6\n    clipper/python: 3.13, 3.14</code></pre>"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Clipper – The World's Fastest Container Registry"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://clipper.dev"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_a_t48",
+          "story_47697338",
+          "show_hn"
+        ],
+        "author": "a_t48",
+        "created_at": "2026-04-08T23:05:24Z",
+        "created_at_i": 1775689524,
+        "num_comments": 0,
+        "objectID": "47697338",
+        "points": 1,
+        "story_id": 47697338,
+        "story_text": "Hey HN!<p>I&#x27;ve built clipper.dev -  the fastest container repository in the world. (Big claim, I know.) It deduplicates at a file&#x2F;chunk level, rather than at the layer level.<p>I get around 10-20% faster pulls than docker (when using containerd for both) for fresh pulls. \nFor some workflows, I see 80-90% faster patch pulls (think v0.17.5 -&gt; 0.17.6).<p>Here&#x27;s a best case scenario for me (and worst case for dockerhub)<p><pre><code>    docker&gt; time sudo nerdctl pull ollama&#x2F;ollama:0.17.5\n    docker.io&#x2F;ollama&#x2F;ollama:0.17.5:\n    elapsed: 244.1s total:  2.9 Gi (12.3 MiB&#x2F;s)                                      \n\n    real 4m4.172s\n    user 0m0.115s\n    sys 0m0.227s\n    docker&gt; time sudo nerdctl pull ollama&#x2F;ollama:0.17.6\n    docker.io&#x2F;ollama&#x2F;ollama:0.17.6:\n    elapsed: 234.9s total:  2.8 Gi (12.3 MiB&#x2F;s)                                      \n\n    real 3m54.965s\n    user 0m0.051s\n    sys 0m0.275s\n</code></pre>\n---<p><pre><code>    clipper&gt; time sudo clipper pull clipper&#x2F;ollama:0.17.5\n    using containerd runtime at &#x2F;run&#x2F;containerd&#x2F;containerd.sock\n    fetching manifest clipper.dev&#x2F;clipper&#x2F;ollama:0.17.5 ...\n    image created: clipper.dev&#x2F;clipper&#x2F;ollama:0.17.5\n    fetched 46 chunks (2.2 GB, 11.7 MB&#x2F;s), took 3m16.134s\n    done — clipper.dev&#x2F;clipper&#x2F;ollama:0.17.5\n\n    real 3m17.532s\n    user 0m0.006s\n    sys 0m0.012s\n\n    clipper&gt; time sudo clipper pull clipper&#x2F;ollama:0.17.6\n    using containerd runtime at &#x2F;run&#x2F;containerd&#x2F;containerd.sock\n    fetching manifest clipper.dev&#x2F;clipper&#x2F;ollama:0.17.6 ...\n    image created: clipper.dev&#x2F;clipper&#x2F;ollama:0.17.6\n    fetched 6 chunks (599.2 MB, 7.7 MB&#x2F;s), took 1m17.48s\n    done — clipper.dev&#x2F;clipper&#x2F;ollama:0.17.6\n\n    real 1m19.061s\n    user 0m0.005s\n    sys 0m0.016s\n</code></pre>\nThe first two layers of 0.17.6 are shared with 0.17.5, but everything else has to be transported again with docker, but not with clipper. The exact speedup depends on how fast my wifi is feeling at the time, but I&#x27;m pulling 1.5 GB less than dockerhub can do. This is _huge_ for robotics workflows or anyone else pulling docker images on poor connections. (This is not even as fast as it could be - there&#x27;s other optimizations like chunking within files or using BytePort that could make this go even faster).<p>I built this because at multiple companies I&#x27;ve been at, pulling new images for updates has been...very painful. Robotics Dockerfiles tend to have a lot of dependencies stuffed into a small amount of layers. Adding one new dependency means shipping the bytes for every other dependency, even with perfect pinning. Additionally, the Dockerfiles are oftentimes...not well written, compounding the problem. So I decided to fix the tool to fit the user, rather than the inverse.<p>There&#x27;s some other side benefits to using clipper:\n - Moving a file or changing permissions is &quot;free&quot;: another layer already has the bytes\n - The on-disk structure lends itself much better to P2P device updates than docker&#x27;s layout<p>I do intend this to be a commercial product, but pricing is still up in the air. I&#x27;m currently targeting robotics companies as they feel the most pain here. There&#x27;s some other possible fields that I&#x27;m interested in that might find use in this: IoT, edge AI, space datacenters&#x2F;etc, developmer tooling.<p>Please give it a try. If you don&#x27;t want to upload an image, these repos should be publically pullable once you register an account:<p><pre><code>    clipper&#x2F;ubuntu: 20.04, 22.04, 24.04\n    clipper&#x2F;ollama: 0.17.5, 0.17.6\n    clipper&#x2F;python: 3.13, 3.14</code></pre>",
+        "title": "Show HN: Clipper – The World's Fastest Container Registry",
+        "updated_at": "2026-04-08T23:09:59Z",
+        "url": "https://clipper.dev"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "<em>llama</em>theollama"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Prisoner's Dilemma – An Extension (from game theory)"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://pd.luthira.com/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_llamatheollama",
+          "story_47696730"
+        ],
+        "author": "llamatheollama",
+        "created_at": "2026-04-08T21:50:43Z",
+        "created_at_i": 1775685043,
+        "num_comments": 0,
+        "objectID": "47696730",
+        "points": 2,
+        "story_id": 47696730,
+        "title": "Prisoner's Dilemma – An Extension (from game theory)",
+        "updated_at": "2026-04-08T22:05:32Z",
+        "url": "https://pd.luthira.com/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "linggen"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Hi HN, I built Linggen — a local-first, open-source AI coding agent written in Rust.<p><pre><code>  What's new in 0.9.2:\n  - P2P remote access via WebRTC — control your agent from your phone, no port forwarding or cloud relay needed. Just\n  `ling login` and scan a QR code.\n  - Plan mode — the agent proposes a step-by-step plan before writing code, you approve or edit before execution.\n  - Works with any model — <em>Ollama</em>, OpenAI-compatible APIs, Gemini, DeepSeek. Bring your own keys or run fully local.\n\n  It's like Claude Code but model-agnostic, extensible through skills (markdown files), and now accessible from\n  anywhere.\n\n  Demo video on the landing page showing install → plan → build → mobile sync.\n\n  Install: curl -fsSL https://linggen.dev/install.sh | bash\n\n  GitHub: https://github.com/linggen/linggen</code></pre>"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Linggen – Open-source AI agent with P2P remote access from your phone"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://linggen.dev/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_linggen",
+          "story_47696666",
+          "show_hn"
+        ],
+        "author": "linggen",
+        "children": [
+          47704278
+        ],
+        "created_at": "2026-04-08T21:43:31Z",
+        "created_at_i": 1775684611,
+        "num_comments": 1,
+        "objectID": "47696666",
+        "points": 4,
+        "story_id": 47696666,
+        "story_text": "Hi HN, I built Linggen — a local-first, open-source AI coding agent written in Rust.<p><pre><code>  What&#x27;s new in 0.9.2:\n  - P2P remote access via WebRTC — control your agent from your phone, no port forwarding or cloud relay needed. Just\n  `ling login` and scan a QR code.\n  - Plan mode — the agent proposes a step-by-step plan before writing code, you approve or edit before execution.\n  - Works with any model — Ollama, OpenAI-compatible APIs, Gemini, DeepSeek. Bring your own keys or run fully local.\n\n  It&#x27;s like Claude Code but model-agnostic, extensible through skills (markdown files), and now accessible from\n  anywhere.\n\n  Demo video on the landing page showing install → plan → build → mobile sync.\n\n  Install: curl -fsSL https:&#x2F;&#x2F;linggen.dev&#x2F;install.sh | bash\n\n  GitHub: https:&#x2F;&#x2F;github.com&#x2F;linggen&#x2F;linggen</code></pre>",
+        "title": "Show HN: Linggen – Open-source AI agent with P2P remote access from your phone",
+        "updated_at": "2026-04-09T14:33:32Z",
+        "url": "https://linggen.dev/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "GreenGames"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Hey there, we fused all 24 layers of Qwen3.5-0.8B (a hybrid DeltaNet + Attention model) into a single CUDA kernel launch and made it open-source for everyone to try it.<p>On an RTX 3090 power-limited to 220W:\n- 411 tok/s vs 229 tok/s on M5 Max (1.8x)\n- 1.87 tok/J, beating M5 Max efficiency\n- 1.55x faster decode than <em>llama</em>.cpp on the same GPU\n- 3.4x faster prefill<p>The RTX 3090 launched in 2020. Everyone calls it power-hungry. It isn't, the software is.\nThe conventional wisdom NVIDIA is fast but thirsty. Apple Silicon is slow but sips power. Pick a side.<p>With stock frameworks, the numbers back that up:\nSetup                | tok/s | Power | tok/J\nRTX 3090 (<em>llama</em>.cpp) | 267   | 350W  | 0.76\nM5 Max (LM Studio)   | 229   | ~130W | 1.76<p>Case closed. Except the 3090 has 936 GB/s of bandwidth and 142 TFLOPS of FP16 compute, and <em>llama</em>.cpp extracts 267 tok/s out of it. That ratio is absurd.<p>Traditional inference dispatches one kernel per operation. For 24 layers, that's roughly 100 launches per token. Every boundary means:\n- Return control to the CPU\n- Dispatch the next kernel\n- Re-fetch weights from global memory\n- Synchronize threads<p>Why nobody had done this yet?\nQwen3.5-0.8B isn't a vanilla transformer. It alternates:\n- 18 DeltaNet layers: linear attention with a learned recurrence\n- 6 Full Attention layers: standard MHA<p>This hybrid pattern is where frontier models are heading: Qwen3-Next, Kimi Linear, all of them. DeltaNet scales linearly with context length instead of quadratically.<p>It's new, and nobody has shipped a fused kernel for it. MLX doesn't have DeltaNet kernels at all. <em>llama</em>.cpp supports it generically. Everyone else is waiting. The 267 tok/s wasn't a hardware ceiling, it was the software ceiling for a brand-new architecture.<p>We wrote a single CUDA kernel that runs the entire forward pass in one dispatch. Data stays in registers and shared memory as it flows through the network. Zero CPU round-trips, zero redundant memory fetches.<p>- 82 blocks x 512 threads, all SMs occupied\n- BF16 weights and activations, FP32 accumulation\nDeltaNet recurrence runs in warp-cooperative F32 registers\n- Full attention fuses QKV, RoPE, causal softmax, and output projection\n- Cooperative grid sync replaces kernel launches between layers<p>Results on the same RTX 3090, same model, same weights:\nSetup          | Prefill (pp520) | Decode (tg128)\nMegakernel     | 37,800 tok/s    | 413 tok/s\n<em>llama</em>.cpp BF16 | 11,247 tok/s    | 267 tok/s\nPyTorch + HF   | 7,578 tok/s     | 108 tok/s<p>Then we turned the power down\nFewer wasted cycles means less heat, so we swept nvidia-smi -pl:\nPower limit  | Clock    | Draw | tok/s | tok/J | Notes\n420W (stock) | 1980 MHz | 314W | 433   | 1.38  | baseline\n300W         | 1935 MHz | 299W | 432   | 1.44  | -5% power, 99.8% speed\n220W         | 1635 MHz | 220W | 411   | 1.87  | -30% power, 95% speed\n150W         | 405 MHz  | 150W | 194   | 1.29  | clock cliff, too aggressive<p>At 220W we hit the sweet spot: 95% of the throughput for 70% of the power. Tighter execution converts almost directly into saved watts.\nMeasurement: NVML energy counters for NVIDIA, powermetrics for Apple Silicon, matching Hazy Research's Intelligence Per Watt methodology. Accelerator power only, not wall draw.<p>Without the megakernel the 3090 barely edges out a laptop chip. With it, a five-year-old GPU beats Apple's latest on throughput, matches it on efficiency, and costs a quarter as much.\nThe NVIDIA vs Apple efficiency gap isn't silicon. It's software.<p>Try it\ngit clone <a href=\"https://github.com/Luce-Org/luce-megakernel.git\" rel=\"nofollow\">https://github.com/Luce-Org/luce-megakernel.git</a>\ncd luce-megakernel\npip install -e .\npython bench_pp_tg.py<p>Requires: NVIDIA Ampere+ (tested on 3090), CUDA 12+, PyTorch 2.0+, ~1.5GB VRAM.<p>Code is open source (MIT): <a href=\"https://github.com/Luce-Org/luce-megakernel\" rel=\"nofollow\">https://github.com/Luce-Org/luce-megakernel</a><p>Let us know if you have any feedback"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: OS Megakernel that match M5 Max Tok/w at 2x the Throughput on RTX 3090"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/Luce-Org/luce-megakernel"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_GreenGames",
+          "story_47691182",
+          "show_hn"
+        ],
+        "author": "GreenGames",
+        "children": [
+          47691804
+        ],
+        "created_at": "2026-04-08T15:00:51Z",
+        "created_at_i": 1775660451,
+        "num_comments": 1,
+        "objectID": "47691182",
+        "points": 5,
+        "story_id": 47691182,
+        "story_text": "Hey there, we fused all 24 layers of Qwen3.5-0.8B (a hybrid DeltaNet + Attention model) into a single CUDA kernel launch and made it open-source for everyone to try it.<p>On an RTX 3090 power-limited to 220W:\n- 411 tok&#x2F;s vs 229 tok&#x2F;s on M5 Max (1.8x)\n- 1.87 tok&#x2F;J, beating M5 Max efficiency\n- 1.55x faster decode than llama.cpp on the same GPU\n- 3.4x faster prefill<p>The RTX 3090 launched in 2020. Everyone calls it power-hungry. It isn&#x27;t, the software is.\nThe conventional wisdom NVIDIA is fast but thirsty. Apple Silicon is slow but sips power. Pick a side.<p>With stock frameworks, the numbers back that up:\nSetup                | tok&#x2F;s | Power | tok&#x2F;J\nRTX 3090 (llama.cpp) | 267   | 350W  | 0.76\nM5 Max (LM Studio)   | 229   | ~130W | 1.76<p>Case closed. Except the 3090 has 936 GB&#x2F;s of bandwidth and 142 TFLOPS of FP16 compute, and llama.cpp extracts 267 tok&#x2F;s out of it. That ratio is absurd.<p>Traditional inference dispatches one kernel per operation. For 24 layers, that&#x27;s roughly 100 launches per token. Every boundary means:\n- Return control to the CPU\n- Dispatch the next kernel\n- Re-fetch weights from global memory\n- Synchronize threads<p>Why nobody had done this yet?\nQwen3.5-0.8B isn&#x27;t a vanilla transformer. It alternates:\n- 18 DeltaNet layers: linear attention with a learned recurrence\n- 6 Full Attention layers: standard MHA<p>This hybrid pattern is where frontier models are heading: Qwen3-Next, Kimi Linear, all of them. DeltaNet scales linearly with context length instead of quadratically.<p>It&#x27;s new, and nobody has shipped a fused kernel for it. MLX doesn&#x27;t have DeltaNet kernels at all. llama.cpp supports it generically. Everyone else is waiting. The 267 tok&#x2F;s wasn&#x27;t a hardware ceiling, it was the software ceiling for a brand-new architecture.<p>We wrote a single CUDA kernel that runs the entire forward pass in one dispatch. Data stays in registers and shared memory as it flows through the network. Zero CPU round-trips, zero redundant memory fetches.<p>- 82 blocks x 512 threads, all SMs occupied\n- BF16 weights and activations, FP32 accumulation\nDeltaNet recurrence runs in warp-cooperative F32 registers\n- Full attention fuses QKV, RoPE, causal softmax, and output projection\n- Cooperative grid sync replaces kernel launches between layers<p>Results on the same RTX 3090, same model, same weights:\nSetup          | Prefill (pp520) | Decode (tg128)\nMegakernel     | 37,800 tok&#x2F;s    | 413 tok&#x2F;s\nllama.cpp BF16 | 11,247 tok&#x2F;s    | 267 tok&#x2F;s\nPyTorch + HF   | 7,578 tok&#x2F;s     | 108 tok&#x2F;s<p>Then we turned the power down\nFewer wasted cycles means less heat, so we swept nvidia-smi -pl:\nPower limit  | Clock    | Draw | tok&#x2F;s | tok&#x2F;J | Notes\n420W (stock) | 1980 MHz | 314W | 433   | 1.38  | baseline\n300W         | 1935 MHz | 299W | 432   | 1.44  | -5% power, 99.8% speed\n220W         | 1635 MHz | 220W | 411   | 1.87  | -30% power, 95% speed\n150W         | 405 MHz  | 150W | 194   | 1.29  | clock cliff, too aggressive<p>At 220W we hit the sweet spot: 95% of the throughput for 70% of the power. Tighter execution converts almost directly into saved watts.\nMeasurement: NVML energy counters for NVIDIA, powermetrics for Apple Silicon, matching Hazy Research&#x27;s Intelligence Per Watt methodology. Accelerator power only, not wall draw.<p>Without the megakernel the 3090 barely edges out a laptop chip. With it, a five-year-old GPU beats Apple&#x27;s latest on throughput, matches it on efficiency, and costs a quarter as much.\nThe NVIDIA vs Apple efficiency gap isn&#x27;t silicon. It&#x27;s software.<p>Try it\ngit clone <a href=\"https:&#x2F;&#x2F;github.com&#x2F;Luce-Org&#x2F;luce-megakernel.git\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;Luce-Org&#x2F;luce-megakernel.git</a>\ncd luce-megakernel\npip install -e .\npython bench_pp_tg.py<p>Requires: NVIDIA Ampere+ (tested on 3090), CUDA 12+, PyTorch 2.0+, ~1.5GB VRAM.<p>Code is open source (MIT): <a href=\"https:&#x2F;&#x2F;github.com&#x2F;Luce-Org&#x2F;luce-megakernel\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;Luce-Org&#x2F;luce-megakernel</a><p>Let us know if you have any feedback",
+        "title": "Show HN: OS Megakernel that match M5 Max Tok/w at 2x the Throughput on RTX 3090",
+        "updated_at": "2026-04-09T08:10:31Z",
+        "url": "https://github.com/Luce-Org/luce-megakernel"
+      }
+    ]
+  },
+  "AI agents": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "himanshudongre"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Show HN: PropOps – <em>AI</em> <em>agent</em> that reads Indian govt property data nobody checks"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/himanshudongre/propops"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_himanshudongre",
+          "story_47705011",
+          "show_hn"
+        ],
+        "author": "himanshudongre",
+        "created_at": "2026-04-09T15:29:02Z",
+        "created_at_i": 1775748542,
+        "num_comments": 0,
+        "objectID": "47705011",
+        "points": 1,
+        "story_id": 47705011,
+        "title": "Show HN: PropOps – AI agent that reads Indian govt property data nobody checks",
+        "updated_at": "2026-04-09T15:31:17Z",
+        "url": "https://github.com/himanshudongre/propops"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "SpaceJudas"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "agents"
+            ],
+            "value": "Datadog: We built a real-world evaluation platform for SRE <em>agents</em> at scale"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai"
+            ],
+            "value": "https://www.datadoghq.com/blog/engineering/bits-<em>ai</em>-eval-platform/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_SpaceJudas",
+          "story_47704897"
+        ],
+        "author": "SpaceJudas",
+        "created_at": "2026-04-09T15:19:02Z",
+        "created_at_i": 1775747942,
+        "num_comments": 0,
+        "objectID": "47704897",
+        "points": 2,
+        "story_id": 47704897,
+        "title": "Datadog: We built a real-world evaluation platform for SRE agents at scale",
+        "updated_at": "2026-04-09T15:25:02Z",
+        "url": "https://www.datadoghq.com/blog/engineering/bits-ai-eval-platform/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "sohaibtariq"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Hi, we're Sohaib and Hannan from APIMatic. We've been building tools to help Developers integrate with APIs for 5+ years at APIMatic. We're now trying to help <em>AI</em> <em>agents</em> do the same.<p>This started from a conversation at PayPal DevDay 2025. The PayPal developer experience team were monitoring developers using <em>AI</em> <em>agents</em> to integrate PayPal APIs, and the <em>agents</em> kept reaching for outdated docs and deprecated SDK versions, often falling back to training data instead of reading the current API documentation.<p>We tested this ourselves with Cursor. Across multiple iterations, 87% of runs fetched outdated reference docs using web search, and 13% of implementations used a deprecated SDK version.<p>What we built:<p>We built Context Plugins - given an OpenAPI spec, we generate SDKs and a remote MCP server that exposes language-specific API context (auth flows, method signatures, error handling, pagination, integration patterns from the API team) packaged and optimised for LLM consumption. Instead of guessing from training data or relying on web search, coding <em>agents</em> get the correct SDK methods and integration patterns they need to build API integrations.<p>We've just launched in Beta with PayPal: <a href=\"https://developer.paypal.com/serversdk/java/getting-started/how-to-get-started/?ide=claudeCode&amp;isContextPlugin=true\" rel=\"nofollow\">https://developer.paypal.com/serversdk/java/getting-started/...</a><p>We benchmarked Context Plugins on two codebases, nopCommerce (a mature ASP.NET e-commerce platform) and Microsoft's eShop reference app, and saw 2x faster integration time, 65% lower token usage, and near-zero hallucinations.<p>Getting started:<p>- We've published ready-to-use Context Plugins for Spotify, Twilio, Slack, and other APIs; the Show HN link takes you to our product showcase with one-click install for popular <em>AI</em> <em>agents</em>.<p>- Want to generate Context Plugins from your own spec? Sign up for a free 2-week trial on the APIMatic website, no credit card required.<p>- Want to dive deeper into the data? Read more here <a href=\"https://www.apimatic.io/product/context-plugins/case-study\" rel=\"nofollow\">https://www.apimatic.io/product/context-plugins/case-study</a><p>We're really looking forward to hearing the community's feedback on this. We're particularly interested in hearing from API platform teams seeing this problem with their users, developers who've fought this problem manually or anyone who's tried building something similar.<p>What are we missing? What would make this more useful?"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Show HN: <em>AI</em> <em>agents</em> are bad at API integrations – we fixed it"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.apimatic.io/product/context-plugins/showcase"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_sohaibtariq",
+          "story_47704728",
+          "show_hn"
+        ],
+        "author": "sohaibtariq",
+        "children": [
+          47704819
+        ],
+        "created_at": "2026-04-09T15:06:54Z",
+        "created_at_i": 1775747214,
+        "num_comments": 2,
+        "objectID": "47704728",
+        "points": 3,
+        "story_id": 47704728,
+        "story_text": "Hi, we&#x27;re Sohaib and Hannan from APIMatic. We&#x27;ve been building tools to help Developers integrate with APIs for 5+ years at APIMatic. We&#x27;re now trying to help AI agents do the same.<p>This started from a conversation at PayPal DevDay 2025. The PayPal developer experience team were monitoring developers using AI agents to integrate PayPal APIs, and the agents kept reaching for outdated docs and deprecated SDK versions, often falling back to training data instead of reading the current API documentation.<p>We tested this ourselves with Cursor. Across multiple iterations, 87% of runs fetched outdated reference docs using web search, and 13% of implementations used a deprecated SDK version.<p>What we built:<p>We built Context Plugins - given an OpenAPI spec, we generate SDKs and a remote MCP server that exposes language-specific API context (auth flows, method signatures, error handling, pagination, integration patterns from the API team) packaged and optimised for LLM consumption. Instead of guessing from training data or relying on web search, coding agents get the correct SDK methods and integration patterns they need to build API integrations.<p>We&#x27;ve just launched in Beta with PayPal: <a href=\"https:&#x2F;&#x2F;developer.paypal.com&#x2F;serversdk&#x2F;java&#x2F;getting-started&#x2F;how-to-get-started&#x2F;?ide=claudeCode&amp;isContextPlugin=true\" rel=\"nofollow\">https:&#x2F;&#x2F;developer.paypal.com&#x2F;serversdk&#x2F;java&#x2F;getting-started&#x2F;...</a><p>We benchmarked Context Plugins on two codebases, nopCommerce (a mature ASP.NET e-commerce platform) and Microsoft&#x27;s eShop reference app, and saw 2x faster integration time, 65% lower token usage, and near-zero hallucinations.<p>Getting started:<p>- We&#x27;ve published ready-to-use Context Plugins for Spotify, Twilio, Slack, and other APIs; the Show HN link takes you to our product showcase with one-click install for popular AI agents.<p>- Want to generate Context Plugins from your own spec? Sign up for a free 2-week trial on the APIMatic website, no credit card required.<p>- Want to dive deeper into the data? Read more here <a href=\"https:&#x2F;&#x2F;www.apimatic.io&#x2F;product&#x2F;context-plugins&#x2F;case-study\" rel=\"nofollow\">https:&#x2F;&#x2F;www.apimatic.io&#x2F;product&#x2F;context-plugins&#x2F;case-study</a><p>We&#x27;re really looking forward to hearing the community&#x27;s feedback on this. We&#x27;re particularly interested in hearing from API platform teams seeing this problem with their users, developers who&#x27;ve fought this problem manually or anyone who&#x27;s tried building something similar.<p>What are we missing? What would make this more useful?",
+        "title": "Show HN: AI agents are bad at API integrations – we fixed it",
+        "updated_at": "2026-04-09T15:24:02Z",
+        "url": "https://www.apimatic.io/product/context-plugins/showcase"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "meryll_dindin"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "We orchestrate our internal <em>AI</em> <em>agent</em> (PydanticAI, Gemini, Jinja2 prompts)"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://merylldindin.com/thoughts/reasoning-loop/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_meryll_dindin",
+          "story_47704585"
+        ],
+        "author": "meryll_dindin",
+        "children": [
+          47704586
+        ],
+        "created_at": "2026-04-09T14:56:07Z",
+        "created_at_i": 1775746567,
+        "num_comments": 0,
+        "objectID": "47704585",
+        "points": 1,
+        "story_id": 47704585,
+        "title": "We orchestrate our internal AI agent (PydanticAI, Gemini, Jinja2 prompts)",
+        "updated_at": "2026-04-09T14:59:49Z",
+        "url": "https://merylldindin.com/thoughts/reasoning-loop/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Ms-J"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "With the rise of <em>AI</em> <em>agents</em>, I've been looking for an <em>agent</em> that can use a combination of local models or models that are hosted on servers I control.<p>For the local models, the <em>agent</em> must be able to run completely offline. When using remote models, it must only send network traffic to my servers. No checking for &quot;updates&quot; or pulling any type of dependencies from elsewhere.<p>When trying Opencode, it was a failure.<p>See: https://github.com/Chetic/opencode-offline<p>&quot;This is the offline fork of OpenCode. Upstream OpenCode requires internet access for several core functions: the web UI proxies all requests to app.opencode.<em>ai</em>, ripgrep and LSP servers (TypeScript, Python, C++, Rust) are downloaded on first use, and model metadata is fetched from models.dev. In air-gapped or restricted network environments, this means no web interface (HTTP 500 on every request), no file search, no code intelligence, and no model definitions.&quot;<p>The problem is this project isn't maintained to standards and still uses Opencodes base.<p>Thanks for any suggestions."
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Best Open Source Offline <em>AI</em> <em>Agent</em>"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Ms-J",
+          "story_47704539",
+          "ask_hn"
+        ],
+        "author": "Ms-J",
+        "children": [
+          47704620,
+          47704616
+        ],
+        "created_at": "2026-04-09T14:52:03Z",
+        "created_at_i": 1775746323,
+        "num_comments": 2,
+        "objectID": "47704539",
+        "points": 2,
+        "story_id": 47704539,
+        "story_text": "With the rise of AI agents, I&#x27;ve been looking for an agent that can use a combination of local models or models that are hosted on servers I control.<p>For the local models, the agent must be able to run completely offline. When using remote models, it must only send network traffic to my servers. No checking for &quot;updates&quot; or pulling any type of dependencies from elsewhere.<p>When trying Opencode, it was a failure.<p>See: https:&#x2F;&#x2F;github.com&#x2F;Chetic&#x2F;opencode-offline<p>&quot;This is the offline fork of OpenCode. Upstream OpenCode requires internet access for several core functions: the web UI proxies all requests to app.opencode.ai, ripgrep and LSP servers (TypeScript, Python, C++, Rust) are downloaded on first use, and model metadata is fetched from models.dev. In air-gapped or restricted network environments, this means no web interface (HTTP 500 on every request), no file search, no code intelligence, and no model definitions.&quot;<p>The problem is this project isn&#x27;t maintained to standards and still uses Opencodes base.<p>Thanks for any suggestions.",
+        "title": "Best Open Source Offline AI Agent",
+        "updated_at": "2026-04-09T15:33:05Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "adcent"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Show HN: Postagent – Postman CLI, but for <em>AI</em> <em>Agents</em>"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/actionbook/postagent"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_adcent",
+          "story_47704439",
+          "show_hn"
+        ],
+        "author": "adcent",
+        "children": [
+          47704892
+        ],
+        "created_at": "2026-04-09T14:43:53Z",
+        "created_at_i": 1775745833,
+        "num_comments": 1,
+        "objectID": "47704439",
+        "points": 5,
+        "story_id": 47704439,
+        "title": "Show HN: Postagent – Postman CLI, but for AI Agents",
+        "updated_at": "2026-04-09T15:32:34Z",
+        "url": "https://github.com/actionbook/postagent"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Arham-Begani"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "I built Forze after running into the same catch-22 repeatedly: you need market research and branding to know if an idea is worth building, but you can't justify spending weeks or thousands on that until you know it's worth it.<p>Forze runs four <em>AI</em> <em>agents</em> in sequence — market research, brand identity, landing page copy, and a feasibility score. The whole run takes under 10 minutes.<p>Try it: <a href=\"https://www.forze.in\" rel=\"nofollow\">https://www.forze.in</a><p>Happy to answer questions about the agent architecture or anything else."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Forze – A platoform that turns a startup idea into a product in mins"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Arham-Begani",
+          "story_47704296",
+          "show_hn"
+        ],
+        "author": "Arham-Begani",
+        "created_at": "2026-04-09T14:33:44Z",
+        "created_at_i": 1775745224,
+        "num_comments": 0,
+        "objectID": "47704296",
+        "points": 1,
+        "story_id": 47704296,
+        "story_text": "I built Forze after running into the same catch-22 repeatedly: you need market research and branding to know if an idea is worth building, but you can&#x27;t justify spending weeks or thousands on that until you know it&#x27;s worth it.<p>Forze runs four AI agents in sequence — market research, brand identity, landing page copy, and a feasibility score. The whole run takes under 10 minutes.<p>Try it: <a href=\"https:&#x2F;&#x2F;www.forze.in\" rel=\"nofollow\">https:&#x2F;&#x2F;www.forze.in</a><p>Happy to answer questions about the agent architecture or anything else.",
+        "title": "Show HN: Forze – A platoform that turns a startup idea into a product in mins",
+        "updated_at": "2026-04-09T14:38:50Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Brajeshwar"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "With Claude Managed <em>Agents</em>, Anthropic wants to run your <em>AI</em> <em>agents</em> for you"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "https://thenewstack.io/with-claude-managed-<em>agents</em>-anthropic-wants-to-run-your-<em>ai</em>-<em>agents</em>-for-you/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Brajeshwar",
+          "story_47704213"
+        ],
+        "author": "Brajeshwar",
+        "created_at": "2026-04-09T14:27:05Z",
+        "created_at_i": 1775744825,
+        "num_comments": 0,
+        "objectID": "47704213",
+        "points": 1,
+        "story_id": 47704213,
+        "title": "With Claude Managed Agents, Anthropic wants to run your AI agents for you",
+        "updated_at": "2026-04-09T14:28:17Z",
+        "url": "https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/"
+      }
+    ]
+  },
+  "Vibe Coding": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "young_mete"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "<em>Vibe</em> <em>coding</em> is akin to gaming. So why is there no social layer?"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://metedata.substack.com/p/metedata-digest-005-<em>vibe</em>-<em>coding</em>-wants"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_young_mete",
+          "story_47704232"
+        ],
+        "author": "young_mete",
+        "created_at": "2026-04-09T14:28:22Z",
+        "created_at_i": 1775744902,
+        "num_comments": 0,
+        "objectID": "47704232",
+        "points": 1,
+        "story_id": 47704232,
+        "title": "Vibe coding is akin to gaming. So why is there no social layer?",
+        "updated_at": "2026-04-09T14:33:32Z",
+        "url": "https://metedata.substack.com/p/metedata-digest-005-vibe-coding-wants"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "fcpguru"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "The Weekly <em>Vibe</em> – podcast with taout.tv founders about <em>vibecoding</em> [video]"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.taout.tv/view-podcast/1cdc7765-f8ea-4a4d-8099-9731e82f191d"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_fcpguru",
+          "story_47702954"
+        ],
+        "author": "fcpguru",
+        "created_at": "2026-04-09T12:41:52Z",
+        "created_at_i": 1775738512,
+        "num_comments": 0,
+        "objectID": "47702954",
+        "points": 1,
+        "story_id": 47702954,
+        "title": "The Weekly Vibe – podcast with taout.tv founders about vibecoding [video]",
+        "updated_at": "2026-04-09T12:43:17Z",
+        "url": "https://www.taout.tv/view-podcast/1cdc7765-f8ea-4a4d-8099-9731e82f191d"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "henryrobbins00"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "TL;DR: I built a website that allows users to track the concerts they've been to. If you have strong opinions about engineering/design or how shows should be tracked (festivals, venues, etc...), I'd love to get your input!<p>For the past ~5 years, I've been tracking the shows I attend on my personal website (<a href=\"https://love-music-will-travel.henryrobbins.com\" rel=\"nofollow\">https://love-music-will-travel.henryrobbins.com</a>). It's fun to see things like distance traveled and how many times I've been to certain venues. I know many friends who also track their shows through notes, ticket stubs, Excel, etc... It always bummed me out that I couldn't pore through their concert data myself...<p>showcount.com is my solution to that desire. It's essentially a public version of my old personal website, where anyone can make an account and manage a show list (mine is <a href=\"https://www.showcount.com/user/love-music-will-travel\" rel=\"nofollow\">https://www.showcount.com/user/love-music-will-travel</a>).<p>I'm currently on the lookout for other live music lovers and/or data nerds to try out the site and give opinions on various design choices. If any of the following topics are of interest to you, please reach out!<p>- How should venue name/location changes be handled?\n- How should music festivals be handled?\n- I have an initial version of an AI parser for loading in existing show lists; how can this be made more robust?\n- What else should have first-class tracking support (e.g., friends in attendance)?<p>As an aside, this project is also my first experiment with full-on <em>vibe</em>-<em>coding</em> / harness-engineering. I began the project with Cursor and then switched to Claude Code. I've been programming for the better part of a decade, mostly Python and Java. Full-stack development is relatively new to me. I include the tech stack below. Most decisions were made pragmatically based on what I thought would get me to a first version of the site as quickly as possible.<p>- Next.js web app hosted on Vercel\n- Fast API backend service (for the AI parsing) hosted on Railway\n- Supabase\n- Observability through Axiom (logging), PostHog (analytics), and Sentry (monitoring)\n- Clerk for user authentication\n- Google Maps API for venue locations\n- Claude API for the AI parser\n- Terraform for infra-as-code"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: A website to track live music attendance"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.showcount.com/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_henryrobbins00",
+          "story_47695993",
+          "show_hn"
+        ],
+        "author": "henryrobbins00",
+        "created_at": "2026-04-08T20:42:40Z",
+        "created_at_i": 1775680960,
+        "num_comments": 0,
+        "objectID": "47695993",
+        "points": 3,
+        "story_id": 47695993,
+        "story_text": "TL;DR: I built a website that allows users to track the concerts they&#x27;ve been to. If you have strong opinions about engineering&#x2F;design or how shows should be tracked (festivals, venues, etc...), I&#x27;d love to get your input!<p>For the past ~5 years, I&#x27;ve been tracking the shows I attend on my personal website (<a href=\"https:&#x2F;&#x2F;love-music-will-travel.henryrobbins.com\" rel=\"nofollow\">https:&#x2F;&#x2F;love-music-will-travel.henryrobbins.com</a>). It&#x27;s fun to see things like distance traveled and how many times I&#x27;ve been to certain venues. I know many friends who also track their shows through notes, ticket stubs, Excel, etc... It always bummed me out that I couldn&#x27;t pore through their concert data myself...<p>showcount.com is my solution to that desire. It&#x27;s essentially a public version of my old personal website, where anyone can make an account and manage a show list (mine is <a href=\"https:&#x2F;&#x2F;www.showcount.com&#x2F;user&#x2F;love-music-will-travel\" rel=\"nofollow\">https:&#x2F;&#x2F;www.showcount.com&#x2F;user&#x2F;love-music-will-travel</a>).<p>I&#x27;m currently on the lookout for other live music lovers and&#x2F;or data nerds to try out the site and give opinions on various design choices. If any of the following topics are of interest to you, please reach out!<p>- How should venue name&#x2F;location changes be handled?\n- How should music festivals be handled?\n- I have an initial version of an AI parser for loading in existing show lists; how can this be made more robust?\n- What else should have first-class tracking support (e.g., friends in attendance)?<p>As an aside, this project is also my first experiment with full-on vibe-coding &#x2F; harness-engineering. I began the project with Cursor and then switched to Claude Code. I&#x27;ve been programming for the better part of a decade, mostly Python and Java. Full-stack development is relatively new to me. I include the tech stack below. Most decisions were made pragmatically based on what I thought would get me to a first version of the site as quickly as possible.<p>- Next.js web app hosted on Vercel\n- Fast API backend service (for the AI parsing) hosted on Railway\n- Supabase\n- Observability through Axiom (logging), PostHog (analytics), and Sentry (monitoring)\n- Clerk for user authentication\n- Google Maps API for venue locations\n- Claude API for the AI parser\n- Terraform for infra-as-code",
+        "title": "Show HN: A website to track live music attendance",
+        "updated_at": "2026-04-08T21:04:30Z",
+        "url": "https://www.showcount.com/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "latexr"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "The Devil's Dictionary of <em>Vibe</em> <em>Coding</em>"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://gist.github.com/artfwo/63eaaffdb47cbba342b04f989bd9463b"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_latexr",
+          "story_47688951"
+        ],
+        "author": "latexr",
+        "created_at": "2026-04-08T11:55:35Z",
+        "created_at_i": 1775649335,
+        "num_comments": 0,
+        "objectID": "47688951",
+        "points": 4,
+        "story_id": 47688951,
+        "title": "The Devil's Dictionary of Vibe Coding",
+        "updated_at": "2026-04-08T13:12:29Z",
+        "url": "https://gist.github.com/artfwo/63eaaffdb47cbba342b04f989bd9463b"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "meub"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "<em>Vibe</em> <em>Coding</em> Tools Are a BattleMech"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://alexmeub.com/<em>vibe</em>-<em>coding</em>-tools-are-a-battlemech/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_meub",
+          "story_47678674"
+        ],
+        "author": "meub",
+        "created_at": "2026-04-07T17:32:42Z",
+        "created_at_i": 1775583162,
+        "num_comments": 0,
+        "objectID": "47678674",
+        "points": 4,
+        "story_id": 47678674,
+        "title": "Vibe Coding Tools Are a BattleMech",
+        "updated_at": "2026-04-07T18:25:56Z",
+        "url": "https://alexmeub.com/vibe-coding-tools-are-a-battlemech/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "namanyayg"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "<em>Vibe</em> <em>Coding</em> Is an Existential Threat to B2B SaaS"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://nmn.gl/blog/<em>vibe</em>-<em>coding</em>-threat-b2b-saas"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_namanyayg",
+          "story_47677671"
+        ],
+        "author": "namanyayg",
+        "children": [
+          47677879
+        ],
+        "created_at": "2026-04-07T16:21:06Z",
+        "created_at_i": 1775578866,
+        "num_comments": 1,
+        "objectID": "47677671",
+        "points": 2,
+        "story_id": 47677671,
+        "title": "Vibe Coding Is an Existential Threat to B2B SaaS",
+        "updated_at": "2026-04-07T16:42:40Z",
+        "url": "https://nmn.gl/blog/vibe-coding-threat-b2b-saas"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "mooreds"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "Stop <em>Vibecoding</em> [video]"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.youtube.com/shorts/cgD-bTTe20I"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_mooreds",
+          "story_47677435"
+        ],
+        "author": "mooreds",
+        "created_at": "2026-04-07T16:05:27Z",
+        "created_at_i": 1775577927,
+        "num_comments": 0,
+        "objectID": "47677435",
+        "points": 1,
+        "story_id": 47677435,
+        "title": "Stop Vibecoding [video]",
+        "updated_at": "2026-04-07T16:09:26Z",
+        "url": "https://www.youtube.com/shorts/cgD-bTTe20I"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "grigio"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "Are Local LLMs Good Enough for <em>Vibe</em> <em>Coding</em>? Gemma4-26B-A4B vs. Qwen3.5-35B-A3B"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://grigio.org/are-local-llms-good-enough-for-<em>vibe</em>-<em>coding</em>-gemma4-26b-a4b-vs-qwen3-5-35b-a3b/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_grigio",
+          "story_47677086"
+        ],
+        "author": "grigio",
+        "created_at": "2026-04-07T15:43:25Z",
+        "created_at_i": 1775576605,
+        "num_comments": 0,
+        "objectID": "47677086",
+        "points": 3,
+        "story_id": 47677086,
+        "title": "Are Local LLMs Good Enough for Vibe Coding? Gemma4-26B-A4B vs. Qwen3.5-35B-A3B",
+        "updated_at": "2026-04-07T16:02:56Z",
+        "url": "https://grigio.org/are-local-llms-good-enough-for-vibe-coding-gemma4-26b-a4b-vs-qwen3-5-35b-a3b/"
+      }
+    ]
+  }
+}

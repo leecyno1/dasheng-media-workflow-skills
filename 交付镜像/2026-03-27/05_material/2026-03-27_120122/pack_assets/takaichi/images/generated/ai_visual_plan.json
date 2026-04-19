@@ -1,0 +1,63 @@
+{
+  "cover_prompt": "围绕“高市早苗跳梁的背后：用脚投票下日本极右势力复兴”生成时政深度封面，突出日本政治右转、老龄化和安全焦虑的冲突构图，避免口播截图。",
+  "infographic_prompts": [
+    "围绕“高市早苗跳梁的背后：用脚投票下日本极右势力复兴”生成一张 dense-modules 信息图，拆出政治右转、人口老化、外劳矛盾、安全外溢四层。",
+    "围绕“高市早苗跳梁的背后：用脚投票下日本极右势力复兴”生成一张 timeline-map 信息图，展示联盟重组、政策右转、台海与供应链影响。",
+    "围绕“高市早苗跳梁的背后：用脚投票下日本极右势力复兴”生成一张 dashboard 信息图，展示人口、防务、外劳、联盟结构四块。"
+  ],
+  "comic_storyboard": [
+    {
+      "frame_id": "comic-01",
+      "title": "Hook",
+      "visual_prompt": "国会讲台与高市早苗剪影，台下媒体与支持者。",
+      "caption_hint": "人物只是入口"
+    },
+    {
+      "frame_id": "comic-02",
+      "title": "Structure",
+      "visual_prompt": "老龄化街头与空缺岗位并置。",
+      "caption_hint": "结构压力在前面"
+    },
+    {
+      "frame_id": "comic-03",
+      "title": "Alliance",
+      "visual_prompt": "执政联盟重新拼图，政治人物剪影围桌。",
+      "caption_hint": "联盟右转不是偶然"
+    },
+    {
+      "frame_id": "comic-04",
+      "title": "Security",
+      "visual_prompt": "东亚地图、军演、航运线叠加。",
+      "caption_hint": "安全叙事外溢"
+    },
+    {
+      "frame_id": "comic-05",
+      "title": "Society",
+      "visual_prompt": "东京街头年轻人和老年群体对照。",
+      "caption_hint": "焦虑被政治动员"
+    },
+    {
+      "frame_id": "comic-06",
+      "title": "Risk",
+      "visual_prompt": "供应链、外交、资本市场三条风险线并发。",
+      "caption_hint": "外溢不止在日本"
+    },
+    {
+      "frame_id": "comic-07",
+      "title": "Advice",
+      "visual_prompt": "观察变量卡片：人口、防务、外劳、外交。",
+      "caption_hint": "关键是看结构变量"
+    },
+    {
+      "frame_id": "comic-08",
+      "title": "End",
+      "visual_prompt": "回到东亚地图与议会灯光。",
+      "caption_hint": "极右是症状，不是终点"
+    }
+  ],
+  "meme_prompts": [
+    "武士、熊猫、鹰围着东亚地图拉扯航运线，表达安全叙事外溢。",
+    "政客台前喊口号，后台堆满老龄化和劳动力账单。",
+    "多国棋手围着东亚地图下棋，边上摆着芯片和油轮。"
+  ]
+}

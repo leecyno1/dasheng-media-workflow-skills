@@ -1,0 +1,59 @@
+{
+  "template_id": "market_story",
+  "template_name": "市场叙事面板 (Market Story Panel)",
+  "worldmonitor_project": "/Volumes/PSSD/Projects/worldmonitor",
+  "worldmonitor_data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+  "worldmonitor_public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+  "worldmonitor_entry": "index.html",
+  "proxy_port": 8787,
+  "current_status": "inactive",
+  "inputs": [
+    "article.md",
+    "scene_plan.json",
+    "charts/*.csv",
+    "charts/*.png",
+    "key_metrics.json"
+  ],
+  "preferred_components": [
+    "MarketPanel",
+    "EconomicPanel",
+    "CountryTimeline"
+  ],
+  "page_modules": [
+    "hero-summary",
+    "key-metrics-strip",
+    "timeline-repricing",
+    "chart-gallery",
+    "embedded-video"
+  ],
+  "chart_anchor_ids": [
+    "chart1"
+  ],
+  "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+  "artifact_tag": "layer5_finance_market_story",
+  "topic_slug": "t002",
+  "topic_title": "中东冲突与霍尔木兹海峡封锁导致油价坚挺形成全球能源供应链风险",
+  "core_claim": "中东冲突升级与霍尔木兹海峡封锁导致油价坚挺，暴露全球能源供应链的结构性风险，停火预期与市场现实背离，供应链单点依赖脆弱性显现，需多元化供应链与能源转型应对地缘政治长期博弈。",
+  "required_csvs": [
+    "charts/csv/chart1.csv"
+  ],
+  "required_pngs": [
+    "charts/png/chart1.png"
+  ],
+  "narrative_schema": "timeline_then_signals",
+  "data_granularity": "daily",
+  "risk_scenarios": [
+    "再通胀抬升",
+    "增长走弱",
+    "利率高位钝化",
+    "风险偏好回升"
+  ],
+  "key_metrics_to_emit": [
+    "SPX",
+    "US10Y",
+    "Oil",
+    "Gold",
+    "Breakeven10Y"
+  ],
+  "layout_hint": "market_panel_left + chart_gallery_right + metrics_strip_bottom"
+}

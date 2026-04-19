@@ -1,0 +1,27 @@
+[
+  {
+    "query": "AI技术落地企业工作流协作会议现场",
+    "channel": "wikimedia",
+    "error": "HTTPSConnectionPool(host='commons.wikimedia.org', port=443): Read timed out. (read timeout=20)"
+  },
+  {
+    "query": "知名AI厂商技术团队工作场景",
+    "channel": "wikimedia",
+    "error": "HTTPSConnectionPool(host='commons.wikimedia.org', port=443): Read timed out. (read timeout=20)"
+  },
+  {
+    "query": "企业数字化转型中AI项目负责人肖像",
+    "channel": "wikimedia",
+    "error": "HTTPSConnectionPool(host='commons.wikimedia.org', port=443): Read timed out. (read timeout=20)"
+  },
+  {
+    "query": "权威财经媒体报道AI落地结构变量和成本挑战",
+    "channel": "news_screenshot",
+    "error": "HTTPSConnectionPool(host='duckduckgo.com', port=443): Max retries exceeded with url: /html/?q=%E6%9D%83%E5%A8%81%E8%B4%A2%E7%BB%8F%E5%AA%92%E4%BD%93%E6%8A%A5%E9%81%93AI%E8%90%BD%E5%9C%B0%E7%BB%93%E6%9E%84%E5%8F%98%E9%87%8F%E5%92%8C%E6%88%90%E6%9C%AC%E6%8C%91%E6%88%98 (Caused by ConnectTimeoutError(<HTTPSConnection(host='duckduckgo.com', port=443) at 0x106d7db50>, 'Connection to duckduckgo.com timed out. (connect timeout=20)'))"
+  },
+  {
+    "query": "官方监管机构发布AI应用规范和政策文件",
+    "channel": "news_screenshot",
+    "error": "HTTPSConnectionPool(host='duckduckgo.com', port=443): Max retries exceeded with url: /html/?q=%E5%AE%98%E6%96%B9%E7%9B%91%E7%AE%A1%E6%9C%BA%E6%9E%84%E5%8F%91%E5%B8%83AI%E5%BA%94%E7%94%A8%E8%A7%84%E8%8C%83%E5%92%8C%E6%94%BF%E7%AD%96%E6%96%87%E4%BB%B6 (Caused by ConnectTimeoutError(<HTTPSConnection(host='duckduckgo.com', port=443) at 0x106d80f50>, 'Connection to duckduckgo.com timed out. (connect timeout=20)'))"
+  }
+]

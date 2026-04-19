@@ -1,0 +1,62 @@
+{
+  "run_id": "2026-04-16_155809",
+  "run_date": "2026-04-16",
+  "workflow_name": "dasheng-daily",
+  "workflow_version": "3.1.0",
+  "status": "running",
+  "current_step": "rewrite",
+  "completed_steps": [
+    "material"
+  ],
+  "failed_steps": [],
+  "skipped_steps": [],
+  "folder": null,
+  "artifacts": [
+    {
+      "step": "material",
+      "object_type": "MaterialPack",
+      "count": 1,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/material-packs.json",
+      "doc_url": null
+    },
+    {
+      "step": "material",
+      "object_type": "MaterialMarkdown",
+      "count": 1,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/04_MaterialPack.md",
+      "doc_url": null
+    },
+    {
+      "step": "material",
+      "object_type": "MaterialReport",
+      "count": 1,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/04_Material_报告.md",
+      "doc_url": null
+    },
+    {
+      "step": "material",
+      "object_type": "MaterialManifest",
+      "count": 1,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/material_manifest.json",
+      "doc_url": null
+    }
+  ],
+  "selection_state": {
+    "selected_topic_ids": [
+      "topic-japan-nuclear-capability-diplomatic-crisis"
+    ],
+    "rejected_topic_ids": []
+  },
+  "operator_decisions": [
+    {
+      "at": "2026-04-16T13:02:23.226Z",
+      "step": "material",
+      "decision": "bootstrap_runtime_manifest_from_canonical_draft",
+      "note": "旧 runtime manifest 缺失，已从 canonical draft/material 输入自举。"
+    }
+  ],
+  "retry_state": {},
+  "message_refs": [],
+  "created_at": "2026-04-16T13:02:23.225Z",
+  "updated_at": "2026-04-16T13:02:23.236Z"
+}

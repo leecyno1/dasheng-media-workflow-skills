@@ -1,0 +1,16 @@
+{
+  "topic": "topic-10",
+  "generated": [],
+  "summary": {
+    "chart_count": 0,
+    "table_count": 0,
+    "gate_thresholds": {
+      "cv_min": 0.03,
+      "slope_abs_min": 0.005,
+      "r2_min": 0.25,
+      "trend_strength_min": 0.3,
+      "group_diff_min": 0.08,
+      "heatmap_var_min": 0.05
+    }
+  }
+}

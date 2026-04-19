@@ -1,0 +1,32 @@
+[
+  {
+    "query": "日本官方披露核武器能力新闻发布会现场",
+    "channel": "wikimedia",
+    "error": "HTTPSConnectionPool(host='commons.wikimedia.org', port=443): Read timed out. (read timeout=20)"
+  },
+  {
+    "query": "岸田文雄 日本首相 正式演讲",
+    "channel": "wikimedia",
+    "error": "HTTPSConnectionPool(host='commons.wikimedia.org', port=443): Read timed out. (read timeout=20)"
+  },
+  {
+    "query": "中国外交部新闻发布会 2026年4月",
+    "channel": "wikimedia",
+    "error": "HTTPSConnectionPool(host='commons.wikimedia.org', port=443): Read timed out. (read timeout=20)"
+  },
+  {
+    "query": "东京新宿 反战集会 2026年4月",
+    "channel": "wikimedia",
+    "error": "HTTPSConnectionPool(host='commons.wikimedia.org', port=443): Read timed out. (read timeout=20)"
+  },
+  {
+    "query": "新华社 2026年4月10日 中国外交部对日本核能力声明",
+    "channel": "news_screenshot",
+    "error": "HTTPSConnectionPool(host='duckduckgo.com', port=443): Max retries exceeded with url: /html/?q=%E6%96%B0%E5%8D%8E%E7%A4%BE+2026%E5%B9%B44%E6%9C%8810%E6%97%A5+%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E9%83%A8%E5%AF%B9%E6%97%A5%E6%9C%AC%E6%A0%B8%E8%83%BD%E5%8A%9B%E5%A3%B0%E6%98%8E (Caused by ConnectTimeoutError(<HTTPSConnection(host='duckduckgo.com', port=443) at 0x12e11d9d0>, 'Connection to duckduckgo.com timed out. (connect timeout=20)'))"
+  },
+  {
+    "query": "韩国国会紧急听证会 日本核能力议题",
+    "channel": "news_screenshot",
+    "error": "HTTPSConnectionPool(host='duckduckgo.com', port=443): Max retries exceeded with url: /html/?q=%E9%9F%A9%E5%9B%BD%E5%9B%BD%E4%BC%9A%E7%B4%A7%E6%80%A5%E5%90%AC%E8%AF%81%E4%BC%9A+%E6%97%A5%E6%9C%AC%E6%A0%B8%E8%83%BD%E5%8A%9B%E8%AE%AE%E9%A2%98 (Caused by ConnectTimeoutError(<HTTPSConnection(host='duckduckgo.com', port=443) at 0x12f4fb990>, 'Connection to duckduckgo.com timed out. (connect timeout=20)'))"
+  }
+]

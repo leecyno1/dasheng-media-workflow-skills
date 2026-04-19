@@ -1,0 +1,19 @@
+[info]: [ 'client ready' ]
+[error]: [
+  [
+    {
+      message: 'Request failed with status code 400',
+      config: [Object],
+      request: [Object],
+      response: [Object]
+    },
+    {
+      code: 1770036,
+      msg: 'folder locked',
+      error: [Object],
+      helps: [Array],
+      log_id: '202603301453207D1CDA3D13DB92199577',
+      troubleshooter: '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202603301453207D1CDA3D13DB92199577&code=1770036&method_id=7055124481601732610'
+    }
+  ]
+]

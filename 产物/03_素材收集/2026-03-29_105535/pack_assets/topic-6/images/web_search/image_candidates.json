@@ -1,0 +1,153 @@
+[
+  {
+    "query": "oil tanker aerial",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": [
+      {
+        "title": "File:Aerial view of an oil tanker discharging at the digue de Querqueville.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Aerial_view_of_an_oil_tanker_discharging_at_the_digue_de_Querqueville.jpg",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_an_oil_tanker_discharging_at_the_digue_de_Querqueville.jpg"
+      },
+      {
+        "title": "File:Oil tanker \"United Grace\" at Tetney Monobuoy- aerial 2017 (2) (geograph 5502543).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Oil_tanker_%22United_Grace%22_at_Tetney_Monobuoy-_aerial_2017_%282%29_%28geograph_5502543%29.jpg",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Oil_tanker_%22United_Grace%22_at_Tetney_Monobuoy-_aerial_2017_(2)_(geograph_5502543).jpg"
+      },
+      {
+        "title": "File:Oil tanker \"United Grace\" at Tetney Monobuoy- aerial 2017 (geograph 5502514).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Oil_tanker_%22United_Grace%22_at_Tetney_Monobuoy-_aerial_2017_%28geograph_5502514%29.jpg",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Oil_tanker_%22United_Grace%22_at_Tetney_Monobuoy-_aerial_2017_(geograph_5502514).jpg"
+      }
+    ]
+  },
+  {
+    "query": "gold bullion vault",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": [
+      {
+        "title": "File:FortKnoxGoldVault.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/FortKnoxGoldVault.jpg",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:FortKnoxGoldVault.jpg"
+      },
+      {
+        "title": "File:Gold Vault, U. S. Depository, Fort Knox, Ky (78762).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Gold_Vault%2C_U._S._Depository%2C_Fort_Knox%2C_Ky_%2878762%29.jpg",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Gold_Vault,_U._S._Depository,_Fort_Knox,_Ky_(78762).jpg"
+      }
+    ]
+  },
+  {
+    "query": "futures trading screen",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "stock market floor crowd",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "federal reserve building exterior",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": [
+      {
+        "title": "File:Horizontal panorama of the Federal Reserve Bank Building of Atlanta.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Horizontal_panorama_of_the_Federal_Reserve_Bank_Building_of_Atlanta.jpg",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Horizontal_panorama_of_the_Federal_Reserve_Bank_Building_of_Atlanta.jpg"
+      },
+      {
+        "title": "File:US Federal Reserve Eccles Board building construction 1936.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/US_Federal_Reserve_Eccles_Board_building_construction_1936.jpg",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:US_Federal_Reserve_Eccles_Board_building_construction_1936.jpg"
+      },
+      {
+        "title": "File:US Federal Reserve Eccles Building 1937.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/US_Federal_Reserve_Eccles_Building_1937.jpg",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:US_Federal_Reserve_Eccles_Building_1937.jpg"
+      }
+    ]
+  },
+  {
+    "query": "oil refinery aerial",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": [
+      {
+        "title": "File:042 Pancevo refinery, Serbia.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/042_Pancevo_refinery%2C_Serbia.jpg",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:042_Pancevo_refinery,_Serbia.jpg"
+      },
+      {
+        "title": "File:Aerial Photo of Coryton Oil Refinery - geograph.org.uk - 588350.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Aerial_Photo_of_Coryton_Oil_Refinery_-_geograph.org.uk_-_588350.jpg",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Aerial_Photo_of_Coryton_Oil_Refinery_-_geograph.org.uk_-_588350.jpg"
+      },
+      {
+        "title": "File:North Killingholme oil refinery, aerial - geograph.org.uk - 3129138.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/North_Killingholme_oil_refinery%2C_aerial_-_geograph.org.uk_-_3129138.jpg",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:North_Killingholme_oil_refinery,_aerial_-_geograph.org.uk_-_3129138.jpg"
+      }
+    ]
+  },
+  {
+    "query": "shipping port cranes aerial",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": [
+      {
+        "title": "File:Aerial view of shipping containers, and big container cranes at Tacoma's container port -a.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Aerial_view_of_shipping_containers%2C_and_big_container_cranes_at_Tacoma%27s_container_port_-a.jpg",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_shipping_containers,_and_big_container_cranes_at_Tacoma%27s_container_port_-a.jpg"
+      },
+      {
+        "title": "File:Aerial view of the River Wear, 1973 (25112794292).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Aerial_view_of_the_River_Wear%2C_1973_%2825112794292%29.jpg",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_River_Wear,_1973_(25112794292).jpg"
+      },
+      {
+        "title": "File:Port of Oakland.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Port_of_Oakland.jpg",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Port_of_Oakland.jpg"
+      }
+    ]
+  },
+  {
+    "query": "commodity warehouse barrels",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "investor crowd watching market",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "inflation rates chart screen",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": [
+      {
+        "title": "File:PIIGS Mk 4 map.png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/PIIGS_Mk_4_map.png",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:PIIGS_Mk_4_map.png"
+      }
+    ]
+  }
+]

@@ -1,0 +1,361 @@
+{
+  "meta": {
+    "title": "topic6_供给秩序重估｜互动图表视频",
+    "description": "来自历史图表 CSV 的动态图表视频补充",
+    "version": "2026.04.01"
+  },
+  "global": {
+    "factoryVersion": "v1.0.0",
+    "autoplay": true,
+    "autoplayGapMs": 800,
+    "tabSwitchRestart": true
+  },
+  "scenes": [
+    {
+      "id": "topic6-chart-01",
+      "template": "multiLine",
+      "label": "图表：cpi core",
+      "tag": "interactive-chart",
+      "durationMs": 6800,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6800,
+        "enter": {
+          "type": "stagger",
+          "durationMs": 4200,
+          "staggerMs": 220,
+          "easing": "easeInOutSine"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "lines": [
+          {
+            "name": "cpi_mom",
+            "values": [
+              0.2,
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.2,
+              -0.1,
+              0.2,
+              0.1,
+              0.3,
+              0.2,
+              0.0
+            ]
+          },
+          {
+            "name": "core_cpi_mom",
+            "values": [
+              0.3,
+              0.3,
+              0.3,
+              0.2,
+              0.4,
+              0.2,
+              0.1,
+              0.2,
+              0.1,
+              0.2,
+              0.3,
+              0.0
+            ]
+          }
+        ],
+        "xLabels": [
+          "2024-10-10",
+          "2024-11-13",
+          "2024-12-11",
+          "2025-01-15",
+          "2025-02-12",
+          "2025-03-12",
+          "2025-04-10",
+          "2025-05-13",
+          "2025-06-11",
+          "2025-07-15",
+          "2025-08-12",
+          "2025-09-11"
+        ]
+      }
+    },
+    {
+      "id": "topic6-chart-02",
+      "template": "multiLine",
+      "label": "图表：oil gold breakeven",
+      "tag": "interactive-chart",
+      "durationMs": 6800,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6800,
+        "enter": {
+          "type": "stagger",
+          "durationMs": 4200,
+          "staggerMs": 220,
+          "easing": "easeInOutSine"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "lines": [
+          {
+            "name": "oil_close",
+            "values": [
+              100.81,
+              99.49,
+              104.66,
+              102.6,
+              104.31,
+              96.15,
+              95.85,
+              98.06,
+              100.76,
+              106.59,
+              108.8,
+              107.23
+            ]
+          },
+          {
+            "name": "gold_close",
+            "values": [
+              5011.4,
+              5011.3,
+              4822.5,
+              4650.4,
+              4525.5,
+              4442.1,
+              4505.0,
+              4535.4,
+              4407.4,
+              4521.2,
+              4540.5,
+              4588.4
+            ]
+          },
+          {
+            "name": "breakeven_10y",
+            "values": [
+              2.36,
+              2.37,
+              2.4,
+              2.37,
+              2.38,
+              2.33,
+              2.33,
+              2.31,
+              2.34,
+              2.31,
+              2.31,
+              0.0
+            ]
+          }
+        ],
+        "xLabels": [
+          "2026-03-16",
+          "2026-03-17",
+          "2026-03-18",
+          "2026-03-19",
+          "2026-03-20",
+          "2026-03-23",
+          "2026-03-24",
+          "2026-03-25",
+          "2026-03-26",
+          "2026-03-27",
+          "2026-03-30",
+          "2026-03-31"
+        ]
+      }
+    },
+    {
+      "id": "topic6-chart-03",
+      "template": "multiLine",
+      "label": "图表：spx us10y",
+      "tag": "interactive-chart",
+      "durationMs": 6800,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6800,
+        "enter": {
+          "type": "stagger",
+          "durationMs": 4200,
+          "staggerMs": 220,
+          "easing": "easeInOutSine"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "lines": [
+          {
+            "name": "spx_close",
+            "values": [
+              6672.62,
+              6632.19,
+              6699.38,
+              6716.09,
+              6624.7,
+              6606.49,
+              6506.48,
+              6581.0,
+              6556.37,
+              6591.9,
+              6477.16,
+              6368.85
+            ]
+          },
+          {
+            "name": "us10y",
+            "values": [
+              4.27,
+              4.28,
+              4.23,
+              4.2,
+              4.26,
+              4.25,
+              4.39,
+              4.34,
+              4.39,
+              4.33,
+              4.42,
+              4.44
+            ]
+          }
+        ],
+        "xLabels": [
+          "2026-03-12",
+          "2026-03-13",
+          "2026-03-16",
+          "2026-03-17",
+          "2026-03-18",
+          "2026-03-19",
+          "2026-03-20",
+          "2026-03-23",
+          "2026-03-24",
+          "2026-03-25",
+          "2026-03-26",
+          "2026-03-27"
+        ]
+      }
+    },
+    {
+      "id": "topic6-chart-04",
+      "template": "multiLine",
+      "label": "图表：scenario heatmap",
+      "tag": "interactive-chart",
+      "durationMs": 6800,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6800,
+        "enter": {
+          "type": "stagger",
+          "durationMs": 4200,
+          "staggerMs": 220,
+          "easing": "easeInOutSine"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "lines": [
+          {
+            "name": "gold",
+            "values": [
+              0.7,
+              0.6,
+              0.8,
+              0.3
+            ]
+          },
+          {
+            "name": "silver",
+            "values": [
+              0.5,
+              0.3,
+              0.4,
+              0.6
+            ]
+          },
+          {
+            "name": "oil",
+            "values": [
+              0.9,
+              -0.4,
+              0.2,
+              0.7
+            ]
+          }
+        ],
+        "xLabels": [
+          "再通胀抬升",
+          "增长走弱",
+          "利率高位钝化",
+          "风险偏好回升"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "query": "oil price inflation animation shipping route documentary",
+    "url": "https://www.youtube.com/watch?v=xMQUGSrnbP8",
+    "title": "Petroleum - Modern history of oil on a Map",
+    "channel": "Geo History",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": "[youtube] Extracting URL: https://www.youtube.com/watch?v=xMQUGSrnbP8\n[youtube] xMQUGSrnbP8: Downloading webpage\n[youtube] xMQUGSrnbP8: Downloading android vr player API JSON\n[info] xMQUGSrnbP8: Downloading 1 format(s): 18\n[download] /Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/reinflation/videos/web_search/01__Petroleum - Modern history of oil on a Map.mp4 has already been downloaded\n\n[download] 100% of   53.06MiB\n",
+    "selected_candidate_quality": {
+      "source_category": "general_footage",
+      "source_ok": true,
+      "resolution_height": 1080,
+      "resolution_width": 1920,
+      "duration_seconds_hint": 856,
+      "fps_hint": 30.0,
+      "extractor": "youtube",
+      "source_domain": "www.youtube.com",
+      "min_height_required": 480,
+      "pre_download_pass": true,
+      "reject_reasons": []
+    },
+    "file_quality_audit": {
+      "file": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/reinflation/videos/web_search/01__Petroleum - Modern history of oil on a Map.mp4",
+      "source_url": "https://www.youtube.com/watch?v=xMQUGSrnbP8",
+      "source_domain": "www.youtube.com",
+      "source_traceable": true,
+      "source_category": "general_footage",
+      "extractor": "youtube",
+      "resolution_height": 360,
+      "resolution_width": 640,
+      "fps": 29.97,
+      "codec": "h264",
+      "duration_seconds": 855.521,
+      "scene_changes": 1,
+      "scene_change_rate": 0.0333,
+      "analysis_window_seconds": 30.0,
+      "duration_ok": true,
+      "resolution_ok": false,
+      "frame_variation_ok": false,
+      "anti_screenshot_montage_pass": false,
+      "final_pass": false,
+      "fail_reasons": [
+        "resolution_below_480p",
+        "low_frame_variation_possible_screenshot_montage"
+      ],
+      "ffmpeg_error": ""
+    }
+  }
+]

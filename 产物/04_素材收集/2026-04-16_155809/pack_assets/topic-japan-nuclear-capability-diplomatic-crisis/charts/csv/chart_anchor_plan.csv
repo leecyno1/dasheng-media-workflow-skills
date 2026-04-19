@@ -1,0 +1,5 @@
+anchor_id,title,purpose,chart_type,data_sources,fallback_rule,fallback_outputs
+chart-01,日本钚库存量历史趋势图（1990-2026）,展示日本钚库存的增长趋势及其核武器潜力,折线图,IAEA年度报告2025 | 日本核能机构数据,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md
+chart-02,日本防卫预算增长曲线（2010-2026）,反映日本防卫预算的持续增长，体现军事化趋势,折线图,日本财务省数据,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md
+chart-03,战后和平体系vs当前军事化对比表,对比日本战后和平体系与当前军事化政策的结构性差异,对比表格,日本宪法文本 | 安保法案资料 | 防卫白皮书,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md
+chart-04,东亚安全格局失衡示意图,展示日本核能力公开后，东亚地区军备竞赛和核扩散风险的地缘政治影响,示意图/地图,公开安全分析报告 | 区域防务预算数据,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md

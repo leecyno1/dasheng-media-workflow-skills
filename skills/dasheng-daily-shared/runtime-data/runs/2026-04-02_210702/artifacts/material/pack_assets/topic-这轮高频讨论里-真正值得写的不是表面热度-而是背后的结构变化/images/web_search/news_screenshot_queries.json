@@ -1,0 +1,22 @@
+[
+  {
+    "query": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化 新闻",
+    "channel": "news_screenshot",
+    "priority": 180
+  },
+  {
+    "query": "这轮高频讨论里 latest news",
+    "channel": "news_screenshot",
+    "priority": 179
+  },
+  {
+    "query": "管线 最新新闻",
+    "channel": "news_screenshot",
+    "priority": 178
+  },
+  {
+    "query": "印证 最新新闻",
+    "channel": "news_screenshot",
+    "priority": 177
+  }
+]

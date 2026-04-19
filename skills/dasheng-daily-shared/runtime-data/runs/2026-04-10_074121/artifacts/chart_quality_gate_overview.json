@@ -1,0 +1,47 @@
+{
+  "collection_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-10_074121/artifacts",
+  "batch_count": 1,
+  "totals": {
+    "chart_count": 12,
+    "table_count": 0
+  },
+  "batches": [
+    {
+      "batch_id": "material",
+      "pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-10_074121/artifacts/material/pack_assets",
+      "chart_count": 12,
+      "table_count": 0,
+      "topic_count": 3,
+      "chart_quality_gate_report_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-10_074121/artifacts/material/pack_assets/chart_quality_gate_report.json"
+    }
+  ],
+  "topics": [
+    {
+      "topic_slug": "t001",
+      "topic_title": "鲍威尔讲话终结加息预期引发市场转向降息押注",
+      "chart_count": 4,
+      "table_count": 0,
+      "batches": [
+        "material"
+      ]
+    },
+    {
+      "topic_slug": "t002",
+      "topic_title": "中东冲突与霍尔木兹海峡封锁导致油价坚挺形成全球能源供应链风险",
+      "chart_count": 4,
+      "table_count": 0,
+      "batches": [
+        "material"
+      ]
+    },
+    {
+      "topic_slug": "t003",
+      "topic_title": "全球央行大规模抛售美债引发金融市场系统性风险担忧",
+      "chart_count": 4,
+      "table_count": 0,
+      "batches": [
+        "material"
+      ]
+    }
+  ]
+}

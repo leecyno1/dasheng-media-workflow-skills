@@ -1,0 +1,250 @@
+{
+  "topic_slug": "topic-11",
+  "topic_type": "geopolitics",
+  "title": "一键安装OpenClaw+常用skills，你奶奶5分钟也能用上龙虾",
+  "thesis": "核心不是“能不能装上”，而是把高门槛环境配置降维成可复用、可审计、可回滚的标准化流程。",
+  "evidence_items": [
+    {
+      "id": "source-1",
+      "title": "https://github.com/leecyno1/auto-install-Openclaw",
+      "url": "",
+      "source": "brief"
+    }
+  ],
+  "chart_anchors": [
+    {
+      "anchor_id": "chart-01",
+      "title": "关键事件时间线",
+      "purpose": "把冲突、政策、制裁、表态放到统一时间轴",
+      "data_sources": [
+        "人民网",
+        "新华社",
+        "AP",
+        "官方声明"
+      ],
+      "chart_type": "timeline"
+    },
+    {
+      "anchor_id": "chart-02",
+      "title": "结构压力图",
+      "purpose": "展示人口、外劳、防务、供应链等底层约束",
+      "data_sources": [
+        "官方统计",
+        "世界银行",
+        "OECD"
+      ],
+      "chart_type": "bar_line"
+    },
+    {
+      "anchor_id": "chart-03",
+      "title": "阵营/联盟关系图",
+      "purpose": "帮助读者看清力量重组，而不是只看单一人物",
+      "data_sources": [
+        "公开新闻",
+        "政府官网"
+      ],
+      "chart_type": "network_matrix"
+    },
+    {
+      "anchor_id": "chart-04",
+      "title": "风险外溢地图",
+      "purpose": "把航运、能源、台海、制裁路径可视化",
+      "data_sources": [
+        "地图底图",
+        "公开路线数据"
+      ],
+      "chart_type": "map"
+    }
+  ],
+  "web_search": {
+    "image_queries": [
+      "一键安装OpenClaw parliament speech crowd",
+      "一键安装OpenClaw rally crowd",
+      "一键安装OpenClaw military drill",
+      "一键安装OpenClaw shipping route map",
+      "一键安装OpenClaw parliament building exterior",
+      "一键安装OpenClaw elderly crowd city",
+      "一键安装OpenClaw port aerial",
+      "一键安装OpenClaw diplomatic meeting",
+      "一键安装OpenClaw protest crowd",
+      "一键安装OpenClaw border checkpoint"
+    ],
+    "video_queries": [
+      "一键安装OpenClaw parliament session 4k",
+      "一键安装OpenClaw election rally crowd 4k",
+      "一键安装OpenClaw military drill 4k",
+      "一键安装OpenClaw navy fleet aerial 4k",
+      "一键安装OpenClaw port shipping lane 4k",
+      "一键安装OpenClaw government building exterior 4k",
+      "一键安装OpenClaw city crowd documentary 4k",
+      "一键安装OpenClaw diplomatic summit b roll 4k"
+    ]
+  },
+  "generated": {
+    "cover_prompt": "围绕“一键安装OpenClaw+常用skills，你奶奶5分钟也能用上龙虾”生成封面，突出 一键安装OpenClaw 与 常用skills 的冲突感，适合财经/时政深度内容封面，避免口播截图感。",
+    "infographic_prompts": [
+      "基于题目“一键安装OpenClaw+常用skills，你奶奶5分钟也能用上龙虾”生成一张 dense-modules 信息图，拆出 4 个核心观点、4 个证据位、2 个风险位。",
+      "基于主判断“核心不是“能不能装上”，而是把高门槛环境配置降维成可复用、可审计、可回滚的标准化流程。”生成一张 hierarchical-layers 信息图，把表象、机制、影响、建议四层可视化。",
+      "为“一键安装OpenClaw+常用skills，你奶奶5分钟也能用上龙虾”生成一张 winding-roadmap 或 map 叙事信息图，展示事件推进、角色、地区外溢。"
+    ],
+    "comic_storyboard": [
+      {
+        "frame_id": "comic-01",
+        "title": "Hook",
+        "visual_prompt": "连环画第 1 格：一键安装OpenClaw 相关冲突现场，多人场景，动态感强。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "先抛问题：一键安装OpenClaw+常用skills，你奶奶5分钟也能用上龙虾"
+      },
+      {
+        "frame_id": "comic-02",
+        "title": "Thesis",
+        "visual_prompt": "连环画第 2 格：一键安装OpenClaw 与 常用skills 的对峙式构图。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "给判断：核心不是“能不能装上”，而是把高门槛环境配置降维成可复用、可审计、可回滚的标准化流程。"
+      },
+      {
+        "frame_id": "comic-03",
+        "title": "Mechanism-1",
+        "visual_prompt": "连环画第 3 格：机制拆解信息图，突出 一键安装OpenClaw。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "第一层机制"
+      },
+      {
+        "frame_id": "comic-04",
+        "title": "Mechanism-2",
+        "visual_prompt": "连环画第 4 格：关键变量图表与群体场景并置。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "第二层机制"
+      },
+      {
+        "frame_id": "comic-05",
+        "title": "Evidence-1",
+        "visual_prompt": "连环画第 5 格：议会/演讲/军演/港口四宫格场景。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "证据 1"
+      },
+      {
+        "frame_id": "comic-06",
+        "title": "Evidence-2",
+        "visual_prompt": "连环画第 6 格：东亚或中东风险地图，航运线与节点清晰。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "证据 2"
+      },
+      {
+        "frame_id": "comic-07",
+        "title": "Conflict",
+        "visual_prompt": "连环画第 7 格：多方拉扯场景，增强对立与张力。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "冲突升级"
+      },
+      {
+        "frame_id": "comic-08",
+        "title": "Risk",
+        "visual_prompt": "连环画第 8 格：风险分叉图或情景树。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "如果继续演化会怎样"
+      },
+      {
+        "frame_id": "comic-09",
+        "title": "Advice",
+        "visual_prompt": "连环画第 9 格：投资/观察清单卡片。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "给建议或观察变量"
+      },
+      {
+        "frame_id": "comic-10",
+        "title": "CTA",
+        "visual_prompt": "连环画第 10 格：回到主问题的封口画面。风格统一，适合视频插画，不要真人采访截图感。",
+        "caption_hint": "结尾收束与 CTA"
+      }
+    ],
+    "meme_prompts": [
+      "梗图：熊猫、鹰和武士在地图边上拉扯航运线，表达“安全叙事外溢到贸易与供应链”。",
+      "梗图：政客在舞台上高喊强硬口号，后台堆满老龄化、外劳、财政压力账单，表达“强硬叙事背后的结构困境”。",
+      "梗图：多国棋手围着东亚地图下棋，棋盘边缘是油轮和芯片，表达“地区安全波动影响全球市场”。"
+    ]
+  },
+  "layer5": {
+    "template_id": "geo_timeline_map",
+    "worldmonitor_project": "/Volumes/PSSD/Projects/worldmonitor",
+    "proxy_port": 8787,
+    "current_status": "inactive",
+    "inputs": [
+      "article.md",
+      "event_timeline.json",
+      "map_layers.geojson",
+      "charts/*.png",
+      "scene_plan.json"
+    ],
+    "preferred_components": [
+      "StrategicRiskPanel",
+      "StrategicPosturePanel",
+      "DeckGLMap",
+      "CountryTimeline"
+    ],
+    "page_modules": [
+      "hero-summary",
+      "actor-matrix",
+      "event-timeline",
+      "map-risk-layer",
+      "media-gallery"
+    ],
+    "chart_anchor_ids": [
+      "chart-01",
+      "chart-02",
+      "chart-03",
+      "chart-04"
+    ]
+  },
+  "recommended_sources": [
+    "人民网",
+    "新华社",
+    "政府官网",
+    "AP",
+    "Reuters",
+    "世界银行"
+  ],
+  "scene_plan": [
+    {
+      "title": "Hook",
+      "visual": "一键安装OpenClaw 相关冲突现场，多人场景，动态感强",
+      "caption": "先抛问题：一键安装OpenClaw+常用skills，你奶奶5分钟也能用上龙虾"
+    },
+    {
+      "title": "Thesis",
+      "visual": "一键安装OpenClaw 与 常用skills 的对峙式构图",
+      "caption": "给判断：核心不是“能不能装上”，而是把高门槛环境配置降维成可复用、可审计、可回滚的标准化流程。"
+    },
+    {
+      "title": "Mechanism-1",
+      "visual": "机制拆解信息图，突出 一键安装OpenClaw",
+      "caption": "第一层机制"
+    },
+    {
+      "title": "Mechanism-2",
+      "visual": "关键变量图表与群体场景并置",
+      "caption": "第二层机制"
+    },
+    {
+      "title": "Evidence-1",
+      "visual": "议会/演讲/军演/港口四宫格场景",
+      "caption": "证据 1"
+    },
+    {
+      "title": "Evidence-2",
+      "visual": "东亚或中东风险地图，航运线与节点清晰",
+      "caption": "证据 2"
+    },
+    {
+      "title": "Conflict",
+      "visual": "多方拉扯场景，增强对立与张力",
+      "caption": "冲突升级"
+    },
+    {
+      "title": "Risk",
+      "visual": "风险分叉图或情景树",
+      "caption": "如果继续演化会怎样"
+    },
+    {
+      "title": "Advice",
+      "visual": "投资/观察清单卡片",
+      "caption": "给建议或观察变量"
+    },
+    {
+      "title": "CTA",
+      "visual": "回到主问题的封口画面",
+      "caption": "结尾收束与 CTA"
+    }
+  ]
+}

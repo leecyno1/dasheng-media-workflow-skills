@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "id": "topic-hormuz-strait-energy-order:reasoning",
+    "object_type": "ReasoningSheet",
+    "run_id": "2026-04-07_141203",
+    "version": "1.0.0",
+    "generated_at": "2026-04-07T15:10:00+08:00"
+  },
+  "topic_id": "topic-hormuz-strait-energy-order",
+  "title": "霍尔木兹海峡封锁：全球能源供应链的结构性重构",
+  "core_claim": "霍尔木兹海峡危机不仅是短期油价波动，更是全球能源供应秩序的长期重构信号",
+  "why_now": "当前市场关注的是油价短期波动和停火协议进展，但更重要的是霍尔木兹海峡封锁对全球能源供应链的结构性影响",
+  "target_audience": "宏观投资者、商品交易员、能源行业从业者、供应链管理者",
+  "proof_requirements": [
+    "霍尔木兹海峡的历史通行量数据和当前封锁情况",
+    "全球主要能源进口国（中国、日本、韩国、印度）的供应链依赖度",
+    "替代航线（好望角、苏伊士运河）的成本和可行性分析",
+    "历史上类似事件（1980年代两伊战争）对供给秩序的长期影响",
+    "美军打击伊朗能源目标的清单和潜在影响"
+  ],
+  "evidence_sources": [
+    "官方：国际能源署(IEA)、美国能源信息署(EIA)、中国海关总署",
+    "行业：航运数据平台(Kpler, Vortexa)、能源咨询公司报告(Wood Mackenzie)",
+    "媒体：华尔街见闻、Bloomberg、Reuters、FT 的深度报道"
+  ],
+  "claims": [
+    {
+      "claim_id": "topic-hormuz-strait-energy-order-claim-01",
+      "section_id": "section-01",
+      "statement": "霍尔木兹海峡封锁对全球能源供应链的结构性影响",
+      "counterpoint": "市场只看到油价波动，忽视了供应链控制权争夺",
+      "missing_proof": [
+        "霍尔木兹海峡通行量数据",
+        "亚洲国家能源依赖度",
+        "替代航线成本分析"
+      ],
+      "chart_need": "霍尔木兹海峡通行量和依赖度数据"
+    },
+    {
+      "claim_id": "topic-hormuz-strait-energy-order-claim-02",
+      "section_id": "section-02",
+      "statement": "能源地缘政治从价格博弈转向供应链控制权争夺",
+      "counterpoint": null,
+      "missing_proof": [
+        "历史案例对比",
+        "基础设施投资数据"
+      ],
+      "chart_need": "两伊战争期间能源基础设施投资"
+    }
+  ],
+  "recommended_framework": "结构型",
+  "recommended_strategy": "密度强化",
+  "structure_contract": {
+    "sections": [
+      "开头（事件钩子）",
+      "表象：市场只看到了油价波动",
+      "深层：供应链控制权的争夺战",
+      "影响：三条传导链路正在形成",
+      "结语：供应链安全时代的投资逻辑"
+    ]
+  }
+}

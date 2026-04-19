@@ -1,0 +1,47 @@
+{
+  "collection_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts",
+  "batch_count": 1,
+  "totals": {
+    "chart_count": 4,
+    "table_count": 0
+  },
+  "batches": [
+    {
+      "batch_id": "material",
+      "pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets",
+      "chart_count": 4,
+      "table_count": 0,
+      "topic_count": 3,
+      "chart_quality_gate_report_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-07_141203/artifacts/material/pack_assets/chart_quality_gate_report.json"
+    }
+  ],
+  "topics": [
+    {
+      "topic_slug": "topic-us-stock-storage-sector-surge",
+      "topic_title": "存储板块创历史新高：AI 算力需求如何改写半导体投资逻辑",
+      "chart_count": 4,
+      "table_count": 0,
+      "batches": [
+        "material"
+      ]
+    },
+    {
+      "topic_slug": "topic-hormuz-strait-energy-order",
+      "topic_title": "霍尔木兹海峡封锁：全球能源供应链的结构性重构",
+      "chart_count": 0,
+      "table_count": 0,
+      "batches": [
+        "material"
+      ]
+    },
+    {
+      "topic_slug": "topic-sodium-ion-battery-breakthrough",
+      "topic_title": "钠离子电池全球首次突破：中国如何改写储能产业格局",
+      "chart_count": 0,
+      "table_count": 0,
+      "batches": [
+        "material"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "2026-04-11_085602",
+  "gate": "Final Structure Gate",
+  "status": "approved",
+  "topics": [
+    {
+      "topic_id": "topic-ai-financial-risk-regulation",
+      "title": "Claude新模型引发华尔街紧急会议:AI对金融业的风险在哪",
+      "doc_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_标准初稿_claude新模型引发华尔街紧急会议-ai对金融业的风险在哪.md",
+      "final_primary_sections": [],
+      "editor_note": ""
+    },
+    {
+      "topic_id": "topic-stablecoin-license-market-impact",
+      "title": "稳定币牌照落地:加密市场的'银行牌照时刻'",
+      "doc_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_标准初稿_稳定币牌照落地-加密市场的-银行牌照时刻.md",
+      "final_primary_sections": [],
+      "editor_note": ""
+    },
+    {
+      "topic_id": "topic-japan-embassy-incident-analysis",
+      "title": "日本士兵闯使馆事件背后:个体极端行为还是系统性问题",
+      "doc_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_标准初稿_日本士兵闯使馆事件背后-个体极端行为还是系统性问题.md",
+      "final_primary_sections": [],
+      "editor_note": ""
+    }
+  ],
+  "instructions": [
+    "编辑完成标准稿修订后，在本文件写入最终保留的一级/二级结构。",
+    "status 改为 approved / locked / finalized 后，material 与 rewrite 才允许继续。"
+  ]
+}

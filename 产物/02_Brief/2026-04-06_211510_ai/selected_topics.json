@@ -1,0 +1,337 @@
+{
+  "run_id": "2026-04-06_211510",
+  "gate": "Brief Gate",
+  "status": "approved",
+  "generation_method": "ai",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "未被选中的题请写入 rejected_topic_ids。",
+    "只有 selected_topics 非空且状态为 approved，draft 才允许执行。"
+  ],
+  "selected_topics": [
+    "topic-russia-japan-oil-cutoff",
+    "topic-japan-bonds-crisis-market-outlook",
+    "topic-lobster-tech-comparison"
+  ],
+  "rejected_topic_ids": [
+    "topic-apple-security-crisis-2026",
+    "topic-ai-prompt-adversarial-thinking",
+    "topic-divorce-asset-gambling-law",
+    "topic-trump-iran-oil-price-manipulation",
+    "topic-market-adjustment-survivor-bias",
+    "topic-japan-diplomat-knife-incident"
+  ],
+  "candidate_topics": [
+    {
+      "topic_id": "topic-apple-security-crisis-2026",
+      "title": "苹果安全漏洞背后：工信部紧急预警折射的供应链信任危机",
+      "core_argument": "工信部罕见针对单一品牌发布安全预警，暴露出全球科技供应链中「闭源生态安全神话」的脆弱性",
+      "why_now": "工信部4月6日紧急提醒苹果用户存在严重安全漏洞，影响iOS 13.0至17.2.1版本，可导致信息窃取和系统受控。这不是普通的漏洞通报，而是官方首次如此高调针对苹果产品发出预警。在中美科技博弈背景下，这一事件揭示了「闭源系统 = 更安全」这一长期认知的破产，以及国家层面对关键基础设施安全的重新审视。",
+      "target_audience": "企业IT决策者、信息安全从业者、科技行业观察者",
+      "evidence_needs": [
+        "工信部NVDB平台的完整通报内容和历史预警数据对比",
+        "iOS漏洞的技术细节和攻击面分析",
+        "国内iPhone用户规模和企业级应用渗透率",
+        "近年来苹果安全漏洞的频次和严重程度趋势",
+        "其他国家对该漏洞的响应措施"
+      ],
+      "evidence_sources": [
+        "官方：工信部网络安全威胁和漏洞信息共享平台(NVDB)、国家信息安全漏洞共享平台(CNVD)",
+        "行业：Gartner、IDC的企业移动设备安全报告",
+        "技术：CVE漏洞数据库、安全研究机构的技术分析",
+        "媒体：财新、第一财经的深度报道"
+      ],
+      "recommended_framework": "痛点型",
+      "framework_reason": "企业和个人用户面临「信任苹果安全性 vs 现实漏洞风险」的痛点，需要给出应对方案",
+      "recommended_strategy": "密度强化",
+      "strategy_application": "提供具体的风险评估框架、应急响应清单、替代方案对比",
+      "scores": {
+        "timeliness": 9.5,
+        "unique_angle": 8.0,
+        "evidence": 8.5,
+        "reader_value": 9.0,
+        "longevity": 7.0,
+        "composite": 8.4
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成"
+    },
+    {
+      "topic_id": "topic-russia-japan-oil-cutoff",
+      "title": "俄罗斯对日断供石油：能源武器化如何重塑东北亚地缘格局",
+      "core_argument": "俄罗斯以「友好国家优先」为由拒绝向日本供油，标志着能源从商品属性向地缘工具的彻底转变",
+      "why_now": "俄罗斯外交部4月1日宣布在中东局势紧张之际，将优先向友好国家供油，明确拒绝日本等「不友好国家」。这不是简单的贸易决策，而是在全球能源供应链重组背景下，俄罗斯利用能源杠杆重塑东北亚秩序的战略行动。日本80%以上的石油依赖进口，这一断供将如何影响其产业链和对华关系？",
+      "target_audience": "宏观投资者、能源行业从业者、国际关系研究者",
+      "evidence_needs": [
+        "日本对俄罗斯石油的依赖度数据和历史进口量",
+        "日本当前的石油储备量和替代供应渠道",
+        "俄罗斯石油出口结构的变化趋势",
+        "中东局势对全球石油供应链的影响",
+        "日本能源政策的调整方向"
+      ],
+      "evidence_sources": [
+        "官方：日本经济产业省、俄罗斯能源部、IEA",
+        "行业：标普全球、彭博能源数据",
+        "智库：CSIS、布鲁金斯学会的能源地缘政治报告",
+        "媒体：日经、路透的深度分析"
+      ],
+      "recommended_framework": "结构型",
+      "framework_reason": "需要拆解「俄罗斯决策 → 日本应对 → 东北亚格局变化」的多层传导机制",
+      "recommended_strategy": "密度强化",
+      "strategy_application": "提供详细的供应链数据、替代成本分析、地缘博弈推演",
+      "scores": {
+        "timeliness": 8.5,
+        "unique_angle": 9.0,
+        "evidence": 8.0,
+        "reader_value": 8.5,
+        "longevity": 8.5,
+        "composite": 8.5
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成"
+    },
+    {
+      "topic_id": "topic-japan-bonds-crisis-market-outlook",
+      "title": "日本国债异动引发全球市场震荡：下周投资策略与避险指南",
+      "core_argument": "日本国债市场异动是全球流动性拐点的信号，结合中东地缘风险，投资者需要重新配置资产以应对波动加剧",
+      "why_now": "X平台4月6日出现「THIS HASN'T HAPPENED BEFORE, NEVER!! Look at Japan government bonds」的惊呼。日本国债市场异动、俄罗斯对日断供、中东局势升级三重因素叠加，全球市场面临流动性收紧和地缘风险双重冲击。下周（4月7-11日）海外市场将如何反应？A股和港股如何应对？哪些资产和行业值得配置或规避？",
+      "target_audience": "个人投资者、资产配置顾问、交易员",
+      "evidence_needs": [
+        "日本国债收益率异动的具体数据和历史对比",
+        "全球主要股指与日债收益率的相关性分析",
+        "中东局势对能源、黄金、避险资产的影响",
+        "A股和港股的资金流向和外资持仓变化",
+        "下周重要经济数据和事件日历",
+        "历史上类似市场环境下的资产表现",
+        "当前各大类资产的估值水平和性价比"
+      ],
+      "evidence_sources": [
+        "市场：Bloomberg、Wind、东方财富的实时数据",
+        "研究：高盛、摩根士丹利、中金公司的策略报告",
+        "官方：美联储、日本央行、中国央行的政策声明",
+        "技术：主要指数的技术面分析和支撑阻力位"
+      ],
+      "recommended_framework": "清单型",
+      "framework_reason": "投资者需要清晰的行动清单：看什么指标、买什么资产、避什么风险",
+      "recommended_strategy": "密度强化",
+      "strategy_application": "提供具体的资产配置比例、行业板块推荐、个股筛选标准、止损位设置",
+      "scores": {
+        "timeliness": 9.5,
+        "unique_angle": 8.0,
+        "evidence": 8.5,
+        "reader_value": 9.5,
+        "longevity": 6.5,
+        "composite": 8.4
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成（编辑定制）"
+    },
+    {
+      "topic_id": "topic-ai-prompt-adversarial-thinking",
+      "title": "「这是我仇人写的」：对抗性思维如何让AI成为更好的批评者",
+      "core_argument": "通过改变prompt中的角色设定，可以突破AI的「礼貌偏见」，获得更犀利的反馈",
+      "why_now": "微博4月3日出现爆款讨论：「把方案发给AI，说这是我仇人写的，帮我挑刺，AI会给出又犀利又中肯的建议」。这个技巧迅速传播，揭示了AI交互中的一个关键问题：默认的「助手」角色设定会让AI过度礼貌，回避尖锐批评。这不仅是个实用技巧，更反映了人机交互设计中「对齐」与「有用」之间的张力。",
+      "target_audience": "AI工具重度用户、产品经理、内容创作者",
+      "evidence_needs": [
+        "AI「礼貌偏见」的学术研究和实验数据",
+        "不同prompt策略的效果对比测试",
+        "RLHF训练对AI行为模式的影响",
+        "用户对AI反馈质量的满意度调研",
+        "其他有效的prompt工程技巧案例"
+      ],
+      "evidence_sources": [
+        "学术：Anthropic、OpenAI的对齐研究论文",
+        "社区：Reddit r/ChatGPT、即刻的用户实践分享",
+        "测试：自行设计的A/B对比实验",
+        "行业：Prompt Engineering Guide等资源"
+      ],
+      "recommended_framework": "清单型",
+      "framework_reason": "读者需要的是可操作的prompt技巧清单，而非纯理论探讨",
+      "recommended_strategy": "密度强化",
+      "strategy_application": "提供多个场景下的具体prompt模板、效果对比、注意事项",
+      "scores": {
+        "timeliness": 8.0,
+        "unique_angle": 9.0,
+        "evidence": 7.0,
+        "reader_value": 9.5,
+        "longevity": 8.0,
+        "composite": 8.3
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成"
+    },
+    {
+      "topic_id": "topic-divorce-asset-gambling-law",
+      "title": "炒股亏损算不算「挥霍财产」：离婚财产分割中的风险投资边界",
+      "core_argument": "法院认定「离婚前炒股亏损百万」为挥霍财产，划定了婚姻法中「正常投资」与「恶意转移」的新边界",
+      "why_now": "北京平谷法院3月31日发布典型案例：丈夫离婚前炒股亏损百万被认定为「挥霍财产」，剩余同等价值财产全归妻子。这一判决在微博引发热议，核心争议在于：炒股作为合法投资行为，为何被认定为「挥霍」？法院的判定标准是什么？这对婚姻期间的投资决策有何影响？",
+      "target_audience": "婚姻家庭律师、高净值人群、投资者",
+      "evidence_needs": [
+        "该案例的完整判决书和法院认定逻辑",
+        "「挥霍财产」的法律定义和历史判例",
+        "婚姻期间投资行为的司法认定标准",
+        "类似案例的判决结果对比",
+        "律师对该判决的专业解读"
+      ],
+      "evidence_sources": [
+        "官方：中国裁判文书网、最高法典型案例",
+        "专业：婚姻家庭法律师的案例分析",
+        "学术：婚姻法学者的论文和评论",
+        "媒体：财新、澎湃的法律报道"
+      ],
+      "recommended_framework": "对比型",
+      "framework_reason": "需要对比「正常投资 vs 恶意挥霍」的认定标准，帮助读者理解边界",
+      "recommended_strategy": "细节锚定",
+      "strategy_application": "用真实案例细节展现法院的认定逻辑和关键证据",
+      "scores": {
+        "timeliness": 7.5,
+        "unique_angle": 8.5,
+        "evidence": 8.5,
+        "reader_value": 8.0,
+        "longevity": 7.5,
+        "composite": 8.0
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成"
+    },
+    {
+      "topic_id": "topic-trump-iran-oil-price-manipulation",
+      "title": "特朗普如何用一条推文操纵油价：信息战与能源市场的新博弈",
+      "core_argument": "特朗普通过社交媒体释放伊朗谈判信息，精准影响油价波动，开创了「推文治国」的能源版本",
+      "why_now": "特朗普4月6日警告伊朗「周二将生活在地狱中」，随后又称「与伊朗对话完美」，导致国际油价单日暴跌13%后反弹。这不是偶然，而是特朗普精心设计的市场操纵策略。在中东局势紧张、全球能源供应链脆弱的背景下，一条推文如何撬动万亿美元的能源市场？这种「信息战」对投资者意味着什么？",
+      "target_audience": "能源交易员、宏观对冲基金、地缘政治研究者",
+      "evidence_needs": [
+        "特朗普推文与油价波动的时间序列数据",
+        "特朗普政府的能源政策和战略储备操作",
+        "市场对地缘政治信息的反应机制",
+        "其他政治人物言论对市场的影响案例",
+        "能源市场的流动性和脆弱性分析"
+      ],
+      "evidence_sources": [
+        "市场：Bloomberg、EIA的油价和库存数据",
+        "社交媒体：特朗普Truth Social和X账号的历史推文",
+        "研究：学术期刊中关于政治言论与市场波动的研究",
+        "媒体：WSJ、FT的市场分析"
+      ],
+      "recommended_framework": "故事型",
+      "framework_reason": "以特朗普推文操纵油价的具体事件为叙事主线，展现信息战的威力",
+      "recommended_strategy": "细节锚定",
+      "strategy_application": "用精确的时间线、价格数据、推文内容还原操纵过程",
+      "scores": {
+        "timeliness": 9.0,
+        "unique_angle": 8.5,
+        "evidence": 8.0,
+        "reader_value": 8.5,
+        "longevity": 7.0,
+        "composite": 8.2
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成"
+    },
+    {
+      "topic_id": "topic-market-adjustment-survivor-bias",
+      "title": "「能穿越调整的账户极少」：市场下跌中的幸存者偏差陷阱",
+      "core_argument": "投资者普遍高估自己在市场调整中的抗风险能力，源于对「幸存者偏差」的认知盲区",
+      "why_now": "微博4月3日热议：「很多人以为调整不影响自己账户，其实能穿越调整、资金逆势上涨的极少」。这句话戳中了散户投资的核心痛点：在牛市中，每个人都觉得自己能躲过下跌；但数据显示，90%以上的账户在调整中都会回撤。为什么会有这种认知偏差？如何真正做到「穿越周期」？",
+      "target_audience": "个人投资者、理财顾问、行为金融研究者",
+      "evidence_needs": [
+        "A股历史调整期间的账户表现数据",
+        "幸存者偏差的心理学研究",
+        "成功穿越周期的投资策略案例",
+        "散户与机构在波动期的行为差异",
+        "风险管理工具的有效性验证"
+      ],
+      "evidence_sources": [
+        "数据：Wind、东方财富的账户统计数据",
+        "学术：行为金融学经典研究（Kahneman等）",
+        "实践：公募基金、私募基金的历史业绩",
+        "调研：券商投资者行为报告"
+      ],
+      "recommended_framework": "痛点型",
+      "framework_reason": "直击投资者「高估自己抗风险能力」的痛点，提供解决方案",
+      "recommended_strategy": "真实体感",
+      "strategy_application": "用真实投资者的亏损案例和心理变化过程增强代入感",
+      "scores": {
+        "timeliness": 7.0,
+        "unique_angle": 8.0,
+        "evidence": 7.5,
+        "reader_value": 9.0,
+        "longevity": 8.5,
+        "composite": 8.0
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成"
+    },
+    {
+      "topic_id": "topic-japan-diplomat-knife-incident",
+      "title": "日本自卫队员持刀闯入中国使馆：个体失控还是系统性压力？",
+      "core_argument": "日本自卫队现役军人闯入中国使馆威胁杀人，折射出日本防卫体系内部的心理健康危机",
+      "why_now": "3月24日，一名自称日本自卫队现役官员持刀闯入中国驻日使馆威胁杀人。这不是孤立事件——2026年已发生多起日本军人「走失」或异常行为事件。在日本加速军事化、防卫预算激增的背景下，自卫队内部是否存在系统性的心理健康问题？这对中日关系和地区安全意味着什么？",
+      "target_audience": "国际关系研究者、安全政策分析师、媒体从业者",
+      "evidence_needs": [
+        "该事件的官方通报和后续处理",
+        "日本自卫队近年来的类似事件统计",
+        "日本防卫预算和军队规模的变化趋势",
+        "自卫队的心理健康支持体系",
+        "其他国家军队的心理健康管理经验"
+      ],
+      "evidence_sources": [
+        "官方：中国外交部、日本防卫省的声明",
+        "媒体：NHK、共同社、环球时报的报道",
+        "研究：日本防卫研究所、智库的军事分析",
+        "对比：美军、自卫队的心理健康数据"
+      ],
+      "recommended_framework": "热点解读型",
+      "framework_reason": "需要快速解读突发事件，给出「个体 vs 系统」的深层分析",
+      "recommended_strategy": "角度发现",
+      "strategy_application": "从「心理健康危机」这一被忽视的角度切入，提供新视角",
+      "scores": {
+        "timeliness": 7.5,
+        "unique_angle": 8.5,
+        "evidence": 7.0,
+        "reader_value": 7.5,
+        "longevity": 6.5,
+        "composite": 7.4
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成"
+    },
+    {
+      "topic_id": "topic-lobster-tech-comparison",
+      "title": "龙虾技术全景解析：本地/云端/变体架构对比与大圣龙虾优势",
+      "core_argument": "龙虾技术的三种部署形态各有优劣，大圣龙虾通过优化架构和本地化支持，在性能、成本、易用性上实现了平衡",
+      "why_now": "龙虾（Lobster）作为新兴的开发工具/框架，提供了本地部署、云端托管、变体定制三种形态。开发者在选择时常常困惑：哪种架构适合我的场景？如何安装配置？大圣龙虾（MonkeyKing Fury）作为优化版本，解决了哪些痛点？本文将系统对比三种架构的原理、优劣势、适用场景，并提供详细的安装指南。",
+      "target_audience": "开发者、技术架构师、DevOps工程师",
+      "evidence_needs": [
+        "龙虾技术的核心原理和架构设计",
+        "本地部署 vs 云端托管 vs 变体的技术差异",
+        "性能基准测试数据（响应时间、吞吐量、资源占用）",
+        "成本对比分析（服务器成本、运维成本、学习成本）",
+        "大圣龙虾的技术创新点和优化措施",
+        "真实用户的使用体验和案例",
+        "详细的安装配置步骤和常见问题"
+      ],
+      "evidence_sources": [
+        "官方：大圣龙虾官网 https://monkeykingfury.com/index.html",
+        "技术：GitHub仓库、技术文档、API参考",
+        "社区：开发者论坛、Stack Overflow的讨论",
+        "测试：自行搭建环境进行性能测试",
+        "对比：与同类工具的横向对比"
+      ],
+      "recommended_framework": "对比型",
+      "framework_reason": "需要系统对比三种架构的差异，帮助读者做出选择",
+      "recommended_strategy": "密度强化",
+      "strategy_application": "提供详细的技术参数对比表、安装步骤截图、配置文件示例、故障排查清单",
+      "scores": {
+        "timeliness": 7.0,
+        "unique_angle": 8.5,
+        "evidence": 8.0,
+        "reader_value": 9.0,
+        "longevity": 9.0,
+        "composite": 8.3
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成（编辑定制）"
+    }
+  ]
+}

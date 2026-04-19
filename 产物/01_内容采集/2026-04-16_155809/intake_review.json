@@ -1,0 +1,109 @@
+{
+  "run_id": "2026-04-16_155809",
+  "gate": "Intake Gate",
+  "status": "pending_review",
+  "generated_at": "2026-04-16T15:58:09.472596+08:00",
+  "instructions": [
+    "删除明显广告、生活方式、低信息密度、重复搬运样本。",
+    "保留能形成事件线索、人物线索、议题线索的样本。",
+    "如需补链，直接在 additions 中新增。",
+    "若人工指定必须进入 brief 的样本，请追加到 must_include_urls。"
+  ],
+  "noise_candidates": [
+    {
+      "title": "真的好喜欢婚后的生活❤️",
+      "url": "https://www.xiaohongshu.com/explore/640b556c0000000013037962?xsec_token=ABcd6QG5T5WHCOqi8EUpSEdLltkkn8YMlShW_ihAzIl70%3D&xsec_source=pc_feed",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/xhs",
+      "channel": "xhs",
+      "heat_level": "A"
+    },
+    {
+      "title": "😭她真的......我哭死......❗❗❗",
+      "url": "https://www.xiaohongshu.com/explore/648893de0000000027012ae4?xsec_token=ABYzw9s_H_rNCIYFddc2KLdds3xYOAt3-v5EXtKks17mc%3D&xsec_source=pc_feed",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/xhs",
+      "channel": "xhs",
+      "heat_level": "A"
+    },
+    {
+      "title": "当代年轻人的反向攀比",
+      "url": "https://www.xiaohongshu.com/explore/63e4524b000000001b01c524?xsec_token=ABIWQhYx3wD4EtuUmM9hfHoHWvwhjY0A474N6SEX5IZ1I%3D&xsec_source=pc_feed",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/xhs",
+      "channel": "xhs",
+      "heat_level": "A"
+    },
+    {
+      "title": "瘦了20斤劝减脂的姐妹这些减肥智商税别信‼️",
+      "url": "https://www.xiaohongshu.com/explore/643695b600000000130363d2?xsec_token=AB6DeaQ6zZk4H1MBOXG_8A1Ce2a7TNUcdGuuh_rhIaYJ8%3D&xsec_source=pc_feed",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/xhs",
+      "channel": "xhs",
+      "heat_level": "S"
+    },
+    {
+      "title": "拉伸",
+      "url": "https://www.xiaohongshu.com/explore/6468101700000000270011cc?xsec_token=ABj9FK8NIfF2WRdemnU7yuG-ZG4efco5jhR63DFUDVPnI%3D&xsec_source=pc_feed",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/xhs",
+      "channel": "xhs",
+      "heat_level": "B"
+    },
+    {
+      "title": "不用卷发工具，也能头包脸",
+      "url": "https://www.xiaohongshu.com/explore/63e61f5c0000000013011754?xsec_token=ABXeg8fuoIzxb1trFJoiTy8kZvtRBxgxmE5Wp8C8RXhds%3D&xsec_source=pc_feed",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/xhs",
+      "channel": "xhs",
+      "heat_level": "B"
+    },
+    {
+      "title": "我可太会找淡颜系口红了！妥妥的清透白开水！",
+      "url": "https://www.xiaohongshu.com/explore/64104634000000000800d7c8?xsec_token=ABiKahsJveydyvyBLdalMttlASK8T8gUMKecdi_6H6CF0%3D&xsec_source=pc_feed",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/xhs",
+      "channel": "xhs",
+      "heat_level": "B"
+    },
+    {
+      "title": "探店黑天鹅 变态有话说#好利来 #黑天鹅蛋糕 #黑天鹅配送员 #城堡蛋糕",
+      "url": "https://www.douyin.com/video/7295300398045334820",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/douyin",
+      "channel": "douyin",
+      "heat_level": "A"
+    },
+    {
+      "title": "《黑天鹅》女主角娜塔莉.波特曼 教表演大师课（中英字幕）",
+      "url": "https://www.bilibili.com/video/BV1dT4y1g7mG",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/bili",
+      "channel": "bili",
+      "heat_level": "D"
+    }
+  ],
+  "remove_ids": [],
+  "keep_ids": [],
+  "additions": [],
+  "must_include_urls": [],
+  "editor_note": ""
+}

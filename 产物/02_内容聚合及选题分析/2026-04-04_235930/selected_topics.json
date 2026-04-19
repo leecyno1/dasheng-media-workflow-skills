@@ -1,0 +1,123 @@
+{
+  "run_id": "2026-04-04_235930",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "未被选中的题请写入 rejected_topic_ids 或保留空值。",
+    "只有 selected_topics 非空且状态为 approved，draft 才允许执行。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+      "title": "伊朗冲突升级背后，长期地区秩序成本正持续攀升",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+      "angle_variant_of": null,
+      "article_use": "结构稿",
+      "changed_dimension": "强化了题目对长期秩序成本隐性攀升的逻辑张力，避免泛泛而谈事件升级",
+      "core_proposition": "以外交部和伊朗为观察点，分析当前冲突升级之外，地区秩序成本如何通过结构性变量逐步上升，避免停留在事件本身的表面报道。",
+      "source_status": "自然入选",
+      "composite_score": 7.9
+    },
+    {
+      "topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升-variant-外交部-中东这条线若换个切口-最该补的证据会不会",
+      "title": "中东局势升级下，外交部需关注的长期秩序风险新变量",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+      "angle_variant_of": "topic-外交部-伊朗-事件升级之外-长期秩序成本在怎样上升",
+      "article_use": "结构稿",
+      "changed_dimension": "观察对象维度由伊朗单点扩展至中东整体，导致证据和结构变量需重新梳理",
+      "core_proposition": "以外交部和中东为观察点，探讨不同于伊朗视角的结构变量，梳理事件升级外长期秩序成本的传导链路和关键证据差异",
+      "source_status": "自然入选",
+      "composite_score": 7.14
+    },
+    {
+      "topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+      "title": "中东冲突引发的油价波动，市场是否低估了再通胀与利率预期反转？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+      "angle_variant_of": null,
+      "article_use": "判断稿",
+      "changed_dimension": "强化了对市场预期与政策冲击错配的逻辑分析，避免简单事件复述",
+      "core_proposition": "围绕美联储和中东局势，分析市场是否低估了油价冲击对再通胀和利率预期的影响，提供判断资产配置的框架",
+      "source_status": "自然入选",
+      "composite_score": 7.75
+    },
+    {
+      "topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆-variant-鲍威尔-美联储这条线若换个切口-最该补的证据会不",
+      "title": "鲍威尔讲话暗示的政策转向，如何改变市场对通胀与利率的预期？",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+      "angle_variant_of": "topic-美联储-中东这条线-市场是否低估了再通胀与利率预期回摆",
+      "article_use": "判断稿",
+      "changed_dimension": "观察对象维度由宏观中东冲击转向美联储领导层言论，导致证据和分析重点变化",
+      "core_proposition": "聚焦鲍威尔及美联储领导层，探讨其言论如何影响市场对再通胀和利率预期的判断，区别于宏观中东冲击视角",
+      "source_status": "自然入选",
+      "composite_score": 7.3
+    },
+    {
+      "topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+      "title": "川普相关风险溢价，市场到底在重新定价哪些真正变化的变量？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+      "angle_variant_of": null,
+      "article_use": "判断稿",
+      "changed_dimension": "强化了风险溢价变量分析的逻辑深度，避免泛泛而谈事件影响",
+      "core_proposition": "围绕川普和美国整体局势，拆解风险溢价重估的核心变量，避免简单跟风事件报道，提供资产判断框架",
+      "source_status": "自然入选",
+      "composite_score": 6.95
+    },
+    {
+      "topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估-variant-黄金-降息这条线若换个切口-最该补的证据会不会完",
+      "title": "黄金与降息预期，风险溢价重估的另一条关键",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+      "angle_variant_of": "topic-川普-美国这条线-风险溢价究竟在围绕什么变量重估",
+      "article_use": "判断稿",
+      "changed_dimension": "观察对象维度由政治人物转向资产类别与货币政策，分析焦点和证据不同",
+      "core_proposition": "以黄金和降息预期为观察对象，分析风险溢价重估的不同核心变量，区别于川普美国视角",
+      "source_status": "自然入选",
+      "composite_score": 7.04
+    },
+    {
+      "topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+      "title": "英伟达和半导体产业局部回暖，是否被市场误判为全面复苏？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+      "angle_variant_of": null,
+      "article_use": "解释稿",
+      "changed_dimension": "强化了对产业链局部与整体复苏差异的逻辑分析，避免泛泛乐观报道",
+      "core_proposition": "围绕英伟达和半导体产业链，拆解局部业绩改善与整体行业复苏的差异，防止市场误读情绪放大",
+      "source_status": "自然入选",
+      "composite_score": 6.76
+    },
+    {
+      "topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏-variant-半导体-封测这条线若换个切口-最该补的证据会不会",
+      "title": "半导体封测环节的局部复苏，是否被误判为产业全面回暖？",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+      "angle_variant_of": "topic-英伟达-半导体-真正值得写的是局部修复会不会被误读成全面复苏",
+      "article_use": "解释稿",
+      "changed_dimension": "观察对象由整条半导体产业链聚焦英伟达转向封测细分环节，证据和分析重点不同",
+      "core_proposition": "以半导体封测为切口，分析局部复苏信号与产业链整体景气的差异，防止投资者误读局部数据",
+      "source_status": "自然入选",
+      "composite_score": 7.24
+    },
+    {
+      "topic_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+      "title": "AI竞争的关键不在功能炫技，而是工作流的深度整合与落地",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+      "angle_variant_of": null,
+      "article_use": "结构稿",
+      "changed_dimension": "强化了对AI落地能力与功能展示的逻辑对比，避免泛泛而谈技术炫技",
+      "core_proposition": "围绕AI技术，剖析市场对功能演示的关注与实际工作流落地能力之间的差别，强调后者才是价值关键",
+      "source_status": "自然入选",
+      "composite_score": 6.66
+    }
+  ],
+  "editor_note": ""
+}

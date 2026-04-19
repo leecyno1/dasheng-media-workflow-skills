@@ -1,0 +1,34 @@
+{
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets",
+  "topic_count": 1,
+  "totals": {
+    "candidate_total": 24,
+    "candidate_qualified": 24,
+    "candidate_rejected": 0,
+    "download_attempts": 3,
+    "download_passed": 2,
+    "download_failed": 1
+  },
+  "candidate_reject_reason_counts": {},
+  "download_fail_reason_counts": {
+    "download_failed_or_missing_file": 1
+  },
+  "topics": [
+    {
+      "topic_slug": "topic-japan-nuclear-capability-diplomatic-crisis",
+      "topic_title": "日本核武器能力披露背后：从和平宪法到军事化的结构性转变",
+      "candidate_queries": 8,
+      "candidate_total": 24,
+      "candidate_qualified": 24,
+      "candidate_rejected": 0,
+      "download_attempts": 3,
+      "download_passed": 2,
+      "download_failed": 1,
+      "candidate_reject_reason_counts": {},
+      "download_fail_reason_counts": {
+        "download_failed_or_missing_file": 1
+      },
+      "quality_audit_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/config/video_quality_audit_report.json"
+    }
+  ]
+}

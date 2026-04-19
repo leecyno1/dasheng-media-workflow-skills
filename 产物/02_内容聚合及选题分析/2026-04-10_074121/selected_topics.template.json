@@ -1,0 +1,114 @@
+{
+  "run_id": "2026-04-10_074121",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "没有 selected_topics 或未批准状态，不允许进入下游阶段。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "t001",
+      "title": "鲍威尔讲话终结加息预期引发市场转向降息押注",
+      "topic_kind": "independent",
+      "mother_topic_id": "t001",
+      "angle_variant_of": null,
+      "article_use": "可用作宏观政策解读、投资策略调整指导、市场情绪分析等深度评论。",
+      "core_proposition": "鲍威尔的最新讲话确认通胀不明显，关闭了加息窗口，促使市场形成降息预期，成为政策转折点。",
+      "one_line_judgment": "鲍威尔明确通胀放缓信号，导致市场迅速调整政策预期，交易员从加息转向押注降息周期开启。"
+    },
+    {
+      "topic_id": "t002",
+      "title": "中东冲突与霍尔木兹海峡封锁导致油价坚挺形成全球能源供应链风险",
+      "topic_kind": "independent",
+      "mother_topic_id": "t002",
+      "angle_variant_of": null,
+      "article_use": "适合能源市场分析、地缘政治风险评估及宏观经济影响专题报道。",
+      "core_proposition": "霍尔木兹海峡关闭和多方战事升级直接阻断能源实物流动，导致油价未因停火预期而回落，供应链风险加剧。",
+      "one_line_judgment": "尽管停火努力，中东战事升级及霍尔木兹海峡封锁使油价高位坚挺，暴露全球能源供应链的结构性脆弱。"
+    },
+    {
+      "topic_id": "t003",
+      "title": "全球央行大规模抛售美债引发金融市场系统性风险担忧",
+      "topic_kind": "independent",
+      "mother_topic_id": "t003",
+      "angle_variant_of": null,
+      "article_use": "适合金融市场风险专题，宏观经济与资本流动分析，投资者风险提示类报道。",
+      "core_proposition": "央行层面集体抛售美债非零星事件，反映对美债安全性的信心动摇，可能触发市场剧烈震荡及资本重构。",
+      "one_line_judgment": "多国央行短期内大额撤离美债，金额逾数百亿美元，显著增加全球资本流动不稳定性及金融市场潜在危机。"
+    },
+    {
+      "topic_id": "t004",
+      "title": "特朗普在中东停火谈判中的摇摆态度加剧局势脆弱性",
+      "topic_kind": "independent",
+      "mother_topic_id": "t004",
+      "angle_variant_of": null,
+      "article_use": "适合国际政治分析、地缘冲突专题、外交政策评析。",
+      "core_proposition": "特朗普态度多变成为停火谈判关键不确定因素，削弱了停火协议的有效执行可能性。",
+      "one_line_judgment": "特朗普停火首日反复表态且不承认伊朗计划，导致停火进程不稳定，增加中东区域安全不确定性。"
+    },
+    {
+      "topic_id": "t005",
+      "title": "俄罗斯拒绝向日本供油体现地缘政治制裁的反噬效应",
+      "topic_kind": "independent",
+      "mother_topic_id": "t005",
+      "angle_variant_of": null,
+      "article_use": "适合地缘政治与能源安全专题，国际关系及市场风险分析。",
+      "core_proposition": "俄罗斯将日本列为“不友好国家”并拒绝供油，表明能源供应成为地缘冲突的直接工具。",
+      "one_line_judgment": "俄罗斯停止向日本供油，反映地缘政治紧张局势下能源供应链被直接政治化，区域紧张局势加剧。"
+    },
+    {
+      "topic_id": "t006",
+      "title": "AI技术发展与央行降息预期交织形成宏观经济新变量",
+      "topic_kind": "independent",
+      "mother_topic_id": "t006",
+      "angle_variant_of": null,
+      "article_use": "适合宏观经济分析、科技与政策交叉专题，未来产业趋势解读。",
+      "core_proposition": "AI技术创新重塑经济增长动力，影响央行货币政策决策，使降息预期与科技发展密切相关联。",
+      "one_line_judgment": "央行在高利率震荡与AI技术推动经济增长之间陷入两难，预计短期震荡后中期启动降息周期，AI成为宏观政策调整的重要变量。"
+    },
+    {
+      "topic_id": "t007",
+      "title": "日本自卫队士兵闯入中国使馆事件加剧日中外交紧张",
+      "topic_kind": "independent",
+      "mother_topic_id": "t007",
+      "angle_variant_of": null,
+      "article_use": "适合外交安全专题、区域安全形势分析及国际关系评论。",
+      "core_proposition": "该事件反映日中双方在外交安全与间谍活动层面存在严重信任缺失，可能加剧区域紧张态势。",
+      "one_line_judgment": "日本军事人员未经许可进入中国使馆，暴露两国安全摩擦升级，外交关系面临新风险。"
+    },
+    {
+      "topic_id": "t008",
+      "title": "日本高龄工程师投递中国车企简历反映中日人才流动与老龄化挑战",
+      "topic_kind": "independent",
+      "mother_topic_id": "t008",
+      "angle_variant_of": null,
+      "article_use": "适合产业分析、劳动力市场专题及中日经济关系评论。",
+      "core_proposition": "高龄人才跨国流动体现产业升级需求与人口老龄化压力，影响双方产业合作与人力资源政策。",
+      "one_line_judgment": "73岁日本工程师向中国企业求职，揭示中日在产业链合作与老龄化劳动力市场的新趋势和挑战。"
+    },
+    {
+      "topic_id": "t009",
+      "title": "OpenAI英国项目暂停暴露AI产业落地面临能源与监管瓶颈",
+      "topic_kind": "independent",
+      "mother_topic_id": "t009",
+      "angle_variant_of": null,
+      "article_use": "适合AI产业分析、技术政策专题及投资风险评估。",
+      "core_proposition": "高昂能源费用与复杂监管成为AI项目推进的主要制约因素，影响技术生态和投资布局。",
+      "one_line_judgment": "OpenAI因能源成本和行政阻碍暂停英国Stargate项目，揭示全球AI技术商业化过程中的关键落地瓶颈。"
+    },
+    {
+      "topic_id": "t010",
+      "title": "美债规模创新高引发市场对违约风险和财政稳定性的关键拐点担忧",
+      "topic_kind": "independent",
+      "mother_topic_id": "t010",
+      "angle_variant_of": null,
+      "article_use": "适合宏观金融危机专题、债券市场深度分析及投资者风险提示。",
+      "core_proposition": "美债规模持续扩大已超出传统风险容忍度，财政危机隐患明显，影响全球资本市场稳定。",
+      "one_line_judgment": "美债总额突破37万亿美元，市场对美国财政可持续性和违约可能性的疑虑上升，金融市场面临系统性风险拐点。"
+    }
+  ],
+  "editor_note": ""
+}

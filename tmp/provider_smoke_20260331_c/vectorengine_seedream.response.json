@@ -1,0 +1,15 @@
+{
+  "created": 1774946608,
+  "model": "doubao-seedream-5-0-260128",
+  "data": [
+    {
+      "url": "https://ark-common-storage-prod-ap-southeast-1.tos-ap-southeast-1.volces.com/seedream/3002269517/2026-03-31/zlm36_E7FhZewxb4OLVtd.jpeg?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Content-Sha256=UNSIGNED-PAYLOAD&X-Tos-Credential=AKLTYjg3ZjNlOGM0YzQyNGE1MmI2MDFiOTM3Y2IwMTY3OTE%2F20260331%2Ftos-ap-southeast-1.volces.com%2Ftos%2Frequest&X-Tos-Date=20260331T084328Z&X-Tos-Expires=604800&X-Tos-SignedHeaders=host&X-Tos-Signature=0031feac68cc96c2c19a5db780b755fdc598d63d9f3e71d3968ce53434209be8",
+      "size": "2k"
+    }
+  ],
+  "usage": {
+    "generated_images": 1,
+    "output_tokens": 17800,
+    "total_tokens": 17800
+  }
+}

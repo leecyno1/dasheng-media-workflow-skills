@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-04-11_085602",
+  "gate": "Brief Gate",
+  "status": "approved",
+  "generation_method": "ai",
+  "generated_at": "2026-04-11T09:00:00+08:00",
+  "editor_approved_at": "2026-04-11T09:10:00+08:00",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "未被选中的题请写入 rejected_topic_ids。",
+    "只有 selected_topics 非空且状态为 approved，draft 才允许执行。"
+  ],
+  "selected_topics": [
+    {
+      "topic_id": "topic-ai-financial-risk-regulation",
+      "title": "Claude新模型引发华尔街紧急会议:AI对金融业的风险在哪",
+      "composite_score": 8.7
+    },
+    {
+      "topic_id": "topic-stablecoin-license-market-impact",
+      "title": "稳定币牌照落地:加密市场的'银行牌照时刻'",
+      "composite_score": 8.2
+    },
+    {
+      "topic_id": "topic-japan-embassy-incident-analysis",
+      "title": "日本士兵闯使馆事件背后:个体极端行为还是系统性问题",
+      "composite_score": 7.7
+    }
+  ],
+  "rejected_topic_ids": [
+    "topic-altman-attack-ai-safety-debate",
+    "topic-russia-japan-energy-geopolitics",
+    "topic-viral-toy-safety-regulation",
+    "topic-gpt-performance-debate",
+    "topic-us-ngo-asset-scale"
+  ],
+  "candidate_topics": [
+    {
+      "topic_id": "topic-ai-financial-risk-regulation",
+      "title": "Claude新模型引发华尔街紧急会议:AI对金融业的风险在哪",
+      "composite_score": 8.7
+    },
+    {
+      "topic_id": "topic-altman-attack-ai-safety-debate",
+      "title": "Sam Altman遭袭背后:AI安全争论如何从学术走向暴力",
+      "composite_score": 8.3
+    },
+    {
+      "topic_id": "topic-stablecoin-license-market-impact",
+      "title": "稳定币牌照落地:加密市场的'银行牌照时刻'",
+      "composite_score": 8.2
+    },
+    {
+      "topic_id": "topic-russia-japan-energy-geopolitics",
+      "title": "俄罗斯对日能源断供:小国如何在大国博弈中失去议价权",
+      "composite_score": 8.1
+    },
+    {
+      "topic_id": "topic-viral-toy-safety-regulation",
+      "title": "网红玩具'带病'流行:谁该为贵阳女孩的死负责",
+      "composite_score": 8.1
+    },
+    {
+      "topic_id": "topic-gpt-performance-debate",
+      "title": "GPT-5.4性能争议:AI模型升级为什么不总是'更好'",
+      "composite_score": 7.9
+    },
+    {
+      "topic_id": "topic-us-ngo-asset-scale",
+      "title": "美国NGO持有14.2万亿资产:非营利组织的'影子金融帝国'",
+      "composite_score": 7.9
+    },
+    {
+      "topic_id": "topic-japan-embassy-incident-analysis",
+      "title": "日本士兵闯使馆事件背后:个体极端行为还是系统性问题",
+      "composite_score": 7.7
+    }
+  ]
+}

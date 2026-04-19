@@ -1,0 +1,179 @@
+{
+  "provider_status": {
+    "vectorengine": {
+      "provider": "vectorengine",
+      "base_url": "https://api.vectorengine.ai/v1/chat/completions",
+      "model": "gemini-3.1-flash-image-preview",
+      "status": "disabled_by_provider",
+      "checked_at": "2026-03-26",
+      "http_status": 403,
+      "message": "该渠道已被禁用",
+      "fallbacks": [
+        "python_infographic_renderer",
+        "network_image_collection",
+        "future_baoyu_skill_adapter"
+      ]
+    },
+    "gemini_generate_content": {
+      "provider": "vectorengine_gemini_generate_content",
+      "base_url": "https://api.vectorengine.ai/v1",
+      "model": "gemini-3.1-flash-image-preview",
+      "api_key_present": true,
+      "env_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/config/vectorengine_gemini_image.env"
+    },
+    "optional_fallbacks": {
+      "qhaigc_images": {
+        "base_url": "https://api.qhaigc.net",
+        "primary_model": "seedream-5",
+        "fallback_model": "seedream-4.6",
+        "chat_model": "gemini-2.5-flash-image",
+        "api_key_present": false,
+        "api_style": [
+          "/v1/images/generations",
+          "/v1/chat/completions"
+        ],
+        "env_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/config/vectorengine_gemini_image.env"
+      },
+      "gitee_images": {
+        "base_url": "https://ai.gitee.com",
+        "qwen_model": "Qwen-Image",
+        "glm_model": "GLM-Image",
+        "api_key_present": false,
+        "api_style": [
+          "/v1/images/generations"
+        ],
+        "env_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-26_123247/pack_assets/shared/config/vectorengine_gemini_image.env"
+      }
+    },
+    "minimax_env": true
+  },
+  "batch_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/baoyu_batch.json",
+  "task_count": 17,
+  "live_generation": {
+    "gemini": {
+      "enabled": true,
+      "provider": "vectorengine_gemini_generate_content",
+      "model": "gemini-3.1-flash-image-preview",
+      "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/gemini",
+      "attempted": 6,
+      "succeeded": 0,
+      "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/gemini/generation_results.json"
+    },
+    "qhaigc_seedream5": {
+      "enabled": false,
+      "reason": "missing_api_key",
+      "provider": "qhaigc_seedream5",
+      "model": "seedream-5",
+      "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/qhaigc_seedream5",
+      "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/qhaigc_seedream5/generation_results.json"
+    },
+    "qhaigc_seedream46": {
+      "enabled": false,
+      "reason": "missing_api_key",
+      "provider": "qhaigc_seedream46",
+      "model": "seedream-4.6",
+      "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/qhaigc_seedream46",
+      "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/qhaigc_seedream46/generation_results.json"
+    },
+    "gitee_qwen_image": {
+      "enabled": false,
+      "reason": "missing_api_key",
+      "provider": "gitee_qwen_image",
+      "model": "Qwen-Image",
+      "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/gitee_qwen_image",
+      "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/gitee_qwen_image/generation_results.json"
+    },
+    "gitee_glm_image": {
+      "enabled": false,
+      "reason": "missing_api_key",
+      "provider": "gitee_glm_image",
+      "model": "GLM-Image",
+      "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/gitee_glm_image",
+      "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/gitee_glm_image/generation_results.json"
+    },
+    "minimax": {
+      "enabled": true,
+      "provider": "minimax",
+      "model": "image-01",
+      "base_url": "https://api.minimaxi.com",
+      "attempted": 6,
+      "returncode": 0,
+      "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/minimax",
+      "tmp_batch_file": "/var/folders/jm/n87m6j597zz0prppdnfvt8p40000gn/T/tmphd5jwicv.json",
+      "stdout": {
+        "mode": "batch",
+        "total": 6,
+        "succeeded": 6,
+        "failed": 0,
+        "results": [
+          {
+            "id": "cover",
+            "provider": "minimax",
+            "model": "image-01",
+            "outputPath": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/cover.png",
+            "success": true,
+            "attempts": 1,
+            "error": null
+          },
+          {
+            "id": "infographic_1",
+            "provider": "minimax",
+            "model": "image-01",
+            "outputPath": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/infographic_1.png",
+            "success": true,
+            "attempts": 1,
+            "error": null
+          },
+          {
+            "id": "infographic_2",
+            "provider": "minimax",
+            "model": "image-01",
+            "outputPath": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/infographic_2.png",
+            "success": true,
+            "attempts": 1,
+            "error": null
+          },
+          {
+            "id": "infographic_3",
+            "provider": "minimax",
+            "model": "image-01",
+            "outputPath": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/infographic_3.png",
+            "success": true,
+            "attempts": 1,
+            "error": null
+          },
+          {
+            "id": "comic-01",
+            "provider": "minimax",
+            "model": "image-01",
+            "outputPath": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/comic-01.png",
+            "success": true,
+            "attempts": 1,
+            "error": null
+          },
+          {
+            "id": "comic-02",
+            "provider": "minimax",
+            "model": "image-01",
+            "outputPath": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/comic-02.png",
+            "success": true,
+            "attempts": 1,
+            "error": null
+          }
+        ]
+      },
+      "stderr_tail": "Batch mode: 6 tasks, 1 workers, parallel mode enabled.\n- replicate: concurrency=5, startIntervalMs=700\n- google: concurrency=3, startIntervalMs=1100\n- openai: concurrency=3, startIntervalMs=1100\n- openrouter: concurrency=3, startIntervalMs=1100\n- dashscope: concurrency=3, startIntervalMs=1100\n- jimeng: concurrency=3, startIntervalMs=1100\n- seedream: concurrency=3, startIntervalMs=1100\n- azure: concurrency=3, startIntervalMs=1100\nUsing minimax / image-01 for cover\nSwitch model: --model <id> | EXTEND.md default_model.minimax | env MINIMAX_IMAGE_MODEL\nUsing minimax / image-01 for infographic_1\nSwitch model: --model <id> | EXTEND.md default_model.minimax | env MINIMAX_IMAGE_MODEL\nUsing minimax / image-01 for infographic_2\nSwitch model: --model <id> | EXTEND.md default_model.minimax | env MINIMAX_IMAGE_MODEL\nUsing minimax / image-01 for infographic_3\nSwitch model: --model <id> | EXTEND.md default_model.minimax | env MINIMAX_IMAGE_MODEL\nUsing minimax / image-01 for comic-01\nSwitch model: --model <id> | EXTEND.md default_model.minimax | env MINIMAX_IMAGE_MODEL\nUsing minimax / image-01 for comic-02\nSwitch model: --model <id> | EXTEND.md default_model.minimax | env MINIMAX_IMAGE_MODEL\n\nBatch generation summary:\n- Total: 6\n- Succeeded: 6\n- Failed: 0\n",
+      "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/minimax/batch_results.json",
+      "generated_files": [
+        "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/cover.png",
+        "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/infographic_1.png",
+        "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/infographic_2.png",
+        "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/infographic_3.png",
+        "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/comic-01.png",
+        "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/artifacts/material/pack_assets/topic-11/images/generated/comic-02.png"
+      ],
+      "succeeded": 6
+    }
+  },
+  "note": "已生成批处理与 fallback 图；并尝试 VectorEngine Gemini、QHAIGC/Gitee（如已配置）与 MiniMax 多条真实出图链路。"
+}

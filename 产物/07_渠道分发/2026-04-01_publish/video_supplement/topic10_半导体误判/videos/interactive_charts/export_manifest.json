@@ -1,0 +1,46 @@
+{
+  "input_scenes": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/inputs/interactive_charts_deck.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/interactive_charts",
+  "base_url": "http://127.0.0.1:8787",
+  "started_at": "2026-04-01T03:12:34.129Z",
+  "finished_at": "2026-04-01T03:13:07.914Z",
+  "scene_count": 4,
+  "exported": [
+    {
+      "scene_id": "topic10-chart-01",
+      "scene_label": "图表：global market size",
+      "template": "barGrow",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/interactive_charts/01__topic10-chart-01__图表-global-market-size.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/interactive_charts/01__topic10-chart-01__图表-global-market-size.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/interactive_charts/01__topic10-chart-01__图表-global-market-size.png"
+    },
+    {
+      "scene_id": "topic10-chart-02",
+      "scene_label": "图表：platform mix",
+      "template": "barGrow",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/interactive_charts/02__topic10-chart-02__图表-platform-mix.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/interactive_charts/02__topic10-chart-02__图表-platform-mix.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/interactive_charts/02__topic10-chart-02__图表-platform-mix.png"
+    },
+    {
+      "scene_id": "topic10-chart-03",
+      "scene_label": "图表：fab capex",
+      "template": "barGrow",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/interactive_charts/03__topic10-chart-03__图表-fab-capex.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/interactive_charts/03__topic10-chart-03__图表-fab-capex.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/interactive_charts/03__topic10-chart-03__图表-fab-capex.png"
+    },
+    {
+      "scene_id": "topic10-chart-04",
+      "scene_label": "图表：segment growth index",
+      "template": "barGrow",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/interactive_charts/04__topic10-chart-04__图表-segment-growth-index.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/interactive_charts/04__topic10-chart-04__图表-segment-growth-index.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/interactive_charts/04__topic10-chart-04__图表-segment-growth-index.png"
+    }
+  ]
+}

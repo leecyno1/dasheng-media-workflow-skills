@@ -1,0 +1,35 @@
+{
+  "run_id": "2026-04-05_170457_chainfix",
+  "generated_at": "2026-04-05T21:32:29.825187",
+  "stage": "brief",
+  "status": "ready",
+  "generation_mode": "ai_only",
+  "failure_reason": null,
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-05_170457/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213120_chainfix",
+  "candidate_topics": [
+    "鲍威尔表态逆转美联储加息预期，市场押注降息引发美股反弹",
+    "俄罗斯拒绝向日本供油加剧地缘政治紧张，全球能源安全风险攀升",
+    "伊朗冲突升级引发油价剧烈波动，美军部署加剧中东不确定性",
+    "美联储借鉴1990年石油危机路径，当前鹰派预期反转降息趋势明显",
+    "贵金属与原油期权创新反映宏观波动加剧，投资者风险管理需求提升",
+    "伊朗控制霍尔木兹海峡成为实质核威慑，美媒停火提议实为通航筹码交换",
+    "中国散户3月大举净买入1.25万亿，逆势加仓预示市场信心修复",
+    "央行果断降息释放宽松信号，政策空间开启助力经济复苏",
+    "美以联军受挫激活中东抵抗联盟，区域冲突复杂性显著提升",
+    "俄罗斯将多名日本人重新列为战犯，日俄关系紧张升级影响东北亚安全"
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213120_chainfix/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213120_chainfix/02_研究Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213120_chainfix/02_编辑Brief_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213120_chainfix/topic_cards.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213120_chainfix/selected_topics.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213120_chainfix/selected_topics.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213120_chainfix/phase2-clusters-summary.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213120_chainfix/phase2-topic-index.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213120_chainfix/phase2-editorial-briefs.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213120_chainfix/phase2-topn-for-confirmation.json"
+  ],
+  "next_stage": "draft"
+}

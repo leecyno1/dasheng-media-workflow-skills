@@ -1,0 +1,35 @@
+{
+  "run_id": "2026-04-05_170457",
+  "generated_at": "2026-04-05T21:26:18.912645",
+  "stage": "brief",
+  "status": "ready",
+  "generation_mode": "ai_only",
+  "failure_reason": null,
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-05_170457/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_212512",
+  "candidate_topics": [
+    "鲍威尔讲话逆转加息预期，缓解特朗普经济压力",
+    "俄罗斯断供日本油气，加剧全球能源地缘政治风险",
+    "中东冲突激化推升油价，市场押注美联储延续降息周期",
+    "伊朗对霍尔木兹海峡的控制成为其战略“核武器”",
+    "美以联军在伊朗遭遇挫败，抵抗力量激活“抵抗之弧”",
+    "多国央行降息开启宽松周期，应对经济下行压力",
+    "中国散户3月大幅净买入股票，反映市场风险偏好回升",
+    "美军极端军事计划曝光，彰显美伊冲突升级风险",
+    "俄罗斯重新列28名日本人为战犯，俄日关系紧张升级",
+    "英伟达期权异动反映AI芯片行业估值重估"
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_212512/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_212512/02_研究Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_212512/02_编辑Brief_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_212512/topic_cards.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_212512/selected_topics.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_212512/selected_topics.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_212512/phase2-clusters-summary.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_212512/phase2-topic-index.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_212512/phase2-editorial-briefs.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_212512/phase2-topn-for-confirmation.json"
+  ],
+  "next_stage": "draft"
+}

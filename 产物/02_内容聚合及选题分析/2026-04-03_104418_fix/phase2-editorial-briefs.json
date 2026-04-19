@@ -1,0 +1,1652 @@
+[
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "特朗普-伊朗-diplomacy-conflict::特朗普、伊朗表面在交易事件，真正被重估的会不会是更长期的秩序成本？",
+      "upstream_ids": [
+        "intake-20260403104418-107",
+        "intake-20260403104418-144",
+        "intake-20260403104418-352",
+        "intake-20260403104418-362"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "特朗普-伊朗-diplomacy-conflict",
+          "url": "",
+          "title": "特朗普、伊朗表面在交易事件，真正被重估的会不会是更长期的秩序成本？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.626508+08:00",
+      "updated_at": "2026-04-03T10:50:37.626508+08:00"
+    },
+    "topic_id": "topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "mother_topic_id": "topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "特朗普、伊朗表面在交易事件，真正被重估的会不会是更长期的秩序成本？",
+    "source_status": "自然入选",
+    "cluster_name": "特朗普 / 伊朗",
+    "cluster_id": "特朗普-伊朗-diplomacy-conflict",
+    "core_thesis": "特朗普 / 伊朗这条线真正值得写的，不是再复述热闹，而是去证明：事件叙事与长期秩序成本是否正在分化。",
+    "one_line_judgment": "特朗普 / 伊朗这条线真正值得写的，不是再复述热闹，而是去证明：事件叙事与长期秩序成本是否正在分化。",
+    "counterintuitive_angle": "事件叙事与长期秩序成本是否正在分化",
+    "why_now": "当前样本 `7` 条，来源 `3` 类，时效分 `1.0`，来源质量分 `0.95`。",
+    "reader_value": "适合 时政、宏观、国际关系读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "时政、宏观、国际关系读者。",
+    "proof_requirements": [
+      "先界定 特朗普、伊朗 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件叙事和秩序成本的传导链路。",
+      "给出下一步最值得跟踪的国家、机构和变量。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "特朗普-伊朗-diplomacy-conflict-e01",
+        "title": "【原油暴涨，美股脱敏，曙光不远了！（20260403）】以我为主，以不变应万变。  今日看盘超话 #a股# #美以伊最新局势# #伊朗强硬回应特朗普# O 原",
+        "url": "https://m.weibo.cn/detail/5283511393061262",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "【原油暴涨，美股脱敏，曙光不远了！（20260403）】以我为主，以不变应万变。  今日看盘超话 #a股# #美以伊最新局势# #伊朗强硬回应特朗普# O 原；热度=490"
+      },
+      {
+        "evidence_id": "特朗普-伊朗-diplomacy-conflict-e02",
+        "title": "昨夜美股走势，已经脱敏了，原油大涨在定价局势升级，股市却不信 纳指翻红，最强的，还是那个方向。 #伊朗强硬回应特朗普# #美以伊最新局势# ​",
+        "url": "https://m.weibo.cn/detail/5283506907252397",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "昨夜美股走势，已经脱敏了，原油大涨在定价局势升级，股市却不信 纳指翻红，最强的，还是那个方向。 #伊朗强硬回应特朗普# #美以伊最新局势# ​；热度=634"
+      },
+      {
+        "evidence_id": "特朗普-伊朗-diplomacy-conflict-e03",
+        "title": "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】",
+        "url": "https://www.bilibili.com/video/BV1CCQqBuEt8",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】；score=36.62"
+      },
+      {
+        "evidence_id": "特朗普-伊朗-diplomacy-conflict-e04",
+        "title": "特朗普：对话“完美”，是“伊朗主动打来电话”",
+        "url": "https://www.bilibili.com/video/BV1VuXABbEFB",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "特朗普：对话“完美”，是“伊朗主动打来电话”；score=35.84"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少官方表态与关键时间线对照，需要补政策与外交原文。"
+    ],
+    "chart_needs": [
+      "事件时间线",
+      "参与方与影响路径图"
+    ],
+    "image_needs": [
+      "外交现场、地图、官方发布会"
+    ],
+    "video_needs": [
+      "新闻直播、发布会、现场素材"
+    ],
+    "priority_people": [
+      "特朗普"
+    ],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "特朗普 特朗普、伊朗表面在交易事件，真正被重 latest news",
+      "伊朗 特朗普、伊朗表面在交易事件，真正被重 latest news",
+      "原油 特朗普、伊朗表面在交易事件，真正被重 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：事件叙事与长期秩序成本是否正在分化。",
+      "part_1": "先界定 特朗普、伊朗 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件叙事和秩序成本的传导链路。",
+      "part_3": "给出下一步最值得跟踪的国家、机构和变量。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 4.46,
+      "sharpness": 5.5,
+      "evidence": 9.24,
+      "longevity": 7.6,
+      "reader_value": 6.95,
+      "distinctiveness": 7.3,
+      "composite": 6.74
+    },
+    "cluster_quality_score": 32.057,
+    "topic_value_score": 6.74,
+    "distinctiveness_reason": "这题以 `伊朗、原油` 为主要观察对象，把焦点压在 `冲突与外交` 上；与其他母题相比，它的核心矛盾更集中。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少官方表态与关键时间线对照，需要补政策与外交原文。",
+    "article_use": "解释稿",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本-variant-以色列-伊朗这个题若换个切口-最值得盯的对象和证",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "以色列-伊朗-diplomacy-conflict::以色列、伊朗这个题若换个切口，最值得盯的对象和证据会不会完全不同？",
+      "upstream_ids": [
+        "intake-20260403104418-354"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "以色列-伊朗-diplomacy-conflict",
+          "url": "",
+          "title": "以色列、伊朗这个题若换个切口，最值得盯的对象和证据会不会完全不同？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.626579+08:00",
+      "updated_at": "2026-04-03T10:50:37.626579+08:00"
+    },
+    "topic_id": "topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本-variant-以色列-伊朗这个题若换个切口-最值得盯的对象和证",
+    "mother_topic_id": "topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "topic_kind": "variant",
+    "angle_variant_of": "topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "title": "以色列、伊朗这个题若换个切口，最值得盯的对象和证据会不会完全不同？",
+    "source_status": "自然入选",
+    "cluster_name": "以色列 / 伊朗",
+    "cluster_id": "以色列-伊朗-diplomacy-conflict",
+    "core_thesis": "以色列 / 伊朗这条线真正值得写的，不是再复述热闹，而是去证明：事件叙事与长期秩序成本是否正在分化。",
+    "one_line_judgment": "以色列 / 伊朗这条线真正值得写的，不是再复述热闹，而是去证明：事件叙事与长期秩序成本是否正在分化。",
+    "counterintuitive_angle": "事件叙事与长期秩序成本是否正在分化",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `1.12`，来源质量分 `0.95`。",
+    "reader_value": "适合 时政、宏观、国际关系读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "时政、宏观、国际关系读者。",
+    "proof_requirements": [
+      "先界定 以色列、伊朗 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件叙事和秩序成本的传导链路。",
+      "给出下一步最值得跟踪的国家、机构和变量。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "以色列-伊朗-diplomacy-conflict-e01",
+        "title": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸",
+        "url": "https://www.bilibili.com/video/BV1WJQBByE12",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸；score=36.45"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少官方表态与关键时间线对照，需要补政策与外交原文。"
+    ],
+    "chart_needs": [
+      "事件时间线",
+      "参与方与影响路径图"
+    ],
+    "image_needs": [
+      "外交现场、地图、官方发布会"
+    ],
+    "video_needs": [
+      "新闻直播、发布会、现场素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "以色列 以色列、伊朗这个题若换个切口，最值得 latest news",
+      "伊朗 以色列、伊朗这个题若换个切口，最值得 latest news",
+      "美国 以色列、伊朗这个题若换个切口，最值得 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：事件叙事与长期秩序成本是否正在分化。",
+      "part_1": "先界定 以色列、伊朗 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件叙事和秩序成本的传导链路。",
+      "part_3": "给出下一步最值得跟踪的国家、机构和变量。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.76,
+      "sharpness": 5.5,
+      "evidence": 6.99,
+      "longevity": 7.6,
+      "reader_value": 6.95,
+      "distinctiveness": 6.8,
+      "composite": 6.11
+    },
+    "cluster_quality_score": 29.196,
+    "topic_value_score": 6.11,
+    "distinctiveness_reason": "观察对象不同",
+    "why_not_duplicate_of": "它与母题共享同一大矛盾，但因为观察对象不同，所以保留为备选切口。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少官方表态与关键时间线对照，需要补政策与外交原文。",
+    "article_use": "解释稿",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-英伟达-半导体突然很热闹-但行业最危险的误判会不会是把局部修复看成全面复苏",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "英伟达-半导体-semiconductor-cycle::英伟达、半导体突然很热闹，但行业最危险的误判会不会是把局部修复看成全面复苏？",
+      "upstream_ids": [
+        "intake-20260403104418-390"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "英伟达-半导体-semiconductor-cycle",
+          "url": "",
+          "title": "英伟达、半导体突然很热闹，但行业最危险的误判会不会是把局部修复看成全面复苏？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.626609+08:00",
+      "updated_at": "2026-04-03T10:50:37.626609+08:00"
+    },
+    "topic_id": "topic-英伟达-半导体突然很热闹-但行业最危险的误判会不会是把局部修复看成全面复苏",
+    "mother_topic_id": "topic-英伟达-半导体突然很热闹-但行业最危险的误判会不会是把局部修复看成全面复苏",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "英伟达、半导体突然很热闹，但行业最危险的误判会不会是把局部修复看成全面复苏？",
+    "source_status": "自然入选",
+    "cluster_name": "英伟达 / 半导体",
+    "cluster_id": "英伟达-半导体-semiconductor-cycle",
+    "core_thesis": "英伟达 / 半导体这条线真正值得写的，不是再复述热闹，而是去证明：热闹信号会不会被误读成全面复苏。",
+    "one_line_judgment": "英伟达 / 半导体这条线真正值得写的，不是再复述热闹，而是去证明：热闹信号会不会被误读成全面复苏。",
+    "counterintuitive_angle": "热闹信号会不会被误读成全面复苏",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `0.9`，来源质量分 `0.88`。",
+    "reader_value": "适合 产业观察型、科技投资型读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "产业观察型、科技投资型读者。",
+    "proof_requirements": [
+      "先界定 英伟达、半导体 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开 英伟达、半导体 背后的设备、订单、价格和资本开支信号。",
+      "指出投资者最容易把什么误读成全面景气。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "英伟达-半导体-semiconductor-cycle-e01",
+        "title": "英伟达、英特尔等成“打击目标”！警告员工：立即撤离保命！",
+        "url": "https://mp.weixin.qq.com/s/OJYVRhhfMMvhk_kQFpae2w",
+        "source_type": "公众号文章",
+        "source_tier": "self_media",
+        "evidence_type": "article_link",
+        "note": "英伟达、英特尔等成“打击目标”！警告员工：立即撤离保命！；半导体封测 定向样本"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少价格、订单、资本开支或出货变量，需要补产业链分环节数据。"
+    ],
+    "chart_needs": [
+      "分环节景气图",
+      "订单与价格对照图"
+    ],
+    "image_needs": [
+      "晶圆厂、洁净室、设备、工程师"
+    ],
+    "video_needs": [
+      "工厂、产线、行业会议、访谈"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "英伟达"
+    ],
+    "priority_news_queries": [
+      "英伟达 英伟达、半导体突然很热闹，但行业最危 latest news",
+      "半导体 英伟达、半导体突然很热闹，但行业最危 latest news",
+      "封测 英伟达、半导体突然很热闹，但行业最危 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：热闹信号会不会被误读成全面复苏。",
+      "part_1": "先界定 英伟达、半导体 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开 英伟达、半导体 背后的设备、订单、价格和资本开支信号。",
+      "part_3": "指出投资者最容易把什么误读成全面景气。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.06,
+      "sharpness": 6.2,
+      "evidence": 6.77,
+      "longevity": 6.5,
+      "reader_value": 7.35,
+      "distinctiveness": 7.3,
+      "composite": 5.97
+    },
+    "cluster_quality_score": 27.354,
+    "topic_value_score": 5.97,
+    "distinctiveness_reason": "这题以 `半导体、封测` 为主要观察对象，把焦点压在 `产业分化` 上；与其他母题相比，它的核心矛盾更集中。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少价格、订单、资本开支或出货变量，需要补产业链分环节数据。",
+    "article_use": "解释稿",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-英伟达-半导体突然很热闹-但行业最危险的误判会不会是把局部修复看成全面复苏-variant-半导体-封测这个题若换个切口-最值得盯的对象和证",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "半导体-封测-semiconductor-cycle::半导体、封测这个题若换个切口，最值得盯的对象和证据会不会完全不同？",
+      "upstream_ids": [
+        "intake-20260403104418-386",
+        "intake-20260403104418-387",
+        "intake-20260403104418-388",
+        "intake-20260403104418-389"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "半导体-封测-semiconductor-cycle",
+          "url": "",
+          "title": "半导体、封测这个题若换个切口，最值得盯的对象和证据会不会完全不同？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.626634+08:00",
+      "updated_at": "2026-04-03T10:50:37.626634+08:00"
+    },
+    "topic_id": "topic-英伟达-半导体突然很热闹-但行业最危险的误判会不会是把局部修复看成全面复苏-variant-半导体-封测这个题若换个切口-最值得盯的对象和证",
+    "mother_topic_id": "topic-英伟达-半导体突然很热闹-但行业最危险的误判会不会是把局部修复看成全面复苏",
+    "topic_kind": "variant",
+    "angle_variant_of": "topic-英伟达-半导体突然很热闹-但行业最危险的误判会不会是把局部修复看成全面复苏",
+    "title": "半导体、封测这个题若换个切口，最值得盯的对象和证据会不会完全不同？",
+    "source_status": "自然入选",
+    "cluster_name": "半导体 / 封测",
+    "cluster_id": "半导体-封测-semiconductor-cycle",
+    "core_thesis": "半导体 / 封测这条线真正值得写的，不是再复述热闹，而是去证明：热闹信号会不会被误读成全面复苏。",
+    "one_line_judgment": "半导体 / 封测这条线真正值得写的，不是再复述热闹，而是去证明：热闹信号会不会被误读成全面复苏。",
+    "counterintuitive_angle": "热闹信号会不会被误读成全面复苏",
+    "why_now": "当前样本 `4` 条，来源 `1` 类，时效分 `0.9`，来源质量分 `0.88`。",
+    "reader_value": "适合 产业观察型、科技投资型读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "产业观察型、科技投资型读者。",
+    "proof_requirements": [
+      "先界定 半导体、封测 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开 半导体、封测 背后的设备、订单、价格和资本开支信号。",
+      "指出投资者最容易把什么误读成全面景气。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "半导体-封测-semiconductor-cycle-e01",
+        "title": "恭喜！贵州煜晖电子二期，正式开工",
+        "url": "https://mp.weixin.qq.com/s/mYA-d4r8K9VUqxfN1V0Tjw",
+        "source_type": "公众号文章",
+        "source_tier": "self_media",
+        "evidence_type": "article_link",
+        "note": "恭喜！贵州煜晖电子二期，正式开工；半导体封测 定向样本"
+      },
+      {
+        "evidence_id": "半导体-封测-semiconductor-cycle-e02",
+        "title": "新进展！南芯半导体年产40亿颗先进半导体芯片封测项目",
+        "url": "https://mp.weixin.qq.com/s/Hpt3aS2ITdZMp2LBHV1Ehw",
+        "source_type": "公众号文章",
+        "source_tier": "self_media",
+        "evidence_type": "article_link",
+        "note": "新进展！南芯半导体年产40亿颗先进半导体芯片封测项目；半导体封测 定向样本"
+      },
+      {
+        "evidence_id": "半导体-封测-semiconductor-cycle-e03",
+        "title": "深圳一项目奠基，总投资13.34 亿！",
+        "url": "https://mp.weixin.qq.com/s/JaO7pWdlDrvUeB-lWEXWRA",
+        "source_type": "公众号文章",
+        "source_tier": "self_media",
+        "evidence_type": "article_link",
+        "note": "深圳一项目奠基，总投资13.34 亿！；半导体封测 定向样本"
+      },
+      {
+        "evidence_id": "半导体-封测-semiconductor-cycle-e04",
+        "title": "中微公司业绩创新高！去年净利润21.1亿元，同比增长30.69%",
+        "url": "https://mp.weixin.qq.com/s/6NRu17LS07-WSxrEYsoXSg",
+        "source_type": "公众号文章",
+        "source_tier": "self_media",
+        "evidence_type": "article_link",
+        "note": "中微公司业绩创新高！去年净利润21.1亿元，同比增长30.69%；半导体封测 定向样本"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少价格、订单、资本开支或出货变量，需要补产业链分环节数据。"
+    ],
+    "chart_needs": [
+      "分环节景气图",
+      "订单与价格对照图"
+    ],
+    "image_needs": [
+      "晶圆厂、洁净室、设备、工程师"
+    ],
+    "video_needs": [
+      "工厂、产线、行业会议、访谈"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "半导体 半导体、封测这个题若换个切口，最值得 latest news",
+      "封测 半导体、封测这个题若换个切口，最值得 latest news",
+      "芯片 半导体、封测这个题若换个切口，最值得 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：热闹信号会不会被误读成全面复苏。",
+      "part_1": "先界定 半导体、封测 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开 半导体、封测 背后的设备、订单、价格和资本开支信号。",
+      "part_3": "指出投资者最容易把什么误读成全面景气。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.6,
+      "sharpness": 6.2,
+      "evidence": 8.12,
+      "longevity": 6.5,
+      "reader_value": 7.35,
+      "distinctiveness": 6.8,
+      "composite": 6.3
+    },
+    "cluster_quality_score": 26.268,
+    "topic_value_score": 6.3,
+    "distinctiveness_reason": "观察对象不同",
+    "why_not_duplicate_of": "它与母题共享同一大矛盾，但因为观察对象不同，所以保留为备选切口。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少价格、订单、资本开支或出货变量，需要补产业链分环节数据。",
+    "article_use": "解释稿",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-日本央行-日本表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "日本央行-日本-diplomacy-conflict::日本央行、日本表面在交易事件，真正被重估的会不会是更长期的秩序成本？",
+      "upstream_ids": [
+        "intake-20260403104418-195"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "日本央行-日本-diplomacy-conflict",
+          "url": "",
+          "title": "日本央行、日本表面在交易事件，真正被重估的会不会是更长期的秩序成本？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.626658+08:00",
+      "updated_at": "2026-04-03T10:50:37.626658+08:00"
+    },
+    "topic_id": "topic-日本央行-日本表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "mother_topic_id": "topic-日本央行-日本表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "日本央行、日本表面在交易事件，真正被重估的会不会是更长期的秩序成本？",
+    "source_status": "自然入选",
+    "cluster_name": "日本央行 / 日本",
+    "cluster_id": "日本央行-日本-diplomacy-conflict",
+    "core_thesis": "日本央行 / 日本这条线真正值得写的，不是再复述热闹，而是去证明：事件叙事与长期秩序成本是否正在分化。",
+    "one_line_judgment": "日本央行 / 日本这条线真正值得写的，不是再复述热闹，而是去证明：事件叙事与长期秩序成本是否正在分化。",
+    "counterintuitive_angle": "事件叙事与长期秩序成本是否正在分化",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `1.0`，来源质量分 `1.35`。",
+    "reader_value": "适合 时政、宏观、国际关系读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "时政、宏观、国际关系读者。",
+    "proof_requirements": [
+      "先界定 日本央行、日本 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件叙事和秩序成本的传导链路。",
+      "给出下一步最值得跟踪的国家、机构和变量。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "日本央行-日本-diplomacy-conflict-e01",
+        "title": "日本央行顶不住了。 悄悄买入日本长债。 机构预计规模达到5000-8000亿日元。 也就是说，日本人在通过自我消耗来托市。 但是这样拖不了几天。 日元只会越来越",
+        "url": "https://m.weibo.cn/detail/5282165689420576",
+        "source_type": "微博",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "日本央行顶不住了。 悄悄买入日本长债。 机构预计规模达到5000-8000亿日元。 也就是说，日本人在通过自我消耗来托市。 但是这样拖不了几天。 日元只会越来越；热度=134"
+      }
+    ],
+    "missing_evidence": [
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少官方表态与关键时间线对照，需要补政策与外交原文。"
+    ],
+    "chart_needs": [
+      "事件时间线",
+      "参与方与影响路径图"
+    ],
+    "image_needs": [
+      "外交现场、地图、官方发布会"
+    ],
+    "video_needs": [
+      "新闻直播、发布会、现场素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "日本央行"
+    ],
+    "priority_news_queries": [
+      "日本央行 日本央行、日本表面在交易事件，真正被 latest news",
+      "日本 日本央行、日本表面在交易事件，真正被 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：事件叙事与长期秩序成本是否正在分化。",
+      "part_1": "先界定 日本央行、日本 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件叙事和秩序成本的传导链路。",
+      "part_3": "给出下一步最值得跟踪的国家、机构和变量。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.38,
+      "sharpness": 5.5,
+      "evidence": 8.27,
+      "longevity": 7.1,
+      "reader_value": 6.5,
+      "distinctiveness": 7.3,
+      "composite": 6.18
+    },
+    "cluster_quality_score": 29.16,
+    "topic_value_score": 6.18,
+    "distinctiveness_reason": "这题以 `日本、日本央行` 为主要观察对象，把焦点压在 `冲突与外交` 上；与其他母题相比，它的核心矛盾更集中。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少官方表态与关键时间线对照，需要补政策与外交原文。",
+    "article_use": "结构稿",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-日本央行-日本表面在交易事件-真正被重估的会不会是更长期的秩序成本-variant-日本这个题若换个切口-最值得盯的对象和证据会不会",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "日本-diplomacy-conflict::日本这个题若换个切口，最值得盯的对象和证据会不会完全不同？",
+      "upstream_ids": [
+        "intake-20260403104418-351",
+        "intake-20260403104418-353"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "日本-diplomacy-conflict",
+          "url": "",
+          "title": "日本这个题若换个切口，最值得盯的对象和证据会不会完全不同？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.626825+08:00",
+      "updated_at": "2026-04-03T10:50:37.626825+08:00"
+    },
+    "topic_id": "topic-日本央行-日本表面在交易事件-真正被重估的会不会是更长期的秩序成本-variant-日本这个题若换个切口-最值得盯的对象和证据会不会",
+    "mother_topic_id": "topic-日本央行-日本表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "topic_kind": "variant",
+    "angle_variant_of": "topic-日本央行-日本表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "title": "换个角度看日本：这题更该写成一篇解释稿，而不是继续追消息",
+    "source_status": "自然入选",
+    "cluster_name": "日本",
+    "cluster_id": "日本-diplomacy-conflict",
+    "core_thesis": "日本这条线真正值得写的，不是再复述热闹，而是去证明：事件叙事与长期秩序成本是否正在分化。",
+    "one_line_judgment": "日本这条线真正值得写的，不是再复述热闹，而是去证明：事件叙事与长期秩序成本是否正在分化。",
+    "counterintuitive_angle": "事件叙事与长期秩序成本是否正在分化",
+    "why_now": "当前样本 `2` 条，来源 `1` 类，时效分 `1.12`，来源质量分 `0.95`。",
+    "reader_value": "适合 时政、宏观、国际关系读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "时政、宏观、国际关系读者。",
+    "proof_requirements": [
+      "先界定 日本 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件叙事和秩序成本的传导链路。",
+      "给出下一步最值得跟踪的国家、机构和变量。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "日本-diplomacy-conflict-e01",
+        "title": "2026年日本又有士兵走丢：但是闯入老中使馆？",
+        "url": "https://www.bilibili.com/video/BV154QrBqEXG",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "2026年日本又有士兵走丢：但是闯入老中使馆？；score=36.89"
+      },
+      {
+        "evidence_id": "日本-diplomacy-conflict-e02",
+        "title": "一名自称为日本自卫队现役官员闯入我大使馆威胁杀人",
+        "url": "https://www.bilibili.com/video/BV17EQzBNEBB",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "一名自称为日本自卫队现役官员闯入我大使馆威胁杀人；score=36.6"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少官方表态与关键时间线对照，需要补政策与外交原文。"
+    ],
+    "chart_needs": [
+      "事件时间线",
+      "参与方与影响路径图"
+    ],
+    "image_needs": [
+      "外交现场、地图、官方发布会"
+    ],
+    "video_needs": [
+      "新闻直播、发布会、现场素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "日本 日本这个题若换个切口，最值得盯的对象 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：事件叙事与长期秩序成本是否正在分化。",
+      "part_1": "先界定 日本 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件叙事和秩序成本的传导链路。",
+      "part_3": "给出下一步最值得跟踪的国家、机构和变量。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.94,
+      "sharpness": 5.5,
+      "evidence": 7.44,
+      "longevity": 6.5,
+      "reader_value": 6.05,
+      "distinctiveness": 6.8,
+      "composite": 5.93
+    },
+    "cluster_quality_score": 23.474,
+    "topic_value_score": 5.93,
+    "distinctiveness_reason": "文章用途变成解释稿",
+    "why_not_duplicate_of": "它与母题共享同一大矛盾，但因为文章用途变成解释稿，所以保留为备选切口。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少官方表态与关键时间线对照，需要补政策与外交原文。",
+    "article_use": "解释稿",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-美联储-黄金这波波动背后-市场真正要重估的会不会是再通胀链条",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "美联储-黄金-policy-inflation-加息::美联储、黄金这波波动背后，市场真正要重估的会不会是再通胀链条？",
+      "upstream_ids": [
+        "intake-20260403104418-175"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "美联储-黄金-policy-inflation-加息",
+          "url": "",
+          "title": "美联储、黄金这波波动背后，市场真正要重估的会不会是再通胀链条？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.626915+08:00",
+      "updated_at": "2026-04-03T10:50:37.626915+08:00"
+    },
+    "topic_id": "topic-美联储-黄金这波波动背后-市场真正要重估的会不会是再通胀链条",
+    "mother_topic_id": "topic-美联储-黄金这波波动背后-市场真正要重估的会不会是再通胀链条",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "美联储、黄金这波波动背后，市场真正要重估的会不会是再通胀链条？",
+    "source_status": "自然入选",
+    "cluster_name": "美联储 / 黄金 / 加息",
+    "cluster_id": "美联储-黄金-policy-inflation-加息",
+    "core_thesis": "美联储 / 黄金 / 加息这条线真正值得写的，不是再复述热闹，而是去证明：主线会不会其实是再通胀。",
+    "one_line_judgment": "美联储 / 黄金 / 加息这条线真正值得写的，不是再复述热闹，而是去证明：主线会不会其实是再通胀。",
+    "counterintuitive_angle": "主线会不会其实是再通胀",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `1.0`，来源质量分 `1.35`。",
+    "reader_value": "适合 宏观资产配置、债券、基金读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "宏观资产配置、债券、基金读者。",
+    "proof_requirements": [
+      "先界定 美联储、黄金 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "说明 美联储、黄金 如何传导到通胀、利率或资产定价预期。",
+      "给出股债商品在不同情景下的分化边界。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "美联储-黄金-policy-inflation-加息-e01",
+        "title": "黄金今天又是大跌，纽约黄金一度跌了4个百分点。霍尔木兹海峡继续关下去，全球能源通胀形势会越来越严重，很多央行最后会不得不加息，包括美联储。 股票会好吗？我很怀疑",
+        "url": "https://m.weibo.cn/detail/5283349322270095",
+        "source_type": "微博",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "黄金今天又是大跌，纽约黄金一度跌了4个百分点。霍尔木兹海峡继续关下去，全球能源通胀形势会越来越严重，很多央行最后会不得不加息，包括美联储。 股票会好吗？我很怀疑；热度=61"
+      }
+    ],
+    "missing_evidence": [
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少通胀、利率或就业等硬数据，需要补可直接验证的序列。"
+    ],
+    "chart_needs": [
+      "通胀/利率/商品三联图",
+      "股债商品情景矩阵"
+    ],
+    "image_needs": [
+      "央行、交易员、财经屏幕"
+    ],
+    "video_needs": [
+      "议息会、交易大厅、财经新闻"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "美联储"
+    ],
+    "priority_news_queries": [
+      "美联储 美联储、黄金这波波动背后，市场真正要 latest news",
+      "黄金 美联储、黄金这波波动背后，市场真正要 latest news",
+      "加息 美联储、黄金这波波动背后，市场真正要 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：主线会不会其实是再通胀。",
+      "part_1": "先界定 美联储、黄金 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "说明 美联储、黄金 如何传导到通胀、利率或资产定价预期。",
+      "part_3": "给出股债商品在不同情景下的分化边界。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.38,
+      "sharpness": 6.75,
+      "evidence": 8.27,
+      "longevity": 7.6,
+      "reader_value": 7.35,
+      "distinctiveness": 7.3,
+      "composite": 6.65
+    },
+    "cluster_quality_score": 31.46,
+    "topic_value_score": 6.65,
+    "distinctiveness_reason": "这题以 `黄金、美联储` 为主要观察对象，把焦点压在 `政策与再通胀` 上；与其他母题相比，它的核心矛盾更集中。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少通胀、利率或就业等硬数据，需要补可直接验证的序列。",
+    "article_use": "判断稿",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-美联储-黄金这波波动背后-市场真正要重估的会不会是再通胀链条-variant-美联储-黄金这个题若换个切口-最值得盯的对象和证",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "美联储-黄金-risk-pricing-降息::美联储、黄金这个题若换个切口，最值得盯的对象和证据会不会完全不同？",
+      "upstream_ids": [
+        "intake-20260403104418-122"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "美联储-黄金-risk-pricing-降息",
+          "url": "",
+          "title": "美联储、黄金这个题若换个切口，最值得盯的对象和证据会不会完全不同？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.626962+08:00",
+      "updated_at": "2026-04-03T10:50:37.626962+08:00"
+    },
+    "topic_id": "topic-美联储-黄金这波波动背后-市场真正要重估的会不会是再通胀链条-variant-美联储-黄金这个题若换个切口-最值得盯的对象和证",
+    "mother_topic_id": "topic-美联储-黄金这波波动背后-市场真正要重估的会不会是再通胀链条",
+    "topic_kind": "variant",
+    "angle_variant_of": "topic-美联储-黄金这波波动背后-市场真正要重估的会不会是再通胀链条",
+    "title": "美联储、黄金这条线索如果换个变量看，真正应该补的是哪组证据？",
+    "source_status": "自然入选",
+    "cluster_name": "美联储 / 黄金 / 降息",
+    "cluster_id": "美联储-黄金-risk-pricing-降息",
+    "core_thesis": "美联储 / 黄金 / 降息这条线真正值得写的，不是再复述热闹，而是去证明：表面事件和真实定价链条是否正在背离。",
+    "one_line_judgment": "美联储 / 黄金 / 降息这条线真正值得写的，不是再复述热闹，而是去证明：表面事件和真实定价链条是否正在背离。",
+    "counterintuitive_angle": "表面事件和真实定价链条是否正在背离",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `1.0`，来源质量分 `0.95`。",
+    "reader_value": "适合 宏观、商品、基金配置读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "宏观、商品、基金配置读者。",
+    "proof_requirements": [
+      "先界定 美联储、黄金 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "给出哪些资产还在联动，哪些已经先一步分化。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "美联储-黄金-risk-pricing-降息-e01",
+        "title": "#黄金又突然暴涨# 伦敦金现一举冲破4660美元/盎司，国内金价也同步飙至1035元/克。美联储鸽派信号点燃降息预期，美元与美债收益率双跌，黄金持有成本骤降。叠",
+        "url": "https://m.weibo.cn/detail/5282790522227762",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "#黄金又突然暴涨# 伦敦金现一举冲破4660美元/盎司，国内金价也同步飙至1035元/克。美联储鸽派信号点燃降息预期，美元与美债收益率双跌，黄金持有成本骤降。叠；热度=36"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。"
+    ],
+    "chart_needs": [
+      "价格与利率联动图",
+      "事件时间线与市场反应对照图"
+    ],
+    "image_needs": [
+      "交易屏、商品、外交现场"
+    ],
+    "video_needs": [
+      "新闻直播、交易画面、场景素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "美联储"
+    ],
+    "priority_news_queries": [
+      "美联储 美联储、黄金这个题若换个切口，最值得 latest news",
+      "黄金 美联储、黄金这个题若换个切口，最值得 latest news",
+      "降息 美联储、黄金这个题若换个切口，最值得 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：表面事件和真实定价链条是否正在背离。",
+      "part_1": "先界定 美联储、黄金 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "part_3": "给出哪些资产还在联动，哪些已经先一步分化。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.38,
+      "sharpness": 6.75,
+      "evidence": 6.99,
+      "longevity": 7.6,
+      "reader_value": 6.95,
+      "distinctiveness": 6.8,
+      "composite": 6.3
+    },
+    "cluster_quality_score": 28.82,
+    "topic_value_score": 6.3,
+    "distinctiveness_reason": "观察对象不同；论证主变量不同",
+    "why_not_duplicate_of": "它与母题共享同一大矛盾，但因为观察对象不同、论证主变量不同，所以保留为备选切口。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。",
+    "article_use": "判断稿",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-原油这轮热闹背后-真正值得追的结构变量到底是什么",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "原油-market-sentiment::原油这轮热闹背后，真正值得追的结构变量到底是什么？",
+      "upstream_ids": [
+        "intake-20260403104418-364"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "原油-market-sentiment",
+          "url": "",
+          "title": "原油这轮热闹背后，真正值得追的结构变量到底是什么？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.626987+08:00",
+      "updated_at": "2026-04-03T10:50:37.626987+08:00"
+    },
+    "topic_id": "topic-原油这轮热闹背后-真正值得追的结构变量到底是什么",
+    "mother_topic_id": "topic-原油这轮热闹背后-真正值得追的结构变量到底是什么",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "原油这轮热闹背后，真正值得追的结构变量到底是什么？",
+    "source_status": "自然入选",
+    "cluster_name": "原油",
+    "cluster_id": "原油-market-sentiment",
+    "core_thesis": "原油这条线真正值得写的，不是再复述热闹，而是去证明：情绪波动背后到底是哪条结构变量在动。",
+    "one_line_judgment": "原油这条线真正值得写的，不是再复述热闹，而是去证明：情绪波动背后到底是哪条结构变量在动。",
+    "counterintuitive_angle": "情绪波动背后到底是哪条结构变量在动",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `1.4`，来源质量分 `0.8`。",
+    "reader_value": "适合 市场观察型、基金和股票读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "市场观察型、基金和股票读者。",
+    "proof_requirements": [
+      "先界定 原油 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "解释哪些指标支持当前判断，哪些只是表面热闹。",
+      "给出继续跟踪时最有用的判断框架。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "原油-market-sentiment-e01",
+        "title": "霍尔木兹海峡主导市场情绪，WTI原油一度飙升15%，标普、纳指惊险收涨",
+        "url": "https://wallstreetcn.com/articles/3769052",
+        "source_type": "聚合新闻",
+        "source_tier": "personal_opinion",
+        "evidence_type": "article_link",
+        "note": "霍尔木兹海峡主导市场情绪，WTI原油一度飙升15%，标普、纳指惊险收涨；来自 reports 最新 report 外链"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。"
+    ],
+    "chart_needs": [
+      "情绪与价格对照图",
+      "结构变量趋势图"
+    ],
+    "image_needs": [
+      "市场屏幕、投资者场景"
+    ],
+    "video_needs": [
+      "市场新闻、交易画面、街访场景"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "原油 原油这轮热闹背后，真正值得追的结构变 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：情绪波动背后到底是哪条结构变量在动。",
+      "part_1": "先界定 原油 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "解释哪些指标支持当前判断，哪些只是表面热闹。",
+      "part_3": "给出继续跟踪时最有用的判断框架。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 6.46,
+      "sharpness": 5.5,
+      "evidence": 6.51,
+      "longevity": 6.5,
+      "reader_value": 6.05,
+      "distinctiveness": 7.3,
+      "composite": 6.28
+    },
+    "cluster_quality_score": 24.98,
+    "topic_value_score": 6.28,
+    "distinctiveness_reason": "这题以 `原油` 为主要观察对象，把焦点压在 `市场情绪` 上；与其他母题相比，它的核心矛盾更集中。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 1.0,
+      "coverage_text": "TrendRadar 覆盖 `100%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。",
+    "article_use": "判断稿",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-ai-关税这轮热闹背后-真正值得追的结构变量到底是什么",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "ai-关税-market-sentiment::AI、关税这轮热闹背后，真正值得追的结构变量到底是什么？",
+      "upstream_ids": [
+        "intake-20260403104418-272"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "ai-关税-market-sentiment",
+          "url": "",
+          "title": "AI、关税这轮热闹背后，真正值得追的结构变量到底是什么？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.627008+08:00",
+      "updated_at": "2026-04-03T10:50:37.627008+08:00"
+    },
+    "topic_id": "topic-ai-关税这轮热闹背后-真正值得追的结构变量到底是什么",
+    "mother_topic_id": "topic-ai-关税这轮热闹背后-真正值得追的结构变量到底是什么",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "AI、关税这轮热闹背后，真正值得追的结构变量到底是什么？",
+    "source_status": "自然入选",
+    "cluster_name": "AI / 关税",
+    "cluster_id": "ai-关税-market-sentiment",
+    "core_thesis": "AI / 关税这条线真正值得写的，不是再复述热闹，而是去证明：情绪波动背后到底是哪条结构变量在动。",
+    "one_line_judgment": "AI / 关税这条线真正值得写的，不是再复述热闹，而是去证明：情绪波动背后到底是哪条结构变量在动。",
+    "counterintuitive_angle": "情绪波动背后到底是哪条结构变量在动",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `0.98`，来源质量分 `0.95`。",
+    "reader_value": "适合 市场观察型、基金和股票读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "市场观察型、基金和股票读者。",
+    "proof_requirements": [
+      "先界定 AI、关税 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "解释哪些指标支持当前判断，哪些只是表面热闹。",
+      "给出继续跟踪时最有用的判断框架。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "ai-关税-market-sentiment-e01",
+        "title": "一文深度解析【年末经济】关税博弈×AI泡沫×联储迷阵，你的钱袋子该如何布防？\n #唐子棋  #经济分析  #燃起来了大国重器  #财经  #国际局势",
+        "url": "https://www.douyin.com/video/7582133726763601161",
+        "source_type": "抖音",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "一文深度解析【年末经济】关税博弈×AI泡沫×联储迷阵，你的钱袋子该如何布防？ #唐子棋 #经济分析 #燃起来了大国重器 #财经 #国际局势；热度=14324"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。"
+    ],
+    "chart_needs": [
+      "情绪与价格对照图",
+      "结构变量趋势图"
+    ],
+    "image_needs": [
+      "市场屏幕、投资者场景"
+    ],
+    "video_needs": [
+      "市场新闻、交易画面、街访场景"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "AI AI、关税这轮热闹背后，真正值得追的 latest news",
+      "关税 AI、关税这轮热闹背后，真正值得追的 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：情绪波动背后到底是哪条结构变量在动。",
+      "part_1": "先界定 AI、关税 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "解释哪些指标支持当前判断，哪些只是表面热闹。",
+      "part_3": "给出继续跟踪时最有用的判断框架。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.32,
+      "sharpness": 5.5,
+      "evidence": 6.99,
+      "longevity": 6.5,
+      "reader_value": 6.5,
+      "distinctiveness": 7.3,
+      "composite": 5.81
+    },
+    "cluster_quality_score": 26.424,
+    "topic_value_score": 5.81,
+    "distinctiveness_reason": "这题以 `AI、关税` 为主要观察对象，把焦点压在 `市场情绪` 上；与其他母题相比，它的核心矛盾更集中。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。",
+    "article_use": "判断稿",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-ai-关税这轮热闹背后-真正值得追的结构变量到底是什么-variant-ai这个题若换个切口-最值得盯的对象和证据会不会",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "ai-risk-pricing::AI这个题若换个切口，最值得盯的对象和证据会不会完全不同？",
+      "upstream_ids": [
+        "intake-20260403104418-267"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "ai-risk-pricing",
+          "url": "",
+          "title": "AI这个题若换个切口，最值得盯的对象和证据会不会完全不同？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.627031+08:00",
+      "updated_at": "2026-04-03T10:50:37.627031+08:00"
+    },
+    "topic_id": "topic-ai-关税这轮热闹背后-真正值得追的结构变量到底是什么-variant-ai这个题若换个切口-最值得盯的对象和证据会不会",
+    "mother_topic_id": "topic-ai-关税这轮热闹背后-真正值得追的结构变量到底是什么",
+    "topic_kind": "variant",
+    "angle_variant_of": "topic-ai-关税这轮热闹背后-真正值得追的结构变量到底是什么",
+    "title": "AI这条线索如果换个变量看，真正应该补的是哪组证据？",
+    "source_status": "自然入选",
+    "cluster_name": "AI",
+    "cluster_id": "ai-risk-pricing",
+    "core_thesis": "AI这条线真正值得写的，不是再复述热闹，而是去证明：表面事件和真实定价链条是否正在背离。",
+    "one_line_judgment": "AI这条线真正值得写的，不是再复述热闹，而是去证明：表面事件和真实定价链条是否正在背离。",
+    "counterintuitive_angle": "表面事件和真实定价链条是否正在背离",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `0.98`，来源质量分 `0.95`。",
+    "reader_value": "适合 宏观、商品、基金配置读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "宏观、商品、基金配置读者。",
+    "proof_requirements": [
+      "先界定 AI 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "给出哪些资产还在联动，哪些已经先一步分化。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "ai-risk-pricing-e01",
+        "title": "我们都被“经验”骗了多久？警惕你身边的“黑天鹅”信号！ 多少人困在“稳定”的假象里？10分钟带你读懂《黑天鹅》，看清那些“看不见”的风险。#黑天鹅  #塔勒布 #认知 #反脆弱  #读书 #好书分享  #人生哲理 #深度思考 #认知升级 #30岁程序员失业焦虑 #AI失业危机 #房贷压垮打工人 #稳定工作都是骗局 #70%工作将被AI取代 #黑天鹅事件  #年猪陷阱 #确定性幻觉 #反脆弱生存 #归纳法陷阱 #叙事谬误 #认知谦卑 #打破信息茧房 #拥抱不确定性#AI 时代生存法则",
+        "url": "https://www.douyin.com/video/7506975276304207144",
+        "source_type": "抖音",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "我们都被“经验”骗了多久？警惕你身边的“黑天鹅”信号！ 多少人困在“稳定”的假象里？10分钟带你读懂《黑天鹅》，看清那些“看不见”的风险。#黑天鹅 #塔勒布 #认知 #反脆弱 #读书 #好书分享 #人生哲理 #深度思考 #认知升级 #30岁程序员失业焦虑 #AI失业危机 #房贷压垮打工人 #稳定工作都是骗局 #70%工作将被AI取代 #黑天鹅事件 #年猪陷阱 #确定性幻觉 #反脆弱生存 #归纳法陷阱 #叙事谬误 #认知谦卑 #打破信息茧房 #拥抱不确定性#AI 时代生存法则；热度=10536"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。"
+    ],
+    "chart_needs": [
+      "价格与利率联动图",
+      "事件时间线与市场反应对照图"
+    ],
+    "image_needs": [
+      "交易屏、商品、外交现场"
+    ],
+    "video_needs": [
+      "新闻直播、交易画面、场景素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "AI AI这个题若换个切口，最值得盯的对象 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：表面事件和真实定价链条是否正在背离。",
+      "part_1": "先界定 AI 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "part_3": "给出哪些资产还在联动，哪些已经先一步分化。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.32,
+      "sharpness": 6.2,
+      "evidence": 6.99,
+      "longevity": 6.5,
+      "reader_value": 6.05,
+      "distinctiveness": 6.8,
+      "composite": 5.87
+    },
+    "cluster_quality_score": 22.382,
+    "topic_value_score": 5.87,
+    "distinctiveness_reason": "论证主变量不同",
+    "why_not_duplicate_of": "它与母题共享同一大矛盾，但因为论证主变量不同，所以保留为备选切口。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。",
+    "article_use": "判断稿",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-贵金属反复波动背后-风险溢价到底在重估什么",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "贵金属-risk-pricing::贵金属反复波动背后，风险溢价到底在重估什么？",
+      "upstream_ids": [
+        "intake-20260403104418-189",
+        "intake-20260403104418-310"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "贵金属-risk-pricing",
+          "url": "",
+          "title": "贵金属反复波动背后，风险溢价到底在重估什么？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.627051+08:00",
+      "updated_at": "2026-04-03T10:50:37.627051+08:00"
+    },
+    "topic_id": "topic-贵金属反复波动背后-风险溢价到底在重估什么",
+    "mother_topic_id": "topic-贵金属反复波动背后-风险溢价到底在重估什么",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "贵金属反复波动背后，风险溢价到底在重估什么？",
+    "source_status": "自然入选",
+    "cluster_name": "贵金属",
+    "cluster_id": "贵金属-risk-pricing",
+    "core_thesis": "贵金属这条线真正值得写的，不是再复述热闹，而是去证明：表面事件和真实定价链条是否正在背离。",
+    "one_line_judgment": "贵金属这条线真正值得写的，不是再复述热闹，而是去证明：表面事件和真实定价链条是否正在背离。",
+    "counterintuitive_angle": "表面事件和真实定价链条是否正在背离",
+    "why_now": "当前样本 `2` 条，来源 `2` 类，时效分 `1.0`，来源质量分 `0.95`。",
+    "reader_value": "适合 宏观、商品、基金配置读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "宏观、商品、基金配置读者。",
+    "proof_requirements": [
+      "先界定 贵金属 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "给出哪些资产还在联动，哪些已经先一步分化。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "贵金属-risk-pricing-e01",
+        "title": "今年贵金属也变成了风险资产，确实少见。 ​",
+        "url": "https://m.weibo.cn/detail/5283297946241594",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "今年贵金属也变成了风险资产，确实少见。 ​；热度=132"
+      },
+      {
+        "evidence_id": "贵金属-risk-pricing-e02",
+        "title": "【宏观推演3月Plus】贵金属避险属性消失，当心A股信念崩塌",
+        "url": "https://www.bilibili.com/video/BV18aXpB5EFc",
+        "source_type": "B站",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "【宏观推演3月Plus】贵金属避险属性消失，当心A股信念崩塌；热度=727"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。"
+    ],
+    "chart_needs": [
+      "价格与利率联动图",
+      "事件时间线与市场反应对照图"
+    ],
+    "image_needs": [
+      "交易屏、商品、外交现场"
+    ],
+    "video_needs": [
+      "新闻直播、交易画面、场景素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "贵金属 贵金属反复波动背后，风险溢价到底在重 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：表面事件和真实定价链条是否正在背离。",
+      "part_1": "先界定 贵金属 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "part_3": "给出哪些资产还在联动，哪些已经先一步分化。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.56,
+      "sharpness": 6.2,
+      "evidence": 7.44,
+      "longevity": 7.6,
+      "reader_value": 6.05,
+      "distinctiveness": 7.3,
+      "composite": 6.24
+    },
+    "cluster_quality_score": 23.548,
+    "topic_value_score": 6.24,
+    "distinctiveness_reason": "这题以 `贵金属` 为主要观察对象，把焦点压在 `风险溢价` 上；与其他母题相比，它的核心矛盾更集中。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。",
+    "article_use": "判断稿",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-观察这轮热闹背后-真正值得追的结构变量到底是什么",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "观察-market-sentiment::观察这轮热闹背后，真正值得追的结构变量到底是什么？",
+      "upstream_ids": [
+        "intake-20260403104418-115",
+        "intake-20260403104418-001",
+        "intake-20260403104418-151",
+        "intake-20260403104418-152"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "观察-market-sentiment",
+          "url": "",
+          "title": "观察这轮热闹背后，真正值得追的结构变量到底是什么？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.627157+08:00",
+      "updated_at": "2026-04-03T10:50:37.627157+08:00"
+    },
+    "topic_id": "topic-观察这轮热闹背后-真正值得追的结构变量到底是什么",
+    "mother_topic_id": "topic-观察这轮热闹背后-真正值得追的结构变量到底是什么",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "观察这轮热闹背后，真正值得追的结构变量到底是什么？",
+    "source_status": "自然入选",
+    "cluster_name": "观察",
+    "cluster_id": "观察-market-sentiment",
+    "core_thesis": "观察这条线真正值得写的，不是再复述热闹，而是去证明：情绪波动背后到底是哪条结构变量在动。",
+    "one_line_judgment": "观察这条线真正值得写的，不是再复述热闹，而是去证明：情绪波动背后到底是哪条结构变量在动。",
+    "counterintuitive_angle": "情绪波动背后到底是哪条结构变量在动",
+    "why_now": "当前样本 `14` 条，来源 `5` 类，时效分 `1.0`，来源质量分 `0.95`。",
+    "reader_value": "适合 市场观察型、基金和股票读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "市场观察型、基金和股票读者。",
+    "proof_requirements": [
+      "先界定 观察 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "解释哪些指标支持当前判断，哪些只是表面热闹。",
+      "给出继续跟踪时最有用的判断框架。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "观察-market-sentiment-e01",
+        "title": "市场情绪如同惊弓之鸟 ​",
+        "url": "https://m.weibo.cn/detail/5283198508729485",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "市场情绪如同惊弓之鸟 ​；热度=67"
+      },
+      {
+        "evidence_id": "观察-market-sentiment-e02",
+        "title": "📊 Evening Market Summary\n\nBTC: $70,931 (🟢 0.32%)\nETH: $2,162 (🟢 0.92%)\n\nMarket i",
+        "url": "https://x.com/smfuns/status/2036427999000797367",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "📊 Evening Market Summary BTC: $70,931 (🟢 0.32%) ETH: $2,162 (🟢 0.92%) Market i；热度=1"
+      },
+      {
+        "evidence_id": "观察-market-sentiment-e03",
+        "title": "美股期货也小幅跳水 ​",
+        "url": "https://m.weibo.cn/detail/5283181733613173",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "美股期货也小幅跳水 ​；热度=1232"
+      },
+      {
+        "evidence_id": "观察-market-sentiment-e04",
+        "title": "韧性强的还是美股，我们软骨头太多了 ​",
+        "url": "https://m.weibo.cn/detail/5283377112680038",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "韧性强的还是美股，我们软骨头太多了 ​；热度=847"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。"
+    ],
+    "chart_needs": [
+      "情绪与价格对照图",
+      "结构变量趋势图"
+    ],
+    "image_needs": [
+      "市场屏幕、投资者场景"
+    ],
+    "video_needs": [
+      "市场新闻、交易画面、街访场景"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "表舅是养基大户 观察这轮热闹背后，真正值得追的结构变 latest news",
+      "定向样本 观察这轮热闹背后，真正值得追的结构变 latest news",
+      "evening 观察这轮热闹背后，真正值得追的结构变 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：情绪波动背后到底是哪条结构变量在动。",
+      "part_1": "先界定 观察 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "解释哪些指标支持当前判断，哪些只是表面热闹。",
+      "part_3": "给出继续跟踪时最有用的判断框架。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 5.72,
+      "sharpness": 5.5,
+      "evidence": 9.24,
+      "longevity": 6.5,
+      "reader_value": 6.05,
+      "distinctiveness": 7.3,
+      "composite": 6.68
+    },
+    "cluster_quality_score": 23.505,
+    "topic_value_score": 6.68,
+    "distinctiveness_reason": "这题以 `观察` 为主要观察对象，把焦点压在 `市场情绪` 上；与其他母题相比，它的核心矛盾更集中。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。",
+    "article_use": "判断稿",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-中东表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "中东-diplomacy-conflict-反弹::中东表面在交易事件，真正被重估的会不会是更长期的秩序成本？",
+      "upstream_ids": [
+        "intake-20260403104418-147"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "中东-diplomacy-conflict-反弹",
+          "url": "",
+          "title": "中东表面在交易事件，真正被重估的会不会是更长期的秩序成本？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.627237+08:00",
+      "updated_at": "2026-04-03T10:50:37.627237+08:00"
+    },
+    "topic_id": "topic-中东表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "mother_topic_id": "topic-中东表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "中东表面在交易事件，真正被重估的会不会是更长期的秩序成本？",
+    "source_status": "自然入选",
+    "cluster_name": "中东 / 反弹",
+    "cluster_id": "中东-diplomacy-conflict-反弹",
+    "core_thesis": "中东 / 反弹这条线真正值得写的，不是再复述热闹，而是去证明：事件叙事与长期秩序成本是否正在分化。",
+    "one_line_judgment": "中东 / 反弹这条线真正值得写的，不是再复述热闹，而是去证明：事件叙事与长期秩序成本是否正在分化。",
+    "counterintuitive_angle": "事件叙事与长期秩序成本是否正在分化",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `1.0`，来源质量分 `0.95`。",
+    "reader_value": "适合 时政、宏观、国际关系读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "时政、宏观、国际关系读者。",
+    "proof_requirements": [
+      "先界定 中东 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件叙事和秩序成本的传导链路。",
+      "给出下一步最值得跟踪的国家、机构和变量。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "中东-diplomacy-conflict-反弹-e01",
+        "title": "美股连续第二天反弹，力度有所减弱，还是得看中东局势有无实质性变化。 ​",
+        "url": "https://m.weibo.cn/detail/5283147874566292",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "美股连续第二天反弹，力度有所减弱，还是得看中东局势有无实质性变化。 ​；热度=1348"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少官方表态与关键时间线对照，需要补政策与外交原文。"
+    ],
+    "chart_needs": [
+      "事件时间线",
+      "参与方与影响路径图"
+    ],
+    "image_needs": [
+      "外交现场、地图、官方发布会"
+    ],
+    "video_needs": [
+      "新闻直播、发布会、现场素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "中东 中东表面在交易事件，真正被重估的会不 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：事件叙事与长期秩序成本是否正在分化。",
+      "part_1": "先界定 中东 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件叙事和秩序成本的传导链路。",
+      "part_3": "给出下一步最值得跟踪的国家、机构和变量。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.38,
+      "sharpness": 6.05,
+      "evidence": 6.99,
+      "longevity": 8.7,
+      "reader_value": 6.05,
+      "distinctiveness": 7.3,
+      "composite": 6.28
+    },
+    "cluster_quality_score": 22.878,
+    "topic_value_score": 6.28,
+    "distinctiveness_reason": "这题以 `中东` 为主要观察对象，把焦点压在 `冲突与外交` 上；与其他母题相比，它的核心矛盾更集中。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少官方表态与关键时间线对照，需要补政策与外交原文。",
+    "article_use": "解释稿",
+    "extendability": "可延展成系列稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_104418:topic-油价-铜反复波动背后-风险溢价到底在重估什么",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_104418",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "油价-铜-risk-pricing::油价、铜反复波动背后，风险溢价到底在重估什么？",
+      "upstream_ids": [
+        "intake-20260403104418-125"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "油价-铜-risk-pricing",
+          "url": "",
+          "title": "油价、铜反复波动背后，风险溢价到底在重估什么？"
+        }
+      ],
+      "created_at": "2026-04-03T10:50:37.627258+08:00",
+      "updated_at": "2026-04-03T10:50:37.627258+08:00"
+    },
+    "topic_id": "topic-油价-铜反复波动背后-风险溢价到底在重估什么",
+    "mother_topic_id": "topic-油价-铜反复波动背后-风险溢价到底在重估什么",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "油价、铜反复波动背后，风险溢价到底在重估什么？",
+    "source_status": "自然入选",
+    "cluster_name": "油价 / 铜",
+    "cluster_id": "油价-铜-risk-pricing",
+    "core_thesis": "油价 / 铜这条线真正值得写的，不是再复述热闹，而是去证明：表面事件和真实定价链条是否正在背离。",
+    "one_line_judgment": "油价 / 铜这条线真正值得写的，不是再复述热闹，而是去证明：表面事件和真实定价链条是否正在背离。",
+    "counterintuitive_angle": "表面事件和真实定价链条是否正在背离",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `1.0`，来源质量分 `0.95`。",
+    "reader_value": "适合 宏观、商品、基金配置读者。，重点是把题从消息堆里抽成可判断的结构。",
+    "audience": "宏观、商品、基金配置读者。",
+    "proof_requirements": [
+      "先界定 油价、铜 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "给出哪些资产还在联动，哪些已经先一步分化。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "油价-铜-risk-pricing-e01",
+        "title": "茅庐锦囊（26年3月15日直播） 1. 避险： 1. 短期：有色，包括铜，黄线只等一根儿，比如某铜，如果破了的话，短期该收就收了。有色短期承压，是因为石油价格高",
+        "url": "https://m.weibo.cn/detail/5277042213389173",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "茅庐锦囊（26年3月15日直播） 1. 避险： 1. 短期：有色，包括铜，黄线只等一根儿，比如某铜，如果破了的话，短期该收就收了。有色短期承压，是因为石油价格高；热度=289"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。"
+    ],
+    "chart_needs": [
+      "价格与利率联动图",
+      "事件时间线与市场反应对照图"
+    ],
+    "image_needs": [
+      "交易屏、商品、外交现场"
+    ],
+    "video_needs": [
+      "新闻直播、交易画面、场景素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "油价 油价、铜反复波动背后，风险溢价到底在 latest news",
+      "铜 油价、铜反复波动背后，风险溢价到底在 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：表面事件和真实定价链条是否正在背离。",
+      "part_1": "先界定 油价、铜 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "part_3": "给出哪些资产还在联动，哪些已经先一步分化。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.38,
+      "sharpness": 6.2,
+      "evidence": 6.99,
+      "longevity": 6.5,
+      "reader_value": 6.5,
+      "distinctiveness": 7.3,
+      "composite": 5.97
+    },
+    "cluster_quality_score": 22.678,
+    "topic_value_score": 5.97,
+    "distinctiveness_reason": "这题以 `油价、铜` 为主要观察对象，把焦点压在 `风险溢价` 上；与其他母题相比，它的核心矛盾更集中。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。",
+    "article_use": "判断稿",
+    "extendability": "更适合单篇深稿"
+  }
+]

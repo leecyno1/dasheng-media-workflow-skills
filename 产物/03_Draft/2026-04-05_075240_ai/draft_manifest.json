@@ -1,0 +1,52 @@
+{
+  "run_id": "2026-04-05_075240_ai",
+  "generated_at": "2026-04-05T09:30:00+08:00",
+  "stage": "draft",
+  "object_type": "Run",
+  "execution_model": "ai_framework_driven",
+  "input_source": "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-05_075240_ai",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-05_075240_ai",
+  "generation_method": "ai_framework_driven",
+  "drafts": [
+    {
+      "topic_id": "topic-ai-ma-boom-q1-2026",
+      "title": "1.2万亿美元AI并购狂潮：Q1 2026企业巨头如何重塑全球产业版图",
+      "framework": "热点解读型（Hot-topic）",
+      "strategy": "角度发现（Angle Discovery）",
+      "file": "topic-ai-ma-boom-q1-2026_draft.md",
+      "word_count": 4850,
+      "sections": 5,
+      "citations": 5,
+      "status": "completed"
+    },
+    {
+      "topic_id": "topic-china-15th-five-year-plan-2026",
+      "title": "中国十五五规划开局：4.5%-5%增长目标背后的结构性转型信号",
+      "framework": "热点解读型（Hot-topic）",
+      "strategy": "密度强化（Density Boost）",
+      "file": "topic-china-15th-five-year-plan-2026_draft.md",
+      "word_count": 5200,
+      "sections": 5,
+      "citations": 7,
+      "status": "completed"
+    }
+  ],
+  "quality_metrics": {
+    "avg_word_count": 5025,
+    "total_citations": 12,
+    "framework_compliance": "100%",
+    "strategy_application": "100%"
+  },
+  "artifacts": [
+    "topic-ai-ma-boom-q1-2026_draft.md",
+    "topic-china-15th-five-year-plan-2026_draft.md",
+    "draft_manifest.json"
+  ],
+  "gate_status": "completed",
+  "next_stage": "material",
+  "next_stage_requirements": [
+    "为每篇draft准备素材包（图表、图片、视频）",
+    "使用 dasheng-stage-material-refill 生成素材",
+    "确保素材与draft内容匹配"
+  ]
+}

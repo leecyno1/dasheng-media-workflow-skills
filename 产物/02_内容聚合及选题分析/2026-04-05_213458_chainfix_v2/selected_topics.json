@@ -1,0 +1,114 @@
+{
+  "run_id": "2026-04-05_170457_chainfix_v2",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "没有 selected_topics 或未批准状态，不允许进入下游阶段。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "T1",
+      "title": "鲍威尔讲话促使市场预期从加息转向降息，短期内美股反弹但长期通胀走势存不确定性",
+      "topic_kind": "independent",
+      "mother_topic_id": "T1",
+      "angle_variant_of": null,
+      "article_use": "宏观经济政策解读、资本市场策略分析、通胀与油价联动专题。",
+      "core_proposition": "美联储主席鲍威尔讲话中通胀压力减弱和人工智能推动经济增长的信号，导致市场交易员快速从加息预期转向降息预期，推动美股短期反弹，但中东油价波动可能引发新的通胀风险，令货币政策前景复杂化。",
+      "one_line_judgment": "鲍威尔最新表态解除加息预期，市场迅速调整押注降息，短期刺激股市反弹，但油价与通胀压力仍可能影响后续货币政策。"
+    },
+    {
+      "topic_id": "T2",
+      "title": "俄罗斯拒绝向日本等“不友好国家”供应能源，能源外交成为地缘政治新焦点",
+      "topic_kind": "independent",
+      "mother_topic_id": "T2",
+      "angle_variant_of": null,
+      "article_use": "地缘政治分析、能源安全专题、国际关系深度报道。",
+      "core_proposition": "在中东冲突激化及国际制裁背景下，俄罗斯通过拒绝对“非友好国家”供应能源，将能源作为外交与战略博弈的核心手段，影响全球供应链稳定与国际关系。",
+      "one_line_judgment": "俄罗斯明确限制对日本等国的能源供应，能源出口被用作战略武器，导致区域及全球能源安全格局紧张。"
+    },
+    {
+      "topic_id": "T3",
+      "title": "中东冲突引发油价剧烈波动，加剧全球输入性通胀压力与美联储货币政策难题",
+      "topic_kind": "independent",
+      "mother_topic_id": "T3",
+      "angle_variant_of": null,
+      "article_use": "宏观经济与能源市场分析、通胀专题、货币政策展望。",
+      "core_proposition": "中东地区持续的军事冲突导致油价急剧波动，推高全球原材料和消费品价格，引发输入性通胀压力，美联储在此背景下需平衡通胀控制与经济增长，货币政策不确定性增加。",
+      "one_line_judgment": "伊朗战争及美以冲突推动油价大幅波动，能源成本上涨传导至全球通胀，令美联储降息预期与市场波动交织，货币政策面临复杂挑战。"
+    },
+    {
+      "topic_id": "T4",
+      "title": "伊朗控制霍尔木兹海峡构筑实质性战略威慑，停火谈判陷入僵局加剧全球能源安全风险",
+      "topic_kind": "independent",
+      "mother_topic_id": "T4",
+      "angle_variant_of": null,
+      "article_use": "国际安全分析、能源战略专题、地缘政治风险评估。",
+      "core_proposition": "随着伊朗拒绝与美方停火谈判并掌控霍尔木兹海峡，国际社会面临能源运输受阻风险，地缘政治紧张局势升级，能源安全问题成为全球战略焦点。",
+      "one_line_judgment": "伊朗对霍尔木兹海峡的控制被视为其战略核威慑核心，美国及国际停火斡旋受阻，全球能源供应安全面临严重威胁。"
+    },
+    {
+      "topic_id": "T5",
+      "title": "美以军事行动未达预期，激活中东“抵抗之弧”，以色列遭遇史上最大规模导弹袭击",
+      "topic_kind": "independent",
+      "mother_topic_id": "T5",
+      "angle_variant_of": null,
+      "article_use": "军事冲突分析、中东安全研究、国际战略评估。",
+      "core_proposition": "美以针对伊朗的军事行动未能快速达成战略目标，激发了包括胡塞武装和真主党在内的“抵抗之弧”，以色列面临史无前例的导弹袭击，地区冲突升级。",
+      "one_line_judgment": "美以联军对伊朗的多次军事打击未能有效压制，反而激活了多方抵抗力量，加剧中东安全复杂性与不确定性。"
+    },
+    {
+      "topic_id": "T6",
+      "title": "中国散户逆势大规模买入，反映资本市场风险偏好重构与结构性机会窗口开启",
+      "topic_kind": "independent",
+      "mother_topic_id": "T6",
+      "angle_variant_of": null,
+      "article_use": "市场行为分析、投资者情绪研究、资本市场结构变迁专题。",
+      "core_proposition": "在市场波动加剧背景下，中国散户表现出逆势买入行为，显示风险偏好重构，预示资本市场可能进入结构性机会阶段，影响短期市场供需和价格走势。",
+      "one_line_judgment": "3月以来中国散户净买入超1.25万亿，表明投资者对市场回调持信心，可能带动市场供需结构与价格走势的深刻调整。"
+    },
+    {
+      "topic_id": "T7",
+      "title": "美联储降息预期引发贵金属投资热潮，黄金白银价格面临新一轮结构性上涨压力",
+      "topic_kind": "independent",
+      "mother_topic_id": "T7",
+      "angle_variant_of": null,
+      "article_use": "贵金属市场分析、宏观资金流动研究、投资策略指导。",
+      "core_proposition": "美联储潜在的降息政策激励资金避险需求增强，投资者加大对黄金和白银的配置力度，带来贵金属市场的价格波动和结构性上涨压力，影响全球资产配置格局。",
+      "one_line_judgment": "随着降息预期升温，资金从美元流出转向贵金属市场，推动黄金和白银价格上涨，成为宏观资金配置的重要风向标。"
+    },
+    {
+      "topic_id": "T8",
+      "title": "中俄对日本战略压力升级，间谍清理与战犯重新列名加剧区域安全紧张",
+      "topic_kind": "independent",
+      "mother_topic_id": "T8",
+      "angle_variant_of": null,
+      "article_use": "国际安全分析、东亚地缘政治专题、外交关系动态报道。",
+      "core_proposition": "近期中俄针对日本的安全措施和外交动作频繁，反映三国间关系恶化和战略对抗加剧，可能影响区域安全环境和外交关系正常化进程。",
+      "one_line_judgment": "中国清理长期部署的日本间谍，俄罗斯重新将28名日本人列为战犯，显示中俄对日本的安全与外交压力显著提升，区域紧张态势加剧。"
+    },
+    {
+      "topic_id": "T9",
+      "title": "国务院强化数字经济平台监管，推动合规与市场秩序深度整顿",
+      "topic_kind": "independent",
+      "mother_topic_id": "T9",
+      "angle_variant_of": null,
+      "article_use": "政策解读、数字经济行业分析、合规风险评估。",
+      "core_proposition": "针对数字经济平台企业的监管加强，反映政府整顿市场秩序、防范风险的决心，可能影响平台经营环境和行业发展格局。",
+      "one_line_judgment": "国务院食安办、市场监管总局、海关总署联合约谈多家平台企业，标志数字经济监管进入关键阶段，市场秩序与合规环境将迎来重大调整。"
+    },
+    {
+      "topic_id": "T10",
+      "title": "伊朗境内核设施遭美以多次轰炸，俄罗斯紧急撤离人员，核风险加剧全球能源安全担忧",
+      "topic_kind": "independent",
+      "mother_topic_id": "T10",
+      "angle_variant_of": null,
+      "article_use": "核安全专题、能源安全分析、国际冲突报道。",
+      "core_proposition": "伊朗境内唯一运行核电站遭受多次轰炸，导致核泄漏风险加剧，俄罗斯撤离人员反映局势严峻，核风险与地缘冲突叠加，全球能源市场和安全环境面临新挑战。",
+      "one_line_judgment": "美以对伊朗核电站的多次攻击导致俄罗斯紧急撤离人员，核安全风险显著提升，成为全球能源安全新的不稳定因素。"
+    }
+  ],
+  "editor_note": ""
+}

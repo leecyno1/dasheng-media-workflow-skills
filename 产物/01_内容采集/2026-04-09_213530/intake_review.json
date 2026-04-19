@@ -1,0 +1,39 @@
+{
+  "run_id": "2026-04-09_213530",
+  "gate": "Intake Gate",
+  "status": "pending_review",
+  "generated_at": "2026-04-09T21:35:30.093863+08:00",
+  "instructions": [
+    "删除明显广告、生活方式、低信息密度、重复搬运样本。",
+    "保留能形成事件线索、人物线索、议题线索的样本。",
+    "如需补链，直接在 additions 中新增。",
+    "若人工指定必须进入 brief 的样本，请追加到 must_include_urls。"
+  ],
+  "noise_candidates": [
+    {
+      "title": "0.1💰绝好喝冲饮！平替中的平替！卷死奶茶！",
+      "url": "https://www.xiaohongshu.com/explore/63d4f7ee000000000200138c?xsec_token=ABEnykNE_zb_EXsd9-wiiM6PITZLvXTEBZS4hJJ4rL9to%3D&xsec_source=pc_feed",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/xhs",
+      "channel": "xhs",
+      "heat_level": "B"
+    },
+    {
+      "title": "招商闭门会：张静静：风险如何传导？260406",
+      "url": "https://www.bilibili.com/video/BV1WWDaB9EWJ",
+      "noise_tags": [
+        "ad_promotional"
+      ],
+      "source": "5173/bili",
+      "channel": "bili",
+      "heat_level": "D"
+    }
+  ],
+  "remove_ids": [],
+  "keep_ids": [],
+  "additions": [],
+  "must_include_urls": [],
+  "editor_note": ""
+}

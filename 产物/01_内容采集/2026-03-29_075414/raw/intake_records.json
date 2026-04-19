@@ -1,0 +1,1473 @@
+[
+  {
+    "meta": {
+      "id": "intake-20260329075414-001",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "a08279b296ede640dcb625c6183ecea288980916",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/x",
+          "url": "https://x.com/smfuns/status/2036427999000797367",
+          "title": "📊 Evening Market Summary\n\nBTC: $70,931 (🟢 0.32%)\nETH: $2,162 (🟢 0.92%)\n\nMarket i"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/x",
+    "source_item_id": "a08279b296ede640dcb625c6183ecea288980916",
+    "title": "📊 Evening Market Summary\n\nBTC: $70,931 (🟢 0.32%)\nETH: $2,162 (🟢 0.92%)\n\nMarket i",
+    "summary": "📊 Evening Market Summary BTC: $70,931 (🟢 0.32%) ETH: $2,162 (🟢 0.92%) Market i；热度=1",
+    "normalized_text": "5173/x | 其他观察 | 📊 Evening Market Summary\n\nBTC: $70,931 (🟢 0.32%)\nETH: $2,162 (🟢 0.92%)\n\nMarket i | 📊 Evening Market Summary BTC: $70,931 (🟢 0.32%) ETH: $2,162 (🟢 0.92%) Market i；热度=1",
+    "dedupe_fingerprint": "a08279b296ede640dcb625c6183ecea288980916",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "其他观察"
+    ],
+    "raw_payload": {
+      "id": 14137,
+      "content_id": "2036427999000797367",
+      "title": "📊 Evening Market Summary\n\nBTC: $70,931 (🟢 0.32%)\nETH: $2,162 (🟢 0.92%)\n\nMarket i",
+      "content": "📊 Evening Market Summary\n\nBTC: $70,931 (🟢 0.32%)\nETH: $2,162 (🟢 0.92%)\n\nMarket is consolidating during US market hours\n• Key trend: Uptrend intact\n• Volume: Stable\n• Sentiment: Neutral\n\nWhat to watch:\n• BTC dominance\n• Asian session\n\n#EveningUpdate #MarketSummary #Crypto",
+      "url": "https://x.com/smfuns/status/2036427999000797367",
+      "created_at": "2026-03-24 21:00:44",
+      "author_id": "1993951979627008004",
+      "author_name": "smfuns",
+      "source_task": "[默认任务组] 关键词搜索: market sentiment",
+      "source_task_meta": "{\"platform\":\"x\",\"crawler_type\":\"search\",\"task_id\":\"20260324131733\",\"task_group\":\"默认任务组\",\"keywords\":\"market sentiment\",\"current_keyword\":\"market sentiment\",\"max_count\":5,\"comment_limit\":0}",
+      "source_task_type": "search",
+      "source_task_id": "20260324131733",
+      "liked_count": "1",
+      "comment_count": "0",
+      "share_count": "0",
+      "media_urls": [],
+      "note_type": "normal",
+      "video_url": "",
+      "ocr_status": "completed",
+      "ocr_text": "",
+      "ocr_task_id": "ocr_20260324215233_3142627d",
+      "transcript_status": "none",
+      "transcript_text": "",
+      "transcript_task_id": "",
+      "platform": "x",
+      "fetched_at": "2026-03-24 21:17:38",
+      "tag_list": "EveningUpdate,MarketSummary,Crypto",
+      "task_group": "默认任务组"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-002",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "46c20e42c4554bba30f571f74669fc5c6cb35352",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/x",
+          "url": "https://x.com/CForecast65602/status/2036428458549543143",
+          "title": "Want to spot crypto moves early? Watch sentiment shifts, RSI divergences, and vo"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/x",
+    "source_item_id": "46c20e42c4554bba30f571f74669fc5c6cb35352",
+    "title": "Want to spot crypto moves early? Watch sentiment shifts, RSI divergences, and vo",
+    "summary": "Want to spot crypto moves early? Watch sentiment shifts, RSI divergences, and vo；热度=1",
+    "normalized_text": "5173/x | 其他观察 | Want to spot crypto moves early? Watch sentiment shifts, RSI divergences, and vo | Want to spot crypto moves early? Watch sentiment shifts, RSI divergences, and vo；热度=1",
+    "dedupe_fingerprint": "46c20e42c4554bba30f571f74669fc5c6cb35352",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "其他观察"
+    ],
+    "raw_payload": {
+      "id": 14136,
+      "content_id": "2036428458549543143",
+      "title": "Want to spot crypto moves early? Watch sentiment shifts, RSI divergences, and vo",
+      "content": "Want to spot crypto moves early? Watch sentiment shifts, RSI divergences, and volume spikes. These signal big moves before they happen. Stay ahead, trade smart.\n\nView crypto market forecast today! https://t.co/UDDUypXia3 https://t.co/9SZsh0cL19",
+      "url": "https://x.com/CForecast65602/status/2036428458549543143",
+      "created_at": "2026-03-24 21:02:34",
+      "author_id": "2005743479826313216",
+      "author_name": "CForecast65602",
+      "source_task": "[默认任务组] 关键词搜索: market sentiment",
+      "source_task_meta": "{\"platform\":\"x\",\"crawler_type\":\"search\",\"task_id\":\"20260324131733\",\"task_group\":\"默认任务组\",\"keywords\":\"market sentiment\",\"current_keyword\":\"market sentiment\",\"max_count\":5,\"comment_limit\":0}",
+      "source_task_type": "search",
+      "source_task_id": "20260324131733",
+      "liked_count": "1",
+      "comment_count": "0",
+      "share_count": "0",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HELY48LXEAALMlQ.jpg"
+      ],
+      "note_type": "normal",
+      "video_url": "",
+      "ocr_status": "completed",
+      "ocr_text": "Spot crypto moves\nbefore theyhappen",
+      "ocr_task_id": "ocr_20260324215233_c57b4232",
+      "transcript_status": "none",
+      "transcript_text": "",
+      "transcript_task_id": "",
+      "platform": "x",
+      "fetched_at": "2026-03-24 21:17:37",
+      "task_group": "默认任务组"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-003",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "b88043d631e18c069818d5e643126ba6bd9f80e5",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/x",
+          "url": "https://x.com/GoAI_Support/status/2036430909444857906",
+          "title": "The \"Trump Rally\" is hitting a wall as Brent crude knocks on the $100 door again"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/x",
+    "source_item_id": "b88043d631e18c069818d5e643126ba6bd9f80e5",
+    "title": "The \"Trump Rally\" is hitting a wall as Brent crude knocks on the $100 door again",
+    "summary": "The \"Trump Rally\" is hitting a wall as Brent crude knocks on the $100 door again；热度=1",
+    "normalized_text": "5173/x | AI工具/工作流 | The \"Trump Rally\" is hitting a wall as Brent crude knocks on the $100 door again | The \"Trump Rally\" is hitting a wall as Brent crude knocks on the $100 door again；热度=1",
+    "dedupe_fingerprint": "b88043d631e18c069818d5e643126ba6bd9f80e5",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "AI工具/工作流"
+    ],
+    "raw_payload": {
+      "id": 14135,
+      "content_id": "2036430909444857906",
+      "title": "The \"Trump Rally\" is hitting a wall as Brent crude knocks on the $100 door again",
+      "content": "The \"Trump Rally\" is hitting a wall as Brent crude knocks on the $100 door again. Despite Trump touting \"productive talks\" with Tehran, Iran’s official denial has sent a chill through the pits.\n\n🔹 Market Sentiment: U.S. futures are sliding as the \"de-escalation premium\" https://t.co/7HsXUggP1r",
+      "url": "https://x.com/GoAI_Support/status/2036430909444857906",
+      "created_at": "2026-03-24 21:12:18",
+      "author_id": "1690351815500656642",
+      "author_name": "GoAI_Support",
+      "source_task": "[默认任务组] 关键词搜索: market sentiment",
+      "source_task_meta": "{\"platform\":\"x\",\"crawler_type\":\"search\",\"task_id\":\"20260324131733\",\"task_group\":\"默认任务组\",\"keywords\":\"market sentiment\",\"current_keyword\":\"market sentiment\",\"max_count\":5,\"comment_limit\":0}",
+      "source_task_type": "search",
+      "source_task_id": "20260324131733",
+      "liked_count": "1",
+      "comment_count": "0",
+      "share_count": "0",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HELbGj6XcAAYR_f.jpg"
+      ],
+      "note_type": "normal",
+      "video_url": "",
+      "ocr_status": "completed",
+      "ocr_text": "",
+      "ocr_task_id": "ocr_20260327110424_20abcc2d",
+      "transcript_status": "none",
+      "transcript_text": "",
+      "transcript_task_id": "",
+      "platform": "x",
+      "fetched_at": "2026-03-24 21:17:37",
+      "task_group": "默认任务组"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-004",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "b82173c90d7cce73d39400d43d7b56eef1bbb537",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/wb",
+          "url": "https://m.weibo.cn/detail/5275943993082827",
+          "title": "要么交易确定性，要么交易超预期。 ​"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/wb",
+    "source_item_id": "b82173c90d7cce73d39400d43d7b56eef1bbb537",
+    "title": "要么交易确定性，要么交易超预期。 ​",
+    "summary": "要么交易确定性，要么交易超预期。 ​；热度=470",
+    "normalized_text": "5173/wb | 其他观察 | 要么交易确定性，要么交易超预期。 ​ | 要么交易确定性，要么交易超预期。 ​；热度=470",
+    "dedupe_fingerprint": "b82173c90d7cce73d39400d43d7b56eef1bbb537",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "其他观察"
+    ],
+    "raw_payload": {
+      "id": 1403,
+      "content_id": "5275943993082827",
+      "title": "要么交易确定性，要么交易超预期。 ​",
+      "content": "要么交易确定性，要么交易超预期。 ​",
+      "url": "https://m.weibo.cn/detail/5275943993082827",
+      "created_at": "1970-01-01 08:00:00",
+      "video_url": "",
+      "image_list": "",
+      "source_task": "[market_sentiment] 投资舆情-微博搜索（午场）: 超预期",
+      "source_task_meta": "{\"platform\":\"wb\",\"crawler_type\":\"search\",\"task_id\":\"Q20260313050020562520\",\"schedule_id\":\"S20260306142659489564\",\"task_source\":\"investment_sentiment\",\"task_group\":\"market_sentiment\",\"keywords\":\"市场情绪,风险,黑天鹅,流动性,加息,降息,轮动,泡沫,监管,看空,清仓,超预期,周期,债务\",\"current_keyword\":\"超预期\",\"max_count\":10,\"comment_limit\":0}",
+      "source_task_type": "search",
+      "source_task_id": "Q20260313050020562520",
+      "liked_count": "470",
+      "comment_count": "26",
+      "share_count": "192",
+      "collected_count": 0,
+      "note_type": "normal",
+      "ocr_status": "none",
+      "ocr_text": null,
+      "ocr_task_id": "",
+      "transcript_status": "none",
+      "transcript_text": null,
+      "transcript_task_id": null,
+      "platform": "wb",
+      "fetched_at": "2026-03-13 13:06:33",
+      "task_group": "market_sentiment"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-005",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "035e86d3e10b82626e7b8077766a4cadff2e1ebc",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/wb",
+          "url": "https://m.weibo.cn/detail/5275626614295289",
+          "title": "今日A股行情，启动护眼模式！ 市场暴跌之前，我已经提前清仓止盈的板块： （1）军工。我已于26年1月13日清仓，按照50%平均持仓计算，22年至今，累计收益是6"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/wb",
+    "source_item_id": "035e86d3e10b82626e7b8077766a4cadff2e1ebc",
+    "title": "今日A股行情，启动护眼模式！ 市场暴跌之前，我已经提前清仓止盈的板块： （1）军工。我已于26年1月13日清仓，按照50%平均持仓计算，22年至今，累计收益是6",
+    "summary": "今日A股行情，启动护眼模式！ 市场暴跌之前，我已经提前清仓止盈的板块： （1）军工。我已于26年1月13日清仓，按照50%平均持仓计算，22年至今，累计收益是6；热度=144",
+    "normalized_text": "5173/wb | 宏观/市场情绪 | 今日A股行情，启动护眼模式！ 市场暴跌之前，我已经提前清仓止盈的板块： （1）军工。我已于26年1月13日清仓，按照50%平均持仓计算，22年至今，累计收益是6 | 今日A股行情，启动护眼模式！ 市场暴跌之前，我已经提前清仓止盈的板块： （1）军工。我已于26年1月13日清仓，按照50%平均持仓计算，22年至今，累计收益是6；热度=144",
+    "dedupe_fingerprint": "035e86d3e10b82626e7b8077766a4cadff2e1ebc",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "宏观/市场情绪"
+    ],
+    "raw_payload": {
+      "id": 1402,
+      "content_id": "5275626614295289",
+      "title": "今日A股行情，启动护眼模式！ 市场暴跌之前，我已经提前清仓止盈的板块： （1）军工。我已于26年1月13日清仓，按照50%平均持仓计算，22年至今，累计收益是6",
+      "content": "今日A股行情，启动护眼模式！ 市场暴跌之前，我已经提前清仓止盈的板块： （1）军工。我已于26年1月13日清仓，按照50%平均持仓计算，22年至今，累计收益是64.4%。 （2）恒生医疗（港股创新药 ）。我已于25年8月19日清仓，按照50%平均持仓计算，22年至今，累计收益是55.6%。 （3）人工智能和CPO综合基 ​ 展开 c",
+      "url": "https://m.weibo.cn/detail/5275626614295289",
+      "created_at": "1970-01-01 08:00:00",
+      "video_url": "",
+      "image_list": "",
+      "source_task": "[market_sentiment] 投资舆情-微博搜索（午场）: 清仓",
+      "source_task_meta": "{\"platform\":\"wb\",\"crawler_type\":\"search\",\"task_id\":\"Q20260313050020562520\",\"schedule_id\":\"S20260306142659489564\",\"task_source\":\"investment_sentiment\",\"task_group\":\"market_sentiment\",\"keywords\":\"市场情绪,风险,黑天鹅,流动性,加息,降息,轮动,泡沫,监管,看空,清仓,超预期,周期,债务\",\"current_keyword\":\"清仓\",\"max_count\":10,\"comment_limit\":0}",
+      "source_task_type": "search",
+      "source_task_id": "Q20260313050020562520",
+      "liked_count": "144",
+      "comment_count": "69",
+      "share_count": "13",
+      "collected_count": 0,
+      "note_type": "normal",
+      "ocr_status": "none",
+      "ocr_text": null,
+      "ocr_task_id": "",
+      "transcript_status": "none",
+      "transcript_text": null,
+      "transcript_task_id": null,
+      "platform": "wb",
+      "fetched_at": "2026-03-13 13:06:31",
+      "task_group": "market_sentiment"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-006",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "a708896a4e0cbbc26ad6a1e846d47ae86a69263a",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/wb",
+          "url": "https://m.weibo.cn/detail/5275941137286508",
+          "title": "各位股友，真的非常对不起！ 这一波行情我也全部清仓离场了，账面亏损非常惨重，心里又自责又难受。更让我过意不去的是，因为我的判断和分享，让不少信任我的朋友一起跟着"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/wb",
+    "source_item_id": "a708896a4e0cbbc26ad6a1e846d47ae86a69263a",
+    "title": "各位股友，真的非常对不起！ 这一波行情我也全部清仓离场了，账面亏损非常惨重，心里又自责又难受。更让我过意不去的是，因为我的判断和分享，让不少信任我的朋友一起跟着",
+    "summary": "各位股友，真的非常对不起！ 这一波行情我也全部清仓离场了，账面亏损非常惨重，心里又自责又难受。更让我过意不去的是，因为我的判断和分享，让不少信任我的朋友一起跟着；热度=231",
+    "normalized_text": "5173/wb | 宏观/市场情绪 | 各位股友，真的非常对不起！ 这一波行情我也全部清仓离场了，账面亏损非常惨重，心里又自责又难受。更让我过意不去的是，因为我的判断和分享，让不少信任我的朋友一起跟着 | 各位股友，真的非常对不起！ 这一波行情我也全部清仓离场了，账面亏损非常惨重，心里又自责又难受。更让我过意不去的是，因为我的判断和分享，让不少信任我的朋友一起跟着；热度=231",
+    "dedupe_fingerprint": "a708896a4e0cbbc26ad6a1e846d47ae86a69263a",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "宏观/市场情绪"
+    ],
+    "raw_payload": {
+      "id": 1401,
+      "content_id": "5275941137286508",
+      "title": "各位股友，真的非常对不起！ 这一波行情我也全部清仓离场了，账面亏损非常惨重，心里又自责又难受。更让我过意不去的是，因为我的判断和分享，让不少信任我的朋友一起跟着",
+      "content": "各位股友，真的非常对不起！ 这一波行情我也全部清仓离场了，账面亏损非常惨重，心里又自责又难受。更让我过意不去的是，因为我的判断和分享，让不少信任我的朋友一起跟着亏钱，这份愧疚我一直记在心里，在这里真心跟大家说一声：对不起，让大家受苦了！ 这段时间市场极端行情超出预期，节奏完全被打 ​ 展开 c",
+      "url": "https://m.weibo.cn/detail/5275941137286508",
+      "created_at": "1970-01-01 08:00:00",
+      "video_url": "",
+      "image_list": "",
+      "source_task": "[market_sentiment] 投资舆情-微博搜索（午场）: 清仓",
+      "source_task_meta": "{\"platform\":\"wb\",\"crawler_type\":\"search\",\"task_id\":\"Q20260313050020562520\",\"schedule_id\":\"S20260306142659489564\",\"task_source\":\"investment_sentiment\",\"task_group\":\"market_sentiment\",\"keywords\":\"市场情绪,风险,黑天鹅,流动性,加息,降息,轮动,泡沫,监管,看空,清仓,超预期,周期,债务\",\"current_keyword\":\"清仓\",\"max_count\":10,\"comment_limit\":0}",
+      "source_task_type": "search",
+      "source_task_id": "Q20260313050020562520",
+      "liked_count": "231",
+      "comment_count": "108",
+      "share_count": "4",
+      "collected_count": 0,
+      "note_type": "normal",
+      "ocr_status": "none",
+      "ocr_text": null,
+      "ocr_task_id": "",
+      "transcript_status": "none",
+      "transcript_text": null,
+      "transcript_task_id": null,
+      "platform": "wb",
+      "fetched_at": "2026-03-13 13:06:31",
+      "task_group": "market_sentiment"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-007",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "55fadf191ec1eef0a23d4a7806f877373fe8f4fe",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/xhs",
+          "url": "https://www.xiaohongshu.com/explore/640c3ca900000000130157a2?xsec_token=ABDqV1xAR3SEoDdoB40_yD00_-ksq7DO6cBT94kYi-fyg=&xsec_source=pc_feed",
+          "title": "对不起 你们怎么穿情侣装啊"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/xhs",
+    "source_item_id": "55fadf191ec1eef0a23d4a7806f877373fe8f4fe",
+    "title": "对不起 你们怎么穿情侣装啊",
+    "summary": "对不起 你们怎么穿情侣装啊；热度=5590",
+    "normalized_text": "5173/xhs | 其他观察 | 对不起 你们怎么穿情侣装啊 | 对不起 你们怎么穿情侣装啊；热度=5590",
+    "dedupe_fingerprint": "55fadf191ec1eef0a23d4a7806f877373fe8f4fe",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "其他观察"
+    ],
+    "raw_payload": {
+      "id": 8239,
+      "content_id": "640c3ca900000000130157a2",
+      "title": "对不起 你们怎么穿情侣装啊",
+      "content": "对不起 你们怎么穿情侣装啊",
+      "url": "https://www.xiaohongshu.com/explore/640c3ca900000000130157a2?xsec_token=ABDqV1xAR3SEoDdoB40_yD00_-ksq7DO6cBT94kYi-fyg=&xsec_source=pc_feed",
+      "author_id": "5641ad0a9eb57819dce3bfe7",
+      "author_name": "我的头可不是面团捏的",
+      "source_task": "[market_sentiment] 投资舆情-小红书Feed（早场）",
+      "source_task_meta": "{\"platform\":\"xhs\",\"crawler_type\":\"homefeed\",\"task_id\":\"Q20260328221314229205\",\"schedule_id\":\"S20260304152813532381\",\"task_source\":\"investment_sentiment\",\"task_group\":\"market_sentiment\",\"max_count\":12,\"comment_limit\":0}",
+      "source_task_type": "homefeed",
+      "source_task_id": "Q20260328221314229205",
+      "liked_count": "5590",
+      "collected_count": "",
+      "comment_count": "",
+      "share_count": "",
+      "tag_list": "",
+      "note_type": "normal",
+      "video_url": "",
+      "image_list": "",
+      "ocr_status": "pending",
+      "ocr_text": null,
+      "ocr_task_id": "",
+      "transcript_status": "none",
+      "transcript_text": null,
+      "transcript_task_id": null,
+      "platform": "xhs",
+      "created_at": "1970-01-21 20:58:57",
+      "fetched_at": "2026-03-29 06:38:45",
+      "task_group": "market_sentiment"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-008",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "f0fad83838d186e8498c6139d1b362ec8f71ef90",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/xhs",
+          "url": "https://www.xiaohongshu.com/explore/63cbb624000000001e03d09b?xsec_token=AB3Y2BoD_kp28AW5cOVFuI_yExNo65teCoBzyN3iiwDcA=&xsec_source=pc_feed",
+          "title": "大年三十来我家露营吧😂😂"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/xhs",
+    "source_item_id": "f0fad83838d186e8498c6139d1b362ec8f71ef90",
+    "title": "大年三十来我家露营吧😂😂",
+    "summary": "大年三十来我家露营吧😂😂；热度=2438",
+    "normalized_text": "5173/xhs | 其他观察 | 大年三十来我家露营吧😂😂 | 大年三十来我家露营吧😂😂；热度=2438",
+    "dedupe_fingerprint": "f0fad83838d186e8498c6139d1b362ec8f71ef90",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "其他观察"
+    ],
+    "raw_payload": {
+      "id": 8238,
+      "content_id": "63cbb624000000001e03d09b",
+      "title": "大年三十来我家露营吧😂😂",
+      "content": "大年三十来我家露营吧😂😂",
+      "url": "https://www.xiaohongshu.com/explore/63cbb624000000001e03d09b?xsec_token=AB3Y2BoD_kp28AW5cOVFuI_yExNo65teCoBzyN3iiwDcA=&xsec_source=pc_feed",
+      "author_id": "5c112a41000000000503b221",
+      "author_name": "宅小卫",
+      "source_task": "[market_sentiment] 投资舆情-小红书Feed（早场）",
+      "source_task_meta": "{\"platform\":\"xhs\",\"crawler_type\":\"homefeed\",\"task_id\":\"Q20260328221314229205\",\"schedule_id\":\"S20260304152813532381\",\"task_source\":\"investment_sentiment\",\"task_group\":\"market_sentiment\",\"max_count\":12,\"comment_limit\":0}",
+      "source_task_type": "homefeed",
+      "source_task_id": "Q20260328221314229205",
+      "liked_count": "2438",
+      "collected_count": "",
+      "comment_count": "",
+      "share_count": "",
+      "tag_list": "",
+      "note_type": "normal",
+      "video_url": "",
+      "image_list": "",
+      "ocr_status": "pending",
+      "ocr_text": null,
+      "ocr_task_id": "",
+      "transcript_status": "none",
+      "transcript_text": null,
+      "transcript_task_id": null,
+      "platform": "xhs",
+      "created_at": "1970-01-21 20:58:57",
+      "fetched_at": "2026-03-29 06:38:45",
+      "task_group": "market_sentiment"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-009",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "757105fef18d1360c843179dcca626d901a28535",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/xhs",
+          "url": "https://www.xiaohongshu.com/explore/641da86000000000130073c2?xsec_token=ABm2t24JDR3esni55egnOcYqslxqvt9Ed5eCBeSaIYk4I=&xsec_source=pc_feed",
+          "title": "单大厨 | 今天给女友做油爆醋炒鸡蛋‼️"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/xhs",
+    "source_item_id": "757105fef18d1360c843179dcca626d901a28535",
+    "title": "单大厨 | 今天给女友做油爆醋炒鸡蛋‼️",
+    "summary": "单大厨 | 今天给女友做油爆醋炒鸡蛋‼️；热度=51000",
+    "normalized_text": "5173/xhs | 其他观察 | 单大厨 | 今天给女友做油爆醋炒鸡蛋‼️ | 单大厨 | 今天给女友做油爆醋炒鸡蛋‼️；热度=51000",
+    "dedupe_fingerprint": "757105fef18d1360c843179dcca626d901a28535",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "其他观察"
+    ],
+    "raw_payload": {
+      "id": 8237,
+      "content_id": "641da86000000000130073c2",
+      "title": "单大厨 | 今天给女友做油爆醋炒鸡蛋‼️",
+      "content": "单大厨 | 今天给女友做油爆醋炒鸡蛋‼️",
+      "url": "https://www.xiaohongshu.com/explore/641da86000000000130073c2?xsec_token=ABm2t24JDR3esni55egnOcYqslxqvt9Ed5eCBeSaIYk4I=&xsec_source=pc_feed",
+      "author_id": "5b6b1a4f4b183900014c912e",
+      "author_name": "郭师傅与单大厨",
+      "source_task": "[market_sentiment] 投资舆情-小红书Feed（早场）",
+      "source_task_meta": "{\"platform\":\"xhs\",\"crawler_type\":\"homefeed\",\"task_id\":\"Q20260328221314229205\",\"schedule_id\":\"S20260304152813532381\",\"task_source\":\"investment_sentiment\",\"task_group\":\"market_sentiment\",\"max_count\":12,\"comment_limit\":0}",
+      "source_task_type": "homefeed",
+      "source_task_id": "Q20260328221314229205",
+      "liked_count": "51000",
+      "collected_count": "",
+      "comment_count": "",
+      "share_count": "",
+      "tag_list": "",
+      "note_type": "video",
+      "video_url": "",
+      "image_list": "",
+      "ocr_status": "pending",
+      "ocr_text": null,
+      "ocr_task_id": "",
+      "transcript_status": "none",
+      "transcript_text": null,
+      "transcript_task_id": null,
+      "platform": "xhs",
+      "created_at": "1970-01-21 20:58:57",
+      "fetched_at": "2026-03-29 06:38:45",
+      "task_group": "market_sentiment"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-010",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "6d1c72e1464ba2f0f2f210c0169b85b27eafd0f6",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/douyin",
+          "url": "https://www.douyin.com/video/7096247320408263966",
+          "title": "黑天鹅冷知识，有锯齿状边缘的喙基部肿块，同性夫妻养幼崽 #鸟类"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/douyin",
+    "source_item_id": "6d1c72e1464ba2f0f2f210c0169b85b27eafd0f6",
+    "title": "黑天鹅冷知识，有锯齿状边缘的喙基部肿块，同性夫妻养幼崽 #鸟类",
+    "summary": "黑天鹅冷知识，有锯齿状边缘的喙基部肿块，同性夫妻养幼崽 #鸟类；热度=283",
+    "normalized_text": "5173/douyin | 其他观察 | 黑天鹅冷知识，有锯齿状边缘的喙基部肿块，同性夫妻养幼崽 #鸟类 | 黑天鹅冷知识，有锯齿状边缘的喙基部肿块，同性夫妻养幼崽 #鸟类；热度=283",
+    "dedupe_fingerprint": "6d1c72e1464ba2f0f2f210c0169b85b27eafd0f6",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "其他观察"
+    ],
+    "raw_payload": {
+      "id": 2637,
+      "content_id": "7096247320408263966",
+      "title": "黑天鹅冷知识，有锯齿状边缘的喙基部肿块，同性夫妻养幼崽 #鸟类",
+      "content": "黑天鹅冷知识，有锯齿状边缘的喙基部肿块，同性夫妻养幼崽 #鸟类",
+      "url": "https://www.douyin.com/video/7096247320408263966",
+      "created_at": "2022-05-11 07:04:28",
+      "author_id": "3967473260707683",
+      "author_name": "小叶科普知识",
+      "source_task": "[market_sentiment] 投资舆情-抖音搜索（早场）: 黑天鹅",
+      "source_task_meta": "{\"platform\":\"dy\",\"crawler_type\":\"search\",\"task_id\":\"Q20260328220714026226\",\"schedule_id\":\"S20260304152813531024\",\"task_source\":\"investment_sentiment\",\"task_group\":\"market_sentiment\",\"keywords\":\"市场情绪,风险,黑天鹅,流动性,加息,降息,轮动,泡沫,监管,看空,清仓,超预期,周期,债务\",\"current_keyword\":\"黑天鹅\",\"max_count\":16,\"comment_limit\":0}",
+      "source_task_type": "search",
+      "source_task_id": "Q20260328220714026226",
+      "liked_count": "283",
+      "collected_count": "85",
+      "comment_count": "11",
+      "share_count": "224",
+      "video_url": "https://www.douyin.com/aweme/v1/play/?video_id=v0200fg10000c9teuv3c77u57r77p1n0&line=0&file_id=d3474c5125e64bd9ae5d3ebec2813aba&sign=4aa7974e2ac5999acf64902b3531c455&is_play_url=1&source=PackSourceEnum_SEARCH",
+      "note_type": "video",
+      "transcript_status": "none",
+      "transcript_text": null,
+      "transcript_task_id": null,
+      "platform": "dy",
+      "fetched_at": "2026-03-29 06:07:26",
+      "task_group": "market_sentiment"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-011",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "326c9755f02d99ff2a8802e99d78b5486e22c8d9",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/douyin",
+          "url": "https://www.douyin.com/video/7622165396774292751",
+          "title": "黑天鹅只是背锅侠？下周紧盯决定牛市生死的三大信号 #上证指数 #袁建新 #伊朗vs美国 #黑天鹅 #牛市"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/douyin",
+    "source_item_id": "326c9755f02d99ff2a8802e99d78b5486e22c8d9",
+    "title": "黑天鹅只是背锅侠？下周紧盯决定牛市生死的三大信号 #上证指数 #袁建新 #伊朗vs美国 #黑天鹅 #牛市",
+    "summary": "黑天鹅只是背锅侠？下周紧盯决定牛市生死的三大信号 #上证指数 #袁建新 #伊朗vs美国 #黑天鹅 #牛市；热度=662",
+    "normalized_text": "5173/douyin | 油价/地缘冲突 | 黑天鹅只是背锅侠？下周紧盯决定牛市生死的三大信号 #上证指数 #袁建新 #伊朗vs美国 #黑天鹅 #牛市 | 黑天鹅只是背锅侠？下周紧盯决定牛市生死的三大信号 #上证指数 #袁建新 #伊朗vs美国 #黑天鹅 #牛市；热度=662",
+    "dedupe_fingerprint": "326c9755f02d99ff2a8802e99d78b5486e22c8d9",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "油价/地缘冲突"
+    ],
+    "raw_payload": {
+      "id": 2636,
+      "content_id": "7622165396774292751",
+      "title": "黑天鹅只是背锅侠？下周紧盯决定牛市生死的三大信号 #上证指数 #袁建新 #伊朗vs美国 #黑天鹅 #牛市",
+      "content": "黑天鹅只是背锅侠？下周紧盯决定牛市生死的三大信号 #上证指数 #袁建新 #伊朗vs美国 #黑天鹅 #牛市",
+      "url": "https://www.douyin.com/video/7622165396774292751",
+      "created_at": "2026-03-28 12:54:46",
+      "author_id": "4239317323490459",
+      "author_name": "袁建新的财经人生",
+      "source_task": "[market_sentiment] 投资舆情-抖音搜索（早场）: 黑天鹅",
+      "source_task_meta": "{\"platform\":\"dy\",\"crawler_type\":\"search\",\"task_id\":\"Q20260328220714026226\",\"schedule_id\":\"S20260304152813531024\",\"task_source\":\"investment_sentiment\",\"task_group\":\"market_sentiment\",\"keywords\":\"市场情绪,风险,黑天鹅,流动性,加息,降息,轮动,泡沫,监管,看空,清仓,超预期,周期,债务\",\"current_keyword\":\"黑天鹅\",\"max_count\":16,\"comment_limit\":0}",
+      "source_task_type": "search",
+      "source_task_id": "Q20260328220714026226",
+      "liked_count": "662",
+      "collected_count": "88",
+      "comment_count": "59",
+      "share_count": "14",
+      "video_url": "https://www.douyin.com/aweme/v1/play/?video_id=v0d00fg10000d73ltdvog65t569br040&line=0&file_id=5aa69ec36efa4fe6ba5c9cdda92087d7&sign=850d07e983b43e00d0f41f8b2eba7df6&is_play_url=1&source=PackSourceEnum_SEARCH",
+      "note_type": "video",
+      "transcript_status": "none",
+      "transcript_text": null,
+      "transcript_task_id": null,
+      "platform": "dy",
+      "fetched_at": "2026-03-29 06:07:26",
+      "task_group": "market_sentiment"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-012",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "9bdb71d62f2e433b402845742add55242a8e9f32",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/douyin",
+          "url": "https://www.douyin.com/video/7622191936853527859",
+          "title": "感谢官方"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/douyin",
+    "source_item_id": "9bdb71d62f2e433b402845742add55242a8e9f32",
+    "title": "感谢官方",
+    "summary": "感谢官方；热度=3328",
+    "normalized_text": "5173/douyin | 其他观察 | 感谢官方 | 感谢官方；热度=3328",
+    "dedupe_fingerprint": "9bdb71d62f2e433b402845742add55242a8e9f32",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "其他观察"
+    ],
+    "raw_payload": {
+      "id": 2635,
+      "content_id": "7622191936853527859",
+      "title": "感谢官方",
+      "content": "感谢官方",
+      "url": "https://www.douyin.com/video/7622191936853527859",
+      "created_at": "2026-03-28 14:37:40",
+      "author_id": "4250057717326252",
+      "author_name": "股海林哥",
+      "source_task": "[market_sentiment] 投资舆情-抖音搜索（早场）: 黑天鹅",
+      "source_task_meta": "{\"platform\":\"dy\",\"crawler_type\":\"search\",\"task_id\":\"Q20260328220714026226\",\"schedule_id\":\"S20260304152813531024\",\"task_source\":\"investment_sentiment\",\"task_group\":\"market_sentiment\",\"keywords\":\"市场情绪,风险,黑天鹅,流动性,加息,降息,轮动,泡沫,监管,看空,清仓,超预期,周期,债务\",\"current_keyword\":\"黑天鹅\",\"max_count\":16,\"comment_limit\":0}",
+      "source_task_type": "search",
+      "source_task_id": "Q20260328220714026226",
+      "liked_count": "3328",
+      "collected_count": "1983",
+      "comment_count": "594",
+      "share_count": "1381",
+      "video_url": "https://www.douyin.com/aweme/v1/play/?video_id=v0200fg10000d73ne37og65gauc3b000&line=0&file_id=e6e438f545bc45128b8d5b720e2a256c&sign=c9f55abb636fcd343ab700003ad3fd0a&is_play_url=1&source=PackSourceEnum_SEARCH",
+      "note_type": "video",
+      "transcript_status": "none",
+      "transcript_text": null,
+      "transcript_task_id": null,
+      "platform": "dy",
+      "fetched_at": "2026-03-29 06:07:24",
+      "task_group": "market_sentiment"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-013",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "d4b85e479a8a131bebef53a98b6fd9f0fe6944dd",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/bili",
+          "url": "https://www.bilibili.com/video/BV18TQmByE32",
+          "title": "目前西方滞胀是怎么成型的？"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/bili",
+    "source_item_id": "d4b85e479a8a131bebef53a98b6fd9f0fe6944dd",
+    "title": "目前西方滞胀是怎么成型的？",
+    "summary": "目前西方滞胀是怎么成型的？；热度=85",
+    "normalized_text": "5173/bili | 其他观察 | 目前西方滞胀是怎么成型的？ | 目前西方滞胀是怎么成型的？；热度=85",
+    "dedupe_fingerprint": "d4b85e479a8a131bebef53a98b6fd9f0fe6944dd",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "其他观察"
+    ],
+    "raw_payload": {
+      "id": 3687,
+      "content_id": "BV18TQmByE32",
+      "title": "目前西方滞胀是怎么成型的？",
+      "content": "",
+      "url": "https://www.bilibili.com/video/BV18TQmByE32",
+      "created_at": "2026-03-28 08:00:00",
+      "author_id": "3546599777110271",
+      "author_name": "超能信号",
+      "source_task": "[content_research] 创作选题-哔哩哔哩搜索: 通胀",
+      "source_task_meta": "{\"platform\":\"bili\",\"crawler_type\":\"search\",\"task_id\":\"Q20260328221444258332\",\"schedule_id\":\"S20260306142659465318\",\"task_source\":\"creative_research\",\"task_group\":\"content_research\",\"keywords\":\"宏观,地产,政策,ai,原油,黄金,特朗普,高市早苗,周期,大选,降息,加息,美国,日本,通胀\",\"current_keyword\":\"通胀\",\"max_count\":20,\"comment_limit\":0}",
+      "source_task_type": "search",
+      "source_task_id": "Q20260328221444258332",
+      "liked_count": "85",
+      "comment_count": "20",
+      "view_count": "1756",
+      "video_cover_url": "http://i1.hdslb.com/bfs/archive/7cc1e82e7e83eda1cbc30d29b320cbfe4d50e67c.jpg",
+      "note_type": "video",
+      "transcript_status": "none",
+      "transcript_text": null,
+      "transcript_task_id": null,
+      "platform": "bili",
+      "fetched_at": "2026-03-29 06:43:10",
+      "task_group": "content_research"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-014",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "e47e102d1f672bdd5382a6d9e0dc32abfcff3b79",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/bili",
+          "url": "https://www.bilibili.com/video/BV1uDXgBCEsN",
+          "title": "2026年3月29日信息差（早差）美伊冲突结束时间。美通胀上升。内存涨缓。高技术大增。玩具白皮书。驻日美污染恶化。中船也不能过。懂王签名上美元。博士自杀。"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/bili",
+    "source_item_id": "e47e102d1f672bdd5382a6d9e0dc32abfcff3b79",
+    "title": "2026年3月29日信息差（早差）美伊冲突结束时间。美通胀上升。内存涨缓。高技术大增。玩具白皮书。驻日美污染恶化。中船也不能过。懂王签名上美元。博士自杀。",
+    "summary": "2026年3月29日信息差（早差）美伊冲突结束时间。美通胀上升。内存涨缓。高技术大增。玩具白皮书。驻日美污染恶化。中船也不能过。懂王签名上美元。博士自杀。；热度=70",
+    "normalized_text": "5173/bili | 宏观/市场情绪 | 2026年3月29日信息差（早差）美伊冲突结束时间。美通胀上升。内存涨缓。高技术大增。玩具白皮书。驻日美污染恶化。中船也不能过。懂王签名上美元。博士自杀。 | 2026年3月29日信息差（早差）美伊冲突结束时间。美通胀上升。内存涨缓。高技术大增。玩具白皮书。驻日美污染恶化。中船也不能过。懂王签名上美元。博士自杀。；热度=70",
+    "dedupe_fingerprint": "e47e102d1f672bdd5382a6d9e0dc32abfcff3b79",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "宏观/市场情绪"
+    ],
+    "raw_payload": {
+      "id": 3686,
+      "content_id": "BV1uDXgBCEsN",
+      "title": "2026年3月29日信息差（早差）美伊冲突结束时间。美通胀上升。内存涨缓。高技术大增。玩具白皮书。驻日美污染恶化。中船也不能过。懂王签名上美元。博士自杀。",
+      "content": "一。美伊冲突结束时间。\n二。美通胀上升。\n三。内存涨缓。\n四。高技术大增。\n五。玩具白皮书。\n六。驻日美污染恶化。\n七。中船也不能过。\n八。懂王签名上美元。\n九。博士自杀。",
+      "url": "https://www.bilibili.com/video/BV1uDXgBCEsN",
+      "created_at": "2026-03-29 05:45:00",
+      "author_id": "432969969",
+      "author_name": "信息差CAP",
+      "source_task": "[content_research] 创作选题-哔哩哔哩搜索: 通胀",
+      "source_task_meta": "{\"platform\":\"bili\",\"crawler_type\":\"search\",\"task_id\":\"Q20260328221444258332\",\"schedule_id\":\"S20260306142659465318\",\"task_source\":\"creative_research\",\"task_group\":\"content_research\",\"keywords\":\"宏观,地产,政策,ai,原油,黄金,特朗普,高市早苗,周期,大选,降息,加息,美国,日本,通胀\",\"current_keyword\":\"通胀\",\"max_count\":20,\"comment_limit\":0}",
+      "source_task_type": "search",
+      "source_task_id": "Q20260328221444258332",
+      "liked_count": "70",
+      "comment_count": "8",
+      "view_count": "2280",
+      "video_cover_url": "http://i1.hdslb.com/bfs/archive/026ed13c51584abf1de66862ce5e6b5d23fcb303.jpg",
+      "note_type": "video",
+      "transcript_status": "none",
+      "transcript_text": null,
+      "transcript_task_id": null,
+      "platform": "bili",
+      "fetched_at": "2026-03-29 06:43:10",
+      "task_group": "content_research"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-015",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "cd068afcbcdec033af047df5ddbb4fb8023962e7",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/bili",
+          "url": "https://www.bilibili.com/video/BV1jDXEB1Eq7",
+          "title": "WC太炸裂！3.26牢A激情破防最成功的一期：日本人对中国的认知!现场静到离谱！牢 A 处理‘高达’，现场集体沉默！"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/bili",
+    "source_item_id": "cd068afcbcdec033af047df5ddbb4fb8023962e7",
+    "title": "WC太炸裂！3.26牢A激情破防最成功的一期：日本人对中国的认知!现场静到离谱！牢 A 处理‘高达’，现场集体沉默！",
+    "summary": "WC太炸裂！3.26牢A激情破防最成功的一期：日本人对中国的认知!现场静到离谱！牢 A 处理‘高达’，现场集体沉默！；热度=572",
+    "normalized_text": "5173/bili | 日本/使馆/外交 | WC太炸裂！3.26牢A激情破防最成功的一期：日本人对中国的认知!现场静到离谱！牢 A 处理‘高达’，现场集体沉默！ | WC太炸裂！3.26牢A激情破防最成功的一期：日本人对中国的认知!现场静到离谱！牢 A 处理‘高达’，现场集体沉默！；热度=572",
+    "dedupe_fingerprint": "cd068afcbcdec033af047df5ddbb4fb8023962e7",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "日本/使馆/外交"
+    ],
+    "raw_payload": {
+      "id": 3685,
+      "content_id": "BV1jDXEB1Eq7",
+      "title": "WC太炸裂！3.26牢A激情破防最成功的一期：日本人对中国的认知!现场静到离谱！牢 A 处理‘高达’，现场集体沉默！",
+      "content": "来源：斯奎奇大王",
+      "url": "https://www.bilibili.com/video/BV1jDXEB1Eq7",
+      "created_at": "2026-03-26 08:44:00",
+      "author_id": "3690983652854079",
+      "author_name": "牢A高精版",
+      "source_task": "[content_research] 创作选题-哔哩哔哩搜索: 日本",
+      "source_task_meta": "{\"platform\":\"bili\",\"crawler_type\":\"search\",\"task_id\":\"Q20260328221444258332\",\"schedule_id\":\"S20260306142659465318\",\"task_source\":\"creative_research\",\"task_group\":\"content_research\",\"keywords\":\"宏观,地产,政策,ai,原油,黄金,特朗普,高市早苗,周期,大选,降息,加息,美国,日本,通胀\",\"current_keyword\":\"日本\",\"max_count\":20,\"comment_limit\":0}",
+      "source_task_type": "search",
+      "source_task_id": "Q20260328221444258332",
+      "liked_count": "572",
+      "comment_count": "41",
+      "view_count": "31303",
+      "video_cover_url": "http://i1.hdslb.com/bfs/archive/0977fc506a38079eadd4056c2a76cd602c5491d0.jpg",
+      "note_type": "video",
+      "transcript_status": "none",
+      "transcript_text": null,
+      "transcript_task_id": null,
+      "platform": "bili",
+      "fetched_at": "2026-03-29 06:43:05",
+      "task_group": "content_research"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-016",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "959b11e33a8b2b38e2fc08fd784e1ab0f71d121a",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/content_research",
+          "url": "https://www.bilibili.com/video/BV154QrBqEXG",
+          "title": "2026年日本又有士兵走丢：但是闯入老中使馆？"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/content_research",
+    "source_item_id": "959b11e33a8b2b38e2fc08fd784e1ab0f71d121a",
+    "title": "2026年日本又有士兵走丢：但是闯入老中使馆？",
+    "summary": "2026年日本又有士兵走丢：但是闯入老中使馆？；score=36.89",
+    "normalized_text": "5173/content_research | 日本/使馆/外交 | 2026年日本又有士兵走丢：但是闯入老中使馆？ | 2026年日本又有士兵走丢：但是闯入老中使馆？；score=36.89",
+    "dedupe_fingerprint": "959b11e33a8b2b38e2fc08fd784e1ab0f71d121a",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "日本/使馆/外交"
+    ],
+    "raw_payload": {
+      "note_id": "BV154QrBqEXG",
+      "platform": "bili",
+      "title": "2026年日本又有士兵走丢：但是闯入老中使馆？",
+      "content": "此事确实太过于抽象了~所以赶紧更一期",
+      "url": "https://www.bilibili.com/video/BV154QrBqEXG",
+      "note_type": "video",
+      "task_group": "content_research",
+      "created_at": "2026-03-24 21:17:06",
+      "fetched_at": "2026-03-25 06:11:10",
+      "score": 36.89,
+      "score_breakdown": {
+        "heat_score": 32.13,
+        "rate_heat_score": 3.04,
+        "volume_heat_score": 100.0,
+        "heat_raw": 0.030439,
+        "heat_reliability": 1.0,
+        "trend_score": 4.05,
+        "style_score": 100.0,
+        "risk_penalty": 0.0,
+        "creator_opportunity_score": 0.0,
+        "low_fan_bonus": 0.0,
+        "high_fan_penalty": 0.0,
+        "pre_calibration_score": 35.47,
+        "platform_calibration_factor": 1.04,
+        "platform_rank_reason": "中长视频信息密度更高，略提升结构化内容分"
+      },
+      "metrics": {
+        "liked_count": 14457,
+        "comment_count": 2073,
+        "share_count": 0,
+        "collected_count": 0,
+        "view_count": 179855,
+        "creator_fans": 0,
+        "weighted_interactions": 17981.1,
+        "text_len": 42,
+        "age_hours": 23.71,
+        "like_rate": 0.080381,
+        "share_rate": 0.0,
+        "fav_rate": 0.0,
+        "comment_rate": 0.011526,
+        "is_video": true,
+        "has_transcript": false,
+        "has_ocr": false,
+        "platform": "bili"
+      },
+      "platform_calibration_factor": 1.04,
+      "platform_rank_reason": "中长视频信息密度更高，略提升结构化内容分",
+      "_base_score": 36.89
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-017",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "9a47aa4ba8b6a40016fac6f3d91747293431bf4a",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/content_research",
+          "url": "https://www.bilibili.com/video/BV1CCQqBuEt8",
+          "title": "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/content_research",
+    "source_item_id": "9a47aa4ba8b6a40016fac6f3d91747293431bf4a",
+    "title": "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】",
+    "summary": "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】；score=36.62",
+    "normalized_text": "5173/content_research | 油价/地缘冲突 | 特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】 | 特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】；score=36.62",
+    "dedupe_fingerprint": "9a47aa4ba8b6a40016fac6f3d91747293431bf4a",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "油价/地缘冲突"
+    ],
+    "raw_payload": {
+      "note_id": "BV1CCQqBuEt8",
+      "platform": "bili",
+      "title": "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】",
+      "content": "本来伊朗都快投了，懂王神操作让伊朗各种反推",
+      "url": "https://www.bilibili.com/video/BV1CCQqBuEt8",
+      "note_type": "video",
+      "task_group": "content_research",
+      "created_at": "2026-03-24 18:00:00",
+      "fetched_at": "2026-03-25 06:08:39",
+      "score": 36.62,
+      "score_breakdown": {
+        "heat_score": 31.83,
+        "rate_heat_score": 2.61,
+        "volume_heat_score": 100.0,
+        "heat_raw": 0.02613,
+        "heat_reliability": 1.0,
+        "trend_score": 3.57,
+        "style_score": 100.0,
+        "risk_penalty": 0.0,
+        "creator_opportunity_score": 0.0,
+        "low_fan_bonus": 0.0,
+        "high_fan_penalty": 0.0,
+        "pre_calibration_score": 35.22,
+        "platform_calibration_factor": 1.04,
+        "platform_rank_reason": "中长视频信息密度更高，略提升结构化内容分"
+      },
+      "metrics": {
+        "liked_count": 10619,
+        "comment_count": 399,
+        "share_count": 0,
+        "collected_count": 0,
+        "view_count": 145292,
+        "creator_fans": 0,
+        "weighted_interactions": 11297.3,
+        "text_len": 47,
+        "age_hours": 27.0,
+        "like_rate": 0.073087,
+        "share_rate": 0.0,
+        "fav_rate": 0.0,
+        "comment_rate": 0.002746,
+        "is_video": true,
+        "has_transcript": false,
+        "has_ocr": false,
+        "platform": "bili"
+      },
+      "platform_calibration_factor": 1.04,
+      "platform_rank_reason": "中长视频信息密度更高，略提升结构化内容分",
+      "_base_score": 36.62
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-018",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "d10e547a261afbbde8e37c875ae842fa88f341ff",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/content_research",
+          "url": "https://www.bilibili.com/video/BV17EQzBNEBB",
+          "title": "一名自称为日本自卫队现役官员闯入我大使馆威胁杀人"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/content_research",
+    "source_item_id": "d10e547a261afbbde8e37c875ae842fa88f341ff",
+    "title": "一名自称为日本自卫队现役官员闯入我大使馆威胁杀人",
+    "summary": "一名自称为日本自卫队现役官员闯入我大使馆威胁杀人；score=36.6",
+    "normalized_text": "5173/content_research | 日本/使馆/外交 | 一名自称为日本自卫队现役官员闯入我大使馆威胁杀人 | 一名自称为日本自卫队现役官员闯入我大使馆威胁杀人；score=36.6",
+    "dedupe_fingerprint": "d10e547a261afbbde8e37c875ae842fa88f341ff",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "日本/使馆/外交"
+    ],
+    "raw_payload": {
+      "note_id": "BV17EQzBNEBB",
+      "platform": "bili",
+      "title": "一名自称为日本自卫队现役官员闯入我大使馆威胁杀人",
+      "content": "这一事件再次反映出日本国内极右翼思潮和势力十分猖獗，“新型军国主义”成势为患，也暴露日本政府在历史、台湾等涉及中日关系重大核心问题上的错误政策流毒深重。",
+      "url": "https://www.bilibili.com/video/BV17EQzBNEBB",
+      "note_type": "video",
+      "task_group": "content_research",
+      "created_at": "2026-03-24 16:59:50",
+      "fetched_at": "2026-03-25 06:11:13",
+      "score": 36.6,
+      "score_breakdown": {
+        "heat_score": 31.85,
+        "rate_heat_score": 2.64,
+        "volume_heat_score": 100.0,
+        "heat_raw": 0.0264,
+        "heat_reliability": 1.0,
+        "trend_score": 3.45,
+        "style_score": 100.0,
+        "risk_penalty": 0.0,
+        "creator_opportunity_score": 0.0,
+        "low_fan_bonus": 0.0,
+        "high_fan_penalty": 0.0,
+        "pre_calibration_score": 35.19,
+        "platform_calibration_factor": 1.04,
+        "platform_rank_reason": "中长视频信息密度更高，略提升结构化内容分"
+      },
+      "metrics": {
+        "liked_count": 80070,
+        "comment_count": 6321,
+        "share_count": 0,
+        "collected_count": 0,
+        "view_count": 1109435,
+        "creator_fans": 0,
+        "weighted_interactions": 90815.7,
+        "text_len": 101,
+        "age_hours": 28.0,
+        "like_rate": 0.072172,
+        "share_rate": 0.0,
+        "fav_rate": 0.0,
+        "comment_rate": 0.005697,
+        "is_video": true,
+        "has_transcript": false,
+        "has_ocr": false,
+        "platform": "bili"
+      },
+      "platform_calibration_factor": 1.04,
+      "platform_rank_reason": "中长视频信息密度更高，略提升结构化内容分",
+      "_base_score": 36.6
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-019",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "f3ffc4ca4c361abfe91fe67654c804f97de7930f",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "5173/content_research",
+          "url": "https://www.bilibili.com/video/BV1WJQBByE12",
+          "title": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "5173/content_research",
+    "source_item_id": "f3ffc4ca4c361abfe91fe67654c804f97de7930f",
+    "title": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸",
+    "summary": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸；score=36.45",
+    "normalized_text": "5173/content_research | 油价/地缘冲突 | 【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸 | 【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸；score=36.45",
+    "dedupe_fingerprint": "f3ffc4ca4c361abfe91fe67654c804f97de7930f",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "油价/地缘冲突"
+    ],
+    "raw_payload": {
+      "note_id": "BV1WJQBByE12",
+      "platform": "bili",
+      "title": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸",
+      "content": "",
+      "url": "https://www.bilibili.com/video/BV1WJQBByE12",
+      "note_type": "video",
+      "task_group": "content_research",
+      "created_at": "2026-03-24 19:27:44",
+      "fetched_at": "2026-03-25 06:11:02",
+      "score": 36.45,
+      "score_breakdown": {
+        "heat_score": 31.35,
+        "rate_heat_score": 1.93,
+        "volume_heat_score": 100.0,
+        "heat_raw": 0.01935,
+        "heat_reliability": 1.0,
+        "trend_score": 3.77,
+        "style_score": 100.0,
+        "risk_penalty": 0.0,
+        "creator_opportunity_score": 0.0,
+        "low_fan_bonus": 0.0,
+        "high_fan_penalty": 0.0,
+        "pre_calibration_score": 35.05,
+        "platform_calibration_factor": 1.04,
+        "platform_rank_reason": "中长视频信息密度更高，略提升结构化内容分"
+      },
+      "metrics": {
+        "liked_count": 8288,
+        "comment_count": 521,
+        "share_count": 0,
+        "collected_count": 0,
+        "view_count": 155301,
+        "creator_fans": 0,
+        "weighted_interactions": 9173.7,
+        "text_len": 80,
+        "age_hours": 25.53,
+        "like_rate": 0.053367,
+        "share_rate": 0.0,
+        "fav_rate": 0.0,
+        "comment_rate": 0.003355,
+        "is_video": true,
+        "has_transcript": false,
+        "has_ocr": false,
+        "platform": "bili"
+      },
+      "platform_calibration_factor": 1.04,
+      "platform_rank_reason": "中长视频信息密度更高，略提升结构化内容分",
+      "_base_score": 36.45
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-020",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "093b195e4c00e488a72349f53100bca3c1ed0c7c",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "18080/news",
+          "url": "https://news.ifeng.com/loc/timeline/event/8r727OWpK5W",
+          "title": "美以伊战争丨胡塞武装加入战争，对以色列发动攻击"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "18080/news",
+    "source_item_id": "093b195e4c00e488a72349f53100bca3c1ed0c7c",
+    "title": "美以伊战争丨胡塞武装加入战争，对以色列发动攻击",
+    "summary": "美以伊战争丨胡塞武装加入战争，对以色列发动攻击；来自 18080 最新 report 外链",
+    "normalized_text": "18080/news | 其他观察 | 美以伊战争丨胡塞武装加入战争，对以色列发动攻击 | 美以伊战争丨胡塞武装加入战争，对以色列发动攻击；来自 18080 最新 report 外链",
+    "dedupe_fingerprint": "093b195e4c00e488a72349f53100bca3c1ed0c7c",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "其他观察"
+    ],
+    "raw_payload": {
+      "title": "美以伊战争丨胡塞武装加入战争，对以色列发动攻击",
+      "url": "https://news.ifeng.com/loc/timeline/event/8r727OWpK5W"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-021",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "826a678cf0788628a8da9081bdff802aef853491",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "18080/news",
+          "url": "https://wallstreetcn.com/articles/3768537",
+          "title": "局势升级担忧助推原油大涨，美股重挫、纳指再跌2%，VIX突破30，黄金涨近3%"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "18080/news",
+    "source_item_id": "826a678cf0788628a8da9081bdff802aef853491",
+    "title": "局势升级担忧助推原油大涨，美股重挫、纳指再跌2%，VIX突破30，黄金涨近3%",
+    "summary": "局势升级担忧助推原油大涨，美股重挫、纳指再跌2%，VIX突破30，黄金涨近3%；来自 18080 最新 report 外链",
+    "normalized_text": "18080/news | 黄金/白银/贵金属 | 局势升级担忧助推原油大涨，美股重挫、纳指再跌2%，VIX突破30，黄金涨近3% | 局势升级担忧助推原油大涨，美股重挫、纳指再跌2%，VIX突破30，黄金涨近3%；来自 18080 最新 report 外链",
+    "dedupe_fingerprint": "826a678cf0788628a8da9081bdff802aef853491",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "黄金/白银/贵金属"
+    ],
+    "raw_payload": {
+      "title": "局势升级担忧助推原油大涨，美股重挫、纳指再跌2%，VIX突破30，黄金涨近3%",
+      "url": "https://wallstreetcn.com/articles/3768537"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-022",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "0a64f3d3c9935126f0e60fe3469b5e19043f9596",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "18080/news",
+          "url": "https://www.cls.cn/detail/2327695",
+          "title": "美股收盘：伊朗关键工业设施遭袭 纳指连续第二天跌超2%"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "18080/news",
+    "source_item_id": "0a64f3d3c9935126f0e60fe3469b5e19043f9596",
+    "title": "美股收盘：伊朗关键工业设施遭袭 纳指连续第二天跌超2%",
+    "summary": "美股收盘：伊朗关键工业设施遭袭 纳指连续第二天跌超2%；来自 18080 最新 report 外链",
+    "normalized_text": "18080/news | 油价/地缘冲突 | 美股收盘：伊朗关键工业设施遭袭 纳指连续第二天跌超2% | 美股收盘：伊朗关键工业设施遭袭 纳指连续第二天跌超2%；来自 18080 最新 report 外链",
+    "dedupe_fingerprint": "0a64f3d3c9935126f0e60fe3469b5e19043f9596",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "油价/地缘冲突"
+    ],
+    "raw_payload": {
+      "title": "美股收盘：伊朗关键工业设施遭袭 纳指连续第二天跌超2%",
+      "url": "https://www.cls.cn/detail/2327695"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-023",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "2109c4d2e998f869d2059321aa2fb628cb99d51f",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "18080/news",
+          "url": "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E4%BA%BA%E7%9A%87%E9%99%8D%E4%B8%B4%21%E9%87%91%E7%89%8C%E7%94%B5%E7%AB%9E%E5%9B%A2%E7%8E%A9%E8%BD%AC%E4%BA%A4%E6%98%93%E6%9C%8D&amp;topic_id=28352444",
+          "title": "人皇降临!金牌电竞团玩转交易服"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "18080/news",
+    "source_item_id": "2109c4d2e998f869d2059321aa2fb628cb99d51f",
+    "title": "人皇降临!金牌电竞团玩转交易服",
+    "summary": "人皇降临!金牌电竞团玩转交易服；来自 18080 最新 report 外链",
+    "normalized_text": "18080/news | 其他观察 | 人皇降临!金牌电竞团玩转交易服 | 人皇降临!金牌电竞团玩转交易服；来自 18080 最新 report 外链",
+    "dedupe_fingerprint": "2109c4d2e998f869d2059321aa2fb628cb99d51f",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "其他观察"
+    ],
+    "raw_payload": {
+      "title": "人皇降临!金牌电竞团玩转交易服",
+      "url": "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E4%BA%BA%E7%9A%87%E9%99%8D%E4%B8%B4%21%E9%87%91%E7%89%8C%E7%94%B5%E7%AB%9E%E5%9B%A2%E7%8E%A9%E8%BD%AC%E4%BA%A4%E6%98%93%E6%9C%8D&amp;topic_id=28352444"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-024",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "10842e6af62a58bc48330eb7961768dcdd78bf2c",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "18080/news",
+          "url": "https://www.zhihu.com/question/2020633228688500416",
+          "title": "游客给妻子拍照因设备太专业被驱赶，景区回应系禁止商业拍摄，如何看待此事？此类规定怎样能执行得更合情理？"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "18080/news",
+    "source_item_id": "10842e6af62a58bc48330eb7961768dcdd78bf2c",
+    "title": "游客给妻子拍照因设备太专业被驱赶，景区回应系禁止商业拍摄，如何看待此事？此类规定怎样能执行得更合情理？",
+    "summary": "游客给妻子拍照因设备太专业被驱赶，景区回应系禁止商业拍摄，如何看待此事？此类规定怎样能执行得更合情理？；来自 18080 最新 report 外链",
+    "normalized_text": "18080/news | 其他观察 | 游客给妻子拍照因设备太专业被驱赶，景区回应系禁止商业拍摄，如何看待此事？此类规定怎样能执行得更合情理？ | 游客给妻子拍照因设备太专业被驱赶，景区回应系禁止商业拍摄，如何看待此事？此类规定怎样能执行得更合情理？；来自 18080 最新 report 外链",
+    "dedupe_fingerprint": "10842e6af62a58bc48330eb7961768dcdd78bf2c",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "其他观察"
+    ],
+    "raw_payload": {
+      "title": "游客给妻子拍照因设备太专业被驱赶，景区回应系禁止商业拍摄，如何看待此事？此类规定怎样能执行得更合情理？",
+      "url": "https://www.zhihu.com/question/2020633228688500416"
+    }
+  },
+  {
+    "meta": {
+      "id": "intake-20260329075414-025",
+      "object_type": "intake_record",
+      "run_id": "2026-03-29_075414",
+      "version": "2.0.0",
+      "status": "ready",
+      "generated_by": "run_stage1_intake.py",
+      "input_digest": "9b710db23e027296b659d4e47f497949c56f3570",
+      "upstream_ids": [],
+      "doc_refs": [
+        {
+          "kind": "url",
+          "token": "18080/news",
+          "url": "https://www.zhihu.com/question/2016544624882242166",
+          "title": "如果你能预测 0.1 秒后发生的事，你会做什么？"
+        }
+      ],
+      "created_at": "2026-03-29T07:54:14.000277+08:00",
+      "updated_at": "2026-03-29T07:54:14.000277+08:00"
+    },
+    "source": "18080/news",
+    "source_item_id": "9b710db23e027296b659d4e47f497949c56f3570",
+    "title": "如果你能预测 0.1 秒后发生的事，你会做什么？",
+    "summary": "如果你能预测 0.1 秒后发生的事，你会做什么？；来自 18080 最新 report 外链",
+    "normalized_text": "18080/news | 其他观察 | 如果你能预测 0.1 秒后发生的事，你会做什么？ | 如果你能预测 0.1 秒后发生的事，你会做什么？；来自 18080 最新 report 外链",
+    "dedupe_fingerprint": "9b710db23e027296b659d4e47f497949c56f3570",
+    "freshness_score": 0.9,
+    "engagement_score": null,
+    "tags": [
+      "其他观察"
+    ],
+    "raw_payload": {
+      "title": "如果你能预测 0.1 秒后发生的事，你会做什么？",
+      "url": "https://www.zhihu.com/question/2016544624882242166"
+    }
+  }
+]

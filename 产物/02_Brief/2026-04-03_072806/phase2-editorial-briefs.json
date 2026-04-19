@@ -1,0 +1,1216 @@
+[
+  {
+    "meta": {
+      "id": "2026-04-03_072806:topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_072806",
+      "version": "3.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "other::这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+      "upstream_ids": [
+        "intake-20260403072806-211",
+        "intake-20260403072806-001",
+        "intake-20260403072806-002",
+        "intake-20260403072806-004"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "other",
+          "url": "",
+          "title": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化"
+        }
+      ],
+      "created_at": "2026-04-03T07:57:47.161675+08:00",
+      "updated_at": "2026-04-03T07:57:47.161675+08:00"
+    },
+    "topic_id": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+    "title": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+    "source_status": "自然入选",
+    "cluster_name": "其他高频观察",
+    "core_thesis": "如果一类信息反复出现，重点应从单条新闻转向结构变量。",
+    "one_line_judgment": "如果一类信息反复出现，重点应从单条新闻转向结构变量。",
+    "counterintuitive_angle": "热闹只是入口，结构才是正文。",
+    "why_now": "当前样本 `92` 条，来源 `8` 类，且存在持续讨论密度。",
+    "reader_value": "适合 对行业与市场有持续跟踪需求的读者。，重点不是复述新闻，而是给判断框架。",
+    "audience": "对行业与市场有持续跟踪需求的读者。",
+    "proof_requirements": [
+      "证明反复出现的共同变量是什么。",
+      "证明为什么它不只是单条热点。",
+      "证明读者能从中获得稳定判断框架。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "other-e01",
+        "title": "Joe‘s 方小宝🪲",
+        "url": "https://www.xiaohongshu.com/explore/64c8c3e2000000001700ea7f?xsec_token=ABqTibgiC7dKFrgi-l4qUCFWOFrTZa1cK427gkoHxl2c0=&xsec_source=pc_feed",
+        "source_type": "小红书笔记",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "Joe‘s 方小宝🪲；热度=65000"
+      },
+      {
+        "evidence_id": "other-e02",
+        "title": "📊 Evening Market Summary\n\nBTC: $70,931 (🟢 0.32%)\nETH: $2,162 (🟢 0.92%)\n\nMarket i",
+        "url": "https://x.com/smfuns/status/2036427999000797367",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "📊 Evening Market Summary BTC: $70,931 (🟢 0.32%) ETH: $2,162 (🟢 0.92%) Market i；热度=1"
+      },
+      {
+        "evidence_id": "other-e03",
+        "title": "Want to spot crypto moves early? Watch sentiment shifts, RSI divergences, and vo",
+        "url": "https://x.com/CForecast65602/status/2036428458549543143",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "Want to spot crypto moves early? Watch sentiment shifts, RSI divergences, and vo；热度=1"
+      },
+      {
+        "evidence_id": "other-e04",
+        "title": "📊 GM Green but weak\n\nCrypto opens green but sentiment still behind price\n\n• BTC",
+        "url": "https://x.com/Amelia_loov/status/2036427968436723978",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "📊 GM Green but weak Crypto opens green but sentiment still behind price • BTC；热度=2"
+      }
+    ],
+    "missing_evidence": [
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "待补：证明反复出现的共同变量是什么。",
+      "待补：证明为什么它不只是单条热点。"
+    ],
+    "chart_needs": [
+      "核心变量趋势图"
+    ],
+    "image_needs": [
+      "最强相关场景图"
+    ],
+    "video_needs": [
+      "新闻素材和场景素材"
+    ],
+    "priority_people": [
+      "特朗普",
+      "高市早苗"
+    ],
+    "priority_orgs": [
+      "FED"
+    ],
+    "priority_news_queries": [
+      "日本 这轮高频讨论里，真正值得写的不是表面 latest news",
+      "特朗普 这轮高频讨论里，真正值得写的不是表面 latest news",
+      "高市早苗 这轮高频讨论里，真正值得写的不是表面 latest news"
+    ],
+    "structure_hint": {
+      "opening": "热闹只是入口，结构才是正文。",
+      "part_1": "证明反复出现的共同变量是什么。",
+      "part_2": "证明为什么它不只是单条热点。",
+      "part_3": "证明读者能从中获得稳定判断框架。",
+      "ending": "收束到读者应该继续盯哪些变量。"
+    },
+    "scorecard": {
+      "heat": 10.0,
+      "sharpness": 9.7,
+      "evidence": 4.99,
+      "longevity": 6.8,
+      "reader_value": 7.96,
+      "composite": 8.04
+    },
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_072806:topic-停火预期反复下-黄金-原油和风险资产正在被怎样重新定价",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_072806",
+      "version": "3.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "gold_oil_geo::停火预期反复下，黄金、原油和风险资产正在被怎样重新定价？",
+      "upstream_ids": [
+        "intake-20260403072806-035",
+        "intake-20260403072806-043",
+        "intake-20260403072806-081",
+        "intake-20260403072806-093"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "gold_oil_geo",
+          "url": "",
+          "title": "停火预期反复下，黄金、原油和风险资产正在被怎样重新定价？"
+        }
+      ],
+      "created_at": "2026-04-03T07:57:47.161800+08:00",
+      "updated_at": "2026-04-03T07:57:47.161800+08:00"
+    },
+    "topic_id": "topic-停火预期反复下-黄金-原油和风险资产正在被怎样重新定价",
+    "title": "停火预期反复下，黄金、原油和风险资产正在被怎样重新定价？",
+    "source_status": "自然入选",
+    "cluster_name": "黄金、原油与地缘风险",
+    "core_thesis": "当前交易重点不是战况细节，而是风险溢价与避险溢价会不会重新分层。",
+    "one_line_judgment": "当前交易重点不是战况细节，而是风险溢价与避险溢价会不会重新分层。",
+    "counterintuitive_angle": "新闻在降温，秩序成本未必在降温。",
+    "why_now": "当前样本 `34` 条，来源 `6` 类，且存在持续讨论密度。",
+    "reader_value": "适合 宏观、商品、基金配置读者。，重点不是复述新闻，而是给判断框架。",
+    "audience": "宏观、商品、基金配置读者。",
+    "proof_requirements": [
+      "用价格与运输/保险变量证明风险溢价没有完全退出。",
+      "解释黄金、原油和长债为何可能不同步。",
+      "给出短线事件与中线秩序变量的边界。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "gold_oil_geo-e01",
+        "title": "XAUUSD – Update\nHarga saat ini: 4328\nGold masih berada dalam tekanan bearish kua",
+        "url": "https://x.com/CuanRecehID/status/2036310303453925575",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "XAUUSD – Update Harga saat ini: 4328 Gold masih berada dalam tekanan bearish kua；热度=0"
+      },
+      {
+        "evidence_id": "gold_oil_geo-e02",
+        "title": "#xagusd #silver \n\nXAGUSD 1H: Bearish Channel Intact \nClear lower highs/lows, sel",
+        "url": "https://x.com/Lisa_Xauusd_FX/status/2036309911534194761",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "#xagusd #silver XAGUSD 1H: Bearish Channel Intact Clear lower highs/lows, sel；热度=1"
+      },
+      {
+        "evidence_id": "gold_oil_geo-e03",
+        "title": "#Silver slumps another Rs 7,400/kg, #gold slides to Rs 1.37 lakh/10 gm on firm d",
+        "url": "https://x.com/ETMarkets/status/2036300725358326093",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "#Silver slumps another Rs 7,400/kg, #gold slides to Rs 1.37 lakh/10 gm on firm d；热度=2"
+      },
+      {
+        "evidence_id": "gold_oil_geo-e04",
+        "title": "GOLDMAN SACS EXPECTS 50 BPS RATE HIKE BY RBI IN 2026\n\nSEE BRENT CRUDE $80/BBL IN",
+        "url": "https://x.com/swing_blaster/status/2036305861459714457",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "GOLDMAN SACS EXPECTS 50 BPS RATE HIKE BY RBI IN 2026 SEE BRENT CRUDE $80/BBL IN；热度=1"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补权威原文或原始数据。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "待补：用价格与运输/保险变量证明风险溢价没有完全退出。",
+      "待补：解释黄金、原油和长债为何可能不同步。"
+    ],
+    "chart_needs": [
+      "原油/黄金/美债收益率联动图",
+      "关键通道事件时间线"
+    ],
+    "image_needs": [
+      "油轮、炼化、黄金储备、外交场景"
+    ],
+    "video_needs": [
+      "港口、油轮、交易屏、新闻直播"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "AI 停火预期反复下，黄金、原油和风险资产 latest news",
+      "加息 停火预期反复下，黄金、原油和风险资产 latest news",
+      "降息 停火预期反复下，黄金、原油和风险资产 latest news"
+    ],
+    "structure_hint": {
+      "opening": "新闻在降温，秩序成本未必在降温。",
+      "part_1": "用价格与运输/保险变量证明风险溢价没有完全退出。",
+      "part_2": "解释黄金、原油和长债为何可能不同步。",
+      "part_3": "给出短线事件与中线秩序变量的边界。",
+      "ending": "收束到读者应该继续盯哪些变量。"
+    },
+    "scorecard": {
+      "heat": 9.46,
+      "sharpness": 9.0,
+      "evidence": 4.94,
+      "longevity": 9.4,
+      "reader_value": 6.86,
+      "composite": 7.91
+    },
+    "extendability": "可延展成系列稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_072806:topic-如果冲突开始长期化-真正要重估的可能不是战况-而是供给秩序",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_072806",
+      "version": "3.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "gold_oil_geo::如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+      "upstream_ids": [
+        "intake-20260403072806-035",
+        "intake-20260403072806-043",
+        "intake-20260403072806-081",
+        "intake-20260403072806-093"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "gold_oil_geo",
+          "url": "",
+          "title": "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序"
+        }
+      ],
+      "created_at": "2026-04-03T07:57:47.161829+08:00",
+      "updated_at": "2026-04-03T07:57:47.161829+08:00"
+    },
+    "topic_id": "topic-如果冲突开始长期化-真正要重估的可能不是战况-而是供给秩序",
+    "title": "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+    "source_status": "自然入选",
+    "cluster_name": "黄金、原油与地缘风险",
+    "core_thesis": "长期冲突更深的后果是供给、运输与通胀秩序重估，而不是一两天的价格波动。",
+    "one_line_judgment": "长期冲突更深的后果是供给、运输与通胀秩序重估，而不是一两天的价格波动。",
+    "counterintuitive_angle": "真正贵起来的不是新闻，而是稳定供应。",
+    "why_now": "当前样本 `34` 条，来源 `6` 类，且存在持续讨论密度。",
+    "reader_value": "适合 宏观、商品、基金配置读者。，重点不是复述新闻，而是给判断框架。",
+    "audience": "宏观、商品、基金配置读者。",
+    "proof_requirements": [
+      "证明关键通道或运输链条的摩擦在持续。",
+      "证明企业和市场在重估库存、现金流或保险成本。",
+      "解释为什么供给过剩叙事和再通胀叙事可以同时存在。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "gold_oil_geo-e01",
+        "title": "XAUUSD – Update\nHarga saat ini: 4328\nGold masih berada dalam tekanan bearish kua",
+        "url": "https://x.com/CuanRecehID/status/2036310303453925575",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "XAUUSD – Update Harga saat ini: 4328 Gold masih berada dalam tekanan bearish kua；热度=0"
+      },
+      {
+        "evidence_id": "gold_oil_geo-e02",
+        "title": "#xagusd #silver \n\nXAGUSD 1H: Bearish Channel Intact \nClear lower highs/lows, sel",
+        "url": "https://x.com/Lisa_Xauusd_FX/status/2036309911534194761",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "#xagusd #silver XAGUSD 1H: Bearish Channel Intact Clear lower highs/lows, sel；热度=1"
+      },
+      {
+        "evidence_id": "gold_oil_geo-e03",
+        "title": "#Silver slumps another Rs 7,400/kg, #gold slides to Rs 1.37 lakh/10 gm on firm d",
+        "url": "https://x.com/ETMarkets/status/2036300725358326093",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "#Silver slumps another Rs 7,400/kg, #gold slides to Rs 1.37 lakh/10 gm on firm d；热度=2"
+      },
+      {
+        "evidence_id": "gold_oil_geo-e04",
+        "title": "GOLDMAN SACS EXPECTS 50 BPS RATE HIKE BY RBI IN 2026\n\nSEE BRENT CRUDE $80/BBL IN",
+        "url": "https://x.com/swing_blaster/status/2036305861459714457",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "GOLDMAN SACS EXPECTS 50 BPS RATE HIKE BY RBI IN 2026 SEE BRENT CRUDE $80/BBL IN；热度=1"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补权威原文或原始数据。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "待补：证明关键通道或运输链条的摩擦在持续。",
+      "待补：证明企业和市场在重估库存、现金流或保险成本。"
+    ],
+    "chart_needs": [
+      "航运/原油/黄金三联图",
+      "通道摩擦与价格反应对照图"
+    ],
+    "image_needs": [
+      "海运、航道、港口、黄金库房"
+    ],
+    "video_needs": [
+      "油轮航拍、港口、交易所、新闻访谈"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "AI 如果冲突开始长期化，真正要重估的可能 latest news",
+      "加息 如果冲突开始长期化，真正要重估的可能 latest news",
+      "降息 如果冲突开始长期化，真正要重估的可能 latest news"
+    ],
+    "structure_hint": {
+      "opening": "真正贵起来的不是新闻，而是稳定供应。",
+      "part_1": "证明关键通道或运输链条的摩擦在持续。",
+      "part_2": "证明企业和市场在重估库存、现金流或保险成本。",
+      "part_3": "解释为什么供给过剩叙事和再通胀叙事可以同时存在。",
+      "ending": "收束到读者应该继续盯哪些变量。"
+    },
+    "scorecard": {
+      "heat": 9.46,
+      "sharpness": 9.0,
+      "evidence": 4.94,
+      "longevity": 9.4,
+      "reader_value": 6.31,
+      "composite": 7.8
+    },
+    "extendability": "可延展成系列稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_072806:topic-ai-工具与工作流接入里最值得继续追的-不是表面热闹-而是底层变量在怎么",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_072806",
+      "version": "3.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "ai_workflow::AI 工具与工作流接入里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+      "upstream_ids": [
+        "intake-20260403072806-101",
+        "intake-20260403072806-290",
+        "intake-20260403072806-373",
+        "intake-20260403072806-375"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "ai_workflow",
+          "url": "",
+          "title": "AI 工具与工作流接入里最值得继续追的，不是表面热闹，而是底层变量在怎么变"
+        }
+      ],
+      "created_at": "2026-04-03T07:57:47.161930+08:00",
+      "updated_at": "2026-04-03T07:57:47.161930+08:00"
+    },
+    "topic_id": "topic-ai-工具与工作流接入里最值得继续追的-不是表面热闹-而是底层变量在怎么",
+    "title": "AI 工具与工作流接入里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+    "source_status": "自然补位",
+    "cluster_name": "AI 工具与工作流接入",
+    "core_thesis": "当前围绕“AI 工具与工作流接入”的高频讨论，最值得写的是它背后的结构变化，而不是消息表层。",
+    "one_line_judgment": "当前围绕“AI 工具与工作流接入”的高频讨论，最值得写的是它背后的结构变化，而不是消息表层。",
+    "counterintuitive_angle": "AI 工具与工作流接入当前最容易被误读成线性故事，实际上更像分化和重估并行。",
+    "why_now": "当前样本 `75` 条，来源 `7` 类，且存在持续讨论密度。",
+    "reader_value": "适合 AI 工具用户、自媒体作者、效率型读者。，重点不是复述新闻，而是给判断框架。",
+    "audience": "AI 工具用户、自媒体作者、效率型读者。",
+    "proof_requirements": [
+      "先界定 AI 工具与工作流接入 讨论的核心变量。",
+      "拆开表面催化与真正可持续的驱动因素。",
+      "给读者一个继续跟踪的判断框架。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "ai_workflow-e01",
+        "title": "日本央行顶不住了。 悄悄买入日本长债。 机构预计规模达到5000-8000亿日元。 也就是说，日本人在通过自我消耗来托市。 但是这样拖不了几天。 日元只会越来越",
+        "url": "https://m.weibo.cn/detail/5282165689420576",
+        "source_type": "微博",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "日本央行顶不住了。 悄悄买入日本长债。 机构预计规模达到5000-8000亿日元。 也就是说，日本人在通过自我消耗来托市。 但是这样拖不了几天。 日元只会越来越；热度=134"
+      },
+      {
+        "evidence_id": "ai_workflow-e02",
+        "title": "股票干货 炒股养家：情绪的本质 #股票干货 #股票 #股民",
+        "url": "https://www.douyin.com/video/7577690053946641698",
+        "source_type": "抖音",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "股票干货 炒股养家：情绪的本质 #股票干货 #股票 #股民；热度=827"
+      },
+      {
+        "evidence_id": "ai_workflow-e03",
+        "title": "上海的房子见底了吗？",
+        "url": "https://mp.weixin.qq.com/s/1fcjjswXq2u2mkaAhK1qQg",
+        "source_type": "公众号文章",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "上海的房子见底了吗？；表舅是养基大户 定向样本"
+      },
+      {
+        "evidence_id": "ai_workflow-e04",
+        "title": "桥水也亏钱了？",
+        "url": "https://mp.weixin.qq.com/s/aiGv5elqRiUUiQCZvTyV5g",
+        "source_type": "公众号文章",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "桥水也亏钱了？；表舅是养基大户 定向样本"
+      }
+    ],
+    "missing_evidence": [
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "待补：先界定 AI 工具与工作流接入 讨论的核心变量。",
+      "待补：拆开表面催化与真正可持续的驱动因素。"
+    ],
+    "chart_needs": [
+      "主变量趋势图",
+      "结构分化图"
+    ],
+    "image_needs": [
+      "高频人物/机构图",
+      "关键场景图"
+    ],
+    "video_needs": [
+      "新闻画面",
+      "场景素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "EIA",
+      "日本央行",
+      "FED"
+    ],
+    "priority_news_queries": [
+      "AI AI 工具与工作流接入里最值得继续追 latest news",
+      "加息 AI 工具与工作流接入里最值得继续追 latest news",
+      "降息 AI 工具与工作流接入里最值得继续追 latest news"
+    ],
+    "structure_hint": {
+      "opening": "AI 工具与工作流接入当前最容易被误读成线性故事，实际上更像分化和重估并行。",
+      "part_1": "先界定 AI 工具与工作流接入 讨论的核心变量。",
+      "part_2": "拆开表面催化与真正可持续的驱动因素。",
+      "part_3": "给读者一个继续跟踪的判断框架。",
+      "ending": "收束到读者应该继续盯哪些变量。"
+    },
+    "scorecard": {
+      "heat": 10.0,
+      "sharpness": 8.45,
+      "evidence": 5.18,
+      "longevity": 7.8,
+      "reader_value": 7.41,
+      "composite": 7.8
+    },
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_072806:topic-黄金-原油与地缘风险里最值得继续追的-不是表面热闹-而是底层变量在怎么变",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_072806",
+      "version": "3.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "gold_oil_geo::黄金、原油与地缘风险里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+      "upstream_ids": [
+        "intake-20260403072806-035",
+        "intake-20260403072806-043",
+        "intake-20260403072806-081",
+        "intake-20260403072806-093"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "gold_oil_geo",
+          "url": "",
+          "title": "黄金、原油与地缘风险里最值得继续追的，不是表面热闹，而是底层变量在怎么变"
+        }
+      ],
+      "created_at": "2026-04-03T07:57:47.161953+08:00",
+      "updated_at": "2026-04-03T07:57:47.161953+08:00"
+    },
+    "topic_id": "topic-黄金-原油与地缘风险里最值得继续追的-不是表面热闹-而是底层变量在怎么变",
+    "title": "黄金、原油与地缘风险里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+    "source_status": "自然补位",
+    "cluster_name": "黄金、原油与地缘风险",
+    "core_thesis": "当前围绕“黄金、原油与地缘风险”的高频讨论，最值得写的是它背后的结构变化，而不是消息表层。",
+    "one_line_judgment": "当前围绕“黄金、原油与地缘风险”的高频讨论，最值得写的是它背后的结构变化，而不是消息表层。",
+    "counterintuitive_angle": "黄金、原油与地缘风险当前最容易被误读成线性故事，实际上更像分化和重估并行。",
+    "why_now": "当前样本 `34` 条，来源 `6` 类，且存在持续讨论密度。",
+    "reader_value": "适合 宏观、商品、基金配置读者。，重点不是复述新闻，而是给判断框架。",
+    "audience": "宏观、商品、基金配置读者。",
+    "proof_requirements": [
+      "先界定 黄金、原油与地缘风险 讨论的核心变量。",
+      "拆开表面催化与真正可持续的驱动因素。",
+      "给读者一个继续跟踪的判断框架。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "gold_oil_geo-e01",
+        "title": "XAUUSD – Update\nHarga saat ini: 4328\nGold masih berada dalam tekanan bearish kua",
+        "url": "https://x.com/CuanRecehID/status/2036310303453925575",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "XAUUSD – Update Harga saat ini: 4328 Gold masih berada dalam tekanan bearish kua；热度=0"
+      },
+      {
+        "evidence_id": "gold_oil_geo-e02",
+        "title": "#xagusd #silver \n\nXAGUSD 1H: Bearish Channel Intact \nClear lower highs/lows, sel",
+        "url": "https://x.com/Lisa_Xauusd_FX/status/2036309911534194761",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "#xagusd #silver XAGUSD 1H: Bearish Channel Intact Clear lower highs/lows, sel；热度=1"
+      },
+      {
+        "evidence_id": "gold_oil_geo-e03",
+        "title": "#Silver slumps another Rs 7,400/kg, #gold slides to Rs 1.37 lakh/10 gm on firm d",
+        "url": "https://x.com/ETMarkets/status/2036300725358326093",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "#Silver slumps another Rs 7,400/kg, #gold slides to Rs 1.37 lakh/10 gm on firm d；热度=2"
+      },
+      {
+        "evidence_id": "gold_oil_geo-e04",
+        "title": "GOLDMAN SACS EXPECTS 50 BPS RATE HIKE BY RBI IN 2026\n\nSEE BRENT CRUDE $80/BBL IN",
+        "url": "https://x.com/swing_blaster/status/2036305861459714457",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "GOLDMAN SACS EXPECTS 50 BPS RATE HIKE BY RBI IN 2026 SEE BRENT CRUDE $80/BBL IN；热度=1"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补权威原文或原始数据。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "待补：先界定 黄金、原油与地缘风险 讨论的核心变量。",
+      "待补：拆开表面催化与真正可持续的驱动因素。"
+    ],
+    "chart_needs": [
+      "主变量趋势图",
+      "结构分化图"
+    ],
+    "image_needs": [
+      "高频人物/机构图",
+      "关键场景图"
+    ],
+    "video_needs": [
+      "新闻画面",
+      "场景素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "AI 黄金、原油与地缘风险里最值得继续追的 latest news",
+      "加息 黄金、原油与地缘风险里最值得继续追的 latest news",
+      "降息 黄金、原油与地缘风险里最值得继续追的 latest news"
+    ],
+    "structure_hint": {
+      "opening": "黄金、原油与地缘风险当前最容易被误读成线性故事，实际上更像分化和重估并行。",
+      "part_1": "先界定 黄金、原油与地缘风险 讨论的核心变量。",
+      "part_2": "拆开表面催化与真正可持续的驱动因素。",
+      "part_3": "给读者一个继续跟踪的判断框架。",
+      "ending": "收束到读者应该继续盯哪些变量。"
+    },
+    "scorecard": {
+      "heat": 9.46,
+      "sharpness": 8.1,
+      "evidence": 4.94,
+      "longevity": 9.4,
+      "reader_value": 7.41,
+      "composite": 7.8
+    },
+    "extendability": "可延展成系列稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_072806:topic-表面在交易事件-真正的主线会不会其实是再通胀",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_072806",
+      "version": "3.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "macro_policy::表面在交易事件，真正的主线会不会其实是再通胀？",
+      "upstream_ids": [
+        "intake-20260403072806-008",
+        "intake-20260403072806-010",
+        "intake-20260403072806-014",
+        "intake-20260403072806-047"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "macro_policy",
+          "url": "",
+          "title": "表面在交易事件，真正的主线会不会其实是再通胀？"
+        }
+      ],
+      "created_at": "2026-04-03T07:57:47.161603+08:00",
+      "updated_at": "2026-04-03T07:57:47.161603+08:00"
+    },
+    "topic_id": "topic-表面在交易事件-真正的主线会不会其实是再通胀",
+    "title": "表面在交易事件，真正的主线会不会其实是再通胀？",
+    "source_status": "自然入选",
+    "cluster_name": "宏观政策与再通胀",
+    "core_thesis": "事件冲击只是引线，真正需要重估的是通胀和利率预期的重新摆动。",
+    "one_line_judgment": "事件冲击只是引线，真正需要重估的是通胀和利率预期的重新摆动。",
+    "counterintuitive_angle": "市场看起来在追消息，实际在修正利率和通胀路径。",
+    "why_now": "当前样本 `181` 条，来源 `4` 类，且存在持续讨论密度。",
+    "reader_value": "适合 宏观资产配置、债券、基金读者。，重点不是复述新闻，而是给判断框架。",
+    "audience": "宏观资产配置、债券、基金读者。",
+    "proof_requirements": [
+      "说明事件如何传导到再通胀预期。",
+      "给出股债商品在再通胀框架下的分化路径。",
+      "证明再通胀不是情绪词，而是数据和政策函数问题。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "macro_policy-e01",
+        "title": "“We’re Living on Borrowed Time”: National Debt Hits $39 Trillion as Top Diplomat",
+        "url": "https://x.com/MaureenHSulliv2/status/2036311048941195624",
+        "source_type": "采集来源",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "“We’re Living on Borrowed Time”: National Debt Hits $39 Trillion as Top Diplomat；热度=0"
+      },
+      {
+        "evidence_id": "macro_policy-e02",
+        "title": "Interesting to see that it's a UK charity more concerned about our national debt",
+        "url": "https://x.com/onjezani/status/2036311181426589888",
+        "source_type": "采集来源",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "Interesting to see that it's a UK charity more concerned about our national debt；热度=0"
+      },
+      {
+        "evidence_id": "macro_policy-e03",
+        "title": "OpenAl is offering private-equity firms a guaranteed minimum return of 17.5%, as",
+        "url": "https://x.com/AndrewCurran_/status/2036043793968083192",
+        "source_type": "采集来源",
+        "source_tier": "mainstream_media",
+        "evidence_type": "article_link",
+        "note": "OpenAl is offering private-equity firms a guaranteed minimum return of 17.5%, as；热度=2812"
+      },
+      {
+        "evidence_id": "macro_policy-e04",
+        "title": "@monetaryfungi @GoodnessGlenda @LadyKGCT @Ghostzapper0406 @DemocracyDocket Yes,",
+        "url": "https://x.com/grok/status/2036310027649118496",
+        "source_type": "采集来源",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "@monetaryfungi @GoodnessGlenda @LadyKGCT @Ghostzapper0406 @DemocracyDocket Yes,；热度=0"
+      }
+    ],
+    "missing_evidence": [
+      "待补：说明事件如何传导到再通胀预期。",
+      "待补：给出股债商品在再通胀框架下的分化路径。"
+    ],
+    "chart_needs": [
+      "通胀/利率/商品价格三联图",
+      "股债商品情景矩阵"
+    ],
+    "image_needs": [
+      "美联储、交易员、商品屏幕"
+    ],
+    "video_needs": [
+      "议息会、交易屏、商品市场新闻画面"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "FED"
+    ],
+    "priority_news_queries": [
+      "加息 表面在交易事件，真正的主线会不会其实 latest news",
+      "降息 表面在交易事件，真正的主线会不会其实 latest news",
+      "AI 表面在交易事件，真正的主线会不会其实 latest news"
+    ],
+    "structure_hint": {
+      "opening": "市场看起来在追消息，实际在修正利率和通胀路径。",
+      "part_1": "说明事件如何传导到再通胀预期。",
+      "part_2": "给出股债商品在再通胀框架下的分化路径。",
+      "part_3": "证明再通胀不是情绪词，而是数据和政策函数问题。",
+      "ending": "收束到读者应该继续盯哪些变量。"
+    },
+    "scorecard": {
+      "heat": 10.0,
+      "sharpness": 8.3,
+      "evidence": 5.19,
+      "longevity": 9.2,
+      "reader_value": 6.31,
+      "composite": 7.76
+    },
+    "extendability": "可延展成系列稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_072806:topic-宏观政策与再通胀里最值得继续追的-不是表面热闹-而是底层变量在怎么变",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_072806",
+      "version": "3.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "macro_policy::宏观政策与再通胀里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+      "upstream_ids": [
+        "intake-20260403072806-008",
+        "intake-20260403072806-010",
+        "intake-20260403072806-014",
+        "intake-20260403072806-047"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "macro_policy",
+          "url": "",
+          "title": "宏观政策与再通胀里最值得继续追的，不是表面热闹，而是底层变量在怎么变"
+        }
+      ],
+      "created_at": "2026-04-03T07:57:47.161881+08:00",
+      "updated_at": "2026-04-03T07:57:47.161881+08:00"
+    },
+    "topic_id": "topic-宏观政策与再通胀里最值得继续追的-不是表面热闹-而是底层变量在怎么变",
+    "title": "宏观政策与再通胀里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+    "source_status": "自然补位",
+    "cluster_name": "宏观政策与再通胀",
+    "core_thesis": "当前围绕“宏观政策与再通胀”的高频讨论，最值得写的是它背后的结构变化，而不是消息表层。",
+    "one_line_judgment": "当前围绕“宏观政策与再通胀”的高频讨论，最值得写的是它背后的结构变化，而不是消息表层。",
+    "counterintuitive_angle": "宏观政策与再通胀当前最容易被误读成线性故事，实际上更像分化和重估并行。",
+    "why_now": "当前样本 `181` 条，来源 `4` 类，且存在持续讨论密度。",
+    "reader_value": "适合 宏观资产配置、债券、基金读者。，重点不是复述新闻，而是给判断框架。",
+    "audience": "宏观资产配置、债券、基金读者。",
+    "proof_requirements": [
+      "先界定 宏观政策与再通胀 讨论的核心变量。",
+      "拆开表面催化与真正可持续的驱动因素。",
+      "给读者一个继续跟踪的判断框架。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "macro_policy-e01",
+        "title": "“We’re Living on Borrowed Time”: National Debt Hits $39 Trillion as Top Diplomat",
+        "url": "https://x.com/MaureenHSulliv2/status/2036311048941195624",
+        "source_type": "采集来源",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "“We’re Living on Borrowed Time”: National Debt Hits $39 Trillion as Top Diplomat；热度=0"
+      },
+      {
+        "evidence_id": "macro_policy-e02",
+        "title": "Interesting to see that it's a UK charity more concerned about our national debt",
+        "url": "https://x.com/onjezani/status/2036311181426589888",
+        "source_type": "采集来源",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "Interesting to see that it's a UK charity more concerned about our national debt；热度=0"
+      },
+      {
+        "evidence_id": "macro_policy-e03",
+        "title": "OpenAl is offering private-equity firms a guaranteed minimum return of 17.5%, as",
+        "url": "https://x.com/AndrewCurran_/status/2036043793968083192",
+        "source_type": "采集来源",
+        "source_tier": "mainstream_media",
+        "evidence_type": "article_link",
+        "note": "OpenAl is offering private-equity firms a guaranteed minimum return of 17.5%, as；热度=2812"
+      },
+      {
+        "evidence_id": "macro_policy-e04",
+        "title": "@monetaryfungi @GoodnessGlenda @LadyKGCT @Ghostzapper0406 @DemocracyDocket Yes,",
+        "url": "https://x.com/grok/status/2036310027649118496",
+        "source_type": "采集来源",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "@monetaryfungi @GoodnessGlenda @LadyKGCT @Ghostzapper0406 @DemocracyDocket Yes,；热度=0"
+      }
+    ],
+    "missing_evidence": [
+      "待补：先界定 宏观政策与再通胀 讨论的核心变量。",
+      "待补：拆开表面催化与真正可持续的驱动因素。"
+    ],
+    "chart_needs": [
+      "主变量趋势图",
+      "结构分化图"
+    ],
+    "image_needs": [
+      "高频人物/机构图",
+      "关键场景图"
+    ],
+    "video_needs": [
+      "新闻画面",
+      "场景素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "FED"
+    ],
+    "priority_news_queries": [
+      "加息 宏观政策与再通胀里最值得继续追的，不 latest news",
+      "降息 宏观政策与再通胀里最值得继续追的，不 latest news",
+      "AI 宏观政策与再通胀里最值得继续追的，不 latest news"
+    ],
+    "structure_hint": {
+      "opening": "宏观政策与再通胀当前最容易被误读成线性故事，实际上更像分化和重估并行。",
+      "part_1": "先界定 宏观政策与再通胀 讨论的核心变量。",
+      "part_2": "拆开表面催化与真正可持续的驱动因素。",
+      "part_3": "给读者一个继续跟踪的判断框架。",
+      "ending": "收束到读者应该继续盯哪些变量。"
+    },
+    "scorecard": {
+      "heat": 10.0,
+      "sharpness": 7.4,
+      "evidence": 5.19,
+      "longevity": 9.2,
+      "reader_value": 7.41,
+      "composite": 7.75
+    },
+    "extendability": "可延展成系列稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_072806:topic-其他高频观察里最值得继续追的-不是表面热闹-而是底层变量在怎么变",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_072806",
+      "version": "3.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "other::其他高频观察里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+      "upstream_ids": [
+        "intake-20260403072806-211",
+        "intake-20260403072806-001",
+        "intake-20260403072806-002",
+        "intake-20260403072806-004"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "other",
+          "url": "",
+          "title": "其他高频观察里最值得继续追的，不是表面热闹，而是底层变量在怎么变"
+        }
+      ],
+      "created_at": "2026-04-03T07:57:47.161906+08:00",
+      "updated_at": "2026-04-03T07:57:47.161906+08:00"
+    },
+    "topic_id": "topic-其他高频观察里最值得继续追的-不是表面热闹-而是底层变量在怎么变",
+    "title": "其他高频观察里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+    "source_status": "自然补位",
+    "cluster_name": "其他高频观察",
+    "core_thesis": "当前围绕“其他高频观察”的高频讨论，最值得写的是它背后的结构变化，而不是消息表层。",
+    "one_line_judgment": "当前围绕“其他高频观察”的高频讨论，最值得写的是它背后的结构变化，而不是消息表层。",
+    "counterintuitive_angle": "其他高频观察当前最容易被误读成线性故事，实际上更像分化和重估并行。",
+    "why_now": "当前样本 `92` 条，来源 `8` 类，且存在持续讨论密度。",
+    "reader_value": "适合 对行业与市场有持续跟踪需求的读者。，重点不是复述新闻，而是给判断框架。",
+    "audience": "对行业与市场有持续跟踪需求的读者。",
+    "proof_requirements": [
+      "先界定 其他高频观察 讨论的核心变量。",
+      "拆开表面催化与真正可持续的驱动因素。",
+      "给读者一个继续跟踪的判断框架。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "other-e01",
+        "title": "Joe‘s 方小宝🪲",
+        "url": "https://www.xiaohongshu.com/explore/64c8c3e2000000001700ea7f?xsec_token=ABqTibgiC7dKFrgi-l4qUCFWOFrTZa1cK427gkoHxl2c0=&xsec_source=pc_feed",
+        "source_type": "小红书笔记",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "Joe‘s 方小宝🪲；热度=65000"
+      },
+      {
+        "evidence_id": "other-e02",
+        "title": "📊 Evening Market Summary\n\nBTC: $70,931 (🟢 0.32%)\nETH: $2,162 (🟢 0.92%)\n\nMarket i",
+        "url": "https://x.com/smfuns/status/2036427999000797367",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "📊 Evening Market Summary BTC: $70,931 (🟢 0.32%) ETH: $2,162 (🟢 0.92%) Market i；热度=1"
+      },
+      {
+        "evidence_id": "other-e03",
+        "title": "Want to spot crypto moves early? Watch sentiment shifts, RSI divergences, and vo",
+        "url": "https://x.com/CForecast65602/status/2036428458549543143",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "Want to spot crypto moves early? Watch sentiment shifts, RSI divergences, and vo；热度=1"
+      },
+      {
+        "evidence_id": "other-e04",
+        "title": "📊 GM Green but weak\n\nCrypto opens green but sentiment still behind price\n\n• BTC",
+        "url": "https://x.com/Amelia_loov/status/2036427968436723978",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "📊 GM Green but weak Crypto opens green but sentiment still behind price • BTC；热度=2"
+      }
+    ],
+    "missing_evidence": [
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "待补：先界定 其他高频观察 讨论的核心变量。",
+      "待补：拆开表面催化与真正可持续的驱动因素。"
+    ],
+    "chart_needs": [
+      "主变量趋势图",
+      "结构分化图"
+    ],
+    "image_needs": [
+      "高频人物/机构图",
+      "关键场景图"
+    ],
+    "video_needs": [
+      "新闻画面",
+      "场景素材"
+    ],
+    "priority_people": [
+      "特朗普",
+      "高市早苗"
+    ],
+    "priority_orgs": [
+      "FED"
+    ],
+    "priority_news_queries": [
+      "日本 其他高频观察里最值得继续追的，不是表 latest news",
+      "特朗普 其他高频观察里最值得继续追的，不是表 latest news",
+      "高市早苗 其他高频观察里最值得继续追的，不是表 latest news"
+    ],
+    "structure_hint": {
+      "opening": "其他高频观察当前最容易被误读成线性故事，实际上更像分化和重估并行。",
+      "part_1": "先界定 其他高频观察 讨论的核心变量。",
+      "part_2": "拆开表面催化与真正可持续的驱动因素。",
+      "part_3": "给读者一个继续跟踪的判断框架。",
+      "ending": "收束到读者应该继续盯哪些变量。"
+    },
+    "scorecard": {
+      "heat": 10.0,
+      "sharpness": 8.8,
+      "evidence": 4.99,
+      "longevity": 6.8,
+      "reader_value": 7.41,
+      "composite": 7.7
+    },
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_072806:topic-一键安装-openclaw-常用-skills-为什么比-会用-ai-更",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_072806",
+      "version": "3.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "ai_workflow::一键安装 OpenClaw + 常用 skills，为什么比“会用 AI”更重要的是“能不能接进工作流”",
+      "upstream_ids": [
+        "intake-20260403072806-101",
+        "intake-20260403072806-290",
+        "intake-20260403072806-373",
+        "intake-20260403072806-375"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "ai_workflow",
+          "url": "",
+          "title": "一键安装 OpenClaw + 常用 skills，为什么比“会用 AI”更重要的是“能不能接进工作流”"
+        }
+      ],
+      "created_at": "2026-04-03T07:57:47.161746+08:00",
+      "updated_at": "2026-04-03T07:57:47.161746+08:00"
+    },
+    "topic_id": "topic-一键安装-openclaw-常用-skills-为什么比-会用-ai-更",
+    "title": "一键安装 OpenClaw + 常用 skills，为什么比“会用 AI”更重要的是“能不能接进工作流”",
+    "source_status": "自然入选",
+    "cluster_name": "AI 工具与工作流接入",
+    "core_thesis": "工具数量已经不是稀缺信息，真正稀缺的是能否稳定接进真实工作链路。",
+    "one_line_judgment": "工具数量已经不是稀缺信息，真正稀缺的是能否稳定接进真实工作链路。",
+    "counterintuitive_angle": "参数不是壁垒，稳定接线才是壁垒。",
+    "why_now": "当前样本 `75` 条，来源 `7` 类，且存在持续讨论密度。",
+    "reader_value": "适合 AI 工具用户、自媒体作者、效率型读者。，重点不是复述新闻，而是给判断框架。",
+    "audience": "AI 工具用户、自媒体作者、效率型读者。",
+    "proof_requirements": [
+      "说明传统安装/配置为什么让普通人难以落地。",
+      "证明一键安装方案在安全性、复杂度、维护成本上解决了什么。",
+      "给出真实工作流接入而非单点工具演示。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "ai_workflow-e01",
+        "title": "日本央行顶不住了。 悄悄买入日本长债。 机构预计规模达到5000-8000亿日元。 也就是说，日本人在通过自我消耗来托市。 但是这样拖不了几天。 日元只会越来越",
+        "url": "https://m.weibo.cn/detail/5282165689420576",
+        "source_type": "微博",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "日本央行顶不住了。 悄悄买入日本长债。 机构预计规模达到5000-8000亿日元。 也就是说，日本人在通过自我消耗来托市。 但是这样拖不了几天。 日元只会越来越；热度=134"
+      },
+      {
+        "evidence_id": "ai_workflow-e02",
+        "title": "股票干货 炒股养家：情绪的本质 #股票干货 #股票 #股民",
+        "url": "https://www.douyin.com/video/7577690053946641698",
+        "source_type": "抖音",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "股票干货 炒股养家：情绪的本质 #股票干货 #股票 #股民；热度=827"
+      },
+      {
+        "evidence_id": "ai_workflow-e03",
+        "title": "上海的房子见底了吗？",
+        "url": "https://mp.weixin.qq.com/s/1fcjjswXq2u2mkaAhK1qQg",
+        "source_type": "公众号文章",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "上海的房子见底了吗？；表舅是养基大户 定向样本"
+      },
+      {
+        "evidence_id": "ai_workflow-e04",
+        "title": "桥水也亏钱了？",
+        "url": "https://mp.weixin.qq.com/s/aiGv5elqRiUUiQCZvTyV5g",
+        "source_type": "公众号文章",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "桥水也亏钱了？；表舅是养基大户 定向样本"
+      }
+    ],
+    "missing_evidence": [
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "待补：说明传统安装/配置为什么让普通人难以落地。",
+      "待补：证明一键安装方案在安全性、复杂度、维护成本上解决了什么。"
+    ],
+    "chart_needs": [
+      "传统安装 vs 自动安装流程对比表",
+      "工作流接入链路图"
+    ],
+    "image_needs": [
+      "终端、工作流图、多人协作场景"
+    ],
+    "video_needs": [
+      "屏幕操作录制、协作场景、系统演示"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "EIA",
+      "日本央行",
+      "FED"
+    ],
+    "priority_news_queries": [
+      "AI 一键安装 OpenClaw + 常用 latest news",
+      "加息 一键安装 OpenClaw + 常用 latest news",
+      "降息 一键安装 OpenClaw + 常用 latest news"
+    ],
+    "structure_hint": {
+      "opening": "参数不是壁垒，稳定接线才是壁垒。",
+      "part_1": "说明传统安装/配置为什么让普通人难以落地。",
+      "part_2": "证明一键安装方案在安全性、复杂度、维护成本上解决了什么。",
+      "part_3": "给出真实工作流接入而非单点工具演示。",
+      "ending": "收束到读者应该继续盯哪些变量。"
+    },
+    "scorecard": {
+      "heat": 10.0,
+      "sharpness": 8.45,
+      "evidence": 5.18,
+      "longevity": 7.8,
+      "reader_value": 6.31,
+      "composite": 7.58
+    },
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-03_072806:topic-半导体突然很热闹-但行业最危险的误判可能才刚开始",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-03_072806",
+      "version": "3.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "semiconductor::半导体突然很热闹，但行业最危险的误判可能才刚开始",
+      "upstream_ids": [
+        "intake-20260403072806-172",
+        "intake-20260403072806-326",
+        "intake-20260403072806-366",
+        "intake-20260403072806-386"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "semiconductor",
+          "url": "",
+          "title": "半导体突然很热闹，但行业最危险的误判可能才刚开始"
+        }
+      ],
+      "created_at": "2026-04-03T07:57:47.161853+08:00",
+      "updated_at": "2026-04-03T07:57:47.161853+08:00"
+    },
+    "topic_id": "topic-半导体突然很热闹-但行业最危险的误判可能才刚开始",
+    "title": "半导体突然很热闹，但行业最危险的误判可能才刚开始",
+    "source_status": "自然入选",
+    "cluster_name": "半导体与科技产业分化",
+    "core_thesis": "新品、涨价和局部催化并不等于产业全面复苏，结构分化才是主线。",
+    "one_line_judgment": "新品、涨价和局部催化并不等于产业全面复苏，结构分化才是主线。",
+    "counterintuitive_angle": "热闹不等于景气普涨。",
+    "why_now": "当前样本 `8` 条，来源 `4` 类，且存在持续讨论密度。",
+    "reader_value": "适合 产业观察型、科技投资型读者。，重点不是复述新闻，而是给判断框架。",
+    "audience": "产业观察型、科技投资型读者。",
+    "proof_requirements": [
+      "拆开设备、新品、价格和订单四类信号。",
+      "证明哪些环节修复，哪些环节还没验证。",
+      "指出投资者最容易把什么误判成全面景气。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "semiconductor-e01",
+        "title": "通胀一定是要来了，无论你愿不愿意，你都不得不接受这个事实。两轮电动车都涨价了，其它的还会远吗？ ​",
+        "url": "https://m.weibo.cn/detail/5282648994879610",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "通胀一定是要来了，无论你愿不愿意，你都不得不接受这个事实。两轮电动车都涨价了，其它的还会远吗？ ​；热度=2518"
+      },
+      {
+        "evidence_id": "semiconductor-e02",
+        "title": "A股04.01收评：医药三连阳、算力轮动、电力调整，市场结构性机会梳理",
+        "url": "https://www.bilibili.com/video/BV1ji9jB3EmT",
+        "source_type": "B站",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "A股04.01收评：医药三连阳、算力轮动、电力调整，市场结构性机会梳理；热度=441"
+      },
+      {
+        "evidence_id": "semiconductor-e03",
+        "title": "工信部首提“算力银行”“算力超市” 降低中小企业用算门槛",
+        "url": "https://www.cls.cn/detail/2333703",
+        "source_type": "聚合新闻",
+        "source_tier": "personal_opinion",
+        "evidence_type": "article_link",
+        "note": "工信部首提“算力银行”“算力超市” 降低中小企业用算门槛；来自 reports 最新 report 外链"
+      },
+      {
+        "evidence_id": "semiconductor-e04",
+        "title": "恭喜！贵州煜晖电子二期，正式开工",
+        "url": "https://mp.weixin.qq.com/s/mYA-d4r8K9VUqxfN1V0Tjw",
+        "source_type": "公众号文章",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "恭喜！贵州煜晖电子二期，正式开工；半导体封测 定向样本"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补权威原文或原始数据。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "待补：拆开设备、新品、价格和订单四类信号。",
+      "待补：证明哪些环节修复，哪些环节还没验证。"
+    ],
+    "chart_needs": [
+      "设备/存储/封测分环节景气图",
+      "重点公司订单与价格对照表"
+    ],
+    "image_needs": [
+      "晶圆厂、洁净室、设备、工程师群像"
+    ],
+    "video_needs": [
+      "工厂、产线、会议现场、官方访谈"
+    ],
+    "priority_people": [
+      "特朗普",
+      "高市早苗"
+    ],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "半导体 半导体突然很热闹，但行业最危险的误判 latest news",
+      "封测 半导体突然很热闹，但行业最危险的误判 latest news",
+      "美国 半导体突然很热闹，但行业最危险的误判 latest news"
+    ],
+    "structure_hint": {
+      "opening": "热闹不等于景气普涨。",
+      "part_1": "拆开设备、新品、价格和订单四类信号。",
+      "part_2": "证明哪些环节修复，哪些环节还没验证。",
+      "part_3": "指出投资者最容易把什么误判成全面景气。",
+      "ending": "收束到读者应该继续盯哪些变量。"
+    },
+    "scorecard": {
+      "heat": 6.36,
+      "sharpness": 7.4,
+      "evidence": 4.94,
+      "longevity": 8.5,
+      "reader_value": 5.76,
+      "composite": 6.54
+    },
+    "extendability": "可延展成系列稿"
+  }
+]

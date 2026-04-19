@@ -1,0 +1,15 @@
+{
+  "run_id": "2026-03-22_200511",
+  "generated_at": "2026-03-22T21:51:26.369633",
+  "stage1_dir": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-03-22_200511",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-22_200511",
+  "artifacts": [
+    "phase2-clusters-summary.json",
+    "phase2-topic-index.json",
+    "phase2-editorial-briefs.json",
+    "phase2-brief-library.md",
+    "phase2-topn-for-confirmation.json",
+    "02_内容聚合及选题分析_底稿.md",
+    "02_内容聚合及选题分析_报告.md"
+  ]
+}

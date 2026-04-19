@@ -1,0 +1,12 @@
+[
+  {
+    "ok": true,
+    "image_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-10/images/generated/qhaigc_seedream46/cover.png",
+    "source_url": "https://p16-dreamina-sign-sg.ibyteimg.com/tos-alisg-i-wopfjsm1ax-sg/c28ec55781eb4d9fb56f06e7a5f22900~tplv-wopfjsm1ax-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1776816000&x-signature=7AgJFEQ4FkGbZnFZsNcRrvtyJsg%3D&format=.jpeg",
+    "response_file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-10/images/generated/qhaigc_seedream46/cover.response.json",
+    "task_id": "cover",
+    "prompt_files": [
+      "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-10/prompts/ai/cover.md"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "template_id": "geo_timeline_map",
+  "worldmonitor_project": "/Volumes/PSSD/Projects/worldmonitor",
+  "proxy_port": 8787,
+  "current_status": "inactive",
+  "inputs": [
+    "article.md",
+    "event_timeline.json",
+    "map_layers.geojson",
+    "charts/*.png",
+    "scene_plan.json"
+  ],
+  "preferred_components": [
+    "StrategicRiskPanel",
+    "StrategicPosturePanel",
+    "DeckGLMap",
+    "CountryTimeline"
+  ],
+  "page_modules": [
+    "hero-summary",
+    "actor-matrix",
+    "event-timeline",
+    "map-risk-layer",
+    "media-gallery"
+  ],
+  "chart_anchor_ids": [
+    "chart-01",
+    "chart-02",
+    "chart-03",
+    "chart-04"
+  ]
+}

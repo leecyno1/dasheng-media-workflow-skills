@@ -1,0 +1,5 @@
+anchor_id,title,purpose,chart_type,data_sources,fallback_rule,fallback_outputs
+chart1,核心PCE及分项通胀指标走势,展示核心通胀及其关键组成部分的趋势变化，验证通胀放缓及结构性变化,折线图,美国商务部BEA核心PCE月度数据 | 官方统计局通胀分项数据,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md
+chart2,利率期货市场加息与降息押注概率变化,直观反映市场对美联储政策预期的快速转变,堆积面积图,芝加哥商品交易所（CME）FedWatch工具 | 交易所利率期货数据,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md
+chart3,主要美股指数及VIX指数讲话前后走势比较,展示股市对政策转向的同步反应及市场风险情绪变化,复合折线图,彭博社股指数据 | CBOE VIX指数数据,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md
+chart4,利率敏感资产估值及信用利差变化,反映降息预期对债券、成长股、房地产及信用风险溢价的影响,多指标折线图,彭博债券收益率数据 | 主要成长股板块估值报告 | 房地产贷款利率及成交数据 | 信用利差统计,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md

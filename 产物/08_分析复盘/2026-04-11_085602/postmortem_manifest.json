@@ -1,0 +1,13 @@
+{
+  "run_id": "2026-04-11_085602",
+  "stage": "postmortem",
+  "status": "waiting_for_publish_execution",
+  "upstream": {
+    "publish_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-11_085602/publish_manifest.json"
+  },
+  "topics": [],
+  "notes": [
+    "该文件为历史 run 的 canonical postmortem 占位。",
+    "由于 publish 仍是占位态，当前尚未执行真实复盘回写。"
+  ]
+}

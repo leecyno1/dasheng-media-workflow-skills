@@ -1,0 +1,92 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升",
+    "topic_name": "伊朗冲突升级，真正变贵的是地区秩序成本",
+    "cluster_name": "伊朗 / 原油 / 停火",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升",
+    "composite_score": 7.3,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 2,
+    "topic_id": "topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升-variant-外交部-中东这题换个写法-更该写成一篇结构稿",
+    "topic_name": "中东冲突升级，外交部关注的长期秩序成本风险",
+    "cluster_name": "外交部 / 中东",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升",
+    "composite_score": 7.14,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 3,
+    "topic_id": "topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏",
+    "topic_name": "英伟达回暖，不等于半导体全面复苏",
+    "cluster_name": "英伟达 / AI",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏",
+    "composite_score": 7.06,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 4,
+    "topic_id": "topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏-variant-英伟达-半导体这条线若换个切口-最该补的证据会不",
+    "topic_name": "从半导体全链条看英伟达局部修复的局限",
+    "cluster_name": "英伟达 / 半导体",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏",
+    "composite_score": 6.72,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 5,
+    "topic_id": "topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估",
+    "topic_name": "白银和贵金属风险溢价，背后重估的真正变化的变量是什么？",
+    "cluster_name": "白银 / 贵金属 / 降息",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估",
+    "composite_score": 7.16,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 6,
+    "topic_id": "topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估-variant-川普-特朗普这条线若换个切口-最该补的证据会不会",
+    "topic_name": "川普时代的风险溢价，贵金属市场的隐形变量",
+    "cluster_name": "川普 / 特朗普",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估",
+    "composite_score": 6.76,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 7,
+    "topic_id": "topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆",
+    "topic_name": "市场低估了再通胀？特朗普与鲍威尔的政策信号解读",
+    "cluster_name": "特朗普 / 鲍威尔 / 降息",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆",
+    "composite_score": 7.24,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 8,
+    "topic_id": "topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆-variant-美联储-中东这条线若换个切口-最该补的证据会不会",
+    "topic_name": "再通胀风险加剧，美联储与地缘政治的复杂互动",
+    "cluster_name": "美联储 / 中东 / 降息",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆",
+    "composite_score": 7.39,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 9,
+    "topic_id": "topic-制裁-供给秩序重估会不会比价格波动更重要",
+    "topic_name": "制裁冲击下，供给链秩序的重塑比价格波动更关键",
+    "cluster_name": "制裁 / 制裁",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-制裁-供给秩序重估会不会比价格波动更重要",
+    "composite_score": 6.99,
+    "source_status": "自然入选"
+  }
+]

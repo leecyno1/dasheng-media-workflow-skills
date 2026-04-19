@@ -1,0 +1,5 @@
+anchor_id,title,purpose,chart_type,data_sources
+chart-01,关键事件时间线,把冲突、政策、制裁、表态放到统一时间轴,timeline,人民网 | 新华社 | AP | 官方声明
+chart-02,结构压力图,展示人口、外劳、防务、供应链等底层约束,bar_line,官方统计 | 世界银行 | OECD
+chart-03,阵营/联盟关系图,帮助读者看清力量重组，而不是只看单一人物,network_matrix,公开新闻 | 政府官网
+chart-04,风险外溢地图,把航运、能源、台海、制裁路径可视化,map,地图底图 | 公开路线数据

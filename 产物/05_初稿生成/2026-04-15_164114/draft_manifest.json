@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-04-15_164114",
+  "stage": "draft",
+  "status": "ready_for_review",
+  "upstream": {
+    "selected_topics": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-15_164114_manual/selected_topics.json",
+    "topic_cards": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-15_164114_manual/topic_cards.json"
+  },
+  "drafts": [
+    {
+      "topic_id": "topic-ai-真正拉开差距的是功能演示还是工作流落地",
+      "title": "AI：真正拉开差距的是功能演示还是工作流落地",
+      "reasoning_sheet_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-15_164114/03_ReasoningSheet_ai-真正拉开差距的是功能演示还是工作流落地.md",
+      "reasoning_sheet_json": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-15_164114/03_ReasoningSheet_ai-真正拉开差距的是功能演示还是工作流落地.json",
+      "draft_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-15_164114/03_标准初稿_ai-真正拉开差距的是功能演示还是工作流落地.md"
+    }
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-15_164114/03_初稿_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-15_164114/draft_manifest.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-15_164114/selected_topics_for_draft.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-15_164114/final_structure_snapshot.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-15_164114/final_structure_snapshot.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-15_164114/03_ReasoningSheet_ai-真正拉开差距的是功能演示还是工作流落地.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-15_164114/03_ReasoningSheet_ai-真正拉开差距的是功能演示还是工作流落地.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-15_164114/03_标准初稿_ai-真正拉开差距的是功能演示还是工作流落地.md"
+  ],
+  "next_stage": "material"
+}

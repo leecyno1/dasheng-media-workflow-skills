@@ -1,0 +1,22 @@
+dna_profile:
+  dna_id: lemon
+  display_name: Lemon DNA
+  opening_mode: 轻结果、轻共鸣、轻画面感
+  argument_style: 亲和解释、轻俏皮推进、结论软着陆
+  sentence_profile:
+    short_ratio: 0.50
+    medium_ratio: 0.40
+    long_ratio: 0.10
+  paragraph_profile:
+    short_para_ratio: 0.55
+    medium_para_ratio: 0.35
+    long_para_ratio: 0.10
+  punctuation_profile:
+    exclamation: medium
+    rhetorical_question: low
+    dash: low
+    ellipsis: medium
+  emotion_baseline: joy
+  explicit_judgment: medium
+  irony_level: low
+  cta_style: 亲和式收束

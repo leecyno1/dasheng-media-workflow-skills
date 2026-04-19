@@ -1,0 +1,63 @@
+{
+  "cover_prompt": "围绕“表面在交易事件，真正的主线会不会其实是再通胀？”生成财经深度封面，突出油价、通胀、利率三线拉扯，适合公众号和视频封面，避免访谈截图感。",
+  "infographic_prompts": [
+    "围绕“表面在交易事件，真正的主线会不会其实是再通胀？”生成一张 dense-modules 信息图，拆成事件、通胀预期、利率、资产重估四层。",
+    "围绕“表面在交易事件，真正的主线会不会其实是再通胀？”生成一张 dashboard 信息图，展示油价、breakeven、10Y yield、股债商品映射。",
+    "围绕“表面在交易事件，真正的主线会不会其实是再通胀？”生成一张 hierarchical-layers 信息图，展示表象事件、传导机制、市场定价、投资建议。"
+  ],
+  "comic_storyboard": [
+    {
+      "frame_id": "comic-01",
+      "title": "Hook",
+      "visual_prompt": "市场屏幕爆闪，油价和利率同时跳动，多人交易大厅场景。",
+      "caption_hint": "市场到底在交易什么"
+    },
+    {
+      "frame_id": "comic-02",
+      "title": "Event",
+      "visual_prompt": "油轮、关税、港口、地图拼贴，表达事件冲击。",
+      "caption_hint": "表面是事件"
+    },
+    {
+      "frame_id": "comic-03",
+      "title": "Mechanism",
+      "visual_prompt": "输入成本上升传导到通胀预期的机制图。",
+      "caption_hint": "深层是预期"
+    },
+    {
+      "frame_id": "comic-04",
+      "title": "Fed",
+      "visual_prompt": "美联储大楼与点阵图叠加，表达高利率更久。",
+      "caption_hint": "央行不敢轻松转向"
+    },
+    {
+      "frame_id": "comic-05",
+      "title": "Assets",
+      "visual_prompt": "黄金、原油、美债、股票四屏对打。",
+      "caption_hint": "资产开始重新分化"
+    },
+    {
+      "frame_id": "comic-06",
+      "title": "Risk",
+      "visual_prompt": "增长和通胀两辆车同时失控。",
+      "caption_hint": "滞胀焦虑抬头"
+    },
+    {
+      "frame_id": "comic-07",
+      "title": "Advice",
+      "visual_prompt": "投资清单卡片与三类资产权衡图。",
+      "caption_hint": "关键在结构配置"
+    },
+    {
+      "frame_id": "comic-08",
+      "title": "End",
+      "visual_prompt": "回到一块大屏，标题落版。",
+      "caption_hint": "真正主线是再通胀预期"
+    }
+  ],
+  "meme_prompts": [
+    "熊猫与鹰围着油桶和金条打架，交易员盯着利率屏幕崩溃，表达“市场表面交易事件，底层交易通胀”。",
+    "美联储像交通警察同时拦增长和通胀两辆车。",
+    "交易员想盯新闻，结果被通胀图表从背后拍肩。"
+  ]
+}

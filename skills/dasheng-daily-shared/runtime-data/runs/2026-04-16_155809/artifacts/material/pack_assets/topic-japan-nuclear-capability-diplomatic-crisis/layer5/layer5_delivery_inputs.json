@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "object_type": "Layer5Inputs",
+    "topic_slug": "topic-japan-nuclear-capability-diplomatic-crisis",
+    "topic_type": "geopolitics",
+    "title": "日本核武器能力披露背后：从和平宪法到军事化的结构性转变",
+    "generated_at": "2026-04-16T13:02:23.235Z"
+  },
+  "template": {
+    "template_id": "geo_timeline_map",
+    "template_name": "地缘时政时间线地图 (Geo Timeline Map)",
+    "narrative_schema": "actors_then_events_then_risks",
+    "data_granularity": "event_based",
+    "layout_hint": "timeline_top + map_center + actor_matrix_bottom"
+  },
+  "worldmonitor": {
+    "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+    "project_root": "/Volumes/PSSD/Projects/worldmonitor",
+    "data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+    "public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+    "entry": "index.html",
+    "proxy_port": 8787
+  },
+  "required_assets": {
+    "chart_anchor_ids": [
+      "chart-01",
+      "chart-02",
+      "chart-03",
+      "chart-04"
+    ],
+    "chart_csvs": [
+      "charts/csv/chart-01.csv",
+      "charts/csv/chart-02.csv",
+      "charts/csv/chart-03.csv",
+      "charts/csv/chart-04.csv"
+    ],
+    "chart_pngs": [
+      "charts/png/chart-01.png",
+      "charts/png/chart-02.png",
+      "charts/png/chart-03.png",
+      "charts/png/chart-04.png"
+    ],
+    "scene_plan": "videos/scene_plan.json",
+    "source_links": "videos/source_links/source_link_candidates.json"
+  },
+  "key_metrics_to_emit": [
+    "population",
+    "aged_65_pct",
+    "military_gdp_pct",
+    "security_score"
+  ],
+  "risk_scenarios": [
+    "安全升级",
+    "劳动力缺口",
+    "外交摩擦",
+    "供应链波动"
+  ],
+  "preferred_components": [
+    "StrategicRiskPanel",
+    "StrategicPosturePanel",
+    "DeckGLMap",
+    "CountryTimeline"
+  ],
+  "page_modules": [
+    "hero-summary",
+    "actor-matrix",
+    "event-timeline",
+    "map-risk-layer",
+    "media-gallery"
+  ]
+}

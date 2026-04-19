@@ -1,0 +1,212 @@
+{
+  "run_id": "2026-04-07_073122",
+  "generated_at": "2026-04-07T07:31:22.925618+08:00",
+  "categories": {
+    "dynamic_tokens": [
+      {
+        "name": "热度代理",
+        "count": 175
+      },
+      {
+        "name": "伊朗",
+        "count": 28
+      },
+      {
+        "name": "美国",
+        "count": 23
+      },
+      {
+        "name": "日本",
+        "count": 22
+      },
+      {
+        "name": "特朗普",
+        "count": 16
+      },
+      {
+        "name": "score",
+        "count": 16
+      },
+      {
+        "name": "来自",
+        "count": 16
+      },
+      {
+        "name": "黄金",
+        "count": 15
+      },
+      {
+        "name": "降息",
+        "count": 15
+      },
+      {
+        "name": "美联储",
+        "count": 15
+      },
+      {
+        "name": "bili",
+        "count": 15
+      },
+      {
+        "name": "市场",
+        "count": 14
+      },
+      {
+        "name": "https",
+        "count": 13
+      },
+      {
+        "name": "co",
+        "count": 12
+      },
+      {
+        "name": "reports",
+        "count": 12
+      }
+    ],
+    "sectors": [
+      {
+        "name": "AI",
+        "count": 12
+      },
+      {
+        "name": "人工智能",
+        "count": 3
+      },
+      {
+        "name": "新能源",
+        "count": 2
+      },
+      {
+        "name": "光刻机",
+        "count": 1
+      },
+      {
+        "name": "半导体",
+        "count": 1
+      },
+      {
+        "name": "航运",
+        "count": 1
+      }
+    ],
+    "commodities": [
+      {
+        "name": "黄金",
+        "count": 15
+      },
+      {
+        "name": "原油",
+        "count": 11
+      },
+      {
+        "name": "油价",
+        "count": 10
+      }
+    ],
+    "countries": [
+      {
+        "name": "伊朗",
+        "count": 28
+      },
+      {
+        "name": "美国",
+        "count": 23
+      },
+      {
+        "name": "日本",
+        "count": 22
+      },
+      {
+        "name": "中国",
+        "count": 13
+      },
+      {
+        "name": "中东",
+        "count": 8
+      },
+      {
+        "name": "俄罗斯",
+        "count": 5
+      },
+      {
+        "name": "以色列",
+        "count": 3
+      },
+      {
+        "name": "乌克兰",
+        "count": 1
+      },
+      {
+        "name": "沙特",
+        "count": 1
+      }
+    ],
+    "people": [
+      {
+        "name": "特朗普",
+        "count": 16
+      },
+      {
+        "name": "高市早苗",
+        "count": 6
+      },
+      {
+        "name": "鲍威尔",
+        "count": 2
+      },
+      {
+        "name": "拜登",
+        "count": 1
+      },
+      {
+        "name": "川普",
+        "count": 1
+      },
+      {
+        "name": "马斯克",
+        "count": 1
+      }
+    ],
+    "orgs": [
+      {
+        "name": "美联储",
+        "count": 15
+      },
+      {
+        "name": "外交部",
+        "count": 2
+      },
+      {
+        "name": "微软",
+        "count": 1
+      }
+    ],
+    "policies": [
+      {
+        "name": "降息",
+        "count": 15
+      },
+      {
+        "name": "加息",
+        "count": 6
+      },
+      {
+        "name": "停火",
+        "count": 5
+      },
+      {
+        "name": "宽松",
+        "count": 2
+      },
+      {
+        "name": "预算",
+        "count": 1
+      },
+      {
+        "name": "制裁",
+        "count": 1
+      }
+    ]
+  }
+}

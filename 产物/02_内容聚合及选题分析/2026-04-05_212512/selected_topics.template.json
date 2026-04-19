@@ -1,0 +1,114 @@
+{
+  "run_id": "2026-04-05_170457",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "没有 selected_topics 或未批准状态，不允许进入下游阶段。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "tc001",
+      "title": "鲍威尔讲话逆转加息预期，缓解特朗普经济压力",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc001",
+      "angle_variant_of": null,
+      "article_use": "宏观经济分析、政策解读、市场趋势研判。",
+      "core_proposition": "鲍威尔的讲话引发市场对美联储货币政策的重新判断，交易员撤回加息押注，转向押注降息，从而缓解特朗普经济政策的短期压力。",
+      "one_line_judgment": "鲍威尔最新讲话淡化加息压力，市场预期由加息转向降息，暂缓特朗普面临的经济挑战。"
+    },
+    {
+      "topic_id": "tc002",
+      "title": "俄罗斯断供日本油气，加剧全球能源地缘政治风险",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc002",
+      "angle_variant_of": null,
+      "article_use": "国际关系分析、能源安全专题、地缘政治风险评估。",
+      "core_proposition": "俄罗斯针对日本实施能源供应限制，反映能源战略被用作外交和制裁工具，全球能源市场和地区安全局势因此紧张。",
+      "one_line_judgment": "俄罗斯以外交立场拒绝对日本等不友好国家供油，能源供应成为地缘政治博弈焦点。"
+    },
+    {
+      "topic_id": "tc003",
+      "title": "中东冲突激化推升油价，市场押注美联储延续降息周期",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc003",
+      "angle_variant_of": null,
+      "article_use": "宏观经济与金融市场分析、地缘冲突专题报道。",
+      "core_proposition": "中东地缘政治紧张推动油价短期急涨，结合历史石油危机经验，市场转向预期美联储将延续降息以缓冲通胀压力。",
+      "one_line_judgment": "伊朗等地冲突导致油价剧烈波动，市场重新调整美联储货币政策预期，利率环境出现大幅波动。"
+    },
+    {
+      "topic_id": "tc004",
+      "title": "伊朗对霍尔木兹海峡的控制成为其战略“核武器”",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc004",
+      "angle_variant_of": null,
+      "article_use": "地缘政治专题、能源安全分析、国际关系解读。",
+      "core_proposition": "伊朗通过控制全球能源运输要道霍尔木兹海峡，形成了实质上的战略威慑能力，成为其外交和军事博弈的关键筹码。",
+      "one_line_judgment": "伊朗实际控制霍尔木兹海峡，利用地理优势增强谈判筹码，美国试图以停火换取通航权。"
+    },
+    {
+      "topic_id": "tc005",
+      "title": "美以联军在伊朗遭遇挫败，抵抗力量激活“抵抗之弧”",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc005",
+      "angle_variant_of": null,
+      "article_use": "军事冲突分析、地缘政治风险专题、国际安全报道。",
+      "core_proposition": "近期美以联军在伊朗及周边地区的军事行动遭遇重大挫折，多方抵抗力量联合作战，形成新的军事平衡与安全挑战。",
+      "one_line_judgment": "以色列遭受最大规模导弹袭击，区域抵抗力量联合增强，改变中东军事力量对比。"
+    },
+    {
+      "topic_id": "tc006",
+      "title": "多国央行降息开启宽松周期，应对经济下行压力",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc006",
+      "angle_variant_of": null,
+      "article_use": "宏观经济政策解读、金融市场影响分析、投资策略指导。",
+      "core_proposition": "面对经济数据疲软和地缘政治不确定性，多个央行开启降息以释放流动性，进入新一轮货币政策调整周期。",
+      "one_line_judgment": "多国央行果断降息释放货币宽松信号，应对经济增长放缓和地缘风险。"
+    },
+    {
+      "topic_id": "tc007",
+      "title": "中国散户3月大幅净买入股票，反映市场风险偏好回升",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc007",
+      "angle_variant_of": null,
+      "article_use": "市场行为分析、投资者情绪研究、资金流向解读。",
+      "core_proposition": "散户资金逆势流入股票市场，表明风险偏好回升与资金活跃度提升，成为判断市场未来走势的重要变量。",
+      "one_line_judgment": "3月中国散户累计净买入超1.25万亿，显示市场回调阶段散户投资信心显著增强。"
+    },
+    {
+      "topic_id": "tc008",
+      "title": "美军极端军事计划曝光，彰显美伊冲突升级风险",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc008",
+      "angle_variant_of": null,
+      "article_use": "军事安全专题、地缘政治风险分析、国际局势解读。",
+      "core_proposition": "美国军事极端方案的曝光反映出冲突升级的可能性增加，增加地区及全球安全的不确定性。",
+      "one_line_judgment": "五角大楼提出空投特种兵抢夺伊朗核材料计划，显示美伊冲突潜在升级的高度风险。"
+    },
+    {
+      "topic_id": "tc009",
+      "title": "俄罗斯重新列28名日本人为战犯，俄日关系紧张升级",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc009",
+      "angle_variant_of": null,
+      "article_use": "国际关系专题、东北亚安全分析、外交政策解读。",
+      "core_proposition": "俄方官方动作突出外交紧张，可能加剧东北亚安全及能源合作的不确定性。",
+      "one_line_judgment": "俄罗斯将多名日本人重新列为战犯，反映两国外交关系出现重大倒退。"
+    },
+    {
+      "topic_id": "tc010",
+      "title": "英伟达期权异动反映AI芯片行业估值重估",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc010",
+      "angle_variant_of": null,
+      "article_use": "科技产业分析、投资市场解读、期权交易专题。",
+      "core_proposition": "期权市场异动揭示投资者对AI芯片价值的重新判断，可能预示行业估值与投资布局进入新阶段。",
+      "one_line_judgment": "英伟达期权出现异常交易，体现市场对AI芯片行业未来走势的分歧与结构性调整机会。"
+    }
+  ],
+  "editor_note": ""
+}

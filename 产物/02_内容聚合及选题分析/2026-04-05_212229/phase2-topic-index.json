@@ -1,0 +1,82 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "T001",
+    "topic_name": "鲍威尔讲话促使市场由加息预期转向降息押注",
+    "topic_kind": "independent",
+    "mother_topic_id": "T001",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 2,
+    "topic_id": "T002",
+    "topic_name": "俄罗斯拒绝向日本供油凸显能源外交战略调整",
+    "topic_kind": "independent",
+    "mother_topic_id": "T002",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 3,
+    "topic_id": "T003",
+    "topic_name": "中东冲突引发油价剧烈波动冲击全球货币政策",
+    "topic_kind": "independent",
+    "mother_topic_id": "T003",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 4,
+    "topic_id": "T004",
+    "topic_name": "霍尔木兹海峡控制权成伊朗核战略核心",
+    "topic_kind": "independent",
+    "mother_topic_id": "T004",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 5,
+    "topic_id": "T005",
+    "topic_name": "央行大规模降息引发全球资本市场结构变局",
+    "topic_kind": "independent",
+    "mother_topic_id": "T005",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 6,
+    "topic_id": "T006",
+    "topic_name": "美军极端计划暴露美伊冲突升级风险",
+    "topic_kind": "independent",
+    "mother_topic_id": "T006",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 7,
+    "topic_id": "T007",
+    "topic_name": "俄方将日本人重新列为战犯加剧中俄日外交紧张",
+    "topic_kind": "independent",
+    "mother_topic_id": "T007",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 8,
+    "topic_id": "T008",
+    "topic_name": "AI与新能源驱动第六轮康波周期加速经济结构转型",
+    "topic_kind": "independent",
+    "mother_topic_id": "T008",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 9,
+    "topic_id": "T009",
+    "topic_name": "英伟达期权异动反映市场对AI芯片行业未来增长重估",
+    "topic_kind": "independent",
+    "mother_topic_id": "T009",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 10,
+    "topic_id": "T010",
+    "topic_name": "国务院约谈平台企业反映数字经济治理加强",
+    "topic_kind": "independent",
+    "mother_topic_id": "T010",
+    "source_status": "ai_generated"
+  }
+]

@@ -1,0 +1,132 @@
+{
+  "run_id": "2026-04-03_103109",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "未被选中的题请写入 rejected_topic_ids 或保留空值。",
+    "只有 selected_topics 非空且状态为 approved，draft 才允许执行。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "topic-加息-降息这波波动背后-市场真正要重估的会不会是再通胀链条",
+      "title": "加息、降息这波波动背后，市场真正要重估的会不会是再通胀链条？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-加息-降息这波波动背后-市场真正要重估的会不会是再通胀链条",
+      "angle_variant_of": null,
+      "source_status": "自然入选",
+      "composite_score": 7.99
+    },
+    {
+      "topic_id": "topic-加息-降息这波波动背后-市场真正要重估的会不会是再通胀链条-variant-原油-黄金这个题若换个切口-最值得盯的对象和证据",
+      "title": "原油、黄金这个题若换个切口，最值得盯的对象和证据会不会完全不同？",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-加息-降息这波波动背后-市场真正要重估的会不会是再通胀链条",
+      "angle_variant_of": "topic-加息-降息这波波动背后-市场真正要重估的会不会是再通胀链条",
+      "source_status": "自然入选",
+      "composite_score": 8.2
+    },
+    {
+      "topic_id": "topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+      "title": "特朗普、伊朗表面在交易事件，真正被重估的会不会是更长期的秩序成本？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+      "angle_variant_of": null,
+      "source_status": "自然入选",
+      "composite_score": 6.97
+    },
+    {
+      "topic_id": "topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本-variant-美联储-中东这个题若换个切口-最值得盯的对象和证",
+      "title": "换个角度看美联储、中东：这题更该写成一篇判断稿，而不是继续追消息",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+      "angle_variant_of": "topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+      "source_status": "自然入选",
+      "composite_score": 6.81
+    },
+    {
+      "topic_id": "topic-中东-中国表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+      "title": "中东、中国表面在交易事件，真正被重估的会不会是更长期的秩序成本？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-中东-中国表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+      "angle_variant_of": null,
+      "source_status": "自然入选",
+      "composite_score": 6.24
+    },
+    {
+      "topic_id": "topic-半导体-封测突然很热闹-但行业最危险的误判会不会是把局部修复看成全面复苏",
+      "title": "半导体、封测突然很热闹，但行业最危险的误判会不会是把局部修复看成全面复苏？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-半导体-封测突然很热闹-但行业最危险的误判会不会是把局部修复看成全面复苏",
+      "angle_variant_of": null,
+      "source_status": "自然入选",
+      "composite_score": 6.39
+    },
+    {
+      "topic_id": "topic-ai看上去在拼功能-真正拉开差距的会不会其实是工作流落地",
+      "title": "AI看上去在拼功能，真正拉开差距的会不会其实是工作流落地？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-ai看上去在拼功能-真正拉开差距的会不会其实是工作流落地",
+      "angle_variant_of": null,
+      "source_status": "自然入选",
+      "composite_score": 7.69
+    },
+    {
+      "topic_id": "topic-ai看上去在拼功能-真正拉开差距的会不会其实是工作流落地-variant-openai-ai这个题若换个切口-最值得盯的对",
+      "title": "OpenAI、AI这个题若换个切口，最值得盯的对象和证据会不会完全不同？",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-ai看上去在拼功能-真正拉开差距的会不会其实是工作流落地",
+      "angle_variant_of": "topic-ai看上去在拼功能-真正拉开差距的会不会其实是工作流落地",
+      "source_status": "自然入选",
+      "composite_score": 6.51
+    },
+    {
+      "topic_id": "topic-原油这轮热闹背后-真正值得追的结构变量到底是什么",
+      "title": "原油这轮热闹背后，真正值得追的结构变量到底是什么？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-原油这轮热闹背后-真正值得追的结构变量到底是什么",
+      "angle_variant_of": null,
+      "source_status": "自然入选",
+      "composite_score": 6.28
+    },
+    {
+      "topic_id": "topic-trump-rally看上去在拼功能-真正拉开差距的会不会其实是工作流落地",
+      "title": "trump、rally看上去在拼功能，真正拉开差距的会不会其实是工作流落地？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-trump-rally看上去在拼功能-真正拉开差距的会不会其实是工作流落地",
+      "angle_variant_of": null,
+      "source_status": "自然入选",
+      "composite_score": 6.03
+    },
+    {
+      "topic_id": "topic-甄嬛传-演得这么像看上去在拼功能-真正拉开差距的会不会其实是工作流落地",
+      "title": "甄嬛传、演得这么像看上去在拼功能，真正拉开差距的会不会其实是工作流落地？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-甄嬛传-演得这么像看上去在拼功能-真正拉开差距的会不会其实是工作流落地",
+      "angle_variant_of": null,
+      "source_status": "自然入选",
+      "composite_score": 6.03
+    },
+    {
+      "topic_id": "topic-joe-方小宝这轮热闹背后-真正值得追的结构变量到底是什么",
+      "title": "joe、方小宝这轮热闹背后，真正值得追的结构变量到底是什么？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-joe-方小宝这轮热闹背后-真正值得追的结构变量到底是什么",
+      "angle_variant_of": null,
+      "source_status": "自然入选",
+      "composite_score": 6.13
+    },
+    {
+      "topic_id": "topic-日本表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+      "title": "日本表面在交易事件，真正被重估的会不会是更长期的秩序成本？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-日本表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+      "angle_variant_of": null,
+      "source_status": "自然入选",
+      "composite_score": 5.97
+    }
+  ],
+  "editor_note": ""
+}

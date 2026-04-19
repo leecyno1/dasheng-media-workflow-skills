@@ -1,0 +1,35 @@
+{
+  "run_id": "2026-04-10_074121",
+  "gate": "Material Gate",
+  "status": "pending_editor_review",
+  "topics": [
+    {
+      "topic_id": "topic-1",
+      "title": "鲍威尔讲话终结加息预期引发市场转向降息押注",
+      "editor_status": "pending_review",
+      "accepted_assets": [],
+      "replace_assets": [],
+      "rejected_assets": []
+    },
+    {
+      "topic_id": "topic-2",
+      "title": "中东冲突与霍尔木兹海峡封锁导致油价坚挺形成全球能源供应链风险",
+      "editor_status": "pending_review",
+      "accepted_assets": [],
+      "replace_assets": [],
+      "rejected_assets": []
+    },
+    {
+      "topic_id": "topic-3",
+      "title": "全球央行大规模抛售美债引发金融市场系统性风险担忧",
+      "editor_status": "pending_review",
+      "accepted_assets": [],
+      "replace_assets": [],
+      "rejected_assets": []
+    }
+  ],
+  "instructions": [
+    "编辑确认可用素材后，将 status 改为 approved / accepted / finalized。",
+    "rewrite 只能读取 canonical material_manifest.json + material_acceptance.json。"
+  ]
+}

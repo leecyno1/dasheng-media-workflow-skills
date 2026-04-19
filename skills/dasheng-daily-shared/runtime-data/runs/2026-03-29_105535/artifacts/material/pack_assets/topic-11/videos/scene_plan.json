@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Hook",
+    "visual": "一键安装OpenClaw 相关冲突现场，多人场景，动态感强",
+    "caption": "先抛问题：一键安装OpenClaw+常用skills，你奶奶5分钟也能用上龙虾"
+  },
+  {
+    "title": "Thesis",
+    "visual": "一键安装OpenClaw 与 常用skills 的对峙式构图",
+    "caption": "给判断：核心不是“能不能装上”，而是把高门槛环境配置降维成可复用、可审计、可回滚的标准化流程。"
+  },
+  {
+    "title": "Mechanism-1",
+    "visual": "机制拆解信息图，突出 一键安装OpenClaw",
+    "caption": "第一层机制"
+  },
+  {
+    "title": "Mechanism-2",
+    "visual": "关键变量图表与群体场景并置",
+    "caption": "第二层机制"
+  },
+  {
+    "title": "Evidence-1",
+    "visual": "议会/演讲/军演/港口四宫格场景",
+    "caption": "证据 1"
+  },
+  {
+    "title": "Evidence-2",
+    "visual": "东亚或中东风险地图，航运线与节点清晰",
+    "caption": "证据 2"
+  },
+  {
+    "title": "Conflict",
+    "visual": "多方拉扯场景，增强对立与张力",
+    "caption": "冲突升级"
+  },
+  {
+    "title": "Risk",
+    "visual": "风险分叉图或情景树",
+    "caption": "如果继续演化会怎样"
+  },
+  {
+    "title": "Advice",
+    "visual": "投资/观察清单卡片",
+    "caption": "给建议或观察变量"
+  },
+  {
+    "title": "CTA",
+    "visual": "回到主问题的封口画面",
+    "caption": "结尾收束与 CTA"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "run_id": "2026-04-11_085602",
+  "stage": "draft",
+  "status": "ready_for_review",
+  "upstream": {
+    "selected_topics": "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-11_085602_ai/selected_topics.json",
+    "topic_cards": "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-11_085602_ai/topic_cards_compat.json"
+  },
+  "drafts": [
+    {
+      "topic_id": "topic-ai-financial-risk-regulation",
+      "title": "Claude新模型引发华尔街紧急会议:AI对金融业的风险在哪",
+      "reasoning_sheet_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_ReasoningSheet_claude新模型引发华尔街紧急会议-ai对金融业的风险在哪.md",
+      "reasoning_sheet_json": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_ReasoningSheet_claude新模型引发华尔街紧急会议-ai对金融业的风险在哪.json",
+      "draft_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_标准初稿_claude新模型引发华尔街紧急会议-ai对金融业的风险在哪.md"
+    },
+    {
+      "topic_id": "topic-stablecoin-license-market-impact",
+      "title": "稳定币牌照落地:加密市场的'银行牌照时刻'",
+      "reasoning_sheet_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_ReasoningSheet_稳定币牌照落地-加密市场的-银行牌照时刻.md",
+      "reasoning_sheet_json": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_ReasoningSheet_稳定币牌照落地-加密市场的-银行牌照时刻.json",
+      "draft_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_标准初稿_稳定币牌照落地-加密市场的-银行牌照时刻.md"
+    },
+    {
+      "topic_id": "topic-japan-embassy-incident-analysis",
+      "title": "日本士兵闯使馆事件背后:个体极端行为还是系统性问题",
+      "reasoning_sheet_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_ReasoningSheet_日本士兵闯使馆事件背后-个体极端行为还是系统性问题.md",
+      "reasoning_sheet_json": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_ReasoningSheet_日本士兵闯使馆事件背后-个体极端行为还是系统性问题.json",
+      "draft_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_标准初稿_日本士兵闯使馆事件背后-个体极端行为还是系统性问题.md"
+    }
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_初稿_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/draft_manifest.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/selected_topics_for_draft.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/final_structure_snapshot.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/final_structure_snapshot.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_ReasoningSheet_claude新模型引发华尔街紧急会议-ai对金融业的风险在哪.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_ReasoningSheet_稳定币牌照落地-加密市场的-银行牌照时刻.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_ReasoningSheet_日本士兵闯使馆事件背后-个体极端行为还是系统性问题.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_ReasoningSheet_claude新模型引发华尔街紧急会议-ai对金融业的风险在哪.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_ReasoningSheet_稳定币牌照落地-加密市场的-银行牌照时刻.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_ReasoningSheet_日本士兵闯使馆事件背后-个体极端行为还是系统性问题.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_标准初稿_claude新模型引发华尔街紧急会议-ai对金融业的风险在哪.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_标准初稿_稳定币牌照落地-加密市场的-银行牌照时刻.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_标准初稿_日本士兵闯使馆事件背后-个体极端行为还是系统性问题.md"
+  ],
+  "next_stage": "material"
+}

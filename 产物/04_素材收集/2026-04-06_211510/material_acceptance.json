@@ -1,0 +1,37 @@
+{
+  "run_id": "2026-04-06_211510",
+  "gate": "Material Gate",
+  "status": "approved",
+  "topics": [
+    {
+      "topic_id": "topic-russia-japan-oil-cutoff",
+      "title": "俄罗斯对日断供石油：能源武器化如何重塑东北亚地缘格局",
+      "editor_status": "approved",
+      "accepted_assets": ["all"],
+      "replace_assets": [],
+      "rejected_assets": []
+    },
+    {
+      "topic_id": "topic-japan-bonds-crisis-market-outlook",
+      "title": "日本国债异动引发全球市场震荡：下周投资策略与避险指南",
+      "editor_status": "approved",
+      "accepted_assets": ["all"],
+      "replace_assets": [],
+      "rejected_assets": []
+    },
+    {
+      "topic_id": "topic-lobster-tech-comparison",
+      "title": "龙虾技术全景解析：本地/云端/变体架构对比与大圣龙虾优势",
+      "editor_status": "approved",
+      "accepted_assets": ["all"],
+      "replace_assets": [],
+      "rejected_assets": []
+    }
+  ],
+  "instructions": [
+    "编辑确认可用素材后，将 status 改为 approved / accepted / finalized。",
+    "rewrite 只能读取 canonical material_manifest.json + material_acceptance.json。"
+  ],
+  "approved_at": "2026-04-07T08:50:00+08:00",
+  "approved_by": "Claude Sonnet 4.6"
+}

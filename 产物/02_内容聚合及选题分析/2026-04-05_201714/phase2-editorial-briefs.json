@@ -1,0 +1,639 @@
+[
+  {
+    "topic_id": "T001",
+    "mother_topic_id": "T001",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "中东霍尔木兹海峡封锁加剧全球油价波动，重塑国际通胀预期",
+    "one_line_judgment": "伊朗封锁霍尔木兹海峡导致原油供应链紧张，推动油价剧烈波动并引发全球通胀预期调整。",
+    "core_proposition": "中东地缘冲突直接影响全球能源供应安全，霍尔木兹海峡交通受阻成为油价上涨及通胀压力的关键因子。",
+    "why_now": "近期伊朗拒绝停火斡旋，霍尔木兹海峡局势紧张，多渠道报道反映油价单日大幅波动，市场高度关注该风险溢价。",
+    "reader_payoff": "读者能理解地缘政治如何迅速传导至全球能源市场及宏观通胀，掌握风险传导链条和未来走势判断逻辑。",
+    "article_use": "可写为国际能源市场专题，结合地缘冲突与宏观经济的互动分析，适合财经深度报道和战略研判。",
+    "distinctiveness_reason": "融合地缘冲突与全球经济通胀动态，基于多个权威渠道和事件簇，命题具备宏观经济与国际政治交叉视角。",
+    "evidence_gap_summary": "需更多官方能源供应数据及后续冲突演变的持续跟踪证据支持。",
+    "proof_requirements": [
+      "霍尔木兹海峡通航状况官方数据",
+      "全球原油供应链相关统计",
+      "市场通胀预期变化数据"
+    ],
+    "recommended_data_angles": [
+      "原油国际价格历史波动数据",
+      "全球通胀预期指标变化",
+      "霍尔木兹海峡交通流量统计"
+    ],
+    "recommended_visual_angles": [
+      "油价时间序列折线图",
+      "地缘冲突地图标注",
+      "通胀预期指标趋势图"
+    ],
+    "priority_people": [
+      "能源市场分析师",
+      "地缘政治专家"
+    ],
+    "priority_orgs": [
+      "国际能源署",
+      "OPEC",
+      "美联储"
+    ],
+    "priority_news_queries": [
+      "霍尔木兹海峡封锁",
+      "伊朗中东冲突",
+      "全球油价波动"
+    ],
+    "existing_evidence": [
+      {
+        "title": "【美媒： #伊朗真正意义上的核武器# ——控制霍尔木兹海峡】 #美国被曝想用停火换霍尔木兹海峡通航#",
+        "url": "https://m.weibo.cn/detail/5283356866778950",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      },
+      {
+        "title": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了",
+        "url": "https://www.bilibili.com/video/BV1WJQBByE12",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍霍尔木兹海峡地理战略重要性及当前冲突背景",
+      "part_1": "解析封锁事件对全球原油供应链的影响",
+      "part_2": "探讨油价波动对全球通胀预期的冲击机制",
+      "part_3": "评估未来冲突演变及市场风险传导可能性",
+      "ending": "总结地缘政治风险对全球经济的长期影响与不确定性"
+    }
+  },
+  {
+    "topic_id": "T002",
+    "mother_topic_id": "T002",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "俄罗斯以能源供应为手段拒绝向日本供油，彰显地缘政治能源格局重塑",
+    "one_line_judgment": "俄罗斯将能源供应作为地缘政治工具，公开拒绝向日本供油，反映全球能源格局因地缘冲突而深刻变化。",
+    "core_proposition": "能源作为战略资源在国家间政治博弈中地位上升，俄罗斯针对“不友好国家”的供油政策是地缘政治紧张升级的表现。",
+    "why_now": "俄罗斯外交部副部长鲁登科公开声明，结合近期对日本的制裁态度及相关官方报道，显示该供油中断政策已成现实。",
+    "reader_payoff": "理解能源供应中断背后的政治逻辑及其对日本能源安全和区域地缘政治的深远影响。",
+    "article_use": "适合写作地缘政治与能源安全专题，结合俄日关系及全球能源市场动态，提供政策解读与风险预测。",
+    "distinctiveness_reason": "聚焦俄罗斯供油政策转变，链接地缘政治与能源安全，涵盖官方权威信息与多渠道报道。",
+    "evidence_gap_summary": "缺乏日本能源进口具体数据及市场反应的详细分析，需补充相关经济影响评估。",
+    "proof_requirements": [
+      "俄罗斯官方供油政策声明",
+      "日本能源进口依赖统计",
+      "区域地缘政治态势分析"
+    ],
+    "recommended_data_angles": [
+      "日本能源进口来源结构",
+      "俄罗斯对外能源出口量变化",
+      "能源市场价格与供应链波动"
+    ],
+    "recommended_visual_angles": [
+      "俄日能源贸易流向地图",
+      "能源价格趋势图",
+      "地缘政治冲突时间线"
+    ],
+    "priority_people": [
+      "能源政策专家",
+      "国际关系学者"
+    ],
+    "priority_orgs": [
+      "俄罗斯外交部",
+      "日本能源机构"
+    ],
+    "priority_news_queries": [
+      "俄罗斯供油政策",
+      "俄日地缘政治",
+      "日本能源安全"
+    ],
+    "existing_evidence": [
+      {
+        "title": "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】",
+        "url": "https://m.weibo.cn/detail/5282653734437870",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      },
+      {
+        "title": "【中新社： #俄罗斯重新将28名日本人列为战犯# 】",
+        "url": "https://m.weibo.cn/detail/5283383100050229",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍俄罗斯与日本当前外交关系紧张背景",
+      "part_1": "解析俄罗斯拒绝向日本供油的政策及动因",
+      "part_2": "评估该政策对日本能源安全和经济的影响",
+      "part_3": "探讨全球能源格局因地缘政治而发生的变革",
+      "ending": "总结能源供应政治化对国际关系的深远影响"
+    }
+  },
+  {
+    "topic_id": "T003",
+    "mother_topic_id": "T003",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "美联储转向降息预期引发全球资本市场重新定价利率风险",
+    "one_line_judgment": "美联储政策从加息转向降息预期，促使市场结构性调整，资本市场重新定价利率风险与资产配置策略。",
+    "core_proposition": "美联储政策信号变化对全球资本市场影响深远，交易员撤回加息押注引发股市反弹及风险资产重新吸引资金。",
+    "why_now": "鲍威尔公开讲话表明通胀压力缓解，市场反应迅速，相关财经评论和市场数据均显示利率预期发生重大转变。",
+    "reader_payoff": "掌握美联储政策变化对全球资产价格的影响机制，理解资本市场风险定价与调整逻辑。",
+    "article_use": "适合撰写宏观经济与资本市场专题，结合政策声明与市场反应，提供投资策略建议与风险管理解读。",
+    "distinctiveness_reason": "基于权威美联储讲话和市场数据，揭示政策预期转变对全球资本市场的结构性影响。",
+    "evidence_gap_summary": "需进一步量化全球主要市场的资产配置变化及投资者行为数据。",
+    "proof_requirements": [
+      "美联储政策声明及讲话全文",
+      "市场利率期货与债券收益率数据",
+      "全球股市及资本流动统计"
+    ],
+    "recommended_data_angles": [
+      "利率期货价格变化",
+      "股市主要指数反弹幅度",
+      "资金流入流出行业及地区分析"
+    ],
+    "recommended_visual_angles": [
+      "利率期货走势图",
+      "全球主要股指涨跌图",
+      "资金流动热力图"
+    ],
+    "priority_people": [
+      "宏观经济学家",
+      "投资策略师"
+    ],
+    "priority_orgs": [
+      "美联储",
+      "全球主要交易所"
+    ],
+    "priority_news_queries": [
+      "美联储降息预期",
+      "资本市场反应",
+      "利率风险重估"
+    ],
+    "existing_evidence": [
+      {
+        "title": "鲍威尔今晚的讲话，救了特朗普半条命，通胀不明显，人工智能 666，加息不存在，我们依旧强。",
+        "url": "https://m.weibo.cn/detail/5282444644189214",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      },
+      {
+        "title": "央行果断降息，各方注意了‼️进一步宽松的空间已经打",
+        "url": "https://www.douyin.com/video/7054565568447401219",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "回顾美联储近期政策调整背景与市场预期",
+      "part_1": "解析美联储转向降息对全球资本市场的影响",
+      "part_2": "探讨投资者资产配置的结构性调整",
+      "part_3": "评估未来利率风险与市场走势",
+      "ending": "总结政策预期变化下的投资与风险管理策略"
+    }
+  },
+  {
+    "topic_id": "T004",
+    "mother_topic_id": "T004",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "美以联军在伊朗冲突中失算，激活地区抵抗联盟重塑中东安全格局",
+    "one_line_judgment": "美以军事行动未能迅速压制伊朗，反而激活胡塞、真主党等抵抗联盟，导致中东安全形势复杂化和长期不确定性加剧。",
+    "core_proposition": "军事失算引发地区多方联合抵抗，改变中东力量均衡，区域安全与地缘政治格局或将长期动荡。",
+    "why_now": "近期以色列遭遇最大规模导弹袭击，多方抵抗力量联合行动频繁，相关多渠道报道证实局势升级。",
+    "reader_payoff": "理解中东地区冲突多方力量互动及其对安全格局的深远影响，掌握未来区域风险评估框架。",
+    "article_use": "适合写作国际安全与地缘政治专题，深入解析军事行动与抵抗联盟间的因果关系及未来风险。",
+    "distinctiveness_reason": "基于多渠道高热度报道，聚焦军事行动结果与地区联盟反应，体现冲突动态和安全影响。",
+    "evidence_gap_summary": "缺乏抵抗联盟内部结构及未来战略意图的详细情报分析。",
+    "proof_requirements": [
+      "以色列及抵抗联盟军事行动数据",
+      "地区安全专家评论",
+      "多方抵抗联盟声明与动态"
+    ],
+    "recommended_data_angles": [
+      "导弹袭击事件统计",
+      "抵抗联盟成员分析",
+      "中东地区安全事件时间线"
+    ],
+    "recommended_visual_angles": [
+      "冲突区域地图标注",
+      "袭击事件时间轴",
+      "抵抗联盟力量展示图"
+    ],
+    "priority_people": [
+      "国际安全专家",
+      "中东研究学者"
+    ],
+    "priority_orgs": [
+      "联合国安全理事会",
+      "地区安全机构"
+    ],
+    "priority_news_queries": [
+      "中东冲突",
+      "美以军事行动",
+      "抵抗联盟动态"
+    ],
+    "existing_evidence": [
+      {
+        "title": "家人们，美国头大了！失算了！ 美以联军不仅打不赢伊朗，还激活了抵抗之弧！",
+        "url": "https://m.weibo.cn/detail/5283370596830111",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      },
+      {
+        "title": "【3月24日晚上 战况汇总】以色列遭开战以来最大规模导弹袭击",
+        "url": "https://www.bilibili.com/video/BV1WJQBByE12",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍美以联军军事行动背景与目标",
+      "part_1": "分析军事失算导致抵抗联盟激活的因果关系",
+      "part_2": "评估抵抗联盟对中东安全格局的冲击",
+      "part_3": "探讨未来区域安全走势与可能风险",
+      "ending": "总结中东安全形势复杂化的启示与教训"
+    }
+  },
+  {
+    "topic_id": "T005",
+    "mother_topic_id": "T005",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "中美日俄地缘政治博弈升级加剧亚太安全与经济秩序重塑",
+    "one_line_judgment": "日本自卫队士兵闯入中国使馆及俄日关系恶化标志着亚太地区地缘政治竞争加剧，推动安全与经济秩序深度调整。",
+    "core_proposition": "亚太四大国间的紧张互动导致区域安全风险提升，同时影响经济合作模式及区域供应链安全。",
+    "why_now": "近期日本自卫队异常行为和俄罗斯将日本人重新列为战犯的官方表态，令亚太局势紧张态势明显升级。",
+    "reader_payoff": "获得理解亚太地缘政治风险演变及其对区域安全与经济秩序重塑的系统逻辑。",
+    "article_use": "适合国际关系专题报道，结合事件细节和区域战略分析，评估地缘博弈对经济安全的影响。",
+    "distinctiveness_reason": "整合多起事件反映亚太地缘政治全面升级，涵盖安全与经济双重维度，证据丰富权威。",
+    "evidence_gap_summary": "需补充各方官方政策反应及区域经济数据的深入跟踪。",
+    "proof_requirements": [
+      "日本自卫队事件官方调查报告",
+      "俄罗斯外交政策声明",
+      "亚太区域安全与经济数据"
+    ],
+    "recommended_data_angles": [
+      "亚太地区军事动态统计",
+      "区域贸易与投资流向",
+      "外交事件时间线分析"
+    ],
+    "recommended_visual_angles": [
+      "地缘政治事件地图",
+      "经济合作网络图",
+      "安全风险等级热力图"
+    ],
+    "priority_people": [
+      "亚太安全专家",
+      "国际经济学者"
+    ],
+    "priority_orgs": [
+      "外交部",
+      "区域安全合作组织"
+    ],
+    "priority_news_queries": [
+      "日本自卫队事件",
+      "俄日关系恶化",
+      "亚太地缘政治"
+    ],
+    "existing_evidence": [
+      {
+        "title": "2026年日本又有士兵走丢：但是闯入老中使馆？",
+        "url": "https://www.bilibili.com/video/BV154QrBqEXG",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      },
+      {
+        "title": "俄罗斯重新将28名日本人列为战犯",
+        "url": "https://m.weibo.cn/detail/5283383100050229",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "概述亚太地区地缘政治格局与主要事件",
+      "part_1": "详述日本自卫队事件及其安全影响",
+      "part_2": "分析俄日关系紧张与地缘政治后果",
+      "part_3": "探讨区域经济合作与安全风险重塑",
+      "ending": "总结亚太地缘博弈的未来走势与挑战"
+    }
+  },
+  {
+    "topic_id": "T006",
+    "mother_topic_id": "T006",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "中国大规模反间谍行动揭示中日关系新一轮紧张态势",
+    "one_line_judgment": "中国针对多年来日本间谍活动的清理行动，反映两国安全关系紧绷，可能引发外交及安全政策调整。",
+    "core_proposition": "反间谍行动不仅是安全措施，更是中日政治关系紧张的体现，影响双边信任与未来战略互动。",
+    "why_now": "近期B站爆料及社交媒体热议中国大规模清理日本间谍，显示此类行动已进入公开关注阶段。",
+    "reader_payoff": "深入理解反间谍行动背后的政治动因及对中日双边关系的潜在影响。",
+    "article_use": "适合国际安全与外交专题，结合事件披露与历史背景，分析安全政策演变与双边关系走势。",
+    "distinctiveness_reason": "基于最新反间谍曝光和多渠道讨论，揭示国家安全与外交互动的新层面。",
+    "evidence_gap_summary": "需官方更多细节及双方政策反应的权威信息支撑分析。",
+    "proof_requirements": [
+      "反间谍行动官方声明",
+      "中日外交政策文献",
+      "安全专家分析评论"
+    ],
+    "recommended_data_angles": [
+      "间谍案件数量与类型统计",
+      "外交事件时间线",
+      "安全政策演变趋势"
+    ],
+    "recommended_visual_angles": [
+      "反间谍行动分布图",
+      "中日外交关系时间轴",
+      "安全风险等级图"
+    ],
+    "priority_people": [
+      "安全政策专家",
+      "国际关系学者"
+    ],
+    "priority_orgs": [
+      "公安部",
+      "外交部"
+    ],
+    "priority_news_queries": [
+      "中日反间谍",
+      "中日安全关系",
+      "间谍活动清理"
+    ],
+    "existing_evidence": [
+      {
+        "title": "中国开始清理日本部署多年的间谍【乌鸦校尉】",
+        "url": "https://www.bilibili.com/video/BV16pcUzRE2k",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍中日安全关系历史背景",
+      "part_1": "披露最新反间谍行动及相关案例",
+      "part_2": "分析反间谍行动对外交关系的影响",
+      "part_3": "探讨未来两国安全与外交走向",
+      "ending": "总结国家安全措施与国际关系的互动"
+    }
+  },
+  {
+    "topic_id": "T007",
+    "mother_topic_id": "T007",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "美军对伊朗飞行员的搜救与伊朗否认美军袭击事件反映信息战误判风险",
+    "one_line_judgment": "美军宣布救出被击落飞行员，而伊朗否认美军袭击，彰显双方信息战互相误判与舆论操作的风险。",
+    "core_proposition": "冲突双方通过信息发布影响国际舆论，信息不对称导致误判风险提升，影响冲突态势和外交斡旋进程。",
+    "why_now": "近期美军机被击落事件及飞行员搜救报道与伊朗官方否认美军袭击形成明显冲突，媒体和社交平台热度高涨。",
+    "reader_payoff": "理解信息战在现代冲突中的作用及误判风险，提升对冲突信息真实性的判断能力。",
+    "article_use": "适合写作国际冲突与信息战专题，结合事件报道与分析，解读信息对冲突动态的影响。",
+    "distinctiveness_reason": "基于多渠道权威报道与双方官方声明，突出信息战与误判的核心命题。",
+    "evidence_gap_summary": "缺乏独立第三方对事件的调查与证据，需补充验证信息真实性的分析。",
+    "proof_requirements": [
+      "美军搜救行动官方通报",
+      "伊朗官方声明与反驳",
+      "独立媒体调查报告"
+    ],
+    "recommended_data_angles": [
+      "事件时间线整理",
+      "双方信息发布对比分析",
+      "社交媒体舆论热度曲线"
+    ],
+    "recommended_visual_angles": [
+      "事件流程图",
+      "信息发布对比图表",
+      "舆论热度走势图"
+    ],
+    "priority_people": [
+      "国际冲突分析师",
+      "信息战专家"
+    ],
+    "priority_orgs": [
+      "五角大楼",
+      "伊朗外交部"
+    ],
+    "priority_news_queries": [
+      "美军飞行员搜救",
+      "伊朗否认袭击",
+      "信息战误判"
+    ],
+    "existing_evidence": [
+      {
+        "title": "Trump confirms both military officers missing in Iran have been rescued",
+        "url": "https://www.cnbc.com/2026/04/05/us-trump-confirms-missing-us-pilot-rescued.html",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      },
+      {
+        "title": "What we know so far about the US fighter jet shot down over Iran",
+        "url": "https://www.bbc.com/news/articles/cm2k1dgz142o?at_medium=RSS&at_campaign=rss",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍美军机被击落事件背景",
+      "part_1": "报道美军搜救行动及官方声明",
+      "part_2": "呈现伊朗否认美军袭击的立场",
+      "part_3": "分析双方信息战及误判风险",
+      "ending": "总结信息战对冲突态势的影响及启示"
+    }
+  },
+  {
+    "topic_id": "T008",
+    "mother_topic_id": "T008",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "中国强化平台经济监管反映市场合规与创新治理的博弈加剧",
+    "one_line_judgment": "国务院多部门约谈平台企业，显示中国加强市场监管的决心，同时对平台经济合规与创新治理提出更高要求。",
+    "core_proposition": "市场监管强化与平台经济创新存在矛盾，监管政策调整将影响平台企业运营模式及行业发展路径。",
+    "why_now": "近期国务院食安办、市场监管总局联合约谈多家平台企业，官方报道及社交媒体讨论热度显著上升。",
+    "reader_payoff": "了解中国平台经济监管新动态及其对企业合规和创新的影响，掌握政策调整带来的行业变局。",
+    "article_use": "适合政策解读与行业分析文章，结合官方动作和市场反馈，评估监管走势及企业应对策略。",
+    "distinctiveness_reason": "基于官方权威信息，结合市场反应，聚焦平台经济监管合规挑战与治理创新。",
+    "evidence_gap_summary": "需更多企业层面反馈及监管政策细节支持深度分析。",
+    "proof_requirements": [
+      "国务院相关部门约谈文件",
+      "平台企业合规案例",
+      "市场监管政策解读"
+    ],
+    "recommended_data_angles": [
+      "平台企业合规处罚案例统计",
+      "政策出台时间轴",
+      "行业市场份额变化"
+    ],
+    "recommended_visual_angles": [
+      "监管政策流程图",
+      "合规风险地图",
+      "行业发展趋势图"
+    ],
+    "priority_people": [
+      "政策分析师",
+      "互联网行业专家"
+    ],
+    "priority_orgs": [
+      "国务院",
+      "市场监管总局"
+    ],
+    "priority_news_queries": [
+      "平台经济监管",
+      "企业合规挑战",
+      "市场监管政策"
+    ],
+    "existing_evidence": [
+      {
+        "title": "国务院食安办、市场监管总局、海关总署约谈3家平台企业",
+        "url": "https://www.douyin.com/video/7624178333126905123",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍中国平台经济发展与监管背景",
+      "part_1": "披露国务院多部门约谈及监管措施",
+      "part_2": "分析监管对平台企业合规与创新的影响",
+      "part_3": "探讨行业未来监管与治理趋势",
+      "ending": "总结监管与创新的平衡挑战及对策"
+    }
+  },
+  {
+    "topic_id": "T009",
+    "mother_topic_id": "T009",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "全球资本市场对美伊中东政策不确定性反应加剧，风险投资策略亟需调整",
+    "one_line_judgment": "围绕美国对伊朗政策反复调整及美军行动，全球资本市场波动加剧，投资者需重新评估风险与策略。",
+    "core_proposition": "政策不确定性是资本市场波动的核心驱动力，投资者需关注地缘政治动态，调整资产配置以应对风险。",
+    "why_now": "近期特朗普政策反复、油价闪崩及市场频繁波动反映不确定性加剧，财经评论和多渠道报道持续热议。",
+    "reader_payoff": "掌握地缘政治不确定性对资本市场的影响机制，提升投资决策中的风险识别和应对能力。",
+    "article_use": "适合金融市场风险专题，结合政策动态与市场表现，提供投资策略及风险管理建议。",
+    "distinctiveness_reason": "聚焦政策不确定性与市场反应的因果关系，基于多渠道权威财经评论和实时市场数据。",
+    "evidence_gap_summary": "缺少投资者行为具体案例及市场深度流动性分析。",
+    "proof_requirements": [
+      "政策声明时间线及解读",
+      "市场波动数据与成交量统计",
+      "投资者策略调整调研"
+    ],
+    "recommended_data_angles": [
+      "油价波动历史数据",
+      "股市波动指标",
+      "资金流向与市场情绪分析"
+    ],
+    "recommended_visual_angles": [
+      "政策事件与市场反应对比图",
+      "资金流动动态热图",
+      "风险指标时间序列"
+    ],
+    "priority_people": [
+      "金融分析师",
+      "投资顾问"
+    ],
+    "priority_orgs": [
+      "证券交易所",
+      "财经研究机构"
+    ],
+    "priority_news_queries": [
+      "美伊政策不确定性",
+      "资本市场波动",
+      "投资风险管理"
+    ],
+    "existing_evidence": [
+      {
+        "title": "特朗普一个帖子让国际油价闪崩13%，特朗普称同伊朗对话完美，伊朗否认",
+        "url": "https://www.bilibili.com/video/BV1EDQqBvEQs",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      },
+      {
+        "title": "美国有史以来考虑过的最疯狂的军事计划 #美伊以冲突#",
+        "url": "https://m.weibo.cn/detail/5283658987475614",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍美伊中东政策背景及其不确定性表现",
+      "part_1": "分析政策反复对全球资本市场的冲击机制",
+      "part_2": "探讨投资者如何调整策略应对风险",
+      "part_3": "评估未来政策走向对市场的潜在影响",
+      "ending": "总结政策不确定性对投资决策的启示"
+    }
+  },
+  {
+    "topic_id": "T010",
+    "mother_topic_id": "T010",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "数字货币去中心化交易所治理创新推动加密资产市场结构变革",
+    "one_line_judgment": "veDEX模式将交易权与治理权绑定，创新去中心化交易所治理机制，推动加密市场治理结构的深刻变革。",
+    "core_proposition": "去中心化交易所通过治理权创新提升用户参与度与市场效率，币安等平台资产高度集中加剧市场竞争格局。",
+    "why_now": "近期多渠道讨论veDEX机制及币安市场份额报告，显示治理权创新成为行业热点，市场关注度提升。",
+    "reader_payoff": "理解去中心化交易所治理权创新的机制与影响，掌握加密市场竞争与治理的最新动态。",
+    "article_use": "适合区块链与加密市场专题，结合技术创新与市场数据，分析治理结构变革及行业趋势。",
+    "distinctiveness_reason": "基于多个社交平台讨论与权威数据报告，聚焦治理权创新对市场结构的影响，具技术与市场双重视角。",
+    "evidence_gap_summary": "缺乏治理创新实际应用案例及用户行为数据支持深度分析。",
+    "proof_requirements": [
+      "veDEX机制技术白皮书",
+      "币安及其他平台市场份额数据",
+      "用户治理参与度统计"
+    ],
+    "recommended_data_angles": [
+      "去中心化交易所交易量及治理投票数据",
+      "加密资产集中度分析",
+      "市场份额时间序列"
+    ],
+    "recommended_visual_angles": [
+      "治理权与交易权绑定示意图",
+      "平台市场份额饼图",
+      "用户参与度趋势图"
+    ],
+    "priority_people": [
+      "区块链技术专家",
+      "加密资产研究员"
+    ],
+    "priority_orgs": [
+      "币安",
+      "去中心化交易所项目团队"
+    ],
+    "priority_news_queries": [
+      "veDEX治理机制",
+      "去中心化交易所",
+      "加密资产市场"
+    ],
+    "existing_evidence": [
+      {
+        "title": "很多人以为 DEX 只是撮合交易的地方，但 veDEX 其实是把“交易权”和“治理权”绑定在一起的一种进化形态。",
+        "url": "https://x.com/fillipsxn/status/2040364152192201002",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      },
+      {
+        "title": "73.5% 的行业资产，最后都流向了币安。",
+        "url": "https://x.com/Jason23818126/status/2040336915246010482",
+        "source_type": "",
+        "source_tier": "",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍去中心化交易所及其治理现状",
+      "part_1": "解析veDEX治理权与交易权绑定机制",
+      "part_2": "评估治理创新对加密市场结构的影响",
+      "part_3": "展望未来治理模式与市场竞争趋势",
+      "ending": "总结技术创新推动的市场变革及挑战"
+    }
+  }
+]

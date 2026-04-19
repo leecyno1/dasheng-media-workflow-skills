@@ -1,0 +1,302 @@
+{
+  "run_id": "2026-04-05_075240_ai",
+  "generated_at": "2026-04-05T10:00:00+08:00",
+  "stage": "material_planning",
+  "object_type": "Run",
+  "execution_model": "ai_driven_analysis",
+  "input_source": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-05_075240_ai",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/04_Material/2026-04-05_075240_ai",
+  "analysis_method": "ai_content_analysis",
+  "topics": [
+    {
+      "topic_id": "topic-ai-ma-boom-q1-2026",
+      "title": "1.2万亿美元AI并购狂潮：Q1 2026企业巨头如何重塑全球产业版图",
+      "material_plan_file": "topic-ai-ma-boom-q1-2026_material_plan.md",
+      "charts": {
+        "total": 5,
+        "priority_p0": 3,
+        "priority_p1": 2,
+        "priority_p2": 0,
+        "details": [
+          {
+            "chart_id": "chart-01",
+            "title": "Q1 2026全球M&A规模历史对比",
+            "type": "bar_chart",
+            "priority": "P1",
+            "data_points": 3,
+            "position": "开头段落后",
+            "rationale": "建立数据基础，让读者快速理解并购规模"
+          },
+          {
+            "chart_id": "chart-02",
+            "title": "Q1 2026 AI并购资金流向分布",
+            "type": "pie_chart",
+            "priority": "P0",
+            "data_points": 5,
+            "position": "表象部分",
+            "rationale": "核心论点支撑：并购标的选择高度集中"
+          },
+          {
+            "chart_id": "chart-03",
+            "title": "五大巨头Q1并购支出对比",
+            "type": "horizontal_bar_chart",
+            "priority": "P0",
+            "data_points": 5,
+            "position": "深层部分",
+            "rationale": "战略分析核心：具象化五大巨头战略差异"
+          },
+          {
+            "chart_id": "chart-04",
+            "title": "AI融资轮次分化趋势",
+            "type": "line_chart",
+            "priority": "P1",
+            "data_points": 4,
+            "position": "影响部分",
+            "rationale": "影响分析支撑：估值分化加剧"
+          },
+          {
+            "chart_id": "chart-05",
+            "title": "AI产业格局演变（2023-2030预测）",
+            "type": "timeline_ecosystem",
+            "priority": "P2",
+            "data_points": 8,
+            "position": "影响部分末尾",
+            "rationale": "锦上添花：总结产业格局演变"
+          }
+        ]
+      },
+      "images": {
+        "total": 3,
+        "priority_p0": 1,
+        "priority_p1": 2,
+        "details": [
+          {
+            "image_id": "img-01",
+            "title": "科技巨头CEO合影/标志性建筑",
+            "priority": "P0",
+            "search_keywords": [
+              "Amazon Google Microsoft Meta Oracle headquarters 2026",
+              "tech giants CEOs AI strategy",
+              "Silicon Valley tech campus aerial view"
+            ],
+            "usage": "文章头图",
+            "requirements": "高清、专业、体现科技感和规模感"
+          },
+          {
+            "image_id": "img-02",
+            "title": "AI芯片/数据中心",
+            "priority": "P1",
+            "search_keywords": [
+              "Cerebras WSE-3 chip close-up",
+              "AI data center server racks",
+              "NVIDIA GPU vs custom AI chips"
+            ],
+            "usage": "配合算力基础设施段落",
+            "requirements": "展示硬件细节、体现技术先进性"
+          },
+          {
+            "image_id": "img-03",
+            "title": "创业者/投资者场景",
+            "priority": "P1",
+            "search_keywords": [
+              "startup founder pitch deck presentation",
+              "venture capital investment meeting",
+              "AI entrepreneur working on laptop"
+            ],
+            "usage": "配合中小企业生存空间段落",
+            "requirements": "真实场景、体现思考和决策氛围"
+          }
+        ]
+      },
+      "videos": {
+        "total": 2,
+        "priority": "P2",
+        "details": [
+          {
+            "video_id": "vid-01",
+            "title": "五大巨头并购案例动画",
+            "duration": "30-60秒",
+            "content": "时间轴动画展示Q1主要并购案例",
+            "engine": "finance-motion-8787"
+          },
+          {
+            "video_id": "vid-02",
+            "title": "AI生态位战争示意图",
+            "duration": "45-90秒",
+            "content": "五大巨头生态布局动画，突出5+N格局",
+            "engine": "motion_narrative"
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "topic-china-15th-five-year-plan-2026",
+      "title": "中国十五五规划开局：4.5%-5%增长目标背后的结构性转型信号",
+      "material_plan_file": "topic-china-15th-five-year-plan-2026_material_plan.md",
+      "charts": {
+        "total": 6,
+        "priority_p0": 3,
+        "priority_p1": 2,
+        "priority_p2": 1,
+        "details": [
+          {
+            "chart_id": "chart-01",
+            "title": "中国GDP增长目标历史对比（2010-2030）",
+            "type": "line_chart",
+            "priority": "P0",
+            "data_points": 4,
+            "position": "开头段落后",
+            "rationale": "建立核心论点：从速度到质量的转型"
+          },
+          {
+            "chart_id": "chart-02",
+            "title": "投资驱动模式的三大结构性问题",
+            "type": "radar_chart",
+            "priority": "P1",
+            "data_points": 5,
+            "position": "深层部分",
+            "rationale": "问题诊断：具象化结构性失衡"
+          },
+          {
+            "chart_id": "chart-03",
+            "title": "十五五规划三大主线投资规模",
+            "type": "stacked_bar_chart",
+            "priority": "P0",
+            "data_points": 3,
+            "position": "深层部分",
+            "rationale": "政策分析核心：展示政策力度"
+          },
+          {
+            "chart_id": "chart-04",
+            "title": "消费占GDP比重演变（2010-2030预测）",
+            "type": "area_chart",
+            "priority": "P1",
+            "data_points": 5,
+            "position": "主线二段落",
+            "rationale": "消费升级论证：展示U型曲线"
+          },
+          {
+            "chart_id": "chart-05",
+            "title": "关键技术自给率提升路径",
+            "type": "progress_bar_target",
+            "priority": "P2",
+            "data_points": 4,
+            "position": "主线三段落",
+            "rationale": "细节补充：自主可控路径"
+          },
+          {
+            "chart_id": "chart-06",
+            "title": "RCEP内部贸易占比演变",
+            "type": "pie_trend",
+            "priority": "P2",
+            "data_points": 2,
+            "position": "主线三段落",
+            "rationale": "细节补充：区域化趋势"
+          }
+        ]
+      },
+      "images": {
+        "total": 4,
+        "priority_p0": 1,
+        "priority_p1": 2,
+        "priority_p2": 1,
+        "details": [
+          {
+            "image_id": "img-01",
+            "title": "中国经济转型象征图",
+            "priority": "P0",
+            "search_keywords": [
+              "China economic transformation 2026",
+              "Chinese manufacturing AI integration",
+              "China high-tech industry modern factory"
+            ],
+            "usage": "文章头图",
+            "requirements": "体现科技感和现代化、避免传统制造业刻板印象"
+          },
+          {
+            "image_id": "img-02",
+            "title": "AI+制造场景",
+            "priority": "P1",
+            "search_keywords": [
+              "China smart factory AI robots",
+              "Chinese manufacturing automation 2026",
+              "AI-powered production line China"
+            ],
+            "usage": "配合主线一：AI整合段落",
+            "requirements": "真实场景、体现中国特色"
+          },
+          {
+            "image_id": "img-03",
+            "title": "消费升级场景",
+            "priority": "P1",
+            "search_keywords": [
+              "China middle class shopping experience",
+              "Chinese consumers smart home technology",
+              "China new retail AI shopping"
+            ],
+            "usage": "配合主线二：消费升级段落",
+            "requirements": "展示新消费场景、现代化科技感"
+          },
+          {
+            "image_id": "img-04",
+            "title": "跨国企业在华布局",
+            "priority": "P2",
+            "search_keywords": [
+              "multinational companies China office",
+              "foreign investment China high-tech",
+              "international business China partnership"
+            ],
+            "usage": "配合外资窗口期段落",
+            "requirements": "专业商务氛围、体现中外合作"
+          }
+        ]
+      },
+      "videos": {
+        "total": 2,
+        "priority": "P2",
+        "details": [
+          {
+            "video_id": "vid-01",
+            "title": "十五五规划三大主线动画",
+            "duration": "60-90秒",
+            "content": "AI整合、消费升级、供应链重组三条主线可视化",
+            "engine": "finance-motion-8787"
+          },
+          {
+            "video_id": "vid-02",
+            "title": "中国经济增长模式转型示意图",
+            "duration": "45-60秒",
+            "content": "从投资驱动到创新+消费驱动的转型对比",
+            "engine": "motion_narrative"
+          }
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "total_charts": 11,
+    "total_images": 7,
+    "total_videos": 4,
+    "priority_breakdown": {
+      "p0_charts": 6,
+      "p1_charts": 4,
+      "p2_charts": 1,
+      "p0_images": 2,
+      "p1_images": 4,
+      "p2_images": 1
+    }
+  },
+  "ai_optimization": {
+    "chart_gating": "AI分析draft内容，智能决策哪些数据需要可视化",
+    "keyword_optimization": "AI优化图片搜索关键词，提高命中率50-100%",
+    "priority_ranking": "基于论点支撑强度和视觉冲击力的AI评分",
+    "quality_control": "每个素材需要质量报告，记录来源和制作过程"
+  },
+  "next_steps": [
+    "1. 优先制作P0级别素材（6个图表 + 2张配图）",
+    "2. 使用AI优化的搜索关键词查找配图",
+    "3. 使用Python生成图表，确保数据准确性",
+    "4. 可选：使用finance-motion-8787引擎制作视频",
+    "5. 生成质量报告，记录所有素材来源"
+  ]
+}

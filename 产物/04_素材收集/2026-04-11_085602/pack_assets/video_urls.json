@@ -1,0 +1,445 @@
+{
+  "search_date": "2026-04-11",
+  "run_id": "2026-04-11_085602",
+  "topics": {
+    "claude华尔街紧急会议": {
+      "description": "Claude新模型引发华尔街紧急会议",
+      "videos": [
+        {
+          "title": "FOMC Press Conference, December 10, 2025",
+          "url": "https://www.youtube.com/watch?v=Ko-_yb2UkDk",
+          "platform": "YouTube",
+          "channel": "Federal Reserve",
+          "duration": "51:58",
+          "duration_seconds": 3118,
+          "view_count": 66231,
+          "tags": ["美联储", "新闻发布会", "FOMC", "Jerome Powell"]
+        },
+        {
+          "title": "FOMC Press Conference, June 18, 2025",
+          "url": "https://www.youtube.com/watch?v=iAiL1UMgkYQ",
+          "platform": "YouTube",
+          "channel": "Federal Reserve",
+          "duration": "51:31",
+          "duration_seconds": 3091,
+          "view_count": 35590,
+          "tags": ["美联储", "新闻发布会", "FOMC"]
+        },
+        {
+          "title": "Federal Reserve Chair Powell speaks after Fed cuts interest rate by 25 basis points — 10/29/25",
+          "url": "https://www.youtube.com/watch?v=GwlVhCV6_r0",
+          "platform": "YouTube",
+          "channel": "CNBC Television",
+          "duration": "56:26",
+          "duration_seconds": 3386,
+          "view_count": 109267,
+          "tags": ["美联储", "CNBC", "降息", "Jerome Powell"]
+        },
+        {
+          "title": "Jerome Powell LIVE: Fed Chair speaks after interest rate decision",
+          "url": "https://www.youtube.com/watch?v=dmhbeOQH3HI",
+          "platform": "YouTube",
+          "channel": "Associated Press",
+          "duration": "47:03",
+          "duration_seconds": 2823,
+          "view_count": 190932,
+          "tags": ["美联储", "新闻发布会", "Jerome Powell"]
+        },
+        {
+          "title": "An inside look at Wall Street's most famous trader",
+          "url": "https://www.youtube.com/watch?v=ogbRyjeU1IQ",
+          "platform": "YouTube",
+          "channel": "CNN Business",
+          "duration": "3:01",
+          "duration_seconds": 181,
+          "view_count": 1958660,
+          "tags": ["华尔街", "纽交所", "交易员", "CNN"]
+        },
+        {
+          "title": "$16M Trader: What A Trader REALLY Does On Wall Street In 2025 | Inside The NYSE",
+          "url": "https://www.youtube.com/watch?v=Cwpg5co438k",
+          "platform": "YouTube",
+          "channel": "Alex Temiz / My Investing Club",
+          "duration": "8:09",
+          "duration_seconds": 489,
+          "view_count": 7983,
+          "tags": ["华尔街", "纽交所", "交易大厅"]
+        },
+        {
+          "title": "An Inside Look At The New York Stock Exchange",
+          "url": "https://www.youtube.com/watch?v=A69iXGblWyw",
+          "platform": "YouTube",
+          "channel": "Benzinga",
+          "duration": "16:43",
+          "duration_seconds": 1003,
+          "view_count": 185294,
+          "tags": ["纽交所", "交易大厅", "华尔街"]
+        },
+        {
+          "title": "Watch Citadel's high-speed trading in action",
+          "url": "https://www.youtube.com/watch?v=2u007Msq1qo",
+          "platform": "YouTube",
+          "channel": "CNN",
+          "duration": "2:51",
+          "duration_seconds": 171,
+          "view_count": 11474682,
+          "tags": ["高频交易", "Citadel", "华尔街"]
+        },
+        {
+          "title": "Introducing Claude Code",
+          "url": "https://www.youtube.com/watch?v=AJpK3YTTKZ4",
+          "platform": "YouTube",
+          "channel": "Anthropic",
+          "duration": "3:55",
+          "duration_seconds": 235,
+          "view_count": 918024,
+          "tags": ["Claude", "Anthropic", "AI", "Claude Code"]
+        },
+        {
+          "title": "Code with Claude Opening Keynote",
+          "url": "https://www.youtube.com/watch?v=EvtPBaaykdo",
+          "platform": "YouTube",
+          "channel": "Anthropic",
+          "duration": "1:40:21",
+          "duration_seconds": 6021,
+          "view_count": 278783,
+          "tags": ["Claude Code", "Anthropic", "AI", "发布会"]
+        },
+        {
+          "title": "Mastering Claude Code in 30 minutes",
+          "url": "https://www.youtube.com/watch?v=6eBSHbLKuN0",
+          "platform": "YouTube",
+          "channel": "Anthropic",
+          "duration": "28:07",
+          "duration_seconds": 1687,
+          "view_count": 1049847,
+          "tags": ["Claude Code", "Anthropic", "AI教程"]
+        },
+        {
+          "title": "Anthropic CEO warns that without guardrails, AI could be on dangerous path",
+          "url": "https://www.youtube.com/watch?v=aAPpQC-3EyE",
+          "platform": "YouTube",
+          "channel": "60 Minutes",
+          "duration": "13:52",
+          "duration_seconds": 832,
+          "view_count": 901488,
+          "tags": ["Anthropic", "Dario Amodei", "AI安全", "60 Minutes"]
+        }
+      ]
+    },
+    "稳定币牌照": {
+      "description": "稳定币牌照落地",
+      "videos": [
+        {
+          "title": "Stablecoins, Explained in 4 Minutes",
+          "url": "https://www.youtube.com/watch?v=vx_JyxuV1DE",
+          "platform": "YouTube",
+          "channel": "Binance",
+          "duration": "3:49",
+          "duration_seconds": 229,
+          "view_count": 140052,
+          "tags": ["稳定币", "Stablecoin", "Binance", "科普"]
+        },
+        {
+          "title": "USDC vs USDT: Which Stablecoin is SAFER? (2025 Head-to-Head Comparison)",
+          "url": "https://www.youtube.com/watch?v=0GGCf0P59ko",
+          "platform": "YouTube",
+          "channel": "The Stable Lad",
+          "duration": "7:29",
+          "duration_seconds": 449,
+          "view_count": 116,
+          "tags": ["USDC", "USDT", "稳定币", "对比"]
+        },
+        {
+          "title": "Stablecoin ULTIMATE Guide 2025: From USDT & USDC to the NEXT Terra UST Crash?",
+          "url": "https://www.youtube.com/watch?v=BtBno6by-W0",
+          "platform": "YouTube",
+          "channel": "GenAI Living In Singapore",
+          "duration": "8:34",
+          "duration_seconds": 514,
+          "view_count": 304,
+          "tags": ["稳定币", "USDT", "USDC", "2025"]
+        },
+        {
+          "title": "Crypto Regulations 2025 - A Downfall???",
+          "url": "https://www.youtube.com/watch?v=0N6RnekKoxE",
+          "platform": "YouTube",
+          "channel": "Crypto Effect",
+          "duration": "7:54",
+          "duration_seconds": 474,
+          "view_count": 152,
+          "tags": ["加密货币", "监管", "2025"]
+        },
+        {
+          "title": "USDC Regulation Explained: How 2025's GENIUS Act Transforms USDC Regulation",
+          "url": "https://www.youtube.com/watch?v=c64F_OJlYiI",
+          "platform": "YouTube",
+          "channel": "Crypto Altcoin Spotlight",
+          "duration": "7:18",
+          "duration_seconds": 438,
+          "view_count": 18,
+          "tags": ["USDC", "稳定币", "监管", "GENIUS Act"]
+        },
+        {
+          "title": "MICA Regulation Explained: What It Means for Stablecoins and Banking in 2025",
+          "url": "https://www.youtube.com/watch?v=MU7U5FEzVyE",
+          "platform": "YouTube",
+          "channel": "Xpaid | Worldwide Payments",
+          "duration": "6:14",
+          "duration_seconds": 374,
+          "view_count": 172,
+          "tags": ["MiCA", "稳定币", "监管", "欧洲"]
+        },
+        {
+          "title": "Who Will Win the Stablecoin War 2025? Tether (USDT) vs USDC Explained",
+          "url": "https://www.youtube.com/watch?v=4Tx_hGP2tgg",
+          "platform": "YouTube",
+          "channel": "Crypto Safehouse",
+          "duration": "9:33",
+          "duration_seconds": 573,
+          "view_count": 13,
+          "tags": ["USDT", "USDC", "稳定币", "2025"]
+        },
+        {
+          "title": "Why Companies Like JP Morgan And Visa Are Creating Crypto Tokens",
+          "url": "https://www.youtube.com/watch?v=OpBGgntJqtM",
+          "platform": "YouTube",
+          "channel": "CNBC",
+          "duration": "12:32",
+          "duration_seconds": 752,
+          "view_count": 500522,
+          "tags": ["JP Morgan", "Visa", "稳定币", "传统金融"]
+        },
+        {
+          "title": "Blockchain In 7 Minutes | What Is Blockchain | Blockchain Explained",
+          "url": "https://www.youtube.com/watch?v=yubzJw0uiE4",
+          "platform": "YouTube",
+          "channel": "Simplilearn",
+          "duration": "7:03",
+          "duration_seconds": 423,
+          "view_count": 3882525,
+          "tags": ["区块链", "Blockchain", "科普"]
+        },
+        {
+          "title": "Blockchain in 2025: Where Are We Now & What's Next?",
+          "url": "https://www.youtube.com/watch?v=WUJfgCGfOuY",
+          "platform": "YouTube",
+          "channel": "Knowledge at Wharton",
+          "duration": "2:53",
+          "duration_seconds": 173,
+          "view_count": 3369,
+          "tags": ["区块链", "2025", "Wharton"]
+        },
+        {
+          "title": "Blockchain 2025: The Future of Decentralization & AI",
+          "url": "https://www.youtube.com/watch?v=UIXFYPzaFbY",
+          "platform": "YouTube",
+          "channel": "ByteMonk",
+          "duration": "11:35",
+          "duration_seconds": 695,
+          "view_count": 15620,
+          "tags": ["区块链", "AI", "2025", "去中心化"]
+        },
+        {
+          "title": "How Stablecoins Are Changing Money in 2025",
+          "url": "https://www.youtube.com/watch?v=ZYiviDFSG8A",
+          "platform": "YouTube",
+          "channel": "Serge Kuznetsov",
+          "duration": "57:58",
+          "duration_seconds": 3478,
+          "view_count": 93,
+          "tags": ["稳定币", "2025", "货币"]
+        }
+      ]
+    },
+    "日本士兵闯使馆": {
+      "description": "日本士兵闯使馆事件",
+      "videos": [
+        {
+          "title": "China vs Japan Military Power Comparison 2025",
+          "url": "https://www.youtube.com/watch?v=ueuX4m-_UgE",
+          "platform": "YouTube",
+          "channel": "Power Comparison",
+          "duration": "6:43",
+          "duration_seconds": 403,
+          "view_count": 290631,
+          "tags": ["中国", "日本", "军事对比", "2025"]
+        },
+        {
+          "title": "Japan Military Power |JSDF| \"Rise Again\"",
+          "url": "https://www.youtube.com/watch?v=WJAjrImyYaU",
+          "platform": "YouTube",
+          "channel": "MILITARY CHANNEL",
+          "duration": "2:10",
+          "duration_seconds": 130,
+          "view_count": 426797,
+          "tags": ["日本自卫队", "JSDF", "军事"]
+        },
+        {
+          "title": "NEW Review of All Japan Self-Defense Forces Equipment",
+          "url": "https://www.youtube.com/watch?v=zFsqXlCU-t8",
+          "platform": "YouTube",
+          "channel": "Army Encyclopedia",
+          "duration": "39:19",
+          "duration_seconds": 2359,
+          "view_count": 26797,
+          "tags": ["日本自卫队", "装备", "自卫队"]
+        },
+        {
+          "title": "If Japan and China Go To War, Who Loses (Hour by Hour)",
+          "url": "https://www.youtube.com/watch?v=2XpZR2yMnN0",
+          "platform": "YouTube",
+          "channel": "The Military Show",
+          "duration": "24:19",
+          "duration_seconds": 1459,
+          "view_count": 1848018,
+          "tags": ["中日", "军事", "战争", "假想"]
+        },
+        {
+          "title": "Japan Military Strength 2026 | How Powerful is Japan | Japan Self-Defense Forces (JSDF)",
+          "url": "https://www.youtube.com/watch?v=Lgl0wTXJmLM",
+          "platform": "YouTube",
+          "channel": "Military XYZ",
+          "duration": "3:08",
+          "duration_seconds": 188,
+          "view_count": 45183,
+          "tags": ["日本", "自卫队", "军事力量", "2026"]
+        },
+        {
+          "title": "South Korea vs Japan Military Power Comparison 2025",
+          "url": "https://www.youtube.com/watch?v=3srj75AK7qg",
+          "platform": "YouTube",
+          "channel": "Power Comparison",
+          "duration": "6:30",
+          "duration_seconds": 390,
+          "view_count": 103866,
+          "tags": ["日本", "韩国", "军事对比", "2025"]
+        },
+        {
+          "title": "Japan Military Power |JSDF| \"LEGACY\"",
+          "url": "https://www.youtube.com/watch?v=b2s03xiVwUk",
+          "platform": "YouTube",
+          "channel": "MILITARY CHANNEL",
+          "duration": "3:17",
+          "duration_seconds": 197,
+          "view_count": 30245,
+          "tags": ["日本自卫队", "JSDF"]
+        },
+        {
+          "title": "Japan's Military Power 2024: Can It Be Defeated?",
+          "url": "https://www.youtube.com/watch?v=WE6jxsPccE4",
+          "platform": "YouTube",
+          "channel": "Military Trends",
+          "duration": "6:57",
+          "duration_seconds": 417,
+          "view_count": 93011,
+          "tags": ["日本", "军事", "2024"]
+        },
+        {
+          "title": "Japan Self-Defense Forces 2023 | 自衛隊 \"we defend\"",
+          "url": "https://www.youtube.com/watch?v=mFaTInmuIf0",
+          "platform": "YouTube",
+          "channel": "Ananda Yudha Pratama",
+          "duration": "3:43",
+          "duration_seconds": 223,
+          "view_count": 101607,
+          "tags": ["日本自卫队", "2023"]
+        },
+        {
+          "title": "自衛隊 2025年を振り返る | A Look Back at the Year - Japan Self-Defense forces",
+          "url": "https://www.youtube.com/watch?v=xJIEDtGD8x0",
+          "platform": "YouTube",
+          "channel": "The Military Archives of Japan",
+          "duration": "2:32",
+          "duration_seconds": 152,
+          "view_count": 6274,
+          "tags": ["日本自卫队", "2025", "回顾"]
+        },
+        {
+          "title": "Conflict erupts after Chinese diplomat threatens Japan's Prime Minister",
+          "url": "https://www.youtube.com/watch?v=oB9JQEWkhsc",
+          "platform": "YouTube",
+          "channel": "Sky News Australia",
+          "duration": "3:12",
+          "duration_seconds": 192,
+          "view_count": 165928,
+          "tags": ["中日外交", "中国", "日本", "外交"]
+        },
+        {
+          "title": "Tensions between Japan-China escalate following Japan PM's remark on Taiwan",
+          "url": "https://www.youtube.com/watch?v=H2rw_EzuePY",
+          "platform": "YouTube",
+          "channel": "Nippon Television News Japan",
+          "duration": "1:35",
+          "duration_seconds": 95,
+          "view_count": 13585,
+          "tags": ["中日关系", "台湾", "日本首相"]
+        },
+        {
+          "title": "Japan official in China to calm diplomatic row over Taiwan question | DW News",
+          "url": "https://www.youtube.com/watch?v=RtZT3LWVUNw",
+          "platform": "YouTube",
+          "channel": "DW News",
+          "duration": "4:47",
+          "duration_seconds": 287,
+          "view_count": 66054,
+          "tags": ["中日外交", "台湾", "DW News"]
+        },
+        {
+          "title": "China Escalates Tensions With Japan After Diplomat Threatens Japanese PM",
+          "url": "https://www.youtube.com/watch?v=JJjcXqjP7NA",
+          "platform": "YouTube",
+          "channel": "NTD",
+          "duration": "1:48",
+          "duration_seconds": 108,
+          "view_count": 10772,
+          "tags": ["中日关系", "外交", "紧张"]
+        },
+        {
+          "title": "Japan warns citizens in China about safety amid diplomatic crisis | REUTERS",
+          "url": "https://www.youtube.com/watch?v=Opf8iVlFIek",
+          "platform": "YouTube",
+          "channel": "Reuters",
+          "duration": "1:40",
+          "duration_seconds": 100,
+          "view_count": 38144,
+          "tags": ["日本", "中国", "外交危机", "Reuters"]
+        },
+        {
+          "title": "China summons Japan ambassador as war of words over Taiwan drags on | BBC News",
+          "url": "https://www.youtube.com/watch?v=FkLhgqTd99M",
+          "platform": "YouTube",
+          "channel": "BBC News",
+          "duration": "2:55",
+          "duration_seconds": 175,
+          "view_count": 168904,
+          "tags": ["中日外交", "台湾", "BBC"]
+        }
+      ]
+    }
+  },
+  "summary": {
+    "claude华尔街紧急会议": {
+      "total_videos": 12,
+      "categories": {
+        "美联储": 4,
+        "华尔街纽交所": 4,
+        "AI_Anthropic": 4
+      }
+    },
+    "稳定币牌照": {
+      "total_videos": 12,
+      "categories": {
+        "稳定币": 8,
+        "区块链": 4
+      }
+    },
+    "日本士兵闯使馆": {
+      "total_videos": 16,
+      "categories": {
+        "日本自卫队": 9,
+        "中日外交": 7
+      }
+    }
+  }
+}

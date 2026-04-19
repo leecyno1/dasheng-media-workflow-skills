@@ -1,0 +1,56 @@
+{
+  "run_id": "2026-04-02_230158",
+  "generated_at": "2026-04-02T23:01:58.139654+08:00",
+  "stage": "intake",
+  "object_type": "Run",
+  "ports": {
+    "reports": {
+      "status": "error",
+      "base": "http://45.197.148.64:8080",
+      "error": "502 Server Error: Bad Gateway for url: http://45.197.148.64:8080/api/reports"
+    },
+    "5173": {
+      "status": "ok",
+      "base": "http://127.0.0.1:18000"
+    },
+    "8001": {
+      "status": "ok",
+      "base": "http://45.197.148.64:8001"
+    }
+  },
+  "counts": {
+    "x_total": 12007,
+    "wb_total": 2111,
+    "xhs_total": 8268,
+    "douyin_total": 2799,
+    "bili_total": 4104,
+    "content_research_candidates": 81,
+    "trendradar_reports": 0,
+    "trendradar_links": 0,
+    "wemprss_channels_total": 46,
+    "wemprss_articles_total": 12194,
+    "curated_articles": 20,
+    "selected_records": 382
+  },
+  "artifacts": [
+    "raw/mediacrawler_latest_x.json",
+    "raw/mediacrawler_latest_xhs.json",
+    "raw/mediacrawler_latest_douyin.json",
+    "raw/mediacrawler_latest_wb.json",
+    "raw/mediacrawler_latest_bili.json",
+    "raw/mediacrawler_topnotes_content_research.json",
+    "raw/trendradar_reports.json",
+    "raw/trendradar_latest_report.html",
+    "raw/trendradar_top_links.json",
+    "raw/wemprss_public_channels.json",
+    "raw/wemprss_articles_latest.json",
+    "raw/intake_records.json",
+    "entity_rankings.json",
+    "event_clusters.json",
+    "source_quality_report.json",
+    "intake_review.json",
+    "notes/01_内容采集_报告.md",
+    "notes/01_内容采集_底稿.md"
+  ],
+  "next_stage": "brief"
+}

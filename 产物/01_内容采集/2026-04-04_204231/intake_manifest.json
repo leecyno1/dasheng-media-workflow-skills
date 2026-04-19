@@ -1,0 +1,122 @@
+{
+  "run_id": "2026-04-04_204231",
+  "generated_at": "2026-04-04T20:42:31.469268+08:00",
+  "stage": "intake",
+  "object_type": "Run",
+  "execution_model": "agent-driven",
+  "ports": {
+    "reports": {
+      "status": "ok",
+      "base": "http://45.197.148.64:8080"
+    },
+    "5173": {
+      "status": "ok",
+      "base": "http://127.0.0.1:18000"
+    },
+    "8001": {
+      "status": "ok",
+      "base": "http://45.197.148.64:8001",
+      "issues": [],
+      "attempts": 1,
+      "waited_seconds": 0
+    }
+  },
+  "counts": {
+    "x_total": 12082,
+    "wb_total": 2414,
+    "xhs_total": 8304,
+    "douyin_total": 2867,
+    "bili_total": 4754,
+    "content_research_candidates": 81,
+    "trendradar_reports": 328,
+    "trendradar_links": 20,
+    "wemprss_channels_total": 46,
+    "wemprss_articles_total": 11504,
+    "curated_articles": 20,
+    "selected_records": 415,
+    "channel_top10_total": 80,
+    "valid_linked_records": 415
+  },
+  "channel_tasks": {
+    "x": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 12082
+    },
+    "wb": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 2414
+    },
+    "xhs": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 8304
+    },
+    "douyin": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 2867
+    },
+    "bili": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 4754
+    },
+    "content_research": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 81
+    },
+    "reports": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 20
+    },
+    "wechat": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 25
+    }
+  },
+  "artifacts": [
+    "raw/mediacrawler_latest_x.json",
+    "raw/mediacrawler_latest_xhs.json",
+    "raw/mediacrawler_latest_douyin.json",
+    "raw/mediacrawler_latest_wb.json",
+    "raw/mediacrawler_latest_bili.json",
+    "raw/mediacrawler_topnotes_content_research.json",
+    "raw/trendradar_reports.json",
+    "raw/trendradar_latest_report.html",
+    "raw/trendradar_top_links.json",
+    "raw/wemprss_public_channels.json",
+    "raw/wemprss_articles_latest.json",
+    "raw/intake_records.json",
+    "entity_rankings.json",
+    "event_clusters.json",
+    "source_quality_report.json",
+    "channel_top10.json",
+    "brief_input.json",
+    "channel_tasks.json",
+    "intake_review.json",
+    "notes/01_内容采集_报告.md",
+    "notes/01_内容采集_底稿.md"
+  ],
+  "next_stage": "brief"
+}

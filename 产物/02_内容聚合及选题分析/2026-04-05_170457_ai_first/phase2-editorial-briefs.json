@@ -1,0 +1,1050 @@
+[
+  {
+    "meta": {
+      "id": "2026-04-05_170457:topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-05_170457",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "伊朗-原油-diplomacy-conflict-停火::伊朗、原油：真正值得写的是事件升级之外，长期秩序成本在怎样上升",
+      "upstream_ids": [
+        "intake-20260405170457-357"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "伊朗-原油-diplomacy-conflict-停火",
+          "url": "",
+          "title": "伊朗、原油：真正值得写的是事件升级之外，长期秩序成本在怎样上升"
+        }
+      ],
+      "created_at": "2026-04-05T18:07:03.773148+08:00",
+      "updated_at": "2026-04-05T18:07:03.773148+08:00"
+    },
+    "topic_id": "topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升",
+    "mother_topic_id": "topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "伊朗、原油：真正值得写的是事件升级之外，长期秩序成本在怎样上升",
+    "source_status": "自然入选",
+    "cluster_name": "伊朗 / 原油 / 停火",
+    "cluster_id": "伊朗-原油-diplomacy-conflict-停火",
+    "core_thesis": "围绕伊朗、原油，证明“事件升级之外，长期秩序成本在怎样上升”，而不是继续复述表面热度。",
+    "core_proposition": "围绕伊朗、原油，证明“事件升级之外，长期秩序成本在怎样上升”，而不是继续复述表面热度。",
+    "conflict_axis": "事件升级之外，长期秩序成本在怎样上升",
+    "one_line_judgment": "围绕伊朗、原油，证明“事件升级之外，长期秩序成本在怎样上升”，而不是继续复述表面热度。",
+    "counterintuitive_angle": "事件升级之外，长期秩序成本在怎样上升",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `1.57`，来源质量分 `0.95`。",
+    "reader_value": "适合 时政、宏观、国际关系读者。，重点是帮读者把事件热闹翻译成结构性判断。",
+    "reader_payoff": "帮读者把事件热闹翻译成结构性判断",
+    "audience": "时政、宏观、国际关系读者。",
+    "proof_requirements": [
+      "先界定 伊朗、原油 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件叙事和秩序成本的传导链路。",
+      "给出下一步最值得跟踪的国家、机构和变量。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "伊朗-原油-diplomacy-conflict-停火-e01",
+        "title": "懂王狂画k线！精准抛售600万桶原油，伊朗提停火条件！",
+        "url": "https://www.bilibili.com/video/BV1RWQrBBEtF",
+        "source_type": "采集来源",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "懂王狂画k线！精准抛售600万桶原油，伊朗提停火条件！；score=36.35"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少官方表态与关键时间线对照，需要补政策与外交原文。"
+    ],
+    "chart_needs": [
+      "事件时间线",
+      "参与方与影响路径图"
+    ],
+    "image_needs": [
+      "外交现场、地图、官方发布会"
+    ],
+    "video_needs": [
+      "新闻直播、发布会、现场素材"
+    ],
+    "recommended_data_angles": [
+      "事件时间线",
+      "参与方与影响路径图"
+    ],
+    "recommended_visual_angles": [
+      "外交现场、地图、官方发布会",
+      "新闻直播、发布会、现场素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "伊朗 伊朗、原油：真正值得写的是事件升级之 latest news",
+      "原油 伊朗、原油：真正值得写的是事件升级之 latest news",
+      "停火 伊朗、原油：真正值得写的是事件升级之 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：事件叙事与长期秩序成本是否正在分化。",
+      "part_1": "先界定 伊朗、原油 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件叙事和秩序成本的传导链路。",
+      "part_3": "给出下一步最值得跟踪的国家、机构和变量。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 5.05,
+      "sharpness": 7.85,
+      "evidence": 9.31,
+      "longevity": 6.5,
+      "reader_value": 7.86,
+      "distinctiveness": 7.3,
+      "composite": 7.3
+    },
+    "cluster_quality_score": 31.356,
+    "topic_value_score": 7.3,
+    "distinctiveness_reason": "这题以 `伊朗、日本` 为主要观察对象，把焦点压在 `冲突与外交` 上，核心矛盾是“事件升级之外，长期秩序成本在怎样上升”。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少官方表态与关键时间线对照，需要补政策与外交原文。",
+    "article_use": "解释稿",
+    "changed_dimension": "",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-05_170457:topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升-variant-外交部-中东这题换个写法-更该写成一篇结构稿",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-05_170457",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "外交部-中东-diplomacy-conflict::外交部、中东这题换个写法：更该写成一篇结构稿",
+      "upstream_ids": [
+        "intake-20260405170457-164"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "外交部-中东-diplomacy-conflict",
+          "url": "",
+          "title": "外交部、中东这题换个写法：更该写成一篇结构稿"
+        }
+      ],
+      "created_at": "2026-04-05T18:07:03.773281+08:00",
+      "updated_at": "2026-04-05T18:07:03.773281+08:00"
+    },
+    "topic_id": "topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升-variant-外交部-中东这题换个写法-更该写成一篇结构稿",
+    "mother_topic_id": "topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升",
+    "topic_kind": "variant",
+    "angle_variant_of": "topic-伊朗-原油-真正值得写的是事件升级之外-长期秩序成本在怎样上升",
+    "title": "外交部、中东这题换个写法：更该写成一篇结构稿",
+    "source_status": "自然入选",
+    "cluster_name": "外交部 / 中东",
+    "cluster_id": "外交部-中东-diplomacy-conflict",
+    "core_thesis": "围绕外交部、中东，证明“事件升级之外，长期秩序成本在怎样上升”，而不是继续复述表面热度。",
+    "core_proposition": "围绕外交部、中东，证明“事件升级之外，长期秩序成本在怎样上升”，而不是继续复述表面热度。",
+    "conflict_axis": "事件升级之外，长期秩序成本在怎样上升",
+    "one_line_judgment": "围绕外交部、中东，证明“事件升级之外，长期秩序成本在怎样上升”，而不是继续复述表面热度。",
+    "counterintuitive_angle": "事件升级之外，长期秩序成本在怎样上升",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `1.0`，来源质量分 `1.35`。",
+    "reader_value": "适合 时政、宏观、国际关系读者。，重点是帮读者把事件热闹翻译成结构性判断。",
+    "reader_payoff": "帮读者把事件热闹翻译成结构性判断",
+    "audience": "时政、宏观、国际关系读者。",
+    "proof_requirements": [
+      "先界定 外交部、中东 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件叙事和秩序成本的传导链路。",
+      "给出下一步最值得跟踪的国家、机构和变量。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "外交部-中东-diplomacy-conflict-e01",
+        "title": "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞之际，俄罗斯将考虑各国",
+        "url": "https://m.weibo.cn/detail/5282653734437870",
+        "source_type": "微博",
+        "source_tier": "official",
+        "evidence_type": "article_link",
+        "note": "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞之际，俄罗斯将考虑各国；热度代理=1843"
+      }
+    ],
+    "missing_evidence": [
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少官方表态与关键时间线对照，需要补政策与外交原文。"
+    ],
+    "chart_needs": [
+      "事件时间线",
+      "参与方与影响路径图"
+    ],
+    "image_needs": [
+      "外交现场、地图、官方发布会"
+    ],
+    "video_needs": [
+      "新闻直播、发布会、现场素材"
+    ],
+    "recommended_data_angles": [
+      "事件时间线",
+      "参与方与影响路径图"
+    ],
+    "recommended_visual_angles": [
+      "外交现场、地图、官方发布会",
+      "新闻直播、发布会、现场素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "外交部"
+    ],
+    "priority_news_queries": [
+      "外交部 外交部、中东这题换个写法：更该写成一 latest news",
+      "中东 外交部、中东这题换个写法：更该写成一 latest news",
+      "俄罗斯 外交部、中东这题换个写法：更该写成一 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：事件叙事与长期秩序成本是否正在分化。",
+      "part_1": "先界定 外交部、中东 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件叙事和秩序成本的传导链路。",
+      "part_3": "给出下一步最值得跟踪的国家、机构和变量。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.91,
+      "sharpness": 7.3,
+      "evidence": 10.0,
+      "longevity": 7.1,
+      "reader_value": 7.72,
+      "distinctiveness": 6.8,
+      "composite": 7.14
+    },
+    "cluster_quality_score": 31.06,
+    "topic_value_score": 7.14,
+    "distinctiveness_reason": "观察对象不同；文章用途变成结构稿",
+    "why_not_duplicate_of": "它与母题共享同一大矛盾，但因为观察对象不同、文章用途变成结构稿，所以保留为备选切口。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少官方表态与关键时间线对照，需要补政策与外交原文。",
+    "article_use": "结构稿",
+    "changed_dimension": "article_use",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-05_170457:topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-05_170457",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "英伟达-ai-semiconductor-cycle::英伟达、AI：真正值得写的是局部修复会不会被误读成全面复苏",
+      "upstream_ids": [
+        "intake-20260405170457-332"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "英伟达-ai-semiconductor-cycle",
+          "url": "",
+          "title": "英伟达、AI：真正值得写的是局部修复会不会被误读成全面复苏"
+        }
+      ],
+      "created_at": "2026-04-05T18:07:03.773320+08:00",
+      "updated_at": "2026-04-05T18:07:03.773320+08:00"
+    },
+    "topic_id": "topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏",
+    "mother_topic_id": "topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "英伟达、AI：真正值得写的是局部修复会不会被误读成全面复苏",
+    "source_status": "自然入选",
+    "cluster_name": "英伟达 / AI",
+    "cluster_id": "英伟达-ai-semiconductor-cycle",
+    "core_thesis": "围绕英伟达、AI，证明“局部修复会不会被误读成全面复苏”，而不是继续复述表面热度。",
+    "core_proposition": "围绕英伟达、AI，证明“局部修复会不会被误读成全面复苏”，而不是继续复述表面热度。",
+    "conflict_axis": "局部修复会不会被误读成全面复苏",
+    "one_line_judgment": "围绕英伟达、AI，证明“局部修复会不会被误读成全面复苏”，而不是继续复述表面热度。",
+    "counterintuitive_angle": "局部修复会不会被误读成全面复苏",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `0.96`，来源质量分 `0.95`。",
+    "reader_value": "适合 产业观察型、科技投资型读者。，重点是帮读者拆开产业链里哪些环节是真的变了，哪些只是情绪放大。",
+    "reader_payoff": "帮读者拆开产业链里哪些环节是真的变了，哪些只是情绪放大",
+    "audience": "产业观察型、科技投资型读者。",
+    "proof_requirements": [
+      "先界定 英伟达、AI 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开 英伟达、AI 背后的设备、订单、价格和资本开支信号。",
+      "指出投资者最容易把什么误读成全面景气。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "英伟达-ai-semiconductor-cycle-e01",
+        "title": "NVDA期权异动：抄底？#NVDA #英伟达 #期权交易 #美股分析 #AI芯片 #半导体 #纳斯达克 #期权异动 #股票投资 #量化分析 #美股行情 #AI投",
+        "url": "https://www.bilibili.com/video/BV1z5DgBnEez",
+        "source_type": "B站",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "NVDA期权异动：抄底？#NVDA #英伟达 #期权交易 #美股分析 #AI芯片 #半导体 #纳斯达克 #期权异动 #股票投资 #量化分析 #美股行情 #AI投；热度代理=3"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少价格、订单、资本开支或出货变量，需要补产业链分环节数据。"
+    ],
+    "chart_needs": [
+      "分环节景气图",
+      "订单与价格对照图"
+    ],
+    "image_needs": [
+      "晶圆厂、洁净室、设备、工程师"
+    ],
+    "video_needs": [
+      "工厂、产线、行业会议、访谈"
+    ],
+    "recommended_data_angles": [
+      "分环节景气图",
+      "订单与价格对照图"
+    ],
+    "recommended_visual_angles": [
+      "晶圆厂、洁净室、设备、工程师",
+      "工厂、产线、行业会议、访谈"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "英伟达"
+    ],
+    "priority_news_queries": [
+      "英伟达 英伟达、AI：真正值得写的是局部修复 latest news",
+      "AI 英伟达、AI：真正值得写的是局部修复 latest news",
+      "半导体 英伟达、AI：真正值得写的是局部修复 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：热闹信号会不会被误读成全面复苏。",
+      "part_1": "先界定 英伟达、AI 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开 英伟达、AI 背后的设备、订单、价格和资本开支信号。",
+      "part_3": "指出投资者最容易把什么误读成全面景气。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 2.87,
+      "sharpness": 8.0,
+      "evidence": 8.94,
+      "longevity": 7.6,
+      "reader_value": 8.18,
+      "distinctiveness": 7.3,
+      "composite": 7.06
+    },
+    "cluster_quality_score": 28.428,
+    "topic_value_score": 7.06,
+    "distinctiveness_reason": "这题以 `半导体、英伟达` 为主要观察对象，把焦点压在 `产业分化` 上，核心矛盾是“局部修复会不会被误读成全面复苏”。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少价格、订单、资本开支或出货变量，需要补产业链分环节数据。",
+    "article_use": "解释稿",
+    "changed_dimension": "",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-05_170457:topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏-variant-英伟达-半导体这条线若换个切口-最该补的证据会不",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-05_170457",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "英伟达-半导体-semiconductor-cycle::英伟达、半导体这条线若换个切口，最该补的证据会不会完全不同",
+      "upstream_ids": [
+        "intake-20260405170457-415"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "英伟达-半导体-semiconductor-cycle",
+          "url": "",
+          "title": "英伟达、半导体这条线若换个切口，最该补的证据会不会完全不同"
+        }
+      ],
+      "created_at": "2026-04-05T18:07:03.773358+08:00",
+      "updated_at": "2026-04-05T18:07:03.773358+08:00"
+    },
+    "topic_id": "topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏-variant-英伟达-半导体这条线若换个切口-最该补的证据会不",
+    "mother_topic_id": "topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏",
+    "topic_kind": "variant",
+    "angle_variant_of": "topic-英伟达-ai-真正值得写的是局部修复会不会被误读成全面复苏",
+    "title": "英伟达、半导体这条线若换个切口，最该补的证据会不会完全不同",
+    "source_status": "自然入选",
+    "cluster_name": "英伟达 / 半导体",
+    "cluster_id": "英伟达-半导体-semiconductor-cycle",
+    "core_thesis": "围绕英伟达、半导体，证明“局部修复会不会被误读成全面复苏”，而不是继续复述表面热度。",
+    "core_proposition": "围绕英伟达、半导体，证明“局部修复会不会被误读成全面复苏”，而不是继续复述表面热度。",
+    "conflict_axis": "局部修复会不会被误读成全面复苏",
+    "one_line_judgment": "围绕英伟达、半导体，证明“局部修复会不会被误读成全面复苏”，而不是继续复述表面热度。",
+    "counterintuitive_angle": "局部修复会不会被误读成全面复苏",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `0.9`，来源质量分 `0.88`。",
+    "reader_value": "适合 产业观察型、科技投资型读者。，重点是帮读者拆开产业链里哪些环节是真的变了，哪些只是情绪放大。",
+    "reader_payoff": "帮读者拆开产业链里哪些环节是真的变了，哪些只是情绪放大",
+    "audience": "产业观察型、科技投资型读者。",
+    "proof_requirements": [
+      "先界定 英伟达、半导体 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开 英伟达、半导体 背后的设备、订单、价格和资本开支信号。",
+      "指出投资者最容易把什么误读成全面景气。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "英伟达-半导体-semiconductor-cycle-e01",
+        "title": "英伟达、英特尔等成“打击目标”！警告员工：立即撤离保命！",
+        "url": "https://mp.weixin.qq.com/s/OJYVRhhfMMvhk_kQFpae2w",
+        "source_type": "公众号文章",
+        "source_tier": "self_media",
+        "evidence_type": "article_link",
+        "note": "英伟达、英特尔等成“打击目标”！警告员工：立即撤离保命！；半导体封测 定向样本"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少价格、订单、资本开支或出货变量，需要补产业链分环节数据。"
+    ],
+    "chart_needs": [
+      "分环节景气图",
+      "订单与价格对照图"
+    ],
+    "image_needs": [
+      "晶圆厂、洁净室、设备、工程师"
+    ],
+    "video_needs": [
+      "工厂、产线、行业会议、访谈"
+    ],
+    "recommended_data_angles": [
+      "分环节景气图",
+      "订单与价格对照图"
+    ],
+    "recommended_visual_angles": [
+      "晶圆厂、洁净室、设备、工程师",
+      "工厂、产线、行业会议、访谈"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "英伟达"
+    ],
+    "priority_news_queries": [
+      "英伟达 英伟达、半导体这条线若换个切口，最该 latest news",
+      "半导体 英伟达、半导体这条线若换个切口，最该 latest news",
+      "封测 英伟达、半导体这条线若换个切口，最该 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：热闹信号会不会被误读成全面复苏。",
+      "part_1": "先界定 英伟达、半导体 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开 英伟达、半导体 背后的设备、订单、价格和资本开支信号。",
+      "part_3": "指出投资者最容易把什么误读成全面景气。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 2.7,
+      "sharpness": 8.0,
+      "evidence": 8.67,
+      "longevity": 6.5,
+      "reader_value": 8.12,
+      "distinctiveness": 6.8,
+      "composite": 6.72
+    },
+    "cluster_quality_score": 27.354,
+    "topic_value_score": 6.72,
+    "distinctiveness_reason": "观察对象不同",
+    "why_not_duplicate_of": "它与母题共享同一大矛盾，但因为观察对象不同，所以保留为备选切口。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少价格、订单、资本开支或出货变量，需要补产业链分环节数据。",
+    "article_use": "解释稿",
+    "changed_dimension": "objects",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-05_170457:topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-05_170457",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "白银-贵金属-risk-pricing-降息::白银、贵金属这条线，风险溢价究竟在围绕什么变量重估",
+      "upstream_ids": [
+        "intake-20260405170457-262"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "白银-贵金属-risk-pricing-降息",
+          "url": "",
+          "title": "白银、贵金属这条线，风险溢价究竟在围绕什么变量重估"
+        }
+      ],
+      "created_at": "2026-04-05T18:07:03.773384+08:00",
+      "updated_at": "2026-04-05T18:07:03.773384+08:00"
+    },
+    "topic_id": "topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估",
+    "mother_topic_id": "topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "白银、贵金属这条线，风险溢价究竟在围绕什么变量重估",
+    "source_status": "自然入选",
+    "cluster_name": "白银 / 贵金属 / 降息",
+    "cluster_id": "白银-贵金属-risk-pricing-降息",
+    "core_thesis": "围绕白银、贵金属，证明“风险溢价究竟在围绕什么变量重估”，而不是继续复述表面热度。",
+    "core_proposition": "围绕白银、贵金属，证明“风险溢价究竟在围绕什么变量重估”，而不是继续复述表面热度。",
+    "conflict_axis": "风险溢价究竟在围绕什么变量重估",
+    "one_line_judgment": "围绕白银、贵金属，证明“风险溢价究竟在围绕什么变量重估”，而不是继续复述表面热度。",
+    "counterintuitive_angle": "风险溢价究竟在围绕什么变量重估",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `0.98`，来源质量分 `0.95`。",
+    "reader_value": "适合 宏观、商品、基金配置读者。，重点是给读者一套判断资产该看什么、忽略什么的框架。",
+    "reader_payoff": "给读者一套判断资产该看什么、忽略什么的框架",
+    "audience": "宏观、商品、基金配置读者。",
+    "proof_requirements": [
+      "先界定 白银、贵金属 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "给出哪些资产还在联动，哪些已经先一步分化。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "白银-贵金属-risk-pricing-降息-e01",
+        "title": "#金融常识普及 #黄金 #白银 #铂金 #青岛商通金 降息会导致抛美子买贵金属，老美明知也降？为啥",
+        "url": "https://www.douyin.com/video/7603222943729368902",
+        "source_type": "抖音",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "#金融常识普及 #黄金 #白银 #铂金 #青岛商通金 降息会导致抛美子买贵金属，老美明知也降？为啥；热度代理=10735"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。"
+    ],
+    "chart_needs": [
+      "价格与利率联动图",
+      "事件时间线与市场反应对照图"
+    ],
+    "image_needs": [
+      "交易屏、商品、外交现场"
+    ],
+    "video_needs": [
+      "新闻直播、交易画面、场景素材"
+    ],
+    "recommended_data_angles": [
+      "价格与利率联动图",
+      "事件时间线与市场反应对照图"
+    ],
+    "recommended_visual_angles": [
+      "交易屏、商品、外交现场",
+      "新闻直播、交易画面、场景素材"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "白银 白银、贵金属这条线，风险溢价究竟在围 latest news",
+      "贵金属 白银、贵金属这条线，风险溢价究竟在围 latest news",
+      "黄金 白银、贵金属这条线，风险溢价究竟在围 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：表面事件和真实定价链条是否正在背离。",
+      "part_1": "先界定 白银、贵金属 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "part_3": "给出哪些资产还在联动，哪些已经先一步分化。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 2.92,
+      "sharpness": 8.55,
+      "evidence": 9.02,
+      "longevity": 7.6,
+      "reader_value": 7.86,
+      "distinctiveness": 7.3,
+      "composite": 7.16
+    },
+    "cluster_quality_score": 28.724,
+    "topic_value_score": 7.16,
+    "distinctiveness_reason": "这题以 `黄金、白银` 为主要观察对象，把焦点压在 `风险溢价` 上，核心矛盾是“风险溢价究竟在围绕什么变量重估”。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。",
+    "article_use": "判断稿",
+    "changed_dimension": "",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-05_170457:topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估-variant-川普-特朗普这条线若换个切口-最该补的证据会不会",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-05_170457",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "川普-特朗普-risk-pricing::川普、特朗普这条线若换个切口，最该补的证据会不会完全不同",
+      "upstream_ids": [
+        "intake-20260405170457-268"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "川普-特朗普-risk-pricing",
+          "url": "",
+          "title": "川普、特朗普这条线若换个切口，最该补的证据会不会完全不同"
+        }
+      ],
+      "created_at": "2026-04-05T18:07:03.773413+08:00",
+      "updated_at": "2026-04-05T18:07:03.773413+08:00"
+    },
+    "topic_id": "topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估-variant-川普-特朗普这条线若换个切口-最该补的证据会不会",
+    "mother_topic_id": "topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估",
+    "topic_kind": "variant",
+    "angle_variant_of": "topic-白银-贵金属这条线-风险溢价究竟在围绕什么变量重估",
+    "title": "川普、特朗普这条线若换个切口，最该补的证据会不会完全不同",
+    "source_status": "自然入选",
+    "cluster_name": "川普 / 特朗普",
+    "cluster_id": "川普-特朗普-risk-pricing",
+    "core_thesis": "围绕川普、特朗普，证明“风险溢价究竟在围绕什么变量重估”，而不是继续复述表面热度。",
+    "core_proposition": "围绕川普、特朗普，证明“风险溢价究竟在围绕什么变量重估”，而不是继续复述表面热度。",
+    "conflict_axis": "风险溢价究竟在围绕什么变量重估",
+    "one_line_judgment": "围绕川普、特朗普，证明“风险溢价究竟在围绕什么变量重估”，而不是继续复述表面热度。",
+    "counterintuitive_angle": "风险溢价究竟在围绕什么变量重估",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `0.98`，来源质量分 `0.95`。",
+    "reader_value": "适合 宏观、商品、基金配置读者。，重点是给读者一套判断资产该看什么、忽略什么的框架。",
+    "reader_payoff": "给读者一套判断资产该看什么、忽略什么的框架",
+    "audience": "宏观、商品、基金配置读者。",
+    "proof_requirements": [
+      "先界定 川普、特朗普 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "给出哪些资产还在联动，哪些已经先一步分化。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "川普-特朗普-risk-pricing-e01",
+        "title": "川普的“期限陷阱”：三次推迟背后的真实意图？ 当“非农数据”撞上全球休市，川普的极限施压，为何成了黄金市场的“流动性黑洞”？#黄金 #投资 #理财 #特朗普",
+        "url": "https://www.douyin.com/video/7624110964857670963",
+        "source_type": "抖音",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "川普的“期限陷阱”：三次推迟背后的真实意图？ 当“非农数据”撞上全球休市，川普的极限施压，为何成了黄金市场的“流动性黑洞”？#黄金 #投资 #理财 #特朗普；热度代理=5592"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。"
+    ],
+    "chart_needs": [
+      "价格与利率联动图",
+      "事件时间线与市场反应对照图"
+    ],
+    "image_needs": [
+      "交易屏、商品、外交现场"
+    ],
+    "video_needs": [
+      "新闻直播、交易画面、场景素材"
+    ],
+    "recommended_data_angles": [
+      "价格与利率联动图",
+      "事件时间线与市场反应对照图"
+    ],
+    "recommended_visual_angles": [
+      "交易屏、商品、外交现场",
+      "新闻直播、交易画面、场景素材"
+    ],
+    "priority_people": [
+      "川普",
+      "特朗普"
+    ],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "川普 川普、特朗普这条线若换个切口，最该补 latest news",
+      "特朗普 川普、特朗普这条线若换个切口，最该补 latest news",
+      "黄金 川普、特朗普这条线若换个切口，最该补 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：表面事件和真实定价链条是否正在背离。",
+      "part_1": "先界定 川普、特朗普 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "拆开事件表象和真实定价链条，确认谁在先动、谁在跟随。",
+      "part_3": "给出哪些资产还在联动，哪些已经先一步分化。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 2.92,
+      "sharpness": 8.0,
+      "evidence": 8.94,
+      "longevity": 6.5,
+      "reader_value": 7.65,
+      "distinctiveness": 6.8,
+      "composite": 6.76
+    },
+    "cluster_quality_score": 28.324,
+    "topic_value_score": 6.76,
+    "distinctiveness_reason": "观察对象不同",
+    "why_not_duplicate_of": "它与母题共享同一大矛盾，但因为观察对象不同，所以保留为备选切口。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少能直接证明主判断的核心数据，需要补原始图表或新闻页面。",
+    "article_use": "判断稿",
+    "changed_dimension": "objects",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-05_170457:topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-05_170457",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "特朗普-鲍威尔-policy-inflation-降息::特朗普、鲍威尔这条线，市场是否低估了再通胀与利率预期回摆",
+      "upstream_ids": [
+        "intake-20260405170457-183"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "特朗普-鲍威尔-policy-inflation-降息",
+          "url": "",
+          "title": "特朗普、鲍威尔这条线，市场是否低估了再通胀与利率预期回摆"
+        }
+      ],
+      "created_at": "2026-04-05T18:07:03.773432+08:00",
+      "updated_at": "2026-04-05T18:07:03.773432+08:00"
+    },
+    "topic_id": "topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆",
+    "mother_topic_id": "topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "特朗普、鲍威尔这条线，市场是否低估了再通胀与利率预期回摆",
+    "source_status": "自然入选",
+    "cluster_name": "特朗普 / 鲍威尔 / 降息",
+    "cluster_id": "特朗普-鲍威尔-policy-inflation-降息",
+    "core_thesis": "围绕特朗普、鲍威尔，证明“市场是否低估了再通胀与利率预期回摆”，而不是继续复述表面热度。",
+    "core_proposition": "围绕特朗普、鲍威尔，证明“市场是否低估了再通胀与利率预期回摆”，而不是继续复述表面热度。",
+    "conflict_axis": "市场是否低估了再通胀与利率预期回摆",
+    "one_line_judgment": "围绕特朗普、鲍威尔，证明“市场是否低估了再通胀与利率预期回摆”，而不是继续复述表面热度。",
+    "counterintuitive_angle": "市场是否低估了再通胀与利率预期回摆",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `1.0`，来源质量分 `0.95`。",
+    "reader_value": "适合 宏观资产配置、债券、基金读者。，重点是给读者一套判断资产该看什么、忽略什么的框架。",
+    "reader_payoff": "给读者一套判断资产该看什么、忽略什么的框架",
+    "audience": "宏观资产配置、债券、基金读者。",
+    "proof_requirements": [
+      "先界定 特朗普、鲍威尔 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "说明 特朗普、鲍威尔 如何传导到通胀、利率或资产定价预期。",
+      "给出股债商品在不同情景下的分化边界。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "特朗普-鲍威尔-policy-inflation-降息-e01",
+        "title": "鲍威尔今晚的讲话，救了特朗普半条命，通胀不明显，人工智能 666，加息不存在，我们依旧强。美股除了光，都反弹了，交易员押注加息也撤回了，看是押注降息了。 美联储",
+        "url": "https://m.weibo.cn/detail/5282444644189214",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "鲍威尔今晚的讲话，救了特朗普半条命，通胀不明显，人工智能 666，加息不存在，我们依旧强。美股除了光，都反弹了，交易员押注加息也撤回了，看是押注降息了。 美联储；热度代理=42"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少通胀、利率或就业等硬数据，需要补可直接验证的序列。"
+    ],
+    "chart_needs": [
+      "通胀/利率/商品三联图",
+      "股债商品情景矩阵"
+    ],
+    "image_needs": [
+      "央行、交易员、财经屏幕"
+    ],
+    "video_needs": [
+      "议息会、交易大厅、财经新闻"
+    ],
+    "recommended_data_angles": [
+      "通胀/利率/商品三联图",
+      "股债商品情景矩阵"
+    ],
+    "recommended_visual_angles": [
+      "央行、交易员、财经屏幕",
+      "议息会、交易大厅、财经新闻"
+    ],
+    "priority_people": [
+      "特朗普",
+      "鲍威尔"
+    ],
+    "priority_orgs": [
+      "美联储"
+    ],
+    "priority_news_queries": [
+      "特朗普 特朗普、鲍威尔这条线，市场是否低估了 latest news",
+      "鲍威尔 特朗普、鲍威尔这条线，市场是否低估了 latest news",
+      "美联储 特朗普、鲍威尔这条线，市场是否低估了 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：主线会不会其实是再通胀。",
+      "part_1": "先界定 特朗普、鲍威尔 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "说明 特朗普、鲍威尔 如何传导到通胀、利率或资产定价预期。",
+      "part_3": "给出股债商品在不同情景下的分化边界。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 2.98,
+      "sharpness": 8.55,
+      "evidence": 9.04,
+      "longevity": 7.6,
+      "reader_value": 8.33,
+      "distinctiveness": 7.3,
+      "composite": 7.24
+    },
+    "cluster_quality_score": 28.82,
+    "topic_value_score": 7.24,
+    "distinctiveness_reason": "这题以 `美联储、降息` 为主要观察对象，把焦点压在 `政策与再通胀` 上，核心矛盾是“市场是否低估了再通胀与利率预期回摆”。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少通胀、利率或就业等硬数据，需要补可直接验证的序列。",
+    "article_use": "判断稿",
+    "changed_dimension": "",
+    "extendability": "更适合单篇深稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-05_170457:topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆-variant-美联储-中东这条线若换个切口-最该补的证据会不会",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-05_170457",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "美联储-中东-policy-inflation-降息::美联储、中东这条线若换个切口，最该补的证据会不会完全不同",
+      "upstream_ids": [
+        "intake-20260405170457-182"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "美联储-中东-policy-inflation-降息",
+          "url": "",
+          "title": "美联储、中东这条线若换个切口，最该补的证据会不会完全不同"
+        }
+      ],
+      "created_at": "2026-04-05T18:07:03.773452+08:00",
+      "updated_at": "2026-04-05T18:07:03.773452+08:00"
+    },
+    "topic_id": "topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆-variant-美联储-中东这条线若换个切口-最该补的证据会不会",
+    "mother_topic_id": "topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆",
+    "topic_kind": "variant",
+    "angle_variant_of": "topic-特朗普-鲍威尔这条线-市场是否低估了再通胀与利率预期回摆",
+    "title": "美联储、中东这条线若换个切口，最该补的证据会不会完全不同",
+    "source_status": "自然入选",
+    "cluster_name": "美联储 / 中东 / 降息",
+    "cluster_id": "美联储-中东-policy-inflation-降息",
+    "core_thesis": "围绕美联储、中东，证明“市场是否低估了再通胀与利率预期回摆”，而不是继续复述表面热度。",
+    "core_proposition": "围绕美联储、中东，证明“市场是否低估了再通胀与利率预期回摆”，而不是继续复述表面热度。",
+    "conflict_axis": "市场是否低估了再通胀与利率预期回摆",
+    "one_line_judgment": "围绕美联储、中东，证明“市场是否低估了再通胀与利率预期回摆”，而不是继续复述表面热度。",
+    "counterintuitive_angle": "市场是否低估了再通胀与利率预期回摆",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `1.0`，来源质量分 `0.95`。",
+    "reader_value": "适合 宏观资产配置、债券、基金读者。，重点是给读者一套判断资产该看什么、忽略什么的框架。",
+    "reader_payoff": "给读者一套判断资产该看什么、忽略什么的框架",
+    "audience": "宏观资产配置、债券、基金读者。",
+    "proof_requirements": [
+      "先界定 美联储、中东 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "说明 美联储、中东 如何传导到通胀、利率或资产定价预期。",
+      "给出股债商品在不同情景下的分化边界。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "美联储-中东-policy-inflation-降息-e01",
+        "title": "参考1990年石油危机，美联储终将降息 随着中东冲突引爆油价，并令通胀担忧中燃，全球利率市场近期发生了戏剧性的“鹰派再定价”——市场从年初押注美联储多次降息转向",
+        "url": "https://m.weibo.cn/detail/5282569275049549",
+        "source_type": "微博",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "参考1990年石油危机，美联储终将降息 随着中东冲突引爆油价，并令通胀担忧中燃，全球利率市场近期发生了戏剧性的“鹰派再定价”——市场从年初押注美联储多次降息转向；热度代理=36"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少通胀、利率或就业等硬数据，需要补可直接验证的序列。"
+    ],
+    "chart_needs": [
+      "通胀/利率/商品三联图",
+      "股债商品情景矩阵"
+    ],
+    "image_needs": [
+      "央行、交易员、财经屏幕"
+    ],
+    "video_needs": [
+      "议息会、交易大厅、财经新闻"
+    ],
+    "recommended_data_angles": [
+      "通胀/利率/商品三联图",
+      "股债商品情景矩阵"
+    ],
+    "recommended_visual_angles": [
+      "央行、交易员、财经屏幕",
+      "议息会、交易大厅、财经新闻"
+    ],
+    "priority_people": [],
+    "priority_orgs": [
+      "美联储"
+    ],
+    "priority_news_queries": [
+      "美联储 美联储、中东这条线若换个切口，最该补 latest news",
+      "中东 美联储、中东这条线若换个切口，最该补 latest news",
+      "油价 美联储、中东这条线若换个切口，最该补 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：主线会不会其实是再通胀。",
+      "part_1": "先界定 美联储、中东 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "说明 美联储、中东 如何传导到通胀、利率或资产定价预期。",
+      "part_3": "给出股债商品在不同情景下的分化边界。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 2.98,
+      "sharpness": 8.55,
+      "evidence": 9.02,
+      "longevity": 8.7,
+      "reader_value": 8.29,
+      "distinctiveness": 6.8,
+      "composite": 7.39
+    },
+    "cluster_quality_score": 28.82,
+    "topic_value_score": 7.39,
+    "distinctiveness_reason": "观察对象不同",
+    "why_not_duplicate_of": "它与母题共享同一大矛盾，但因为观察对象不同，所以保留为备选切口。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少通胀、利率或就业等硬数据，需要补可直接验证的序列。",
+    "article_use": "判断稿",
+    "changed_dimension": "objects",
+    "extendability": "可延展成系列稿"
+  },
+  {
+    "meta": {
+      "id": "2026-04-05_170457:topic-制裁-供给秩序重估会不会比价格波动更重要",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-05_170457",
+      "version": "4.0.0",
+      "status": "ready",
+      "generated_by": "phase2_rebuilder.py",
+      "input_digest": "制裁-supply-order-制裁::制裁：供给秩序重估会不会比价格波动更重要",
+      "upstream_ids": [
+        "intake-20260405170457-261"
+      ],
+      "doc_refs": [
+        {
+          "kind": "brief",
+          "token": "制裁-supply-order-制裁",
+          "url": "",
+          "title": "制裁：供给秩序重估会不会比价格波动更重要"
+        }
+      ],
+      "created_at": "2026-04-05T18:07:03.773470+08:00",
+      "updated_at": "2026-04-05T18:07:03.773470+08:00"
+    },
+    "topic_id": "topic-制裁-供给秩序重估会不会比价格波动更重要",
+    "mother_topic_id": "topic-制裁-供给秩序重估会不会比价格波动更重要",
+    "topic_kind": "mother",
+    "angle_variant_of": null,
+    "title": "制裁：供给秩序重估会不会比价格波动更重要",
+    "source_status": "自然入选",
+    "cluster_name": "制裁 / 制裁",
+    "cluster_id": "制裁-supply-order-制裁",
+    "core_thesis": "围绕制裁，证明“供给秩序重估会不会比价格波动更重要”，而不是继续复述表面热度。",
+    "core_proposition": "围绕制裁，证明“供给秩序重估会不会比价格波动更重要”，而不是继续复述表面热度。",
+    "conflict_axis": "供给秩序重估会不会比价格波动更重要",
+    "one_line_judgment": "围绕制裁，证明“供给秩序重估会不会比价格波动更重要”，而不是继续复述表面热度。",
+    "counterintuitive_angle": "供给秩序重估会不会比价格波动更重要",
+    "why_now": "当前样本 `1` 条，来源 `1` 类，时效分 `0.98`，来源质量分 `0.95`。",
+    "reader_value": "适合 宏观、产业链、商品观察读者。，重点是帮读者拆开产业链里哪些环节是真的变了，哪些只是情绪放大。",
+    "reader_payoff": "帮读者拆开产业链里哪些环节是真的变了，哪些只是情绪放大",
+    "audience": "宏观、产业链、商品观察读者。",
+    "proof_requirements": [
+      "先界定 制裁 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "说明 制裁 当前卡住的是哪一段供给、库存或运输秩序。",
+      "给出企业、库存和现金流会先反映在哪些环节。"
+    ],
+    "existing_evidence": [
+      {
+        "evidence_id": "制裁-supply-order-制裁-e01",
+        "title": "直播带货、种草笔记推荐的“自用好物”翻车要担责吗？对外经济贸易大学市场监管研究院副院长冀玮：“如果有相关证据可以证明使用了欺骗手段，比如没有自用或者也不是好物，却进行了推荐，那这一行为也要受到法律制裁。”",
+        "url": "https://www.douyin.com/video/7624348762277694746",
+        "source_type": "抖音",
+        "source_tier": "platform_hotspot",
+        "evidence_type": "article_link",
+        "note": "直播带货、种草笔记推荐的“自用好物”翻车要担责吗？对外经济贸易大学市场监管研究院副院长冀玮：“如果有相关证据可以证明使用了欺骗手段，比如没有自用或者也不是好物，却进行了推荐，那这一行为也要受到法律制裁。”；热度代理=76701"
+      }
+    ],
+    "missing_evidence": [
+      "缺少官方或监管口径，需要补原始政策、监管或机构源。",
+      "缺少主流媒体交叉印证，需要补英文或权威财经报道。",
+      "缺少库存、运费、通道或运输链变量，需要补供给秩序证据。"
+    ],
+    "chart_needs": [
+      "供给链路拆解图",
+      "价格与运费/库存对照图"
+    ],
+    "image_needs": [
+      "港口、油轮、仓储、工厂场景"
+    ],
+    "video_needs": [
+      "航运、仓储、工厂、官方说明画面"
+    ],
+    "recommended_data_angles": [
+      "供给链路拆解图",
+      "价格与运费/库存对照图"
+    ],
+    "recommended_visual_angles": [
+      "港口、油轮、仓储、工厂场景",
+      "航运、仓储、工厂、官方说明画面"
+    ],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [
+      "制裁 制裁：供给秩序重估会不会比价格波动更 latest news"
+    ],
+    "structure_hint": {
+      "opening": "先抛出误判：真正被重估的是短期价格还是供给秩序。",
+      "part_1": "先界定 制裁 这条线真正对应的是哪条结构变量，而不是停留在表面消息。",
+      "part_2": "说明 制裁 当前卡住的是哪一段供给、库存或运输秩序。",
+      "part_3": "给出企业、库存和现金流会先反映在哪些环节。",
+      "ending": "收束到读者下一步该盯哪些变量，以及哪些噪音可以主动忽略。"
+    },
+    "scorecard": {
+      "heat": 3.72,
+      "sharpness": 7.04,
+      "evidence": 9.31,
+      "longevity": 8.2,
+      "reader_value": 6.46,
+      "distinctiveness": 7.3,
+      "composite": 6.99
+    },
+    "cluster_quality_score": 19.782,
+    "topic_value_score": 6.99,
+    "distinctiveness_reason": "这题以 `制裁` 为主要观察对象，把焦点压在 `供给秩序` 上，核心矛盾是“供给秩序重估会不会比价格波动更重要”。",
+    "why_not_duplicate_of": "它是该组共享对象/变量/矛盾的最高质量表达，因此保留为母题。",
+    "trendradar_support": {
+      "coverage": 0.0,
+      "coverage_text": "TrendRadar 覆盖 `0%`，只提升时效权重，不直接替题目定性。"
+    },
+    "evidence_gap_summary": "缺少官方或监管口径，需要补原始政策、监管或机构源。；缺少主流媒体交叉印证，需要补英文或权威财经报道。；缺少库存、运费、通道或运输链变量，需要补供给秩序证据。",
+    "article_use": "结构稿",
+    "changed_dimension": "",
+    "extendability": "可延展成系列稿"
+  }
+]

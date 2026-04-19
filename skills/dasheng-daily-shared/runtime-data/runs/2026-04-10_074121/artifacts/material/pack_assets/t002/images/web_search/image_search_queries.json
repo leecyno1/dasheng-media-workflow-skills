@@ -1,0 +1,23 @@
+[
+  {
+    "query": "霍尔木兹海峡封锁期间油轮停泊实况",
+    "entity_type": "event_scene",
+    "entity": "霍尔木兹海峡封锁",
+    "priority": null,
+    "channel": "news"
+  },
+  {
+    "query": "黎巴嫩战机轰炸现场图片",
+    "entity_type": "event_scene",
+    "entity": "黎巴嫩战机轰炸",
+    "priority": null,
+    "channel": "news"
+  },
+  {
+    "query": "国际能源机构高层会议照片",
+    "entity_type": "person_institution",
+    "entity": "国际能源机构",
+    "priority": null,
+    "channel": "official"
+  }
+]

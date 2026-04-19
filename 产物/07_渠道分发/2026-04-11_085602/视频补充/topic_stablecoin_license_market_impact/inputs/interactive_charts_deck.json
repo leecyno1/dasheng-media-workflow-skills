@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "稳定币牌照落地:加密市场的'银行牌照时刻'｜互动图表视频",
+    "description": "来自历史图表 CSV 的动态图表视频补充",
+    "version": "2026.04.14"
+  },
+  "global": {
+    "factoryVersion": "v1.0.0",
+    "autoplay": true,
+    "autoplayGapMs": 800,
+    "tabSwitchRestart": true
+  },
+  "scenes": []
+}

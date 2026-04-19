@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Hook",
+    "visual": "这轮高频讨论里 相关冲突现场，多人场景，动态感强",
+    "caption": "先抛问题：这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化"
+  },
+  {
+    "title": "Thesis",
+    "visual": "这轮高频讨论里 与 真正值得写的不是表面热度 的对峙式构图",
+    "caption": "给判断：如果一类信息反复出现，重点应从单条新闻转向结构变量。"
+  },
+  {
+    "title": "Mechanism-1",
+    "visual": "机制拆解信息图，突出 这轮高频讨论里",
+    "caption": "第一层机制"
+  },
+  {
+    "title": "Mechanism-2",
+    "visual": "关键变量图表与群体场景并置",
+    "caption": "第二层机制"
+  },
+  {
+    "title": "Evidence-1",
+    "visual": "数据面板 + 人群/市场/议会现场",
+    "caption": "证据 1"
+  },
+  {
+    "title": "Evidence-2",
+    "visual": "地图/路线/结构图",
+    "caption": "证据 2"
+  },
+  {
+    "title": "Conflict",
+    "visual": "多方拉扯场景，增强对立与张力",
+    "caption": "冲突升级"
+  },
+  {
+    "title": "Risk",
+    "visual": "风险分叉图或情景树",
+    "caption": "如果继续演化会怎样"
+  },
+  {
+    "title": "Advice",
+    "visual": "投资/观察清单卡片",
+    "caption": "给建议或观察变量"
+  },
+  {
+    "title": "CTA",
+    "visual": "回到主问题的封口画面",
+    "caption": "结尾收束与 CTA"
+  }
+]

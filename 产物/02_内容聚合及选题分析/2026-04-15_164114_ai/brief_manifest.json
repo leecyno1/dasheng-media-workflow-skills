@@ -1,0 +1,15 @@
+{
+  "run_id": "2026-04-15_164114",
+  "generated_at": "2026-04-15T17:17:36.389831",
+  "stage": "brief",
+  "status": "failed",
+  "generation_mode": "ai_only",
+  "failure_reason": "AI 未返回合法的 topic_cards 数组",
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-15_164114/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-15_164114_ai",
+  "candidate_count": 0,
+  "candidate_topics": [],
+  "recommended_top_ids": [],
+  "artifacts": [],
+  "next_stage": null
+}

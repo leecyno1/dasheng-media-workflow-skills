@@ -1,0 +1,72 @@
+[
+  {
+    "query": "管线 portrait news photo",
+    "entity_type": "person",
+    "entity": "管线",
+    "priority": 300,
+    "channel": "wikimedia"
+  },
+  {
+    "query": "管线 speech press conference",
+    "entity_type": "person",
+    "entity": "管线",
+    "priority": 299,
+    "channel": "wikimedia"
+  },
+  {
+    "query": "印证 portrait news photo",
+    "entity_type": "person",
+    "entity": "印证",
+    "priority": 298,
+    "channel": "wikimedia"
+  },
+  {
+    "query": "印证 speech press conference",
+    "entity_type": "person",
+    "entity": "印证",
+    "priority": 297,
+    "channel": "wikimedia"
+  },
+  {
+    "query": "BTC headquarters exterior",
+    "entity_type": "org",
+    "entity": "BTC",
+    "priority": 210,
+    "channel": "wikimedia"
+  },
+  {
+    "query": "SHORTS headquarters exterior",
+    "entity_type": "org",
+    "entity": "SHORTS",
+    "priority": 209,
+    "channel": "wikimedia"
+  },
+  {
+    "query": "LONGS headquarters exterior",
+    "entity_type": "org",
+    "entity": "LONGS",
+    "priority": 208,
+    "channel": "wikimedia"
+  },
+  {
+    "query": "这轮高频讨论里 news conference",
+    "entity_type": "topic",
+    "entity": "",
+    "priority": 100,
+    "channel": "wikimedia"
+  },
+  {
+    "query": "这轮高频讨论里 city crowd",
+    "entity_type": "topic",
+    "entity": "",
+    "priority": 99,
+    "channel": "wikimedia"
+  },
+  {
+    "query": "这轮高频讨论里 office team",
+    "entity_type": "topic",
+    "entity": "",
+    "priority": 98,
+    "channel": "wikimedia"
+  }
+]

@@ -1,0 +1,6336 @@
+{
+  "run_id": "2026-04-04_235500",
+  "generated_at": "2026-04-04T23:24:58.365832",
+  "stats": {
+    "input_records": 415,
+    "cluster_count": 343,
+    "topic_card_count": 9
+  },
+  "clusters": [
+    {
+      "cluster_id": "外交部-伊朗-diplomacy-conflict-停火",
+      "cluster_name": "外交部 / 伊朗 / 停火",
+      "count": 1,
+      "platforms": [
+        "reports/news"
+      ],
+      "cluster_quality_score": 35.38,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "停火",
+        "伊朗",
+        "有关方应立即停火",
+        "外交",
+        "外交部",
+        "来自",
+        "reports",
+        "最新外链"
+      ]
+    },
+    {
+      "cluster_id": "外交部-中东-diplomacy-conflict",
+      "cluster_name": "外交部 / 中东",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 31.06,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "日本",
+        "当地时间3月31日",
+        "鲁登科称",
+        "俄罗斯将考虑各国",
+        "外交",
+        "外交部",
+        "中东",
+        "俄罗斯"
+      ]
+    },
+    {
+      "cluster_id": "外交部-俄罗斯-diplomacy-conflict",
+      "cluster_name": "外交部 / 俄罗斯",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 31.06,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "日本",
+        "中新社",
+        "俄罗斯重新将28名日本人列为战犯",
+        "俄方重新将28名日本人列为战犯",
+        "据中新社2日报道",
+        "俄罗斯外交部发言人扎哈罗娃4月1日表示",
+        "俄方近期重新将",
+        "外交"
+      ]
+    },
+    {
+      "cluster_id": "伊朗-美国-diplomacy-conflict",
+      "cluster_name": "伊朗 / 美国",
+      "count": 8,
+      "platforms": [
+        "5173/bili",
+        "5173/wb"
+      ],
+      "cluster_quality_score": 30.208,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "伊朗",
+        "美国",
+        "热度代理",
+        "油价/地缘冲突",
+        "油价",
+        "兄弟们",
+        "伊朗标",
+        "霍尔木兹"
+      ]
+    },
+    {
+      "cluster_id": "以色列-伊朗-diplomacy-conflict",
+      "cluster_name": "以色列 / 伊朗",
+      "count": 6,
+      "platforms": [
+        "5173/bili",
+        "5173/content_research",
+        "5173/wb"
+      ],
+      "cluster_quality_score": 29.93,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "伊朗",
+        "以色列",
+        "美国",
+        "卧槽",
+        "炸裂",
+        "月4日劲爆消息",
+        "不打伊朗了",
+        "美国通告全球"
+      ]
+    },
+    {
+      "cluster_id": "美联储-中东-policy-inflation-降息",
+      "cluster_name": "美联储 / 中东 / 降息",
+      "count": 2,
+      "platforms": [
+        "5173/wb",
+        "reports/news"
+      ],
+      "cluster_quality_score": 29.57,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "降息",
+        "美联储",
+        "油价",
+        "冲突",
+        "参考1990年石油危机",
+        "美联储终将降息",
+        "并令通胀担忧中燃",
+        "鹰派再定价"
+      ]
+    },
+    {
+      "cluster_id": "伊朗-原油-diplomacy-conflict-停火",
+      "cluster_name": "伊朗 / 原油 / 停火",
+      "count": 1,
+      "platforms": [
+        "5173/content_research"
+      ],
+      "cluster_quality_score": 29.196,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "停火",
+        "原油",
+        "伊朗",
+        "懂王狂画k线",
+        "精准抛售600万桶原油",
+        "伊朗提停火条件",
+        "抛售",
+        "score"
+      ]
+    },
+    {
+      "cluster_id": "高市早苗-中国-diplomacy-conflict",
+      "cluster_name": "高市早苗 / 中国",
+      "count": 2,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 28.84,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "中国",
+        "日本",
+        "高市早苗",
+        "月28日",
+        "约1400名日本民众在东京新宿举行反战集会",
+        "高举",
+        "向中国道歉",
+        "高市下台"
+      ]
+    },
+    {
+      "cluster_id": "特朗普-伊朗-diplomacy-conflict-冲突",
+      "cluster_name": "特朗普 / 伊朗 / 冲突",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 28.82,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "伊朗",
+        "美国",
+        "特朗普",
+        "冲突",
+        "美伊以冲突",
+        "第一步",
+        "热度代理",
+        "油价/地缘冲突"
+      ]
+    },
+    {
+      "cluster_id": "特朗普-鲍威尔-policy-inflation-降息",
+      "cluster_name": "特朗普 / 鲍威尔 / 降息",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 28.82,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "美联储",
+        "降息",
+        "加息",
+        "人工智能",
+        "鲍威尔",
+        "特朗普",
+        "鲍威尔今晚的讲话",
+        "救了特朗普半条命"
+      ]
+    },
+    {
+      "cluster_id": "鲍威尔-美联储-policy-inflation-加息",
+      "cluster_name": "鲍威尔 / 美联储 / 加息",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 28.82,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "加息",
+        "美联储",
+        "鲍威尔",
+        "油价",
+        "如果我判断是对的",
+        "油价逐步掉头",
+        "那自然不用多说",
+        "那也不怕"
+      ]
+    },
+    {
+      "cluster_id": "高市早苗-伊朗-diplomacy-conflict-制裁",
+      "cluster_name": "高市早苗 / 伊朗 / 制裁",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 28.82,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "制裁",
+        "伊朗",
+        "日本",
+        "高市早苗",
+        "全球油阀就三个",
+        "霍尔木兹",
+        "俄罗斯",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "川普-伊朗-diplomacy-conflict",
+      "cluster_name": "川普 / 伊朗",
+      "count": 2,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 28.648,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "伊朗",
+        "美国",
+        "川普",
+        "热度代理",
+        "中天辣晚报",
+        "美国24小时内多架战机被击中",
+        "川普曾提出停战48小时",
+        "听小lu一言"
+      ]
+    },
+    {
+      "cluster_id": "伊朗-美国-diplomacy-conflict-停火",
+      "cluster_name": "伊朗 / 美国 / 停火",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 28.62,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "停火",
+        "伊朗",
+        "美国",
+        "美媒",
+        "控制霍尔木兹海峡",
+        "多家美媒认为",
+        "霍尔木兹",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "中东-中国-risk-pricing",
+      "cluster_name": "中东 / 中国",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 28.428,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "油价",
+        "中东",
+        "中国",
+        "热度代理",
+        "b站名人精选课堂",
+        "油价/地缘冲突"
+      ]
+    },
+    {
+      "cluster_id": "川普-美国-risk-pricing",
+      "cluster_name": "川普 / 美国",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 28.228,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "原油",
+        "油价",
+        "美国",
+        "川普演讲",
+        "油价单月暴涨60",
+        "万桶原油断供",
+        "川普",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "特朗普-伊朗-diplomacy-conflict",
+      "cluster_name": "特朗普 / 伊朗",
+      "count": 5,
+      "platforms": [
+        "5173/bili",
+        "5173/content_research",
+        "reports/news"
+      ],
+      "cluster_quality_score": 28.08,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "伊朗",
+        "特朗普",
+        "score",
+        "美国",
+        "bili",
+        "油价/地缘冲突",
+        "月4日劲爆凌晨消息",
+        "伊朗下死手了"
+      ]
+    },
+    {
+      "cluster_id": "日本-diplomacy-conflict",
+      "cluster_name": "日本",
+      "count": 10,
+      "platforms": [
+        "5173/bili",
+        "5173/content_research",
+        "5173/wb",
+        "5173/x"
+      ],
+      "cluster_quality_score": 27.608,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "日本",
+        "日本/使馆/外交",
+        "热度代理",
+        "score",
+        "bili",
+        "日本看護協会",
+        "職員",
+        "募集"
+      ]
+    },
+    {
+      "cluster_id": "英伟达-半导体-semiconductor-cycle",
+      "cluster_name": "英伟达 / 半导体",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 27.354,
+      "primary_variable": "semiconductor_cycle",
+      "top_keywords": [
+        "英伟达",
+        "半导体",
+        "封测",
+        "英特尔等成",
+        "打击目标",
+        "警告员工",
+        "立即撤离保命",
+        "半导体封测"
+      ]
+    },
+    {
+      "cluster_id": "高市早苗-日本-diplomacy-conflict",
+      "cluster_name": "高市早苗 / 日本",
+      "count": 2,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 27.14,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "日本",
+        "高市早苗",
+        "热度代理",
+        "连合影都牵着手",
+        "高市早苗变拘谨了",
+        "这音乐配的好",
+        "和哀乐似的",
+        "日本/使馆/外交"
+      ]
+    },
+    {
+      "cluster_id": "特朗普-日本-diplomacy-conflict",
+      "cluster_name": "特朗普 / 日本",
+      "count": 1,
+      "platforms": [
+        "5173/content_research"
+      ],
+      "cluster_quality_score": 27.096,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "日本",
+        "特朗普",
+        "突发",
+        "日本200万过海峡",
+        "score",
+        "bili",
+        "日本/使馆/外交"
+      ]
+    },
+    {
+      "cluster_id": "黄金-降息-risk-pricing-降息",
+      "cluster_name": "黄金 / 降息 / 降息",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 26.728,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "降息",
+        "黄金",
+        "突发",
+        "非农数据3倍暴击黄金暴跌160亿",
+        "热度代理",
+        "阿金谈财",
+        "黄金/白银/贵金属"
+      ]
+    },
+    {
+      "cluster_id": "日本-黄金-risk-pricing",
+      "cluster_name": "日本 / 黄金",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 26.528,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "日本",
+        "黄金",
+        "紧急",
+        "警惕2026雷曼时刻来袭",
+        "普通人惨遭洗劫",
+        "全球财富大重置",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "中国-ai-policy-inflation",
+      "cluster_name": "中国 / AI",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 26.424,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "ai",
+        "这是一个把中国250个职业做成ai取代预警的保命网",
+        "职业",
+        "就业",
+        "职业发展",
+        "网站",
+        "中国",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "ai-关税-market-sentiment",
+      "cluster_name": "AI / 关税",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 26.424,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "唐子棋",
+        "一文深度解析",
+        "年末经济",
+        "关税博弈",
+        "ai泡沫",
+        "联储迷阵",
+        "经济分析",
+        "燃起来了大国重器"
+      ]
+    },
+    {
+      "cluster_id": "黄金-risk-pricing",
+      "cluster_name": "黄金",
+      "count": 9,
+      "platforms": [
+        "5173/bili",
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 26.392,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "黄金",
+        "热度代理",
+        "黄金/白银/贵金属",
+        "股票",
+        "基金",
+        "月份黑天鹅事件",
+        "等就行了",
+        "股市"
+      ]
+    },
+    {
+      "cluster_id": "美国-黄金-risk-pricing",
+      "cluster_name": "美国 / 黄金",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 26.328,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "美国",
+        "黄金",
+        "霍尔木兹封航",
+        "瑞银四情景炸锅",
+        "全球股市最多暴跌",
+        "只有美国",
+        "黄金能避险",
+        "霍尔木兹"
+      ]
+    },
+    {
+      "cluster_id": "原油-白银-risk-pricing",
+      "cluster_name": "原油 / 白银",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 26.286,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "原油",
+        "黄金",
+        "白银",
+        "周末纯享篇",
+        "热度代理",
+        "伍元交易",
+        "黄金/白银/贵金属",
+        "油价/地缘冲突"
+      ]
+    },
+    {
+      "cluster_id": "ai-人工智能-market-sentiment",
+      "cluster_name": "AI / 人工智能",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 26.278,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "ai+新能源",
+        "第六轮康波周期",
+        "在亚布力论坛上",
+        "物美集团ceo张斌提到",
+        "ai",
+        "人工智能",
+        "新能源",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "半导体-封测-semiconductor-cycle",
+      "cluster_name": "半导体 / 封测",
+      "count": 4,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 26.268,
+      "primary_variable": "semiconductor_cycle",
+      "top_keywords": [
+        "半导体",
+        "封测",
+        "半导体封测",
+        "定向样本",
+        "半导体/国产芯片",
+        "恭喜",
+        "贵州煜晖电子二期",
+        "正式开工"
+      ]
+    },
+    {
+      "cluster_id": "黄金-risk-pricing-抛售",
+      "cluster_name": "黄金 / 抛售",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 25.84,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "黄金",
+        "两周狂卖118吨黄金",
+        "亿美元紧急套现",
+        "土耳其央行这波",
+        "清仓式",
+        "抛售",
+        "热度代理",
+        "向陽說"
+      ]
+    },
+    {
+      "cluster_id": "中国-market-sentiment",
+      "cluster_name": "中国",
+      "count": 7,
+      "platforms": [
+        "5173/bili",
+        "5173/wb",
+        "5173/x",
+        "reports/news"
+      ],
+      "cluster_quality_score": 25.748,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "中国",
+        "来自",
+        "reports",
+        "最新外链",
+        "热度代理",
+        "trendradar聚合",
+        "宏观/市场情绪",
+        "令她难过的"
+      ]
+    },
+    {
+      "cluster_id": "中国-日本-diplomacy-conflict",
+      "cluster_name": "中国 / 日本",
+      "count": 2,
+      "platforms": [
+        "5173/bili",
+        "5173/content_research"
+      ],
+      "cluster_quality_score": 25.256,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "日本",
+        "中国",
+        "卧槽",
+        "炸裂",
+        "月4日劲爆消息",
+        "日本敢走错半步",
+        "热度代理",
+        "往风念旧人"
+      ]
+    },
+    {
+      "cluster_id": "中东-diplomacy-conflict",
+      "cluster_name": "中东",
+      "count": 1,
+      "platforms": [
+        "reports/news"
+      ],
+      "cluster_quality_score": 25.18,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "美军为啥要派早已停产的a",
+        "攻击机去中东",
+        "中东",
+        "来自",
+        "reports",
+        "最新外链",
+        "trendradar聚合",
+        "油价/地缘冲突"
+      ]
+    },
+    {
+      "cluster_id": "美国-market-sentiment",
+      "cluster_name": "美国",
+      "count": 5,
+      "platforms": [
+        "5173/bili",
+        "5173/content_research",
+        "5173/wb"
+      ],
+      "cluster_quality_score": 25.058,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "美国",
+        "热度代理",
+        "美国人说这是",
+        "宣传",
+        "殖人连线女博士",
+        "女博士有理有据",
+        "摆事实讲道理",
+        "怼的殖人哑口无言"
+      ]
+    },
+    {
+      "cluster_id": "特朗普-美国-market-sentiment",
+      "cluster_name": "特朗普 / 美国",
+      "count": 3,
+      "platforms": [
+        "5173/content_research",
+        "5173/wb"
+      ],
+      "cluster_quality_score": 24.988,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "美国",
+        "特朗普",
+        "热度代理",
+        "政府在忙着打仗呢",
+        "美国50个州爆发大规模抗议",
+        "美国不需要国",
+        "我们是一个大国",
+        "我们正在打仗"
+      ]
+    },
+    {
+      "cluster_id": "原油-market-sentiment",
+      "cluster_name": "原油",
+      "count": 1,
+      "platforms": [
+        "reports/news"
+      ],
+      "cluster_quality_score": 24.98,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "原油",
+        "霍尔木兹海峡现",
+        "新迹象",
+        "万桶原油",
+        "首艘lng船",
+        "似乎",
+        "已通过",
+        "南线"
+      ]
+    },
+    {
+      "cluster_id": "白银-黄金-risk-pricing",
+      "cluster_name": "白银 / 黄金",
+      "count": 2,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 24.702,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "黄金",
+        "白银",
+        "热度代理",
+        "短期震荡莫心急",
+        "金银联动等起爆",
+        "做空",
+        "导火索",
+        "趋势"
+      ]
+    },
+    {
+      "cluster_id": "伊朗-diplomacy-conflict",
+      "cluster_name": "伊朗",
+      "count": 5,
+      "platforms": [
+        "5173/content_research",
+        "5173/xhs",
+        "reports/news"
+      ],
+      "cluster_quality_score": 24.629,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "伊朗",
+        "油价/地缘冲突",
+        "来自",
+        "reports",
+        "最新外链",
+        "trendradar聚合",
+        "最新伊朗禁播电影",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "原油-油价-risk-pricing",
+      "cluster_name": "原油 / 油价",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 24.586,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "原油",
+        "油价",
+        "热度代理",
+        "蓝魔",
+        "油价/地缘冲突"
+      ]
+    },
+    {
+      "cluster_id": "中国-伊朗-diplomacy-conflict",
+      "cluster_name": "中国 / 伊朗",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 24.482,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "伊朗",
+        "速战速决",
+        "直指伊朗石油命脉",
+        "无论哪种方式夺岛",
+        "风险都极高",
+        "新闻今日谈",
+        "中国",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "原油-铜-risk-pricing",
+      "cluster_name": "原油 / 铜",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 24.386,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "黄金",
+        "原油",
+        "摩根大通大宗",
+        "铜铝及煤炭展望",
+        "我们真的有退路吗",
+        "热度代理",
+        "小黄的投资笔记"
+      ]
+    },
+    {
+      "cluster_id": "原油-黄金-risk-pricing",
+      "cluster_name": "原油 / 黄金",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 24.386,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "原油",
+        "黄金",
+        "年4",
+        "黄金原油周前预测",
+        "热度代理",
+        "古风岚月",
+        "黄金/白银/贵金属",
+        "油价/地缘冲突"
+      ]
+    },
+    {
+      "cluster_id": "俄罗斯-日本-diplomacy-conflict",
+      "cluster_name": "俄罗斯 / 日本",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 24.186,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "日本",
+        "月4日",
+        "日本找俄罗斯买油",
+        "俄罗斯不卖",
+        "亮哥",
+        "俄罗斯",
+        "热度代理",
+        "揭秘军事"
+      ]
+    },
+    {
+      "cluster_id": "财政部-美国-policy-inflation",
+      "cluster_name": "财政部 / 美国",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 23.898,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "美国",
+        "genius稳定币法案",
+        "美国财政部首次genius规则",
+        "关键点",
+        "州级通道收窄",
+        "联邦监管权扩大",
+        "财政部",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "美国-加息-policy-inflation-加息",
+      "cluster_name": "美国 / 加息 / 加息",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 23.802,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "加息",
+        "美国",
+        "又加息",
+        "商业新说",
+        "热度代理",
+        "直男财经"
+      ]
+    },
+    {
+      "cluster_id": "川普-美国-diplomacy-conflict-谈判",
+      "cluster_name": "川普 / 美国 / 谈判",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 23.706,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "美国",
+        "新闻大白话",
+        "美国最糟糕的24小时",
+        "川普称",
+        "川普",
+        "谈判",
+        "热度代理",
+        "听小lu一言"
+      ]
+    },
+    {
+      "cluster_id": "避险情绪上升-下午-risk-pricing",
+      "cluster_name": "避险情绪上升 / 下午",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 23.616,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "避险情绪上升",
+        "下午",
+        "a股走势",
+        "a股",
+        "热度代理",
+        "思考者蹲着",
+        "宏观/市场情绪"
+      ]
+    },
+    {
+      "cluster_id": "油价-risk-pricing",
+      "cluster_name": "油价",
+      "count": 2,
+      "platforms": [
+        "5173/douyin",
+        "5173/wb"
+      ],
+      "cluster_quality_score": 23.548,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "油价",
+        "其实油价这样涨",
+        "能源涨价",
+        "各种原材料涨价",
+        "包括出行",
+        "衣物",
+        "窗帘",
+        "钢铁等等等等"
+      ]
+    },
+    {
+      "cluster_id": "patio11-government-market-sentiment",
+      "cluster_name": "patio11 / government",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 23.512,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "patio11",
+        "government",
+        "payroll",
+        "revamps",
+        "are",
+        "the",
+        "ultimate",
+        "cancel"
+      ]
+    },
+    {
+      "cluster_id": "多家交易所-紧急提示风险-risk-pricing",
+      "cluster_name": "多家交易所 / 紧急提示风险",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 23.416,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "多家交易所",
+        "紧急提示风险",
+        "热度代理",
+        "人民网"
+      ]
+    },
+    {
+      "cluster_id": "ai-market-sentiment",
+      "cluster_name": "AI",
+      "count": 2,
+      "platforms": [
+        "5173/wb",
+        "reports/news"
+      ],
+      "cluster_quality_score": 22.824,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "ai",
+        "其实是因为我掌握了一个最新prompt",
+        "就是把自己写的方案发给ai",
+        "然后说",
+        "你好",
+        "这是我仇人写的",
+        "帮我挑挑刺",
+        "ai会给出又犀利又"
+      ]
+    },
+    {
+      "cluster_id": "ai-technology-adoption",
+      "cluster_name": "AI",
+      "count": 2,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 22.706,
+      "primary_variable": "technology_adoption",
+      "top_keywords": [
+        "ai",
+        "热度代理",
+        "ai工具/工作流",
+        "从dau到token",
+        "agent时代",
+        "agent",
+        "商业茶水间",
+        "ai冲击下的房地产市场"
+      ]
+    },
+    {
+      "cluster_id": "降息-policy-inflation-降息",
+      "cluster_name": "降息 / 降息",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 22.678,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "降息",
+        "年期",
+        "随着",
+        "多家银行4月1日起下调存款利率",
+        "存款利率的下降",
+        "进入",
+        "时代",
+        "大降息的环境下"
+      ]
+    },
+    {
+      "cluster_id": "优思益声明称-最新外链-market-sentiment",
+      "cluster_name": "优思益声明称 / 最新外链",
+      "count": 1,
+      "platforms": [
+        "reports/news"
+      ],
+      "cluster_quality_score": 22.66,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "优思益声明称",
+        "整体处于崩溃边缘",
+        "消费者该怎样维权",
+        "此次事件有何警示",
+        "来自",
+        "reports",
+        "最新外链",
+        "trendradar聚合"
+      ]
+    },
+    {
+      "cluster_id": "华谊兄弟超-万债务逾期-market-sentiment",
+      "cluster_name": "华谊兄弟超 / 万债务逾期",
+      "count": 1,
+      "platforms": [
+        "reports/news"
+      ],
+      "cluster_quality_score": 22.66,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "华谊兄弟超",
+        "万债务逾期",
+        "多个银行账号",
+        "来自",
+        "reports",
+        "最新外链",
+        "trendradar聚合"
+      ]
+    },
+    {
+      "cluster_id": "教育部-实验班-market-sentiment",
+      "cluster_name": "教育部 / 实验班",
+      "count": 1,
+      "platforms": [
+        "reports/news"
+      ],
+      "cluster_quality_score": 22.66,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "教育部",
+        "实验班",
+        "快慢班",
+        "来自",
+        "reports",
+        "最新外链",
+        "trendradar聚合"
+      ]
+    },
+    {
+      "cluster_id": "查和监察调查-最新外链-market-sentiment",
+      "cluster_name": "查和监察调查 / 最新外链",
+      "count": 1,
+      "platforms": [
+        "reports/news"
+      ],
+      "cluster_quality_score": 22.66,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "查和监察调查",
+        "来自",
+        "reports",
+        "最新外链",
+        "trendradar聚合"
+      ]
+    },
+    {
+      "cluster_id": "新型储能规模2030年将超3-亿千瓦-market-sentiment",
+      "cluster_name": "新型储能规模2030年将超3 / 亿千瓦",
+      "count": 1,
+      "platforms": [
+        "reports/news"
+      ],
+      "cluster_quality_score": 22.66,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "新型储能规模2030年将超3",
+        "亿千瓦",
+        "来自",
+        "reports",
+        "最新外链",
+        "trendradar聚合"
+      ]
+    },
+    {
+      "cluster_id": "st观典-最新外链-market-sentiment",
+      "cluster_name": "st观典 / 最新外链",
+      "count": 1,
+      "platforms": [
+        "reports/news"
+      ],
+      "cluster_quality_score": 22.66,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "st观典",
+        "来自",
+        "reports",
+        "最新外链",
+        "trendradar聚合"
+      ]
+    },
+    {
+      "cluster_id": "原油-risk-pricing",
+      "cluster_name": "原油",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 22.486,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "原油",
+        "原油狂奔",
+        "美股会崩盘吗",
+        "抓大尾巴第50集",
+        "热度代理",
+        "交易艺术汇",
+        "油价/地缘冲突"
+      ]
+    },
+    {
+      "cluster_id": "ai-risk-pricing",
+      "cluster_name": "AI",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 22.382,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "黑天鹅",
+        "ai",
+        "我们都被",
+        "经验",
+        "骗了多久",
+        "警惕你身边的",
+        "信号",
+        "多少人困在"
+      ]
+    },
+    {
+      "cluster_id": "中国-diplomacy-conflict",
+      "cluster_name": "中国",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 22.286,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "纵容凶徒闯使馆",
+        "皇道遗毒太嚣张",
+        "中国军号再发中日双语mv",
+        "中国",
+        "热度代理",
+        "青蜂侠",
+        "bee",
+        "日本/使馆/外交"
+      ]
+    },
+    {
+      "cluster_id": "app-hundreds-risk-pricing",
+      "cluster_name": "app / hundreds",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_latest"
+      ],
+      "cluster_quality_score": 21.656,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "app",
+        "hundreds",
+        "of",
+        "millions",
+        "at",
+        "risk",
+        "from",
+        "chinese"
+      ]
+    },
+    {
+      "cluster_id": "russian-authorities-market-sentiment",
+      "cluster_name": "russian / authorities",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_latest"
+      ],
+      "cluster_quality_score": 21.656,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "russian",
+        "authorities",
+        "detain",
+        "suspect",
+        "over",
+        "st",
+        "petersburg",
+        "cafe"
+      ]
+    },
+    {
+      "cluster_id": "read-trump-market-sentiment",
+      "cluster_name": "read / trump",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_latest"
+      ],
+      "cluster_quality_score": 21.656,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "read",
+        "trump",
+        "indictment",
+        "related",
+        "to",
+        "hush",
+        "money",
+        "payment"
+      ]
+    },
+    {
+      "cluster_id": "trump-pleads-market-sentiment",
+      "cluster_name": "trump / pleads",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_latest"
+      ],
+      "cluster_quality_score": 21.656,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "trump",
+        "pleads",
+        "not",
+        "guilty",
+        "to",
+        "felony",
+        "counts",
+        "公众号最新文章"
+      ]
+    },
+    {
+      "cluster_id": "微软-market-sentiment",
+      "cluster_name": "微软",
+      "count": 1,
+      "platforms": [
+        "reports/news"
+      ],
+      "cluster_quality_score": 21.58,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "如何评价微软前",
+        "cto",
+        "发长文指出",
+        "windows",
+        "的混乱局面",
+        "次转变",
+        "gui",
+        "共存"
+      ]
+    },
+    {
+      "cluster_id": "特朗普-马斯克-market-sentiment",
+      "cluster_name": "特朗普 / 马斯克",
+      "count": 1,
+      "platforms": [
+        "5173/content_research"
+      ],
+      "cluster_quality_score": 21.554,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "特朗普",
+        "世界周刊",
+        "为啥说翻就翻",
+        "马斯克",
+        "score",
+        "bili"
+      ]
+    },
+    {
+      "cluster_id": "中国-以色列-diplomacy-conflict-冲突",
+      "cluster_name": "中国 / 以色列 / 冲突",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 21.178,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "以色列",
+        "冲突",
+        "美伊以冲突",
+        "热点",
+        "中国",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "中国-美国-semiconductor-cycle",
+      "cluster_name": "中国 / 美国",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.978,
+      "primary_variable": "semiconductor_cycle",
+      "top_keywords": [
+        "美国",
+        "路透",
+        "设备",
+        "年批准新型号设备",
+        "中国",
+        "热度代理",
+        "aberdeenamain"
+      ]
+    },
+    {
+      "cluster_id": "中国-美国-risk-pricing",
+      "cluster_name": "中国 / 美国",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.978,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "美国",
+        "年11月美国电信监管机构决定不授权从这些中国公司进",
+        "美国联邦通信委员会fcc周五表示",
+        "正在征求意",
+        "中国",
+        "热度代理",
+        "aberdeenamain"
+      ]
+    },
+    {
+      "cluster_id": "中国-美国-market-sentiment",
+      "cluster_name": "中国 / 美国",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.978,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "美国",
+        "日前",
+        "中国",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "平平不无奇-oppo-market-sentiment",
+      "cluster_name": "平平不无奇 / oppo",
+      "count": 1,
+      "platforms": [
+        "5173/content_research"
+      ],
+      "cluster_quality_score": 20.734,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "平平不无奇",
+        "oppo",
+        "find",
+        "n6使用体验",
+        "score",
+        "bili"
+      ]
+    },
+    {
+      "cluster_id": "ray评-周杰伦新歌-market-sentiment",
+      "cluster_name": "ray评 / 周杰伦新歌",
+      "count": 1,
+      "platforms": [
+        "5173/content_research"
+      ],
+      "cluster_quality_score": 20.734,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "ray评",
+        "周杰伦新歌",
+        "太阳之子",
+        "完全想不到",
+        "score",
+        "bili"
+      ]
+    },
+    {
+      "cluster_id": "美利坚-毒舌的南瓜-market-sentiment",
+      "cluster_name": "美利坚 / 毒舌的南瓜",
+      "count": 1,
+      "platforms": [
+        "5173/content_research"
+      ],
+      "cluster_quality_score": 20.734,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "美利坚",
+        "你们的皇帝回来了",
+        "毒舌的南瓜",
+        "score",
+        "bili"
+      ]
+    },
+    {
+      "cluster_id": "你手机里这个-海鲜市场-market-sentiment",
+      "cluster_name": "你手机里这个 / 海鲜市场",
+      "count": 1,
+      "platforms": [
+        "5173/content_research"
+      ],
+      "cluster_quality_score": 20.734,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "你手机里这个",
+        "海鲜市场",
+        "score",
+        "bili"
+      ]
+    },
+    {
+      "cluster_id": "含泪离开-刚和男友花60万装好的家-market-sentiment",
+      "cluster_name": "含泪离开 / 刚和男友花60万装好的家",
+      "count": 1,
+      "platforms": [
+        "5173/content_research"
+      ],
+      "cluster_quality_score": 20.734,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "含泪离开",
+        "刚和男友花60万装好的家",
+        "马上搬走不要了",
+        "score",
+        "bili"
+      ]
+    },
+    {
+      "cluster_id": "stay-calm-market-sentiment",
+      "cluster_name": "stay / calm",
+      "count": 2,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.578,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "successful",
+        "investors",
+        "stay",
+        "calm",
+        "during",
+        "volatility",
+        "diligence",
+        "in"
+      ]
+    },
+    {
+      "cluster_id": "情绪接近冰点-这种反复拉锯-market-sentiment-反弹",
+      "cluster_name": "情绪接近冰点 / 这种反复拉锯 / 反弹",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.358,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "昨天指数补了缺口",
+        "情绪接近冰点",
+        "这种反复拉锯",
+        "盘面没有绝对",
+        "反弹",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "其中-被告人王某文从2001年1-market-sentiment-发布",
+      "cluster_name": "其中 / 被告人王某文从2001年1 / 发布",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.358,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "儿童犯罪典型案例",
+        "其中",
+        "被告人王某文从2001年1",
+        "发布",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "月31日-发布-market-sentiment-发布",
+      "cluster_name": "月31日 / 发布 / 发布",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.358,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "月31日",
+        "发布",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "拉起来就卖掉-不要逆反着做-policy-inflation",
+      "cluster_name": "拉起来就卖掉 / 不要逆反着做",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.358,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "拉起来就卖掉",
+        "掉下去再买回来",
+        "不要逆反着做",
+        "通胀",
+        "热度代理",
+        "宏观/市场情绪"
+      ]
+    },
+    {
+      "cluster_id": "上涨-能穿越调整-market-sentiment-上涨",
+      "cluster_name": "上涨 / 能穿越调整 / 上涨",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.358,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "上涨",
+        "能穿越调整",
+        "明白666",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "小米发布新一代su7拆解视频-讲汽车安全-market-sentiment-发布",
+      "cluster_name": "小米发布新一代su7拆解视频 / 讲汽车安全 / 发布",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.358,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "小米发布新一代su7拆解视频",
+        "讲汽车安全",
+        "特别是被动安全",
+        "就应该靠拆解",
+        "通过材",
+        "发布",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "小米发布新一代su7拆解视频-够直观-market-sentiment-发布",
+      "cluster_name": "小米发布新一代su7拆解视频 / 够直观 / 发布",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.358,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "小米发布新一代su7拆解视频",
+        "够直观",
+        "把车拆散这件事",
+        "比一万张ppt都管用",
+        "发布",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "当然-通胀-policy-inflation",
+      "cluster_name": "当然 / 通胀",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.358,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "当然",
+        "通胀",
+        "热度代理",
+        "宏观/市场情绪"
+      ]
+    },
+    {
+      "cluster_id": "刷到这条视频-杠杆武士-market-sentiment",
+      "cluster_name": "刷到这条视频 / 杠杆武士",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.358,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "刷到这条视频",
+        "杠杆武士",
+        "一类是死守定存",
+        "利率",
+        "波动",
+        "热度代理",
+        "宏观/市场情绪"
+      ]
+    },
+    {
+      "cluster_id": "下班聊聊-下跌-market-sentiment-反弹",
+      "cluster_name": "下班聊聊 / 下跌 / 反弹",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.262,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "下班聊聊",
+        "下跌",
+        "让全体资产下跌的",
+        "流动性黑洞",
+        "这是怎么回事",
+        "后面价格会反弹吗",
+        "零距离看懂财经",
+        "投资"
+      ]
+    },
+    {
+      "cluster_id": "绝命老铁-经济-risk-pricing",
+      "cluster_name": "绝命老铁 / 经济",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.262,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "绝命老铁",
+        "经济",
+        "历史",
+        "涨知识",
+        "dou+小助手",
+        "热度代理",
+        "宏观/市场情绪"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-market-sentiment",
+      "cluster_name": "热度代理",
+      "count": 8,
+      "platforms": [
+        "5173/wb",
+        "5173/x",
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.198,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "evening",
+        "summary",
+        "smfuns",
+        "李大霄的微博视频",
+        "小手手比我都灵活",
+        "王乖喵兜胖物资",
+        "毕业旅行这么玩"
+      ]
+    },
+    {
+      "cluster_id": "congrats-sobadubdub-market-sentiment",
+      "cluster_name": "congrats / sobadubdub",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "congrats",
+        "sobadubdub",
+        "you",
+        "re",
+        "top",
+        "prophit",
+        "for",
+        "your"
+      ]
+    },
+    {
+      "cluster_id": "as-my-market-sentiment",
+      "cluster_name": "as / my",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "as",
+        "my",
+        "feed",
+        "is",
+        "full",
+        "of",
+        "dev",
+        "reactions"
+      ]
+    },
+    {
+      "cluster_id": "ignatiusbatuhan-anglovarangian-market-sentiment",
+      "cluster_name": "ignatiusbatuhan / anglovarangian",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "ignatiusbatuhan",
+        "anglovarangian",
+        "georgians",
+        "didn",
+        "kill",
+        "or",
+        "conquer",
+        "the"
+      ]
+    },
+    {
+      "cluster_id": "multanisaint-agree-market-sentiment",
+      "cluster_name": "multanisaint / agree",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "the",
+        "multanisaint",
+        "agree",
+        "with",
+        "sentiment",
+        "but",
+        "not",
+        "how"
+      ]
+    },
+    {
+      "cluster_id": "reticentdelhite-tacticalkafir-market-sentiment",
+      "cluster_name": "reticentdelhite / tacticalkafir",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "reticentdelhite",
+        "tacticalkafir",
+        "brother",
+        "soldiers",
+        "under",
+        "special",
+        "operations",
+        "and"
+      ]
+    },
+    {
+      "cluster_id": "is-it-market-sentiment",
+      "cluster_name": "is / it",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "is",
+        "it",
+        "common",
+        "sentiment",
+        "among",
+        "you",
+        "to",
+        "dislike"
+      ]
+    },
+    {
+      "cluster_id": "perfectminz-it-market-sentiment",
+      "cluster_name": "perfectminz / it",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "perfectminz",
+        "it",
+        "fine",
+        "let",
+        "sanatan",
+        "thoughts",
+        "go",
+        "viral"
+      ]
+    },
+    {
+      "cluster_id": "would-very-market-sentiment",
+      "cluster_name": "would / very",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "would",
+        "very",
+        "much",
+        "like",
+        "to",
+        "hear",
+        "from",
+        "renee"
+      ]
+    },
+    {
+      "cluster_id": "got-email-market-sentiment",
+      "cluster_name": "got / email",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "got",
+        "the",
+        "email",
+        "too",
+        "anthropic",
+        "is",
+        "on",
+        "sentiment"
+      ]
+    },
+    {
+      "cluster_id": "israel-is-market-sentiment",
+      "cluster_name": "israel / is",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "israel",
+        "is",
+        "everything",
+        "they",
+        "accused",
+        "nazi",
+        "germany",
+        "of"
+      ]
+    },
+    {
+      "cluster_id": "alert-biotech-market-sentiment",
+      "cluster_name": "alert / biotech",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "alert",
+        "biotech",
+        "sector",
+        "sees",
+        "mixed",
+        "regulatory",
+        "amp",
+        "clinical"
+      ]
+    },
+    {
+      "cluster_id": "bareleft-stop-market-sentiment",
+      "cluster_name": "bareleft / stop",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "bareleft",
+        "stop",
+        "balance",
+        "of",
+        "payments",
+        "bop",
+        "uk",
+        "is"
+      ]
+    },
+    {
+      "cluster_id": "ups-stock-market-sentiment",
+      "cluster_name": "ups / stock",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "ups",
+        "stock",
+        "shows",
+        "signs",
+        "of",
+        "recovery",
+        "per",
+        "barron"
+      ]
+    },
+    {
+      "cluster_id": "private-credit-market-sentiment",
+      "cluster_name": "private / credit",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "private",
+        "credit",
+        "stress",
+        "delayed",
+        "catalyst",
+        "owl",
+        "ares",
+        "bx"
+      ]
+    },
+    {
+      "cluster_id": "destroy-maxabrahms-market-sentiment",
+      "cluster_name": "destroy / maxabrahms",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "destroy",
+        "maxabrahms",
+        "the",
+        "banking",
+        "sector",
+        "so",
+        "money",
+        "can"
+      ]
+    },
+    {
+      "cluster_id": "ronmortgageguy-calgary-market-sentiment",
+      "cluster_name": "ronmortgageguy / calgary",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "ronmortgageguy",
+        "calgary",
+        "apartment",
+        "sector",
+        "has",
+        "officially",
+        "hit",
+        "the"
+      ]
+    },
+    {
+      "cluster_id": "why-ignoring-market-sentiment",
+      "cluster_name": "why / ignoring",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "why",
+        "ignoring",
+        "sector",
+        "and",
+        "money",
+        "flow",
+        "is",
+        "costing"
+      ]
+    },
+    {
+      "cluster_id": "alphatica-sector-market-sentiment",
+      "cluster_name": "alphatica / sector",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "alphatica",
+        "sector",
+        "flow",
+        "the",
+        "handoff",
+        "is",
+        "back",
+        "we"
+      ]
+    },
+    {
+      "cluster_id": "put-land-market-sentiment",
+      "cluster_name": "put / land",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "put",
+        "land",
+        "value",
+        "tax",
+        "on",
+        "properties",
+        "including",
+        "agricultural"
+      ]
+    },
+    {
+      "cluster_id": "bull-trap-market-sentiment",
+      "cluster_name": "bull / trap",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "bull",
+        "trap",
+        "for",
+        "this",
+        "week",
+        "blues",
+        "are",
+        "hr"
+      ]
+    },
+    {
+      "cluster_id": "dominiccarb-agree-market-sentiment",
+      "cluster_name": "dominiccarb / agree",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "dominiccarb",
+        "agree",
+        "do",
+        "think",
+        "so",
+        "on",
+        "rrp",
+        "is"
+      ]
+    },
+    {
+      "cluster_id": "jefffletcherocr-wish-market-sentiment",
+      "cluster_name": "jefffletcherocr / wish",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "jefffletcherocr",
+        "wish",
+        "to",
+        "state",
+        "that",
+        "had",
+        "safe",
+        "and"
+      ]
+    },
+    {
+      "cluster_id": "crypto-oludayo-market-sentiment",
+      "cluster_name": "crypto / oludayo",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "crypto",
+        "oludayo",
+        "this",
+        "is",
+        "super",
+        "useful",
+        "finally",
+        "tool"
+      ]
+    },
+    {
+      "cluster_id": "lies-zzeekhumalo-market-sentiment",
+      "cluster_name": "lies / zzeekhumalo",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "lies",
+        "zzeekhumalo",
+        "yes",
+        "they",
+        "re",
+        "all",
+        "broke",
+        "and"
+      ]
+    },
+    {
+      "cluster_id": "keep-fears-market-sentiment",
+      "cluster_name": "keep / fears",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "the",
+        "keep",
+        "fears",
+        "and",
+        "queen",
+        "down",
+        "to",
+        "sell"
+      ]
+    },
+    {
+      "cluster_id": "earnings-it-market-sentiment",
+      "cluster_name": "earnings / it",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "the",
+        "earnings",
+        "it",
+        "is",
+        "not",
+        "numbers",
+        "itself",
+        "but"
+      ]
+    },
+    {
+      "cluster_id": "rs-lakh-market-sentiment",
+      "cluster_name": "rs / lakh",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "rs",
+        "lakh",
+        "crs",
+        "of",
+        "fii",
+        "selling",
+        "intensity",
+        "sell"
+      ]
+    },
+    {
+      "cluster_id": "uae-saudiarabia-market-sentiment",
+      "cluster_name": "uae / saudiarabia",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "uae",
+        "saudiarabia",
+        "china",
+        "are",
+        "all",
+        "asking",
+        "pakistan",
+        "to"
+      ]
+    },
+    {
+      "cluster_id": "rss-bjp-market-sentiment",
+      "cluster_name": "rss / bjp",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "rss",
+        "bjp",
+        "热度代理",
+        "iamakstalin"
+      ]
+    },
+    {
+      "cluster_id": "narendramodi-am-market-sentiment",
+      "cluster_name": "narendramodi / am",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "narendramodi",
+        "am",
+        "now",
+        "in",
+        "la",
+        "california",
+        "to",
+        "my"
+      ]
+    },
+    {
+      "cluster_id": "at-dailylawine-market-sentiment",
+      "cluster_name": "at / dailylawine",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "at",
+        "the",
+        "dailylawine",
+        "ming",
+        "breath",
+        "hitched",
+        "flip",
+        "ambers"
+      ]
+    },
+    {
+      "cluster_id": "mrrexpatrick-deniseshrivell-market-sentiment",
+      "cluster_name": "mrrexpatrick / deniseshrivell",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "mrrexpatrick",
+        "deniseshrivell",
+        "what",
+        "surprise",
+        "热度代理",
+        "oldjoeschmo"
+      ]
+    },
+    {
+      "cluster_id": "spent-some-market-sentiment",
+      "cluster_name": "spent / some",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "spent",
+        "some",
+        "time",
+        "with",
+        "simon",
+        "cat",
+        "today",
+        "ux"
+      ]
+    },
+    {
+      "cluster_id": "llallawg-lu-market-sentiment",
+      "cluster_name": "llallawg / lu",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "llallawg",
+        "lu",
+        "sichu",
+        "bas",
+        "logic",
+        "lunacleon",
+        "norvid",
+        "studies"
+      ]
+    },
+    {
+      "cluster_id": "toplurk-philipproudfoot-market-sentiment",
+      "cluster_name": "toplurk / philipproudfoot",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "toplurk",
+        "philipproudfoot",
+        "what",
+        "surprise",
+        "random",
+        "guy",
+        "named",
+        "lurk"
+      ]
+    },
+    {
+      "cluster_id": "zigmanfreud-notthefakesvp-market-sentiment",
+      "cluster_name": "zigmanfreud / notthefakesvp",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "zigmanfreud",
+        "notthefakesvp",
+        "the",
+        "race",
+        "baiting",
+        "channel",
+        "no",
+        "surprise"
+      ]
+    },
+    {
+      "cluster_id": "betsycashmoney-have-market-sentiment",
+      "cluster_name": "betsycashmoney / have",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "betsycashmoney",
+        "have",
+        "him",
+        "blocked",
+        "because",
+        "he",
+        "has",
+        "some"
+      ]
+    },
+    {
+      "cluster_id": "her-soft-market-sentiment",
+      "cluster_name": "her / soft",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "her",
+        "soft",
+        "sigh",
+        "escapes",
+        "drawing",
+        "attention",
+        "back",
+        "to"
+      ]
+    },
+    {
+      "cluster_id": "trump-budget-market-sentiment",
+      "cluster_name": "trump / budget",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "trump",
+        "budget",
+        "proposal",
+        "includes",
+        "million",
+        "in",
+        "funding",
+        "cuts"
+      ]
+    },
+    {
+      "cluster_id": "slwo7wxto1bo-likeyinluy-market-sentiment",
+      "cluster_name": "slwo7wxto1bo / likeyinluy",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "slwo7wxto1bo",
+        "likeyinluy",
+        "maoshen",
+        "不是吧",
+        "是个超女",
+        "也不是演员",
+        "热度代理",
+        "crystal38074840"
+      ]
+    },
+    {
+      "cluster_id": "access初日-東京-market-sentiment",
+      "cluster_name": "access初日 / 東京",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "access初日",
+        "東京",
+        "今日",
+        "大西",
+        "八代目儀兵衛",
+        "https",
+        "热度代理",
+        "yfujimi"
+      ]
+    },
+    {
+      "cluster_id": "ayanoasahina-热度代理-market-sentiment",
+      "cluster_name": "ayanoasahina / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "ayanoasahina",
+        "但是你长的好好看",
+        "热度代理",
+        "canitastevenom"
+      ]
+    },
+    {
+      "cluster_id": "whyyoutouzhele-表面姐妹情-market-sentiment",
+      "cluster_name": "whyyoutouzhele / 表面姐妹情",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "whyyoutouzhele",
+        "全红婵太可怜了",
+        "表面姐妹情",
+        "背后300人微信大群天天骂她胖",
+        "网暴她到抑郁",
+        "央视记者",
+        "裁判",
+        "运动"
+      ]
+    },
+    {
+      "cluster_id": "forab-热度代理-market-sentiment",
+      "cluster_name": "forab / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "forab",
+        "热度代理",
+        "btcjhq"
+      ]
+    },
+    {
+      "cluster_id": "maoshen-热度代理-market-sentiment",
+      "cluster_name": "maoshen / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "maoshen",
+        "热度代理",
+        "feiyang20085757"
+      ]
+    },
+    {
+      "cluster_id": "不是因为热-是因为吵-market-sentiment",
+      "cluster_name": "不是因为热 / 是因为吵",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "不是因为热",
+        "是因为吵",
+        "密歇根州dowagiac的居民快被逼疯了",
+        "热度代理",
+        "mubeitech"
+      ]
+    },
+    {
+      "cluster_id": "近日-https-market-sentiment",
+      "cluster_name": "近日 / https",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "近日",
+        "https",
+        "co",
+        "kez4h0ntf",
+        "热度代理",
+        "whyyoutouzhele"
+      ]
+    },
+    {
+      "cluster_id": "dav1dpancs-qian-policy-inflation",
+      "cluster_name": "dav1dpancs / qian",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "dav1dpancs",
+        "qian",
+        "lao41992",
+        "longlichuan",
+        "ssk2024",
+        "加州政府自2018年以来实施了大量政策干预",
+        "主要集中在劳动",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "顶不住-tag-market-sentiment",
+      "cluster_name": "顶不住 / tag",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "顶不住",
+        "这一轮监管压力",
+        "比如一线的奶昔",
+        "tag",
+        "花云这些行业巨头",
+        "原因其实很现实",
+        "越大",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "厚积才会爆发-耐心自有回甘-market-sentiment",
+      "cluster_name": "厚积才会爆发 / 耐心自有回甘",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "厚积才会爆发",
+        "耐心自有回甘",
+        "interlink",
+        "v5",
+        "升级上线",
+        "全新直连审核员",
+        "kyc",
+        "服务"
+      ]
+    },
+    {
+      "cluster_id": "superrich1981-yiqifacai-market-sentiment",
+      "cluster_name": "superrich1981 / yiqifacai",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "superrich1981",
+        "yiqifacai",
+        "是真的",
+        "不是假的",
+        "证监会",
+        "已确认",
+        "热度代理",
+        "grok"
+      ]
+    },
+    {
+      "cluster_id": "近日-指导美团-market-sentiment",
+      "cluster_name": "近日 / 指导美团",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "近日",
+        "指导美团",
+        "淘宝闪购",
+        "京东3家平台企业严格落实即将实施的",
+        "热度代理",
+        "aberdeenamain"
+      ]
+    },
+    {
+      "cluster_id": "wangzhian8848-热度代理-market-sentiment",
+      "cluster_name": "wangzhian8848 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "wangzhian8848",
+        "而是权力没有监管",
+        "热度代理",
+        "agijht3"
+      ]
+    },
+    {
+      "cluster_id": "alex8282019-时间一长-market-sentiment",
+      "cluster_name": "alex8282019 / 时间一长",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "alex8282019",
+        "关键就是监管原因",
+        "没什么题材可拍了",
+        "时间一长",
+        "热度代理",
+        "sam",
+        "pan77"
+      ]
+    },
+    {
+      "cluster_id": "今日避坑指南-别被指标坑了-market-sentiment",
+      "cluster_name": "今日避坑指南 / 别被指标坑了",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "今日避坑指南",
+        "别被指标坑了",
+        "雷1",
+        "把指标当圣经",
+        "机械执行金叉死叉",
+        "市场很多时候会",
+        "骗线",
+        "雷2"
+      ]
+    },
+    {
+      "cluster_id": "本日-強風-market-sentiment",
+      "cluster_name": "本日 / 強風",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "本日",
+        "強風",
+        "看板",
+        "営業",
+        "明日",
+        "為当日予約可能日",
+        "関係",
+        "優雅"
+      ]
+    },
+    {
+      "cluster_id": "最后查聊天记录悬浮盗qq在石台周围-粗略看去-market-sentiment",
+      "cluster_name": "最后查聊天记录悬浮盗qq在石台周围 / 粗略看去",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "萧炎手掌抹过虚空",
+        "最后查聊天记录悬浮盗qq在石台周围",
+        "粗略看去",
+        "热度代理",
+        "matthieurash"
+      ]
+    },
+    {
+      "cluster_id": "mayntrio-这种3d画风我更不感冒-market-sentiment",
+      "cluster_name": "mayntrio / 这种3d画风我更不感冒",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "mayntrio",
+        "这种3d画风我更不感冒",
+        "年1月和师姐做细胞的某一天师姐告诉我深空会上线哥哥",
+        "是阴湿的骨",
+        "热度代理",
+        "btsubomi83903"
+      ]
+    },
+    {
+      "cluster_id": "訪問看護師-東京-market-sentiment",
+      "cluster_name": "訪問看護師 / 東京",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "訪問看護師",
+        "東京",
+        "公演",
+        "空席",
+        "目立",
+        "年前",
+        "热度代理",
+        "momoryuko2580"
+      ]
+    },
+    {
+      "cluster_id": "台風並-気力-market-sentiment",
+      "cluster_name": "台風並 / 気力",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "台風並",
+        "気力",
+        "近所",
+        "是空",
+        "初訪問",
+        "看板",
+        "魚介",
+        "全粒粉"
+      ]
+    },
+    {
+      "cluster_id": "多空双杀-甚至好几倍-market-sentiment",
+      "cluster_name": "多空双杀 / 甚至好几倍",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "多空双杀",
+        "有人一波翻了倍",
+        "甚至好几倍",
+        "看着挺眼红",
+        "能守住这些钱的",
+        "没几个",
+        "前期赚",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "不跌-热度代理-market-sentiment",
+      "cluster_name": "不跌 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "不跌",
+        "热度代理",
+        "pathusa",
+        "宏观/市场情绪"
+      ]
+    },
+    {
+      "cluster_id": "秋葉原-空模様-market-sentiment",
+      "cluster_name": "秋葉原 / 空模様",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "秋葉原",
+        "空模様",
+        "周年記念展",
+        "今日",
+        "大好評開催中",
+        "看板",
+        "目印",
+        "美闘士"
+      ]
+    },
+    {
+      "cluster_id": "growth-potential-market-sentiment",
+      "cluster_name": "growth / potential",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "growth",
+        "potential",
+        "amidst",
+        "competitive",
+        "landscape",
+        "pl",
+        "recent",
+        "analyst"
+      ]
+    },
+    {
+      "cluster_id": "congrats-saltydocem-market-sentiment",
+      "cluster_name": "congrats / saltydocem",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "congrats",
+        "saltydocem",
+        "you",
+        "re",
+        "top",
+        "prophit",
+        "for",
+        "your"
+      ]
+    },
+    {
+      "cluster_id": "coinmarketcap-tl-market-sentiment",
+      "cluster_name": "coinmarketcap / tl",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "coinmarketcap",
+        "tl",
+        "dr",
+        "binance",
+        "alpha",
+        "made",
+        "strategic",
+        "airdrops"
+      ]
+    },
+    {
+      "cluster_id": "sentiment-check-market-sentiment",
+      "cluster_name": "sentiment / check",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "sentiment",
+        "check",
+        "https",
+        "co",
+        "n4wwpz18yw",
+        "热度代理",
+        "houseofjordans"
+      ]
+    },
+    {
+      "cluster_id": "some-chinchillas-market-sentiment",
+      "cluster_name": "some / chinchillas",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "some",
+        "chinchillas",
+        "are",
+        "naturally",
+        "smaller",
+        "or",
+        "larger",
+        "weight"
+      ]
+    },
+    {
+      "cluster_id": "want-to-market-sentiment",
+      "cluster_name": "want / to",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "want",
+        "to",
+        "spot",
+        "crypto",
+        "moves",
+        "early",
+        "watch",
+        "sentiment"
+      ]
+    },
+    {
+      "cluster_id": "trump-rally-market-sentiment",
+      "cluster_name": "trump / rally",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "the",
+        "trump",
+        "rally",
+        "is",
+        "hitting",
+        "wall",
+        "as",
+        "brent"
+      ]
+    },
+    {
+      "cluster_id": "green-but-market-sentiment",
+      "cluster_name": "green / but",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "green",
+        "but",
+        "weak",
+        "crypto",
+        "opens",
+        "sentiment",
+        "still",
+        "behind"
+      ]
+    },
+    {
+      "cluster_id": "who-in-market-sentiment",
+      "cluster_name": "who / in",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "who",
+        "in",
+        "bitcoin",
+        "sitting",
+        "at",
+        "longs",
+        "shorts",
+        "comment"
+      ]
+    },
+    {
+      "cluster_id": "randpaul-traceykoehler-market-sentiment",
+      "cluster_name": "randpaul / traceykoehler",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "randpaul",
+        "traceykoehler",
+        "buddy",
+        "wtf",
+        "are",
+        "you",
+        "talking",
+        "about"
+      ]
+    },
+    {
+      "cluster_id": "money-everyday-market-sentiment",
+      "cluster_name": "money / everyday",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "money",
+        "everyday",
+        "if",
+        "you",
+        "spend",
+        "make",
+        "getting",
+        "paid"
+      ]
+    },
+    {
+      "cluster_id": "living-on-market-sentiment",
+      "cluster_name": "living / on",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "we",
+        "re",
+        "living",
+        "on",
+        "borrowed",
+        "time",
+        "national",
+        "debt"
+      ]
+    },
+    {
+      "cluster_id": "and-thestaad-market-sentiment",
+      "cluster_name": "and / thestaad",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "and",
+        "thestaad",
+        "they",
+        "gave",
+        "us",
+        "usury",
+        "epstein",
+        "island"
+      ]
+    },
+    {
+      "cluster_id": "to-see-market-sentiment",
+      "cluster_name": "to / see",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "interesting",
+        "to",
+        "see",
+        "that",
+        "it",
+        "uk",
+        "charity",
+        "more"
+      ]
+    },
+    {
+      "cluster_id": "so-let-market-sentiment",
+      "cluster_name": "so / let",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "so",
+        "let",
+        "me",
+        "get",
+        "this",
+        "straight",
+        "and",
+        "no"
+      ]
+    },
+    {
+      "cluster_id": "instead-of-market-sentiment",
+      "cluster_name": "instead / of",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "instead",
+        "of",
+        "uhuru",
+        "the",
+        "drunken",
+        "master",
+        "to",
+        "assist"
+      ]
+    },
+    {
+      "cluster_id": "if-you-market-sentiment",
+      "cluster_name": "if / you",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "if",
+        "you",
+        "say",
+        "satanic",
+        "people",
+        "run",
+        "this",
+        "world"
+      ]
+    },
+    {
+      "cluster_id": "openal-is-market-sentiment",
+      "cluster_name": "openal / is",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "openal",
+        "is",
+        "offering",
+        "private",
+        "equity",
+        "firms",
+        "guaranteed",
+        "minimum"
+      ]
+    },
+    {
+      "cluster_id": "they-designed-market-sentiment",
+      "cluster_name": "they / designed",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "they",
+        "designed",
+        "system",
+        "you",
+        "can",
+        "never",
+        "escape",
+        "every"
+      ]
+    },
+    {
+      "cluster_id": "volatility-is-market-sentiment",
+      "cluster_name": "volatility / is",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "volatility",
+        "is",
+        "the",
+        "emotional",
+        "toll",
+        "levied",
+        "against",
+        "our"
+      ]
+    },
+    {
+      "cluster_id": "pepemoonboy-like-market-sentiment",
+      "cluster_name": "pepemoonboy / like",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "pepemoonboy",
+        "like",
+        "to",
+        "think",
+        "it",
+        "because",
+        "the",
+        "emergence"
+      ]
+    },
+    {
+      "cluster_id": "wind-and-market-sentiment",
+      "cluster_name": "wind / and",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "wind",
+        "and",
+        "ryanmaue",
+        "solar",
+        "energy",
+        "were",
+        "already",
+        "cheaper"
+      ]
+    },
+    {
+      "cluster_id": "quiet-shift-market-sentiment",
+      "cluster_name": "quiet / shift",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "quiet",
+        "shift",
+        "in",
+        "defi",
+        "infrastructure",
+        "kamino",
+        "is",
+        "turning"
+      ]
+    },
+    {
+      "cluster_id": "justeman001-jacksonhinklle-market-sentiment",
+      "cluster_name": "justeman001 / jacksonhinklle",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "justeman001",
+        "jacksonhinklle",
+        "yes",
+        "the",
+        "claim",
+        "checks",
+        "out",
+        "as"
+      ]
+    },
+    {
+      "cluster_id": "recent-geopolitical-market-sentiment",
+      "cluster_name": "recent / geopolitical",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "recent",
+        "geopolitical",
+        "developments",
+        "amp",
+        "volatility",
+        "in",
+        "global",
+        "energy"
+      ]
+    },
+    {
+      "cluster_id": "crudeoil-isn-market-sentiment",
+      "cluster_name": "crudeoil / isn",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "crudeoil",
+        "isn",
+        "hitting",
+        "realestate",
+        "directly",
+        "but",
+        "it",
+        "raising"
+      ]
+    },
+    {
+      "cluster_id": "of-it-market-sentiment",
+      "cluster_name": "of / it",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "of",
+        "it",
+        "jeff",
+        "norwich",
+        "get",
+        "more",
+        "but",
+        "sell"
+      ]
+    },
+    {
+      "cluster_id": "年的a股-震荡磨底-market-sentiment",
+      "cluster_name": "年的a股 / 震荡磨底",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "年的a股",
+        "震荡磨底",
+        "板块快速轮动",
+        "天天追热点",
+        "换股票",
+        "最后本金越做越少",
+        "内幕消息",
+        "精准择时"
+      ]
+    },
+    {
+      "cluster_id": "级别虽小-波动-market-sentiment",
+      "cluster_name": "级别虽小 / 波动",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "级别虽小",
+        "一样可以被预判",
+        "波动",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "投资要守正-不赌消息-risk-pricing",
+      "cluster_name": "投资要守正 / 不赌消息",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "投资要守正",
+        "不赌消息",
+        "不追热门",
+        "只做波段趋势",
+        "按趋势交易",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "市场空间-技术验证-supply-order",
+      "cluster_name": "市场空间 / 技术验证",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "supply_order",
+      "top_keywords": [
+        "市场空间",
+        "技术验证",
+        "初期量产",
+        "过渡",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "天均线-短期趋势走坏-market-sentiment",
+      "cluster_name": "天均线 / 短期趋势走坏",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "天均线",
+        "短期趋势走坏",
+        "接下来要观察",
+        "我反复说过",
+        "今年投资比较难做",
+        "不要单吊一只基金",
+        "一定要均衡配置",
+        "基金"
+      ]
+    },
+    {
+      "cluster_id": "看线投资-成本已经大-market-sentiment",
+      "cluster_name": "看线投资 / 成本已经大",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "看线投资",
+        "所谓的线好看后",
+        "才会追高买入的",
+        "这符合人的本性",
+        "成本已经大",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "赚钱的机会多-摆地摊-market-sentiment",
+      "cluster_name": "赚钱的机会多 / 摆地摊",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "赚钱的机会多",
+        "摆地摊",
+        "扛楼",
+        "修脚",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "总台热播剧-家事法庭-market-sentiment",
+      "cluster_name": "总台热播剧 / 家事法庭",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "总台热播剧",
+        "家事法庭",
+        "取材自400多个真实案",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "话题讨论-案例讨论-market-sentiment",
+      "cluster_name": "话题讨论 / 案例讨论",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "话题讨论",
+        "儿子再婚领证办酒",
+        "案例讨论",
+        "吴律",
+        "我儿子今年33",
+        "在大学当辅导员",
+        "结婚1年",
+        "和前儿媳性格不合离婚2年"
+      ]
+    },
+    {
+      "cluster_id": "举了两个例子-还有一个是我在微博认识的两个大v-market-sentiment",
+      "cluster_name": "举了两个例子 / 还有一个是我在微博认识的两个大v",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "举了两个例子",
+        "还有一个是我在微博认识的两个大v",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "男子出轨染病给女友同意赔50万又后悔-这个案子-market-sentiment",
+      "cluster_name": "男子出轨染病给女友同意赔50万又后悔 / 这个案子",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "男子出轨染病给女友同意赔50万又后悔",
+        "这个案子",
+        "还是很有意思的",
+        "男方出轨染病",
+        "与女方分手",
+        "协议规定",
+        "男方需支付女方50万补偿",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "炒股算不算-挥霍财产-market-sentiment",
+      "cluster_name": "炒股算不算 / 挥霍财产",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "就导致大家看不懂",
+        "炒股算不算",
+        "挥霍财产",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "阳刚语文策略-比如说-market-sentiment",
+      "cluster_name": "阳刚语文策略 / 比如说",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "我觉得不如称之为",
+        "阳刚语文策略",
+        "这种策略的关键是",
+        "比如说",
+        "他认为",
+        "侵权",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "我在朋友圈-重复的多一些-market-sentiment",
+      "cluster_name": "我在朋友圈 / 重复的多一些",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "我在朋友圈",
+        "重复的多一些",
+        "在微博我也讲过的",
+        "只讲过一次",
+        "不认真看微博",
+        "自然不知道",
+        "不明白",
+        "跌一点就疯狂"
+      ]
+    },
+    {
+      "cluster_id": "看首页说这叫-阳刚语文策略-market-sentiment",
+      "cluster_name": "看首页说这叫 / 阳刚语文策略",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "李荣浩单赢变双输",
+        "看首页说这叫",
+        "阳刚语文策略",
+        "但感觉也是一种",
+        "造谣型维权",
+        "的新型维权方式",
+        "空口无凭",
+        "明指暗指"
+      ]
+    },
+    {
+      "cluster_id": "最新策略-网页链接-market-sentiment",
+      "cluster_name": "最新策略 / 网页链接",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "最新策略",
+        "网页链接",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "趋势策略-吃的就是这些-market-sentiment",
+      "cluster_name": "趋势策略 / 吃的就是这些",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "趋势策略",
+        "在高频量化时代",
+        "其实已经被打爆了",
+        "能形成极大合力",
+        "抵抗掉量化的影响",
+        "很多量化的策略",
+        "吃的就是这些",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "绝对自由-放下一切-market-sentiment",
+      "cluster_name": "绝对自由 / 放下一切",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "绝对自由",
+        "固定的安静时间",
+        "放下一切",
+        "拒绝一切",
+        "坚持下去",
+        "它的回报是惊人的",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "确实-恋殖必吹清-market-sentiment",
+      "cluster_name": "确实 / 恋殖必吹清",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "确实",
+        "恋殖必吹清",
+        "这个总结太好了",
+        "来管理一下",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "看到问题-我都会说一下-market-sentiment",
+      "cluster_name": "看到问题 / 我都会说一下",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "看到问题",
+        "我都会说一下",
+        "有人理解",
+        "也有人不理解",
+        "甚至反感我",
+        "但是看到我不说",
+        "剩下的",
+        "就看自己了"
+      ]
+    },
+    {
+      "cluster_id": "高嫁吞针-下嫁吃屎-market-sentiment",
+      "cluster_name": "高嫁吞针 / 下嫁吃屎",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "高嫁吞针",
+        "下嫁吃屎",
+        "平嫁靠自己",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "我的观点一致-人类不是神-market-sentiment",
+      "cluster_name": "我的观点一致 / 人类不是神",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "我的观点一致",
+        "人类不是神",
+        "就是会犯错的生物",
+        "会乌龙",
+        "会迷糊",
+        "那犯了错怎么办",
+        "认错",
+        "赔偿"
+      ]
+    },
+    {
+      "cluster_id": "莫言批判-歌颂和批判-market-sentiment",
+      "cluster_name": "莫言批判 / 歌颂和批判",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "莫言批判",
+        "歌颂和批判",
+        "对文学的庸俗化",
+        "文学是兴之所致",
+        "也是社会",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "两个观点-岁成人了-market-sentiment",
+      "cluster_name": "两个观点 / 岁成人了",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "两个观点",
+        "彻底放飞自我了",
+        "岁成人了",
+        "没必要这么要求",
+        "能学就毕业",
+        "学不了就搬砖",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "刚看了一下ge-从我关注的时刻开始已涨了7倍多-market-sentiment",
+      "cluster_name": "刚看了一下ge / 从我关注的时刻开始已涨了7倍多",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "刚看了一下ge",
+        "从我关注的时刻开始已涨了7倍多",
+        "百年工业巨头ge股价跌至26",
+        "美元",
+        "濒临破产",
+        "市场一片看衰",
+        "谁料短短数年"
+      ]
+    },
+    {
+      "cluster_id": "新一代小米su7又拆车了-米粉-market-sentiment",
+      "cluster_name": "新一代小米su7又拆车了 / 米粉",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "新一代小米su7又拆车了",
+        "米粉",
+        "简直就像艺术品",
+        "弹幕",
+        "国际米",
+        "五界严父",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "su7-拆出来-market-sentiment",
+      "cluster_name": "su7 / 拆出来",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "su7",
+        "拆出来",
+        "让大家看看",
+        "也放心",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "有开发者拆解-claude-market-sentiment",
+      "cluster_name": "有开发者拆解 / claude",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "有开发者拆解",
+        "claude",
+        "code",
+        "源码发现",
+        "anthropic",
+        "足足有",
+        "用户指纹追踪维",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "小鹏g6超级增程是怎么塞下大电池和大油箱的-拆解展示细节-market-sentiment",
+      "cluster_name": "小鹏g6超级增程是怎么塞下大电池和大油箱的 / 拆解展示细节",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "小鹏g6超级增程是怎么塞下大电池和大油箱的",
+        "拆解展示细节",
+        "大v聊车",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "丰田铂智7全网首拆-一早刷到铂智7的拆解视频-market-sentiment",
+      "cluster_name": "丰田铂智7全网首拆 / 一早刷到铂智7的拆解视频",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "丰田铂智7全网首拆",
+        "一早刷到铂智7的拆解视频",
+        "看完有点服气",
+        "前舱塞了13根梁",
+        "横6纵2竖",
+        "车门双防撞梁",
+        "现在15万多的铂智7上也能",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "雷总-拆解的新su7会装回-market-sentiment",
+      "cluster_name": "雷总 / 拆解的新su7会装回",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "雷总",
+        "拆解的新su7会装回",
+        "以加速形式发视频",
+        "听爽总说得需要装10几个小时",
+        "拆解的是新su7",
+        "pro版本",
+        "新一代su7",
+        "雷军直播"
+      ]
+    },
+    {
+      "cluster_id": "其实炒股炒币的人一天天的b话特别多-记吃不记打-market-sentiment",
+      "cluster_name": "其实炒股炒币的人一天天的b话特别多 / 记吃不记打",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "其实炒股炒币的人一天天的b话特别多",
+        "都是有用的废话",
+        "记吃不记打",
+        "这类基本上你让ta写自我记录也是一样的",
+        "写了半",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "对于复盘-五个哲学领域-market-sentiment",
+      "cluster_name": "对于复盘 / 五个哲学领域",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "对于复盘",
+        "我最开始是写日记",
+        "后来做成反思卡",
+        "五个哲学领域",
+        "涵盖人生各个维度",
+        "其实很简单",
+        "就是承认",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "别人难受-咱们舒服-market-sentiment",
+      "cluster_name": "别人难受 / 咱们舒服",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "别人难受",
+        "咱们舒服",
+        "今日复盘",
+        "a股跌一般",
+        "昨天跌",
+        "但咱们是红的",
+        "前天也红",
+        "绿一天"
+      ]
+    },
+    {
+      "cluster_id": "睡一觉-睡醒再说-market-sentiment",
+      "cluster_name": "睡一觉 / 睡醒再说",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "睡一觉",
+        "睡醒再说",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "微博声浪计划-听见微博-market-sentiment",
+      "cluster_name": "微博声浪计划 / 听见微博",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "微博声浪计划",
+        "听见微博",
+        "晚间复盘",
+        "红红火火每一天1188的微博音频",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "和昨天10点微博提示的一模一样-过了3937后-market-sentiment",
+      "cluster_name": "和昨天10点微博提示的一模一样 / 过了3937后",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "简单复盘了一下",
+        "记录一下小经典",
+        "和昨天10点微博提示的一模一样",
+        "过了3937后",
+        "冲了11个点直接翻脸打绿30个点",
+        "盘中提示走弱了",
+        "反复",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "空仓可以规避90-的回撤-market-sentiment",
+      "cluster_name": "空仓可以规避90 / 的回撤",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "这套心法送给你",
+        "空仓可以规避90",
+        "的回撤",
+        "低吸可以躲过90",
+        "的追赶",
+        "认怂可以减少90",
+        "的震荡",
+        "顺势可以收割90"
+      ]
+    },
+    {
+      "cluster_id": "不会复盘的人-财经-market-sentiment",
+      "cluster_name": "不会复盘的人 / 财经",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "不会复盘的人",
+        "财经",
+        "今日看盘",
+        "股票",
+        "或者只是盯着盈",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "楼市第一线-如果开闸放水-policy-inflation",
+      "cluster_name": "楼市第一线 / 如果开闸放水",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "楼市第一线",
+        "如果开闸放水",
+        "大通胀就会降临",
+        "它是解决债务",
+        "经济",
+        "消费的万能药",
+        "如果债务太多",
+        "偿还不了怎么办"
+      ]
+    },
+    {
+      "cluster_id": "同学-蹦来蹦去的-market-sentiment",
+      "cluster_name": "同学 / 蹦来蹦去的",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "同学",
+        "蹦来蹦去的",
+        "把世界搅得一团糟",
+        "尬在那里了",
+        "大选对他是个考验",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "周四-该国-market-sentiment",
+      "cluster_name": "周四 / 该国",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "周四",
+        "该国",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "冷知识-月经-market-sentiment",
+      "cluster_name": "冷知识 / 月经",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "冷知识",
+        "月经",
+        "英文menstruation里的",
+        "men",
+        "居然和",
+        "男人",
+        "没关系",
+        "其实它来自拉丁语"
+      ]
+    },
+    {
+      "cluster_id": "林耘有话说-看盘印象-market-sentiment",
+      "cluster_name": "林耘有话说 / 看盘印象",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "林耘有话说",
+        "看盘印象",
+        "a股盘面异动",
+        "周期股明显转弱",
+        "市场或担心滞胀",
+        "同时",
+        "a股"
+      ]
+    },
+    {
+      "cluster_id": "选择大于努力-热度代理-market-sentiment",
+      "cluster_name": "选择大于努力 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "四大经济周期理论",
+        "人生发财靠康波",
+        "选择大于努力",
+        "国运就是命运等",
+        "热度代理",
+        "宏观/市场情绪"
+      ]
+    },
+    {
+      "cluster_id": "草裙灯-挖到宝了-market-sentiment",
+      "cluster_name": "草裙灯 / 挖到宝了",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "草裙灯",
+        "葫芦灯横向测评",
+        "挖到宝了",
+        "热度代理",
+        "jojo爱家居"
+      ]
+    },
+    {
+      "cluster_id": "谁懂-好代陆沉-market-sentiment",
+      "cluster_name": "谁懂 / 好代陆沉",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "谁懂",
+        "好代陆沉",
+        "热度代理",
+        "予枝沉沦"
+      ]
+    },
+    {
+      "cluster_id": "瘦了20斤才知道的100个减肥的知识-热度代理-market-sentiment",
+      "cluster_name": "瘦了20斤才知道的100个减肥的知识 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "瘦了20斤才知道的100个减肥的知识",
+        "热度代理",
+        "钰宝",
+        "减肥成功版"
+      ]
+    },
+    {
+      "cluster_id": "这个人-热度代理-market-sentiment",
+      "cluster_name": "这个人 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "这个人",
+        "热度代理",
+        "祝你鱼块"
+      ]
+    },
+    {
+      "cluster_id": "黑色系-绍兴美甲-market-sentiment",
+      "cluster_name": "黑色系 / 绍兴美甲",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "黑色系",
+        "绍兴美甲",
+        "热度代理",
+        "kikokestudio"
+      ]
+    },
+    {
+      "cluster_id": "补钙长高高-热度代理-market-sentiment",
+      "cluster_name": "补钙长高高 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "补钙长高高",
+        "热度代理",
+        "左右的小饭桌"
+      ]
+    },
+    {
+      "cluster_id": "淄博这封信-优秀笔杆子-market-sentiment",
+      "cluster_name": "淄博这封信 / 优秀笔杆子",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "淄博这封信",
+        "优秀笔杆子",
+        "不愧是公考大省",
+        "热度代理",
+        "森林有光"
+      ]
+    },
+    {
+      "cluster_id": "这个背部错误-热度代理-market-sentiment",
+      "cluster_name": "这个背部错误 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "这个背部错误",
+        "浪费你很多时间",
+        "热度代理",
+        "gandy"
+      ]
+    },
+    {
+      "cluster_id": "平坦小腹-整整瘦了一圈-market-sentiment",
+      "cluster_name": "平坦小腹 / 整整瘦了一圈",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "快速练出马甲线",
+        "平坦小腹",
+        "整整瘦了一圈",
+        "热度代理",
+        "熊猫叮"
+      ]
+    },
+    {
+      "cluster_id": "干货-语无伦次-market-sentiment",
+      "cluster_name": "干货 / 语无伦次",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "干货",
+        "语无伦次",
+        "冷场小能手",
+        "快速提升表达力",
+        "热度代理",
+        "小涵语言艺术"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-屁桃-market-sentiment",
+      "cluster_name": "热度代理 / 屁桃",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "屁桃",
+        "祺祺"
+      ]
+    },
+    {
+      "cluster_id": "学习摄影-热度代理-market-sentiment",
+      "cluster_name": "学习摄影 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "学习摄影",
+        "热度代理",
+        "商小蛮"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-xs-market-sentiment",
+      "cluster_name": "热度代理 / xs",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "xs",
+        "w烘培"
+      ]
+    },
+    {
+      "cluster_id": "荔枝酸奶冻-热度代理-market-sentiment",
+      "cluster_name": "荔枝酸奶冻 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "荔枝酸奶冻",
+        "热度代理",
+        "欢嫂"
+      ]
+    },
+    {
+      "cluster_id": "joe-方小宝-market-sentiment",
+      "cluster_name": "joe / 方小宝",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "joe",
+        "方小宝",
+        "热度代理",
+        "曾舜晞"
+      ]
+    },
+    {
+      "cluster_id": "腿粗进-梨形进-market-sentiment",
+      "cluster_name": "腿粗进 / 梨形进",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "腿粗进",
+        "梨形进",
+        "不露腿辣裙",
+        "总有你喜欢",
+        "热度代理",
+        "走向世界的彭美丽"
+      ]
+    },
+    {
+      "cluster_id": "凌晨三点-我的卧室-market-sentiment",
+      "cluster_name": "凌晨三点 / 我的卧室",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "凌晨三点",
+        "我的卧室",
+        "热度代理",
+        "大拇哥花"
+      ]
+    },
+    {
+      "cluster_id": "救命-我的3000块在打我的12000块-market-sentiment",
+      "cluster_name": "救命 / 我的3000块在打我的12000块",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "救命",
+        "我的3000块在打我的12000块",
+        "热度代理",
+        "招财与金宝"
+      ]
+    },
+    {
+      "cluster_id": "爱她-热度代理-market-sentiment",
+      "cluster_name": "爱她 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "爱她",
+        "拒绝男友这些行为",
+        "热度代理",
+        "皮肤硕士tino学长"
+      ]
+    },
+    {
+      "cluster_id": "蛋花-秘制做法-market-sentiment",
+      "cluster_name": "蛋花 / 秘制做法",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "蛋花",
+        "秘制做法",
+        "热度代理",
+        "山梨奶奶"
+      ]
+    },
+    {
+      "cluster_id": "威海已沦陷-热度代理-market-sentiment",
+      "cluster_name": "威海已沦陷 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "威海已沦陷",
+        "热度代理",
+        "夏木studio"
+      ]
+    },
+    {
+      "cluster_id": "网友太会爆料-热度代理-market-sentiment",
+      "cluster_name": "网友太会爆料 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "网友太会爆料",
+        "热度代理",
+        "yummy鸭"
+      ]
+    },
+    {
+      "cluster_id": "外国人-韩语好难啊-market-sentiment",
+      "cluster_name": "外国人 / 韩语好难啊",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "外国人",
+        "韩语好难啊",
+        "魏大勋",
+        "这不就拼音",
+        "热度代理",
+        "韩语老师candy"
+      ]
+    },
+    {
+      "cluster_id": "这么丑的娃儿-姬昌也敢捡-market-sentiment",
+      "cluster_name": "这么丑的娃儿 / 姬昌也敢捡",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "这么丑的娃儿",
+        "姬昌也敢捡",
+        "热度代理",
+        "玲玲好"
+      ]
+    },
+    {
+      "cluster_id": "甄嬛传-演得这么像-market-sentiment",
+      "cluster_name": "甄嬛传 / 演得这么像",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 20.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "甄嬛传",
+        "演得这么像",
+        "热度代理",
+        "dearclaire"
+      ]
+    },
+    {
+      "cluster_id": "论交易的核心-流动性-market-sentiment",
+      "cluster_name": "论交易的核心 / 流动性",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "论交易的核心",
+        "流动性",
+        "观点分享",
+        "知识",
+        "经验分享",
+        "热度代理",
+        "葱门大弟子"
+      ]
+    },
+    {
+      "cluster_id": "胜率瞬间翻倍-交易-market-sentiment",
+      "cluster_name": "胜率瞬间翻倍 / 交易",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "学会扫荡流动性",
+        "胜率瞬间翻倍",
+        "交易",
+        "交易员",
+        "交易心得",
+        "涨知识",
+        "干货分享",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "rui-黑天鹅来袭-market-sentiment",
+      "cluster_name": "rui / 黑天鹅来袭",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "rui",
+        "黑天鹅来袭",
+        "有删减",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "天鹅湖-莫大-market-sentiment",
+      "cluster_name": "天鹅湖 / 莫大",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "天鹅湖",
+        "莫大",
+        "黑天鹅双人舞",
+        "表演者",
+        "达丽娜",
+        "莫谢耶娃",
+        "马克",
+        "奇诺"
+      ]
+    },
+    {
+      "cluster_id": "鸟类实拍-鸟宝宝-market-sentiment",
+      "cluster_name": "鸟类实拍 / 鸟宝宝",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "黑天鹅宝宝出生记",
+        "野生动物零距离",
+        "鸟类实拍",
+        "鸟宝宝",
+        "神奇动物在抖音",
+        "热度代理",
+        "佩佩动物世界"
+      ]
+    },
+    {
+      "cluster_id": "宁德时代-深度分析-risk-pricing",
+      "cluster_name": "宁德时代 / 深度分析",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "宁德时代",
+        "深度分析",
+        "热度代理",
+        "长坡厚雪老友记"
+      ]
+    },
+    {
+      "cluster_id": "张雪-商业思维-market-sentiment",
+      "cluster_name": "张雪 / 商业思维",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "张雪",
+        "商业思维",
+        "科普",
+        "知识分享",
+        "商业",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "流动性-流动性陷阱-market-sentiment",
+      "cluster_name": "流动性 / 流动性陷阱",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "流动性",
+        "流动性陷阱",
+        "流动性训练",
+        "分析工具",
+        "科普",
+        "热度代理",
+        "老表学交易"
+      ]
+    },
+    {
+      "cluster_id": "财经知识-商业故事-market-sentiment",
+      "cluster_name": "财经知识 / 商业故事",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "财经知识",
+        "商业故事",
+        "资本",
+        "真实事件",
+        "黑天鹅",
+        "涨知识",
+        "dou+小助手",
+        "基金"
+      ]
+    },
+    {
+      "cluster_id": "黑天鹅-深度解读-market-sentiment",
+      "cluster_name": "黑天鹅 / 深度解读",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "黑天鹅",
+        "深度解读",
+        "读书",
+        "好书推荐",
+        "个人成长",
+        "抖音花式讲书大赛",
+        "热度代理",
+        "叫我十三就行"
+      ]
+    },
+    {
+      "cluster_id": "你认为呢-财富-market-sentiment",
+      "cluster_name": "你认为呢 / 财富",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "你认为呢",
+        "财富",
+        "认知",
+        "黑天鹅",
+        "暴跌",
+        "热度代理",
+        "财智先生"
+      ]
+    },
+    {
+      "cluster_id": "黑天鹅-心理-market-sentiment",
+      "cluster_name": "黑天鹅 / 心理",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "黑天鹅",
+        "心理",
+        "学习",
+        "人生感悟",
+        "知识",
+        "认知",
+        "热度代理",
+        "认知拆解官"
+      ]
+    },
+    {
+      "cluster_id": "黑天鹅-风险-risk-pricing",
+      "cluster_name": "黑天鹅 / 风险",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "黑天鹅",
+        "风险",
+        "从来无法预测",
+        "解读",
+        "塔勒布的经典之作",
+        "预测",
+        "规划",
+        "的认知"
+      ]
+    },
+    {
+      "cluster_id": "黑天鹅-别再被-market-sentiment",
+      "cluster_name": "黑天鹅 / 别再被",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "黑天鹅",
+        "别再被",
+        "意外",
+        "困住",
+        "精读",
+        "投资",
+        "原来破局这么简单",
+        "读书"
+      ]
+    },
+    {
+      "cluster_id": "黑天鹅-重读-market-sentiment",
+      "cluster_name": "黑天鹅 / 重读",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "黑天鹅",
+        "重读",
+        "看完",
+        "这本书",
+        "我才明白",
+        "我们的大脑",
+        "视频里",
+        "我拆解了人类认知系统的四大致命bug"
+      ]
+    },
+    {
+      "cluster_id": "黑天鹅-经典书籍-market-sentiment",
+      "cluster_name": "黑天鹅 / 经典书籍",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "黑天鹅",
+        "经典书籍",
+        "精读",
+        "纳西姆",
+        "塔勒布的",
+        "他告诉我们",
+        "可预测的样子",
+        "它是疯狂的"
+      ]
+    },
+    {
+      "cluster_id": "黑天鹅-世界的真相-market-sentiment",
+      "cluster_name": "黑天鹅 / 世界的真相",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "黑天鹅",
+        "世界的真相",
+        "知识分享",
+        "读书",
+        "一口气看懂经济学",
+        "热度代理",
+        "小a读书圈",
+        "宏观/市场情绪"
+      ]
+    },
+    {
+      "cluster_id": "黑天鹅-经典投资书籍-market-sentiment",
+      "cluster_name": "黑天鹅 / 经典投资书籍",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "黑天鹅",
+        "经典投资书籍",
+        "精读",
+        "损失惨重",
+        "逆势前行",
+        "尼古拉斯",
+        "你将学到",
+        "正视黑天鹅的存在"
+      ]
+    },
+    {
+      "cluster_id": "黑天鹅-读书分享-market-sentiment",
+      "cluster_name": "黑天鹅 / 读书分享",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "黑天鹅",
+        "读书分享",
+        "听书",
+        "心理",
+        "商业思维",
+        "人文社科",
+        "热度代理",
+        "微光读书会"
+      ]
+    },
+    {
+      "cluster_id": "经济名词解释-黑天鹅事件-market-sentiment",
+      "cluster_name": "经济名词解释 / 黑天鹅事件",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "经济名词解释",
+        "黑天鹅事件",
+        "财经",
+        "经济",
+        "黑天鹅",
+        "财经知识",
+        "热度代理",
+        "珊姐爆有料"
+      ]
+    },
+    {
+      "cluster_id": "黑天鹅-万字解读-market-sentiment",
+      "cluster_name": "黑天鹅 / 万字解读",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "黑天鹅",
+        "万字解读",
+        "小a读书圈",
+        "财经",
+        "知识分享",
+        "读书",
+        "一口气看懂经济学",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "人生感悟-财富思维-risk-pricing",
+      "cluster_name": "人生感悟 / 财富思维",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "人生感悟",
+        "财富思维",
+        "认知",
+        "投资",
+        "热度代理",
+        "谢员外观世界"
+      ]
+    },
+    {
+      "cluster_id": "最大灰犀牛-私募信贷危机-market-sentiment",
+      "cluster_name": "最大灰犀牛 / 私募信贷危机",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "最大灰犀牛",
+        "私募信贷危机",
+        "私募信贷",
+        "宏观经济",
+        "掘金计划2026",
+        "热度代理",
+        "黄士铨看世界",
+        "宏观/市场情绪"
+      ]
+    },
+    {
+      "cluster_id": "三个习惯不改-财富-market-sentiment",
+      "cluster_name": "三个习惯不改 / 财富",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "三个习惯不改",
+        "再多存款也会返贫",
+        "财富",
+        "认知",
+        "商业思维",
+        "返贫",
+        "热度代理",
+        "蛟哥"
+      ]
+    },
+    {
+      "cluster_id": "风险经济学-经济学思维-risk-pricing",
+      "cluster_name": "风险经济学 / 经济学思维",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "风险经济学",
+        "经济学思维",
+        "行为心理学",
+        "投资",
+        "认知提升",
+        "个人成长",
+        "热度代理",
+        "认知便利店m"
+      ]
+    },
+    {
+      "cluster_id": "你问我什么是-最大的风险-risk-pricing",
+      "cluster_name": "你问我什么是 / 最大的风险",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 20.062,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "你问我什么是",
+        "最大的风险",
+        "人生",
+        "人生的列车",
+        "生命的意义",
+        "智慧人生",
+        "丹蕨",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "但还要继续打-热度代理-market-sentiment",
+      "cluster_name": "但还要继续打 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 19.966,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "但还要继续打",
+        "热度代理",
+        "麻薯波比呀"
+      ]
+    },
+    {
+      "cluster_id": "模拟3种不同的选举方式-热度代理-market-sentiment",
+      "cluster_name": "模拟3种不同的选举方式 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 19.966,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "模拟3种不同的选举方式",
+        "热度代理",
+        "阿右科普"
+      ]
+    },
+    {
+      "cluster_id": "韩国大桶勇-历届大选-market-sentiment",
+      "cluster_name": "韩国大桶勇 / 历届大选",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 19.966,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "韩国大桶勇",
+        "历届大选",
+        "热度代理",
+        "止水penguin"
+      ]
+    },
+    {
+      "cluster_id": "自上而下-值得反复细品-market-sentiment",
+      "cluster_name": "自上而下 / 值得反复细品",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 19.966,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "自上而下",
+        "多周期结构分析",
+        "值得反复细品",
+        "热度代理",
+        "交易之镜研习社"
+      ]
+    },
+    {
+      "cluster_id": "有请-第三期-market-sentiment",
+      "cluster_name": "有请 / 第三期",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 19.966,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "有请",
+        "第三期",
+        "洞见价值",
+        "穿越周期",
+        "李录与比亚迪的23年",
+        "热度代理",
+        "比亚迪股东星球"
+      ]
+    },
+    {
+      "cluster_id": "布伦特-已经超出2008年的历史高点-market-sentiment",
+      "cluster_name": "布伦特 / 已经超出2008年的历史高点",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 19.966,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "布伦特",
+        "已经超出2008年的历史高点",
+        "热度代理",
+        "机构产业调研瑞哥"
+      ]
+    },
+    {
+      "cluster_id": "杆币来-成本週期-policy-inflation",
+      "cluster_name": "杆币来 / 成本週期",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 19.966,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "杆币来",
+        "消失的農業週期",
+        "成本週期",
+        "聖嬰週期",
+        "政策週期",
+        "热度代理",
+        "道说投资"
+      ]
+    },
+    {
+      "cluster_id": "youtube老厉害视频-野村-market-sentiment",
+      "cluster_name": "youtube老厉害视频 / 野村",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 19.966,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "youtube老厉害视频",
+        "野村",
+        "高盛",
+        "外资研报",
+        "房地产",
+        "房价",
+        "二手房",
+        "财经"
+      ]
+    },
+    {
+      "cluster_id": "特朗普-market-sentiment",
+      "cluster_name": "特朗普",
+      "count": 2,
+      "platforms": [
+        "5173/bili",
+        "5173/content_research"
+      ],
+      "cluster_quality_score": 19.756,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "特朗普",
+        "年4月2日",
+        "热度代理",
+        "懂夕夕",
+        "胡佛附体",
+        "历史轮回",
+        "胡佛都干了什么",
+        "score"
+      ]
+    },
+    {
+      "cluster_id": "高市早苗-diplomacy-conflict",
+      "cluster_name": "高市早苗",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 19.278,
+      "primary_variable": "diplomacy_conflict",
+      "top_keywords": [
+        "高市早苗",
+        "要不是他拦着",
+        "霍尔木兹",
+        "热度代理",
+        "油价/地缘冲突",
+        "日本/使馆/外交"
+      ]
+    },
+    {
+      "cluster_id": "加息-policy-inflation-加息",
+      "cluster_name": "加息 / 加息",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 19.086,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "加息",
+        "热度代理",
+        "oraclealpha"
+      ]
+    },
+    {
+      "cluster_id": "特朗普-policy-inflation",
+      "cluster_name": "特朗普",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 19.078,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "特朗普",
+        "开始怀念马杜罗",
+        "如果马杜罗还在",
+        "百分之六百的通胀",
+        "每月0",
+        "美元的收入",
+        "通胀",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "预算-policy-inflation",
+      "cluster_name": "预算",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 19.078,
+      "primary_variable": "policy_inflation",
+      "top_keywords": [
+        "总结一下",
+        "属于是赢了也白赢",
+        "预算",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "俄罗斯-market-sentiment",
+      "cluster_name": "俄罗斯",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 19.078,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "离大选还有11天",
+        "欧尔班先生没闲着",
+        "人们喊着",
+        "俄罗斯人滚蛋",
+        "迎接他",
+        "俄罗斯",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "中国-risk-pricing",
+      "cluster_name": "中国",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 18.982,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "公信财经",
+        "三战风险来临",
+        "中国守护和平",
+        "涨知识",
+        "中国",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "欧洲-market-sentiment",
+      "cluster_name": "欧洲",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 18.982,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "黑天鹅",
+        "看起来无可辩驳",
+        "直到有一天",
+        "一只黑天鹅的出现",
+        "极其罕见",
+        "影响巨大",
+        "好书推荐",
+        "好书分享"
+      ]
+    },
+    {
+      "cluster_id": "整个3月-都在挨揍-market-sentiment",
+      "cluster_name": "整个3月 / 都在挨揍",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 18.888,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "整个3月",
+        "都在挨揍",
+        "硬核姬老板",
+        "定向样本"
+      ]
+    },
+    {
+      "cluster_id": "你们想象不到-基金-market-sentiment",
+      "cluster_name": "你们想象不到 / 基金",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 18.888,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "你们想象不到",
+        "基金",
+        "硬核姬老板",
+        "定向样本"
+      ]
+    },
+    {
+      "cluster_id": "公募基金-幸好有董辰-market-sentiment",
+      "cluster_name": "公募基金 / 幸好有董辰",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 18.888,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "公募基金",
+        "幸好有董辰",
+        "基金",
+        "硬核姬老板",
+        "定向样本"
+      ]
+    },
+    {
+      "cluster_id": "散户投港股-还是太地狱了-market-sentiment",
+      "cluster_name": "散户投港股 / 还是太地狱了",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 18.888,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "散户投港股",
+        "还是太地狱了",
+        "硬核姬老板",
+        "定向样本"
+      ]
+    },
+    {
+      "cluster_id": "万字详解-openclaw龙虾-technology-adoption",
+      "cluster_name": "万字详解 / openclaw龙虾",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 18.888,
+      "primary_variable": "technology_adoption",
+      "top_keywords": [
+        "万字详解",
+        "openclaw龙虾",
+        "高替",
+        "hermes",
+        "agent的skills系统",
+        "openclaw",
+        "agent",
+        "draco正在vibecoding"
+      ]
+    },
+    {
+      "cluster_id": "openclaw-draco正在vibecoding-technology-adoption",
+      "cluster_name": "openclaw / draco正在vibecoding",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 18.888,
+      "primary_variable": "technology_adoption",
+      "top_keywords": [
+        "openclaw",
+        "draco正在vibecoding",
+        "定向样本",
+        "ai工具/工作流"
+      ]
+    },
+    {
+      "cluster_id": "openclaw-agent-technology-adoption",
+      "cluster_name": "openclaw / agent",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 18.888,
+      "primary_variable": "technology_adoption",
+      "top_keywords": [
+        "openclaw",
+        "agent",
+        "还要养",
+        "爱马仕",
+        "hermes",
+        "记性好",
+        "skills还能自我进化",
+        "draco正在vibecoding"
+      ]
+    },
+    {
+      "cluster_id": "google官方出品-每个开发者都该知道的5种skill设计模式-technology-adoption",
+      "cluster_name": "google官方出品 / 每个开发者都该知道的5种skill设计模式",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 18.888,
+      "primary_variable": "technology_adoption",
+      "top_keywords": [
+        "google官方出品",
+        "每个开发者都该知道的5种skill设计模式",
+        "skill",
+        "draco正在vibecoding",
+        "定向样本",
+        "ai工具/工作流"
+      ]
+    },
+    {
+      "cluster_id": "腾讯tapd-draco正在vibecoding-technology-adoption",
+      "cluster_name": "腾讯tapd / draco正在vibecoding",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 18.888,
+      "primary_variable": "technology_adoption",
+      "top_keywords": [
+        "腾讯tapd",
+        "draco正在vibecoding",
+        "定向样本",
+        "ai工具/工作流"
+      ]
+    },
+    {
+      "cluster_id": "川普-market-sentiment",
+      "cluster_name": "川普",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 18.886,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "中英字幕",
+        "川普",
+        "热度代理",
+        "mr",
+        "pot"
+      ]
+    },
+    {
+      "cluster_id": "score-bili-market-sentiment",
+      "cluster_name": "score / bili",
+      "count": 1,
+      "platforms": [
+        "5173/content_research"
+      ],
+      "cluster_quality_score": 18.834,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "结果被他打爆了",
+        "score",
+        "bili"
+      ]
+    },
+    {
+      "cluster_id": "asian-travelers-market-sentiment",
+      "cluster_name": "asian / travelers",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_latest"
+      ],
+      "cluster_quality_score": 18.792,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "asian",
+        "travelers",
+        "seek",
+        "respite",
+        "in",
+        "other",
+        "options",
+        "as"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-neymar0096-market-sentiment",
+      "cluster_name": "热度代理 / neymar0096",
+      "count": 1,
+      "platforms": [
+        "5173/x"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "男大体育生谁看",
+        "热度代理",
+        "neymar0096"
+      ]
+    },
+    {
+      "cluster_id": "网页链接-热度代理-market-sentiment",
+      "cluster_name": "网页链接 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "网页链接",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "我的妈-热度代理-market-sentiment",
+      "cluster_name": "我的妈 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "我的妈",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "比别人少亏-热度代理-market-sentiment",
+      "cluster_name": "比别人少亏 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "今天继续没有操作",
+        "比别人少亏",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "有点道理-热度代理-market-sentiment",
+      "cluster_name": "有点道理 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "三条反常识的真相",
+        "有点道理",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "调研养老社区-热度代理-market-sentiment",
+      "cluster_name": "调研养老社区 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "初入职场金融季",
+        "调研养老社区",
+        "需要提前多久预定",
+        "如果去养老社区",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "犇垚森1981的微博视频-热度代理-market-sentiment",
+      "cluster_name": "犇垚森1981的微博视频 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/wb"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "犇垚森1981的微博视频",
+        "热度代理"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-dingdong-market-sentiment",
+      "cluster_name": "热度代理 / dingdong",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "一次成功的饼干",
+        "热度代理",
+        "dingdong"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-yoyo-market-sentiment",
+      "cluster_name": "热度代理 / yoyo",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "人生若只如初见",
+        "热度代理",
+        "yoyo"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-是dan蛋吖-market-sentiment",
+      "cluster_name": "热度代理 / 是dan蛋吖",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "是dan蛋吖"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-维维甜豆奶-market-sentiment",
+      "cluster_name": "热度代理 / 维维甜豆奶",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "唯一缺点容易化",
+        "热度代理",
+        "维维甜豆奶"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-花间斩梦-market-sentiment",
+      "cluster_name": "热度代理 / 花间斩梦",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "这次你还能不心动",
+        "热度代理",
+        "花间斩梦"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-尘香-market-sentiment",
+      "cluster_name": "热度代理 / 尘香",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "尘香"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-吃一口大面包-market-sentiment",
+      "cluster_name": "热度代理 / 吃一口大面包",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "吃一口大面包"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-吕图图-market-sentiment",
+      "cluster_name": "热度代理 / 吕图图",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "吕图图"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-秃头靓女-market-sentiment",
+      "cluster_name": "热度代理 / 秃头靓女",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "秃头靓女"
+      ]
+    },
+    {
+      "cluster_id": "十多年了-热度代理-market-sentiment",
+      "cluster_name": "十多年了 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "十多年了",
+        "热度代理",
+        "绿萝爱吃冰淇淋"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-波波妈妈-market-sentiment",
+      "cluster_name": "热度代理 / 波波妈妈",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "波波妈妈"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-纽约的杜师傅-market-sentiment",
+      "cluster_name": "热度代理 / 纽约的杜师傅",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "纽约的杜师傅"
+      ]
+    },
+    {
+      "cluster_id": "再发一遍-热度代理-market-sentiment",
+      "cluster_name": "再发一遍 / 热度代理",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "再发一遍",
+        "热度代理",
+        "米其林三星吃货"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-赵腰静静-market-sentiment",
+      "cluster_name": "热度代理 / 赵腰静静",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "赵腰静静"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-一块热豆腐-market-sentiment",
+      "cluster_name": "热度代理 / 一块热豆腐",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "你们喜欢吃虾吗",
+        "热度代理",
+        "一块热豆腐"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-aaayyi-market-sentiment",
+      "cluster_name": "热度代理 / aaayyi",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "第一集就笑不活了",
+        "这是什么沙雕爽剧",
+        "热度代理",
+        "aaayyi"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-jojo小咪弟-market-sentiment",
+      "cluster_name": "热度代理 / jojo小咪弟",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "jojo小咪弟"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-顽顽顽玩玩-market-sentiment",
+      "cluster_name": "热度代理 / 顽顽顽玩玩",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "顽顽顽玩玩"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-七的旅拍日记-market-sentiment",
+      "cluster_name": "热度代理 / 七的旅拍日记",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 18.258,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "在西藏喝的一口水",
+        "热度代理",
+        "七的旅拍日记"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-央视新闻-semiconductor-cycle",
+      "cluster_name": "热度代理 / 央视新闻",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 18.162,
+      "primary_variable": "semiconductor_cycle",
+      "top_keywords": [
+        "导致航母位置泄密",
+        "国家安全机关提示",
+        "对于智能穿戴设备",
+        "要严控使用场景",
+        "热度代理",
+        "央视新闻"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-杨华说天下-market-sentiment",
+      "cluster_name": "热度代理 / 杨华说天下",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 18.066,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "杨华说天下"
+      ]
+    },
+    {
+      "cluster_id": "热度代理-点金小侯-market-sentiment",
+      "cluster_name": "热度代理 / 点金小侯",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "cluster_quality_score": 18.066,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "热度代理",
+        "点金小侯"
+      ]
+    },
+    {
+      "cluster_id": "绝好喝冲饮-平替中的平替-market-sentiment",
+      "cluster_name": "绝好喝冲饮 / 平替中的平替",
+      "count": 1,
+      "platforms": [
+        "5173/xhs"
+      ],
+      "cluster_quality_score": 17.158,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "绝好喝冲饮",
+        "平替中的平替",
+        "卷死奶茶",
+        "热度代理",
+        "维安的日常"
+      ]
+    },
+    {
+      "cluster_id": "快来看呀-浑江之上-market-sentiment",
+      "cluster_name": "快来看呀 / 浑江之上",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 17.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "快来看呀",
+        "浑江之上",
+        "彩虹桥旁",
+        "一只黑天鹅",
+        "打破了日常的平静",
+        "白山",
+        "浑江",
+        "黑天鹅"
+      ]
+    },
+    {
+      "cluster_id": "人工孵化-家有宠物-market-sentiment",
+      "cluster_name": "人工孵化 / 家有宠物",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 17.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "人工孵化",
+        "家有宠物",
+        "我的乡村生活",
+        "dou+小助手",
+        "热度代理",
+        "雁仔灰灰"
+      ]
+    },
+    {
+      "cluster_id": "张雪峰老师说的这4条-第一条-market-sentiment",
+      "cluster_name": "张雪峰老师说的这4条 / 第一条",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 17.062,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "张雪峰老师说的这4条",
+        "第一条",
+        "钱的事儿",
+        "绝对不能糊涂",
+        "更别碰什么校园贷",
+        "手机贷",
+        "一开始借几千",
+        "最后能滚成几十万"
+      ]
+    },
+    {
+      "cluster_id": "认知-独立思考-risk-pricing",
+      "cluster_name": "认知 / 独立思考",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "cluster_quality_score": 17.062,
+      "primary_variable": "risk_pricing",
+      "top_keywords": [
+        "认知",
+        "独立思考",
+        "个人成长",
+        "提升自己",
+        "在拍一种很新的vlog",
+        "热度代理",
+        "王翊"
+      ]
+    },
+    {
+      "cluster_id": "观察-market-sentiment",
+      "cluster_name": "观察",
+      "count": 3,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 15.928,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "表舅是养基大户",
+        "定向样本",
+        "今天的两个大利好"
+      ]
+    },
+    {
+      "cluster_id": "对4月份投资的一些想法-market-sentiment",
+      "cluster_name": "对4月份投资的一些想法",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 15.088,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "对4月份投资的一些想法",
+        "表舅是养基大户",
+        "定向样本"
+      ]
+    },
+    {
+      "cluster_id": "桥水也亏钱了-market-sentiment",
+      "cluster_name": "桥水也亏钱了",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 15.088,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "桥水也亏钱了",
+        "表舅是养基大户",
+        "定向样本"
+      ]
+    },
+    {
+      "cluster_id": "硬核姬老板-market-sentiment",
+      "cluster_name": "硬核姬老板",
+      "count": 1,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "cluster_quality_score": 15.088,
+      "primary_variable": "market_sentiment",
+      "top_keywords": [
+        "硬核姬老板",
+        "定向样本"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "run_id": "2026-04-05_170457",
+  "generated_at": "2026-04-05T18:17:07.304186",
+  "stage": "brief",
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-05_170457/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v3",
+  "manual_topics": [],
+  "generation_mode": "ai",
+  "candidate_topics": [
+    "伊朗原油停火热度背后，真正被重估的是长期秩序成本",
+    "外交部中东表态热议，背后真正决定风险的长期秩序成本",
+    "AI驱动英伟达走强，不等于半导体周期已经反转",
+    "半导体局部活跃不等于全行业反转，英伟达表现需理性看待",
+    "白银热度背后，真正被重估的是风险溢价的定价变量",
+    "川普事件热度不等于白银风险溢价已全面反转",
+    "表面宽松不等于通胀压力消退，利率预期正悄然回摆",
+    "油价飙升背景下，市场对通胀压力的误判正在加剧",
+    "制裁热度背后，真正被重估的是供给秩序而非价格波动"
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v3/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v3/02_研究Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v3/02_编辑Brief_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v3/topic_cards.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v3/selected_topics.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v3/selected_topics.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first_v3/brief_manifest.json"
+  ],
+  "next_stage": "draft"
+}

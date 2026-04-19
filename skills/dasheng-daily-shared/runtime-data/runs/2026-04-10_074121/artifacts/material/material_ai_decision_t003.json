@@ -1,0 +1,167 @@
+{
+  "core_claim": "全球央行大规模抛售美债反映出对美债安全性和美国财政稳健性的深层质疑，已引发全球金融市场系统性风险的显著担忧，影响全球资本流动、市场流动性及投资者资产配置策略。",
+  "topic_type": "finance_macro",
+  "article_summary": "美国国债长期作为全球储备资产的核心，因其信用安全性、市场流动性及美元国际地位而被央行广泛持有。近期多国央行集中大规模抛售美债，主要受美国财政赤字高企、货币政策转向导致利率上升、美元霸权地位挑战及资本流动压力等多重因素驱动。这一趋势引发美债市场流动性收缩、价格波动加剧，并对全球资本流动和金融市场稳定构成系统性冲击。市场短期内出现收益率曲线陡峭化和避险资产转向，政策层面则需财政改革、货币政策协调及储备多元化。长期看，全球储备货币体系多元化加速，金融市场风险定价和资本流动格局深刻调整，投资者需动态风险管理与多元化配置以应对不确定性。",
+  "skip_notes": "全文结构清晰，论点充分，主要缺口在权威数据支持和具体量化指标，尤其是央行美债持仓变化、抛售规模及市场流动性指标。文中已有权威视频链接支持抛售事实，部分数据需后续补充，不宜强行添加无数据支撑的图表。视频素材适合补充动态市场反应。",
+  "claims": [
+    {
+      "claim_id": "c01",
+      "section_id": "section-02",
+      "heading": "美债基准地位的动摇与央行持仓现状",
+      "statement": "美国国债长期作为全球储备资产的核心，基于信用安全性、市场流动性和美元国际地位，但近期央行大规模抛售表明其基准地位正受到挑战。",
+      "counterpoint": "美债仍具极高市场流动性和避险属性，部分央行短期仍保持持仓，且无违约历史仍为投资者信心支撑。",
+      "missing_proof": [
+        "具体央行美债持仓变化数据",
+        "各国央行抛售规模与期限分布详细统计"
+      ],
+      "chart_need": true
+    },
+    {
+      "claim_id": "c02",
+      "section_id": "section-03",
+      "heading": "央行大规模抛售美债的事实与驱动机制",
+      "statement": "多国央行集中在短期内净卖出数百亿美元美债，主要由美国财政赤字高企、货币政策加息、地缘政治及资本流动压力等多重因素驱动。",
+      "counterpoint": "部分央行仍通过短期债券持仓规避风险，且抛售行为尚未完全覆盖所有主要持有国。",
+      "missing_proof": [
+        "权威机构关于抛售规模和国家分布的官方数据",
+        "信用评级机构最新风险评估报告"
+      ],
+      "chart_need": true
+    },
+    {
+      "claim_id": "c03",
+      "section_id": "section-04",
+      "heading": "抛售对全球资本流动及金融市场的系统性冲击",
+      "statement": "央行抛售导致美债市场流动性下降，交易价差扩大，资本流动波动加剧，传导至新兴市场本币贬值和全球资产市场震荡，存在系统性风险爆发隐患。",
+      "counterpoint": "市场短期波动虽明显，但流动性管理和政策干预有助于缓解风险扩散。",
+      "missing_proof": [
+        "美债市场流动性指标时间序列数据",
+        "全球资本流动和新兴市场资金外流统计"
+      ],
+      "chart_need": true
+    },
+    {
+      "claim_id": "c04",
+      "section_id": "section-05",
+      "heading": "市场反应与政策应对策略",
+      "statement": "市场短期表现为收益率曲线陡峭化、避险资产受青睐及流动性风险加剧，政策层面需财政改革、货币政策协调及推动储备多元化以稳定市场。",
+      "counterpoint": "政策实施存在时滞和协调难度，短期市场波动仍可能持续。",
+      "missing_proof": [],
+      "chart_need": false
+    }
+  ],
+  "chart_anchors": [
+    {
+      "anchor_id": "chart01",
+      "section_id": "section-02",
+      "title": "全球主要央行美债持仓及近期抛售规模统计",
+      "purpose": "展示主要央行美债持仓量及最近一个月大规模抛售的具体数据，验证美债基准地位动摇的事实。",
+      "data_sources": [
+        "美国财政部国际资本流动报告",
+        "国际清算银行(BIS)统计",
+        "权威央行及主权基金公开数据"
+      ],
+      "chart_type": "柱状图+热力地图",
+      "only_if_worth_chart": true
+    },
+    {
+      "anchor_id": "chart02",
+      "section_id": "section-03",
+      "title": "美债抛售规模按国家/地区及债券期限分布",
+      "purpose": "细化央行抛售行为，分析抛售集中在中长期债券及主要国家，支持驱动机制分析。",
+      "data_sources": [
+        "官方债券市场交易数据",
+        "国际货币基金组织(IMF)储备资产报告"
+      ],
+      "chart_type": "堆积条形图",
+      "only_if_worth_chart": true
+    },
+    {
+      "anchor_id": "chart03",
+      "section_id": "section-04",
+      "title": "美债市场流动性指标与资金流出时间序列",
+      "purpose": "展示美债市场交易价差扩大和资金流出规模变化，验证市场流动性紧张及资金波动影响。",
+      "data_sources": [
+        "芝加哥商品交易所(CME)",
+        "彭博社市场数据",
+        "国际金融协会(IIF)资本流动报告"
+      ],
+      "chart_type": "折线图",
+      "only_if_worth_chart": true
+    }
+  ],
+  "image_queries": [
+    {
+      "query": "美国财政部长肖尔茨官方肖像",
+      "entity_type": "person",
+      "entity": "美国财政部长",
+      "priority": "high",
+      "channel": "news"
+    },
+    {
+      "query": "美联储主席鲍威尔发表讲话现场",
+      "entity_type": "person",
+      "entity": "美联储主席",
+      "priority": "high",
+      "channel": "news"
+    },
+    {
+      "query": "全球主要央行总部外观",
+      "entity_type": "institution",
+      "entity": "全球主要央行",
+      "priority": "medium",
+      "channel": "news"
+    },
+    {
+      "query": "美债交易大厅交易现场",
+      "entity_type": "event",
+      "entity": "美债市场交易",
+      "priority": "medium",
+      "channel": "news"
+    }
+  ],
+  "news_screenshot_queries": [
+    {
+      "query": "央行大规模抛售美债相关新闻报道截图 2024年",
+      "priority": "high",
+      "channel": "news"
+    }
+  ],
+  "video_queries": [
+    {
+      "query": "全球央行抛售美国国债 市场反应 2024",
+      "priority": "high"
+    },
+    {
+      "query": "美联储加息对美债市场影响 解读",
+      "priority": "medium"
+    }
+  ],
+  "generated_visuals": {
+    "cover_prompt": "A dramatic financial market scene showing global central banks selling US Treasury bonds, with a backdrop of fluctuating bond yield charts and a world map highlighting major economies, conveying systemic financial risk.",
+    "infographic_prompts": [
+      "Infographic illustrating the causes and effects of global central banks' large-scale US Treasury bond sell-off, including data on debt levels, interest rates, and capital flows.",
+      "Timeline infographic showing recent US Treasury bond yield changes and central bank holdings adjustments."
+    ],
+    "comic_storyboard": [],
+    "meme_prompts": [],
+    "funny_comic_character_prompts": []
+  },
+  "scene_plan": [
+    {
+      "title": "全球央行抛售美债引发市场波动",
+      "visual": "新闻视频片段截屏，展示交易大厅内美债交易活跃场景及市场行情界面",
+      "caption": "央行大规模抛售美债导致市场流动性紧张，交易价差扩大，市场波动加剧。"
+    },
+    {
+      "title": "美联储主席讲话解析货币政策转向",
+      "visual": "美联储主席鲍威尔发表讲话的视频截图",
+      "caption": "美联储加息政策推动美债收益率上升，成为央行抛售的重要驱动因素。"
+    },
+    {
+      "title": "美国财政部长阐述财政政策挑战",
+      "visual": "美国财政部长肖尔茨的官方新闻发布会照片",
+      "caption": "美国财政赤字和债务上限谈判僵局加剧市场对美债信用风险的担忧。"
+    }
+  ]
+}

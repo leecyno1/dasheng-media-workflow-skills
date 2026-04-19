@@ -1,0 +1,185 @@
+{
+  "run_id": "2026-04-15_164114",
+  "generated_at": "2026-04-15T16:41:14.030840+08:00",
+  "stage": "intake",
+  "object_type": "Run",
+  "execution_model": "agent-driven",
+  "run_dir": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-15_164114",
+  "ports": {
+    "reports": {
+      "status": "ok",
+      "base": "http://45.197.148.64:8080"
+    },
+    "5173": {
+      "status": "error",
+      "base": "http://127.0.0.1:18000",
+      "error": "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/intelligence/top-notes?task_group=content_research&days=1&limit=20 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+    },
+    "8000": {
+      "status": "ok",
+      "base": "http://45.197.148.64:8000/api/v1",
+      "issues": [],
+      "attempts": 1,
+      "waited_seconds": 0
+    }
+  },
+  "ports_status": {
+    "reports": {
+      "status": "ok",
+      "base": "http://45.197.148.64:8080"
+    },
+    "5173": {
+      "status": "error",
+      "base": "http://127.0.0.1:18000",
+      "error": "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/intelligence/top-notes?task_group=content_research&days=1&limit=20 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+    },
+    "8000": {
+      "status": "ok",
+      "base": "http://45.197.148.64:8000/api/v1",
+      "issues": [],
+      "attempts": 1,
+      "waited_seconds": 0
+    }
+  },
+  "counts": {
+    "x_total": 0,
+    "wb_total": 0,
+    "xhs_total": 0,
+    "douyin_total": 0,
+    "bili_total": 0,
+    "content_research_candidates": 0,
+    "ai_hot_total": 10,
+    "trendradar_reports": 3984,
+    "trendradar_links": 20,
+    "wemprss_channels_total": 45,
+    "wemprss_articles_total": 75,
+    "curated_articles": 24,
+    "selected_records": 84,
+    "channel_top10_total": 30,
+    "valid_linked_records": 84
+  },
+  "analysis_pool": {
+    "selected_records": 84,
+    "analysis_records": 46,
+    "analysis_ratio": 0.5476,
+    "analysis_channels": {
+      "ai_hot": 10,
+      "reports": 12,
+      "wechat": 24
+    },
+    "analysis_tiers": {
+      "personal_opinion": 22,
+      "self_media": 24
+    },
+    "analysis_labels": {
+      "AI工具/工作流": 23,
+      "油价/地缘冲突": 9,
+      "半导体/国产芯片": 3,
+      "黄金/白银/贵金属": 2
+    }
+  },
+  "channel_tasks": {
+    "x": {
+      "status": "error",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [
+        "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/data/latest?platform=x&limit=100 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+      ],
+      "total": 0
+    },
+    "wb": {
+      "status": "error",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [
+        "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/data/latest?platform=wb&limit=100 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+      ],
+      "total": 0
+    },
+    "xhs": {
+      "status": "error",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [
+        "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/data/latest?platform=xhs&limit=50 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+      ],
+      "total": 0
+    },
+    "douyin": {
+      "status": "error",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [
+        "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/data/latest?platform=douyin&limit=50 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+      ],
+      "total": 0
+    },
+    "bili": {
+      "status": "error",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [
+        "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/data/latest?platform=bili&limit=50 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+      ],
+      "total": 0
+    },
+    "content_research": {
+      "status": "error",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [
+        "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/intelligence/top-notes?task_group=content_research&days=1&limit=20 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+      ],
+      "total": 0
+    },
+    "ai_hot": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 10
+    },
+    "reports": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 20
+    },
+    "wechat": {
+      "status": "ok",
+      "attempts": 1,
+      "waited_seconds": 0,
+      "issues": [],
+      "total": 54
+    }
+  },
+  "artifacts": [
+    "raw/mediacrawler_latest_x.json",
+    "raw/mediacrawler_latest_xhs.json",
+    "raw/mediacrawler_latest_douyin.json",
+    "raw/mediacrawler_latest_wb.json",
+    "raw/mediacrawler_latest_bili.json",
+    "raw/mediacrawler_topnotes_content_research.json",
+    "raw/ai_hot_reddit.json",
+    "raw/ai_hot_hn.json",
+    "raw/trendradar_reports.json",
+    "raw/trendradar_latest_report.html",
+    "raw/trendradar_top_links.json",
+    "raw/wemprss_public_channels.json",
+    "raw/wemprss_articles_latest.json",
+    "raw/intake_records.json",
+    "ai_hot_topics.json",
+    "entity_rankings.json",
+    "event_clusters.json",
+    "source_quality_report.json",
+    "channel_top10.json",
+    "brief_input.json",
+    "channel_tasks.json",
+    "intake_review.json",
+    "notes/01_内容采集_报告.md",
+    "notes/01_内容采集_底稿.md"
+  ],
+  "next_stage": "brief"
+}

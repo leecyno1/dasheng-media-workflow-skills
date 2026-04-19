@@ -1,0 +1,34 @@
+[
+  {
+    "query": "一键安装OpenClaw parliament session 4k",
+    "url": "",
+    "title": "",
+    "channel": "",
+    "returncode": -1,
+    "stderr": "",
+    "stdout": "",
+    "selected_candidate_quality": {},
+    "file_quality_audit": {
+      "final_pass": false,
+      "fail_reasons": [
+        "no_qualified_candidate"
+      ]
+    }
+  },
+  {
+    "query": "一键安装OpenClaw election rally crowd 4k",
+    "url": "",
+    "title": "",
+    "channel": "",
+    "returncode": -1,
+    "stderr": "",
+    "stdout": "",
+    "selected_candidate_quality": {},
+    "file_quality_audit": {
+      "final_pass": false,
+      "fail_reasons": [
+        "no_qualified_candidate"
+      ]
+    }
+  }
+]

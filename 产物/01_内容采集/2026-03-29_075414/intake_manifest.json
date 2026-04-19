@@ -1,0 +1,50 @@
+{
+  "run_id": "2026-03-29_075414",
+  "generated_at": "2026-03-29T07:54:14.000277+08:00",
+  "stage": "01_intake",
+  "ports": {
+    "5173": {
+      "status": "ok",
+      "base": "http://127.0.0.1:18000"
+    },
+    "18080": {
+      "status": "ok",
+      "base": "http://127.0.0.1:8080"
+    },
+    "8001": {
+      "status": "ok",
+      "base": "http://127.0.0.1:8001"
+    }
+  },
+  "counts": {
+    "x_total": 12007,
+    "wb_total": 1403,
+    "xhs_total": 8239,
+    "douyin_total": 2637,
+    "bili_total": 3687,
+    "content_research_candidates": 81,
+    "trendradar_reports": 1549,
+    "trendradar_links": 8,
+    "wemprss_channels_total": 0,
+    "wemprss_articles_total": 0,
+    "curated_articles": 0,
+    "selected_records": 25
+  },
+  "artifacts": [
+    "raw/mediacrawler_latest_x.json",
+    "raw/mediacrawler_latest_xhs.json",
+    "raw/mediacrawler_latest_douyin.json",
+    "raw/mediacrawler_latest_wb.json",
+    "raw/mediacrawler_latest_bili.json",
+    "raw/mediacrawler_topnotes_content_research.json",
+    "raw/trendradar_reports.json",
+    "raw/trendradar_latest_report.html",
+    "raw/trendradar_top_links.json",
+    "raw/wemprss_public_channels.json",
+    "raw/wemprss_articles_latest.json",
+    "raw/intake_records.json",
+    "notes/01_内容采集_报告.md",
+    "notes/01_内容采集_底稿.md"
+  ],
+  "next_stage": "02_brief"
+}

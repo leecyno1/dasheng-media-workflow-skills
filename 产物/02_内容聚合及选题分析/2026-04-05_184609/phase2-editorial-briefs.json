@@ -1,0 +1,599 @@
+[
+  {
+    "topic_id": "T001",
+    "mother_topic_id": "T001",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "央行果断降息能否有效开启新一轮宽松周期并刺激经济？",
+    "one_line_judgment": "央行降息释放宽松信号，但其对经济刺激效果与市场波动的实际影响仍具不确定性。",
+    "core_proposition": "尽管央行已经通过降息传递宽松政策意图，但是否能持续推动经济复苏和市场活跃仍需观察政策传导和市场反应。",
+    "why_now": "最新官方渠道已确认降息动作，市场和公众对政策效果的期待及疑虑正在升温。",
+    "reader_payoff": "帮助读者理解降息背后的政策逻辑及潜在经济影响，提供理性预期管理。",
+    "article_use": "深度财经分析、政策解读和市场影响评估文章。",
+    "distinctiveness_reason": "基于官方正式降息信号及多渠道市场反应，聚焦政策效果的判断而非单纯报道。",
+    "evidence_gap_summary": "缺乏具体数据支撑降息后经济指标走向及市场中长期反应的跟踪。",
+    "proof_requirements": [
+      "最新经济数据趋势",
+      "市场流动性变化监测",
+      "央行未来政策声明"
+    ],
+    "recommended_data_angles": [
+      "利率调整前后宏观经济指标对比",
+      "资本市场波动率分析",
+      "信贷增长及企业融资情况"
+    ],
+    "recommended_visual_angles": [
+      "利率历史变动趋势图",
+      "经济指标时间序列图",
+      "市场情绪热度地图"
+    ],
+    "priority_people": [
+      "央行官员",
+      "经济学家",
+      "市场分析师"
+    ],
+    "priority_orgs": [
+      "央行",
+      "经济研究机构"
+    ],
+    "priority_news_queries": [
+      "央行降息效果",
+      "货币宽松周期启动",
+      "经济刺激政策"
+    ],
+    "existing_evidence": [
+      {
+        "title": "央行果断降息，各方注意了‼️进一步宽松的空间已经打",
+        "url": "https://www.douyin.com/video/7054565568447401219",
+        "source_type": "抖音",
+        "source_tier": "official",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍央行降息的背景和基本情况",
+      "part_1": "分析降息政策传导机制及预期效果",
+      "part_2": "评估市场和经济对降息的初步反应",
+      "part_3": "探讨未来政策趋势与潜在风险",
+      "ending": "总结降息对经济和市场的可能长远影响"
+    }
+  },
+  {
+    "topic_id": "T002",
+    "mother_topic_id": "T002",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "俄罗斯拒绝向日本供油是否标志着地缘政治紧张新阶段？",
+    "one_line_judgment": "俄罗斯拒绝向日本供油反映在中东冲突背景下的外交立场转变，预示国际关系进一步紧张。",
+    "core_proposition": "在中东局势复杂多变的影响下，俄罗斯对日本等被视为不友好国家实施能源供应限制，显示地缘政治博弈升级。",
+    "why_now": "3月底俄罗斯外交部公开声明，结合当前中东战火，事件时效性和敏感性极高。",
+    "reader_payoff": "洞悉俄日能源与外交关系变化，理解地缘政治对国际能源及安全的深远影响。",
+    "article_use": "国际政治分析、能源安全专题报道。",
+    "distinctiveness_reason": "结合官方声明与当前中东局势，揭示俄日关系变化背后的地缘政治逻辑。",
+    "evidence_gap_summary": "缺少对俄罗斯此举对日本能源市场及国际回应的后续分析数据。",
+    "proof_requirements": [
+      "日本能源进口结构和替代方案",
+      "俄日外交互动最新动态",
+      "中东地区冲突发展趋势"
+    ],
+    "recommended_data_angles": [
+      "日本进口能源来源对比",
+      "俄罗斯能源出口政策变动",
+      "相关国际制裁与反制措施"
+    ],
+    "recommended_visual_angles": [
+      "能源供应链示意图",
+      "中东冲突热点地图",
+      "俄日外交事件时间线"
+    ],
+    "priority_people": [
+      "外交政策专家",
+      "能源经济学者",
+      "国际关系分析师"
+    ],
+    "priority_orgs": [
+      "俄罗斯外交部",
+      "日本能源机构"
+    ],
+    "priority_news_queries": [
+      "俄罗斯对日本供油政策",
+      "中东冲突影响能源",
+      "俄日地缘政治动态"
+    ],
+    "existing_evidence": [
+      {
+        "title": "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞之际，俄罗斯将考虑各国",
+        "url": "https://m.weibo.cn/detail/5282653734437870",
+        "source_type": "微博",
+        "source_tier": "official",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "回顾俄日历史能源与外交关系",
+      "part_1": "解读俄罗斯拒绝供油声明及其背景",
+      "part_2": "分析中东局势对俄日关系的影响",
+      "part_3": "探讨此举对国际能源市场及地区安全的潜在后果",
+      "ending": "展望俄日关系可能的走向及国际反应"
+    }
+  },
+  {
+    "topic_id": "T003",
+    "mother_topic_id": "T003",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "伊朗拒绝与美国停火谈判是否加剧区域和平前景的不确定性？",
+    "one_line_judgment": "伊朗拒绝停火谈判导致斡旋陷入僵局，区域和平进程面临严重挑战。",
+    "core_proposition": "伊朗与美方停火谈判破裂及卡塔尔退出调解反映多方利益冲突加剧，和平解决的路径更加复杂。",
+    "why_now": "近期权威报道曝光最新谈判挫折，国际社会高度关注中东稳定。",
+    "reader_payoff": "理解停火谈判失败对区域安全的直接影响，及和平进程陷入困境的原因。",
+    "article_use": "国际冲突分析、中东局势专题报道。",
+    "distinctiveness_reason": "基于多权威渠道一致报道，聚焦谈判破裂的多层面影响和和平前景评估。",
+    "evidence_gap_summary": "缺乏停火谈判各方内部动态及未来可能调解方案的详细信息。",
+    "proof_requirements": [
+      "各方谈判立场与策略细节",
+      "区域安全局势最新数据",
+      "国际调解努力进展"
+    ],
+    "recommended_data_angles": [
+      "冲突事件频率与强度变化",
+      "外交斡旋时间线",
+      "相关国家军事部署变动"
+    ],
+    "recommended_visual_angles": [
+      "停火谈判进程示意图",
+      "中东冲突热点地图",
+      "多方利益关系网络图"
+    ],
+    "priority_people": [
+      "中东外交专家",
+      "国际安全分析师",
+      "冲突调解机构代表"
+    ],
+    "priority_orgs": [
+      "联合国",
+      "卡塔尔调解团队"
+    ],
+    "priority_news_queries": [
+      "伊朗停火谈判破裂",
+      "中东和平进程",
+      "伊朗美国冲突"
+    ],
+    "existing_evidence": [
+      {
+        "title": "停火斡旋陷僵局：伊朗拒绝与美方伊斯兰堡会面，卡塔尔退出调解",
+        "url": "https://wallstreetcn.com/articles/3769228",
+        "source_type": "reports",
+        "source_tier": "personal_opinion",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍停火谈判背景及各方利益",
+      "part_1": "剖析伊朗拒绝谈判的动因",
+      "part_2": "评估卡塔尔退出调解的影响",
+      "part_3": "探讨区域和平前景与国际应对",
+      "ending": "总结和平进程面临的挑战及可能出路"
+    }
+  },
+  {
+    "topic_id": "T004",
+    "mother_topic_id": "T004",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "美军飞机被击落事件如何反映中东军事与外交复杂博弈？",
+    "one_line_judgment": "美军战机被击落引发紧张局势，事件背后彰显中东地区多方军事冲突与外交角力的复杂性。",
+    "core_proposition": "飞机被击落及救援行动不仅是军事事件，更是外交博弈的焦点，影响区域安全格局和国际关系。",
+    "why_now": "事件最新进展被多权威渠道报道，相关外交回应持续，全球关注度高。",
+    "reader_payoff": "理解该事件对中东安全环境的深远影响及背后多国利益博弈逻辑。",
+    "article_use": "国际军事分析、外交关系专题报道。",
+    "distinctiveness_reason": "综合多渠道权威报道，强调军事事件与外交互动的内在联系。",
+    "evidence_gap_summary": "缺乏详细的军事行动数据及后续外交谈判细节。",
+    "proof_requirements": [
+      "军事事件的具体经过和技术分析",
+      "各国官方外交表态",
+      "区域安全形势动态"
+    ],
+    "recommended_data_angles": [
+      "事件时间线与参与方",
+      "军事力量部署对比",
+      "外交声明和谈判进展"
+    ],
+    "recommended_visual_angles": [
+      "事件地图及军事行动示意",
+      "外交互动时间线",
+      "安全风险评估图"
+    ],
+    "priority_people": [
+      "国防分析师",
+      "外交政策专家",
+      "国际安全顾问"
+    ],
+    "priority_orgs": [
+      "美军",
+      "中东各国外交部"
+    ],
+    "priority_news_queries": [
+      "美军飞机被击落",
+      "中东军事冲突",
+      "美伊外交博弈"
+    ],
+    "existing_evidence": [
+      {
+        "title": "央行果断降息，各方注意了‼️进一步宽松的空间已经打",
+        "url": "https://www.douyin.com/video/7054565568447401219",
+        "source_type": "抖音",
+        "source_tier": "official",
+        "note": ""
+      },
+      {
+        "title": "特朗普确认伊朗失踪美军官员已获救",
+        "url": "https://www.cnbc.com/2026/04/05/us-trump-confirms-missing-us-pilot-rescued.html",
+        "source_type": "wechat",
+        "source_tier": "personal_opinion",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍美军飞机被击落事件背景",
+      "part_1": "分析事件的军事层面及技术细节",
+      "part_2": "剖析事件引发的外交反应和博弈",
+      "part_3": "探讨事件对中东及全球安全的影响",
+      "ending": "总结事件的后续发展方向及潜在风险"
+    }
+  },
+  {
+    "topic_id": "T005",
+    "mother_topic_id": "T005",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "多地公共停车位免费政策是否有效缓解城市交通与经济压力？",
+    "one_line_judgment": "公共停车位免费政策体现政府让利意图，但其在缓解交通拥堵和经济负担上的实际效果仍存疑。",
+    "core_proposition": "免费停车政策虽减轻部分市民负担，但可能引发停车需求激增，影响城市交通秩序和财政可持续性。",
+    "why_now": "近期多地接连出台免费停车政策，公众与专家关注政策成效与潜在问题。",
+    "reader_payoff": "理解免费停车政策的利弊，评估其对城市治理和居民生活的长远影响。",
+    "article_use": "政策评析、城市管理专题文章。",
+    "distinctiveness_reason": "结合最新政策动向与社会反响，聚焦政策效果的判断而非简单报道。",
+    "evidence_gap_summary": "缺乏政策实施后交通流量和经济负担变化的实证数据。",
+    "proof_requirements": [
+      "政策推行前后交通数据",
+      "市民出行和停车行为调查",
+      "财政支出及收入变化分析"
+    ],
+    "recommended_data_angles": [
+      "停车需求与供应变化",
+      "交通拥堵指数对比",
+      "政策经济成本效益分析"
+    ],
+    "recommended_visual_angles": [
+      "城市停车位分布图",
+      "交通流量变化曲线",
+      "政策实施时间线与效果图"
+    ],
+    "priority_people": [
+      "城市规划师",
+      "交通管理专家",
+      "经济学者"
+    ],
+    "priority_orgs": [
+      "地方政府交通部门",
+      "城市研究机构"
+    ],
+    "priority_news_queries": [
+      "公共停车免费政策",
+      "城市交通缓解",
+      "停车经济影响"
+    ],
+    "existing_evidence": [
+      {
+        "title": "让利于民：多地推行公共停车位全年免费",
+        "url": "https://m.thepaper.cn/newsDetail_forward_32900770",
+        "source_type": "reports",
+        "source_tier": "personal_opinion",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍免费停车政策出台背景",
+      "part_1": "分析政策设计初衷及预期效果",
+      "part_2": "评估政策实施的初步影响和民众反应",
+      "part_3": "探讨政策可能的负面影响与改进建议",
+      "ending": "总结政策对城市交通和经济的综合影响"
+    }
+  },
+  {
+    "topic_id": "T006",
+    "mother_topic_id": "T006",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "直播带货“自用好物”翻车责任如何界定及法律监管效力？",
+    "one_line_judgment": "直播带货中虚假推荐引发消费者权益争议，法律责任认定和监管执行面临挑战。",
+    "core_proposition": "在证据充足情况下，虚假推荐行为应负法律责任，监管部门加强介入将影响行业规范发展。",
+    "why_now": "近期监管部门介入约谈，学术界公开表态，行业监管力度明显提升。",
+    "reader_payoff": "理解直播带货责任划分与法律监管现状，防范消费风险。",
+    "article_use": "法律解读、行业监管分析报告。",
+    "distinctiveness_reason": "基于官方监管动作和权威专家发言，聚焦法律争议和行业规范的探讨。",
+    "evidence_gap_summary": "缺乏具体案例判决和监管执行效果评估数据。",
+    "proof_requirements": [
+      "典型虚假推荐案例分析",
+      "监管政策细节及执行情况",
+      "消费者维权统计数据"
+    ],
+    "recommended_data_angles": [
+      "投诉与处罚案例统计",
+      "法律条文适用范围",
+      "行业自律机制建设"
+    ],
+    "recommended_visual_angles": [
+      "监管流程图",
+      "责任认定判例时间线",
+      "消费者投诉热点图"
+    ],
+    "priority_people": [
+      "市场监管专家",
+      "法律学者",
+      "消费者权益组织"
+    ],
+    "priority_orgs": [
+      "市场监管总局",
+      "行业协会"
+    ],
+    "priority_news_queries": [
+      "直播带货法律责任",
+      "自用好物翻车",
+      "市场监管直播行业"
+    ],
+    "existing_evidence": [
+      {
+        "title": "直播带货、种草笔记推荐的“自用好物”翻车要担责吗？对外经济贸易大学市场监管研究院副院长冀玮发言",
+        "url": "https://www.douyin.com/video/7624348762277694746",
+        "source_type": "抖音",
+        "source_tier": "official",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍直播带货行业现状与争议",
+      "part_1": "分析“自用好物”翻车事件的责任争议",
+      "part_2": "解读法律法规及监管政策",
+      "part_3": "探讨监管执行的难点与行业影响",
+      "ending": "总结法律责任认定对行业未来的意义"
+    }
+  },
+  {
+    "topic_id": "T007",
+    "mother_topic_id": "T007",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "日本自卫队人员频繁“走失”事件是否暴露军事管理与安全隐患？",
+    "one_line_judgment": "日本自卫队人员异常行为频发，可能反映内部管理失效及安全形势隐忧，影响地区稳定。",
+    "core_proposition": "连续走失事件不仅是个别事故，或揭示军事人员心理与纪律问题，牵动外交安全关系。",
+    "why_now": "近期多起相关事件曝光，引发社会与媒体广泛关注与讨论。",
+    "reader_payoff": "深入了解日军管理问题及其对区域安全的潜在威胁。",
+    "article_use": "军事安全分析、地区安全专题文章。",
+    "distinctiveness_reason": "基于多渠道报道，聚焦事件频发背后的制度与安全挑战。",
+    "evidence_gap_summary": "缺乏官方调查结果及事件后续处理细节。",
+    "proof_requirements": [
+      "事件具体情况与频率统计",
+      "自卫队内部管理制度分析",
+      "区域安全专家评论"
+    ],
+    "recommended_data_angles": [
+      "走失事件时间与地点分布",
+      "自卫队心理健康支持现状",
+      "地区安全风险评估"
+    ],
+    "recommended_visual_angles": [
+      "事件地图分布图",
+      "人员管理流程图",
+      "安全隐患示意图"
+    ],
+    "priority_people": [
+      "军事专家",
+      "地区安全分析师",
+      "心理健康研究者"
+    ],
+    "priority_orgs": [
+      "日本自卫队",
+      "地区安全机构"
+    ],
+    "priority_news_queries": [
+      "日本自卫队走失",
+      "军事管理问题",
+      "地区安全隐患"
+    ],
+    "existing_evidence": [
+      {
+        "title": "2026年日本又有士兵走丢：但是闯入老中使馆？",
+        "url": "https://www.bilibili.com/video/BV154QrBqEXG",
+        "source_type": "聚合新闻",
+        "source_tier": "platform_hotspot",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍自卫队走失事件及其背景",
+      "part_1": "分析事件频发的可能原因",
+      "part_2": "探讨内部管理与心理健康现状",
+      "part_3": "评估事件对地区安全的潜在影响",
+      "ending": "提出对策建议及未来关注点"
+    }
+  },
+  {
+    "topic_id": "T008",
+    "mother_topic_id": "T008",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "社交平台关于社会主义与财富流失的争论如何映射社会经济分歧？",
+    "one_line_judgment": "围绕社会主义理念与富豪逃离的激烈讨论反映经济理念冲突与社会公平矛盾的加剧。",
+    "core_proposition": "社交媒体的争议揭示了公众对财富分配和社会制度认知的分歧，影响社会稳定和政策制定。",
+    "why_now": "相关话题近期热度攀升，争议激烈，成为社会舆论焦点。",
+    "reader_payoff": "帮助读者理解当前经济与社会分歧的表现及深层原因。",
+    "article_use": "社会经济评论、舆论分析专题。",
+    "distinctiveness_reason": "基于高热度社交讨论，聚焦理念冲突与社会分歧的判断而非简单报道。",
+    "evidence_gap_summary": "缺少深度调研及经济数据支持社会分歧形成机制分析。",
+    "proof_requirements": [
+      "经济数据与财富流动趋势",
+      "社交舆论分析报告",
+      "社会阶层与政策反馈研究"
+    ],
+    "recommended_data_angles": [
+      "富豪迁徙数据",
+      "社交媒体话题热度及情感分析",
+      "经济不平等指标变化"
+    ],
+    "recommended_visual_angles": [
+      "话题讨论热度图",
+      "财富流向动态图",
+      "经济指标对比图"
+    ],
+    "priority_people": [
+      "社会学家",
+      "经济学者",
+      "舆论研究专家"
+    ],
+    "priority_orgs": [
+      "社科院",
+      "经济研究机构"
+    ],
+    "priority_news_queries": [
+      "社会主义争论",
+      "财富流失",
+      "经济社会分歧"
+    ],
+    "existing_evidence": [
+      {
+        "title": "Socialism is equality. Everyone gets poor together. Billionaires are fleeing",
+        "url": "https://x.com/WallStreetMav/status/2040092337116704926",
+        "source_type": "X",
+        "source_tier": "platform_hotspot",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍社交平台相关争论背景",
+      "part_1": "分析争论反映的经济理念冲突",
+      "part_2": "探讨财富流失与社会公平的关联",
+      "part_3": "评估社会分歧对政策的潜在影响",
+      "ending": "总结社会对话与解决路径"
+    }
+  },
+  {
+    "topic_id": "T009",
+    "mother_topic_id": "T009",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "中国市场监管部门约谈平台企业如何推动行业规范重塑？",
+    "one_line_judgment": "政府加大对平台企业的监管力度，推动行业合规和消费者权益保护，促进行业健康发展。",
+    "core_proposition": "约谈行动体现监管升级趋势，可能引发平台企业调整经营策略和规范行业秩序。",
+    "why_now": "国务院食安办及市场监管总局最新约谈事件，监管信号强烈且具示范效应。",
+    "reader_payoff": "了解监管动向及其对平台经济及消费者权益的影响，预判行业发展趋势。",
+    "article_use": "政策解读、行业趋势分析。",
+    "distinctiveness_reason": "结合官方最新监管动作与行业反馈，聚焦规范重塑的判断视角。",
+    "evidence_gap_summary": "缺乏企业具体应对措施及监管成效评估数据。",
+    "proof_requirements": [
+      "监管政策细节及执行情况",
+      "平台企业反馈与调整",
+      "消费者权益保护数据"
+    ],
+    "recommended_data_angles": [
+      "平台合规率变化",
+      "消费者投诉及维权案例",
+      "监管处罚与约谈频次"
+    ],
+    "recommended_visual_angles": [
+      "监管趋势时间线",
+      "行业合规指标图",
+      "消费者权益保护数据图"
+    ],
+    "priority_people": [
+      "市场监管专家",
+      "平台企业高管",
+      "消费者权益代表"
+    ],
+    "priority_orgs": [
+      "国务院食安办",
+      "市场监管总局"
+    ],
+    "priority_news_queries": [
+      "平台企业约谈",
+      "行业监管升级",
+      "消费者权益保护"
+    ],
+    "existing_evidence": [
+      {
+        "title": "国务院食安办、市场监管总局、海关总署约谈3家平台企业",
+        "url": "https://www.douyin.com/video/7624178333126905123",
+        "source_type": "抖音",
+        "source_tier": "official",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍约谈事件及背景",
+      "part_1": "解读监管升级的政策意图",
+      "part_2": "分析约谈对平台企业的影响",
+      "part_3": "探讨行业规范重塑的路径和难点",
+      "ending": "总结监管对行业长期发展的意义"
+    }
+  },
+  {
+    "topic_id": "T010",
+    "mother_topic_id": "T010",
+    "topic_kind": "independent",
+    "angle_variant_of": null,
+    "title": "霍尔木兹海峡新通行方案是否改变美传统盟友的航运安全格局？",
+    "one_line_judgment": "霍尔木兹海峡首次允许法日等美传统盟友船只通过，标志通行政策突破，或重塑地区航运安全格局。",
+    "core_proposition": "这一通行方案反映地区地缘政治调整，影响全球能源运输安全和国际力量平衡。",
+    "why_now": "最新报道披露通行方案实施，国际社会关注其潜在影响。",
+    "reader_payoff": "理解通行方案背后的地缘政治意义及对全球能源安全的潜在影响。",
+    "article_use": "国际地缘政治与能源安全专题报道。",
+    "distinctiveness_reason": "基于最新官方通行方案及多方关注，聚焦政策突破与地区安全关系。",
+    "evidence_gap_summary": "缺乏通行方案具体细节及相关国家反应的全面信息。",
+    "proof_requirements": [
+      "通行方案文本及实施细节",
+      "各国官方立场和反应",
+      "地区安全和能源运输数据"
+    ],
+    "recommended_data_angles": [
+      "海峡通行船只统计",
+      "能源运输量变化",
+      "地区军事部署动态"
+    ],
+    "recommended_visual_angles": [
+      "霍尔木兹海峡通行航线图",
+      "能源运输安全风险评估图",
+      "地区军事力量分布图"
+    ],
+    "priority_people": [
+      "地缘政治专家",
+      "能源安全分析师",
+      "国际关系学者"
+    ],
+    "priority_orgs": [
+      "国际海事组织",
+      "相关国家海军"
+    ],
+    "priority_news_queries": [
+      "霍尔木兹海峡通行方案",
+      "美传统盟友航运安全",
+      "地区能源运输安全"
+    ],
+    "existing_evidence": [
+      {
+        "title": "霍尔木兹海峡现“通行方案”：法日等“美国传统盟友”船只首次通过",
+        "url": "https://wallstreetcn.com/articles/3769261",
+        "source_type": "reports",
+        "source_tier": "personal_opinion",
+        "note": ""
+      }
+    ],
+    "structure_hint": {
+      "opening": "介绍霍尔木兹海峡地理和战略重要性",
+      "part_1": "解读新通行方案的内容和突破点",
+      "part_2": "分析通行方案对地区安全和国际关系的影响",
+      "part_3": "探讨通行方案对全球能源市场的潜在影响",
+      "ending": "总结通行方案的长远意义及未来趋势"
+    }
+  }
+]

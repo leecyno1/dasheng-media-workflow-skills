@@ -1,0 +1,298 @@
+{
+  "run_id": "2026-04-07_141203",
+  "gate": "Brief Gate",
+  "status": "approved",
+  "generation_method": "ai",
+  "generated_at": "2026-04-07T14:15:00+08:00",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "未被选中的题请写入 rejected_topic_ids。",
+    "只有 selected_topics 非空且状态为 approved，draft 才允许执行。"
+  ],
+  "selected_topics": [
+    "topic-hormuz-strait-energy-order",
+    "topic-sodium-ion-battery-breakthrough",
+    "topic-us-stock-storage-sector-surge"
+  ],
+  "rejected_topic_ids": [
+    "topic-us-iran-ceasefire-game",
+    "topic-russia-japan-oil-ban",
+    "topic-artemis-2-moon-mission",
+    "topic-fed-rate-cut-expectations",
+    "topic-veterinary-anesthetics-abuse"
+  ],
+  "candidate_topics": [
+    {
+      "topic_id": "topic-hormuz-strait-energy-order",
+      "title": "霍尔木兹海峡封锁：全球能源供应链的结构性重构",
+      "core_argument": "霍尔木兹海峡危机不仅是短期油价波动，更是全球能源供应秩序的长期重构信号",
+      "why_now": "当前市场关注的是油价短期波动和停火协议进展，但更重要的是霍尔木兹海峡封锁对全球能源供应链的结构性影响。特朗普提出收取'通行费'、美军拉清单打击伊朗能源目标，这些信号表明能源地缘政治正在从价格博弈转向供应链控制权争夺。这个结构性变化被短期情绪掩盖，但对投资者和企业的长期决策至关重要。",
+      "target_audience": "宏观投资者、商品交易员、能源行业从业者、供应链管理者",
+      "evidence_needs": [
+        "霍尔木兹海峡的历史通行量数据和当前封锁情况",
+        "全球主要能源进口国（中国、日本、韩国、印度）的供应链依赖度",
+        "替代航线（好望角、苏伊士运河）的成本和可行性分析",
+        "历史上类似事件（1980年代两伊战争）对供给秩序的长期影响",
+        "美军打击伊朗能源目标的清单和潜在影响"
+      ],
+      "evidence_sources": [
+        "官方：国际能源署(IEA)、美国能源信息署(EIA)、中国海关总署",
+        "行业：航运数据平台(Kpler, Vortexa)、能源咨询公司报告(Wood Mackenzie)",
+        "媒体：华尔街见闻、Bloomberg、Reuters、FT 的深度报道"
+      ],
+      "recommended_framework": "结构型",
+      "framework_reason": "需要拆解复杂的供应链结构，帮助读者理解从海峡封锁到全球能源价格、库存、定价机制的传导机制",
+      "recommended_strategy": "密度强化",
+      "strategy_application": "提供具体数据（通行量、依赖度、成本差异）、拆解传导链路（封锁→航运→库存→价格）、给出可操作框架（企业如何应对供应链风险）",
+      "scores": {
+        "timeliness": 9.5,
+        "unique_angle": 9.0,
+        "evidence": 8.5,
+        "reader_value": 9.0,
+        "longevity": 8.5,
+        "composite": 8.9
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成",
+      "composite_score": 8.9
+    },
+    {
+      "topic_id": "topic-us-iran-ceasefire-game",
+      "title": "美伊停火协议背后：45天临时方案为何难成永久和平",
+      "core_argument": "美伊停火协议的核心矛盾在于美国只愿接受临时停火，而伊朗坚持永久停火，这反映了双方战略目标的根本分歧",
+      "why_now": "调停者正为45天停火协议做最后努力，但伊朗称美国'没做好永久停火准备'，同时伊朗拒绝临时停火并提出10项条款。这种僵局背后是什么？为什么美国只愿意临时停火？伊朗的10项条款意味着什么？这些问题关系到中东局势的长期走向和全球能源市场的稳定性。",
+      "target_audience": "地缘政治分析师、国际关系研究者、能源投资者",
+      "evidence_needs": [
+        "45天停火协议的具体内容和各方立场",
+        "伊朗提出的10项条款详细内容",
+        "美国和伊朗的战略目标差异（制裁解除、核协议、地区影响力）",
+        "历史上美伊谈判的成功和失败案例",
+        "停火协议对油价和能源市场的短期和长期影响"
+      ],
+      "evidence_sources": [
+        "官方：美国国务院声明、伊朗外交部声明",
+        "智库：布鲁金斯学会、国际危机组织(ICG)报告",
+        "媒体：华尔街见闻、澎湃新闻、凤凰网的深度报道"
+      ],
+      "recommended_framework": "对比型",
+      "framework_reason": "需要对比美国和伊朗的立场差异、临时停火vs永久停火的利弊、历史案例的成败",
+      "recommended_strategy": "角度发现",
+      "strategy_application": "从'为什么美国只愿意临时停火'这个反常识角度切入，揭示美国的战略考量（保持压力、避免承诺、维持灵活性）",
+      "scores": {
+        "timeliness": 9.0,
+        "unique_angle": 8.5,
+        "evidence": 8.0,
+        "reader_value": 8.5,
+        "longevity": 7.5,
+        "composite": 8.3
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成",
+      "composite_score": 8.3
+    },
+    {
+      "topic_id": "topic-sodium-ion-battery-breakthrough",
+      "title": "钠离子电池全球首次突破：中国如何改写储能产业格局",
+      "core_argument": "中国钠离子电池的重大突破不仅是技术进步，更是对锂资源依赖的战略性突围",
+      "why_now": "全球首次实现钠离子电池重大突破的消息刚刚发布，这是储能领域的重要里程碑。在锂资源价格波动、供应链安全问题凸显的背景下，钠离子电池作为替代方案的战略意义被低估了。这不仅影响新能源汽车和储能市场，还关系到中国在全球能源转型中的话语权。",
+      "target_audience": "新能源投资者、储能行业从业者、产业政策研究者",
+      "evidence_needs": [
+        "钠离子电池的技术突破具体内容（能量密度、循环寿命、成本）",
+        "与锂离子电池的性能和成本对比",
+        "钠资源储量和分布（相比锂资源的优势）",
+        "钠离子电池的应用场景和市场规模预测",
+        "中国在钠离子电池领域的专利和产业链布局"
+      ],
+      "evidence_sources": [
+        "官方：中国科学院、工信部相关报告",
+        "行业：宁德时代、中科海钠等企业公告",
+        "研究：财联社、36氪的行业分析报告"
+      ],
+      "recommended_framework": "痛点型",
+      "framework_reason": "从锂资源依赖的痛点切入，展示钠离子电池如何解决这个问题",
+      "recommended_strategy": "密度强化",
+      "strategy_application": "提供详细的技术参数对比、成本分析、应用场景拆解，给出投资者和企业的可操作建议",
+      "scores": {
+        "timeliness": 9.0,
+        "unique_angle": 8.0,
+        "evidence": 8.5,
+        "reader_value": 8.5,
+        "longevity": 8.0,
+        "composite": 8.4
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成",
+      "composite_score": 8.4
+    },
+    {
+      "topic_id": "topic-russia-japan-oil-ban",
+      "title": "俄罗斯拒绝给日本供油：能源武器化如何重塑东亚地缘格局",
+      "core_argument": "俄罗斯对日本的能源禁运不是孤立事件，而是能源武器化战略在东亚的延伸，将深刻影响日本能源安全和中日韩能源合作",
+      "why_now": "俄罗斯外交部副部长称在中东战火纷飞之际，俄罗斯将考虑各国立场决定供油，并重新将28名日本人列为战犯。这是俄罗斯能源武器化战略从欧洲延伸到东亚的信号。日本高度依赖能源进口，这一禁令将如何影响日本能源安全？中国和韩国会受到什么影响？东亚能源合作格局会如何变化？",
+      "target_audience": "地缘政治分析师、能源行业从业者、东亚问题研究者",
+      "evidence_needs": [
+        "日本对俄罗斯能源的依赖度（石油、天然气、煤炭）",
+        "俄罗斯能源武器化的历史案例（欧洲天然气危机）",
+        "日本的替代能源方案和成本",
+        "中日韩能源合作的现状和潜在变化",
+        "俄罗斯对华能源出口的增长趋势"
+      ],
+      "evidence_sources": [
+        "官方：日本经济产业省、俄罗斯外交部声明",
+        "行业：国际能源署(IEA)、日本能源经济研究所",
+        "媒体：澎湃新闻、凤凰网、日经中文网的报道"
+      ],
+      "recommended_framework": "结构型",
+      "framework_reason": "需要拆解能源武器化的传导机制：俄罗斯禁令→日本能源缺口→替代方案→成本上升→地缘格局变化",
+      "recommended_strategy": "密度强化",
+      "strategy_application": "提供详细的依赖度数据、替代方案成本分析、地缘格局变化的具体路径",
+      "scores": {
+        "timeliness": 8.5,
+        "unique_angle": 8.5,
+        "evidence": 8.0,
+        "reader_value": 8.0,
+        "longevity": 8.0,
+        "composite": 8.2
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成",
+      "composite_score": 8.2
+    },
+    {
+      "topic_id": "topic-us-stock-storage-sector-surge",
+      "title": "存储板块创历史新高：AI 算力需求如何改写半导体投资逻辑",
+      "core_argument": "存储板块的强劲表现不是周期性反弹，而是 AI 算力需求驱动的结构性机会",
+      "why_now": "美股开盘存储板块涨幅居前，希捷科技涨幅扩大至逾7%并创历史新高。这不是简单的周期性反弹，而是 AI 算力需求爆发带来的结构性机会。AI 训练和推理需要海量存储，这如何改变存储行业的供需格局？哪些细分领域最受益？投资者应该关注什么？",
+      "target_audience": "科技投资者、半导体行业从业者、AI 产业研究者",
+      "evidence_needs": [
+        "AI 训练和推理的存储需求量级（相比传统应用的增长倍数）",
+        "存储行业的供需格局变化（产能、价格、库存）",
+        "主要存储厂商的业绩和指引（希捷、西部数据、美光）",
+        "AI 算力需求的增长趋势和预测",
+        "存储技术的演进方向（HBM、CXL、固态存储）"
+      ],
+      "evidence_sources": [
+        "官方：各存储厂商财报和业绩指引",
+        "行业：Gartner、IDC 的市场研究报告",
+        "媒体：华尔街见闻、Bloomberg 的行业分析"
+      ],
+      "recommended_framework": "痛点型",
+      "framework_reason": "从 AI 算力需求的存储瓶颈切入，展示存储板块如何解决这个痛点",
+      "recommended_strategy": "密度强化",
+      "strategy_application": "提供详细的需求量级数据、供需格局分析、细分领域机会拆解，给出投资者的可操作建议",
+      "scores": {
+        "timeliness": 8.5,
+        "unique_angle": 8.0,
+        "evidence": 8.5,
+        "reader_value": 8.5,
+        "longevity": 7.5,
+        "composite": 8.2
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成",
+      "composite_score": 8.2
+    },
+    {
+      "topic_id": "topic-artemis-2-moon-mission",
+      "title": "阿耳忒弥斯2号打破人类距离纪录：载人深空探索的商业化拐点",
+      "core_argument": "阿耳忒弥斯2号不仅是技术突破，更标志着载人深空探索从政府主导向商业化转型的拐点",
+      "why_now": "美国阿耳忒弥斯2号载人绕月任务刷新人类历史纪录，打破人类与地球最远距离。这不仅是技术成就，更重要的是背后的商业化模式：SpaceX、蓝色起源等私营企业深度参与，NASA 从主导者变为采购者。这种模式如何改变航天产业？哪些商业机会正在涌现？",
+      "target_audience": "科技投资者、航天产业从业者、商业航天研究者",
+      "evidence_needs": [
+        "阿耳忒弥斯2号的技术突破和历史意义",
+        "商业航天企业在项目中的参与度和收益",
+        "NASA 采购模式的变化（相比阿波罗计划）",
+        "载人深空探索的商业化路径和市场规模",
+        "中国、欧洲等其他国家的载人深空探索计划"
+      ],
+      "evidence_sources": [
+        "官方：NASA 官网、SpaceX 公告",
+        "行业：航天咨询公司报告、投资机构分析",
+        "媒体：知乎、头条、Bloomberg 的深度报道"
+      ],
+      "recommended_framework": "故事型",
+      "framework_reason": "从阿耳忒弥斯2号的历史性时刻切入，讲述载人深空探索商业化的故事",
+      "recommended_strategy": "细节锚定",
+      "strategy_application": "使用具体的技术细节（距离纪录、飞行轨迹）、商业细节（合同金额、参与企业）来增强真实感",
+      "scores": {
+        "timeliness": 8.0,
+        "unique_angle": 8.5,
+        "evidence": 7.5,
+        "reader_value": 7.5,
+        "longevity": 8.5,
+        "composite": 8.0
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成",
+      "composite_score": 8.0
+    },
+    {
+      "topic_id": "topic-fed-rate-cut-expectations",
+      "title": "美联储降息预期反复：市场为何总是猜错美联储的节奏",
+      "core_argument": "市场对美联储降息的预期反复失误，根本原因是忽视了美联储决策的多目标权衡和数据依赖特征",
+      "why_now": "美联储降息预期再次成为市场焦点，但历史数据显示市场总是猜错美联储的节奏。为什么会这样？美联储的决策逻辑是什么？投资者应该如何理解美联储的信号？这些问题关系到宏观投资的核心判断。",
+      "target_audience": "宏观投资者、固定收益交易员、经济政策研究者",
+      "evidence_needs": [
+        "历史上市场预期与美联储实际行动的偏差案例",
+        "美联储决策的多目标权衡（通胀、就业、金融稳定）",
+        "美联储官员讲话的信号解读方法",
+        "当前经济数据对降息时点的影响",
+        "不同降息路径对资产价格的影响"
+      ],
+      "evidence_sources": [
+        "官方：美联储会议纪要、官员讲话",
+        "行业：高盛、摩根士丹利的宏观研究报告",
+        "媒体：华尔街见闻、Bloomberg 的深度分析"
+      ],
+      "recommended_framework": "对比型",
+      "framework_reason": "需要对比市场预期vs美联储实际行动、单目标vs多目标权衡、前瞻指引vs数据依赖",
+      "recommended_strategy": "角度发现",
+      "strategy_application": "从'为什么市场总是猜错'这个反常识角度切入，揭示美联储决策的复杂性",
+      "scores": {
+        "timeliness": 7.5,
+        "unique_angle": 8.5,
+        "evidence": 8.0,
+        "reader_value": 8.5,
+        "longevity": 7.0,
+        "composite": 7.9
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成",
+      "composite_score": 7.9
+    },
+    {
+      "topic_id": "topic-veterinary-anesthetics-abuse",
+      "title": "兽用麻醉药流入未成年人市场：电商平台免责声明的法律边界在哪里",
+      "core_argument": "兽用麻醉药滥用链条上的各方责任不清，电商平台的免责声明不能成为逃避监管的挡箭牌",
+      "why_now": "兽用麻醉药被未成年人盯上，多家电商平台均有卖，商家的免责声明真能免责吗？这个问题不仅关系到未成年人保护，还涉及电商平台的法律责任边界、药物滥用的监管漏洞。在电商平台监管趋严的背景下，这个案例具有典型意义。",
+      "target_audience": "法律从业者、电商平台管理者、公共政策研究者、家长群体",
+      "evidence_needs": [
+        "兽用麻醉药滥用的规模和危害",
+        "电商平台销售兽用麻醉药的现状和监管漏洞",
+        "免责声明的法律效力和边界",
+        "药物滥用链条上各方的法律责任（生产商、销售商、平台、购买者）",
+        "国外类似案例的监管经验"
+      ],
+      "evidence_sources": [
+        "官方：国家药监局、市场监管总局的相关规定",
+        "法律：律师解读、法院判例",
+        "媒体：知乎、澎湃新闻的深度调查"
+      ],
+      "recommended_framework": "痛点型",
+      "framework_reason": "从未成年人保护的痛点切入，展示监管漏洞和解决方案",
+      "recommended_strategy": "细节锚定",
+      "strategy_application": "使用具体的案例细节（电商平台截图、免责声明原文、受害者故事）来增强真实感和紧迫感",
+      "scores": {
+        "timeliness": 8.0,
+        "unique_angle": 7.5,
+        "evidence": 7.5,
+        "reader_value": 8.0,
+        "longevity": 7.0,
+        "composite": 7.6
+      },
+      "generation_method": "ai",
+      "source_status": "AI生成",
+      "composite_score": 7.6
+    }
+  ]
+}

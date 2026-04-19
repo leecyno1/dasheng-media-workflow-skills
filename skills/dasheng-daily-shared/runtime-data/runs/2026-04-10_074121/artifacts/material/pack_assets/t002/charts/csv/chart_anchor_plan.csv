@@ -1,0 +1,2 @@
+anchor_id,title,purpose,chart_type,data_sources,fallback_rule,fallback_outputs
+chart1,国际油价与区域价格差异趋势图,展示封锁前后WTI、Brent及亚洲现货油价的走势及价格错位，验证油价坚挺与区域分化现象,折线图,国际油价历史数据 | 亚洲现货油价统计 | 封锁事件时间节点,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md

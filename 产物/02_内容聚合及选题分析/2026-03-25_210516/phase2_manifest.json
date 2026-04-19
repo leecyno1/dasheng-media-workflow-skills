@@ -1,0 +1,19 @@
+{
+  "run_id": "2026-03-25_210516",
+  "phase": "02_内容聚合及选题分析",
+  "mode": "cluster_plus_detailed_brief",
+  "generated_at": "2026-03-25T21:20:00+08:00",
+  "input_stage1_dir": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-03-25_210516",
+  "input_records": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-03-25_210516/raw/intake_records.json",
+  "template_ref": "https://ccnokd2fmz4u.feishu.cn/docx/JyCwdLxrjoYJRAxgAijcBmennZg",
+  "template_access": "unavailable_without_login",
+  "artifacts": [
+    "02_详细Brief.md",
+    "02_详细Brief_报告.md"
+  ],
+  "top_topics": [
+    "地缘冲突、停火预期与油价再定价",
+    "半导体与国产芯片：政策催化与产业分化",
+    "AI 工具与 OpenClaw 工作流"
+  ]
+}

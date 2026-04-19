@@ -1,0 +1,83 @@
+{
+  "run_id": "2026-04-02_210702",
+  "gate": "Brief Gate",
+  "status": "approved",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "未被选中的题请写入 rejected_topic_ids 或保留空值。",
+    "只有 selected_topics 非空且状态为 approved，draft 才允许执行。"
+  ],
+  "selected_topics": [
+    {
+      "topic_id": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+      "title": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+      "selection_reason": "validation run",
+      "editor_note": "验证 Reasoning Sheet 与 draft 管线",
+      "priority": "P1"
+    }
+  ],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+      "title": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+      "source_status": "自然入选",
+      "composite_score": 8.03
+    },
+    {
+      "topic_id": "topic-停火预期反复下-黄金-原油和风险资产正在被怎样重新定价",
+      "title": "停火预期反复下，黄金、原油和风险资产正在被怎样重新定价？",
+      "source_status": "自然入选",
+      "composite_score": 8.02
+    },
+    {
+      "topic_id": "topic-如果冲突开始长期化-真正要重估的可能不是战况-而是供给秩序",
+      "title": "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+      "source_status": "自然入选",
+      "composite_score": 7.91
+    },
+    {
+      "topic_id": "topic-黄金-原油与地缘风险里最值得继续追的-不是表面热闹-而是底层变量在怎么变",
+      "title": "黄金、原油与地缘风险里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+      "source_status": "自然补位",
+      "composite_score": 7.91
+    },
+    {
+      "topic_id": "topic-其他高频观察里最值得继续追的-不是表面热闹-而是底层变量在怎么变",
+      "title": "其他高频观察里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+      "source_status": "自然补位",
+      "composite_score": 7.69
+    },
+    {
+      "topic_id": "topic-ai-工具与工作流接入里最值得继续追的-不是表面热闹-而是底层变量在怎么",
+      "title": "AI 工具与工作流接入里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+      "source_status": "自然补位",
+      "composite_score": 7.35
+    },
+    {
+      "topic_id": "topic-表面在交易事件-真正的主线会不会其实是再通胀",
+      "title": "表面在交易事件，真正的主线会不会其实是再通胀？",
+      "source_status": "自然入选",
+      "composite_score": 7.18
+    },
+    {
+      "topic_id": "topic-宏观政策与再通胀里最值得继续追的-不是表面热闹-而是底层变量在怎么变",
+      "title": "宏观政策与再通胀里最值得继续追的，不是表面热闹，而是底层变量在怎么变",
+      "source_status": "自然补位",
+      "composite_score": 7.17
+    },
+    {
+      "topic_id": "topic-一键安装-openclaw-常用-skills-为什么比-会用-ai-更",
+      "title": "一键安装 OpenClaw + 常用 skills，为什么比“会用 AI”更重要的是“能不能接进工作流”",
+      "source_status": "自然入选",
+      "composite_score": 7.13
+    },
+    {
+      "topic_id": "topic-半导体突然很热闹-但行业最危险的误判可能才刚开始",
+      "title": "半导体突然很热闹，但行业最危险的误判可能才刚开始",
+      "source_status": "自然入选",
+      "composite_score": 6.37
+    }
+  ],
+  "editor_note": ""
+}

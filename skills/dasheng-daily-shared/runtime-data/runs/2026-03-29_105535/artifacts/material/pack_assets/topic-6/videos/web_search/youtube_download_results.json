@@ -1,0 +1,16 @@
+[
+  {
+    "query": "stock market b roll 4k",
+    "url": "https://www.youtube.com/watch?v=kPEPFizOFdQ",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": "973.22KiB at    1.00MiB/s ETA 00:00\n[download]   1.5% of  973.22KiB at    2.07MiB/s ETA 00:00\n[download]   3.2% of  973.22KiB at  182.95KiB/s ETA 00:05\n[download]   6.5% of  973.22KiB at  370.17KiB/s ETA 00:02\n[download]  13.0% of  973.22KiB at  253.89KiB/s ETA 00:03\n[download]  26.2% of  973.22KiB at  366.81KiB/s ETA 00:01\n[download]  52.5% of  973.22KiB at  498.83KiB/s ETA 00:00\n[download] 100.0% of  973.22KiB at  558.13KiB/s ETA 00:00\n[download] 100% of  973.22KiB in 00:00:02 at 387.19KiB/s \n"
+  },
+  {
+    "query": "oil tanker aerial 4k",
+    "url": "https://www.youtube.com/watch?v=d9zemzFk-bg",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": "  1.69MiB at  174.11KiB/s ETA 00:09\n[download]   1.8% of    1.69MiB at  241.10KiB/s ETA 00:07\n[download]   3.6% of    1.69MiB at  314.36KiB/s ETA 00:05\n[download]   7.4% of    1.69MiB at  357.48KiB/s ETA 00:04\n[download]  14.8% of    1.69MiB at  489.80KiB/s ETA 00:03\n[download]  29.6% of    1.69MiB at  812.91KiB/s ETA 00:01\n[download]  59.2% of    1.69MiB at    1.38MiB/s ETA 00:00\n[download] 100.0% of    1.69MiB at    1.96MiB/s ETA 00:00\n[download] 100% of    1.69MiB in 00:00:02 at 783.62KiB/s \n"
+  }
+]

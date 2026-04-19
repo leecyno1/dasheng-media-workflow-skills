@@ -1,0 +1,23 @@
+[
+  {
+    "query": "Jerome Powell Federal Reserve Chairman speech 2024",
+    "entity_type": "person",
+    "entity": "Jerome Powell",
+    "priority": null,
+    "channel": "news"
+  },
+  {
+    "query": "Federal Reserve official policy meeting press conference 2024",
+    "entity_type": "institution_event",
+    "entity": "Federal Reserve",
+    "priority": null,
+    "channel": "news"
+  },
+  {
+    "query": "Wall Street trading floor reaction to Federal Reserve speech 2024",
+    "entity_type": "event",
+    "entity": "Wall Street",
+    "priority": null,
+    "channel": "news"
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "id": "topic-lobster-tech-comparison:reasoning",
+    "object_type": "ReasoningSheet",
+    "run_id": "2026-04-06_211510",
+    "version": "1.0.0",
+    "status": "ready",
+    "generated_by": "dasheng-stage-brief-ai"
+  },
+  "topic_id": "topic-lobster-tech-comparison",
+  "title": "龙虾技术全景解析：本地/云端/变体架构对比与大圣龙虾优势",
+  "core_thesis": "龙虾技术的三种部署形态各有优劣，大圣龙虾通过优化架构和本地化支持，在性能、成本、易用性上实现了平衡",
+  "claims": [
+    {
+      "claim_id": "topic-lobster-tech-comparison-claim-01",
+      "section_id": "section-01",
+      "statement": "本地部署 vs 云端托管 vs 变体的技术差异",
+      "counterpoint": null,
+      "missing_proof": [],
+      "chart_need": "三种架构技术对比表"
+    },
+    {
+      "claim_id": "topic-lobster-tech-comparison-claim-02",
+      "section_id": "section-02",
+      "statement": "性能基准测试数据（响应时间、吞吐量、资源占用）",
+      "counterpoint": null,
+      "missing_proof": [],
+      "chart_need": "性能基准测试对比图"
+    },
+    {
+      "claim_id": "topic-lobster-tech-comparison-claim-03",
+      "section_id": "section-03",
+      "statement": "成本对比分析（服务器成本、运维成本、学习成本）",
+      "counterpoint": null,
+      "missing_proof": [],
+      "chart_need": "总体拥有成本对比表"
+    }
+  ],
+  "evidence_items": [],
+  "structure_contract": {}
+}

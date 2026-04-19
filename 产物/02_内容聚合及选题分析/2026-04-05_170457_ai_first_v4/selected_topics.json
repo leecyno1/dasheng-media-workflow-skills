@@ -1,0 +1,111 @@
+{
+  "run_id": "2026-04-05_170457",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "未被选中的题请写入 rejected_topic_ids 或保留空值。",
+    "只有 selected_topics 非空且状态为 approved，draft 才允许执行。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "topic-mother-伊朗-diplomacy-conflict",
+      "title": "伊朗事件热度高涨，不等于原油市场秩序风险缓解",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-mother-伊朗-diplomacy-conflict",
+      "angle_variant_of": null,
+      "article_use": "解释稿",
+      "changed_dimension": "",
+      "core_proposition": "虽然伊朗相关事件短期升级引发关注，但真正影响市场的是背后长期秩序成本的持续上升，这一变量决定原油供应稳定性和地缘风险。",
+      "source_status": "自然入选",
+      "composite_score": 7.3
+    },
+    {
+      "topic_id": "topic-mother-伊朗-diplomacy-conflict-variant-外交部-中东-diplomacy-c",
+      "title": "外交部关注中东局势，背后是秩序成本的长期攀升",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-mother-伊朗-diplomacy-conflict",
+      "angle_variant_of": "topic-mother-伊朗-diplomacy-conflict",
+      "article_use": "结构稿",
+      "changed_dimension": "objects",
+      "core_proposition": "从外交部官方表态和中东局势看，表面事件升级掩盖了秩序成本的结构性上升，这一变量对区域稳定和国际原油供应至关重要。",
+      "source_status": "自然入选",
+      "composite_score": 7.14
+    },
+    {
+      "topic_id": "topic-mother-英伟达-ai-semiconductor-cycle",
+      "title": "市场在交易英伟达热度，真正的半导体周期主线仍未转变",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-mother-英伟达-ai-semiconductor-cycle",
+      "angle_variant_of": null,
+      "article_use": "解释稿",
+      "changed_dimension": "",
+      "core_proposition": "英伟达及AI相关信号显示局部修复迹象，但拆解设备、订单、价格和资本开支等信号发现，半导体行业整体周期尚未全面复苏，投资者易误读局部热度。",
+      "source_status": "自然入选",
+      "composite_score": 7.06
+    },
+    {
+      "topic_id": "topic-mother-英伟达-ai-semiconductor-cycle-variant-英伟达-半导体-semiconduc",
+      "title": "英伟达半导体业务热度，半导体周期全面回暖尚未确立",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-mother-英伟达-ai-semiconductor-cycle",
+      "angle_variant_of": "topic-mother-英伟达-ai-semiconductor-cycle",
+      "article_use": "解释稿",
+      "changed_dimension": "objects",
+      "core_proposition": "从半导体整体角度拆解英伟达表现，发现局部设备和订单信号虽有改善，但整体行业资本开支和出货量尚未形成全面复苏，投资者需警惕误判。",
+      "source_status": "自然入选",
+      "composite_score": 6.72
+    },
+    {
+      "topic_id": "topic-mother-白银-贵金属-risk-pricing-降息",
+      "title": "白银真正被重估的是风险溢价的结构变量",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-mother-白银-贵金属-risk-pricing-降息",
+      "angle_variant_of": null,
+      "article_use": "判断稿",
+      "changed_dimension": "",
+      "core_proposition": "市场对白银和贵金属的风险溢价正在围绕核心结构变量进行重估，而非简单反应降息消息。",
+      "source_status": "自然入选",
+      "composite_score": 7.16
+    },
+    {
+      "topic_id": "topic-mother-白银-贵金属-risk-pricing-降息-variant-川普-特朗普-risk-pricin",
+      "title": "川普效应不等于贵金属风险溢价全面反转",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-mother-白银-贵金属-risk-pricing-降息",
+      "angle_variant_of": "topic-mother-白银-贵金属-risk-pricing-降息",
+      "article_use": "判断稿",
+      "changed_dimension": "objects",
+      "core_proposition": "川普相关事件对贵金属价格有影响，但风险溢价的重估核心变量并非仅由其言论驱动。",
+      "source_status": "自然入选",
+      "composite_score": 6.76
+    },
+    {
+      "topic_id": "topic-mother-宽松-降息-policy-inflation-降息",
+      "title": "降息环境中再通胀风险被忽视了吗？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-mother-宽松-降息-policy-inflation-降息",
+      "angle_variant_of": null,
+      "article_use": "判断稿",
+      "changed_dimension": "",
+      "core_proposition": "尽管市场聚焦降息，实际再通胀压力与利率预期回摆风险被普遍低估，影响资产定价分化。",
+      "source_status": "自然入选",
+      "composite_score": 7.24
+    },
+    {
+      "topic_id": "topic-mother-宽松-降息-policy-inflation-降息-variant-美联储-中东-policy-infl",
+      "title": "中东局势驱动下的利率与通胀预期分歧加剧",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-mother-宽松-降息-policy-inflation-降息",
+      "angle_variant_of": "topic-mother-宽松-降息-policy-inflation-降息",
+      "article_use": "判断稿",
+      "changed_dimension": "objects",
+      "core_proposition": "中东局势与美联储政策共同影响市场通胀与利率预期，当前市场对其复杂交织的回摆风险认识不足。",
+      "source_status": "自然入选",
+      "composite_score": 7.39
+    }
+  ],
+  "editor_note": ""
+}

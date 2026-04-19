@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "title": "稳定币牌照落地:加密市场的'银行牌照时刻'｜改写稿框架动画",
+    "description": "基于改写稿框架精华与关键数据的 motion 动画视频",
+    "version": "2026.04.14"
+  },
+  "global": {
+    "factoryVersion": "v1.0.0",
+    "autoplay": true,
+    "autoplayGapMs": 800,
+    "tabSwitchRestart": true
+  },
+  "scenes": [
+    {
+      "id": "topic_stablecoin_license_market_impact-narrative-01",
+      "template": "timeline",
+      "label": "框架精华：结构时间线",
+      "tag": "motion-summary",
+      "durationMs": 7600,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 7600,
+        "enter": {
+          "type": "slide",
+          "durationMs": 4200,
+          "staggerMs": 180,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "events": [
+          {
+            "time": "段落1",
+            "title": "一、稳定币牌照的具体要求与门槛"
+          },
+          {
+            "time": "段落2",
+            "title": "二、当前稳定币市场的规模与主要玩家"
+          },
+          {
+            "time": "段落3",
+            "title": "三、传统金融机构的布局动作与时间表"
+          },
+          {
+            "time": "段落4",
+            "title": "结语：牌照制度重塑行业，开启金融新赛道"
+          },
+          {
+            "time": "段落5",
+            "title": "引用与待补源"
+          }
+        ]
+      }
+    },
+    {
+      "id": "topic_stablecoin_license_market_impact-narrative-02",
+      "template": "ticker",
+      "label": "关键数据：滚动条",
+      "tag": "motion-summary",
+      "durationMs": 7200,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 7200,
+        "enter": {
+          "type": "slide",
+          "durationMs": 3200,
+          "staggerMs": 0,
+          "easing": "linear"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "items": [
+          {
+            "title": "2024年，稳定币牌照正式发放，加密货币行业迎来历史性转折",
+            "score": 58
+          },
+          {
+            "title": "法币支持型如USDT、USDC采用法币100%储备,价格稳定、流动性强,但存在透明度",
+            "score": 64
+          },
+          {
+            "title": "2025-2026年更多传统金融机构加速入场,稳定币业务逐渐规模化",
+            "score": 70
+          },
+          {
+            "title": "2025-2026年更多传统金融机构加速入场,稳定币业务逐渐规模化",
+            "score": 76
+          },
+          {
+            "title": "# 稳定币牌照落地：加密市场的\"银行牌照时刻\"",
+            "score": 82
+          }
+        ]
+      }
+    },
+    {
+      "id": "topic_stablecoin_license_market_impact-narrative-03",
+      "template": "gauge",
+      "label": "风险强度评估",
+      "tag": "motion-summary",
+      "durationMs": 6200,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6200,
+        "enter": {
+          "type": "slide",
+          "durationMs": 3000,
+          "staggerMs": 0,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "score": 74,
+        "label": "Narrative Risk"
+      }
+    },
+    {
+      "id": "topic_stablecoin_license_market_impact-narrative-04",
+      "template": "donutKpi",
+      "label": "执行优先级",
+      "tag": "motion-summary",
+      "durationMs": 6200,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6200,
+        "enter": {
+          "type": "draw",
+          "durationMs": 3200,
+          "staggerMs": 0,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "value": 79,
+        "target": 85,
+        "label": "Action Priority"
+      }
+    }
+  ]
+}

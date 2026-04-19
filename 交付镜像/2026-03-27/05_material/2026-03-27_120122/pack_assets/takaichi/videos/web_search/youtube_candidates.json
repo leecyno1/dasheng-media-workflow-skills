@@ -1,0 +1,362 @@
+[
+  {
+    "query": "Japan election rally crowd Tokyo 4k",
+    "candidates": [
+      {
+        "title": "Hundreds celebrate Japan's far-right Sanseito party election gains | REUTERS",
+        "url": "https://www.youtube.com/watch?v=YcGNdyqWvZI",
+        "duration": 56.0,
+        "channel": "Reuters",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 56,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Tokyo Harajuku Street Protest",
+        "url": "https://www.youtube.com/watch?v=KvVH-8CZ9g4",
+        "duration": 30.0,
+        "channel": "Derrick Lin",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 29,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "January Pro-Trump Rally in Japan is bigger than any 2020 Biden Rally",
+        "url": "https://www.youtube.com/watch?v=v6GFEwiBdV0",
+        "duration": 41.0,
+        "channel": "Lasse Burholt",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 720,
+          "resolution_width": 1280,
+          "duration_seconds_hint": 41,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "Japan election rally crowd Tokyo 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "Japanese parliament diet building b roll",
+    "candidates": [
+      {
+        "title": "Inside Japan’s National Diet Building: A Rare Tour of Tokyo’s Parliament",
+        "url": "https://www.youtube.com/watch?v=Mr7YAO14cKg",
+        "duration": 122.0,
+        "channel": "travelformortals",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 122,
+          "fps_hint": 60.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "B-roll: National Day of Remembance",
+        "url": "https://www.youtube.com/watch?v=6IBoS96ZY64",
+        "duration": 45.0,
+        "channel": "Dick Hughes",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 720,
+          "resolution_width": 1280,
+          "duration_seconds_hint": 45,
+          "fps_hint": 60.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Japanese Emperor Hirohito presents scroll to PM Hayato Ikeda and Hayato Ikeda wit...HD Stock Footage",
+        "url": "https://www.youtube.com/watch?v=lZ5NUhZqTnQ",
+        "duration": 38.0,
+        "channel": "CriticalPast",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 37,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "Japanese parliament diet building b roll",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "Tokyo crowd crossing 4k documentary",
+    "candidates": [
+      {
+        "title": "The famous Shibuya crossing - 90 seconds",
+        "url": "https://www.youtube.com/watch?v=Od6EeCWytZo",
+        "duration": 108.0,
+        "channel": "Carl Rosa",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 108,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Tokyo: A City That Feels Like Another Planet",
+        "url": "https://www.youtube.com/watch?v=BhBcICoRY6Q",
+        "duration": 2849.0,
+        "channel": "CoolVision",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 2160,
+          "resolution_width": 3840,
+          "duration_seconds_hint": 2848,
+          "fps_hint": 60.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Wide timelapse shot of crowds of people crossing the centre of Shibuya shopping and entertainment di",
+        "url": "https://www.youtube.com/watch?v=59QjubvqsWg",
+        "duration": 25.0,
+        "channel": "Nature Picture Library",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 25,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "Tokyo crowd crossing 4k documentary",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "Japan military drill coast guard 4k",
+    "candidates": [
+      {
+        "title": "PH, Japan at U.S. Coast Guards nagpakitang gilas sa maritime exercise",
+        "url": "https://www.youtube.com/watch?v=C6MOWUyHjec",
+        "duration": 120.0,
+        "channel": "NewsWatch Plus PH",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 720,
+          "resolution_width": 1280,
+          "duration_seconds_hint": 119,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Japan-U.S.  joint drill held at Yokosuka Port",
+        "url": "https://www.youtube.com/watch?v=PcmQWsTH9OM",
+        "duration": 35.0,
+        "channel": "Nippon Television News Japan",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 720,
+          "resolution_width": 1280,
+          "duration_seconds_hint": 34,
+          "fps_hint": 24.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Japan Selects MQ-9B SeaGuardian For Coast Guard RPAS Project",
+        "url": "https://www.youtube.com/watch?v=vjidzV_RwCU",
+        "duration": 272.0,
+        "channel": "Military Coverage",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 720,
+          "resolution_width": 1280,
+          "duration_seconds_hint": 272,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "Japan military drill coast guard 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "Japan aging society elderly crowd street 4k",
+    "candidates": [
+      {
+        "title": "Japan's elderly citizens accounted for record 28.4% of its population in 2018",
+        "url": "https://www.youtube.com/watch?v=AWhhlqXvxUQ",
+        "duration": 44.0,
+        "channel": "Arirang News",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 720,
+          "resolution_width": 1280,
+          "duration_seconds_hint": 44,
+          "fps_hint": 29.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Japan Is Changing How We'll Grow Old (360 Video)",
+        "url": "https://www.youtube.com/watch?v=zahhBhg2z-Q",
+        "duration": 287.0,
+        "channel": "The Wall Street Journal",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 2048,
+          "resolution_width": 3840,
+          "duration_seconds_hint": 287,
+          "fps_hint": 60.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "Coping With A Super-Ageing Nation | Deciphering Japan | Episode 3/4",
+        "url": "https://www.youtube.com/watch?v=HQU-NeP_spU",
+        "duration": 2685.0,
+        "channel": "CNA Insider",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 2684,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 480,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "Japan aging society elderly crowd street 4k",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  }
+]

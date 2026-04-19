@@ -1,0 +1,85 @@
+[
+  {
+    "query": "AI工作流自动化企业案例介绍",
+    "candidates": [
+      {
+        "title": "Claude Cowork: 零基礎也能搭建你的AI自動化團隊 | 附5個真實案例演示",
+        "url": "https://www.youtube.com/watch?v=UkcMNFxeVKk",
+        "duration": 970.0,
+        "channel": "李厂长来了",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 2160,
+          "resolution_width": 3840,
+          "duration_seconds_hint": 969,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "什么是AI Agent｜一条视频说清楚AI Agent的演进过程&应用落地&商业价值",
+        "url": "https://www.youtube.com/watch?v=Lnnt0Gcozhs",
+        "duration": 426.0,
+        "channel": "在野在也",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 426,
+          "fps_hint": 25.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      },
+      {
+        "title": "4大工作流怎么选：Make、Coze、n8n、Dify",
+        "url": "https://www.youtube.com/watch?v=sMPW9Obb-Pg",
+        "duration": 60.0,
+        "channel": "阿童木AI",
+        "quality_audit": {
+          "source_category": "general_footage",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 59,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": null,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "AI工作流自动化企业案例介绍",
+      "candidate_count": 3,
+      "qualified_count": 3,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "AI系统集成与维护挑战实录",
+    "candidates": [],
+    "quality": {
+      "query": "AI系统集成与维护挑战实录",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  }
+]

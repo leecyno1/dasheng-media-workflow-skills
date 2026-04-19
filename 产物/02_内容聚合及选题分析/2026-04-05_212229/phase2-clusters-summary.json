@@ -1,0 +1,1043 @@
+{
+  "run_id": "2026-04-05_170457",
+  "generated_at": "2026-04-05T21:23:31.345627",
+  "stats": {
+    "input_records": 415,
+    "cluster_count": 50,
+    "topic_card_count": 10
+  },
+  "clusters": [
+    {
+      "cluster_id": "外交部-中东-日本-外交",
+      "cluster_title_candidate": "外交部 / 中东 / 当地时间3月31日 / 鲁登科称",
+      "cluster_summary": "围绕 外交部 / 中东 / 当地时间3月31日 / 鲁登科称 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wb": 1
+      },
+      "dominant_entities": [
+        "外交部",
+        "中东",
+        "俄罗斯",
+        "日本"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞之际，俄罗斯将考虑各国"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5282653734437870"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 1.35,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 70.97
+    },
+    {
+      "cluster_id": "外交部-俄罗斯-日本-外交",
+      "cluster_title_candidate": "外交部 / 俄罗斯 / 中新社 / 俄罗斯重新将28名日本人列为战犯",
+      "cluster_summary": "围绕 外交部 / 俄罗斯 / 中新社 / 俄罗斯重新将28名日本人列为战犯 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wb": 1
+      },
+      "dominant_entities": [
+        "外交部",
+        "俄罗斯",
+        "日本"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "【中新社： #俄罗斯重新将28名日本人列为战犯# #俄方重新将28名日本人列为战犯# 】据中新社2日报道：俄罗斯外交部发言人扎哈罗娃4月1日表示，俄方近期重新将"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283383100050229"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 1.35,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 68.58
+    },
+    {
+      "cluster_id": "宽松-降息-降息-央行果断降息",
+      "cluster_title_candidate": "宽松 / 降息 / 央行果断降息 / 各方注意了 / 降息",
+      "cluster_summary": "围绕 宽松 / 降息 / 央行果断降息 / 各方注意了 / 降息 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "douyin": 1
+      },
+      "dominant_entities": [
+        "宽松",
+        "降息"
+      ],
+      "dominant_actions": [
+        "降息"
+      ],
+      "representative_titles": [
+        "央行果断降息，各方注意了‼️进一步宽松的空间已经打，#央行降息 #财经 #干货 #我在抖音说财经"
+      ],
+      "representative_links": [
+        "https://www.douyin.com/video/7054565568447401219"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.98,
+      "timeliness_score": 0.98,
+      "authority_score": 1.35,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 81.08
+    },
+    {
+      "cluster_id": "国务院-市场-国务院食安办-市场监管总局",
+      "cluster_title_candidate": "国务院 / 国务院食安办 / 市场监管总局",
+      "cluster_summary": "围绕 国务院 / 国务院食安办 / 市场监管总局 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "douyin": 1
+      },
+      "dominant_entities": [
+        "国务院"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "国务院食安办、市场监管总局、海关总署约谈3家平台企业。（央视频号：光华路资讯）"
+      ],
+      "representative_links": [
+        "https://www.douyin.com/video/7624178333126905123"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.98,
+      "timeliness_score": 0.98,
+      "authority_score": 1.35,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 78.14
+    },
+    {
+      "cluster_id": "what-we",
+      "cluster_title_candidate": "what / we",
+      "cluster_summary": "围绕 what / we 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wechat": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "What we know so far about the US fighter jet shot down over Iran"
+      ],
+      "representative_links": [
+        "https://www.bbc.com/news/articles/cm2k1dgz142o?at_medium=RSS&at_campaign=rss"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.9,
+      "timeliness_score": 0.88,
+      "authority_score": 1.22,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 42.0
+    },
+    {
+      "cluster_id": "cambodia-unveils",
+      "cluster_title_candidate": "cambodia / unveils",
+      "cluster_summary": "围绕 cambodia / unveils 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wechat": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [],
+      "representative_titles": [
+        "Cambodia unveils statue to honour famous landmine-sniffing rat"
+      ],
+      "representative_links": [
+        "https://www.bbc.com/news/articles/c0rx7xzd10xo?at_medium=RSS&at_campaign=rss"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 0.9,
+      "timeliness_score": 0.88,
+      "authority_score": 1.22,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 42.0
+    },
+    {
+      "cluster_id": "日本-但是闯入老中使馆-score",
+      "cluster_title_candidate": "日本 / 但是闯入老中使馆 / score",
+      "cluster_summary": "围绕 日本 / 但是闯入老中使馆 / score 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "content_research": 1
+      },
+      "dominant_entities": [
+        "日本"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "2026年日本又有士兵走丢：但是闯入老中使馆？"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV154QrBqEXG"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "timeliness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 64.0
+    },
+    {
+      "cluster_id": "特朗普-伊朗-特朗普杀了他全家-乌鸦校尉",
+      "cluster_title_candidate": "特朗普 / 伊朗 / 特朗普杀了他全家 / 乌鸦校尉",
+      "cluster_summary": "围绕 特朗普 / 伊朗 / 特朗普杀了他全家 / 乌鸦校尉 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "content_research": 1
+      },
+      "dominant_entities": [
+        "特朗普",
+        "伊朗"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1CCQqBuEt8"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "timeliness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 58.77
+    },
+    {
+      "cluster_id": "日本-score-bili",
+      "cluster_title_candidate": "日本 / score / bili",
+      "cluster_summary": "围绕 日本 / score / bili 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "content_research": 1
+      },
+      "dominant_entities": [
+        "日本"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "一名自称为日本自卫队现役官员闯入我大使馆威胁杀人"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV17EQzBNEBB"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "timeliness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 58.37
+    },
+    {
+      "cluster_id": "以色列-伊朗-油价-美国",
+      "cluster_title_candidate": "以色列 / 伊朗 / 月24日晚上 / 战况汇总",
+      "cluster_summary": "围绕 以色列 / 伊朗 / 月24日晚上 / 战况汇总 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "content_research": 1
+      },
+      "dominant_entities": [
+        "以色列",
+        "伊朗",
+        "美国",
+        "油价"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1WJQBByE12"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "timeliness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 55.34
+    },
+    {
+      "cluster_id": "伊朗-伊朗战争-和全球能源格局",
+      "cluster_title_candidate": "伊朗 / 伊朗战争 / 和全球能源格局",
+      "cluster_summary": "围绕 伊朗 / 伊朗战争 / 和全球能源格局 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "content_research": 1
+      },
+      "dominant_entities": [
+        "伊朗"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "伊朗战争，和全球能源格局"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1QGXABxEbq"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "timeliness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 53.72
+    },
+    {
+      "cluster_id": "伊朗-原油-停火-停火",
+      "cluster_title_candidate": "伊朗 / 原油 / 懂王狂画k线 / 精准抛售600万桶原油 / 停火 / 抛售",
+      "cluster_summary": "围绕 伊朗 / 原油 / 懂王狂画k线 / 精准抛售600万桶原油 / 停火 / 抛售 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "content_research": 1
+      },
+      "dominant_entities": [
+        "伊朗",
+        "原油",
+        "停火"
+      ],
+      "dominant_actions": [
+        "停火",
+        "抛售"
+      ],
+      "representative_titles": [
+        "懂王狂画k线！精准抛售600万桶原油，伊朗提停火条件！"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1RWQrBBEtF"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "timeliness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 53.31
+    },
+    {
+      "cluster_id": "特朗普-伊朗-油价-特朗普一个帖子让国际油价闪崩13",
+      "cluster_title_candidate": "特朗普 / 伊朗 / 特朗普一个帖子让国际油价闪崩13 / 伊朗否认",
+      "cluster_summary": "围绕 特朗普 / 伊朗 / 特朗普一个帖子让国际油价闪崩13 / 伊朗否认 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "content_research": 1
+      },
+      "dominant_entities": [
+        "特朗普",
+        "伊朗",
+        "油价"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "特朗普一个帖子让国际油价闪崩13%，特朗普称同伊朗对话完美，伊朗否认，一顿分析猛如虎，涨跌全看特朗普"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1EDQqBvEQs"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "timeliness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 52.7
+    },
+    {
+      "cluster_id": "特朗普-美国-特朗普又-taco",
+      "cluster_title_candidate": "特朗普 / 美国 / 特朗普又 / taco",
+      "cluster_summary": "围绕 特朗普 / 美国 / 特朗普又 / taco 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "content_research": 1
+      },
+      "dominant_entities": [
+        "特朗普",
+        "美国"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "特朗普又“TACO”？美国为何推迟“最后通牒”？"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1MRQBBDE1A"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "timeliness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 44.32
+    },
+    {
+      "cluster_id": "特朗普-伊朗-对话-完美",
+      "cluster_title_candidate": "特朗普 / 伊朗 / 对话 / 完美",
+      "cluster_summary": "围绕 特朗普 / 伊朗 / 对话 / 完美 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "content_research": 1
+      },
+      "dominant_entities": [
+        "特朗普",
+        "伊朗"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "特朗普：对话“完美”，是“伊朗主动打来电话”"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1VuXABbEFB"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "timeliness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 42.67
+    },
+    {
+      "cluster_id": "中国-日本-乌鸦校尉-score",
+      "cluster_title_candidate": "中国 / 日本 / 乌鸦校尉 / score",
+      "cluster_summary": "围绕 中国 / 日本 / 乌鸦校尉 / score 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "content_research": 1
+      },
+      "dominant_entities": [
+        "中国",
+        "日本"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "中国开始清理日本部署多年的间谍【乌鸦校尉】"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV16pcUzRE2k"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "timeliness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 42.47
+    },
+    {
+      "cluster_id": "特朗普-日本-突发-日本200万过海峡",
+      "cluster_title_candidate": "特朗普 / 日本 / 突发 / 日本200万过海峡",
+      "cluster_summary": "围绕 特朗普 / 日本 / 突发 / 日本200万过海峡 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "content_research": 1
+      },
+      "dominant_entities": [
+        "特朗普",
+        "日本"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "3.24突发！日本200万过海峡 特朗普暂停电站打击"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1FuQqBYELJ"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "timeliness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 39.58
+    },
+    {
+      "cluster_id": "特朗普-马斯克-世界周刊-为啥说翻就翻",
+      "cluster_title_candidate": "特朗普 / 马斯克 / 世界周刊 / 为啥说翻就翻",
+      "cluster_summary": "围绕 特朗普 / 马斯克 / 世界周刊 / 为啥说翻就翻 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "content_research": 1
+      },
+      "dominant_entities": [
+        "特朗普",
+        "马斯克"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "【世界周刊】特朗普和马斯克的友谊小船 为啥说翻就翻？"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV182T9zKE3s"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "timeliness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 34.8
+    },
+    {
+      "cluster_id": "美国-沈逸-美国大选",
+      "cluster_title_candidate": "美国 / 沈逸 / 美国大选",
+      "cluster_summary": "围绕 美国 / 沈逸 / 美国大选 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "content_research": 1
+      },
+      "dominant_entities": [
+        "美国"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "沈逸：美国大选——见证霸权的黄昏"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1nD4y197mb"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "timeliness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 34.39
+    },
+    {
+      "cluster_id": "特朗普-胡佛附体-历史轮回",
+      "cluster_title_candidate": "特朗普 / 胡佛附体 / 历史轮回",
+      "cluster_summary": "围绕 特朗普 / 胡佛附体 / 历史轮回 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "content_research": 1
+      },
+      "dominant_entities": [
+        "特朗普"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "特朗普“胡佛附体”，历史轮回？胡佛都干了什么"
+      ],
+      "representative_links": [
+        "https://www.bilibili.com/video/BV1JMR1YqEbN"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.57,
+      "timeliness_score": 1.57,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 30.0
+    },
+    {
+      "cluster_id": "发布-月31日-热度代理",
+      "cluster_title_candidate": "月31日 / 发布 / 发布",
+      "cluster_summary": "围绕 月31日 / 发布 / 发布 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wb": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [
+        "发布"
+      ],
+      "representative_titles": [
+        "【 #丈夫离婚前挥霍百万算作已分得财产# ，剩余同等价值财产全归妻子】3月31日，北京市平谷区人民法院召开离婚纠纷案件新闻通报会，披露近三年审判数据并发布六起典"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283176617610285"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 70.21
+    },
+    {
+      "cluster_id": "上涨-上涨-能穿越调整-明白666",
+      "cluster_title_candidate": "上涨 / 能穿越调整 / 上涨",
+      "cluster_summary": "围绕 上涨 / 能穿越调整 / 上涨 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wb": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [
+        "上涨"
+      ],
+      "representative_titles": [
+        "很多人都以为调整不影响自己的账户，其实着观点是错误的。能穿越调整，账户资金逆势上涨的非常少的。明白666 ​"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283579816838520"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 67.82
+    },
+    {
+      "cluster_id": "ai-其实是因为我掌握了一个最新prompt-就是把自己写的方案发给ai",
+      "cluster_title_candidate": "AI / 其实是因为我掌握了一个最新prompt / 就是把自己写的方案发给ai",
+      "cluster_summary": "围绕 AI / 其实是因为我掌握了一个最新prompt / 就是把自己写的方案发给ai 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wb": 1
+      },
+      "dominant_entities": [
+        "AI"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "最近老板夸我写策略能力大有提升。其实是因为我掌握了一个最新prompt，就是把自己写的方案发给AI，然后说：你好，这是我仇人写的，帮我挑挑刺。AI会给出又犀利又"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5282635978907325"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 67.6
+    },
+    {
+      "cluster_id": "发布-儿童犯罪典型案例-其中",
+      "cluster_title_candidate": "儿童犯罪典型案例 / 其中 / 发布",
+      "cluster_summary": "围绕 儿童犯罪典型案例 / 其中 / 发布 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wb": 1
+      },
+      "dominant_entities": [],
+      "dominant_actions": [
+        "发布"
+      ],
+      "representative_titles": [
+        "【 #偷盗十余名幼儿的人贩子已死刑# 】 #人贩子拒不供述也不悔罪# 今天，最高人民法院发布依法严惩拐卖妇女、儿童犯罪典型案例。其中：被告人王某文从2001年1"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283194551140828"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 66.02
+    },
+    {
+      "cluster_id": "日本-市场-日本10年期国债收益率创1999年以来新高-突发",
+      "cluster_title_candidate": "日本 / 日本10年期国债收益率创1999年以来新高 / 突发",
+      "cluster_summary": "围绕 日本 / 日本10年期国债收益率创1999年以来新高 / 突发 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "x": 1
+      },
+      "dominant_entities": [
+        "日本"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "【日本10年期国债收益率创1999年以来新高】 🚨 突发：日本10年期国债收益率一举突破2.39%，刷新1999年以来的历史纪录。 🔥 全面分析 💹 市场与股票"
+      ],
+      "representative_links": [
+        "https://x.com/KChart_Hunter/status/2040377086268047640"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 64.93
+    },
+    {
+      "cluster_id": "原油-波动-最近boros介绍通过hl-热度代理",
+      "cluster_title_candidate": "原油 / 最近boros介绍通过hl / 波动",
+      "cluster_summary": "围绕 原油 / 最近boros介绍通过hl / 波动 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "x": 1
+      },
+      "dominant_entities": [
+        "原油"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "最近钱从链上理财退的七七八八，主要还是看套利机会，目前波动最大流动性最高的大概就是原油了。想找个专门做这个的群什么的大家一起交流一下。最近boros介绍通过HL"
+      ],
+      "representative_links": [
+        "https://x.com/hongkongdoll/status/2040655791888150700"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 62.84
+    },
+    {
+      "cluster_id": "中国-的大规模传播-热度代理",
+      "cluster_title_candidate": "中国 / 的大规模传播 / 热度代理",
+      "cluster_summary": "围绕 中国 / 的大规模传播 / 热度代理 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wb": 1
+      },
+      "dominant_entities": [
+        "中国"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "麻烦大家看一看这条！ 日推现在正在大规模的进行对南京大屠杀和对中国犯下的罪行的历史修正运动，不是以往的小规模扩散而是几十万上百万的点赞和点击率的大规模传播。 而"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283601537304059"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 62.43
+    },
+    {
+      "cluster_id": "伊朗-最新伊朗禁播电影-热度代理",
+      "cluster_title_candidate": "伊朗 / 最新伊朗禁播电影 / 热度代理",
+      "cluster_summary": "围绕 伊朗 / 最新伊朗禁播电影 / 热度代理 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "xhs": 1
+      },
+      "dominant_entities": [
+        "伊朗"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "最新伊朗禁播电影，揭开穷人恒穷的本质"
+      ],
+      "representative_links": [
+        "https://www.xiaohongshu.com/explore/647da8ce000000002700181c?xsec_token=ABeLGP-ks9jGZj3D3NM-wEn58kWJttFhkfq9raAfrm1Jk%3D&xsec_source=pc_feed"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 60.21
+    },
+    {
+      "cluster_id": "日本-进而感到羞愧-热度代理",
+      "cluster_title_candidate": "日本 / 进而感到羞愧 / 热度代理",
+      "cluster_summary": "围绕 日本 / 进而感到羞愧 / 热度代理 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wb": 1
+      },
+      "dominant_entities": [
+        "日本"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "一个有点钱的日本人分享了一件让自己震惊的事，自己的女儿在国际学校，从英国老师那学习了南京大屠杀的历史，进而感到羞愧，于是他家紧急召开家庭会议，想给女儿洗脑说大屠"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283532655558815"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 60.12
+    },
+    {
+      "cluster_id": "特朗普-伊朗-美国-市场",
+      "cluster_title_candidate": "特朗普 / 伊朗 / areskapitalon / 直到时间",
+      "cluster_summary": "围绕 特朗普 / 伊朗 / areskapitalon / 直到时间 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "x": 1
+      },
+      "dominant_entities": [
+        "特朗普",
+        "伊朗",
+        "美国"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "@Areskapitalon 那市场就要押注美国强大的军事实力可以短时间解决伊朗，至少可以压制住他让他投降了，而且大概率特朗普的赢学又要短时间操控市场，直到时间"
+      ],
+      "representative_links": [
+        "https://x.com/sixrootsdzc/status/2040656312921399680"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 60.08
+    },
+    {
+      "cluster_id": "原油-黄金-波动-gate",
+      "cluster_title_candidate": "原油 / 黄金 / gate / 黄金和原油",
+      "cluster_summary": "围绕 原油 / 黄金 / gate / 黄金和原油 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "x": 1
+      },
+      "dominant_entities": [
+        "原油",
+        "黄金"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "⚡ 黄金和原油，也能上期权了 Gate 在 11 种加密期权之外，首次加入黄金（ $XAUT ）与原油（ $XTI ） 宏观波动加剧，用它抓机会、做对冲，都"
+      ],
+      "representative_links": [
+        "https://x.com/Gate_zh/status/2040655719335080370"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 60.08
+    },
+    {
+      "cluster_id": "油价-波动-另外关于boros的yu的定义-wtoil的抵押物是usdt",
+      "cluster_title_candidate": "油价 / 另外关于boros的yu的定义 / wtoil的抵押物是usdt",
+      "cluster_summary": "围绕 油价 / 另外关于boros的yu的定义 / wtoil的抵押物是usdt 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "x": 1
+      },
+      "dominant_entities": [
+        "油价"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "另外关于boros的YU的定义，WTOIL的抵押物是USDT/USD，那1 YU对应的是HL上1USDT 的WTIOIL，那其实想要1比1锁住费率，在油价波动的"
+      ],
+      "representative_links": [
+        "https://x.com/hongkongdoll/status/2040656327475593641"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 60.08
+    },
+    {
+      "cluster_id": "中国-以色列-冲突-冲突",
+      "cluster_title_candidate": "中国 / 以色列 / 冲突 / 美伊以冲突 / 冲突",
+      "cluster_summary": "围绕 中国 / 以色列 / 冲突 / 美伊以冲突 / 冲突 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wb": 1
+      },
+      "dominant_entities": [
+        "中国",
+        "以色列"
+      ],
+      "dominant_actions": [
+        "冲突"
+      ],
+      "representative_titles": [
+        "一个华裔教授认为以色列在中国影响力巨大，以色列掌控着中国产业链，竟然还把以色列传呼机爆炸事件的锅甩给了中国…… #美伊以冲突# #中长视频流量扶持计划# #热点"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283262668474702"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 59.82
+    },
+    {
+      "cluster_id": "原油-冲突-通胀-冲突",
+      "cluster_title_candidate": "原油 / 冲突 / 原油单日飙升14 / 冲突",
+      "cluster_summary": "围绕 原油 / 冲突 / 原油单日飙升14 / 冲突 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "x": 1
+      },
+      "dominant_entities": [
+        "原油"
+      ],
+      "dominant_actions": [
+        "冲突"
+      ],
+      "representative_titles": [
+        "其实地缘冲突对流动性的抽水效应确实明显，原油单日飙升14%，如果把通胀预期换算成资金成本，对风险资产绝对是短期利空。我给大家算笔账，按全球日耗1亿桶原油、每桶涨"
+      ],
+      "representative_links": [
+        "https://x.com/AndrewLoga39097/status/2040606822441386349"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 58.0
+    },
+    {
+      "cluster_id": "黄金-philarekt-流动性回流",
+      "cluster_title_candidate": "黄金 / philarekt / 流动性回流",
+      "cluster_summary": "围绕 黄金 / philarekt / 流动性回流 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "x": 1
+      },
+      "dominant_entities": [
+        "黄金"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "@philarekt 流动性回流，资金正从黄金轮动至比特币。"
+      ],
+      "representative_links": [
+        "https://x.com/QT9277/status/2040516850833141931"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 58.0
+    },
+    {
+      "cluster_id": "日本-日本参议员-坚持本土习俗",
+      "cluster_title_candidate": "日本 / 日本参议员 / 坚持本土习俗",
+      "cluster_summary": "围绕 日本 / 日本参议员 / 坚持本土习俗 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wb": 1
+      },
+      "dominant_entities": [
+        "日本"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "日本参议员：拒绝修建穆斯林专用墓地～让穆斯林人把尸体带回家！坚持本土习俗。 她称：穆斯林不应葬于日本。“日本是火葬国家。划拨土地用于穆斯林墓地是不合适的。如果他"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283345183542100"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 57.92
+    },
+    {
+      "cluster_id": "日本-近日-女儿回家后",
+      "cluster_title_candidate": "日本 / 近日 / 女儿回家后",
+      "cluster_summary": "围绕 日本 / 近日 / 女儿回家后 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wb": 1
+      },
+      "dominant_entities": [
+        "日本"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "【 #日本家长不满学校教南京大屠杀历史# 】近日，一位日本家长在社交媒体发帖称，自己就读于国际学校的女儿在学校历史课上被英国老师教授南京大屠杀的历史。女儿回家后"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283563232299331"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 57.12
+    },
+    {
+      "cluster_id": "伊朗-美国-停火-霍尔木兹",
+      "cluster_title_candidate": "伊朗 / 美国 / 美媒 / 控制霍尔木兹海峡 / 停火",
+      "cluster_summary": "围绕 伊朗 / 美国 / 美媒 / 控制霍尔木兹海峡 / 停火 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wb": 1
+      },
+      "dominant_entities": [
+        "伊朗",
+        "美国",
+        "停火"
+      ],
+      "dominant_actions": [
+        "停火"
+      ],
+      "representative_titles": [
+        "【美媒： #伊朗真正意义上的核武器# ——控制霍尔木兹海峡】 #美国被曝想用停火换霍尔木兹海峡通航# 多家美媒认为，对霍尔木兹海峡的控制已经成为伊朗真正意义上的"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283356866778950"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 56.63
+    },
+    {
+      "cluster_id": "美国-殖人连线女博士-女博士有理有据",
+      "cluster_title_candidate": "美国 / 殖人连线女博士 / 女博士有理有据",
+      "cluster_summary": "围绕 美国 / 殖人连线女博士 / 女博士有理有据 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wb": 1
+      },
+      "dominant_entities": [
+        "美国"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "殖人连线女博士，问：你对美国的强大怎么看？ 女博士有理有据，摆事实讲道理，怼的殖人哑口无言！！ L 蓝色的烟卷的微博视频 ​"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283287872571457"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 56.51
+    },
+    {
+      "cluster_id": "日本-日本人就是这样子-自发",
+      "cluster_title_candidate": "日本 / 日本人就是这样子 / 自发",
+      "cluster_summary": "围绕 日本 / 日本人就是这样子 / 自发 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+      "count": 1,
+      "source_mix": {
+        "wb": 1
+      },
+      "dominant_entities": [
+        "日本"
+      ],
+      "dominant_actions": [],
+      "representative_titles": [
+        "日本人就是这样子，“自发”地开始排查外国人——特别是在日华人的身份，这还不是什么执法人员——这种社会氛围，就真没人讨论一下营商环境吗？ #海外新鲜事# ​"
+      ],
+      "representative_links": [
+        "https://m.weibo.cn/detail/5283405818236960"
+      ],
+      "trendradar_coverage": 0.0,
+      "freshness_score": 1.0,
+      "timeliness_score": 1.0,
+      "authority_score": 0.95,
+      "noise_ratio": 0.0,
+      "avg_heat_score": 56.2
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets",
+  "topics": [
+    "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化"
+  ],
+  "max_workers": 2,
+  "steps": "charts",
+  "layer5_only": false,
+  "video_download_limit": 2,
+  "started_at_epoch": 1775171882.943593,
+  "duration_seconds": 0.28,
+  "ok_count": 1,
+  "failed_count": 0,
+  "results": [
+    {
+      "topic": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+      "command": [
+        "python3",
+        "/Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py",
+        "--pack-root",
+        "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets",
+        "--topic-dir",
+        "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+        "--video-download-limit",
+        "2",
+        "--steps",
+        "charts"
+      ],
+      "returncode": 0,
+      "duration_seconds": 0.28,
+      "stdout_tail": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets/execution_manifest.json\n",
+      "stderr_tail": "",
+      "status": "ok"
+    }
+  ],
+  "run_id": "2026-04-02_210702",
+  "material_manifest": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/material_manifest.json"
+}

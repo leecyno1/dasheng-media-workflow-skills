@@ -1,0 +1,10 @@
+channel_pack:
+  channel_id: x_note
+  display_name: X 文字线程
+  content_type: note
+  word_range: 5-12帖
+  title_range: 0-12
+  hook_style: 首帖一条强观点
+  paragraph_style: 编号短帖
+  structure: 结论前置-编号展开-收束
+  cta: follow、bookmark、reply

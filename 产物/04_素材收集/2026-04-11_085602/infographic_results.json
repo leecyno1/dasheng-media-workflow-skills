@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-04-11T22:07:04.313384",
+  "total": 3,
+  "success": 0,
+  "results": [
+    {
+      "slug": "claude华尔街紧急会议",
+      "title": "Claude新模型引发华尔街紧急会议：AI对金融业的风险在哪",
+      "status": "failed"
+    },
+    {
+      "slug": "稳定币牌照",
+      "title": "稳定币牌照落地：加密市场的银行牌照时刻",
+      "status": "failed"
+    },
+    {
+      "slug": "日本士兵闯使馆",
+      "title": "日本士兵闯使馆事件背后：个体极端行为还是系统性问题？",
+      "status": "failed"
+    }
+  ]
+}

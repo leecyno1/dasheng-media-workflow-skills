@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "id": "topic-us-stock-storage-sector-surge:reasoning",
+    "object_type": "ReasoningSheet",
+    "run_id": "2026-04-07_141203",
+    "version": "1.0.0",
+    "generated_at": "2026-04-07T15:10:00+08:00"
+  },
+  "topic_id": "topic-us-stock-storage-sector-surge",
+  "title": "存储板块创历史新高：AI 算力需求如何改写半导体投资逻辑",
+  "core_claim": "存储板块的强劲表现不是周期性反弹，而是 AI 算力需求驱动的结构性机会",
+  "why_now": "美股开盘存储板块涨幅居前，希捷科技涨幅扩大至逾7%并创历史新高",
+  "target_audience": "科技投资者、半导体行业从业者、AI 产业研究者",
+  "proof_requirements": [
+    "AI 训练和推理的存储需求量级（相比传统应用的增长倍数）",
+    "存储行业的供需格局变化（产能、价格、库存）",
+    "主要存储厂商的业绩和指引（希捷、西部数据、美光）",
+    "AI 算力需求的增长趋势和预测",
+    "存储技术的演进方向（HBM、CXL、固态存储）"
+  ],
+  "evidence_sources": [
+    "官方：各存储厂商财报和业绩指引",
+    "行业：Gartner、IDC 的市场研究报告",
+    "媒体：华尔街见闻、Bloomberg 的行业分析"
+  ],
+  "claims": [
+    {
+      "claim_id": "topic-us-stock-storage-sector-surge-claim-01",
+      "section_id": "section-01",
+      "statement": "AI 改变了存储需求结构",
+      "counterpoint": "把 AI 存储需求当成又一个应用场景",
+      "missing_proof": [
+        "传统应用vs AI应用存储需求对比",
+        "AI训练集群存储配置"
+      ],
+      "chart_need": "传统应用 vs AI 应用存储需求对比表"
+    },
+    {
+      "claim_id": "topic-us-stock-storage-sector-surge-claim-02",
+      "section_id": "section-02",
+      "statement": "供给侧结构性变化",
+      "counterpoint": null,
+      "missing_proof": [
+        "产能集中度数据",
+        "资本开支变化",
+        "高端产品毛利率"
+      ],
+      "chart_need": "存储行业资本开支和产能集中度趋势"
+    },
+    {
+      "claim_id": "topic-us-stock-storage-sector-surge-claim-03",
+      "section_id": "section-03",
+      "statement": "HBM市场高速增长",
+      "counterpoint": null,
+      "missing_proof": [
+        "HBM市场规模预测",
+        "供应商格局",
+        "毛利率对比"
+      ],
+      "chart_need": "HBM 市场规模增长预测"
+    },
+    {
+      "claim_id": "topic-us-stock-storage-sector-surge-claim-04",
+      "section_id": "section-04",
+      "statement": "存储股估值重构",
+      "counterpoint": null,
+      "missing_proof": [
+        "希捷科技估值变化",
+        "盈利能力提升",
+        "估值倍数扩张"
+      ],
+      "chart_need": "希捷科技估值重构分析"
+    }
+  ],
+  "recommended_framework": "痛点型",
+  "recommended_strategy": "密度强化",
+  "structure_contract": {
+    "sections": [
+      "开头（痛点共鸣）",
+      "周期性思维的三个误区",
+      "三条投资主线：从周期股到成长股",
+      "实操验证：存储股的估值重构",
+      "结语：从周期股到成长股的范式转变"
+    ]
+  }
+}

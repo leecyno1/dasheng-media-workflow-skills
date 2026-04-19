@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "version": "1.0",
+  "thresholds": {
+    "cv_min": 0.03,
+    "slope_abs_min": 0.005,
+    "r2_min": 0.25,
+    "trend_strength_min": 0.3,
+    "heatmap_var_min": 0.05
+  },
+  "fallback": {
+    "mode": "logical_relation_table",
+    "outputs": [
+      "charts/csv/*.csv",
+      "charts/markdown/*.md"
+    ],
+    "trigger_rule": "当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格"
+  }
+}

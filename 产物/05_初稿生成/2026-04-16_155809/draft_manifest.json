@@ -1,0 +1,24 @@
+{
+  "run_id": "2026-04-16_155809",
+  "stage": "draft",
+  "status": "completed",
+  "timestamp": "2026-04-16T16:30:00+08:00",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-16_155809",
+  "upstream": {
+    "selected_topics": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-16_155809_manual/selected_topics.json"
+  },
+  "drafts": [
+    {
+      "topic_id": "topic-japan-nuclear-capability-diplomatic-crisis",
+      "title": "日本核武器能力披露背后：从和平宪法到军事化的结构性转变",
+      "draft_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-16_155809/03_标准初稿_japan-nuclear-capability-diplomatic-crisis.md",
+      "word_count": 1850,
+      "status": "completed"
+    }
+  ],
+  "summary": {
+    "total_topics": 1,
+    "completed_drafts": 1,
+    "failed_topics": 0
+  }
+}

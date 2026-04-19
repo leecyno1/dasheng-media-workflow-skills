@@ -1,0 +1,138 @@
+{
+  "run_id": "2026-04-10_074121",
+  "stage": "material",
+  "upstream_type": "MaterialInput[]",
+  "upstream_entry": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-10_074121/artifacts/material/material_ai_inputs.json",
+  "upstream_files": [
+    "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-10_074121/artifacts/material/material_ai_inputs.json"
+  ],
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-10_074121/artifacts/material/pack_assets",
+  "generation_basis": "final_doc_ai_reading",
+  "selected_topics": [
+    "鲍威尔讲话终结加息预期引发市场转向降息押注",
+    "中东冲突与霍尔木兹海峡封锁导致油价坚挺形成全球能源供应链风险",
+    "全球央行大规模抛售美债引发金融市场系统性风险担忧"
+  ],
+  "topic_types": [
+    {
+      "topic_id": "t001",
+      "topic_type": "finance_macro",
+      "layer5_template": "market_story",
+      "video_quality_policy": {
+        "min_height": 0,
+        "min_duration_seconds": 8,
+        "min_scene_changes": 2,
+        "min_scene_change_rate": 0.08,
+        "allow_news_live_or_interview": true,
+        "block_self_media_talking_head": true,
+        "reject_screenshot_montage": true,
+        "report_fields": [
+          "source_category",
+          "source_ok",
+          "resolution_height",
+          "duration_seconds",
+          "scene_changes",
+          "scene_change_rate",
+          "anti_screenshot_montage_pass",
+          "final_pass",
+          "fail_reasons"
+        ]
+      },
+      "claim_bindings": 4
+    },
+    {
+      "topic_id": "t002",
+      "topic_type": "finance_macro",
+      "layer5_template": "market_story",
+      "video_quality_policy": {
+        "min_height": 0,
+        "min_duration_seconds": 8,
+        "min_scene_changes": 2,
+        "min_scene_change_rate": 0.08,
+        "allow_news_live_or_interview": true,
+        "block_self_media_talking_head": true,
+        "reject_screenshot_montage": true,
+        "report_fields": [
+          "source_category",
+          "source_ok",
+          "resolution_height",
+          "duration_seconds",
+          "scene_changes",
+          "scene_change_rate",
+          "anti_screenshot_montage_pass",
+          "final_pass",
+          "fail_reasons"
+        ]
+      },
+      "claim_bindings": 4
+    },
+    {
+      "topic_id": "t003",
+      "topic_type": "finance_macro",
+      "layer5_template": "market_story",
+      "video_quality_policy": {
+        "min_height": 0,
+        "min_duration_seconds": 8,
+        "min_scene_changes": 2,
+        "min_scene_change_rate": 0.08,
+        "allow_news_live_or_interview": true,
+        "block_self_media_talking_head": true,
+        "reject_screenshot_montage": true,
+        "report_fields": [
+          "source_category",
+          "source_ok",
+          "resolution_height",
+          "duration_seconds",
+          "scene_changes",
+          "scene_change_rate",
+          "anti_screenshot_montage_pass",
+          "final_pass",
+          "fail_reasons"
+        ]
+      },
+      "claim_bindings": 4
+    }
+  ],
+  "asset_counts": [
+    {
+      "topic_id": "t001",
+      "image_items": 8,
+      "video_items": 9,
+      "chart_items": 4,
+      "reference_items": 8
+    },
+    {
+      "topic_id": "t002",
+      "image_items": 9,
+      "video_items": 10,
+      "chart_items": 1,
+      "reference_items": 10
+    },
+    {
+      "topic_id": "t003",
+      "image_items": 8,
+      "video_items": 4,
+      "chart_items": 3,
+      "reference_items": 10
+    }
+  ],
+  "asset_binding_contract": [
+    "claim_id",
+    "section_id",
+    "usage_type",
+    "relevance_score",
+    "editor_status"
+  ],
+  "quality_audit_expected_fields": [
+    "source_category",
+    "source_ok",
+    "resolution_height",
+    "duration_seconds",
+    "scene_changes",
+    "scene_change_rate",
+    "anti_screenshot_montage_pass",
+    "final_pass",
+    "fail_reasons"
+  ],
+  "status": "ready_for_material_execution"
+}

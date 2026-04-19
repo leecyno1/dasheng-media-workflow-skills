@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "title": "topic11_openclaw安装｜互动图表视频",
+    "description": "来自历史图表 CSV 的动态图表视频补充",
+    "version": "2026.04.01"
+  },
+  "global": {
+    "factoryVersion": "v1.0.0",
+    "autoplay": true,
+    "autoplayGapMs": 800,
+    "tabSwitchRestart": true
+  },
+  "scenes": [
+    {
+      "id": "topic11-chart-01",
+      "template": "barGrow",
+      "label": "图表：install flow nodes",
+      "tag": "interactive-chart",
+      "durationMs": 6800,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6800,
+        "enter": {
+          "type": "grow",
+          "durationMs": 3400,
+          "staggerMs": 140,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "bars": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "labels": [
+          "环境检查",
+          "依赖安装",
+          "项目拉取",
+          "配置密钥",
+          "启动验证",
+          "失败分类",
+          "日志定位",
+          "回滚/重试"
+        ]
+      }
+    },
+    {
+      "id": "topic11-chart-02",
+      "template": "barGrow",
+      "label": "图表：security boundary",
+      "tag": "interactive-chart",
+      "durationMs": 6800,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6800,
+        "enter": {
+          "type": "grow",
+          "durationMs": 3400,
+          "staggerMs": 140,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "bars": [
+          3.0,
+          2.0,
+          3.0,
+          2.0,
+          2.0
+        ],
+        "labels": [
+          "API Key",
+          "Path Permission",
+          "Package Lock",
+          "Port Exposure",
+          "Skill Trust"
+        ]
+      }
+    },
+    {
+      "id": "topic11-chart-03",
+      "template": "barGrow",
+      "label": "图表：team governance nodes",
+      "tag": "interactive-chart",
+      "durationMs": 6800,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6800,
+        "enter": {
+          "type": "grow",
+          "durationMs": 3400,
+          "staggerMs": 140,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "bars": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "labels": [
+          "版本基线",
+          "自动安装",
+          "最小验证",
+          "日志归档",
+          "问题分级",
+          "回滚更新"
+        ]
+      }
+    },
+    {
+      "id": "topic11-chart-04",
+      "template": "barGrow",
+      "label": "图表：troubleshoot nodes",
+      "tag": "interactive-chart",
+      "durationMs": 6800,
+      "animation": {
+        "autoplay": true,
+        "loop": true,
+        "direction": "forward",
+        "durationMs": 6800,
+        "enter": {
+          "type": "grow",
+          "durationMs": 3400,
+          "staggerMs": 140,
+          "easing": "easeOutCubic"
+        },
+        "emphasis": {
+          "atPct": 0.82,
+          "target": "main",
+          "effect": "pulse"
+        },
+        "timeline": []
+      },
+      "config": {
+        "palette": "financeBlue",
+        "density": "standard",
+        "showLegend": true,
+        "showValueLabels": true,
+        "showGrid": true,
+        "valueFormat": "compact",
+        "motionIntensity": "medium"
+      },
+      "data": {
+        "bars": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "labels": [
+          "启动失败?",
+          "依赖报错",
+          "权限报错",
+          "端口占用",
+          "锁版本+重装",
+          "降权+目录修复",
+          "释放端口+重启",
+          "验证通过"
+        ]
+      }
+    }
+  ]
+}

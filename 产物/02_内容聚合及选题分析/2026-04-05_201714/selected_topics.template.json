@@ -1,0 +1,114 @@
+{
+  "run_id": "2026-04-05_170457",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "没有 selected_topics 或未批准状态，不允许进入下游阶段。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "T001",
+      "title": "中东霍尔木兹海峡封锁加剧全球油价波动，重塑国际通胀预期",
+      "topic_kind": "independent",
+      "mother_topic_id": "T001",
+      "angle_variant_of": null,
+      "article_use": "可写为国际能源市场专题，结合地缘冲突与宏观经济的互动分析，适合财经深度报道和战略研判。",
+      "core_proposition": "中东地缘冲突直接影响全球能源供应安全，霍尔木兹海峡交通受阻成为油价上涨及通胀压力的关键因子。",
+      "one_line_judgment": "伊朗封锁霍尔木兹海峡导致原油供应链紧张，推动油价剧烈波动并引发全球通胀预期调整。"
+    },
+    {
+      "topic_id": "T002",
+      "title": "俄罗斯以能源供应为手段拒绝向日本供油，彰显地缘政治能源格局重塑",
+      "topic_kind": "independent",
+      "mother_topic_id": "T002",
+      "angle_variant_of": null,
+      "article_use": "适合写作地缘政治与能源安全专题，结合俄日关系及全球能源市场动态，提供政策解读与风险预测。",
+      "core_proposition": "能源作为战略资源在国家间政治博弈中地位上升，俄罗斯针对“不友好国家”的供油政策是地缘政治紧张升级的表现。",
+      "one_line_judgment": "俄罗斯将能源供应作为地缘政治工具，公开拒绝向日本供油，反映全球能源格局因地缘冲突而深刻变化。"
+    },
+    {
+      "topic_id": "T003",
+      "title": "美联储转向降息预期引发全球资本市场重新定价利率风险",
+      "topic_kind": "independent",
+      "mother_topic_id": "T003",
+      "angle_variant_of": null,
+      "article_use": "适合撰写宏观经济与资本市场专题，结合政策声明与市场反应，提供投资策略建议与风险管理解读。",
+      "core_proposition": "美联储政策信号变化对全球资本市场影响深远，交易员撤回加息押注引发股市反弹及风险资产重新吸引资金。",
+      "one_line_judgment": "美联储政策从加息转向降息预期，促使市场结构性调整，资本市场重新定价利率风险与资产配置策略。"
+    },
+    {
+      "topic_id": "T004",
+      "title": "美以联军在伊朗冲突中失算，激活地区抵抗联盟重塑中东安全格局",
+      "topic_kind": "independent",
+      "mother_topic_id": "T004",
+      "angle_variant_of": null,
+      "article_use": "适合写作国际安全与地缘政治专题，深入解析军事行动与抵抗联盟间的因果关系及未来风险。",
+      "core_proposition": "军事失算引发地区多方联合抵抗，改变中东力量均衡，区域安全与地缘政治格局或将长期动荡。",
+      "one_line_judgment": "美以军事行动未能迅速压制伊朗，反而激活胡塞、真主党等抵抗联盟，导致中东安全形势复杂化和长期不确定性加剧。"
+    },
+    {
+      "topic_id": "T005",
+      "title": "中美日俄地缘政治博弈升级加剧亚太安全与经济秩序重塑",
+      "topic_kind": "independent",
+      "mother_topic_id": "T005",
+      "angle_variant_of": null,
+      "article_use": "适合国际关系专题报道，结合事件细节和区域战略分析，评估地缘博弈对经济安全的影响。",
+      "core_proposition": "亚太四大国间的紧张互动导致区域安全风险提升，同时影响经济合作模式及区域供应链安全。",
+      "one_line_judgment": "日本自卫队士兵闯入中国使馆及俄日关系恶化标志着亚太地区地缘政治竞争加剧，推动安全与经济秩序深度调整。"
+    },
+    {
+      "topic_id": "T006",
+      "title": "中国大规模反间谍行动揭示中日关系新一轮紧张态势",
+      "topic_kind": "independent",
+      "mother_topic_id": "T006",
+      "angle_variant_of": null,
+      "article_use": "适合国际安全与外交专题，结合事件披露与历史背景，分析安全政策演变与双边关系走势。",
+      "core_proposition": "反间谍行动不仅是安全措施，更是中日政治关系紧张的体现，影响双边信任与未来战略互动。",
+      "one_line_judgment": "中国针对多年来日本间谍活动的清理行动，反映两国安全关系紧绷，可能引发外交及安全政策调整。"
+    },
+    {
+      "topic_id": "T007",
+      "title": "美军对伊朗飞行员的搜救与伊朗否认美军袭击事件反映信息战误判风险",
+      "topic_kind": "independent",
+      "mother_topic_id": "T007",
+      "angle_variant_of": null,
+      "article_use": "适合写作国际冲突与信息战专题，结合事件报道与分析，解读信息对冲突动态的影响。",
+      "core_proposition": "冲突双方通过信息发布影响国际舆论，信息不对称导致误判风险提升，影响冲突态势和外交斡旋进程。",
+      "one_line_judgment": "美军宣布救出被击落飞行员，而伊朗否认美军袭击，彰显双方信息战互相误判与舆论操作的风险。"
+    },
+    {
+      "topic_id": "T008",
+      "title": "中国强化平台经济监管反映市场合规与创新治理的博弈加剧",
+      "topic_kind": "independent",
+      "mother_topic_id": "T008",
+      "angle_variant_of": null,
+      "article_use": "适合政策解读与行业分析文章，结合官方动作和市场反馈，评估监管走势及企业应对策略。",
+      "core_proposition": "市场监管强化与平台经济创新存在矛盾，监管政策调整将影响平台企业运营模式及行业发展路径。",
+      "one_line_judgment": "国务院多部门约谈平台企业，显示中国加强市场监管的决心，同时对平台经济合规与创新治理提出更高要求。"
+    },
+    {
+      "topic_id": "T009",
+      "title": "全球资本市场对美伊中东政策不确定性反应加剧，风险投资策略亟需调整",
+      "topic_kind": "independent",
+      "mother_topic_id": "T009",
+      "angle_variant_of": null,
+      "article_use": "适合金融市场风险专题，结合政策动态与市场表现，提供投资策略及风险管理建议。",
+      "core_proposition": "政策不确定性是资本市场波动的核心驱动力，投资者需关注地缘政治动态，调整资产配置以应对风险。",
+      "one_line_judgment": "围绕美国对伊朗政策反复调整及美军行动，全球资本市场波动加剧，投资者需重新评估风险与策略。"
+    },
+    {
+      "topic_id": "T010",
+      "title": "数字货币去中心化交易所治理创新推动加密资产市场结构变革",
+      "topic_kind": "independent",
+      "mother_topic_id": "T010",
+      "angle_variant_of": null,
+      "article_use": "适合区块链与加密市场专题，结合技术创新与市场数据，分析治理结构变革及行业趋势。",
+      "core_proposition": "去中心化交易所通过治理权创新提升用户参与度与市场效率，币安等平台资产高度集中加剧市场竞争格局。",
+      "one_line_judgment": "veDEX模式将交易权与治理权绑定，创新去中心化交易所治理机制，推动加密市场治理结构的深刻变革。"
+    }
+  ],
+  "editor_note": ""
+}

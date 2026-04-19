@@ -1,0 +1,74 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "topic-1",
+    "topic_name": "行业复苏里最危险的误判",
+    "cluster_name": "宏观政策与再通胀",
+    "composite_heat": 393.81,
+    "source_status": "手动指定"
+  },
+  {
+    "rank": 2,
+    "topic_id": "topic-2",
+    "topic_name": "表面在交易事件，真正的主线会不会其实是再通胀？",
+    "cluster_name": "宏观政策与再通胀",
+    "composite_heat": 393.81,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 3,
+    "topic_id": "topic-3",
+    "topic_name": "模糊消息为什么总能先于事实，影响市场情绪定价？",
+    "cluster_name": "市场情绪与资金误判",
+    "composite_heat": 76.15,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 4,
+    "topic_id": "topic-4",
+    "topic_name": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+    "cluster_name": "其他高频观察",
+    "composite_heat": 29.04,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 5,
+    "topic_id": "topic-5",
+    "topic_name": "停火预期反复下，黄金、原油和风险资产正在被怎样重新定价？",
+    "cluster_name": "黄金、原油与地缘风险",
+    "composite_heat": 25.001,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 6,
+    "topic_id": "topic-6",
+    "topic_name": "避险资产为什么总会在最需要避险的时候先剧烈波动？",
+    "cluster_name": "黄金、原油与地缘风险",
+    "composite_heat": 25.001,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 7,
+    "topic_id": "topic-7",
+    "topic_name": "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+    "cluster_name": "黄金、原油与地缘风险",
+    "composite_heat": 25.001,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 8,
+    "topic_id": "topic-8",
+    "topic_name": "AI 工具今年更值得写的，不是大全，而是“接进工作流”的案例",
+    "cluster_name": "AI 工具与工作流接入",
+    "composite_heat": 13.768,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 9,
+    "topic_id": "topic-9",
+    "topic_name": "OpenClaw、skills、知识库接入，为什么适合做连续栏目？",
+    "cluster_name": "AI 工具与工作流接入",
+    "composite_heat": 13.768,
+    "source_status": "自然入选"
+  }
+]

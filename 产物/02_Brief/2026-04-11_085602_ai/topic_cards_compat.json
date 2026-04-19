@@ -1,0 +1,194 @@
+[
+  {
+    "meta": {
+      "id": "topic-ai-financial-risk-regulation",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-11_085602",
+      "version": "1.0",
+      "status": "selected",
+      "generated_by": "dasheng-stage-brief-ai",
+      "created_at": "2026-04-11T09:00:00+08:00",
+      "updated_at": "2026-04-11T09:00:00+08:00"
+    },
+    "topic_id": "topic-ai-financial-risk-regulation",
+    "title": "Claude新模型引发华尔街紧急会议:AI对金融业的风险在哪",
+    "source_status": "AI生成",
+    "cluster_name": "topic-ai-financial-risk-regulation",
+    "core_thesis": "AI模型能力的快速提升正在从工具层面转变为系统性风险,金融监管需要从事后应对转向事前防范",
+    "one_line_judgment": "AI模型能力的快速提升正在从工具层面转变为系统性风险,金融监管需要从事后应对转向事前防范",
+    "counterintuitive_angle": "贝森特与鲍威尔罕见地召集华尔街紧急会议讨论Claude新模型风险,这是监管层首次将AI模型升级视为系统性风险。与此同时,GPT-5.4性能争议和Sam Altman遭袭事件显示AI行业正处于关键转折点。这不是技术讨论,而是关乎金融稳定的监管问题。",
+    "why_now": "贝森特与鲍威尔罕见地召集华尔街紧急会议讨论Claude新模型风险,这是监管层首次将AI模型升级视为系统性风险。与此同时,GPT-5.4性能争议和Sam Altman遭袭事件显示AI行业正处于关键转折点。这不是技术讨论,而是关乎金融稳定的监管问题。",
+    "reader_value": "密度强化",
+    "audience": "金融从业者、监管政策研究者、AI行业观察者、风险管理人员",
+    "proof_requirements": [
+      "贝森特-鲍威尔会议的具体议题和参会机构",
+      "Claude新模型的具体能力边界和潜在风险点",
+      "金融机构当前使用AI的场景和依赖程度",
+      "历史上技术变革对金融稳定的影响案例",
+      "现有金融监管框架对AI风险的覆盖盲区"
+    ],
+    "existing_evidence": [],
+    "missing_evidence": [
+      "贝森特-鲍威尔会议的具体议题和参会机构",
+      "Claude新模型的具体能力边界和潜在风险点",
+      "金融机构当前使用AI的场景和依赖程度",
+      "历史上技术变革对金融稳定的影响案例",
+      "现有金融监管框架对AI风险的覆盖盲区"
+    ],
+    "chart_needs": [],
+    "image_needs": [],
+    "video_needs": [],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [],
+    "structure_hint": {
+      "opening": "从Claude新模型引发华尔街紧急会议:AI对金融业的风险在哪的核心冲突切入，建立读者认知框架。",
+      "part_1": "贝森特-鲍威尔会议的具体议题和参会机构",
+      "part_2": "Claude新模型的具体能力边界和潜在风险点",
+      "part_3": "金融机构当前使用AI的场景和依赖程度",
+      "ending": "回到核心判断，给读者可操作的结论。"
+    },
+    "scorecard": {
+      "heat": 9.5,
+      "sharpness": 9.0,
+      "evidence": 7.5,
+      "longevity": 8.5,
+      "reader_value": 9.0,
+      "composite": 8.7
+    },
+    "extendability": {
+      "recommended_framework": "结构型",
+      "framework_reason": "需要拆解AI在金融系统中的应用链条,从交易执行、风险建模、合规审查到决策支持,逐层分析风险传导机制",
+      "recommended_strategy": "密度强化",
+      "strategy_application": "提供具体的风险场景(如AI模型幻觉导致错误交易决策)、监管空白点(如模型可解释性要求)、可操作的风险管理框架"
+    }
+  },
+  {
+    "meta": {
+      "id": "topic-japan-embassy-incident-analysis",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-11_085602",
+      "version": "1.0",
+      "status": "selected",
+      "generated_by": "dasheng-stage-brief-ai",
+      "created_at": "2026-04-11T09:00:00+08:00",
+      "updated_at": "2026-04-11T09:00:00+08:00"
+    },
+    "topic_id": "topic-japan-embassy-incident-analysis",
+    "title": "日本士兵闯使馆事件背后:个体极端行为还是系统性问题",
+    "source_status": "AI生成",
+    "cluster_name": "topic-japan-embassy-incident-analysis",
+    "core_thesis": "日本自卫队士兵闯入中国使馆威胁杀人,表面是个体行为,实质反映了日本国内右翼思潮抬头和军队管理失控的系统性风险",
+    "one_line_judgment": "日本自卫队士兵闯入中国使馆威胁杀人,表面是个体行为,实质反映了日本国内右翼思潮抬头和军队管理失控的系统性风险",
+    "counterintuitive_angle": "这是继'士兵走丢'后日本自卫队再次出现严重事故,且发生在中日关系敏感时期。同时社交媒体上日本右翼大规模传播历史修正主义内容,两者形成呼应。这不是孤立的外交事件,而是日本国内政治生态变化的信号。",
+    "why_now": "这是继'士兵走丢'后日本自卫队再次出现严重事故,且发生在中日关系敏感时期。同时社交媒体上日本右翼大规模传播历史修正主义内容,两者形成呼应。这不是孤立的外交事件,而是日本国内政治生态变化的信号。",
+    "reader_value": "细节锚定",
+    "audience": "国际关系研究者、东亚问题专家、外交政策制定者、安全研究人员",
+    "proof_requirements": [
+      "日本自卫队近年来的纪律事故统计和趋势",
+      "日本国内右翼势力的组织形式和影响力变化",
+      "社交媒体上历史修正主义内容的传播数据和特征",
+      "日本政府对右翼思潮的态度和管控措施",
+      "类似事件的历史案例和处理结果"
+    ],
+    "existing_evidence": [],
+    "missing_evidence": [
+      "日本自卫队近年来的纪律事故统计和趋势",
+      "日本国内右翼势力的组织形式和影响力变化",
+      "社交媒体上历史修正主义内容的传播数据和特征",
+      "日本政府对右翼思潮的态度和管控措施",
+      "类似事件的历史案例和处理结果"
+    ],
+    "chart_needs": [],
+    "image_needs": [],
+    "video_needs": [],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [],
+    "structure_hint": {
+      "opening": "从日本士兵闯使馆事件背后:个体极端行为还是系统性问题的核心冲突切入，建立读者认知框架。",
+      "part_1": "日本自卫队近年来的纪律事故统计和趋势",
+      "part_2": "日本国内右翼势力的组织形式和影响力变化",
+      "part_3": "社交媒体上历史修正主义内容的传播数据和特征",
+      "ending": "回到核心判断，给读者可操作的结论。"
+    },
+    "scorecard": {
+      "heat": 9.0,
+      "sharpness": 8.0,
+      "evidence": 7.0,
+      "longevity": 7.0,
+      "reader_value": 7.5,
+      "composite": 7.7
+    },
+    "extendability": {
+      "recommended_framework": "解释型",
+      "framework_reason": "需要解释为什么看似个体的极端行为实际上反映了系统性问题,澄清'偶然事件'背后的必然性",
+      "recommended_strategy": "细节锚定",
+      "strategy_application": "用具体的事件细节(士兵的背景、行为模式、事后处理)和社交媒体传播案例,增强论证的说服力"
+    }
+  },
+  {
+    "meta": {
+      "id": "topic-stablecoin-license-market-impact",
+      "object_type": "TopicCard",
+      "run_id": "2026-04-11_085602",
+      "version": "1.0",
+      "status": "selected",
+      "generated_by": "dasheng-stage-brief-ai",
+      "created_at": "2026-04-11T09:00:00+08:00",
+      "updated_at": "2026-04-11T09:00:00+08:00"
+    },
+    "topic_id": "topic-stablecoin-license-market-impact",
+    "title": "稳定币牌照落地:加密市场的'银行牌照时刻'",
+    "source_status": "AI生成",
+    "cluster_name": "topic-stablecoin-license-market-impact",
+    "core_thesis": "稳定币牌照的发放标志着加密货币从野蛮生长进入持牌经营时代,这将重塑行业格局并为传统金融机构打开新的竞争赛道",
+    "one_line_judgment": "稳定币牌照的发放标志着加密货币从野蛮生长进入持牌经营时代,这将重塑行业格局并为传统金融机构打开新的竞争赛道",
+    "counterintuitive_angle": "稳定币牌照公布后券商股闻声大涨,显示市场对传统金融机构进入加密领域的预期。这不是简单的监管政策,而是类似于互联网金融时代'银行牌照'的关键节点,将决定谁能在下一轮竞争中占据先机。",
+    "why_now": "稳定币牌照公布后券商股闻声大涨,显示市场对传统金融机构进入加密领域的预期。这不是简单的监管政策,而是类似于互联网金融时代'银行牌照'的关键节点,将决定谁能在下一轮竞争中占据先机。",
+    "reader_value": "密度强化",
+    "audience": "加密货币投资者、券商从业者、金融科技创业者、监管政策研究者",
+    "proof_requirements": [
+      "稳定币牌照的具体要求和门槛",
+      "当前稳定币市场的规模和主要玩家",
+      "传统金融机构的布局动作和时间表",
+      "牌照制度对市场格局的历史影响(如支付牌照、基金牌照)",
+      "券商股上涨的具体标的和涨幅数据"
+    ],
+    "existing_evidence": [],
+    "missing_evidence": [
+      "稳定币牌照的具体要求和门槛",
+      "当前稳定币市场的规模和主要玩家",
+      "传统金融机构的布局动作和时间表",
+      "牌照制度对市场格局的历史影响(如支付牌照、基金牌照)",
+      "券商股上涨的具体标的和涨幅数据"
+    ],
+    "chart_needs": [],
+    "image_needs": [],
+    "video_needs": [],
+    "priority_people": [],
+    "priority_orgs": [],
+    "priority_news_queries": [],
+    "structure_hint": {
+      "opening": "从稳定币牌照落地:加密市场的'银行牌照时刻'的核心冲突切入，建立读者认知框架。",
+      "part_1": "稳定币牌照的具体要求和门槛",
+      "part_2": "当前稳定币市场的规模和主要玩家",
+      "part_3": "传统金融机构的布局动作和时间表",
+      "ending": "回到核心判断，给读者可操作的结论。"
+    },
+    "scorecard": {
+      "heat": 8.5,
+      "sharpness": 8.0,
+      "evidence": 8.5,
+      "longevity": 7.5,
+      "reader_value": 8.5,
+      "composite": 8.2
+    },
+    "extendability": {
+      "recommended_framework": "判断型",
+      "framework_reason": "需要对牌照制度如何改变市场格局做出明确判断,并预测传统金融机构和原生加密公司的竞争态势",
+      "recommended_strategy": "密度强化",
+      "strategy_application": "提供具体的牌照要求、申请流程、合规成本,以及不同类型机构的优劣势分析,帮助读者判断投资机会"
+    }
+  }
+]

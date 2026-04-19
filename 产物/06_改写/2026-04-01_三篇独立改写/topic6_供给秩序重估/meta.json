@@ -1,0 +1,48 @@
+{
+  "topic": "topic6_供给秩序重估",
+  "topic_prefix": "topic6",
+  "generated_at": "2026-04-01T10:09:38",
+  "final_source": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-31_终稿抓取源/topic6__final_source.md",
+  "framework_labels": {
+    "open_label": "真正贵起来的，从来不是新闻本身，而是“稳定供应”",
+    "part1_label": "事件可以过去，秩序成本不会自动回去",
+    "part2_label": "为什么“供给过剩”叙事和“再通胀”叙事会同时存在",
+    "part3_label": "真正该做的，不是追战报，而是搭一个秩序跟踪框架",
+    "end_label": "真正要重估的，是“稳定供应原来并不便宜”"
+  },
+  "variants": [
+    {
+      "variant": "wechat_lemon_normal",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic6_供给秩序重估/topic6__wechat_lemon_normal.md",
+      "char_count": 4237,
+      "min_chars": 4000,
+      "pass": true,
+      "h2_count": 5
+    },
+    {
+      "variant": "wechat_luxun_hot",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic6_供给秩序重估/topic6__wechat_luxun_hot.md",
+      "char_count": 4130,
+      "min_chars": 4000,
+      "pass": true,
+      "h2_count": 5
+    },
+    {
+      "variant": "xhs_video_lemon_normal",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic6_供给秩序重估/topic6__xhs_video_lemon_normal.md",
+      "char_count": 1819,
+      "min_chars": 1800,
+      "pass": true,
+      "h2_count": 0
+    },
+    {
+      "variant": "xhs_video_luxun_hot",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic6_供给秩序重估/topic6__xhs_video_luxun_hot.md",
+      "char_count": 1821,
+      "min_chars": 1800,
+      "pass": true,
+      "h2_count": 0
+    }
+  ],
+  "all_passed": true
+}

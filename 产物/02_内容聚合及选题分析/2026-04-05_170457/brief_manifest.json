@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-04-05_170457",
+  "generated_at": "2026-04-05T17:16:45.275699",
+  "stage": "brief",
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-05_170457/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457",
+  "manual_topics": [],
+  "candidate_topics": [
+    "伊朗冲突升级，真正变贵的是地区秩序成本",
+    "中东冲突升级，外交部关注的长期秩序成本风险",
+    "英伟达回暖，不等于半导体全面复苏",
+    "从半导体全链条看英伟达局部修复的局限",
+    "白银和贵金属风险溢价，背后重估的真正变化的变量是什么？",
+    "川普时代的风险溢价，贵金属市场的隐形变量",
+    "市场低估了再通胀？特朗普与鲍威尔的政策信号解读",
+    "再通胀风险加剧，美联储与地缘政治的复杂互动",
+    "制裁冲击下，供给链秩序的重塑比价格波动更关键"
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457/02_研究Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457/02_编辑Brief_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457/topic_cards.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457/selected_topics.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457/selected_topics.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457/brief_manifest.json"
+  ],
+  "next_stage": "draft"
+}

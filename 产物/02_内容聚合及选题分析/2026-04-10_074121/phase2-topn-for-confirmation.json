@@ -1,0 +1,31 @@
+{
+  "run_id": "2026-04-10_074121",
+  "generated_at": "2026-04-10T07:58:16.962189",
+  "count": 3,
+  "items": [
+    {
+      "rank": 1,
+      "topic_id": "t001",
+      "topic_name": "鲍威尔讲话终结加息预期引发市场转向降息押注",
+      "topic_kind": "independent",
+      "mother_topic_id": "t001",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 2,
+      "topic_id": "t002",
+      "topic_name": "中东冲突与霍尔木兹海峡封锁导致油价坚挺形成全球能源供应链风险",
+      "topic_kind": "independent",
+      "mother_topic_id": "t002",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 3,
+      "topic_id": "t003",
+      "topic_name": "全球央行大规模抛售美债引发金融市场系统性风险担忧",
+      "topic_kind": "independent",
+      "mother_topic_id": "t003",
+      "source_status": "ai_generated"
+    }
+  ]
+}

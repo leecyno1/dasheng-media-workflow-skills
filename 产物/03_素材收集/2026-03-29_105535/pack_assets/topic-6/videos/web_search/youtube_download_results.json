@@ -1,0 +1,96 @@
+[
+  {
+    "query": "stock market b roll 4k",
+    "url": "https://www.youtube.com/watch?v=Mk-6U0Gaef4",
+    "title": "4K FOREX Trading Screen B-ROLL LOOP | Professional Financial Backgrounds",
+    "channel": "stock footages",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": "[youtube] Extracting URL: https://www.youtube.com/watch?v=Mk-6U0Gaef4\n[youtube] Mk-6U0Gaef4: Downloading webpage\n[youtube] Mk-6U0Gaef4: Downloading android vr player API JSON\n[info] Mk-6U0Gaef4: Downloading 1 format(s): 18\n[download] /Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/videos/web_search/01__4K FOREX Trading Screen B-ROLL LOOP ｜ Professional Financial Backgrounds.mp4 has already been downloaded\n\n[download] 100% of    1.41MiB\n",
+    "selected_candidate_quality": {
+      "source_category": "general_footage",
+      "source_ok": true,
+      "resolution_height": 1080,
+      "resolution_width": 1920,
+      "duration_seconds_hint": 20,
+      "fps_hint": 30.0,
+      "extractor": "youtube",
+      "source_domain": "www.youtube.com",
+      "min_height_required": 0,
+      "pre_download_pass": true,
+      "reject_reasons": []
+    },
+    "file_quality_audit": {
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/videos/web_search/01__4K FOREX Trading Screen B-ROLL LOOP ｜ Professional Financial Backgrounds.mp4",
+      "source_url": "https://www.youtube.com/watch?v=Mk-6U0Gaef4",
+      "source_domain": "www.youtube.com",
+      "source_traceable": true,
+      "source_category": "general_footage",
+      "extractor": "youtube",
+      "resolution_height": 360,
+      "resolution_width": 640,
+      "fps": 29.97,
+      "codec": "h264",
+      "duration_seconds": 20.02,
+      "scene_changes": 0,
+      "scene_change_rate": 0.0,
+      "analysis_window_seconds": 20.02,
+      "duration_ok": true,
+      "resolution_ok": true,
+      "frame_variation_ok": false,
+      "anti_screenshot_montage_pass": false,
+      "final_pass": false,
+      "fail_reasons": [
+        "low_frame_variation_possible_screenshot_montage"
+      ],
+      "ffmpeg_error": ""
+    }
+  },
+  {
+    "query": "oil tanker aerial 4k",
+    "url": "https://www.youtube.com/watch?v=d9zemzFk-bg",
+    "title": "Oil tanker - Drone shot | 4K view | Oil tankers Cinematic view | Cargo operations of Oil tanker",
+    "channel": "Merchant Navy Knowledge",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": "[youtube] Extracting URL: https://www.youtube.com/watch?v=d9zemzFk-bg\n[youtube] d9zemzFk-bg: Downloading webpage\n[youtube] d9zemzFk-bg: Downloading android vr player API JSON\n[info] d9zemzFk-bg: Downloading 1 format(s): 18\n[download] /Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/videos/web_search/02__Oil tanker - Drone shot ｜ 4K view ｜ Oil tankers Cinematic view ｜ Cargo operation.mp4 has already been downloaded\n\n[download] 100% of    1.69MiB\n",
+    "selected_candidate_quality": {
+      "source_category": "general_footage",
+      "source_ok": true,
+      "resolution_height": 2026,
+      "resolution_width": 3840,
+      "duration_seconds_hint": 27,
+      "fps_hint": 24.0,
+      "extractor": "youtube",
+      "source_domain": "www.youtube.com",
+      "min_height_required": 0,
+      "pre_download_pass": true,
+      "reject_reasons": []
+    },
+    "file_quality_audit": {
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-6/videos/web_search/02__Oil tanker - Drone shot ｜ 4K view ｜ Oil tankers Cinematic view ｜ Cargo operation.mp4",
+      "source_url": "https://www.youtube.com/watch?v=d9zemzFk-bg",
+      "source_domain": "www.youtube.com",
+      "source_traceable": true,
+      "source_category": "general_footage",
+      "extractor": "youtube",
+      "resolution_height": 338,
+      "resolution_width": 640,
+      "fps": 23.976,
+      "codec": "h264",
+      "duration_seconds": 27.236,
+      "scene_changes": 0,
+      "scene_change_rate": 0.0,
+      "analysis_window_seconds": 27.236,
+      "duration_ok": true,
+      "resolution_ok": true,
+      "frame_variation_ok": false,
+      "anti_screenshot_montage_pass": false,
+      "final_pass": false,
+      "fail_reasons": [
+        "low_frame_variation_possible_screenshot_montage"
+      ],
+      "ffmpeg_error": ""
+    }
+  }
+]

@@ -1,0 +1,486 @@
+[info]: [ 'client ready' ]
+{
+  "run_id": "2026-03-29_105535",
+  "execution_log_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/bridge/live-execution.json",
+  "finalized_actions_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/bridge/finalized-actions.json",
+  "actions": [
+    {
+      "key": "folder:date",
+      "action_type": "folder",
+      "title": "2026-03-29",
+      "status": "completed",
+      "result": {
+        "token": "EDkUfbaZJlUNaMdYwidcyPAjnF6",
+        "name": "2026-03-29",
+        "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/EDkUfbaZJlUNaMdYwidcyPAjnF6"
+      }
+    },
+    {
+      "key": "folder:intake",
+      "action_type": "folder",
+      "title": "01_Intake",
+      "status": "completed",
+      "result": {
+        "token": "L5T3fRwe4lL6rHdqGMpc68yrnhh",
+        "name": "01_Intake",
+        "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/L5T3fRwe4lL6rHdqGMpc68yrnhh"
+      }
+    },
+    {
+      "key": "folder:brief",
+      "action_type": "folder",
+      "title": "02_Brief",
+      "status": "completed",
+      "result": {
+        "token": "DT1TfJ091lQPTvdQwgvcZDbAnZd",
+        "name": "02_Brief",
+        "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/DT1TfJ091lQPTvdQwgvcZDbAnZd"
+      }
+    },
+    {
+      "key": "folder:draft",
+      "action_type": "folder",
+      "title": "03_Draft",
+      "status": "completed",
+      "result": {
+        "token": "WYB2fCZfdlExBadWgPFcjdqtnOg",
+        "name": "03_Draft",
+        "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/WYB2fCZfdlExBadWgPFcjdqtnOg"
+      }
+    },
+    {
+      "key": "folder:rewrite",
+      "action_type": "folder",
+      "title": "04_Rewrite",
+      "status": "completed",
+      "result": {
+        "token": "K8xofA0FrlPORXdEJ5Ocog4pnJe",
+        "name": "04_Rewrite",
+        "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/K8xofA0FrlPORXdEJ5Ocog4pnJe"
+      }
+    },
+    {
+      "key": "folder:material",
+      "action_type": "folder",
+      "title": "05_Material",
+      "status": "completed",
+      "result": {
+        "token": "TDQcflREllc88Xd5ryCczoK3nYc",
+        "name": "05_Material",
+        "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/TDQcflREllc88Xd5ryCczoK3nYc"
+      }
+    },
+    {
+      "key": "doc:intake:report",
+      "action_type": "doc",
+      "title": "01_内容采集_报告",
+      "status": "completed",
+      "result": {
+        "doc_token": "J7xidndbrobWm6xiTT9cICG2nlf",
+        "title": "01_内容采集_报告",
+        "url": "https://ccnokd2fmz4u.feishu.cn/docx/J7xidndbrobWm6xiTT9cICG2nlf",
+        "mode": "preferred_folder",
+        "folder_token": "L5T3fRwe4lL6rHdqGMpc68yrnhh",
+        "write_mode": "markdown",
+        "blocks_added": 74,
+        "blocks_deleted": 0
+      }
+    },
+    {
+      "key": "doc:brief:main",
+      "action_type": "doc",
+      "title": "02_编辑Brief库",
+      "status": "completed",
+      "result": {
+        "doc_token": "SNB0dkLURom71fxkn37cFGPonSc",
+        "title": "02_编辑Brief库",
+        "url": "https://ccnokd2fmz4u.feishu.cn/docx/SNB0dkLURom71fxkn37cFGPonSc",
+        "mode": "preferred_folder",
+        "folder_token": "DT1TfJ091lQPTvdQwgvcZDbAnZd",
+        "write_mode": "markdown",
+        "blocks_added": 403,
+        "blocks_deleted": 0
+      }
+    },
+    {
+      "key": "doc:brief:report",
+      "action_type": "doc",
+      "title": "02_编辑Brief_报告",
+      "status": "completed",
+      "result": {
+        "doc_token": "Yt25dCB7UoPfLQxo5vZcC5bMnoc",
+        "title": "02_编辑Brief_报告",
+        "url": "https://ccnokd2fmz4u.feishu.cn/docx/Yt25dCB7UoPfLQxo5vZcC5bMnoc",
+        "mode": "preferred_folder",
+        "folder_token": "DT1TfJ091lQPTvdQwgvcZDbAnZd",
+        "write_mode": "markdown",
+        "blocks_added": 18,
+        "blocks_deleted": 0
+      }
+    },
+    {
+      "key": "doc:draft:main:03_标准初稿_题目11_OpenClaw一键安装",
+      "action_type": "doc",
+      "title": "03 标准初稿｜一键安装 OpenClaw + 常用 skills：把“能跑起来”变成“可复用、可审计、可回滚”",
+      "status": "completed",
+      "result": {
+        "doc_token": "H14YdnSSJobwJRxzjAMcNmSZn06",
+        "title": "03 标准初稿｜一键安装 OpenClaw + 常用 skills：把“能跑起来”变成“可复用、可审计、可回滚”",
+        "url": "https://ccnokd2fmz4u.feishu.cn/docx/H14YdnSSJobwJRxzjAMcNmSZn06",
+        "mode": "preferred_folder",
+        "folder_token": "WYB2fCZfdlExBadWgPFcjdqtnOg",
+        "write_mode": "markdown",
+        "blocks_added": 79,
+        "blocks_deleted": 0
+      }
+    },
+    {
+      "key": "doc:draft:main:03_标准初稿_题目10_半导体误判",
+      "action_type": "doc",
+      "title": "03 标准初稿｜半导体突然很热闹，但行业最危险的误判可能才刚开始",
+      "status": "completed",
+      "result": {
+        "doc_token": "ThqWdhueAoaP2PxIxpuceu2Vnmd",
+        "title": "03 标准初稿｜半导体突然很热闹，但行业最危险的误判可能才刚开始",
+        "url": "https://ccnokd2fmz4u.feishu.cn/docx/ThqWdhueAoaP2PxIxpuceu2Vnmd",
+        "mode": "preferred_folder",
+        "folder_token": "WYB2fCZfdlExBadWgPFcjdqtnOg",
+        "write_mode": "markdown",
+        "blocks_added": 80,
+        "blocks_deleted": 0
+      }
+    },
+    {
+      "key": "doc:draft:main:03_标准初稿_题目6_供给秩序重估",
+      "action_type": "doc",
+      "title": "03 标准初稿｜如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+      "status": "completed",
+      "result": {
+        "doc_token": "VREEdPUIfoktdZxIbAWciigznLd",
+        "title": "03 标准初稿｜如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+        "url": "https://ccnokd2fmz4u.feishu.cn/docx/VREEdPUIfoktdZxIbAWciigznLd",
+        "mode": "preferred_folder",
+        "folder_token": "WYB2fCZfdlExBadWgPFcjdqtnOg",
+        "write_mode": "markdown",
+        "blocks_added": 85,
+        "blocks_deleted": 0
+      }
+    },
+    {
+      "key": "doc:draft:report",
+      "action_type": "doc",
+      "title": "03_初稿_报告",
+      "status": "completed",
+      "result": {
+        "doc_token": "KMvDd4ahSosolQxbqDqcqAJtnVh",
+        "title": "03_初稿_报告",
+        "url": "https://ccnokd2fmz4u.feishu.cn/docx/KMvDd4ahSosolQxbqDqcqAJtnVh",
+        "mode": "preferred_folder",
+        "folder_token": "WYB2fCZfdlExBadWgPFcjdqtnOg",
+        "write_mode": "markdown",
+        "blocks_added": 39,
+        "blocks_deleted": 0
+      }
+    },
+    {
+      "key": "doc:rewrite:main",
+      "action_type": "doc",
+      "title": "05_改写稿",
+      "status": "completed",
+      "result": {
+        "doc_token": "QvbbdXfUIo3b4Qx8b8AcSt3WnYc",
+        "title": "05_改写稿",
+        "url": "https://ccnokd2fmz4u.feishu.cn/docx/QvbbdXfUIo3b4Qx8b8AcSt3WnYc",
+        "mode": "preferred_folder",
+        "folder_token": "K8xofA0FrlPORXdEJ5Ocog4pnJe",
+        "write_mode": "markdown",
+        "blocks_added": 784,
+        "blocks_deleted": 0
+      }
+    },
+    {
+      "key": "doc:rewrite:report",
+      "action_type": "doc",
+      "title": "05_改写_报告",
+      "status": "completed",
+      "result": {
+        "doc_token": "MCVldFVtYoNUWKxp8vUcXKqMnhK",
+        "title": "05_改写_报告",
+        "url": "https://ccnokd2fmz4u.feishu.cn/docx/MCVldFVtYoNUWKxp8vUcXKqMnhK",
+        "mode": "preferred_folder",
+        "folder_token": "K8xofA0FrlPORXdEJ5Ocog4pnJe",
+        "write_mode": "markdown",
+        "blocks_added": 18,
+        "blocks_deleted": 0
+      }
+    },
+    {
+      "key": "doc:material:main",
+      "action_type": "doc",
+      "title": "05_MaterialPack",
+      "status": "completed",
+      "result": {
+        "doc_token": "ZQRvd2TrMoCS2nxYWpZcLUx1nDc",
+        "title": "05_MaterialPack",
+        "url": "https://ccnokd2fmz4u.feishu.cn/docx/ZQRvd2TrMoCS2nxYWpZcLUx1nDc",
+        "mode": "preferred_folder",
+        "folder_token": "TDQcflREllc88Xd5ryCczoK3nYc",
+        "write_mode": "markdown",
+        "blocks_added": 56,
+        "blocks_deleted": 0
+      }
+    },
+    {
+      "key": "doc:material:report",
+      "action_type": "doc",
+      "title": "05_Material_报告",
+      "status": "completed",
+      "result": {
+        "doc_token": "WrondnNjBoIf8AxxULCcwWCZnOy",
+        "title": "05_Material_报告",
+        "url": "https://ccnokd2fmz4u.feishu.cn/docx/WrondnNjBoIf8AxxULCcwWCZnOy",
+        "mode": "preferred_folder",
+        "folder_token": "TDQcflREllc88Xd5ryCczoK3nYc",
+        "write_mode": "markdown",
+        "blocks_added": 46,
+        "blocks_deleted": 0
+      }
+    },
+    {
+      "key": "message:intake",
+      "action_type": "message",
+      "title": "intake 审核通知",
+      "status": "completed",
+      "result": {
+        "message_id": "om_x100b53964cf680a8b35ea5a80841a92",
+        "url": "feishu://message/om_x100b53964cf680a8b35ea5a80841a92",
+        "body": "# intake 审核提醒\n\n- run_id: `2026-03-29_105535`\n\n## 核心摘要\n- - stage: `intake`\n- - role: `report`\n- - run_id: `2026-03-29_105535`\n- - run_date: `2026-03-29`\n\n## 文档链接\n- https://ccnokd2fmz4u.feishu.cn/docx/J7xidndbrobWm6xiTT9cICG2nlf\n\n## 需要人工介入\n- 删除噪音条目\n- 补充漏掉的原始链接\n- 修正去留建议"
+      }
+    },
+    {
+      "key": "message:brief",
+      "action_type": "message",
+      "title": "brief 审核通知",
+      "status": "completed",
+      "result": {
+        "message_id": "om_x100b53964c89f894b32dbf74f717b93",
+        "url": "feishu://message/om_x100b53964c89f894b32dbf74f717b93",
+        "body": "# brief 审核提醒\n\n- run_id: `2026-03-29_105535`\n\n## 核心摘要\n- - 运行批次：`2026-03-29_105535`\n- - 输入文件：`/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-03-29_105535/raw/intake_records.json`\n- - 聚类数：`7`\n- - 候选题数：`10`\n\n## 文档链接\n- https://ccnokd2fmz4u.feishu.cn/docx/SNB0dkLURom71fxkn37cFGPonSc\n- https://ccnokd2fmz4u.feishu.cn/docx/Yt25dCB7UoPfLQxo5vZcC5bMnoc\n\n## 需要人工介入\n- 确认 8-10 个候选题优先级\n- 强制加入人工指定题\n- 删改单题结构骨架"
+      }
+    },
+    {
+      "key": "message:draft",
+      "action_type": "message",
+      "title": "draft 审核通知",
+      "status": "completed",
+      "result": {
+        "message_id": "om_x100b53964c817470b32b23e804faebe",
+        "url": "feishu://message/om_x100b53964c817470b32b23e804faebe",
+        "body": "# draft 审核提醒\n\n- run_id: `2026-03-29_105535`\n\n## 核心摘要\n- - 运行批次：`2026-03-29_105535`\n- - 上游输入：`/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-29_105535/selected_topics_for_draft.json`\n- - 本轮状态：`ready_for_review`\n- - 当前执行规则：`一题一文档`、`开篇 + 三段论 + 结尾`、一级标题不超过 `4` 个、正文主动补外部数据与 markdown 表格。\n\n## 文档链接\n- https://ccnokd2fmz4u.feishu.cn/docx/H14YdnSSJobwJRxzjAMcNmSZn06\n- https://ccnokd2fmz4u.feishu.cn/docx/ThqWdhueAoaP2PxIxpuceu2Vnmd\n- https://ccnokd2fmz4u.feishu.cn/docx/VREEdPUIfoktdZxIbAWciigznLd\n- https://ccnokd2fmz4u.feishu.cn/docx/KMvDd4ahSosolQxbqDqcqAJtnVh\n\n## 需要人工介入\n- 删减冗余段落\n- 调整论证顺序\n- 修正事实或口径"
+      }
+    },
+    {
+      "key": "message:rewrite",
+      "action_type": "message",
+      "title": "rewrite 审核通知",
+      "status": "completed",
+      "result": {
+        "message_id": "om_x100b53964c95d4a0b27ae413e67fd1a",
+        "url": "feishu://message/om_x100b53964c95d4a0b27ae413e67fd1a",
+        "body": "# rewrite 审核提醒\n\n- run_id: `2026-03-29_105535`\n\n## 核心摘要\n- 执行结论\n- - 已按固定矩阵生成 12 篇改写稿。\n- - 每个话题均覆盖：鲁迅+公众号+热烈、lemon+公众号+正常、鲁迅+小红书视频+热烈、lemon+小红书视频+正常。\n- - 改写稿已包含素材锚点，供 material 回填。\n\n## 文档链接\n- https://ccnokd2fmz4u.feishu.cn/docx/QvbbdXfUIo3b4Qx8b8AcSt3WnYc\n- https://ccnokd2fmz4u.feishu.cn/docx/MCVldFVtYoNUWKxp8vUcXKqMnhK\n\n## 需要人工介入\n- 确认 DNA / Channel / Emotion 是否匹配\n- 保留或删去 CTA\n- 调整锚点密度与位置"
+      }
+    },
+    {
+      "key": "message:material",
+      "action_type": "message",
+      "title": "material 审核通知",
+      "status": "completed",
+      "result": {
+        "message_id": "om_x100b53964caf98acb3170be308621d1",
+        "url": "feishu://message/om_x100b53964caf98acb3170be308621d1",
+        "body": "# material 审核提醒\n\n- run_id: `2026-03-29_105535`\n\n## 核心摘要\n- - stage: `material`\n- - role: `report`\n- - run_id: `2026-03-29_105535`\n- - run_date: `2026-03-29`\n\n## 文档链接\n- https://ccnokd2fmz4u.feishu.cn/docx/ZQRvd2TrMoCS2nxYWpZcLUx1nDc\n- https://ccnokd2fmz4u.feishu.cn/docx/WrondnNjBoIf8AxxULCcwWCZnOy\n\n## 需要人工介入\n- 筛掉弱证据与低质素材\n- 确认关键锚点已回填\n- 标出待替换 / 待确认项"
+      }
+    },
+    {
+      "key": "upload:material:assets",
+      "action_type": "upload",
+      "title": "2026-03-29_素材包",
+      "status": "failed",
+      "result": {},
+      "error": {
+        "message": "action upload:material:assets timeout after 300000ms",
+        "code": null,
+        "data": null
+      },
+      "note": "action upload:material:assets timeout after 300000ms"
+    }
+  ],
+  "resources": {
+    "folder:date": {
+      "token": "EDkUfbaZJlUNaMdYwidcyPAjnF6",
+      "name": "2026-03-29",
+      "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/EDkUfbaZJlUNaMdYwidcyPAjnF6"
+    },
+    "folder:intake": {
+      "token": "L5T3fRwe4lL6rHdqGMpc68yrnhh",
+      "name": "01_Intake",
+      "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/L5T3fRwe4lL6rHdqGMpc68yrnhh"
+    },
+    "folder:brief": {
+      "token": "DT1TfJ091lQPTvdQwgvcZDbAnZd",
+      "name": "02_Brief",
+      "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/DT1TfJ091lQPTvdQwgvcZDbAnZd"
+    },
+    "folder:draft": {
+      "token": "WYB2fCZfdlExBadWgPFcjdqtnOg",
+      "name": "03_Draft",
+      "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/WYB2fCZfdlExBadWgPFcjdqtnOg"
+    },
+    "folder:rewrite": {
+      "token": "K8xofA0FrlPORXdEJ5Ocog4pnJe",
+      "name": "04_Rewrite",
+      "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/K8xofA0FrlPORXdEJ5Ocog4pnJe"
+    },
+    "folder:material": {
+      "token": "TDQcflREllc88Xd5ryCczoK3nYc",
+      "name": "05_Material",
+      "url": "https://ccnokd2fmz4u.feishu.cn/drive/folder/TDQcflREllc88Xd5ryCczoK3nYc"
+    },
+    "doc:intake:report": {
+      "doc_token": "J7xidndbrobWm6xiTT9cICG2nlf",
+      "title": "01_内容采集_报告",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/J7xidndbrobWm6xiTT9cICG2nlf",
+      "mode": "preferred_folder",
+      "folder_token": "L5T3fRwe4lL6rHdqGMpc68yrnhh",
+      "write_mode": "markdown",
+      "blocks_added": 74,
+      "blocks_deleted": 0
+    },
+    "doc:brief:main": {
+      "doc_token": "SNB0dkLURom71fxkn37cFGPonSc",
+      "title": "02_编辑Brief库",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/SNB0dkLURom71fxkn37cFGPonSc",
+      "mode": "preferred_folder",
+      "folder_token": "DT1TfJ091lQPTvdQwgvcZDbAnZd",
+      "write_mode": "markdown",
+      "blocks_added": 403,
+      "blocks_deleted": 0
+    },
+    "doc:brief:report": {
+      "doc_token": "Yt25dCB7UoPfLQxo5vZcC5bMnoc",
+      "title": "02_编辑Brief_报告",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/Yt25dCB7UoPfLQxo5vZcC5bMnoc",
+      "mode": "preferred_folder",
+      "folder_token": "DT1TfJ091lQPTvdQwgvcZDbAnZd",
+      "write_mode": "markdown",
+      "blocks_added": 18,
+      "blocks_deleted": 0
+    },
+    "doc:draft:main:03_标准初稿_题目11_OpenClaw一键安装": {
+      "doc_token": "H14YdnSSJobwJRxzjAMcNmSZn06",
+      "title": "03 标准初稿｜一键安装 OpenClaw + 常用 skills：把“能跑起来”变成“可复用、可审计、可回滚”",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/H14YdnSSJobwJRxzjAMcNmSZn06",
+      "mode": "preferred_folder",
+      "folder_token": "WYB2fCZfdlExBadWgPFcjdqtnOg",
+      "write_mode": "markdown",
+      "blocks_added": 79,
+      "blocks_deleted": 0
+    },
+    "doc:draft:main:03_标准初稿_题目10_半导体误判": {
+      "doc_token": "ThqWdhueAoaP2PxIxpuceu2Vnmd",
+      "title": "03 标准初稿｜半导体突然很热闹，但行业最危险的误判可能才刚开始",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/ThqWdhueAoaP2PxIxpuceu2Vnmd",
+      "mode": "preferred_folder",
+      "folder_token": "WYB2fCZfdlExBadWgPFcjdqtnOg",
+      "write_mode": "markdown",
+      "blocks_added": 80,
+      "blocks_deleted": 0
+    },
+    "doc:draft:main:03_标准初稿_题目6_供给秩序重估": {
+      "doc_token": "VREEdPUIfoktdZxIbAWciigznLd",
+      "title": "03 标准初稿｜如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/VREEdPUIfoktdZxIbAWciigznLd",
+      "mode": "preferred_folder",
+      "folder_token": "WYB2fCZfdlExBadWgPFcjdqtnOg",
+      "write_mode": "markdown",
+      "blocks_added": 85,
+      "blocks_deleted": 0
+    },
+    "doc:draft:report": {
+      "doc_token": "KMvDd4ahSosolQxbqDqcqAJtnVh",
+      "title": "03_初稿_报告",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/KMvDd4ahSosolQxbqDqcqAJtnVh",
+      "mode": "preferred_folder",
+      "folder_token": "WYB2fCZfdlExBadWgPFcjdqtnOg",
+      "write_mode": "markdown",
+      "blocks_added": 39,
+      "blocks_deleted": 0
+    },
+    "doc:rewrite:main": {
+      "doc_token": "QvbbdXfUIo3b4Qx8b8AcSt3WnYc",
+      "title": "05_改写稿",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/QvbbdXfUIo3b4Qx8b8AcSt3WnYc",
+      "mode": "preferred_folder",
+      "folder_token": "K8xofA0FrlPORXdEJ5Ocog4pnJe",
+      "write_mode": "markdown",
+      "blocks_added": 784,
+      "blocks_deleted": 0
+    },
+    "doc:rewrite:report": {
+      "doc_token": "MCVldFVtYoNUWKxp8vUcXKqMnhK",
+      "title": "05_改写_报告",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/MCVldFVtYoNUWKxp8vUcXKqMnhK",
+      "mode": "preferred_folder",
+      "folder_token": "K8xofA0FrlPORXdEJ5Ocog4pnJe",
+      "write_mode": "markdown",
+      "blocks_added": 18,
+      "blocks_deleted": 0
+    },
+    "doc:material:main": {
+      "doc_token": "ZQRvd2TrMoCS2nxYWpZcLUx1nDc",
+      "title": "05_MaterialPack",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/ZQRvd2TrMoCS2nxYWpZcLUx1nDc",
+      "mode": "preferred_folder",
+      "folder_token": "TDQcflREllc88Xd5ryCczoK3nYc",
+      "write_mode": "markdown",
+      "blocks_added": 56,
+      "blocks_deleted": 0
+    },
+    "doc:material:report": {
+      "doc_token": "WrondnNjBoIf8AxxULCcwWCZnOy",
+      "title": "05_Material_报告",
+      "url": "https://ccnokd2fmz4u.feishu.cn/docx/WrondnNjBoIf8AxxULCcwWCZnOy",
+      "mode": "preferred_folder",
+      "folder_token": "TDQcflREllc88Xd5ryCczoK3nYc",
+      "write_mode": "markdown",
+      "blocks_added": 46,
+      "blocks_deleted": 0
+    },
+    "message:intake": {
+      "message_id": "om_x100b53964cf680a8b35ea5a80841a92",
+      "url": "feishu://message/om_x100b53964cf680a8b35ea5a80841a92",
+      "body": "# intake 审核提醒\n\n- run_id: `2026-03-29_105535`\n\n## 核心摘要\n- - stage: `intake`\n- - role: `report`\n- - run_id: `2026-03-29_105535`\n- - run_date: `2026-03-29`\n\n## 文档链接\n- https://ccnokd2fmz4u.feishu.cn/docx/J7xidndbrobWm6xiTT9cICG2nlf\n\n## 需要人工介入\n- 删除噪音条目\n- 补充漏掉的原始链接\n- 修正去留建议"
+    },
+    "message:brief": {
+      "message_id": "om_x100b53964c89f894b32dbf74f717b93",
+      "url": "feishu://message/om_x100b53964c89f894b32dbf74f717b93",
+      "body": "# brief 审核提醒\n\n- run_id: `2026-03-29_105535`\n\n## 核心摘要\n- - 运行批次：`2026-03-29_105535`\n- - 输入文件：`/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-03-29_105535/raw/intake_records.json`\n- - 聚类数：`7`\n- - 候选题数：`10`\n\n## 文档链接\n- https://ccnokd2fmz4u.feishu.cn/docx/SNB0dkLURom71fxkn37cFGPonSc\n- https://ccnokd2fmz4u.feishu.cn/docx/Yt25dCB7UoPfLQxo5vZcC5bMnoc\n\n## 需要人工介入\n- 确认 8-10 个候选题优先级\n- 强制加入人工指定题\n- 删改单题结构骨架"
+    },
+    "message:draft": {
+      "message_id": "om_x100b53964c817470b32b23e804faebe",
+      "url": "feishu://message/om_x100b53964c817470b32b23e804faebe",
+      "body": "# draft 审核提醒\n\n- run_id: `2026-03-29_105535`\n\n## 核心摘要\n- - 运行批次：`2026-03-29_105535`\n- - 上游输入：`/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-03-29_105535/selected_topics_for_draft.json`\n- - 本轮状态：`ready_for_review`\n- - 当前执行规则：`一题一文档`、`开篇 + 三段论 + 结尾`、一级标题不超过 `4` 个、正文主动补外部数据与 markdown 表格。\n\n## 文档链接\n- https://ccnokd2fmz4u.feishu.cn/docx/H14YdnSSJobwJRxzjAMcNmSZn06\n- https://ccnokd2fmz4u.feishu.cn/docx/ThqWdhueAoaP2PxIxpuceu2Vnmd\n- https://ccnokd2fmz4u.feishu.cn/docx/VREEdPUIfoktdZxIbAWciigznLd\n- https://ccnokd2fmz4u.feishu.cn/docx/KMvDd4ahSosolQxbqDqcqAJtnVh\n\n## 需要人工介入\n- 删减冗余段落\n- 调整论证顺序\n- 修正事实或口径"
+    },
+    "message:rewrite": {
+      "message_id": "om_x100b53964c95d4a0b27ae413e67fd1a",
+      "url": "feishu://message/om_x100b53964c95d4a0b27ae413e67fd1a",
+      "body": "# rewrite 审核提醒\n\n- run_id: `2026-03-29_105535`\n\n## 核心摘要\n- 执行结论\n- - 已按固定矩阵生成 12 篇改写稿。\n- - 每个话题均覆盖：鲁迅+公众号+热烈、lemon+公众号+正常、鲁迅+小红书视频+热烈、lemon+小红书视频+正常。\n- - 改写稿已包含素材锚点，供 material 回填。\n\n## 文档链接\n- https://ccnokd2fmz4u.feishu.cn/docx/QvbbdXfUIo3b4Qx8b8AcSt3WnYc\n- https://ccnokd2fmz4u.feishu.cn/docx/MCVldFVtYoNUWKxp8vUcXKqMnhK\n\n## 需要人工介入\n- 确认 DNA / Channel / Emotion 是否匹配\n- 保留或删去 CTA\n- 调整锚点密度与位置"
+    },
+    "message:material": {
+      "message_id": "om_x100b53964caf98acb3170be308621d1",
+      "url": "feishu://message/om_x100b53964caf98acb3170be308621d1",
+      "body": "# material 审核提醒\n\n- run_id: `2026-03-29_105535`\n\n## 核心摘要\n- - stage: `material`\n- - role: `report`\n- - run_id: `2026-03-29_105535`\n- - run_date: `2026-03-29`\n\n## 文档链接\n- https://ccnokd2fmz4u.feishu.cn/docx/ZQRvd2TrMoCS2nxYWpZcLUx1nDc\n- https://ccnokd2fmz4u.feishu.cn/docx/WrondnNjBoIf8AxxULCcwWCZnOy\n\n## 需要人工介入\n- 筛掉弱证据与低质素材\n- 确认关键锚点已回填\n- 标出待替换 / 待确认项"
+    }
+  },
+  "manifest_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-03-29_105535/run_manifest.json"
+}

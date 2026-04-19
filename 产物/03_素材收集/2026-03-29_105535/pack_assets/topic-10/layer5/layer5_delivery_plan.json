@@ -1,0 +1,25 @@
+{
+  "template_id": "story_page",
+  "worldmonitor_project": "/Volumes/PSSD/Projects/worldmonitor",
+  "proxy_port": 8787,
+  "current_status": "inactive",
+  "inputs": [
+    "article.md",
+    "chart_gallery.json",
+    "scene_plan.json"
+  ],
+  "preferred_components": [
+    "CountryTimeline"
+  ],
+  "page_modules": [
+    "hero-summary",
+    "chart-gallery",
+    "media-gallery"
+  ],
+  "chart_anchor_ids": [
+    "chart-01",
+    "chart-02",
+    "chart-03",
+    "chart-04"
+  ]
+}

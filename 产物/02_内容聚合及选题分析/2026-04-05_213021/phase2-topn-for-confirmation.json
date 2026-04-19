@@ -1,0 +1,31 @@
+{
+  "run_id": "2026-04-05_213021",
+  "generated_at": "2026-04-05T21:31:26.892105",
+  "count": 3,
+  "items": [
+    {
+      "rank": 1,
+      "topic_id": "T1",
+      "topic_name": "鲍威尔转向降息预期逆转市场加息押注",
+      "topic_kind": "independent",
+      "mother_topic_id": "T1",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 2,
+      "topic_id": "T2",
+      "topic_name": "俄罗斯断供日本石油加剧全球能源地缘风险",
+      "topic_kind": "independent",
+      "mother_topic_id": "T2",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 3,
+      "topic_id": "T3",
+      "topic_name": "霍尔木兹海峡封锁推升美通胀并考验全球能源安全",
+      "topic_kind": "independent",
+      "mother_topic_id": "T3",
+      "source_status": "ai_generated"
+    }
+  ]
+}

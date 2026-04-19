@@ -1,0 +1,37 @@
+{
+  "topic": "topic-11",
+  "generated": [
+    {
+      "anchor_id": "chart-01",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/csv/chart-01_install_flow_nodes.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/png/chart-01_install_flow.png"
+    },
+    {
+      "anchor_id": "chart-02",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/csv/chart-02_security_boundary.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/png/chart-02_security_boundary_matrix.png"
+    },
+    {
+      "anchor_id": "chart-03",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/csv/chart-03_team_governance_nodes.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/png/chart-03_team_governance_loop.png"
+    },
+    {
+      "anchor_id": "chart-04",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/csv/chart-04_troubleshoot_nodes.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/产物/03_素材收集/2026-03-29_105535/pack_assets/topic-11/charts/png/chart-04_troubleshoot_tree.png"
+    }
+  ],
+  "summary": {
+    "chart_count": 4,
+    "table_count": 0,
+    "gate_thresholds": {
+      "cv_min": 0.03,
+      "slope_abs_min": 0.005,
+      "r2_min": 0.25,
+      "trend_strength_min": 0.3,
+      "group_diff_min": 0.08,
+      "heatmap_var_min": 0.05
+    }
+  }
+}

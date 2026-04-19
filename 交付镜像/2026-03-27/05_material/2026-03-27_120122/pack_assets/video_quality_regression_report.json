@@ -1,0 +1,40 @@
+{
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets",
+  "topic_count": 1,
+  "totals": {
+    "candidate_total": 15,
+    "candidate_qualified": 13,
+    "candidate_rejected": 2,
+    "download_attempts": 1,
+    "download_passed": 0,
+    "download_failed": 1
+  },
+  "candidate_reject_reason_counts": {
+    "resolution_below_480p": 2
+  },
+  "download_fail_reason_counts": {
+    "resolution_below_480p": 1,
+    "low_frame_variation_possible_screenshot_montage": 1
+  },
+  "topics": [
+    {
+      "topic_slug": "reinflation",
+      "topic_title": "表面在交易事件，真正的主线会不会其实是再通胀？",
+      "candidate_queries": 5,
+      "candidate_total": 15,
+      "candidate_qualified": 13,
+      "candidate_rejected": 2,
+      "download_attempts": 1,
+      "download_passed": 0,
+      "download_failed": 1,
+      "candidate_reject_reason_counts": {
+        "resolution_below_480p": 2
+      },
+      "download_fail_reason_counts": {
+        "resolution_below_480p": 1,
+        "low_frame_variation_possible_screenshot_montage": 1
+      },
+      "quality_audit_report": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/reinflation/videos/web_search/video_quality_audit_report.json"
+    }
+  ]
+}

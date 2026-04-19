@@ -1,0 +1,20 @@
+{
+  "run_id": "2026-04-11_085602",
+  "selected_topics": [
+    {
+      "topic_id": "topic-ai-financial-risk-regulation",
+      "title": "Claude新模型引发华尔街紧急会议:AI对金融业的风险在哪",
+      "composite_score": 8.7
+    },
+    {
+      "topic_id": "topic-stablecoin-license-market-impact",
+      "title": "稳定币牌照落地:加密市场的'银行牌照时刻'",
+      "composite_score": 8.2
+    },
+    {
+      "topic_id": "topic-japan-embassy-incident-analysis",
+      "title": "日本士兵闯使馆事件背后:个体极端行为还是系统性问题",
+      "composite_score": 7.7
+    }
+  ]
+}

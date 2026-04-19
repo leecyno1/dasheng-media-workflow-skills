@@ -1,0 +1,43 @@
+{
+  "topic": "topic-6",
+  "topic_type": "finance_macro",
+  "template_id": "market_story",
+  "logic_edges": [
+    {
+      "from": "thesis",
+      "to": "chart_evidence",
+      "relation": "supports",
+      "notes": "主判断由图表锚点补证据"
+    },
+    {
+      "from": "chart_evidence",
+      "to": "risk_scenarios",
+      "relation": "projects",
+      "notes": "图表变量映射到风险情景"
+    },
+    {
+      "from": "risk_scenarios",
+      "to": "scene_plan",
+      "relation": "visualizes",
+      "notes": "情景映射到互动叙事分镜"
+    }
+  ],
+  "chart_anchors": [
+    "chart-01",
+    "chart-02",
+    "chart-03",
+    "chart-04"
+  ],
+  "scene_ids": [
+    "Hook",
+    "Thesis",
+    "Mechanism-1",
+    "Mechanism-2",
+    "Evidence-1",
+    "Evidence-2",
+    "Conflict",
+    "Risk",
+    "Advice",
+    "CTA"
+  ]
+}

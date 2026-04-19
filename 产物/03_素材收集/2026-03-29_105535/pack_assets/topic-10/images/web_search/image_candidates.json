@@ -1,0 +1,72 @@
+[
+  {
+    "query": "半导体突然很热闹 news conference",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 city crowd",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 office team",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 dramatic scene",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 protest crowd",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 aerial city",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 meeting room",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 chart infographic",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 documentary still",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  },
+  {
+    "query": "半导体突然很热闹 headline concept",
+    "channel": "wikimedia",
+    "entity_type": "topic",
+    "priority": 0,
+    "candidates": []
+  }
+]

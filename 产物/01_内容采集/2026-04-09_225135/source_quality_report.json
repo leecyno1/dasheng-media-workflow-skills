@@ -1,0 +1,64 @@
+{
+  "run_id": "2026-04-09_225135",
+  "generated_at": "2026-04-09T22:51:35.248591+08:00",
+  "tier_distribution": {
+    "platform_hotspot": 364,
+    "official": 7,
+    "personal_opinion": 19
+  },
+  "top_sources": [
+    {
+      "source": "5173/x",
+      "count": 100
+    },
+    {
+      "source": "5173/wb",
+      "count": 100
+    },
+    {
+      "source": "5173/xhs",
+      "count": 50
+    },
+    {
+      "source": "5173/douyin",
+      "count": 50
+    },
+    {
+      "source": "5173/bili",
+      "count": 50
+    },
+    {
+      "source": "5173/content_research",
+      "count": 20
+    },
+    {
+      "source": "reports/news",
+      "count": 20
+    }
+  ],
+  "channel_distribution": {
+    "x": 100,
+    "wb": 100,
+    "xhs": 50,
+    "douyin": 50,
+    "bili": 50,
+    "content_research": 20,
+    "reports": 20
+  },
+  "heat_level_distribution": {
+    "B": 64,
+    "A": 31,
+    "C": 80,
+    "D": 207,
+    "S": 8
+  },
+  "noise_sample_ratio": 0.0154,
+  "trendradar_ratio": 0.0513,
+  "tier_notes": {
+    "official": "官方与监管/机构源，可优先用于证据链。",
+    "mainstream_media": "主流媒体与权威财经媒体。",
+    "platform_hotspot": "平台热度源，适合发现话题，不适合直接下结论。",
+    "self_media": "垂类公众号/自媒体，适合视角参考。",
+    "personal_opinion": "个人表达，应谨慎入正文。"
+  }
+}

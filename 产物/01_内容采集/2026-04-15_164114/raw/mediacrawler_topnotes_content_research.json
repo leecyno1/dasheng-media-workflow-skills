@@ -1,0 +1,5 @@
+{
+  "items": [],
+  "total_candidates": 0,
+  "error": "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/intelligence/top-notes?task_group=content_research&days=1&limit=20 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+}

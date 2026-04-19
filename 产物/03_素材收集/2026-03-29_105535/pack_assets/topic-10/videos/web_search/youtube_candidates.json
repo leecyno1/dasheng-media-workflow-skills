@@ -1,0 +1,111 @@
+[
+  {
+    "query": "半导体突然很热闹 documentary b roll 4k",
+    "candidates": [],
+    "quality": {
+      "query": "半导体突然很热闹 documentary b roll 4k",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "半导体突然很热闹 city aerial 4k",
+    "candidates": [],
+    "quality": {
+      "query": "半导体突然很热闹 city aerial 4k",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "半导体突然很热闹 public crowd 4k",
+    "candidates": [],
+    "quality": {
+      "query": "半导体突然很热闹 public crowd 4k",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "半导体突然很热闹 government meeting 4k",
+    "candidates": [],
+    "quality": {
+      "query": "半导体突然很热闹 government meeting 4k",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "半导体突然很热闹 news conference 4k",
+    "candidates": [
+      {
+        "title": "裴洛西\"不讓中國孤立台灣\"!  記者會上展現堅決挺台態度 不讓北京輕舉妄動｜記者 黃瓊慧｜【國際局勢】20220811｜三立iNEWS",
+        "url": "https://www.youtube.com/watch?v=sR2AbSuxLfc",
+        "duration": 99.0,
+        "channel": "三立iNEWS",
+        "quality_audit": {
+          "source_category": "news_live_or_interview",
+          "source_ok": true,
+          "resolution_height": 1080,
+          "resolution_width": 1920,
+          "duration_seconds_hint": 98,
+          "fps_hint": 30.0,
+          "extractor": "youtube",
+          "source_domain": "www.youtube.com",
+          "min_height_required": 0,
+          "pre_download_pass": true,
+          "reject_reasons": []
+        },
+        "eligible_for_download": true
+      }
+    ],
+    "quality": {
+      "query": "半导体突然很热闹 news conference 4k",
+      "candidate_count": 1,
+      "qualified_count": 1,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "半导体突然很热闹 industrial aerial 4k",
+    "candidates": [],
+    "quality": {
+      "query": "半导体突然很热闹 industrial aerial 4k",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "半导体突然很热闹 street crowd 4k",
+    "candidates": [],
+    "quality": {
+      "query": "半导体突然很热闹 street crowd 4k",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  },
+  {
+    "query": "半导体突然很热闹 dramatic scene 4k",
+    "candidates": [],
+    "quality": {
+      "query": "半导体突然很热闹 dramatic scene 4k",
+      "candidate_count": 0,
+      "qualified_count": 0,
+      "rejected_count": 0,
+      "reject_reason_counts": {}
+    }
+  }
+]

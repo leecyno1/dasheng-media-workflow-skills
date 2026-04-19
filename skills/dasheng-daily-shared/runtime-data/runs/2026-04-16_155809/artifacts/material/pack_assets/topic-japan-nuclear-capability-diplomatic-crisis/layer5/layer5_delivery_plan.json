@@ -1,0 +1,68 @@
+{
+  "template_id": "geo_timeline_map",
+  "template_name": "地缘时政时间线地图 (Geo Timeline Map)",
+  "worldmonitor_project": "/Volumes/PSSD/Projects/worldmonitor",
+  "worldmonitor_data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+  "worldmonitor_public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+  "worldmonitor_entry": "index.html",
+  "proxy_port": 8787,
+  "current_status": "inactive",
+  "inputs": [
+    "article.md",
+    "event_timeline.json",
+    "map_layers.geojson",
+    "charts/*.png",
+    "scene_plan.json"
+  ],
+  "preferred_components": [
+    "StrategicRiskPanel",
+    "StrategicPosturePanel",
+    "DeckGLMap",
+    "CountryTimeline"
+  ],
+  "page_modules": [
+    "hero-summary",
+    "actor-matrix",
+    "event-timeline",
+    "map-risk-layer",
+    "media-gallery"
+  ],
+  "chart_anchor_ids": [
+    "chart-01",
+    "chart-02",
+    "chart-03",
+    "chart-04"
+  ],
+  "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+  "artifact_tag": "layer5_geo_timeline_map",
+  "topic_slug": "topic-japan-nuclear-capability-diplomatic-crisis",
+  "topic_title": "日本核武器能力披露背后：从和平宪法到军事化的结构性转变",
+  "core_claim": "日本核武器能力披露反映了其从战后和平宪法约束向实质军事化的结构性转变，伴随法律松绑、技术储备和地缘政治驱动，导致东亚安全格局深刻变化和多重风险。",
+  "required_csvs": [
+    "charts/csv/chart-01.csv",
+    "charts/csv/chart-02.csv",
+    "charts/csv/chart-03.csv",
+    "charts/csv/chart-04.csv"
+  ],
+  "required_pngs": [
+    "charts/png/chart-01.png",
+    "charts/png/chart-02.png",
+    "charts/png/chart-03.png",
+    "charts/png/chart-04.png"
+  ],
+  "narrative_schema": "actors_then_events_then_risks",
+  "data_granularity": "event_based",
+  "risk_scenarios": [
+    "安全升级",
+    "劳动力缺口",
+    "外交摩擦",
+    "供应链波动"
+  ],
+  "key_metrics_to_emit": [
+    "population",
+    "aged_65_pct",
+    "military_gdp_pct",
+    "security_score"
+  ],
+  "layout_hint": "timeline_top + map_center + actor_matrix_bottom"
+}

@@ -1,0 +1,5 @@
+anchor_id,title,purpose,chart_type,data_sources,fallback_rule,fallback_outputs
+chart-01,主判断核心变量趋势图,验证主线变量是否在中期趋势上成立,line,akshare | tushare | 官方统计 | FRED,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md
+chart-02,事件冲击与市场反应对照图,把事件与价格/情绪/利率变化放在同一时间轴,dual_axis,akshare | tushare | 新浪财经,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md
+chart-03,结构拆解图,把总判断拆成 3-5 个支撑维度,bar,官方统计 | 研究报告 | 手工整理 CSV,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md
+chart-04,风险情景图,给出不同情景下的观察变量与触发条件,scenario,手工整理 CSV,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md

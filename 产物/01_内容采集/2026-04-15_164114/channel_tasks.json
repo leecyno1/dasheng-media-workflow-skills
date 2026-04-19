@@ -1,0 +1,915 @@
+{
+  "x": {
+    "channel": "x",
+    "source": "5173/x",
+    "label": "X",
+    "items": [],
+    "total": 0,
+    "status": "error",
+    "attempts": 1,
+    "waited_seconds": 0,
+    "issues": [
+      "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/data/latest?platform=x&limit=100 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+    ],
+    "meta": {}
+  },
+  "wb": {
+    "channel": "wb",
+    "source": "5173/wb",
+    "label": "微博",
+    "items": [],
+    "total": 0,
+    "status": "error",
+    "attempts": 1,
+    "waited_seconds": 0,
+    "issues": [
+      "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/data/latest?platform=wb&limit=100 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+    ],
+    "meta": {}
+  },
+  "xhs": {
+    "channel": "xhs",
+    "source": "5173/xhs",
+    "label": "小红书",
+    "items": [],
+    "total": 0,
+    "status": "error",
+    "attempts": 1,
+    "waited_seconds": 0,
+    "issues": [
+      "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/data/latest?platform=xhs&limit=50 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+    ],
+    "meta": {}
+  },
+  "douyin": {
+    "channel": "douyin",
+    "source": "5173/douyin",
+    "label": "抖音",
+    "items": [],
+    "total": 0,
+    "status": "error",
+    "attempts": 1,
+    "waited_seconds": 0,
+    "issues": [
+      "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/data/latest?platform=douyin&limit=50 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+    ],
+    "meta": {}
+  },
+  "bili": {
+    "channel": "bili",
+    "source": "5173/bili",
+    "label": "B站",
+    "items": [],
+    "total": 0,
+    "status": "error",
+    "attempts": 1,
+    "waited_seconds": 0,
+    "issues": [
+      "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/data/latest?platform=bili&limit=50 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+    ],
+    "meta": {}
+  },
+  "content_research": {
+    "channel": "content_research",
+    "source": "5173/content_research",
+    "label": "5173 Content Research",
+    "items": [],
+    "total": 0,
+    "status": "error",
+    "attempts": 1,
+    "waited_seconds": 0,
+    "issues": [
+      "HTTPConnectionPool(host='127.0.0.1', port=18000): Max retries exceeded with url: /api/intelligence/top-notes?task_group=content_research&days=1&limit=20 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=18000): Failed to establish a new connection: [Errno 61] Connection refused\"))"
+    ],
+    "meta": {}
+  },
+  "ai_hot": {
+    "channel": "ai_hot",
+    "source": "ai_hot/aggregate",
+    "label": "AI热点",
+    "items": [
+      {
+        "provider": "hn",
+        "source": "ai_hot/hn",
+        "title": "An AI Vibe Coding Horror Story",
+        "url": "https://www.tobru.ch/an-ai-vibe-coding-horror-story/",
+        "author_name": "teichmann",
+        "created_at": "2026-04-14T08:35:45Z",
+        "summary": "Hacker News 查询：Vibe Coding",
+        "score": 859.8,
+        "provider_meta": {
+          "query": "Vibe Coding",
+          "points": 206.0,
+          "num_comments": 203.0
+        },
+        "rank_score": 16.0381
+      },
+      {
+        "provider": "hn",
+        "source": "ai_hot/hn",
+        "title": "OpenAI's $852B valuation faces investor scrutiny amid strategy shift, FT reports",
+        "url": "https://www.reuters.com/legal/transactional/openai-investors-question-852-billion-valuation-strategy-shifts-ft-reports-2026-04-14/",
+        "author_name": "abdelhousni",
+        "created_at": "2026-04-15T01:36:22Z",
+        "summary": "Hacker News 查询：OpenAI",
+        "score": 468.0,
+        "provider_meta": {
+          "query": "OpenAI",
+          "points": 105.0,
+          "num_comments": 120.0
+        },
+        "rank_score": 14.2864
+      },
+      {
+        "provider": "hn",
+        "source": "ai_hot/hn",
+        "title": "Trusted access for the next era of cyber defense",
+        "url": "https://openai.com/index/scaling-trusted-access-for-cyber-defense/",
+        "author_name": "surprisetalk",
+        "created_at": "2026-04-14T20:07:20Z",
+        "summary": "Hacker News 查询：OpenAI",
+        "score": 286.2,
+        "provider_meta": {
+          "query": "OpenAI",
+          "points": 78.0,
+          "num_comments": 55.0
+        },
+        "rank_score": 13.8207
+      },
+      {
+        "provider": "reddit",
+        "source": "ai_hot/reddit",
+        "title": "Anthropic has come out against a proposed Illinois law backed by OpenAI that would shield AI labs from liability if their systems are used to cause large-scale harm, like mass casualties or more than $1 billion in property damage.",
+        "url": "https://www.reddit.com/r/singularity/comments/1sly077/anthropic_has_come_out_against_a_proposed/",
+        "author_name": "/u/soldierofcinema",
+        "created_at": "2026-04-15T06:28:31+00:00",
+        "summary": "Reddit r/singularity 热门讨论",
+        "score": 90,
+        "provider_meta": {
+          "subreddit": "singularity",
+          "rank": 3
+        },
+        "rank_score": 13.5435
+      },
+      {
+        "provider": "hn",
+        "source": "ai_hot/hn",
+        "title": "Show HN: Make sure your OpenClaw isn't doing things it's not supposed to",
+        "url": "https://claw.armoriq.ai/",
+        "author_name": "vaibhavb007",
+        "created_at": "2026-04-15T03:26:03Z",
+        "summary": "Hacker News 查询：AI agents",
+        "score": 12.0,
+        "provider_meta": {
+          "query": "AI agents",
+          "points": 5.0,
+          "num_comments": 0.0
+        },
+        "rank_score": 13.2298
+      },
+      {
+        "provider": "hn",
+        "source": "ai_hot/hn",
+        "title": "Show HN: OpenRig – agent harness that runs Claude Code and Codex as one system",
+        "url": "https://github.com/mvschwarz/openrig",
+        "author_name": "mschwarz",
+        "created_at": "2026-04-14T23:46:40Z",
+        "summary": "Hacker News 查询：OpenAI",
+        "score": 11.4,
+        "provider_meta": {
+          "query": "OpenAI",
+          "points": 4.0,
+          "num_comments": 1.0
+        },
+        "rank_score": 13.1291
+      },
+      {
+        "provider": "hn",
+        "source": "ai_hot/hn",
+        "title": "Show HN: Agent Citizen – Your AI agents are sitting around doing nothing",
+        "url": "https://agent-citizen.vercel.app",
+        "author_name": "daltonlcarr",
+        "created_at": "2026-04-15T03:44:38Z",
+        "summary": "Hacker News 查询：AI agents",
+        "score": 9.6,
+        "provider_meta": {
+          "query": "AI agents",
+          "points": 4.0,
+          "num_comments": 0.0
+        },
+        "rank_score": 13.0823
+      },
+      {
+        "provider": "hn",
+        "source": "ai_hot/hn",
+        "title": "The Death of an AI Whistleblower",
+        "url": "https://www.thenation.com/article/society/open-ai-suchir-balaji-whistleblowers/",
+        "author_name": "SLHamlet",
+        "created_at": "2026-04-15T06:56:56Z",
+        "summary": "Hacker News 查询：OpenAI",
+        "score": 25.8,
+        "provider_meta": {
+          "query": "OpenAI",
+          "points": 10.0,
+          "num_comments": 1.0
+        },
+        "rank_score": 13.0352
+      },
+      {
+        "provider": "reddit",
+        "source": "ai_hot/reddit",
+        "title": "🔥BREAKING: OpenAI rolls out GPT-5.4-Cyber to limited group for testing, seeks to rival Claude Mythos",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1slmujp/breaking_openai_rolls_out_gpt54cyber_to_limited/",
+        "author_name": "/u/etherd0t",
+        "created_at": "2026-04-14T21:54:07+00:00",
+        "summary": "Reddit r/OpenAI 热门讨论",
+        "score": 54,
+        "provider_meta": {
+          "subreddit": "OpenAI",
+          "rank": 5
+        },
+        "rank_score": 13.0128
+      },
+      {
+        "provider": "reddit",
+        "source": "ai_hot/reddit",
+        "title": "Anthropic is set to release Claude Opus 4.7 and a new AI design tool as early as this week",
+        "url": "https://www.reddit.com/r/singularity/comments/1slh72j/anthropic_is_set_to_release_claude_opus_47_and_a/",
+        "author_name": "/u/Outside-Iron-8242",
+        "created_at": "2026-04-14T18:30:07+00:00",
+        "summary": "Reddit r/singularity 热门讨论",
+        "score": 54,
+        "provider_meta": {
+          "subreddit": "singularity",
+          "rank": 5
+        },
+        "rank_score": 12.9521
+      }
+    ],
+    "total": 10,
+    "status": "ok",
+    "attempts": 1,
+    "waited_seconds": 0,
+    "issues": [],
+    "meta": {
+      "candidate_total": 53,
+      "providers": {
+        "hn": 7,
+        "reddit": 3
+      }
+    }
+  },
+  "reports": {
+    "channel": "reports",
+    "source": "reports/news",
+    "label": "TrendRadar / Reports",
+    "items": [
+      {
+        "title": "美伊和谈预期升温，标普大涨近新高，纳指十连涨，原油大跌7%，人民币升破6.81",
+        "url": "https://wallstreetcn.com/articles/3769897"
+      },
+      {
+        "title": "如何看待同济大学王教授的百万经费 Nature 论文被指数据造假？",
+        "url": "https://www.zhihu.com/question/2025756646962468381"
+      },
+      {
+        "title": "网民平均每人每天刷视频超200分钟",
+        "url": "https://s.weibo.com/weibo?q=%23%E7%BD%91%E6%B0%91%E5%B9%B3%E5%9D%87%E6%AF%8F%E4%BA%BA%E6%AF%8F%E5%A4%A9%E5%88%B7%E8%A7%86%E9%A2%91%E8%B6%85200%E5%88%86%E9%92%9F%23&amp%3Bt=31&amp%3Bband_rank=3&amp%3BRefer=top"
+      },
+      {
+        "title": "西方媒体：美伊本周开启新一轮谈判，伊朗火速辟谣：报道“毫无根据”！",
+        "url": "https://wallstreetcn.com/articles/3769921"
+      },
+      {
+        "title": "华尔街见闻早餐FM-Radio | 2026年4月15日",
+        "url": "https://wallstreetcn.com/articles/3769978"
+      },
+      {
+        "title": "俄外长：普京将于今年上半年访华",
+        "url": "https://www.toutiao.com/trending/7628859250894458414"
+      },
+      {
+        "title": "如何看待 B 太花 18 万为贵州山区孩子建房，却发现对方虚构家庭困境？公益帮扶咋识别真实需求避免善意被消耗？",
+        "url": "https://www.zhihu.com/question/2027511533572286109"
+      },
+      {
+        "title": "报道：伊朗考虑暂停霍尔木兹航运，为新一轮谈判争取空间",
+        "url": "https://wallstreetcn.com/articles/3769943"
+      },
+      {
+        "title": "永辉超市仲裁胜诉：王健林、孙喜双等需承担连带保证责任及支付超38亿元",
+        "url": "https://m.thepaper.cn/newsDetail_forward_32969086"
+      },
+      {
+        "title": "国台办：统一后台湾无需在防务上巨额支出",
+        "url": "https://www.cls.cn/detail/2344442"
+      },
+      {
+        "title": "特朗普：美国对伊朗的战争已经结束",
+        "url": "https://www.cls.cn/detail/2344245"
+      },
+      {
+        "title": "中方回应美财长“中国不可靠”言论",
+        "url": "https://www.toutiao.com/trending/7628886103948496411"
+      },
+      {
+        "title": "特朗普最新表态：美国对伊战争已结束 未来两天或重返谈判桌",
+        "url": "https://www.cls.cn/detail/2344264"
+      },
+      {
+        "title": "中国银行一员工年薪超1800万元",
+        "url": "https://www.toutiao.com/trending/7628000740484595762"
+      },
+      {
+        "title": "驻外人员嫖娼遭仙人跳出卖国家秘密",
+        "url": "https://www.toutiao.com/trending/7628781733667766314"
+      },
+      {
+        "title": "AI承诺赔10万,用户索赔败诉",
+        "url": "https://tieba.baidu.com/hottopic/browse/hottopic?topic_id=28353249&amp%3Bamp%3Btopic_name=AI%E6%89%BF%E8%AF%BA%E8%B5%9410%E4%B8%87%2C%E7%94%A8%E6%88%B7%E7%B4%A2%E8%B5%94%E8%B4%A5%E8%AF%89"
+      },
+      {
+        "title": "特朗普称“未来两天内”可能再与伊朗谈判，上轮谈判一度谈到80%仍破裂，伊外长：因为内塔尼亚胡给万斯打了电话",
+        "url": "https://wallstreetcn.com/articles/3769962"
+      },
+      {
+        "title": "全球AI芯片被一家味精厂卡脖子？份额超95%，英伟达也得排队抢产能",
+        "url": "https://wallstreetcn.com/articles/3769939"
+      },
+      {
+        "title": "PCB上游又现涨价潮：CCL最高调涨40% 锁定AI服务器等高阶应用",
+        "url": "https://www.cls.cn/detail/2344320"
+      },
+      {
+        "title": "港股科技股卖空潮退去 小米集团近5日卖空股数降幅超90%",
+        "url": "https://www.cls.cn/detail/2344645"
+      }
+    ],
+    "total": 20,
+    "status": "ok",
+    "attempts": 1,
+    "waited_seconds": 0,
+    "issues": [],
+    "meta": {
+      "reports_count": 3984,
+      "html_available": true
+    }
+  },
+  "wechat": {
+    "channel": "wechat",
+    "source": "8000/wechat_public",
+    "label": "公众号",
+    "items": [
+      {
+        "id": "3908717627-2247497817_1",
+        "title": "卧槽！这些基金涨幅已经近300%了",
+        "description": "喜大普奔啊朋友们！！已经连续3天赚钱了！",
+        "publish_time": 1775803250,
+        "mp_id": "MP_WXS_3908717627",
+        "mp_name": "硬核姬老板",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/IpMCIyJEUI1R1S24IOM0POCrl26Hx0mkybRYRLpS92c36NAFB9W0w0SryHyiaXDnsTkCcpATJIUR52ZAMVse8ooo2UqicPKWzUniaPy7PggsgM/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 20,
+        "url": "https://mp.weixin.qq.com/s/7m1sLTBeGkgOHt87z5JZDQ",
+        "content": ""
+      },
+      {
+        "id": "3862654236-2247499113_1",
+        "title": "在手机上直接跑明日方舟自动化，真正意义上的\"手机长草\"解决方案。",
+        "description": "MAA-Meow;一个能让你在 Android 手机上原生运行 MAA 的工具，从此刷日常不用开电脑、不用挂模",
+        "publish_time": 1775782560,
+        "mp_id": "MP_WXS_3862654236",
+        "mp_name": "github淘金",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/bCJqpmbtQZyicRq37UVDtoDxPozibnCr1XkHB0R1KvWhyVTru8rnKAl4UKmHa7qI0gD2JMr4H4E1mSdl9DVuiblm1sJZJTcO2iaqh69V601nYFc/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 51,
+        "url": "https://mp.weixin.qq.com/s/3Q10y2VuwyB6t-h8GjfqDg",
+        "content": ""
+      },
+      {
+        "id": "3077824040-2649619741_1",
+        "title": "一觉醒来，全世界都在限制以色列",
+        "description": "一觉醒来，全世界都在限制以色列",
+        "publish_time": 1775780749,
+        "mp_id": "MP_WXS_3077824040",
+        "mp_name": "贩财局",
+        "pic_url": "",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 15,
+        "url": "https://mp.weixin.qq.com/s/qIFCA6tr60UvZwphfv8Pbg",
+        "content": ""
+      },
+      {
+        "id": "3094137474-2648244169_1",
+        "title": "果然：进攻以色列，才是最优解！",
+        "description": "有可奉告。",
+        "publish_time": 1775750400,
+        "mp_id": "MP_WXS_3094137474",
+        "mp_name": "硬核Deeper",
+        "pic_url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/PYYn35CxcRPrBLHuYh9T7IrKWQicSYOHfqHicsLiath4pkUI15cKZmMUjnahU6Av2pMOOibH4XPqsQ8ttM9ITOv5Je2JG8noTkOzgIVDVE5JhkE/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 5,
+        "url": "https://mp.weixin.qq.com/s/N72vnV8QQGh-KeBH5d_LzQ",
+        "content": ""
+      },
+      {
+        "id": "3267381402-2247495558_1",
+        "title": "Hermes Agent相关资源汇总",
+        "description": "Hermes Agent相关资源汇总",
+        "publish_time": 1775749452,
+        "mp_id": "MP_WXS_3267381402",
+        "mp_name": "Draco正在VibeCoding",
+        "pic_url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/0m9F5vC1OGia1ia7KDp1QutibL7pT0uPqnc7aE6aQaibAnzJlLwvCtrG8HMqU1p0OCbs6AibtYNe7kFb2pibM0fMrPavn5hfNMSTqvdN1OmYXoK1o/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 17,
+        "url": "https://mp.weixin.qq.com/s/2tHnf8QQ52EKWM68KAoSTQ",
+        "content": ""
+      },
+      {
+        "id": "3860767471-2247507639_1",
+        "title": "谈判大概率会破裂？",
+        "description": "做好战争长期化的准备，6个观点",
+        "publish_time": 1775741587,
+        "mp_id": "MP_WXS_3860767471",
+        "mp_name": "表舅是养基大户",
+        "pic_url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/b73HcKsFZOOhz0Kib7xqqELWRGiammNiaudKfOQ1ib99MKXFib4FJhuZ8lrUGOejGPw5MKBXlXFc4a9ZibFph5kiaYhiaZPHj9CvCwSMytkHGEMcVrM/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 15,
+        "url": "https://mp.weixin.qq.com/s/SdU0_57oIJ8jtnV6FXSF3A",
+        "content": ""
+      },
+      {
+        "id": "3225884425-2247547121_1",
+        "title": "抄作业时间！内部员工重仓的红利基金，我从年报全扒出来了",
+        "description": "抄作业时间！内部员工重仓的红利基金，我从年报全扒出来了",
+        "publish_time": 1775732423,
+        "mp_id": "MP_WXS_3225884425",
+        "mp_name": "阡陌说",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/sVJ6f5JhsRiaY4BVum1g71VNr3tCVicDRj1PhxcSK6KSsT0aAHsVYibK9FiaEnw4kU1vGNTu3ibSrXZWnO7CURzd2XMN7ATEL3D1bmcgR941LXhY/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 27,
+        "url": "https://mp.weixin.qq.com/s/SYdB44ymT4yVZqtWCUtjKw",
+        "content": ""
+      },
+      {
+        "id": "3862654236-2247499111_1",
+        "title": "Github 国人的 Skills 项目越堆越满，代码？不存在的!",
+        "description": "最近刷 GitHub，你有没有这种感觉：仓库越来越多，项目越来越少；README 越来越炫，代码越来越空；Sk",
+        "publish_time": 1775731637,
+        "mp_id": "MP_WXS_3862654236",
+        "mp_name": "github淘金",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/bCJqpmbtQZwibE1ak38k72dYC7JzIQZ17MknibOWMwm25XSyNy0ALvibUyn957HVCLh9ianXqJRuzfU1EzicYSZmpicwCHicD0LLCb2FkPnZmLdgwA/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 53,
+        "url": "https://mp.weixin.qq.com/s/ESRG-asI7JhpAbeogRTJWw",
+        "content": ""
+      },
+      {
+        "id": "3921643922-2247527731_1",
+        "title": "脉脉哪来的胆子？",
+        "description": "一手信息的魅力",
+        "publish_time": 1775725245,
+        "mp_id": "MP_WXS_3921643922",
+        "mp_name": "半佛仙人",
+        "pic_url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/JGaxXYoaogKDUWu4dXSepHiaAVTzZNEsqHtQLCJicXtib4DduoFlMcpL9TkARguT4C5B7CdNen6v6Ct2y0zzqxIjEV4bN9Y5DiaJjBdIYWbpyjw/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 7,
+        "url": "https://mp.weixin.qq.com/s/8RK1tSNgsnMS3nlhGgWCWQ",
+        "content": ""
+      },
+      {
+        "id": "3094137474-2648244161_1",
+        "title": "离谱：以色列失控！伊朗十点计划逼美低头？谈判细节全拆解",
+        "description": "现在以色列失控，美国无法做主，它成了美伊和谈最大的阻力！",
+        "publish_time": 1775716311,
+        "mp_id": "MP_WXS_3094137474",
+        "mp_name": "硬核Deeper",
+        "pic_url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/PYYn35CxcROOTmw6nEWwCASuALvjNZrnJkHIuN7zy0WaY834XoibiaHCiap0KP0koCb1ko91WoQZqJWn075qmr3DRmOSexI3J42ov3KHWPxKck/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 28,
+        "url": "https://mp.weixin.qq.com/s/5_0ONMmvxFq999zEMM-1HA",
+        "content": ""
+      },
+      {
+        "id": "3094137474-2648244156_1",
+        "title": "现在的特朗普，跟当年小胡子一样，不是科班出身过于依靠直觉和天赋，最后拉了坨大的",
+        "description": "静下心来跟我聊聊。",
+        "publish_time": 1775715265,
+        "mp_id": "MP_WXS_3094137474",
+        "mp_name": "硬核Deeper",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/PYYn35CxcRMV0Xa1o9HajPPP53mZNB6SnBQ4uFqcKQS7dcVFUNPibJev6FNQmTfEck0CibCD6UqC5BmrZ3h6icTMYibFAMO8v4bhe9zJ0Ffsia0E/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 9,
+        "url": "https://mp.weixin.qq.com/s/q-iPz1sea5H4uBHSnoC73w",
+        "content": ""
+      },
+      {
+        "id": "3908717627-2247497793_1",
+        "title": "又一个公募老将奔私了",
+        "description": "一些基金经理动向给大家交代一下",
+        "publish_time": 1775708638,
+        "mp_id": "MP_WXS_3908717627",
+        "mp_name": "硬核姬老板",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/IpMCIyJEUI124Duqyj4CkibHZA8P3AO8xdMB4WO5z9LzWycNoF8ozmx2T9QDKs99EhfRfH6EXEYtX3Z6DXyw0ZiaTBKxG0VC3ZTiaQ26Lk0IZU/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 15,
+        "url": "https://mp.weixin.qq.com/s/V_yWBRymxAFT69X69lu8dA",
+        "content": ""
+      },
+      {
+        "id": "3862654236-2247499100_1",
+        "title": "开源的 Android 网络抓包调试库，不用配置代理、不用装证书",
+        "description": "开源的 Android 网络抓包调试库，不用配置代理、不用装证书",
+        "publish_time": 1775695800,
+        "mp_id": "MP_WXS_3862654236",
+        "mp_name": "github淘金",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/bCJqpmbtQZxnz6W064fcBTIqXUUpvNAVLmP1XNExO3sHoSqR1cffyq3F4Lr8YSlycUQdQnk6s9EvpVibKZBia6t46s8xya5Fygl5QLib1fnHJc/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 30,
+        "url": "https://mp.weixin.qq.com/s/1ld3Y8_LRr2a7wk_HY31RA",
+        "content": ""
+      },
+      {
+        "id": "3077824040-2649619737_1",
+        "title": "一觉醒来，都清醒了",
+        "description": "一觉醒来，都清醒了",
+        "publish_time": 1775695080,
+        "mp_id": "MP_WXS_3077824040",
+        "mp_name": "贩财局",
+        "pic_url": "",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 9,
+        "url": "https://mp.weixin.qq.com/s/Z-bRfi98_DyBBpG2iKxY6g",
+        "content": ""
+      },
+      {
+        "id": "3094137474-2648244149_1",
+        "title": "我可真不管你们了，我来真的了",
+        "description": "我可真不管你们了，我来真的了",
+        "publish_time": 1775689055,
+        "mp_id": "MP_WXS_3094137474",
+        "mp_name": "硬核Deeper",
+        "pic_url": "http://mmbiz.qpic.cn/mmbiz_jpg/PYYn35CxcRNXtHeicIvgicCMnicxmenxDJzoeQce52gwrJG524Gz8w8sTg5OBcfeBpQIlqiblc2a59xc2MfSYDvO2wmzmE4lObMTI8WvDWpiaebU/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 14,
+        "url": "https://mp.weixin.qq.com/s/9ZVuIga0jcdo47UIx64LEA",
+        "content": ""
+      },
+      {
+        "id": "3862654236-2247499095_1",
+        "title": "根据项目代码逆推提示词，相当于把成品代码反向翻译成\"人话需求\"。",
+        "description": "gitreverse;你扔给它一个 GitHub 仓库链接，它帮你琢磨出一个\"假如要从零手写这个项目，该怎么跟",
+        "publish_time": 1775663820,
+        "mp_id": "MP_WXS_3862654236",
+        "mp_name": "github淘金",
+        "pic_url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/bCJqpmbtQZxibKFUZN24mFrBGU7ticXiau4lcaZXEQlbicbPRBjgMKtSODyiaS4GymTnyC9UTU0krp8BjH4ZCOaOuxezz9TJNCJgQJv9GxAD9gfA/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 53,
+        "url": "https://mp.weixin.qq.com/s/DHPznRaMpJu3be5DUWBu-g",
+        "content": ""
+      },
+      {
+        "id": "3860767471-2247507620_1",
+        "title": "听说今天机构加仓很猛",
+        "description": "外局势仍有不确定性，但对人民币资产保持信心",
+        "publish_time": 1775655255,
+        "mp_id": "MP_WXS_3860767471",
+        "mp_name": "表舅是养基大户",
+        "pic_url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/b73HcKsFZOMNvVNbKov3veMad4hJLwecrsD63sCS2lxNTxKx3WQ3YdIfde6ASBh1icgOwYty7ACvPWowDHic2roA4RvtR8Mov8Ktdk3tIwIjU/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 21,
+        "url": "https://mp.weixin.qq.com/s/lH8p4VLvMW5FjIr6MLXcig",
+        "content": ""
+      },
+      {
+        "id": "3267381402-2247495546_1",
+        "title": "一文看懂：Hermes Agent与OpenClaw全维度对比",
+        "description": "一文看懂：Hermes Agent与OpenClaw全维度对比",
+        "publish_time": 1775651355,
+        "mp_id": "MP_WXS_3267381402",
+        "mp_name": "Draco正在VibeCoding",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/0m9F5vC1OGhuCKEliax4zUcrGeU0rPTaZWe8AEcEOtGnMZXY1zELyyFBP9lmYQibRQZyH0puGvusgIADibpYUlxv5ugQRYRliceJxyFtjss4qibY/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 30,
+        "url": "https://mp.weixin.qq.com/s/JWHBaFVvLE8S1t5jRXQxrg",
+        "content": ""
+      },
+      {
+        "id": "3637043797-2247514382_1",
+        "title": "反转再反转，震惊世界的12个小时",
+        "description": "反转再反转，震惊世界的12个小时",
+        "publish_time": 1775647800,
+        "mp_id": "MP_WXS_3637043797",
+        "mp_name": "财经连环话",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/yVtqJWfa24jyQbaC9GQdyut8edk7rub7dA42Nb68p07f7jicicEB9ick07McNrQcicDXkV1cBRW9ia4ib846WWaLzefEvLhux20t8pKTulx1kxtOw/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 16,
+        "url": "https://mp.weixin.qq.com/s/n0DqhG8YbFC1xC7q6iEDaQ",
+        "content": ""
+      },
+      {
+        "id": "3225884425-2247547108_1",
+        "title": "内部员工悄悄加仓的QDII基金清单，郑希成最大赢家？",
+        "description": "内部员工悄悄加仓的QDII基金清单，郑希成最大赢家？",
+        "publish_time": 1775645562,
+        "mp_id": "MP_WXS_3225884425",
+        "mp_name": "阡陌说",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/sVJ6f5JhsRggV58QqqFiaiagiclF3b1HYAibGiaGyib8VQF8CPYCibxr1iab1QFwFmy2Q4BYXWS1us0gCYc9Bh7RFJP82cOxPtAtnLZXtx7Y0AvHuQ4/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 26,
+        "url": "https://mp.weixin.qq.com/s/ybrUfoYaOjO3uEeu7B2k8A",
+        "content": ""
+      },
+      {
+        "id": "3862654236-2247499086_1",
+        "title": "专门用来揪出Android设备上VPN踪迹的开源工具，不管是全局代理还是拆分隧道，它都能检测出来",
+        "description": "VPN-Detector;一个专门用来揪出Android设备上VPN踪迹的开源工具，不管是全局代理还是拆分隧道",
+        "publish_time": 1775645113,
+        "mp_id": "MP_WXS_3862654236",
+        "mp_name": "github淘金",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/bCJqpmbtQZw2sibCACuLcib6r8CguD38dUFxHexRrnprxHc8XuPiaR8qSlP3MBXdnhGS9iaErBwgpJBlAyaTPONncnIyoaIVnUFwMagsbcInZFw/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 55,
+        "url": "https://mp.weixin.qq.com/s/2fDzXlj50TebHehr-pqL4A",
+        "content": ""
+      },
+      {
+        "id": "3077824040-2649619735_1",
+        "title": "伊朗赢了，美国赢了，一赢各表",
+        "description": "伊朗赢了，美国赢了，一赢各表",
+        "publish_time": 1775637447,
+        "mp_id": "MP_WXS_3077824040",
+        "mp_name": "贩财局",
+        "pic_url": "",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 14,
+        "url": "https://mp.weixin.qq.com/s/JdoinTDGmUl6dzlzecK73g",
+        "content": ""
+      },
+      {
+        "id": "3908717627-2247497784_1",
+        "title": "很好，终于有基金经理聚焦在了半导体自主可控了",
+        "description": "南方基金郑晓曦，半导体最难的路，她为何敢走？",
+        "publish_time": 1775618520,
+        "mp_id": "MP_WXS_3908717627",
+        "mp_name": "硬核姬老板",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/IpMCIyJEUI3m0CWI1h3F61XIlZoMicBoIdic0bKCLN1Bk31wb6eRRwk4vkYbQHEmmDjiboflFGjv35PERDjjricviaphghjOgZvbny35RVK3a64g/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 22,
+        "url": "https://mp.weixin.qq.com/s/-P7kYmK-kSdjRFjtSnY8Rg",
+        "content": ""
+      },
+      {
+        "id": "3077824040-2649619732_1",
+        "title": "一觉醒来，美国伊朗以色列三方画k线",
+        "description": "一觉醒来，美国伊朗以色列三方画k线",
+        "publish_time": 1775609952,
+        "mp_id": "MP_WXS_3077824040",
+        "mp_name": "贩财局",
+        "pic_url": "",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 17,
+        "url": "https://mp.weixin.qq.com/s/bI7JkXZEZ-h9HSKAGOeFsA",
+        "content": ""
+      },
+      {
+        "id": "3862654236-2247499081_1",
+        "title": "让 MacBook 刘海变成你的 AI 编码助手仪表盘",
+        "description": "CodeIsland;一个住在 MacBook 刘海里的实时状态面板，让你不用切窗口就能盯着 Claude、C",
+        "publish_time": 1775609640,
+        "mp_id": "MP_WXS_3862654236",
+        "mp_name": "github淘金",
+        "pic_url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/bCJqpmbtQZwW7kHplKJoaeXG7icF0kgU9BLFTmEqtZymG13eTTHYyibyUhy7b6zddKXVSLrVhkNsjyoF8bNhsd8sGXOFhfiarRtYJJEHrg86ME/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 52,
+        "url": "https://mp.weixin.qq.com/s/LI9M0BpO-5od8OU0PT9MIQ",
+        "content": ""
+      },
+      {
+        "id": "3094137474-2648244145_3",
+        "title": "美军伊朗救援行动疑云：黄饼计划失败后的谎言掩盖？",
+        "description": "老子写的。",
+        "publish_time": 1775577600,
+        "mp_id": "MP_WXS_3094137474",
+        "mp_name": "硬核Deeper",
+        "pic_url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/PYYn35CxcRO1fWtDZkGOSG36HumgKlbgiceml5O9GzWhtwEPGA2S2UCEpGq8UYWdAO4aQibKvtdT9YJXkuR8KheLTaERxMvku8TtB2hsClxPI/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 5,
+        "url": "https://mp.weixin.qq.com/s/Fj7X3FV9CkUA6-xrEArQqA",
+        "content": ""
+      },
+      {
+        "id": "3094137474-2648244145_2",
+        "title": "美军救援行动反转：真实目的竟是浓缩铀盗取?",
+        "description": "老子写的。",
+        "publish_time": 1775577600,
+        "mp_id": "MP_WXS_3094137474",
+        "mp_name": "硬核Deeper",
+        "pic_url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/PYYn35CxcRPoVbVrMibyPop5O4PqbVvNd7LYxxU0yyib7ibIuqGpicn7BbPfgp3RzFLpBy7j2Wenr7pncRDQbPkAXnj6RPotm0hd0bZ2PMic3pKA/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 5,
+        "url": "https://mp.weixin.qq.com/s/VyYO2wEhj_YozPlZt9P19A",
+        "content": ""
+      },
+      {
+        "id": "3094137474-2648244145_1",
+        "title": "我爸赶鸭子上架，开始成才之路",
+        "description": "儿子写的。",
+        "publish_time": 1775577600,
+        "mp_id": "MP_WXS_3094137474",
+        "mp_name": "硬核Deeper",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/PYYn35CxcRO2d5f78qpax9tm5gfk2BPtequGetsmt1MLT8SNv6GQta3Om707IvpcBiaqzicWzO7Loga9LibKICRWxJZ20FscQL98cF5S1eibNvk/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 5,
+        "url": "https://mp.weixin.qq.com/s/2V-4AapYJHmz2Nd_K0G8ug",
+        "content": ""
+      },
+      {
+        "id": "3860767471-2247507591_1",
+        "title": "央妈为何狂买黄金？",
+        "description": "看美的集团的前十大股东，保险大佬成了接盘侠？",
+        "publish_time": 1775568691,
+        "mp_id": "MP_WXS_3860767471",
+        "mp_name": "表舅是养基大户",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/b73HcKsFZOP8RxNhk8gpfJQszdvkeQ2HJVd7520T0ibwwjhxstnG7HhHXj75WRcMXYHYvuCAm5ccHW0LjvOEVGFLqKUAHfzLefQHfhORkYx8/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 22,
+        "url": "https://mp.weixin.qq.com/s/_IpyPNK16iCBnZOVLDiNzg",
+        "content": ""
+      },
+      {
+        "id": "3267381402-2247495483_1",
+        "title": "为飞书文档生成HERO Image & 公众号封面图的skill：article-to-wechat-cover",
+        "description": "为飞书文档生成HERO Image & 公众号封面图的skill：article-to-wechat-cover",
+        "publish_time": 1775559768,
+        "mp_id": "MP_WXS_3267381402",
+        "mp_name": "Draco正在VibeCoding",
+        "pic_url": "https://mmbiz.qpic.cn/mmbiz_jpg/0m9F5vC1OGgibyHQicRGs5YlO5J1hfcOLkfUet9OYKR4Eibzo0QVVpn8c0FhheicYKj7boaCjoVFiaEAXqZjMoeVYCCAWB60G2zch95DfI0g5xVs/0?wx_fmt=jpeg",
+        "source_platform": "wechat",
+        "read_count": null,
+        "like_count": null,
+        "share_count": null,
+        "recommend_count": null,
+        "is_read": 0,
+        "word_count": 53,
+        "url": "https://mp.weixin.qq.com/s/iq-kV_kCHtOb4h5UWw79nQ",
+        "content": ""
+      }
+    ],
+    "total": 54,
+    "status": "ok",
+    "attempts": 1,
+    "waited_seconds": 0,
+    "issues": [],
+    "meta": {
+      "channels_total": 17,
+      "latest_articles_total": 75,
+      "curated_articles_total": 24
+    }
+  }
+}

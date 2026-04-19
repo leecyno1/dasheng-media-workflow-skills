@@ -1,0 +1,91 @@
+{
+  "stage": "brief",
+  "run_id": "2026-04-06_211510",
+  "generation_method": "ai",
+  "status": "completed",
+  "input_source": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-06_211510",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-06_211510_ai",
+  "generated_at": "2026-04-06T21:30:00+08:00",
+  "candidate_count": 8,
+  "selected_count": 0,
+  "gate_status": "pending_editor_review",
+  "deliverables": {
+    "selected_topics": "selected_topics.json",
+    "brief_library": "02_编辑Brief库.md",
+    "brief_report": "02_编辑Brief_报告.md",
+    "manifest": "brief_manifest.json"
+  },
+  "intake_summary": {
+    "x_total": 12620,
+    "wb_total": 2414,
+    "xhs_total": 8304,
+    "douyin_total": 2976,
+    "bili_total": 5155,
+    "selected_records": 370,
+    "top_event_cluster": "粉丝-热度代理"
+  },
+  "topics_overview": [
+    {
+      "topic_id": "topic-apple-security-crisis-2026",
+      "title": "苹果安全漏洞背后：工信部紧急预警折射的供应链信任危机",
+      "composite_score": 8.4,
+      "framework": "痛点型",
+      "strategy": "密度强化"
+    },
+    {
+      "topic_id": "topic-russia-japan-oil-cutoff",
+      "title": "俄罗斯对日断供石油：能源武器化如何重塑东北亚地缘格局",
+      "composite_score": 8.5,
+      "framework": "结构型",
+      "strategy": "密度强化"
+    },
+    {
+      "topic_id": "topic-japan-bonds-crisis",
+      "title": "日本国债「史无前例」的异动：央行失控还是市场重定价？",
+      "composite_score": 8.1,
+      "framework": "热点解读型",
+      "strategy": "角度发现"
+    },
+    {
+      "topic_id": "topic-ai-prompt-adversarial-thinking",
+      "title": "「这是我仇人写的」：对抗性思维如何让AI成为更好的批评者",
+      "composite_score": 8.3,
+      "framework": "清单型",
+      "strategy": "密度强化"
+    },
+    {
+      "topic_id": "topic-divorce-asset-gambling-law",
+      "title": "炒股亏损算不算「挥霍财产」：离婚财产分割中的风险投资边界",
+      "composite_score": 8.0,
+      "framework": "对比型",
+      "strategy": "细节锚定"
+    },
+    {
+      "topic_id": "topic-trump-iran-oil-price-manipulation",
+      "title": "特朗普如何用一条推文操纵油价：信息战与能源市场的新博弈",
+      "composite_score": 8.2,
+      "framework": "故事型",
+      "strategy": "细节锚定"
+    },
+    {
+      "topic_id": "topic-market-adjustment-survivor-bias",
+      "title": "「能穿越调整的账户极少」：市场下跌中的幸存者偏差陷阱",
+      "composite_score": 8.0,
+      "framework": "痛点型",
+      "strategy": "真实体感"
+    },
+    {
+      "topic_id": "topic-japan-diplomat-knife-incident",
+      "title": "日本自卫队员持刀闯入中国使馆：个体失控还是系统性压力？",
+      "composite_score": 7.4,
+      "framework": "热点解读型",
+      "strategy": "角度发现"
+    }
+  ],
+  "next_stage": "draft",
+  "next_stage_requirements": [
+    "编辑需在 selected_topics.json 中选择进入 draft 的题目",
+    "将 gate_status 改为 approved",
+    "确保 selected_topics 数组非空"
+  ]
+}

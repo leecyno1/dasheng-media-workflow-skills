@@ -1,0 +1,35 @@
+{
+  "run_id": "2026-04-05_213021",
+  "generated_at": "2026-04-05T21:31:26.897318",
+  "stage": "brief",
+  "status": "ready",
+  "generation_mode": "ai_only",
+  "failure_reason": null,
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-05_170457/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213021",
+  "candidate_topics": [
+    "鲍威尔转向降息预期逆转市场加息押注",
+    "俄罗斯断供日本石油加剧全球能源地缘风险",
+    "霍尔木兹海峡封锁推升美通胀并考验全球能源安全",
+    "美以联军军事失利激活中东抵抗力量逆转局势",
+    "美联储降息预期激活贵金属避险资金流入",
+    "美军抢夺伊朗核材料极端军事计划揭露风险升级",
+    "伊朗控制霍尔木兹海峡构成实质核威慑",
+    "中东停火斡旋卡塔尔退出加剧冲突不确定性",
+    "中国散户大规模买入反映市场信心回暖",
+    "国务院多部门联动强化平台企业监管"
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213021/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213021/02_研究Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213021/02_编辑Brief_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213021/topic_cards.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213021/selected_topics.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213021/selected_topics.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213021/phase2-clusters-summary.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213021/phase2-topic-index.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213021/phase2-editorial-briefs.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_213021/phase2-topn-for-confirmation.json"
+  ],
+  "next_stage": "draft"
+}

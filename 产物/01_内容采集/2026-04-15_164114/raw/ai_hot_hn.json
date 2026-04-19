@@ -1,0 +1,1797 @@
+{
+  "OpenAI": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "oishika10"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "I found that I often shy away from posts on Hacker News or sites like ScienceMagazine because I don’t understand every second word on the page.<p>A simple dictionary extension doesn’t really help in these situations, because I’m not looking for the literal meaning of a word.<p>Like one time I was reading a post about Rust compilers and the dictionary extension just failed hilariously.. “Rust” (the programming language, you fool!! not the thing that forms on iron when it oxidises -__-).<p>What I actually need in these moments is context-aware explanations of concepts, not dictionary definitions. AI turns out to be pretty good at that.<p>So I built a very simple tool for this — under ~300 lines of code — that has ended up saving me a ton of time.<p>It works pretty simply:<p>it takes the highlighted text, parses the HTML of the page for surrounding context, and sends both the page content + selection to an LLM provider of your choice (<em>OpenAI</em>, Gemini, or Claude). You can also reorder which provider you prefer.<p>That’s basically it. I don't collect any data or anything.<p>Here’s the GitHub link: <a href=\"https://github.com/oishika10/rhino\" rel=\"nofollow\">https://github.com/oishika10/rhino</a><p>I’m pretty sure this can be improved a lot, so I’d really appreciate feedback or ideas. This is the first project I’m sharing publicly like this.<p>I enjoyed building this because made me realize how small, simple tools can still be surprisingly powerful and save me a ton of time in life."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: I built a contextual explainer to replace my dictionary extensions"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://chromewebstore.google.com/detail/rhino/dpnjiddopbpgfpmocgjbofikgdoeapab"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_oishika10",
+          "story_47776069",
+          "show_hn"
+        ],
+        "author": "oishika10",
+        "created_at": "2026-04-15T08:09:03Z",
+        "created_at_i": 1776240543,
+        "num_comments": 0,
+        "objectID": "47776069",
+        "points": 1,
+        "story_id": 47776069,
+        "story_text": "I found that I often shy away from posts on Hacker News or sites like ScienceMagazine because I don’t understand every second word on the page.<p>A simple dictionary extension doesn’t really help in these situations, because I’m not looking for the literal meaning of a word.<p>Like one time I was reading a post about Rust compilers and the dictionary extension just failed hilariously.. “Rust” (the programming language, you fool!! not the thing that forms on iron when it oxidises -__-).<p>What I actually need in these moments is context-aware explanations of concepts, not dictionary definitions. AI turns out to be pretty good at that.<p>So I built a very simple tool for this — under ~300 lines of code — that has ended up saving me a ton of time.<p>It works pretty simply:<p>it takes the highlighted text, parses the HTML of the page for surrounding context, and sends both the page content + selection to an LLM provider of your choice (OpenAI, Gemini, or Claude). You can also reorder which provider you prefer.<p>That’s basically it. I don&#x27;t collect any data or anything.<p>Here’s the GitHub link: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;oishika10&#x2F;rhino\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;oishika10&#x2F;rhino</a><p>I’m pretty sure this can be improved a lot, so I’d really appreciate feedback or ideas. This is the first project I’m sharing publicly like this.<p>I enjoyed building this because made me realize how small, simple tools can still be surprisingly powerful and save me a ton of time in life.",
+        "title": "Show HN: I built a contextual explainer to replace my dictionary extensions",
+        "updated_at": "2026-04-15T08:11:10Z",
+        "url": "https://chromewebstore.google.com/detail/rhino/dpnjiddopbpgfpmocgjbofikgdoeapab"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "SLHamlet"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "The Death of an AI Whistleblower"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.thenation.com/article/society/<em>open-ai</em>-suchir-balaji-whistleblowers/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_SLHamlet",
+          "story_47775593"
+        ],
+        "author": "SLHamlet",
+        "children": [
+          47776023,
+          47775931
+        ],
+        "created_at": "2026-04-15T06:56:56Z",
+        "created_at_i": 1776236216,
+        "num_comments": 1,
+        "objectID": "47775593",
+        "points": 10,
+        "story_id": 47775593,
+        "title": "The Death of an AI Whistleblower",
+        "updated_at": "2026-04-15T08:36:25Z",
+        "url": "https://www.thenation.com/article/society/open-ai-suchir-balaji-whistleblowers/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "abdelhousni"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "<em>OpenAI</em>'s $852B valuation faces investor scrutiny amid strategy shift, FT reports"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.reuters.com/legal/transactional/<em>openai</em>-investors-question-852-billion-valuation-strategy-shifts-ft-reports-2026-04-14/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_abdelhousni",
+          "story_47773640"
+        ],
+        "author": "abdelhousni",
+        "children": [
+          47773913,
+          47774612,
+          47774545,
+          47773970,
+          47773999,
+          47774000,
+          47774711,
+          47773962,
+          47773984,
+          47774403,
+          47773850,
+          47774269,
+          47774378,
+          47773917,
+          47774056
+        ],
+        "created_at": "2026-04-15T01:36:22Z",
+        "created_at_i": 1776216982,
+        "num_comments": 120,
+        "objectID": "47773640",
+        "points": 105,
+        "story_id": 47773640,
+        "title": "OpenAI's $852B valuation faces investor scrutiny amid strategy shift, FT reports",
+        "updated_at": "2026-04-15T08:35:26Z",
+        "url": "https://www.reuters.com/legal/transactional/openai-investors-question-852-billion-valuation-strategy-shifts-ft-reports-2026-04-14/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "rettichschnidi"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Now Available: WireGuard, Wi‑Fi Direct, <em>OpenRI</em>SC, and More"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.zephyrproject.org/zephyr-rtos-4-4-now-available-wireguard-wi-fi-direct-<em>openri</em>sc-and-more/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_rettichschnidi",
+          "story_47773201"
+        ],
+        "author": "rettichschnidi",
+        "children": [
+          47773313
+        ],
+        "created_at": "2026-04-15T00:25:26Z",
+        "created_at_i": 1776212726,
+        "num_comments": 1,
+        "objectID": "47773201",
+        "points": 1,
+        "story_id": 47773201,
+        "title": "Now Available: WireGuard, Wi‑Fi Direct, OpenRISC, and More",
+        "updated_at": "2026-04-15T00:45:09Z",
+        "url": "https://www.zephyrproject.org/zephyr-rtos-4-4-now-available-wireguard-wi-fi-direct-openrisc-and-more/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "mschwarz"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "I've been running Claude Code and Codex together every day. At some point I figured out you can use tmux to let them talk to each other, so I started doing that. Once they could coordinate, I kept adding more agents. Before long I had a whole team working together. But any time I rebooted my machine, the whole thing was gone. Not just the tabs. The way they were wired up, what each one was doing, all of it. Nothing I'd found treats your agent setup as a topology, as something with a shape you can save and bring back.<p>So I built <em>OpenRi</em>g, a multi-agent harness. A harness wraps a model. A &quot;rig&quot; wraps your harnesses. You describe your team in a YAML file, boot it with one command, and get a live topology you can see, click into, save, and bring back by name. Claude Code and Codex run together in the same rig. tmux is still doing the talking underneath. I didn't try to add a fancier messaging layer on top.<p>The project is still early. My own setup uses the config layer extensively (YAML, Markdown, JSON) for prototyping functionality that outpace what's shipped in the repo and npm package. But the core primitives are there and the happy path in readme works. It's built to be driven by your agent, not by you typing commands by hand.<p>README: <a href=\"https://github.com/mvschwarz/openrig\" rel=\"nofollow\">https://github.com/mvschwarz/<em>openri</em>g</a>\nDemo: <a href=\"https://youtu.be/vndsXRBPGio\" rel=\"nofollow\">https://youtu.be/vndsXRBPGio</a>"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Show HN: <em>OpenRi</em>g – agent harness that runs Claude Code and Codex as one system"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://github.com/mvschwarz/<em>openri</em>g"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_mschwarz",
+          "story_47772935",
+          "show_hn"
+        ],
+        "author": "mschwarz",
+        "children": [
+          47773081
+        ],
+        "created_at": "2026-04-14T23:46:40Z",
+        "created_at_i": 1776210400,
+        "num_comments": 1,
+        "objectID": "47772935",
+        "points": 4,
+        "story_id": 47772935,
+        "story_text": "I&#x27;ve been running Claude Code and Codex together every day. At some point I figured out you can use tmux to let them talk to each other, so I started doing that. Once they could coordinate, I kept adding more agents. Before long I had a whole team working together. But any time I rebooted my machine, the whole thing was gone. Not just the tabs. The way they were wired up, what each one was doing, all of it. Nothing I&#x27;d found treats your agent setup as a topology, as something with a shape you can save and bring back.<p>So I built OpenRig, a multi-agent harness. A harness wraps a model. A &quot;rig&quot; wraps your harnesses. You describe your team in a YAML file, boot it with one command, and get a live topology you can see, click into, save, and bring back by name. Claude Code and Codex run together in the same rig. tmux is still doing the talking underneath. I didn&#x27;t try to add a fancier messaging layer on top.<p>The project is still early. My own setup uses the config layer extensively (YAML, Markdown, JSON) for prototyping functionality that outpace what&#x27;s shipped in the repo and npm package. But the core primitives are there and the happy path in readme works. It&#x27;s built to be driven by your agent, not by you typing commands by hand.<p>README: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;mvschwarz&#x2F;openrig\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;mvschwarz&#x2F;openrig</a>\nDemo: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;vndsXRBPGio\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;vndsXRBPGio</a>",
+        "title": "Show HN: OpenRig – agent harness that runs Claude Code and Codex as one system",
+        "updated_at": "2026-04-15T02:17:08Z",
+        "url": "https://github.com/mvschwarz/openrig"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "gaurangt"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Race for the best cybersecurity model heating up"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.reuters.com/technology/<em>openai</em>-unveils-gpt-54-cyber-week-after-rivals-announcement-ai-model-2026-04-14"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_gaurangt",
+          "story_47772306"
+        ],
+        "author": "gaurangt",
+        "created_at": "2026-04-14T22:30:55Z",
+        "created_at_i": 1776205855,
+        "num_comments": 0,
+        "objectID": "47772306",
+        "points": 1,
+        "story_id": 47772306,
+        "title": "Race for the best cybersecurity model heating up",
+        "updated_at": "2026-04-14T22:33:54Z",
+        "url": "https://www.reuters.com/technology/openai-unveils-gpt-54-cyber-week-after-rivals-announcement-ai-model-2026-04-14"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "surprisetalk"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Trusted access for the next era of cyber defense"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://<em>openai</em>.com/index/scaling-trusted-access-for-cyber-defense/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_surprisetalk",
+          "story_47770770",
+          "front_page"
+        ],
+        "author": "surprisetalk",
+        "children": [
+          47772393,
+          47771520,
+          47775559,
+          47771558,
+          47771454,
+          47771842,
+          47771776,
+          47771678,
+          47771762,
+          47772913,
+          47772033,
+          47772973,
+          47773490,
+          47771698,
+          47773547,
+          47771788,
+          47771670,
+          47771782,
+          47771779
+        ],
+        "created_at": "2026-04-14T20:07:20Z",
+        "created_at_i": 1776197240,
+        "num_comments": 55,
+        "objectID": "47770770",
+        "points": 78,
+        "story_id": 47770770,
+        "title": "Trusted access for the next era of cyber defense",
+        "updated_at": "2026-04-15T08:41:10Z",
+        "url": "https://openai.com/index/scaling-trusted-access-for-cyber-defense/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "obahareth"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "<em>OpenAI</em> Codex Compaction Failing"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://github.com/<em>openai</em>/codex/issues/17809"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_obahareth",
+          "story_47768745"
+        ],
+        "author": "obahareth",
+        "children": [
+          47768746
+        ],
+        "created_at": "2026-04-14T17:42:50Z",
+        "created_at_i": 1776188570,
+        "num_comments": 1,
+        "objectID": "47768745",
+        "points": 4,
+        "story_id": 47768745,
+        "title": "OpenAI Codex Compaction Failing",
+        "updated_at": "2026-04-14T18:08:07Z",
+        "url": "https://github.com/openai/codex/issues/17809"
+      }
+    ]
+  },
+  "Anthropic Claude": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "baobabKoodaa"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "I just got an email from <em>Anthropic</em> telling me they are deprecating their good model, which actually works well, <em>claude</em>-sonnet-4-5-20250929, and will be forcing all users to use the worse newer model, <em>claude</em>-sonnet-4-6. Okay, fine, I thought. Then I went to their model page to check what is the latest version of that model. They don't list any! The only version they list is &quot;<em>claude</em>-sonnet-4-6&quot;, which, according to their own documentation, always refers to the newest version of <em>Claude</em> Sonnet 4.6. This means that the client applications I've built using Sonnet will unpredictably break at random times when the model version changes. I tried contacting <em>Anthropic</em> customer support, but of course they don't have any actual humans, they only have an AI chatbot (chatbot called &quot;Fin&quot;, OUTSOURCED from Intercom, which is notoriously bad at making chatbots). Their AI chatbot tells me that if I use the version &quot;<em>claude</em>-sonnet-4-6&quot;, it will always refer to the latest model version, so I should instead pin to the specific version, &quot;<em>claude</em>-sonnet-4-6&quot;. Those strings are the same. <em>Anthropic</em>'s AI chatbot does not seem to comprehend that they are the same strings. I also checked the model listing in their API playground and I checked the docs, and there's absolutely no way to pin a specific version anymore."
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "anthropic"
+            ],
+            "value": "Tell HN: <em>Anthropic</em> no longer allows you to fix to specific model version"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_baobabKoodaa",
+          "story_47775389",
+          "ask_hn"
+        ],
+        "author": "baobabKoodaa",
+        "created_at": "2026-04-15T06:24:00Z",
+        "created_at_i": 1776234240,
+        "num_comments": 0,
+        "objectID": "47775389",
+        "points": 11,
+        "story_id": 47775389,
+        "story_text": "I just got an email from Anthropic telling me they are deprecating their good model, which actually works well, claude-sonnet-4-5-20250929, and will be forcing all users to use the worse newer model, claude-sonnet-4-6. Okay, fine, I thought. Then I went to their model page to check what is the latest version of that model. They don&#x27;t list any! The only version they list is &quot;claude-sonnet-4-6&quot;, which, according to their own documentation, always refers to the newest version of Claude Sonnet 4.6. This means that the client applications I&#x27;ve built using Sonnet will unpredictably break at random times when the model version changes. I tried contacting Anthropic customer support, but of course they don&#x27;t have any actual humans, they only have an AI chatbot (chatbot called &quot;Fin&quot;, OUTSOURCED from Intercom, which is notoriously bad at making chatbots). Their AI chatbot tells me that if I use the version &quot;claude-sonnet-4-6&quot;, it will always refer to the latest model version, so I should instead pin to the specific version, &quot;claude-sonnet-4-6&quot;. Those strings are the same. Anthropic&#x27;s AI chatbot does not seem to comprehend that they are the same strings. I also checked the model listing in their API playground and I checked the docs, and there&#x27;s absolutely no way to pin a specific version anymore.",
+        "title": "Tell HN: Anthropic no longer allows you to fix to specific model version",
+        "updated_at": "2026-04-15T08:21:40Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "gz09"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Feature Request: Support Agents.md. #6235"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://github.com/<em>anthropics</em>/<em>claude</em>-code/issues/6235"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_gz09",
+          "story_47774641"
+        ],
+        "author": "gz09",
+        "created_at": "2026-04-15T04:21:42Z",
+        "created_at_i": 1776226902,
+        "num_comments": 0,
+        "objectID": "47774641",
+        "points": 2,
+        "story_id": 47774641,
+        "title": "Feature Request: Support Agents.md. #6235",
+        "updated_at": "2026-04-15T05:08:39Z",
+        "url": "https://github.com/anthropics/claude-code/issues/6235"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "handfuloflight"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "<em>Anthropic</em> Revises <em>Claude</em> Enterprise Pricing Structure"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://letsdatascience.com/news/<em>anthropic</em>-revises-<em>claude</em>-enterprise-pricing-structure-f3022a32"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_handfuloflight",
+          "story_47773436"
+        ],
+        "author": "handfuloflight",
+        "created_at": "2026-04-15T01:05:05Z",
+        "created_at_i": 1776215105,
+        "num_comments": 0,
+        "objectID": "47773436",
+        "points": 3,
+        "story_id": 47773436,
+        "title": "Anthropic Revises Claude Enterprise Pricing Structure",
+        "updated_at": "2026-04-15T02:24:55Z",
+        "url": "https://letsdatascience.com/news/anthropic-revises-claude-enterprise-pricing-structure-f3022a32"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "consumer451"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "Here is a question for which I cannot find an answer, and cannot yet afford to answer myself:<p>NoLiMa [0] and &quot;context rot&quot; [1] would indicate that with a ~165k request, Opus 200k would suck, and Opus 1M would be better (as a lower percentage of the context window was used)... but they are the same model, right? However, there are practical inference deployment differences that could change the whole paradigm, right? I am so confused.<p><em>Anthropic</em> says it's the same model [2]. But, <em>Claude</em> Code's own source treats them as distinct variants with separate routing [3]. Closest test I found [4] asserts they're identical below 200K but it never actually A/B tests, correct?<p>Inside <em>Claude</em> Code it's probably not testable, right? According to this issue [5], the CLI is non-deterministic for identical inputs, and agent sessions branch on tool-use. Would need a clean API-level test.<p><i>The API level test is what I really want to know for the <em>Claude</em> based features in my own apps. Is there a real benchmark for this?</i><p>I have reached the limits of my understanding on this problem. If what I am trying to say makes any sense, any help would be greatly appreciated.<p>If anyone could help me ask the question better, that would also be appreciated.<p>[0] https://arxiv.org/abs/2502.05167<p>[1] https://research.trychroma.com/context-rot<p>[2] https://<em>claude</em>.com/blog/1m-context-ga<p>[3] https://github.com/anthropics/<em>claude</em>-code/issues/35545<p>[4] https://www.claudecodecamp.com/p/<em>claude</em>-code-1m-context-window<p>[5] https://github.com/anthropics/<em>claude</em>-code/issues/3370"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Ask HN: At ~165k tokens, does Opus 4.6 1M outperform Opus 4.6 200k?"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_consumer451",
+          "story_47772971",
+          "ask_hn"
+        ],
+        "author": "consumer451",
+        "created_at": "2026-04-14T23:50:47Z",
+        "created_at_i": 1776210647,
+        "num_comments": 0,
+        "objectID": "47772971",
+        "points": 1,
+        "story_id": 47772971,
+        "story_text": "Here is a question for which I cannot find an answer, and cannot yet afford to answer myself:<p>NoLiMa [0] and &quot;context rot&quot; [1] would indicate that with a ~165k request, Opus 200k would suck, and Opus 1M would be better (as a lower percentage of the context window was used)... but they are the same model, right? However, there are practical inference deployment differences that could change the whole paradigm, right? I am so confused.<p>Anthropic says it&#x27;s the same model [2]. But, Claude Code&#x27;s own source treats them as distinct variants with separate routing [3]. Closest test I found [4] asserts they&#x27;re identical below 200K but it never actually A&#x2F;B tests, correct?<p>Inside Claude Code it&#x27;s probably not testable, right? According to this issue [5], the CLI is non-deterministic for identical inputs, and agent sessions branch on tool-use. Would need a clean API-level test.<p><i>The API level test is what I really want to know for the Claude based features in my own apps. Is there a real benchmark for this?</i><p>I have reached the limits of my understanding on this problem. If what I am trying to say makes any sense, any help would be greatly appreciated.<p>If anyone could help me ask the question better, that would also be appreciated.<p>[0] https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2502.05167<p>[1] https:&#x2F;&#x2F;research.trychroma.com&#x2F;context-rot<p>[2] https:&#x2F;&#x2F;claude.com&#x2F;blog&#x2F;1m-context-ga<p>[3] https:&#x2F;&#x2F;github.com&#x2F;anthropics&#x2F;claude-code&#x2F;issues&#x2F;35545<p>[4] https:&#x2F;&#x2F;www.claudecodecamp.com&#x2F;p&#x2F;claude-code-1m-context-window<p>[5] https:&#x2F;&#x2F;github.com&#x2F;anthropics&#x2F;claude-code&#x2F;issues&#x2F;3370",
+        "title": "Ask HN: At ~165k tokens, does Opus 4.6 1M outperform Opus 4.6 200k?",
+        "updated_at": "2026-04-15T00:18:54Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "rob"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "claude"
+            ],
+            "value": "Connect iMessage to your <em>Claude</em> Code assistant"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://github.com/<em>anthropics</em>/<em>claude</em>-plugins-official/tree/main/external_plugins/imessage"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_rob",
+          "story_47771673"
+        ],
+        "author": "rob",
+        "created_at": "2026-04-14T21:19:50Z",
+        "created_at_i": 1776201590,
+        "num_comments": 0,
+        "objectID": "47771673",
+        "points": 2,
+        "story_id": 47771673,
+        "title": "Connect iMessage to your Claude Code assistant",
+        "updated_at": "2026-04-15T05:34:41Z",
+        "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/imessage"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Nevin1901"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "<em>Anthropic</em> Redesigns <em>Claude</em> Code Desktop"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://twitter.com/claudeai/status/2044131493966909862"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Nevin1901",
+          "story_47771627"
+        ],
+        "author": "Nevin1901",
+        "children": [
+          47771641
+        ],
+        "created_at": "2026-04-14T21:15:36Z",
+        "created_at_i": 1776201336,
+        "num_comments": 1,
+        "objectID": "47771627",
+        "points": 4,
+        "story_id": 47771627,
+        "title": "Anthropic Redesigns Claude Code Desktop",
+        "updated_at": "2026-04-15T02:33:39Z",
+        "url": "https://twitter.com/claudeai/status/2044131493966909862"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "speckx"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "Is <em>Anthropic</em> 'nerfing' <em>Claude</em>? Users increasingly report performance degradation"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://venturebeat.com/technology/is-<em>anthropic</em>-nerfing-<em>claude</em>-users-increasingly-report-performance"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_speckx",
+          "story_47767482"
+        ],
+        "author": "speckx",
+        "children": [
+          47773275
+        ],
+        "created_at": "2026-04-14T16:06:49Z",
+        "created_at_i": 1776182809,
+        "num_comments": 1,
+        "objectID": "47767482",
+        "points": 7,
+        "story_id": 47767482,
+        "title": "Is Anthropic 'nerfing' Claude? Users increasingly report performance degradation",
+        "updated_at": "2026-04-15T00:40:23Z",
+        "url": "https://venturebeat.com/technology/is-anthropic-nerfing-claude-users-increasingly-report-performance"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Reebz"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "Every <em>Claude</em> Code commit and PR is shipped with Co-Authored-By: <em>Claude</em> Opus 4.6 &lt;noreply@<em>anthropic</em>.com&gt; (or similar). It's less fun than I think it should be. So signoff.sh is a 40-line bash script that replaces it with a random fictional character's full legal name - as best as I could figure out :)<p>Preserves the model name and the <em>Anthropic</em> noreply email, so you still get transparency about AI coding.<p>It's silly and that's the point.<p>I'm also a fan of peon ping (not mine): <a href=\"https://github.com/PeonPing/peon-ping\" rel=\"nofollow\">https://github.com/PeonPing/peon-ping</a>"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "claude"
+            ],
+            "value": "Show HN: Signoff.sh – <em>Claude</em> Co-Authored-By with random fictional characters"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://gist.github.com/Reebz/b3102c6a5de8238d3b60eb63450ee48e"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Reebz",
+          "story_47766564",
+          "show_hn"
+        ],
+        "author": "Reebz",
+        "created_at": "2026-04-14T15:02:05Z",
+        "created_at_i": 1776178925,
+        "num_comments": 0,
+        "objectID": "47766564",
+        "points": 2,
+        "story_id": 47766564,
+        "story_text": "Every Claude Code commit and PR is shipped with Co-Authored-By: Claude Opus 4.6 &lt;noreply@anthropic.com&gt; (or similar). It&#x27;s less fun than I think it should be. So signoff.sh is a 40-line bash script that replaces it with a random fictional character&#x27;s full legal name - as best as I could figure out :)<p>Preserves the model name and the Anthropic noreply email, so you still get transparency about AI coding.<p>It&#x27;s silly and that&#x27;s the point.<p>I&#x27;m also a fan of peon ping (not mine): <a href=\"https:&#x2F;&#x2F;github.com&#x2F;PeonPing&#x2F;peon-ping\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;PeonPing&#x2F;peon-ping</a>",
+        "title": "Show HN: Signoff.sh – Claude Co-Authored-By with random fictional characters",
+        "updated_at": "2026-04-14T16:47:54Z",
+        "url": "https://gist.github.com/Reebz/b3102c6a5de8238d3b60eb63450ee48e"
+      }
+    ]
+  },
+  "Llama": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "bonsuaq"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Show HN: Scryptian – A lightweight, local AI bar (Python and <em>Ollama</em>)"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/adrianium/Scryptian"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_bonsuaq",
+          "story_47764747",
+          "show_hn"
+        ],
+        "author": "bonsuaq",
+        "children": [
+          47764760
+        ],
+        "created_at": "2026-04-14T12:28:39Z",
+        "created_at_i": 1776169719,
+        "num_comments": 1,
+        "objectID": "47764747",
+        "points": 1,
+        "story_id": 47764747,
+        "title": "Show HN: Scryptian – A lightweight, local AI bar (Python and Ollama)",
+        "updated_at": "2026-04-14T14:14:52Z",
+        "url": "https://github.com/adrianium/Scryptian"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "modinfo"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Talking to a local LLM in the Firefox sidebar"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "https://code.mendhak.com/firefox-local-chatbot-<em>ollama</em>/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_modinfo",
+          "story_47763240"
+        ],
+        "author": "modinfo",
+        "children": [
+          47775181,
+          47763435,
+          47763267
+        ],
+        "created_at": "2026-04-14T09:24:54Z",
+        "created_at_i": 1776158694,
+        "num_comments": 4,
+        "objectID": "47763240",
+        "points": 1,
+        "story_id": 47763240,
+        "title": "Talking to a local LLM in the Firefox sidebar",
+        "updated_at": "2026-04-15T05:56:54Z",
+        "url": "https://code.mendhak.com/firefox-local-chatbot-ollama/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "aledevv"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Two-Stage Semantic Chunking for RAG in Python"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "https://alessandrofuda.github.io/semantic-chunking-rag-python-<em>llama</em>index/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_aledevv",
+          "story_47762908"
+        ],
+        "author": "aledevv",
+        "created_at": "2026-04-14T08:37:51Z",
+        "created_at_i": 1776155871,
+        "num_comments": 0,
+        "objectID": "47762908",
+        "points": 1,
+        "story_id": 47762908,
+        "title": "Two-Stage Semantic Chunking for RAG in Python",
+        "updated_at": "2026-04-14T08:39:52Z",
+        "url": "https://alessandrofuda.github.io/semantic-chunking-rag-python-llamaindex/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "jkshenawy22"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "AI Code Reviews for GitLab – custom agents – powered by <em>Ollama</em>"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://chromewebstore.google.com/detail/thinkreview-ai-code-revie/bpgkhgbchmlmpjjpmlaiejhnnbkdjdjn"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_jkshenawy22",
+          "story_47759974"
+        ],
+        "author": "jkshenawy22",
+        "children": [
+          47759975
+        ],
+        "created_at": "2026-04-14T01:03:52Z",
+        "created_at_i": 1776128632,
+        "num_comments": 0,
+        "objectID": "47759974",
+        "points": 1,
+        "story_id": 47759974,
+        "title": "AI Code Reviews for GitLab – custom agents – powered by Ollama",
+        "updated_at": "2026-04-14T02:01:19Z",
+        "url": "https://chromewebstore.google.com/detail/thinkreview-ai-code-revie/bpgkhgbchmlmpjjpmlaiejhnnbkdjdjn"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "amans9712"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Bloomberg Terminal exists because financial traders needed one place to see everything: prices, risk, routing, counterparty health. You can't trade blind.<p>LLM engineers are trading blind.<p>Which provider is degraded right now? What does this model actually cost when you factor in overhead, not just token price? If traffic shifts between providers, what happens to cost and latency? Is your stack dangerously concentrated on one provider?<p>These are operational questions every production LLM system has. Nobody's built the tooling for them until now, so most teams either fly blind or patch together status pages, spreadsheets, and gut feel.<p>We built the LLM Ops Toolkit to fix that:<p>1. Provider uptime monitor across 18+ LLM providers, live status in one view\n2. Cost calculator that includes overhead, not just raw token pricing\n3. Routing simulator to model cost and latency impact before you shift traffic\n4. Model diversity audit to surface concentration risk before it becomes an incident<p>Free, open-source, no signup. Dashboard is at tools.<em>lama</em>tic.ai<p>The routing simulator is the most experimental piece and has the roughest edges. Genuinely curious how others think about provider concentration risk.<p>We've been treating it as dependency risk in software but that framing may not hold at scale.<p>Also live on Product Hunt today: producthunt.com/products/<em>lama</em>tic-ai"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Bloomberg Terminal for LLM ops – free and open source"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_amans9712",
+          "story_47754636",
+          "show_hn"
+        ],
+        "author": "amans9712",
+        "children": [
+          47755066,
+          47761389
+        ],
+        "created_at": "2026-04-13T16:39:58Z",
+        "created_at_i": 1776098398,
+        "num_comments": 1,
+        "objectID": "47754636",
+        "points": 7,
+        "story_id": 47754636,
+        "story_text": "Bloomberg Terminal exists because financial traders needed one place to see everything: prices, risk, routing, counterparty health. You can&#x27;t trade blind.<p>LLM engineers are trading blind.<p>Which provider is degraded right now? What does this model actually cost when you factor in overhead, not just token price? If traffic shifts between providers, what happens to cost and latency? Is your stack dangerously concentrated on one provider?<p>These are operational questions every production LLM system has. Nobody&#x27;s built the tooling for them until now, so most teams either fly blind or patch together status pages, spreadsheets, and gut feel.<p>We built the LLM Ops Toolkit to fix that:<p>1. Provider uptime monitor across 18+ LLM providers, live status in one view\n2. Cost calculator that includes overhead, not just raw token pricing\n3. Routing simulator to model cost and latency impact before you shift traffic\n4. Model diversity audit to surface concentration risk before it becomes an incident<p>Free, open-source, no signup. Dashboard is at tools.lamatic.ai<p>The routing simulator is the most experimental piece and has the roughest edges. Genuinely curious how others think about provider concentration risk.<p>We&#x27;ve been treating it as dependency risk in software but that framing may not hold at scale.<p>Also live on Product Hunt today: producthunt.com&#x2F;products&#x2F;lamatic-ai",
+        "title": "Show HN: Bloomberg Terminal for LLM ops – free and open source",
+        "updated_at": "2026-04-14T07:06:20Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "wb14123"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Intel Releases OpenVINO 2026.1 with Back End for <em>Llama</em>.cpp, New Hardware Support"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.phoronix.com/news/OpenVINO-2026.1-Released"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_wb14123",
+          "story_47753459"
+        ],
+        "author": "wb14123",
+        "created_at": "2026-04-13T15:30:18Z",
+        "created_at_i": 1776094218,
+        "num_comments": 0,
+        "objectID": "47753459",
+        "points": 4,
+        "story_id": 47753459,
+        "title": "Intel Releases OpenVINO 2026.1 with Back End for Llama.cpp, New Hardware Support",
+        "updated_at": "2026-04-13T18:48:34Z",
+        "url": "https://www.phoronix.com/news/OpenVINO-2026.1-Released"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "anju-kushwaha"
+          },
+          "story_text": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "The introduction of TurboQuant, PolarQuant, and QJL (Quantized Johnson-Lindenstrauss) by Google Research represents more than just a technical optimization. At Vucense, we view this as a landmark moment for Inference Sovereignty<p><a href=\"https://vucense.com/ai-intelligence/local-llms/turboquant-extreme-compression-inference-sovereignty/\" rel=\"nofollow\">https://vucense.com/ai-intelligence/local-llms/turboquant-ex...</a>"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Show HN: How to Use Google's Extreme AI Compression with Ollama and <em>Llama</em>.cpp"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_anju-kushwaha",
+          "story_47752036",
+          "show_hn"
+        ],
+        "author": "anju-kushwaha",
+        "created_at": "2026-04-13T13:55:55Z",
+        "created_at_i": 1776088555,
+        "num_comments": 0,
+        "objectID": "47752036",
+        "points": 2,
+        "story_id": 47752036,
+        "story_text": "The introduction of TurboQuant, PolarQuant, and QJL (Quantized Johnson-Lindenstrauss) by Google Research represents more than just a technical optimization. At Vucense, we view this as a landmark moment for Inference Sovereignty<p><a href=\"https:&#x2F;&#x2F;vucense.com&#x2F;ai-intelligence&#x2F;local-llms&#x2F;turboquant-extreme-compression-inference-sovereignty&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;vucense.com&#x2F;ai-intelligence&#x2F;local-llms&#x2F;turboquant-ex...</a>",
+        "title": "Show HN: How to Use Google's Extreme AI Compression with Ollama and Llama.cpp",
+        "updated_at": "2026-04-13T19:02:49Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "anju-kushwaha"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Deploy a complete local AI stack — <em>Ollama</em> 5.x, Open WebUI, and pgvector — on Ubuntu 24.04. Zero cloud. Zero API costs. Full commands, tested output, sovereignty verified.<p>https://vucense.com/dev-corner/build-sovereign-local-ai-stack-<em>ollama</em>-open-webui-pgvector-2026/"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Build a Sovereign Local AI Stack: <em>Ollama</em> and Open WebUI and Pgvector 2026"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_anju-kushwaha",
+          "story_47749907",
+          "ask_hn"
+        ],
+        "author": "anju-kushwaha",
+        "created_at": "2026-04-13T10:00:56Z",
+        "created_at_i": 1776074456,
+        "num_comments": 0,
+        "objectID": "47749907",
+        "points": 1,
+        "story_id": 47749907,
+        "story_text": "Deploy a complete local AI stack — Ollama 5.x, Open WebUI, and pgvector — on Ubuntu 24.04. Zero cloud. Zero API costs. Full commands, tested output, sovereignty verified.<p>https:&#x2F;&#x2F;vucense.com&#x2F;dev-corner&#x2F;build-sovereign-local-ai-stack-ollama-open-webui-pgvector-2026&#x2F;",
+        "title": "Build a Sovereign Local AI Stack: Ollama and Open WebUI and Pgvector 2026",
+        "updated_at": "2026-04-13T12:06:34Z"
+      }
+    ]
+  },
+  "AI agents": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "andsoitis"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "GBrain – system to make your <em>AI</em> <em>agent</em> better reflect you"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/garrytan/gbrain"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_andsoitis",
+          "story_47776209"
+        ],
+        "author": "andsoitis",
+        "created_at": "2026-04-15T08:28:53Z",
+        "created_at_i": 1776241733,
+        "num_comments": 0,
+        "objectID": "47776209",
+        "points": 1,
+        "story_id": 47776209,
+        "title": "GBrain – system to make your AI agent better reflect you",
+        "updated_at": "2026-04-15T08:32:10Z",
+        "url": "https://github.com/garrytan/gbrain"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "otnap"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "OpenCognit – Open-source OS for autonomous <em>AI</em> <em>agents</em>"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/OpenCognit/opencognit"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_otnap",
+          "story_47775984"
+        ],
+        "author": "otnap",
+        "children": [
+          47775985
+        ],
+        "created_at": "2026-04-15T07:58:29Z",
+        "created_at_i": 1776239909,
+        "num_comments": 0,
+        "objectID": "47775984",
+        "points": 2,
+        "story_id": 47775984,
+        "title": "OpenCognit – Open-source OS for autonomous AI agents",
+        "updated_at": "2026-04-15T08:05:25Z",
+        "url": "https://github.com/OpenCognit/opencognit"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "lis"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "agents"
+            ],
+            "value": "Spaces: A CLI Built for Humans and <em>Agents</em>"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai"
+            ],
+            "value": "https://mistral.<em>ai</em>/news/spaces"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_lis",
+          "story_47775779"
+        ],
+        "author": "lis",
+        "created_at": "2026-04-15T07:28:25Z",
+        "created_at_i": 1776238105,
+        "num_comments": 0,
+        "objectID": "47775779",
+        "points": 2,
+        "story_id": 47775779,
+        "title": "Spaces: A CLI Built for Humans and Agents",
+        "updated_at": "2026-04-15T07:40:39Z",
+        "url": "https://mistral.ai/news/spaces"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Lilian_Lee"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "agents"
+            ],
+            "value": "The state of <em>agent</em> traffic in documentation (March 2026)"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai"
+            ],
+            "value": "https://www.mintlify.com/blog/state-of-<em>ai</em>"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Lilian_Lee",
+          "story_47775404"
+        ],
+        "author": "Lilian_Lee",
+        "children": [
+          47775488
+        ],
+        "created_at": "2026-04-15T06:26:21Z",
+        "created_at_i": 1776234381,
+        "num_comments": 1,
+        "objectID": "47775404",
+        "points": 2,
+        "story_id": 47775404,
+        "title": "The state of agent traffic in documentation (March 2026)",
+        "updated_at": "2026-04-15T07:09:24Z",
+        "url": "https://www.mintlify.com/blog/state-of-ai"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "ttyyzz"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Constitutional Security: What Enterprise Infra Taught Me About <em>AI</em> <em>Agent</em> Safety"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "https://blog.ekelhaft.tools/constitutional-security-what-enterprise-infrastructure-taught-me-about-<em>ai</em>-<em>agent</em>-safety"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_ttyyzz",
+          "story_47775003"
+        ],
+        "author": "ttyyzz",
+        "created_at": "2026-04-15T05:24:54Z",
+        "created_at_i": 1776230694,
+        "num_comments": 0,
+        "objectID": "47775003",
+        "points": 2,
+        "story_id": 47775003,
+        "title": "Constitutional Security: What Enterprise Infra Taught Me About AI Agent Safety",
+        "updated_at": "2026-04-15T05:42:40Z",
+        "url": "https://blog.ekelhaft.tools/constitutional-security-what-enterprise-infrastructure-taught-me-about-ai-agent-safety"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "daltonlcarr"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Platform where you point your <em>AI</em> <em>agents</em> at real-world issues (clean water, climate, healthcare) via MCP. <em>Agents</em> discover work, claim issues, and submit PRs without a browser - you just review.<p>GitHub: <a href=\"https://github.com/daltlc/agent-citizen\" rel=\"nofollow\">https://github.com/daltlc/<em>agent</em>-citizen</a>"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Show HN: <em>Agent</em> Citizen – Your <em>AI</em> <em>agents</em> are sitting around doing nothing"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "agents"
+            ],
+            "value": "https://<em>agent</em>-citizen.vercel.app"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_daltonlcarr",
+          "story_47774464",
+          "show_hn"
+        ],
+        "author": "daltonlcarr",
+        "created_at": "2026-04-15T03:44:38Z",
+        "created_at_i": 1776224678,
+        "num_comments": 0,
+        "objectID": "47774464",
+        "points": 4,
+        "story_id": 47774464,
+        "story_text": "Platform where you point your AI agents at real-world issues (clean water, climate, healthcare) via MCP. Agents discover work, claim issues, and submit PRs without a browser - you just review.<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;daltlc&#x2F;agent-citizen\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;daltlc&#x2F;agent-citizen</a>",
+        "title": "Show HN: Agent Citizen – Your AI agents are sitting around doing nothing",
+        "updated_at": "2026-04-15T08:00:11Z",
+        "url": "https://agent-citizen.vercel.app"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "vaibhavb007"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "I run OpenClaw <em>agents</em> with access to email, calendar, and files, and kept worrying about them doing things I never actually asked for.<p>ArmorClaw captures intent and cryptographically binds the <em>agent’s</em> tool use to that committed intent. If an agent tries to call a tool outside that plan, it gets rejected.<p>For example, if you ask your agent to ‘email dad asking how he’s doing,’ it should only need your email tool. If it also tries to read your calendar, ArmorClaw rejects that.<p>It’s an open-source OpenClaw plugin, and installation is one command:<p>curl -fsSL <a href=\"https://armoriq.ai/install-armorclaw.sh\" rel=\"nofollow\">https://armoriq.<em>ai</em>/install-armorclaw.sh</a> | bash<p>Use code AIQLAUNCH for a free month.<p>Repo: <a href=\"https://github.com/armoriq/armorclaw\" rel=\"nofollow\">https://github.com/armoriq/armorclaw</a><p>This is still early, so I’d really love feedback."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Make sure your OpenClaw isn't doing things it's not supposed to"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai"
+            ],
+            "value": "https://claw.armoriq.<em>ai</em>/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_vaibhavb007",
+          "story_47774344",
+          "show_hn"
+        ],
+        "author": "vaibhavb007",
+        "children": [
+          47774400
+        ],
+        "created_at": "2026-04-15T03:26:03Z",
+        "created_at_i": 1776223563,
+        "num_comments": 0,
+        "objectID": "47774344",
+        "points": 5,
+        "story_id": 47774344,
+        "story_text": "I run OpenClaw agents with access to email, calendar, and files, and kept worrying about them doing things I never actually asked for.<p>ArmorClaw captures intent and cryptographically binds the agent’s tool use to that committed intent. If an agent tries to call a tool outside that plan, it gets rejected.<p>For example, if you ask your agent to ‘email dad asking how he’s doing,’ it should only need your email tool. If it also tries to read your calendar, ArmorClaw rejects that.<p>It’s an open-source OpenClaw plugin, and installation is one command:<p>curl -fsSL <a href=\"https:&#x2F;&#x2F;armoriq.ai&#x2F;install-armorclaw.sh\" rel=\"nofollow\">https:&#x2F;&#x2F;armoriq.ai&#x2F;install-armorclaw.sh</a> | bash<p>Use code AIQLAUNCH for a free month.<p>Repo: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;armoriq&#x2F;armorclaw\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;armoriq&#x2F;armorclaw</a><p>This is still early, so I’d really love feedback.",
+        "title": "Show HN: Make sure your OpenClaw isn't doing things it's not supposed to",
+        "updated_at": "2026-04-15T06:22:54Z",
+        "url": "https://claw.armoriq.ai/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "swanandr"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Aethon: A reference-based instantiation primitive for stateful <em>AI</em> <em>agents</em>"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://arxiv.org/abs/2604.12129"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_swanandr",
+          "story_47774300"
+        ],
+        "author": "swanandr",
+        "created_at": "2026-04-15T03:20:29Z",
+        "created_at_i": 1776223229,
+        "num_comments": 0,
+        "objectID": "47774300",
+        "points": 2,
+        "story_id": 47774300,
+        "title": "Aethon: A reference-based instantiation primitive for stateful AI agents",
+        "updated_at": "2026-04-15T05:01:54Z",
+        "url": "https://arxiv.org/abs/2604.12129"
+      }
+    ]
+  },
+  "Vibe Coding": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "d0able"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "vibe"
+            ],
+            "value": "There are a lot of great fonts out there, but what's missing?<p>On my list:\n- show nonprintable / zero width characters\n- &quot;relaxing&quot; <em>vibe</em>?"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "coding"
+            ],
+            "value": "What do you want out of a <em>coding</em> monospace font?"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_d0able",
+          "story_47773594",
+          "ask_hn"
+        ],
+        "author": "d0able",
+        "children": [
+          47773846,
+          47773721,
+          47773787,
+          47773959
+        ],
+        "created_at": "2026-04-15T01:31:01Z",
+        "created_at_i": 1776216661,
+        "num_comments": 4,
+        "objectID": "47773594",
+        "points": 2,
+        "story_id": 47773594,
+        "story_text": "There are a lot of great fonts out there, but what&#x27;s missing?<p>On my list:\n- show nonprintable &#x2F; zero width characters\n- &quot;relaxing&quot; vibe?",
+        "title": "What do you want out of a coding monospace font?",
+        "updated_at": "2026-04-15T05:03:24Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "niwid"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "<em>Vibe</em> <em>Coding</em> doesn't democratize software engineering – it democratizes liability"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://widal.substack.com/p/<em>vibe</em>-<em>coding</em>-doesnt-democratize-software"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_niwid",
+          "story_47773495"
+        ],
+        "author": "niwid",
+        "children": [
+          47773496
+        ],
+        "created_at": "2026-04-15T01:14:30Z",
+        "created_at_i": 1776215670,
+        "num_comments": 0,
+        "objectID": "47773495",
+        "points": 3,
+        "story_id": 47773495,
+        "title": "Vibe Coding doesn't democratize software engineering – it democratizes liability",
+        "updated_at": "2026-04-15T02:28:54Z",
+        "url": "https://widal.substack.com/p/vibe-coding-doesnt-democratize-software"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "TechSquidTV"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "Hey all,<p>To be up-front, this is a <em>vibe</em>-coded project. I have been developing a large number of personal tools that I have had in my backlog for years, finally realized by <em>vibe</em> <em>coding</em>. That said, I have been a developer for somewhere around 20 years.<p>This is a simple Vite/React app with a tiny Node.js proxy for authenticating with Plex (and other media servers). Run the docker image on the same network as your Plex media server, load up the currently playing video file, and make your clip.<p>Here's a tiny video of it: <a href=\"https://x.com/TechSquidTV/status/2043886838658552136\" rel=\"nofollow\">https://x.com/TechSquidTV/status/2043886838658552136</a>"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Cliparr – Export clips from your personal media server"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/TechSquidTV/Cliparr"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_TechSquidTV",
+          "story_47767280",
+          "show_hn"
+        ],
+        "author": "TechSquidTV",
+        "created_at": "2026-04-14T15:52:22Z",
+        "created_at_i": 1776181942,
+        "num_comments": 0,
+        "objectID": "47767280",
+        "points": 2,
+        "story_id": 47767280,
+        "story_text": "Hey all,<p>To be up-front, this is a vibe-coded project. I have been developing a large number of personal tools that I have had in my backlog for years, finally realized by vibe coding. That said, I have been a developer for somewhere around 20 years.<p>This is a simple Vite&#x2F;React app with a tiny Node.js proxy for authenticating with Plex (and other media servers). Run the docker image on the same network as your Plex media server, load up the currently playing video file, and make your clip.<p>Here&#x27;s a tiny video of it: <a href=\"https:&#x2F;&#x2F;x.com&#x2F;TechSquidTV&#x2F;status&#x2F;2043886838658552136\" rel=\"nofollow\">https:&#x2F;&#x2F;x.com&#x2F;TechSquidTV&#x2F;status&#x2F;2043886838658552136</a>",
+        "title": "Show HN: Cliparr – Export clips from your personal media server",
+        "updated_at": "2026-04-14T16:45:38Z",
+        "url": "https://github.com/TechSquidTV/Cliparr"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "mooreds"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "<em>Vibe</em> coded menu bar app which watches for posts about <em>vibe</em> <em>coding</em> menu bar apps"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/shkm/VibeWatch"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_mooreds",
+          "story_47766245"
+        ],
+        "author": "mooreds",
+        "created_at": "2026-04-14T14:38:32Z",
+        "created_at_i": 1776177512,
+        "num_comments": 0,
+        "objectID": "47766245",
+        "points": 3,
+        "story_id": 47766245,
+        "title": "Vibe coded menu bar app which watches for posts about vibe coding menu bar apps",
+        "updated_at": "2026-04-14T16:49:22Z",
+        "url": "https://github.com/shkm/VibeWatch"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "teichmann"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "An AI <em>Vibe</em> <em>Coding</em> Horror Story"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://www.tobru.ch/an-ai-<em>vibe</em>-<em>coding</em>-horror-story/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_teichmann",
+          "story_47762901"
+        ],
+        "author": "teichmann",
+        "children": [
+          47763075,
+          47763069,
+          47763329,
+          47763655,
+          47763237,
+          47763198,
+          47763136,
+          47763271,
+          47763870,
+          47768567,
+          47767899,
+          47763130,
+          47763222,
+          47763430,
+          47763070,
+          47763495,
+          47763556,
+          47763249,
+          47763389,
+          47763201,
+          47767543,
+          47764406,
+          47763176,
+          47763758,
+          47764978,
+          47766182,
+          47764014,
+          47764012,
+          47763199,
+          47763285,
+          47763976,
+          47763135,
+          47764365,
+          47763712,
+          47763180,
+          47763203,
+          47763644,
+          47763087,
+          47763074,
+          47763192,
+          47763972,
+          47763943,
+          47763836,
+          47763580,
+          47763054,
+          47763289,
+          47763064
+        ],
+        "created_at": "2026-04-14T08:35:45Z",
+        "created_at_i": 1776155745,
+        "num_comments": 203,
+        "objectID": "47762901",
+        "points": 206,
+        "story_id": 47762901,
+        "title": "An AI Vibe Coding Horror Story",
+        "updated_at": "2026-04-15T08:11:39Z",
+        "url": "https://www.tobru.ch/an-ai-vibe-coding-horror-story/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "andreirx"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "What Comes After <em>Vibe</em> <em>Coding</em>"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://blog.bijup.com/what-comes-after-<em>vibe</em>-<em>coding</em>"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_andreirx",
+          "story_47761686"
+        ],
+        "author": "andreirx",
+        "children": [
+          47761735,
+          47762160,
+          47761866
+        ],
+        "created_at": "2026-04-14T05:42:25Z",
+        "created_at_i": 1776145345,
+        "num_comments": 3,
+        "objectID": "47761686",
+        "points": 3,
+        "story_id": 47761686,
+        "title": "What Comes After Vibe Coding",
+        "updated_at": "2026-04-15T06:39:55Z",
+        "url": "https://blog.bijup.com/what-comes-after-vibe-coding"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "moebius_ansa"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Milla Jovovich's New Open Source LLM Memory App and the Dark Code Problem"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://old.reddit.com/r/<em>vibecoding</em>/comments/1skggrd/milla_jovovichs_new_<em>vibe</em>_coded_open_source_agent"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_moebius_ansa",
+          "story_47759066"
+        ],
+        "author": "moebius_ansa",
+        "created_at": "2026-04-13T23:00:15Z",
+        "created_at_i": 1776121215,
+        "num_comments": 0,
+        "objectID": "47759066",
+        "points": 4,
+        "story_id": 47759066,
+        "title": "Milla Jovovich's New Open Source LLM Memory App and the Dark Code Problem",
+        "updated_at": "2026-04-14T04:14:05Z",
+        "url": "https://old.reddit.com/r/vibecoding/comments/1skggrd/milla_jovovichs_new_vibe_coded_open_source_agent"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "jesol"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Tokens – The New Dopamine Economy"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://www.enfuse.io/blog/<em>vibe</em>-<em>coding</em>-trap"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_jesol",
+          "story_47758263"
+        ],
+        "author": "jesol",
+        "children": [
+          47760645,
+          47760330,
+          47760043
+        ],
+        "created_at": "2026-04-13T21:48:00Z",
+        "created_at_i": 1776116880,
+        "num_comments": 5,
+        "objectID": "47758263",
+        "points": 16,
+        "story_id": 47758263,
+        "title": "Tokens – The New Dopamine Economy",
+        "updated_at": "2026-04-14T23:59:08Z",
+        "url": "https://www.enfuse.io/blog/vibe-coding-trap"
+      }
+    ]
+  }
+}

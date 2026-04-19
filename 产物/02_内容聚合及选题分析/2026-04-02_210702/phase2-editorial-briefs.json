@@ -1,0 +1,326 @@
+[
+  {
+    "title": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+    "source_status": "自然入选",
+    "cluster_name": "其他高频观察",
+    "judgment": "如果一类信息反复出现，重点应从单条新闻转向结构变量。",
+    "why": "适合做兜底分析稿，把噪声压缩成可执行判断。 当前样本 `241` 条，来源 `8` 类。",
+    "audience": "对行业与市场有持续跟踪需求的读者。",
+    "structure": {
+      "hook": "当所有人都在追热点时，更值得写的是热点背后的结构。",
+      "s1": "当前高频样本到底在共同指向什么。",
+      "s2": "哪些变量可持续，哪些只是情绪脉冲。",
+      "s3": "编辑后续应补什么证据才能成稿。"
+    },
+    "sources": [
+      {
+        "title": "高市早苗这趟访美，属实是钱没少花、脸没少丢，事儿却一点没办成 【抖音独家】#全球创作者计划 #零基础看懂全球",
+        "url": "https://www.douyin.com/video/7620404012889738542",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      },
+      {
+        "title": "JAPAN IS BACK？白宫放出高市访美丑照，日本网民直呼：丢人！【抖音首发】#高市早苗 #全球创作者计划#零基础看懂全球 #时代的荣耀",
+        "url": "https://www.douyin.com/video/7620125890249067685",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      },
+      {
+        "title": "腿粗进！梨形进！不露腿辣裙！总有你喜欢！",
+        "url": "https://www.xiaohongshu.com/explore/644b90a700000000130337db?xsec_token=ABKz_JQL4J8B4BvjL34adBFBXQCDBtUokM71CoXFSxQYw=&xsec_source=pc_feed",
+        "source_type": "小红书笔记",
+        "raw_source": "5173/xhs"
+      }
+    ],
+    "risk": "需要人工再筛一遍，避免主题过宽。",
+    "heat": 1122.174
+  },
+  {
+    "title": "停火预期反复下，黄金、原油和风险资产正在被怎样重新定价？",
+    "source_status": "自然入选",
+    "cluster_name": "黄金、原油与地缘风险",
+    "judgment": "当前交易重点不是战况细节，而是风险溢价与避险溢价会不会重新分层。",
+    "why": "地缘、商品、避险三条线索天然联动，容易形成完整资产叙事。 当前样本 `45` 条，来源 `6` 类。",
+    "audience": "宏观、商品、基金配置读者。",
+    "structure": {
+      "hook": "市场先看价格，不先看表态。",
+      "s1": "风险事件如何先传到油价、金价与美元。",
+      "s2": "避险与流动性为什么会在短期内互相打架。",
+      "s3": "普通投资者接下来应该盯哪些变量。"
+    },
+    "sources": [
+      {
+        "title": "战争烂尾，美国要跑了",
+        "url": "https://www.douyin.com/video/7623731006479633714",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      },
+      {
+        "title": "日本大批民众集会，呼吁和平反对战争：让我们替高市早苗道歉#日本 #外交 #现场",
+        "url": "https://www.douyin.com/video/7622892343183625523",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      },
+      {
+        "title": "黄金白银，今天上涨的很反常…#财经知识 #金融常识普及 #黄金 #白银",
+        "url": "https://www.douyin.com/video/7621951783305356259",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      }
+    ],
+    "risk": "不要把单条战况快讯写成趋势结论。",
+    "heat": 359.604
+  },
+  {
+    "title": "避险资产为什么总会在最需要避险的时候先剧烈波动？",
+    "source_status": "自然入选",
+    "cluster_name": "黄金、原油与地缘风险",
+    "judgment": "黄金和原油的短线异动，往往交易的是流动性和再定价，而不是简单的安全感。",
+    "why": "这一角度更适合做认知纠偏稿，标题强，讨论空间大。 当前样本 `45` 条，来源 `6` 类。",
+    "audience": "宏观、商品、基金配置读者。",
+    "structure": {
+      "hook": "避险最浓的时候，价格反而最不稳定。",
+      "s1": "避险逻辑、流动性逻辑和仓位逻辑如何叠加。",
+      "s2": "为什么同样是避险，黄金和原油表现经常不同步。",
+      "s3": "如何识别“情绪波动”与“中期变量变化”。"
+    },
+    "sources": [
+      {
+        "title": "战争烂尾，美国要跑了",
+        "url": "https://www.douyin.com/video/7623731006479633714",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      },
+      {
+        "title": "日本大批民众集会，呼吁和平反对战争：让我们替高市早苗道歉#日本 #外交 #现场",
+        "url": "https://www.douyin.com/video/7622892343183625523",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      },
+      {
+        "title": "黄金白银，今天上涨的很反常…#财经知识 #金融常识普及 #黄金 #白银",
+        "url": "https://www.douyin.com/video/7621951783305356259",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      }
+    ],
+    "risk": "需要补权威数据图，避免纯观点化。",
+    "heat": 359.604
+  },
+  {
+    "title": "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+    "source_status": "自然入选",
+    "cluster_name": "黄金、原油与地缘风险",
+    "judgment": "长期冲突更深的后果是供给、运输与通胀秩序重估，而不是一两天的价格波动。",
+    "why": "适合升级成宏观框架稿，与后续金油关系稿可直接串联。 当前样本 `45` 条，来源 `6` 类。",
+    "audience": "宏观、商品、基金配置读者。",
+    "structure": {
+      "hook": "战争消息天天刷屏，但市场最终只会为秩序重估买单。",
+      "s1": "哪些供给与运输节点真正决定风险溢价。",
+      "s2": "再通胀叙事如何反向影响股债商品。",
+      "s3": "后续最值得持续跟踪的观察清单。"
+    },
+    "sources": [
+      {
+        "title": "战争烂尾，美国要跑了",
+        "url": "https://www.douyin.com/video/7623731006479633714",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      },
+      {
+        "title": "日本大批民众集会，呼吁和平反对战争：让我们替高市早苗道歉#日本 #外交 #现场",
+        "url": "https://www.douyin.com/video/7622892343183625523",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      },
+      {
+        "title": "黄金白银，今天上涨的很反常…#财经知识 #金融常识普及 #黄金 #白银",
+        "url": "https://www.douyin.com/video/7621951783305356259",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      }
+    ],
+    "risk": "要避免把长期趋势写成即时结论。",
+    "heat": 359.604
+  },
+  {
+    "title": "模糊消息为什么总能先于事实，影响市场情绪定价？",
+    "source_status": "自然入选",
+    "cluster_name": "市场情绪与资金误判",
+    "judgment": "比单条传闻更值得写的是模糊信息如何在市场里放大定价偏差。",
+    "why": "适合做编辑观察稿，能连接基金、港股和机构情绪三类读者。 当前样本 `47` 条，来源 `4` 类。",
+    "audience": "基金读者、港股读者、偏情绪研究的编辑。",
+    "structure": {
+      "hook": "最容易传播的消息，往往不是最清楚的消息。",
+      "s1": "模糊消息如何放大预期波动。",
+      "s2": "为什么这类题适合传播，却不适合直接下注。",
+      "s3": "编辑处理这类题时怎样降低失真。"
+    },
+    "sources": [
+      {
+        "title": "爆仓了怎样快速清理？哪些批量出售？哪些值得留？清仓一图流——单格物品篇",
+        "url": "https://www.bilibili.com/video/BV1mMbWzKEVd",
+        "source_type": "采集来源",
+        "raw_source": "5173/bili"
+      },
+      {
+        "title": "昨晚美股绷不住了 #行情分析 #股票干货 #短线交易",
+        "url": "https://www.douyin.com/video/7622104775753110513",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      },
+      {
+        "title": "以长期主义穿越震荡：恐慌尽头，即是机遇 昨日美股盘前高开、盘中回落，今日盘前再度上涨，市场在反复拉扯中尽显事件冲击下的情绪博弈。作为深耕市场多年的投资者，我始终",
+        "url": "https://m.weibo.cn/detail/5282617771430010",
+        "source_type": "采集来源",
+        "raw_source": "5173/wb"
+      }
+    ],
+    "risk": "必须强调边界，避免写成情绪搬运。",
+    "heat": 246.292
+  },
+  {
+    "title": "AI 工具今年更值得写的，不是大全，而是“接进工作流”的案例",
+    "source_status": "自然入选",
+    "cluster_name": "AI 工具与工作流接入",
+    "judgment": "工具数量已经不是稀缺信息，真正稀缺的是能否嵌入实际工作链路。",
+    "why": "更适合做连续栏目，也更容易形成稳定读者预期。 当前样本 `29` 条，来源 `5` 类。",
+    "audience": "AI 工具用户、自媒体作者、效率型读者。",
+    "structure": {
+      "hook": "工具榜单越来越多，但读者越来越不记得它们。",
+      "s1": "单点工具热闹和工作流接入的差别。",
+      "s2": "为什么案例比参数更能建立信任。",
+      "s3": "哪些工具值得持续追，哪些只是新鲜感。"
+    },
+    "sources": [
+      {
+        "title": "AI都说不出这话！#特朗普当众羞辱沙特王储：他不得不亲我PP对我客气！打钱给地护你周全都错付了？#做美国盟友有多致命 #特朗普称沙特王储得亲他PP拍马屁",
+        "url": "https://www.douyin.com/video/7622532589382946074",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      },
+      {
+        "title": "in the corner straight up “losin it\" and by “it” , haha, well lets just say... M",
+        "url": "https://x.com/EdgarPoop1/status/2036104459168686395",
+        "source_type": "采集来源",
+        "raw_source": "5173/x"
+      },
+      {
+        "title": "MacBook Air M5评测：哪代Air性能提升最多？",
+        "url": "https://www.bilibili.com/video/BV1S4XCBMEV7",
+        "source_type": "采集来源",
+        "raw_source": "5173/bili"
+      }
+    ],
+    "risk": "必须落到真实动作链，避免工具堆砌。",
+    "heat": 238.888
+  },
+  {
+    "title": "OpenClaw、skills、知识库接入，为什么适合做连续栏目？",
+    "source_status": "自然入选",
+    "cluster_name": "AI 工具与工作流接入",
+    "judgment": "这类内容的价值不在单次热度，而在版本、接入方式和案例场景的持续迭代。",
+    "why": "栏目属性强，素材供给稳定，适合长期沉淀。 当前样本 `29` 条，来源 `5` 类。",
+    "audience": "AI 工具用户、自媒体作者、效率型读者。",
+    "structure": {
+      "hook": "升级一次写一篇，比一次性工具大全更有持续性。",
+      "s1": "为什么这类内容天然具备栏目属性。",
+      "s2": "读者真正关心的不是参数，而是今天能不能用上。",
+      "s3": "栏目可以拆成哪些稳定模块。"
+    },
+    "sources": [
+      {
+        "title": "AI都说不出这话！#特朗普当众羞辱沙特王储：他不得不亲我PP对我客气！打钱给地护你周全都错付了？#做美国盟友有多致命 #特朗普称沙特王储得亲他PP拍马屁",
+        "url": "https://www.douyin.com/video/7622532589382946074",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      },
+      {
+        "title": "in the corner straight up “losin it\" and by “it” , haha, well lets just say... M",
+        "url": "https://x.com/EdgarPoop1/status/2036104459168686395",
+        "source_type": "采集来源",
+        "raw_source": "5173/x"
+      },
+      {
+        "title": "MacBook Air M5评测：哪代Air性能提升最多？",
+        "url": "https://www.bilibili.com/video/BV1S4XCBMEV7",
+        "source_type": "采集来源",
+        "raw_source": "5173/bili"
+      }
+    ],
+    "risk": "如果没有真实试用，不要虚构效率提升结果。",
+    "heat": 238.888
+  },
+  {
+    "title": "表面在交易事件，真正的主线会不会其实是再通胀？",
+    "source_status": "自然入选",
+    "cluster_name": "宏观政策与再通胀",
+    "judgment": "事件冲击只是引线，真正需要重估的是通胀和利率预期的重新摆动。",
+    "why": "适合升级成宏观框架稿，便于承接后续图表和数据验证。 当前样本 `20` 条，来源 `3` 类。",
+    "audience": "宏观资产配置、债券、基金读者。",
+    "structure": {
+      "hook": "消息很热闹，但市场最终只认通胀与利率。",
+      "s1": "事件如何传导到再通胀预期。",
+      "s2": "再通胀叙事对股债商品分别意味着什么。",
+      "s3": "如果预期反复，市场下一步会重估什么。"
+    },
+    "sources": [
+      {
+        "title": "通胀并没有多严重！不会加息，金价被错杀！",
+        "url": "https://www.douyin.com/video/7621964606927837285",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      },
+      {
+        "title": "要加息了？华尔街警告油价失控风险 美联储加息概率飙升，#美股 步入回调。#投资 #财经 #全球创作者计划 #油价",
+        "url": "https://www.douyin.com/video/7622091460707454223",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      },
+      {
+        "title": "特殊时期警惕美股风险之二 #2026经济风向标 #零距离看懂财经 #李大霄 #做好人买好股得好报",
+        "url": "https://www.douyin.com/video/7622867140102511858",
+        "source_type": "采集来源",
+        "raw_source": "5173/douyin"
+      }
+    ],
+    "risk": "阶段三必须补宏观数据图，不要只写判断。",
+    "heat": 119.58
+  },
+  {
+    "title": "半导体突然很热闹，但行业最危险的误判可能才刚开始",
+    "source_status": "自然入选",
+    "cluster_name": "半导体与科技产业分化",
+    "judgment": "新品、涨价和局部催化并不等于产业全面复苏，结构分化才是主线。",
+    "why": "新闻很多，但真正有价值的是帮编辑把“热闹”和“景气”拆开。 当前样本 `7` 条，来源 `3` 类。",
+    "audience": "产业观察型、科技投资型读者。",
+    "structure": {
+      "hook": "热闹不等于景气普涨。",
+      "s1": "把新品、涨价、政策和分化拆成四类信号。",
+      "s2": "哪些是可持续变量，哪些只是情绪脉冲。",
+      "s3": "为什么投资者最容易误把局部催化当成全面复苏。"
+    },
+    "sources": [
+      {
+        "title": "通胀一定是要来了，无论你愿不愿意，你都不得不接受这个事实。两轮电动车都涨价了，其它的还会远吗？ ​",
+        "url": "https://m.weibo.cn/detail/5282648994879610",
+        "source_type": "采集来源",
+        "raw_source": "5173/wb"
+      },
+      {
+        "title": "A股04.01收评：医药三连阳、算力轮动、电力调整，市场结构性机会梳理",
+        "url": "https://www.bilibili.com/video/BV1ji9jB3EmT",
+        "source_type": "采集来源",
+        "raw_source": "5173/bili"
+      },
+      {
+        "title": "恭喜！贵州煜晖电子二期，正式开工",
+        "url": "https://mp.weixin.qq.com/s/mYA-d4r8K9VUqxfN1V0Tjw",
+        "source_type": "公众号文章",
+        "raw_source": "8001/wechat_curated"
+      }
+    ],
+    "risk": "阶段三应补财报、政策或行业数据。",
+    "heat": 47.79
+  }
+]

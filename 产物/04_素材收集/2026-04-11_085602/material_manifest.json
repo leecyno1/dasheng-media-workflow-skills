@@ -1,0 +1,149 @@
+{
+  "run_id": "2026-04-11_085602",
+  "stage": "material",
+  "status": "completed",
+  "upstream": {
+    "draft_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/draft_manifest.json",
+    "final_structure_snapshot": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/final_structure_snapshot.json"
+  },
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets",
+  "topics": [
+    {
+      "topic_id": "topic-ai-financial-risk-regulation",
+      "slug": "claude华尔街紧急会议",
+      "title": "Claude新模型引发华尔街紧急会议：AI对金融业的风险在哪",
+      "draft_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_标准初稿_claude新模型引发华尔街紧急会议-ai对金融业的风险在哪.md",
+      "assets_dir": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/claude华尔街紧急会议",
+      "material_status": "partial",
+      "assets": {
+        "images": [
+          {"file": "01_claude华尔街紧急会议_纽约联储大楼.jpg", "anchor": "{{image: 纽约联储大楼外观，傍晚时分，气氛凝重，暗示紧急会议的不寻常}}"},
+          {"file": "02_claude华尔街紧急会议_美联储财政部AI.jpg", "anchor": "{{image: 美联储与财政部标志并排，下方是AI神经网络图，象征监管与技术的碰撞}}"},
+          {"file": "03_claude华尔街紧急会议_会议室场景.jpg", "anchor": "{{image: 会议室场景，长桌两侧坐着金融高管，表情严肃，有人在展示PPT}}"},
+          {"file": "04_claude华尔街紧急会议_风险传导链条.jpg", "anchor": "{{image: 风险传导示意图，展示AI模型→交易执行→市场波动的链条，可用流程图表示}}"},
+          {"file": "05_claude华尔街紧急会议_AI与法律天平.jpg", "anchor": "{{image: 天平两端，一端是AI芯片，一端是法律文件，暗示能力与监管的平衡}}"}
+        ],
+        "charts": [
+          {"file": "claude华尔街紧急会议_ai金融应用场景分布.png", "description": "AI金融应用场景分布"},
+          {"file": "claude华尔街紧急会议_ai风险传导链条.png", "description": "AI风险传导链条"}
+        ],
+        "manga": [
+          {"file": "claude华尔街紧急会议_manga.png", "description": "AI vs 华尔街主题漫画"}
+        ],
+        "videos": {
+          "status": "url_collected",
+          "source": "video_urls.json",
+          "count": 40,
+          "note": "YouTube视频URL已收集，需手动下载（YouTube Bot保护）",
+          "top_videos": [
+            {"title": "FOMC Press Conference, December 10, 2025", "url": "https://www.youtube.com/watch?v=Ko-_yb2UkDk"},
+            {"title": "Jerome Powell LIVE: Fed Chair speaks after interest rate decision", "url": "https://www.youtube.com/watch?v=dmhbeOQH3HI"},
+            {"title": "Watch Citadel's high-speed trading in action", "url": "https://www.youtube.com/watch?v=2u007Msq1qo"},
+            {"title": "Introducing Claude Code", "url": "https://www.youtube.com/watch?v=AJpK3YTTKZ4"},
+            {"title": "Anthropic CEO warns about AI dangerous path", "url": "https://www.youtube.com/watch?v=aAPpQC-3EyE"}
+          ]
+        },
+        "lancet": {"status": "not_generated", "reason": "API上游服务失败"}
+      }
+    },
+    {
+      "topic_id": "topic-stablecoin-license-market-impact",
+      "slug": "稳定币牌照",
+      "title": "稳定币牌照落地：加密市场的“银行牌照时刻”",
+      "draft_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_标准初稿_稳定币牌照落地-加密市场的-银行牌照时刻.md",
+      "assets_dir": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/稳定币牌照",
+      "material_status": "partial",
+      "assets": {
+        "images": [
+          {"file": "01_稳定币牌照_金融科技.jpg", "anchor": "{{image: 稳定币牌照相关配图}}"},
+          {"file": "02_稳定币牌照_传统金融机构.jpg", "anchor": "{{image: 传统金融机构布局稳定币业务配图}}"}
+        ],
+        "charts": [
+          {"file": "稳定币牌照_市场份额对比.png", "description": "稳定币市场格局对比表"},
+          {"file": "稳定币牌照_机构布局时间线.png", "description": "传统金融机构布局稳定币时间线"}
+        ],
+        "manga": [
+          {"file": "稳定币牌照_manga.png", "description": "传统金融拥抱加密主题漫画"}
+        ],
+        "videos": {
+          "status": "url_collected",
+          "source": "video_urls.json",
+          "count": 12,
+          "note": "YouTube视频URL已收集，需手动下载",
+          "top_videos": [
+            {"title": "Stablecoins, Explained in 4 Minutes", "url": "https://www.youtube.com/watch?v=vx_JyxuV1DE"},
+            {"title": "USDC vs USDT: Which Stablecoin is SAFER?", "url": "https://www.youtube.com/watch?v=0GGCf0P59ko"},
+            {"title": "Why Companies Like JP Morgan And Visa Are Creating Crypto Tokens", "url": "https://www.youtube.com/watch?v=OpBGgntJqtM"},
+            {"title": "USDC Regulation Explained: GENIUS Act 2025", "url": "https://www.youtube.com/watch?v=c64F_OJlYiI"},
+            {"title": "MICA Regulation Explained", "url": "https://www.youtube.com/watch?v=MU7U5FEzVyE"}
+          ]
+        },
+        "lancet": {"status": "not_generated", "reason": "API上游服务失败"}
+      }
+    },
+    {
+      "topic_id": "topic-japan-embassy-incident-analysis",
+      "slug": "日本士兵闯使馆",
+      "title": "日本士兵闯使馆事件背后：个体极端行为还是系统性问题？",
+      "draft_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-11_085602/03_标准初稿_日本士兵闯使馆事件背后-个体极端行为还是系统性问题.md",
+      "assets_dir": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-11_085602/pack_assets/日本士兵闯使馆",
+      "material_status": "partial",
+      "assets": {
+        "images": [
+          {"file": "01_日本士兵闯使馆_日本自卫队.jpg", "anchor": "{{image: 日本自卫队相关配图}}"},
+          {"file": "02_日本士兵闯使馆_中国驻日大使馆.jpg", "anchor": "{{image: 中国驻日大使馆相关配图}}"},
+          {"file": "03_日本士兵闯使馆_右翼民族主义.jpg", "anchor": "{{image: 右翼势力相关配图}}"},
+          {"file": "04_日本士兵闯使馆_社交媒体传播.jpg", "anchor": "{{image: 社交媒体传播相关配图}}"}
+        ],
+        "charts": [
+          {"file": "日本士兵闯使馆_自卫队纪律事故分布.png", "description": "自卫队纪律事故类型分布"},
+          {"file": "日本士兵闯使馆_右翼渗透路径.png", "description": "右翼势力对军队渗透路径图"}
+        ],
+        "manga": [
+          {"file": "日本士兵闯使馆_manga.png", "description": "系统性风险渗透主题漫画"}
+        ],
+        "videos": {
+          "status": "url_collected",
+          "source": "video_urls.json",
+          "count": 16,
+          "note": "YouTube视频URL已收集，需手动下载",
+          "top_videos": [
+            {"title": "China vs Japan Military Power Comparison 2025", "url": "https://www.youtube.com/watch?v=ueuX4m-_UgE"},
+            {"title": "Japan Military Power |JSDF| Rise Again", "url": "https://www.youtube.com/watch?v=WJAjrImyYaU"},
+            {"title": "If Japan and China Go To War, Who Loses", "url": "https://www.youtube.com/watch?v=2XpZR2yMnN0"},
+            {"title": "Japan warns citizens in China about safety amid diplomatic crisis", "url": "https://www.youtube.com/watch?v=Opf8iVlFIek"},
+            {"title": "China summons Japan ambassador as war of words over Taiwan", "url": "https://www.youtube.com/watch?v=FkLhgqTd99M"}
+          ]
+        },
+        "lancet": {"status": "not_generated", "reason": "API上游服务失败"}
+      }
+    }
+  ],
+  "material_types": [
+    "images",
+    "videos",
+    "charts",
+    "infographic_lancet",
+    "manga"
+  ],
+  "summary": {
+    "images": {"collected": 11, "status": "complete"},
+    "charts": {"generated": 6, "status": "complete"},
+    "manga": {"generated": 3, "status": "complete"},
+    "videos": {"urls_collected": 68, "status": "blocked_youtube_bot", "note": "需手动下载"},
+    "lancet": {"status": "failed_api_error"}
+  },
+  "next_stage": "rewrite",
+  "blockers": [
+    {
+      "type": "video_download",
+      "description": "YouTube Bot保护阻止自动化下载",
+      "resolution": "手动下载，或配置浏览器Cookie"
+    },
+    {
+      "type": "lancet_infographic",
+      "description": "QHAIGC API上游服务失败",
+      "resolution": "重试或手动生成"
+    }
+  ]
+}

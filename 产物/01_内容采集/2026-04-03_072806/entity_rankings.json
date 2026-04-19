@@ -1,0 +1,174 @@
+{
+  "run_id": "2026-04-03_072806",
+  "generated_at": "2026-04-03T07:28:06.654103+08:00",
+  "categories": {
+    "sectors": [
+      {
+        "name": "AI",
+        "count": 222
+      },
+      {
+        "name": "半导体",
+        "count": 5
+      },
+      {
+        "name": "封测",
+        "count": 5
+      },
+      {
+        "name": "算力",
+        "count": 4
+      },
+      {
+        "name": "人工智能",
+        "count": 2
+      },
+      {
+        "name": "航运",
+        "count": 1
+      },
+      {
+        "name": "芯片",
+        "count": 1
+      }
+    ],
+    "policies": [
+      {
+        "name": "加息",
+        "count": 244
+      },
+      {
+        "name": "降息",
+        "count": 244
+      },
+      {
+        "name": "制裁",
+        "count": 3
+      },
+      {
+        "name": "停火",
+        "count": 2
+      },
+      {
+        "name": "关税",
+        "count": 2
+      },
+      {
+        "name": "补贴",
+        "count": 1
+      },
+      {
+        "name": "宽松",
+        "count": 1
+      },
+      {
+        "name": "赤字",
+        "count": 1
+      },
+      {
+        "name": "预算",
+        "count": 1
+      }
+    ],
+    "orgs": [
+      {
+        "name": "美联储",
+        "count": 8
+      },
+      {
+        "name": "FED",
+        "count": 6
+      },
+      {
+        "name": "OpenAI",
+        "count": 2
+      },
+      {
+        "name": "EIA",
+        "count": 2
+      },
+      {
+        "name": "日本央行",
+        "count": 1
+      },
+      {
+        "name": "英伟达",
+        "count": 1
+      }
+    ],
+    "people": [
+      {
+        "name": "特朗普",
+        "count": 44
+      },
+      {
+        "name": "高市早苗",
+        "count": 38
+      },
+      {
+        "name": "OpenAI",
+        "count": 2
+      },
+      {
+        "name": "鲍威尔",
+        "count": 1
+      },
+      {
+        "name": "川普",
+        "count": 1
+      }
+    ],
+    "countries": [
+      {
+        "name": "美国",
+        "count": 45
+      },
+      {
+        "name": "日本",
+        "count": 42
+      },
+      {
+        "name": "伊朗",
+        "count": 16
+      },
+      {
+        "name": "中国",
+        "count": 11
+      },
+      {
+        "name": "中东",
+        "count": 7
+      },
+      {
+        "name": "以色列",
+        "count": 4
+      },
+      {
+        "name": "欧洲",
+        "count": 2
+      },
+      {
+        "name": "俄罗斯",
+        "count": 1
+      }
+    ],
+    "commodities": [
+      {
+        "name": "黄金",
+        "count": 52
+      },
+      {
+        "name": "原油",
+        "count": 41
+      },
+      {
+        "name": "油价",
+        "count": 7
+      },
+      {
+        "name": "白银",
+        "count": 3
+      }
+    ]
+  }
+}

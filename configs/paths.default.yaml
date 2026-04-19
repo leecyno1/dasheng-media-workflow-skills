@@ -1,0 +1,21 @@
+# 默认路径配置模板
+# 项目根目录（自动检测，无需配置）
+project_root: auto
+
+# 工作目录（相对于project_root）
+work_dirs:
+  materials: "素材"
+  projects: "项目"
+  engines: "引擎"
+  outputs: "产物"
+
+# 外部依赖路径（通过环境变量覆盖）
+external:
+  feishu_config: "${FEISHU_CONFIG_PATH:-~/.config/feishu/api.conf}"
+  openclaw_skills: "${OPENCLAW_SKILLS_DIR:-~/.openclaw/skills}"
+
+# 数据源端点
+data_sources:
+  intake_5173: "${DASHENG_INTAKE_5173_BASE:-http://127.0.0.1:18000}"
+  intake_reports: "${DASHENG_INTAKE_REPORTS_BASE:-http://45.197.148.64:8080}"
+  intake_8001: "${DASHENG_INTAKE_8001_BASE:-http://45.197.148.64:8001}"

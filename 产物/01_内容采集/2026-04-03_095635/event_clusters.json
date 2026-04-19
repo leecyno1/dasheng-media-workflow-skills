@@ -1,0 +1,2455 @@
+[
+  {
+    "cluster_id": "其他观察",
+    "topic": "其他观察",
+    "count": 65,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 64,
+      "personal_opinion": 1
+    },
+    "sources": {
+      "5173/x": 4,
+      "5173/xhs": 47,
+      "5173/douyin": 1,
+      "5173/bili": 1,
+      "5173/content_research": 3,
+      "reports/news": 1,
+      "8001/wechat_curated": 8
+    },
+    "representative_titles": [
+      "📊 Evening Market Summary\n\nBTC: $70,931 (🟢 0.32%)\nETH: $2,162 (🟢 0.92%)\n\nMarket i",
+      "Want to spot crypto moves early? Watch sentiment shifts, RSI divergences, and vo",
+      "📊 GM Green but weak\n\nCrypto opens green but sentiment still behind price\n\n• BTC ",
+      "🚨Bitcoin -\n\nBTC sitting at $71,000👀\nWho’s in LONGS🟢\nWho’s in SHORTS🔴\nComment dow",
+      "这次你还能不心动？"
+    ],
+    "representative_links": [
+      "https://x.com/smfuns/status/2036427999000797367",
+      "https://x.com/CForecast65602/status/2036428458549543143",
+      "https://x.com/Amelia_loov/status/2036427968436723978",
+      "https://x.com/adityatradelive/status/2036429737808240921",
+      "https://www.xiaohongshu.com/explore/63d3bf1d000000001f00ff10?xsec_token=ABll9sqjyZSPBhRYHKYo8QZQ_F3jOkF0jjkPIZJ2pBsyQ=&xsec_source=pc_feed"
+    ],
+    "top_entities": [],
+    "noise_tags": {
+      "irrelevant_life": 1
+    }
+  },
+  {
+    "cluster_id": "其他观察-加息-降息",
+    "topic": "其他观察",
+    "count": 46,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 46
+    },
+    "sources": {
+      "5173/x": 46
+    },
+    "representative_titles": [
+      "@RandPaul @TraceyKoehler Buddy wtf are you talking about? The system and debt is",
+      "@TheStaad They gave us usury and epstein island and the elite will forever be in",
+      "Instead of Uhuru the drunken master to assist Raphael Tuju settle for him his de",
+      "If you say satanic people run this World 🌎 wouldn’t unforgiveness under the cove",
+      "They Designed a System You Can Never Escape\n\n“Every country on Earth is in debt…"
+    ],
+    "representative_links": [
+      "https://x.com/CliffordRoboshi/status/2036310977197539768",
+      "https://x.com/AshliNipple/status/2036311086450811258",
+      "https://x.com/hardtruths_101/status/2036310863401935077",
+      "https://x.com/HeruRowe/status/2036311112916897792",
+      "https://x.com/henri_fjord/status/1987487313551904906"
+    ],
+    "top_entities": [
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-原油-黄金-ai-加息-降息",
+    "topic": "其他观察",
+    "count": 34,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 34
+    },
+    "sources": {
+      "5173/wb": 34
+    },
+    "representative_titles": [
+      "广西桂林，女子离职后，前老板偷偷拿着她身份证复印件，把她登记为股东。公司倒闭后她莫名背上100多万债务，银行卡被冻、房子被封，打官司时法院没送起诉状和传票，而是",
+      "#优思益代言人# 食品安全问题屡屡涌现，监管屡屡形同虚设。地沟油、毒奶粉、毒枸杞、淋巴肉…每次出大事，舆论全盯着带货主播、代言明星追责，本该守好底线的监管反而次",
+      "昨天白天都在准备看美股笑话，结果自己才是那个笑话。 这就是流动性充沛的市场和流动性紧张的市场的区别。 没有预判，很少博弈。 涨的最好的也就是大产业趋势中最强细分",
+      "【 #一文读懂为什么APP总想借钱给你# 】 #一个修图软件为什么想借钱给我# ？刷视频、打车、点外卖……消费者在互联网平台上总被强塞借贷信息。记者测试了20余",
+      "市场情绪如同惊弓之鸟 ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282290340463506",
+      "https://m.weibo.cn/detail/5283528415120517",
+      "https://m.weibo.cn/detail/5283521067223469",
+      "https://m.weibo.cn/detail/5283539006261090",
+      "https://m.weibo.cn/detail/5283198508729485"
+    ],
+    "top_entities": [
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-原油-黄金-加息-降息",
+    "topic": "其他观察",
+    "count": 29,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 28,
+      "mainstream_media": 1
+    },
+    "sources": {
+      "5173/bili": 29
+    },
+    "representative_titles": [
+      "这波操作 666！极限避险，有惊无险。",
+      "【二重螺旋】拒绝踩坑，一分钟吃透煜明！",
+      "《二重螺旋》周本竞逐种子选手点位曝光，通关周本时间减半",
+      "二重螺旋重大发现 萌新肝魔之楔图鉴 再也不用望而生畏了！",
+      "【二重螺旋】首发！深红凝珠最强攻略：唯乐减负！再也不缺红豆了！！！"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1uAPYzNE6T",
+      "https://www.bilibili.com/video/BV1ugNFz5ERb",
+      "https://www.bilibili.com/video/BV1vn1pBTEgU",
+      "https://www.bilibili.com/video/BV1H5CGBCEzz",
+      "https://www.bilibili.com/video/BV1BrkTBdEMY"
+    ],
+    "top_entities": [
+      "原油",
+      "黄金",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {
+      "irrelevant_life": 2
+    }
+  },
+  {
+    "cluster_id": "其他观察-ai",
+    "topic": "其他观察",
+    "count": 28,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 25,
+      "personal_opinion": 3
+    },
+    "sources": {
+      "5173/xhs": 1,
+      "5173/douyin": 23,
+      "reports/news": 3,
+      "8001/wechat_curated": 1
+    },
+    "representative_titles": [
+      "从来没见过哪老外能把《甄嬛传》演得这么像😂",
+      "交易中流动性是如何运作的? #流动性 #流动性陷阱 #流动性训练 #分析工具#科普",
+      "盘点金融史上十大黑天鹅事件#财经知识 #商业故事  #资本 #真实事件 #黑天鹅 #涨知识 @DOU+小助手 ",
+      "深度解读《黑天鹅》 #读书 #好书推荐 #个人成长 #黑天鹅 #抖音花式讲书大赛",
+      "影响房价的黑天鹅是什么？你认为呢？（本视频仅代表个人思考无特殊意义）#财富 #认知 #房 #黑天鹅 #暴跌 "
+    ],
+    "representative_links": [
+      "https://www.xiaohongshu.com/explore/645b9110000000001303798e?xsec_token=ABfp2DQ--uYj_Wo6RPjwxZKtOfa2NeFnD_gnYGC57Zo94=&xsec_source=pc_feed",
+      "https://www.douyin.com/video/7599616475103595822",
+      "https://www.douyin.com/video/7021697338393644301",
+      "https://www.douyin.com/video/7548373803294788874",
+      "https://www.douyin.com/video/7060821785012358437"
+    ],
+    "top_entities": [
+      "AI"
+    ],
+    "noise_tags": {
+      "irrelevant_life": 1
+    }
+  },
+  {
+    "cluster_id": "其他观察-ai-加息-降息",
+    "topic": "其他观察",
+    "count": 22,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "official": 2,
+      "mainstream_media": 3,
+      "platform_hotspot": 17
+    },
+    "sources": {
+      "5173/x": 21,
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "Interesting to see that it's a UK charity more concerned about our national debt",
+      "OpenAl is offering private-equity firms a guaranteed minimum return of 17.5%, as",
+      "Successful investors stay calm during volatility 🌊😌\nDiligence in decisions matte",
+      "@RyanMaue Wind and solar energy were already cheaper. Sunlight and wind don't ge",
+      "Quiet shift in DeFi infrastructure: Kamino is turning Solana lending into a more"
+    ],
+    "representative_links": [
+      "https://x.com/onjezani/status/2036311181426589888",
+      "https://x.com/AndrewCurran_/status/2036043793968083192",
+      "https://x.com/_Pulkitjain/status/2036310668337619346",
+      "https://x.com/BenSchaeffer_/status/2036310979382800754",
+      "https://x.com/im_serPAI/status/2036311143359066347"
+    ],
+    "top_entities": [
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "ai工具-工作流-ai-加息-降息",
+    "topic": "AI工具/工作流",
+    "count": 18,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 18
+    },
+    "sources": {
+      "5173/x": 18
+    },
+    "representative_titles": [
+      "If you spend money everyday, make money everyday.\n\nGetting paid only 12X a year ",
+      "So let me get this straight:\n\n1. $ 25m and no recourse debt $BORR consolidates a",
+      "Volatility is the emotional toll levied against our capacity to tolerate uncerta",
+      "@justeman001 @jacksonhinklle Yes, the claim checks out. As of March 24, 2026:\n\nW",
+      "#Crudeoil isn’t hitting #realestate directly, but it’s raising #fuel, #logistics"
+    ],
+    "representative_links": [
+      "https://x.com/cheruiyotkb/status/2036310994314527211",
+      "https://x.com/TheDriller11/status/2036310548074111402",
+      "https://x.com/RishiHks/status/2036310645063446709",
+      "https://x.com/grok/status/2036309484297970169",
+      "https://x.com/KailashBabar_/status/2036304972263072079"
+    ],
+    "top_entities": [
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "宏观-市场情绪-ai",
+    "topic": "宏观/市场情绪",
+    "count": 13,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 13
+    },
+    "sources": {
+      "5173/douyin": 13
+    },
+    "representative_titles": [
+      "《黑天鹅》01:世界的真相，为什么你的努力没能换来财富？ #知识分享  #读书  #黑天鹅  #一口气看懂经济学",
+      "经济名词解释，黑天鹅事件 #财经 #经济 #黑天鹅 #财经知识",
+      "万字解读《黑天鹅》:揭开世界运转的真相，别让直觉误导你的人生 @小A读书圈 #财经  #知识分享  #读书  #黑天鹅  #一口气看懂经济学",
+      "2026最大灰犀牛！私募信贷危机！？ #私募信贷  #宏观经济 #掘金计划2026",
+      "资本家是怎么转移风险的 #经济 #历史 #绝命老铁 #涨知识 @DOU+小助手"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7432123289272683788",
+      "https://www.douyin.com/video/7599486859080781106",
+      "https://www.douyin.com/video/7437473246519282995",
+      "https://www.douyin.com/video/7616318610557930798",
+      "https://www.douyin.com/video/6909878862214171916"
+    ],
+    "top_entities": [
+      "AI"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-原油-黄金-ai-加息-降息",
+    "topic": "黄金/白银/贵金属",
+    "count": 11,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 11
+    },
+    "sources": {
+      "5173/wb": 11
+    },
+    "representative_titles": [
+      "瀑布大跌，今日黄金方向大家认为转空没有 #黄金# #金价# ​",
+      "昨晚美股上演大奇迹日，黄金也反弹了，A股昨天反应过度了，今天该有修复吧？ ​",
+      "4.3日 今晚美股休市。各类市场继续在对原油上涨脱敏。美债昨晚也是冲高回落，黄金抗跌，美元相对原油涨幅温和。商品期货对原油上涨反映平淡。关于昨晚我给的冷晨1：4",
+      "#黄金# #金价# 早上好！隔夜提示的4480附近支撑精准生效，价格原地起飞！今日早盘拉升格外强劲，目前黄金的上涨逻辑已不再受原油单一因素主导，避险情绪正开始缓",
+      "今天行情大跌，日线连阳终结，今日行情如何操作，大家点赞，晚点写操作思路 #黄金# ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283187936726388",
+      "https://m.weibo.cn/detail/5283528418008055",
+      "https://m.weibo.cn/detail/5283506385060664",
+      "https://m.weibo.cn/detail/5282465436140904",
+      "https://m.weibo.cn/detail/5283186223614097"
+    ],
+    "top_entities": [
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "宏观-市场情绪-原油-黄金-ai-加息-降息",
+    "topic": "宏观/市场情绪",
+    "count": 9,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 9
+    },
+    "sources": {
+      "5173/wb": 9
+    },
+    "representative_titles": [
+      "这特么A股收盘了，美股开盘，A50拉直线 ​",
+      "当下到底是什么行情？ 今天这个行情，情绪为什么上不去而又没有更多的量能入场？可以用k线技术来做个解释：当下的资金心理还是处于一个下跌趋势中。什么意思？ 简单来说",
+      "外围局势反复，冲突方向异动导致科技股承压回落；因冲突板块承接不足，资金回流昨日强势的医药方向，避险情绪下，吃药行情有望延续~！ ​",
+      "A股与美股近20年走势对比，投资需谨慎。 L 龚凯杰的微博视频 ​",
+      "利率，要这么看。 在通胀环境，用名义利率减去通胀率，就是实际利率。 在通缩环境，用名义利率加上通缩率，就是实际利率。 比如一个地方，存款利率4%，通胀率2%，那"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283389070377346",
+      "https://m.weibo.cn/detail/5282977685703503",
+      "https://m.weibo.cn/detail/5283206924340400",
+      "https://m.weibo.cn/detail/5282790615549503",
+      "https://m.weibo.cn/detail/5280827772508750"
+    ],
+    "top_entities": [
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "ai工具-工作流-ai",
+    "topic": "AI工具/工作流",
+    "count": 4,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 4
+    },
+    "sources": {
+      "5173/x": 1,
+      "5173/douyin": 1,
+      "8001/wechat_curated": 2
+    },
+    "representative_titles": [
+      "The \"Trump Rally\" is hitting a wall as Brent crude knocks on the $100 door again",
+      "我们都被“经验”骗了多久？警惕你身边的“黑天鹅”信号！ 多少人困在“稳定”的假象里？10分钟带你读懂《黑天鹅》，看清那些“看不见”的风险。#黑天鹅  #塔勒布 #认知 #反脆弱  #读书 #好书分享  #人生哲理 #深度思考 #认知升级 #30岁程序员失业焦虑 #AI失业危机 #房贷压垮打工人 #稳定工作都是骗局 #70%工作将被AI取代 #黑天鹅事件  #年猪陷阱 #确定性幻觉 #反脆弱生存 #归纳法陷阱 #叙事谬误 #认知谦卑 #打破信息茧房 #拥抱不确定性#AI 时代生存法则",
+      "万字详解：OpenClaw龙虾“高替” Hermes Agent的Skills系统",
+      "Google官方出品：每个开发者都该知道的5种Skill设计模式"
+    ],
+    "representative_links": [
+      "https://x.com/GoAI_Support/status/2036430909444857906",
+      "https://www.douyin.com/video/7506975276304207144",
+      "https://mp.weixin.qq.com/s/xPU6sGM1oWdMai9fcGzCcQ",
+      "https://mp.weixin.qq.com/s/ONglczB3Umses_crFMa2fA"
+    ],
+    "top_entities": [
+      "AI"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-黄金-ai",
+    "topic": "黄金/白银/贵金属",
+    "count": 4,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 4
+    },
+    "sources": {
+      "5173/douyin": 4
+    },
+    "representative_titles": [
+      "做市商做单策略#做市商#交易#散户#外汇#黄金",
+      "《SMC聪明钱课程》第6/30课 买方流动性与卖方流动性，内部与外部流动性\n本课深度解析市场流动性的核心分类与驱动逻辑，聚焦买方流动性（需求主导）与卖方流动性（供应主导）的动态博弈，以及内部流动性（机构资金、做市商行为）与外部流动性（宏观环境、市场情绪）的交互影响。通过案例拆解流动性分布对价格波动、趋势延续及反转的底层作用，教授识别流动性聚集与枯竭的实战方法，涵盖趋势分析、资金流向追踪及多维度验证策略。课程旨在帮助交易者预判市场失衡节点，优化进出场时机选择，适配外汇黄金、比特币、股票、期货及主流加密货币等高流动性市场。适合中高阶交易者提升对市场微观结构的认知与策略适应性。#ICT交易技术 #SMC聪明钱 #交易人生 #交易心得 #黄金外汇",
+      "【技术】流动性扫荡 流动性扫荡/清扫 Liquidity sweep\n1. 定义 2. 分类 3. 预警 \n#交易 #流动性 #外汇 #黄金 #技术分析",
+      "本次会议为长江证券 4 月专题分享会，核心研判市场悲观情绪已至临界点。会议确立能源安全、AI 基建两大核心主线，同时提示黄金板块的逆向布局机会。分赛道拆解了 4 月行情，能源赛道重点推荐首华燃气、兖矿能源，AI 赛道推荐嘉元科技、中际旭创，同时深度覆盖杭州银行、德康农牧两大标的，全面解读了各标的的业绩弹性。\n#4月金股 #中际旭创 #德康农牧 #财经知识 #4月行情"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7560996735431183676",
+      "https://www.douyin.com/video/7573773799574233011",
+      "https://www.douyin.com/video/7612955735341480177",
+      "https://www.douyin.com/video/7624085175378496768"
+    ],
+    "top_entities": [
+      "黄金",
+      "AI"
+    ],
+    "noise_tags": {
+      "ad_promotional": 1
+    }
+  },
+  {
+    "cluster_id": "油价-地缘冲突-原油-黄金-加息-降息",
+    "topic": "油价/地缘冲突",
+    "count": 4,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 4
+    },
+    "sources": {
+      "5173/bili": 4
+    },
+    "representative_titles": [
+      "小白投资者必看！原油宝事件的痛与思",
+      "原油还有120的希望吗",
+      "原油如何重塑全球格局？ 2026.3.30",
+      "原油超级牛市刚启动，看向300不是一蹴而就而是涨跌循环，珍惜100以内的价格"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1X1QSBxETn",
+      "https://www.bilibili.com/video/BV1U49LBtEKP",
+      "https://www.bilibili.com/video/BV1S1XhBqEkB",
+      "https://www.bilibili.com/video/BV11rPSzGERn"
+    ],
+    "top_entities": [
+      "原油",
+      "黄金",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-加息-降息",
+    "topic": "黄金/白银/贵金属",
+    "count": 3,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 3
+    },
+    "sources": {
+      "5173/x": 3
+    },
+    "representative_titles": [
+      "XAUUSD – Update\nHarga saat ini: 4328\nGold masih berada dalam tekanan bearish kua",
+      "#Silver slumps another Rs 7,400/kg, #gold slides to Rs 1.37 lakh/10 gm on firm d",
+      "GOLDMAN SACS EXPECTS 50 BPS RATE HIKE BY RBI IN 2026\n\nSEE BRENT CRUDE $80/BBL IN"
+    ],
+    "representative_links": [
+      "https://x.com/CuanRecehID/status/2036310303453925575",
+      "https://x.com/ETMarkets/status/2036300725358326093",
+      "https://x.com/swing_blaster/status/2036305861459714457"
+    ],
+    "top_entities": [
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-ai-加息-降息",
+    "topic": "黄金/白银/贵金属",
+    "count": 3,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 3
+    },
+    "sources": {
+      "5173/x": 3
+    },
+    "representative_titles": [
+      "#xagusd #silver \n\nXAGUSD 1H: Bearish Channel Intact \nClear lower highs/lows, sel",
+      "https://t.co/MrQ8y3W9qf\n\nGOLD ANALYSIS | XAU/USD\n\nGold falls for the 10th straig",
+      "🚨GOLDMAN SACHS INDIA OUTLOOK\n\nRaises India’s 2026 CPI forecast to 4.6% from 4.2%"
+    ],
+    "representative_links": [
+      "https://x.com/Lisa_Xauusd_FX/status/2036309911534194761",
+      "https://x.com/Tphitxauusd/status/2036304108018344005",
+      "https://x.com/SnehiShah11/status/2036300429563408547"
+    ],
+    "top_entities": [
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-原油-白银-ai-加息-降息",
+    "topic": "黄金/白银/贵金属",
+    "count": 3,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 3
+    },
+    "sources": {
+      "5173/wb": 3
+    },
+    "representative_titles": [
+      "亚太涨的，黄金白银跌，油昨晚涨幅11点，不小了。 ​",
+      "【 #金价持续大蹦极# 现货黄金失守4600美元， #黄金日内重挫160美元# 】 #金银集体大跌# 据21财经，美元持续反弹，金银大跌！4月2日午后，现货黄金",
+      "#金银再迎大涨# 黄金强势拉升，白银狂飙反弹！降息预期+避险情绪+供需缺口三重共振，贵金属行情彻底点燃， 手里有货的笑出声，观望的直呼拍大腿！ L 青虫YN的微"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283543433350969",
+      "https://m.weibo.cn/detail/5283273347695915",
+      "https://m.weibo.cn/detail/5282810530890073"
+    ],
+    "top_entities": [
+      "原油",
+      "白银",
+      "黄金",
+      "AI",
+      "加息",
+      "降息",
+      "贵金属"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-美国-原油-黄金-ai-加息",
+    "topic": "其他观察",
+    "count": 3,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 3
+    },
+    "sources": {
+      "5173/wb": 3
+    },
+    "representative_titles": [
+      "很多人说美国不缺石油，我们缺 这就是个伪命题，美国石油是不缺，但是制造业很缺 如果制造业大国因为石油导致减产，美国是不缺石油，但是别的都缺。没有谁会独善其身 另",
+      "所有人早安，已起床的点赞应一声…… 祝愿点赞和回帖的朋友们，炒股大赚，合家安康，心想事成！🙏🙏🙏昨晚美国股市表现不一，收市道指下跌61点、纳指上涨38点、标普上",
+      "美国专家： 石油美元的终结 协议的内容是美国为海湾合作委员会统治家族提供军事支持。作为交换，统治家族承诺以美元出售石油，并将巨额盈余循环投入美国资产。 这对美国"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283519187126166",
+      "https://m.weibo.cn/detail/5283509826225482",
+      "https://m.weibo.cn/detail/5282326742568682"
+    ],
+    "top_entities": [
+      "美国",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-美联储-原油-黄金-ai-加息",
+    "topic": "黄金/白银/贵金属",
+    "count": 3,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2,
+      "official": 1
+    },
+    "sources": {
+      "5173/wb": 3
+    },
+    "representative_titles": [
+      "#金价银价大跌了# #黄金# #金价# 今天开盘这个金价银价也没跌啊？相反现在的金价银价铂金都比早上开盘的时候涨了不少啊，目前避险情绪高涨，全球主要股市下跌，原",
+      "之前的石油跟黄金是对立关系，石油涨黄金就跌，石油跌黄金就涨。但这个关系马上会迎来终结，未来的剧本是石油和黄金都会涨。黄金中期目标突破1258元/克，石油突破12",
+      "黄金今天又是大跌，纽约黄金一度跌了4个百分点。霍尔木兹海峡继续关下去，全球能源通胀形势会越来越严重，很多央行最后会不得不加息，包括美联储。 股票会好吗？我很怀疑"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282216548500096",
+      "https://m.weibo.cn/detail/5281217758894240",
+      "https://m.weibo.cn/detail/5283349322270095"
+    ],
+    "top_entities": [
+      "美联储",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-原油-黄金-ai-加息-降息",
+    "topic": "油价/地缘冲突",
+    "count": 3,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 3
+    },
+    "sources": {
+      "5173/wb": 3
+    },
+    "representative_titles": [
+      "【WTI原油期货涨幅扩大至12%】 财联社4月2日电，WTI原油期货涨幅扩大至12%，报112.147美元/桶，续创3月9日以来新高。 WTI原油涨幅已经超过布",
+      "原油疯涨，这时候只有时间与结构才能抑制住这种疯狂，关注4.3日 1：40分左右； ​",
+      "本博原创视频内容—— 美元秩序：从布雷顿森林到霍尔木兹的极限测试 回顾分析美元作为全球中心货币的历史，在宏观历史的视角分析为何这场发生在波斯湾的动荡，是一次全球"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283363302934895",
+      "https://m.weibo.cn/detail/5283340481200952",
+      "https://m.weibo.cn/detail/5283010517664834"
+    ],
+    "top_entities": [
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-原油-黄金-加息-降息",
+    "topic": "黄金/白银/贵金属",
+    "count": 3,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 3
+    },
+    "sources": {
+      "5173/bili": 3
+    },
+    "representative_titles": [
+      "向心坍缩 黄金不避险？结合历史看发生条件",
+      "黄金大跌真相：这根本不是避险失效，而是1970年「滞胀剧本」正在精准重演！揭开华尔街疯狂套现黄金背后！",
+      "黄金跌 美元涨 人民币涨（下）|当前宏观经济形势与热点分析"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1KVYzzXE91",
+      "https://www.bilibili.com/video/BV1cVXLB5EKB",
+      "https://www.bilibili.com/video/BV1g59FBHEpy"
+    ],
+    "top_entities": [
+      "原油",
+      "黄金",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-特朗普-伊朗",
+    "topic": "油价/地缘冲突",
+    "count": 3,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "platform_hotspot": 1,
+      "personal_opinion": 2
+    },
+    "sources": {
+      "5173/content_research": 1,
+      "reports/news": 2
+    },
+    "representative_titles": [
+      "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】",
+      "美以伊战争丨炸完大桥特朗普再发威胁，伊朗回击",
+      "特朗普自行宣称：对伊朗战事取得“压倒性胜利”，未来两到三周将开展极其猛烈的打击"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1CCQqBuEt8",
+      "https://news.ifeng.com/loc/timeline/event/8r727OWpK5W",
+      "https://wallstreetcn.com/articles/3769051"
+    ],
+    "top_entities": [
+      "特朗普",
+      "伊朗"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-半导体-封测",
+    "topic": "其他观察",
+    "count": 3,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 3
+    },
+    "sources": {
+      "8001/wechat_curated": 3
+    },
+    "representative_titles": [
+      "恭喜！贵州煜晖电子二期，正式开工",
+      "深圳一项目奠基，总投资13.34 亿！",
+      "中微公司业绩创新高！去年净利润21.1亿元，同比增长30.69%"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/mYA-d4r8K9VUqxfN1V0Tjw",
+      "https://mp.weixin.qq.com/s/JaO7pWdlDrvUeB-lWEXWRA",
+      "https://mp.weixin.qq.com/s/6NRu17LS07-WSxrEYsoXSg"
+    ],
+    "top_entities": [
+      "半导体",
+      "封测"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-fed-加息-降息",
+    "topic": "其他观察",
+    "count": 2,
+    "primary_source_tier": "official",
+    "source_tiers": {
+      "official": 2
+    },
+    "sources": {
+      "5173/x": 2
+    },
+    "representative_titles": [
+      "“We’re Living on Borrowed Time”: National Debt Hits $39 Trillion as Top Diplomat",
+      "Expectations for Fed rate cuts in 2026 are collapsing.\n\nAt the start of the year"
+    ],
+    "representative_links": [
+      "https://x.com/MaureenHSulliv2/status/2036311048941195624",
+      "https://x.com/stockpickz_hq/status/2036310539962323422"
+    ],
+    "top_entities": [
+      "FED",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-特朗普-伊朗-原油-黄金-ai",
+    "topic": "油价/地缘冲突",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2
+    },
+    "sources": {
+      "5173/wb": 2
+    },
+    "representative_titles": [
+      "【原油暴涨，美股脱敏，曙光不远了！（20260403）】以我为主，以不变应万变。  今日看盘超话 #a股# #美以伊最新局势# #伊朗强硬回应特朗普# O 原",
+      "昨夜美股走势，已经脱敏了，原油大涨在定价局势升级，股市却不信 纳指翻红，最强的，还是那个方向。 #伊朗强硬回应特朗普# #美以伊最新局势# ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283511393061262",
+      "https://m.weibo.cn/detail/5283506907252397"
+    ],
+    "top_entities": [
+      "特朗普",
+      "伊朗",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-川普-原油-黄金-ai-加息",
+    "topic": "其他观察",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2
+    },
+    "sources": {
+      "5173/wb": 2
+    },
+    "representative_titles": [
+      "早！ 昨天三大指数全天低开低走集体收跌，深指和创指都跌穿了前低，探底过程还没结束。沪指跌得少，全靠银行护盘撑着。媒体把锅全甩给川普，可人家涨了咱没跟上，跌起来倒",
+      "上午盘市场在川普激进发言下转入避险，避险资产较强，超4200+下跌。 昨晚的盘面都还挺不错，抵不过市场消息的影响。盘面上最值得关注的是医药，近期连续放量，成为近"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283519187126176",
+      "https://m.weibo.cn/detail/5283221459960492"
+    ],
+    "top_entities": [
+      "川普",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-中国-原油-黄金-ai-加息",
+    "topic": "其他观察",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2
+    },
+    "sources": {
+      "5173/wb": 2
+    },
+    "representative_titles": [
+      "#南方暴雨冰雹齐上线# 强对流天气高发，威胁生命财产安全，我们该如何避险保平安？↓↓听听首席 @涛淘风云 怎么说。 #首席说天气# L 中国气象局的微博视频 ​",
+      "#优思益# 这件事太炸裂了，涉及中国千万甚至上亿消费者，可以说这是多年来中国社会一起制假造假卖假全链条的大案！ 优思益事件暴露了跨境保健品监管洼地、平台审核失灵"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282206033380930",
+      "https://m.weibo.cn/detail/5283345644652208"
+    ],
+    "top_entities": [
+      "中国",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-特朗普-原油-黄金-ai-加息",
+    "topic": "油价/地缘冲突",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2
+    },
+    "sources": {
+      "5173/wb": 2
+    },
+    "representative_titles": [
+      "特朗普讲话结束后，布伦特原油日内已经涨了8%了。 ​",
+      "原油又暴涨，特朗普又搞什么幺娥子。 ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283333858659081",
+      "https://m.weibo.cn/detail/5283265326878585"
+    ],
+    "top_entities": [
+      "特朗普",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-中国-原油-黄金-加息-降息",
+    "topic": "其他观察",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2
+    },
+    "sources": {
+      "5173/bili": 2
+    },
+    "representative_titles": [
+      "中国停止成品油出口影响有多大",
+      "中国银行、建设银行、民生银行、工商银行，发布风险提示"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1eBwpzkErp",
+      "https://www.bilibili.com/video/BV11SQCBbEiL"
+    ],
+    "top_entities": [
+      "中国",
+      "原油",
+      "黄金",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "日本-使馆-外交-日本",
+    "topic": "日本/使馆/外交",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2
+    },
+    "sources": {
+      "5173/content_research": 2
+    },
+    "representative_titles": [
+      "2026年日本又有士兵走丢：但是闯入老中使馆？",
+      "一名自称为日本自卫队现役官员闯入我大使馆威胁杀人"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV154QrBqEXG",
+      "https://www.bilibili.com/video/BV17EQzBNEBB"
+    ],
+    "top_entities": [
+      "日本"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-eia-ai",
+    "topic": "其他观察",
+    "count": 2,
+    "primary_source_tier": "official",
+    "source_tiers": {
+      "official": 2
+    },
+    "sources": {
+      "8001/wechat_curated": 2
+    },
+    "representative_titles": [
+      "上海的房子见底了吗？",
+      "桥水也亏钱了？"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/1fcjjswXq2u2mkaAhK1qQg",
+      "https://mp.weixin.qq.com/s/aiGv5elqRiUUiQCZvTyV5g"
+    ],
+    "top_entities": [
+      "EIA",
+      "AI"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "ai工具-工作流",
+    "topic": "AI工具/工作流",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2
+    },
+    "sources": {
+      "8001/wechat_curated": 2
+    },
+    "representative_titles": [
+      "你的下一只龙虾何必是龙虾（OpenClaw）？",
+      "今天开始除了养龙虾（OpenClaw）还要养\"爱马仕\"（Hermes Agent）！记性好，Skills还能自我进化！"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/3fBtqg2rKmi-1T3-1i0dyQ",
+      "https://mp.weixin.qq.com/s/7E8Vxp54CfIH6J-szYfVVA"
+    ],
+    "top_entities": [],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-fed-ai-加息-降息",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "official",
+    "source_tiers": {
+      "official": 1
+    },
+    "sources": {
+      "5173/x": 1
+    },
+    "representative_titles": [
+      "@monetaryfungi @GoodnessGlenda @LadyKGCT @Ghostzapper0406 @DemocracyDocket Yes, "
+    ],
+    "representative_links": [
+      "https://x.com/grok/status/2036310027649118496"
+    ],
+    "top_entities": [
+      "FED",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-openai-openai-ai-加息-降息",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/x": 1
+    },
+    "representative_titles": [
+      "9984 CFO flags potential to exceed 25% LTV ratio, testing leverage limits for it"
+    ],
+    "representative_links": [
+      "https://x.com/caleb_barn_bull/status/2036267497830183031"
+    ],
+    "top_entities": [
+      "OpenAI",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-特朗普-原油-黄金-ai-加息",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "日线要起主升浪的态势，如果不是特朗普估计早就上去150了。 ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283324912209405"
+    ],
+    "top_entities": [
+      "特朗普",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-中国-伊朗-原油-油价-ai",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "中国经济怎么又赢了？是的，真赢！ 近期，美以对伊朗军事侵略行动，彻底搅动了全球原油市场，国际油价一路飙升并成功突破每桶百美元大关。回溯这场风波的源头，美国频频针"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283496542865433"
+    ],
+    "top_entities": [
+      "中国",
+      "伊朗",
+      "美国",
+      "原油",
+      "油价",
+      "黄金",
+      "AI",
+      "加息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-英伟达-原油-油价-ai-加息",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "#东方财富# #股票# 【全球市场：美股三大指数涨跌不一 卫星通信概念股大涨 国际油价涨近12%】【全球市场】1、道指跌0.13%，纳指涨0.18%，标普500"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283533432031262"
+    ],
+    "top_entities": [
+      "英伟达",
+      "原油",
+      "油价",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-中东-伊朗-原油-黄金-ai",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "#东方财富# #股票# 【凌晨大逆转！伊朗：发动导弹袭击！霍尔木兹海峡传来最新消息】霍尔木兹海峡博弈主导市场情绪。隔夜美股市场上演大逆转，纳指盘初一度大跌超2%"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283533616581718"
+    ],
+    "top_entities": [
+      "中东",
+      "伊朗",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-美联储-中东-原油-黄金-ai",
+    "topic": "黄金/白银/贵金属",
+    "count": 1,
+    "primary_source_tier": "official",
+    "source_tiers": {
+      "official": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "#黄金又突然暴涨# 伦敦金现一举冲破4660美元/盎司，国内金价也同步飙至1035元/克。美联储鸽派信号点燃降息预期，美元与美债收益率双跌，黄金持有成本骤降。叠"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282790522227762"
+    ],
+    "top_entities": [
+      "美联储",
+      "中东",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "宽松",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-美联储-原油-油价-ai-加息",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "茅庐锦囊（26年3月15日直播） 1. 避险： 1. 短期：有色，包括铜，黄线只等一根儿，比如某铜，如果破了的话，短期该收就收了。有色短期承压，是因为石油价格高"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5277042213389173"
+    ],
+    "top_entities": [
+      "美联储",
+      "原油",
+      "油价",
+      "铜",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "日本-使馆-外交-特朗普-日本-原油-黄金-ai",
+    "topic": "日本/使馆/外交",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "特朗普的一句话，直接打崩全球股市。今天日本股市直接崩了1200点，日经指数都快跌出心理阴影了。 市场就像被按了暂停键，资金疯狂往避险资产跑。现在这情况，韭菜们瑟"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283281350428791"
+    ],
+    "top_entities": [
+      "特朗普",
+      "日本",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-特朗普-原油-黄金-ai-加息",
+    "topic": "黄金/白银/贵金属",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "早盘时间，特朗普一张嘴，黄金就狂跌150美金。  黄金超话 ​​​​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283189679719266"
+    ],
+    "top_entities": [
+      "特朗普",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-美联储-中东-原油-白银-ai",
+    "topic": "黄金/白银/贵金属",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "黄金白银突发跳水！暴跌3%-6%，抄底需谨慎 4月2日午后，贵金属大幅跳水，现货黄金跌破4600美元，跌幅超3%，白银暴跌6%。国内金饰价格同步下调，部分品牌单"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283317165329198"
+    ],
+    "top_entities": [
+      "美联储",
+      "中东",
+      "原油",
+      "白银",
+      "贵金属",
+      "黄金",
+      "AI",
+      "加息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-原油-天然气-ai-加息-降息",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "中石油董事长说，公司90%的原油天然气不通过霍尔木兹海峡进口！ 那我就纳闷了，既然不走霍尔木兹海峡，为什么还要涨价？ ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283000377150364"
+    ],
+    "top_entities": [
+      "原油",
+      "天然气",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-特朗普-伊朗-原油-黄金-ai",
+    "topic": "黄金/白银/贵金属",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "洪灝：特朗普讲完，市场无语了 刚刚，特朗普发表电视黄金时段讲话，全球市场翘首以待。演讲中，特朗普宣称战争“已经非常接近完成 … 我们将会很快完成任务”。然而，在"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283224758785021"
+    ],
+    "top_entities": [
+      "特朗普",
+      "伊朗",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-中东-原油-黄金-ai-加息",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "美股连续第二天反弹，力度有所减弱，还是得看中东局势有无实质性变化。 ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283147874566292"
+    ],
+    "top_entities": [
+      "中东",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "半导体-国产芯片-中东-美国-原油-黄金-ai",
+    "topic": "半导体/国产芯片",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "全球市场：美股三大指数集体收涨 纳指涨超1% 存储、铝业股大涨 芯片、存储概念股走高，西部数据涨超10%，闪迪涨逾9%，美光科技、英特尔涨超8%，应用材料、AM"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283162955712298"
+    ],
+    "top_entities": [
+      "中东",
+      "美国",
+      "原油",
+      "黄金",
+      "AI",
+      "芯片",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-马斯克-原油-黄金-ai-加息",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "美股马斯克概念涨幅第一。 ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283163803749791"
+    ],
+    "top_entities": [
+      "马斯克",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-特朗普-伊朗-原油-油价-ai",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "就在半个多小时前，开盘大跌的美股突然翻红，油价重新下跌。原因是伊朗方面正式表示，伊朗目前正与阿曼正在起草一项霍尔木兹海峡通行协议，一下子扭转了市场情绪。也就是说"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283398622119792"
+    ],
+    "top_entities": [
+      "特朗普",
+      "伊朗",
+      "原油",
+      "油价",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-伊朗-美国-原油-黄金-ai",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "美媒：世界不再迷信美元，美国对伊朗这一仗，倒逼出了石油人民币 #视频星计划# L 孤烟暮蝉的微博视频 ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5281738710582928"
+    ],
+    "top_entities": [
+      "伊朗",
+      "美国",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-国务院-原油-黄金-ai-加息",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "official",
+    "source_tiers": {
+      "official": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "#优思益问题被调查# 【国务院食安办 市场监管总局 海关总署部署核查跨境电商进口“优思益”保健品违规营销行为】 #优思益# 针对媒体报道的跨境电商进口“优思益”"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282953544077894"
+    ],
+    "top_entities": [
+      "国务院",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-美联储-原油-黄金-ai-加息",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "美联储理事米兰称，美联储可在一年内逐步降息一个百分点。 ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282292844462243"
+    ],
+    "top_entities": [
+      "美联储",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-鲍威尔-原油-黄金-ai-加息",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "平时买不到美债的时候用30年国债代替也可以，但是面对系统性危机爆发时（比如20年的疫情）美债的弹性要相对更好。另外现在美债和美元汇率都在低位，正是合适买入的时候"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283035500514725"
+    ],
+    "top_entities": [
+      "鲍威尔",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-原油-贵金属-ai-加息-降息",
+    "topic": "黄金/白银/贵金属",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "今年贵金属也变成了风险资产，确实少见。 ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283297946241594"
+    ],
+    "top_entities": [
+      "原油",
+      "贵金属",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "宏观-市场情绪-中东-原油-黄金-ai-加息",
+    "topic": "宏观/市场情绪",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "有人担忧A股，在3-5月这个阶段，大盘指数确实不会太好，主要还是担心美伊以走到极端情况下，带给全球的风险，比如某个时刻，可能是夺取核材料，炸核电站，或者威胁扔核"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283257705040395"
+    ],
+    "top_entities": [
+      "中东",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-川普-特朗普-伊朗-美国-原油",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "川普与伊朗总统联手“画K线”，美股暴力反弹 一觉醒来，美伊局势出现戏剧性反转。 川普与伊朗总统佩泽希齐扬罕见同时释放“停火”预期，市场情绪瞬间从“避险”切回“狂"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282799001273129"
+    ],
+    "top_entities": [
+      "川普",
+      "特朗普",
+      "伊朗",
+      "美国",
+      "原油",
+      "黄金",
+      "AI",
+      "停火"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "日本-使馆-外交-日本央行-日本-原油-黄金-ai",
+    "topic": "日本/使馆/外交",
+    "count": 1,
+    "primary_source_tier": "official",
+    "source_tiers": {
+      "official": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "日本央行顶不住了。 悄悄买入日本长债。 机构预计规模达到5000-8000亿日元。 也就是说，日本人在通过自我消耗来托市。 但是这样拖不了几天。 日元只会越来越"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282165689420576"
+    ],
+    "top_entities": [
+      "日本央行",
+      "日本",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "ai工具-工作流-openai-openai-原油-黄金-ai",
+    "topic": "AI工具/工作流",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "OpenAI 目前正面临严峻的资本压力，其合同债务规模已高达 4360 亿美元，而年度收入仅约 250 亿美元，私募股权机构普遍认为这一债务水平已难以偿还。 在"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282648378314581"
+    ],
+    "top_entities": [
+      "OpenAI",
+      "原油",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-中东-美国-ai-加息-降息",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "representative_titles": [
+      "中东战争影响了美元霸权。 据大西洋分析中心的报告称，CIPS网络上每日以人民币计的交易量在6000至7500亿元之间；但是，到了3月中下旬，突然飙升至约9400"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283156741850412"
+    ],
+    "top_entities": [
+      "中东",
+      "美国",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-伊朗",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/xhs": 1
+    },
+    "representative_titles": [
+      "最新伊朗禁播电影，揭开穷人恒穷的本质"
+    ],
+    "representative_links": [
+      "https://www.xiaohongshu.com/explore/647da8ce000000002700181c?xsec_token=ABeLGP-ks9jGZj3D3NM-wEn58kWJttFhkfq9raAfrm1Jk=&xsec_source=pc_feed"
+    ],
+    "top_entities": [
+      "伊朗"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-fed",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "official",
+    "source_tiers": {
+      "official": 1
+    },
+    "sources": {
+      "5173/xhs": 1
+    },
+    "representative_titles": [
+      "Joe‘s 方小宝🪲"
+    ],
+    "representative_links": [
+      "https://www.xiaohongshu.com/explore/64c8c3e2000000001700ea7f?xsec_token=ABqTibgiC7dKFrgi-l4qUCFWOFrTZa1cK427gkoHxl2c0=&xsec_source=pc_feed"
+    ],
+    "top_entities": [
+      "FED"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-ai-反弹",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "representative_titles": [
+      "让全体资产下跌的“流动性黑洞”【下班聊聊】 在危机早期往往会出现所有资产都在集中杀跌的情况，我称之为流动性黑洞。这是怎么回事，后面价格会反弹吗？【下班聊聊】20260202 #零距离看懂财经 #投资 #交易 #股票 #金融危机"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7602288460480728347"
+    ],
+    "top_entities": [
+      "AI"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-白银-黄金-ai",
+    "topic": "黄金/白银/贵金属",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "representative_titles": [
+      "既然黑天鹅无法预测。就建个强韧系统。塔勒布《黑天鹅》 #金融常识 #黄金#白银"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7623714032139112774"
+    ],
+    "top_entities": [
+      "白银",
+      "黄金",
+      "AI"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-欧洲-ai",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "representative_titles": [
+      "《黑天鹅》 在发现澳大利亚之前，欧洲人认为所有天鹅都是白的。这是几千年的经验总结，看起来无可辩驳。直到有一天，他们在澳大利亚看到了黑天鹅。一只黑天鹅的出现，就推翻了几千年的认知。这就是黑天鹅事件的特征，极其罕见，影响巨大，事后看来好像有道理，但事前根本预测不到。#好书推荐 #好书分享 #读书 #黑天鹅"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7553264111895825727"
+    ],
+    "top_entities": [
+      "欧洲",
+      "AI"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "ai工具-工作流-ai-关税",
+    "topic": "AI工具/工作流",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "representative_titles": [
+      "一文深度解析【年末经济】关税博弈×AI泡沫×联储迷阵，你的钱袋子该如何布防？\n #唐子棋  #经济分析  #燃起来了大国重器  #财经  #国际局势"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7582133726763601161"
+    ],
+    "top_entities": [
+      "AI",
+      "关税"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "宏观-市场情绪-fed-ai",
+    "topic": "宏观/市场情绪",
+    "count": 1,
+    "primary_source_tier": "official",
+    "source_tiers": {
+      "official": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "representative_titles": [
+      "股票干货 炒股养家：情绪的本质 #股票干货 #股票 #股民"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7577690053946641698"
+    ],
+    "top_entities": [
+      "FED",
+      "AI"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-特朗普-黄金-ai",
+    "topic": "黄金/白银/贵金属",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "representative_titles": [
+      "特朗普讲话后黄金暴跌！这个被用了3次的收割剧本，你必须看穿,流动性真空与数据冲击下，仓位管理比方向判断更关键！#黄金 #财经 #金融 #金融常识  #国际局势"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7624081623743633295"
+    ],
+    "top_entities": [
+      "特朗普",
+      "黄金",
+      "AI"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-美联储-油价-加息-降息-加息",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "representative_titles": [
+      "要加息了？华尔街警告油价失控风险 美联储加息概率飙升，#美股 步入回调。#投资 #财经 #全球创作者计划 #油价"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7622091460707454223"
+    ],
+    "top_entities": [
+      "美联储",
+      "油价",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-伊朗-美国-黄金-ai-加息",
+    "topic": "黄金/白银/贵金属",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "representative_titles": [
+      "周一黄金预测。美国要加息了，伊朗又把霍尔木兹海峡关了，这局势感觉不简单。今晚要是黄金上涨，建议大家赶紧下车！我判断周一黄金必定大跌，早上可能会低开高走，但之后肯定会深度回调，到时候就是抄底的好时机。大家觉得这波分析靠谱吗？"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7621946441733402111"
+    ],
+    "top_entities": [
+      "伊朗",
+      "美国",
+      "黄金",
+      "AI",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-原油-贵金属-加息-降息",
+    "topic": "黄金/白银/贵金属",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "representative_titles": [
+      "【宏观推演3月Plus】贵金属避险属性消失，当心A股信念崩塌"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV18aXpB5EFc"
+    ],
+    "top_entities": [
+      "原油",
+      "贵金属",
+      "黄金",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "黄金-白银-贵金属-原油-白银-加息-降息",
+    "topic": "黄金/白银/贵金属",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "representative_titles": [
+      "2026.3.26 黄金白银原油技术分析"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1guXHB3EcY"
+    ],
+    "top_entities": [
+      "原油",
+      "白银",
+      "黄金",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-中东-原油-黄金-加息-降息",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "representative_titles": [
+      "中东原油对全球能源格局的影响"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1rH9ABVE8q"
+    ],
+    "top_entities": [
+      "中东",
+      "原油",
+      "黄金",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-川普-原油-黄金-加息-降息",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "representative_titles": [
+      "美股：好像又被川普耍了。特斯拉季度开门黑，血亏。【2026-04-02】"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1Qy9NBKEpa"
+    ],
+    "top_entities": [
+      "川普",
+      "原油",
+      "黄金",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-原油-黄金-加息-降息-反弹",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "representative_titles": [
+      "美股反弹又下跌 | 市场正在发生什么？ | 这几点很关键，下一步该怎么走？"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1zH9ABVEU7"
+    ],
+    "top_entities": [
+      "原油",
+      "黄金",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-特朗普-原油-黄金-加息-降息",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "representative_titles": [
+      "美股 多头绝地反击！这几股抄底正当时！NVDA多头又回来了！特朗普发出最后通牒！TSLA交付不及预期，暴跌！光通信继续领涨！"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV19z9NBzEh1"
+    ],
+    "top_entities": [
+      "特朗普",
+      "原油",
+      "黄金",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-特朗普-欧洲-美国-原油-油价",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "representative_titles": [
+      "4.3: 特朗普言论导致油价飙升、美国施压欧洲疏通海峡、中央表态应遏制盲目贸易顺差、A股港股美股金价收评及展望"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1kE9ABLEb1"
+    ],
+    "top_entities": [
+      "特朗普",
+      "欧洲",
+      "美国",
+      "原油",
+      "油价",
+      "黄金",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-川普-伊朗-原油-黄金-加息",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "representative_titles": [
+      "4月3日 川普说要把伊朗打回石器时代，美股直接下跌！"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV16f9cBgESR"
+    ],
+    "top_entities": [
+      "川普",
+      "伊朗",
+      "原油",
+      "黄金",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {
+      "likely_repost": 1
+    }
+  },
+  {
+    "cluster_id": "其他观察-美国-原油-黄金-加息-降息",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "representative_titles": [
+      "全球货币系列之美国美元：美元你见过吗，全套美元介绍及欣赏"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1tN4y1G7gP"
+    ],
+    "top_entities": [
+      "美国",
+      "原油",
+      "黄金",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-中东-中国-原油-黄金-加息",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "representative_titles": [
+      "[配音] 佩佩·埃斯科巴：世界正面临三战风险，中国需高度警惕"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1rFPozWEDG"
+    ],
+    "top_entities": [
+      "中东",
+      "中国",
+      "以色列",
+      "伊朗",
+      "俄罗斯",
+      "美国",
+      "原油",
+      "黄金"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-原油-铜-加息-降息",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "representative_titles": [
+      "金融职场求职👉深扒金融风控岗（业务条线&工作内容&薪酬差异）"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1aX4y1X7zt"
+    ],
+    "top_entities": [
+      "原油",
+      "铜",
+      "黄金",
+      "加息",
+      "降息"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-以色列-伊朗-油价",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "representative_titles": [
+      "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1WJQBByE12"
+    ],
+    "top_entities": [
+      "以色列",
+      "伊朗",
+      "美国",
+      "油价"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-伊朗-原油-油价",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "representative_titles": [
+      "伊朗战争，和全球能源格局"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1QGXABxEbq"
+    ],
+    "top_entities": [
+      "伊朗",
+      "原油",
+      "油价"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-伊朗-原油-停火-停火",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "representative_titles": [
+      "懂王狂画k线！精准抛售600万桶原油，伊朗提停火条件！"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1RWQrBBEtF"
+    ],
+    "top_entities": [
+      "伊朗",
+      "原油",
+      "停火"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-特朗普-伊朗-油价",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "representative_titles": [
+      "特朗普一个帖子让国际油价闪崩13%，特朗普称同伊朗对话完美，伊朗否认，一顿分析猛如虎，涨跌全看特朗普"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1EDQqBvEQs"
+    ],
+    "top_entities": [
+      "特朗普",
+      "伊朗",
+      "油价"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-特朗普-伊朗-美国",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "representative_titles": [
+      "特朗普又“TACO”？美国为何推迟“最后通牒”？"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1MRQBBDE1A"
+    ],
+    "top_entities": [
+      "特朗普",
+      "伊朗",
+      "美国"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-特朗普-伊朗-美国",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "representative_titles": [
+      "特朗普：对话“完美”，是“伊朗主动打来电话”"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1VuXABbEFB"
+    ],
+    "top_entities": [
+      "特朗普",
+      "伊朗",
+      "美国"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-ai-算力",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "sources": {
+      "reports/news": 1
+    },
+    "representative_titles": [
+      "工信部首提“算力银行”“算力超市” 降低中小企业用算门槛"
+    ],
+    "representative_links": [
+      "https://www.cls.cn/detail/2333703"
+    ],
+    "top_entities": [
+      "AI",
+      "算力"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "油价-地缘冲突-原油",
+    "topic": "油价/地缘冲突",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "sources": {
+      "reports/news": 1
+    },
+    "representative_titles": [
+      "霍尔木兹海峡主导市场情绪，WTI原油一度飙升15%，标普、纳指惊险收涨"
+    ],
+    "representative_links": [
+      "https://wallstreetcn.com/articles/3769052"
+    ],
+    "top_entities": [
+      "原油"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "半导体-国产芯片-半导体-封测",
+    "topic": "半导体/国产芯片",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "8001/wechat_curated": 1
+    },
+    "representative_titles": [
+      "新进展！南芯半导体年产40亿颗先进半导体芯片封测项目"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/Hpt3aS2ITdZMp2LBHV1Ehw"
+    ],
+    "top_entities": [
+      "半导体",
+      "封测",
+      "芯片"
+    ],
+    "noise_tags": {}
+  },
+  {
+    "cluster_id": "其他观察-英伟达-中东-伊朗-人工智能-半导体",
+    "topic": "其他观察",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "sources": {
+      "8001/wechat_curated": 1
+    },
+    "representative_titles": [
+      "英伟达、英特尔等成“打击目标”！警告员工：立即撤离保命！"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/OJYVRhhfMMvhk_kQFpae2w"
+    ],
+    "top_entities": [
+      "英伟达",
+      "中东",
+      "伊朗",
+      "美国",
+      "人工智能",
+      "半导体",
+      "封测"
+    ],
+    "noise_tags": {}
+  }
+]

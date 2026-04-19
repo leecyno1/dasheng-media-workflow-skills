@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "id": "2026-04-11_085602:topic-japan-embassy-incident-analysis:reasoning",
+    "object_type": "ReasoningSheet",
+    "run_id": "2026-04-11_085602",
+    "version": "1.0.0",
+    "status": "ready",
+    "generated_by": "build_stage3_draft.py",
+    "input_digest": "topic-japan-embassy-incident-analysis::日本士兵闯使馆事件背后:个体极端行为还是系统性问题",
+    "upstream_ids": [
+      "topic-japan-embassy-incident-analysis"
+    ],
+    "doc_refs": [],
+    "created_at": "2026-04-11T09:38:10.715417+08:00",
+    "updated_at": "2026-04-11T09:38:10.715417+08:00"
+  },
+  "topic_id": "topic-japan-embassy-incident-analysis",
+  "title": "日本士兵闯使馆事件背后:个体极端行为还是系统性问题",
+  "core_thesis": "日本自卫队士兵闯入中国使馆威胁杀人,表面是个体行为,实质反映了日本国内右翼思潮抬头和军队管理失控的系统性风险",
+  "editor_note": "",
+  "selection_reason": "",
+  "claims": [
+    {
+      "claim_id": "topic-japan-embassy-incident-analysis-claim-01",
+      "section_id": "section-01",
+      "statement": "日本自卫队近年来的纪律事故统计和趋势",
+      "counterpoint": "这是继'士兵走丢'后日本自卫队再次出现严重事故,且发生在中日关系敏感时期。同时社交媒体上日本右翼大规模传播历史修正主义内容,两者形成呼应。这不是孤立的外交事件,而是日本国内政治生态变化的信号。",
+      "missing_proof": [
+        "日本自卫队近年来的纪律事故统计和趋势",
+        "日本国内右翼势力的组织形式和影响力变化"
+      ],
+      "chart_need": null
+    },
+    {
+      "claim_id": "topic-japan-embassy-incident-analysis-claim-02",
+      "section_id": "section-02",
+      "statement": "日本国内右翼势力的组织形式和影响力变化",
+      "counterpoint": "这是继'士兵走丢'后日本自卫队再次出现严重事故,且发生在中日关系敏感时期。同时社交媒体上日本右翼大规模传播历史修正主义内容,两者形成呼应。这不是孤立的外交事件,而是日本国内政治生态变化的信号。",
+      "missing_proof": [
+        "日本自卫队近年来的纪律事故统计和趋势",
+        "日本国内右翼势力的组织形式和影响力变化"
+      ],
+      "chart_need": null
+    },
+    {
+      "claim_id": "topic-japan-embassy-incident-analysis-claim-03",
+      "section_id": "section-03",
+      "statement": "社交媒体上历史修正主义内容的传播数据和特征",
+      "counterpoint": "这是继'士兵走丢'后日本自卫队再次出现严重事故,且发生在中日关系敏感时期。同时社交媒体上日本右翼大规模传播历史修正主义内容,两者形成呼应。这不是孤立的外交事件,而是日本国内政治生态变化的信号。",
+      "missing_proof": [
+        "日本自卫队近年来的纪律事故统计和趋势",
+        "日本国内右翼势力的组织形式和影响力变化"
+      ],
+      "chart_need": null
+    }
+  ],
+  "evidence_items": [],
+  "structure_contract": {
+    "max_primary_sections": 4,
+    "inherit_from_topic_card": true,
+    "source_of_truth": "selected_topics.json + topic_cards.json"
+  }
+}

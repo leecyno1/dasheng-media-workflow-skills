@@ -1,0 +1,353 @@
+{
+  "isok": true,
+  "days": 1,
+  "effective_days": 1,
+  "task_group": "content_research_ai_enhanced",
+  "source": "web_search_deep_analysis",
+  "platforms": ["web_search"],
+  "total_candidates": 10,
+  "generation_method": "AI-driven web search + deep topic curation",
+  "generation_time": "2026-04-05T07:30:00+08:00",
+  "items": [
+    {
+      "note_id": "WS_2026_0405_001",
+      "platform": "web_search",
+      "title": "AI投资从盲目信仰到严格数字：华尔街如何重新定义AI变现能力",
+      "content": "2026年Q1，全球AI投资达2970亿美元，但华尔街开始惩罚"只有承诺没有结果"的公司。AI货币化鸿沟（AI Monetization Gap）成为新的投资分水岭：科技巨头7000亿美元AI投入如何转化为实际收入？哪些公司正在跨越鸿沟，哪些仍在烧钱？",
+      "url": "https://www.financialcontent.com/article/barchart-2026-4-4-ai-stocks-are-exiting-an-era-of-blind-faith-and-entering-a-year-of-strict-numbers-what-investors-need-to-watch-this-earnings-season",
+      "note_type": "deep_analysis",
+      "task_group": "content_research_ai_enhanced",
+      "created_at": "2026-04-05 07:30:00",
+      "fetched_at": "2026-04-05 07:30:00",
+      "score": 92.5,
+      "score_breakdown": {
+        "heat_score": 85.0,
+        "trend_score": 95.0,
+        "depth_score": 90.0,
+        "uniqueness_score": 95.0,
+        "evidence_quality": 92.0
+      },
+      "metrics": {
+        "timeliness": "Q1 2026财报季关键节点",
+        "data_richness": "2970亿美元投资数据，7000亿美元科技巨头投入",
+        "angle_uniqueness": "从盲目信仰到数字验证的范式转变",
+        "reader_value": "投资决策框架，AI公司估值新标准",
+        "longevity": "中期（3-6个月）- AI变现是持续话题"
+      },
+      "evidence_sources": [
+        "Financial Content - AI Stocks earnings analysis",
+        "Market Minute - AI Monetization Gap report",
+        "Q1 2026 VC funding data"
+      ],
+      "recommended_framework": "对比型（Comparison）",
+      "recommended_strategy": "密度强化（Density Boost）",
+      "target_audience": "AI投资者、科技行业分析师、创业者"
+    },
+    {
+      "note_id": "WS_2026_0405_002",
+      "platform": "web_search",
+      "title": "1.2万亿美元AI并购狂潮：Q1 2026企业巨头如何重塑全球产业版图",
+      "content": "2026年Q1全球M&A活动突破1.2万亿美元历史纪录，AI驱动的"战略复兴"正在改写产业规则。亚马逊、谷歌、微软、Meta、Oracle五大巨头如何通过并购构建AI护城河？哪些细分领域成为收购热点？中小企业如何在巨头围猎中找到生存空间？",
+      "url": "https://markets.financialcontent.com/wral/article/marketminute-2026-4-2-ai-boom-propels-global-m-and-a-to-record-12-trillion-in-q1-2026-defying-geopolitical-headwinds",
+      "note_type": "deep_analysis",
+      "task_group": "content_research_ai_enhanced",
+      "created_at": "2026-04-05 07:30:00",
+      "fetched_at": "2026-04-05 07:30:00",
+      "score": 90.0,
+      "score_breakdown": {
+        "heat_score": 88.0,
+        "trend_score": 92.0,
+        "depth_score": 88.0,
+        "uniqueness_score": 90.0,
+        "evidence_quality": 95.0
+      },
+      "metrics": {
+        "timeliness": "Q1 2026数据刚发布",
+        "data_richness": "1.2万亿美元M&A数据，五大科技巨头具体动作",
+        "angle_uniqueness": "从并购视角看AI产业整合",
+        "reader_value": "产业趋势洞察，投资机会识别",
+        "longevity": "中期（3-6个月）- 并购整合持续进行"
+      },
+      "evidence_sources": [
+        "Market Minute - Q1 2026 M&A record report",
+        "Financial Content - AI Land Grab analysis",
+        "Global M&A transaction data"
+      ],
+      "recommended_framework": "热点解读型（Hot-topic）",
+      "recommended_strategy": "角度发现（Angle Discovery）",
+      "target_audience": "企业战略决策者、投资银行家、产业分析师"
+    },
+    {
+      "note_id": "WS_2026_0405_003",
+      "platform": "web_search",
+      "title": "中国十五五规划开局：4.5%-5%增长目标背后的结构性转型信号",
+      "content": "2026年作为十五五规划（2026-2030）开局之年，中国设定4.5%-5%的GDP增长目标，从追求速度转向结构完整性。"新需求引导新供应，新供应创造新需求"的动态平衡如何实现？AI整合、消费升级、供应链重组三大主线如何重塑中国经济？外资如何把握政策窗口期？",
+      "url": "http://www.bjreview.com/Opinion/Pacific_Dialogue/202603/t20260330_800434075.html",
+      "note_type": "deep_analysis",
+      "task_group": "content_research_ai_enhanced",
+      "created_at": "2026-04-05 07:30:00",
+      "fetched_at": "2026-04-05 07:30:00",
+      "score": 88.0,
+      "score_breakdown": {
+        "heat_score": 82.0,
+        "trend_score": 90.0,
+        "depth_score": 92.0,
+        "uniqueness_score": 85.0,
+        "evidence_quality": 90.0
+      },
+      "metrics": {
+        "timeliness": "十五五规划刚启动",
+        "data_richness": "官方GDP目标，三大政策主线",
+        "angle_uniqueness": "从速度到结构的范式转变",
+        "reader_value": "政策解读，投资方向指引",
+        "longevity": "长期（6-12个月）- 五年规划持续影响"
+      },
+      "evidence_sources": [
+        "Beijing Review - 15th Five-Year Plan analysis",
+        "People's Daily - Policy interpretation",
+        "China Briefing - GDP target breakdown"
+      ],
+      "recommended_framework": "热点解读型（Hot-topic）",
+      "recommended_strategy": "密度强化（Density Boost）",
+      "target_audience": "跨国企业中国区负责人、政策研究者、投资者"
+    },
+    {
+      "note_id": "WS_2026_0405_004",
+      "platform": "web_search",
+      "title": "全球经济增长放缓至2.9%：AI投资如何对冲贸易风险与地缘政治不确定性",
+      "content": "OECD预测2026年全球经济增长从3.2%放缓至2.9%，但AI投资正在改写这一叙事。科技支出首次突破6万亿美元，AI驱动的创新如何抵消贸易紧张、高债务负担、地缘冲突的负面影响？哪些国家和行业将成为赢家？普通投资者如何配置资产？",
+      "url": "https://www.dw.com/en/world-economy-challenges-in-2026-ai-bubble-trade-tensions-high-debt-burdens/a-75238039",
+      "note_type": "deep_analysis",
+      "task_group": "content_research_ai_enhanced",
+      "created_at": "2026-04-05 07:30:00",
+      "fetched_at": "2026-04-05 07:30:00",
+      "score": 87.0,
+      "score_breakdown": {
+        "heat_score": 80.0,
+        "trend_score": 88.0,
+        "depth_score": 90.0,
+        "uniqueness_score": 88.0,
+        "evidence_quality": 88.0
+      },
+      "metrics": {
+        "timeliness": "2026年全球经济展望",
+        "data_richness": "OECD增长预测，6万亿美元IT支出",
+        "angle_uniqueness": "AI投资作为经济对冲工具",
+        "reader_value": "宏观经济理解，资产配置策略",
+        "longevity": "中长期（6-9个月）- 全年经济主题"
+      },
+      "evidence_sources": [
+        "OECD - Global economic outlook 2026",
+        "Deloitte - Economic forecast",
+        "DW - World economy challenges analysis"
+      ],
+      "recommended_framework": "对比型（Comparison）",
+      "recommended_strategy": "角度发现（Angle Discovery）",
+      "target_audience": "宏观经济分析师、资产管理者、企业CFO"
+    },
+    {
+      "note_id": "WS_2026_0405_005",
+      "platform": "web_search",
+      "title": "欧盟碳交易体系面临最大挑战：高碳价如何削弱欧洲工业竞争力",
+      "content": "欧盟碳排放交易体系（EU ETS）正面临成立以来最大考验：碳价飙升导致欧洲企业警告竞争力受损。碳中和目标与产业竞争力如何平衡？欧洲制造业是否会加速外迁？中国、美国如何利用这一窗口期？全球碳市场格局将如何演变？",
+      "url": "https://www.spglobal.com/en/research-insights/market-insights/daily-update-apr-3-2026",
+      "note_type": "deep_analysis",
+      "task_group": "content_research_ai_enhanced",
+      "created_at": "2026-04-05 07:30:00",
+      "fetched_at": "2026-04-05 07:30:00",
+      "score": 85.0,
+      "score_breakdown": {
+        "heat_score": 78.0,
+        "trend_score": 85.0,
+        "depth_score": 88.0,
+        "uniqueness_score": 90.0,
+        "evidence_quality": 85.0
+      },
+      "metrics": {
+        "timeliness": "4月3日S&P Global最新报告",
+        "data_richness": "EU ETS碳价数据，企业警告具体案例",
+        "angle_uniqueness": "碳中和与产业竞争力的矛盾",
+        "reader_value": "能源转型风险理解，产业链重构机会",
+        "longevity": "中长期（6-12个月）- 欧洲能源政策持续调整"
+      },
+      "evidence_sources": [
+        "S&P Global - EU ETS analysis",
+        "European industry warnings",
+        "Carbon market data"
+      ],
+      "recommended_framework": "痛点型（Painpoint）",
+      "recommended_strategy": "细节锚定（Detail Anchoring）",
+      "target_audience": "能源行业从业者、ESG投资者、政策制定者"
+    },
+    {
+      "note_id": "WS_2026_0405_006",
+      "platform": "web_search",
+      "title": "跨境物流的2026困局：敏感货清关、美国关税波动与供应链透明度危机",
+      "content": "全球贸易格局重构下，跨境物流面临三重挑战：9类DG敏感货物清关复杂、美国关税政策不确定性、服务商信息不透明。2024年中国跨境电商进出口2.38万亿元，物流成本占比超30%。东南亚制造业转移如何改变物流格局？中小企业如何降低物流风险？",
+      "url": "https://www.cnblogs.com/deepagents/p/19569734",
+      "note_type": "deep_analysis",
+      "task_group": "content_research_ai_enhanced",
+      "created_at": "2026-04-05 07:30:00",
+      "fetched_at": "2026-04-05 07:30:00",
+      "score": 82.0,
+      "score_breakdown": {
+        "heat_score": 75.0,
+        "trend_score": 82.0,
+        "depth_score": 85.0,
+        "uniqueness_score": 85.0,
+        "evidence_quality": 80.0
+      },
+      "metrics": {
+        "timeliness": "2026年跨境物流行业痛点",
+        "data_richness": "2.38万亿跨境电商数据，30%物流成本占比",
+        "angle_uniqueness": "从物流视角看全球供应链重构",
+        "reader_value": "实操指南，成本优化策略",
+        "longevity": "中期（3-6个月）- 供应链调整持续"
+      },
+      "evidence_sources": [
+        "海关总署 - 跨境电商数据",
+        "跨境物流行业报告",
+        "东南亚制造业转移趋势"
+      ],
+      "recommended_framework": "痛点型（Painpoint）",
+      "recommended_strategy": "密度强化（Density Boost）",
+      "target_audience": "跨境电商从业者、供应链管理者、外贸企业"
+    },
+    {
+      "note_id": "WS_2026_0405_007",
+      "platform": "web_search",
+      "title": "中印贸易额1.32万亿：印尼如何成为中国企业出海的新支点",
+      "content": "2025年1-11月中印尼双边贸易额达1.32万亿元，同比增长12.7%，跨境电商物流需求占比超35%。印尼作为东南亚最大经济体，如何承接中国制造业转移？镍矿、棕榈油、煤炭等资源如何重塑供应链？中国企业在印尼面临哪些机遇与风险？",
+      "url": "https://www.cnblogs.com/bing114/p/19580850",
+      "note_type": "deep_analysis",
+      "task_group": "content_research_ai_enhanced",
+      "created_at": "2026-04-05 07:30:00",
+      "fetched_at": "2026-04-05 07:30:00",
+      "score": 80.0,
+      "score_breakdown": {
+        "heat_score": 72.0,
+        "trend_score": 80.0,
+        "depth_score": 82.0,
+        "uniqueness_score": 82.0,
+        "evidence_quality": 85.0
+      },
+      "metrics": {
+        "timeliness": "2025年全年数据刚出炉",
+        "data_richness": "1.32万亿贸易额，35%跨境电商占比",
+        "angle_uniqueness": "印尼作为中国企业出海新支点",
+        "reader_value": "出海策略，市场机会识别",
+        "longevity": "中长期（6-9个月）- 东南亚布局持续话题"
+      },
+      "evidence_sources": [
+        "海关总署 - 中印尼贸易数据",
+        "印尼经济发展报告",
+        "跨境电商物流趋势"
+      ],
+      "recommended_framework": "清单型（Checklist）",
+      "recommended_strategy": "密度强化（Density Boost）",
+      "target_audience": "出海企业决策者、东南亚市场研究者、投资者"
+    },
+    {
+      "note_id": "WS_2026_0405_008",
+      "platform": "web_search",
+      "title": "IT支出首破6万亿美元：AI如何重塑企业技术投资优先级",
+      "content": "2026年全球IT支出将首次突破6万亿美元，AI是最大驱动力。企业技术投资从传统IT基础设施转向AI算力、数据平台、智能应用。哪些技术栈成为新宠？哪些传统IT支出被削减？CIO如何平衡创新与成本？中小企业如何在AI浪潮中不掉队？",
+      "url": "https://www.aol.com/finance/spending-exceed-6-trillion-first-113000290.html",
+      "note_type": "deep_analysis",
+      "task_group": "content_research_ai_enhanced",
+      "created_at": "2026-04-05 07:30:00",
+      "fetched_at": "2026-04-05 07:30:00",
+      "score": 83.0,
+      "score_breakdown": {
+        "heat_score": 76.0,
+        "trend_score": 85.0,
+        "depth_score": 82.0,
+        "uniqueness_score": 82.0,
+        "evidence_quality": 88.0
+      },
+      "metrics": {
+        "timeliness": "2026年IT支出预测",
+        "data_richness": "6万亿美元IT支出里程碑",
+        "angle_uniqueness": "从IT支出结构看AI影响",
+        "reader_value": "技术投资决策框架，预算分配指南",
+        "longevity": "中期（3-6个月）- 企业预算周期话题"
+      },
+      "evidence_sources": [
+        "Gartner/IDC - IT spending forecast",
+        "Enterprise AI adoption survey",
+        "CIO technology priorities"
+      ],
+      "recommended_framework": "对比型（Comparison）",
+      "recommended_strategy": "密度强化（Density Boost）",
+      "target_audience": "企业CIO/CTO、IT采购决策者、技术咨询顾问"
+    },
+    {
+      "note_id": "WS_2026_0405_009",
+      "platform": "web_search",
+      "title": "券商2025年报净利全线回暖：资本市场改革如何重塑券商盈利模式",
+      "content": "2025年券商年报显示净利润全线回暖，但背后是业务结构的深刻变化。传统经纪业务收入下滑，财富管理、投行、衍生品业务成为新增长点。注册制改革、北交所扩容、REITs市场发展如何改变券商生态？哪些券商正在转型成功？投资者如何选择券商股？",
+      "url": "https://www.worldmr.net/Industry/IndustryList/Info/2026-04-02/321274.shtml",
+      "note_type": "deep_analysis",
+      "task_group": "content_research_ai_enhanced",
+      "created_at": "2026-04-05 07:30:00",
+      "fetched_at": "2026-04-05 07:30:00",
+      "score": 78.0,
+      "score_breakdown": {
+        "heat_score": 70.0,
+        "trend_score": 78.0,
+        "depth_score": 80.0,
+        "uniqueness_score": 78.0,
+        "evidence_quality": 82.0
+      },
+      "metrics": {
+        "timeliness": "2025年报刚发布（4月2日）",
+        "data_richness": "券商净利数据，业务结构变化",
+        "angle_uniqueness": "从年报看券商转型",
+        "reader_value": "行业趋势理解，投资标的筛选",
+        "longevity": "短中期（2-4个月）- 年报季话题"
+      },
+      "evidence_sources": [
+        "全球矿产资源网 - 券商年报分析",
+        "券商业务数据",
+        "资本市场改革政策"
+      ],
+      "recommended_framework": "复盘型（Retrospective）",
+      "recommended_strategy": "细节锚定（Detail Anchoring）",
+      "target_audience": "金融行业从业者、券商股投资者、监管研究者"
+    },
+    {
+      "note_id": "WS_2026_0405_010",
+      "platform": "web_search",
+      "title": "力拓CEO断言：中国仍将是最大市场，全球矿业如何押注中国需求",
+      "content": "力拓CEO在2026年明确表态"中国仍将是最大市场"，这一判断背后是对中国经济结构转型的深刻理解。铁矿石、铜、锂等大宗商品需求如何随十五五规划调整？新能源、基建、制造业升级如何重塑矿业格局？全球矿业巨头如何调整中国策略？",
+      "url": "https://www.worldmr.net/Industry/IndustryList/Info/2026-03-31/321202.shtml",
+      "note_type": "deep_analysis",
+      "task_group": "content_research_ai_enhanced",
+      "created_at": "2026-04-05 07:30:00",
+      "fetched_at": "2026-04-05 07:30:00",
+      "score": 79.0,
+      "score_breakdown": {
+        "heat_score": 72.0,
+        "trend_score": 78.0,
+        "depth_score": 82.0,
+        "uniqueness_score": 80.0,
+        "evidence_quality": 82.0
+      },
+      "metrics": {
+        "timeliness": "3月31日力拓CEO最新表态",
+        "data_richness": "矿业巨头战略，大宗商品需求预测",
+        "angle_uniqueness": "从矿业视角看中国经济转型",
+        "reader_value": "大宗商品投资逻辑，产业链理解",
+        "longevity": "中长期（6-9个月）- 大宗商品周期话题"
+      },
+      "evidence_sources": [
+        "全球矿产资源网 - 力拓CEO访谈",
+        "中国大宗商品需求预测",
+        "矿业公司中国战略"
+      ],
+      "recommended_framework": "故事型（Story）",
+      "recommended_strategy": "细节锚定（Detail Anchoring）",
+      "target_audience": "大宗商品交易者、矿业投资者、产业链研究者"
+    }
+  ]
+}

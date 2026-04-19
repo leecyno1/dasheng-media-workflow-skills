@@ -1,0 +1,30 @@
+[
+  {
+    "query": "美国财政部长肖尔茨官方肖像",
+    "entity_type": "person",
+    "entity": "美国财政部长",
+    "priority": null,
+    "channel": "news"
+  },
+  {
+    "query": "美联储主席鲍威尔发表讲话现场",
+    "entity_type": "person",
+    "entity": "美联储主席",
+    "priority": null,
+    "channel": "news"
+  },
+  {
+    "query": "全球主要央行总部外观",
+    "entity_type": "institution",
+    "entity": "全球主要央行",
+    "priority": null,
+    "channel": "news"
+  },
+  {
+    "query": "美债交易大厅交易现场",
+    "entity_type": "event",
+    "entity": "美债市场交易",
+    "priority": null,
+    "channel": "news"
+  }
+]

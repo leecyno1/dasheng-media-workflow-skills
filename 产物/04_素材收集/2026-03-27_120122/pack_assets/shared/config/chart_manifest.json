@@ -1,0 +1,10 @@
+{
+  "generated": [
+    "reinflation/oil_price_inflation_expectation",
+    "reinflation/fed_stagflation_signal",
+    "reinflation/asset_repricing_map",
+    "takaichi/aging_labor_gap",
+    "takaichi/coalition_right_shift",
+    "takaichi/security_taiwan_impact"
+  ]
+}

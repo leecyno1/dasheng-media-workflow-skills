@@ -1,0 +1,78 @@
+[
+  {
+    "url": "https://www.xiaohongshu.com/explore/69757cc70000000022030e2a?xsec_token=ABfKA5bcrD-hG6QCGF3gW2PIe2zpeTckXQJuVcCC5fz6s=&xsec_source=pc_search&source=web_search_result_notes",
+    "note_id": "69757cc70000000022030e2a",
+    "title": "开源我的 7 个写作 skills",
+    "desc": "最近我用得最顺手的 Skill，是写作。传统的写作流程是：搜热点、找选题、开始写、写完改、改完发。每一步都要自己动手，每一步都有卡点：\n但自从用了 Skill 组合，全都变了。热点采集，Skill 帮我从 5 个平台并行搜索，自动整理成列表。选题筛选， Skill 帮我打分排序，挑出最值得写的 TOP10。内容创作， Skill 用问答方式把我脑子里的想法挖出来，再组织成文章。 文章审稿？ Skill 用编辑视角帮我找问题，给修改建议。我只需要在关键节点做决策，其他全是自动化完成。\n#AI工具[话题]# #大模型[话题]# #提示词[话题]# #效率神器[话题]# #skill[话题]# #产品经理[话题]#",
+    "tags": [
+      "AI工具",
+      "大模型",
+      "提示词",
+      "效率神器",
+      "skill",
+      "产品经理"
+    ],
+    "images": 8,
+    "nickname": "",
+    "like_count": "187",
+    "collect_count": "325",
+    "comment_count": "20",
+    "share_count": "78",
+    "time": 1769307335000
+  },
+  {
+    "url": "https://www.xiaohongshu.com/explore/6973a1c3000000000a03d457?xsec_token=ABRXC4gHQWAVXwQMekPUn-4yjORapEX5aUZALGXGjQkjs=&xsec_source=pc_search&source=web_search_result_notes",
+    "note_id": "6973a1c3000000000a03d457",
+    "title": "Antigravity 进阶：如何用 Skills 打造写作",
+    "desc": "通过Skill-creator，我创建了四个技能：写作风格提取、写作、生成封面和自动发布，实现了从生成文章到同步到微信公众号的全链路自动化，提升创作效率。#skills[话题]# #antigravity[话题]##cc[话题]# #写作技巧[话题]# #aiagent[话题]# #AI[话题]#",
+    "tags": [
+      "skills",
+      "antigravity",
+      "cc",
+      "写作技巧",
+      "aiagent",
+      "AI"
+    ],
+    "images": 15,
+    "nickname": "",
+    "like_count": "221",
+    "collect_count": "463",
+    "comment_count": "5",
+    "share_count": "118",
+    "time": 1769185731000
+  },
+  {
+    "url": "https://www.xiaohongshu.com/explore/697dc915000000000c0362b0?xsec_token=ABvoSsHhZXiy4vU5WP5JuKR8Goenm-P_Ih0_ZorzFkvPo=&xsec_source=pc_search&source=web_search_result_notes",
+    "note_id": "697dc915000000000c0362b0",
+    "title": "借助 agent-skills 辅助论文写作",
+    "desc": "除了借助 prompt 进行论文写作外（可见主页第二个帖子），agent 的快速发展也为论文写作带来了更大的便捷。 其中 skills 自anthropics 提出后，已经在 agent 领域造成了很大影响。\n\t\n但 skills 配置具有一定的门槛，并且网上各种仓库较为繁杂，这里也是将与写作相关的 skills 筛选出来，并且给出详细的图文配置过程，让 ai 工具更好的辅助每一个研究人员[暗中观察R][暗中观察R]\n\t\nskills 相关的问题欢迎大家在评论区讨论[吧唧R]",
+    "tags": [],
+    "images": 3,
+    "nickname": "",
+    "like_count": "841",
+    "collect_count": "1473",
+    "comment_count": "53",
+    "share_count": "313",
+    "time": 1769851157000
+  },
+  {
+    "url": "https://www.xiaohongshu.com/explore/6976c17f000000002103d94c?xsec_token=ABsVqKpa0V3PtoiYCEpLWAuB8d3jRHRUd0t-_RmAb6NJk=&xsec_source=pc_search&source=web_search_result_notes",
+    "note_id": "6976c17f000000002103d94c",
+    "title": "推荐一个内容创作者必装的skills",
+    "desc": "# baoyu-skills 内容创作技能包推荐\n\t\n推荐一个宝玉老师的内容创作Skills仓库：jimliu/baoyu-skills，主要有下面几个skills：\n\t\n| Skill | 功能 |\n|-------|------|\n| baoyu-slide-deck | 幻灯片生成 |\n| baoyu-article-illustrator | 文章配图 |\n| baoyu-cover-image | 封面图生成 |\n| baoyu-xhs-images | 小红书图片 |\n| baoyu-comic | 漫画生成 |\n| baoyu-post-to-wechat | 发布到微信 |\n| baoyu-post-to-x | 发布到X |\n| baoyu-infographic | 信息图生成 |\n\t\n这些Skills对中文用户特别友好——小红书图片、发微信、文章配图，都是我们平时会用到的。\n\t\n安装命令：\n```bash\nnpx skills add jimliu/baoyu-skills --yes\n```\n\t\n#AI工具[话题]# #效率神器[话题]# #AI[话题]# #创作者必备[话题]# #内容创造者[话题]#",
+    "tags": [
+      "AI工具",
+      "效率神器",
+      "AI",
+      "创作者必备",
+      "内容创造者"
+    ],
+    "images": 1,
+    "nickname": "",
+    "like_count": "44",
+    "collect_count": "86",
+    "comment_count": "3",
+    "share_count": "25",
+    "time": 1769390463000
+  }
+]

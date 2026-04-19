@@ -1,0 +1,269 @@
+{
+  "run_id": "2026-03-26_080504",
+  "generated_at": "2026-03-26T11:12:37.165770",
+  "stats": {
+    "input_records": 34,
+    "cluster_count": 6,
+    "topn_count": 3
+  },
+  "clusters": [
+    {
+      "cluster_id": "macro_policy",
+      "cluster_name": "宏观政策与再通胀",
+      "count": 1,
+      "platforms": [
+        "5173/douyin"
+      ],
+      "avg_heat": 560.3,
+      "composite_heat": 393.81,
+      "top_keywords": [
+        "讲真话不易之二",
+        "2026经济风向标",
+        "零距离看懂财经",
+        "李大霄",
+        "做好人买好股得好报",
+        "热度",
+        "5503",
+        "宏观"
+      ],
+      "top_items": [
+        {
+          "title": "讲真话不易之二 #2026经济风向标 #零距离看懂财经 #李大霄 #做好人买好股得好报",
+          "url": "https://www.douyin.com/video/7620045154070437626",
+          "source": "5173/douyin"
+        }
+      ]
+    },
+    {
+      "cluster_id": "market_sentiment",
+      "cluster_name": "市场情绪与资金误判",
+      "count": 8,
+      "platforms": [
+        "5173/douyin",
+        "5173/wb",
+        "8001/wechat_curated"
+      ],
+      "avg_heat": 90.5,
+      "composite_heat": 76.15,
+      "top_keywords": [
+        "热度",
+        "宏观",
+        "市场情绪",
+        "定向样本",
+        "其他观察",
+        "股民交流",
+        "大盘分析",
+        "行情分析"
+      ],
+      "top_items": [
+        {
+          "title": "现在继续鼓吹看空的人 ，不是蠢就是坏。市场从下跌周期转到上涨周期，有两个核心密码#财经 #干货 #股票 #股民",
+          "url": "https://www.douyin.com/video/7091225826288618759",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "#股民交流 #大盘分析 #行情分析 #干货分享 #知识分享",
+          "url": "https://www.douyin.com/video/7620314175788712923",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "各位股友，真的非常对不起！ 这一波行情我也全部清仓离场了，账面亏损非常惨重，心里又自责又难受。更让我过意不去的是，因为我的判断和分享，让不少信任我的朋友一起跟着",
+          "url": "https://m.weibo.cn/detail/5275941137286508",
+          "source": "5173/wb"
+        },
+        {
+          "title": "今日A股行情，启动护眼模式！ 市场暴跌之前，我已经提前清仓止盈的板块： （1）军工。我已于26年1月13日清仓，按照50%平均持仓计算，22年至今，累计收益是6",
+          "url": "https://m.weibo.cn/detail/5275626614295289",
+          "source": "5173/wb"
+        },
+        {
+          "title": "港股有好几个炸裂的消息",
+          "url": "https://mp.weixin.qq.com/s/5Of0fLivCuF5zeuEZwFy3g",
+          "source": "8001/wechat_curated"
+        }
+      ]
+    },
+    {
+      "cluster_id": "other",
+      "cluster_name": "其他高频观察",
+      "count": 7,
+      "platforms": [
+        "5173/bili",
+        "5173/content_research",
+        "5173/wb",
+        "5173/xhs",
+        "8001/wechat_curated"
+      ],
+      "avg_heat": 25.486,
+      "composite_heat": 29.04,
+      "top_keywords": [
+        "热度",
+        "日本",
+        "使馆",
+        "外交",
+        "其他观察",
+        "追觅也开始做手机了",
+        "要么交易确定性",
+        "要么交易超预期"
+      ],
+      "top_items": [
+        {
+          "title": "要么交易确定性，要么交易超预期。 ​",
+          "url": "https://m.weibo.cn/detail/5275943993082827",
+          "source": "5173/wb"
+        },
+        {
+          "title": "一架专机降落东京，日本援兵已到，中方接下“战书”，封海4天",
+          "url": "https://www.bilibili.com/video/BV1WGQCBREYB",
+          "source": "5173/bili"
+        },
+        {
+          "title": "彻底撕破脸！日本蓝皮书降级中国、删台海关键表述，右翼闯使馆，中方强硬警告 | #日本外交蓝皮书 #日本降级中国地位 #极右翼闯中国使馆 #中方严正警告 #高市早",
+          "url": "https://www.bilibili.com/video/BV15cQSB4EYk",
+          "source": "5173/bili"
+        },
+        {
+          "title": "追觅也开始做手机了",
+          "url": "https://www.xiaohongshu.com/explore/69b2ded9000000000c008a8b?xsec_token=AB8UOlcHsdIj0gllVQkOPzT1AAq48MPzZifTEBXjnK62U=&xsec_source=pc_feed",
+          "source": "5173/xhs"
+        },
+        {
+          "title": "2026年日本又有士兵走丢：但是闯入老中使馆？",
+          "url": "https://www.bilibili.com/video/BV154QrBqEXG",
+          "source": "5173/content_research"
+        }
+      ]
+    },
+    {
+      "cluster_id": "gold_oil_geo",
+      "cluster_name": "黄金、原油与地缘风险",
+      "count": 11,
+      "platforms": [
+        "18080/news",
+        "5173/bili",
+        "5173/content_research",
+        "5173/xhs",
+        "8001/wechat_curated"
+      ],
+      "avg_heat": 10.573,
+      "composite_heat": 25.001,
+      "top_keywords": [
+        "油价",
+        "地缘冲突",
+        "来自",
+        "18080",
+        "最新",
+        "report",
+        "外链",
+        "黄金暴跌一周"
+      ],
+      "top_items": [
+        {
+          "title": "黄金暴跌一周！中东卖金筹资！",
+          "url": "https://www.xiaohongshu.com/explore/69c264f50000000023011aae?xsec_token=ABxr4uS-E7Q3iMSBHqKWQnFNVXTu-AiQA5G5m174QbfxY=&xsec_source=pc_feed",
+          "source": "5173/xhs"
+        },
+        {
+          "title": "2026.3.24内资闭门会议-中东“火药桶”引爆全球市场?油价、通胀、金融风险全解析",
+          "url": "https://www.bilibili.com/video/BV1aPQBBREoH",
+          "source": "5173/bili"
+        },
+        {
+          "title": "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】",
+          "url": "https://www.bilibili.com/video/BV1CCQqBuEt8",
+          "source": "5173/content_research"
+        },
+        {
+          "title": "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸",
+          "url": "https://www.bilibili.com/video/BV1WJQBByE12",
+          "source": "5173/content_research"
+        },
+        {
+          "title": "伊朗大使：未与美国直接或间接谈判",
+          "url": "https://news.ifeng.com/c/8rmc4sy9a8S",
+          "source": "18080/news"
+        }
+      ]
+    },
+    {
+      "cluster_id": "ai_workflow",
+      "cluster_name": "AI 工具与工作流接入",
+      "count": 4,
+      "platforms": [
+        "5173/xhs",
+        "8001/wechat_curated"
+      ],
+      "avg_heat": 10.525,
+      "composite_heat": 13.768,
+      "top_keywords": [
+        "ai工具",
+        "工作流",
+        "draco正在vibecoding",
+        "定向样本",
+        "别再吹",
+        "typeless",
+        "它正在被大模型顺手吃",
+        "喜大普奔"
+      ],
+      "top_items": [
+        {
+          "title": "别再吹 Typeless 了：它正在被大模型顺手吃",
+          "url": "https://www.xiaohongshu.com/explore/69c1640f0000000023010e6f?xsec_token=AB0QIjm_0EBmsUZpr6WGF8zKAIkFAIRdegzTy5y64VRnA=&xsec_source=pc_feed",
+          "source": "5173/xhs"
+        },
+        {
+          "title": "喜大普奔！OpenClaw🦞腾讯ima知识库skills上线啦！",
+          "url": "https://mp.weixin.qq.com/s/4zosg9uZDW09Bfw1mo2Iig",
+          "source": "8001/wechat_curated"
+        },
+        {
+          "title": "我把prompt大神李继刚的skill做成了测字工具",
+          "url": "https://mp.weixin.qq.com/s/2lRtYbTNPc6k5OZwfPxxvw",
+          "source": "8001/wechat_curated"
+        },
+        {
+          "title": "万字拆解：“prompt之神”李继刚的13个skills ！",
+          "url": "https://mp.weixin.qq.com/s/yKAeLyrbyjGUZti6nfJc8g",
+          "source": "8001/wechat_curated"
+        }
+      ]
+    },
+    {
+      "cluster_id": "semiconductor",
+      "cluster_name": "半导体与科技产业分化",
+      "count": 3,
+      "platforms": [
+        "8001/wechat_curated"
+      ],
+      "avg_heat": 10.0,
+      "composite_heat": 11.8,
+      "top_keywords": [
+        "半导体封测",
+        "定向样本",
+        "重构芯片到系统的智能设计",
+        "芯和半导体的ai时代品牌定位升级",
+        "半导体",
+        "国产芯片",
+        "剑指",
+        "5nm"
+      ],
+      "top_items": [
+        {
+          "title": "“重构芯片到系统的智能设计”，芯和半导体的AI时代品牌定位升级",
+          "url": "https://mp.weixin.qq.com/s/zLuR9ZmAkNifH6yN0SuRrg",
+          "source": "8001/wechat_curated"
+        },
+        {
+          "title": "剑指 5nm 与 GAA！中微公司四大新品同步发布！",
+          "url": "https://mp.weixin.qq.com/s/ZJLkEabPzFQaeb1haxDY_w",
+          "source": "8001/wechat_curated"
+        },
+        {
+          "title": "传ST（意法半导体）4月部分产品涨价！",
+          "url": "https://mp.weixin.qq.com/s/X1VUwzen5aIaBUf6pefp3w",
+          "source": "8001/wechat_curated"
+        }
+      ]
+    }
+  ]
+}

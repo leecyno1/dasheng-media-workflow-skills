@@ -1,0 +1,343 @@
+{
+  "run_id": "2026-04-02_210702",
+  "generated_at": "2026-04-02T21:09:51.659506",
+  "stats": {
+    "input_records": 390,
+    "cluster_count": 7,
+    "topn_count": 3
+  },
+  "clusters": [
+    {
+      "cluster_id": "other",
+      "cluster_name": "其他高频观察",
+      "count": 241,
+      "platforms": [
+        "18080/news",
+        "5173/bili",
+        "5173/content_research",
+        "5173/douyin",
+        "5173/wb",
+        "5173/x",
+        "5173/xhs",
+        "8001/wechat_curated"
+      ],
+      "avg_heat": 1052.248,
+      "composite_heat": 1122.174,
+      "top_keywords": [
+        "热度",
+        "其他观察",
+        "the",
+        "in",
+        "is",
+        "日本",
+        "of",
+        "使馆"
+      ],
+      "top_items": [
+        {
+          "title": "高市早苗这趟访美，属实是钱没少花、脸没少丢，事儿却一点没办成 【抖音独家】#全球创作者计划 #零基础看懂全球",
+          "url": "https://www.douyin.com/video/7620404012889738542",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "JAPAN IS BACK？白宫放出高市访美丑照，日本网民直呼：丢人！【抖音首发】#高市早苗 #全球创作者计划#零基础看懂全球 #时代的荣耀",
+          "url": "https://www.douyin.com/video/7620125890249067685",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "腿粗进！梨形进！不露腿辣裙！总有你喜欢！",
+          "url": "https://www.xiaohongshu.com/explore/644b90a700000000130337db?xsec_token=ABKz_JQL4J8B4BvjL34adBFBXQCDBtUokM71CoXFSxQYw=&xsec_source=pc_feed",
+          "source": "5173/xhs"
+        },
+        {
+          "title": "从来没见过哪老外能把《甄嬛传》演得这么像😂",
+          "url": "https://www.xiaohongshu.com/explore/645b9110000000001303798e?xsec_token=ABfp2DQ--uYj_Wo6RPjwxZKtOfa2NeFnD_gnYGC57Zo94=&xsec_source=pc_feed",
+          "source": "5173/xhs"
+        },
+        {
+          "title": "《小肥皂，全款拿下》",
+          "url": "https://www.xiaohongshu.com/explore/6450b3de0000000013035b4b?xsec_token=ABgOqOeYao7rUrNtI7XReJi7kgNgfDyIIYMGTntJ5PaQg=&xsec_source=pc_feed",
+          "source": "5173/xhs"
+        }
+      ]
+    },
+    {
+      "cluster_id": "gold_oil_geo",
+      "cluster_name": "黄金、原油与地缘风险",
+      "count": 45,
+      "platforms": [
+        "18080/news",
+        "5173/bili",
+        "5173/content_research",
+        "5173/douyin",
+        "5173/wb",
+        "5173/x"
+      ],
+      "avg_heat": 410.862,
+      "composite_heat": 359.604,
+      "top_keywords": [
+        "黄金",
+        "热度",
+        "白银",
+        "贵金属",
+        "油价",
+        "地缘冲突",
+        "今日金价",
+        "gold"
+      ],
+      "top_items": [
+        {
+          "title": "战争烂尾，美国要跑了",
+          "url": "https://www.douyin.com/video/7623731006479633714",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "日本大批民众集会，呼吁和平反对战争：让我们替高市早苗道歉#日本 #外交 #现场",
+          "url": "https://www.douyin.com/video/7622892343183625523",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "黄金白银，今天上涨的很反常…#财经知识 #金融常识普及 #黄金 #白银",
+          "url": "https://www.douyin.com/video/7621951783305356259",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "黄金开始走强 #黄金 #白银 #黄金知识 #金价",
+          "url": "https://www.douyin.com/video/7622961362695687450",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "当地时间3月31日下午，美国总统特朗普称：当我们觉得伊朗已经被打回石器时代，很长一段时间内都无法研制出核武器时，我们就会离开。（来源：国际时讯）",
+          "url": "https://www.douyin.com/video/7623642796364172579",
+          "source": "5173/douyin"
+        }
+      ]
+    },
+    {
+      "cluster_id": "market_sentiment",
+      "cluster_name": "市场情绪与资金误判",
+      "count": 47,
+      "platforms": [
+        "5173/bili",
+        "5173/douyin",
+        "5173/wb",
+        "8001/wechat_curated"
+      ],
+      "avg_heat": 244.417,
+      "composite_heat": 246.292,
+      "top_keywords": [
+        "热度",
+        "宏观",
+        "市场情绪",
+        "其他观察",
+        "a股",
+        "定向样本",
+        "表舅是养基大户",
+        "市场情绪全面回暖"
+      ],
+      "top_items": [
+        {
+          "title": "爆仓了怎样快速清理？哪些批量出售？哪些值得留？清仓一图流——单格物品篇",
+          "url": "https://www.bilibili.com/video/BV1mMbWzKEVd",
+          "source": "5173/bili"
+        },
+        {
+          "title": "昨晚美股绷不住了 #行情分析 #股票干货 #短线交易",
+          "url": "https://www.douyin.com/video/7622104775753110513",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "以长期主义穿越震荡：恐慌尽头，即是机遇 昨日美股盘前高开、盘中回落，今日盘前再度上涨，市场在反复拉扯中尽显事件冲击下的情绪博弈。作为深耕市场多年的投资者，我始终",
+          "url": "https://m.weibo.cn/detail/5282617771430010",
+          "source": "5173/wb"
+        },
+        {
+          "title": "整顿高端市场？毕业级24张？DDMK18！战武殿P320电手实物演示！金伯TTi2011配置！DS全金MK47！图鹰M1911清仓！",
+          "url": "https://www.bilibili.com/video/BV1RH97BzELk",
+          "source": "5173/bili"
+        },
+        {
+          "title": "金毛话一出，市场避险情绪又起来了。 #A股# CME微型标普500指数期货、CME小型纳斯达克100指数期货涨幅均超0.8%，但昨天上午的情绪已经打出去了。 ​",
+          "url": "https://m.weibo.cn/detail/5282827630281128",
+          "source": "5173/wb"
+        }
+      ]
+    },
+    {
+      "cluster_id": "ai_workflow",
+      "cluster_name": "AI 工具与工作流接入",
+      "count": 29,
+      "platforms": [
+        "5173/bili",
+        "5173/douyin",
+        "5173/wb",
+        "5173/x",
+        "8001/wechat_curated"
+      ],
+      "avg_heat": 274.983,
+      "composite_heat": 238.888,
+      "top_keywords": [
+        "ai工具",
+        "工作流",
+        "the",
+        "热度",
+        "of",
+        "is",
+        "as",
+        "on"
+      ],
+      "top_items": [
+        {
+          "title": "AI都说不出这话！#特朗普当众羞辱沙特王储：他不得不亲我PP对我客气！打钱给地护你周全都错付了？#做美国盟友有多致命 #特朗普称沙特王储得亲他PP拍马屁",
+          "url": "https://www.douyin.com/video/7622532589382946074",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "in the corner straight up “losin it\" and by “it” , haha, well lets just say... M",
+          "url": "https://x.com/EdgarPoop1/status/2036104459168686395",
+          "source": "5173/x"
+        },
+        {
+          "title": "MacBook Air M5评测：哪代Air性能提升最多？",
+          "url": "https://www.bilibili.com/video/BV1S4XCBMEV7",
+          "source": "5173/bili"
+        },
+        {
+          "title": "OpenAI 目前正面临严峻的资本压力，其合同债务规模已高达 4360 亿美元，而年度收入仅约 250 亿美元，私募股权机构普遍认为这一债务水平已难以偿还。 在",
+          "url": "https://m.weibo.cn/detail/5282648378314581",
+          "source": "5173/wb"
+        },
+        {
+          "title": "风控杂谈 之 AI时代风控策略岗必会的PYTHON八股",
+          "url": "https://www.bilibili.com/video/BV1QAbxz7EgU",
+          "source": "5173/bili"
+        }
+      ]
+    },
+    {
+      "cluster_id": "macro_policy",
+      "cluster_name": "宏观政策与再通胀",
+      "count": 20,
+      "platforms": [
+        "5173/bili",
+        "5173/douyin",
+        "5173/wb"
+      ],
+      "avg_heat": 125.115,
+      "composite_heat": 119.58,
+      "top_keywords": [
+        "热度",
+        "宏观",
+        "市场情绪",
+        "油价",
+        "地缘冲突",
+        "其他观察",
+        "a股",
+        "高盛的核心逻辑是"
+      ],
+      "top_items": [
+        {
+          "title": "通胀并没有多严重！不会加息，金价被错杀！",
+          "url": "https://www.douyin.com/video/7621964606927837285",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "要加息了？华尔街警告油价失控风险 美联储加息概率飙升，#美股 步入回调。#投资 #财经 #全球创作者计划 #油价",
+          "url": "https://www.douyin.com/video/7622091460707454223",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "特殊时期警惕美股风险之二 #2026经济风向标 #零距离看懂财经 #李大霄 #做好人买好股得好报",
+          "url": "https://www.douyin.com/video/7622867140102511858",
+          "source": "5173/douyin"
+        },
+        {
+          "title": "#a股# 本来监管是希望酝酿温和牛市，吸引社会资金入场，扶持实体经济。 现在的结果是，量化吃的满嘴流油，股市也是指数虽然涨了，大部分股民没赚到钱，甚至亏了，直接",
+          "url": "https://m.weibo.cn/detail/5278305708411608",
+          "source": "5173/wb"
+        },
+        {
+          "title": "加息预期又上升了....",
+          "url": "https://www.douyin.com/video/7621865612599397647",
+          "source": "5173/douyin"
+        }
+      ]
+    },
+    {
+      "cluster_id": "semiconductor",
+      "cluster_name": "半导体与科技产业分化",
+      "count": 7,
+      "platforms": [
+        "5173/bili",
+        "5173/wb",
+        "8001/wechat_curated"
+      ],
+      "avg_heat": 52.271,
+      "composite_heat": 47.79,
+      "top_keywords": [
+        "半导体封测",
+        "定向样本",
+        "其他观察",
+        "通胀一定是要来了",
+        "无论你愿不愿意",
+        "你都不得不接受这个事实",
+        "两轮电动车都涨价了",
+        "其它的还会远吗"
+      ],
+      "top_items": [
+        {
+          "title": "通胀一定是要来了，无论你愿不愿意，你都不得不接受这个事实。两轮电动车都涨价了，其它的还会远吗？ ​",
+          "url": "https://m.weibo.cn/detail/5282648994879610",
+          "source": "5173/wb"
+        },
+        {
+          "title": "A股04.01收评：医药三连阳、算力轮动、电力调整，市场结构性机会梳理",
+          "url": "https://www.bilibili.com/video/BV1ji9jB3EmT",
+          "source": "5173/bili"
+        },
+        {
+          "title": "恭喜！贵州煜晖电子二期，正式开工",
+          "url": "https://mp.weixin.qq.com/s/mYA-d4r8K9VUqxfN1V0Tjw",
+          "source": "8001/wechat_curated"
+        },
+        {
+          "title": "新进展！南芯半导体年产40亿颗先进半导体芯片封测项目",
+          "url": "https://mp.weixin.qq.com/s/Hpt3aS2ITdZMp2LBHV1Ehw",
+          "source": "8001/wechat_curated"
+        },
+        {
+          "title": "深圳一项目奠基，总投资13.34 亿！",
+          "url": "https://mp.weixin.qq.com/s/JaO7pWdlDrvUeB-lWEXWRA",
+          "source": "8001/wechat_curated"
+        }
+      ]
+    },
+    {
+      "cluster_id": "content_growth",
+      "cluster_name": "内容运营与增长方法",
+      "count": 1,
+      "platforms": [
+        "5173/bili"
+      ],
+      "avg_heat": 10.4,
+      "composite_heat": 8.88,
+      "top_keywords": [
+        "3月31日实战复盘",
+        "4580",
+        "做空",
+        "4563",
+        "清仓",
+        "逐级调损稳拿利润",
+        "热度",
+        "宏观"
+      ],
+      "top_items": [
+        {
+          "title": "3月31日实战复盘！4580 做空，4563 清仓，逐级调损稳拿利润",
+          "url": "https://www.bilibili.com/video/BV1Q7XzBZEW3",
+          "source": "5173/bili"
+        }
+      ]
+    }
+  ]
+}

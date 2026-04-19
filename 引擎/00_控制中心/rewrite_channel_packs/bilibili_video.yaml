@@ -1,0 +1,10 @@
+channel_pack:
+  channel_id: bilibili_video
+  display_name: B站视频
+  content_type: video
+  word_range: 2200-3400
+  title_range: 14-20
+  hook_style: 前10秒给冲突和立场
+  paragraph_style: 短段口播
+  structure: 强开场-结论前置-7到9个口播段-收束
+  cta: 三连、评论区、下一期

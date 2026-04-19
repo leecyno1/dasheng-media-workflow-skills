@@ -1,0 +1,31 @@
+{
+  "run_id": "2026-04-05_170457",
+  "generated_at": "2026-04-05T20:18:29.647621",
+  "count": 3,
+  "items": [
+    {
+      "rank": 1,
+      "topic_id": "T001",
+      "topic_name": "中东霍尔木兹海峡封锁加剧全球油价波动，重塑国际通胀预期",
+      "topic_kind": "independent",
+      "mother_topic_id": "T001",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 2,
+      "topic_id": "T002",
+      "topic_name": "俄罗斯以能源供应为手段拒绝向日本供油，彰显地缘政治能源格局重塑",
+      "topic_kind": "independent",
+      "mother_topic_id": "T002",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 3,
+      "topic_id": "T003",
+      "topic_name": "美联储转向降息预期引发全球资本市场重新定价利率风险",
+      "topic_kind": "independent",
+      "mother_topic_id": "T003",
+      "source_status": "ai_generated"
+    }
+  ]
+}

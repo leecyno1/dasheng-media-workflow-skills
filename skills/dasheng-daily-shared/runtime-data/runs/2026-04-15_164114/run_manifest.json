@@ -1,0 +1,62 @@
+{
+  "run_id": "2026-04-15_164114",
+  "run_date": "2026-04-15",
+  "workflow_name": "dasheng-daily",
+  "workflow_version": "3.1.0",
+  "status": "running",
+  "current_step": "rewrite",
+  "completed_steps": [
+    "material"
+  ],
+  "failed_steps": [],
+  "skipped_steps": [],
+  "folder": null,
+  "artifacts": [
+    {
+      "step": "material",
+      "object_type": "MaterialPack",
+      "count": 1,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-15_164114/artifacts/material/material-packs.json",
+      "doc_url": null
+    },
+    {
+      "step": "material",
+      "object_type": "MaterialMarkdown",
+      "count": 1,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-15_164114/artifacts/material/04_MaterialPack.md",
+      "doc_url": null
+    },
+    {
+      "step": "material",
+      "object_type": "MaterialReport",
+      "count": 1,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-15_164114/artifacts/material/04_Material_报告.md",
+      "doc_url": null
+    },
+    {
+      "step": "material",
+      "object_type": "MaterialManifest",
+      "count": 1,
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-15_164114/artifacts/material/material_manifest.json",
+      "doc_url": null
+    }
+  ],
+  "selection_state": {
+    "selected_topic_ids": [
+      "topic-ai-真正拉开差距的是功能演示还是工作流落地"
+    ],
+    "rejected_topic_ids": []
+  },
+  "operator_decisions": [
+    {
+      "at": "2026-04-15T12:08:42.603Z",
+      "step": "material",
+      "decision": "bootstrap_runtime_manifest_from_canonical_draft",
+      "note": "旧 runtime manifest 缺失，已从 canonical draft/material 输入自举。"
+    }
+  ],
+  "retry_state": {},
+  "message_refs": [],
+  "created_at": "2026-04-15T12:08:42.603Z",
+  "updated_at": "2026-04-15T12:08:42.610Z"
+}

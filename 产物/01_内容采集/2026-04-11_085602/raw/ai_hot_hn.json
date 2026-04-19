@@ -1,0 +1,1761 @@
+{
+  "OpenAI": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "RickJWagner"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Suspect arrested after incendiary device thrown at <em>OpenAI</em> CEO Sam Altman's home"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.cnn.com/2026/04/10/tech/suspect-arrest-<em>openai</em>-ceo-sam-altman"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_RickJWagner",
+          "story_47723899"
+        ],
+        "author": "RickJWagner",
+        "created_at": "2026-04-10T21:31:04Z",
+        "created_at_i": 1775856664,
+        "num_comments": 0,
+        "objectID": "47723899",
+        "points": 2,
+        "story_id": 47723899,
+        "title": "Suspect arrested after incendiary device thrown at OpenAI CEO Sam Altman's home",
+        "updated_at": "2026-04-10T21:36:22Z",
+        "url": "https://www.cnn.com/2026/04/10/tech/suspect-arrest-openai-ceo-sam-altman"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "zahlekhan"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Stop making AI write JSON – Why we built <em>OpenUI</em>"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.<em>openui</em>.com/blog/stop-making-ai-write-json"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_zahlekhan",
+          "story_47723614"
+        ],
+        "author": "zahlekhan",
+        "created_at": "2026-04-10T21:01:36Z",
+        "created_at_i": 1775854896,
+        "num_comments": 0,
+        "objectID": "47723614",
+        "points": 1,
+        "story_id": 47723614,
+        "title": "Stop making AI write JSON – Why we built OpenUI",
+        "updated_at": "2026-04-10T21:41:22Z",
+        "url": "https://www.openui.com/blog/stop-making-ai-write-json"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "helloplanets"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Molotov cocktail attack at <em>OpenAI</em> CEO Sam Altman's home"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.reuters.com/world/us/suspect-arrested-after-molotov-cocktail-attack-<em>openai</em>-ceo-sam-altmans-home-2026-04-10/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_helloplanets",
+          "story_47723539"
+        ],
+        "author": "helloplanets",
+        "children": [
+          47724524
+        ],
+        "created_at": "2026-04-10T20:54:35Z",
+        "created_at_i": 1775854475,
+        "num_comments": 1,
+        "objectID": "47723539",
+        "points": 15,
+        "story_id": 47723539,
+        "title": "Molotov cocktail attack at OpenAI CEO Sam Altman's home",
+        "updated_at": "2026-04-11T00:45:37Z",
+        "url": "https://www.reuters.com/world/us/suspect-arrested-after-molotov-cocktail-attack-openai-ceo-sam-altmans-home-2026-04-10/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "fuzzfactor"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Molotov cocktail thrown at home of <em>OpenAI</em> chief executive Sam Altman"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.ft.com/content/46ec2fa5-834d-4e49-81ef-6fb736b7e81d"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_fuzzfactor",
+          "story_47723143"
+        ],
+        "author": "fuzzfactor",
+        "created_at": "2026-04-10T20:16:43Z",
+        "created_at_i": 1775852203,
+        "num_comments": 0,
+        "objectID": "47723143",
+        "points": 6,
+        "story_id": 47723143,
+        "title": "Molotov cocktail thrown at home of OpenAI chief executive Sam Altman",
+        "updated_at": "2026-04-10T20:38:52Z",
+        "url": "https://www.ft.com/content/46ec2fa5-834d-4e49-81ef-6fb736b7e81d"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "enraged_camel"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "<a href=\"https://archive.ph/aoXIY\" rel=\"nofollow\">https://archive.ph/aoXIY</a><p><a href=\"https://www.bbc.com/news/articles/czx91rdxpyeo\" rel=\"nofollow\">https://www.bbc.com/news/articles/czx91rdxpyeo</a><p><a href=\"https://www.cnn.com/2026/04/10/tech/suspect-arrest-openai-ceo-sam-altman\" rel=\"nofollow\">https://www.cnn.com/2026/04/10/tech/suspect-arrest-<em>openai</em>-ce...</a>"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Molotov cocktail is hurled at home of Sam Altman"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.nytimes.com/2026/04/10/us/open-ai-sam-altman-molotov-cocktail.html"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_enraged_camel",
+          "story_47722096"
+        ],
+        "author": "enraged_camel",
+        "children": [
+          47722419,
+          47722441,
+          47723443,
+          47724757,
+          47722321,
+          47722305,
+          47725508,
+          47724918,
+          47724403,
+          47724522,
+          47725614,
+          47722382,
+          47722372,
+          47722292,
+          47722301,
+          47722661,
+          47722356,
+          47723780,
+          47724435,
+          47722373,
+          47722399,
+          47725651,
+          47722272,
+          47722215,
+          47722227,
+          47722721,
+          47722220,
+          47725440,
+          47722244,
+          47724968,
+          47722422
+        ],
+        "created_at": "2026-04-10T18:48:24Z",
+        "created_at_i": 1775846904,
+        "num_comments": 450,
+        "objectID": "47722096",
+        "points": 189,
+        "story_id": 47722096,
+        "story_text": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;aoXIY\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;aoXIY</a><p><a href=\"https:&#x2F;&#x2F;www.bbc.com&#x2F;news&#x2F;articles&#x2F;czx91rdxpyeo\" rel=\"nofollow\">https:&#x2F;&#x2F;www.bbc.com&#x2F;news&#x2F;articles&#x2F;czx91rdxpyeo</a><p><a href=\"https:&#x2F;&#x2F;www.cnn.com&#x2F;2026&#x2F;04&#x2F;10&#x2F;tech&#x2F;suspect-arrest-openai-ceo-sam-altman\" rel=\"nofollow\">https:&#x2F;&#x2F;www.cnn.com&#x2F;2026&#x2F;04&#x2F;10&#x2F;tech&#x2F;suspect-arrest-openai-ce...</a>",
+        "title": "Molotov cocktail is hurled at home of Sam Altman",
+        "updated_at": "2026-04-11T00:56:08Z",
+        "url": "https://www.nytimes.com/2026/04/10/us/open-ai-sam-altman-molotov-cocktail.html"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Brajeshwar"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "<em>OpenAI</em>'s new $100 tier targets developers hitting Codex limits"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://thenewstack.io/<em>openai</em>s-new-100-tier-targets-developers-hitting-codex-and-claude-code-limits/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Brajeshwar",
+          "story_47721824"
+        ],
+        "author": "Brajeshwar",
+        "children": [
+          47722212,
+          47722312,
+          47724604
+        ],
+        "created_at": "2026-04-10T18:23:07Z",
+        "created_at_i": 1775845387,
+        "num_comments": 16,
+        "objectID": "47721824",
+        "points": 13,
+        "story_id": 47721824,
+        "title": "OpenAI's new $100 tier targets developers hitting Codex limits",
+        "updated_at": "2026-04-11T00:46:52Z",
+        "url": "https://thenewstack.io/openais-new-100-tier-targets-developers-hitting-codex-and-claude-code-limits/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "coloneltcb"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Suspect Arrested for Throwing Molotov Cocktail at Sam Altman's Home"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://www.wired.com/story/sam-altman-home-attack-<em>openai</em>-san-franisco-office-threat/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_coloneltcb",
+          "story_47721788"
+        ],
+        "author": "coloneltcb",
+        "children": [
+          47721801,
+          47724530,
+          47724326,
+          47722359
+        ],
+        "created_at": "2026-04-10T18:19:16Z",
+        "created_at_i": 1775845156,
+        "num_comments": 5,
+        "objectID": "47721788",
+        "points": 32,
+        "story_id": 47721788,
+        "title": "Suspect Arrested for Throwing Molotov Cocktail at Sam Altman's Home",
+        "updated_at": "2026-04-11T00:53:52Z",
+        "url": "https://www.wired.com/story/sam-altman-home-attack-openai-san-franisco-office-threat/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "surprisetalk"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "Applications of AI at <em>OpenAI</em>"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "openai"
+            ],
+            "value": "https://<em>openai</em>.com/academy/applications-of-ai/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_surprisetalk",
+          "story_47721522"
+        ],
+        "author": "surprisetalk",
+        "created_at": "2026-04-10T17:54:12Z",
+        "created_at_i": 1775843652,
+        "num_comments": 0,
+        "objectID": "47721522",
+        "points": 1,
+        "story_id": 47721522,
+        "title": "Applications of AI at OpenAI",
+        "updated_at": "2026-04-10T17:55:23Z",
+        "url": "https://openai.com/academy/applications-of-ai/"
+      }
+    ]
+  },
+  "Anthropic Claude": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "JunePanda"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "<em>Anthropic</em> injects reasoning_effort=25 into <em>Claude</em>.ai consumer system prompts"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://imgur.com/AOAs7Aq"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_JunePanda",
+          "story_47724951"
+        ],
+        "author": "JunePanda",
+        "children": [
+          47724952
+        ],
+        "created_at": "2026-04-10T23:08:31Z",
+        "created_at_i": 1775862511,
+        "num_comments": 1,
+        "objectID": "47724951",
+        "points": 3,
+        "story_id": 47724951,
+        "title": "Anthropic injects reasoning_effort=25 into Claude.ai consumer system prompts",
+        "updated_at": "2026-04-10T23:44:38Z",
+        "url": "https://imgur.com/AOAs7Aq"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "sarimkx"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "<em>Anthropic</em> Temporarily Banned OpenClaw's Creator from Accessing <em>Claude</em>"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://techcrunch.com/2026/04/10/<em>anthropic</em>-temporarily-banned-openclaws-creator-from-accessing-<em>claude</em>/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_sarimkx",
+          "story_47723855"
+        ],
+        "author": "sarimkx",
+        "created_at": "2026-04-10T21:25:37Z",
+        "created_at_i": 1775856337,
+        "num_comments": 0,
+        "objectID": "47723855",
+        "points": 3,
+        "story_id": 47723855,
+        "title": "Anthropic Temporarily Banned OpenClaw's Creator from Accessing Claude",
+        "updated_at": "2026-04-10T22:34:22Z",
+        "url": "https://techcrunch.com/2026/04/10/anthropic-temporarily-banned-openclaws-creator-from-accessing-claude/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Anon84"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "<em>Anthropic</em> Will Use CoreWeave's AI Capacity to Power <em>Claude</em>"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://www.bloomberg.com/news/articles/2026-04-10/<em>anthropic</em>-agrees-to-rent-coreweave-ai-capacity-to-power-<em>claude</em>"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Anon84",
+          "story_47721858"
+        ],
+        "author": "Anon84",
+        "created_at": "2026-04-10T18:26:17Z",
+        "created_at_i": 1775845577,
+        "num_comments": 0,
+        "objectID": "47721858",
+        "points": 3,
+        "story_id": 47721858,
+        "title": "Anthropic Will Use CoreWeave's AI Capacity to Power Claude",
+        "updated_at": "2026-04-10T18:41:52Z",
+        "url": "https://www.bloomberg.com/news/articles/2026-04-10/anthropic-agrees-to-rent-coreweave-ai-capacity-to-power-claude"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "rickcarlino"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "claude"
+            ],
+            "value": "Bring Back Buddy – A Consolidated Plea from the [<em>Claude</em> Code] Community"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://github.com/<em>anthropics</em>/<em>claude</em>-code/issues/45596"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_rickcarlino",
+          "story_47721750"
+        ],
+        "author": "rickcarlino",
+        "created_at": "2026-04-10T18:14:50Z",
+        "created_at_i": 1775844890,
+        "num_comments": 0,
+        "objectID": "47721750",
+        "points": 3,
+        "story_id": 47721750,
+        "title": "Bring Back Buddy – A Consolidated Plea from the [Claude Code] Community",
+        "updated_at": "2026-04-10T18:50:22Z",
+        "url": "https://github.com/anthropics/claude-code/issues/45596"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "mooreds"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "With <em>Claude</em> Managed Agents, <em>Anthropic</em> wants to run your AI agents for you"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://thenewstack.io/with-<em>claude</em>-managed-agents-<em>anthropic</em>-wants-to-run-your-ai-agents-for-you/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_mooreds",
+          "story_47720841"
+        ],
+        "author": "mooreds",
+        "created_at": "2026-04-10T16:54:26Z",
+        "created_at_i": 1775840066,
+        "num_comments": 0,
+        "objectID": "47720841",
+        "points": 2,
+        "story_id": 47720841,
+        "title": "With Claude Managed Agents, Anthropic wants to run your AI agents for you",
+        "updated_at": "2026-04-10T17:03:36Z",
+        "url": "https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "nirkalimi"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "anthropic"
+            ],
+            "value": "<em>Anthropic</em>'s warning about its own product"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "https://www.latimes.com/california/story/2026-04-10/chabria-column-<em>anthropic</em>-<em>claude</em>-mythos-preview"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_nirkalimi",
+          "story_47719233"
+        ],
+        "author": "nirkalimi",
+        "children": [
+          47720641
+        ],
+        "created_at": "2026-04-10T15:04:14Z",
+        "created_at_i": 1775833454,
+        "num_comments": 0,
+        "objectID": "47719233",
+        "points": 3,
+        "story_id": 47719233,
+        "title": "Anthropic's warning about its own product",
+        "updated_at": "2026-04-10T16:40:24Z",
+        "url": "https://www.latimes.com/california/story/2026-04-10/chabria-column-anthropic-claude-mythos-preview"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "yoaviram"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "Based on my personal experience, and from reports by others on HN, it seems that <em>Claude</em> Code has massively regressed over the past two weeks. This appears to be a combination of both usage limits being severely restricted and the quality of its work dropping significantly.<p>I'm on the $100 Max plan and am getting better results with GPT-5.4 on the $20 Pro plan, both in terms of quality and amount of work. Could it be that the moment <em>Anthropic</em> started leading the LLM race, it also started enshittifying its product? I know enshittification implies a longer process, but is this the first step? Curious to hear what others are experiencing."
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "Ask HN: Is <em>Anthropic</em> Enshittifying <em>Claude</em> Code?"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_yoaviram",
+          "story_47718450",
+          "ask_hn"
+        ],
+        "author": "yoaviram",
+        "created_at": "2026-04-10T14:11:21Z",
+        "created_at_i": 1775830281,
+        "num_comments": 0,
+        "objectID": "47718450",
+        "points": 1,
+        "story_id": 47718450,
+        "story_text": "Based on my personal experience, and from reports by others on HN, it seems that Claude Code has massively regressed over the past two weeks. This appears to be a combination of both usage limits being severely restricted and the quality of its work dropping significantly.<p>I&#x27;m on the $100 Max plan and am getting better results with GPT-5.4 on the $20 Pro plan, both in terms of quality and amount of work. Could it be that the moment Anthropic started leading the LLM race, it also started enshittifying its product? I know enshittification implies a longer process, but is this the first step? Curious to hear what others are experiencing.",
+        "title": "Ask HN: Is Anthropic Enshittifying Claude Code?",
+        "updated_at": "2026-04-10T14:16:51Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "edwardsrobbie"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "anthropic",
+              "claude"
+            ],
+            "value": "<em>Anthropic</em>'s <em>Claude</em> Mythos isn't a sentient super-hacker, it's a sales pitch"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "claude"
+            ],
+            "value": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-<em>claude</em>-mythos-isnt-a-sentient-super-hacker-its-a-sales-pitch-claims-of-thousands-of-severe-zero-days-rely-on-just-198-manual-reviews"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_edwardsrobbie",
+          "story_47718155"
+        ],
+        "author": "edwardsrobbie",
+        "children": [
+          47725277,
+          47720222,
+          47720353,
+          47721745,
+          47721683,
+          47719675,
+          47722059,
+          47720747
+        ],
+        "created_at": "2026-04-10T13:49:50Z",
+        "created_at_i": 1775828990,
+        "num_comments": 20,
+        "objectID": "47718155",
+        "points": 34,
+        "story_id": 47718155,
+        "title": "Anthropic's Claude Mythos isn't a sentient super-hacker, it's a sales pitch",
+        "updated_at": "2026-04-11T00:14:07Z",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-claude-mythos-isnt-a-sentient-super-hacker-its-a-sales-pitch-claims-of-thousands-of-severe-zero-days-rely-on-just-198-manual-reviews"
+      }
+    ]
+  },
+  "Llama": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "major4x"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "A Communist Apple II and Fourteen Years of Not Knowing What You're Testing"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "https://<em>llama</em>.gs/blog/index.php/2026/04/10/friday-archaeology-a-communist-apple-ii-and-fourteen-years-of-not-knowing-what-youre-testing/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_major4x",
+          "story_47724571"
+        ],
+        "author": "major4x",
+        "created_at": "2026-04-10T22:36:24Z",
+        "created_at_i": 1775860584,
+        "num_comments": 0,
+        "objectID": "47724571",
+        "points": 1,
+        "story_id": 47724571,
+        "title": "A Communist Apple II and Fourteen Years of Not Knowing What You're Testing",
+        "updated_at": "2026-04-10T22:38:24Z",
+        "url": "https://llama.gs/blog/index.php/2026/04/10/friday-archaeology-a-communist-apple-ii-and-fourteen-years-of-not-knowing-what-youre-testing/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "jeffy864567"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "<em>Llama</em> LLM Network Feture"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/Jeffyjefchat/oracle-protocol"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_jeffy864567",
+          "story_47717093"
+        ],
+        "author": "jeffy864567",
+        "children": [
+          47717094
+        ],
+        "created_at": "2026-04-10T12:29:01Z",
+        "created_at_i": 1775824141,
+        "num_comments": 0,
+        "objectID": "47717093",
+        "points": 1,
+        "story_id": 47717093,
+        "title": "Llama LLM Network Feture",
+        "updated_at": "2026-04-10T12:30:21Z",
+        "url": "https://github.com/Jeffyjefchat/oracle-protocol"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "drcursor"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "After trying multiple apps that promised full automatic local transcription of meetings but ended up using remote AI, OpenRouter, or requiring <em>Ollama</em> to be running in the background.<p>I decided to fork another project and make it as straightforward to use as possible.<p>It just runs on the background, and transcripts calls automatically when they happen and saves them as md files I can use in obsidian or anywhere else.<p>I still need to fix some tech issues, and make local AI summaries actually useful, but in the meantime, I have the app I've wished for a long time. Hope others find it useful."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: HushScribe – Self-contained local meeting transcription for macOS"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/drcursor/HushScribe"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_drcursor",
+          "story_47704147",
+          "show_hn"
+        ],
+        "author": "drcursor",
+        "created_at": "2026-04-09T14:22:23Z",
+        "created_at_i": 1775744543,
+        "num_comments": 0,
+        "objectID": "47704147",
+        "points": 2,
+        "story_id": 47704147,
+        "story_text": "After trying multiple apps that promised full automatic local transcription of meetings but ended up using remote AI, OpenRouter, or requiring Ollama to be running in the background.<p>I decided to fork another project and make it as straightforward to use as possible.<p>It just runs on the background, and transcripts calls automatically when they happen and saves them as md files I can use in obsidian or anywhere else.<p>I still need to fix some tech issues, and make local AI summaries actually useful, but in the meantime, I have the app I&#x27;ve wished for a long time. Hope others find it useful.",
+        "title": "Show HN: HushScribe – Self-contained local meeting transcription for macOS",
+        "updated_at": "2026-04-09T14:28:31Z",
+        "url": "https://github.com/drcursor/HushScribe"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "pdrgds"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "I built a Rust CLI that takes an EPUB and rewrites it at a target CEFR level (A1–C2) using an LLM. Give it a German novel and ask for Portuguese at A2 — it produces a new EPUB ready for your Kindle.<p>For beginner levels (A1/A2), it runs a two-pass pipeline: first simplify in the source language, then translate. This produced 15–25% better vocabulary coverage than doing both in one shot.<p>It uses Groq or <em>Ollama</em> (local) as backends. A sample book (Kafka's Metamorphosis) is included so you can try it immediately."
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Nheengatu – CLI tool to simplify books to your language level with LLMs"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/pdrgds/nheengatu"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_pdrgds",
+          "story_47703706",
+          "show_hn"
+        ],
+        "author": "pdrgds",
+        "created_at": "2026-04-09T13:46:13Z",
+        "created_at_i": 1775742373,
+        "num_comments": 0,
+        "objectID": "47703706",
+        "points": 1,
+        "story_id": 47703706,
+        "story_text": "I built a Rust CLI that takes an EPUB and rewrites it at a target CEFR level (A1–C2) using an LLM. Give it a German novel and ask for Portuguese at A2 — it produces a new EPUB ready for your Kindle.<p>For beginner levels (A1&#x2F;A2), it runs a two-pass pipeline: first simplify in the source language, then translate. This produced 15–25% better vocabulary coverage than doing both in one shot.<p>It uses Groq or Ollama (local) as backends. A sample book (Kafka&#x27;s Metamorphosis) is included so you can try it immediately.",
+        "title": "Show HN: Nheengatu – CLI tool to simplify books to your language level with LLMs",
+        "updated_at": "2026-04-09T13:51:35Z",
+        "url": "https://github.com/pdrgds/nheengatu"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "benbojangles"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Gemini-CLI, zeroclaw, <em>Llama</em>.cpp, Qwen3.5 on TK1"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "https://forums.developer.nvidia.com/t/gemini-cli-zeroclaw-<em>llama</em>-cpp-qwen3-5-on-tk1/365653"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_benbojangles",
+          "story_47701187"
+        ],
+        "author": "benbojangles",
+        "children": [
+          47701188
+        ],
+        "created_at": "2026-04-09T09:21:31Z",
+        "created_at_i": 1775726491,
+        "num_comments": 1,
+        "objectID": "47701187",
+        "points": 1,
+        "story_id": 47701187,
+        "title": "Gemini-CLI, zeroclaw, Llama.cpp, Qwen3.5 on TK1",
+        "updated_at": "2026-04-09T09:24:01Z",
+        "url": "https://forums.developer.nvidia.com/t/gemini-cli-zeroclaw-llama-cpp-qwen3-5-on-tk1/365653"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "vektormemory"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Massive Upgrades: 1.4.6:<p>28 Claude Mcp tools\nCloak Stealth Browser\nD3 Graph\nCustom Ink Cli\n<em>Ollama</em> Support\nGrog, Claude, Openai,Gemini Mistral Support\nResearch Tools \nBetter Sqlite Db\nOnnx embedding\nLocal first memory migration\nAudn memory eval\nRem dream cycle\nInstant hyper intel memory curation and retention<p>Review Vektor:\n<a href=\"https://github.com/Vektor-Memory/Vektor-memory\" rel=\"nofollow\">https://github.com/Vektor-Memory/Vektor-memory</a>"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: D3 4 Layer Magma Graph – Cloak Stealth Browser"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://vektormemory.com/docs/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_vektormemory",
+          "story_47700390",
+          "show_hn"
+        ],
+        "author": "vektormemory",
+        "created_at": "2026-04-09T07:27:34Z",
+        "created_at_i": 1775719654,
+        "num_comments": 0,
+        "objectID": "47700390",
+        "points": 1,
+        "story_id": 47700390,
+        "story_text": "Massive Upgrades: 1.4.6:<p>28 Claude Mcp tools\nCloak Stealth Browser\nD3 Graph\nCustom Ink Cli\nOllama Support\nGrog, Claude, Openai,Gemini Mistral Support\nResearch Tools \nBetter Sqlite Db\nOnnx embedding\nLocal first memory migration\nAudn memory eval\nRem dream cycle\nInstant hyper intel memory curation and retention<p>Review Vektor:\n<a href=\"https:&#x2F;&#x2F;github.com&#x2F;Vektor-Memory&#x2F;Vektor-memory\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;Vektor-Memory&#x2F;Vektor-memory</a>",
+        "title": "Show HN: D3 4 Layer Magma Graph – Cloak Stealth Browser",
+        "updated_at": "2026-04-09T07:34:30Z",
+        "url": "https://vektormemory.com/docs/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "a_t48"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "Hey HN!<p>I've built clipper.dev -  the fastest container repository in the world. (Big claim, I know.) It deduplicates at a file/chunk level, rather than at the layer level.<p>I get around 10-20% faster pulls than docker (when using containerd for both) for fresh pulls. \nFor some workflows, I see 80-90% faster patch pulls (think v0.17.5 -&gt; 0.17.6).<p>Here's a best case scenario for me (and worst case for dockerhub)<p><pre><code>    docker&gt; time sudo nerdctl pull <em>ollama</em>/<em>ollama</em>:0.17.5\n    docker.io/<em>ollama</em>/<em>ollama</em>:0.17.5:\n    elapsed: 244.1s total:  2.9 Gi (12.3 MiB/s)                                      \n\n    real 4m4.172s\n    user 0m0.115s\n    sys 0m0.227s\n    docker&gt; time sudo nerdctl pull <em>ollama</em>/<em>ollama</em>:0.17.6\n    docker.io/<em>ollama</em>/<em>ollama</em>:0.17.6:\n    elapsed: 234.9s total:  2.8 Gi (12.3 MiB/s)                                      \n\n    real 3m54.965s\n    user 0m0.051s\n    sys 0m0.275s\n</code></pre>\n---<p><pre><code>    clipper&gt; time sudo clipper pull clipper/<em>ollama</em>:0.17.5\n    using containerd runtime at /run/containerd/containerd.sock\n    fetching manifest clipper.dev/clipper/<em>ollama</em>:0.17.5 ...\n    image created: clipper.dev/clipper/<em>ollama</em>:0.17.5\n    fetched 46 chunks (2.2 GB, 11.7 MB/s), took 3m16.134s\n    done — clipper.dev/clipper/<em>ollama</em>:0.17.5\n\n    real 3m17.532s\n    user 0m0.006s\n    sys 0m0.012s\n\n    clipper&gt; time sudo clipper pull clipper/<em>ollama</em>:0.17.6\n    using containerd runtime at /run/containerd/containerd.sock\n    fetching manifest clipper.dev/clipper/<em>ollama</em>:0.17.6 ...\n    image created: clipper.dev/clipper/<em>ollama</em>:0.17.6\n    fetched 6 chunks (599.2 MB, 7.7 MB/s), took 1m17.48s\n    done — clipper.dev/clipper/<em>ollama</em>:0.17.6\n\n    real 1m19.061s\n    user 0m0.005s\n    sys 0m0.016s\n</code></pre>\nThe first two layers of 0.17.6 are shared with 0.17.5, but everything else has to be transported again with docker, but not with clipper. The exact speedup depends on how fast my wifi is feeling at the time, but I'm pulling 1.5 GB less than dockerhub can do. This is _huge_ for robotics workflows or anyone else pulling docker images on poor connections. (This is not even as fast as it could be - there's other optimizations like chunking within files or using BytePort that could make this go even faster).<p>I built this because at multiple companies I've been at, pulling new images for updates has been...very painful. Robotics Dockerfiles tend to have a lot of dependencies stuffed into a small amount of layers. Adding one new dependency means shipping the bytes for every other dependency, even with perfect pinning. Additionally, the Dockerfiles are oftentimes...not well written, compounding the problem. So I decided to fix the tool to fit the user, rather than the inverse.<p>There's some other side benefits to using clipper:\n - Moving a file or changing permissions is &quot;free&quot;: another layer already has the bytes\n - The on-disk structure lends itself much better to P2P device updates than docker's layout<p>I do intend this to be a commercial product, but pricing is still up in the air. I'm currently targeting robotics companies as they feel the most pain here. There's some other possible fields that I'm interested in that might find use in this: IoT, edge AI, space datacenters/etc, developmer tooling.<p>Please give it a try. If you don't want to upload an image, these repos should be publically pullable once you register an account:<p><pre><code>    clipper/ubuntu: 20.04, 22.04, 24.04\n    clipper/<em>ollama</em>: 0.17.5, 0.17.6\n    clipper/python: 3.13, 3.14</code></pre>"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Clipper – The World's Fastest Container Registry"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://clipper.dev"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_a_t48",
+          "story_47697338",
+          "show_hn"
+        ],
+        "author": "a_t48",
+        "created_at": "2026-04-08T23:05:24Z",
+        "created_at_i": 1775689524,
+        "num_comments": 0,
+        "objectID": "47697338",
+        "points": 1,
+        "story_id": 47697338,
+        "story_text": "Hey HN!<p>I&#x27;ve built clipper.dev -  the fastest container repository in the world. (Big claim, I know.) It deduplicates at a file&#x2F;chunk level, rather than at the layer level.<p>I get around 10-20% faster pulls than docker (when using containerd for both) for fresh pulls. \nFor some workflows, I see 80-90% faster patch pulls (think v0.17.5 -&gt; 0.17.6).<p>Here&#x27;s a best case scenario for me (and worst case for dockerhub)<p><pre><code>    docker&gt; time sudo nerdctl pull ollama&#x2F;ollama:0.17.5\n    docker.io&#x2F;ollama&#x2F;ollama:0.17.5:\n    elapsed: 244.1s total:  2.9 Gi (12.3 MiB&#x2F;s)                                      \n\n    real 4m4.172s\n    user 0m0.115s\n    sys 0m0.227s\n    docker&gt; time sudo nerdctl pull ollama&#x2F;ollama:0.17.6\n    docker.io&#x2F;ollama&#x2F;ollama:0.17.6:\n    elapsed: 234.9s total:  2.8 Gi (12.3 MiB&#x2F;s)                                      \n\n    real 3m54.965s\n    user 0m0.051s\n    sys 0m0.275s\n</code></pre>\n---<p><pre><code>    clipper&gt; time sudo clipper pull clipper&#x2F;ollama:0.17.5\n    using containerd runtime at &#x2F;run&#x2F;containerd&#x2F;containerd.sock\n    fetching manifest clipper.dev&#x2F;clipper&#x2F;ollama:0.17.5 ...\n    image created: clipper.dev&#x2F;clipper&#x2F;ollama:0.17.5\n    fetched 46 chunks (2.2 GB, 11.7 MB&#x2F;s), took 3m16.134s\n    done — clipper.dev&#x2F;clipper&#x2F;ollama:0.17.5\n\n    real 3m17.532s\n    user 0m0.006s\n    sys 0m0.012s\n\n    clipper&gt; time sudo clipper pull clipper&#x2F;ollama:0.17.6\n    using containerd runtime at &#x2F;run&#x2F;containerd&#x2F;containerd.sock\n    fetching manifest clipper.dev&#x2F;clipper&#x2F;ollama:0.17.6 ...\n    image created: clipper.dev&#x2F;clipper&#x2F;ollama:0.17.6\n    fetched 6 chunks (599.2 MB, 7.7 MB&#x2F;s), took 1m17.48s\n    done — clipper.dev&#x2F;clipper&#x2F;ollama:0.17.6\n\n    real 1m19.061s\n    user 0m0.005s\n    sys 0m0.016s\n</code></pre>\nThe first two layers of 0.17.6 are shared with 0.17.5, but everything else has to be transported again with docker, but not with clipper. The exact speedup depends on how fast my wifi is feeling at the time, but I&#x27;m pulling 1.5 GB less than dockerhub can do. This is _huge_ for robotics workflows or anyone else pulling docker images on poor connections. (This is not even as fast as it could be - there&#x27;s other optimizations like chunking within files or using BytePort that could make this go even faster).<p>I built this because at multiple companies I&#x27;ve been at, pulling new images for updates has been...very painful. Robotics Dockerfiles tend to have a lot of dependencies stuffed into a small amount of layers. Adding one new dependency means shipping the bytes for every other dependency, even with perfect pinning. Additionally, the Dockerfiles are oftentimes...not well written, compounding the problem. So I decided to fix the tool to fit the user, rather than the inverse.<p>There&#x27;s some other side benefits to using clipper:\n - Moving a file or changing permissions is &quot;free&quot;: another layer already has the bytes\n - The on-disk structure lends itself much better to P2P device updates than docker&#x27;s layout<p>I do intend this to be a commercial product, but pricing is still up in the air. I&#x27;m currently targeting robotics companies as they feel the most pain here. There&#x27;s some other possible fields that I&#x27;m interested in that might find use in this: IoT, edge AI, space datacenters&#x2F;etc, developmer tooling.<p>Please give it a try. If you don&#x27;t want to upload an image, these repos should be publically pullable once you register an account:<p><pre><code>    clipper&#x2F;ubuntu: 20.04, 22.04, 24.04\n    clipper&#x2F;ollama: 0.17.5, 0.17.6\n    clipper&#x2F;python: 3.13, 3.14</code></pre>",
+        "title": "Show HN: Clipper – The World's Fastest Container Registry",
+        "updated_at": "2026-04-08T23:09:59Z",
+        "url": "https://clipper.dev"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "llama"
+            ],
+            "value": "<em>llama</em>theollama"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Prisoner's Dilemma – An Extension (from game theory)"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://pd.luthira.com/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_llamatheollama",
+          "story_47696730"
+        ],
+        "author": "llamatheollama",
+        "created_at": "2026-04-08T21:50:43Z",
+        "created_at_i": 1775685043,
+        "num_comments": 0,
+        "objectID": "47696730",
+        "points": 2,
+        "story_id": 47696730,
+        "title": "Prisoner's Dilemma – An Extension (from game theory)",
+        "updated_at": "2026-04-08T22:05:32Z",
+        "url": "https://pd.luthira.com/"
+      }
+    ]
+  },
+  "AI agents": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Wuzu"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "<em>AI</em> <em>Agent</em> Proxy to help reduce token usage (Anthropic Only)"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/Wuzu11517/agentic-proxy"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Wuzu",
+          "story_47725472"
+        ],
+        "author": "Wuzu",
+        "children": [
+          47725473
+        ],
+        "created_at": "2026-04-10T23:54:53Z",
+        "created_at_i": 1775865293,
+        "num_comments": 1,
+        "objectID": "47725472",
+        "points": 2,
+        "story_id": 47725472,
+        "title": "AI Agent Proxy to help reduce token usage (Anthropic Only)",
+        "updated_at": "2026-04-11T00:09:07Z",
+        "url": "https://github.com/Wuzu11517/agentic-proxy"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "simjnd"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Maki – the efficient coder (<em>AI</em> <em>agent</em>)"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://maki.sh/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_simjnd",
+          "story_47725243"
+        ],
+        "author": "simjnd",
+        "children": [
+          47725623
+        ],
+        "created_at": "2026-04-10T23:35:02Z",
+        "created_at_i": 1775864102,
+        "num_comments": 1,
+        "objectID": "47725243",
+        "points": 4,
+        "story_id": 47725243,
+        "title": "Maki – the efficient coder (AI agent)",
+        "updated_at": "2026-04-11T00:17:37Z",
+        "url": "https://maki.sh/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "atripat6"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Show HN: Ark – <em>AI</em> <em>agent</em> runtime in Go that tracks cost per decision step"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/atripati/ark"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_atripat6",
+          "story_47724969",
+          "show_hn"
+        ],
+        "author": "atripat6",
+        "children": [
+          47725568,
+          47724980,
+          47725636
+        ],
+        "created_at": "2026-04-10T23:10:30Z",
+        "created_at_i": 1775862630,
+        "num_comments": 1,
+        "objectID": "47724969",
+        "points": 3,
+        "story_id": 47724969,
+        "title": "Show HN: Ark – AI agent runtime in Go that tracks cost per decision step",
+        "updated_at": "2026-04-11T00:28:23Z",
+        "url": "https://github.com/atripati/ark"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "earayu"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "agents"
+            ],
+            "value": "A public <em>Agent</em> Sandbox with Hermes inside"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai"
+            ],
+            "value": "https://sandbox-sba1ad15f841c32f2f.treadstone-<em>ai</em>.dev/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_earayu",
+          "story_47724597"
+        ],
+        "author": "earayu",
+        "children": [
+          47724855,
+          47724851
+        ],
+        "created_at": "2026-04-10T22:38:50Z",
+        "created_at_i": 1775860730,
+        "num_comments": 2,
+        "objectID": "47724597",
+        "points": 4,
+        "story_id": 47724597,
+        "title": "A public Agent Sandbox with Hermes inside",
+        "updated_at": "2026-04-10T23:00:52Z",
+        "url": "https://sandbox-sba1ad15f841c32f2f.treadstone-ai.dev/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "beacharsiu"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "I Tried Giving an <em>AI</em> <em>Agent</em> Gmail Access. It Took 19 Steps and Still Failed"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.anson.im/blog/why-i-built-agentsmail/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_beacharsiu",
+          "story_47724364"
+        ],
+        "author": "beacharsiu",
+        "children": [
+          47724365
+        ],
+        "created_at": "2026-04-10T22:17:54Z",
+        "created_at_i": 1775859474,
+        "num_comments": 0,
+        "objectID": "47724364",
+        "points": 2,
+        "story_id": 47724364,
+        "title": "I Tried Giving an AI Agent Gmail Access. It Took 19 Steps and Still Failed",
+        "updated_at": "2026-04-10T22:49:22Z",
+        "url": "https://www.anson.im/blog/why-i-built-agentsmail/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "haabe"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Mycelium – Make your <em>AI</em> <em>agent</em> validate the problem before writing code"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://github.com/haabe/mycelium"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_haabe",
+          "story_47723889"
+        ],
+        "author": "haabe",
+        "children": [
+          47723890
+        ],
+        "created_at": "2026-04-10T21:30:17Z",
+        "created_at_i": 1775856617,
+        "num_comments": 0,
+        "objectID": "47723889",
+        "points": 2,
+        "story_id": 47723889,
+        "title": "Mycelium – Make your AI agent validate the problem before writing code",
+        "updated_at": "2026-04-10T22:20:25Z",
+        "url": "https://github.com/haabe/mycelium"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "pinfloyd"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Most <em>AI</em> and automation stacks still rely on monitoring, logs, and post-event review.<p>That is not control if the action is irreversible.<p>A scanner can tell you what happened.\nA boundary can decide whether it may happen.<p>The core problem I keep running into is this:\nonce <em>agents</em> can call tools, trigger workflows, move data, spend money, or change state, “observe after the fact” stops being enough.<p>What seems missing is a practical pre-execution decision layer:\nan external allow/deny boundary between intent and execution.<p>Questions I’m interested in:<p>* How are people handling this today for agentic workflows in production?\n* Are monitoring + approvals actually enough once execution becomes fast and autonomous?\n* Where do existing policy engines break down for <em>AI</em>-driven actions?\n* What would a real pre-execution control layer need to verify before allowing action?<p>I’m less interested in theory here and more in what people have actually seen fail in production."
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai"
+            ],
+            "value": "Scanners are too late for <em>AI</em>-driven actions"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_pinfloyd",
+          "story_47723275",
+          "ask_hn"
+        ],
+        "author": "pinfloyd",
+        "created_at": "2026-04-10T20:27:54Z",
+        "created_at_i": 1775852874,
+        "num_comments": 0,
+        "objectID": "47723275",
+        "points": 1,
+        "story_id": 47723275,
+        "story_text": "Most AI and automation stacks still rely on monitoring, logs, and post-event review.<p>That is not control if the action is irreversible.<p>A scanner can tell you what happened.\nA boundary can decide whether it may happen.<p>The core problem I keep running into is this:\nonce agents can call tools, trigger workflows, move data, spend money, or change state, “observe after the fact” stops being enough.<p>What seems missing is a practical pre-execution decision layer:\nan external allow&#x2F;deny boundary between intent and execution.<p>Questions I’m interested in:<p>* How are people handling this today for agentic workflows in production?\n* Are monitoring + approvals actually enough once execution becomes fast and autonomous?\n* Where do existing policy engines break down for AI-driven actions?\n* What would a real pre-execution control layer need to verify before allowing action?<p>I’m less interested in theory here and more in what people have actually seen fail in production.",
+        "title": "Scanners are too late for AI-driven actions",
+        "updated_at": "2026-04-10T20:44:22Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "jossclimb"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Nono – Runtime safety infrastructure for <em>AI</em> <em>agents</em>"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://nono.sh"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_jossclimb",
+          "story_47723186"
+        ],
+        "author": "jossclimb",
+        "created_at": "2026-04-10T20:20:28Z",
+        "created_at_i": 1775852428,
+        "num_comments": 0,
+        "objectID": "47723186",
+        "points": 3,
+        "story_id": 47723186,
+        "title": "Nono – Runtime safety infrastructure for AI agents",
+        "updated_at": "2026-04-10T20:49:06Z",
+        "url": "https://nono.sh"
+      }
+    ]
+  },
+  "Vibe Coding": {
+    "status": "ok",
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "ksoped"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "\"<em>Vibe</em> <em>Coding</em>\" is derogatory to the shift towards Natural Language Programming"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://medium.com/@olafeezee/its-natural-language-programming-not-<em>vibe</em>-<em>coding</em>-4b33079df343"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_ksoped",
+          "story_47723837"
+        ],
+        "author": "ksoped",
+        "children": [
+          47724974
+        ],
+        "created_at": "2026-04-10T21:23:53Z",
+        "created_at_i": 1775856233,
+        "num_comments": 1,
+        "objectID": "47723837",
+        "points": 3,
+        "story_id": 47723837,
+        "title": "\"Vibe Coding\" is derogatory to the shift towards Natural Language Programming",
+        "updated_at": "2026-04-10T23:20:37Z",
+        "url": "https://medium.com/@olafeezee/its-natural-language-programming-not-vibe-coding-4b33079df343"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "macote"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "The uncomfortable truth about <em>vibe</em> <em>coding</em>"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://developers.redhat.com/articles/2026/02/17/uncomfortable-truth-about-<em>vibe</em>-<em>coding</em>"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_macote",
+          "story_47722242"
+        ],
+        "author": "macote",
+        "children": [
+          47722401
+        ],
+        "created_at": "2026-04-10T19:02:35Z",
+        "created_at_i": 1775847755,
+        "num_comments": 1,
+        "objectID": "47722242",
+        "points": 6,
+        "story_id": 47722242,
+        "title": "The uncomfortable truth about vibe coding",
+        "updated_at": "2026-04-10T20:17:22Z",
+        "url": "https://developers.redhat.com/articles/2026/02/17/uncomfortable-truth-about-vibe-coding"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "AndrewKemendo"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "<a href=\"https://www.givedirection.com/\" rel=\"nofollow\">https://www.givedirection.com/</a><p>Every week on HN there's a valid thread about <em>vibe</em> <em>coding</em> producing unmaintainable garbage, or someone who built something with Claude over a weekend and can't explain how it works or fix it when it breaks. The gap I keep seeing is that people can't define their problem, don't scope their work, and rarely have exit conditions to test against such that they avoid these. This set of steps is arguably the most important thing you can do if you want something (software or otherwise) that lasts.<p>Direction runs monthly cohort-based courses where small groups go from idea to shipped MVP in four weeks. Cohorts are 30-40 people max, and instructors (mostly myself with some help from my friends) are people who have built and shipped real things, and we teach how to use AI as an assistive tool not your whole personality. Every project has a defined exit condition before anyone asks their tools to produce anything.<p>Every student presents what they built on demo day. Graduates join a permanent builders collective that grows with every cohort in a Discord group.<p>Ultimately we teach people: How to define what they are actually creating, what &quot;done&quot; looks like, how to maintain what they created and ultimately how to know when they have succeeded or failed.<p>Here's the syllabus:<p>Week 1: Problem decomposition and exit conditions. Creators have to write down exactly what they are going to present at the end of the course, how they think they will get there and what they plan to do with it after the course ends.\nWeek 2: Prototype. First working version. Doesn't have to be pretty it just has to exist and meet the self defined exit condition.\nWeek 3: MVP Testing and iteration. This is where the exit condition either holds or exposes what was wrong in week 1.\nWeek 4: Demo day. You show however far you got to the cohort, and your plans for the future and get their feedback.<p>$99/week pay as you go, no long term lock in or special platform junk.<p>Students pick their project or I have 13 defined project types, each with a written exit condition on the site. Creators own everything they build outright, I don't have any platform dependency, no subscription, no equity taken. The only costs are the weekly fee and your time.<p>Cohort 0 starts May 4th. Full curriculum and exit conditions at givedirection.com.<p>Happy to talk through ideas and questions and happy to have anyone who wants to be an instructor let me know.<p>View the Vision, Mission and Roadmap here:<p><a href=\"https://www.givedirection.com/vision.html\" rel=\"nofollow\">https://www.givedirection.com/vision.html</a><p>HN discount code for 50% off is COHORT-0"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Show HN: Direction – a 4-week course for people afraid of shipping AI slop"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://www.givedirection.com/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_AndrewKemendo",
+          "story_47721469",
+          "show_hn"
+        ],
+        "author": "AndrewKemendo",
+        "created_at": "2026-04-10T17:49:56Z",
+        "created_at_i": 1775843396,
+        "num_comments": 0,
+        "objectID": "47721469",
+        "points": 2,
+        "story_id": 47721469,
+        "story_text": "<a href=\"https:&#x2F;&#x2F;www.givedirection.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.givedirection.com&#x2F;</a><p>Every week on HN there&#x27;s a valid thread about vibe coding producing unmaintainable garbage, or someone who built something with Claude over a weekend and can&#x27;t explain how it works or fix it when it breaks. The gap I keep seeing is that people can&#x27;t define their problem, don&#x27;t scope their work, and rarely have exit conditions to test against such that they avoid these. This set of steps is arguably the most important thing you can do if you want something (software or otherwise) that lasts.<p>Direction runs monthly cohort-based courses where small groups go from idea to shipped MVP in four weeks. Cohorts are 30-40 people max, and instructors (mostly myself with some help from my friends) are people who have built and shipped real things, and we teach how to use AI as an assistive tool not your whole personality. Every project has a defined exit condition before anyone asks their tools to produce anything.<p>Every student presents what they built on demo day. Graduates join a permanent builders collective that grows with every cohort in a Discord group.<p>Ultimately we teach people: How to define what they are actually creating, what &quot;done&quot; looks like, how to maintain what they created and ultimately how to know when they have succeeded or failed.<p>Here&#x27;s the syllabus:<p>Week 1: Problem decomposition and exit conditions. Creators have to write down exactly what they are going to present at the end of the course, how they think they will get there and what they plan to do with it after the course ends.\nWeek 2: Prototype. First working version. Doesn&#x27;t have to be pretty it just has to exist and meet the self defined exit condition.\nWeek 3: MVP Testing and iteration. This is where the exit condition either holds or exposes what was wrong in week 1.\nWeek 4: Demo day. You show however far you got to the cohort, and your plans for the future and get their feedback.<p>$99&#x2F;week pay as you go, no long term lock in or special platform junk.<p>Students pick their project or I have 13 defined project types, each with a written exit condition on the site. Creators own everything they build outright, I don&#x27;t have any platform dependency, no subscription, no equity taken. The only costs are the weekly fee and your time.<p>Cohort 0 starts May 4th. Full curriculum and exit conditions at givedirection.com.<p>Happy to talk through ideas and questions and happy to have anyone who wants to be an instructor let me know.<p>View the Vision, Mission and Roadmap here:<p><a href=\"https:&#x2F;&#x2F;www.givedirection.com&#x2F;vision.html\" rel=\"nofollow\">https:&#x2F;&#x2F;www.givedirection.com&#x2F;vision.html</a><p>HN discount code for 50% off is COHORT-0",
+        "title": "Show HN: Direction – a 4-week course for people afraid of shipping AI slop",
+        "updated_at": "2026-04-10T20:44:22Z",
+        "url": "https://www.givedirection.com/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "young_mete"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "<em>Vibe</em> <em>coding</em> is missing a social layer"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://metedata.substack.com/p/metedata-digest-005-<em>vibe</em>-<em>coding</em>-wants"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_young_mete",
+          "story_47719721"
+        ],
+        "author": "young_mete",
+        "created_at": "2026-04-10T15:36:05Z",
+        "created_at_i": 1775835365,
+        "num_comments": 0,
+        "objectID": "47719721",
+        "points": 1,
+        "story_id": 47719721,
+        "title": "Vibe coding is missing a social layer",
+        "updated_at": "2026-04-10T15:39:08Z",
+        "url": "https://metedata.substack.com/p/metedata-digest-005-vibe-coding-wants"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "ulrischa"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "Bluesky users are mastering the fine art of blaming everything on \"<em>vibe</em> <em>coding</em>\""
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://arstechnica.com/ai/2026/04/bluesky-users-are-mastering-the-fine-art-of-blaming-everything-on-<em>vibe</em>-<em>coding</em>/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_ulrischa",
+          "story_47718804"
+        ],
+        "author": "ulrischa",
+        "children": [
+          47719556,
+          47721128
+        ],
+        "created_at": "2026-04-10T14:35:05Z",
+        "created_at_i": 1775831705,
+        "num_comments": 6,
+        "objectID": "47718804",
+        "points": 26,
+        "story_id": 47718804,
+        "title": "Bluesky users are mastering the fine art of blaming everything on \"vibe coding\"",
+        "updated_at": "2026-04-10T21:26:37Z",
+        "url": "https://arstechnica.com/ai/2026/04/bluesky-users-are-mastering-the-fine-art-of-blaming-everything-on-vibe-coding/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "wasimsk"
+          },
+          "story_text": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "I’ve dialed in my prompts to the point where hallucinations are basically zero. I'm building full HTML/CSS/JS frontends, Rust backends, and GitHub Actions YMLs without typing a single line of code myself.\n My whole loop is just Gemini 3.1 + VS Code + GitHub.\n Has anyone else reached this point? Does writing syntax actually feel obsolete to you now, or am I just in a honeymoon phase?<p>Please clarify that to me."
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "Ask HN: Does <em>Vibe</em> <em>Coding</em> and Prompt Engineering make me an Software Engineer?"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_wasimsk",
+          "story_47713593",
+          "ask_hn"
+        ],
+        "author": "wasimsk",
+        "children": [
+          47721506,
+          47713784,
+          47713691,
+          47713779,
+          47713683,
+          47713698,
+          47713605
+        ],
+        "created_at": "2026-04-10T04:18:33Z",
+        "created_at_i": 1775794713,
+        "num_comments": 13,
+        "objectID": "47713593",
+        "points": 1,
+        "story_id": 47713593,
+        "story_text": "I’ve dialed in my prompts to the point where hallucinations are basically zero. I&#x27;m building full HTML&#x2F;CSS&#x2F;JS frontends, Rust backends, and GitHub Actions YMLs without typing a single line of code myself.\n My whole loop is just Gemini 3.1 + VS Code + GitHub.\n Has anyone else reached this point? Does writing syntax actually feel obsolete to you now, or am I just in a honeymoon phase?<p>Please clarify that to me.",
+        "title": "Ask HN: Does Vibe Coding and Prompt Engineering make me an Software Engineer?",
+        "updated_at": "2026-04-10T17:53:37Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "high_byte"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "what are some <em>vibecoding</em> horror stories?<p>we always hear how the marketing guy replaced the fortune 500 product by <em>vibe coding</em> 2 hours and whatnot<p>but what are examples when it went wrong?"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "What are some <em>vibecoding</em> horror stories?"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_high_byte",
+          "story_47707681",
+          "ask_hn"
+        ],
+        "author": "high_byte",
+        "children": [
+          47708881
+        ],
+        "created_at": "2026-04-09T18:33:13Z",
+        "created_at_i": 1775759593,
+        "num_comments": 1,
+        "objectID": "47707681",
+        "points": 4,
+        "story_id": 47707681,
+        "story_text": "what are some vibecoding horror stories?<p>we always hear how the marketing guy replaced the fortune 500 product by vibe coding 2 hours and whatnot<p>but what are examples when it went wrong?",
+        "title": "What are some vibecoding horror stories?",
+        "updated_at": "2026-04-09T19:53:51Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "young_mete"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "<em>Vibe</em> <em>coding</em> is akin to gaming. So why is there no social layer?"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "vibe",
+              "coding"
+            ],
+            "value": "https://metedata.substack.com/p/metedata-digest-005-<em>vibe</em>-<em>coding</em>-wants"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_young_mete",
+          "story_47704232"
+        ],
+        "author": "young_mete",
+        "created_at": "2026-04-09T14:28:22Z",
+        "created_at_i": 1775744902,
+        "num_comments": 0,
+        "objectID": "47704232",
+        "points": 1,
+        "story_id": 47704232,
+        "title": "Vibe coding is akin to gaming. So why is there no social layer?",
+        "updated_at": "2026-04-09T14:33:32Z",
+        "url": "https://metedata.substack.com/p/metedata-digest-005-vibe-coding-wants"
+      }
+    ]
+  }
+}

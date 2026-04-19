@@ -1,0 +1,74 @@
+{
+  "thread_id": "019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+  "topic": {
+    "slug": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+    "title": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+    "topic_type": "general_commentary",
+    "topic_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets/topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化"
+  },
+  "template": {
+    "selected_id": "story_page",
+    "selected_name": "通用故事面板 (Story Page)",
+    "selection_reason": [
+      "默认模板，适配大多数评论型主题",
+      "以图表画廊 + 媒体卡片为主"
+    ],
+    "required_fields": [
+      "chart_csvs",
+      "chart_pngs",
+      "logic_relations_json",
+      "scene_plan"
+    ],
+    "available_fields": [
+      "artifact_tag",
+      "chart_anchor_ids",
+      "core_claim",
+      "current_status",
+      "data_granularity",
+      "inputs",
+      "key_metrics_to_emit",
+      "layout_hint",
+      "meta",
+      "narrative_schema",
+      "page_modules",
+      "preferred_components",
+      "proxy_port",
+      "required_assets",
+      "required_csvs",
+      "required_pngs",
+      "risk_scenarios",
+      "template",
+      "template_id",
+      "template_name",
+      "thread_id",
+      "topic_slug",
+      "topic_title",
+      "worldmonitor",
+      "worldmonitor_data_dir",
+      "worldmonitor_entry",
+      "worldmonitor_project",
+      "worldmonitor_public_dir"
+    ]
+  },
+  "assets": {
+    "chart_csvs": [
+      "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets/topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化/charts/csv/chart_anchor_plan.csv"
+    ],
+    "chart_pngs": [],
+    "logic_relations_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets/topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化/layer5/logic_relations.json",
+    "scene_plan_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets/topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化/videos/scene_plan.json",
+    "layer5_delivery_plan_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets/topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化/layer5/layer5_delivery_plan.json",
+    "layer5_delivery_inputs_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets/topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化/layer5/layer5_delivery_inputs.json",
+    "layer5_inputs_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-02_210702/artifacts/material/pack_assets/topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化/layer5/layer5_inputs.json"
+  },
+  "worldmonitor": {
+    "project": "/Volumes/PSSD/Projects/worldmonitor",
+    "data_dir": "/Volumes/PSSD/Projects/worldmonitor/data",
+    "public_dir": "/Volumes/PSSD/Projects/worldmonitor/public",
+    "entry": "index.html",
+    "proxy_port": 8787
+  },
+  "key_metrics_to_emit": [],
+  "risk_scenarios": [],
+  "generated_at": "2026-04-03T07:18:03+0800"
+}

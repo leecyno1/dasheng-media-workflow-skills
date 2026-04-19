@@ -1,0 +1,33 @@
+{
+  "topic": "topic-japan-nuclear-capability-diplomatic-crisis",
+  "topic_type": "geopolitics",
+  "template_id": "geo_timeline_map",
+  "logic_edges": [
+    {
+      "from": "thesis",
+      "to": "chart_evidence",
+      "relation": "supports",
+      "notes": "主判断由图表锚点补证据"
+    },
+    {
+      "from": "chart_evidence",
+      "to": "risk_scenarios",
+      "relation": "projects",
+      "notes": "图表变量映射到风险情景"
+    },
+    {
+      "from": "risk_scenarios",
+      "to": "scene_plan",
+      "relation": "visualizes",
+      "notes": "情景映射到互动叙事分镜"
+    }
+  ],
+  "chart_anchors": [],
+  "scene_ids": [
+    "日本核能力披露的历史节点",
+    "钚库存与核武潜力",
+    "军事预算与政策转型",
+    "战后和平体系与当前军事化对比",
+    "东亚安全格局风险"
+  ]
+}

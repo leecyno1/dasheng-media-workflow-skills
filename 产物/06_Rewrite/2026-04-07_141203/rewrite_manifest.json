@@ -1,0 +1,58 @@
+{
+  "run_id": "2026-04-07_141203",
+  "stage": "rewrite",
+  "generated_at": "2026-04-07T22:52:26",
+  "status": "ready_for_publish_gate",
+  "material_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-07_141203/material_manifest.json",
+  "material_gate": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-07_141203/material_acceptance.json",
+  "final_structure_snapshot": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-07_141203/final_structure_snapshot.json",
+  "source_root": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-07_141203",
+  "output_root": "/Volumes/PSSD/Projects/公众号文章/产物/06_Rewrite/2026-04-07_141203",
+  "topics": [
+    {
+      "topic": "topic-hormuz-strait-energy-order",
+      "topic_prefix": "topic-hormuz-strait-energy-order",
+      "generated_at": "2026-04-07T22:52:26",
+      "final_source": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-07_141203/topic-hormuz-strait-energy-order.md",
+      "framework_labels": {
+        "open_label": "开篇",
+        "part1_label": "第一部分：核心判断",
+        "part2_label": "第二部分：证据与机制",
+        "part3_label": "第三部分：执行框架",
+        "end_label": "结尾：行动与边界"
+      },
+      "variants": [],
+      "all_passed": false
+    },
+    {
+      "topic": "topic-sodium-ion-battery-breakthrough",
+      "topic_prefix": "topic-sodium-ion-battery-breakthrough",
+      "generated_at": "2026-04-07T22:52:26",
+      "final_source": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-07_141203/topic-sodium-ion-battery-breakthrough.md",
+      "framework_labels": {
+        "open_label": "开篇",
+        "part1_label": "第一部分：核心判断",
+        "part2_label": "第二部分：证据与机制",
+        "part3_label": "第三部分：执行框架",
+        "end_label": "结尾：行动与边界"
+      },
+      "variants": [],
+      "all_passed": false
+    },
+    {
+      "topic": "topic-us-stock-storage-sector-surge",
+      "topic_prefix": "topic-us-stock-storage-sector-surge",
+      "generated_at": "2026-04-07T22:52:26",
+      "final_source": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-07_141203/topic-us-stock-storage-sector-surge.md",
+      "framework_labels": {
+        "open_label": "开篇",
+        "part1_label": "第一部分：核心判断",
+        "part2_label": "第二部分：证据与机制",
+        "part3_label": "第三部分：执行框架",
+        "end_label": "结尾：行动与边界"
+      },
+      "variants": [],
+      "all_passed": false
+    }
+  ]
+}

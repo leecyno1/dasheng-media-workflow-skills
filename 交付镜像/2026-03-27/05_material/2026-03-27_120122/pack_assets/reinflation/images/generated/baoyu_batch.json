@@ -1,0 +1,155 @@
+{
+  "jobs": 2,
+  "tasks": [
+    {
+      "id": "cover",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/cover.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/cover.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    },
+    {
+      "id": "infographic_1",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/infographic_1.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/infographic_1.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    },
+    {
+      "id": "infographic_2",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/infographic_2.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/infographic_2.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    },
+    {
+      "id": "infographic_3",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/infographic_3.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/infographic_3.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    },
+    {
+      "id": "comic-01",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/comic-01.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/comic-01.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    },
+    {
+      "id": "comic-02",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/comic-02.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/comic-02.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    },
+    {
+      "id": "comic-03",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/comic-03.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/comic-03.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    },
+    {
+      "id": "comic-04",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/comic-04.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/comic-04.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    },
+    {
+      "id": "comic-05",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/comic-05.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/comic-05.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    },
+    {
+      "id": "comic-06",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/comic-06.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/comic-06.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    },
+    {
+      "id": "comic-07",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/comic-07.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/comic-07.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    },
+    {
+      "id": "comic-08",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/comic-08.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/comic-08.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    },
+    {
+      "id": "meme_1",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/meme_1.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/meme_1.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    },
+    {
+      "id": "meme_2",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/meme_2.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/meme_2.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    },
+    {
+      "id": "meme_3",
+      "promptFiles": [
+        "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/prompts/ai/meme_3.md"
+      ],
+      "image": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/meme_3.png",
+      "provider": "minimax",
+      "model": "image-01",
+      "ar": "16:9"
+    }
+  ]
+}

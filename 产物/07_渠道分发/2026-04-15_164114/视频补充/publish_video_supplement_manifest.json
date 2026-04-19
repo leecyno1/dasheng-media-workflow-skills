@@ -1,0 +1,15 @@
+{
+  "run_id": "2026-04-15_164114",
+  "stage": "publish",
+  "generated_at": "2026-04-16T15:22:25",
+  "status": "video_supplement_ready",
+  "rewrite_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-15_164114/rewrite_manifest.json",
+  "material_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-04-15_164114/material_manifest.json",
+  "publish_decision": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-15_164114/publish_decision.json",
+  "rewrite_root": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-15_164114",
+  "material_pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-15_164114/artifacts/material/pack_assets",
+  "finance_project": "/Volumes/PSSD/Projects/finance-motion-8787",
+  "integration_thread": "codex://threads/019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
+  "reused_existing_video_supplement": false,
+  "topics": []
+}

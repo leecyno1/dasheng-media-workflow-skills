@@ -1,0 +1,23 @@
+{
+  "run_id": "2026-04-16_155809",
+  "gate": "Final Structure Gate",
+  "status": "approved",
+  "topics": [
+    {
+      "topic_id": "topic-japan-nuclear-capability-diplomatic-crisis",
+      "title": "日本核武器能力披露背后：从和平宪法到军事化的结构性转变",
+      "doc_file": "/Volumes/PSSD/Projects/公众号文章/产物/05_初稿生成/2026-04-16_155809/03_标准初稿_japan-nuclear-capability-diplomatic-crisis.md",
+      "final_primary_sections": [
+        "AI价值的真正结构变量：超越表面消息的深层逻辑",
+        "战后和平体系vs当前军事化转变",
+        "三重风险：历史创伤、军备竞赛、核扩散",
+        "结语：盯紧工作流变量，摈弃表面热度"
+      ],
+      "editor_note": "手动创建初稿，结构清晰，论证完整，批准进入Material阶段"
+    }
+  ],
+  "instructions": [
+    "编辑完成标准稿修订后，在本文件写入最终保留的一级/二级结构。",
+    "status 改为 approved 后，material 与 rewrite 才允许继续。"
+  ]
+}

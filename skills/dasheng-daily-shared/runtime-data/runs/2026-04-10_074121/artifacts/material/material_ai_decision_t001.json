@@ -1,0 +1,173 @@
+{
+  "core_claim": "鲍威尔讲话确认通胀放缓并关闭加息窗口，市场迅速由加息预期转向降息押注，推动资产配置和风险偏好显著变化，标志美联储货币政策进入新周期。",
+  "topic_type": "finance_macro",
+  "article_summary": "文章系统解析了鲍威尔讲话释放的通胀放缓信号及加息窗口关闭的政策转向，揭示市场对此的快速反应及降息预期对资产配置和风险偏好的深远影响，强调投资者需关注核心通胀数据、美联储政策动态及全球经济风险，科学调整投资策略以应对新货币政策周期。",
+  "skip_notes": "文章结构清晰，论证充分，主要缺口在于具体市场数据和图表展示以增强说服力；不涉及需要视频动态演示的内容，且漫画和梗图不适用。",
+  "claims": [
+    {
+      "claim_id": "c1",
+      "section_id": "section-02",
+      "heading": "鲍威尔讲话：通胀放缓信号确认 加息窗口关闭",
+      "statement": "鲍威尔确认核心通胀上升趋势明显缓和，当前利率接近中性水平，明确关闭加息窗口，首次将人工智能等技术进步纳入通胀评估，显示政策转向。",
+      "counterpoint": "市场此前普遍预期加息周期未结束，部分通胀成分依然高企，通胀风险未完全消除。",
+      "missing_proof": [
+        "详细核心PCE分项数据趋势",
+        "人工智能对生产率和通胀影响的经济研究数据",
+        "中性利率具体测算依据"
+      ],
+      "chart_need": true
+    },
+    {
+      "claim_id": "c2",
+      "section_id": "section-03",
+      "heading": "市场反应：加息押注迅速撤回 降息预期爆发",
+      "statement": "利率期货市场数据显示，讲话后加息押注大幅减少，降息押注大幅增加，股市主要指数同步反弹，风险偏好明显回暖。",
+      "counterpoint": "部分市场参与者对政策执行节奏和未来通胀仍存不确定，调整可能存在波动。",
+      "missing_proof": [
+        "利率期货具体概率数据及变化曲线",
+        "主要股指讲话前后走势对比图",
+        "VIX指数变化数据"
+      ],
+      "chart_need": true
+    },
+    {
+      "claim_id": "c3",
+      "section_id": "section-04",
+      "heading": "降息预期的资产配置与风险偏好影响",
+      "statement": "降息预期推动债券、成长股和房地产等利率敏感资产估值提升，资金流入风险资产，信用利差收窄，波动率下降，风险偏好明显回暖。",
+      "counterpoint": "降息周期虽带来流动性改善，但潜在通胀反弹及全球经济不确定性仍构成风险。",
+      "missing_proof": [
+        "债券收益率及价格走势数据",
+        "主要成长股板块估值变化",
+        "房地产市场贷款利率及成交量数据",
+        "信用利差及波动率指标变化"
+      ],
+      "chart_need": true
+    },
+    {
+      "claim_id": "c4",
+      "section_id": "section-05",
+      "heading": "结语：政策转折的深远影响与未来观察重点",
+      "statement": "鲍威尔讲话标志美联储政策转折，未来需持续关注核心通胀指标、美联储政策声明、利率期货押注及全球宏观风险，投资者需灵活调整策略应对不确定性。",
+      "counterpoint": "未来政策和经济走势仍具不确定性，市场可能经历波动和调整。",
+      "missing_proof": [],
+      "chart_need": false
+    }
+  ],
+  "chart_anchors": [
+    {
+      "anchor_id": "chart1",
+      "section_id": "section-02",
+      "title": "核心PCE及分项通胀指标走势",
+      "purpose": "展示核心通胀及其关键组成部分的趋势变化，验证通胀放缓及结构性变化",
+      "data_sources": [
+        "美国商务部BEA核心PCE月度数据",
+        "官方统计局通胀分项数据"
+      ],
+      "chart_type": "折线图",
+      "only_if_worth_chart": true
+    },
+    {
+      "anchor_id": "chart2",
+      "section_id": "section-03",
+      "title": "利率期货市场加息与降息押注概率变化",
+      "purpose": "直观反映市场对美联储政策预期的快速转变",
+      "data_sources": [
+        "芝加哥商品交易所（CME）FedWatch工具",
+        "交易所利率期货数据"
+      ],
+      "chart_type": "堆积面积图",
+      "only_if_worth_chart": true
+    },
+    {
+      "anchor_id": "chart3",
+      "section_id": "section-03",
+      "title": "主要美股指数及VIX指数讲话前后走势比较",
+      "purpose": "展示股市对政策转向的同步反应及市场风险情绪变化",
+      "data_sources": [
+        "彭博社股指数据",
+        "CBOE VIX指数数据"
+      ],
+      "chart_type": "复合折线图",
+      "only_if_worth_chart": true
+    },
+    {
+      "anchor_id": "chart4",
+      "section_id": "section-04",
+      "title": "利率敏感资产估值及信用利差变化",
+      "purpose": "反映降息预期对债券、成长股、房地产及信用风险溢价的影响",
+      "data_sources": [
+        "彭博债券收益率数据",
+        "主要成长股板块估值报告",
+        "房地产贷款利率及成交数据",
+        "信用利差统计"
+      ],
+      "chart_type": "多指标折线图",
+      "only_if_worth_chart": true
+    }
+  ],
+  "image_queries": [
+    {
+      "query": "Jerome Powell Federal Reserve Chairman speech 2024",
+      "entity_type": "person",
+      "entity": "Jerome Powell",
+      "priority": "high",
+      "channel": "news"
+    },
+    {
+      "query": "Federal Reserve official policy meeting press conference 2024",
+      "entity_type": "institution_event",
+      "entity": "Federal Reserve",
+      "priority": "medium",
+      "channel": "news"
+    },
+    {
+      "query": "Wall Street trading floor reaction to Federal Reserve speech 2024",
+      "entity_type": "event",
+      "entity": "Wall Street",
+      "priority": "medium",
+      "channel": "news"
+    }
+  ],
+  "news_screenshot_queries": [
+    {
+      "query": "Jerome Powell Federal Reserve speech highlights 2024",
+      "priority": "high",
+      "channel": "news"
+    }
+  ],
+  "video_queries": [],
+  "generated_visuals": {
+    "cover_prompt": "A dynamic financial market scene showing Jerome Powell speaking at a Federal Reserve press conference with rising and falling stock charts in the background symbolizing market shift from rate hikes to rate cuts",
+    "infographic_prompts": [
+      "Infographic illustrating the transition from Fed rate hike expectations to rate cut expectations with timeline and key data points",
+      "Infographic showing the impact of Fed policy shift on asset classes: bonds, stocks, and real estate with arrows indicating price movements and risk appetite",
+      "Visual summary of core inflation components trend and AI technology impact on inflation suppression"
+    ],
+    "comic_storyboard": [],
+    "meme_prompts": [],
+    "funny_comic_character_prompts": []
+  },
+  "scene_plan": [
+    {
+      "title": "鲍威尔讲话现场",
+      "visual": "新闻发布会现场照片，聚焦鲍威尔",
+      "caption": "美联储主席鲍威尔在关键讲话中宣布加息窗口关闭"
+    },
+    {
+      "title": "利率期货市场反应",
+      "visual": "利率期货市场加息与降息概率变化折线图",
+      "caption": "市场迅速调整押注，降息预期迅速升温"
+    },
+    {
+      "title": "美股主要指数同步反弹",
+      "visual": "标普500、纳斯达克及VIX指数讲话前后走势对比图",
+      "caption": "股市对政策转向的积极反应及风险偏好回暖"
+    },
+    {
+      "title": "资产配置变化示意",
+      "visual": "债券、成长股、房地产估值及信用利差变化多指标图",
+      "caption": "降息预期推动利率敏感资产估值提升及风险偏好改善"
+    }
+  ]
+}

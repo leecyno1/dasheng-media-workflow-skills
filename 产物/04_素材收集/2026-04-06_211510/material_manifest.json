@@ -1,0 +1,669 @@
+{
+  "run_id": "2026-04-06_211510",
+  "stage": "material",
+  "status": "ready_for_material_gate",
+  "upstream": {
+    "draft_manifest": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-06_211510/draft_manifest.json",
+    "final_structure_snapshot": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-06_211510/final_structure_snapshot.json"
+  },
+  "runtime_material_manifest": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/material_manifest.json",
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets",
+  "execution_manifest": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/execution_manifest.json",
+  "layer5_inputs_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/layer5_inputs.json",
+  "layer5_delivery_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/layer5_delivery_report.md",
+  "chart_quality_gate_report": null,
+  "chart_quality_gate_report_json": null,
+  "video_quality_regression_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/video_quality_regression_report.md",
+  "video_quality_regression_report_json": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/video_quality_regression_report.json",
+  "topics": [
+    {
+      "topic": "topic-japan-bonds-crisis-market-outlook",
+      "title": "日本国债异动引发全球市场震荡：下周投资策略与避险指南",
+      "image_search": {
+        "topic": "topic-japan-bonds-crisis-market-outlook",
+        "downloaded": 6,
+        "person_downloaded": 0,
+        "news_screenshots": 3,
+        "rejected_low_resolution": 2,
+        "min_short_edge_required": 1024
+      },
+      "video_search": {
+        "topic": "topic-japan-bonds-crisis-market-outlook",
+        "candidate_queries": 8,
+        "downloads": 3,
+        "qualified_candidates": 24,
+        "candidate_reject_reason_counts": {},
+        "download_quality_passed": 1,
+        "download_quality_failed": 2,
+        "download_fail_reason_counts": {
+          "low_frame_variation_possible_screenshot_montage": 2
+        },
+        "quality_audit_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/videos/web_search/video_quality_audit_report.json"
+      },
+      "ai_prep": {
+        "provider_status": {
+          "vectorengine": {
+            "provider": "vectorengine",
+            "base_url": "https://api.vectorengine.ai/v1/chat/completions",
+            "model": "gemini-3.1-flash-image-preview",
+            "status": "disabled_by_provider",
+            "checked_at": "2026-03-26",
+            "http_status": 403,
+            "message": "该渠道已被禁用",
+            "fallbacks": [
+              "python_infographic_renderer",
+              "network_image_collection",
+              "future_baoyu_skill_adapter"
+            ]
+          },
+          "gemini_generate_content": {
+            "provider": "vectorengine_gemini_generate_content",
+            "base_url": "https://api.vectorengine.ai",
+            "model": "gemini-3.1-flash-image-preview",
+            "api_key_present": true,
+            "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+          },
+          "optional_fallbacks": {
+            "qhaigc_images": {
+              "base_url": "https://api.qhaigc.net",
+              "primary_model": "seedream-5",
+              "fallback_model": "seedream-4.6",
+              "chat_model": "gemini-2.5-flash-image",
+              "api_key_present": true,
+              "api_style": [
+                "/v1/images/generations",
+                "/v1/chat/completions"
+              ],
+              "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+            },
+            "gitee_images": {
+              "base_url": "https://ai.gitee.com",
+              "qwen_model": "Qwen-Image",
+              "glm_model": "GLM-Image",
+              "api_key_present": true,
+              "api_style": [
+                "/v1/images/generations"
+              ],
+              "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+            },
+            "vectorengine_images": {
+              "base_url": "https://api.vectorengine.ai",
+              "model": "doubao-seedream-5-0-260128",
+              "api_key_present": true,
+              "api_style": [
+                "/v1/images/generations"
+              ],
+              "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+            }
+          },
+          "minimax_env": true,
+          "priority_order": [
+            "qhaigc_seedream5",
+            "qhaigc_seedream46",
+            "gitee_qwen_image",
+            "gitee_glm_image",
+            "vectorengine_seedream",
+            "minimax",
+            "gemini_generate_content"
+          ]
+        },
+        "batch_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/baoyu_batch.json",
+        "task_count": 20,
+        "live_generation": {
+          "qhaigc_seedream5": {
+            "enabled": true,
+            "provider": "qhaigc_seedream5",
+            "model": "seedream-5",
+            "base_url": "https://api.qhaigc.net",
+            "attempted": 4,
+            "succeeded": 4,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/qhaigc_seedream5/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/qhaigc_seedream5"
+          },
+          "qhaigc_seedream46": {
+            "enabled": true,
+            "provider": "qhaigc_seedream46",
+            "model": "seedream-4.6",
+            "base_url": "https://api.qhaigc.net",
+            "attempted": 4,
+            "succeeded": 4,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/qhaigc_seedream46/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/qhaigc_seedream46"
+          },
+          "gitee_qwen_image": {
+            "enabled": true,
+            "provider": "gitee_qwen_image",
+            "model": "Qwen-Image",
+            "base_url": "https://ai.gitee.com",
+            "attempted": 4,
+            "succeeded": 4,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/gitee_qwen_image/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/gitee_qwen_image"
+          },
+          "gitee_glm_image": {
+            "enabled": true,
+            "provider": "gitee_glm_image",
+            "model": "GLM-Image",
+            "base_url": "https://ai.gitee.com",
+            "attempted": 4,
+            "succeeded": 4,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/gitee_glm_image/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/gitee_glm_image"
+          },
+          "vectorengine_seedream": {
+            "enabled": true,
+            "provider": "vectorengine_seedream",
+            "model": "doubao-seedream-5-0-260128",
+            "base_url": "https://api.vectorengine.ai",
+            "attempted": 4,
+            "succeeded": 3,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/vectorengine_seedream/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/vectorengine_seedream"
+          },
+          "minimax": {
+            "enabled": true,
+            "provider": "minimax",
+            "model": "image-01",
+            "base_url": "https://api.minimaxi.com",
+            "attempted": 0,
+            "returncode": 1,
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/minimax",
+            "tmp_batch_file": "/var/folders/jm/n87m6j597zz0prppdnfvt8p40000gn/T/tmp9c7j1nqc.json",
+            "stdout": null,
+            "stderr_tail": "Batch file does not contain any tasks.\n",
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/minimax/batch_results.json",
+            "generated_files": [],
+            "succeeded": 0
+          },
+          "gemini": {
+            "enabled": true,
+            "provider": "vectorengine_gemini_generate_content",
+            "model": "gemini-3.1-flash-image-preview",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/gemini",
+            "attempted": 6,
+            "succeeded": 0,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-japan-bonds-crisis-market-outlook/images/generated/gemini/generation_results.json"
+          }
+        },
+        "note": "已生成批处理与 fallback 图；当前优先链路为 QHAIGC / Gitee / VectorEngine Seedream / MiniMax，Gemini generateContent 仅保留兼容性探测。"
+      }
+    },
+    {
+      "topic": "topic-lobster-tech-comparison",
+      "title": "龙虾技术全景解析：本地/云端/变体架构对比与大圣龙虾优势",
+      "image_search": {
+        "topic": "topic-lobster-tech-comparison",
+        "downloaded": 4,
+        "person_downloaded": 0,
+        "news_screenshots": 4,
+        "rejected_low_resolution": 0,
+        "min_short_edge_required": 1024
+      },
+      "video_search": {
+        "topic": "topic-lobster-tech-comparison",
+        "candidate_queries": 8,
+        "downloads": 3,
+        "qualified_candidates": 9,
+        "candidate_reject_reason_counts": {},
+        "download_quality_passed": 2,
+        "download_quality_failed": 1,
+        "download_fail_reason_counts": {
+          "no_qualified_candidate": 1
+        },
+        "quality_audit_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/videos/web_search/video_quality_audit_report.json"
+      },
+      "ai_prep": {
+        "provider_status": {
+          "vectorengine": {
+            "provider": "vectorengine",
+            "base_url": "https://api.vectorengine.ai/v1/chat/completions",
+            "model": "gemini-3.1-flash-image-preview",
+            "status": "disabled_by_provider",
+            "checked_at": "2026-03-26",
+            "http_status": 403,
+            "message": "该渠道已被禁用",
+            "fallbacks": [
+              "python_infographic_renderer",
+              "network_image_collection",
+              "future_baoyu_skill_adapter"
+            ]
+          },
+          "gemini_generate_content": {
+            "provider": "vectorengine_gemini_generate_content",
+            "base_url": "https://api.vectorengine.ai",
+            "model": "gemini-3.1-flash-image-preview",
+            "api_key_present": true,
+            "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+          },
+          "optional_fallbacks": {
+            "qhaigc_images": {
+              "base_url": "https://api.qhaigc.net",
+              "primary_model": "seedream-5",
+              "fallback_model": "seedream-4.6",
+              "chat_model": "gemini-2.5-flash-image",
+              "api_key_present": true,
+              "api_style": [
+                "/v1/images/generations",
+                "/v1/chat/completions"
+              ],
+              "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+            },
+            "gitee_images": {
+              "base_url": "https://ai.gitee.com",
+              "qwen_model": "Qwen-Image",
+              "glm_model": "GLM-Image",
+              "api_key_present": true,
+              "api_style": [
+                "/v1/images/generations"
+              ],
+              "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+            },
+            "vectorengine_images": {
+              "base_url": "https://api.vectorengine.ai",
+              "model": "doubao-seedream-5-0-260128",
+              "api_key_present": true,
+              "api_style": [
+                "/v1/images/generations"
+              ],
+              "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+            }
+          },
+          "minimax_env": true,
+          "priority_order": [
+            "qhaigc_seedream5",
+            "qhaigc_seedream46",
+            "gitee_qwen_image",
+            "gitee_glm_image",
+            "vectorengine_seedream",
+            "minimax",
+            "gemini_generate_content"
+          ]
+        },
+        "batch_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/baoyu_batch.json",
+        "task_count": 20,
+        "live_generation": {
+          "qhaigc_seedream5": {
+            "enabled": true,
+            "provider": "qhaigc_seedream5",
+            "model": "seedream-5",
+            "base_url": "https://api.qhaigc.net",
+            "attempted": 4,
+            "succeeded": 4,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/qhaigc_seedream5/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/qhaigc_seedream5"
+          },
+          "qhaigc_seedream46": {
+            "enabled": true,
+            "provider": "qhaigc_seedream46",
+            "model": "seedream-4.6",
+            "base_url": "https://api.qhaigc.net",
+            "attempted": 4,
+            "succeeded": 4,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/qhaigc_seedream46/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/qhaigc_seedream46"
+          },
+          "gitee_qwen_image": {
+            "enabled": true,
+            "provider": "gitee_qwen_image",
+            "model": "Qwen-Image",
+            "base_url": "https://ai.gitee.com",
+            "attempted": 4,
+            "succeeded": 4,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/gitee_qwen_image/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/gitee_qwen_image"
+          },
+          "gitee_glm_image": {
+            "enabled": true,
+            "provider": "gitee_glm_image",
+            "model": "GLM-Image",
+            "base_url": "https://ai.gitee.com",
+            "attempted": 4,
+            "succeeded": 4,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/gitee_glm_image/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/gitee_glm_image"
+          },
+          "vectorengine_seedream": {
+            "enabled": true,
+            "provider": "vectorengine_seedream",
+            "model": "doubao-seedream-5-0-260128",
+            "base_url": "https://api.vectorengine.ai",
+            "attempted": 4,
+            "succeeded": 4,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/vectorengine_seedream/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/vectorengine_seedream"
+          },
+          "minimax": {
+            "enabled": true,
+            "provider": "minimax",
+            "model": "image-01",
+            "base_url": "https://api.minimaxi.com",
+            "attempted": 0,
+            "returncode": 1,
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/minimax",
+            "tmp_batch_file": "/var/folders/jm/n87m6j597zz0prppdnfvt8p40000gn/T/tmp9mw7rhtr.json",
+            "stdout": null,
+            "stderr_tail": "Batch file does not contain any tasks.\n",
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/minimax/batch_results.json",
+            "generated_files": [],
+            "succeeded": 0
+          },
+          "gemini": {
+            "enabled": true,
+            "provider": "vectorengine_gemini_generate_content",
+            "model": "gemini-3.1-flash-image-preview",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/gemini",
+            "attempted": 6,
+            "succeeded": 0,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-lobster-tech-comparison/images/generated/gemini/generation_results.json"
+          }
+        },
+        "note": "已生成批处理与 fallback 图；当前优先链路为 QHAIGC / Gitee / VectorEngine Seedream / MiniMax，Gemini generateContent 仅保留兼容性探测。"
+      }
+    },
+    {
+      "topic": "topic-russia-japan-oil-cutoff",
+      "title": "俄罗斯对日断供石油：能源武器化如何重塑东北亚地缘格局",
+      "image_search": {
+        "topic": "topic-russia-japan-oil-cutoff",
+        "downloaded": 5,
+        "person_downloaded": 0,
+        "news_screenshots": 4,
+        "rejected_low_resolution": 0,
+        "min_short_edge_required": 1024
+      },
+      "video_search": {
+        "topic": "topic-russia-japan-oil-cutoff",
+        "candidate_queries": 8,
+        "downloads": 3,
+        "qualified_candidates": 24,
+        "candidate_reject_reason_counts": {},
+        "download_quality_passed": 2,
+        "download_quality_failed": 1,
+        "download_fail_reason_counts": {
+          "download_failed_or_missing_file": 1
+        },
+        "quality_audit_report": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/videos/web_search/video_quality_audit_report.json"
+      },
+      "ai_prep": {
+        "provider_status": {
+          "vectorengine": {
+            "provider": "vectorengine",
+            "base_url": "https://api.vectorengine.ai/v1/chat/completions",
+            "model": "gemini-3.1-flash-image-preview",
+            "status": "disabled_by_provider",
+            "checked_at": "2026-03-26",
+            "http_status": 403,
+            "message": "该渠道已被禁用",
+            "fallbacks": [
+              "python_infographic_renderer",
+              "network_image_collection",
+              "future_baoyu_skill_adapter"
+            ]
+          },
+          "gemini_generate_content": {
+            "provider": "vectorengine_gemini_generate_content",
+            "base_url": "https://api.vectorengine.ai",
+            "model": "gemini-3.1-flash-image-preview",
+            "api_key_present": true,
+            "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+          },
+          "optional_fallbacks": {
+            "qhaigc_images": {
+              "base_url": "https://api.qhaigc.net",
+              "primary_model": "seedream-5",
+              "fallback_model": "seedream-4.6",
+              "chat_model": "gemini-2.5-flash-image",
+              "api_key_present": true,
+              "api_style": [
+                "/v1/images/generations",
+                "/v1/chat/completions"
+              ],
+              "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+            },
+            "gitee_images": {
+              "base_url": "https://ai.gitee.com",
+              "qwen_model": "Qwen-Image",
+              "glm_model": "GLM-Image",
+              "api_key_present": true,
+              "api_style": [
+                "/v1/images/generations"
+              ],
+              "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+            },
+            "vectorengine_images": {
+              "base_url": "https://api.vectorengine.ai",
+              "model": "doubao-seedream-5-0-260128",
+              "api_key_present": true,
+              "api_style": [
+                "/v1/images/generations"
+              ],
+              "env_file": "/Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env"
+            }
+          },
+          "minimax_env": true,
+          "priority_order": [
+            "qhaigc_seedream5",
+            "qhaigc_seedream46",
+            "gitee_qwen_image",
+            "gitee_glm_image",
+            "vectorengine_seedream",
+            "minimax",
+            "gemini_generate_content"
+          ]
+        },
+        "batch_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/baoyu_batch.json",
+        "task_count": 20,
+        "live_generation": {
+          "qhaigc_seedream5": {
+            "enabled": true,
+            "provider": "qhaigc_seedream5",
+            "model": "seedream-5",
+            "base_url": "https://api.qhaigc.net",
+            "attempted": 4,
+            "succeeded": 4,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/qhaigc_seedream5/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/qhaigc_seedream5"
+          },
+          "qhaigc_seedream46": {
+            "enabled": true,
+            "provider": "qhaigc_seedream46",
+            "model": "seedream-4.6",
+            "base_url": "https://api.qhaigc.net",
+            "attempted": 4,
+            "succeeded": 4,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/qhaigc_seedream46/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/qhaigc_seedream46"
+          },
+          "gitee_qwen_image": {
+            "enabled": true,
+            "provider": "gitee_qwen_image",
+            "model": "Qwen-Image",
+            "base_url": "https://ai.gitee.com",
+            "attempted": 4,
+            "succeeded": 4,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/gitee_qwen_image/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/gitee_qwen_image"
+          },
+          "gitee_glm_image": {
+            "enabled": true,
+            "provider": "gitee_glm_image",
+            "model": "GLM-Image",
+            "base_url": "https://ai.gitee.com",
+            "attempted": 4,
+            "succeeded": 4,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/gitee_glm_image/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/gitee_glm_image"
+          },
+          "vectorengine_seedream": {
+            "enabled": true,
+            "provider": "vectorengine_seedream",
+            "model": "doubao-seedream-5-0-260128",
+            "base_url": "https://api.vectorengine.ai",
+            "attempted": 4,
+            "succeeded": 4,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/vectorengine_seedream/generation_results.json",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/vectorengine_seedream"
+          },
+          "minimax": {
+            "enabled": true,
+            "provider": "minimax",
+            "model": "image-01",
+            "base_url": "https://api.minimaxi.com",
+            "attempted": 0,
+            "returncode": 1,
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/minimax",
+            "tmp_batch_file": "/var/folders/jm/n87m6j597zz0prppdnfvt8p40000gn/T/tmpp15ke1z5.json",
+            "stdout": null,
+            "stderr_tail": "Batch file does not contain any tasks.\n",
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/minimax/batch_results.json",
+            "generated_files": [],
+            "succeeded": 0
+          },
+          "gemini": {
+            "enabled": true,
+            "provider": "vectorengine_gemini_generate_content",
+            "model": "gemini-3.1-flash-image-preview",
+            "output_dir": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/gemini",
+            "attempted": 6,
+            "succeeded": 0,
+            "results_file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-06_211510/artifacts/material/pack_assets/topic-russia-japan-oil-cutoff/images/generated/gemini/generation_results.json"
+          }
+        },
+        "note": "已生成批处理与 fallback 图；当前优先链路为 QHAIGC / Gitee / VectorEngine Seedream / MiniMax，Gemini generateContent 仅保留兼容性探测。"
+      }
+    }
+  ],
+  "final_structure_topics": [
+    {
+      "topic_id": "topic-russia-japan-oil-cutoff",
+      "title": "俄罗斯对日断供石油：能源武器化如何重塑东北亚地缘格局",
+      "draft_file": "topic-russia-japan-oil-cutoff_draft.md",
+      "structure": {
+        "framework": "结构型",
+        "sections": [
+          {
+            "level": 2,
+            "title": "事件钩子：俄罗斯对日断供石油的直接冲击",
+            "content_type": "introduction"
+          },
+          {
+            "level": 2,
+            "title": "表象分析：供应链脆弱性与成本传导",
+            "content_type": "analysis"
+          },
+          {
+            "level": 2,
+            "title": "深层解读：能源武器化与地缘博弈",
+            "content_type": "deep_analysis"
+          },
+          {
+            "level": 2,
+            "title": "影响分析：东北亚能源格局重塑",
+            "content_type": "impact"
+          },
+          {
+            "level": 2,
+            "title": "投资建议：如何应对能源地缘风险",
+            "content_type": "recommendation"
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "topic-japan-bonds-crisis-market-outlook",
+      "title": "日本国债异动引发全球市场震荡：下周投资策略与避险指南",
+      "draft_file": "topic-japan-bonds-crisis-market-outlook_final.md",
+      "structure": {
+        "framework": "清单型",
+        "sections": [
+          {
+            "level": 2,
+            "title": "价值承诺：为什么这篇文章值得你读完",
+            "content_type": "introduction"
+          },
+          {
+            "level": 2,
+            "title": "信号1：日本国债流动性拐点",
+            "content_type": "signal"
+          },
+          {
+            "level": 2,
+            "title": "信号2：中东地缘风险升级",
+            "content_type": "signal"
+          },
+          {
+            "level": 2,
+            "title": "信号3：外资流向与A股韧性",
+            "content_type": "signal"
+          },
+          {
+            "level": 2,
+            "title": "信号4：美股泡沫与科技股分化",
+            "content_type": "signal"
+          },
+          {
+            "level": 2,
+            "title": "信号5：技术面与市场情绪",
+            "content_type": "signal"
+          },
+          {
+            "level": 2,
+            "title": "下周投资策略：7类资产配置建议",
+            "content_type": "recommendation"
+          },
+          {
+            "level": 2,
+            "title": "总结彩蛋：我的个人配置",
+            "content_type": "conclusion"
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "topic-lobster-tech-comparison",
+      "title": "龙虾技术全景解析：本地/云端/变体架构对比与大圣龙虾优势",
+      "draft_file": "topic-lobster-tech-comparison_draft.md",
+      "structure": {
+        "framework": "对比型",
+        "sections": [
+          {
+            "level": 2,
+            "title": "选择困境：为什么龙虾技术让人纠结",
+            "content_type": "introduction"
+          },
+          {
+            "level": 2,
+            "title": "本地龙虾：完全控制的代价",
+            "content_type": "option_analysis"
+          },
+          {
+            "level": 2,
+            "title": "云端龙虾：便捷背后的隐忧",
+            "content_type": "option_analysis"
+          },
+          {
+            "level": 2,
+            "title": "变体龙虾：开源社区的创新尝试",
+            "content_type": "option_analysis"
+          },
+          {
+            "level": 2,
+            "title": "对比总结：三种架构的适用场景",
+            "content_type": "comparison"
+          },
+          {
+            "level": 2,
+            "title": "大圣龙虾的三大优势",
+            "content_type": "recommendation"
+          },
+          {
+            "level": 2,
+            "title": "我的建议：如何选择适合你的方案",
+            "content_type": "conclusion"
+          }
+        ]
+      }
+    }
+  ],
+  "next_stage": "rewrite"
+}

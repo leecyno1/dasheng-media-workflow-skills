@@ -1,0 +1,46 @@
+{
+  "input_scenes": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic6_供给秩序重估/inputs/interactive_charts_deck.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic6_供给秩序重估/videos/interactive_charts",
+  "base_url": "http://127.0.0.1:8787",
+  "started_at": "2026-04-01T03:14:52.791Z",
+  "finished_at": "2026-04-01T03:15:26.534Z",
+  "scene_count": 4,
+  "exported": [
+    {
+      "scene_id": "topic6-chart-01",
+      "scene_label": "图表：cpi core",
+      "template": "multiLine",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic6_供给秩序重估/videos/interactive_charts/01__topic6-chart-01__图表-cpi-core.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic6_供给秩序重估/videos/interactive_charts/01__topic6-chart-01__图表-cpi-core.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic6_供给秩序重估/videos/interactive_charts/01__topic6-chart-01__图表-cpi-core.png"
+    },
+    {
+      "scene_id": "topic6-chart-02",
+      "scene_label": "图表：oil gold breakeven",
+      "template": "multiLine",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic6_供给秩序重估/videos/interactive_charts/02__topic6-chart-02__图表-oil-gold-breakeven.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic6_供给秩序重估/videos/interactive_charts/02__topic6-chart-02__图表-oil-gold-breakeven.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic6_供给秩序重估/videos/interactive_charts/02__topic6-chart-02__图表-oil-gold-breakeven.png"
+    },
+    {
+      "scene_id": "topic6-chart-03",
+      "scene_label": "图表：spx us10y",
+      "template": "multiLine",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic6_供给秩序重估/videos/interactive_charts/03__topic6-chart-03__图表-spx-us10y.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic6_供给秩序重估/videos/interactive_charts/03__topic6-chart-03__图表-spx-us10y.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic6_供给秩序重估/videos/interactive_charts/03__topic6-chart-03__图表-spx-us10y.png"
+    },
+    {
+      "scene_id": "topic6-chart-04",
+      "scene_label": "图表：scenario heatmap",
+      "template": "multiLine",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic6_供给秩序重估/videos/interactive_charts/04__topic6-chart-04__图表-scenario-heatmap.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic6_供给秩序重估/videos/interactive_charts/04__topic6-chart-04__图表-scenario-heatmap.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic6_供给秩序重估/videos/interactive_charts/04__topic6-chart-04__图表-scenario-heatmap.png"
+    }
+  ]
+}

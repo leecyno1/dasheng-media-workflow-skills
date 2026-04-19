@@ -1,0 +1,152 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "topic_name": "特朗普、伊朗表面在交易事件，真正被重估的会不会是更长期的秩序成本？",
+    "cluster_name": "特朗普 / 伊朗",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "composite_score": 6.74,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 2,
+    "topic_id": "topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本-variant-以色列-伊朗这个题若换个切口-最值得盯的对象和证",
+    "topic_name": "以色列、伊朗这个题若换个切口，最值得盯的对象和证据会不会完全不同？",
+    "cluster_name": "以色列 / 伊朗",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-特朗普-伊朗表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "composite_score": 6.11,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 3,
+    "topic_id": "topic-英伟达-半导体突然很热闹-但行业最危险的误判会不会是把局部修复看成全面复苏",
+    "topic_name": "英伟达、半导体突然很热闹，但行业最危险的误判会不会是把局部修复看成全面复苏？",
+    "cluster_name": "英伟达 / 半导体",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-英伟达-半导体突然很热闹-但行业最危险的误判会不会是把局部修复看成全面复苏",
+    "composite_score": 5.97,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 4,
+    "topic_id": "topic-英伟达-半导体突然很热闹-但行业最危险的误判会不会是把局部修复看成全面复苏-variant-半导体-封测这个题若换个切口-最值得盯的对象和证",
+    "topic_name": "半导体、封测这个题若换个切口，最值得盯的对象和证据会不会完全不同？",
+    "cluster_name": "半导体 / 封测",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-英伟达-半导体突然很热闹-但行业最危险的误判会不会是把局部修复看成全面复苏",
+    "composite_score": 6.3,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 5,
+    "topic_id": "topic-日本央行-日本表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "topic_name": "日本央行、日本表面在交易事件，真正被重估的会不会是更长期的秩序成本？",
+    "cluster_name": "日本央行 / 日本",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-日本央行-日本表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "composite_score": 6.18,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 6,
+    "topic_id": "topic-日本央行-日本表面在交易事件-真正被重估的会不会是更长期的秩序成本-variant-日本这个题若换个切口-最值得盯的对象和证据会不会",
+    "topic_name": "换个角度看日本：这题更该写成一篇解释稿，而不是继续追消息",
+    "cluster_name": "日本",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-日本央行-日本表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "composite_score": 5.93,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 7,
+    "topic_id": "topic-美联储-黄金这波波动背后-市场真正要重估的会不会是再通胀链条",
+    "topic_name": "美联储、黄金这波波动背后，市场真正要重估的会不会是再通胀链条？",
+    "cluster_name": "美联储 / 黄金 / 加息",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-美联储-黄金这波波动背后-市场真正要重估的会不会是再通胀链条",
+    "composite_score": 6.65,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 8,
+    "topic_id": "topic-美联储-黄金这波波动背后-市场真正要重估的会不会是再通胀链条-variant-美联储-黄金这个题若换个切口-最值得盯的对象和证",
+    "topic_name": "美联储、黄金这条线索如果换个变量看，真正应该补的是哪组证据？",
+    "cluster_name": "美联储 / 黄金 / 降息",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-美联储-黄金这波波动背后-市场真正要重估的会不会是再通胀链条",
+    "composite_score": 6.3,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 9,
+    "topic_id": "topic-原油这轮热闹背后-真正值得追的结构变量到底是什么",
+    "topic_name": "原油这轮热闹背后，真正值得追的结构变量到底是什么？",
+    "cluster_name": "原油",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-原油这轮热闹背后-真正值得追的结构变量到底是什么",
+    "composite_score": 6.28,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 10,
+    "topic_id": "topic-ai-关税这轮热闹背后-真正值得追的结构变量到底是什么",
+    "topic_name": "AI、关税这轮热闹背后，真正值得追的结构变量到底是什么？",
+    "cluster_name": "AI / 关税",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-ai-关税这轮热闹背后-真正值得追的结构变量到底是什么",
+    "composite_score": 5.81,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 11,
+    "topic_id": "topic-ai-关税这轮热闹背后-真正值得追的结构变量到底是什么-variant-ai这个题若换个切口-最值得盯的对象和证据会不会",
+    "topic_name": "AI这条线索如果换个变量看，真正应该补的是哪组证据？",
+    "cluster_name": "AI",
+    "topic_kind": "variant",
+    "mother_topic_id": "topic-ai-关税这轮热闹背后-真正值得追的结构变量到底是什么",
+    "composite_score": 5.87,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 12,
+    "topic_id": "topic-贵金属反复波动背后-风险溢价到底在重估什么",
+    "topic_name": "贵金属反复波动背后，风险溢价到底在重估什么？",
+    "cluster_name": "贵金属",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-贵金属反复波动背后-风险溢价到底在重估什么",
+    "composite_score": 6.24,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 13,
+    "topic_id": "topic-观察这轮热闹背后-真正值得追的结构变量到底是什么",
+    "topic_name": "观察这轮热闹背后，真正值得追的结构变量到底是什么？",
+    "cluster_name": "观察",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-观察这轮热闹背后-真正值得追的结构变量到底是什么",
+    "composite_score": 6.68,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 14,
+    "topic_id": "topic-中东表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "topic_name": "中东表面在交易事件，真正被重估的会不会是更长期的秩序成本？",
+    "cluster_name": "中东 / 反弹",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-中东表面在交易事件-真正被重估的会不会是更长期的秩序成本",
+    "composite_score": 6.28,
+    "source_status": "自然入选"
+  },
+  {
+    "rank": 15,
+    "topic_id": "topic-油价-铜反复波动背后-风险溢价到底在重估什么",
+    "topic_name": "油价、铜反复波动背后，风险溢价到底在重估什么？",
+    "cluster_name": "油价 / 铜",
+    "topic_kind": "mother",
+    "mother_topic_id": "topic-油价-铜反复波动背后-风险溢价到底在重估什么",
+    "composite_score": 5.97,
+    "source_status": "自然入选"
+  }
+]

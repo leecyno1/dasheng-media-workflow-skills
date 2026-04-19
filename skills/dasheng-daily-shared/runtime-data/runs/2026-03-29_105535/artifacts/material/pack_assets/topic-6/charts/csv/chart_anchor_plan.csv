@@ -1,0 +1,5 @@
+anchor_id,title,purpose,chart_type,data_sources
+chart-01,通胀 / 利率 / 核心资产三联图,判断再通胀叙事是否进入资产定价主线,multi_line,FRED | tushare | akshare
+chart-02,商品价格与通胀预期联动图,识别油价、金价、breakeven、实际利率之间的牵引关系,dual_axis,FRED | tushare | akshare
+chart-03,ETF/持仓/成交热度图,补交易层证据，而不只停留在宏观判断,bar,tushare | 新浪财经 | 交易所数据
+chart-04,情景收益矩阵,给出黄金、白银、原油、长债、权益在不同通胀路径下的映射,heatmap,手工整理 CSV

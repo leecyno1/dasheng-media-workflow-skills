@@ -1,0 +1,17 @@
+{
+  "run_id": "2026-03-26_080504",
+  "generated_stage": "02_brief",
+  "input_run_id": "2026-03-26_080504",
+  "artifacts": [
+    "02_编辑Brief库.md",
+    "02_编辑Brief_报告.md"
+  ],
+  "manual_topics": [],
+  "candidate_count": 9,
+  "top3": [
+    "停火预期反复下，油价与风险资产正在被怎样重新定价？",
+    "半导体突然很热闹，但行业最危险的误判可能才刚开始",
+    "AI 工具今年更值得写的，不是大全，而是“接进工作流”的案例"
+  ],
+  "next_stage": "03_material"
+}

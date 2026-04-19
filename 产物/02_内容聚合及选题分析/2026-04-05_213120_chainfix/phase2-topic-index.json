@@ -1,0 +1,82 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "tc_001",
+    "topic_name": "鲍威尔表态逆转美联储加息预期，市场押注降息引发美股反弹",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc_001",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 2,
+    "topic_id": "tc_002",
+    "topic_name": "俄罗斯拒绝向日本供油加剧地缘政治紧张，全球能源安全风险攀升",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc_002",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 3,
+    "topic_id": "tc_003",
+    "topic_name": "伊朗冲突升级引发油价剧烈波动，美军部署加剧中东不确定性",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc_003",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 4,
+    "topic_id": "tc_004",
+    "topic_name": "美联储借鉴1990年石油危机路径，当前鹰派预期反转降息趋势明显",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc_004",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 5,
+    "topic_id": "tc_005",
+    "topic_name": "贵金属与原油期权创新反映宏观波动加剧，投资者风险管理需求提升",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc_005",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 6,
+    "topic_id": "tc_006",
+    "topic_name": "伊朗控制霍尔木兹海峡成为实质核威慑，美媒停火提议实为通航筹码交换",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc_006",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 7,
+    "topic_id": "tc_007",
+    "topic_name": "中国散户3月大举净买入1.25万亿，逆势加仓预示市场信心修复",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc_007",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 8,
+    "topic_id": "tc_008",
+    "topic_name": "央行果断降息释放宽松信号，政策空间开启助力经济复苏",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc_008",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 9,
+    "topic_id": "tc_009",
+    "topic_name": "美以联军受挫激活中东抵抗联盟，区域冲突复杂性显著提升",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc_009",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 10,
+    "topic_id": "tc_010",
+    "topic_name": "俄罗斯将多名日本人重新列为战犯，日俄关系紧张升级影响东北亚安全",
+    "topic_kind": "independent",
+    "mother_topic_id": "tc_010",
+    "source_status": "ai_generated"
+  }
+]

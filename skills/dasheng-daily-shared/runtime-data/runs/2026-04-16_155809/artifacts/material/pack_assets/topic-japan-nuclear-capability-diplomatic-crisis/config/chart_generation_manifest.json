@@ -1,0 +1,76 @@
+{
+  "topic": "topic-japan-nuclear-capability-diplomatic-crisis",
+  "generated": [
+    {
+      "anchor_id": "chart-01",
+      "render_type": "chart",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-01_population_aging.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-01_population_aging.png",
+      "md": null,
+      "gate": {
+        "x_col": "year",
+        "series": {
+          "population": {
+            "cv": 0.009358380298795509,
+            "slope": -0.001464835089794353,
+            "r2": 0.8146437685902708,
+            "trend_strength": 0.3762576074582646,
+            "passed": true
+          }
+        }
+      }
+    },
+    {
+      "anchor_id": "chart-02",
+      "render_type": "chart",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-02_military_gdp.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-02_military_gdp.png",
+      "md": null,
+      "gate": {
+        "x_col": "year",
+        "series": {
+          "military_gdp_pct": {
+            "cv": 0.10728853171309596,
+            "slope": 0.013031771714139962,
+            "r2": 0.49055981915718183,
+            "trend_strength": 0.3067616119340556,
+            "passed": true
+          }
+        }
+      }
+    },
+    {
+      "anchor_id": "chart-03",
+      "render_type": "chart",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-03_security_timeline.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-03_security_timeline.png",
+      "md": null,
+      "gate": {
+        "group_diff_ratio": 1.19999999999952
+      }
+    },
+    {
+      "anchor_id": "chart-04",
+      "render_type": "chart",
+      "csv": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-04_risk_matrix.csv",
+      "png": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/chart-04_risk_matrix.png",
+      "md": null,
+      "gate": {
+        "row_var_max": 0.046666666666666655,
+        "col_var_max": 0.09583333333333334
+      }
+    }
+  ],
+  "summary": {
+    "chart_count": 4,
+    "table_count": 0,
+    "gate_thresholds": {
+      "cv_min": 0.03,
+      "slope_abs_min": 0.005,
+      "r2_min": 0.25,
+      "trend_strength_min": 0.3,
+      "group_diff_min": 0.08,
+      "heatmap_var_min": 0.05
+    }
+  }
+}

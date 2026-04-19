@@ -1,0 +1,31 @@
+{
+  "run_id": "2026-04-05_170457_chainfix",
+  "generated_at": "2026-04-05T21:32:29.815318",
+  "count": 3,
+  "items": [
+    {
+      "rank": 1,
+      "topic_id": "tc_001",
+      "topic_name": "鲍威尔表态逆转美联储加息预期，市场押注降息引发美股反弹",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc_001",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 2,
+      "topic_id": "tc_002",
+      "topic_name": "俄罗斯拒绝向日本供油加剧地缘政治紧张，全球能源安全风险攀升",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc_002",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 3,
+      "topic_id": "tc_003",
+      "topic_name": "伊朗冲突升级引发油价剧烈波动，美军部署加剧中东不确定性",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc_003",
+      "source_status": "ai_generated"
+    }
+  ]
+}

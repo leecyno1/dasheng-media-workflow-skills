@@ -1,0 +1,22 @@
+{
+  "provider_status": {
+    "vectorengine": {
+      "provider": "vectorengine",
+      "base_url": "https://api.vectorengine.ai/v1/chat/completions",
+      "model": "gemini-3.1-flash-image-preview",
+      "status": "disabled_by_provider",
+      "checked_at": "2026-03-26",
+      "http_status": 403,
+      "message": "该渠道已被禁用",
+      "fallbacks": [
+        "python_infographic_renderer",
+        "network_image_collection",
+        "future_baoyu_skill_adapter"
+      ]
+    },
+    "minimax_env": true
+  },
+  "batch_file": "/Volumes/PSSD/Projects/公众号文章/产物/04_素材收集/2026-03-27_120122/pack_assets/reinflation/images/generated/baoyu_batch.json",
+  "task_count": 15,
+  "note": "当前默认只生成批处理与 fallback 图。若后续 provider 可用，再批量跑真实 AI 图像。"
+}

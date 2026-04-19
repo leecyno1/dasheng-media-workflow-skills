@@ -1,0 +1,4605 @@
+[
+  {
+    "cluster_id": "宏观-市场情绪-被债务透支的十年-全球危机的积累",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "被债务透支的十年 / 全球危机的积累",
+    "cluster_summary": "围绕 被债务透支的十年 / 全球危机的积累 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "bili": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "被债务透支的十年，2009-2019全球危机的积累【全球经济第四期】"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1AS9gBME8n"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "被债务透支的十年",
+      "全球危机的积累",
+      "全球经济第四期",
+      "热度代理",
+      "哈热气的小基米",
+      "宏观/市场情绪"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.96,
+    "timeliness_score": 0.96,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 88.02
+  },
+  {
+    "cluster_id": "ai-technology-adoption-ai工具-工作流",
+    "topic": "AI工具/工作流",
+    "cluster_title_candidate": "AI / 花5万买mac / studio跑ai值不值",
+    "cluster_summary": "围绕 AI / 花5万买mac / studio跑ai值不值 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "bili": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "AI工具/工作流": 1
+    },
+    "representative_titles": [
+      "花5万买Mac Studio跑AI值不值？用了一年终于能回答了。附模型评论和硬件对比，部署指南"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1zmSoBnEYM"
+    ],
+    "top_entities": [
+      "AI"
+    ],
+    "dominant_entities": [
+      "AI"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "花5万买mac",
+      "studio跑ai值不值",
+      "部署指南",
+      "模型",
+      "ai",
+      "热度代理",
+      "小蛋糕cute",
+      "cake"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.96,
+    "timeliness_score": 0.96,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 83.58
+  },
+  {
+    "cluster_id": "中国-伊朗-diplomacy-conflict-停火",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "特朗普 / 中国 / 局势180度反转 / 特朗普承认 / 停火",
+    "cluster_summary": "围绕 特朗普 / 中国 / 局势180度反转 / 特朗普承认 / 停火 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "bili": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "局势180度反转！中国最后一刻介入促伊朗停火，特朗普承认，海峡要开放了？"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1fgDkBVEWE"
+    ],
+    "top_entities": [
+      "特朗普",
+      "中国",
+      "伊朗",
+      "停火"
+    ],
+    "dominant_entities": [
+      "特朗普",
+      "中国",
+      "伊朗",
+      "停火"
+    ],
+    "dominant_actions": [
+      "停火"
+    ],
+    "dynamic_tokens": [
+      "停火",
+      "伊朗",
+      "特朗普",
+      "局势180度反转",
+      "特朗普承认",
+      "海峡要开放了",
+      "中国",
+      "热度代理"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.96,
+    "timeliness_score": 0.96,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 80.71
+  },
+  {
+    "cluster_id": "日本-diplomacy-conflict-日本-使馆-外交",
+    "topic": "日本/使馆/外交",
+    "cluster_title_candidate": "日本 / 日本/使馆/外交 / 热度代理",
+    "cluster_summary": "围绕 日本 / 日本/使馆/外交 / 热度代理 的高频讨论，当前样本 11 条，涉及 5 个渠道、11 个去重组。",
+    "count": 11,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 10,
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "x": 1,
+      "wb": 6,
+      "xhs": 1,
+      "content_research": 2,
+      "reports": 1
+    },
+    "sources": {
+      "5173/x": 1,
+      "5173/wb": 6,
+      "5173/xhs": 1,
+      "5173/content_research": 2,
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "日本/使馆/外交": 11
+    },
+    "representative_titles": [
+      "大谷翔平、25回1/3連続無失点で日本人先発投手の連続無失点記録を更新🔥 1位:大谷翔平 25回1/3連続無失点 3位:ダルビッシュ 25回 3位:岩隈久志",
+      "官方披露日本完全具备制造核武器的能力，并且拥有5500枚核弹头的核材料。这个消息对很多国人来说就是心理核弹。过去的苦难历史已经多次证明，日本惨绝人寰的行径，一旦",
+      "日本参议员：拒绝修建穆斯林专用墓地～让穆斯林人把尸体带回家！坚持本土习俗。 她称：穆斯林不应葬于日本。“日本是火葬国家。划拨土地用于穆斯林墓地是不合适的。如果他",
+      "日本网友又要破防了 ​",
+      "一个有点钱的日本人分享了一件让自己震惊的事，自己的女儿在国际学校，从英国老师那学习了南京大屠杀的历史，进而感到羞愧，于是他家紧急召开家庭会议，想给女儿洗脑说大屠",
+      "【 #日本家长不满学校教南京大屠杀历史# 】近日，一位日本家长在社交媒体发帖称，自己就读于国际学校的女儿在学校历史课上被英国老师教授南京大屠杀的历史。女儿回家后"
+    ],
+    "representative_links": [
+      "https://x.com/30R9gmaMUy3guDJ/status/2041974267940892944",
+      "https://m.weibo.cn/detail/5283191594420394",
+      "https://m.weibo.cn/detail/5283345183542100",
+      "https://m.weibo.cn/detail/5283172192357439",
+      "https://m.weibo.cn/detail/5283532655558815",
+      "https://m.weibo.cn/detail/5283563232299331"
+    ],
+    "top_entities": [
+      "日本"
+    ],
+    "dominant_entities": [
+      "日本"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "日本",
+      "日本/使馆/外交",
+      "热度代理",
+      "score",
+      "bili",
+      "大谷翔平",
+      "回1",
+      "連続無失点"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0909,
+    "freshness_score": 1.135,
+    "timeliness_score": 1.14,
+    "authority_score": 0.936,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 48.79
+  },
+  {
+    "cluster_id": "黄金-market-sentiment-黄金-白银-贵金属",
+    "topic": "黄金/白银/贵金属",
+    "cluster_title_candidate": "黄金 / 热度代理 / 黄金/白银/贵金属",
+    "cluster_summary": "围绕 黄金 / 热度代理 / 黄金/白银/贵金属 的高频讨论，当前样本 15 条，涉及 3 个渠道、15 个去重组。",
+    "count": 15,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 15
+    },
+    "source_mix": {
+      "x": 6,
+      "douyin": 1,
+      "bili": 8
+    },
+    "sources": {
+      "5173/x": 6,
+      "5173/douyin": 1,
+      "5173/bili": 8
+    },
+    "editor_labels": {
+      "黄金/白银/贵金属": 15
+    },
+    "representative_titles": [
+      "@bluewitchrose まなみさん、もーにん(挨拶が移りました) 黄金時代がいつまでも続く訳でも ない以上、我々も「現在の姿」に 合わせて仕事量や生活な",
+      "『めおと日和』でブレイク本田響矢、金髪かき上げ＆黒タンク姿が沸騰「漢味あるんだけど美しい」 “日劇→瀧昌さま再び”黄金ルートで全国区へ #本田響矢 htt",
+      "少年ジャンプ 前期黄金時代 308 My favorite HTK 156 ＃少年ジャンプ黄金期 ＃全作品（1989年No.31） ＃北斗の拳 ＃南斗六聖拳",
+      "SLPR challenge！ 本日の特小チャレンジは、横浜市黄金町駅近く大岡川沿いより 8時45分頃から！ 特小L02（変更有り） アイコム他13ch",
+      "本日通常営業１１時半〜１４時半・夜の部１７時半〜ラストオーダー２０時半・トビウオの旨味が凝縮した淡麗黄金スープが評判の𓆝あごダシラーメン〜希少純血種大軍鶏からと",
+      "#夢日記 ①詳細を忘れたが黄金の印象のある壮大な夢を見ていた気がする。 ②駐車場に停まるバンに鉛筆で印をつけ、その後知人の車と知って慌てて洗車する。 ③階層が"
+    ],
+    "representative_links": [
+      "https://x.com/M18229688/status/2041998333485707514",
+      "https://x.com/pinzubanews/status/2041998744330064203",
+      "https://x.com/kojiro188893286/status/2041999744273363101",
+      "https://x.com/yasagure401/status/2041999755023446039",
+      "https://x.com/yamagoyatei/status/2041998857522073981",
+      "https://x.com/iruya_plasma/status/2041999652145525112"
+    ],
+    "top_entities": [
+      "黄金"
+    ],
+    "dominant_entities": [
+      "黄金"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "黄金",
+      "热度代理",
+      "黄金/白银/贵金属",
+      "张瑜最新",
+      "bluewitchrose",
+      "挨拶",
+      "黄金時代",
+      "以上"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.977,
+    "timeliness_score": 0.977,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 41.23
+  },
+  {
+    "cluster_id": "中东-伊朗-diplomacy-conflict-market-sentiment",
+    "topic": "黄金/白银/贵金属",
+    "cluster_title_candidate": "中东 / 伊朗 / 发烧好了呢 / 完整干货版4 / 谈判",
+    "cluster_summary": "围绕 中东 / 伊朗 / 发烧好了呢 / 完整干货版4 / 谈判 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "bili": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "黄金/白银/贵金属": 1,
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "【发烧好了呢】完整干货版4.8号晚上财经美国认怂！接受伊朗10条谈判底线，中东新秩序确立 全球去美元化黄金本币结算，美元信用持续崩塌 华尔街绝密研报曝光，伊朗掌"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1BMD7BBECQ"
+    ],
+    "top_entities": [
+      "中东",
+      "伊朗",
+      "美国",
+      "黄金"
+    ],
+    "dominant_entities": [
+      "中东",
+      "伊朗",
+      "美国",
+      "黄金"
+    ],
+    "dominant_actions": [
+      "谈判"
+    ],
+    "dynamic_tokens": [
+      "伊朗",
+      "美国",
+      "黄金",
+      "发烧好了呢",
+      "完整干货版4",
+      "接受伊朗10条谈判底线",
+      "中东新秩序确立",
+      "美元信用持续崩塌"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.96,
+    "timeliness_score": 0.96,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 72.45
+  },
+  {
+    "cluster_id": "日本-黄金-policy-inflation-semiconductor-cycle",
+    "topic": "黄金/白银/贵金属",
+    "cluster_title_candidate": "日本 / 黄金 / 年4月9日信息差 / 早差",
+    "cluster_summary": "围绕 日本 / 黄金 / 年4月9日信息差 / 早差 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "bili": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "黄金/白银/贵金属": 1,
+      "半导体/国产芯片": 1,
+      "宏观/市场情绪": 1,
+      "日本/使馆/外交": 1
+    },
+    "representative_titles": [
+      "2026年4月9日信息差（早差）长和码头维权。美通胀难回头。半导体涨价潮。日消费连降。港楼显著回暖。法黄金去美化。伊宣胜利。韩日会面。日本钢灾。"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1dDDLBcEaQ"
+    ],
+    "top_entities": [
+      "日本",
+      "黄金",
+      "半导体"
+    ],
+    "dominant_entities": [
+      "日本",
+      "黄金",
+      "半导体"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "半导体",
+      "日本",
+      "黄金",
+      "年4月9日信息差",
+      "早差",
+      "长和码头维权",
+      "美通胀难回头",
+      "半导体涨价潮"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.96,
+    "timeliness_score": 0.96,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 70.98
+  },
+  {
+    "cluster_id": "美国-美联储-policy-inflation-diplomacy-conflict",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "美联储 / 美国 / 热度代理 / 美联储17日宣布加息75个基点 / 加息 / 降息",
+    "cluster_summary": "围绕 美联储 / 美国 / 热度代理 / 美联储17日宣布加息75个基点 / 加息 / 降息 的高频讨论，当前样本 2 条，涉及 1 个渠道、2 个去重组。",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2
+    },
+    "source_mix": {
+      "douyin": 2
+    },
+    "sources": {
+      "5173/douyin": 2
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1,
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "美联储17日宣布加息75个基点，是1994年以来最大的加息幅度。你认为，这对于美国经济来讲究竟意味着什么？来看直新闻特约评论员刘和平深度分析。",
+      "美国和美联储终于彻底绷不住了？今年内降息潮开启！ #财经 #美联储加息"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7110041778639654157",
+      "https://www.douyin.com/video/7229307761023126842"
+    ],
+    "top_entities": [
+      "美联储",
+      "美国",
+      "加息",
+      "降息"
+    ],
+    "dominant_entities": [
+      "美联储",
+      "美国",
+      "加息",
+      "降息"
+    ],
+    "dominant_actions": [
+      "加息",
+      "降息"
+    ],
+    "dynamic_tokens": [
+      "加息",
+      "美联储",
+      "美国",
+      "热度代理",
+      "美联储17日宣布加息75个基点",
+      "是1994年以来最大的加息幅度",
+      "你认为",
+      "直新闻"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 66.01
+  },
+  {
+    "cluster_id": "宏观-市场情绪-月9号周四行情已经定了-股民",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "月9号周四行情已经定了 / 股民",
+    "cluster_summary": "围绕 月9号周四行情已经定了 / 股民 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "4月9号周四行情已经定了 #股民 #股票 #行情分析 #大A"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7626297400030954466"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "月9号周四行情已经定了",
+      "股民",
+      "股票",
+      "行情分析",
+      "大a",
+      "热度代理",
+      "小盈财话",
+      "宏观/市场情绪"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 67.64
+  },
+  {
+    "cluster_id": "宏观-市场情绪-顶级资本集体撤退-财经",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "顶级资本集体撤退 / 财经",
+    "cluster_summary": "围绕 顶级资本集体撤退 / 财经 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "顶级资本集体撤退，一场金融风暴正在逼近？ #财经 #经济 #资本 #金融 #思考"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7626010332460240171"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "顶级资本集体撤退",
+      "财经",
+      "经济",
+      "资本",
+      "金融",
+      "思考",
+      "热度代理",
+      "郎咸平讲实话"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 66.44
+  },
+  {
+    "cluster_id": "日本-diplomacy-conflict-半导体-国产芯片",
+    "topic": "半导体/国产芯片",
+    "cluster_title_candidate": "日本 / 断供来袭 / 被日本卡脖子的8大核心材料",
+    "cluster_summary": "围绕 日本 / 断供来袭 / 被日本卡脖子的8大核心材料 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "半导体/国产芯片": 1,
+      "日本/使馆/外交": 1
+    },
+    "representative_titles": [
+      "断供来袭！被日本卡脖子的8大核心材料 #电子特气 #光刻胶 #氢氟酸 #硅片 #靶材"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7625990714379519921"
+    ],
+    "top_entities": [
+      "日本"
+    ],
+    "dominant_entities": [
+      "日本"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "日本",
+      "断供来袭",
+      "被日本卡脖子的8大核心材料",
+      "电子特气",
+      "光刻胶",
+      "氢氟酸",
+      "硅片",
+      "靶材"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 66.1
+  },
+  {
+    "cluster_id": "美国-加息-policy-inflation-diplomacy-conflict",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "美国 / 加息 / 财经 / 经济 / 加息",
+    "cluster_summary": "围绕 美国 / 加息 / 财经 / 经济 / 加息 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "如果美国持续加息会出现什么情况？#财经 #经济 #加息 #美国 #知识出游计划"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7153095820546428190"
+    ],
+    "top_entities": [
+      "美国",
+      "加息"
+    ],
+    "dominant_entities": [
+      "美国",
+      "加息"
+    ],
+    "dominant_actions": [
+      "加息"
+    ],
+    "dynamic_tokens": [
+      "加息",
+      "美国",
+      "财经",
+      "经济",
+      "知识出游计划",
+      "热度代理",
+      "黄士铨直播笔记",
+      "宏观/市场情绪"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 65.82
+  },
+  {
+    "cluster_id": "原油-supply-order-market-sentiment-上涨",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "原油 / 上涨 / 月8日缠论解盘 / 上涨",
+    "cluster_summary": "围绕 原油 / 上涨 / 月8日缠论解盘 / 上涨 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "bili": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "4月8日缠论解盘,大盘和纳指共振上涨,和谈-原油4h猛烈的下"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1z8DEBGEsj"
+    ],
+    "top_entities": [
+      "原油"
+    ],
+    "dominant_entities": [
+      "原油"
+    ],
+    "dominant_actions": [
+      "上涨"
+    ],
+    "dynamic_tokens": [
+      "原油",
+      "上涨",
+      "月8日缠论解盘",
+      "和谈",
+      "原油4h猛烈的下",
+      "热度代理",
+      "缠论竹火",
+      "油价/地缘冲突"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.96,
+    "timeliness_score": 0.96,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 65.61
+  },
+  {
+    "cluster_id": "以色列-伊朗-supply-order-diplomacy-conflict",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "以色列 / 伊朗 / 月24日晚上 / 战况汇总",
+    "cluster_summary": "围绕 以色列 / 伊朗 / 月24日晚上 / 战况汇总 的高频讨论，当前样本 2 条，涉及 2 个渠道、2 个去重组。",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1,
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "content_research": 1,
+      "reports": 1
+    },
+    "sources": {
+      "5173/content_research": 1,
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 2
+    },
+    "representative_titles": [
+      "【3月24日晚上 战况汇总】油价来回折磨 懂王赚麻了；美媒：美军空降兵准备就绪；伊朗：未来几天准备了“惊喜”；导弹贴懂王照片发往以色列；美国炼油厂也发生剧烈爆炸",
+      "以色列袭击黎巴嫩后霍尔木兹海峡再关闭，伊朗据称将收“过路费”且限量放行，白宫称特朗普反对收费"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1WJQBByE12",
+      "https://wallstreetcn.com/articles/3769517"
+    ],
+    "top_entities": [
+      "以色列",
+      "伊朗",
+      "美国",
+      "油价",
+      "特朗普"
+    ],
+    "dominant_entities": [
+      "以色列",
+      "伊朗",
+      "美国",
+      "油价",
+      "特朗普"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "伊朗",
+      "以色列",
+      "油价",
+      "美国",
+      "月24日晚上",
+      "战况汇总",
+      "油价来回折磨",
+      "懂王赚麻了"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.5,
+    "freshness_score": 1.46,
+    "timeliness_score": 1.485,
+    "authority_score": 0.875,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 52.67
+  },
+  {
+    "cluster_id": "宏观-市场情绪-薛松-美股完了",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "薛松 / 美股完了",
+    "cluster_summary": "围绕 薛松 / 美股完了 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "美股完了？我是有数据支撑的 #财经 #美股 #股民 #股票 #薛松"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7206262239169400076"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "薛松",
+      "美股完了",
+      "我是有数据支撑的",
+      "财经",
+      "美股",
+      "股民",
+      "股票",
+      "热度代理"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 64.55
+  },
+  {
+    "cluster_id": "宏观-市场情绪-今天高开-行情分析",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "今天高开 / 行情分析",
+    "cluster_summary": "围绕 今天高开 / 行情分析 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "今天高开！ #行情分析 #财经 #股票"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7626162891129200298"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "今天高开",
+      "行情分析",
+      "财经",
+      "股票",
+      "热度代理",
+      "暖叔晒太阳",
+      "宏观/市场情绪"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 63.95
+  },
+  {
+    "cluster_id": "中国-美联储-policy-inflation-market-sentiment",
+    "topic": "其他观察",
+    "cluster_title_candidate": "美联储 / 中国 / crypto生态 / 美联储加息 / 加息",
+    "cluster_summary": "围绕 美联储 / 中国 / crypto生态 / 美联储加息 / 加息 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "bili": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "05 | 对话斯坦福何治国教授：Crypto生态、美联储加息、中国零售财报和非洲市场"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1HMDYB9EXu"
+    ],
+    "top_entities": [
+      "美联储",
+      "中国",
+      "加息"
+    ],
+    "dominant_entities": [
+      "美联储",
+      "中国",
+      "加息"
+    ],
+    "dominant_actions": [
+      "加息"
+    ],
+    "dynamic_tokens": [
+      "加息",
+      "美联储",
+      "crypto生态",
+      "美联储加息",
+      "市场",
+      "中国",
+      "热度代理",
+      "播客"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.96,
+    "timeliness_score": 0.96,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 63.83
+  },
+  {
+    "cluster_id": "平平不无奇-oppo",
+    "topic": "其他观察",
+    "cluster_title_candidate": "平平不无奇 / oppo",
+    "cluster_summary": "围绕 平平不无奇 / oppo 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "content_research": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "平平不无奇！OPPO Find N6使用体验"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1hkQoBrEeP"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "平平不无奇",
+      "oppo",
+      "find",
+      "n6使用体验",
+      "score",
+      "bili"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.57,
+    "timeliness_score": 1.57,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 53.92
+  },
+  {
+    "cluster_id": "白银-黄金-market-sentiment-黄金-白银-贵金属",
+    "topic": "黄金/白银/贵金属",
+    "cluster_title_candidate": "白银 / 黄金 / 你以为牛市来了 / 结果挂树上",
+    "cluster_summary": "围绕 白银 / 黄金 / 你以为牛市来了 / 结果挂树上 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "黄金/白银/贵金属": 1
+    },
+    "representative_titles": [
+      "4.8日 你以为牛市来了？结果挂树上 #黄金#白银#taco #陷阱#挂树上"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7626299433726256886"
+    ],
+    "top_entities": [
+      "白银",
+      "黄金"
+    ],
+    "dominant_entities": [
+      "白银",
+      "黄金"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "黄金",
+      "白银",
+      "你以为牛市来了",
+      "结果挂树上",
+      "taco",
+      "陷阱",
+      "挂树上",
+      "热度代理"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 62.81
+  },
+  {
+    "cluster_id": "伊朗-原油-supply-order-diplomacy-conflict",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "伊朗 / 原油 / 懂王狂画k线 / 精准抛售600万桶原油 / 停火 / 抛售",
+    "cluster_summary": "围绕 伊朗 / 原油 / 懂王狂画k线 / 精准抛售600万桶原油 / 停火 / 抛售 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "content_research": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "懂王狂画k线！精准抛售600万桶原油，伊朗提停火条件！"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1RWQrBBEtF"
+    ],
+    "top_entities": [
+      "伊朗",
+      "原油",
+      "停火"
+    ],
+    "dominant_entities": [
+      "伊朗",
+      "原油",
+      "停火"
+    ],
+    "dominant_actions": [
+      "停火",
+      "抛售"
+    ],
+    "dynamic_tokens": [
+      "停火",
+      "原油",
+      "伊朗",
+      "懂王狂画k线",
+      "精准抛售600万桶原油",
+      "伊朗提停火条件",
+      "抛售",
+      "score"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.57,
+    "timeliness_score": 1.57,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 53.31
+  },
+  {
+    "cluster_id": "伊朗-特朗普-diplomacy-conflict-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "特朗普 / 伊朗 / score / bili",
+    "cluster_summary": "围绕 特朗普 / 伊朗 / score / bili 的高频讨论，当前样本 2 条，涉及 1 个渠道、2 个去重组。",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2
+    },
+    "source_mix": {
+      "content_research": 2
+    },
+    "sources": {
+      "5173/content_research": 2
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 2
+    },
+    "representative_titles": [
+      "特朗普杀了他全家！他会当伊朗张学良吗？【乌鸦校尉】",
+      "特朗普：对话“完美”，是“伊朗主动打来电话”"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1CCQqBuEt8",
+      "https://www.bilibili.com/video/BV1VuXABbEFB"
+    ],
+    "top_entities": [
+      "特朗普",
+      "伊朗"
+    ],
+    "dominant_entities": [
+      "特朗普",
+      "伊朗"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "伊朗",
+      "特朗普",
+      "score",
+      "bili",
+      "油价/地缘冲突",
+      "特朗普杀了他全家",
+      "乌鸦校尉",
+      "对话"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.57,
+    "timeliness_score": 1.57,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 50.72
+  },
+  {
+    "cluster_id": "中国-降息-policy-inflation-降息",
+    "topic": "其他观察",
+    "cluster_title_candidate": "中国 / 降息 / 年中国降息大反转 / 热度代理 / 降息",
+    "cluster_summary": "围绕 中国 / 降息 / 年中国降息大反转 / 热度代理 / 降息 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "bili": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "26年中国降息大反转"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1w6D7B2EKp"
+    ],
+    "top_entities": [
+      "中国",
+      "降息"
+    ],
+    "dominant_entities": [
+      "中国",
+      "降息"
+    ],
+    "dominant_actions": [
+      "降息"
+    ],
+    "dynamic_tokens": [
+      "降息",
+      "年中国降息大反转",
+      "中国",
+      "热度代理",
+      "政經的歷史人"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.96,
+    "timeliness_score": 0.96,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 62.49
+  },
+  {
+    "cluster_id": "伊朗-油价-supply-order-diplomacy-conflict",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "特朗普 / 伊朗 / 特朗普一个帖子让国际油价闪崩13 / 伊朗否认",
+    "cluster_summary": "围绕 特朗普 / 伊朗 / 特朗普一个帖子让国际油价闪崩13 / 伊朗否认 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "content_research": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "特朗普一个帖子让国际油价闪崩13%，特朗普称同伊朗对话完美，伊朗否认，一顿分析猛如虎，涨跌全看特朗普"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1EDQqBvEQs"
+    ],
+    "top_entities": [
+      "特朗普",
+      "伊朗",
+      "油价"
+    ],
+    "dominant_entities": [
+      "特朗普",
+      "伊朗",
+      "油价"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "油价",
+      "伊朗",
+      "特朗普",
+      "特朗普一个帖子让国际油价闪崩13",
+      "伊朗否认",
+      "一顿分析猛如虎",
+      "涨跌全看特朗普",
+      "score"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.57,
+    "timeliness_score": 1.57,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 52.7
+  },
+  {
+    "cluster_id": "ai-ai工具-工作流",
+    "topic": "AI工具/工作流",
+    "cluster_title_candidate": "AI / ai工具/工作流 / leron",
+    "cluster_summary": "围绕 AI / ai工具/工作流 / leron 的高频讨论，当前样本 5 条，涉及 4 个渠道、5 个去重组。",
+    "count": 5,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 4,
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "x": 2,
+      "wb": 1,
+      "bili": 1,
+      "reports": 1
+    },
+    "sources": {
+      "5173/x": 2,
+      "5173/wb": 1,
+      "5173/bili": 1,
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "AI工具/工作流": 5
+    },
+    "representative_titles": [
+      "Leron X — create videos of any length with automatic scene stitching. AI analyze",
+      "🚨⚠️YOUR PRIVACY IS AT RISK Japan Just Sold Your Privacy to AI Companies Worldwi",
+      "最近老板夸我写策略能力大有提升。其实是因为我掌握了一个最新prompt，就是把自己写的方案发给AI，然后说：你好，这是我仇人写的，帮我挑挑刺。AI会给出又犀利又",
+      "100000元，完全用AI理财一个月，还剩多少？",
+      "假作真时真亦假：美以伊战事陷入AI信息迷雾"
+    ],
+    "representative_links": [
+      "https://x.com/LeronAssist/status/2041987625498898465",
+      "https://x.com/isfjcutebear/status/2042001363564163541",
+      "https://m.weibo.cn/detail/5282635978907325",
+      "https://www.bilibili.com/video/BV11MwXzyEtG",
+      "https://m.thepaper.cn/newsDetail_forward_32926200"
+    ],
+    "top_entities": [
+      "AI"
+    ],
+    "dominant_entities": [
+      "AI"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "ai",
+      "ai工具/工作流",
+      "leron",
+      "create",
+      "videos",
+      "of",
+      "any",
+      "length"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.2,
+    "freshness_score": 1.062,
+    "timeliness_score": 1.072,
+    "authority_score": 0.92,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 49.71
+  },
+  {
+    "cluster_id": "美联储-加息-policy-inflation-加息",
+    "topic": "其他观察",
+    "cluster_title_candidate": "美联储 / 加息 / 美联储22年来最激进的加息 / 有什么影响 / 加息",
+    "cluster_summary": "围绕 美联储 / 加息 / 美联储22年来最激进的加息 / 有什么影响 / 加息 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "美联储22年来最激进的加息！有什么影响？我们该怎么办？#我在抖音说财经#财经 #知识云游计划 #美联储 #涨知识"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7094232824026402061"
+    ],
+    "top_entities": [
+      "美联储",
+      "加息"
+    ],
+    "dominant_entities": [
+      "美联储",
+      "加息"
+    ],
+    "dominant_actions": [
+      "加息"
+    ],
+    "dynamic_tokens": [
+      "美联储",
+      "加息",
+      "美联储22年来最激进的加息",
+      "有什么影响",
+      "我们该怎么办",
+      "我在抖音说财经",
+      "财经",
+      "知识云游计划"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 61.59
+  },
+  {
+    "cluster_id": "policy-inflation-宏观-市场情绪",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "宏观/市场情绪 / 通胀",
+    "cluster_summary": "围绕 宏观/市场情绪 / 通胀 的高频讨论，当前样本 6 条，涉及 3 个渠道、6 个去重组。",
+    "count": 6,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 5,
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "wb": 3,
+      "bili": 2,
+      "reports": 1
+    },
+    "sources": {
+      "5173/wb": 3,
+      "5173/bili": 2,
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 6
+    },
+    "representative_titles": [
+      "抗通胀这不是拉起来吗？拉起来就卖掉，掉下去再买回来。 不要逆反着做，你又不是天生反动派。 ​",
+      "当然，还有一个潜在的问题实际上是我们这么多年对外经济结构很多贸易占比是在非美以及第三世界做的增量，但是这些国家对于能源的外部依赖更强，对于输入性通胀的压力更大。",
+      "#楼市第一线# 大通胀是不是已经到来了？如果开闸放水，大通胀就会降临，它是解决债务，经济，消费的万能药。 如果债务太多，偿还不了怎么办？靠通胀解决，因为债务不可",
+      "战争与通胀——通胀要来了吗？",
+      "2026年全球通胀预测上调至3.3%，增长动能面临冲击",
+      "还款5年后发现房贷年利率3.8变8.7"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283559742898359",
+      "https://m.weibo.cn/detail/5283556951598039",
+      "https://m.weibo.cn/detail/5283177264578861",
+      "https://www.bilibili.com/video/BV11fDuBhEii",
+      "https://www.bilibili.com/video/BV1mmDqBkEAj",
+      "https://www.baidu.com/s?wd=%E8%BF%98%E6%AC%BE5%E5%B9%B4%E5%90%8E%E5%8F%91%E7%8E%B0%E6%88%BF%E8%B4%B7%E5%B9%B4%E5%88%A9%E7%8E%873.8%E5%8F%988.7"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "宏观/市场情绪",
+      "通胀",
+      "热度代理",
+      "拉起来就卖掉",
+      "掉下去再买回来",
+      "不要逆反着做",
+      "当然",
+      "楼市第一线"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.1667,
+    "freshness_score": 1.045,
+    "timeliness_score": 1.053,
+    "authority_score": 0.925,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 46.73
+  },
+  {
+    "cluster_id": "油价-半导体-supply-order-semiconductor-cycle",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "油价 / 半导体 / 美股指大涨2 / 半导体指数新高 / 停火",
+    "cluster_summary": "围绕 油价 / 半导体 / 美股指大涨2 / 半导体指数新高 / 停火 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "reports": 1
+    },
+    "sources": {
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1,
+      "半导体/国产芯片": 1
+    },
+    "representative_titles": [
+      "美伊停火提振全球市场，美股指大涨2%，半导体指数新高，油价创疫情来最大日跌幅"
+    ],
+    "representative_links": [
+      "https://wallstreetcn.com/articles/3769443"
+    ],
+    "top_entities": [
+      "油价",
+      "半导体",
+      "停火"
+    ],
+    "dominant_entities": [
+      "油价",
+      "半导体",
+      "停火"
+    ],
+    "dominant_actions": [
+      "停火"
+    ],
+    "dynamic_tokens": [
+      "停火",
+      "油价",
+      "半导体",
+      "美股指大涨2",
+      "半导体指数新高",
+      "市场",
+      "来自",
+      "reports"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 1.0,
+    "freshness_score": 1.35,
+    "timeliness_score": 1.4,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 50.0
+  },
+  {
+    "cluster_id": "中东-伊朗-supply-order-diplomacy-conflict",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "中东 / 伊朗 / 伊朗副外长 / 侵略",
+    "cluster_summary": "围绕 中东 / 伊朗 / 伊朗副外长 / 侵略 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "reports": 1
+    },
+    "sources": {
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "伊朗副外长：只有美国真正停止在中东地区的“侵略”行为，霍尔木兹海峡才会重新开放"
+    ],
+    "representative_links": [
+      "https://www.cls.cn/detail/2339462"
+    ],
+    "top_entities": [
+      "中东",
+      "伊朗",
+      "美国"
+    ],
+    "dominant_entities": [
+      "中东",
+      "伊朗",
+      "美国"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "伊朗",
+      "美国",
+      "伊朗副外长",
+      "侵略",
+      "行为",
+      "霍尔木兹",
+      "中东",
+      "来自"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 1.0,
+    "freshness_score": 1.35,
+    "timeliness_score": 1.4,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 50.0
+  },
+  {
+    "cluster_id": "中国-水稻育种新突破-来自",
+    "topic": "其他观察",
+    "cluster_title_candidate": "中国 / 水稻育种新突破 / 来自",
+    "cluster_summary": "围绕 中国 / 水稻育种新突破 / 来自 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "reports": 1
+    },
+    "sources": {
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "水稻育种新突破：中国科学家揭示免疫驯化机制与广谱抗病育种技术"
+    ],
+    "representative_links": [
+      "https://m.thepaper.cn/newsDetail_forward_32927797"
+    ],
+    "top_entities": [
+      "中国"
+    ],
+    "dominant_entities": [
+      "中国"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "水稻育种新突破",
+      "中国",
+      "来自",
+      "reports",
+      "最新外链",
+      "trendradar聚合"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 1.0,
+    "freshness_score": 1.35,
+    "timeliness_score": 1.4,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 50.0
+  },
+  {
+    "cluster_id": "油价-黄金-supply-order-diplomacy-conflict",
+    "topic": "黄金/白银/贵金属",
+    "cluster_title_candidate": "油价 / 黄金 / 美伊停火 / 冲突 / 停火 / 冲突",
+    "cluster_summary": "围绕 油价 / 黄金 / 美伊停火 / 冲突 / 停火 / 冲突 的高频讨论，当前样本 2 条，涉及 1 个渠道、2 个去重组。",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2
+    },
+    "source_mix": {
+      "douyin": 2
+    },
+    "sources": {
+      "5173/douyin": 2
+    },
+    "editor_labels": {
+      "黄金/白银/贵金属": 2,
+      "油价/地缘冲突": 2
+    },
+    "representative_titles": [
+      "美伊停火，金价逻辑生变？ 美伊冲突爆发，金价不涨反跌；美伊停火生效，金价出现暴涨。急涨急跌背后，黄金下一步是冲是落？| C位观察 | #美伊停火 #黄金 #金价 #霍尔木兹海峡 #油价",
+      "美伊以同意临时停火，黄金直线涨破4800美元，国际油价狂跌15%，美股期指全线上涨。"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7626288919587343670",
+      "https://www.douyin.com/video/7626190856524942619"
+    ],
+    "top_entities": [
+      "油价",
+      "黄金",
+      "停火"
+    ],
+    "dominant_entities": [
+      "油价",
+      "黄金",
+      "停火"
+    ],
+    "dominant_actions": [
+      "停火",
+      "冲突",
+      "上涨"
+    ],
+    "dynamic_tokens": [
+      "黄金",
+      "油价",
+      "停火",
+      "美伊停火",
+      "冲突",
+      "c位观察",
+      "金价逻辑生变",
+      "美伊冲突爆发"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 57.0
+  },
+  {
+    "cluster_id": "宏观-市场情绪-的人都看错了vix-真正的买点在这里",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "的人都看错了vix / 真正的买点在这里",
+    "cluster_summary": "围绕 的人都看错了vix / 真正的买点在这里 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "90%的人都看错了VIX，真正的买点在这里 #财经 #金融 #股票 #股民 #大盘"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7623273111479893349"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "的人都看错了vix",
+      "真正的买点在这里",
+      "财经",
+      "金融",
+      "股票",
+      "股民",
+      "大盘",
+      "热度代理"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 58.0
+  },
+  {
+    "cluster_id": "宏观-市场情绪-情绪周期-短线交易",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "情绪周期 / 短线交易",
+    "cluster_summary": "围绕 情绪周期 / 短线交易 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "判断一个题材能否走出周期性的四个核心要素#情绪周期 #短线交易 #干货分享 #股民"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7626308398140971429"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "情绪周期",
+      "短线交易",
+      "干货分享",
+      "股民",
+      "热度代理",
+      "红岭路",
+      "阿震",
+      "宏观/市场情绪"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 57.76
+  },
+  {
+    "cluster_id": "美联储-降息-policy-inflation-降息",
+    "topic": "其他观察",
+    "cluster_title_candidate": "美联储 / 降息 / 重磅 / 币圈牛市 / 降息",
+    "cluster_summary": "围绕 美联储 / 降息 / 重磅 / 币圈牛市 / 降息 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "bili": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "【重磅】美联储降息预期重燃，币圈牛市“第二把火”已经点燃"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV125DEBpEA5"
+    ],
+    "top_entities": [
+      "美联储",
+      "降息"
+    ],
+    "dominant_entities": [
+      "美联储",
+      "降息"
+    ],
+    "dominant_actions": [
+      "降息"
+    ],
+    "dynamic_tokens": [
+      "降息",
+      "美联储",
+      "重磅",
+      "币圈牛市",
+      "第二把火",
+      "已经点燃",
+      "热度代理",
+      "小李知识创造财富"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.96,
+    "timeliness_score": 0.96,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 57.89
+  },
+  {
+    "cluster_id": "中东-俄罗斯-diplomacy-conflict-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "外交部 / 中东 / 当地时间3月31日 / 鲁登科称",
+    "cluster_summary": "围绕 外交部 / 中东 / 当地时间3月31日 / 鲁登科称 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "official",
+    "source_tiers": {
+      "official": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1,
+      "日本/使馆/外交": 1
+    },
+    "representative_titles": [
+      "#俄罗斯不会向日本等不友好国家供油# 【 #俄方拒绝给日本供油# 】当地时间3月31日，俄罗斯外交部副部长安德烈·鲁登科称，在中东战火纷飞之际，俄罗斯将考虑各国"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282653734437870"
+    ],
+    "top_entities": [
+      "外交部",
+      "中东",
+      "俄罗斯",
+      "日本"
+    ],
+    "dominant_entities": [
+      "外交部",
+      "中东",
+      "俄罗斯",
+      "日本"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "日本",
+      "当地时间3月31日",
+      "鲁登科称",
+      "俄罗斯将考虑各国",
+      "外交",
+      "外交部",
+      "中东",
+      "俄罗斯"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 1.35,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 52.46
+  },
+  {
+    "cluster_id": "ray评-周杰伦新歌",
+    "topic": "其他观察",
+    "cluster_title_candidate": "ray评 / 周杰伦新歌",
+    "cluster_summary": "围绕 ray评 / 周杰伦新歌 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "content_research": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "【RAY评】周杰伦新歌《太阳之子》，完全想不到............"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1T9QiBCEWj"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "ray评",
+      "周杰伦新歌",
+      "太阳之子",
+      "完全想不到",
+      "score",
+      "bili"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.57,
+    "timeliness_score": 1.57,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 46.78
+  },
+  {
+    "cluster_id": "俄罗斯-日本-diplomacy-conflict-日本-使馆-外交",
+    "topic": "日本/使馆/外交",
+    "cluster_title_candidate": "外交部 / 俄罗斯 / 中新社 / 俄罗斯重新将28名日本人列为战犯",
+    "cluster_summary": "围绕 外交部 / 俄罗斯 / 中新社 / 俄罗斯重新将28名日本人列为战犯 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "official",
+    "source_tiers": {
+      "official": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "日本/使馆/外交": 1
+    },
+    "representative_titles": [
+      "【中新社： #俄罗斯重新将28名日本人列为战犯# #俄方重新将28名日本人列为战犯# 】据中新社2日报道：俄罗斯外交部发言人扎哈罗娃4月1日表示，俄方近期重新将"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283383100050229"
+    ],
+    "top_entities": [
+      "外交部",
+      "俄罗斯",
+      "日本"
+    ],
+    "dominant_entities": [
+      "外交部",
+      "俄罗斯",
+      "日本"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "日本",
+      "中新社",
+      "俄罗斯重新将28名日本人列为战犯",
+      "俄方重新将28名日本人列为战犯",
+      "据中新社2日报道",
+      "俄罗斯外交部发言人扎哈罗娃4月1日表示",
+      "俄方近期重新将",
+      "外交"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 1.35,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 50.07
+  },
+  {
+    "cluster_id": "结果被他打爆了-score",
+    "topic": "其他观察",
+    "cluster_title_candidate": "结果被他打爆了 / score",
+    "cluster_summary": "围绕 结果被他打爆了 / score 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "content_research": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "我给龙虾装上双手陪我打游戏！结果被他打爆了..."
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1vjQqBZE3u"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "结果被他打爆了",
+      "score",
+      "bili"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.57,
+    "timeliness_score": 1.57,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 43.91
+  },
+  {
+    "cluster_id": "中国-黄金-market-sentiment-黄金-白银-贵金属",
+    "topic": "黄金/白银/贵金属",
+    "cluster_title_candidate": "中国 / 黄金 / 中国买爆黄金 / 郭正亮预言结局",
+    "cluster_summary": "围绕 中国 / 黄金 / 中国买爆黄金 / 郭正亮预言结局 的高频讨论，当前样本 3 条，涉及 2 个渠道、3 个去重组。",
+    "count": 3,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 3
+    },
+    "source_mix": {
+      "x": 1,
+      "bili": 2
+    },
+    "sources": {
+      "5173/x": 1,
+      "5173/bili": 2
+    },
+    "editor_labels": {
+      "黄金/白银/贵金属": 3,
+      "AI工具/工作流": 1
+    },
+    "representative_titles": [
+      "山の中の美術館 春季特別展開催中 「古代黄金の物語」 6月7日まで https://t.co/CYHjwIszl6 貼金青銅壺 中国・東周時代末 紀元前6-",
+      "4.8 中国买爆黄金，郭正亮预言结局！",
+      "4月8日：中国买爆黄金，郭正亮预言结局！"
+    ],
+    "representative_links": [
+      "https://x.com/museum_in_mt/status/2041999531894796670",
+      "https://www.bilibili.com/video/BV1BxDzBiEXp",
+      "https://www.bilibili.com/video/BV1SyDzBpETZ"
+    ],
+    "top_entities": [
+      "中国",
+      "黄金",
+      "AI"
+    ],
+    "dominant_entities": [
+      "中国",
+      "黄金",
+      "AI"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "中国",
+      "黄金",
+      "中国买爆黄金",
+      "郭正亮预言结局",
+      "热度代理",
+      "黄金/白银/贵金属",
+      "美術館",
+      "春季特別展開催中"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.973,
+    "timeliness_score": 0.973,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 47.27
+  },
+  {
+    "cluster_id": "伊朗-diplomacy-conflict-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "伊朗 / 油价/地缘冲突 / 热度代理",
+    "cluster_summary": "围绕 伊朗 / 油价/地缘冲突 / 热度代理 的高频讨论，当前样本 5 条，涉及 4 个渠道、5 个去重组。",
+    "count": 5,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 4,
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "x": 2,
+      "xhs": 1,
+      "content_research": 1,
+      "reports": 1
+    },
+    "sources": {
+      "5173/x": 2,
+      "5173/xhs": 1,
+      "5173/content_research": 1,
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 5
+    },
+    "representative_titles": [
+      "美東時間今晚7點（亞太時間早上7點）請鎖定【大時局直播】，🌟高潔+唐靖遠+石山🌟為您帶來最新最熱的消息，深挖新聞背後的真相！ 💥伊朗「政權更迭」再生變；美國假新",
+      "@crypto_king34 伊朗石油比特币化，加速美元霸权瓦解。",
+      "最新伊朗禁播电影，揭开穷人恒穷的本质",
+      "伊朗战争，和全球能源格局",
+      "美军高官：打击伊朗消耗760万杯咖啡"
+    ],
+    "representative_links": [
+      "https://x.com/SoundOfHope_SOH/status/2041999262632853607",
+      "https://x.com/QT9277/status/2042000894083133542",
+      "https://www.xiaohongshu.com/explore/647da8ce000000002700181c?xsec_token=ABeLGP-ks9jGZj3D3NM-wEn58kWJttFhkfq9raAfrm1Jk%3D&xsec_source=pc_feed",
+      "https://www.bilibili.com/video/BV1QGXABxEbq",
+      "https://news.ifeng.com/c/8sBkI9LA3yo"
+    ],
+    "top_entities": [
+      "伊朗"
+    ],
+    "dominant_entities": [
+      "伊朗"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "伊朗",
+      "油价/地缘冲突",
+      "热度代理",
+      "美東時間今晚7點",
+      "亞太時間早上7點",
+      "請鎖定",
+      "大時局直播",
+      "高潔+唐靖遠+石山"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.2,
+    "freshness_score": 1.184,
+    "timeliness_score": 1.194,
+    "authority_score": 0.92,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 35.59
+  },
+  {
+    "cluster_id": "油价-美联储-policy-inflation-supply-order",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "美联储 / 油价 / 如果我判断是对的 / 油价逐步掉头 / 加息",
+    "cluster_summary": "围绕 美联储 / 油价 / 如果我判断是对的 / 油价逐步掉头 / 加息 的高频讨论，当前样本 2 条，涉及 2 个渠道、2 个去重组。",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2
+    },
+    "source_mix": {
+      "wb": 1,
+      "bili": 1
+    },
+    "sources": {
+      "5173/wb": 1,
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 2,
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "如果我判断是对的，油价逐步掉头，那自然不用多说。即便我错了油价还有冲高，那也不怕，因为鬼故事的逻辑已经被证伪了，鲍威尔说的。美联储观察都不预期加息了。综合来说不",
+      "暴拉后该跑还是追？高盛给出答案#美股 #标普500 #纳斯达克 #高盛 #美联储 #油价 #科技股 #投资 #宏观经济#股市分析#美股走势#交易策略#金融市场#"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283276935663470",
+      "https://www.bilibili.com/video/BV146DHBAEso"
+    ],
+    "top_entities": [
+      "美联储",
+      "油价",
+      "鲍威尔",
+      "加息"
+    ],
+    "dominant_entities": [
+      "美联储",
+      "油价",
+      "鲍威尔",
+      "加息"
+    ],
+    "dominant_actions": [
+      "加息"
+    ],
+    "dynamic_tokens": [
+      "美联储",
+      "油价",
+      "加息",
+      "鲍威尔",
+      "如果我判断是对的",
+      "油价逐步掉头",
+      "那自然不用多说",
+      "那也不怕"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 46.65
+  },
+  {
+    "cluster_id": "日本-特朗普-diplomacy-conflict-日本-使馆-外交",
+    "topic": "日本/使馆/外交",
+    "cluster_title_candidate": "特朗普 / 日本 / 突发 / 日本200万过海峡",
+    "cluster_summary": "围绕 特朗普 / 日本 / 突发 / 日本200万过海峡 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "content_research": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "editor_labels": {
+      "日本/使馆/外交": 1
+    },
+    "representative_titles": [
+      "3.24突发！日本200万过海峡 特朗普暂停电站打击"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1FuQqBYELJ"
+    ],
+    "top_entities": [
+      "特朗普",
+      "日本"
+    ],
+    "dominant_entities": [
+      "特朗普",
+      "日本"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "日本",
+      "特朗普",
+      "突发",
+      "日本200万过海峡",
+      "score",
+      "bili",
+      "日本/使馆/外交"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.57,
+    "timeliness_score": 1.57,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 39.58
+  },
+  {
+    "cluster_id": "中东-美国-policy-inflation-diplomacy-conflict",
+    "topic": "黄金/白银/贵金属",
+    "cluster_title_candidate": "美联储 / 中东 / 美专家称 / 壹渥观察 / 抛售",
+    "cluster_summary": "围绕 美联储 / 中东 / 美专家称 / 壹渥观察 / 抛售 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "official",
+    "source_tiers": {
+      "official": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "黄金/白银/贵金属": 1,
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "美专家称：中东危机打破石油美元体系 #壹渥观察 据彭博社援引美联储数据，全球各国央行从纽约联储抛售了约820亿美元的美国国债，余额降至约2.7万亿美元，为2012年以来最低水平。而10年期美债收益率不降反升，从2月27日的3.97%持续攀升，于3月27日触及4.44%的年内高点。这与历史上每一次危机爆发后“资金涌入美债避险、收益率下行”的规律完全背道而驰。彭博社资深专栏作家亚伦·布朗（Aaron Brown）一语道破：由基辛格在1974年亲手缔造的石油美元体系，正在被这场战争从进口和出口两端同时绞杀。核心驱动力在于，美国这一次不再是全球秩序的稳定器，而是直接成为交战方。旧体系的底层政治信用已然动摇，而黄金与石油人民币代表的新结算基础设施，正在这场历史性裂变中加速崛起。"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7625857204704349467"
+    ],
+    "top_entities": [
+      "美联储",
+      "中东",
+      "美国",
+      "黄金"
+    ],
+    "dominant_entities": [
+      "美联储",
+      "中东",
+      "美国",
+      "黄金"
+    ],
+    "dominant_actions": [
+      "抛售"
+    ],
+    "dynamic_tokens": [
+      "美联储",
+      "美国",
+      "黄金",
+      "美专家称",
+      "壹渥观察",
+      "全球各国央行从纽约联储抛售了约820亿美元的美国国",
+      "余额降至约2",
+      "万亿美元"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 1.35,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 44.55
+  },
+  {
+    "cluster_id": "中国-日本-diplomacy-conflict-日本-使馆-外交",
+    "topic": "日本/使馆/外交",
+    "cluster_title_candidate": "中国 / 日本 / 日本/使馆/外交 / 棵树",
+    "cluster_summary": "围绕 中国 / 日本 / 日本/使馆/外交 / 棵树 的高频讨论，当前样本 5 条，涉及 4 个渠道、5 个去重组。",
+    "count": 5,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 4,
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "x": 1,
+      "wb": 2,
+      "content_research": 1,
+      "reports": 1
+    },
+    "sources": {
+      "5173/x": 1,
+      "5173/wb": 2,
+      "5173/content_research": 1,
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "日本/使馆/外交": 5
+    },
+    "representative_titles": [
+      "TREES FOR SAKAMOTO 项目进展报告： 截止到2026年4月9日的捐赠统计数据如下 日本的森林：1,977棵树 中国的森林：3,324 棵树",
+      "大批日本人向中方致歉，在街头高呼口号反对高市早苗！ 3月28日，约1400名日本民众在东京新宿举行反战集会，高举“向中国道歉”“高市下台”等标语，齐声高喊“中国",
+      "这几天小日本有不少民众走上街头抗议，他们高呼高市早苗辱国高市早苗下台，红色旗子上写着中国对不起 #日本终于露出獠牙# #海外新鲜事# #热点现场# L 南归孤夷",
+      "中国开始清理日本部署多年的间谍【乌鸦校尉】",
+      "日本 73 岁工程师向中国车企投递简历，这份活到老干到老的劲头带来哪些触动？HR 公开其简历侵犯隐私了吗？"
+    ],
+    "representative_links": [
+      "https://x.com/trees4skmt/status/2042001033270829553",
+      "https://m.weibo.cn/detail/5283338748434069",
+      "https://m.weibo.cn/detail/5283302766018628",
+      "https://www.bilibili.com/video/BV16pcUzRE2k",
+      "https://www.zhihu.com/question/2025327406819407576"
+    ],
+    "top_entities": [
+      "中国",
+      "日本",
+      "高市早苗"
+    ],
+    "dominant_entities": [
+      "中国",
+      "日本",
+      "高市早苗"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "日本",
+      "中国",
+      "高市早苗",
+      "日本/使馆/外交",
+      "棵树",
+      "trees",
+      "for",
+      "sakamoto"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.2,
+    "freshness_score": 1.184,
+    "timeliness_score": 1.194,
+    "authority_score": 0.92,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 34.07
+  },
+  {
+    "cluster_id": "美国-特朗普-diplomacy-conflict",
+    "topic": "其他观察",
+    "cluster_title_candidate": "特朗普 / 美国 / 热度代理 / 政府在忙着打仗呢",
+    "cluster_summary": "围绕 特朗普 / 美国 / 热度代理 / 政府在忙着打仗呢 的高频讨论，当前样本 3 条，涉及 2 个渠道、3 个去重组。",
+    "count": 3,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 3
+    },
+    "source_mix": {
+      "wb": 2,
+      "content_research": 1
+    },
+    "sources": {
+      "5173/wb": 2,
+      "5173/content_research": 1
+    },
+    "editor_labels": {
+      "其他观察": 3
+    },
+    "representative_titles": [
+      "【 #特朗普称民生是小事没时间管# 政府在忙着打仗呢】 #美民众生活成本暴增议员建议兼个职# 美国50个州爆发大规模抗议，900万民众走上街头高呼“美国不需要国",
+      "🔻特朗普：“我要把主要精力放在军事上，我们是一个大国。我们正在打仗。美国无法兼顾日托、医疗补助和医疗保险，各州应该自行加税并自行买单。” 🔻鲁比奥：“设想一下，",
+      "特朗普又“TACO”？美国为何推迟“最后通牒”？"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283606832352020",
+      "https://m.weibo.cn/detail/5283303662813625",
+      "https://www.bilibili.com/video/BV1MRQBBDE1A"
+    ],
+    "top_entities": [
+      "特朗普",
+      "美国"
+    ],
+    "dominant_entities": [
+      "特朗普",
+      "美国"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "美国",
+      "特朗普",
+      "热度代理",
+      "政府在忙着打仗呢",
+      "美国50个州爆发大规模抗议",
+      "美国不需要国",
+      "我们是一个大国",
+      "我们正在打仗"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.19,
+    "timeliness_score": 1.19,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 38.72
+  },
+  {
+    "cluster_id": "黄金-停火-diplomacy-conflict-market-sentiment",
+    "topic": "黄金/白银/贵金属",
+    "cluster_title_candidate": "黄金 / 停火 / 警告 / 黄金乏力 / 停火",
+    "cluster_summary": "围绕 黄金 / 停火 / 警告 / 黄金乏力 / 停火 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "bili": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "黄金/白银/贵金属": 1,
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "911警告！积存金新手抄底必看，黄金乏力！美伊停火就是杀猪盘！"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1pBDLBgEPZ"
+    ],
+    "top_entities": [
+      "黄金",
+      "停火"
+    ],
+    "dominant_entities": [
+      "黄金",
+      "停火"
+    ],
+    "dominant_actions": [
+      "停火"
+    ],
+    "dynamic_tokens": [
+      "停火",
+      "黄金",
+      "警告",
+      "黄金乏力",
+      "热度代理",
+      "黄金情报局",
+      "黄金/白银/贵金属",
+      "油价/地缘冲突"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.96,
+    "timeliness_score": 0.96,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 47.13
+  },
+  {
+    "cluster_id": "中东-中国-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "中东 / 中国 / 人民币站上c位 / 中东危机",
+    "cluster_summary": "围绕 中东 / 中国 / 人民币站上c位 / 中东危机 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "人民币站上C位！中东危机，为何中国成为全球资金避风港？ #全球创作者计划 #零基础看懂全球"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7625956974395477286"
+    ],
+    "top_entities": [
+      "中东",
+      "中国"
+    ],
+    "dominant_entities": [
+      "中东",
+      "中国"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "人民币站上c位",
+      "中东危机",
+      "全球创作者计划",
+      "零基础看懂全球",
+      "中东",
+      "中国",
+      "热度代理",
+      "李树勇书场"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 45.39
+  },
+  {
+    "cluster_id": "宏观-市场情绪-真的崩溃了-财经",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "真的崩溃了 / 财经",
+    "cluster_summary": "围绕 真的崩溃了 / 财经 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "美 真的崩溃了？ 这其实是个巨大的谎言 #财经 #泛财经"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7624599893650181391"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "真的崩溃了",
+      "财经",
+      "泛财经",
+      "热度代理",
+      "钱辰聊经济",
+      "宏观/市场情绪"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 44.48
+  },
+  {
+    "cluster_id": "特朗普-马斯克-diplomacy-conflict",
+    "topic": "其他观察",
+    "cluster_title_candidate": "特朗普 / 马斯克 / 世界周刊 / 为啥说翻就翻",
+    "cluster_summary": "围绕 特朗普 / 马斯克 / 世界周刊 / 为啥说翻就翻 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "content_research": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "【世界周刊】特朗普和马斯克的友谊小船 为啥说翻就翻？"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV182T9zKE3s"
+    ],
+    "top_entities": [
+      "特朗普",
+      "马斯克"
+    ],
+    "dominant_entities": [
+      "特朗普",
+      "马斯克"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "特朗普",
+      "世界周刊",
+      "为啥说翻就翻",
+      "马斯克",
+      "score",
+      "bili"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.57,
+    "timeliness_score": 1.57,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 34.8
+  },
+  {
+    "cluster_id": "黄金-降息-policy-inflation-supply-order",
+    "topic": "黄金/白银/贵金属",
+    "cluster_title_candidate": "黄金 / 降息 / 霍尔木兹 / 定价权 / 降息",
+    "cluster_summary": "围绕 黄金 / 降息 / 霍尔木兹 / 定价权 / 降息 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "bili": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "黄金/白银/贵金属": 1,
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "霍尔木兹“定价权”重塑？为什么高盛看高黄金至5400？当“能源要道”遇上“滞胀降息”，为何4700以下是黄金的价值中枢？两周倒计时内的多空博弈真相！"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1gnDLBXEwb"
+    ],
+    "top_entities": [
+      "黄金",
+      "降息"
+    ],
+    "dominant_entities": [
+      "黄金",
+      "降息"
+    ],
+    "dominant_actions": [
+      "降息"
+    ],
+    "dynamic_tokens": [
+      "降息",
+      "霍尔木兹",
+      "黄金",
+      "定价权",
+      "重塑",
+      "为什么高盛看高黄金至5400",
+      "能源要道",
+      "遇上"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.96,
+    "timeliness_score": 0.96,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 44.38
+  },
+  {
+    "cluster_id": "美国-diplomacy-conflict",
+    "topic": "其他观察",
+    "cluster_title_candidate": "美国 / 沈逸 / 美国大选",
+    "cluster_summary": "围绕 美国 / 沈逸 / 美国大选 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "content_research": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "沈逸：美国大选——见证霸权的黄昏"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1nD4y197mb"
+    ],
+    "top_entities": [
+      "美国"
+    ],
+    "dominant_entities": [
+      "美国"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "美国",
+      "沈逸",
+      "美国大选",
+      "见证霸权的黄昏",
+      "score",
+      "bili"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.57,
+    "timeliness_score": 1.57,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 34.39
+  },
+  {
+    "cluster_id": "宏观-市场情绪-请不要自嗨-就目前来说",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "请不要自嗨 / 就目前来说",
+    "cluster_summary": "围绕 请不要自嗨 / 就目前来说 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "大抛美债美元就会崩？请不要自嗨，就目前来说，全球资产定价仍以美元为主导#美债 #美元 #宏观经济 #金融"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7555353889877282063"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "请不要自嗨",
+      "就目前来说",
+      "美债",
+      "美元",
+      "宏观经济",
+      "金融",
+      "热度代理",
+      "沐叔讲宏观"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 43.31
+  },
+  {
+    "cluster_id": "特朗普-diplomacy-conflict-宏观-市场情绪",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "特朗普 / 美债即将在6月暴雷 / 分钟看懂美债",
+    "cluster_summary": "围绕 特朗普 / 美债即将在6月暴雷 / 分钟看懂美债 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "美债即将在6月暴雷？20分钟看懂美债，了解它对我们的影响 #掘金计划2025 #dou来守护钱袋子 #经济学知识看世界 #美债 #特朗普"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7510116526381468962"
+    ],
+    "top_entities": [
+      "特朗普"
+    ],
+    "dominant_entities": [
+      "特朗普"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "特朗普",
+      "美债即将在6月暴雷",
+      "分钟看懂美债",
+      "掘金计划2025",
+      "dou来守护钱袋子",
+      "经济学知识看世界",
+      "美债",
+      "热度代理"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 43.11
+  },
+  {
+    "cluster_id": "中国-伊朗-supply-order-diplomacy-conflict",
+    "topic": "黄金/白银/贵金属",
+    "cluster_title_candidate": "中国 / 伊朗 / 中天大爆卦 / 伊朗开放海峡",
+    "cluster_summary": "围绕 中国 / 伊朗 / 中天大爆卦 / 伊朗开放海峡 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "bili": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "黄金/白银/贵金属": 1,
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "4.8「中天大爆卦」伊朗开放海峡 油价爆跌16%!中国狂扫黄金!"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1MxDLBEEY1"
+    ],
+    "top_entities": [
+      "中国",
+      "伊朗",
+      "油价",
+      "黄金"
+    ],
+    "dominant_entities": [
+      "中国",
+      "伊朗",
+      "油价",
+      "黄金"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "油价",
+      "伊朗",
+      "黄金",
+      "中天大爆卦",
+      "伊朗开放海峡",
+      "油价爆跌16",
+      "中国狂扫黄金",
+      "中国"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.96,
+    "timeliness_score": 0.96,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 42.34
+  },
+  {
+    "cluster_id": "美利坚-你们的皇帝回来了",
+    "topic": "其他观察",
+    "cluster_title_candidate": "美利坚 / 你们的皇帝回来了",
+    "cluster_summary": "围绕 美利坚 / 你们的皇帝回来了 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "content_research": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "美利坚，你们的皇帝回来了！【毒舌的南瓜】"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1b4421D74i"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "美利坚",
+      "你们的皇帝回来了",
+      "毒舌的南瓜",
+      "score",
+      "bili"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.57,
+    "timeliness_score": 1.57,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 32.3
+  },
+  {
+    "cluster_id": "market-sentiment-你手机里这个-海鲜市场",
+    "topic": "其他观察",
+    "cluster_title_candidate": "你手机里这个 / 海鲜市场",
+    "cluster_summary": "围绕 你手机里这个 / 海鲜市场 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "content_research": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "你手机里这个“海鲜市场”，到底藏了多少你不知道的秘密？"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1MiwxzrE2m"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "你手机里这个",
+      "海鲜市场",
+      "市场",
+      "score",
+      "bili"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.57,
+    "timeliness_score": 1.57,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 32.3
+  },
+  {
+    "cluster_id": "中国-特朗普-diplomacy-conflict-宏观-市场情绪",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "特朗普 / 中国 / 了解了美债的历史 / 美债",
+    "cluster_summary": "围绕 特朗普 / 中国 / 了解了美债的历史 / 美债 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "douyin": 1
+    },
+    "sources": {
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "美债是否还值得投资？了解了美债的历史，前面的问题自然就有答案了 #特朗普 #美债 #中国经济八问"
+    ],
+    "representative_links": [
+      "https://www.douyin.com/video/7456045931922771257"
+    ],
+    "top_entities": [
+      "特朗普",
+      "中国"
+    ],
+    "dominant_entities": [
+      "特朗普",
+      "中国"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "特朗普",
+      "了解了美债的历史",
+      "美债",
+      "中国经济八问",
+      "中国",
+      "热度代理",
+      "郭晶晶博士",
+      "宏观/市场情绪"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.98,
+    "timeliness_score": 0.98,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 41.23
+  },
+  {
+    "cluster_id": "technology-adoption-ai工具-工作流",
+    "topic": "AI工具/工作流",
+    "cluster_title_candidate": "risk / nvda",
+    "cluster_summary": "围绕 risk / nvda 的高频讨论，当前样本 4 条，涉及 2 个渠道、4 个去重组。",
+    "count": 4,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 3,
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "x": 3,
+      "reports": 1
+    },
+    "sources": {
+      "5173/x": 3,
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "AI工具/工作流": 4
+    },
+    "representative_titles": [
+      "NVDA risk score: 8.7/10. Top stress scenario: GLI Turbulence Deepens — Full Risk",
+      "On @vibecodeapp_, developers can now spin up agent infrastructure at least 10x f",
+      "📖读书笔记｜币安人生 CZ赵长鹏@cz_binance 📎“原则驱动增长 韧性应对危机” 📈 核心模型：韧性三角 幸运： 赶上了行业爆发的红利 韧性： 在",
+      "如何看待 Anthropic 的新模型 Mythos？"
+    ],
+    "representative_links": [
+      "https://x.com/BogWizard_agent/status/2042001384208289985",
+      "https://x.com/claudeai/status/2041927698210058629",
+      "https://x.com/HeeYeoSoHOT/status/2042000090081194490",
+      "https://www.zhihu.com/question/2025035806335596432"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "risk",
+      "nvda",
+      "score",
+      "top",
+      "stress",
+      "scenario",
+      "gli",
+      "turbulence"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.25,
+    "freshness_score": 1.087,
+    "timeliness_score": 1.1,
+    "authority_score": 0.912,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 30.88
+  },
+  {
+    "cluster_id": "market-sentiment-宏观-市场情绪",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "年的a股 / 震荡磨底",
+    "cluster_summary": "围绕 年的a股 / 震荡磨底 的高频讨论，当前样本 4 条，涉及 2 个渠道、4 个去重组。",
+    "count": 4,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 4
+    },
+    "source_mix": {
+      "wb": 3,
+      "douyin": 1
+    },
+    "sources": {
+      "5173/wb": 3,
+      "5173/douyin": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 4
+    },
+    "representative_titles": [
+      "2026年的A股，震荡磨底、板块快速轮动，很多散户越操作越亏，天天追热点、换股票，最后本金越做越少。大家总觉得赚钱要靠复杂技术、内幕消息、精准择时，其实真相特别",
+      "《别人难受 咱们舒服》 今日复盘 A股跌一般， 昨天跌，但咱们是红的。 前天也红 所以代表就是红两天，绿一天。 那还是赚啊 ，哈哈哈哈哈 ， 外面哭天喊地跌的难",
+      "#林耘有话说# 4.3看盘印象：A股盘面异动，周期股明显转弱，市场或担心滞胀，同时，机构躲到高价热门硬科技股里抱团。 ​",
+      "如何判断流动性是否充裕？ 投资中，我们经常会看到“流动性”这个词，流动性简单理解就是某种资产变现的难易程度。这个词非常形象，流动性充足意味着市场上的资金充裕，投资者手里的房子、股票等资产就能更快“流动”出去，从而变现。 大到国家，小到我们自己手中的钱袋子，都需要注重流动性的把控。我们如何判断流动性是否充足呢？#财经 #理财 #基金 #小白经济学 #知识前沿派对"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282785947549955",
+      "https://m.weibo.cn/detail/5283634846106281",
+      "https://m.weibo.cn/detail/5283568911911039",
+      "https://www.douyin.com/video/7311587717572316456"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "年的a股",
+      "震荡磨底",
+      "板块快速轮动",
+      "天天追热点",
+      "换股票",
+      "最后本金越做越少",
+      "内幕消息",
+      "精准择时"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.995,
+    "timeliness_score": 0.995,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 32.85
+  },
+  {
+    "cluster_id": "伊朗-美国-diplomacy-conflict-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "伊朗 / 美国 / 我预言 / 战争将起码持续3个月",
+    "cluster_summary": "围绕 伊朗 / 美国 / 我预言 / 战争将起码持续3个月 的高频讨论，当前样本 2 条，涉及 1 个渠道、2 个去重组。",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2
+    },
+    "source_mix": {
+      "wb": 2
+    },
+    "sources": {
+      "5173/wb": 2
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 2
+    },
+    "representative_titles": [
+      "我预言，战争将起码持续3个月，有人说2-3周结束，我认为不可能。从目前伊朗方面的表现来说，抵抗和反击非常有力，美国仅凭现在的军事行动，很显然无法制服伊朗。接下来",
+      "最近很多人在谈美军要“冲滩登陆”，干一票大的。 这是好事啊，应当鼓励美国。 伊朗是个好地方，160万平方公里，人口接近一亿，拥有比较完整的工业体系，不缺能源，不"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283254786852233",
+      "https://m.weibo.cn/detail/5283607788652951"
+    ],
+    "top_entities": [
+      "伊朗",
+      "美国"
+    ],
+    "dominant_entities": [
+      "伊朗",
+      "美国"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "伊朗",
+      "美国",
+      "我预言",
+      "战争将起码持续3个月",
+      "有人说2",
+      "周结束",
+      "我认为不可能",
+      "接下来"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 37.51
+  },
+  {
+    "cluster_id": "中东-铜-diplomacy-conflict-market-sentiment",
+    "topic": "黄金/白银/贵金属",
+    "cluster_title_candidate": "中东 / 铜 / 瑞银 / 中东一旦停火 / 停火",
+    "cluster_summary": "围绕 中东 / 铜 / 瑞银 / 中东一旦停火 / 停火 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "bili": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "黄金/白银/贵金属": 1,
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "瑞银：中东一旦停火，铜与黄金公司将成最大赢家"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1VJD7BcE5Q"
+    ],
+    "top_entities": [
+      "中东",
+      "铜",
+      "黄金",
+      "停火"
+    ],
+    "dominant_entities": [
+      "中东",
+      "铜",
+      "黄金",
+      "停火"
+    ],
+    "dominant_actions": [
+      "停火"
+    ],
+    "dynamic_tokens": [
+      "停火",
+      "黄金",
+      "瑞银",
+      "中东一旦停火",
+      "中东",
+      "铜",
+      "热度代理",
+      "美股研报局"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.96,
+    "timeliness_score": 0.96,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 40.27
+  },
+  {
+    "cluster_id": "特朗普-diplomacy-conflict",
+    "topic": "其他观察",
+    "cluster_title_candidate": "特朗普 / 胡佛附体 / 历史轮回",
+    "cluster_summary": "围绕 特朗普 / 胡佛附体 / 历史轮回 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "content_research": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "特朗普“胡佛附体”，历史轮回？胡佛都干了什么"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1JMR1YqEbN"
+    ],
+    "top_entities": [
+      "特朗普"
+    ],
+    "dominant_entities": [
+      "特朗普"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "特朗普",
+      "胡佛附体",
+      "历史轮回",
+      "胡佛都干了什么",
+      "score",
+      "bili"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.57,
+    "timeliness_score": 1.57,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 30.0
+  },
+  {
+    "cluster_id": "含泪离开-刚和男友花60万装好的家",
+    "topic": "其他观察",
+    "cluster_title_candidate": "含泪离开 / 刚和男友花60万装好的家",
+    "cluster_summary": "围绕 含泪离开 / 刚和男友花60万装好的家 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "content_research": 1
+    },
+    "sources": {
+      "5173/content_research": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "含泪离开！刚和男友花60万装好的家…马上搬走不要了！"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV17UwkzBEFM"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "含泪离开",
+      "刚和男友花60万装好的家",
+      "马上搬走不要了",
+      "score",
+      "bili"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.57,
+    "timeliness_score": 1.57,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 30.0
+  },
+  {
+    "cluster_id": "日本-高市早苗-supply-order-diplomacy-conflict",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "高市早苗 / 日本 / 据日本媒体 / 选择",
+    "cluster_summary": "围绕 高市早苗 / 日本 / 据日本媒体 / 选择 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1,
+      "日本/使馆/外交": 1
+    },
+    "representative_titles": [
+      "🔻据日本媒体《选择》杂志报道，高市早苗原本计划向霍尔木兹海峡派遣海上自卫队。 🔻得知此事的今井尚哉内阁官房参事闯入首相办公室，把高市早苗骂了一顿，“你是要搞国难"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283570433920322"
+    ],
+    "top_entities": [
+      "高市早苗",
+      "日本"
+    ],
+    "dominant_entities": [
+      "高市早苗",
+      "日本"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "日本",
+      "高市早苗",
+      "据日本媒体",
+      "选择",
+      "杂志报道",
+      "你是要搞国难",
+      "霍尔木兹",
+      "热度代理"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 37.8
+  },
+  {
+    "cluster_id": "伊朗-美国-supply-order-diplomacy-conflict",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "伊朗 / 美国 / 霍尔木兹 / 热度代理 / 停火",
+    "cluster_summary": "围绕 伊朗 / 美国 / 霍尔木兹 / 热度代理 / 停火 的高频讨论，当前样本 2 条，涉及 1 个渠道、2 个去重组。",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2
+    },
+    "source_mix": {
+      "wb": 2
+    },
+    "sources": {
+      "5173/wb": 2
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 2
+    },
+    "representative_titles": [
+      "兄弟们，由于霍尔木兹海峡被封锁，美国通货膨胀继续加剧，越来越多的美国人直接崩溃了 成年人的崩溃只在一瞬间，也许是加一次油的油价，也许是一个汉堡包的价格 #伊朗标",
+      "【美媒： #伊朗真正意义上的核武器# ——控制霍尔木兹海峡】 #美国被曝想用停火换霍尔木兹海峡通航# 多家美媒认为，对霍尔木兹海峡的控制已经成为伊朗真正意义上的"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283519255544022",
+      "https://m.weibo.cn/detail/5283356866778950"
+    ],
+    "top_entities": [
+      "伊朗",
+      "美国",
+      "油价",
+      "停火"
+    ],
+    "dominant_entities": [
+      "伊朗",
+      "美国",
+      "油价",
+      "停火"
+    ],
+    "dominant_actions": [
+      "停火"
+    ],
+    "dynamic_tokens": [
+      "伊朗",
+      "美国",
+      "霍尔木兹",
+      "热度代理",
+      "油价",
+      "兄弟们",
+      "伊朗标",
+      "油价/地缘冲突"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 35.22
+  },
+  {
+    "cluster_id": "中国-以色列-diplomacy-conflict-冲突",
+    "topic": "其他观察",
+    "cluster_title_candidate": "中国 / 以色列 / 冲突 / 美伊以冲突 / 冲突",
+    "cluster_summary": "围绕 中国 / 以色列 / 冲突 / 美伊以冲突 / 冲突 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "一个华裔教授认为以色列在中国影响力巨大，以色列掌控着中国产业链，竟然还把以色列传呼机爆炸事件的锅甩给了中国…… #美伊以冲突# #中长视频流量扶持计划# #热点"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283262668474702"
+    ],
+    "top_entities": [
+      "中国",
+      "以色列"
+    ],
+    "dominant_entities": [
+      "中国",
+      "以色列"
+    ],
+    "dominant_actions": [
+      "冲突"
+    ],
+    "dynamic_tokens": [
+      "以色列",
+      "冲突",
+      "美伊以冲突",
+      "热点",
+      "中国",
+      "热度代理"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 36.09
+  },
+  {
+    "cluster_id": "伊朗-美国-diplomacy-conflict-冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "特朗普 / 伊朗 / 冲突 / 美伊以冲突 / 冲突",
+    "cluster_summary": "围绕 特朗普 / 伊朗 / 冲突 / 美伊以冲突 / 冲突 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "美国有史以来考虑过的最疯狂的军事计划 #美伊以冲突# 五角大楼向特朗普简要介绍了抢走伊朗核材料的计划。以下是该计划的具体步骤： 第一步：将数百名特种兵空投至伊朗"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283658987475614"
+    ],
+    "top_entities": [
+      "特朗普",
+      "伊朗",
+      "美国"
+    ],
+    "dominant_entities": [
+      "特朗普",
+      "伊朗",
+      "美国"
+    ],
+    "dominant_actions": [
+      "冲突"
+    ],
+    "dynamic_tokens": [
+      "伊朗",
+      "美国",
+      "特朗普",
+      "冲突",
+      "美伊以冲突",
+      "第一步",
+      "热度代理",
+      "油价/地缘冲突"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 35.96
+  },
+  {
+    "cluster_id": "以色列-伊朗-diplomacy-conflict-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "以色列 / 伊朗 / 家人们 / 美国头大了",
+    "cluster_summary": "围绕 以色列 / 伊朗 / 家人们 / 美国头大了 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "家人们，美国头大了！失算了！ 美以联军不仅打不赢伊朗，还激活了抵抗之弧！ 你们看看，美以被揍的有多狼狈…… 以色列遭开战以来最大规模导弹袭击，胡塞、真主党等多方"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283370596830111"
+    ],
+    "top_entities": [
+      "以色列",
+      "伊朗",
+      "美国"
+    ],
+    "dominant_entities": [
+      "以色列",
+      "伊朗",
+      "美国"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "伊朗",
+      "以色列",
+      "美国",
+      "家人们",
+      "美国头大了",
+      "失算了",
+      "还激活了抵抗之弧",
+      "你们看看"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 35.71
+  },
+  {
+    "cluster_id": "中国-美国-diplomacy-conflict",
+    "topic": "其他观察",
+    "cluster_title_candidate": "中国 / 美国 / 日前 / 热度代理",
+    "cluster_summary": "围绕 中国 / 美国 / 日前 / 热度代理 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "#近年来美方向中方遣返首名涉毒逃犯# 【美方向中方遣返移交一名涉毒逃犯】 #在美中国籍走私贩毒嫌犯被遣返# 日前，根据中国禁毒部门通报的线索，美国移民海关执法局"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283572606831238"
+    ],
+    "top_entities": [
+      "中国",
+      "美国"
+    ],
+    "dominant_entities": [
+      "中国",
+      "美国"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "美国",
+      "日前",
+      "中国",
+      "热度代理"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 35.4
+  },
+  {
+    "cluster_id": "高市早苗-supply-order-diplomacy-conflict-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "高市早苗 / 要不是他拦着 / 霍尔木兹",
+    "cluster_summary": "围绕 高市早苗 / 要不是他拦着 / 霍尔木兹 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1,
+      "日本/使馆/外交": 1
+    },
+    "representative_titles": [
+      "今井尚哉这个人多什么事啊，要不是他拦着，我们就能看到高市早苗派自卫队出兵霍尔木兹海峡的好戏叻。 ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283543024403359"
+    ],
+    "top_entities": [
+      "高市早苗"
+    ],
+    "dominant_entities": [
+      "高市早苗"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "高市早苗",
+      "要不是他拦着",
+      "霍尔木兹",
+      "热度代理",
+      "油价/地缘冲突",
+      "日本/使馆/外交"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 34.47
+  },
+  {
+    "cluster_id": "policy-inflation-market-sentiment-宏观-市场情绪",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "刷到这条视频 / 杠杆武士",
+    "cluster_summary": "围绕 刷到这条视频 / 杠杆武士 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "刷到这条视频，把低利率周期里最典型的三类投资者画像讲得特别准。一类是赌行情加杠杆的“杠杆武士”，无视尾部风险无脑梭哈，一轮极端波动就可能直接出局；一类是死守定存"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283296200363581"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "刷到这条视频",
+      "杠杆武士",
+      "一类是死守定存",
+      "利率",
+      "波动",
+      "热度代理",
+      "宏观/市场情绪"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 32.78
+  },
+  {
+    "cluster_id": "原油-supply-order-market-sentiment-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "原油 / 年04月 / 高盛",
+    "cluster_summary": "围绕 原油 / 年04月 / 高盛 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "bili": 1
+    },
+    "sources": {
+      "5173/bili": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "2026年04月 高盛 原油跟踪 现货市场进一步收紧 视频时长19分钟"
+    ],
+    "representative_links": [
+      "https://www.bilibili.com/video/BV1kYSDBiEhU"
+    ],
+    "top_entities": [
+      "原油"
+    ],
+    "dominant_entities": [
+      "原油"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "原油",
+      "年04月",
+      "高盛",
+      "原油跟踪",
+      "视频时长19分钟",
+      "市场",
+      "热度代理",
+      "研报看世界"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.96,
+    "timeliness_score": 0.96,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 32.3
+  },
+  {
+    "cluster_id": "伊朗-俄罗斯-supply-order-diplomacy-conflict",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "高市早苗 / 伊朗 / 全球油阀就三个 / 霍尔木兹 / 制裁",
+    "cluster_summary": "围绕 高市早苗 / 伊朗 / 全球油阀就三个 / 霍尔木兹 / 制裁 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1,
+      "日本/使馆/外交": 1
+    },
+    "representative_titles": [
+      "#俄罗斯不会向日本等不友好国家供油# 高市早苗估计坐不住了，无脑参与西方制裁俄罗斯，随橙想回旋镖这么快飞到自己身上了。 全球油阀就三个，伊朗封锁霍尔木兹海峡，懂"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283612322172370"
+    ],
+    "top_entities": [
+      "高市早苗",
+      "伊朗",
+      "俄罗斯",
+      "日本",
+      "制裁"
+    ],
+    "dominant_entities": [
+      "高市早苗",
+      "伊朗",
+      "俄罗斯",
+      "日本",
+      "制裁"
+    ],
+    "dominant_actions": [
+      "制裁"
+    ],
+    "dynamic_tokens": [
+      "制裁",
+      "伊朗",
+      "日本",
+      "高市早苗",
+      "全球油阀就三个",
+      "霍尔木兹",
+      "俄罗斯",
+      "热度代理"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 30.98
+  },
+  {
+    "cluster_id": "market-sentiment-级别虽小-一样可以被预判",
+    "topic": "其他观察",
+    "cluster_title_candidate": "级别虽小 / 一样可以被预判",
+    "cluster_summary": "围绕 级别虽小 / 一样可以被预判 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "级别虽小，一样可以被预判（小周期实际走势和预期节奏几乎一致），但没有大的波动和趋势，这种精准预判一样难有好的收获，所以这个市场裹挟不可逆的趋势才至关重要。 ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282855061035510"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "级别虽小",
+      "一样可以被预判",
+      "市场",
+      "波动",
+      "热度代理"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 30.66
+  },
+  {
+    "cluster_id": "油价-policy-inflation-supply-order-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "油价 / 其实油价这样涨 / 能源涨价",
+    "cluster_summary": "围绕 油价 / 其实油价这样涨 / 能源涨价 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1,
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "其实油价这样涨，不能再继续无脑通缩叙事了，随时可能出现输入性通胀。 能源涨价、各种原材料涨价，最后肯定会传导到方方面面的，包括出行、衣物、窗帘、钢铁等等等等。"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283580173617378"
+    ],
+    "top_entities": [
+      "油价"
+    ],
+    "dominant_entities": [
+      "油价"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "油价",
+      "其实油价这样涨",
+      "能源涨价",
+      "各种原材料涨价",
+      "包括出行",
+      "衣物",
+      "窗帘",
+      "钢铁等等等等"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 30.02
+  },
+  {
+    "cluster_id": "日本-高市早苗-diplomacy-conflict-日本-使馆-外交",
+    "topic": "日本/使馆/外交",
+    "cluster_title_candidate": "高市早苗 / 日本 / 连合影都牵着手 / 高市早苗变拘谨了",
+    "cluster_summary": "围绕 高市早苗 / 日本 / 连合影都牵着手 / 高市早苗变拘谨了 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "日本/使馆/外交": 1
+    },
+    "representative_titles": [
+      "马克龙夫妇出席日本欢迎仪式，连合影都牵着手，高市早苗变拘谨了 这音乐配的好，和哀乐似的 #中方回应日本强行部署远程导弹# L 宁古的粮仓的微博视频 ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282984900957400"
+    ],
+    "top_entities": [
+      "高市早苗",
+      "日本"
+    ],
+    "dominant_entities": [
+      "高市早苗",
+      "日本"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "日本",
+      "高市早苗",
+      "连合影都牵着手",
+      "高市早苗变拘谨了",
+      "这音乐配的好",
+      "和哀乐似的",
+      "热度代理",
+      "日本/使馆/外交"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 29.89
+  },
+  {
+    "cluster_id": "美国-diplomacy-conflict-market-sentiment-反弹",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "美国 / 日报 / 比特币 / 反弹",
+    "cluster_summary": "围绕 美国 / 日报 / 比特币 / 反弹 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "x": 1
+    },
+    "sources": {
+      "5173/x": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "【0408日报】比特币趋势反转了吗？美国次贷危机要来了？ 1.比特币。大饼在大部分极度看空的情况下，再一次反弹。从来没有市场会按照大多数人预期去走。个人周线级"
+    ],
+    "representative_links": [
+      "https://x.com/formnoshape/status/2041889082436153767"
+    ],
+    "top_entities": [
+      "美国"
+    ],
+    "dominant_entities": [
+      "美国"
+    ],
+    "dominant_actions": [
+      "反弹"
+    ],
+    "dynamic_tokens": [
+      "美国",
+      "日报",
+      "比特币",
+      "再一次反弹",
+      "个人周线级",
+      "市场",
+      "反弹",
+      "热度代理"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 28.96
+  },
+  {
+    "cluster_id": "特朗普-policy-inflation-diplomacy-conflict-宏观-市场情绪",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "特朗普 / 开始怀念马杜罗 / 如果马杜罗还在",
+    "cluster_summary": "围绕 特朗普 / 开始怀念马杜罗 / 如果马杜罗还在 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "委内瑞拉人民开始后悔了！开始怀念马杜罗 如果马杜罗还在，委内瑞拉绝不会是如今的摸样，百分之六百的通胀，每月0.28美元的收入。只怪当初他们轻信了特朗普画下的大饼"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283395706031282"
+    ],
+    "top_entities": [
+      "特朗普"
+    ],
+    "dominant_entities": [
+      "特朗普"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "特朗普",
+      "开始怀念马杜罗",
+      "如果马杜罗还在",
+      "百分之六百的通胀",
+      "每月0",
+      "美元的收入",
+      "通胀",
+      "热度代理"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 28.88
+  },
+  {
+    "cluster_id": "ai工具-工作流-有开发者拆解-claude",
+    "topic": "AI工具/工作流",
+    "cluster_title_candidate": "有开发者拆解 / claude",
+    "cluster_summary": "围绕 有开发者拆解 / claude 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "AI工具/工作流": 1
+    },
+    "representative_titles": [
+      "有开发者拆解 Claude Code 源码发现，他们搞封号是认真的。 1、Anthropic 后台隐秘监控的遥测事件数量，足足有 640+。 2、用户指纹追踪维"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283037871082393"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "有开发者拆解",
+      "claude",
+      "code",
+      "源码发现",
+      "anthropic",
+      "足足有",
+      "用户指纹追踪维",
+      "热度代理"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 28.54
+  },
+  {
+    "cluster_id": "ai-人工智能-ai工具-工作流",
+    "topic": "AI工具/工作流",
+    "cluster_title_candidate": "AI / 人工智能 / ai+新能源 / 第六轮康波周期",
+    "cluster_summary": "围绕 AI / 人工智能 / ai+新能源 / 第六轮康波周期 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "AI工具/工作流": 1
+    },
+    "representative_titles": [
+      "第六轮康波周期来了！AI+新能源，这波红利普通人怎么抓住？ 最近有一个概念很火：第六轮康波周期。 在亚布力论坛上，物美集团CEO张斌提到：以人工智能和新能源为代"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282192880306084"
+    ],
+    "top_entities": [
+      "AI",
+      "人工智能",
+      "新能源"
+    ],
+    "dominant_entities": [
+      "AI",
+      "人工智能",
+      "新能源"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "ai+新能源",
+      "第六轮康波周期",
+      "在亚布力论坛上",
+      "物美集团ceo张斌提到",
+      "ai",
+      "人工智能",
+      "新能源",
+      "热度代理"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 27.86
+  },
+  {
+    "cluster_id": "宏观-市场情绪-四大经济周期理论-人生发财靠康波",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "四大经济周期理论 / 人生发财靠康波",
+    "cluster_summary": "围绕 四大经济周期理论 / 人生发财靠康波 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "四大经济周期理论 人生发财靠康波、选择大于努力、国运就是命运等，这些观点都在这张图里。 ​"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5213026338210667"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "四大经济周期理论",
+      "人生发财靠康波",
+      "选择大于努力",
+      "国运就是命运等",
+      "热度代理",
+      "宏观/市场情绪"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 27.12
+  },
+  {
+    "cluster_id": "宏观-市场情绪-需要-探索非私有制家庭",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "需要 / 探索非私有制家庭",
+    "cluster_summary": "围绕 需要 / 探索非私有制家庭 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "x": 1
+    },
+    "sources": {
+      "5173/x": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "需要①探索非私有制家庭、非空间集中、非宰制性的社会化抚养模式，解除家庭作为免费再生产劳动主要承担者和最小经济单位占据的主导位置；②保障全民基本收入、摧毁户籍制度"
+    ],
+    "representative_links": [
+      "https://x.com/amber_toffee/status/2041960587647934930"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "需要",
+      "探索非私有制家庭",
+      "非空间集中",
+      "占据的主导位置",
+      "保障全民基本收入",
+      "摧毁户籍制度",
+      "热度代理",
+      "amber"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 25.34
+  },
+  {
+    "cluster_id": "美联储-特朗普-policy-inflation-diplomacy-conflict",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "特朗普 / 鲍威尔 / 鲍威尔今晚的讲话 / 救了特朗普半条命 / 降息 / 加息",
+    "cluster_summary": "围绕 特朗普 / 鲍威尔 / 鲍威尔今晚的讲话 / 救了特朗普半条命 / 降息 / 加息 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "鲍威尔今晚的讲话，救了特朗普半条命，通胀不明显，人工智能 666，加息不存在，我们依旧强。美股除了光，都反弹了，交易员押注加息也撤回了，看是押注降息了。 美联储"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282444644189214"
+    ],
+    "top_entities": [
+      "特朗普",
+      "鲍威尔",
+      "美联储",
+      "人工智能",
+      "加息",
+      "降息"
+    ],
+    "dominant_entities": [
+      "特朗普",
+      "鲍威尔",
+      "美联储",
+      "人工智能",
+      "加息",
+      "降息"
+    ],
+    "dominant_actions": [
+      "降息",
+      "加息",
+      "反弹"
+    ],
+    "dynamic_tokens": [
+      "美联储",
+      "降息",
+      "加息",
+      "人工智能",
+      "鲍威尔",
+      "特朗普",
+      "鲍威尔今晚的讲话",
+      "救了特朗普半条命"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 25.32
+  },
+  {
+    "cluster_id": "美国-openai-technology-adoption-diplomacy-conflict",
+    "topic": "AI工具/工作流",
+    "cluster_title_candidate": "OpenAI / 美国 / 最新报道 / 美国ai行业出现罕见联合",
+    "cluster_summary": "围绕 OpenAI / 美国 / 最新报道 / 美国ai行业出现罕见联合 的高频讨论，当前样本 2 条，涉及 1 个渠道、2 个去重组。",
+    "count": 2,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 2
+    },
+    "source_mix": {
+      "x": 2
+    },
+    "sources": {
+      "5173/x": 2
+    },
+    "editor_labels": {
+      "AI工具/工作流": 2
+    },
+    "representative_titles": [
+      "🔥🔥最新报道： 美国AI行业出现罕见联合：OpenAI、Anthropic与Alphabet宣布通过“前沿模型论坛”共享情报，应对疑似与中共相关的AI模型“蒸",
+      "🔥🔥最新报道： 美国AI行业出现罕见联合：OpenAI、Anthropic与Alphabet宣布通过“前沿模型论坛”共享情报，应对疑似与中共相关的AI模型“蒸"
+    ],
+    "representative_links": [
+      "https://x.com/MilEs72017/status/2041966877216493819",
+      "https://x.com/dclibertyfarm/status/2041966784870502709"
+    ],
+    "top_entities": [
+      "OpenAI",
+      "美国",
+      "AI"
+    ],
+    "dominant_entities": [
+      "OpenAI",
+      "美国",
+      "AI"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "openai",
+      "美国",
+      "最新报道",
+      "美国ai行业出现罕见联合",
+      "anthropic与alphabet宣布通过",
+      "前沿模型论坛",
+      "共享情报",
+      "应对疑似与中共相关的ai模型"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 22.38
+  },
+  {
+    "cluster_id": "降息-policy-inflation-降息-宏观-市场情绪",
+    "topic": "宏观/市场情绪",
+    "cluster_title_candidate": "降息 / 年期 / 随着 / 降息",
+    "cluster_summary": "围绕 降息 / 年期 / 随着 / 降息 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "随着 #多家银行4月1日起下调存款利率# 存款利率的下降（1年期≈0.95%，3年期≈1.25%，进入“1时代”），存款变保险的苗头又要起来了。 大降息的环境下"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5283339515986814"
+    ],
+    "top_entities": [
+      "降息"
+    ],
+    "dominant_entities": [
+      "降息"
+    ],
+    "dominant_actions": [
+      "降息"
+    ],
+    "dynamic_tokens": [
+      "降息",
+      "年期",
+      "随着",
+      "多家银行4月1日起下调存款利率",
+      "存款利率的下降",
+      "进入",
+      "时代",
+      "大降息的环境下"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 24.88
+  },
+  {
+    "cluster_id": "中东-油价-policy-inflation-supply-order",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "美联储 / 中东 / 冲突 / 参考1990年石油危机 / 降息 / 冲突",
+    "cluster_summary": "围绕 美联储 / 中东 / 冲突 / 参考1990年石油危机 / 降息 / 冲突 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "wb": 1
+    },
+    "sources": {
+      "5173/wb": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1,
+      "宏观/市场情绪": 1
+    },
+    "representative_titles": [
+      "参考1990年石油危机，美联储终将降息 随着中东冲突引爆油价，并令通胀担忧中燃，全球利率市场近期发生了戏剧性的“鹰派再定价”——市场从年初押注美联储多次降息转向"
+    ],
+    "representative_links": [
+      "https://m.weibo.cn/detail/5282569275049549"
+    ],
+    "top_entities": [
+      "美联储",
+      "中东",
+      "油价",
+      "降息"
+    ],
+    "dominant_entities": [
+      "美联储",
+      "中东",
+      "油价",
+      "降息"
+    ],
+    "dominant_actions": [
+      "降息",
+      "冲突"
+    ],
+    "dynamic_tokens": [
+      "降息",
+      "美联储",
+      "油价",
+      "冲突",
+      "参考1990年石油危机",
+      "美联储终将降息",
+      "并令通胀担忧中燃",
+      "鹰派再定价"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 24.79
+  },
+  {
+    "cluster_id": "伊朗-supply-order-diplomacy-conflict-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "伊朗 / robertl83909710 / jaimesolis",
+    "cluster_summary": "围绕 伊朗 / robertl83909710 / jaimesolis 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "x": 1
+    },
+    "sources": {
+      "5173/x": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "@Robertl83909710 @jaimesolis 是的，伊朗宣布对通过霍尔木兹海峡的油轮收取约1美元/桶过境费，并要求用比特币支付（空船免费）。"
+    ],
+    "representative_links": [
+      "https://x.com/grok/status/2041997950834925856"
+    ],
+    "top_entities": [
+      "伊朗"
+    ],
+    "dominant_entities": [
+      "伊朗"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "伊朗",
+      "robertl83909710",
+      "jaimesolis",
+      "是的",
+      "伊朗宣布对通过霍尔木兹海峡的油轮收取约1美元",
+      "桶过境费",
+      "空船免费",
+      "油轮"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 18.16
+  },
+  {
+    "cluster_id": "market-sentiment-市场本质-情绪决定波动幅度",
+    "topic": "其他观察",
+    "cluster_title_candidate": "市场本质 / 情绪决定波动幅度",
+    "cluster_summary": "围绕 市场本质 / 情绪决定波动幅度 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "platform_hotspot",
+    "source_tiers": {
+      "platform_hotspot": 1
+    },
+    "source_mix": {
+      "x": 1
+    },
+    "sources": {
+      "5173/x": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "💎 市场本质 • 流动性决定短期价格 • 基本面决定长期价值 • 情绪决定波动幅度 #大兵观点 #市场本质"
+    ],
+    "representative_links": [
+      "https://x.com/linhb/status/2041984085720232323"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "市场本质",
+      "情绪决定波动幅度",
+      "大兵观点",
+      "市场",
+      "波动",
+      "热度代理",
+      "linhb"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.0,
+    "timeliness_score": 1.0,
+    "authority_score": 0.95,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 16.0
+  }
+]

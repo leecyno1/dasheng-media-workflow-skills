@@ -1,0 +1,32 @@
+{
+  "pack_root": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets",
+  "steps": [
+    "video_search"
+  ],
+  "topics": [
+    {
+      "topic": "reinflation",
+      "title": "表面在交易事件，真正的主线会不会其实是再通胀？",
+      "video_search": {
+        "topic": "reinflation",
+        "candidate_queries": 5,
+        "downloads": 1,
+        "qualified_candidates": 13,
+        "candidate_reject_reason_counts": {
+          "resolution_below_480p": 2
+        },
+        "download_quality_passed": 0,
+        "download_quality_failed": 1,
+        "download_fail_reason_counts": {
+          "resolution_below_480p": 1,
+          "low_frame_variation_possible_screenshot_montage": 1
+        },
+        "quality_audit_report": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/reinflation/videos/web_search/video_quality_audit_report.json"
+      }
+    }
+  ],
+  "layer5_inputs_file": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/layer5_inputs.json",
+  "layer5_delivery_report": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/layer5_delivery_report.md",
+  "video_quality_regression_report": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/video_quality_regression_report.md",
+  "video_quality_regression_report_json": "/Volumes/PSSD/Projects/公众号文章/交付镜像/2026-03-27/05_material/2026-03-27_120122/pack_assets/video_quality_regression_report.json"
+}

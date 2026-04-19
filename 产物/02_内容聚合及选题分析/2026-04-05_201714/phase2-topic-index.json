@@ -1,0 +1,82 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "T001",
+    "topic_name": "中东霍尔木兹海峡封锁加剧全球油价波动，重塑国际通胀预期",
+    "topic_kind": "independent",
+    "mother_topic_id": "T001",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 2,
+    "topic_id": "T002",
+    "topic_name": "俄罗斯以能源供应为手段拒绝向日本供油，彰显地缘政治能源格局重塑",
+    "topic_kind": "independent",
+    "mother_topic_id": "T002",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 3,
+    "topic_id": "T003",
+    "topic_name": "美联储转向降息预期引发全球资本市场重新定价利率风险",
+    "topic_kind": "independent",
+    "mother_topic_id": "T003",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 4,
+    "topic_id": "T004",
+    "topic_name": "美以联军在伊朗冲突中失算，激活地区抵抗联盟重塑中东安全格局",
+    "topic_kind": "independent",
+    "mother_topic_id": "T004",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 5,
+    "topic_id": "T005",
+    "topic_name": "中美日俄地缘政治博弈升级加剧亚太安全与经济秩序重塑",
+    "topic_kind": "independent",
+    "mother_topic_id": "T005",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 6,
+    "topic_id": "T006",
+    "topic_name": "中国大规模反间谍行动揭示中日关系新一轮紧张态势",
+    "topic_kind": "independent",
+    "mother_topic_id": "T006",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 7,
+    "topic_id": "T007",
+    "topic_name": "美军对伊朗飞行员的搜救与伊朗否认美军袭击事件反映信息战误判风险",
+    "topic_kind": "independent",
+    "mother_topic_id": "T007",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 8,
+    "topic_id": "T008",
+    "topic_name": "中国强化平台经济监管反映市场合规与创新治理的博弈加剧",
+    "topic_kind": "independent",
+    "mother_topic_id": "T008",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 9,
+    "topic_id": "T009",
+    "topic_name": "全球资本市场对美伊中东政策不确定性反应加剧，风险投资策略亟需调整",
+    "topic_kind": "independent",
+    "mother_topic_id": "T009",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 10,
+    "topic_id": "T010",
+    "topic_name": "数字货币去中心化交易所治理创新推动加密资产市场结构变革",
+    "topic_kind": "independent",
+    "mother_topic_id": "T010",
+    "source_status": "ai_generated"
+  }
+]

@@ -1,0 +1,4 @@
+anchor_id,title,purpose,chart_type,data_sources,fallback_rule,fallback_outputs
+chart01,全球主要央行美债持仓及近期抛售规模统计,展示主要央行美债持仓量及最近一个月大规模抛售的具体数据，验证美债基准地位动摇的事实。,柱状图+热力地图,美国财政部国际资本流动报告 | 国际清算银行(BIS)统计 | 权威央行及主权基金公开数据,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md
+chart02,美债抛售规模按国家/地区及债券期限分布,细化央行抛售行为，分析抛售集中在中长期债券及主要国家，支持驱动机制分析。,堆积条形图,官方债券市场交易数据 | 国际货币基金组织(IMF)储备资产报告,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md
+chart03,美债市场流动性指标与资金流出时间序列,展示美债市场交易价差扩大和资金流出规模变化，验证市场流动性紧张及资金波动影响。,折线图,芝加哥商品交易所(CME) | 彭博社市场数据 | 国际金融协会(IIF)资本流动报告,当 CV、斜率、R²、趋势强度均不达标时，不生成 PNG，仅输出逻辑关系表格,charts/csv/*.csv | charts/markdown/*.md

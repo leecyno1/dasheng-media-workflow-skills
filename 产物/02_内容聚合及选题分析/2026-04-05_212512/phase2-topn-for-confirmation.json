@@ -1,0 +1,31 @@
+{
+  "run_id": "2026-04-05_170457",
+  "generated_at": "2026-04-05T21:26:18.907259",
+  "count": 3,
+  "items": [
+    {
+      "rank": 1,
+      "topic_id": "tc001",
+      "topic_name": "鲍威尔讲话逆转加息预期，缓解特朗普经济压力",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc001",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 2,
+      "topic_id": "tc002",
+      "topic_name": "俄罗斯断供日本油气，加剧全球能源地缘政治风险",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc002",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 3,
+      "topic_id": "tc003",
+      "topic_name": "中东冲突激化推升油价，市场押注美联储延续降息周期",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc003",
+      "source_status": "ai_generated"
+    }
+  ]
+}

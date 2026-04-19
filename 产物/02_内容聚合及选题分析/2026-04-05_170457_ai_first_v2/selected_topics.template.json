@@ -1,0 +1,123 @@
+{
+  "run_id": "2026-04-05_170457",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "未被选中的题请写入 rejected_topic_ids 或保留空值。",
+    "只有 selected_topics 非空且状态为 approved，draft 才允许执行。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "topic-mother-伊朗-diplomacy-conflict",
+      "title": "停火背后，伊朗原油秩序成本的上升",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-mother-伊朗-diplomacy-conflict",
+      "angle_variant_of": null,
+      "article_use": "解释稿，适合深度剖析事件背后结构变量与未来趋势。",
+      "changed_dimension": "",
+      "core_proposition": "围绕伊朗与原油市场，分析事件升级之外的长期秩序成本如何上升，揭示表面冲突背后的深层结构变量变化。",
+      "source_status": "自然入选",
+      "composite_score": 7.3
+    },
+    {
+      "topic_id": "topic-mother-伊朗-diplomacy-conflict-variant-外交部-中东-diplomacy-c",
+      "title": "外交部关注的中东冲突新秩序成本",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-mother-伊朗-diplomacy-conflict",
+      "angle_variant_of": "topic-mother-伊朗-diplomacy-conflict",
+      "article_use": "结构稿，适合从外交部官方视角拆解冲突与秩序成本的传导机制。",
+      "changed_dimension": "objects",
+      "core_proposition": "以中国外交部为观察对象，解析中东冲突中长期秩序成本的变化，区别于单纯事件叙事，展现外交角度的结构变量。",
+      "source_status": "自然入选",
+      "composite_score": 7.14
+    },
+    {
+      "topic_id": "topic-mother-英伟达-ai-semiconductor-cycle",
+      "title": "半导体周期中的英伟达，局部复苏还是全面回暖？",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-mother-英伟达-ai-semiconductor-cycle",
+      "angle_variant_of": null,
+      "article_use": "解释稿，适合深度拆解半导体周期及英伟达相关信号。",
+      "changed_dimension": "",
+      "core_proposition": "聚焦英伟达与AI驱动的半导体行业，分析当前局部修复信号是否会被误读为全面复苏，揭示投资者容易忽视的变量。",
+      "source_status": "自然入选",
+      "composite_score": 7.06
+    },
+    {
+      "topic_id": "topic-mother-英伟达-ai-semiconductor-cycle-variant-英伟达-半导体-semiconduc",
+      "title": "英伟达引领半导体行业局部景气的真相",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-mother-英伟达-ai-semiconductor-cycle",
+      "angle_variant_of": "topic-mother-英伟达-ai-semiconductor-cycle",
+      "article_use": "解释稿，适合拆解英伟达相关半导体景气信号及误读风险。",
+      "changed_dimension": "objects",
+      "core_proposition": "以英伟达为观察对象，聚焦半导体行业周期的局部景气信号，分析投资者对全面复苏的误读风险。",
+      "source_status": "自然入选",
+      "composite_score": 6.72
+    },
+    {
+      "topic_id": "topic-mother-白银-贵金属-risk-pricing-降息",
+      "title": "剖析白银贵金属市场风险溢价的驱动因素",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-mother-白银-贵金属-risk-pricing-降息",
+      "angle_variant_of": null,
+      "article_use": "判断稿，适合深度解析投资逻辑及市场动态",
+      "changed_dimension": "",
+      "core_proposition": "当前白银及贵金属的风险溢价并非简单受降息影响，而是围绕特定结构变量在重估，需拆解事件表象与实际定价链条，辨别市场先动与跟随资产。",
+      "source_status": "自然入选",
+      "composite_score": 7.16
+    },
+    {
+      "topic_id": "topic-mother-白银-贵金属-risk-pricing-降息-variant-川普-特朗普-risk-pricin",
+      "title": "川普因素下贵金属风险溢价的结构变化",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-mother-白银-贵金属-risk-pricing-降息",
+      "angle_variant_of": "topic-mother-白银-贵金属-risk-pricing-降息",
+      "article_use": "判断稿，适合政策影响解读及投资策略调整",
+      "changed_dimension": "objects",
+      "core_proposition": "围绕川普及特朗普相关事件，分析其对贵金属风险溢价结构变量的影响，区别于整体市场视角，关注政策人物因素如何重塑市场预期。",
+      "source_status": "自然入选",
+      "composite_score": 6.76
+    },
+    {
+      "topic_id": "topic-mother-宽松-降息-policy-inflation-降息",
+      "title": "特朗普与鲍威尔政策下的再通胀与利率预期回摆",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-mother-宽松-降息-policy-inflation-降息",
+      "angle_variant_of": null,
+      "article_use": "判断稿，适合政策传导及市场预期分析",
+      "changed_dimension": "",
+      "core_proposition": "市场可能低估了特朗普和鲍威尔政策对再通胀及利率预期的影响，需拆解政策传导路径及股债商品不同情景下的分化边界。",
+      "source_status": "自然入选",
+      "composite_score": 7.24
+    },
+    {
+      "topic_id": "topic-mother-宽松-降息-policy-inflation-降息-variant-美联储-中东-policy-infl",
+      "title": "中东局势下美联储降息预期与通胀压力分析",
+      "topic_kind": "variant",
+      "mother_topic_id": "topic-mother-宽松-降息-policy-inflation-降息",
+      "angle_variant_of": "topic-mother-宽松-降息-policy-inflation-降息",
+      "article_use": "判断稿，适合宏观政策与地缘风险交叉分析",
+      "changed_dimension": "objects",
+      "core_proposition": "聚焦美联储与中东局势，分析其如何共同影响通胀与利率预期，区别于特朗普/鲍威尔视角，揭示多因素叠加下的资产定价分化。",
+      "source_status": "自然入选",
+      "composite_score": 7.39
+    },
+    {
+      "topic_id": "topic-mother-制裁-supply-order-制裁",
+      "title": "价格波动之外，制裁引发的供给秩序变革",
+      "topic_kind": "mother",
+      "mother_topic_id": "topic-mother-制裁-supply-order-制裁",
+      "angle_variant_of": null,
+      "article_use": "结构稿，适合深度剖析制裁影响机制，帮助读者厘清复杂变量之间的关系。",
+      "changed_dimension": "",
+      "core_proposition": "当前制裁不仅引发价格波动，更重要的是对供给链的库存、运输及供应秩序产生结构性影响，这种供给秩序的重估对产业链稳定性和企业现金流有更深远的影响。",
+      "source_status": "自然入选",
+      "composite_score": 6.99
+    }
+  ],
+  "editor_note": ""
+}

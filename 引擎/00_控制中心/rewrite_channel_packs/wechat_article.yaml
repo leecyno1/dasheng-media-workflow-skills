@@ -1,0 +1,10 @@
+channel_pack:
+  channel_id: wechat_article
+  display_name: 微信公众号文章
+  content_type: article
+  word_range: 4000-8000
+  title_range: 16-28
+  hook_style: 首屏给问题，不必过快
+  paragraph_style: 中短段
+  structure: 导语-4到7节-结尾判断
+  cta: 关注、在看、留言、转发

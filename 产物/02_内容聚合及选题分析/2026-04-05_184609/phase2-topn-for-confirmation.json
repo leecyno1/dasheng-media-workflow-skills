@@ -1,0 +1,31 @@
+{
+  "run_id": "2026-04-05_170457",
+  "generated_at": "2026-04-05T18:47:23.933711",
+  "count": 3,
+  "items": [
+    {
+      "rank": 1,
+      "topic_id": "T001",
+      "topic_name": "央行果断降息能否有效开启新一轮宽松周期并刺激经济？",
+      "topic_kind": "independent",
+      "mother_topic_id": "T001",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 2,
+      "topic_id": "T002",
+      "topic_name": "俄罗斯拒绝向日本供油是否标志着地缘政治紧张新阶段？",
+      "topic_kind": "independent",
+      "mother_topic_id": "T002",
+      "source_status": "ai_generated"
+    },
+    {
+      "rank": 3,
+      "topic_id": "T003",
+      "topic_name": "伊朗拒绝与美国停火谈判是否加剧区域和平前景的不确定性？",
+      "topic_kind": "independent",
+      "mother_topic_id": "T003",
+      "source_status": "ai_generated"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "run_id": "2026-04-07_141203",
+  "generated_at": "2026-04-07T15:10:00+08:00",
+  "stage": "draft",
+  "object_type": "Run",
+  "generation_method": "ai",
+  "input_source": "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-07_141203_ai",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/03_Draft/2026-04-07_141203",
+  "topics_generated": 3,
+  "drafts": [
+    {
+      "topic_id": "topic-hormuz-strait-energy-order",
+      "title": "霍尔木兹海峡封锁：全球能源供应链的结构性重构",
+      "framework": "结构型",
+      "strategy": "密度强化",
+      "word_count": 4850,
+      "file": "topic-hormuz-strait-energy-order.md",
+      "reasoning_sheet_json": "topic-hormuz-strait-energy-order-reasoning.json"
+    },
+    {
+      "topic_id": "topic-sodium-ion-battery-breakthrough",
+      "title": "钠离子电池全球首次突破：中国如何改写储能产业格局",
+      "framework": "痛点型",
+      "strategy": "密度强化",
+      "word_count": 5200,
+      "file": "topic-sodium-ion-battery-breakthrough.md",
+      "reasoning_sheet_json": "topic-sodium-ion-battery-breakthrough-reasoning.json"
+    },
+    {
+      "topic_id": "topic-us-stock-storage-sector-surge",
+      "title": "存储板块创历史新高：AI 算力需求如何改写半导体投资逻辑",
+      "framework": "痛点型",
+      "strategy": "密度强化",
+      "word_count": 5100,
+      "file": "topic-us-stock-storage-sector-surge.md",
+      "reasoning_sheet_json": "topic-us-stock-storage-sector-surge-reasoning.json"
+    }
+  ],
+  "artifacts": [
+    "topic-hormuz-strait-energy-order.md",
+    "topic-sodium-ion-battery-breakthrough.md",
+    "topic-us-stock-storage-sector-surge.md",
+    "draft_manifest.json"
+  ],
+  "next_stage": "material",
+  "next_stage_requirements": [
+    "为每个 draft 生成素材包（图表、图片、视频）",
+    "运行 material 阶段"
+  ]
+}

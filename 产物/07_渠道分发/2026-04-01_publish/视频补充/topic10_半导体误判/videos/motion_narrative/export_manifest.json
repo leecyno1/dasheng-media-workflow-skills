@@ -1,0 +1,46 @@
+{
+  "input_scenes": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/inputs/motion_narrative_deck.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/motion_narrative",
+  "base_url": "http://127.0.0.1:8787",
+  "started_at": "2026-04-01T03:13:08.732Z",
+  "finished_at": "2026-04-01T03:13:42.584Z",
+  "scene_count": 4,
+  "exported": [
+    {
+      "scene_id": "topic10-narrative-01",
+      "scene_label": "框架精华：结构时间线",
+      "template": "timeline",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/motion_narrative/01__topic10-narrative-01__框架精华-结构时间线.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/motion_narrative/01__topic10-narrative-01__框架精华-结构时间线.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/motion_narrative/01__topic10-narrative-01__框架精华-结构时间线.png"
+    },
+    {
+      "scene_id": "topic10-narrative-02",
+      "scene_label": "关键数据：滚动条",
+      "template": "ticker",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/motion_narrative/02__topic10-narrative-02__关键数据-滚动条.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/motion_narrative/02__topic10-narrative-02__关键数据-滚动条.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/motion_narrative/02__topic10-narrative-02__关键数据-滚动条.png"
+    },
+    {
+      "scene_id": "topic10-narrative-03",
+      "scene_label": "风险强度评估",
+      "template": "gauge",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/motion_narrative/03__topic10-narrative-03__风险强度评估.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/motion_narrative/03__topic10-narrative-03__风险强度评估.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/motion_narrative/03__topic10-narrative-03__风险强度评估.png"
+    },
+    {
+      "scene_id": "topic10-narrative-04",
+      "scene_label": "执行优先级",
+      "template": "donutKpi",
+      "webm": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/motion_narrative/04__topic10-narrative-04__执行优先级.webm",
+      "mp4": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/motion_narrative/04__topic10-narrative-04__执行优先级.mp4",
+      "mp4_ok": true,
+      "screenshot": "/Volumes/PSSD/Projects/公众号文章/产物/07_渠道分发/2026-04-01_publish/video_supplement/topic10_半导体误判/videos/motion_narrative/04__topic10-narrative-04__执行优先级.png"
+    }
+  ]
+}

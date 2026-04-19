@@ -1,0 +1,48 @@
+{
+  "topic": "topic11_openclaw安装",
+  "topic_prefix": "topic11",
+  "generated_at": "2026-04-01T10:09:38",
+  "final_source": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-03-31_终稿抓取源/topic11__final_source.md",
+  "framework_labels": {
+    "open_label": "多数人不是卡在“不会用 AI”，而是卡在“根本装不起来”",
+    "part1_label": "过去的安装复杂度，不在一个点，而在一整条链",
+    "part2_label": "真正合格的一键安装，不能只图方便，还必须守住安全边界",
+    "part3_label": "这个项目真正的优势，不是吹“简单”，而是把复杂流程做成标准化入口",
+    "end_label": "真正降低门槛的，不是一句“很简单”，而是确定性"
+  },
+  "variants": [
+    {
+      "variant": "wechat_lemon_normal",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic11_openclaw安装/topic11__wechat_lemon_normal.md",
+      "char_count": 4372,
+      "min_chars": 4000,
+      "pass": true,
+      "h2_count": 5
+    },
+    {
+      "variant": "wechat_luxun_hot",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic11_openclaw安装/topic11__wechat_luxun_hot.md",
+      "char_count": 4463,
+      "min_chars": 4000,
+      "pass": true,
+      "h2_count": 5
+    },
+    {
+      "variant": "xhs_video_lemon_normal",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic11_openclaw安装/topic11__xhs_video_lemon_normal.md",
+      "char_count": 1843,
+      "min_chars": 1800,
+      "pass": true,
+      "h2_count": 9
+    },
+    {
+      "variant": "xhs_video_luxun_hot",
+      "file": "/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-01_三篇独立改写/topic11_openclaw安装/topic11__xhs_video_luxun_hot.md",
+      "char_count": 1839,
+      "min_chars": 1800,
+      "pass": true,
+      "h2_count": 8
+    }
+  ],
+  "all_passed": true
+}

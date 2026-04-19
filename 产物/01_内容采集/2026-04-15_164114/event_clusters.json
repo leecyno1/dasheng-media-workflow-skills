@@ -1,0 +1,1481 @@
+[
+  {
+    "cluster_id": "technology-adoption-ai工具-工作流",
+    "topic": "AI工具/工作流",
+    "cluster_title_candidate": "AI工具/工作流 / draco正在vibecoding",
+    "cluster_summary": "围绕 AI工具/工作流 / draco正在vibecoding 的高频讨论，当前样本 10 条，涉及 1 个渠道、7 个去重组。",
+    "count": 10,
+    "primary_source_tier": "self_media",
+    "source_tiers": {
+      "self_media": 10
+    },
+    "source_mix": {
+      "wechat": 10
+    },
+    "sources": {
+      "8000/wechat_latest": 3,
+      "8000/wechat_curated": 7
+    },
+    "editor_labels": {
+      "AI工具/工作流": 10
+    },
+    "representative_titles": [
+      "Hermes Agent相关资源汇总",
+      "一文看懂：Hermes Agent与OpenClaw全维度对比",
+      "为飞书文档生成HERO Image & 公众号封面图的skill：article-to-wechat-cover",
+      "Hermes Agent相关资源汇总",
+      "一文看懂：Hermes Agent与OpenClaw全维度对比",
+      "为飞书文档生成HERO Image & 公众号封面图的skill：article-to-wechat-cover"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/2tHnf8QQ52EKWM68KAoSTQ",
+      "https://mp.weixin.qq.com/s/JWHBaFVvLE8S1t5jRXQxrg",
+      "https://mp.weixin.qq.com/s/iq-kV_kCHtOb4h5UWw79nQ",
+      "https://mp.weixin.qq.com/s/2tHnf8QQ52EKWM68KAoSTQ",
+      "https://mp.weixin.qq.com/s/JWHBaFVvLE8S1t5jRXQxrg",
+      "https://mp.weixin.qq.com/s/iq-kV_kCHtOb4h5UWw79nQ"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "draco正在vibecoding",
+      "agent",
+      "hermes",
+      "ai工具/工作流",
+      "openclaw",
+      "定向样本",
+      "agent相关资源汇总",
+      "公众号最新文章"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.914,
+    "timeliness_score": 0.894,
+    "authority_score": 0.88,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 23.6,
+    "source_diversity": 1,
+    "dedupe_depth": 7,
+    "priority_score": 58.142
+  },
+  {
+    "cluster_id": "ai-ai工具-工作流",
+    "topic": "AI工具/工作流",
+    "cluster_title_candidate": "AI / AI工具/工作流",
+    "cluster_summary": "围绕 AI / AI工具/工作流 的高频讨论，当前样本 5 条，涉及 3 个渠道、5 个去重组。",
+    "count": 5,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 4,
+      "self_media": 1
+    },
+    "source_mix": {
+      "ai_hot": 2,
+      "reports": 2,
+      "wechat": 1
+    },
+    "sources": {
+      "ai_hot/hn": 1,
+      "ai_hot/reddit": 1,
+      "reports/news": 2,
+      "8000/wechat_latest": 1
+    },
+    "editor_labels": {
+      "AI工具/工作流": 5
+    },
+    "representative_titles": [
+      "An AI Vibe Coding Horror Story",
+      "Anthropic is set to release Claude Opus 4.7 and a new AI design tool as early as this week",
+      "AI承诺赔10万,用户索赔败诉",
+      "PCB上游又现涨价潮：CCL最高调涨40% 锁定AI服务器等高阶应用",
+      "让 MacBook 刘海变成你的 AI 编码助手仪表盘"
+    ],
+    "representative_links": [
+      "https://www.tobru.ch/an-ai-vibe-coding-horror-story",
+      "https://www.reddit.com/r/singularity/comments/1slh72j/anthropic_is_set_to_release_claude_opus_47_and_a",
+      "https://tieba.baidu.com/hottopic/browse/hottopic?topic_id=28353249&amp%3Bamp%3Btopic_name=AI%E6%89%BF%E8%AF%BA%E8%B5%9410%E4%B8%87%2C%E7%94%A8%E6%88%B7%E7%B4%A2%E8%B5%94%E8%B4%A5%E8%AF%89",
+      "https://www.cls.cn/detail/2344320",
+      "https://mp.weixin.qq.com/s/LI9M0BpO-5od8OU0PT9MIQ"
+    ],
+    "top_entities": [
+      "AI"
+    ],
+    "dominant_entities": [
+      "AI"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "ai",
+      "来自",
+      "reports",
+      "最新外链",
+      "trendradar聚合",
+      "ai工具/工作流",
+      "vibe",
+      "coding"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.4,
+    "freshness_score": 1.38,
+    "timeliness_score": 1.408,
+    "authority_score": 0.816,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 53.03,
+    "source_diversity": 3,
+    "dedupe_depth": 5,
+    "priority_score": 56.163
+  },
+  {
+    "cluster_id": "openai-ai-ai工具-工作流",
+    "topic": "AI工具/工作流",
+    "cluster_title_candidate": "OpenAI / AI / AI工具/工作流",
+    "cluster_summary": "围绕 OpenAI / AI / AI工具/工作流 的高频讨论，当前样本 2 条，涉及 1 个渠道、2 个去重组。",
+    "count": 2,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 2
+    },
+    "source_mix": {
+      "ai_hot": 2
+    },
+    "sources": {
+      "ai_hot/reddit": 1,
+      "ai_hot/hn": 1
+    },
+    "editor_labels": {
+      "AI工具/工作流": 2
+    },
+    "representative_titles": [
+      "Anthropic has come out against a proposed Illinois law backed by OpenAI that would shield AI labs from liability if their systems are used to cause large-scale harm, like mass casualties or more than $1 billion in property damage.",
+      "The Death of an AI Whistleblower"
+    ],
+    "representative_links": [
+      "https://www.reddit.com/r/singularity/comments/1sly077/anthropic_has_come_out_against_a_proposed",
+      "https://www.thenation.com/article/society/open-ai-suchir-balaji-whistleblowers"
+    ],
+    "top_entities": [
+      "OpenAI",
+      "AI"
+    ],
+    "dominant_entities": [
+      "OpenAI",
+      "AI"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "openai",
+      "ai",
+      "anthropic",
+      "has",
+      "come",
+      "out",
+      "against",
+      "proposed"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.65,
+    "timeliness_score": 1.68,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 69.6,
+    "source_diversity": 1,
+    "dedupe_depth": 2,
+    "priority_score": 39.312
+  },
+  {
+    "cluster_id": "ai-technology-adoption-ai工具-工作流",
+    "topic": "AI工具/工作流",
+    "cluster_title_candidate": "AI / AI工具/工作流",
+    "cluster_summary": "围绕 AI / AI工具/工作流 的高频讨论，当前样本 2 条，涉及 1 个渠道、2 个去重组。",
+    "count": 2,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 2
+    },
+    "source_mix": {
+      "ai_hot": 2
+    },
+    "sources": {
+      "ai_hot/hn": 2
+    },
+    "editor_labels": {
+      "AI工具/工作流": 2
+    },
+    "representative_titles": [
+      "Show HN: Make sure your OpenClaw isn't doing things it's not supposed to",
+      "Show HN: Agent Citizen – Your AI agents are sitting around doing nothing"
+    ],
+    "representative_links": [
+      "https://claw.armoriq.ai",
+      "https://agent-citizen.vercel.app"
+    ],
+    "top_entities": [
+      "AI"
+    ],
+    "dominant_entities": [
+      "AI"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "ai",
+      "show",
+      "hn",
+      "your",
+      "openclaw",
+      "make",
+      "sure",
+      "isn"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.68,
+    "timeliness_score": 1.72,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 54.59,
+    "source_diversity": 1,
+    "dedupe_depth": 2,
+    "priority_score": 36.21
+  },
+  {
+    "cluster_id": "伊朗-美国-diplomacy-conflict-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "伊朗 / 美国 / 油价/地缘冲突",
+    "cluster_summary": "围绕 伊朗 / 美国 / 油价/地缘冲突 的高频讨论，当前样本 2 条，涉及 2 个渠道、2 个去重组。",
+    "count": 2,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1,
+      "self_media": 1
+    },
+    "source_mix": {
+      "reports": 1,
+      "wechat": 1
+    },
+    "sources": {
+      "reports/news": 1,
+      "8000/wechat_latest": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 2
+    },
+    "representative_titles": [
+      "特朗普：美国对伊朗的战争已经结束",
+      "伊朗赢了，美国赢了，一赢各表"
+    ],
+    "representative_links": [
+      "https://www.cls.cn/detail/2344245",
+      "https://mp.weixin.qq.com/s/JdoinTDGmUl6dzlzecK73g"
+    ],
+    "top_entities": [
+      "伊朗",
+      "美国",
+      "特朗普"
+    ],
+    "dominant_entities": [
+      "伊朗",
+      "美国",
+      "特朗普"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "伊朗",
+      "美国",
+      "油价/地缘冲突",
+      "特朗普",
+      "来自",
+      "reports",
+      "最新外链",
+      "trendradar聚合"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.5,
+    "freshness_score": 1.125,
+    "timeliness_score": 1.14,
+    "authority_score": 0.84,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 40.0,
+    "source_diversity": 2,
+    "dedupe_depth": 2,
+    "priority_score": 34.84
+  },
+  {
+    "cluster_id": "openai-valuation-faces",
+    "topic": "其他观察",
+    "cluster_title_candidate": "OpenAI / valuation",
+    "cluster_summary": "围绕 OpenAI / valuation 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "ai_hot": 1
+    },
+    "sources": {
+      "ai_hot/hn": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "OpenAI's $852B valuation faces investor scrutiny amid strategy shift, FT reports"
+    ],
+    "representative_links": [
+      "https://www.reuters.com/legal/transactional/openai-investors-question-852-billion-valuation-strategy-shifts-ft-reports-2026-04-14"
+    ],
+    "top_entities": [
+      "OpenAI"
+    ],
+    "dominant_entities": [
+      "OpenAI"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "openai",
+      "valuation",
+      "faces",
+      "investor",
+      "scrutiny",
+      "amid",
+      "strategy",
+      "shift"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.68,
+    "timeliness_score": 1.72,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 80.61,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 31.334
+  },
+  {
+    "cluster_id": "openai-trusted-access",
+    "topic": "其他观察",
+    "cluster_title_candidate": "OpenAI / trusted",
+    "cluster_summary": "围绕 OpenAI / trusted 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "ai_hot": 1
+    },
+    "sources": {
+      "ai_hot/hn": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "Trusted access for the next era of cyber defense"
+    ],
+    "representative_links": [
+      "https://openai.com/index/scaling-trusted-access-for-cyber-defense"
+    ],
+    "top_entities": [
+      "OpenAI"
+    ],
+    "dominant_entities": [
+      "OpenAI"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "openai",
+      "trusted",
+      "access",
+      "for",
+      "the",
+      "next",
+      "era",
+      "of"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.68,
+    "timeliness_score": 1.72,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 69.95,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 28.989
+  },
+  {
+    "cluster_id": "原油-supply-order-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "原油 / 油价/地缘冲突",
+    "cluster_summary": "围绕 原油 / 油价/地缘冲突 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "reports": 1
+    },
+    "sources": {
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "美伊和谈预期升温，标普大涨近新高，纳指十连涨，原油大跌7%，人民币升破6.81"
+    ],
+    "representative_links": [
+      "https://wallstreetcn.com/articles/3769897"
+    ],
+    "top_entities": [
+      "原油"
+    ],
+    "dominant_entities": [
+      "原油"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "原油",
+      "美伊和谈预期升温",
+      "标普大涨近新高",
+      "纳指十连涨",
+      "原油大跌7",
+      "人民币升破6",
+      "来自",
+      "reports"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 1.0,
+    "freshness_score": 1.35,
+    "timeliness_score": 1.4,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 66.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 28.52
+  },
+  {
+    "cluster_id": "伊朗-diplomacy-conflict-谈判-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "伊朗 / 油价/地缘冲突 / 谈判",
+    "cluster_summary": "围绕 伊朗 / 油价/地缘冲突 / 谈判 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "reports": 1
+    },
+    "sources": {
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "西方媒体：美伊本周开启新一轮谈判，伊朗火速辟谣：报道“毫无根据”！"
+    ],
+    "representative_links": [
+      "https://wallstreetcn.com/articles/3769921"
+    ],
+    "top_entities": [
+      "伊朗"
+    ],
+    "dominant_entities": [
+      "伊朗"
+    ],
+    "dominant_actions": [
+      "谈判"
+    ],
+    "dynamic_tokens": [
+      "伊朗",
+      "西方媒体",
+      "伊朗火速辟谣",
+      "毫无根据",
+      "谈判",
+      "来自",
+      "reports",
+      "最新外链"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 1.0,
+    "freshness_score": 1.35,
+    "timeliness_score": 1.4,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 66.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 28.52
+  },
+  {
+    "cluster_id": "普京-俄外长-来自",
+    "topic": "其他观察",
+    "cluster_title_candidate": "普京 / 俄外长",
+    "cluster_summary": "围绕 普京 / 俄外长 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "reports": 1
+    },
+    "sources": {
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "俄外长：普京将于今年上半年访华"
+    ],
+    "representative_links": [
+      "https://www.toutiao.com/trending/7628859250894458414"
+    ],
+    "top_entities": [
+      "普京"
+    ],
+    "dominant_entities": [
+      "普京"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "俄外长",
+      "普京",
+      "来自",
+      "reports",
+      "最新外链",
+      "trendradar聚合"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 1.0,
+    "freshness_score": 1.35,
+    "timeliness_score": 1.4,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 66.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 28.52
+  },
+  {
+    "cluster_id": "伊朗-航运-supply-order-diplomacy-conflict",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "伊朗 / 航运 / 油价/地缘冲突 / 谈判",
+    "cluster_summary": "围绕 伊朗 / 航运 / 油价/地缘冲突 / 谈判 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "reports": 1
+    },
+    "sources": {
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "报道：伊朗考虑暂停霍尔木兹航运，为新一轮谈判争取空间"
+    ],
+    "representative_links": [
+      "https://wallstreetcn.com/articles/3769943"
+    ],
+    "top_entities": [
+      "伊朗",
+      "航运"
+    ],
+    "dominant_entities": [
+      "伊朗",
+      "航运"
+    ],
+    "dominant_actions": [
+      "谈判"
+    ],
+    "dynamic_tokens": [
+      "航运",
+      "伊朗",
+      "霍尔木兹",
+      "谈判",
+      "来自",
+      "reports",
+      "最新外链",
+      "trendradar聚合"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 1.0,
+    "freshness_score": 1.35,
+    "timeliness_score": 1.4,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 66.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 28.52
+  },
+  {
+    "cluster_id": "中国-中方回应美财长-中国不可靠",
+    "topic": "其他观察",
+    "cluster_title_candidate": "中国 / 中方回应美财长",
+    "cluster_summary": "围绕 中国 / 中方回应美财长 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "reports": 1
+    },
+    "sources": {
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "中方回应美财长“中国不可靠”言论"
+    ],
+    "representative_links": [
+      "https://www.toutiao.com/trending/7628886103948496411"
+    ],
+    "top_entities": [
+      "中国"
+    ],
+    "dominant_entities": [
+      "中国"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "中方回应美财长",
+      "中国不可靠",
+      "言论",
+      "中国",
+      "来自",
+      "reports",
+      "最新外链",
+      "trendradar聚合"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 1.0,
+    "freshness_score": 1.35,
+    "timeliness_score": 1.4,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 66.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 28.52
+  },
+  {
+    "cluster_id": "美国-特朗普-diplomacy-conflict-谈判",
+    "topic": "其他观察",
+    "cluster_title_candidate": "特朗普 / 美国 / 谈判",
+    "cluster_summary": "围绕 特朗普 / 美国 / 谈判 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "reports": 1
+    },
+    "sources": {
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "特朗普最新表态：美国对伊战争已结束 未来两天或重返谈判桌"
+    ],
+    "representative_links": [
+      "https://www.cls.cn/detail/2344264"
+    ],
+    "top_entities": [
+      "特朗普",
+      "美国"
+    ],
+    "dominant_entities": [
+      "特朗普",
+      "美国"
+    ],
+    "dominant_actions": [
+      "谈判"
+    ],
+    "dynamic_tokens": [
+      "美国",
+      "特朗普",
+      "特朗普最新表态",
+      "谈判",
+      "来自",
+      "reports",
+      "最新外链",
+      "trendradar聚合"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 1.0,
+    "freshness_score": 1.35,
+    "timeliness_score": 1.4,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 66.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 28.52
+  },
+  {
+    "cluster_id": "中国-中国银行一员工年薪超1800万元-来自",
+    "topic": "其他观察",
+    "cluster_title_candidate": "中国 / 中国银行一员工年薪超1800万元",
+    "cluster_summary": "围绕 中国 / 中国银行一员工年薪超1800万元 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "reports": 1
+    },
+    "sources": {
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "中国银行一员工年薪超1800万元"
+    ],
+    "representative_links": [
+      "https://www.toutiao.com/trending/7628000740484595762"
+    ],
+    "top_entities": [
+      "中国"
+    ],
+    "dominant_entities": [
+      "中国"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "中国银行一员工年薪超1800万元",
+      "中国",
+      "来自",
+      "reports",
+      "最新外链",
+      "trendradar聚合"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 1.0,
+    "freshness_score": 1.35,
+    "timeliness_score": 1.4,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 66.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 28.52
+  },
+  {
+    "cluster_id": "伊朗-特朗普-diplomacy-conflict-谈判",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "特朗普 / 伊朗 / 油价/地缘冲突 / 谈判",
+    "cluster_summary": "围绕 特朗普 / 伊朗 / 油价/地缘冲突 / 谈判 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "reports": 1
+    },
+    "sources": {
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "特朗普称“未来两天内”可能再与伊朗谈判，上轮谈判一度谈到80%仍破裂，伊外长：因为内塔尼亚胡给万斯打了电话"
+    ],
+    "representative_links": [
+      "https://wallstreetcn.com/articles/3769962"
+    ],
+    "top_entities": [
+      "特朗普",
+      "伊朗"
+    ],
+    "dominant_entities": [
+      "特朗普",
+      "伊朗"
+    ],
+    "dominant_actions": [
+      "谈判"
+    ],
+    "dynamic_tokens": [
+      "伊朗",
+      "特朗普",
+      "特朗普称",
+      "未来两天内",
+      "可能再与伊朗谈判",
+      "上轮谈判一度谈到80",
+      "仍破裂",
+      "伊外长"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 1.0,
+    "freshness_score": 1.35,
+    "timeliness_score": 1.4,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 66.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 28.52
+  },
+  {
+    "cluster_id": "英伟达-ai-semiconductor-cycle-半导体-国产芯片",
+    "topic": "半导体/国产芯片",
+    "cluster_title_candidate": "英伟达 / AI / 半导体/国产芯片",
+    "cluster_summary": "围绕 英伟达 / AI / 半导体/国产芯片 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "reports": 1
+    },
+    "sources": {
+      "reports/news": 1
+    },
+    "editor_labels": {
+      "半导体/国产芯片": 1,
+      "AI工具/工作流": 1
+    },
+    "representative_titles": [
+      "全球AI芯片被一家味精厂卡脖子？份额超95%，英伟达也得排队抢产能"
+    ],
+    "representative_links": [
+      "https://wallstreetcn.com/articles/3769939"
+    ],
+    "top_entities": [
+      "英伟达",
+      "AI",
+      "芯片"
+    ],
+    "dominant_entities": [
+      "英伟达",
+      "AI",
+      "芯片"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "芯片",
+      "英伟达",
+      "全球ai芯片被一家味精厂卡脖子",
+      "份额超95",
+      "ai",
+      "来自",
+      "reports",
+      "最新外链"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 1.0,
+    "freshness_score": 1.35,
+    "timeliness_score": 1.4,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 66.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 28.52
+  },
+  {
+    "cluster_id": "openai-ai工具-工作流",
+    "topic": "AI工具/工作流",
+    "cluster_title_candidate": "OpenAI / AI工具/工作流",
+    "cluster_summary": "围绕 OpenAI / AI工具/工作流 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "ai_hot": 1
+    },
+    "sources": {
+      "ai_hot/reddit": 1
+    },
+    "editor_labels": {
+      "AI工具/工作流": 1
+    },
+    "representative_titles": [
+      "🔥BREAKING: OpenAI rolls out GPT-5.4-Cyber to limited group for testing, seeks to rival Claude Mythos"
+    ],
+    "representative_links": [
+      "https://www.reddit.com/r/OpenAI/comments/1slmujp/breaking_openai_rolls_out_gpt54cyber_to_limited"
+    ],
+    "top_entities": [
+      "OpenAI"
+    ],
+    "dominant_entities": [
+      "OpenAI"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "openai",
+      "to",
+      "breaking",
+      "rolls",
+      "out",
+      "gpt",
+      "cyber",
+      "limited"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.62,
+    "timeliness_score": 1.64,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 59.4,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 26.268
+  },
+  {
+    "cluster_id": "半导体-semiconductor-cycle-market-sentiment-半导体-国产芯片",
+    "topic": "半导体/国产芯片",
+    "cluster_title_candidate": "半导体 / 半导体/国产芯片",
+    "cluster_summary": "围绕 半导体 / 半导体/国产芯片 的高频讨论，当前样本 2 条，涉及 1 个渠道、1 个去重组。",
+    "count": 2,
+    "primary_source_tier": "self_media",
+    "source_tiers": {
+      "self_media": 2
+    },
+    "source_mix": {
+      "wechat": 2
+    },
+    "sources": {
+      "8000/wechat_latest": 1,
+      "8000/wechat_curated": 1
+    },
+    "editor_labels": {
+      "半导体/国产芯片": 2
+    },
+    "representative_titles": [
+      "很好，终于有基金经理聚焦在了半导体自主可控了",
+      "很好，终于有基金经理聚焦在了半导体自主可控了"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/-P7kYmK-kSdjRFjtSnY8Rg",
+      "https://mp.weixin.qq.com/s/-P7kYmK-kSdjRFjtSnY8Rg"
+    ],
+    "top_entities": [
+      "半导体"
+    ],
+    "dominant_entities": [
+      "半导体"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "半导体",
+      "很好",
+      "基金",
+      "硬核姬老板",
+      "半导体/国产芯片",
+      "公众号最新文章",
+      "定向样本"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.91,
+    "timeliness_score": 0.89,
+    "authority_score": 0.88,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 30.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 25.53
+  },
+  {
+    "cluster_id": "黄金-market-sentiment-黄金-白银-贵金属",
+    "topic": "黄金/白银/贵金属",
+    "cluster_title_candidate": "黄金 / 黄金/白银/贵金属",
+    "cluster_summary": "围绕 黄金 / 黄金/白银/贵金属 的高频讨论，当前样本 2 条，涉及 1 个渠道、1 个去重组。",
+    "count": 2,
+    "primary_source_tier": "self_media",
+    "source_tiers": {
+      "self_media": 2
+    },
+    "source_mix": {
+      "wechat": 2
+    },
+    "sources": {
+      "8000/wechat_latest": 1,
+      "8000/wechat_curated": 1
+    },
+    "editor_labels": {
+      "黄金/白银/贵金属": 2
+    },
+    "representative_titles": [
+      "央妈为何狂买黄金？",
+      "央妈为何狂买黄金？"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/_IpyPNK16iCBnZOVLDiNzg",
+      "https://mp.weixin.qq.com/s/_IpyPNK16iCBnZOVLDiNzg"
+    ],
+    "top_entities": [
+      "黄金"
+    ],
+    "dominant_entities": [
+      "黄金"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "黄金",
+      "央妈为何狂买黄金",
+      "表舅是养基大户",
+      "黄金/白银/贵金属",
+      "公众号最新文章",
+      "定向样本"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.91,
+    "timeliness_score": 0.89,
+    "authority_score": 0.88,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 30.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 25.53
+  },
+  {
+    "cluster_id": "openai-technology-adoption-ai工具-工作流",
+    "topic": "AI工具/工作流",
+    "cluster_title_candidate": "OpenAI / AI工具/工作流",
+    "cluster_summary": "围绕 OpenAI / AI工具/工作流 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "personal_opinion",
+    "source_tiers": {
+      "personal_opinion": 1
+    },
+    "source_mix": {
+      "ai_hot": 1
+    },
+    "sources": {
+      "ai_hot/hn": 1
+    },
+    "editor_labels": {
+      "AI工具/工作流": 1
+    },
+    "representative_titles": [
+      "Show HN: OpenRig – agent harness that runs Claude Code and Codex as one system"
+    ],
+    "representative_links": [
+      "https://github.com/mvschwarz/openrig"
+    ],
+    "top_entities": [
+      "OpenAI"
+    ],
+    "dominant_entities": [
+      "OpenAI"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "openai",
+      "agent",
+      "show",
+      "hn",
+      "openrig",
+      "harness",
+      "that",
+      "runs"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 1.68,
+    "timeliness_score": 1.72,
+    "authority_score": 0.8,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 50.23,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 24.651
+  },
+  {
+    "cluster_id": "以色列-diplomacy-conflict",
+    "topic": "其他观察",
+    "cluster_title_candidate": "以色列 / 公众号最新文章",
+    "cluster_summary": "围绕 以色列 / 公众号最新文章 的高频讨论，当前样本 2 条，涉及 1 个渠道、2 个去重组。",
+    "count": 2,
+    "primary_source_tier": "self_media",
+    "source_tiers": {
+      "self_media": 2
+    },
+    "source_mix": {
+      "wechat": 2
+    },
+    "sources": {
+      "8000/wechat_latest": 2
+    },
+    "editor_labels": {
+      "其他观察": 2
+    },
+    "representative_titles": [
+      "一觉醒来，全世界都在限制以色列",
+      "果然：进攻以色列，才是最优解！"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/qIFCA6tr60UvZwphfv8Pbg",
+      "https://mp.weixin.qq.com/s/N72vnV8QQGh-KeBH5d_LzQ"
+    ],
+    "top_entities": [
+      "以色列"
+    ],
+    "dominant_entities": [
+      "以色列"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "以色列",
+      "公众号最新文章",
+      "一觉醒来",
+      "贩财局",
+      "果然",
+      "进攻以色列",
+      "才是最优解",
+      "硬核deeper"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.9,
+    "timeliness_score": 0.88,
+    "authority_score": 0.88,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 14.0,
+    "source_diversity": 1,
+    "dedupe_depth": 2,
+    "priority_score": 23.36
+  },
+  {
+    "cluster_id": "market-sentiment-卧槽-这些基金涨幅已经近300",
+    "topic": "其他观察",
+    "cluster_title_candidate": "卧槽 / 这些基金涨幅已经近300",
+    "cluster_summary": "围绕 卧槽 / 这些基金涨幅已经近300 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "self_media",
+    "source_tiers": {
+      "self_media": 1
+    },
+    "source_mix": {
+      "wechat": 1
+    },
+    "sources": {
+      "8000/wechat_curated": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "卧槽！这些基金涨幅已经近300%了"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/7m1sLTBeGkgOHt87z5JZDQ"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "卧槽",
+      "这些基金涨幅已经近300",
+      "基金",
+      "硬核姬老板",
+      "定向样本"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.92,
+    "timeliness_score": 0.9,
+    "authority_score": 0.88,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 30.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 16.38
+  },
+  {
+    "cluster_id": "technology-adoption-发布-ai工具-工作流",
+    "topic": "AI工具/工作流",
+    "cluster_title_candidate": "AI工具/工作流 / 发布",
+    "cluster_summary": "围绕 AI工具/工作流 / 发布 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "self_media",
+    "source_tiers": {
+      "self_media": 1
+    },
+    "source_mix": {
+      "wechat": 1
+    },
+    "sources": {
+      "8000/wechat_curated": 1
+    },
+    "editor_labels": {
+      "AI工具/工作流": 1
+    },
+    "representative_titles": [
+      "用Hermes封装并开源一个重要skill：从飞书文档一键发布到微信公众号"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/OqpljVUwvONVohnk7Sf5hw"
+    ],
+    "top_entities": [],
+    "dominant_entities": [],
+    "dominant_actions": [
+      "发布"
+    ],
+    "dynamic_tokens": [
+      "用hermes封装并开源一个重要skill",
+      "skill",
+      "draco正在vibecoding",
+      "发布",
+      "定向样本",
+      "ai工具/工作流"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.92,
+    "timeliness_score": 0.9,
+    "authority_score": 0.88,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 14.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 12.86
+  },
+  {
+    "cluster_id": "以色列-伊朗-diplomacy-conflict-谈判",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "以色列 / 伊朗 / 油价/地缘冲突 / 谈判",
+    "cluster_summary": "围绕 以色列 / 伊朗 / 油价/地缘冲突 / 谈判 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "self_media",
+    "source_tiers": {
+      "self_media": 1
+    },
+    "source_mix": {
+      "wechat": 1
+    },
+    "sources": {
+      "8000/wechat_latest": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "离谱：以色列失控！伊朗十点计划逼美低头？谈判细节全拆解"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/5_0ONMmvxFq999zEMM-1HA"
+    ],
+    "top_entities": [
+      "以色列",
+      "伊朗"
+    ],
+    "dominant_entities": [
+      "以色列",
+      "伊朗"
+    ],
+    "dominant_actions": [
+      "谈判"
+    ],
+    "dynamic_tokens": [
+      "伊朗",
+      "以色列",
+      "离谱",
+      "以色列失控",
+      "谈判细节全拆解",
+      "谈判",
+      "公众号最新文章",
+      "硬核deeper"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.9,
+    "timeliness_score": 0.88,
+    "authority_score": 0.88,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 14.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 12.76
+  },
+  {
+    "cluster_id": "特朗普-diplomacy-conflict",
+    "topic": "其他观察",
+    "cluster_title_candidate": "特朗普 / 现在的特朗普",
+    "cluster_summary": "围绕 特朗普 / 现在的特朗普 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "self_media",
+    "source_tiers": {
+      "self_media": 1
+    },
+    "source_mix": {
+      "wechat": 1
+    },
+    "sources": {
+      "8000/wechat_latest": 1
+    },
+    "editor_labels": {
+      "其他观察": 1
+    },
+    "representative_titles": [
+      "现在的特朗普，跟当年小胡子一样，不是科班出身过于依靠直觉和天赋，最后拉了坨大的"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/q-iPz1sea5H4uBHSnoC73w"
+    ],
+    "top_entities": [
+      "特朗普"
+    ],
+    "dominant_entities": [
+      "特朗普"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "特朗普",
+      "现在的特朗普",
+      "跟当年小胡子一样",
+      "最后拉了坨大的",
+      "公众号最新文章",
+      "硬核deeper"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.9,
+    "timeliness_score": 0.88,
+    "authority_score": 0.88,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 14.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 12.76
+  },
+  {
+    "cluster_id": "以色列-伊朗-diplomacy-conflict-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "以色列 / 伊朗 / 油价/地缘冲突",
+    "cluster_summary": "围绕 以色列 / 伊朗 / 油价/地缘冲突 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "self_media",
+    "source_tiers": {
+      "self_media": 1
+    },
+    "source_mix": {
+      "wechat": 1
+    },
+    "sources": {
+      "8000/wechat_latest": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "一觉醒来，美国伊朗以色列三方画k线"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/bI7JkXZEZ-h9HSKAGOeFsA"
+    ],
+    "top_entities": [
+      "以色列",
+      "伊朗",
+      "美国"
+    ],
+    "dominant_entities": [
+      "以色列",
+      "伊朗",
+      "美国"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "伊朗",
+      "以色列",
+      "美国",
+      "一觉醒来",
+      "美国伊朗以色列三方画k线",
+      "公众号最新文章",
+      "贩财局",
+      "油价/地缘冲突"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.9,
+    "timeliness_score": 0.88,
+    "authority_score": 0.88,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 14.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 12.76
+  },
+  {
+    "cluster_id": "伊朗-diplomacy-conflict-油价-地缘冲突",
+    "topic": "油价/地缘冲突",
+    "cluster_title_candidate": "伊朗 / 油价/地缘冲突",
+    "cluster_summary": "围绕 伊朗 / 油价/地缘冲突 的高频讨论，当前样本 1 条，涉及 1 个渠道、1 个去重组。",
+    "count": 1,
+    "primary_source_tier": "self_media",
+    "source_tiers": {
+      "self_media": 1
+    },
+    "source_mix": {
+      "wechat": 1
+    },
+    "sources": {
+      "8000/wechat_latest": 1
+    },
+    "editor_labels": {
+      "油价/地缘冲突": 1
+    },
+    "representative_titles": [
+      "美军伊朗救援行动疑云：黄饼计划失败后的谎言掩盖？"
+    ],
+    "representative_links": [
+      "https://mp.weixin.qq.com/s/Fj7X3FV9CkUA6-xrEArQqA"
+    ],
+    "top_entities": [
+      "伊朗"
+    ],
+    "dominant_entities": [
+      "伊朗"
+    ],
+    "dominant_actions": [],
+    "dynamic_tokens": [
+      "伊朗",
+      "公众号最新文章",
+      "硬核deeper",
+      "油价/地缘冲突"
+    ],
+    "noise_tags": {},
+    "trendradar_coverage": 0.0,
+    "freshness_score": 0.9,
+    "timeliness_score": 0.88,
+    "authority_score": 0.88,
+    "noise_ratio": 0.0,
+    "avg_heat_score": 14.0,
+    "source_diversity": 1,
+    "dedupe_depth": 1,
+    "priority_score": 12.76
+  }
+]

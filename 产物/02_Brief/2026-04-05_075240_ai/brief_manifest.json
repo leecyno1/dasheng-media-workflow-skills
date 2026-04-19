@@ -1,0 +1,46 @@
+{
+  "run_id": "2026-04-05_075240_ai",
+  "generated_at": "2026-04-05T08:00:00+08:00",
+  "stage": "brief",
+  "object_type": "Run",
+  "execution_model": "ai_enhanced_web_search",
+  "input_source": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-05_075240",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-05_075240_ai",
+  "generation_method": "ai_enhanced_web_search",
+  "enhancements": {
+    "content_research_weight_boost": {
+      "freshness_weight": "1.12 → 1.57 (+40%)",
+      "timeliness_weight": "1.12 → 1.57 (+40%)",
+      "source_bonus": "1.8 → 2.5 (+39%)"
+    },
+    "web_search_integration": true,
+    "deep_analysis_focus": "财经/科技核心议题",
+    "deduplication_strategy": "避免与社交媒体渠道（1-5）重复"
+  },
+  "counts": {
+    "candidate_topics": 3,
+    "selected_topics": 0,
+    "rejected_topics": 0,
+    "avg_composite_score": 8.92
+  },
+  "quality_metrics": {
+    "avg_timeliness": 9.17,
+    "avg_unique_angle": 8.83,
+    "avg_evidence": 9.23,
+    "avg_reader_value": 9.17,
+    "avg_longevity": 8.17
+  },
+  "artifacts": [
+    "selected_topics.json",
+    "02_编辑Brief库.md",
+    "brief_manifest.json"
+  ],
+  "gate_status": "pending_editor_review",
+  "next_stage": "draft",
+  "next_stage_requirements": [
+    "编辑从 candidate_topics 中选择题目",
+    "将选中的题目写入 selected_topics",
+    "将 status 改为 approved",
+    "确保至少有1个选题被选中"
+  ]
+}

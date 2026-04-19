@@ -1,0 +1,123 @@
+[
+  {
+    "query": "Japan politics parliament session 4k",
+    "url": "https://www.youtube.com/watch?v=qWMI8lKw-YA",
+    "title": "Japan: Kishida’s coalition wins absolute majority in parliament",
+    "channel": "CGTN Africa",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": "  5.41MiB at  176.05KiB/s ETA 00:30\n[download]   4.6% of    5.41MiB at  284.93KiB/s ETA 00:18\n[download]   9.2% of    5.41MiB at  384.86KiB/s ETA 00:13\n[download]  18.5% of    5.41MiB at  661.68KiB/s ETA 00:06\n[download]  36.9% of    5.41MiB at  832.22KiB/s ETA 00:04\n[download]  57.1% of    5.41MiB at    1.12MiB/s ETA 00:02\n[download]  97.6% of    5.41MiB at    1.39MiB/s ETA 00:00\n[download] 100.0% of    5.41MiB at    1.41MiB/s ETA 00:00\n[download] 100% of    5.41MiB in 00:00:06 at 881.62KiB/s \n",
+    "selected_candidate_quality": {
+      "source_category": "general_footage",
+      "source_ok": true,
+      "resolution_height": 1080,
+      "resolution_width": 1920,
+      "duration_seconds_hint": 92,
+      "fps_hint": 25.0,
+      "extractor": "youtube",
+      "source_domain": "www.youtube.com",
+      "min_height_required": null,
+      "pre_download_pass": true,
+      "reject_reasons": []
+    },
+    "file_quality_audit": {
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/视频_japan-politics-parliament-sess.mp4",
+      "source_url": "https://www.youtube.com/watch?v=qWMI8lKw-YA",
+      "source_domain": "www.youtube.com",
+      "source_traceable": true,
+      "source_category": "general_footage",
+      "extractor": "youtube",
+      "resolution_height": 360,
+      "resolution_width": 640,
+      "fps": 25.0,
+      "codec": "h264",
+      "duration_seconds": 91.64,
+      "scene_changes": 11,
+      "scene_change_rate": 0.3667,
+      "analysis_window_seconds": 30.0,
+      "duration_ok": true,
+      "resolution_ok": true,
+      "frame_variation_ok": true,
+      "anti_screenshot_montage_pass": true,
+      "final_pass": true,
+      "fail_reasons": [],
+      "ffmpeg_error": ""
+    }
+  },
+  {
+    "query": "Japan politics election rally crowd 4k live feed",
+    "url": "https://www.youtube.com/watch?v=i7PFVpZVRBc",
+    "title": "Moment Shinzo Abe shot during campaign speech in Japan",
+    "channel": "The Telegraph",
+    "returncode": 1,
+    "stderr": " See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nERROR: [youtube] i7PFVpZVRBc: Sign in to confirm your age. This video may be inappropriate for some users. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
+    "stdout": "on. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n[youtube] i7PFVpZVRBc: Downloading web embedded client config\n[youtube] i7PFVpZVRBc: Downloading player b174a5bb-main\n[youtube] i7PFVpZVRBc: Downloading web embedded player API JSON\n",
+    "selected_candidate_quality": {
+      "source_category": "general_footage",
+      "source_ok": true,
+      "resolution_height": null,
+      "resolution_width": null,
+      "duration_seconds_hint": 97,
+      "fps_hint": null,
+      "extractor": "",
+      "source_domain": "www.youtube.com",
+      "min_height_required": null,
+      "pre_download_pass": true,
+      "reject_reasons": [],
+      "metadata_error": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/"
+    },
+    "file_quality_audit": {
+      "file": "",
+      "source_url": "https://www.youtube.com/watch?v=i7PFVpZVRBc",
+      "final_pass": false,
+      "fail_reasons": [
+        "download_failed_or_missing_file"
+      ]
+    }
+  },
+  {
+    "query": "Japan politics military drill 4k",
+    "url": "https://www.youtube.com/watch?v=vW9MSnx00YM",
+    "title": "US B-52 Bombers, Japan Jets Roar After China-Russia Drill, \"Don't Make a Fuss\" Xi Warns Takaichi |4K",
+    "channel": "CRUX and CNN-News18",
+    "returncode": 0,
+    "stderr": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\n",
+    "stdout": " 29.31MiB at    5.48KiB/s ETA 00:32\n[download]  99.4% of   29.31MiB at   16.41KiB/s ETA 00:10\n[download]  99.4% of   29.31MiB at   38.25KiB/s ETA 00:04\n[download]  99.5% of   29.31MiB at   81.89KiB/s ETA 00:02\n[download]  99.5% of   29.31MiB at  141.84KiB/s ETA 00:01\n[download]  99.6% of   29.31MiB at  180.73KiB/s ETA 00:00\n[download]  99.8% of   29.31MiB at  185.91KiB/s ETA 00:00\n[download] 100.0% of   29.31MiB at   56.16KiB/s ETA 00:00\n[download] 100% of   29.31MiB in 00:00:50 at 597.23KiB/s \n",
+    "selected_candidate_quality": {
+      "source_category": "news_live_or_interview",
+      "source_ok": true,
+      "resolution_height": 2026,
+      "resolution_width": 3840,
+      "duration_seconds_hint": 601,
+      "fps_hint": 24.0,
+      "extractor": "youtube",
+      "source_domain": "www.youtube.com",
+      "min_height_required": null,
+      "pre_download_pass": true,
+      "reject_reasons": []
+    },
+    "file_quality_audit": {
+      "file": "/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs/2026-04-16_155809/artifacts/material/pack_assets/topic-japan-nuclear-capability-diplomatic-crisis/视频_japan-politics-military-drill-.mp4",
+      "source_url": "https://www.youtube.com/watch?v=vW9MSnx00YM",
+      "source_domain": "www.youtube.com",
+      "source_traceable": true,
+      "source_category": "news_live_or_interview",
+      "extractor": "youtube",
+      "resolution_height": 338,
+      "resolution_width": 640,
+      "fps": 24.0,
+      "codec": "h264",
+      "duration_seconds": 600.917,
+      "scene_changes": 190,
+      "scene_change_rate": 6.3333,
+      "analysis_window_seconds": 30.0,
+      "duration_ok": true,
+      "resolution_ok": true,
+      "frame_variation_ok": true,
+      "anti_screenshot_montage_pass": true,
+      "final_pass": true,
+      "fail_reasons": [],
+      "ffmpeg_error": ""
+    }
+  }
+]

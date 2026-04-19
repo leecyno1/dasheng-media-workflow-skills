@@ -1,0 +1,114 @@
+{
+  "run_id": "2026-04-05_170457_chainfix",
+  "gate": "Brief Gate",
+  "status": "pending_editor_review",
+  "instructions": [
+    "从 candidate_topics 中选择进入 draft 的题目。",
+    "没有 selected_topics 或未批准状态，不允许进入下游阶段。"
+  ],
+  "selected_topics": [],
+  "rejected_topic_ids": [],
+  "candidate_topics": [
+    {
+      "topic_id": "tc_001",
+      "title": "鲍威尔表态逆转美联储加息预期，市场押注降息引发美股反弹",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc_001",
+      "angle_variant_of": null,
+      "article_use": "财经深度解读、投资策略指导、货币政策影响分析专题文章。",
+      "core_proposition": "美联储主席鲍威尔的表态改变了市场对通胀和货币政策的判断，交易员快速撤回加息押注，转而押注降息，反映货币政策预期的显著错判与修正。",
+      "one_line_judgment": "鲍威尔最新讲话表明通胀压力减缓，市场由加息预期急转向降息预期，导致美股普遍反弹。"
+    },
+    {
+      "topic_id": "tc_002",
+      "title": "俄罗斯拒绝向日本供油加剧地缘政治紧张，全球能源安全风险攀升",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc_002",
+      "angle_variant_of": null,
+      "article_use": "国际关系分析、能源安全专题、地缘政治风险评估报告。",
+      "core_proposition": "俄罗斯外交部副部长声明表明，能源供应已成为地缘政治博弈的关键工具，日本等国面临能源风险，推动国际油价波动和区域安全恶化。",
+      "one_line_judgment": "俄罗斯明确拒绝向日本等不友好国家供油，反映能源出口政治化加剧，提升全球能源供应链不确定性。"
+    },
+    {
+      "topic_id": "tc_003",
+      "title": "伊朗冲突升级引发油价剧烈波动，美军部署加剧中东不确定性",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc_003",
+      "angle_variant_of": null,
+      "article_use": "国际安全分析、能源市场动态、投资风险预警类报道。",
+      "core_proposition": "军事冲突和能源设施受损相互作用，推动油价短期波动，同时提升市场和政策层面对中东局势的不确定性认知。",
+      "one_line_judgment": "伊朗与以色列冲突升级，美军空降兵部署及炼油厂爆炸事件形成双重冲击，加剧全球油价波动和区域安全风险。"
+    },
+    {
+      "topic_id": "tc_004",
+      "title": "美联储借鉴1990年石油危机路径，当前鹰派预期反转降息趋势明显",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc_004",
+      "angle_variant_of": null,
+      "article_use": "宏观经济分析、货币政策解读、投资策略调整建议。",
+      "core_proposition": "历史石油危机经验被用作参考，当前全球利率市场的剧烈波动显示美联储政策走向存在较大不确定性，降息趋势成为大概率事件。",
+      "one_line_judgment": "受中东冲突引发油价上涨和通胀担忧影响，美联储货币政策预期经历由降息到鹰派再到降息的复杂波动，反映市场对政策路径的错判与动态调整。"
+    },
+    {
+      "topic_id": "tc_005",
+      "title": "贵金属与原油期权创新反映宏观波动加剧，投资者风险管理需求提升",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc_005",
+      "angle_variant_of": null,
+      "article_use": "金融市场创新专题、投资工具介绍、风险管理策略分析文章。",
+      "core_proposition": "宏观经济不确定性增强推动金融产品创新，贵金属和能源期权的引入代表市场适应波动风险的策略升级。",
+      "one_line_judgment": "Gate平台首次推出黄金和原油期权产品，顺应宏观经济波动加剧趋势，为投资者提供新的风险对冲和投资工具。"
+    },
+    {
+      "topic_id": "tc_006",
+      "title": "伊朗控制霍尔木兹海峡成为实质核威慑，美媒停火提议实为通航筹码交换",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc_006",
+      "angle_variant_of": null,
+      "article_use": "地缘政治深度分析、能源安全专题、国际谈判动态解读。",
+      "core_proposition": "霍尔木兹海峡作为全球能源关键通道，其控制权赋予伊朗实质战略威慑力，停火谈判背后隐藏复杂的通航权益交换逻辑。",
+      "one_line_judgment": "美媒分析认为霍尔木兹海峡控制权是伊朗的战略核威慑，当前停火谈判实质围绕该通航权的交换，反映地缘政治筹码博弈的本质。"
+    },
+    {
+      "topic_id": "tc_007",
+      "title": "中国散户3月大举净买入1.25万亿，逆势加仓预示市场信心修复",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc_007",
+      "angle_variant_of": null,
+      "article_use": "市场资金流动分析、投资者行为研究、股市趋势预测文章。",
+      "core_proposition": "散户资金流入反映市场情绪改善和信心修复，可能推动市场反弹并影响投资策略调整。",
+      "one_line_judgment": "中国散户投资者逆势大额净买入，体现对市场回调的积极买入判断，资金流向成为A股后续走势的重要变量。"
+    },
+    {
+      "topic_id": "tc_008",
+      "title": "央行果断降息释放宽松信号，政策空间开启助力经济复苏",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc_008",
+      "angle_variant_of": null,
+      "article_use": "宏观经济政策解读、经济复苏专题、投资环境分析。",
+      "core_proposition": "宏观经济压力缓解与通胀回落背景下，央行通过降息释放宽松信号，预示未来货币政策将更积极支持经济复苏。",
+      "one_line_judgment": "近期央行降息动作显示政策转向宽松，打开货币政策空间，成为支撑经济增长和改善市场预期的关键因素。"
+    },
+    {
+      "topic_id": "tc_009",
+      "title": "美以联军受挫激活中东抵抗联盟，区域冲突复杂性显著提升",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc_009",
+      "angle_variant_of": null,
+      "article_use": "国际安全局势分析、地缘政治评论、能源与安全风险专题。",
+      "core_proposition": "抵抗联盟多点开花使得美以联军战略受挫，冲突升级和多方角力增加区域安全风险和国际政治不确定性。",
+      "one_line_judgment": "美以联军在中东冲突中未能快速控制局势，激活包括胡塞和真主党在内的抵抗力量，令中东局势复杂化升级。"
+    },
+    {
+      "topic_id": "tc_010",
+      "title": "俄罗斯将多名日本人重新列为战犯，日俄关系紧张升级影响东北亚安全",
+      "topic_kind": "independent",
+      "mother_topic_id": "tc_010",
+      "angle_variant_of": null,
+      "article_use": "国际关系分析、东北亚安全专题、外交政策评论。",
+      "core_proposition": "官方战犯名单的发布不仅是历史争议的延续，也是当前俄日关系紧张的标志，可能影响双边外交和区域安全环境。",
+      "one_line_judgment": "俄罗斯官方宣布将28名日本人重新列为战犯，显示两国外交关系恶化，可能加剧东北亚地区安全局势的不稳定。"
+    }
+  ],
+  "editor_note": ""
+}

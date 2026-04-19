@@ -1,0 +1,30 @@
+{
+  "run_id": "2026-04-05_170457",
+  "generated_at": "2026-04-05T18:07:03.776701",
+  "stage": "brief",
+  "input_file": "/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/2026-04-05_170457/raw/intake_records.json",
+  "output_dir": "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first",
+  "manual_topics": [],
+  "generation_mode": "fallback",
+  "candidate_topics": [
+    "伊朗、原油：真正值得写的是事件升级之外，长期秩序成本在怎样上升",
+    "外交部、中东这题换个写法：更该写成一篇结构稿",
+    "英伟达、AI：真正值得写的是局部修复会不会被误读成全面复苏",
+    "英伟达、半导体这条线若换个切口，最该补的证据会不会完全不同",
+    "白银、贵金属这条线，风险溢价究竟在围绕什么变量重估",
+    "川普、特朗普这条线若换个切口，最该补的证据会不会完全不同",
+    "特朗普、鲍威尔这条线，市场是否低估了再通胀与利率预期回摆",
+    "美联储、中东这条线若换个切口，最该补的证据会不会完全不同",
+    "制裁：供给秩序重估会不会比价格波动更重要"
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first/02_编辑Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first/02_研究Brief库.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first/02_编辑Brief_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first/topic_cards.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first/selected_topics.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first/selected_topics.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/2026-04-05_170457_ai_first/brief_manifest.json"
+  ],
+  "next_stage": "draft"
+}

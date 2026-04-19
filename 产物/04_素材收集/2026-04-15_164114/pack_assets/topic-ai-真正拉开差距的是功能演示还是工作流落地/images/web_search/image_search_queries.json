@@ -1,0 +1,23 @@
+[
+  {
+    "query": "AI技术落地企业工作流协作会议现场",
+    "entity_type": "event",
+    "entity": "AI工作流落地",
+    "priority": null,
+    "channel": "news"
+  },
+  {
+    "query": "知名AI厂商技术团队工作场景",
+    "entity_type": "organization",
+    "entity": "AI厂商",
+    "priority": null,
+    "channel": "news"
+  },
+  {
+    "query": "企业数字化转型中AI项目负责人肖像",
+    "entity_type": "person",
+    "entity": "AI项目负责人",
+    "priority": null,
+    "channel": "news"
+  }
+]

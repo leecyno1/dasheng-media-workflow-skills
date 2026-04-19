@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-04-02_210702",
+  "stage": "draft",
+  "status": "ready_for_review",
+  "upstream": {
+    "selected_topics": "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/brief/selected_topics.json",
+    "topic_cards": "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/brief/topic_cards.json"
+  },
+  "drafts": [
+    {
+      "topic_id": "topic-这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化",
+      "title": "这轮高频讨论里，真正值得写的不是表面热度，而是背后的结构变化",
+      "reasoning_sheet_file": "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/draft/03_ReasoningSheet_这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化.md",
+      "reasoning_sheet_json": "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/draft/03_ReasoningSheet_这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化.json",
+      "draft_file": "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/draft/03_标准初稿_这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化.md"
+    }
+  ],
+  "artifacts": [
+    "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/draft/03_初稿_报告.md",
+    "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/draft/draft_manifest.json",
+    "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/draft/selected_topics_for_draft.json",
+    "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/draft/final_structure_snapshot.template.json",
+    "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/draft/03_ReasoningSheet_这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化.md",
+    "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/draft/03_ReasoningSheet_这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化.json",
+    "/Volumes/PSSD/Projects/公众号文章/tmp/upgrade_validation/draft/03_标准初稿_这轮高频讨论里-真正值得写的不是表面热度-而是背后的结构变化.md"
+  ],
+  "next_stage": "material"
+}

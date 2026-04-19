@@ -1,0 +1,109 @@
+{
+  "run_id": "2026-04-04_204231",
+  "gate": "Intake Gate",
+  "status": "pending_review",
+  "generated_at": "2026-04-04T20:42:31.469268+08:00",
+  "instructions": [
+    "删除明显广告、生活方式、低信息密度、重复搬运样本。",
+    "保留能形成事件线索、人物线索、议题线索的样本。",
+    "如需补链，直接在 additions 中新增。",
+    "若人工指定必须进入 brief 的样本，请追加到 must_include_urls。"
+  ],
+  "noise_candidates": [
+    {
+      "title": "0.1💰绝好喝冲饮！平替中的平替！卷死奶茶！",
+      "url": "https://www.xiaohongshu.com/explore/63d4f7ee000000000200138c?xsec_token=ABEnykNE_zb_EXsd9-wiiM6PITZLvXTEBZS4hJJ4rL9to%3D&xsec_source=pc_feed",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/xhs",
+      "channel": "xhs",
+      "heat_level": "S"
+    },
+    {
+      "title": "浑江惊现一只黑天鹅，快来看呀！ 浑江之上，彩虹桥旁。一只黑天鹅，打破了日常的平静。#白山 #浑江 #黑天鹅 #彩虹桥 #家乡的春天",
+      "url": "https://www.douyin.com/video/7621391935316789489",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/douyin",
+      "channel": "douyin",
+      "heat_level": "C"
+    },
+    {
+      "title": "两年半的黑天鹅长什么样子呢？ 我帮动物园孵化的黑天鹅长大啦！#人工孵化 #家有宠物 #我的乡村生活 @DOU+小助手",
+      "url": "https://www.douyin.com/video/7541760968087342346",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/douyin",
+      "channel": "douyin",
+      "heat_level": "B"
+    },
+    {
+      "title": "张雪峰老师说的这4条，真的是给咱们普通家庭孩子的保命忠告！尤其是第一次离家去外地上大学的，一定要让孩子刻在脑子里！ 👉 第一条，钱的事儿，绝对不能糊涂！ 孩子在学校要是没钱了，千万别跟同学张嘴借，更别碰什么校园贷、手机贷！那玩意儿就是个无底洞，一开始借几千，最后能滚成几十万，普通家庭根本扛不住！真缺钱了，第一时间给爸妈打电话，咱们再难也能帮孩子扛，绝对不能让孩子碰网贷！ 👉 第二条，女孩子的安全，永远是第一位！ 不管啥情况，都别跟异性单独待在一块儿！哪怕是学校的老师、同学，只要不熟、不了解，就一定要保持距离！别觉得不好意思，安全比什么都重要，咱们做家长的，就怕孩子在外受委屈、出危险！ 👉 第三条，同学聚会，就老老实实AA！ 别想着占别人便宜，也别打肿脸充胖子，总抢着买单！大家的钱都是爸妈辛辛苦苦挣的血汗钱，没必要为了面子硬撑！AA制最公平，谁也不欠谁，还能避免以后闹矛盾，也能让孩子学会体谅爸妈的不容易！ 👉 第四条，别当烂好人，善良得带锋芒！ 在外头碰到陌生人求助，别脑子一热就啥都帮！你根本不知道对方是人是鬼，别被人骗了、卖了还帮着数钱！真要帮，就帮他打个110、120这种求助电话，其他的，一概别管！保护好自己，才是最重要的！ 这4条真的不是危言耸听，都是张雪峰老师见过太多血泪教训，才给咱们普通家庭孩子的真心话！一定要转发给家里要上大学的孩子看看！ #张雪峰 #大学生活 #家长必看 #安全教育 #创作者中心",
+      "url": "https://www.douyin.com/video/7623948489407885989",
+      "noise_tags": [
+        "likely_repost"
+      ],
+      "source": "5173/douyin",
+      "channel": "douyin",
+      "heat_level": "B"
+    },
+    {
+      "title": "《SMC聪明钱课程》第6/30课 买方流动性与卖方流动性，内部与外部流动性 本课深度解析市场流动性的核心分类与驱动逻辑，聚焦买方流动性（需求主导）与卖方流动性（供应主导）的动态博弈，以及内部流动性（机构资金、做市商行为）与外部流动性（宏观环境、市场情绪）的交互影响。通过案例拆解流动性分布对价格波动、趋势延续及反转的底层作用，教授识别流动性聚集与枯竭的实战方法，涵盖趋势分析、资金流向追踪及多维度验证策略。课程旨在帮助交易者预判市场失衡节点，优化进出场时机选择，适配外汇黄金、比特币、股票、期货及主流加密货币等高流动性市场。适合中高阶交易者提升对市场微观结构的认知与策略适应性。#ICT交易技术 #SMC聪明钱 #交易人生 #交易心得 #黄金外汇",
+      "url": "https://www.douyin.com/video/7573773799574233011",
+      "noise_tags": [
+        "ad_promotional"
+      ],
+      "source": "5173/douyin",
+      "channel": "douyin",
+      "heat_level": "D"
+    },
+    {
+      "title": "分享一个能应对所有人生风险的顶级思维 #认知 #独立思考 #个人成长 #提升自己 #在拍一种很新的vlog",
+      "url": "https://www.douyin.com/video/7571502661833411866",
+      "noise_tags": [
+        "irrelevant_life"
+      ],
+      "source": "5173/douyin",
+      "channel": "douyin",
+      "heat_level": "D"
+    },
+    {
+      "title": "4月4日 日本崩盘，中俄美见死不救！",
+      "url": "https://www.bilibili.com/video/BV1DEDPBWEPL",
+      "noise_tags": [
+        "likely_repost"
+      ],
+      "source": "5173/bili",
+      "channel": "bili",
+      "heat_level": "B"
+    },
+    {
+      "title": "4月4日劲爆凌晨消息！伊朗下死手了，直击美国科技命脉，美国恐怕乱飞乱爆乱炸核弹！特朗普激情四射乱跳乱爆乱炸乱飞！",
+      "url": "https://www.bilibili.com/video/BV1LSDPBAEcu",
+      "noise_tags": [
+        "likely_repost"
+      ],
+      "source": "5173/bili",
+      "channel": "bili",
+      "heat_level": "B"
+    },
+    {
+      "title": "4月4劲爆消息！美国突然宣布撤侨！ 以色列遭开战后最大密度导弹袭击 美国突然宣布撤侨！伊朗彻底打出自信！",
+      "url": "https://www.bilibili.com/video/BV1v5DMBkEE2",
+      "noise_tags": [
+        "likely_repost"
+      ],
+      "source": "5173/bili",
+      "channel": "bili",
+      "heat_level": "B"
+    }
+  ],
+  "remove_ids": [],
+  "keep_ids": [],
+  "additions": [],
+  "must_include_urls": [],
+  "editor_note": ""
+}

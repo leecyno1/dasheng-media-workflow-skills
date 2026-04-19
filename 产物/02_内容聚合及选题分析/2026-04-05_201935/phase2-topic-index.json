@@ -1,0 +1,82 @@
+[
+  {
+    "rank": 1,
+    "topic_id": "topic_001",
+    "topic_name": "俄罗斯断供日本石油加剧全球能源供应链分化",
+    "topic_kind": "independent",
+    "mother_topic_id": "topic_001",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 2,
+    "topic_id": "topic_002",
+    "topic_name": "美伊冲突激化推升油价波动引发美联储货币政策转向预期",
+    "topic_kind": "independent",
+    "mother_topic_id": "topic_002",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 3,
+    "topic_id": "topic_003",
+    "topic_name": "伊朗强化霍尔木兹海峡控制成核谈判关键筹码",
+    "topic_kind": "independent",
+    "mother_topic_id": "topic_003",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 4,
+    "topic_id": "topic_004",
+    "topic_name": "美以联军军事行动激活中东抵抗力量，区域安全持续恶化",
+    "topic_kind": "independent",
+    "mother_topic_id": "topic_004",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 5,
+    "topic_id": "topic_005",
+    "topic_name": "多地央行降息开启全球宽松周期，金融市场结构性调整窗口打开",
+    "topic_kind": "independent",
+    "mother_topic_id": "topic_005",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 6,
+    "topic_id": "topic_006",
+    "topic_name": "美军无人机失事暴露美伊冲突升级风险与复杂性",
+    "topic_kind": "independent",
+    "mother_topic_id": "topic_006",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 7,
+    "topic_id": "topic_007",
+    "topic_name": "特朗普言论引发油价剧烈波动反映市场对美伊局势高度敏感",
+    "topic_kind": "independent",
+    "mother_topic_id": "topic_007",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 8,
+    "topic_id": "topic_008",
+    "topic_name": "俄罗斯将28名日本人重新列为战犯加剧俄日外交紧张",
+    "topic_kind": "independent",
+    "mother_topic_id": "topic_008",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 9,
+    "topic_id": "topic_009",
+    "topic_name": "中东冲突激发全球贵金属避险需求，黄金白银价格显著上涨",
+    "topic_kind": "independent",
+    "mother_topic_id": "topic_009",
+    "source_status": "ai_generated"
+  },
+  {
+    "rank": 10,
+    "topic_id": "topic_010",
+    "topic_name": "美媒曝光五角大楼极端军事计划揭示美伊冲突风险升级",
+    "topic_kind": "independent",
+    "mother_topic_id": "topic_010",
+    "source_status": "ai_generated"
+  }
+]

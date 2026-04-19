@@ -1,0 +1,107 @@
+[
+  {
+    "meta": {
+      "id": "2026-03-29_105535:brief:01",
+      "run_id": "2026-03-29_105535",
+      "created_at": "2026-03-29T13:25:50.505990"
+    },
+    "topic_id": "topic-6",
+    "title": "如果冲突开始长期化，真正要重估的可能不是战况，而是供给秩序",
+    "core_claim": "作为宏观框架主稿之一，重点放在供给、运输、通胀秩序重估。",
+    "recommended_media": [
+      "article",
+      "video",
+      "infographic"
+    ],
+    "angle_candidates": [
+      "先给核心判断，再拆证据",
+      "区分结构变量与情绪脉冲",
+      "给出可验证跟踪清单"
+    ],
+    "evidence_requirements": [
+      "至少3个可复核外部来源",
+      "至少2类数据或案例",
+      "保留反方与失效条件"
+    ],
+    "risk_notes": [
+      "避免单一事件外推为长期确定性",
+      "观点需配套来源和边界",
+      "不要使用内部流程数据作为正文证据"
+    ],
+    "sources": [
+      "https://www.douyin.com/video/7622221725895314694",
+      "https://www.douyin.com/video/7621951675674152255",
+      "https://www.bilibili.com/video/BV1PPXVBkE5r"
+    ]
+  },
+  {
+    "meta": {
+      "id": "2026-03-29_105535:brief:02",
+      "run_id": "2026-03-29_105535",
+      "created_at": "2026-03-29T13:25:50.506003"
+    },
+    "topic_id": "topic-10",
+    "title": "半导体突然很热闹，但行业最危险的误判可能才刚开始",
+    "core_claim": "作为产业误判纠偏稿，重点拆“热闹”与“全面景气”差异。",
+    "recommended_media": [
+      "article",
+      "video",
+      "infographic"
+    ],
+    "angle_candidates": [
+      "先给核心判断，再拆证据",
+      "区分结构变量与情绪脉冲",
+      "给出可验证跟踪清单"
+    ],
+    "evidence_requirements": [
+      "至少3个可复核外部来源",
+      "至少2类数据或案例",
+      "保留反方与失效条件"
+    ],
+    "risk_notes": [
+      "避免单一事件外推为长期确定性",
+      "观点需配套来源和边界",
+      "不要使用内部流程数据作为正文证据"
+    ],
+    "sources": [
+      "https://m.weibo.cn/detail/5275962192168571",
+      "https://m.weibo.cn/detail/5275779242132603",
+      "https://www.zhihu.com/question/2020633228688500416"
+    ]
+  },
+  {
+    "meta": {
+      "id": "2026-03-29_105535:brief:03",
+      "run_id": "2026-03-29_105535",
+      "created_at": "2026-03-29T13:25:50.506006"
+    },
+    "topic_id": "topic-11",
+    "title": "一键安装OpenClaw+常用skills，你奶奶5分钟也能用上龙虾",
+    "core_claim": "核心不是“能不能装上”，而是把高门槛环境配置降维成可复用、可审计、可回滚的标准化流程。",
+    "recommended_media": [
+      "article",
+      "video",
+      "infographic"
+    ],
+    "angle_candidates": [
+      "开头：过去安装龙虾/OpenClaw 的真实复杂度（Python/Node/依赖/端口/环境变量/权限）到底卡住了谁。",
+      "主体1：常见失败路径复盘（依赖冲突、网络超时、权限错误、版本不一致）与时间成本。",
+      "主体2：安全性边界说明（凭证管理、最小权限、可见日志、脚本可审计、可回滚）。",
+      "主体3：auto-install-Openclaw 的优势（一步安装、常用 skills 预置、统一目录、重复部署稳定性）。",
+      "结尾：给新手与团队的两套落地建议（个人快速版/团队标准化版）。"
+    ],
+    "evidence_requirements": [
+      "至少3个可复核外部来源",
+      "至少2类数据或案例",
+      "保留反方与失效条件"
+    ],
+    "risk_notes": [
+      "避免单一事件外推为长期确定性",
+      "观点需配套来源和边界",
+      "不要使用内部流程数据作为正文证据"
+    ],
+    "sources": [
+      "https://github.com/leecyno1/auto-install-Openclaw"
+    ]
+  }
+]
