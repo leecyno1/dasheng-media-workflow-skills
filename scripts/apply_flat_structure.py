@@ -8,7 +8,7 @@ import re
 import sys
 from pathlib import Path
 
-SCRIPT_PATH = Path("/Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py")
+SCRIPT_PATH = Path("" + str(Path(__file__).resolve().parents[1]) + "/scripts/material_execute_pack.py")
 
 def create_backup(script_path: Path) -> Path:
     """创建备份文件"""
@@ -223,7 +223,7 @@ def main():
     print(f"   cp {backup_path} {SCRIPT_PATH}")
     print()
     print("🧪 测试命令:")
-    print("   cd /Volumes/PSSD/Projects/公众号文章")
+    print("   cd " + str(Path(__file__).resolve().parents[1]) + "")
     print("   python3 scripts/material_execute_pack.py \\")
     print("     --pack-root 产物/04_Material/test \\")
     print("     --steps charts,image_search,video_search")

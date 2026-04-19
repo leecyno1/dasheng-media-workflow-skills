@@ -137,7 +137,7 @@ def main():
     run_id = sys.argv[1]
     dry_run = "--dry-run" in sys.argv
 
-    workspace = os.getenv("DASHENG_WORKSPACE", "/Volumes/PSSD/Projects/公众号文章")
+    workspace = os.getenv("DASHENG_WORKSPACE", "" + str(Path(__file__).resolve().parents[1]) + "")
 
     print(f"🚀 开始小红书分发流程")
     print(f"   Run ID: {run_id}")

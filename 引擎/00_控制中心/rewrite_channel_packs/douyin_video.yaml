@@ -1,0 +1,10 @@
+channel_pack:
+  channel_id: douyin_video
+  display_name: 抖音视频
+  content_type: video
+  word_range: 1800-2800
+  title_range: 12-18
+  hook_style: 3秒钩子
+  paragraph_style: 短段口播
+  structure: 强钩子-结论前置-6到8个口播段-收束CTA
+  cta: 评论区、关注、下集

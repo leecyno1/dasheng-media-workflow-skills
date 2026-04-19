@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dasheng-daily/material-pack.schema.json",
+  "title": "MaterialPack",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "meta",
+    "topic_id",
+    "title",
+    "materials"
+  ],
+  "properties": {
+    "meta": {
+      "$ref": "./base-meta.schema.json"
+    },
+    "topic_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "materials": {
+      "type": "object",
+      "properties": {
+        "images": {
+          "type": "array",
+          "items": {
+            "$ref": "./asset-item.schema.json"
+          },
+          "default": []
+        },
+        "videos": {
+          "type": "array",
+          "items": {
+            "$ref": "./asset-item.schema.json"
+          },
+          "default": []
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "default": []
+        },
+        "data_points": {
+          "type": "array",
+          "items": {
+            "$ref": "./asset-item.schema.json"
+          },
+          "default": []
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "$ref": "./evidence-item.schema.json"
+          },
+          "default": []
+        }
+      }
+    },
+    "claim_bindings": {
+      "type": "array",
+      "items": {
+        "$ref": "./claim.schema.json"
+      },
+      "default": []
+    },
+    "coverage_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  }
+}

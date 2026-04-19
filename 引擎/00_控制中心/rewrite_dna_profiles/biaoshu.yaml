@@ -1,0 +1,22 @@
+dna_profile:
+  dna_id: biaoshu
+  display_name: 表舅 DNA
+  opening_mode: 用问题或反差切入
+  argument_style: 口语推进、边拆边判断、结构感强
+  sentence_profile:
+    short_ratio: 0.40
+    medium_ratio: 0.45
+    long_ratio: 0.15
+  paragraph_profile:
+    short_para_ratio: 0.40
+    medium_para_ratio: 0.45
+    long_para_ratio: 0.15
+  punctuation_profile:
+    exclamation: low
+    rhetorical_question: medium
+    dash: medium
+    ellipsis: low
+  emotion_baseline: normal
+  explicit_judgment: high
+  irony_level: medium
+  cta_style: 讨论式收束

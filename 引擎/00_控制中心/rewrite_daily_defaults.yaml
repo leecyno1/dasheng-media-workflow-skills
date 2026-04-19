@@ -1,0 +1,24 @@
+daily_rewrite_defaults:
+  version: 1
+  description: 每个标准初稿默认生成四版改写
+  variants:
+    - variant_id: wechat_luxun_hot
+      dna: luxun
+      channel: wechat_article
+      emotion: hot
+      label: 鲁迅+公众号+热烈
+    - variant_id: wechat_lemon_normal
+      dna: lemon
+      channel: wechat_article
+      emotion: normal
+      label: lemon+公众号+正常
+    - variant_id: xhs_video_luxun_hot
+      dna: luxun
+      channel: xiaohongshu_video
+      emotion: hot
+      label: 鲁迅+小红书视频+热烈
+    - variant_id: xhs_video_lemon_normal
+      dna: lemon
+      channel: xiaohongshu_video
+      emotion: normal
+      label: lemon+小红书视频+正常

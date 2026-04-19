@@ -1,0 +1,22 @@
+dna_profile:
+  dna_id: hardcore-ji
+  display_name: 硬核姬 DNA
+  opening_mode: 冲突句开场
+  argument_style: 快节奏推进、强钩子、观点前置
+  sentence_profile:
+    short_ratio: 0.55
+    medium_ratio: 0.35
+    long_ratio: 0.10
+  paragraph_profile:
+    short_para_ratio: 0.55
+    medium_para_ratio: 0.35
+    long_para_ratio: 0.10
+  punctuation_profile:
+    exclamation: medium
+    rhetorical_question: medium
+    dash: low
+    ellipsis: low
+  emotion_baseline: hot
+  explicit_judgment: high
+  irony_level: medium
+  cta_style: 行动式收束

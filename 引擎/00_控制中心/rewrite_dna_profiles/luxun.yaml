@@ -1,0 +1,22 @@
+dna_profile:
+  dna_id: luxun
+  display_name: 鲁迅 DNA
+  opening_mode: 先刺破表象，再给冷硬判断
+  argument_style: 讽刺推进、层层剥皮、结论偏冷硬
+  sentence_profile:
+    short_ratio: 0.45
+    medium_ratio: 0.40
+    long_ratio: 0.15
+  paragraph_profile:
+    short_para_ratio: 0.50
+    medium_para_ratio: 0.35
+    long_para_ratio: 0.15
+  punctuation_profile:
+    exclamation: low
+    rhetorical_question: medium
+    dash: medium
+    ellipsis: low
+  emotion_baseline: cool
+  explicit_judgment: high
+  irony_level: high
+  cta_style: 冷收束

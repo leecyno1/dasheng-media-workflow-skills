@@ -1,0 +1,10 @@
+channel_pack:
+  channel_id: weibo_note
+  display_name: 微博文字笔记
+  content_type: note
+  word_range: 120-300
+  title_range: 0-18
+  hook_style: 热点钩子
+  paragraph_style: 短句
+  structure: 判断-一条依据-抛问题
+  cta: 转发、评论

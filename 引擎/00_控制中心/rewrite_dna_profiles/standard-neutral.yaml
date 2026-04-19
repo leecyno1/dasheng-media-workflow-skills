@@ -1,0 +1,22 @@
+dna_profile:
+  dna_id: standard-neutral
+  display_name: 标准中性 DNA
+  opening_mode: 直接提出问题与判断
+  argument_style: 事实先行、判断后置、平稳推进
+  sentence_profile:
+    short_ratio: 0.30
+    medium_ratio: 0.50
+    long_ratio: 0.20
+  paragraph_profile:
+    short_para_ratio: 0.25
+    medium_para_ratio: 0.55
+    long_para_ratio: 0.20
+  punctuation_profile:
+    exclamation: low
+    rhetorical_question: low
+    dash: low
+    ellipsis: low
+  emotion_baseline: normal
+  explicit_judgment: medium
+  irony_level: low
+  cta_style: 克制收束

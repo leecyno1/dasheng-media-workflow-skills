@@ -1,0 +1,48 @@
+[
+  {
+    "meta": {
+      "id": "test:brief:1",
+      "run_id": "test-material-20260327"
+    },
+    "topic_id": "reinflation-test",
+    "title": "表面在交易事件，真正的主线会不会其实是再通胀？",
+    "core_claim": "市场最终重估的不是单一事件，而是通胀和利率路径。",
+    "angle_candidates": [
+      "油价冲击",
+      "利率路径",
+      "ETF配置"
+    ],
+    "risk_notes": [
+      "仍需补长期通胀预期图。"
+    ],
+    "evidence_requirements": [
+      "补FRED通胀预期",
+      "补Tushare ETF数据"
+    ],
+    "recommended_media": [
+      "wechat_article"
+    ],
+    "scorecard": {
+      "article_value": 92,
+      "viral_potential": 78,
+      "composite": 85
+    },
+    "evidence_items": [
+      {
+        "title": "FRED T10YIE",
+        "url": "https://fred.stlouisfed.org/series/T10YIE",
+        "source": "FRED"
+      },
+      {
+        "title": "BLS CPI",
+        "url": "https://www.bls.gov/cpi/",
+        "source": "BLS"
+      },
+      {
+        "title": "BEA PCE",
+        "url": "https://www.bea.gov/",
+        "source": "BEA"
+      }
+    ]
+  }
+]

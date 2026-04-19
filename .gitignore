@@ -1,0 +1,14 @@
+# local secrets
+.tushare_token
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# generated charts
+figures/
+
+# data snapshots
+/data/tushare/
+configs/paths.local.yaml
