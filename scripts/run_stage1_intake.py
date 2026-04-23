@@ -32,7 +32,7 @@ PORT_8000_API = f"{PORT_8000}/api/v1"
 
 WECHAT_FETCH_ROUNDS = int(os.getenv("DASHENG_WECHAT_FETCH_ROUNDS", "3"))
 WECHAT_WAIT_SECONDS = int(os.getenv("DASHENG_WECHAT_WAIT_SECONDS", "8"))
-WECHAT_MIN_VALID_ITEMS = int(os.getenv("DASHENG_WECHAT_MIN_VALID_ITEMS", "8"))
+WECHAT_MIN_VALID_ITEMS = int(os.getenv("DASHENG_WECHAT_MIN_VALID_ITEMS", "5"))  # 降低阈值从8到5
 
 CURATED_CHANNELS = {
     "表舅是养基大户": "MP_WXS_3860767471",
@@ -246,6 +246,55 @@ def post_form_json(url: str, data: dict[str, Any]) -> Any:
     response = requests.post(url, data=data, timeout=30)
     response.raise_for_status()
     return response.json()
+
+
+def get_cache_dir() -> Path:
+    """获取缓存目录"""
+    cache_dir = ROOT / ".cache" / "intake"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    return cache_dir
+
+
+def save_wechat_cache(channels: dict[str, Any], latest_articles: dict[str, Any], curated_articles: dict[str, dict[str, Any]]) -> None:
+    """保存微信采集缓存"""
+    try:
+        cache_dir = get_cache_dir()
+        cache_data = {
+            "timestamp": iso(now()),
+            "channels": channels,
+            "latest_articles": latest_articles,
+            "curated_articles": curated_articles,
+        }
+        dump_json(cache_dir / "wechat_last_success.json", cache_data)
+    except Exception as e:
+        print(f"Warning: Failed to save wechat cache: {e}")
+
+
+def load_wechat_cache() -> tuple[dict[str, Any], dict[str, Any], dict[str, dict[str, Any]]] | None:
+    """加载微信采集缓存"""
+    try:
+        cache_dir = get_cache_dir()
+        cache_file = cache_dir / "wechat_last_success.json"
+        if not cache_file.exists():
+            return None
+
+        cache_data = json.loads(cache_file.read_text(encoding="utf-8"))
+
+        # 检查缓存时间，超过7天的缓存不使用
+        cache_time = datetime.fromisoformat(cache_data.get("timestamp", ""))
+        if (now() - cache_time).days > 7:
+            print("Warning: Wechat cache is older than 7 days, ignoring")
+            return None
+
+        return (
+            cache_data.get("channels", {"data": {"total": 0, "list": []}}),
+            cache_data.get("latest_articles", {"data": {"total": 0, "list": []}}),
+            cache_data.get("curated_articles", {}),
+        )
+    except Exception as e:
+        print(f"Warning: Failed to load wechat cache: {e}")
+        return None
+
 
 
 def ai_keyword_hits(*parts: str) -> int:
@@ -1161,6 +1210,8 @@ def fetch_wechat_task(raw_dir: Path) -> tuple[ChannelTaskResult, dict[str, Any],
             if not issues:
                 task.status = "ok"
                 task.issues = []
+                # 保存成功的缓存
+                save_wechat_cache(channels, latest_articles, curated_articles)
                 break
             task.status = "partial"
             task.issues = issues
@@ -1223,7 +1274,23 @@ def fetch_wechat_task(raw_dir: Path) -> tuple[ChannelTaskResult, dict[str, Any],
                 task.waited_seconds += WECHAT_WAIT_SECONDS
                 continue
     if task.status == "error" and not curated_articles:
-        curated_articles = {channel_name: {"data": {"list": []}, "error": "; ".join(task.issues)} for channel_name in CURATED_CHANNELS}
+        # 尝试使用缓存降级
+        cached = load_wechat_cache()
+        if cached:
+            channels, latest_articles, curated_articles = cached
+            task.items = list(latest_articles.get("data", {}).get("list", []) or [])
+            task.total = (
+                len(task.items)
+                + sum(len(payload.get("data", {}).get("list", [])) for payload in curated_articles.values())
+            )
+            task.status = "ok_from_cache"
+            task.issues = ["使用缓存数据（采集失败）"]
+            task.meta["cache_fallback"] = True
+        else:
+            curated_articles = {channel_name: {"data": {"list": []}, "error": "; ".join(task.issues)} for channel_name in CURATED_CHANNELS}
+    elif task.status == "ok":
+        # 成功采集，保存缓存
+        save_wechat_cache(channels, latest_articles, curated_articles)
     dump_json(raw_dir / "wemprss_public_channels.json", channels)
     dump_json(raw_dir / "wemprss_articles_latest.json", latest_articles)
     return task, channels, latest_articles, curated_articles
