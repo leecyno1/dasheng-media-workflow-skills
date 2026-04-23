@@ -322,6 +322,7 @@ rm -rf dasheng-media-workflow-skills
 - [快速开始指南](docs/guides/quick-start.md) - 5分钟快速上手
 - [阶段详解](docs/guides/stage-by-stage.md) - 了解7个工作流阶段
 - [架构设计](docs/technical/architecture.md) - 深入理解系统架构
+- [阶段接口规范](docs/STAGE_INTERFACES.md) - 各阶段输入输出接口定义
 - [贡献指南](CONTRIBUTING.md) - 参与项目开发
 
 ## 获取帮助
