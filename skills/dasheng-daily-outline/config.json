@@ -1,0 +1,31 @@
+{
+  "name": "dasheng-daily-outline",
+  "description": "归档入口：outline 已并入 brief/draft 协作链，不再作为正式执行入口",
+  "version": "2.0.0",
+  "trigger": {
+    "keyword": "下一步",
+    "previous_step": null
+  },
+  "deprecated": true,
+  "replacement": "dasheng-media-sop",
+  "chat_id": "<REPLACE_ME>",
+  "outline": {
+    "style": "standard_neutral",
+    "structure": [
+      "hook",
+      "context",
+      "analysis",
+      "insight",
+      "call_to_action"
+    ],
+    "max_sections": 8
+  },
+  "output": {
+    "type": "feishu_doc",
+    "doc_name": "大纲"
+  },
+  "feishu": {
+    "folder_naming": "YYYY-MM-DD",
+    "auto_create_folder": true
+  }
+}
