@@ -30,7 +30,7 @@ description: Use when the workflow is in the 第04环节 material stage and a co
 
 总控入口始终是：
 
-- `/Volumes/PSSD/Projects/公众号文章/skills/dasheng-media-sop/SKILL.md`
+- `../dasheng-media-sop/SKILL.md`
 
 ## 标准职责
 
@@ -61,11 +61,11 @@ description: Use when the workflow is in the 第04环节 material stage and a co
 
 ## 执行入口
 
-- 推荐：`python3 /Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py --draft-manifest <draft_manifest.json> --rebuild-material-plan`
-- 并行：`python3 /Volumes/PSSD/Projects/公众号文章/scripts/material_parallel_launcher.py --draft-manifest <draft_manifest.json>`
-- 复跑：`python3 /Volumes/PSSD/Projects/公众号文章/scripts/material_parallel_launcher.py --material-manifest <material_manifest.json> --topics <topic-1 topic-2>`
-- 如需强制重建素材规划：`python3 /Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py --draft-manifest <draft_manifest.json> --rebuild-material-plan`
-- 主链自检：`python3 /Volumes/PSSD/Projects/公众号文章/scripts/workflow_doctor.py --run-id <run_id>`
+- 推荐：`python3 ../../scripts/material_execute_pack.py --draft-manifest <draft_manifest.json> --rebuild-material-plan`
+- 并行：`python3 ../../scripts/material_parallel_launcher.py --draft-manifest <draft_manifest.json>`
+- 复跑：`python3 ../../scripts/material_parallel_launcher.py --material-manifest <material_manifest.json> --topics <topic-1 topic-2>`
+- 如需强制重建素材规划：`python3 ../../scripts/material_execute_pack.py --draft-manifest <draft_manifest.json> --rebuild-material-plan`
+- 主链自检：`python3 ../../scripts/workflow_doctor.py --run-id <run_id>`
 
 ## 注意
 

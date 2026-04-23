@@ -27,13 +27,13 @@ description: Use when the workflow enters Stage 2 Brief and the system must gene
 
 默认来源目录：
 
-- `/Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/{run_id}/`
+- `{DASHENG_ROOT}/产物/01_内容采集/{run_id}/`
 
 ## canonical 输出
 
 输出目录：
 
-- `/Volumes/PSSD/Projects/公众号文章/产物/02_内容聚合及选题分析/{run_id}/`
+- `{DASHENG_ROOT}/产物/02_内容聚合及选题分析/{run_id}/`
 
 标准产物：
 
@@ -60,38 +60,37 @@ description: Use when the workflow enters Stage 2 Brief and the system must gene
 ### 指定 run_id，按 canonical intake 衔接
 
 ```bash
-node /Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-phase2/index.js \
-  --run-id <run_id>
+node ../dasheng-daily-phase2/index.js --run-id <run_id>
 ```
 
 ### 指定 intake 文件
 
 ```bash
-node /Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-phase2/index.js \
-  /Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/<run_id>/raw/intake_records.json
+node ../dasheng-daily-phase2/index.js \
+  {DASHENG_ROOT}/产物/01_内容采集/<run_id>/raw/intake_records.json
 ```
 
 ### 带手动指定题
 
 ```bash
-node /Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-phase2/index.js \
-  /Volumes/PSSD/Projects/公众号文章/产物/01_内容采集/<run_id>/raw/intake_records.json \
+node ../dasheng-daily-phase2/index.js \
+  {DASHENG_ROOT}/产物/01_内容采集/<run_id>/raw/intake_records.json \
   --manual-topic "你的人工题目"
 ```
 
 ## 参考资料
 
-- Prompt 规则：`/Volumes/PSSD/Projects/公众号文章/引擎/03_全链路SOP工作流/02_Brief_AI生成规则.md`
-- AI 选题指南：`/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-phase2/references/ai-generation-guide.md`
-- 选题评估：`/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-phase2/references/topic-evaluation.md`
-- 写作框架：`/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-phase2/references/frameworks.md`
-- 内容增强：`/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-phase2/references/content-enhance.md`
+- Prompt 规则：`../../引擎/03_全链路SOP工作流/02_Brief_AI生成规则.md`
+- AI 选题指南：`references/ai-generation-guide.md`
+- 选题评估：`references/topic-evaluation.md`
+- 写作框架：`references/frameworks.md`
+- 内容增强：`references/content-enhance.md`
 
 ## 实现说明
 
-- 主脚本：`/Volumes/PSSD/Projects/公众号文章/scripts/phase2_rebuilder.py`
-- 主链入口：`python3 /Volumes/PSSD/Projects/公众号文章/scripts/run_mainline_stage.py brief --run-id <run_id>`
-- Schema：`/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-phase2/brief_card_schema.json`
+- 主脚本：`../../scripts/phase2_rebuilder.py`
+- 主链入口：`python3 ../../scripts/run_mainline_stage.py brief --run-id <run_id>`
+- Schema：`brief_card_schema.json`
 - 正式阶段状态：以 `brief_manifest.json` 为准
 
 ## 迁移说明

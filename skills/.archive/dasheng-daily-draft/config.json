@@ -1,0 +1,27 @@
+{
+  "name": "dasheng-daily-draft",
+  "description": "归档入口：draft 阶段请经由 dasheng-media-sop 主链调度，本配置仅保留历史兼容说明",
+  "version": "2.0.0",
+  "trigger": {
+    "keyword": "下一步",
+    "previous_step": null
+  },
+  "deprecated": true,
+  "replacement": "dasheng-media-sop",
+  "chat_id": "<REPLACE_ME>",
+  "draft": {
+    "style": "standard_neutral",
+    "word_count_target": 5500,
+    "word_count_min": 4000,
+    "word_count_max": 8000,
+    "tone": "neutral_analytical"
+  },
+  "output": {
+    "type": "feishu_doc",
+    "doc_name": "初稿"
+  },
+  "feishu": {
+    "folder_naming": "YYYY-MM-DD",
+    "auto_create_folder": true
+  }
+}

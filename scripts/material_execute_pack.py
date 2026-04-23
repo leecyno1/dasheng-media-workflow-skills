@@ -25,6 +25,9 @@ import requests
 
 os.environ.setdefault("MPLBACKEND", "Agg")
 
+WORLDMONITOR_ROOT = Path(os.getenv("DASHENG_WORLDMONITOR_ROOT", ""))
+FINANCE_MOTION_ROOT = Path(os.getenv("DASHENG_FINANCE_MOTION_ROOT", ""))
+
 from canonical_workflow import (
     WorkflowContractError,
     canonical_stage_dir,
@@ -2913,8 +2916,8 @@ def execute_gemini_image_generation(topic: TopicContext, batch_tasks: list[dict[
 
 
 def execute_minimax_batch_generation(topic: TopicContext, batch_file: Path, batch_tasks: list[dict[str, Any]]) -> dict[str, Any]:
-    skill_main = Path("/Users/lichengyin/.codex/skills/baoyu-imagine/scripts/main.ts")
-    bun_bin = Path("/Users/lichengyin/.bun/bin/bun")
+    skill_main = Path(os.environ.get("BAOYU_IMAGINE_SCRIPT", "~/.codex/skills/baoyu-imagine/scripts/main.ts")).expanduser()
+    bun_bin = Path(os.environ.get("BUN_BINARY", "~/.bun/bin/bun")).expanduser()
     output_dir = topic.topic_root / "images" / "generated" / "minimax"
     output_dir.mkdir(parents=True, exist_ok=True)
     results_file = output_dir / "batch_results.json"
@@ -3566,9 +3569,9 @@ def build_layer5_topic_input(topic: TopicContext) -> dict[str, Any]:
             "layer5_inputs_json": str(layer5_topic_inputs_file),
         },
         "worldmonitor": {
-            "project": layer5_plan.get("worldmonitor_project", "/Volumes/PSSD/Projects/worldmonitor"),
-            "data_dir": layer5_plan.get("worldmonitor_data_dir", "/Volumes/PSSD/Projects/worldmonitor/data"),
-            "public_dir": layer5_plan.get("worldmonitor_public_dir", "/Volumes/PSSD/Projects/worldmonitor/public"),
+            "project": layer5_plan.get("worldmonitor_project", str(WORLDMONITOR_ROOT)),
+            "data_dir": layer5_plan.get("worldmonitor_data_dir", str(WORLDMONITOR_ROOT / "data")),
+            "public_dir": layer5_plan.get("worldmonitor_public_dir", str(WORLDMONITOR_ROOT / "public")),
             "entry": layer5_plan.get("worldmonitor_entry", "index.html"),
             "proxy_port": layer5_plan.get("proxy_port", 8787),
         },

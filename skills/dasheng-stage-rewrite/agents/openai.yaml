@@ -1,5 +1,0 @@
-interface:
-  display_name: "四版改写"
-  short_description: "按终稿框架生成每题四版改写。"
-  default_prompt: "Use $dasheng-stage-rewrite to generate per-topic 4 rewrite variants with strict word-count checks and structure inheritance."
-

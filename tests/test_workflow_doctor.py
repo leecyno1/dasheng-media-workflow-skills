@@ -1,4 +1,5 @@
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -6,7 +7,13 @@ import unittest
 from pathlib import Path
 
 
-ROOT = Path("/Volumes/PSSD/Projects/公众号文章")
+# 支持环境变量覆盖测试根目录
+_ROOT_ENV = os.environ.get("DASHENG_ROOT")
+if _ROOT_ENV:
+    ROOT = Path(_ROOT_ENV)
+else:
+    # 使用脚本所在目录作为默认值
+    ROOT = Path(__file__).parent.parent.resolve()
 PYTHON = sys.executable
 
 

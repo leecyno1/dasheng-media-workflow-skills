@@ -24,10 +24,17 @@ from canonical_workflow import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-FINANCE_PROJECT = Path("/Volumes/PSSD/Projects/finance-motion-8787")
+FINANCE_PROJECT = Path(os.getenv("DASHENG_FINANCE_MOTION_ROOT", str(ROOT.parent / "finance-motion-8787")))
 FINANCE_SCENES = FINANCE_PROJECT / "dashboard/scenes.json"
 FINANCE_EXPORT_SCRIPT = FINANCE_PROJECT / "dashboard/scripts/export-scene-videos.mjs"
 EXPORT_TIMEOUT_SECONDS = int(os.getenv("DASHENG_PUBLISH_EXPORT_TIMEOUT_SECONDS", "120"))
+
+OPENCLAW_INSTALLER_ROOT = Path(os.getenv("DASHENG_OPENCLAW_INSTALLER_ROOT", str(ROOT.parent / "OpenClawInstaller")))
+
+
+def _skill(skill_name: str) -> str:
+    """解析OpenClaw skill路径，支持环境变量覆盖"""
+    return str(OPENCLAW_INSTALLER_ROOT / f"skills/default/{skill_name}/SKILL.md")
 
 
 def read_json(path: Path) -> Any:
@@ -184,7 +191,7 @@ CHANNEL_EXECUTION_RULES = {
     },
     "xiaohongshu_video": {
         "executor_skill": "xiaohongshu-auto",
-        "source_skill_path": "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/xiaohongshu-auto/SKILL.md",
+        "source_skill_path": str(OPENCLAW_INSTALLER_ROOT / "skills/default/xiaohongshu-auto/SKILL.md"),
         "automation_level": "automated",
         "mode": "auto_publish",
         "requires_video": True,
@@ -192,7 +199,7 @@ CHANNEL_EXECUTION_RULES = {
     },
     "xiaohongshu_image": {
         "executor_skill": "xiaohongshu-auto",
-        "source_skill_path": "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/xiaohongshu-auto/SKILL.md",
+        "source_skill_path": str(OPENCLAW_INSTALLER_ROOT / "skills/default/xiaohongshu-auto/SKILL.md"),
         "automation_level": "automated",
         "mode": "auto_publish",
         "requires_video": False,
@@ -200,7 +207,7 @@ CHANNEL_EXECUTION_RULES = {
     },
     "douyin_video": {
         "executor_skill": "douyin-upload-skill",
-        "source_skill_path": "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/douyin-upload-skill/SKILL.md",
+        "source_skill_path": str(OPENCLAW_INSTALLER_ROOT / "skills/default/douyin-upload-skill/SKILL.md"),
         "automation_level": "automated",
         "mode": "official_api_or_fallback",
         "requires_video": True,
@@ -242,7 +249,7 @@ CHANNEL_EXECUTION_RULES = {
         "executor_skill": None,
         "source_skill_path": None,
         "supporting_skill": "bilibili-youtube-watcher",
-        "supporting_skill_path": "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/bilibili-youtube-watcher/SKILL.md",
+        "supporting_skill_path": str(OPENCLAW_INSTALLER_ROOT / "skills/default/bilibili-youtube-watcher/SKILL.md"),
         "automation_level": "manual_only",
         "mode": "export_only",
         "requires_video": True,
@@ -250,7 +257,7 @@ CHANNEL_EXECUTION_RULES = {
     },
     "zhihu_post": {
         "executor_skill": "zhihu-post",
-        "source_skill_path": "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/zhihu-post/SKILL.md",
+        "source_skill_path": str(OPENCLAW_INSTALLER_ROOT / "skills/default/zhihu-post/SKILL.md"),
         "automation_level": "semi_automated",
         "mode": "browser_confirm",
         "requires_video": False,
@@ -1144,7 +1151,7 @@ def build_executor_invocation(pack: dict[str, Any], topic_name: str) -> dict[str
     if channel == "douyin_video":
         command = [
             "node",
-            "/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/douyin-upload-skill/scripts/douyin.js",
+            str(OPENCLAW_INSTALLER_ROOT / "skills/default/douyin-upload-skill/scripts/douyin.js"),
             "publish",
         ]
         if video_file:

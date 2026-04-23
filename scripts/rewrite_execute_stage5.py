@@ -37,8 +37,9 @@ DEFAULT_VERSIONS = [
 ]
 
 class RewriteExecutor:
-    def __init__(self, draft_manifest_file: Path, output_dir: Path, run_id: str, versions: list[str]):
+    def __init__(self, draft_manifest_file: Path, output_dir: Path, run_id: str, versions: list[str], timeout: int = 120):
         self.client = anthropic.Anthropic()
+        self.timeout = timeout
         self.generator = VersionGenerator()
         self.draft_manifest_file = draft_manifest_file
         self.output_dir = output_dir
@@ -95,12 +96,14 @@ class RewriteExecutor:
 
         return prompt
 
-    def call_claude(self, prompt: str) -> str:
+    def call_claude(self, prompt: str, timeout: int = None) -> str:
         """调用Claude API"""
         # 使用system参数明确角色，避免身份冲突
+        effective_timeout = timeout if timeout is not None else self.timeout
         message = self.client.messages.create(
             model="claude-opus-4-6",
             max_tokens=4096,
+            timeout=effective_timeout,
             system="你是一位专业的内容改写专家，擅长将文章改写为不同平台和语气的版本。请严格按照用户提供的改写规则执行，直接输出改写后的完整文稿，不要包含任何解释或元评论。",
             messages=[
                 {"role": "user", "content": prompt}

@@ -102,7 +102,7 @@ def resolve_chat_provider(
     default_model: str = "gpt-4.1-mini",
     default_timeout_seconds: str = "90",
     default_base_url: str = "",
-) -> dict[str, str] | None:
+) -> dict[str, str]:
     extra_candidates: list[Path] = []
     if custom_env_var:
         custom_env = os.environ.get(custom_env_var, "").strip()
@@ -112,7 +112,7 @@ def resolve_chat_provider(
     base_url = normalize_chat_base_url(first_non_empty(env_values, base_url_keys, default_base_url))
     api_key = first_non_empty(env_values, api_key_keys)
     if not base_url or not api_key:
-        return None
+        return {"_unavailable": True, "status": "api_key_missing"}
     return {
         "base_url": base_url,
         "api_key": api_key,

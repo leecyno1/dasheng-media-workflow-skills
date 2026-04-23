@@ -102,7 +102,7 @@ description: Use when running the canonical Dasheng intake stage for the current
 - **每个渠道都要单独产出 Top10；不足 10 条如实展示**
 - **`AI热点` 必须单列产出 Top10，并进入 `brief_input.json.ai_hot_candidates`**
 - **公众号属于慢源，抓不全时必须等待后补抓，并记录轮次与等待时长**
-- **正式执行脚本是**：`/Volumes/PSSD/Projects/公众号文章/scripts/run_stage1_intake.py`
+- **正式执行脚本是**：`../../scripts/run_stage1_intake.py`
 
 ---
 

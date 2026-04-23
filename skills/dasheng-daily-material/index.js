@@ -1078,13 +1078,16 @@ function buildLayer5Plan(topicType, chartAnchors, brief) {
   const coreClaim = brief?.core_claim || '';
   const topicId = brief?.topic_id || '';
 
+  // 支持环境变量覆盖 worldmonitor 路径（可选依赖，不设置时保持inactive）
+  const worldmonitorRoot = process.env.DASHENG_WORLDMONITOR_ROOT || '';
+
   if (topicType === 'finance_macro') {
     return {
       template_id: 'market_story',
       template_name: '市场叙事面板 (Market Story Panel)',
-      worldmonitor_project: '/Volumes/PSSD/Projects/worldmonitor',
-      worldmonitor_data_dir: '/Volumes/PSSD/Projects/worldmonitor/data',
-      worldmonitor_public_dir: '/Volumes/PSSD/Projects/worldmonitor/public',
+      worldmonitor_project: worldmonitorRoot,
+      worldmonitor_data_dir: `${worldmonitorRoot}/data`,
+      worldmonitor_public_dir: `${worldmonitorRoot}/public`,
       worldmonitor_entry: 'index.html',
       proxy_port: 8787,
       current_status: 'inactive',
@@ -1106,13 +1109,13 @@ function buildLayer5Plan(topicType, chartAnchors, brief) {
       layout_hint: 'market_panel_left + chart_gallery_right + metrics_strip_bottom'
     };
   }
-  if (topicType === 'geopolitics') {
+    if (topicType === 'geopolitics') {
     return {
       template_id: 'geo_timeline_map',
       template_name: '地缘时政时间线地图 (Geo Timeline Map)',
-      worldmonitor_project: '/Volumes/PSSD/Projects/worldmonitor',
-      worldmonitor_data_dir: '/Volumes/PSSD/Projects/worldmonitor/data',
-      worldmonitor_public_dir: '/Volumes/PSSD/Projects/worldmonitor/public',
+      worldmonitor_project: worldmonitorRoot,
+      worldmonitor_data_dir: `${worldmonitorRoot}/data`,
+      worldmonitor_public_dir: `${worldmonitorRoot}/public`,
       worldmonitor_entry: 'index.html',
       proxy_port: 8787,
       current_status: 'inactive',
@@ -1137,9 +1140,9 @@ function buildLayer5Plan(topicType, chartAnchors, brief) {
   return {
     template_id: 'story_page',
     template_name: '通用故事面板 (Story Page)',
-    worldmonitor_project: '/Volumes/PSSD/Projects/worldmonitor',
-    worldmonitor_data_dir: '/Volumes/PSSD/Projects/worldmonitor/data',
-    worldmonitor_public_dir: '/Volumes/PSSD/Projects/worldmonitor/public',
+    worldmonitor_project: worldmonitorRoot,
+    worldmonitor_data_dir: `${worldmonitorRoot}/data`,
+    worldmonitor_public_dir: `${worldmonitorRoot}/public`,
     worldmonitor_entry: 'index.html',
     proxy_port: 8787,
     current_status: 'inactive',
@@ -1506,8 +1509,8 @@ function renderTopicRunbook(plan) {
     '',
     '## 执行命令',
     '',
-    `- 推荐主链命令：\`/Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.sh --draft-manifest ${draftManifestForRunbook()} --topic-dir ${plan.topic_slug} --steps charts,image_search,video_search,ai_prep\``,
-    `- 正式命令：\`python3 /Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py --draft-manifest <draft_manifest.json>\``,
+    `- 推荐主链命令：\`\${DASHENG_ROOT:-.}/scripts/material_execute_pack.sh --draft-manifest <draft_manifest.json> --topic-dir ${plan.topic_slug} --steps charts,image_search,video_search,ai_prep\``,
+    `- 正式命令：\`python3 \${DASHENG_ROOT:-.}/scripts/material_execute_pack.py --draft-manifest <draft_manifest.json>\``,
     ''
   ].join('\n');
 }
@@ -1723,7 +1726,7 @@ function renderMaterialReportMarkdown(runId, materialPacks, packRoot) {
     '',
     '- 旧版 `material` 仅能输出占位字段，已升级为“结构化资产包生成器”。',
     '- 这一轮先把下载与生成的执行计划全部落盘，后续可直接接 `media-downloader`、`baoyu`、`remotion`、`worldmonitor` 执行。',
-    '- `8787` 对应的交互交付层确认应复用 `/Volumes/PSSD/Projects/worldmonitor`，但当前本机服务未启动，因此本轮只固化接线方案，不强行跑服务。',
+    '- `8787` 对应的交互交付层确认应复用 `worldmonitor` 项目（通过 DASHENG_WORLDMONITOR_ROOT 环境变量配置），但当前本机服务未启动，因此本轮只固化接线方案，不强行跑服务。',
     '- 视频筛选改为“新闻直播/访谈可保留 + 口播自媒体拦截 + 截图拼视频审计”，并要求输出质量审计报告。',
     '',
     '## 建议的下游动作',

@@ -75,7 +75,7 @@ fi
 # 创建必要目录
 echo ""
 echo "创建工作目录..."
-mkdir -p 素材 项目 产物
+mkdir -p "$BASE_DIR/素材" "$BASE_DIR/项目" "$BASE_DIR/产物"
 
 # 运行验证
 echo ""

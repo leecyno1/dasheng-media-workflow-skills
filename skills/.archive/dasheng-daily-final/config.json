@@ -1,0 +1,35 @@
+{
+  "name": "dasheng-daily-final",
+  "description": "归档入口：final 已并入主链 gate + rewrite/publish，不再作为正式执行入口",
+  "version": "2.0.0",
+  "trigger": {
+    "keyword": "下一步",
+    "previous_step": null
+  },
+  "deprecated": true,
+  "replacement": "dasheng-media-sop",
+  "chat_id": "<REPLACE_ME>",
+  "final": {
+    "review_checklist": [
+      "逻辑清晰",
+      "数据准确",
+      "表达流畅",
+      "标题吸引"
+    ],
+    "title_style": "lemon_dna",
+    "enhancement": true,
+    "media_formats": [
+      "article",
+      "podcast",
+      "video"
+    ]
+  },
+  "output": {
+    "type": "feishu_doc",
+    "doc_name": "强化版"
+  },
+  "feishu": {
+    "folder_naming": "YYYY-MM-DD",
+    "auto_create_folder": true
+  }
+}

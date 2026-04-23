@@ -4,8 +4,9 @@ const fs = require('fs');
 const path = require('path');
 const { homedir } = require('os');
 
-const SDK_PATH = '/Users/lichengyin/.npm-global/lib/node_modules/openclaw/dist/extensions/feishu/node_modules/@larksuiteoapi/node-sdk';
-const DEFAULT_CONFIG_FILE = '/Users/lichengyin/clawd/configs/feishu_api.conf';
+// 支持环境变量覆盖路径配置
+const SDK_PATH = process.env.OPENCLAW_FEISHU_SDK_PATH || path.join(homedir(), '.npm-global/lib/node_modules/openclaw/dist/extensions/feishu/node_modules/@larksuiteoapi/node-sdk');
+const DEFAULT_CONFIG_FILE = process.env.DASHENG_FEISHU_CONFIG || path.join(homedir(), 'clawd/configs/feishu_api.conf');
 
 const lark = require(SDK_PATH);
 

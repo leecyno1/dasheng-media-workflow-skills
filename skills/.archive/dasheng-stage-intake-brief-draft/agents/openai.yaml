@@ -1,0 +1,5 @@
+interface:
+  display_name: "上游生产"
+  short_description: "执行 intake、brief、draft 三阶段。"
+  default_prompt: "Use $dasheng-stage-intake-brief-draft to run intake->brief->draft and output editor-ready briefs and standard drafts."
+

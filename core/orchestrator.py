@@ -41,6 +41,8 @@ class StageResult:
     outputs: Dict = field(default_factory=dict)
     errors: List[str] = field(default_factory=list)
     quality_score: Optional[float] = None
+    retry_count: int = 0
+    skipped: bool = False
 
 
 @dataclass
@@ -57,13 +59,15 @@ class RunContext:
 class Orchestrator:
     """流程编排器"""
 
-    def __init__(self, config_path: str = None):
+    def __init__(self, config_path: str = None, skip_on_failure: bool = True, max_retries: int = 2):
         if config_path is None:
             config_path = str(Path(__file__).parent.parent / "dna" / "dna_config.yaml")
 
         self.config = self._load_config(config_path)
         self.dna_engine = DNAEngine()
         self.stages = self._init_stages()
+        self.skip_on_failure = skip_on_failure
+        self.max_retries = max_retries
 
     def _load_config(self, config_path: str) -> Dict:
         """加载配置"""

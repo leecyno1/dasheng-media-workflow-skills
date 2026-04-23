@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 
-const WORKSPACE = process.env.OPENCLAW_WORKSPACE || '/Volumes/PSSD/Projects/公众号文章';
+const WORKSPACE = process.env.DASHENG_ROOT || path.join(__dirname, '../..');
 const PHASE2_SCRIPT = path.join(WORKSPACE, 'scripts', 'phase2_rebuilder.py');
 const INTAKE_ROOT = path.join(WORKSPACE, '产物', '01_内容采集');
 const BRIEF_ROOT = path.join(WORKSPACE, '产物', '02_内容聚合及选题分析');

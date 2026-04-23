@@ -1,7 +1,17 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="/Volumes/PSSD/Projects/公众号文章"
+# 自动检测项目根目录
+_CURRENT_SCRIPT="${BASH_SOURCE[0]}"
+if [ -L "$_CURRENT_SCRIPT" ]; then
+  _CURRENT_SCRIPT=$(readlink -f "$_CURRENT_SCRIPT")
+fi
+_ROOT=$(cd "$(dirname "$_CURRENT_SCRIPT")/.." && pwd)
+
+# 支持环境变量覆盖
+ROOT="${DASHENG_ROOT:-$_ROOT}"
+export DASHENG_ROOT="$ROOT"
+
 PYTHON_SCRIPT="$ROOT/scripts/material_execute_pack.py"
 
 print_wrapper_help() {
@@ -15,7 +25,7 @@ material_execute_pack.sh 包装入口
   - 本包装入口已完全收口到 canonical `draft_manifest.json`。
   - `--pack-root`、`--latest-pack`、`--single` 等旧参数已停用。
   - 如需更复杂的主链执行，请改用：
-      python3 /Volumes/PSSD/Projects/公众号文章/scripts/run_mainline_stage.py material --run-id <run_id>
+      python3 $DASHENG_ROOT/scripts/run_mainline_stage.py material --run-id <run_id>
 HELP
 }
 
