@@ -1,10 +1,20 @@
 #!/bin/bash
 # Material 阶段视频素材优化补丁
-# 应用到: /Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py
 
 set -e
 
-SCRIPT_PATH="/Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py"
+# 自动检测项目根目录
+_CURRENT_SCRIPT="${BASH_SOURCE[0]}"
+if [ -L "$_CURRENT_SCRIPT" ]; then
+  _CURRENT_SCRIPT=$(readlink -f "$_CURRENT_SCRIPT")
+fi
+_ROOT=$(cd "$(dirname "$_CURRENT_SCRIPT")/.." && pwd)
+
+# 支持环境变量覆盖
+ROOT="${DASHENG_ROOT:-$_ROOT}"
+export DASHENG_ROOT="$ROOT"
+
+SCRIPT_PATH="${ROOT}/scripts/material_execute_pack.py"
 
 echo "🔧 应用 Material 视频素材优化补丁..."
 echo ""
@@ -45,6 +55,6 @@ echo "🔄 如需回滚，运行:"
 echo "   cp $BACKUP_PATH $SCRIPT_PATH"
 echo ""
 echo "🧪 测试命令:"
-echo "   cd /Volumes/PSSD/Projects/公众号文章"
-echo "   python3 scripts/material_execute_pack.py --pack-root 产物/04_Material/test --steps video_search"
+echo "   cd ${ROOT}"
+echo "   python3 scripts/material_execute_pack.py --draft-manifest <manifest.json>"
 echo ""

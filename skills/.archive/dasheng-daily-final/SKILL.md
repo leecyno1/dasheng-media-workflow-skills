@@ -31,7 +31,7 @@ description: Use only when replaying or debugging the legacy Dasheng finalizatio
 
 总控入口：
 
-- `/Volumes/PSSD/Projects/公众号文章/skills/dasheng-media-sop/SKILL.md`
+- `../dasheng-media-sop/SKILL.md`
 
 ## 何时仍可使用
 

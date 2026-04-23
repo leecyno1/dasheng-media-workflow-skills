@@ -20,8 +20,8 @@ description: Use only when replaying a legacy Dasheng draft step; the standard D
 
 ## 当前标准入口
 
-- 总控入口：`/Volumes/PSSD/Projects/公众号文章/skills/dasheng-media-sop/SKILL.md`
-- 阶段接口：`/Volumes/PSSD/Projects/公众号文章/引擎/03_全链路SOP工作流/STAGE_INTERFACES.md`
+- 总控入口：`../dasheng-media-sop/SKILL.md`
+- 阶段接口：`../../引擎/03_全链路SOP工作流/STAGE_INTERFACES.md`
 
 ## 当前标准 Draft 规则
 

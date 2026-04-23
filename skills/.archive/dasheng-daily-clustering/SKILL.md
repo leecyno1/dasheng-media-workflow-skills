@@ -22,8 +22,8 @@ description: Use only when an old Dasheng pipeline still explicitly calls the le
 
 ## 当前标准入口
 
-- 总控入口：`/Volumes/PSSD/Projects/公众号文章/skills/dasheng-media-sop/SKILL.md`
-- Stage 2 正式入口：`/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-phase2/SKILL.md`
+- 总控入口：`../dasheng-media-sop/SKILL.md`
+- Stage 2 正式入口：`../dasheng-daily-phase2/SKILL.md`
 
 ## 使用规则
 
@@ -45,6 +45,6 @@ description: Use only when an old Dasheng pipeline still explicitly calls the le
 本 skill 不再单独定义新的阶段语义。
 阶段定义以：
 
-- `/Volumes/PSSD/Projects/公众号文章/引擎/03_全链路SOP工作流/STAGE_INTERFACES.md`
+- `../../引擎/03_全链路SOP工作流/STAGE_INTERFACES.md`
 
 为准。

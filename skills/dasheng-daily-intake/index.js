@@ -3,7 +3,7 @@
 const path = require('path');
 const { spawnSync } = require('child_process');
 
-const WORKSPACE = process.env.OPENCLAW_WORKSPACE || '/Volumes/PSSD/Projects/公众号文章';
+const WORKSPACE = process.env.DASHENG_ROOT || path.join(__dirname, '../..');
 const SCRIPT = path.join(WORKSPACE, 'scripts', 'run_stage1_intake.py');
 
 function runIntake() {

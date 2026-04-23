@@ -5,19 +5,37 @@
 
 set -e
 
+# 自动检测项目根目录
+_CURRENT_SCRIPT="${BASH_SOURCE[0]}"
+if [ -L "$_CURRENT_SCRIPT" ]; then
+  _CURRENT_SCRIPT=$(readlink -f "$_CURRENT_SCRIPT")
+fi
+_ROOT=$(cd "$(dirname "$_CURRENT_SCRIPT")/.." && pwd)
+
+# 支持环境变量覆盖
+ROOT="${DASHENG_ROOT:-$_ROOT}"
+export DASHENG_ROOT="$ROOT"
+
 echo "🎬 开始渲染中国十五五规划视频..."
 echo ""
 
 # 配置
 COMPOSITION_ID="ChinaPlanXhs"
-OUTPUT_DIR="/Volumes/PSSD/Projects/公众号文章/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative"
+OUTPUT_DIR="${ROOT}/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative"
 OUTPUT_FILE="${OUTPUT_DIR}/china-plan-xhs-claude-purple.mp4"
 
 # 创建输出目录
 mkdir -p "${OUTPUT_DIR}"
 
-# 进入 Remotion 项目目录
-cd /Users/lichengyin/clawd/remotion-video-starter
+# 进入 Remotion 项目目录（支持环境变量覆盖）
+REMOTION_PROJECT="${DASHENG_REMOTION_PROJECT:-${HOME}/clawd/remotion-video-starter}"
+if [ ! -d "$REMOTION_PROJECT" ]; then
+  echo "⚠️  Remotion 项目目录不存在: $REMOTION_PROJECT"
+  echo "请设置 DASHENG_REMOTION_PROJECT 环境变量指向 Remotion 项目"
+  echo "跳过视频渲染..."
+  exit 0
+fi
+cd "$REMOTION_PROJECT"
 
 echo "📹 渲染配置："
 echo "  - 组合：${COMPOSITION_ID}"

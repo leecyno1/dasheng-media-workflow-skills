@@ -134,7 +134,8 @@ class SkillInstaller:
         """执行完整安装"""
         if target_dir is None:
             if self.target_platform == "lobster":
-                target_dir = "/Volumes/PSSD/Projects/lobster-world/skills/dasheng-media-platform"
+                # 支持环境变量覆盖 lobster 安装路径
+                target_dir = os.environ.get("DASHENG_LOBSTER_TARGET", "./dasheng-media-platform")
             else:
                 target_dir = "./dasheng-media-platform"
 
@@ -212,7 +213,8 @@ if __name__ == "__main__":
         sys.exit(1)
 
     action = sys.argv[1]
-    skill_path = "/Volumes/PSSD/Projects/公众号文章"
+    # 支持环境变量覆盖
+    skill_path = os.environ.get("DASHENG_SKILL_PATH", str(Path(__file__).parent.parent.resolve()))
 
     installer = SkillInstaller(skill_path, target_platform="lobster")
 

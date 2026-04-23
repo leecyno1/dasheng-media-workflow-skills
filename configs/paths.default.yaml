@@ -13,6 +13,8 @@ work_dirs:
 external:
   feishu_config: "${FEISHU_CONFIG_PATH:-~/.config/feishu/api.conf}"
   openclaw_skills: "${OPENCLAW_SKILLS_DIR:-~/.openclaw/skills}"
+  worldmonitor_root: "${DASHENG_WORLDMONITOR_ROOT:-}"  # 可选：Layer 5 交互页面项目路径
+  openclaw_installer: "${DASHENG_OPENCLAW_INSTALLER:-~/.openclaw/OpenClawInstaller}"
 
 # 数据源端点
 data_sources:

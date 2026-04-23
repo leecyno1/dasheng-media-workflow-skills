@@ -176,7 +176,7 @@
   - `draft_manifest.json`
   - `03_ReasoningSheet_<topic>.json`
 - 标准执行：
-  - `python3 /Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py --draft-manifest <draft_manifest.json>`
+  - `python3 {DASHENG_ROOT}/scripts/material_execute_pack.py --draft-manifest <draft_manifest.json>`
 - 正式产物：
   - `04_MaterialPack.md`
   - `04_Material_报告.md`
@@ -257,8 +257,8 @@
   - 公众号：`baoyu-post-to-wechat`、`wechat-multi-publisher`、`md2wechat`
   - 微博：`weibo-manager`、`baoyu-post-to-weibo`
   - X：`baoyu-post-to-x`
-  - 小红书：`xiaohongshu-auto`（来源：`/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/xiaohongshu-auto/SKILL.md`）
-  - 抖音：`douyin-upload-skill`（来源：`/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/douyin-upload-skill/SKILL.md`）
+  - 小红书：`xiaohongshu-auto`（OpenClaw）
+  - 抖音：`douyin-upload-skill`（OpenClaw）
   - B站：当前无正式投稿 skill，只有研究辅助 `bilibili-youtube-watcher`
   - 验真：`publish-guard`
 - 强约束：
@@ -285,11 +285,11 @@
 ## 五、飞书同步接口
 
 - 常规同步：
-  - `python3 /Volumes/PSSD/Projects/公众号文章/scripts/feishu_stage_sync.py --latest`
+  - `python3 {DASHENG_ROOT}/scripts/feishu_stage_sync.py --latest`
 - 断点续跑：
-  - `python3 /Volumes/PSSD/Projects/公众号文章/scripts/feishu_stage_sync.py --resume-only <run_id>`
+  - `python3 {DASHENG_ROOT}/scripts/feishu_stage_sync.py --resume-only <run_id>`
 - 强制重跑：
-  - `python3 /Volumes/PSSD/Projects/公众号文章/scripts/feishu_stage_sync.py --fresh <run_id>`
+  - `python3 {DASHENG_ROOT}/scripts/feishu_stage_sync.py --fresh <run_id>`
 - 默认原则：
   - 先 `--resume-only`
   - 后 `--fresh`

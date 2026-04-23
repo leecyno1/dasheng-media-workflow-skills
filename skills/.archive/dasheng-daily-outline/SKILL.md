@@ -21,8 +21,8 @@ description: Use only when replaying a historical outline-only workflow; the cur
 
 ## 当前标准入口
 
-- 总控：`/Volumes/PSSD/Projects/公众号文章/skills/dasheng-media-sop/SKILL.md`
-- 阶段定义：`/Volumes/PSSD/Projects/公众号文章/引擎/03_全链路SOP工作流/STAGE_INTERFACES.md`
+- 总控：`../dasheng-media-sop/SKILL.md`
+- 阶段定义：`../../引擎/03_全链路SOP工作流/STAGE_INTERFACES.md`
 
 ## 保留用途
 

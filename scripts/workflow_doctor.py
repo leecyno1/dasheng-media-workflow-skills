@@ -99,6 +99,9 @@ def provider_summary() -> dict[str, Any]:
     def sanitize(provider: dict[str, Any] | None) -> dict[str, Any] | None:
         if not provider:
             return None
+        # Preserve _unavailable marker for diagnostics
+        if provider.get("_unavailable"):
+            return {"_unavailable": True, "status": "unavailable"}
         payload = dict(provider)
         if "api_key" in payload:
             payload["api_key"] = mask_secret(payload.get("api_key"))
