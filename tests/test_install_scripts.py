@@ -1,0 +1,48 @@
+import shutil
+import subprocess
+import tempfile
+import unittest
+from pathlib import Path
+
+
+ROOT = Path("/Volumes/PSSD/Projects/公众号文章")
+
+
+class InstallScriptsTests(unittest.TestCase):
+    def test_openclaw_install_script_creates_workspace_and_entry_skill(self):
+        with tempfile.TemporaryDirectory(dir=ROOT / ".tmp_test") as tmpdir:
+            tmp = Path(tmpdir)
+            skills_dir = tmp / "openclaw-skills"
+            workspace_dir = tmp / "openclaw-workspace"
+
+            proc = subprocess.run(
+                ["bash", str(ROOT / "install_to_openclaw.sh"), "--skip-confirm", str(skills_dir), str(workspace_dir)],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(proc.returncode, 0, msg=proc.stderr)
+            self.assertTrue((skills_dir / "dasheng-media-sop").exists())
+            self.assertTrue((workspace_dir / "scripts" / "run_mainline_stage.py").exists())
+            self.assertTrue((workspace_dir / "ENV_TEMPLATE.env").exists())
+
+    def test_hermes_install_script_creates_workspace_and_entry_skill(self):
+        with tempfile.TemporaryDirectory(dir=ROOT / ".tmp_test") as tmpdir:
+            tmp = Path(tmpdir)
+            skills_dir = tmp / "hermes-skills"
+            workspace_dir = tmp / "hermes-workspace"
+
+            proc = subprocess.run(
+                ["bash", str(ROOT / "install_to_hermes.sh"), "--skip-confirm", str(skills_dir), str(workspace_dir)],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(proc.returncode, 0, msg=proc.stderr)
+            self.assertTrue((skills_dir / "dasheng-media-sop").exists())
+            self.assertTrue((workspace_dir / "scripts" / "run_mainline_stage.py").exists())
+            self.assertTrue((workspace_dir / "ENV_TEMPLATE.env").exists())
+
+
+if __name__ == "__main__":
+    unittest.main()
