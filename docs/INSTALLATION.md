@@ -336,6 +336,7 @@ Remove the `DASHENG_*` exports from your `~/.zshrc` or `~/.bashrc`.
 - Read [CONFIGURATION.md](CONFIGURATION.md) for detailed configuration options
 - Read [API_REFERENCE.md](API_REFERENCE.md) for API documentation
 - Review [CLAUDE.md](../CLAUDE.md) for development guidelines
+- Read [STAGE_INTERFACES.md](docs/STAGE_INTERFACES.md) for stage input/output specifications
 - Check [PRODUCTION_READINESS_STATUS.md](PRODUCTION_READINESS_STATUS.md) for system status
 
 ## Support

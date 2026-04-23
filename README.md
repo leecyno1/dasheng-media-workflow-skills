@@ -90,6 +90,7 @@ AI生成5-10个选题候选，编辑确认后进入初稿阶段。
 - [快速开始](docs/guides/quick-start.md) - 5分钟快速上手
 - [阶段详解](docs/guides/stage-by-stage.md) - 7个阶段的详细说明
 - [架构设计](docs/technical/architecture.md) - 系统架构与设计决策
+- [阶段接口](docs/STAGE_INTERFACES.md) - 各阶段输入输出规范
 - [完整文档](docs/README_FULL.md) - 原完整README
 - [贡献指南](CONTRIBUTING.md) - 如何参与开发
 
