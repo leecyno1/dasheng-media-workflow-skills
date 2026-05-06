@@ -73,14 +73,15 @@ else
 fi
 
 # 创建必要目录
+PROJECT_ROOT=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
 echo ""
 echo "创建工作目录..."
-mkdir -p "$BASE_DIR/素材" "$BASE_DIR/项目" "$BASE_DIR/产物"
+mkdir -p "$PROJECT_ROOT/素材" "$PROJECT_ROOT/项目" "$PROJECT_ROOT/产物"
 
 # 运行验证
 echo ""
 echo "验证安装..."
-python3 scripts/verify_installation.py
+python3 "$PROJECT_ROOT/scripts/verify_installation.py"
 
 echo ""
 echo "=== 安装完成 ==="

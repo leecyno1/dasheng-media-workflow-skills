@@ -68,6 +68,17 @@ class WorkflowDoctorTests(unittest.TestCase):
         self.assertEqual(payload["run_id"], "non-existent-run")
         self.assertIn("canonical_contract", payload)
 
+    def test_doctor_latest_reports_when_no_runs_exist(self):
+        proc = subprocess.run(
+            [PYTHON, str(ROOT / "scripts/workflow_doctor.py"), "--latest"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        if proc.returncode == 0:
+            self.skipTest("当前工作区已有可发现 run，无法验证空 --latest 提示")
+        self.assertIn("未找到任何可用 run", proc.stderr or proc.stdout)
+
 
 if __name__ == "__main__":
     unittest.main()

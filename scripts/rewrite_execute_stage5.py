@@ -17,7 +17,6 @@ import json
 import sys
 from pathlib import Path
 from datetime import datetime
-import anthropic
 
 # 添加skills路径
 skills_path = Path(__file__).parent.parent / "skills" / "dasheng-media-rewrite-v2"
@@ -38,6 +37,8 @@ DEFAULT_VERSIONS = [
 
 class RewriteExecutor:
     def __init__(self, draft_manifest_file: Path, output_dir: Path, run_id: str, versions: list[str], timeout: int = 120):
+        import anthropic
+
         self.client = anthropic.Anthropic()
         self.timeout = timeout
         self.generator = VersionGenerator()

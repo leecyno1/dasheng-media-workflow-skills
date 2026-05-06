@@ -16,6 +16,13 @@ else:
 
 
 class InstallScriptsTests(unittest.TestCase):
+    def test_primary_install_script_has_existing_verification_entrypoint(self):
+        install_script = ROOT / "scripts" / "install.sh"
+        content = install_script.read_text(encoding="utf-8")
+
+        self.assertNotIn("$BASE_DIR", content)
+        self.assertTrue((ROOT / "scripts" / "verify_installation.py").exists())
+
     def test_openclaw_install_script_creates_workspace_and_entry_skill(self):
         with tempfile.TemporaryDirectory(dir=ROOT / ".tmp_test") as tmpdir:
             tmp = Path(tmpdir)

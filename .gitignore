@@ -1,13 +1,24 @@
 # local secrets
 .tushare_token
 
+# OS/editor noise
+.DS_Store
+
 # python
 .venv/
 __pycache__/
 *.pyc
 
+# local caches/runtime outputs
+.cache/
+skills/dasheng-daily-shared/runtime-data/runs/
+
 # generated charts
 figures/
+
+# generated workflow/content outputs
+/产物/
+/素材/
 
 # data snapshots
 /data/tushare/

@@ -183,6 +183,8 @@ def main() -> None:
 
     run_id = args.run_id or (discover_latest_run_id() if args.latest else None)
     if not run_id:
+        if args.latest:
+            raise SystemExit("未找到任何可用 run；请先运行工作流，或通过 --run-id 指定要检查的运行。")
         raise SystemExit("请提供 --run-id，或使用 --latest")
 
     report = build_report(run_id)

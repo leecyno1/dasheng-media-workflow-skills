@@ -1,5 +1,6 @@
 import sys
 import unittest
+import re
 from pathlib import Path
 
 
@@ -33,6 +34,16 @@ class DocsConsistencyTests(unittest.TestCase):
             ROOT / "install_to_hermes.sh",
         ]:
             self.assertTrue(target.exists(), msg=str(target))
+
+    def test_readme_local_markdown_links_resolve(self):
+        readme = ROOT / "README.md"
+        content = readme.read_text(encoding="utf-8")
+        links = re.findall(r"\[[^\]]+\]\(([^)#][^)]+)\)", content)
+        for link in links:
+            if "://" in link or link.startswith("mailto:"):
+                continue
+            target = (ROOT / link).resolve()
+            self.assertTrue(target.exists(), msg=f"README link target missing: {link}")
 
 
 if __name__ == "__main__":
