@@ -29,7 +29,8 @@ mode: manual
 
 ## In Progress
 
-- 当前相关改动已整理为可提交变更集；无关 `outputs/` 保持未暂存。
+- 当前相关改动已提交：`ca839a1 feat: add optional paradigm learning asset workflow`。
+- 无关 `outputs/` 保持未暂存。
 
 ## Changed Files
 

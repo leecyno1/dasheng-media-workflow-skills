@@ -8,7 +8,7 @@
 - ✅ `paradigm-learning` / `dasheng-paradigm-profiler` 作为可选前置资产，不作为强制 stage gate
 - ✅ 导出包包含 `dasheng-paradigm-profiler`
 - ✅ 全量测试通过：`129 passed, 2 skipped`
-- ✅ 当前改动已整理为可提交变更集
+- ✅ 当前改动已提交：`ca839a1 feat: add optional paradigm learning asset workflow`
 
 ## Open Questions
 - 是否需要立即导出并安装到 OpenClaw/Hermes 做一次真实环境验证？
