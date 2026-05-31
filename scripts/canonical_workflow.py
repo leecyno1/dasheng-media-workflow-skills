@@ -9,6 +9,10 @@ from path_config import get_project_root
 
 ROOT = get_project_root()
 
+OPTIONAL_ASSET_ROOTS: dict[str, Path] = {
+    "paradigm": ROOT / "产物" / "00_范式学习",
+}
+
 CANONICAL_STAGE_ROOTS: dict[str, Path] = {
     "intake": ROOT / "产物" / "01_内容采集",
     "brief": ROOT / "产物" / "02_内容聚合及选题分析",
@@ -88,6 +92,12 @@ def canonical_stage_dir(stage: str, run_id: str) -> Path:
 
 def canonical_manifest_path(stage: str, run_id: str) -> Path:
     return canonical_stage_dir(stage, run_id) / CANONICAL_MANIFEST_FILENAMES[stage]
+
+
+def optional_asset_dir(asset: str, run_id: str) -> Path:
+    if asset not in OPTIONAL_ASSET_ROOTS:
+        raise WorkflowContractError(f"未知 optional asset：{asset}")
+    return OPTIONAL_ASSET_ROOTS[asset] / run_id
 
 
 def _normalized_status(payload: dict[str, Any]) -> str:

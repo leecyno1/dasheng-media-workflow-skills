@@ -1,14 +1,14 @@
 # Current Task
 
 ## Objective
-生产就绪优化已完成，等待推送到远程Git仓库。
+收口范式学习能力与主线契约，确保 7 阶段正式主链、可选 ParadigmProfile、导出包和交接状态一致。
 
 ## Success Criteria
-- ✅ 代码已提交（commit 7f03736）
-- ⏳ 推送到远程仓库（需要Git仓库URL）
-- ⏳ 在OpenClaw/Hermes环境中部署验证
+- ✅ 明确正式主链为 `intake -> brief -> draft -> material -> rewrite -> publish -> postmortem`
+- ✅ `paradigm-learning` / `dasheng-paradigm-profiler` 作为可选前置资产，不作为强制 stage gate
+- ✅ 导出包包含 `dasheng-paradigm-profiler`
+- ✅ 全量测试通过：`129 passed, 2 skipped`
+- ✅ 当前改动已整理为可提交变更集
 
 ## Open Questions
-- Git仓库URL是什么？
-- 是否需要配置远程仓库？
-
+- 是否需要立即导出并安装到 OpenClaw/Hermes 做一次真实环境验证？

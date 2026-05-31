@@ -6,7 +6,13 @@ import json
 from pathlib import Path
 from typing import Any
 
-from canonical_workflow import CANONICAL_STAGE_ROOTS, canonical_manifest_path, ensure_json_file, stage_contract_snapshot
+from canonical_workflow import (
+    CANONICAL_STAGE_ROOTS,
+    OPTIONAL_ASSET_ROOTS,
+    canonical_manifest_path,
+    ensure_json_file,
+    stage_contract_snapshot,
+)
 from desktop_delivery import DESKTOP_ROOT
 from provider_registry import resolve_chat_provider, resolve_material_image_provider_snapshot
 from path_config import (
@@ -43,7 +49,7 @@ def mask_secret(value: str | None) -> str | None:
 
 def discover_latest_run_id() -> str | None:
     candidates: dict[str, float] = {}
-    for root in CANONICAL_STAGE_ROOTS.values():
+    for root in [*CANONICAL_STAGE_ROOTS.values(), *OPTIONAL_ASSET_ROOTS.values()]:
         if not root.exists():
             continue
         for stage_dir in root.iterdir():
@@ -69,6 +75,53 @@ def load_manifest_if_exists(stage: str, run_id: str) -> dict[str, Any] | None:
             "error": str(exc),
             "path": str(path),
         }
+
+
+def load_optional_asset_manifest(path: Path, asset: str) -> dict[str, Any]:
+    try:
+        return ensure_json_file(path, f"{asset}_manifest.json")
+    except Exception as exc:
+        return {
+            "_invalid": True,
+            "status": "invalid",
+            "error": str(exc),
+            "path": str(path),
+        }
+
+
+def discover_optional_asset_manifests(asset: str, run_id: str) -> list[dict[str, Any]]:
+    root = OPTIONAL_ASSET_ROOTS[asset] / run_id
+    if not root.exists():
+        return []
+    manifest_name = f"{asset}_manifest.json"
+    manifests: list[dict[str, Any]] = []
+    for path in sorted(root.glob(f"**/{manifest_name}")):
+        payload = load_optional_asset_manifest(path, asset)
+        manifests.append(
+            {
+                "path": str(path),
+                "status": payload.get("status"),
+                "profile_name": payload.get("profile_name"),
+                "analysis_mode": payload.get("analysis_mode"),
+                "invalid": bool(payload.get("_invalid")),
+                "error": payload.get("error"),
+            }
+        )
+    return manifests
+
+
+def optional_assets_report(run_id: str) -> dict[str, Any]:
+    report: dict[str, Any] = {}
+    for asset, root in OPTIONAL_ASSET_ROOTS.items():
+        manifests = discover_optional_asset_manifests(asset, run_id)
+        report[asset] = {
+            "asset_dir": str(root / run_id),
+            "manifest_exists": bool(manifests),
+            "manifest_count": len(manifests),
+            "manifest_status": manifests[0]["status"] if len(manifests) == 1 else None,
+            "manifests": manifests,
+        }
+    return report
 
 
 def stage_issues(contract: dict[str, Any]) -> list[str]:
@@ -144,15 +197,23 @@ def build_report(run_id: str) -> dict[str, Any]:
     contract = stage_contract_snapshot(run_id)
     desktop_root = DESKTOP_ROOT / run_id
     manifests = {stage: load_manifest_if_exists(stage, run_id) for stage in CANONICAL_STAGE_ROOTS}
+    optional_assets = optional_assets_report(run_id)
     invalid_manifests = [
         f"{stage}: manifest 无法解析"
         for stage, manifest in manifests.items()
         if manifest and manifest.get("_invalid")
     ]
+    invalid_optional_manifests = [
+        f"{asset}: optional asset manifest 无法解析：{manifest['path']}"
+        for asset, report in optional_assets.items()
+        for manifest in report["manifests"]
+        if manifest.get("invalid")
+    ]
     return {
         "run_id": run_id,
         "canonical_contract": contract,
-        "issues": stage_issues(contract) + invalid_manifests,
+        "optional_assets": optional_assets,
+        "issues": stage_issues(contract) + invalid_manifests + invalid_optional_manifests,
         "desktop_delivery": {
             "root": str(desktop_root),
             "exists": desktop_root.exists(),

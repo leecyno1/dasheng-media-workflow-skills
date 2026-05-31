@@ -7,6 +7,7 @@
 | Skill 名称 | 版本 | 状态 | 说明 |
 |------------|------|------|------|
 | `dasheng-media-sop` | 1.0.0 | ✅ 正式 | 总控入口，唯一正式编排 skill |
+| `dasheng-paradigm-profiler` | 1.0.0 | ✅ 正式 | 可选前置资产，提炼文章结构范式 |
 | `dasheng-daily-intake` | 1.0.0 | ✅ 正式 | 内容采集阶段 |
 | `dasheng-daily-phase2` | 1.0.0 | ✅ 正式 | 选题分析阶段（替代 dasheng-daily-brief） |
 | `dasheng-daily-draft` | 1.0.0 | ✅ 正式 | 初稿生成阶段 |
@@ -14,6 +15,8 @@
 | `dasheng-stage-rewrite-v3` | 1.0.0 | ✅ 正式 | 多版本改写（推荐使用） |
 | `dasheng-stage-publish` | 1.0.0 | ✅ 正式 | 内容发布阶段 |
 | `dasheng-daily-postmortem` | 1.0.0 | ✅ 正式 | 复盘与知识回写 |
+| `dasheng-style-profiler` | 1.0.0 | ✅ 正式 | 文风 Style DNA 提炼 |
+| `feishu-doc-creator` | 1.0.0 | ✅ 正式 | 飞书文档创建辅助 |
 
 ## 已废弃 Skill（请勿使用）
 
@@ -32,7 +35,6 @@
 | `dasheng-stage-distribute` | `dasheng-stage-publish` | 已并入 publish 阶段 |
 | `dasheng-collection-workflow` | `dasheng-daily-intake` | 能力已并入 intake |
 | `dasheng-sop-orchestrator` | `dasheng-media-sop` | 旧版本总控 |
-| `dasheng-style-profiler` | `dasheng-media-sop` | 能力已并入 SOP |
 
 ## 别名映射
 
@@ -53,8 +55,7 @@
     "dasheng-stage-publish-video": "dasheng-stage-publish",
     "dasheng-stage-distribute": "dasheng-stage-publish",
     "dasheng-collection-workflow": "dasheng-daily-intake",
-    "dasheng-sop-orchestrator": "dasheng-media-sop",
-    "dasheng-style-profiler": "dasheng-media-sop"
+    "dasheng-sop-orchestrator": "dasheng-media-sop"
   }
 }
 ```

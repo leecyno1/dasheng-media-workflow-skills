@@ -23,6 +23,65 @@ def write_json(path: Path, payload: dict) -> None:
 
 
 class WorkflowDoctorTests(unittest.TestCase):
+    def test_stage_contract_snapshot_excludes_optional_paradigm_asset(self):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        try:
+            from canonical_workflow import stage_contract_snapshot
+        finally:
+            sys.path.pop(0)
+
+        snapshot = stage_contract_snapshot("non-existent-run")
+        self.assertEqual(
+            list(snapshot["stages"].keys()),
+            ["intake", "brief", "draft", "material", "rewrite", "publish", "postmortem"],
+        )
+        self.assertNotIn("paradigm", snapshot["stages"])
+
+    def test_doctor_contract_excludes_optional_paradigm_asset_from_formal_stages(self):
+        proc = subprocess.run(
+            [PYTHON, str(ROOT / "scripts/workflow_doctor.py"), "--run-id", "non-existent-run"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(proc.returncode, 0, msg=proc.stderr)
+        payload = json.loads(proc.stdout)
+        stages = payload["canonical_contract"]["stages"]
+        self.assertNotIn("paradigm", stages)
+        self.assertIn("paradigm", payload["optional_assets"])
+
+    def test_doctor_discovers_nested_optional_paradigm_manifests(self):
+        run_id = "run-doctor-paradigm-asset"
+        asset_dir = ROOT / "产物/00_范式学习" / run_id / "结构变化解读"
+        try:
+            write_json(
+                asset_dir / "paradigm_manifest.json",
+                {
+                    "run_id": run_id,
+                    "stage": "paradigm",
+                    "status": "pending_editor_calibration",
+                    "profile_name": "结构变化解读",
+                    "analysis_mode": "heuristic_fallback",
+                },
+            )
+
+            proc = subprocess.run(
+                [PYTHON, str(ROOT / "scripts/workflow_doctor.py"), "--run-id", run_id],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(proc.returncode, 0, msg=proc.stderr)
+            payload = json.loads(proc.stdout)
+            paradigm = payload["optional_assets"]["paradigm"]
+            self.assertTrue(paradigm["manifest_exists"])
+            self.assertEqual(paradigm["manifest_count"], 1)
+            self.assertEqual(paradigm["manifest_status"], "pending_editor_calibration")
+            self.assertEqual(paradigm["manifests"][0]["profile_name"], "结构变化解读")
+        finally:
+            if asset_dir.parent.exists():
+                shutil.rmtree(asset_dir.parent)
+
     def test_doctor_reports_missing_material_manifest_issue(self):
         run_id = "run-doctor-missing-material"
         intake_dir = ROOT / "产物/01_内容采集" / run_id

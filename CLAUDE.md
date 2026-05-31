@@ -4,62 +4,34 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a suite of OpenClaw/Codex Skills for daily media content production teams. It implements a fixed 8-stage workflow from content intake to post-publication review, designed for multi-person collaboration with Feishu integration.
+This is a suite of OpenClaw/Codex Skills for daily media content production teams. It implements a fixed 7-stage workflow from content intake to post-publication review, designed for multi-person collaboration with Feishu integration.
 
-**Fixed workflow chain**: `intake -> brief -> draft -> material -> rewrite -> publish -> distribute -> postmortem`
+**Fixed workflow chain**: `intake -> brief -> draft -> material -> rewrite -> publish -> postmortem`
+
+**Optional pre-work asset**: `paradigm-learning` / `dasheng-paradigm-profiler`. It produces `ParadigmProfile` artifacts before Brief when users provide standard articles, templates, successful samples, or channel examples. It is not a formal stage and must not be treated as a required gate.
 
 ## Architecture
 
 ### Skill Structure
 
-The repository contains 8 skills organized under `skills/`:
+The only formal orchestration entry is **dasheng-media-sop**. Legacy entrypoints may still exist for compatibility, but new work should enter through the canonical runner and stage contracts.
 
-1. **dasheng-sop-orchestrator** - Entry point and stage router. Enforces stage order, prevents stage skipping, and routes to appropriate stage skills.
+Current formal skill set exported by `scripts/export_skill_suite.py`:
 
-2. **dasheng-stage-intake-brief-draft** - Handles intake and draft stages:
-   - ⭐ **UPGRADED**: Now integrates AI-driven brief and framework-driven draft
-   - Content intake with multi-source aggregation
-   - AI-generated topics with natural language titles
-   - Framework-driven draft generation with quality validation
-
-3. **dasheng-stage-brief-ai** - ⭐ **NEW: AI-driven topic generation**. Replaces hardcoded rule system with AI reasoning:
-   - Generates 8-10 candidate topics with natural language titles (not template concatenation)
-   - Clear arguments with evidence needs and sources
-   - Recommends writing frameworks and content enhancement strategies
-   - 5-dimension scoring (timeliness, unique angle, evidence, reader value, longevity)
-   - Solves the "stiff titles" problem: "外交部、伊朗：事件升级..." → "中东冲突如何重塑全球能源供应链"
-
-4. **dasheng-stage-material-refill** - Generates and refills assets (charts, images, videos) into editor-confirmed final documents.
-   - ⭐ **ENHANCED**: AI-powered chart gating (decides which data needs visualization)
-   - ⭐ **ENHANCED**: AI-optimized search keywords (improves material hit rate by 50-100%)
-   - Intelligent chart type selection (line, bar, pie, scatter, heatmap, table)
-   - Quality reports for chart decisions and material searches
-
-5. **dasheng-stage-rewrite** - Produces 8 platform-specific rewrites per topic with strict word count validation:
-   - WeChat (wechat) × 2: luxun + hot, lemon + normal (≥4000 words)
-   - XHS video (xhs_video) × 2: luxun + hot, lemon + normal (≥1800 words)
-   - ⭐ **NEW**: Bilibili (bilibili) × 2: luxun + hot, lemon + normal (≥2000 words)
-   - ⭐ **NEW**: WeChat Channels (wechat_channels) × 2: luxun + hot, lemon + normal (≥1500 words)
-   - ⭐ **ENHANCED**: Generates platform-specific metadata (titles, hashtags, descriptions, captions)
-   - ⭐ **ENHANCED**: Now fully applies 7 writing frameworks and 4 content enhancement strategies
-   - Supports personal style DNA injection
-
-6. **dasheng-stage-publish-video** - Pre-publish video enhancement: generates interactive chart videos and motion narrative videos using finance-motion-8787 engine.
-   - ⭐ **ENHANCED**: Supports 5 standard video style templates (Claude Purple, Cyberpunk, Finance Business, Medical Lancet, Anime Light)
-   - ⭐ **ENHANCED**: Integrates with Finance Motion 8787 for preview and Remotion for high-quality rendering
-
-7. **⭐ NEW: dasheng-stage-distribute** - Multi-platform content distribution stage (between publish and postmortem):
-   - Routes rewrite variants to appropriate platforms based on content type
-   - ⭐ **ENHANCED**: Now supports 7 platforms (was 5): WeChat Official Account, WeChat Channels, Xiaohongshu, Douyin, Bilibili, Weibo, X/Twitter
-   - ⭐ **ENHANCED**: Reads platform metadata from rewrite_manifest.json (no more temporary generation)
-   - Integrates with 5 existing OpenClaw platform skills
-   - Produces `distribute_manifest.json` with per-platform publish results
-
-8. **dasheng-style-profiler** - Extracts personal writing style DNA from historical articles using 14-dimensional analysis framework. Generates reusable style profiles for personalized rewrites.
+1. **dasheng-media-sop** - The single workflow controller and stage router.
+2. **dasheng-paradigm-profiler** - Optional pre-work asset builder for article paradigms and channel frameworks.
+3. **dasheng-daily-intake** - Content intake and source aggregation.
+4. **dasheng-daily-phase2** - AI-only topic brief generation and topic card production.
+5. **dasheng-daily-material** - Material gathering, chart gating, image/video search, and asset reports.
+6. **dasheng-stage-publish** - Publish orchestration, video supplement, channel adaptation, channel execution, and publish verification.
+7. **dasheng-daily-postmortem** - Post-publication review and knowledge writeback.
+8. **dasheng-style-profiler** - Personal writing Style DNA extraction using the 14-dimensional style framework.
+9. **feishu-doc-creator** - Feishu document creation support.
 
 ### Critical Constraints
 
 - **Stage order is immutable** - never skip stages or produce downstream deliverables prematurely
+- **ParadigmProfile is optional** - it can inform Brief/Draft/Rewrite/Publish, but it is not a formal stage gate
 - **Per-topic isolation** - each topic must have its own directory; never mix content from different topics
 - **Manifest requirement** - every stage must produce both a document and a manifest JSON file
 - **Inheritance rule** - rewrite stage must inherit the final structure from the draft, not force a fixed three-part structure
@@ -87,6 +59,11 @@ The rewrite stage now supports advanced writing capabilities:
 - Preset DNA: luxun (sharp, data-driven) and lemon (warm, narrative)
 - Personal DNA: Extract from 10+ historical articles using 14-dimensional analysis
 - Includes: paragraph recipes, narrative systems, content progression patterns, punctuation preferences
+
+**ParadigmProfile System**:
+- ParadigmProfile controls structure, narrative path, argument model, information density, and channel framework
+- Style DNA controls voice, vocabulary, sentence rhythm, and author expression
+- Sample facts, unverified data, and original sentences must never be reused as article evidence
 
 **⭐ NEW: Framework & Strategy Integration**:
 - Brief stage recommends framework and strategy for each topic
@@ -145,13 +122,13 @@ Always enter through `dasheng-sop-orchestrator` to prevent stage misalignment. T
 ### Stage Deliverables
 
 Each stage must produce:
+- **paradigm-learning (optional)**: `00_范式画像.md`, `paradigm_profile.yaml`, `paradigm_prompt_block.md`, `paradigm_manifest.json`
 - **intake**: `intake_manifest.json`
 - **brief**: `brief_manifest.json`
 - **draft**: `draft_manifest.json`
 - **material**: `material_manifest.json`, `05_MaterialPack.md`, `05_Material_报告.md`
 - **rewrite**: `rewrite_manifest.json` (with platform_metadata for all 8 variants), per-topic `meta.json`, `<topic>__rewrite_bundle.md`
-- **publish**: `publish_manifest.json`, `publish_video_supplement_manifest.json`, video files in `videos/interactive_charts/` and `videos/motion_narrative/`
-- **distribute**: `distribute_manifest.json`, platform-specific publish results
+- **publish**: `publish_manifest.json`, `publish_video_supplement_manifest.json`, `channel_adaptation_manifest.json`, `channel_execution_manifest.json`, `publish_verification_report.json`, video files in `videos/interactive_charts/` and `videos/motion_narrative/`
 - **postmortem**: `postmortem_manifest.json`
 
 ## Key Commands
@@ -212,6 +189,16 @@ python3 scripts/material_parallel_launcher.py --pack-root "<pack_root>"
 # Generates style profile with 14-dimensional analysis
 ```
 
+### Paradigm Learning (Optional, before Brief)
+```bash
+cd "${DASHENG_WORKSPACE}"
+python3 scripts/run_mainline_stage.py paradigm sample.md \
+  --run-id "$(date +%F_%H%M%S)" \
+  --profile-name 结构变化解读 \
+  --scenario 行业解读 \
+  --channel 公众号
+```
+
 ### Rewrite
 ```bash
 cd "${DASHENG_WORKSPACE}"
@@ -256,9 +243,9 @@ python3 scripts/publish_video_supplement.py --style claude-purple
 - **⭐ Platform metadata rules**: [skills/dasheng-stage-rewrite/references/platform-metadata.md](skills/dasheng-stage-rewrite/references/platform-metadata.md)
 - 14-dimensional style analysis: [skills/dasheng-style-profiler/references/style-14d-framework.md](skills/dasheng-style-profiler/references/style-14d-framework.md)
 - **⭐ Video template styles**: [skills/dasheng-stage-publish-video/references/template-styles.md](skills/dasheng-stage-publish-video/references/template-styles.md)
-- **⭐ Platform routing rules**: [skills/dasheng-stage-distribute/references/platform-routing.md](skills/dasheng-stage-distribute/references/platform-routing.md)
-- **⭐ Content adaptation guide**: [skills/dasheng-stage-distribute/references/content-adaptation.md](skills/dasheng-stage-distribute/references/content-adaptation.md)
-- **⭐ Publishing setup guide**: [skills/dasheng-stage-distribute/references/setup-guide.md](skills/dasheng-stage-distribute/references/setup-guide.md)
+- **Paradigm profiler**: [skills/dasheng-paradigm-profiler/SKILL.md](skills/dasheng-paradigm-profiler/SKILL.md)
+- **Publish architecture**: [skills/dasheng-media-sop/references/publish-architecture.md](skills/dasheng-media-sop/references/publish-architecture.md)
+- **Publish skill matrix**: [skills/dasheng-media-sop/references/publish-skill-matrix.md](skills/dasheng-media-sop/references/publish-skill-matrix.md)
 - **⭐ Motion integration guide**: [docs/MOTION_INTEGRATION_GUIDE.md](docs/MOTION_INTEGRATION_GUIDE.md)
 - Smoke test prompts: [SMOKE_PROMPTS.md](SMOKE_PROMPTS.md)
 - Export manifest: [EXPORT_MANIFEST.md](EXPORT_MANIFEST.md)
@@ -301,9 +288,10 @@ python3 scripts/publish_video_supplement.py --style claude-purple
   - Claude Purple, Cyberpunk, Finance Business, Medical Lancet, Anime Light
   - Integration between Finance Motion 8787 (preview) and Remotion (rendering)
   - Conversion script for seamless workflow
-- **Distribute Enhancement**: Expanded from 5 to 7 platforms
+- **Publish Enhancement**: Platform distribution is now part of publish
   - Added Bilibili and WeChat Channels
   - Reads metadata from rewrite stage (no more temporary generation)
+  - `distribute` is no longer a standalone formal stage
 - **Video Generation**: Successfully generated motion narrative videos
   - Created 2 Remotion components (AIMergersXhs, ChinaPlanXhs) from rewrite content
   - Rendered high-quality videos (1080x1920, 25s, Claude Purple style)

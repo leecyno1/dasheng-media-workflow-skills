@@ -8,9 +8,11 @@
 
 `intake -> brief -> draft -> material -> rewrite -> publish -> postmortem`
 
+可选前置资产：`ParadigmProfile`。当用户提供标准文章、内容模板、爆款样本或渠道模板时，可先生成范式画像，再供 `brief / draft / rewrite / publish` 调用；它不改变正式主链顺序，也不作为强制 gate。
+
 固定对象链：
 
-`Run -> TopicPool -> SelectedTopic -> Draft -> FinalDoc -> MaterialPack -> RewritePack -> PublishPack -> Postmortem`
+`Run -> ParadigmProfile(optional) -> TopicPool -> SelectedTopic -> Draft -> FinalDoc -> MaterialPack -> RewritePack -> PublishPack -> Postmortem`
 
 文档只是交付视图，不是唯一状态源。唯一状态源必须同时满足：
 
@@ -36,6 +38,9 @@
   - 图片、图表、视频、封面、互动视频等资产
 - `ChannelPack`
   - 某一渠道可直接发布的内容包
+- `ParadigmProfile`
+  - 从标准文章或模板中提炼出的结构范式、叙事路径、论证模型、场景适配和渠道框架
+  - 与 `Style DNA` 分离：前者解决“怎么组织内容”，后者解决“像谁表达”
 
 对象 schema 统一位于：
 
@@ -79,6 +84,22 @@
 
 ## 四、阶段接口
 
+### 0.5 Paradigm Learning｜可选范式学习
+
+- 目标：把用户提供的标准文章、内容模板或渠道样本沉淀为可复用的文章范式资产
+- 推荐输入：
+  - 标准文章、历史高质量稿、爆款样本、渠道模板
+  - 目标场景、目标渠道、目标风格约束
+- 正式产物：
+  - `00_范式画像.md`
+  - `paradigm_profile.yaml`
+  - `paradigm_prompt_block.md`
+  - `paradigm_manifest.json`
+- 关键规则：
+  - 默认放在 `brief` 前；如果用户在 `draft / rewrite / publish` 临时提供模板，也可即时生成并绑定当前 run
+  - 只提炼结构范式、章节框架、叙事路径、论证模型、信息密度、渠道适配和禁用项
+  - 不替代事实来源，不搬运样本事实，不参与事实真伪判断
+
 ### 1. Intake｜内容采集 / 话题雷达
 
 - 目标：采集当天热点样本，并升级为“事件-人物-议题”雷达
@@ -115,6 +136,7 @@
   - `channel_top10.json`
   - `event_clusters.json`
   - `raw/intake_records.json`
+  - 可选：`paradigm_profile.yaml`
 - 正式产物：
   - `02_编辑Brief库.md`
   - `02_研究Brief库.md`
@@ -149,6 +171,7 @@
   - 高优先证据池按“信号强度 × 逻辑独立性 × 主题新颖度”做弱重排
   - AI 返回的来源必须能回贴到 canonical evidence
   - 禁止把采集原始标题直接抬升为编辑题目
+  - 如存在 `ParadigmProfile`，每个候选题必须标注推荐范式、适用场景、风险边界和不适用理由
   - 若同一逻辑链占比超过半数，阶段直接失败
 
 ### 3. Draft｜Reasoning Sheet + 标准稿
@@ -157,6 +180,7 @@
 - Draft 只读取：
   - `selected_topics.json`
   - `topic_cards.json`
+  - 可选：`paradigm_profile.yaml`
 - 正式产物：
   - `03_ReasoningSheet_<topic>.md`
   - `03_ReasoningSheet_<topic>.json`
@@ -168,6 +192,7 @@
   - 一级标题默认 3-4 个，最多 4 个
   - 一级结构必须继承选题本意，不能机械复制 Brief 列表
   - `Reasoning Sheet` 中每个 `Claim` 必须映射 `EvidenceItem / MissingProof / ChartNeed`
+  - 可继承范式画像里的章节骨架、论证顺序和信息密度要求，但不得继承样本文风、情绪词或渠道包装语
 
 ### 4. Material｜证据化素材包
 
@@ -206,6 +231,8 @@
   - `material_manifest.json`
   - `material_acceptance.json`
   - `final_structure_snapshot.json`
+  - 可选：`paradigm_profile.yaml`
+  - 可选：`Style DNA`
 - 正式产物：
   - `<topic>__rewrite_bundle.md`
   - `<topic>__wechat_luxun_hot.md`
@@ -222,6 +249,7 @@
 - 强约束：
   - 不再允许硬编码 dated 目录、默认源目录或旧稿反推结构
   - 没有 `Material Gate` 或 `Final Structure Gate`，rewrite 禁止执行
+  - 可组合使用 `ParadigmProfile` 与 `Style DNA`：前者控制组织方式，后者控制表达方式
 
 ### 6. Publish｜渠道包与视频增强
 
@@ -230,6 +258,7 @@
   - `rewrite_manifest.json`
   - `material_manifest.json`
   - `publish_decision.json`
+  - 可选：`paradigm_profile.yaml`
 - 正式产物：
   - `07_发布包.md`
   - `07_发布计划.md`
@@ -264,6 +293,7 @@
 - 强约束：
   - 不再允许 `latest_dir(...)` 或历史目录猜测
   - 没有 `Channel Gate`，publish 禁止执行
+  - 渠道适配可消费范式画像中的平台框架，但必须以人工确认的发布决策为准
   - 缺少正式平台执行器的平台，只允许导出待人工发布包
   - 未经过 `Publish Guard` 验真，不得向用户汇报“已发布”
 

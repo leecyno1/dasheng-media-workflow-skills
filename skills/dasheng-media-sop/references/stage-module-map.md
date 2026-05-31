@@ -4,6 +4,14 @@
 
 ## 主映射
 
+### 可选前置能力
+
+| 能力 | 对外语义 | 当前主入口 | 内部模块 / 脚本 | 交付接口 |
+| --- | --- | --- | --- | --- |
+| `paradigm-learning` | 从标准文章/模板学习文章范式 | `dasheng-paradigm-profiler` | `引擎/03_全链路SOP工作流/00_范式学习_prompt.md`、`skills/dasheng-paradigm-profiler` | `00_范式画像.md` / `paradigm_profile.yaml` / `paradigm_prompt_block.md` / `paradigm_manifest.json` |
+
+说明：`paradigm-learning` 不是正式主链阶段，不改变 `intake -> brief -> draft -> material -> rewrite -> publish -> postmortem`。它是可选资产生成器，默认在 `brief` 前运行，也可在 `draft / rewrite / publish` 临时触发。
+
 | 阶段 | 对外语义 | 当前主入口 | 内部模块 / 脚本 | 交付接口 |
 | --- | --- | --- | --- | --- |
 | `intake` | 内容采集 | `dasheng-media-sop` | `dasheng-daily-intake`、`scripts/` 下采集脚本 | `01_内容采集_底稿.md` / `01_内容采集_报告.md` / `intake_manifest.json` |

@@ -274,6 +274,47 @@ class MainlineHardeningTests(unittest.TestCase):
         self.assertNotEqual(proc.returncode, 0)
         self.assertIn("不再允许猜最新目录", proc.stderr or proc.stdout)
 
+    def test_mainline_paradigm_builds_optional_asset_command(self):
+        with load_script_module("run_mainline_stage_test", ROOT / "scripts/run_mainline_stage.py") as module:
+            command = module.build_paradigm_command(
+                Namespace(
+                    samples=["sample-a.md", "sample-b.md"],
+                    run_id="2026-05-06_150000",
+                    profile_name="结构变化解读",
+                    sample_type="standard_article",
+                    scenario=["行业解读"],
+                    channel=["公众号", "小红书"],
+                    bind_style_dna="none",
+                    output_dir="/tmp/paradigm-out",
+                    no_ai=True,
+                )
+            )
+
+        self.assertIn(str(ROOT / "scripts/build_paradigm_profile.py"), command)
+        self.assertIn("sample-a.md", command)
+        self.assertIn("--run-id", command)
+        self.assertIn("2026-05-06_150000", command)
+        self.assertIn("--profile-name", command)
+        self.assertIn("结构变化解读", command)
+        self.assertIn("--no-ai", command)
+
+    def test_mainline_paradigm_requires_sample_file(self):
+        with load_script_module("run_mainline_stage_test", ROOT / "scripts/run_mainline_stage.py") as module:
+            with self.assertRaises(module.WorkflowContractError):
+                module.build_paradigm_command(
+                    Namespace(
+                        samples=[],
+                        run_id="2026-05-06_150000",
+                        profile_name=None,
+                        sample_type="standard_article",
+                        scenario=[],
+                        channel=[],
+                        bind_style_dna="none",
+                        output_dir=None,
+                        no_ai=False,
+                    )
+                )
+
     def test_material_parallel_launcher_material_manifest_is_canonical_entry(self):
         with project_tempdir() as tmpdir:
             tmp = Path(tmpdir)

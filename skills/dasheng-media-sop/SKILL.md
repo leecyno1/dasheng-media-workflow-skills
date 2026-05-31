@@ -15,6 +15,8 @@ description: Use when running, resuming, auditing, or updating the Dasheng self-
 
 `intake -> brief -> draft -> material -> rewrite -> publish -> postmortem`
 
+可选前置资产：`paradigm-learning` / `dasheng-paradigm-profiler`。用户提供标准文章、内容模板、爆款样本或渠道模板时，先生成 `ParadigmProfile`，再供 `brief / draft / rewrite / publish` 消费；它不改变正式主链，也不是强制 gate。
+
 `distribute` 不再单列为正式阶段；平台适配与分发动作并入 `publish`。
 
 ## 何时使用
@@ -32,12 +34,15 @@ description: Use when running, resuming, auditing, or updating the Dasheng self-
 - 每个选题独立目录、独立文档、独立素材、独立改写包。
 - 文档只是交付视图，不是唯一状态源；状态源以本地 manifest + gate 为准。
 - 阶段 1-3 不写平台腔，不写终稿口吻，不把内部流程统计当正文论据。
+- `ParadigmProfile` 与 `Style DNA` 必须分离：前者控制结构范式、场景适配和渠道框架；后者控制作者口吻、语言节奏和表达习惯。
 - `material` 只围绕终稿和 claim 补证据，不重写主判断。
 - `rewrite` 必须继承终稿结构，不得脱离终稿重新写一篇。
 - `publish` 负责 `Channel Gate -> Video Supplement -> Channel Adaptation -> Channel Execution -> Publish Guard` 五层闭环。
 - 所有发布动作都必须绑定正式平台执行 skill，不允许把"生成了文案/视频"误报为"已发布"。
 
 ## 阶段路由
+
+- `paradigm-learning`（可选）→ `dasheng-paradigm-profiler` → `引擎/03_全链路SOP工作流/00_范式学习_prompt.md`
 
 - `intake` → `dasheng-daily-intake` → `scripts/run_stage1_intake.py`
 - `brief` → `dasheng-daily-phase2` → `scripts/phase2_rebuilder.py`

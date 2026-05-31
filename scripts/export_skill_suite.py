@@ -38,6 +38,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_EXPORT_ROOT = ROOT / "openclaw-skill-exports"
 FORMAL_SKILLS = [
     "dasheng-media-sop",
+    "dasheng-paradigm-profiler",
     "dasheng-stage-publish",
     "dasheng-daily-intake",
     "dasheng-daily-phase2",

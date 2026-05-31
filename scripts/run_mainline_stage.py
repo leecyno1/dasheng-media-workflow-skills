@@ -115,12 +115,52 @@ def resolve_postmortem_manifest(run_id: str | None, publish_manifest: str | None
     return str(manifest)
 
 
+def build_paradigm_command(args: argparse.Namespace) -> list[str]:
+    if not args.run_id:
+        raise WorkflowContractError("paradigm 阶段必须提供 --run-id。")
+    if not args.samples:
+        raise WorkflowContractError("paradigm 阶段必须至少提供一个样本文件。")
+    command = [
+        "python3",
+        str(ROOT / "scripts/build_paradigm_profile.py"),
+        *args.samples,
+        "--run-id",
+        args.run_id,
+    ]
+    if args.profile_name:
+        command.extend(["--profile-name", args.profile_name])
+    if args.sample_type:
+        command.extend(["--sample-type", args.sample_type])
+    for scenario in args.scenario:
+        command.extend(["--scenario", scenario])
+    for channel in args.channel:
+        command.extend(["--channel", channel])
+    if args.bind_style_dna:
+        command.extend(["--bind-style-dna", args.bind_style_dna])
+    if args.output_dir:
+        command.extend(["--output-dir", args.output_dir])
+    if args.no_ai:
+        command.append("--no-ai")
+    return command
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Canonical 大圣 Daily mainline stage runner")
     subparsers = parser.add_subparsers(dest="stage", required=True)
 
     intake = subparsers.add_parser("intake")
     intake.add_argument("--run-id")
+
+    paradigm = subparsers.add_parser("paradigm")
+    paradigm.add_argument("samples", nargs="*")
+    paradigm.add_argument("--run-id", required=True)
+    paradigm.add_argument("--profile-name")
+    paradigm.add_argument("--sample-type", default="standard_article")
+    paradigm.add_argument("--scenario", action="append", default=[])
+    paradigm.add_argument("--channel", action="append", default=[])
+    paradigm.add_argument("--bind-style-dna", default="none")
+    paradigm.add_argument("--output-dir")
+    paradigm.add_argument("--no-ai", action="store_true")
 
     brief = subparsers.add_parser("brief")
     brief.add_argument("--run-id")
@@ -164,6 +204,10 @@ def main() -> None:
         if args.run_id:
             command.extend(["--run-id", args.run_id])
         run_command(command)
+        return
+
+    if args.stage == "paradigm":
+        run_command(build_paradigm_command(args))
         return
 
     if args.stage == "brief":

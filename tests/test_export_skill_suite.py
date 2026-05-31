@@ -24,6 +24,8 @@ class ExportSkillSuiteTests(unittest.TestCase):
             export_suite(export_root)
 
             self.assertTrue((export_root / "skills" / "dasheng-media-sop" / "SKILL.md").exists())
+            self.assertTrue((export_root / "skills" / "dasheng-paradigm-profiler" / "SKILL.md").exists())
+            self.assertTrue((export_root / "skills" / "dasheng-paradigm-profiler" / "config.json").exists())
             self.assertTrue((export_root / "skills" / "dasheng-stage-publish" / "SKILL.md").exists())
             self.assertTrue((export_root / "scripts" / "run_mainline_stage.py").exists())
             self.assertTrue((export_root / "tests" / "test_mainline_hardening.py").exists())
@@ -49,6 +51,7 @@ class ExportSkillSuiteTests(unittest.TestCase):
 
             manifest = json.loads((export_root / "EXPORT_MANIFEST.json").read_text(encoding="utf-8"))
             self.assertIn("dasheng-media-sop", manifest["formal_skills"])
+            self.assertIn("dasheng-paradigm-profiler", manifest["formal_skills"])
             self.assertIn("dasheng-daily-draft", manifest["legacy_redirect_skills"])
             self.assertEqual(manifest["installation"]["openclaw"]["script"], "install_to_openclaw.sh")
             self.assertIn("scripts", manifest["bundled_directories"])
