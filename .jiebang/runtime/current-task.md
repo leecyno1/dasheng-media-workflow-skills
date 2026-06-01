@@ -9,6 +9,7 @@
 - ✅ 导出包包含 `dasheng-paradigm-profiler`
 - ✅ 全量测试通过：`129 passed, 2 skipped`
 - ✅ 当前改动已提交：`ca839a1 feat: add optional paradigm learning asset workflow`
+- ✅ 活跃安装/导出/agent 入口说明已统一为 `dasheng-media-sop`
 
 ## Open Questions
 - 是否需要立即导出并安装到 OpenClaw/Hermes 做一次真实环境验证？

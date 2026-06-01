@@ -1,7 +1,7 @@
 ---
 agent: cx
 status: active
-updated_at: 2026-05-31 22:57
+updated_at: 2026-06-01 08:08
 task: 范式学习能力与主线契约收口
 mode: manual
 ---
@@ -26,16 +26,23 @@ mode: manual
 - 导出烟测已通过：`python3 scripts/export_skill_suite.py --target-dir /private/tmp/dasheng-export-check-codex`。
 - 导出包关键文件已验证存在：`EXPORT_MANIFEST.json`、`scripts/run_mainline_stage.py`、`skills/dasheng-paradigm-profiler/SKILL.md`。
 - 导出 manifest 已验证 `formal_skills` 包含 `dasheng-paradigm-profiler`。
+- 后续审计清理了活跃入口残留旧口径：`install_to_openclaw.sh`、`docs/technical/export-manifest.md`、`CLAUDE.md`、`skills/dasheng-stage-brief-ai/agents/openai.yaml` 统一指向 `dasheng-media-sop`。
+- 新鲜验证已通过：`python3 -m pytest tests -q` -> `129 passed, 2 skipped in 2.36s`。
+- 新鲜导出验证已通过：`python3 scripts/export_skill_suite.py --target-dir /private/tmp/dasheng-export-entry-audit`。
+- 导出 manifest 已验证 `formal_skills` 包含 `dasheng-media-sop` 和 `dasheng-paradigm-profiler`，不包含 `dasheng-sop-orchestrator`。
 
 ## In Progress
 
 - 当前相关改动已提交：`ca839a1 feat: add optional paradigm learning asset workflow`。
+- 入口说明清理待提交。
 - 无关 `outputs/` 保持未暂存。
 
 ## Changed Files
 
 - `CLAUDE.md`
 - `docs/STAGE_INTERFACES.md`
+- `docs/technical/export-manifest.md`
+- `install_to_openclaw.sh`
 - `scripts/canonical_workflow.py`
 - `scripts/build_paradigm_profile.py`
 - `scripts/run_mainline_stage.py`
@@ -44,6 +51,7 @@ mode: manual
 - `skills/dasheng-paradigm-profiler/`
 - `skills/dasheng-media-sop/SKILL.md`
 - `skills/dasheng-media-sop/references/stage-module-map.md`
+- `skills/dasheng-stage-brief-ai/agents/openai.yaml`
 - `skills/SKILL_ALIASES.md`
 - `tests/test_export_skill_suite.py`
 - `tests/test_mainline_hardening.py`

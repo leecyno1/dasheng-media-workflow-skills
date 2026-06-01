@@ -48,7 +48,7 @@ cp -r "${BASE_DIR}/configs"/* "${WORKSPACE_DIR}/configs/" 2>/dev/null || true
 
 echo "Installed skills to: ${SKILLS_DIR}"
 echo "Installed workspace to: ${WORKSPACE_DIR}"
-echo "Verify entry skill: dasheng-sop-orchestrator"
+echo "Verify entry skill: dasheng-media-sop"
 echo "Next: copy env template -> ~/.openclaw/dasheng.env"
 echo "Template file: ${BASE_DIR}/ENV_TEMPLATE.env"
 echo "Smoke prompts: ${BASE_DIR}/SMOKE_PROMPTS.md"

@@ -117,7 +117,7 @@ Before running any production tasks each day, execute the smoke test from `SMOKE
 
 ### Stage Execution
 
-Always enter through `dasheng-sop-orchestrator` to prevent stage misalignment. The orchestrator will route to the appropriate stage skill based on current progress.
+Always enter through `dasheng-media-sop` to prevent stage misalignment. The media SOP will route to the appropriate stage skill based on current progress.
 
 ### Stage Deliverables
 
@@ -235,7 +235,7 @@ python3 scripts/publish_video_supplement.py --style claude-purple
 
 ## Important References
 
-- Stage contract specification: [skills/dasheng-sop-orchestrator/references/stage-contract.md](skills/dasheng-sop-orchestrator/references/stage-contract.md)
+- Stage contract specification: [skills/dasheng-media-sop/references/stage-contract.md](skills/dasheng-media-sop/references/stage-contract.md)
 - **⭐ Brief AI generation guide**: [skills/dasheng-stage-brief-ai/references/ai-generation-guide.md](skills/dasheng-stage-brief-ai/references/ai-generation-guide.md)
 - **⭐ Topic evaluation framework**: [skills/dasheng-stage-brief-ai/references/topic-evaluation.md](skills/dasheng-stage-brief-ai/references/topic-evaluation.md)
 - Writing frameworks: [skills/dasheng-stage-rewrite/references/frameworks.md](skills/dasheng-stage-rewrite/references/frameworks.md)

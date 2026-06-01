@@ -8,11 +8,15 @@
 
 ## 包含技能
 
-- `dasheng-sop-orchestrator`
-- `dasheng-stage-intake-brief-draft`
-- `dasheng-stage-material-refill`
-- `dasheng-stage-rewrite`
-- `dasheng-stage-publish-video`
+- `dasheng-media-sop`
+- `dasheng-paradigm-profiler`
+- `dasheng-stage-publish`
+- `dasheng-daily-intake`
+- `dasheng-daily-phase2`
+- `dasheng-daily-material`
+- `dasheng-daily-postmortem`
+- `dasheng-style-profiler`
+- `feishu-doc-creator`
 
 ## 默认工作区
 
@@ -43,7 +47,7 @@
 2. 如工作区路径不同，修改每个 `SKILL.md` 中的默认路径或设置环境变量。
 3. 用 `ENV_TEMPLATE.env` 生成你的本地环境文件并加载。
 4. 验证入口技能：
-   - `dasheng-sop-orchestrator`
+   - `dasheng-media-sop`
 
 ## 当前口径
 
