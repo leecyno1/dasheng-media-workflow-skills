@@ -12,6 +12,8 @@ const SCRIPT = path.join(ROOT, 'scripts/build_stage3_draft.py');
  * @param {string} options.runId - 运行ID (格式: YYYY-MM-DD_HHMMSS)
  * @param {string} options.topicCardsFile - topic_cards.json 文件路径
  * @param {string} options.outputDir - 输出目录
+ * @param {string} options.assetSpecsFile - Draft 内图表/配图规格文件
+ * @param {string} options.chartjsFile - 本地 Chart.js v4.4.4 UMD 文件
  * @returns {Object} 执行结果
  */
 function runDraft(selectedTopicsFile, options = {}) {
@@ -27,6 +29,14 @@ function runDraft(selectedTopicsFile, options = {}) {
 
   if (options.outputDir) {
     args.push('--output-dir', options.outputDir);
+  }
+
+  if (options.assetSpecsFile) {
+    args.push('--asset-specs-file', options.assetSpecsFile);
+  }
+
+  if (options.chartjsFile) {
+    args.push('--chartjs-file', options.chartjsFile);
   }
 
   const result = spawnSync('python3', args, {

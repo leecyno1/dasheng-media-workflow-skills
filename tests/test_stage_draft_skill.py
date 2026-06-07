@@ -20,9 +20,12 @@ import pytest
 # 添加项目根目录到路径
 PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
+sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
 
 SKILL_DIR = PROJECT_ROOT / "skills" / "dasheng-stage-draft"
 SCRIPT_PATH = PROJECT_ROOT / "scripts" / "build_stage3_draft.py"
+
+from build_stage3_draft import inspect_draft_quality
 
 
 @pytest.fixture
@@ -118,7 +121,7 @@ def test_draft_generation_with_valid_input(valid_selected_topics, temp_output_di
     assert "draft_files" in output
     assert "manifest_file" in output
     assert "final_structure_snapshot" in output
-    assert output["next_step"] == "dasheng-daily-material"
+    assert output["next_step"] == "dasheng-stage-publish"
 
 
 def test_draft_generation_with_empty_topics(empty_selected_topics, temp_output_dir):
@@ -157,7 +160,7 @@ def test_json_output_schema(valid_selected_topics, temp_output_dir):
                 "draft_file": str(temp_output_dir / "03_标准初稿_topic-001.md")
             }
         ],
-        "next_step": "dasheng-daily-material"
+        "next_step": "dasheng-stage-publish"
     }
 
     # 验证schema
@@ -169,7 +172,7 @@ def test_json_output_schema(valid_selected_topics, temp_output_dir):
     assert "manifest_file" in mock_output
     assert "final_structure_snapshot" in mock_output
     assert "next_step" in mock_output
-    assert mock_output["next_step"] == "dasheng-daily-material"
+    assert mock_output["next_step"] == "dasheng-stage-publish"
 
 
 def test_nodejs_wrapper_syntax():
@@ -180,6 +183,26 @@ def test_nodejs_wrapper_syntax():
         text=True
     )
     assert result.returncode == 0, f"Node.js syntax error: {result.stderr}"
+
+
+def test_inspect_draft_quality_flags_not_but_ai_cliche():
+    draft = """# 测试稿
+
+## 一、开头
+
+这不是一次普通的事件，而是市场重新定价的开始。这意味着后续变量需要继续观察。
+
+## 二、分析
+
+正文继续展开。
+"""
+
+    gate = inspect_draft_quality(draft, {"topic_id": "topic-001", "title": "测试稿"}, {"claims": []})
+
+    pattern_ids = {item["pattern_id"] for item in gate["ai_cliche_hits"]}
+    assert "not_but" in pattern_ids
+    assert "this_means" in pattern_ids
+    assert gate["status"] == "warning"
 
 
 if __name__ == "__main__":

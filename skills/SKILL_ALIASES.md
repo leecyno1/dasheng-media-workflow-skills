@@ -10,13 +10,19 @@
 | `dasheng-paradigm-profiler` | 1.0.0 | ✅ 正式 | 可选前置资产，提炼文章结构范式 |
 | `dasheng-daily-intake` | 1.0.0 | ✅ 正式 | 内容采集阶段 |
 | `dasheng-daily-phase2` | 1.0.0 | ✅ 正式 | 选题分析阶段（替代 dasheng-daily-brief） |
-| `dasheng-daily-draft` | 1.0.0 | ✅ 正式 | 初稿生成阶段 |
-| `dasheng-daily-material` | 1.0.0 | ✅ 正式 | 素材收集阶段 |
-| `dasheng-stage-rewrite-v3` | 1.0.0 | ✅ 正式 | 多版本改写（推荐使用） |
+| `dasheng-daily-draft` | 1.0.0 | ✅ 正式 | 写作与可发布底稿阶段 |
 | `dasheng-stage-publish` | 1.0.0 | ✅ 正式 | 内容发布阶段 |
 | `dasheng-daily-postmortem` | 1.0.0 | ✅ 正式 | 复盘与知识回写 |
+| `dasheng-finance-data` | 0.1.0 | ✅ 正式 | Draft 金融数据增强工具，生成 Chart.js 图表规格 |
 | `dasheng-style-profiler` | 1.0.0 | ✅ 正式 | 文风 Style DNA 提炼 |
 | `feishu-doc-creator` | 1.0.0 | ✅ 正式 | 飞书文档创建辅助 |
+
+## 按需工具（不属于正式主链）
+
+| Skill 名称 | 状态 | 说明 |
+|------------|------|------|
+| `dasheng-daily-material` | 🧰 按需 | 补素材、封面、图表、视频素材，不再作为第 4 环节 |
+| `dasheng-stage-rewrite-v3` | 🧰 按需 | 多版本改写工具，能力并入 Draft/Publish 后按需调用 |
 
 ## 已废弃 Skill（请勿使用）
 
@@ -28,8 +34,8 @@
 | `dasheng-daily-outline` | `dasheng-daily-draft` | 与 draft 重复 |
 | `dasheng-daily-final` | `dasheng-daily-draft` | 与 draft 重复 |
 | `dasheng-stage-draft` | `dasheng-daily-draft` | 旧版本，已合并 |
-| `dasheng-stage-material-refill` | `dasheng-daily-material` | 旧版本，已合并 |
-| `dasheng-stage-rewrite` | `dasheng-stage-rewrite-v3` | 旧版本，功能不完整 |
+| `dasheng-stage-material-refill` | `dasheng-daily-material` | 已退为按需工具 |
+| `dasheng-stage-rewrite` | `dasheng-stage-rewrite-v3` | 已退为按需工具 |
 | `dasheng-stage-intake-brief-draft` | `dasheng-daily-intake` + `dasheng-daily-phase2` | 多阶段合并 |
 | `dasheng-stage-publish-video` | `dasheng-stage-publish` | 已并入 publish 阶段 |
 | `dasheng-stage-distribute` | `dasheng-stage-publish` | 已并入 publish 阶段 |
