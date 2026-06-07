@@ -22,10 +22,9 @@ material_execute_pack.sh 包装入口
   scripts/material_execute_pack.sh --draft-manifest <draft_manifest.json>
 
 说明：
-  - 本包装入口已完全收口到 canonical `draft_manifest.json`。
+  - 本包装入口已完全收口到 `draft_manifest.json`。
   - `--pack-root`、`--latest-pack`、`--single` 等旧参数已停用。
-  - 如需更复杂的主链执行，请改用：
-      python3 $DASHENG_ROOT/scripts/run_mainline_stage.py material --run-id <run_id>
+  - material 已从正式主链删除；这里只作为 draft 后的按需素材补充工具。
 HELP
 }
 
@@ -40,7 +39,7 @@ while [[ $# -gt 0 ]]; do
     fi
     exec python3 "$PYTHON_SCRIPT" --help
   elif [[ "$1" == "--single" || "$1" == "--single-topic" || "$1" == "--latest-pack" || "$1" == "--pack-root" || "$1" == "--layer5" || "$1" == "--all-layer5" || "$1" == "--no-layer5" ]]; then
-    echo "error: 旧参数 $1 已停用；请改用 --draft-manifest <draft_manifest.json> 走 canonical material 主链。" >&2
+    echo "error: 旧参数 $1 已停用；请改用 --draft-manifest <draft_manifest.json> 执行按需素材补充。" >&2
     shift
   else
     args+=("$1")

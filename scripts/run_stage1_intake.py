@@ -17,6 +17,7 @@ from xml.etree import ElementTree as ET
 
 import requests
 from desktop_delivery import sync_intake_to_desktop
+from intake_collectors import collect_simple_intake
 from path_config import get_project_root, get_output_root
 
 
@@ -29,6 +30,7 @@ PORT_REPORTS = os.getenv("DASHENG_INTAKE_REPORTS_BASE", "http://45.197.148.64:80
 PORT_REPORTS_FALLBACK = os.getenv("DASHENG_INTAKE_REPORTS_FALLBACK", "").rstrip("/")
 PORT_8000 = os.getenv("DASHENG_INTAKE_8000_BASE", "http://45.197.148.64:8000").rstrip("/")
 PORT_8000_API = f"{PORT_8000}/api/v1"
+INTAKE_MODE = os.getenv("DASHENG_INTAKE_MODE", "simple").strip().lower()
 
 WECHAT_FETCH_ROUNDS = int(os.getenv("DASHENG_WECHAT_FETCH_ROUNDS", "3"))
 WECHAT_WAIT_SECONDS = int(os.getenv("DASHENG_WECHAT_WAIT_SECONDS", "8"))
@@ -59,19 +61,37 @@ CHANNEL_DISPLAY_NAMES = {
     "wechat": "公众号",
     "reports": "TrendRadar / Reports",
     "content_research": "5173 Content Research",
+    "local_chat": "本地聊天记录",
+    "local_news": "本地新闻流",
+    "public_news": "公开新闻兜底",
+    "public_hot": "公开热榜兜底",
 }
 
-CHANNEL_ORDER = ["x", "wb", "xhs", "douyin", "bili", "content_research", "ai_hot", "reports", "wechat"]
+CHANNEL_ORDER = [
+    "local_chat",
+    "local_news",
+    "public_news",
+    "public_hot",
+    "ai_hot",
+    "wechat",
+    "reports",
+    "content_research",
+    "x",
+    "wb",
+    "xhs",
+    "douyin",
+    "bili",
+]
 
 SOURCE_TIER_RULES = {
     "official": ["gov", "government", "新华社", "人民网", "央行", "国务院", "发改委", "外交部", "国家统计局", "fed", "federalreserve", "eia", "opec"],
     "mainstream_media": ["reuters", "bloomberg", "financial times", "wsj", "cnn", "bbc", "cnbc", "澎湃", "财新", "第一财经", "界面", "新华"],
-    "platform_hotspot": ["5173/", "trendradar", "douyin", "xhs", "bili", "wb", "x", "ai_hot/"],
-    "self_media": ["wechat_curated", "wechat_latest", "公众号", "博主", "自媒体"],
+    "platform_hotspot": ["5173/", "trendradar", "douyin", "xhs", "bili", "wb", "x", "ai_hot/", "public/", "public_news/", "local_news/"],
+    "self_media": ["wechat_curated", "wechat_latest", "公众号", "博主", "自媒体", "local_chat/"],
 }
 
 NOISE_PATTERNS = {
-    "ad_promotional": ["报名", "优惠", "折扣", "套餐", "招商", "加群", "直播带货", "团购", "课程"],
+    "ad_promotional": ["报名", "优惠", "折扣", "套餐", "招商", "加群", "直播带货", "团购", "课程", "爆单", "趸交", "挪储"],
     "irrelevant_life": [
         "美食", "探店", "穿搭", "vlog", "日常", "情感", "旅游", "宠物",
         "口红", "妆容", "护肤", "粉底", "淡颜", "白开水", "发型", "卷发", "头包脸", "拉伸",
@@ -135,6 +155,23 @@ DYNAMIC_TOKEN_STOPWORDS = {
 CLUSTER_TITLE_NOISE_TOKENS = {
     "bili", "wb", "xhs", "douyin", "reports", "report", "content", "research", "channel",
     "mp", "wechat", "leron", "trendradar", "unknown", "财经", "热度代理", "score",
+    "ai", "the", "show", "to", "from", "with", "for", "and",
+}
+
+GENERIC_CLUSTER_LABELS = {
+    "AI工具/工作流",
+    "宏观/市场情绪",
+    "其他观察",
+}
+
+GENERIC_CLUSTER_TITLE_NORMALIZED = {
+    "ai-ai工具-工作流",
+    "ai工具-工作流",
+    "人工智能",
+    "人工智能工具与工作流",
+    "宏观-市场情绪",
+    "宏观市场情绪",
+    "其他观察",
 }
 
 SOURCE_FRESHNESS_WEIGHTS = {
@@ -151,6 +188,10 @@ SOURCE_FRESHNESS_WEIGHTS = {
     "5173/bili": 0.96,
     "8000/wechat_curated": 0.92,
     "8000/wechat_latest": 0.9,
+    "local_chat/messages": 1.45,
+    "local_news/8001": 1.38,
+    "public_news/": 1.28,
+    "public/": 1.05,
 }
 
 SOURCE_TIMELINESS_WEIGHTS = {
@@ -167,6 +208,10 @@ SOURCE_TIMELINESS_WEIGHTS = {
     "5173/bili": 0.96,
     "8000/wechat_curated": 0.9,
     "8000/wechat_latest": 0.88,
+    "local_chat/messages": 1.58,
+    "local_news/8001": 1.42,
+    "public_news/": 1.32,
+    "public/": 1.12,
 }
 
 SOURCE_AUTHORITY_WEIGHTS = {
@@ -686,6 +731,281 @@ def compute_excerpt(title: str, summary: str, limit: int = 70) -> str:
     return f"{text[: limit - 1]}…"
 
 
+TOPIC_TRANSLATION_CACHE: dict[str, str] = {}
+TOPIC_FRAGMENT_TRANSLATIONS = {
+    "ai": "人工智能",
+    "ai工具/工作流": "人工智能工具与工作流",
+    "ai工具": "人工智能工具",
+    "ai agent": "人工智能代理",
+    "ai agents": "人工智能代理",
+    "agent": "智能代理",
+    "agents": "智能代理",
+    "market": "市场",
+    "markets": "市场",
+    "tech": "科技",
+    "technology": "科技",
+    "workflow": "工作流",
+    "workflows": "工作流",
+}
+LOW_SIGNAL_ENGLISH_TOPIC_TOKENS = {
+    "i",
+    "me",
+    "my",
+    "our",
+    "this",
+    "that",
+    "these",
+    "those",
+    "visit",
+    "visiting",
+    "visited",
+    "sub",
+    "subreddit",
+    "thread",
+}
+
+
+def has_chinese_text(text: str) -> bool:
+    return any("\u4e00" <= char <= "\u9fff" for char in str(text or ""))
+
+
+def needs_chinese_topic_translation(text: str) -> bool:
+    raw = clean_text(text)
+    if not raw:
+        return False
+    chinese_count = sum(1 for char in raw if "\u4e00" <= char <= "\u9fff")
+    latin_count = sum(1 for char in raw if "a" <= char.lower() <= "z")
+    return chinese_count == 0 or latin_count > chinese_count
+
+
+def is_low_signal_english_topic(text: str) -> bool:
+    tokens = re.findall(r"[A-Za-z]+", clean_text(text).lower())
+    return bool(tokens) and len(tokens) <= 5 and all(token in LOW_SIGNAL_ENGLISH_TOPIC_TOKENS for token in tokens)
+
+
+def translate_english_to_chinese(text: str) -> str:
+    raw = clean_text(text)
+    if not raw or not needs_chinese_topic_translation(raw):
+        return raw
+    cached = TOPIC_TRANSLATION_CACHE.get(raw.lower())
+    if cached:
+        return cached
+    try:
+        response = requests.get(
+            "https://translate.googleapis.com/translate_a/single",
+            params={"client": "gtx", "sl": "en", "tl": "zh-CN", "dt": "t", "q": raw[:240]},
+            timeout=4,
+            headers={"User-Agent": "Mozilla/5.0"},
+        )
+        response.raise_for_status()
+        payload = response.json()
+        translated = "".join(part[0] for part in (payload[0] or []) if part and part[0]).strip()
+        if translated and has_chinese_text(translated):
+            TOPIC_TRANSLATION_CACHE[raw.lower()] = translated
+            return translated
+    except Exception:
+        pass
+    return f"海外市场：{raw}"
+
+
+def polish_chinese_topic_title(title: str) -> str:
+    raw = clean_text(title)
+    if not raw:
+        return raw
+
+    def normalize_fragment(fragment: str) -> str:
+        cleaned = clean_text(fragment)
+        translated = TOPIC_FRAGMENT_TRANSLATIONS.get(cleaned.lower(), cleaned)
+        translated = re.sub(r"(?<![A-Za-z])AI(?![A-Za-z])", "人工智能", translated)
+        translated = re.sub(r"^AI(?=[\u4e00-\u9fff])", "人工智能", translated)
+        return translated.replace("AI工具/工作流", "人工智能工具与工作流")
+
+    if "/" not in raw and "|" not in raw:
+        return normalize_fragment(raw)
+
+    protected = raw.replace("AI工具/工作流", "AI工具∕工作流").replace("ai工具/工作流", "ai工具∕工作流")
+    fragments = [
+        normalize_fragment(part.replace("∕", "/"))
+        for part in re.split(r"\s*[/|]\s*", protected)
+        if clean_text(part)
+    ]
+    deduped: list[str] = []
+    for fragment in fragments:
+        if not fragment or fragment in deduped:
+            continue
+        if any(fragment in existing and len(fragment) <= 4 for existing in fragments if existing != fragment):
+            continue
+        deduped.append(fragment)
+    if deduped and all(not needs_chinese_topic_translation(fragment) for fragment in deduped):
+        separator = "、" if all(has_chinese_text(fragment) for fragment in deduped) else " / "
+        return truncate_title(separator.join(deduped), 64)
+    return truncate_title(" / ".join(deduped or fragments), 64)
+
+
+def ensure_chinese_topic_title(title_candidate: str, representative_titles: list[str]) -> tuple[str, str]:
+    original = clean_text(title_candidate)
+    if not needs_chinese_topic_translation(original):
+        return polish_chinese_topic_title(original), original
+    for title in representative_titles:
+        cleaned = clean_text(title)
+        if has_chinese_text(cleaned) and not needs_chinese_topic_translation(cleaned):
+            return polish_chinese_topic_title(truncate_title(cleaned, 64)), original
+    source_text = clean_text(representative_titles[0] if representative_titles else original)
+    if is_low_signal_english_topic(source_text or original):
+        return "海外社区零散讨论", original
+    translated = translate_english_to_chinese(source_text or original)
+    return polish_chinese_topic_title(truncate_title(translated, 64)), original
+
+
+def normalize_hotspot_radar(raw_payload: dict[str, Any]) -> dict[str, Any]:
+    radar = raw_payload.get("radar") if isinstance(raw_payload, dict) else {}
+    if not isinstance(radar, dict):
+        return {}
+    try:
+        macro_policy_score = float(radar.get("macro_policy_score") or 0.0)
+    except (TypeError, ValueError):
+        macro_policy_score = 0.0
+    return {
+        "capture_role": str(radar.get("capture_role") or ""),
+        "source_role": str(radar.get("source_role") or ""),
+        "macro_policy_score": round(max(0.0, min(macro_policy_score, 1.0)), 4),
+        "kept_by": str(radar.get("kept_by") or ""),
+    }
+
+
+def editor_label_names() -> set[str]:
+    return {label for label, _ in EDITOR_TOPIC_RULES}
+
+
+def cluster_title_is_generic(title: str) -> bool:
+    cleaned = clean_text(title)
+    if not cleaned:
+        return True
+    normalized = normalize_slug(cleaned)
+    labels = editor_label_names()
+    normalized_labels = {normalize_slug(label) for label in labels}
+    if (
+        cleaned in GENERIC_CLUSTER_TITLE_NORMALIZED
+        or normalized in GENERIC_CLUSTER_TITLE_NORMALIZED
+        or cleaned in labels
+        or cleaned in EVENT_ACTIONS
+        or normalized in normalized_labels
+    ):
+        return True
+    fragments = [clean_text(part) for part in re.split(r"[/|]+", cleaned) if clean_text(part)]
+    if fragments and all(
+        fragment in GENERIC_CLUSTER_LABELS
+        or fragment in labels
+        or normalize_slug(fragment) in GENERIC_CLUSTER_TITLE_NORMALIZED
+        or normalize_slug(fragment) in normalized_labels
+        for fragment in fragments
+    ):
+        return True
+    tokens = extract_dynamic_tokens(cleaned)
+    informative_tokens = [
+        token
+        for token in tokens
+        if token not in CLUSTER_TITLE_NOISE_TOKENS and token not in DYNAMIC_TOKEN_STOPWORDS
+    ]
+    return len(informative_tokens) <= 1 and any(label in cleaned for label in GENERIC_CLUSTER_LABELS)
+
+
+def compact_cluster_source_title(title: str, limit: int = 48) -> str:
+    cleaned = clean_text(title)
+    cleaned = re.sub(r"https?://\S+", "", cleaned)
+    cleaned = re.sub(r"[🔥⭐🌈✅❌]+", "", cleaned)
+    cleaned = re.sub(r"[（(]20\d{2}年[^）)]*[）)]", "", cleaned)
+    cleaned = re.sub(r"\s+", " ", cleaned).strip(" ，,；;。")
+    if len(cleaned) <= limit:
+        return cleaned
+    clauses = [clean_text(part) for part in re.split(r"[。；;！!?]", cleaned) if clean_text(part)]
+    if clauses:
+        clauses.sort(
+            key=lambda part: (
+                len(extract_signal_terms(part)),
+                len(entity_count_payload(extract_entities(part))),
+                -abs(len(part) - 34),
+            ),
+            reverse=True,
+        )
+        best = clauses[0]
+        if len(best) <= limit + 12:
+            cleaned = best
+    return truncate_title(cleaned, limit)
+
+
+def representative_title_quality(title: str, label: str) -> float:
+    cleaned = clean_text(title)
+    if not cleaned:
+        return -999.0
+    score = 0.0
+    if has_chinese_text(cleaned):
+        score += 1.2
+    score += min(len(cleaned) / 24.0, 2.2)
+    score += min(len(extract_signal_terms(cleaned)), 4) * 0.75
+    score += min(len(entity_count_payload(extract_entities(cleaned))), 4) * 0.55
+    if label and label != "其他观察" and label not in cleaned:
+        score += 0.25
+    if any(keyword in cleaned for keyword in ("报名", "欢迎参会", "腾讯会议", "会议号", "直播", "加群")):
+        score -= 2.2
+    if detect_noise_tags(cleaned):
+        score -= 1.4
+    if cluster_title_is_generic(cleaned):
+        score -= 2.0
+    return round(score, 4)
+
+
+def best_representative_cluster_title(representative_titles: list[str], label: str) -> str:
+    candidates = [clean_text(title) for title in representative_titles if clean_text(title)]
+    if not candidates:
+        return ""
+    candidates.sort(key=lambda title: representative_title_quality(title, label), reverse=True)
+    return candidates[0]
+
+
+def build_cluster_title_candidate(
+    label: str,
+    dominant_entities: list[str],
+    dominant_actions: list[str],
+    dominant_tokens: list[str],
+    representative_titles: list[str],
+) -> tuple[str, str]:
+    normalized_entities = {item.lower() for item in dominant_entities}
+    filtered_tokens = [
+        token for token in dominant_tokens
+        if token not in normalized_entities
+        and token not in CLUSTER_TITLE_NOISE_TOKENS
+        and token not in DYNAMIC_TOKEN_STOPWORDS
+        and not token.isdigit()
+        and len(token) >= 2
+    ]
+    title_terms: list[str] = []
+    title_terms.extend(dominant_entities[:2])
+    if label != "其他观察" and label not in GENERIC_CLUSTER_LABELS:
+        title_terms.append(label)
+    if dominant_actions:
+        title_terms.extend(dominant_actions[:1])
+    if len(title_terms) < 2:
+        title_terms.extend(filtered_tokens[: max(0, 2 - len(title_terms))])
+
+    deduped_title_terms: list[str] = []
+    seen_title_terms: set[str] = set()
+    for term in title_terms:
+        norm = normalize_slug(term)
+        if not norm or norm in seen_title_terms:
+            continue
+        seen_title_terms.add(norm)
+        deduped_title_terms.append(term)
+    title_candidate = " / ".join(deduped_title_terms[:4]) if deduped_title_terms else label
+    representative = best_representative_cluster_title(representative_titles, label)
+    if representative and (
+        cluster_title_is_generic(title_candidate)
+        or representative_title_quality(representative, label) >= representative_title_quality(title_candidate, label) + 1.4
+    ):
+        title_candidate = compact_cluster_source_title(representative)
+    return ensure_chinese_topic_title(title_candidate, representative_titles)
+
+
 def editorial_relevance_score(item: "SelectedItem") -> float:
     text = normalize_text(item.title, item.summary, item.author, " ".join(item.dynamic_tokens), " ".join(entity_count_payload(item.entities)))
     signal_hits = len(set(extract_signal_terms(item.title, item.summary, item.author)))
@@ -708,10 +1028,12 @@ def editorial_relevance_score(item: "SelectedItem") -> float:
     for keywords in SIGNAL_KEYWORDS.values():
         if any(contains_keyword(text, keyword) for keyword in keywords):
             keyword_bonus += 0.65
+    radar_score = float((item.hotspot_radar or {}).get("macro_policy_score") or 0.0)
+    radar_bonus = min(radar_score, 1.0) * 1.8
     action_bonus = min(len(item.dominant_actions), 2) * 0.35
     noise_penalty = len(item.noise_tags) * 1.35
     generic_penalty = 0.9 if item.topic == "其他观察" and signal_hits == 0 and entity_hits == 0 else 0.0
-    score = label_bonus + min(signal_hits, 4) * 0.9 + min(entity_hits, 4) * 0.55 + min(keyword_bonus, 2.6) + action_bonus + source_bonus - noise_penalty - generic_penalty
+    score = label_bonus + min(signal_hits, 4) * 0.9 + min(entity_hits, 4) * 0.55 + min(keyword_bonus, 2.6) + radar_bonus + action_bonus + source_bonus - noise_penalty - generic_penalty
     return round(score, 3)
 
 
@@ -719,7 +1041,15 @@ def pick_analysis_items(selected: list["SelectedItem"]) -> list["SelectedItem"]:
     relevant = []
     for item in selected:
         relevance = float(item.raw_heat_signals.get("editorial_relevance") or 0.0)
+        cross_channel_hits = int(item.raw_heat_signals.get("cross_channel_hits") or 0)
+        cross_source_hits = int(item.raw_heat_signals.get("cross_source_hits") or 0)
         if item.channel == "ai_hot":
+            relevant.append(item)
+            continue
+        if item.heat_score >= 58 and (cross_channel_hits >= 2 or cross_source_hits >= 2):
+            relevant.append(item)
+            continue
+        if item.heat_score >= 62 and item.channel in {"public_news", "local_news", "reports"}:
             relevant.append(item)
             continue
         if relevance >= 2.2:
@@ -765,6 +1095,8 @@ class SelectedItem:
     heat_level: str = "D"
     dedupe_group_id: str = ""
     raw_heat_signals: dict[str, Any] = field(default_factory=dict)
+    hotspot_radar: dict[str, Any] = field(default_factory=dict)
+    capture_quality: dict[str, Any] = field(default_factory=dict)
 
     def to_record(self, run_id: str, index: int, generated_at: str) -> dict[str, Any]:
         digest = sha1_text(f"{self.source}|{self.title}|{self.url}")
@@ -805,6 +1137,8 @@ class SelectedItem:
             "freshness_score": round((self.source_freshness_weight + self.source_timeliness_weight) / 2, 3),
             "engagement_score": engagement_score,
             "raw_heat_signals": self.raw_heat_signals,
+            "capture_quality": self.capture_quality,
+            "radar": self.hotspot_radar,
             "heat_score": self.heat_score,
             "heat_level": self.heat_level,
             "is_trendradar_source": self.trendradar_signal,
@@ -823,6 +1157,66 @@ class SelectedItem:
             "source_authority_weight": self.source_authority_weight,
             "raw_payload": self.raw_payload,
         }
+
+
+def source_capture_mode(source: str, channel: str) -> str:
+    source_value = str(source or "").lower()
+    channel_value = str(channel or "").lower()
+    if source_value.startswith("local_chat/") or channel_value == "local_chat":
+        return "local_chat"
+    if source_value.startswith("local_news/") or channel_value == "local_news":
+        return "local_news"
+    if source_value.startswith("public_news/") or channel_value == "public_news":
+        return "public_news"
+    if source_value.startswith("public/") or channel_value == "public_hot":
+        return "public_hot"
+    if source_value.startswith("ai_hot/") or channel_value == "ai_hot":
+        return "ai_hot"
+    if source_value.startswith("reports/"):
+        return "legacy_reports"
+    if source_value.startswith("5173/"):
+        return "legacy_5173"
+    if source_value.startswith("8000/"):
+        return "legacy_8000"
+    return channel_value or "unknown"
+
+
+def build_capture_quality(
+    *,
+    source: str,
+    channel: str,
+    title: str,
+    url: str,
+    summary: str,
+    raw_payload: dict[str, Any],
+    fetch_status: str,
+) -> dict[str, Any]:
+    title_value = clean_text(title)
+    url_value = clean_text(url)
+    text_for_length = clean_text(f"{title_value} {summary}")
+    is_http_url = url_value.startswith(("http://", "https://"))
+    is_local_anchor = url_value.startswith("dasheng-local://")
+    is_synthetic = url_value.startswith(("dasheng-public-news://", "https://example.invalid/"))
+    title_real = bool(title_value) and not title_value.startswith(("http://", "https://", "dasheng-")) and len(title_value) >= 4
+    raw_quality = raw_payload.get("capture_quality") if isinstance(raw_payload.get("capture_quality"), dict) else {}
+    debug_snapshot_path = (
+        raw_quality.get("debug_snapshot_path")
+        or raw_payload.get("debug_snapshot_path")
+        or raw_payload.get("debug_path")
+        or raw_payload.get("snapshot_path")
+        or ""
+    )
+    source_health = "ok" if title_real and (is_http_url or is_local_anchor or not is_synthetic) and fetch_status in {"ok", "ready"} else "weak"
+    return {
+        "title_real": title_real,
+        "content_length": len(text_for_length),
+        "has_original_url": is_http_url,
+        "has_traceable_anchor": is_http_url or is_local_anchor,
+        "source_health": source_health,
+        "capture_mode": raw_quality.get("capture_mode") or source_capture_mode(source, channel),
+        "fetch_status": fetch_status,
+        "debug_snapshot_path": str(debug_snapshot_path),
+    }
 
 
 def build_item(
@@ -861,6 +1255,7 @@ def build_item(
     signature = summarize_dynamic_signature(title, summary, author, source, entity_payload, editor_labels)
     cluster = signature["dynamic_cluster_key"]
     trendradar_signal = source.startswith("reports/")
+    hotspot_radar = normalize_hotspot_radar(raw_payload)
     dynamic_tokens = signature["dominant_tokens"]
     dedupe_group_id = build_dedupe_group_id(title, summary, url, cluster, entity_payload, dynamic_tokens)
     raw_heat_signals = {
@@ -869,7 +1264,18 @@ def build_item(
         "source_timeliness_weight": source_weight(source, SOURCE_TIMELINESS_WEIGHTS),
         "source_freshness_weight": source_weight(source, SOURCE_FRESHNESS_WEIGHTS),
         "trendradar_signal": trendradar_signal,
+        "hotspot_macro_policy_score": hotspot_radar.get("macro_policy_score", 0.0),
+        "hotspot_source_role": hotspot_radar.get("source_role", ""),
     }
+    capture_quality = build_capture_quality(
+        source=source,
+        channel=channel,
+        title=title,
+        url=url,
+        summary=summary,
+        raw_payload=raw_payload,
+        fetch_status=fetch_status,
+    )
     return SelectedItem(
         source=source,
         channel=channel,
@@ -895,6 +1301,8 @@ def build_item(
         fetch_status=fetch_status,
         dedupe_group_id=dedupe_group_id,
         raw_heat_signals=raw_heat_signals,
+        hotspot_radar=hotspot_radar,
+        capture_quality=capture_quality,
     )
 
 
@@ -1304,6 +1712,7 @@ def build_selected_items(
     wechat_task: ChannelTaskResult,
     latest_articles: dict[str, Any],
     curated_articles: dict[str, dict[str, Any]],
+    generic_tasks: dict[str, ChannelTaskResult] | None = None,
 ) -> list[SelectedItem]:
     selected: list[SelectedItem] = []
     for platform in ["x", "wb", "xhs", "douyin", "bili"]:
@@ -1402,20 +1811,45 @@ def build_selected_items(
             )
             if built:
                 selected.append(built)
+    for task in (generic_tasks or {}).values():
+        for item in task.items:
+            source = item.get("source") or task.source
+            channel = item.get("channel") or task.channel
+            built = build_item(
+                source=source,
+                channel=channel,
+                title=item.get("title", ""),
+                url=item.get("url", ""),
+                author=item.get("author_name") or item.get("provider") or task.label,
+                published_at=to_dt_text(item.get("created_at") or item.get("published_at")),
+                summary=summarize_title(item.get("title", ""), item.get("summary", task.label)),
+                decision="待分流",
+                raw_payload=item,
+                fetch_status=task.status,
+            )
+            if built:
+                selected.append(built)
     return selected
 
 
 def score_selected_items(selected: list[SelectedItem], run_started: datetime) -> None:
     dedupe_counter = Counter(item.dedupe_group_id for item in selected)
+    cluster_sources: dict[str, set[str]] = defaultdict(set)
+    cluster_channels: dict[str, set[str]] = defaultdict(set)
+    cluster_dedupe_groups: dict[str, set[str]] = defaultdict(set)
     by_channel: dict[str, list[SelectedItem]] = defaultdict(list)
     for item in selected:
         by_channel[item.channel].append(item)
+        cluster_sources[item.cluster_key].add(item.source)
+        cluster_channels[item.cluster_key].add(item.channel)
+        cluster_dedupe_groups[item.cluster_key].add(item.dedupe_group_id)
 
     for channel_items in by_channel.values():
         engagement_values = []
         freshness_values = []
         authority_values = []
         duplicate_values = []
+        cross_source_values = []
         for item in channel_items:
             engagement_raw = float(item.raw_heat_signals.get("engagement") or 0)
             engagement_values.append(math.log1p(max(0.0, engagement_raw)))
@@ -1428,6 +1862,14 @@ def score_selected_items(selected: list[SelectedItem], run_started: datetime) ->
             freshness_values.append(freshness)
             authority_values.append(item.source_authority_weight)
             duplicate_values.append(dedupe_counter[item.dedupe_group_id])
+            source_hits = len(cluster_sources.get(item.cluster_key, set()))
+            channel_hits = len(cluster_channels.get(item.cluster_key, set()))
+            cluster_group_hits = len(cluster_dedupe_groups.get(item.cluster_key, set()))
+            cross_source_values.append(
+                max(source_hits - 1, 0) * 0.65
+                + max(channel_hits - 1, 0) * 1.0
+                + max(cluster_group_hits - 1, 0) * 0.3
+            )
 
         def normalize(values: list[float], target: float) -> float:
             if not values:
@@ -1448,18 +1890,28 @@ def score_selected_items(selected: list[SelectedItem], run_started: datetime) ->
             else:
                 freshness = min(item.source_timeliness_weight / 1.4, 1.0)
             duplicate_hits = float(dedupe_counter[item.dedupe_group_id])
+            source_hits = len(cluster_sources.get(item.cluster_key, set()))
+            channel_hits = len(cluster_channels.get(item.cluster_key, set()))
+            cluster_group_hits = len(cluster_dedupe_groups.get(item.cluster_key, set()))
+            cross_source_raw = (
+                max(source_hits - 1, 0) * 0.65
+                + max(channel_hits - 1, 0) * 1.0
+                + max(cluster_group_hits - 1, 0) * 0.3
+            )
             engagement_norm = normalize(engagement_values, logged_engagement)
             freshness_norm = normalize(freshness_values, freshness)
             authority_norm = normalize(authority_values, item.source_authority_weight)
             duplicate_norm = normalize(duplicate_values, duplicate_hits)
+            cross_source_norm = normalize(cross_source_values, cross_source_raw)
             trend_bonus = 1.0 if item.trendradar_signal else 0.0
             heat_score = round(
                 100
                 * (
-                    engagement_norm * 0.34
-                    + freshness_norm * 0.28
-                    + duplicate_norm * 0.16
-                    + authority_norm * 0.14
+                    engagement_norm * 0.24
+                    + freshness_norm * 0.24
+                    + duplicate_norm * 0.12
+                    + authority_norm * 0.12
+                    + cross_source_norm * 0.20
                     + trend_bonus * 0.08
                 ),
                 2,
@@ -1472,6 +1924,10 @@ def score_selected_items(selected: list[SelectedItem], run_started: datetime) ->
                     "duplicate_hits": int(duplicate_hits),
                     "duplicate_norm": round(duplicate_norm, 4),
                     "authority_norm": round(authority_norm, 4),
+                    "cross_source_hits": source_hits,
+                    "cross_channel_hits": channel_hits,
+                    "cross_cluster_group_hits": cluster_group_hits,
+                    "cross_source_norm": round(cross_source_norm, 4),
                 }
             )
             item.raw_heat_signals["editorial_relevance"] = editorial_relevance_score(item)
@@ -1524,6 +1980,8 @@ def build_event_clusters(selected: list[SelectedItem], generated_at: str, run_id
                 "dynamic_tokens": Counter(),
                 "noise_tags": Counter(),
                 "trendradar_count": 0,
+                "hotspot_macro_policy_score_sum": 0.0,
+                "hotspot_source_roles": Counter(),
                 "freshness_weight_sum": 0.0,
                 "timeliness_weight_sum": 0.0,
                 "authority_weight_sum": 0.0,
@@ -1545,6 +2003,11 @@ def build_event_clusters(selected: list[SelectedItem], generated_at: str, run_id
         bucket["dynamic_tokens"].update(item.dynamic_tokens)
         bucket["noise_tags"].update(item.noise_tags)
         bucket["trendradar_count"] += int(item.trendradar_signal)
+        radar_score = float((item.hotspot_radar or {}).get("macro_policy_score") or 0.0)
+        bucket["hotspot_macro_policy_score_sum"] += radar_score
+        radar_role = str((item.hotspot_radar or {}).get("source_role") or "")
+        if radar_role:
+            bucket["hotspot_source_roles"][radar_role] += 1
         bucket["freshness_weight_sum"] += item.source_freshness_weight
         bucket["timeliness_weight_sum"] += item.source_timeliness_weight
         bucket["authority_weight_sum"] += item.source_authority_weight
@@ -1556,36 +2019,19 @@ def build_event_clusters(selected: list[SelectedItem], generated_at: str, run_id
         dominant_actions = [name for name, _ in bucket["actions"].most_common(4)]
         dominant_tokens = [name for name, _ in bucket["dynamic_tokens"].most_common(8)]
         label = bucket["editor_labels"].most_common(1)[0][0] if bucket["editor_labels"] else "其他观察"
-        normalized_entities = {item.lower() for item in dominant_entities}
-        filtered_tokens = [
-            token for token in dominant_tokens
-            if token not in normalized_entities
-            and token not in CLUSTER_TITLE_NOISE_TOKENS
-            and not token.isdigit()
-            and len(token) >= 2
-        ]
-        title_terms: list[str] = []
-        title_terms.extend(dominant_entities[:2])
-        if label != "其他观察":
-            title_terms.append(label)
-        if dominant_actions:
-            title_terms.extend(dominant_actions[:1])
-        if len(title_terms) < 2:
-            title_terms.extend(filtered_tokens[: max(0, 2 - len(title_terms))])
-        deduped_title_terms: list[str] = []
-        seen_title_terms: set[str] = set()
-        for term in title_terms:
-            norm = normalize_slug(term)
-            if not norm or norm in seen_title_terms:
-                continue
-            seen_title_terms.add(norm)
-            deduped_title_terms.append(term)
-        title_candidate = " / ".join(deduped_title_terms[:4]) if deduped_title_terms else label
+        title_candidate_cn, title_candidate_original = build_cluster_title_candidate(
+            label,
+            dominant_entities,
+            dominant_actions,
+            dominant_tokens,
+            bucket["titles"],
+        )
         freshness_score = round(bucket["freshness_weight_sum"] / max(bucket["count"], 1), 3)
         timeliness_score = round(bucket["timeliness_weight_sum"] / max(bucket["count"], 1), 3)
         authority_score = round(bucket["authority_weight_sum"] / max(bucket["count"], 1), 3)
         noise_ratio = round(sum(bucket["noise_tags"].values()) / max(bucket["count"], 1), 4)
         avg_heat_score = round(bucket["heat_score_sum"] / max(bucket["count"], 1), 2)
+        avg_macro_policy_score = round(bucket["hotspot_macro_policy_score_sum"] / max(bucket["count"], 1), 4)
         source_diversity = len(bucket["channels"])
         dedupe_depth = len(bucket["dedupe_groups"])
         priority_score = round(
@@ -1595,6 +2041,7 @@ def build_event_clusters(selected: list[SelectedItem], generated_at: str, run_id
             + avg_heat_score * 0.22
             + timeliness_score * 5.0
             + authority_score * 3.5
+            + avg_macro_policy_score * 4.0
             + round(bucket["trendradar_count"] / max(bucket["count"], 1), 4) * 2.0
             - noise_ratio * 8.0
             - (6.0 if bucket["count"] == 1 else 0.0),
@@ -1604,8 +2051,9 @@ def build_event_clusters(selected: list[SelectedItem], generated_at: str, run_id
             {
                 "cluster_id": bucket["cluster_id"],
                 "topic": label,
-                "cluster_title_candidate": title_candidate,
-                "cluster_summary": f"围绕 {title_candidate} 的高频讨论，当前样本 {bucket['count']} 条，涉及 {len(bucket['channels'])} 个渠道、{len(bucket['dedupe_groups'])} 个去重组。",
+                "cluster_title_candidate": title_candidate_cn,
+                "cluster_title_original": title_candidate_original,
+                "cluster_summary": f"围绕 {title_candidate_cn} 的高频讨论，当前样本 {bucket['count']} 条，涉及 {len(bucket['channels'])} 个渠道、{len(bucket['dedupe_groups'])} 个去重组。",
                 "count": bucket["count"],
                 "primary_source_tier": bucket["source_tiers"].most_common(1)[0][0] if bucket["source_tiers"] else "unknown",
                 "source_tiers": dict(bucket["source_tiers"]),
@@ -1620,6 +2068,8 @@ def build_event_clusters(selected: list[SelectedItem], generated_at: str, run_id
                 "dynamic_tokens": dominant_tokens,
                 "noise_tags": dict(bucket["noise_tags"]),
                 "trendradar_coverage": round(bucket["trendradar_count"] / max(bucket["count"], 1), 4),
+                "hotspot_macro_policy_score": avg_macro_policy_score,
+                "hotspot_source_roles": dict(bucket["hotspot_source_roles"]),
                 "freshness_score": freshness_score,
                 "timeliness_score": timeliness_score,
                 "authority_score": authority_score,
@@ -1730,6 +2180,7 @@ def build_channel_top10(selected: list[SelectedItem]) -> dict[str, list[dict[str
                     "excerpt": compute_excerpt(item.title, item.summary),
                     "noise_tags": item.noise_tags,
                     "trendradar_signal": item.trendradar_signal,
+                    "capture_quality": item.capture_quality,
                     "dedupe_group_id": item.dedupe_group_id,
                     "event_key": item.cluster_key,
                     "note": "；".join(note_parts),
@@ -1744,6 +2195,49 @@ def build_channel_top10(selected: list[SelectedItem]) -> dict[str, list[dict[str
     return result
 
 
+def brief_cluster_priority_score(item: dict[str, Any]) -> float:
+    return round(
+        float(item.get("priority_score") or 0.0) * 0.15
+        + float(item.get("hotspot_macro_policy_score") or 0.0) * 90.0
+        + float(item.get("authority_score") or 0.0) * 9.0
+        + float(item.get("timeliness_score") or 0.0) * 4.0
+        + float(item.get("source_diversity") or 0.0) * 2.0
+        - float(item.get("noise_ratio") or 0.0) * 8.0,
+        3,
+    )
+
+
+def cluster_role_keys(item: dict[str, Any]) -> list[str]:
+    roles = [str(role) for role in (item.get("hotspot_source_roles") or {}).keys() if str(role).strip()]
+    if roles:
+        return sorted(roles)
+    source_mix = item.get("source_mix") or {}
+    channels = [str(channel) for channel in source_mix.keys() if str(channel).strip()]
+    return sorted(channels) or ["unknown"]
+
+
+def order_brief_clusters_for_handoff(event_clusters: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    remaining = list(event_clusters)
+    ordered: list[dict[str, Any]] = []
+    role_counts: Counter[str] = Counter()
+    while remaining:
+        best_index = 0
+        best_score = float("-inf")
+        for index, item in enumerate(remaining):
+            roles = cluster_role_keys(item)
+            role_penalty = max(role_counts[role] for role in roles) * 18.0
+            diversity_bonus = max(len(item.get("source_mix") or {}) - 1, 0) * 2.5
+            adjusted = brief_cluster_priority_score(item) + diversity_bonus - role_penalty
+            if adjusted > best_score:
+                best_score = adjusted
+                best_index = index
+        selected = remaining.pop(best_index)
+        ordered.append(selected)
+        for role in cluster_role_keys(selected):
+            role_counts[role] += 1
+    return ordered
+
+
 def build_brief_input(run_id: str, generated_at: str, event_clusters: list[dict[str, Any]], channel_top10: dict[str, list[dict[str, Any]]], entity_rankings: dict[str, Any]) -> dict[str, Any]:
     preferred_clusters = [
         item for item in event_clusters
@@ -1753,22 +2247,26 @@ def build_brief_input(run_id: str, generated_at: str, event_clusters: list[dict[
         or item["trendradar_coverage"] > 0
         or item["authority_score"] >= 1.0
     ]
-    cluster_pool = preferred_clusters or event_clusters
+    cluster_pool = order_brief_clusters_for_handoff(sorted(preferred_clusters or event_clusters, key=brief_cluster_priority_score, reverse=True))
     event_candidates = []
     for item in cluster_pool[:15]:
         event_candidates.append(
             {
                 "cluster_id": item["cluster_id"],
                 "cluster_title_candidate": item["cluster_title_candidate"],
+                "cluster_title_original": item.get("cluster_title_original", item["cluster_title_candidate"]),
                 "cluster_summary": item["cluster_summary"],
                 "count": item["count"],
                 "source_mix": item["source_mix"],
                 "source_diversity": item["source_diversity"],
                 "dedupe_depth": item["dedupe_depth"],
                 "priority_score": item["priority_score"],
+                "brief_priority_score": brief_cluster_priority_score(item),
                 "dominant_entities": item["dominant_entities"],
                 "dominant_actions": item["dominant_actions"],
                 "trendradar_coverage": item["trendradar_coverage"],
+                "hotspot_macro_policy_score": item.get("hotspot_macro_policy_score", 0.0),
+                "hotspot_source_roles": item.get("hotspot_source_roles", {}),
                 "freshness_score": item["freshness_score"],
                 "authority_score": item["authority_score"],
                 "noise_ratio": item["noise_ratio"],
@@ -1814,7 +2312,9 @@ def build_brief_input(run_id: str, generated_at: str, event_clusters: list[dict[
             {
                 "cluster_id": item["cluster_id"],
                 "cluster_title_candidate": item["cluster_title_candidate"],
+                "cluster_title_original": item.get("cluster_title_original", item["cluster_title_candidate"]),
                 "source_mix": item["source_mix"],
+                "hotspot_macro_policy_score": item.get("hotspot_macro_policy_score", 0.0),
             }
             for item in event_clusters
             if len(item.get("source_mix", {})) >= 2
@@ -1991,7 +2491,8 @@ def build_markdown(
             f"# 第一环节采集报告（{run_label}）",
             "",
             "## 1. 本轮采集概览",
-            f"- 渠道采集量：X={counts['x_total']}，微博={counts['wb_total']}，小红书={counts['xhs_total']}，抖音={counts['douyin_total']}，B站={counts['bili_total']}，AI热点汇总={counts.get('ai_hot_total', 0)}，公众号定向样本={counts['curated_articles']}。",
+            f"- 渠道采集量：本地聊天={counts.get('local_chat_total', 0)}，本地新闻={counts.get('local_news_total', 0)}，公开新闻={counts.get('public_news_total', 0)}，公开热榜={counts.get('public_hot_total', 0)}，AI热点汇总={counts.get('ai_hot_total', 0)}，公众号定向样本={counts['curated_articles']}。",
+            f"- 旧远程平台量：X={counts['x_total']}，微博={counts['wb_total']}，小红书={counts['xhs_total']}，抖音={counts['douyin_total']}，B站={counts['bili_total']}。",
             f"- 入库总量：`{counts['selected_records']}` 条；有效链接样本：`{counts['valid_linked_records']}` 条。",
             f"- 进入分析池：`{analysis_report['analysis_records']}` 条，占比 `{analysis_report['analysis_ratio']:.2%}`；该池仅用于事件簇、Brief 交接和热点横截面。",
             f"- 公众号等待轮次：`{wechat_task.attempts}`；累计等待：`{wechat_task.waited_seconds}` 秒；状态：`{wechat_task.status}`。",
@@ -2070,6 +2571,113 @@ def build_markdown(
     return report, draft
 
 
+def make_empty_task(channel: str, source: str, label: str, reason: str = "simple intake mode") -> ChannelTaskResult:
+    return ChannelTaskResult(
+        channel=channel,
+        source=source,
+        label=label,
+        status="skipped",
+        issues=[reason],
+    )
+
+
+def task_from_collected(name: str, source: str, channel: str, label: str, simple_run: Any) -> ChannelTaskResult:
+    raw_items = simple_run.tasks.get(name, [])
+    items = [
+        item.to_payload() if hasattr(item, "to_payload") else dict(item)
+        for item in raw_items
+    ]
+    status_payload = simple_run.status.get(name, {})
+    status = str(status_payload.get("status") or ("ready" if items else "empty"))
+    issues: list[str] = []
+    if status_payload.get("error"):
+        issues.append(str(status_payload["error"]))
+    return ChannelTaskResult(
+        channel=channel,
+        source=source,
+        label=label,
+        items=items,
+        total=len(items),
+        status=status,
+        issues=issues,
+        meta={key: value for key, value in status_payload.items() if key not in {"status", "error", "total"}},
+    )
+
+
+def build_simple_intake_tasks(raw_dir: Path) -> tuple[
+    dict[str, ChannelTaskResult],
+    ChannelTaskResult,
+    ChannelTaskResult,
+    ChannelTaskResult,
+    ChannelTaskResult,
+    dict[str, Any],
+    dict[str, Any],
+    dict[str, dict[str, Any]],
+    dict[str, ChannelTaskResult],
+    dict[str, dict[str, Any]],
+    list[str],
+]:
+    simple_run = collect_simple_intake(raw_dir)
+    platform_tasks = {
+        platform: make_empty_task(platform, f"legacy/{platform}", channel_label(platform))
+        for platform in PLATFORM_FETCH_LIMITS
+    }
+    content_task = make_empty_task("content_research", "legacy/content_research", channel_label("content_research"))
+    report_task = make_empty_task("reports", "legacy/reports", channel_label("reports"))
+    wechat_task = make_empty_task("wechat", "legacy/wechat", channel_label("wechat"))
+    local_chat_task = task_from_collected("local_chat", "local_chat/messages", "local_chat", channel_label("local_chat"), simple_run)
+    local_news_task = task_from_collected("local_news", "local_news/8001", "local_news", channel_label("local_news"), simple_run)
+    public_news_task = task_from_collected("public_news", "public_news/aggregate", "public_news", channel_label("public_news"), simple_run)
+    public_hot_task = task_from_collected("public_hot", "public/aggregate", "public_hot", channel_label("public_hot"), simple_run)
+
+    ai_hot_items = [
+        item for item in [*local_news_task.items, *public_news_task.items, *public_hot_task.items]
+        if is_ai_topic(item.get("title", ""), item.get("summary", ""), item.get("author_name", ""))
+    ][:AI_HOT_LIMIT]
+    ai_hot_task = ChannelTaskResult(
+        channel="ai_hot",
+        source="simple/ai_hot",
+        label=channel_label("ai_hot"),
+        items=[
+            {**item, "source": item.get("source") or "simple/ai_hot", "channel": "ai_hot"}
+            for item in ai_hot_items
+        ],
+        total=len(ai_hot_items),
+        status="ready" if ai_hot_items else "empty",
+        meta={"derived_from": ["local_news", "public_news", "public_hot"]},
+    )
+
+    generic_tasks = {
+        "local_chat": local_chat_task,
+        "local_news": local_news_task,
+        "public_news": public_news_task,
+        "public_hot": public_hot_task,
+    }
+    ports_status = {
+        "simple_intake": {
+            "status": "ready",
+            "mode": "simple",
+            "sources": simple_run.status,
+        }
+    }
+    channels = {"data": {"total": 0, "list": []}}
+    latest_articles = {"data": {"total": 0, "list": []}}
+    curated_articles: dict[str, dict[str, Any]] = {}
+    return (
+        platform_tasks,
+        content_task,
+        ai_hot_task,
+        report_task,
+        wechat_task,
+        channels,
+        latest_articles,
+        curated_articles,
+        generic_tasks,
+        ports_status,
+        simple_run.artifacts,
+    )
+
+
 def main() -> int:
     started = now()
     run_id = started.strftime(TIME_FMT)
@@ -2081,42 +2689,68 @@ def main() -> int:
     raw_dir.mkdir(parents=True, exist_ok=True)
     notes_dir.mkdir(parents=True, exist_ok=True)
 
-    ports_status: dict[str, dict[str, Any]] = {}
-    try:
-        trendradar_base = resolve_trendradar_base()
-        ports_status["reports"] = {"status": "ok", "base": trendradar_base}
-    except Exception as exc:
-        trendradar_base = PORT_REPORTS
-        ports_status["reports"] = {"status": "error", "base": trendradar_base, "error": str(exc)}
+    generic_tasks: dict[str, ChannelTaskResult] = {}
+    extra_artifacts: list[str] = []
+    if INTAKE_MODE == "legacy":
+        ports_status: dict[str, dict[str, Any]] = {}
+        try:
+            trendradar_base = resolve_trendradar_base()
+            ports_status["reports"] = {"status": "ok", "base": trendradar_base}
+        except Exception as exc:
+            trendradar_base = PORT_REPORTS
+            ports_status["reports"] = {"status": "error", "base": trendradar_base, "error": str(exc)}
 
-    platform_tasks: dict[str, ChannelTaskResult] = {}
-    for platform, limit in PLATFORM_FETCH_LIMITS.items():
-        task = fetch_platform_task(platform, limit, raw_dir)
-        platform_tasks[platform] = task
-        ports_status.setdefault("5173", {"status": "ok", "base": PORT_5173})
-        if task.status == "error":
-            ports_status["5173"] = {"status": "error", "base": PORT_5173, "error": "; ".join(task.issues)}
+        platform_tasks: dict[str, ChannelTaskResult] = {}
+        for platform, limit in PLATFORM_FETCH_LIMITS.items():
+            task = fetch_platform_task(platform, limit, raw_dir)
+            platform_tasks[platform] = task
+            ports_status.setdefault("5173", {"status": "ok", "base": PORT_5173})
+            if task.status == "error":
+                ports_status["5173"] = {"status": "error", "base": PORT_5173, "error": "; ".join(task.issues)}
 
-    content_task = fetch_content_research_task(raw_dir)
-    if content_task.status == "error":
-        ports_status["5173"] = {"status": "error", "base": PORT_5173, "error": "; ".join(content_task.issues)}
+        content_task = fetch_content_research_task(raw_dir)
+        if content_task.status == "error":
+            ports_status["5173"] = {"status": "error", "base": PORT_5173, "error": "; ".join(content_task.issues)}
 
-    report_task = fetch_reports_task(trendradar_base, raw_dir)
-    if report_task.status == "error":
-        ports_status["reports"] = {"status": "error", "base": trendradar_base, "error": "; ".join(report_task.issues)}
+        report_task = fetch_reports_task(trendradar_base, raw_dir)
+        if report_task.status == "error":
+            ports_status["reports"] = {"status": "error", "base": trendradar_base, "error": "; ".join(report_task.issues)}
 
-    ai_hot_task = fetch_ai_hot_task(platform_tasks, content_task, raw_dir)
+        ai_hot_task = fetch_ai_hot_task(platform_tasks, content_task, raw_dir)
 
-    wechat_task, channels, latest_articles, curated_articles = fetch_wechat_task(raw_dir)
-    ports_status["8000"] = {
-        "status": wechat_task.status,
-        "base": PORT_8000_API,
-        "issues": wechat_task.issues,
-        "attempts": wechat_task.attempts,
-        "waited_seconds": wechat_task.waited_seconds,
-    }
+        wechat_task, channels, latest_articles, curated_articles = fetch_wechat_task(raw_dir)
+        ports_status["8000"] = {
+            "status": wechat_task.status,
+            "base": PORT_8000_API,
+            "issues": wechat_task.issues,
+            "attempts": wechat_task.attempts,
+            "waited_seconds": wechat_task.waited_seconds,
+        }
+    else:
+        (
+            platform_tasks,
+            content_task,
+            ai_hot_task,
+            report_task,
+            wechat_task,
+            channels,
+            latest_articles,
+            curated_articles,
+            generic_tasks,
+            ports_status,
+            extra_artifacts,
+        ) = build_simple_intake_tasks(raw_dir)
 
-    selected = build_selected_items(platform_tasks, content_task, ai_hot_task, report_task, wechat_task, latest_articles, curated_articles)
+    selected = build_selected_items(
+        platform_tasks,
+        content_task,
+        ai_hot_task,
+        report_task,
+        wechat_task,
+        latest_articles,
+        curated_articles,
+        generic_tasks,
+    )
     score_selected_items(selected, started)
     analysis_selected = pick_analysis_items(selected)
     intake_records = [item.to_record(run_id, index + 1, generated_at) for index, item in enumerate(selected)]
@@ -2136,10 +2770,19 @@ def main() -> int:
     dump_json(base / "channel_top10.json", channel_top10)
     dump_json(base / "brief_input.json", brief_input)
     dump_json(base / "intake_review.json", intake_gate)
-    dump_json(base / "channel_tasks.json", {name: asdict(task) for name, task in {**platform_tasks, "content_research": content_task, "ai_hot": ai_hot_task, "reports": report_task, "wechat": wechat_task}.items()})
+    all_channel_tasks = {
+        **generic_tasks,
+        **platform_tasks,
+        "content_research": content_task,
+        "ai_hot": ai_hot_task,
+        "reports": report_task,
+        "wechat": wechat_task,
+    }
+    dump_json(base / "channel_tasks.json", {name: asdict(task) for name, task in all_channel_tasks.items()})
 
     counts = {
         **{f"{platform}_total": task.total for platform, task in platform_tasks.items()},
+        **{f"{name}_total": task.total for name, task in generic_tasks.items()},
         "content_research_candidates": content_task.meta.get("total_candidates", content_task.total),
         "ai_hot_total": ai_hot_task.total,
         "trendradar_reports": report_task.meta.get("reports_count", 0),
@@ -2173,12 +2816,14 @@ def main() -> int:
         "object_type": "Run",
         "execution_model": "agent-driven",
         "run_dir": str(base),
+        "intake_mode": INTAKE_MODE,
         "ports": ports_status,
         "ports_status": ports_status,
         "counts": counts,
         "analysis_pool": analysis_report,
-        "channel_tasks": {name: {"status": task.status, "attempts": task.attempts, "waited_seconds": task.waited_seconds, "issues": task.issues, "total": task.total} for name, task in {**platform_tasks, "content_research": content_task, "ai_hot": ai_hot_task, "reports": report_task, "wechat": wechat_task}.items()},
+        "channel_tasks": {name: {"status": task.status, "attempts": task.attempts, "waited_seconds": task.waited_seconds, "issues": task.issues, "total": task.total} for name, task in all_channel_tasks.items()},
         "artifacts": [
+            *extra_artifacts,
             "raw/mediacrawler_latest_x.json",
             "raw/mediacrawler_latest_xhs.json",
             "raw/mediacrawler_latest_douyin.json",

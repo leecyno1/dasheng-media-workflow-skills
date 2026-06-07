@@ -2,7 +2,9 @@ import json
 import sys
 import tempfile
 import unittest
+from io import BytesIO
 from pathlib import Path
+from urllib import error as urllib_error
 
 # Add scripts to path
 sys.path.insert(0, str(Path(__file__).parent.parent / 'scripts'))
@@ -92,6 +94,9 @@ class Phase2AIBriefTests(unittest.TestCase):
                     "core_proposition": f"第 {index} 题围绕再通胀和资产定价链条，证明市场主线并不是表面事件。",
                     "why_now": "油价、利率、黄金和政策口径同时出现再定价信号。",
                     "reader_payoff": "帮助读者识别哪些是情绪，哪些是真正影响股债商品的变量。",
+                    "source_material_summary": "来源材料主要记录油价、美债、黄金和政策口径同步波动，显示市场开始讨论再通胀链条。",
+                    "controversy_points": ["油价上涨究竟是短期地缘事件，还是再通胀主线的一部分。", "政策口径变化是否足以改变资产定价。"],
+                    "viewpoint_notes": ["市场观点关注油价和美债联动。", "政策侧观点强调通胀粘性。"],
                     "article_use": "判断稿",
                     "distinctiveness_reason": f"第 {index} 题从不同角度切入，但不重复上一题。",
                     "evidence_gap_summary": "还缺高频通胀与政策预期联动数据。",
@@ -153,6 +158,27 @@ class Phase2AIBriefTests(unittest.TestCase):
         self.assertEqual(cards[0]["topic_kind"], "independent")
         self.assertEqual(cards[0]["mother_topic_id"], cards[0]["topic_id"])
         self.assertEqual(cards[0]["existing_evidence"][0]["url"], "https://example.com/a")
+        self.assertIn("来源材料主要记录", cards[0]["source_material_summary"])
+        self.assertTrue(cards[0]["controversy_points"])
+        self.assertTrue(cards[0]["viewpoint_notes"])
+        self.assertTrue(cards[0]["question_units"])
+        self.assertTrue(cards[0]["opinion_units"])
+        self.assertTrue(cards[0]["case_units"])
+        self.assertTrue(cards[0]["solution_units"])
+
+    def test_normalize_ai_brief_cards_preserves_returned_content_units(self):
+        ai_result = self.sample_ai_cards()
+        ai_result["topic_cards"][0]["question_units"] = ["市场现在到底在交易油价事件，还是再通胀主线？"]
+        ai_result["topic_cards"][0]["opinion_units"] = ["油价只是入口，通胀预期才是主线。"]
+        ai_result["topic_cards"][0]["case_units"] = ["美债与黄金同步波动。"]
+        ai_result["topic_cards"][0]["solution_units"] = ["用油价、通胀预期和美债收益率三组数据交叉验证。"]
+
+        cards = mod.normalize_ai_brief_cards(ai_result, self.signal_bundle)
+
+        self.assertEqual(cards[0]["question_units"][0], "市场现在到底在交易油价事件，还是再通胀主线？")
+        self.assertEqual(cards[0]["opinion_units"][0], "油价只是入口，通胀预期才是主线。")
+        self.assertEqual(cards[0]["case_units"][0], "美债与黄金同步波动。")
+        self.assertEqual(cards[0]["solution_units"][0], "用油价、通胀预期和美债收益率三组数据交叉验证。")
 
     def test_normalize_ai_brief_cards_enriches_ai_returned_evidence_with_chain(self):
         ai_result = self.sample_ai_cards()
@@ -231,6 +257,97 @@ class Phase2AIBriefTests(unittest.TestCase):
         self.assertEqual(len(pool), 1)
         self.assertEqual(pool[0]["title"], "油价上行后，美债和黄金同步波动")
 
+    def test_editorial_priority_pool_uses_hotspot_macro_policy_signal(self):
+        macro = mod.IntakeRecord(
+            title="亚洲货币防线升温，美元压力正在外溢到新兴市场",
+            summary="Asian central banks are defending currencies as Federal Reserve pressure spills over.",
+            source="public_news/bloomberg-markets",
+            source_item_id="1",
+            raw_payload={"url": "https://example.com/asia-currency"},
+            meta={},
+            source_quality_tier="platform_hotspot",
+            entities={"countries": ["亚洲"], "orgs": ["美联储"], "policies": ["汇率"]},
+            noise_tags=[],
+            dynamic_cluster_key="asia-currency",
+            dynamic_tokens=["亚洲", "美元", "汇率"],
+            editor_labels=["宏观"],
+            trendradar_signal=False,
+            freshness_score=0.9,
+            heat_score=60.0,
+            heat_level="B",
+            source_freshness_weight=1.2,
+            source_timeliness_weight=1.2,
+            source_authority_weight=0.95,
+            radar_macro_policy_score=0.91,
+            radar_source_role="global_market_wire",
+        )
+        generic_ai = mod.IntakeRecord(
+            title="AI工具更新引发开发者讨论",
+            summary="开发者关注新工作流能力，但缺少宏观和政策传导。",
+            source="public/hn_frontpage",
+            source_item_id="2",
+            raw_payload={"url": "https://example.com/ai-tool"},
+            meta={},
+            source_quality_tier="platform_hotspot",
+            entities={"sectors": ["AI"]},
+            noise_tags=[],
+            dynamic_cluster_key="ai-tool",
+            dynamic_tokens=["AI", "工具", "工作流"],
+            editor_labels=["AI工具"],
+            trendradar_signal=False,
+            freshness_score=0.9,
+            heat_score=60.0,
+            heat_level="B",
+            source_freshness_weight=1.2,
+            source_timeliness_weight=1.2,
+            source_authority_weight=0.95,
+            radar_macro_policy_score=0.05,
+            radar_source_role="tech_builder_hotlist",
+        )
+
+        _, logic_chain_map = mod.build_logic_chains([generic_ai, macro])
+        pool = mod.build_editorial_priority_pool([generic_ai, macro], logic_chain_map, limit=2)
+
+        self.assertEqual(pool[0]["title"], "亚洲货币防线升温，美元压力正在外溢到新兴市场")
+        self.assertEqual(pool[0]["radar_source_role"], "global_market_wire")
+        self.assertGreater(pool[0]["radar_macro_policy_score"], pool[1]["radar_macro_policy_score"])
+
+    def test_load_records_reads_hotspot_radar_metadata(self):
+        with project_tempdir() as tmpdir:
+            path = Path(tmpdir) / "intake_records.json"
+            path.write_text(
+                json.dumps(
+                    [
+                        {
+                            "title": "Asia Steps Up Currency Defense",
+                            "summary": "Central banks defend currencies.",
+                            "source": "public_news/bloomberg-markets",
+                            "source_item_id": "1",
+                            "raw_payload": {
+                                "url": "https://example.com/asia-currency",
+                                "radar": {
+                                    "capture_role": "hotspot_capture",
+                                    "source_role": "global_market_wire",
+                                    "macro_policy_score": 0.91,
+                                    "kept_by": "dynamic_capture_no_content_filter",
+                                },
+                            },
+                            "source_quality_tier": "platform_hotspot",
+                            "entities": {},
+                            "editor_labels": ["宏观"],
+                            "heat_score": 56,
+                        }
+                    ],
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+
+            records = mod.load_records(path)
+
+        self.assertEqual(records[0].radar_source_role, "global_market_wire")
+        self.assertEqual(records[0].radar_macro_policy_score, 0.91)
+
     def test_validate_logic_chain_balance_rejects_single_chain_majority(self):
         cards = mod.normalize_ai_brief_cards(self.sample_ai_cards(), self.signal_bundle)
         ok, reason = mod.validate_logic_chain_balance(cards, self.signal_bundle)
@@ -242,6 +359,19 @@ class Phase2AIBriefTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             mod.normalize_ai_brief_cards(short_result, self.signal_bundle)
 
+    def test_validate_chinese_topic_language_rejects_english_titles(self):
+        cards = mod.normalize_ai_brief_cards(self.sample_ai_cards(), self.signal_bundle)
+        cards[0]["title"] = "Oil price shock is becoming an inflation regime"
+        ok, reason = mod.validate_chinese_topic_language(cards)
+        self.assertFalse(ok)
+        self.assertIn("必须使用中文", reason)
+
+    def test_validate_chinese_topic_language_allows_brand_names_in_chinese_titles(self):
+        cards = mod.normalize_ai_brief_cards(self.sample_ai_cards(), self.signal_bundle)
+        cards[0]["title"] = "OpenAI 不是产品发布，而是入口战争"
+        ok, reason = mod.validate_chinese_topic_language(cards)
+        self.assertTrue(ok, reason)
+
     def test_write_failure_manifest_marks_ai_only_failed(self):
         with project_tempdir() as tmpdir:
             outdir = Path(tmpdir)
@@ -250,6 +380,37 @@ class Phase2AIBriefTests(unittest.TestCase):
             self.assertEqual(payload["status"], "failed")
             self.assertEqual(payload["generation_mode"], "ai_only")
             self.assertEqual(payload["failure_reason"], "Pass A 发散生成失败")
+
+    def test_request_ai_json_records_http_error_detail(self):
+        class FakeHTTPError(urllib_error.HTTPError):
+            def __init__(self):
+                super().__init__(
+                    "https://example.com",
+                    403,
+                    "Forbidden",
+                    hdrs=None,
+                    fp=BytesIO(b'{"error":{"type":"insufficient_quota"}}'),
+                )
+
+        def fake_urlopen(*args, **kwargs):
+            raise FakeHTTPError()
+
+        original_config = mod.resolve_brief_ai_config
+        original_urlopen = mod.urllib_request.urlopen
+        try:
+            mod.resolve_brief_ai_config = lambda: {
+                "base_url": "https://example.com",
+                "api_key": "test",
+                "model": "test",
+                "timeout_seconds": "1",
+            }
+            mod.urllib_request.urlopen = fake_urlopen
+            result = mod.request_ai_json("system", "user")
+            self.assertIsNone(result)
+            self.assertIn("insufficient_quota", mod.LAST_AI_ERROR)
+        finally:
+            mod.resolve_brief_ai_config = original_config
+            mod.urllib_request.urlopen = original_urlopen
 
     def test_write_selected_topics_files_keeps_compat_fields(self):
         cards = mod.normalize_ai_brief_cards(self.sample_ai_cards(), self.signal_bundle)
@@ -261,6 +422,63 @@ class Phase2AIBriefTests(unittest.TestCase):
             self.assertEqual(template["candidate_topics"][0]["topic_kind"], "independent")
             self.assertEqual(template["candidate_topics"][0]["mother_topic_id"], template["candidate_topics"][0]["topic_id"])
             self.assertEqual(selected["status"], "pending_editor_review")
+            self.assertIn("source_material_summary", template["candidate_topics"][0])
+            self.assertIn("controversy_points", template["candidate_topics"][0])
+            self.assertIn("question_units", template["candidate_topics"][0])
+            self.assertIn("opinion_units", template["candidate_topics"][0])
+            self.assertIn("case_units", template["candidate_topics"][0])
+            self.assertIn("solution_units", template["candidate_topics"][0])
+            self.assertNotIn("ai_outline", template["candidate_topics"][0])
+
+    def test_write_agent_brief_packet_marks_pending_generation(self):
+        with project_tempdir() as tmpdir:
+            outdir = Path(tmpdir)
+            manifest = mod.write_agent_brief_packet(
+                outdir,
+                "2026-04-05_170457",
+                Path("/tmp/intake_records.json"),
+                self.signal_bundle,
+                {"brief_ai_prompt": "Brief 规则", "brief_card_schema": {"type": "object"}},
+            )
+            payload = json.loads(manifest.read_text(encoding="utf-8"))
+            prompt = (outdir / "brief_agent_prompt.md").read_text(encoding="utf-8")
+            self.assertEqual(payload["status"], "pending_agent_generation")
+            self.assertEqual(payload["generation_mode"], "agent")
+            self.assertIn("Agent", prompt)
+            self.assertTrue((outdir / "brief_signal_bundle.json").exists())
+
+    def test_write_ready_brief_artifacts_accepts_agent_cards_without_provider(self):
+        cards = mod.normalize_ai_brief_cards(self.sample_ai_cards(), self.signal_bundle)
+        signal_bundle = {
+            **self.signal_bundle,
+            "stats": {
+                "raw_record_count": 3,
+                "deduped_record_count": 3,
+                "trusted_evidence_count": 3,
+                "logic_chain_count": 2,
+                "manual_topic_count": 1,
+                "trendradar_candidate_count": 0,
+                "event_cluster_count": 0,
+            },
+            "channel_top10": {},
+            "event_clusters": [],
+        }
+        with project_tempdir() as tmpdir:
+            outdir = Path(tmpdir)
+            manifest = mod.write_ready_brief_artifacts(
+                outdir,
+                "2026-04-05_170457",
+                Path("/tmp/intake_records.json"),
+                cards,
+                signal_bundle,
+                "agent",
+                top_n=3,
+            )
+            payload = json.loads(manifest.read_text(encoding="utf-8"))
+            self.assertEqual(payload["status"], "ready")
+            self.assertEqual(payload["generation_mode"], "agent")
+            self.assertTrue((outdir / "topic_cards.json").exists())
+            self.assertTrue((outdir / "02_编辑Brief库.md").exists())
 
 
 if __name__ == '__main__':

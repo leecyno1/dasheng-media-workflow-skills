@@ -30,13 +30,12 @@ FINANCE_MOTION_ROOT = Path(os.getenv("DASHENG_FINANCE_MOTION_ROOT", ""))
 
 from canonical_workflow import (
     WorkflowContractError,
-    canonical_stage_dir,
     ensure_final_structure_gate,
     ensure_pending_gate_file,
     ensure_stage_manifest,
 )
 from desktop_delivery import sync_material_to_desktop
-from provider_registry import resolve_chat_provider, resolve_material_image_provider_snapshot, extract_chat_content
+from provider_registry import resolve_material_image_provider_snapshot, extract_chat_content
 from path_config import get_project_root
 
 
@@ -65,6 +64,64 @@ DEFAULT_IMAGE_MAX_BYTES = 12 * 1024 * 1024
 DEFAULT_WIKIMEDIA_THUMB_WIDTH = 1600
 DEFAULT_YTDLP_SOCKET_TIMEOUT = 20
 DEFAULT_YTDLP_COMMAND_TIMEOUT = 180
+DEFAULT_IMAGE_SEARCH_ENGINES = ["duckduckgo_image", "wikimedia"]
+DEFAULT_VIDEO_SEARCH_PROVIDERS = ["ytsearch", "ytsearchdate"]
+TAVILY_API_KEY_ENV = "TAVILY_API_KEY"
+BRAVE_SEARCH_API_KEY_ENV = "BRAVE_SEARCH_API_KEY"
+API_IMAGE_SEARCH_ENGINES = {"tavily_image", "tavily", "brave_image", "brave"}
+API_VIDEO_SEARCH_PROVIDERS = {"brave_video", "brave"}
+MATERIAL_BINDING_KEYS = [
+    "claim_id",
+    "section_id",
+    "plan_id",
+    "usage_type",
+    "relevance_score",
+    "editor_status",
+]
+MATERIAL_USABLE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".mp4", ".csv"}
+MATERIAL_INTERNAL_DIRS = {"config", "charts", "images", "videos", "layer5", "prompts"}
+MATERIAL_NON_DELIVERABLE_CHART_NAMES = {"chart_anchor_plan.csv", "图表_chart_anchor_plan.csv"}
+
+MATERIAL_PLAN_DATA_PATTERNS = [
+    r"数据",
+    r"同比",
+    r"环比",
+    r"规模",
+    r"比例",
+    r"增速",
+    r"下降",
+    r"增长",
+    r"趋势",
+    r"债务",
+    r"收入",
+    r"支出",
+    r"利率",
+    r"贷款",
+    r"周期",
+]
+
+MATERIAL_PLAN_COMPARISON_PATTERNS = [
+    r"对比",
+    r"比较",
+    r"周期",
+    r"日本",
+    r"美国",
+    r"香港",
+    r"分化",
+    r"城市",
+    r"中日美",
+]
+
+MATERIAL_GENERIC_VISUAL_PATTERNS = [
+    r"概念配图",
+    r"dramatic scene",
+    r"headline concept",
+    r"office team",
+    r"city crowd",
+    r"aerial city",
+    r"chart infographic",
+    r"documentary still",
+]
 
 SELF_MEDIA_TALKING_HEAD_PATTERNS = [
     r"口播",
@@ -170,6 +227,15 @@ def write_text(path: Path, content: str) -> None:
     path.write_text(content, encoding="utf-8")
 
 
+def read_json_if_exists(path: Path, default: Any = None) -> Any:
+    if not path.exists():
+        return default
+    try:
+        return read_json(path)
+    except Exception:  # noqa: BLE001
+        return default
+
+
 def load_env_file(path: Path) -> dict[str, str]:
     if not path.exists():
         return {}
@@ -243,88 +309,6 @@ def read_tushare_token() -> str:
     return ""
 
 
-def resolve_material_ai_config() -> dict[str, str] | None:
-    return resolve_chat_provider(
-        custom_env_var="DASHENG_MATERIAL_PROVIDER_ENV",
-        base_url_keys=["MATERIAL_AI_BASE_URL", "QHAIGC_BASE_URL"],
-        api_key_keys=["MATERIAL_AI_API_KEY", "QHAIGC_API_KEY"],
-        model_keys=["MATERIAL_AI_MODEL", "PHASE4_AI_MODEL", "PHASE3_AI_MODEL", "DRAFT_AI_MODEL", "PHASE2_AI_MODEL"],
-        timeout_keys=["MATERIAL_AI_TIMEOUT_SECONDS", "PHASE3_AI_TIMEOUT_SECONDS", "DRAFT_AI_TIMEOUT_SECONDS"],
-        default_model="gpt-4.1-mini",
-        default_timeout_seconds="180",
-    )
-
-
-def strip_code_fence(text: str) -> str:
-    cleaned = (text or "").strip()
-    if cleaned.startswith("```"):
-        cleaned = re.sub(r"^```(?:json)?", "", cleaned).strip()
-        cleaned = re.sub(r"```$", "", cleaned).strip()
-    return cleaned
-
-
-def parse_json_object_from_text(text: str) -> dict[str, Any] | None:
-    cleaned = strip_code_fence(text)
-    try:
-        parsed = json.loads(cleaned)
-        return parsed if isinstance(parsed, dict) else None
-    except json.JSONDecodeError:
-        pass
-    match = re.search(r"\{.*\}", cleaned, re.S)
-    if not match:
-        return None
-    try:
-        parsed = json.loads(match.group(0))
-    except json.JSONDecodeError:
-        return None
-    return parsed if isinstance(parsed, dict) else None
-
-
-def request_material_ai_json(system_prompt: str, user_prompt: str, *, max_tokens: int = 5000) -> dict[str, Any]:
-    config = resolve_material_ai_config()
-    if not config:
-        raise RuntimeError("未找到 Material AI 配置：缺少 MATERIAL_AI/QHAIGC base_url 或 api_key")
-
-    body = {
-        "model": config["model"],
-        "temperature": 0.55,
-        "max_tokens": max_tokens,
-        "response_format": {"type": "json_object"},
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-    }
-    last_error: Exception | None = None
-    for attempt in range(3):
-        try:
-            session = requests.Session()
-            session.trust_env = False
-            response = session.post(
-                config["base_url"],
-                headers={
-                    "Content-Type": "application/json",
-                    "Authorization": f"Bearer {config['api_key']}",
-                    "Connection": "close",
-                },
-                json=body,
-                timeout=float(config["timeout_seconds"]),
-            )
-            response.raise_for_status()
-            payload = response.json()
-            content = extract_chat_content(payload)
-            parsed = parse_json_object_from_text(content)
-            if not parsed:
-                raise RuntimeError("Material AI 返回的 JSON 为空或格式无效")
-            return parsed
-        except Exception as exc:  # noqa: BLE001
-            last_error = exc
-            if attempt >= 2:
-                break
-            time.sleep(2 * (attempt + 1))
-    raise RuntimeError(f"Material AI 调用失败：{last_error}")
-
-
 def strip_markdown_frontmatter(text: str) -> str:
     raw = text.lstrip()
     if not raw.startswith("---"):
@@ -374,9 +358,26 @@ def parse_markdown_sections(markdown_text: str) -> list[dict[str, str]]:
     return sections
 
 
-def material_ai_runtime_paths(run_id: str) -> tuple[Path, Path, Path]:
+def material_input_runtime_paths(run_id: str) -> tuple[Path, Path, Path]:
+    material_dir, _ = material_runtime_paths(run_id)
+    inputs_file = material_dir / "material_inputs.json"
+    decisions_file = material_dir / "material_decisions.json"
+    return material_dir, inputs_file, decisions_file
+
+
+def legacy_material_input_runtime_paths(run_id: str) -> tuple[Path, Path, Path]:
     material_dir, _ = material_runtime_paths(run_id)
     return material_dir, material_dir / "material_ai_inputs.json", material_dir / "material_ai_decisions.json"
+
+
+def material_ai_runtime_paths(run_id: str) -> tuple[Path, Path, Path]:
+    # Backward-compatible function name; new runs write non-AI material inputs.
+    return material_input_runtime_paths(run_id)
+
+
+def material_plan_runtime_path(run_id: str) -> Path:
+    material_dir, _ = material_runtime_paths(run_id)
+    return material_dir / "material_plan.json"
 
 
 def resolve_topic_article_source(topic_row: dict[str, Any], draft_row: dict[str, Any]) -> tuple[str, Path]:
@@ -401,88 +402,661 @@ def resolve_topic_article_source(topic_row: dict[str, Any], draft_row: dict[str,
 def read_topic_reasoning_payload(draft_row: dict[str, Any]) -> dict[str, Any]:
     candidate = draft_row.get("reasoning_sheet_json")
     if not candidate:
+        candidate = draft_row.get("source_notes_file")
+    if not candidate:
         return {}
     path = Path(candidate).expanduser().resolve()
     if not path.exists():
         return {}
     payload = read_json(path)
-    return payload if isinstance(payload, dict) else {}
+    return normalize_source_note_payload(payload) if isinstance(payload, dict) else {}
 
 
-def build_material_ai_prompts(
+def normalize_source_note_payload(payload: dict[str, Any]) -> dict[str, Any]:
+    if not isinstance(payload, dict):
+        return {}
+    evidence_items: list[dict[str, Any]] = []
+    for key in ["evidence_items", "source_material_summary", "verified_sources", "existing_evidence"]:
+        for index, item in enumerate(_material_as_list(payload.get(key))):
+            if not isinstance(item, dict):
+                continue
+            title = (
+                item.get("title")
+                or item.get("name")
+                or item.get("source")
+                or item.get("publisher")
+                or f"source_{index + 1}"
+            )
+            evidence_items.append(
+                {
+                    "title": title,
+                    "url": item.get("url", ""),
+                    "source": item.get("source") or item.get("publisher") or item.get("name") or "source_notes",
+                    "note": item.get("summary") or item.get("note") or "；".join(_material_text_list(item.get("usable_points"), limit=3)),
+                    "source_tier": item.get("credibility") or item.get("verification_status") or item.get("status"),
+                }
+            )
+    claims: list[dict[str, Any]] = []
+    for index, item in enumerate(_material_as_list(payload.get("claims")), start=1):
+        if isinstance(item, dict):
+            claims.append(item)
+    for index, item in enumerate(_material_as_list(payload.get("controversy_points")), start=len(claims) + 1):
+        if not isinstance(item, dict):
+            continue
+        statement = item.get("claim") or item.get("point") or item.get("viewpoint") or item.get("discussion") or item.get("details")
+        if not statement:
+            continue
+        claims.append(
+            {
+                "claim_id": f"{payload.get('topic_id') or 'topic'}-claim-{index:02d}",
+                "section_id": f"section-{index:02d}",
+                "statement": str(statement).strip(),
+                "counterpoint": _material_first_text(item.get("counterpoints")),
+                "missing_proof": _material_text_list(item.get("supporting_logic"), limit=3)
+                + _material_text_list(item.get("data_needed"), limit=2),
+            }
+        )
+    chart_anchors: list[dict[str, Any]] = []
+    for index, item in enumerate(_material_as_list(payload.get("chart_needs")), start=1):
+        if not isinstance(item, dict):
+            continue
+        title = item.get("chart") or item.get("title")
+        if not title:
+            continue
+        chart_anchors.append(
+            {
+                "anchor_id": item.get("anchor_id") or f"chart-{index:02d}",
+                "section_id": item.get("section_id") or f"section-{index:02d}",
+                "title": title,
+                "purpose": item.get("purpose") or item.get("status") or "补充数据图表",
+                "data_sources": _material_text_list(item.get("data_sources") or item.get("data_needed"), limit=4),
+                "chart_type": item.get("chart_type") or "table",
+                "only_if_worth_chart": True,
+            }
+        )
+    brief_context = payload.get("brief_context") if isinstance(payload.get("brief_context"), dict) else {}
+    if not brief_context:
+        brief_context = {
+            "opinion_units": [
+                item.get("note") or item.get("viewpoint")
+                for item in _material_as_list(payload.get("viewpoint_notes"))
+                if isinstance(item, dict)
+            ],
+            "case_units": _material_text_list(payload.get("pending_verification"), limit=2),
+            "solution_units": _material_text_list(payload.get("editorial_notes"), limit=2),
+        }
+    return {
+        **payload,
+        "evidence_items": evidence_items or _material_as_list(payload.get("evidence_items")),
+        "claims": claims or _material_as_list(payload.get("claims")),
+        "chart_anchors": chart_anchors or _material_as_list(payload.get("chart_anchors")),
+        "brief_context": brief_context,
+    }
+
+
+def _material_as_list(value: Any) -> list[Any]:
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return value
+    if isinstance(value, tuple):
+        return list(value)
+    return [value]
+
+
+def _material_text_list(value: Any, *, limit: int | None = None) -> list[str]:
+    items: list[str] = []
+    for item in _material_as_list(value):
+        if item is None:
+            continue
+        if isinstance(item, dict):
+            text = item.get("query") or item.get("title") or item.get("statement") or item.get("text") or item.get("name")
+        else:
+            text = str(item)
+        text = str(text or "").strip()
+        if text:
+            items.append(text)
+    deduped = list(dict.fromkeys(items))
+    return deduped[:limit] if limit else deduped
+
+
+def _material_first_text(*values: Any) -> str:
+    for value in values:
+        candidates = _material_text_list(value, limit=1)
+        if candidates:
+            return candidates[0]
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+    return ""
+
+
+def _material_contains_any(text: str, patterns: list[str]) -> bool:
+    return any(re.search(pattern, text, flags=re.IGNORECASE) for pattern in patterns)
+
+
+def _normalize_material_claims(
+    topic_row: dict[str, Any],
+    draft_row: dict[str, Any],
+    reasoning_payload: dict[str, Any],
+    ai_decision: dict[str, Any],
+) -> list[dict[str, Any]]:
+    topic_id = str(topic_row.get("topic_id") or draft_row.get("topic_id") or "topic").strip() or "topic"
+    reasoning_claims = [
+        item for item in _material_as_list(reasoning_payload.get("claims"))
+        if isinstance(item, dict)
+    ]
+    decision_claims = [
+        item for item in _material_as_list(ai_decision.get("claims"))
+        if isinstance(item, dict)
+    ]
+    source_claims = decision_claims or reasoning_claims
+    reasoning_by_id = {
+        str(item.get("claim_id")): item
+        for item in reasoning_claims
+        if item.get("claim_id")
+    }
+    if not source_claims:
+        source_claims = [
+            {
+                "claim_id": f"{topic_id}-claim-01",
+                "section_id": "section-01",
+                "statement": reasoning_payload.get("core_thesis") or ai_decision.get("core_claim") or topic_row.get("title") or "",
+            }
+        ]
+
+    claims: list[dict[str, Any]] = []
+    for index, raw in enumerate(source_claims, start=1):
+        raw_claim_id = str(raw.get("claim_id") or "").strip()
+        fallback = reasoning_by_id.get(raw_claim_id, {})
+        claim_id = raw_claim_id or f"{topic_id}-claim-{index:02d}"
+        section_id = (
+            raw.get("section_id")
+            or fallback.get("section_id")
+            or f"section-{index:02d}"
+        )
+        missing_proof = _material_text_list(
+            raw.get("missing_proof")
+            or raw.get("missing_proofs")
+            or fallback.get("missing_proof")
+            or fallback.get("missing_proofs")
+        )
+        chart_need = _material_first_text(
+            raw.get("chart_need"),
+            raw.get("chart_needs"),
+            fallback.get("chart_need"),
+            fallback.get("chart_needs"),
+        )
+        claims.append(
+            {
+                "claim_id": claim_id,
+                "section_id": str(section_id or f"section-{index:02d}"),
+                "heading": raw.get("heading") or fallback.get("heading") or "",
+                "statement": _material_first_text(
+                    raw.get("statement"),
+                    raw.get("claim_text"),
+                    raw.get("title"),
+                    fallback.get("statement"),
+                    fallback.get("claim_text"),
+                    topic_row.get("title"),
+                ),
+                "counterpoint": raw.get("counterpoint") or fallback.get("counterpoint"),
+                "missing_proof": missing_proof,
+                "chart_need": chart_need,
+            }
+        )
+    return claims
+
+
+def _material_source_quality(source_url: str = "", capture_mode: str = "planned_search") -> dict[str, Any]:
+    return {
+        "source_url": source_url,
+        "capture_mode": capture_mode,
+        "reproducible": True,
+        "requires_editor_check": True,
+    }
+
+
+def _material_plan_expected_outputs(asset_type: str) -> list[str]:
+    mapping = {
+        "evidence_chart": ["csv", "png", "caption", "source_note"],
+        "comparison_chart": ["csv", "png", "caption", "source_note"],
+        "logic_diagram": ["png_or_svg", "caption"],
+        "source_screenshot": ["png", "source_url", "caption"],
+        "case_table": ["markdown_table", "csv_optional"],
+        "proof_checklist": ["markdown_checklist"],
+        "visual_reference": ["image", "alt_text", "source_note"],
+        "video_reference": ["source_link", "clip_note"],
+    }
+    return mapping.get(asset_type, ["asset", "caption"])
+
+
+def _material_plan_source_queries(*parts: Any, limit: int = 5) -> list[str]:
+    queries: list[str] = []
+    for part in parts:
+        if isinstance(part, dict):
+            queries.extend(_material_text_list(part.get("query") or part.get("title") or part.get("statement")))
+            queries.extend(_material_text_list(part.get("data_sources")))
+            continue
+        queries.extend(_material_text_list(part))
+    return list(dict.fromkeys(queries))[:limit]
+
+
+def _is_generic_material_visual_query(item: Any) -> bool:
+    if isinstance(item, dict):
+        query = str(item.get("query") or "").strip()
+        entity = str(item.get("entity") or "").strip()
+        entity_type = str(item.get("entity_type") or "").strip().lower()
+    else:
+        query = str(item or "").strip()
+        entity = ""
+        entity_type = ""
+    if not query:
+        return True
+    if entity or entity_type in {"person", "org", "company", "country", "policy", "event"}:
+        return False
+    return _material_contains_any(query, MATERIAL_GENERIC_VISUAL_PATTERNS)
+
+
+def _match_material_chart_anchor(
+    claim: dict[str, Any],
+    chart_anchors: list[dict[str, Any]],
+) -> dict[str, Any] | None:
+    chart_need = str(claim.get("chart_need") or "").strip()
+    section_id = str(claim.get("section_id") or "").strip()
+    for anchor in chart_anchors:
+        title = str(anchor.get("title") or "").strip()
+        if chart_need and (chart_need in title or title in chart_need):
+            return anchor
+        if section_id and str(anchor.get("section_id") or "").strip() == section_id:
+            return anchor
+    return None
+
+
+def build_claim_driven_material_plan(
+    run_id: str,
+    topic_row: dict[str, Any],
+    draft_row: dict[str, Any],
+    reasoning_payload: dict[str, Any],
+    ai_decision: dict[str, Any],
+) -> list[dict[str, Any]]:
+    topic_id = str(topic_row.get("topic_id") or draft_row.get("topic_id") or "topic").strip() or "topic"
+    claims = _normalize_material_claims(topic_row, draft_row, reasoning_payload, ai_decision)
+    if not claims:
+        return []
+
+    brief_context = reasoning_payload.get("brief_context") if isinstance(reasoning_payload.get("brief_context"), dict) else {}
+    chart_anchors = [
+        item for item in _material_as_list(ai_decision.get("chart_anchors"))
+        if isinstance(item, dict)
+    ]
+    evidence_items = [
+        item for item in _material_as_list(reasoning_payload.get("evidence_items"))
+        if isinstance(item, dict)
+    ]
+    first_source_url = _material_first_text([item.get("url") for item in evidence_items if item.get("url")])
+    plan: list[dict[str, Any]] = []
+    counters: dict[str, int] = {}
+
+    def append_item(
+        claim: dict[str, Any],
+        asset_type: str,
+        usage_type: str,
+        need: str,
+        *,
+        source_queries: list[str] | None = None,
+        relevance_score: float = 0.8,
+        source_url: str = "",
+        capture_mode: str = "planned_search",
+    ) -> None:
+        need = str(need or "").strip()
+        if not need:
+            return
+        key = (
+            str(claim.get("claim_id") or ""),
+            str(claim.get("section_id") or ""),
+            asset_type,
+            need,
+        )
+        existing_keys = {
+            (
+                str(item.get("claim_id") or ""),
+                str(item.get("section_id") or ""),
+                str(item.get("asset_type") or ""),
+                str(item.get("need") or ""),
+            )
+            for item in plan
+        }
+        if key in existing_keys:
+            return
+        counters[asset_type] = counters.get(asset_type, 0) + 1
+        safe_claim = re.sub(r"[^a-zA-Z0-9_-]+", "-", str(claim.get("claim_id") or "claim")).strip("-") or "claim"
+        plan.append(
+            {
+                "plan_id": f"{topic_id}-{safe_claim}-{asset_type}-{counters[asset_type]:02d}",
+                "run_id": run_id,
+                "topic_id": topic_id,
+                "claim_id": claim.get("claim_id"),
+                "section_id": claim.get("section_id"),
+                "asset_type": asset_type,
+                "usage_type": usage_type,
+                "need": need,
+                "source_queries": list(dict.fromkeys(source_queries or [])),
+                "expected_outputs": _material_plan_expected_outputs(asset_type),
+                "relevance_score": round(max(0.0, min(1.0, float(relevance_score))), 2),
+                "editor_status": "pending_review",
+                "source_quality": _material_source_quality(source_url=source_url, capture_mode=capture_mode),
+            }
+        )
+
+    for claim in claims:
+        combined = " ".join(
+            _material_text_list(
+                [
+                    claim.get("statement"),
+                    claim.get("chart_need"),
+                    *claim.get("missing_proof", []),
+                ]
+            )
+        )
+        wants_chart = bool(claim.get("chart_need")) or _material_contains_any(combined, MATERIAL_PLAN_DATA_PATTERNS)
+        if wants_chart:
+            chart_anchor = _match_material_chart_anchor(claim, chart_anchors)
+            asset_type = "comparison_chart" if _material_contains_any(combined, MATERIAL_PLAN_COMPARISON_PATTERNS) else "evidence_chart"
+            need = (
+                claim.get("chart_need")
+                or (chart_anchor or {}).get("purpose")
+                or (claim.get("missing_proof") or [""])[0]
+                or claim.get("statement")
+            )
+            append_item(
+                claim,
+                asset_type,
+                "claim_evidence",
+                str(need),
+                source_queries=_material_plan_source_queries(
+                    claim.get("statement"),
+                    claim.get("chart_need"),
+                    claim.get("missing_proof"),
+                    chart_anchor or {},
+                ),
+                relevance_score=0.92 if asset_type == "evidence_chart" else 0.9,
+                capture_mode="planned_data_chart",
+            )
+
+    first_claim = claims[0]
+    for question in _material_text_list(brief_context.get("question_units"), limit=2):
+        append_item(
+            first_claim,
+            "logic_diagram",
+            "reader_question_map",
+            f"解释核心问题：{question}",
+            source_queries=_material_plan_source_queries(question, first_claim.get("statement")),
+            relevance_score=0.78,
+            capture_mode="planned_generated_visual",
+        )
+
+    for opinion in _material_text_list(brief_context.get("opinion_units"), limit=2):
+        append_item(
+            first_claim,
+            "source_screenshot",
+            "viewpoint_verification",
+            f"核对争议观点：{opinion}",
+            source_queries=_material_plan_source_queries(opinion, first_claim.get("statement")),
+            relevance_score=0.82,
+            source_url=first_source_url,
+            capture_mode="planned_source_check",
+        )
+
+    for case in _material_text_list(brief_context.get("case_units"), limit=2):
+        append_item(
+            first_claim,
+            "case_table",
+            "case_comparison",
+            f"整理案例对比：{case}",
+            source_queries=_material_plan_source_queries(case, topic_row.get("title")),
+            relevance_score=0.8,
+            capture_mode="planned_case_table",
+        )
+
+    for solution in _material_text_list(brief_context.get("solution_units"), limit=2):
+        append_item(
+            first_claim,
+            "proof_checklist",
+            "draft_proof_route",
+            f"落实证明方案：{solution}",
+            source_queries=_material_plan_source_queries(solution, topic_row.get("title")),
+            relevance_score=0.76,
+            capture_mode="planned_editor_checklist",
+        )
+
+    for item in _material_as_list(ai_decision.get("news_screenshot_queries")):
+        query = _material_first_text(item.get("query") if isinstance(item, dict) else item)
+        if not query:
+            continue
+        target_claim = next(
+            (claim for claim in claims if str(claim.get("section_id") or "") in query),
+            first_claim,
+        )
+        append_item(
+            target_claim,
+            "source_screenshot",
+            "source_screenshot",
+            f"截取新闻源验证：{query}",
+            source_queries=[query],
+            relevance_score=0.84,
+            capture_mode="planned_news_screenshot",
+        )
+
+    for item in _material_as_list(ai_decision.get("image_queries")):
+        if _is_generic_material_visual_query(item):
+            continue
+        query = _material_first_text(item.get("query") if isinstance(item, dict) else item)
+        if not query:
+            continue
+        append_item(
+            first_claim,
+            "visual_reference",
+            "source_context",
+            f"检索具名视觉参考：{query}",
+            source_queries=[query],
+            relevance_score=0.72,
+            capture_mode="planned_image_search",
+        )
+
+    for item in _material_as_list(ai_decision.get("video_queries")):
+        query = _material_first_text(item.get("query") if isinstance(item, dict) else item)
+        if not query:
+            continue
+        append_item(
+            first_claim,
+            "video_reference",
+            "context_b_roll",
+            f"检索动态素材：{query}",
+            source_queries=[query],
+            relevance_score=0.7,
+            capture_mode="planned_video_search",
+        )
+
+    return sorted(
+        plan,
+        key=lambda item: (
+            str(item.get("section_id") or ""),
+            -float(item.get("relevance_score") or 0),
+            str(item.get("asset_type") or ""),
+        ),
+    )
+
+
+def infer_material_topic_type(topic_row: dict[str, Any], article_markdown: str, reasoning_payload: dict[str, Any]) -> str:
+    text = " ".join(
+        _material_text_list(
+            [
+                topic_row.get("title"),
+                article_markdown[:2500],
+                [item.get("statement") for item in _material_as_list(reasoning_payload.get("claims")) if isinstance(item, dict)],
+            ]
+        )
+    ).lower()
+    finance_score = len(re.findall(r"地产|房地产|债|财政|利率|央行|股|收益率|资金|销售|投资|ai trade|broadcom|芯片|供应链", text, re.I))
+    geo_score = len(re.findall(r"战争|制裁|外交|日元|日本央行|亚洲货币|军事|冲突|选举|地缘", text, re.I))
+    tech_score = len(re.findall(r"ai|芯片|算力|半导体|供应链|服务器|gpu|asic|broadcom", text, re.I))
+    if tech_score > finance_score and tech_score >= geo_score:
+        return "industry_tech"
+    if geo_score > finance_score and geo_score > 0:
+        return "geopolitics"
+    if finance_score > 0:
+        return "finance_macro"
+    return "general_commentary"
+
+
+def build_local_material_decision(
     topic_row: dict[str, Any],
     article_markdown: str,
     sections: list[dict[str, str]],
     reasoning_payload: dict[str, Any],
-) -> tuple[str, str]:
-    evidence_lines = "\n".join(
-        f"- {item.get('title', '')}｜{item.get('url', '')}"
-        for item in (reasoning_payload.get("evidence_items") or [])[:8]
-    ) or "- 暂无"
-    claim_lines = "\n".join(
-        f"- {item.get('section_id', '')}｜{item.get('statement', '')}｜待补：{'；'.join(item.get('missing_proof') or ['无'])}"
-        for item in (reasoning_payload.get("claims") or [])
-    ) or "- 暂无"
-    section_lines = "\n".join(
-        f"- {item['section_id']}｜{item['heading']}"
-        for item in sections
-    ) or "- 暂无"
-    system_prompt = (
-        "你是第04环节 Material 的总编导。"
-        "你必须先完整阅读文章正文，再决定这篇文章真正需要哪些素材。"
-        "禁止机械地每篇都补满图表、图片、视频。"
-        "如果某段不需要素材，就明确不给。"
-        "你输出的是结构化 JSON，不是解释文字。"
-    )
-    user_prompt = f"""请阅读下面这篇终稿正文，并为第04环节 Material 生成“素材决策 JSON”。
+) -> dict[str, Any]:
+    topic_id = str(topic_row.get("topic_id") or reasoning_payload.get("topic_id") or "topic").strip() or "topic"
+    title = str(topic_row.get("title") or reasoning_payload.get("title") or topic_id).strip()
+    claims = _normalize_material_claims(topic_row, {"topic_id": topic_id}, reasoning_payload, {})
+    if not claims:
+        section_seeds = sections[:3] or [{"section_id": "section-01", "heading": title, "body": article_markdown[:500]}]
+        claims = [
+            {
+                "claim_id": f"{topic_id}-claim-{index:02d}",
+                "section_id": item.get("section_id") or f"section-{index:02d}",
+                "heading": item.get("heading", ""),
+                "statement": item.get("heading") or title,
+                "counterpoint": None,
+                "missing_proof": [],
+                "chart_need": None,
+            }
+            for index, item in enumerate(section_seeds, start=1)
+        ]
 
-要求：
-1. 先基于全文判断主论点、章节重点、证据缺口，再决定要补什么；
-2. 只在“有证明价值”时生成图表锚点，最多 4 个；
-3. 图片优先人物、机构、事件现场、新闻截图，不要泛图；
-4. 视频只在文中确实适合补充动态素材时再给检索词；
-5. 漫画/连环画/梗图只在适配该题时生成，不强制；
-6. claims 要贴合正文结构，不要沿用旧稿的僵硬 claims；
-7. topic_type 只能是 finance_macro / geopolitics / industry_tech / general_commentary 之一；
-8. 所有 query 都要具体可执行；
-9. 如果某类素材不需要，返回空数组。
+    chart_anchors = [
+        item for item in _material_as_list(reasoning_payload.get("chart_anchors"))
+        if isinstance(item, dict)
+    ]
+    chart_needs = [
+        item for item in _material_as_list(reasoning_payload.get("chart_needs"))
+        if isinstance(item, dict)
+    ]
+    for index, item in enumerate(chart_needs, start=len(chart_anchors) + 1):
+        title_text = item.get("chart") or item.get("title")
+        if not title_text:
+            continue
+        chart_anchors.append(
+            {
+                "anchor_id": item.get("anchor_id") or f"chart-{index:02d}",
+                "section_id": item.get("section_id") or f"section-{index:02d}",
+                "title": title_text,
+                "purpose": item.get("purpose") or item.get("status") or "补充数据图表",
+                "data_sources": _material_text_list(item.get("data_sources") or item.get("data_needed"), limit=4),
+                "chart_type": item.get("chart_type") or "table",
+                "only_if_worth_chart": True,
+            }
+        )
+    if not chart_anchors:
+        for index, claim in enumerate(claims, start=1):
+            if not claim.get("chart_need"):
+                continue
+            chart_anchors.append(
+                {
+                    "anchor_id": f"chart-{index:02d}",
+                    "section_id": claim.get("section_id") or f"section-{index:02d}",
+                    "title": claim.get("chart_need"),
+                    "purpose": f"验证：{claim.get('statement', title)}",
+                    "data_sources": _material_text_list(claim.get("missing_proof"), limit=4),
+                    "chart_type": "table",
+                    "only_if_worth_chart": True,
+                }
+            )
 
-返回 JSON 对象，字段必须包含：
-- core_claim
-- topic_type
-- article_summary
-- skip_notes
-- claims: [{{claim_id, section_id, heading, statement, counterpoint, missing_proof[], chart_need}}]
-- chart_anchors: [{{anchor_id, section_id, title, purpose, data_sources[], chart_type, only_if_worth_chart}}]
-- image_queries: [{{query, entity_type, entity, priority, channel}}]
-- news_screenshot_queries: [{{query, priority, channel}}]
-- video_queries: [{{query, priority}}]
-- generated_visuals: {{cover_prompt, infographic_prompts[], comic_storyboard[], meme_prompts[], funny_comic_character_prompts[]}}
-- scene_plan: [{{title, visual, caption}}]
+    evidence_items = [
+        item for item in _material_as_list(reasoning_payload.get("evidence_items"))
+        if isinstance(item, dict)
+    ]
+    image_queries: list[dict[str, Any]] = []
+    screenshot_queries: list[dict[str, Any]] = []
+    for index, item in enumerate(evidence_items[:6], start=1):
+        source_name = _material_first_text(item.get("source"), item.get("publisher"), item.get("name"), item.get("title"))
+        title_text = _material_first_text(item.get("title"), item.get("name"))
+        query = " ".join(part for part in [source_name, title_text] if part).strip()
+        if query:
+            screenshot_queries.append(
+                {
+                    "query": query,
+                    "priority": 200 - index,
+                    "channel": "news_screenshot",
+                }
+            )
+        if source_name and len(source_name) <= 24:
+            image_queries.append(
+                {
+                    "query": f"{source_name} {title} 新闻",
+                    "entity_type": "org",
+                    "entity": source_name,
+                    "priority": 180 - index,
+                    "channel": "image_search",
+                }
+            )
 
-【文章信息】
-- 题目：{topic_row.get('title', '')}
-- topic_id：{topic_row.get('topic_id', '')}
-- 冻结一级结构：
-{chr(10).join(f"- {item}" for item in topic_row.get('final_primary_sections', []) or []) or "- 暂无"}
+    for index, claim in enumerate(claims[:4], start=1):
+        statement = str(claim.get("statement") or title).strip()
+        if statement:
+            screenshot_queries.append(
+                {
+                    "query": f"{title} {statement[:30]}",
+                    "priority": 150 - index,
+                    "channel": "news_screenshot",
+                    "claim_id": claim.get("claim_id"),
+                    "section_id": claim.get("section_id"),
+                }
+            )
 
-【文章章节】
-{section_lines}
+    video_queries: list[dict[str, Any]] = [
+        {
+            "query": f"{title} 新闻发布会 现场",
+            "priority": 120,
+            "channel": "video_search",
+        }
+    ]
+    if len(article_markdown) < 1800:
+        video_queries = []
 
-【辅助论证骨架】
-{claim_lines}
+    return {
+        "core_claim": claims[0].get("statement") if claims else title,
+        "topic_type": infer_material_topic_type(topic_row, article_markdown, reasoning_payload),
+        "article_summary": f"基于终稿正文与上游来源争议观点生成素材计划：{title}",
+        "generation_basis": "local_agent_material_planner",
+        "skip_notes": [
+            "使用当前 Agent/本地 Planner 与上游 ReasoningSheet 规划素材，本阶段不配置独立大模型。",
+            "图表仅在存在 chart_need、数据型缺口或上游图表清单时生成。",
+        ],
+        "claims": claims,
+        "chart_anchors": chart_anchors[:4],
+        "image_queries": list({item["query"]: item for item in image_queries if item.get("query")}.values())[:8],
+        "news_screenshot_queries": list({item["query"]: item for item in screenshot_queries if item.get("query")}.values())[:8],
+        "video_queries": video_queries[:3],
+        "generated_visuals": {
+            "cover_prompt": "",
+            "infographic_prompts": [],
+            "comic_storyboard": [],
+            "meme_prompts": [],
+            "funny_comic_character_prompts": [],
+        },
+        "scene_plan": [
+            {
+                "title": section.get("heading") or f"section-{index:02d}",
+                "visual": f"为本节补充与 `{section.get('heading') or title}` 直接相关的证据图或新闻截图",
+                "caption": "仅使用能支撑 Claim 的素材",
+            }
+            for index, section in enumerate(sections[:4], start=1)
+        ],
+    }
 
-【已有证据】
-{evidence_lines}
 
-【正文全文】
-```markdown
-{article_markdown.strip()}
-```"""
-    return system_prompt, user_prompt
-
-
-def build_material_ai_input_payload(
+def build_material_input_payload(
     run_id: str,
     topic_row: dict[str, Any],
     draft_row: dict[str, Any],
@@ -492,9 +1066,17 @@ def build_material_ai_input_payload(
     reasoning_payload: dict[str, Any],
     ai_decision: dict[str, Any],
     aggregate_decisions_file: Path,
+    aggregate_material_plan_file: Path | None = None,
 ) -> dict[str, Any]:
     evidence_items = reasoning_payload.get("evidence_items") or []
     claims = ai_decision.get("claims") or []
+    material_plan = build_claim_driven_material_plan(
+        run_id=run_id,
+        topic_row=topic_row,
+        draft_row=draft_row,
+        reasoning_payload=reasoning_payload,
+        ai_decision=ai_decision,
+    )
     return {
         "meta": {
             "id": f"{run_id}:material-input:{topic_row.get('topic_id')}",
@@ -526,6 +1108,8 @@ def build_material_ai_input_payload(
         "missing_evidence": ai_decision.get("skip_notes") or [],
         "counterintuitive_angle": next((item.get("counterpoint") for item in claims if item.get("counterpoint")), None),
         "claims": claims,
+        "material_plan": material_plan,
+        "material_plan_file": str(aggregate_material_plan_file) if aggregate_material_plan_file else None,
         "chart_anchors": ai_decision.get("chart_anchors") or [],
         "image_queries": ai_decision.get("image_queries") or [],
         "news_screenshot_queries": ai_decision.get("news_screenshot_queries") or [],
@@ -541,25 +1125,40 @@ def build_material_ai_input_payload(
         },
         "material_decision": ai_decision,
         "material_decision_file": str(aggregate_decisions_file),
-        "generation_basis": "final_doc_ai_reading",
+        "generation_basis": ai_decision.get("generation_basis") or "local_agent_material_planner",
         "upstream_object_type": "MaterialInput",
     }
 
 
-def build_material_ai_inputs_from_draft_manifest(
+def build_material_inputs_from_draft_manifest(
     draft_manifest: Path,
     final_structure_payload: dict[str, Any],
 ) -> tuple[Path, Path]:
     payload = read_draft_manifest(draft_manifest)
     run_id = str(payload["run_id"]).strip()
-    material_dir, ai_inputs_file, ai_decisions_file = material_ai_runtime_paths(run_id)
+    material_dir, material_inputs_file, material_decisions_file = material_input_runtime_paths(run_id)
+    material_plan_file = material_plan_runtime_path(run_id)
     material_dir.mkdir(parents=True, exist_ok=True)
 
     topic_rows = final_structure_payload.get("topics", [])
     draft_rows = payload.get("drafts", [])
     by_topic_id = {str(item.get("topic_id")): item for item in draft_rows if item.get("topic_id")}
-    ai_inputs: list[dict[str, Any]] = []
-    ai_decisions: dict[str, Any] = {"run_id": run_id, "generation_basis": "final_doc_ai_reading", "topics": []}
+    material_inputs: list[dict[str, Any]] = []
+    material_decisions: dict[str, Any] = {
+        "run_id": run_id,
+        "generation_basis": "local_agent_material_planner",
+        "model_strategy": "current_agent_local_planner",
+        "topics": [],
+    }
+    material_plan_payload: dict[str, Any] = {
+        "run_id": run_id,
+        "stage": "material",
+        "object_type": "ClaimDrivenMaterialPlan",
+        "generation_basis": "claim_driven_from_final_doc_reasoning_and_brief_context",
+        "model_strategy": "current_agent_local_planner",
+        "asset_binding_contract": ["claim_id", "section_id", "usage_type", "relevance_score", "editor_status"],
+        "topics": [],
+    }
 
     for topic_row in topic_rows:
         topic_id = str(topic_row.get("topic_id") or "").strip()
@@ -570,13 +1169,13 @@ def build_material_ai_inputs_from_draft_manifest(
         article_markdown = article_path.read_text(encoding="utf-8")
         sections = parse_markdown_sections(article_markdown)
         reasoning_payload = read_topic_reasoning_payload(draft_row)
-        system_prompt, user_prompt = build_material_ai_prompts(topic_row, article_markdown, sections, reasoning_payload)
-        ai_decision = request_material_ai_json(system_prompt, user_prompt)
-        if not isinstance(ai_decision.get("claims"), list):
-            raise RuntimeError(f"Material AI 输出缺少 claims：topic_id={topic_id}")
-        topic_decision_file = material_dir / f"material_ai_decision_{topic_id}.json"
-        write_json(topic_decision_file, ai_decision)
-        ai_input = build_material_ai_input_payload(
+        material_decision = build_local_material_decision(topic_row, article_markdown, sections, reasoning_payload)
+        generation_basis = "local_agent_material_planner"
+        if not isinstance(material_decision.get("claims"), list):
+            raise RuntimeError(f"Material 决策输出缺少 claims：topic_id={topic_id}")
+        topic_decision_file = material_dir / f"material_decision_{topic_id}.json"
+        write_json(topic_decision_file, material_decision)
+        material_input = build_material_input_payload(
             run_id=run_id,
             topic_row=topic_row,
             draft_row=draft_row,
@@ -584,24 +1183,48 @@ def build_material_ai_inputs_from_draft_manifest(
             article_path=article_path,
             article_markdown=article_markdown,
             reasoning_payload=reasoning_payload,
-            ai_decision=ai_decision,
-            aggregate_decisions_file=ai_decisions_file,
+            ai_decision=material_decision,
+            aggregate_decisions_file=material_decisions_file,
+            aggregate_material_plan_file=material_plan_file,
         )
-        ai_inputs.append(ai_input)
-        ai_decisions["topics"].append(
+        material_inputs.append(material_input)
+        material_plan_payload["topics"].append(
+            {
+                "topic_id": topic_id,
+                "title": topic_row.get("title"),
+                "plan_count": len(material_input.get("material_plan") or []),
+                "plan_items": material_input.get("material_plan") or [],
+            }
+        )
+        material_decisions["topics"].append(
             {
                 "topic_id": topic_id,
                 "title": topic_row.get("title"),
                 "article_source_type": article_source_type,
                 "article_path": str(article_path),
+                "generation_basis": generation_basis,
                 "decision_file": str(topic_decision_file),
-                "decision": ai_decision,
+                "decision": material_decision,
             }
         )
 
-    write_json(ai_inputs_file, ai_inputs)
-    write_json(ai_decisions_file, ai_decisions)
-    return ai_inputs_file, ai_decisions_file
+    write_json(material_inputs_file, material_inputs)
+    write_json(material_decisions_file, material_decisions)
+    write_json(material_plan_file, material_plan_payload)
+    return material_inputs_file, material_decisions_file
+
+
+def build_material_ai_input_payload(*args: Any, **kwargs: Any) -> dict[str, Any]:
+    # Backward-compatible alias for tests and older callers.
+    return build_material_input_payload(*args, **kwargs)
+
+
+def build_material_ai_inputs_from_draft_manifest(
+    draft_manifest: Path,
+    final_structure_payload: dict[str, Any],
+) -> tuple[Path, Path]:
+    # Backward-compatible alias; new runs produce material_inputs/material_decisions.
+    return build_material_inputs_from_draft_manifest(draft_manifest, final_structure_payload)
 
 
 def resolve_gemini_image_provider() -> dict[str, str]:
@@ -700,7 +1323,23 @@ def safe_slug(text: str) -> str:
     )
 
 
-def build_image_filename(query: str, entity: str, candidate_rank: int, suffix: str, query_index: int) -> str:
+def build_claim_filename_prefix(claim_id: str = "", plan_id: str = "") -> str:
+    base = safe_slug(claim_id or plan_id).strip("-_")
+    if not base:
+        return ""
+    return base[:32]
+
+
+def build_image_filename(
+    query: str,
+    entity: str,
+    candidate_rank: int,
+    suffix: str,
+    query_index: int,
+    claim_id: str = "",
+    plan_id: str = "",
+) -> str:
+    claim_prefix = build_claim_filename_prefix(claim_id=claim_id, plan_id=plan_id)
     base = safe_slug(entity or query).strip("-_")
     if not base:
         base = f"query-{query_index:02d}"
@@ -708,7 +1347,21 @@ def build_image_filename(query: str, entity: str, candidate_rank: int, suffix: s
     normalized_suffix = suffix or ".jpg"
     if not normalized_suffix.startswith("."):
         normalized_suffix = f".{normalized_suffix}"
-    return f"图片_{base}_{candidate_rank:02d}{normalized_suffix}"
+    parts = ["图片"]
+    if claim_prefix:
+        parts.append(claim_prefix)
+    parts.extend([base, f"{candidate_rank:02d}"])
+    return "_".join(parts) + normalized_suffix
+
+
+def build_video_filename_prefix(query: str, query_index: int, claim_id: str = "", plan_id: str = "") -> str:
+    claim_prefix = build_claim_filename_prefix(claim_id=claim_id, plan_id=plan_id)
+    video_desc = safe_slug(query)[:30] or f"query-{query_index:02d}"
+    parts = ["视频"]
+    if claim_prefix:
+        parts.append(claim_prefix)
+    parts.append(video_desc)
+    return "_".join(parts)
 
 
 def guess_ext_from_mime(mime_type: str) -> str:
@@ -726,6 +1379,17 @@ def create_requests_session() -> requests.Session:
     session = requests.Session()
     session.trust_env = False
     return session
+
+
+def env_secret_present(name: str) -> bool:
+    return bool(str(os.environ.get(name, "")).strip())
+
+
+def require_env_secret(name: str) -> str:
+    value = str(os.environ.get(name, "")).strip()
+    if not value:
+        raise RuntimeError(f"missing_env:{name}")
+    return value
 
 
 class DeadlineExceeded(TimeoutError):
@@ -840,8 +1504,11 @@ def material_runtime_paths(run_id: str) -> tuple[Path, Path]:
 
 
 def canonical_material_paths(run_id: str) -> tuple[Path, Path, Path]:
-    stage_dir = canonical_stage_dir("material", run_id)
-    return stage_dir, stage_dir / "material_manifest.json", stage_dir / "material_acceptance.json"
+    # Material is no longer a canonical mainline stage. Keep its optional
+    # artifacts under shared runtime so legacy tools can run without reviving
+    # the old stage gate.
+    stage_dir, manifest_path = material_runtime_paths(run_id)
+    return stage_dir, manifest_path, stage_dir / "material_acceptance.json"
 
 
 def resolve_pack_root_from_material_manifest(material_manifest_file: Path) -> Path | None:
@@ -879,8 +1546,8 @@ def build_material_plan_from_draft_manifest(draft_manifest: Path, *, force_rebui
     if not node_script.exists():
         raise RuntimeError(f"material planner 不存在: {node_script}")
 
-    ai_inputs_file, _ = build_material_ai_inputs_from_draft_manifest(draft_manifest, final_structure_payload)
-    command = ["node", str(node_script), str(ai_inputs_file)]
+    material_inputs_file, _ = build_material_inputs_from_draft_manifest(draft_manifest, final_structure_payload)
+    command = ["node", str(node_script), str(material_inputs_file)]
     try:
         subprocess.run(command, cwd=str(ROOT), check=True)
     except FileNotFoundError as exc:
@@ -1682,6 +2349,224 @@ def search_wikimedia_images(
     return rows
 
 
+def extract_duckduckgo_vqd(html: str) -> str:
+    patterns = [
+        r"vqd=['\"]([^'\"]+)['\"]",
+        r"vqd=([^&\"']+)&",
+        r"'vqd':'([^']+)'",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, html)
+        if match:
+            return unescape(match.group(1)).strip()
+    return ""
+
+
+def search_duckduckgo_images(
+    query: str,
+    limit: int = 6,
+    timeout: int = DEFAULT_IMAGE_SEARCH_TIMEOUT,
+) -> list[dict[str, Any]]:
+    with create_requests_session() as session:
+        landing = session.get(
+            "https://duckduckgo.com/",
+            params={"q": query, "iax": "images", "ia": "images"},
+            headers={"User-Agent": USER_AGENT},
+            timeout=timeout,
+        )
+        landing.raise_for_status()
+        vqd = extract_duckduckgo_vqd(landing.text)
+        if not vqd:
+            raise RuntimeError("duckduckgo_image_vqd_not_found")
+        response = session.get(
+            "https://duckduckgo.com/i.js",
+            params={
+                "l": "us-en",
+                "o": "json",
+                "q": query,
+                "vqd": vqd,
+                "f": ",,,",
+                "p": "1",
+            },
+            headers={
+                "User-Agent": USER_AGENT,
+                "Referer": landing.url,
+            },
+            timeout=timeout,
+        )
+    response.raise_for_status()
+    payload = response.json()
+    rows: list[dict[str, Any]] = []
+    for item in payload.get("results", []):
+        image_url = str(item.get("image") or "").strip()
+        if not image_url:
+            continue
+        parsed = urlparse(image_url)
+        if parsed.scheme not in {"http", "https"}:
+            continue
+        rows.append(
+            {
+                "title": item.get("title") or item.get("source") or query,
+                "url": item.get("url") or image_url,
+                "download_url": image_url,
+                "descriptionurl": item.get("url") or "",
+                "width": item.get("width"),
+                "height": item.get("height"),
+                "thumbnail": item.get("thumbnail"),
+                "source": item.get("source") or "",
+            }
+        )
+        if len(rows) >= limit:
+            break
+    return rows
+
+
+def search_tavily_images(
+    query: str,
+    limit: int = 6,
+    timeout: int = DEFAULT_IMAGE_SEARCH_TIMEOUT,
+) -> list[dict[str, Any]]:
+    api_key = require_env_secret(TAVILY_API_KEY_ENV)
+    payload = {
+        "query": query,
+        "search_depth": "basic",
+        "max_results": max(1, int(limit)),
+        "include_images": True,
+        "include_image_descriptions": True,
+    }
+    with create_requests_session() as session:
+        response = session.post(
+            "https://api.tavily.com/search",
+            json=payload,
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+                "User-Agent": USER_AGENT,
+            },
+            timeout=timeout,
+        )
+        if response.status_code in {401, 403}:
+            response = session.post(
+                "https://api.tavily.com/search",
+                json={**payload, "api_key": api_key},
+                headers={"Content-Type": "application/json", "User-Agent": USER_AGENT},
+                timeout=timeout,
+            )
+    response.raise_for_status()
+    data = response.json()
+    rows: list[dict[str, Any]] = []
+    raw_images = data.get("images") or []
+    for item in raw_images:
+        if isinstance(item, str):
+            image_url = item.strip()
+            title = query
+            source_url = ""
+        elif isinstance(item, dict):
+            image_url = str(item.get("url") or item.get("image_url") or "").strip()
+            title = item.get("description") or item.get("title") or query
+            source_url = str(item.get("source_url") or item.get("page_url") or "").strip()
+        else:
+            continue
+        parsed = urlparse(image_url)
+        if parsed.scheme not in {"http", "https"}:
+            continue
+        rows.append(
+            {
+                "title": title,
+                "url": source_url or image_url,
+                "download_url": image_url,
+                "descriptionurl": source_url,
+                "source": "tavily",
+            }
+        )
+        if len(rows) >= limit:
+            break
+    return rows
+
+
+def search_brave_images(
+    query: str,
+    limit: int = 6,
+    timeout: int = DEFAULT_IMAGE_SEARCH_TIMEOUT,
+) -> list[dict[str, Any]]:
+    api_key = require_env_secret(BRAVE_SEARCH_API_KEY_ENV)
+    with create_requests_session() as session:
+        response = session.get(
+            "https://api.search.brave.com/res/v1/images/search",
+            params={"q": query, "count": max(1, min(int(limit), 20)), "safesearch": "moderate"},
+            headers={
+                "Accept": "application/json",
+                "X-Subscription-Token": api_key,
+                "User-Agent": USER_AGENT,
+            },
+            timeout=timeout,
+        )
+    response.raise_for_status()
+    data = response.json()
+    rows: list[dict[str, Any]] = []
+    for item in data.get("results", []):
+        image = item.get("properties") or item.get("image") or {}
+        thumbnail = item.get("thumbnail") or {}
+        image_url = str(image.get("url") or item.get("url") or thumbnail.get("src") or "").strip()
+        parsed = urlparse(image_url)
+        if parsed.scheme not in {"http", "https"}:
+            continue
+        page_url = str(item.get("url") or "").strip()
+        rows.append(
+            {
+                "title": item.get("title") or query,
+                "url": page_url or image_url,
+                "download_url": image_url,
+                "descriptionurl": page_url,
+                "width": image.get("width"),
+                "height": image.get("height"),
+                "thumbnail": thumbnail.get("src") or thumbnail.get("url") or "",
+                "source": "brave",
+            }
+        )
+        if len(rows) >= limit:
+            break
+    return rows
+
+
+def search_brave_videos(query: str, limit: int = 6, timeout: int = DEFAULT_IMAGE_SEARCH_TIMEOUT) -> list[dict[str, Any]]:
+    api_key = require_env_secret(BRAVE_SEARCH_API_KEY_ENV)
+    with create_requests_session() as session:
+        response = session.get(
+            "https://api.search.brave.com/res/v1/videos/search",
+            params={"q": query, "count": max(1, min(int(limit), 20)), "safesearch": "moderate"},
+            headers={
+                "Accept": "application/json",
+                "X-Subscription-Token": api_key,
+                "User-Agent": USER_AGENT,
+            },
+            timeout=timeout,
+        )
+    response.raise_for_status()
+    data = response.json()
+    rows: list[dict[str, Any]] = []
+    for item in data.get("results", []):
+        properties = item.get("video") or item.get("properties") or {}
+        url = str(item.get("url") or properties.get("url") or "").strip()
+        parsed = urlparse(url)
+        if parsed.scheme not in {"http", "https"}:
+            continue
+        rows.append(
+            {
+                "title": item.get("title") or query,
+                "url": url,
+                "duration": properties.get("duration") or item.get("duration"),
+                "channel": item.get("publisher") or item.get("source") or "",
+                "thumbnail": (item.get("thumbnail") or {}).get("src") or "",
+                "_search_spec": "brave_video",
+                "_search_provider": "brave_video",
+            }
+        )
+        if len(rows) >= limit:
+            break
+    return rows
+
+
 def env_int(name: str, default: int) -> int:
     raw = str(os.environ.get(name, "")).strip()
     if not raw:
@@ -1690,6 +2575,92 @@ def env_int(name: str, default: int) -> int:
         return int(float(raw))
     except ValueError:
         return default
+
+
+def split_env_csv(raw: str, default: list[str]) -> list[str]:
+    values = [
+        item.strip().lower()
+        for item in str(raw or "").split(",")
+        if item.strip()
+    ]
+    return values or list(default)
+
+
+def image_engine_available(engine: str) -> bool:
+    engine = str(engine or "").strip().lower()
+    if engine in {"tavily", "tavily_image"}:
+        return env_secret_present(TAVILY_API_KEY_ENV)
+    if engine in {"brave", "brave_image"}:
+        return env_secret_present(BRAVE_SEARCH_API_KEY_ENV)
+    return True
+
+
+def resolve_image_search_engines(record: dict[str, Any] | None = None) -> list[str]:
+    channel = str((record or {}).get("channel") or "image_search").strip().lower()
+    if channel in {"news_screenshot", "screenshot"}:
+        return []
+    if channel in {"wikimedia", "commons"}:
+        return ["wikimedia"]
+    if channel in {"duckduckgo", "duckduckgo_image", "ddg_image", "web_image"}:
+        return ["duckduckgo_image"]
+    if channel in {"tavily", "tavily_image"}:
+        return ["tavily_image"] if env_secret_present(TAVILY_API_KEY_ENV) else []
+    if channel in {"brave", "brave_image"}:
+        return ["brave_image"] if env_secret_present(BRAVE_SEARCH_API_KEY_ENV) else []
+
+    explicit = str(os.environ.get("MATERIAL_IMAGE_SEARCH_ENGINES", "")).strip()
+    engines = split_env_csv(explicit, DEFAULT_IMAGE_SEARCH_ENGINES)
+    if not explicit:
+        if env_secret_present(TAVILY_API_KEY_ENV):
+            engines.append("tavily_image")
+        if env_secret_present(BRAVE_SEARCH_API_KEY_ENV):
+            engines.append("brave_image")
+    return [engine for engine in dict.fromkeys(engines) if image_engine_available(engine)]
+
+
+def video_provider_available(provider: str) -> bool:
+    provider = str(provider or "").strip().lower()
+    if provider in {"brave", "brave_video"}:
+        return env_secret_present(BRAVE_SEARCH_API_KEY_ENV)
+    return True
+
+
+def build_video_search_specs(query: str, search_limit: int = 3) -> list[str]:
+    clean_query = str(query or "").strip()
+    if not clean_query:
+        return []
+    explicit = str(os.environ.get("MATERIAL_VIDEO_SEARCH_PROVIDERS", "")).strip()
+    providers = split_env_csv(explicit, DEFAULT_VIDEO_SEARCH_PROVIDERS)
+    if not explicit and env_secret_present(BRAVE_SEARCH_API_KEY_ENV):
+        providers.append("brave_video")
+    specs: list[str] = []
+    for provider in providers:
+        if not video_provider_available(provider):
+            continue
+        if provider in {"ytsearch", "ytsearchdate"}:
+            specs.append(f"{provider}{search_limit}:{clean_query}")
+        elif provider in {"brave", "brave_video"}:
+            specs.append(f"brave_video:{clean_query}")
+        elif ":" in provider:
+            specs.append(provider.format(query=clean_query, limit=search_limit))
+        else:
+            specs.append(f"{provider}{search_limit}:{clean_query}")
+    return list(dict.fromkeys(specs))
+
+
+def query_binding_fields(record: dict[str, Any]) -> dict[str, Any]:
+    fields: dict[str, Any] = {}
+    for key in MATERIAL_BINDING_KEYS:
+        value = record.get(key)
+        if value is None or value == "":
+            continue
+        fields[key] = value
+    return fields
+
+
+def add_binding_fields(target: dict[str, Any], record: dict[str, Any]) -> dict[str, Any]:
+    target.update(query_binding_fields(record))
+    return target
 
 
 def normalize_search_queries(raw_queries: Any, default_channel: str) -> list[dict[str, Any]]:
@@ -1731,6 +2702,7 @@ def normalize_search_queries(raw_queries: Any, default_channel: str) -> list[dic
                 "entity": str(item.get("entity", "")).strip(),
                 "channel": str(item.get("channel", default_channel) or default_channel).strip().lower(),
                 "order": idx,
+                **query_binding_fields(item),
             }
         )
     records.sort(key=lambda row: (-int(row.get("priority", 0)), int(row.get("order", 0))))
@@ -1887,16 +2859,15 @@ def fetch_news_page_screenshot(
 
 
 def execute_image_search(topic: TopicContext, per_query_download: int = 1) -> dict[str, Any]:
-    # 新口径优先从 images/web_search 读取；保留 config 目录兼容 fallback
     config_dir = topic.topic_root / "config"
-    queries_path = topic.topic_root / "images" / "web_search" / "image_search_queries.json"
+    queries_path = config_dir / "image_search_queries.json"
     if not queries_path.exists():
-        queries_path = config_dir / "image_search_queries.json"
+        queries_path = topic.topic_root / "images" / "web_search" / "image_search_queries.json"
     queries_raw = read_json(queries_path)
-    queries = normalize_search_queries(queries_raw, default_channel="wikimedia")
-    screenshot_queries_path = topic.topic_root / "images" / "web_search" / "news_screenshot_queries.json"
+    queries = normalize_search_queries(queries_raw, default_channel="image_search")
+    screenshot_queries_path = config_dir / "news_screenshot_queries.json"
     if not screenshot_queries_path.exists():
-        screenshot_queries_path = config_dir / "news_screenshot_queries.json"
+        screenshot_queries_path = topic.topic_root / "images" / "web_search" / "news_screenshot_queries.json"
     screenshot_queries: list[dict[str, Any]] = []
     if screenshot_queries_path.exists():
         screenshot_queries = normalize_search_queries(read_json(screenshot_queries_path), default_channel="news_screenshot")
@@ -1924,113 +2895,159 @@ def execute_image_search(topic: TopicContext, per_query_download: int = 1) -> di
 
     all_candidates = []
     downloaded = []
-    successful_wikimedia_downloads = 0
+    successful_image_downloads = 0
     for idx, record in enumerate(queries, start=1):
         if record.get("channel") == "news_screenshot":
             continue
-        if successful_wikimedia_downloads >= total_image_download_limit:
+        if successful_image_downloads >= total_image_download_limit:
             break
         query = str(record.get("query", "")).strip()
         if not query:
             continue
-        try:
-            candidates = run_with_deadline(
-                image_search_timeout + 5,
-                search_wikimedia_images,
-                query,
-                limit=3,
-                timeout=image_search_timeout,
-                thumb_width=wikimedia_thumb_width,
-            )
-        except Exception as exc:  # noqa: BLE001
-            all_candidates.append({"query": query, "channel": "wikimedia", "error": str(exc)})
-            continue
-        all_candidates.append(
-            {
-                "query": query,
-                "channel": "wikimedia",
-                "entity_type": record.get("entity_type", "topic"),
-                "priority": record.get("priority", 0),
-                "candidates": candidates,
-            }
-        )
-        download_limit = per_query_download
-        if record.get("entity_type") == "person":
-            download_limit = max(download_limit, person_download_boost)
-        for candidate_rank, candidate in enumerate(candidates[:download_limit], start=1):
-            if successful_wikimedia_downloads >= total_image_download_limit:
+        for engine in resolve_image_search_engines(record):
+            if successful_image_downloads >= total_image_download_limit:
                 break
+            binding = query_binding_fields(record)
             try:
-                source_url = candidate.get("download_url") or candidate.get("url") or ""
-                payload_path = topic.topic_root / f".tmp_download_{idx:02d}_{candidate_rank:02d}"
-                run_with_deadline(
-                    image_download_timeout + 5,
-                    download_file,
-                    source_url,
-                    payload_path,
-                    headers={"User-Agent": USER_AGENT},
-                    timeout=image_download_timeout,
-                    max_bytes=image_max_bytes,
-                )
-                payload = payload_path.read_bytes()
-                payload_path.unlink(missing_ok=True)
-                gate = gate_image_resolution(payload, min_short_edge=min_short_edge)
-                if not gate["accepted"]:
-                    downloaded.append(
-                        {
-                            "channel": "wikimedia",
-                            "query": query,
-                            "entity_type": record.get("entity_type", "topic"),
-                            "entity": record.get("entity", ""),
-                            "url": candidate.get("url", ""),
-                            "download_url": source_url,
-                            "title": candidate.get("title", ""),
-                            "rejected": True,
-                            "reject_reason": gate["reason"],
-                            "width": gate["width"],
-                            "height": gate["height"],
-                            "short_edge": gate["short_edge"],
-                            "min_short_edge_required": gate["min_short_edge_required"],
-                        }
+                if engine == "wikimedia":
+                    candidates = run_with_deadline(
+                        image_search_timeout + 5,
+                        search_wikimedia_images,
+                        query,
+                        limit=3,
+                        timeout=image_search_timeout,
+                        thumb_width=wikimedia_thumb_width,
                     )
+                elif engine == "duckduckgo_image":
+                    candidates = run_with_deadline(
+                        image_search_timeout + 5,
+                        search_duckduckgo_images,
+                        query,
+                        limit=6,
+                        timeout=image_search_timeout,
+                    )
+                elif engine == "tavily_image":
+                    candidates = run_with_deadline(
+                        image_search_timeout + 5,
+                        search_tavily_images,
+                        query,
+                        limit=6,
+                        timeout=image_search_timeout,
+                    )
+                elif engine == "brave_image":
+                    candidates = run_with_deadline(
+                        image_search_timeout + 5,
+                        search_brave_images,
+                        query,
+                        limit=6,
+                        timeout=image_search_timeout,
+                    )
+                else:
+                    all_candidates.append(add_binding_fields({"query": query, "channel": engine, "error": "unsupported_image_engine"}, record))
                     continue
-                suffix = Path(candidate["url"]).suffix or ".jpg"
-                filename = build_image_filename(
-                    query=query,
-                    entity=str(record.get("entity", "") or ""),
-                    candidate_rank=candidate_rank,
-                    suffix=suffix,
-                    query_index=idx,
-                )
-                out = topic.topic_root / filename
-                out.write_bytes(payload)
-                downloaded.append(
-                    {
-                        "channel": "wikimedia",
-                        "query": query,
-                        "entity_type": record.get("entity_type", "topic"),
-                        "entity": record.get("entity", ""),
-                        "file": str(out),
-                        "url": candidate.get("url", ""),
-                        "download_url": source_url,
-                        "title": candidate.get("title", ""),
-                        "width": gate["width"],
-                        "height": gate["height"],
-                        "short_edge": gate["short_edge"],
-                    }
-                )
-                successful_wikimedia_downloads += 1
             except Exception as exc:  # noqa: BLE001
-                downloaded.append(
+                all_candidates.append(add_binding_fields({"query": query, "channel": engine, "error": str(exc)}, record))
+                continue
+            all_candidates.append(
+                add_binding_fields(
                     {
-                        "channel": "wikimedia",
                         "query": query,
+                        "channel": engine,
                         "entity_type": record.get("entity_type", "topic"),
-                        "entity": record.get("entity", ""),
-                        "error": str(exc),
-                        "url": candidate.get("url", ""),
-                    }
+                        "priority": record.get("priority", 0),
+                        "candidates": candidates,
+                    },
+                    record,
                 )
+            )
+            download_limit = per_query_download
+            if record.get("entity_type") == "person":
+                download_limit = max(download_limit, person_download_boost)
+            for candidate_rank, candidate in enumerate(candidates[:download_limit], start=1):
+                if successful_image_downloads >= total_image_download_limit:
+                    break
+                try:
+                    source_url = candidate.get("download_url") or candidate.get("url") or ""
+                    payload_path = topic.topic_root / f".tmp_download_{idx:02d}_{engine}_{candidate_rank:02d}"
+                    run_with_deadline(
+                        image_download_timeout + 5,
+                        download_file,
+                        source_url,
+                        payload_path,
+                        headers={"User-Agent": USER_AGENT},
+                        timeout=image_download_timeout,
+                        max_bytes=image_max_bytes,
+                    )
+                    payload = payload_path.read_bytes()
+                    payload_path.unlink(missing_ok=True)
+                    gate = gate_image_resolution(payload, min_short_edge=min_short_edge)
+                    if not gate["accepted"]:
+                        downloaded.append(
+                            add_binding_fields(
+                                {
+                                    "channel": engine,
+                                    "query": query,
+                                    "entity_type": record.get("entity_type", "topic"),
+                                    "entity": record.get("entity", ""),
+                                    "url": candidate.get("url", ""),
+                                    "download_url": source_url,
+                                    "title": candidate.get("title", ""),
+                                    "rejected": True,
+                                    "reject_reason": gate["reason"],
+                                    "width": gate["width"],
+                                    "height": gate["height"],
+                                    "short_edge": gate["short_edge"],
+                                    "min_short_edge_required": gate["min_short_edge_required"],
+                                },
+                                record,
+                            )
+                        )
+                        continue
+                    suffix = Path(urlparse(source_url).path).suffix or Path(str(candidate.get("url") or "")).suffix or ".jpg"
+                    filename = build_image_filename(
+                        query=query,
+                        entity=str(record.get("entity", "") or ""),
+                        candidate_rank=candidate_rank,
+                        suffix=suffix,
+                        query_index=idx,
+                        claim_id=str(record.get("claim_id", "") or ""),
+                        plan_id=str(record.get("plan_id", "") or ""),
+                    )
+                    out = topic.topic_root / filename
+                    out.write_bytes(payload)
+                    downloaded.append(
+                        add_binding_fields(
+                            {
+                                "channel": engine,
+                                "query": query,
+                                "entity_type": record.get("entity_type", "topic"),
+                                "entity": record.get("entity", ""),
+                                "file": str(out),
+                                "url": candidate.get("url", ""),
+                                "download_url": source_url,
+                                "title": candidate.get("title", ""),
+                                "width": gate["width"],
+                                "height": gate["height"],
+                                "short_edge": gate["short_edge"],
+                            },
+                            record,
+                        )
+                    )
+                    successful_image_downloads += 1
+                except Exception as exc:  # noqa: BLE001
+                    downloaded.append(
+                        add_binding_fields(
+                            {
+                                "channel": engine,
+                                "query": query,
+                                "entity_type": record.get("entity_type", "topic"),
+                                "entity": record.get("entity", ""),
+                                "error": str(exc),
+                                "url": candidate.get("url", ""),
+                            },
+                            record,
+                        )
+                    )
 
     screenshot_taken = 0
     if enable_news_screenshot and screenshot_queries:
@@ -2052,9 +3069,9 @@ def execute_image_search(topic: TopicContext, per_query_download: int = 1) -> di
                     timeout=news_search_timeout,
                 )
             except Exception as exc:  # noqa: BLE001
-                all_candidates.append({"query": query, "channel": "news_screenshot", "error": str(exc)})
+                all_candidates.append(add_binding_fields({"query": query, "channel": "news_screenshot", "error": str(exc)}, record))
                 continue
-            all_candidates.append({"query": query, "channel": "news_screenshot", "candidates": page_candidates})
+            all_candidates.append(add_binding_fields({"query": query, "channel": "news_screenshot", "candidates": page_candidates}, record))
 
             for page in page_candidates[:screenshot_per_query]:
                 if screenshot_taken >= screenshot_total_limit:
@@ -2069,49 +3086,63 @@ def execute_image_search(topic: TopicContext, per_query_download: int = 1) -> di
                     gate = gate_image_resolution(payload, min_short_edge=min_short_edge)
                     if not gate["accepted"]:
                         downloaded.append(
+                            add_binding_fields(
+                                {
+                                    "channel": "news_screenshot",
+                                    "query": query,
+                                    "title": page.get("title", ""),
+                                    "source_page_url": page.get("url", ""),
+                                    "screenshot_provider_url": provider_url,
+                                    "rejected": True,
+                                    "reject_reason": gate["reason"],
+                                    "width": gate["width"],
+                                    "height": gate["height"],
+                                    "short_edge": gate["short_edge"],
+                                    "min_short_edge_required": gate["min_short_edge_required"],
+                                },
+                                record,
+                            )
+                        )
+                        continue
+                    page_host = urlparse(page.get("url", "")).netloc or "news"
+                    # 使用中文前缀的描述性文件名
+                    claim_prefix = build_claim_filename_prefix(
+                        claim_id=str(record.get("claim_id", "") or ""),
+                        plan_id=str(record.get("plan_id", "") or ""),
+                    )
+                    claim_part = f"{claim_prefix}_" if claim_prefix else ""
+                    filename = f"图片_{claim_part}新闻截图_news_{idx:02d}_{screenshot_taken + 1:02d}__{safe_slug(query)[:40]}__{safe_slug(page_host)[:24]}.jpg"
+                    out = screenshot_dir / filename
+                    out.write_bytes(payload)
+                    screenshot_taken += 1
+                    downloaded.append(
+                        add_binding_fields(
                             {
                                 "channel": "news_screenshot",
                                 "query": query,
                                 "title": page.get("title", ""),
                                 "source_page_url": page.get("url", ""),
                                 "screenshot_provider_url": provider_url,
-                                "rejected": True,
-                                "reject_reason": gate["reason"],
+                                "file": str(out),
                                 "width": gate["width"],
                                 "height": gate["height"],
                                 "short_edge": gate["short_edge"],
-                                "min_short_edge_required": gate["min_short_edge_required"],
-                            }
+                            },
+                            record,
                         )
-                        continue
-                    page_host = urlparse(page.get("url", "")).netloc or "news"
-                    # 使用中文前缀的描述性文件名
-                    filename = f"图片_新闻截图_news_{idx:02d}_{screenshot_taken + 1:02d}__{safe_slug(query)[:40]}__{safe_slug(page_host)[:24]}.jpg"
-                    out = screenshot_dir / filename
-                    out.write_bytes(payload)
-                    screenshot_taken += 1
-                    downloaded.append(
-                        {
-                            "channel": "news_screenshot",
-                            "query": query,
-                            "title": page.get("title", ""),
-                            "source_page_url": page.get("url", ""),
-                            "screenshot_provider_url": provider_url,
-                            "file": str(out),
-                            "width": gate["width"],
-                            "height": gate["height"],
-                            "short_edge": gate["short_edge"],
-                        }
                     )
                 except Exception as exc:  # noqa: BLE001
                     downloaded.append(
-                        {
-                            "channel": "news_screenshot",
-                            "query": query,
-                            "title": page.get("title", ""),
-                            "source_page_url": page.get("url", ""),
-                            "error": str(exc),
-                        }
+                        add_binding_fields(
+                            {
+                                "channel": "news_screenshot",
+                                "query": query,
+                                "title": page.get("title", ""),
+                                "source_page_url": page.get("url", ""),
+                                "error": str(exc),
+                            },
+                            record,
+                        )
                     )
     # 保存 manifest 到 config 目录（不影响素材扁平化）
     config_dir = topic.topic_root / "config"
@@ -2126,7 +3157,8 @@ def execute_image_search(topic: TopicContext, per_query_download: int = 1) -> di
         "news_screenshots": len([d for d in downloaded_ok if d.get("channel") == "news_screenshot"]),
         "rejected_low_resolution": len([d for d in downloaded if d.get("reject_reason") == "short_edge_below_threshold"]),
         "min_short_edge_required": min_short_edge,
-        "wikimedia_download_limit": total_image_download_limit,
+        "image_download_limit": total_image_download_limit,
+        "image_search_engines": resolve_image_search_engines({"channel": "image_search"}),
     }
 
 
@@ -2410,26 +3442,31 @@ def add_reason_counts(counter: dict[str, int], reasons: list[str]) -> None:
 
 
 def execute_video_search(topic: TopicContext, search_limit: int = 3, download_limit: int = 0) -> dict[str, Any]:
-    queries_path = topic.topic_root / "videos" / "web_search" / "video_search_queries.json"
-    queries = read_json(queries_path)
+    config_dir = topic.topic_root / "config"
+    queries_path = config_dir / "video_search_queries.json"
+    if not queries_path.exists():
+        queries_path = topic.topic_root / "videos" / "web_search" / "video_search_queries.json"
+    queries = normalize_search_queries(read_json(queries_path), default_channel="video_search")
     policy = resolve_video_quality_policy(topic)
     skip_probe = str(os.environ.get("MATERIAL_SKIP_VIDEO_PROBE", "0")).strip().lower() in {"1", "true", "yes", "on"}
-    config_dir = topic.topic_root / "config"
     config_dir.mkdir(parents=True, exist_ok=True)
     if skip_probe:
         candidates_out = [
-            {
-                "query": query,
-                "probe_skipped": True,
-                "candidates": [],
-                "quality": {
-                    "candidate_count": 0,
-                    "qualified_count": 0,
-                    "rejected_count": 0,
-                    "reject_reason_counts": {},
+            add_binding_fields(
+                {
+                    "query": record.get("query", ""),
+                    "probe_skipped": True,
+                    "candidates": [],
+                    "quality": {
+                        "candidate_count": 0,
+                        "qualified_count": 0,
+                        "rejected_count": 0,
+                        "reject_reason_counts": {},
+                    },
                 },
-            }
-            for query in queries
+                record,
+            )
+            for record in queries
         ]
         write_json(config_dir / "youtube_candidates.json", candidates_out)
         audit_report_path = config_dir / "video_quality_audit_report.json"
@@ -2473,24 +3510,54 @@ def execute_video_search(topic: TopicContext, search_limit: int = 3, download_li
     query_quality_summary = []
     candidate_total = 0
     candidate_qualified = 0
+    download_attempts_used = 0
 
-    for idx, query in enumerate(queries, start=1):
-        try:
-            payload = yt_dlp_json(f"ytsearch{search_limit}:{query}")
-        except Exception as exc:  # noqa: BLE001
-            candidates_out.append({"query": query, "error": str(exc)})
+    for idx, record in enumerate(queries, start=1):
+        query = str(record.get("query", "")).strip()
+        if not query:
+            continue
+        raw_entries: list[dict[str, Any]] = []
+        search_errors: list[dict[str, str]] = []
+        for spec in build_video_search_specs(query, search_limit=search_limit):
+            try:
+                if spec.startswith("brave_video:"):
+                    brave_entries = search_brave_videos(
+                        query,
+                        limit=search_limit,
+                        timeout=max(5, env_int("MATERIAL_VIDEO_SEARCH_TIMEOUT", DEFAULT_IMAGE_SEARCH_TIMEOUT)),
+                    )
+                    raw_entries.extend(brave_entries)
+                    continue
+                payload = yt_dlp_json(spec)
+            except Exception as exc:  # noqa: BLE001
+                search_errors.append({"spec": spec, "error": str(exc)})
+                continue
+            for entry in payload.get("entries", [])[:search_limit]:
+                if isinstance(entry, dict):
+                    entry = dict(entry)
+                    entry["_search_spec"] = spec
+                    raw_entries.append(entry)
+        if not raw_entries and search_errors:
+            candidates_out.append({"query": query, "errors": search_errors})
             continue
         entries = []
         per_query_reasons: dict[str, int] = {}
-        for entry in payload.get("entries", [])[:search_limit]:
+        seen_urls: set[str] = set()
+        for entry in raw_entries:
             video_id = entry.get("id")
             url = f"https://www.youtube.com/watch?v={video_id}" if video_id else entry.get("url")
+            if not url or url in seen_urls:
+                continue
+            seen_urls.add(url)
             candidate = {
                 "title": entry.get("title"),
                 "url": url,
                 "duration": entry.get("duration"),
                 "channel": entry.get("channel") or entry.get("uploader"),
+                "search_spec": entry.get("_search_spec", ""),
+                "search_provider": entry.get("_search_provider") or entry.get("_search_spec", "").split(":", 1)[0],
             }
+            add_binding_fields(candidate, record)
             metadata: dict[str, Any] = {}
             metadata_error = ""
             if url:
@@ -2518,23 +3585,37 @@ def execute_video_search(topic: TopicContext, search_limit: int = 3, download_li
 
         qualified_entries = [item for item in entries if item.get("eligible_for_download")]
         query_quality_summary.append(
-            {
-                "query": query,
-                "candidate_count": len(entries),
-                "qualified_count": len(qualified_entries),
-                "rejected_count": len(entries) - len(qualified_entries),
-                "reject_reason_counts": per_query_reasons,
-            }
+            add_binding_fields(
+                {
+                    "query": query,
+                    "candidate_count": len(entries),
+                    "qualified_count": len(qualified_entries),
+                    "rejected_count": len(entries) - len(qualified_entries),
+                    "reject_reason_counts": per_query_reasons,
+                },
+                record,
+            )
         )
-        candidates_out.append({"query": query, "candidates": entries, "quality": query_quality_summary[-1]})
+        candidates_out.append(
+            add_binding_fields(
+                {"query": query, "search_errors": search_errors, "candidates": entries, "quality": query_quality_summary[-1]},
+                record,
+            )
+        )
 
-        if qualified_entries and idx <= download_limit:
+        if qualified_entries and download_limit > 0 and download_attempts_used < download_limit:
+            download_attempts_used += 1
             first = qualified_entries[0]
             # 生成描述性文件名
-            video_desc = safe_slug(query)[:30]
-            outtmpl = str(topic.topic_root / f"视频_{video_desc}.%(ext)s")
+            video_prefix = build_video_filename_prefix(
+                query=query,
+                query_index=idx,
+                claim_id=str(record.get("claim_id", "") or ""),
+                plan_id=str(record.get("plan_id", "") or ""),
+            )
+            outtmpl = str(topic.topic_root / f"{video_prefix}.%(ext)s")
             target_dir = topic.topic_root
-            before_files = {p.resolve() for p in target_dir.glob(f"视频_{video_desc}.*") if p.is_file()}
+            before_files = {p.resolve() for p in target_dir.glob(f"{video_prefix}.*") if p.is_file()}
             cmd = [
                 "yt-dlp",
                 "--socket-timeout",
@@ -2563,7 +3644,7 @@ def execute_video_search(topic: TopicContext, search_limit: int = 3, download_li
                     stderr=((exc.stderr or "")[-500:] if isinstance(exc.stderr, str) else "") or "yt-dlp download timed out",
                 )
                 timed_out = True
-            file_path = locate_downloaded_video_file(target_dir, f"视频_{video_desc}", before_files) if proc.returncode == 0 else None
+            file_path = locate_downloaded_video_file(target_dir, video_prefix, before_files) if proc.returncode == 0 else None
             if file_path and proc.returncode == 0:
                 try:
                     file_audit = audit_downloaded_video(file_path, first["url"], first.get("quality_audit", {}), policy)
@@ -2583,35 +3664,23 @@ def execute_video_search(topic: TopicContext, search_limit: int = 3, download_li
                     "fail_reasons": ["download_timeout" if timed_out else "download_failed_or_missing_file"],
                 }
             add_reason_counts(download_reason_counts, file_audit.get("fail_reasons", []))
-            download_results.append({
-                "query": query,
-                "url": first["url"],
-                "title": first.get("title"),
-                "channel": first.get("channel"),
-                "returncode": proc.returncode,
-                "stderr": proc.stderr[-500:],
-                "stdout": proc.stdout[-500:],
-                "selected_candidate_quality": first.get("quality_audit", {}),
-                "file_quality_audit": file_audit,
-            })
-        elif idx <= download_limit:
             download_results.append(
-                {
-                    "query": query,
-                    "url": "",
-                    "title": "",
-                    "channel": "",
-                    "returncode": -1,
-                    "stderr": "",
-                    "stdout": "",
-                    "selected_candidate_quality": {},
-                    "file_quality_audit": {
-                        "final_pass": False,
-                        "fail_reasons": ["no_qualified_candidate"],
+                add_binding_fields(
+                    {
+                        "query": query,
+                        "url": first["url"],
+                        "title": first.get("title"),
+                        "channel": first.get("channel"),
+                        "search_provider": first.get("search_provider"),
+                        "returncode": proc.returncode,
+                        "stderr": proc.stderr[-500:],
+                        "stdout": proc.stdout[-500:],
+                        "selected_candidate_quality": first.get("quality_audit", {}),
+                        "file_quality_audit": file_audit,
                     },
-                }
+                    record,
+                )
             )
-            add_reason_counts(download_reason_counts, ["no_qualified_candidate"])
 
     # 保存 manifest 到 config 目录
     write_json(config_dir / "youtube_candidates.json", candidates_out)
@@ -2678,7 +3747,10 @@ def execute_video_search(topic: TopicContext, search_limit: int = 3, download_li
 
 
 def execute_ai_prep(topic: TopicContext) -> dict[str, Any]:
-    visual_plan = read_json(topic.topic_root / "images" / "generated" / "ai_visual_plan.json")
+    visual_plan_file = topic.topic_root / "config" / "ai_visual_plan.json"
+    if not visual_plan_file.exists():
+        visual_plan_file = topic.topic_root / "images" / "generated" / "ai_visual_plan.json"
+    visual_plan = read_json(visual_plan_file)
     batch_tasks = []
     prompts_dir = topic.topic_root / "prompts" / "ai"
     prompts_dir.mkdir(parents=True, exist_ok=True)
@@ -2708,7 +3780,7 @@ def execute_ai_prep(topic: TopicContext) -> dict[str, Any]:
         add_prompt_file(f"funny_character_{idx}", prompt, f"funny_character_{idx}.png")
 
     batch = {"jobs": 2, "tasks": batch_tasks}
-    batch_file = topic.topic_root / "images" / "generated" / "baoyu_batch.json"
+    batch_file = topic.topic_root / "config" / "baoyu_batch.json"
     write_json(batch_file, batch)
 
     # Fallback text panels
@@ -2842,7 +3914,7 @@ def execute_ai_prep(topic: TopicContext) -> dict[str, Any]:
         "stop_after_first_success": stop_after_first_success,
         "note": "已生成批处理与 fallback 图；默认按 ViviAI Chat → VectorEngine Chat → QHAIGC → Gitee → VectorEngine Seedream → MiniMax → Gemini 的优先链路执行，命中首个成功提供方后停止后续实生成。"
     }
-    write_json(topic.topic_root / "images" / "generated" / "ai_generation_manifest.json", manifest)
+    write_json(topic.topic_root / "config" / "ai_generation_manifest.json", manifest)
     return manifest
 
 
@@ -3400,6 +4472,481 @@ def render_fallback_panels(topic: TopicContext, visual_plan: dict[str, Any]) -> 
         plt.close(fig)
 
 
+def material_editor_asset_name(asset_type: str, source_file: Path, index: int, claim_id: str = "", label: str = "") -> str:
+    prefix = build_claim_filename_prefix(claim_id=claim_id)
+    raw_label = safe_slug(label or source_file.stem).strip("-_")[:42] or f"asset-{index:02d}"
+    type_prefix = {"image": "图片", "video": "视频", "chart": "图表"}.get(asset_type, "素材")
+    parts = [type_prefix]
+    if prefix:
+        parts.append(prefix)
+    parts.append(raw_label)
+    return "_".join(parts) + source_file.suffix.lower()
+
+
+def copy_editor_asset(
+    topic: TopicContext,
+    source_file: Path,
+    *,
+    asset_type: str,
+    index: int,
+    claim_id: str = "",
+    label: str = "",
+    source_kind: str = "",
+) -> dict[str, Any] | None:
+    if not source_file.exists() or not source_file.is_file():
+        return None
+    if source_file.suffix.lower() not in MATERIAL_USABLE_EXTENSIONS:
+        return None
+    if source_file.parent == topic.topic_root and source_file.name.startswith(("图片_", "视频_", "图表_")):
+        return {
+            "asset_type": asset_type,
+            "file": str(source_file),
+            "source_file": str(source_file),
+            "source_kind": source_kind or "topic_root",
+            "claim_id": claim_id,
+            "editor_status": "ready",
+        }
+    destination = topic.topic_root / material_editor_asset_name(asset_type, source_file, index, claim_id=claim_id, label=label)
+    if destination.resolve() != source_file.resolve():
+        shutil.copy2(source_file, destination)
+    return {
+        "asset_type": asset_type,
+        "file": str(destination),
+        "source_file": str(source_file),
+        "source_kind": source_kind,
+        "claim_id": claim_id,
+        "editor_status": "ready",
+    }
+
+
+def is_deliverable_chart_file(file_path: Path) -> bool:
+    return file_path.suffix.lower() in {".png", ".csv"} and file_path.name not in MATERIAL_NON_DELIVERABLE_CHART_NAMES
+
+
+def prune_non_deliverable_editor_assets(topic: TopicContext) -> None:
+    for filename in MATERIAL_NON_DELIVERABLE_CHART_NAMES:
+        stale_file = topic.topic_root / filename
+        if stale_file.exists() and stale_file.is_file():
+            stale_file.unlink()
+    for file_path in topic.topic_root.glob("*_[0-9][0-9].*"):
+        base_name = re.sub(r"_[0-9]{2}$", "", file_path.stem)
+        base_file = file_path.with_name(base_name + file_path.suffix)
+        if base_file.exists() and base_file.is_file() and file_path.name.startswith(("图片_", "视频_", "图表_")):
+            file_path.unlink()
+
+
+def summarize_failure_reason(item: dict[str, Any]) -> str:
+    if item.get("error"):
+        error = item.get("error")
+        if isinstance(error, dict):
+            nested = error.get("error") if isinstance(error.get("error"), dict) else error
+            return str(nested.get("message") or nested.get("code") or error)[:260]
+        return str(error)[:260]
+    if item.get("rejected"):
+        return str(item.get("reject_reason") or "rejected")
+    if item.get("errors"):
+        return "; ".join(str(row.get("error", row))[:180] for row in _material_as_list(item.get("errors")) if isinstance(row, dict))[:360]
+    audit = item.get("file_quality_audit") if isinstance(item.get("file_quality_audit"), dict) else {}
+    if audit.get("fail_reasons"):
+        return "；".join(str(reason) for reason in audit.get("fail_reasons", []))
+    return "未产出可用文件"
+
+
+def collect_ai_generation_assets(topic: TopicContext) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    ready: list[dict[str, Any]] = []
+    gaps: list[dict[str, Any]] = []
+    generated_root = topic.topic_root / "images" / "generated"
+    if not generated_root.exists():
+        return ready, gaps
+    index = 1
+    for results_file in sorted(generated_root.glob("*/generation_results.json")):
+        provider_name = results_file.parent.name
+        results = read_json_if_exists(results_file, [])
+        if isinstance(results, dict):
+            results = results.get("results") or results.get("stdout") or []
+        for item in _material_as_list(results):
+            if not isinstance(item, dict):
+                continue
+            task_id = str(item.get("task_id") or "image")
+            if item.get("ok") and item.get("image_file"):
+                copied = copy_editor_asset(
+                    topic,
+                    Path(item["image_file"]),
+                    asset_type="image",
+                    index=index,
+                    label=f"{task_id}_{provider_name}",
+                    source_kind=f"ai_generated:{provider_name}",
+                )
+                if copied:
+                    ready.append(copied)
+                    index += 1
+                continue
+            gaps.append(
+                {
+                    "asset_type": "image",
+                    "source_kind": f"ai_generated:{provider_name}",
+                    "task_id": task_id,
+                    "reason": summarize_failure_reason(item),
+                    "response_file": item.get("response_file"),
+                    "editor_action": "更换可用图片生成 provider，或改用搜索/截图补素材",
+                }
+            )
+    for fallback_file in sorted((generated_root / "fallback").glob("*.png")):
+        copied = copy_editor_asset(
+            topic,
+            fallback_file,
+            asset_type="image",
+            index=index,
+            label=f"{fallback_file.stem}_fallback",
+            source_kind="fallback_panel",
+        )
+        if copied:
+            ready.append(copied)
+            index += 1
+    return ready, gaps
+
+
+def collect_downloaded_material_assets(topic: TopicContext) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    ready: list[dict[str, Any]] = []
+    gaps: list[dict[str, Any]] = []
+    config_dir = topic.topic_root / "config"
+
+    image_downloads = read_json_if_exists(config_dir / "image_download_manifest.json", [])
+    for index, item in enumerate(_material_as_list(image_downloads), start=1):
+        if not isinstance(item, dict):
+            continue
+        if item.get("file"):
+            copied = copy_editor_asset(
+                topic,
+                Path(item["file"]),
+                asset_type="image",
+                index=index,
+                claim_id=str(item.get("claim_id", "") or ""),
+                label=str(item.get("entity") or item.get("title") or item.get("query") or "download"),
+                source_kind=str(item.get("channel") or "image_search"),
+            )
+            if copied:
+                ready.append({**copied, **query_binding_fields(item)})
+        else:
+            gaps.append(
+                {
+                    "asset_type": "image",
+                    "source_kind": item.get("channel") or "image_search",
+                    "query": item.get("query"),
+                    "claim_id": item.get("claim_id"),
+                    "reason": summarize_failure_reason(item),
+                    "editor_action": "换搜索词或使用新闻截图/生成图兜底",
+                }
+            )
+
+    video_downloads = read_json_if_exists(config_dir / "youtube_download_results.json", [])
+    for index, item in enumerate(_material_as_list(video_downloads), start=1):
+        if not isinstance(item, dict):
+            continue
+        audit = item.get("file_quality_audit") if isinstance(item.get("file_quality_audit"), dict) else {}
+        file_path = audit.get("file")
+        if item.get("returncode") == 0 and file_path and Path(file_path).exists() and audit.get("final_pass"):
+            copied = copy_editor_asset(
+                topic,
+                Path(file_path),
+                asset_type="video",
+                index=index,
+                claim_id=str(item.get("claim_id", "") or ""),
+                label=str(item.get("title") or item.get("query") or "download"),
+                source_kind=str(item.get("search_provider") or "video_search"),
+            )
+            if copied:
+                ready.append({**copied, **query_binding_fields(item), "source_url": item.get("url")})
+        elif item:
+            gaps.append(
+                {
+                    "asset_type": "video",
+                    "source_kind": item.get("search_provider") or "video_search",
+                    "query": item.get("query"),
+                    "claim_id": item.get("claim_id"),
+                    "candidate_title": item.get("title"),
+                    "source_url": item.get("url"),
+                    "reason": summarize_failure_reason(item),
+                    "editor_action": "重新搜索更具体的视频词，要求标题与 query 关键词强匹配",
+                }
+            )
+
+    for index, file_path in enumerate(sorted(topic.topic_root.glob("视频_*")), start=1):
+        copied = copy_editor_asset(topic, file_path, asset_type="video", index=index, source_kind="topic_root")
+        if copied and copied["file"] not in {item.get("file") for item in ready}:
+            ready.append(copied)
+
+    return ready, gaps
+
+
+def collect_chart_assets(topic: TopicContext) -> list[dict[str, Any]]:
+    ready: list[dict[str, Any]] = []
+    index = 1
+    for file_path in sorted(topic.topic_root.glob("图表_*")):
+        if not is_deliverable_chart_file(file_path):
+            continue
+        ready.append(
+            {
+                "asset_type": "chart",
+                "file": str(file_path),
+                "source_file": str(file_path),
+                "source_kind": "topic_root",
+                "editor_status": "ready",
+            }
+        )
+    for file_path in sorted((topic.topic_root / "charts").glob("**/*")):
+        if not file_path.is_file() or not is_deliverable_chart_file(file_path):
+            continue
+        copied = copy_editor_asset(topic, file_path, asset_type="chart", index=index, label=file_path.stem, source_kind="chart_generation")
+        if copied:
+            ready.append(copied)
+            index += 1
+    return list({item["file"]: item for item in ready}.values())
+
+
+def gap_identity(item: dict[str, Any]) -> tuple[str, str, str]:
+    return (
+        str(item.get("asset_type") or ""),
+        str(item.get("source_kind") or item.get("channel") or ""),
+        str(item.get("query") or item.get("task_id") or item.get("claim_id") or ""),
+    )
+
+
+def append_gap_once(gaps: list[dict[str, Any]], gap: dict[str, Any]) -> None:
+    existing = {gap_identity(item) for item in gaps}
+    if gap_identity(gap) not in existing:
+        gaps.append(gap)
+
+
+def downloaded_file_count(items: list[Any], *, channel: str = "", query: str = "") -> int:
+    count = 0
+    for item in items:
+        if not isinstance(item, dict) or not item.get("file"):
+            continue
+        if channel and item.get("channel") != channel:
+            continue
+        if query and str(item.get("query") or "").strip() != query:
+            continue
+        count += 1
+    return count
+
+
+def summarize_unexecuted_plan_gaps(topic: TopicContext, gaps: list[dict[str, Any]], ready_assets: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    config_dir = topic.topic_root / "config"
+    image_downloads = _material_as_list(read_json_if_exists(config_dir / "image_download_manifest.json", []))
+    image_candidates = _material_as_list(read_json_if_exists(config_dir / "image_candidates.json", []))
+    video_candidates = _material_as_list(read_json_if_exists(config_dir / "youtube_candidates.json", []))
+    video_downloads = _material_as_list(read_json_if_exists(config_dir / "youtube_download_results.json", []))
+
+    image_queries = normalize_search_queries(
+        read_json_if_exists(config_dir / "image_search_queries.json", []),
+        default_channel="image_search",
+    )
+    screenshot_queries = normalize_search_queries(
+        read_json_if_exists(config_dir / "news_screenshot_queries.json", []),
+        default_channel="news_screenshot",
+    )
+    video_queries = normalize_search_queries(
+        read_json_if_exists(config_dir / "video_search_queries.json", []),
+        default_channel="video_search",
+    )
+
+    for record in image_queries:
+        query = str(record.get("query") or "").strip()
+        if not query or downloaded_file_count(image_downloads, query=query):
+            continue
+        matching_candidates = [
+            item for item in image_candidates
+            if isinstance(item, dict) and str(item.get("query") or "").strip() == query and item.get("channel") != "news_screenshot"
+        ]
+        if any(item.get("error") for item in matching_candidates):
+            continue
+        reason = "图片检索步骤未执行或没有候选日志" if not matching_candidates else "图片检索已执行，但未下载到可用图片"
+        append_gap_once(
+            gaps,
+            {
+                "asset_type": "image",
+                "source_kind": record.get("channel") or "image_search",
+                "query": query,
+                "claim_id": record.get("claim_id"),
+                "reason": reason,
+                "editor_action": "执行 image_search，或切换 Tavily/Brave/新闻截图/生图兜底",
+            },
+        )
+
+    for record in screenshot_queries:
+        query = str(record.get("query") or "").strip()
+        if not query or downloaded_file_count(image_downloads, channel="news_screenshot", query=query):
+            continue
+        matching_candidates = [
+            item for item in image_candidates
+            if isinstance(item, dict) and str(item.get("query") or "").strip() == query and item.get("channel") == "news_screenshot"
+        ]
+        if any(item.get("error") for item in matching_candidates):
+            continue
+        reason = "新闻截图步骤未执行或没有候选日志" if not matching_candidates else "新闻截图已检索，但没有可用截图文件"
+        append_gap_once(
+            gaps,
+            {
+                "asset_type": "image",
+                "source_kind": "news_screenshot",
+                "query": query,
+                "claim_id": record.get("claim_id"),
+                "reason": reason,
+                "editor_action": "执行 image_search 的新闻截图分支，或改用原文链接截图",
+            },
+        )
+
+    for record in video_queries:
+        query = str(record.get("query") or "").strip()
+        if not query:
+            continue
+        has_video_file = any(isinstance(item, dict) and item.get("file_quality_audit", {}).get("final_pass") for item in video_downloads)
+        if has_video_file:
+            continue
+        matching_candidates = [
+            item for item in video_candidates
+            if isinstance(item, dict) and str(item.get("query") or "").strip() == query
+        ]
+        if any(item.get("errors") for item in matching_candidates):
+            continue
+        reason = "视频搜索步骤未执行或没有候选日志"
+        if matching_candidates:
+            quality = matching_candidates[0].get("quality") if isinstance(matching_candidates[0].get("quality"), dict) else {}
+            if quality.get("candidate_count"):
+                reason = "视频候选未下载或未通过质量门控"
+            else:
+                reason = "视频搜索无候选"
+        append_gap_once(
+            gaps,
+            {
+                "asset_type": "video",
+                "source_kind": "video_search",
+                "query": query,
+                "claim_id": record.get("claim_id"),
+                "reason": reason,
+                "editor_action": "改用更具体的视频词，或补可信新闻站点/素材库直链",
+            },
+        )
+
+    visual_plan = read_json_if_exists(config_dir / "ai_visual_plan.json", {})
+    generated_root = topic.topic_root / "images" / "generated"
+    has_generated_result = generated_root.exists() and any(generated_root.glob("*/generation_results.json"))
+    has_generated_image = any(item.get("asset_type") == "image" and str(item.get("source_kind", "")).startswith(("ai_generated", "fallback_panel")) for item in ready_assets)
+    if isinstance(visual_plan, dict) and visual_plan and not has_generated_result and not has_generated_image:
+        append_gap_once(
+            gaps,
+            {
+                "asset_type": "image",
+                "source_kind": "ai_generated",
+                "query": "ai_visual_plan",
+                "reason": "AI 视觉计划已生成，但 ai_prep 未执行或没有产出文件",
+                "editor_action": "执行 ai_prep，或改用图片搜索/新闻截图兜底",
+            },
+        )
+
+    chart_plan = topic.topic_root / "charts" / "csv" / "chart_anchor_plan.csv"
+    has_deliverable_chart = any(item.get("asset_type") == "chart" for item in ready_assets)
+    if chart_plan.exists() and not has_deliverable_chart:
+        append_gap_once(
+            gaps,
+            {
+                "asset_type": "chart",
+                "source_kind": "chart_generation",
+                "query": "chart_anchor_plan",
+                "reason": "只有图表锚点计划，未产出可用图表或数据表",
+                "editor_action": "补真实数据并执行 charts，或在清单中降级为不配图",
+            },
+        )
+
+    return gaps
+
+
+def summarize_config_gaps(topic: TopicContext, existing_gaps: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    gaps = list(existing_gaps)
+    config_dir = topic.topic_root / "config"
+    image_candidates = read_json_if_exists(config_dir / "image_candidates.json", [])
+    for item in _material_as_list(image_candidates):
+        if isinstance(item, dict) and item.get("error"):
+            gaps.append(
+                {
+                    "asset_type": "image",
+                    "source_kind": item.get("channel") or "image_search",
+                    "query": item.get("query"),
+                    "claim_id": item.get("claim_id"),
+                    "reason": summarize_failure_reason(item),
+                    "editor_action": "该搜索源失败，切换 Tavily/Brave 或改用新闻截图/生图兜底",
+                }
+            )
+    video_candidates = read_json_if_exists(config_dir / "youtube_candidates.json", [])
+    for item in _material_as_list(video_candidates):
+        if isinstance(item, dict) and item.get("errors"):
+            gaps.append(
+                {
+                    "asset_type": "video",
+                    "source_kind": "video_search",
+                    "query": item.get("query"),
+                    "claim_id": item.get("claim_id"),
+                    "reason": summarize_failure_reason(item),
+                    "editor_action": "改用更具体的视频搜索词，或使用可信新闻站点视频 URL 直下",
+                }
+            )
+    return gaps
+
+
+def write_editor_material_index(topic: TopicContext, ready_assets: list[dict[str, Any]], gaps: list[dict[str, Any]]) -> dict[str, Any]:
+    payload = {
+        "topic": topic.slug,
+        "title": topic.title,
+        "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z", time.localtime()),
+        "ready_count": len(ready_assets),
+        "gap_count": len(gaps),
+        "ready_assets": ready_assets,
+        "gaps": gaps,
+        "editor_rule": "编辑只需要查看 topic 根目录中的 图片_/视频_/图表_ 文件；config 只存计划、候选和诊断。",
+    }
+    write_json(topic.topic_root / "素材交付清单.json", payload)
+    lines = [
+        f"# 素材交付清单｜{topic.title}",
+        "",
+        "## 可直接使用",
+    ]
+    if ready_assets:
+        for item in ready_assets:
+            lines.append(f"- `{Path(item['file']).name}`｜{item.get('asset_type')}｜{item.get('source_kind') or ''}")
+    else:
+        lines.append("- 暂无可直接使用素材。")
+    lines.extend(["", "## 缺口与下一步"])
+    if gaps:
+        for item in gaps[:30]:
+            query = f"｜query: {item.get('query')}" if item.get("query") else ""
+            lines.append(
+                f"- {item.get('asset_type')}｜{item.get('source_kind') or ''}{query}｜原因：{item.get('reason') or '未说明'}｜建议：{item.get('editor_action') or '人工复核'}"
+            )
+    else:
+        lines.append("- 暂无缺口。")
+    write_text(topic.topic_root / "素材交付清单.md", "\n".join(lines) + "\n")
+    return payload
+
+
+def finalize_topic_material_delivery(topic: TopicContext) -> dict[str, Any]:
+    prune_non_deliverable_editor_assets(topic)
+    generated_assets, generated_gaps = collect_ai_generation_assets(topic)
+    downloaded_assets, downloaded_gaps = collect_downloaded_material_assets(topic)
+    chart_assets = collect_chart_assets(topic)
+    ready_assets = list({item["file"]: item for item in [*chart_assets, *downloaded_assets, *generated_assets]}.values())
+    gaps = summarize_config_gaps(topic, [*generated_gaps, *downloaded_gaps])
+    gaps = summarize_unexecuted_plan_gaps(topic, gaps, ready_assets)
+    write_editor_material_index(topic, ready_assets, gaps)
+    return {
+        "topic": topic.slug,
+        "ready_assets": len(ready_assets),
+        "gaps": len(gaps),
+        "editor_index": str(topic.topic_root / "素材交付清单.md"),
+        "editor_index_json": str(topic.topic_root / "素材交付清单.json"),
+    }
+
+
 def execute_topic(topic: TopicContext, steps: set[str], video_download_limit: int) -> dict[str, Any]:
     summary: dict[str, Any] = {"topic": topic.slug, "title": topic.title}
     if "charts" in steps:
@@ -3410,6 +4957,8 @@ def execute_topic(topic: TopicContext, steps: set[str], video_download_limit: in
         summary["video_search"] = execute_video_search(topic, download_limit=video_download_limit)
     if "ai_prep" in steps:
         summary["ai_prep"] = execute_ai_prep(topic)
+    if "finalize" in steps or not steps:
+        summary["finalize"] = finalize_topic_material_delivery(topic)
     return summary
 
 
@@ -3493,7 +5042,10 @@ def ensure_logic_relations_file(topic: TopicContext) -> Path:
         return target
 
     chart_manifest = read_json(topic.topic_root / "charts" / "chart_generation_manifest.json") if (topic.topic_root / "charts" / "chart_generation_manifest.json").exists() else {"generated": []}
-    scene_plan = read_json(topic.topic_root / "videos" / "scene_plan.json") if (topic.topic_root / "videos" / "scene_plan.json").exists() else []
+    scene_plan_file = topic.topic_root / "config" / "scene_plan.json"
+    if not scene_plan_file.exists():
+        scene_plan_file = topic.topic_root / "videos" / "scene_plan.json"
+    scene_plan = read_json(scene_plan_file) if scene_plan_file.exists() else []
     layer5_plan = read_json(layer5_dir / "layer5_delivery_plan.json") if (layer5_dir / "layer5_delivery_plan.json").exists() else {}
 
     logic = {
@@ -3535,7 +5087,9 @@ def build_layer5_topic_input(topic: TopicContext) -> dict[str, Any]:
     layer5_plan_file = layer5_dir / "layer5_delivery_plan.json"
     layer5_inputs_file = layer5_dir / "layer5_delivery_inputs.json"
     layer5_topic_inputs_file = layer5_dir / "layer5_inputs.json"
-    scene_plan_file = topic.topic_root / "videos" / "scene_plan.json"
+    scene_plan_file = topic.topic_root / "config" / "scene_plan.json"
+    if not scene_plan_file.exists():
+        scene_plan_file = topic.topic_root / "videos" / "scene_plan.json"
     logic_relations_file = ensure_logic_relations_file(topic)
 
     layer5_plan = read_json(layer5_plan_file) if layer5_plan_file.exists() else {}
@@ -3985,7 +5539,7 @@ def main() -> int:
     parser.add_argument("--pack-root", help=argparse.SUPPRESS)
     parser.add_argument("--topics", nargs="*", help="Optional topic slugs")
     parser.add_argument("--topic-dir", help="Execute only one topic directory under pack_root")
-    parser.add_argument("--steps", default="charts,image_search,video_search,ai_prep")
+    parser.add_argument("--steps", default="charts,image_search,video_search,ai_prep,finalize")
     parser.add_argument("--video-download-limit", type=int, default=3)
     parser.add_argument("--layer5-only", action="store_true", help="Only run Layer5 required steps (charts + layer5 manifests)")
     parser.add_argument("--no-layer5-manifest", action="store_true", help="Disable emitting layer5_inputs.json and delivery report")
@@ -4004,7 +5558,8 @@ def main() -> int:
     final_structure_snapshot = draft_manifest_path.parent / "final_structure_snapshot.json"
     final_structure_payload = ensure_final_structure_gate(final_structure_snapshot)
     run_id = str(draft_manifest_payload["run_id"]).strip()
-    _, material_ai_inputs_file, material_ai_decisions_file = material_ai_runtime_paths(run_id)
+    _, material_inputs_file, material_decisions_file = material_input_runtime_paths(run_id)
+    material_plan_file = material_plan_runtime_path(run_id)
     pack_root, material_manifest_file = build_material_plan_from_draft_manifest(
         draft_manifest_path,
         force_rebuild=args.rebuild_material_plan,
@@ -4030,10 +5585,12 @@ def main() -> int:
     }
     summary["draft_manifest"] = str(draft_manifest_path)
     summary["final_structure_snapshot"] = str(final_structure_snapshot)
-    if material_ai_inputs_file.exists():
-        summary["material_ai_inputs_file"] = str(material_ai_inputs_file)
-    if material_ai_decisions_file.exists():
-        summary["material_ai_decisions_file"] = str(material_ai_decisions_file)
+    if material_inputs_file.exists():
+        summary["material_inputs_file"] = str(material_inputs_file)
+    if material_decisions_file.exists():
+        summary["material_decisions_file"] = str(material_decisions_file)
+    if material_plan_file.exists():
+        summary["material_plan_file"] = str(material_plan_file)
     if material_manifest_file:
         summary["material_manifest"] = str(material_manifest_file)
     for topic in topics:
@@ -4073,14 +5630,15 @@ def main() -> int:
         "run_id": run_id,
         "stage": "material",
         "status": "ready_for_material_gate",
-        "generation_basis": "final_doc_ai_reading",
+        "generation_basis": "current_agent_local_material_planning",
         "rerun_mode": "full_regenerate" if args.rebuild_material_plan else "reuse_or_incremental",
         "upstream": {
             "draft_manifest": str(draft_manifest_path),
             "final_structure_snapshot": str(final_structure_snapshot),
         },
-        "material_ai_inputs_file": str(material_ai_inputs_file) if material_ai_inputs_file.exists() else None,
-        "material_ai_decisions_file": str(material_ai_decisions_file) if material_ai_decisions_file.exists() else None,
+        "material_inputs_file": str(material_inputs_file) if material_inputs_file.exists() else None,
+        "material_decisions_file": str(material_decisions_file) if material_decisions_file.exists() else None,
+        "material_plan_file": str(material_plan_file) if material_plan_file.exists() else None,
         "material_skill_stack": MATERIAL_SKILL_STACK,
         "runtime_material_manifest": str(material_manifest_file) if material_manifest_file else None,
         "pack_root": str(pack_root),
@@ -4093,7 +5651,7 @@ def main() -> int:
         "video_quality_regression_report_json": summary.get("video_quality_regression_report_json"),
         "topics": summary["topics"],
         "final_structure_topics": final_structure_payload.get("topics", []),
-        "next_stage": "rewrite",
+        "next_stage": None,
     }
     write_json(canonical_manifest_path, canonical_manifest)
     ensure_pending_gate_file(
@@ -4113,7 +5671,7 @@ def main() -> int:
         ],
         instructions=[
             "编辑确认可用素材后，将 status 改为 approved / accepted / finalized。",
-            "rewrite 只能读取 canonical material_manifest.json + material_acceptance.json。",
+            "本工具为按需素材补充，不再作为 publish 前置 gate。",
         ],
     )
 

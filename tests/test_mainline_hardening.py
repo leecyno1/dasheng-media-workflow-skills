@@ -125,6 +125,16 @@ class MainlineHardeningTests(unittest.TestCase):
             payload = json.loads(gate_file.read_text(encoding="utf-8"))
             self.assertEqual(payload["status"], "pending_editor_review")
             self.assertEqual(payload["gate"], "Final Structure Gate")
+            manifest = json.loads((out_dir / "draft_manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(len(manifest["drafts"]), 1)
+            html_file = Path(manifest["drafts"][0]["html_file"])
+            self.assertTrue(html_file.exists())
+            self.assertIn("03_HTML草稿_", html_file.name)
+            html_text = html_file.read_text(encoding="utf-8")
+            self.assertIn('contenteditable="true"', html_text)
+            self.assertIn("免责声明", html_text)
+            stdout_payload = json.loads(proc.stdout)
+            self.assertEqual(stdout_payload["html_files"], [str(html_file)])
 
     def test_material_requires_final_structure_gate(self):
         with project_tempdir() as tmpdir:
@@ -193,39 +203,31 @@ class MainlineHardeningTests(unittest.TestCase):
             self.assertNotEqual(proc.returncode, 0)
             self.assertIn("Final Structure Gate", proc.stderr or proc.stdout)
 
-    def test_publish_requires_publish_decision_gate(self):
+    def test_publish_requires_publish_decision_gate_from_draft_manifest(self):
         with project_tempdir() as tmpdir:
             tmp = Path(tmpdir)
-            rewrite_dir = tmp / "rewrite"
-            material_dir = tmp / "material"
-            rewrite_root = tmp / "rewrite_root"
-            pack_root = tmp / "pack_assets"
-            rewrite_root.mkdir(parents=True, exist_ok=True)
-            pack_root.mkdir(parents=True, exist_ok=True)
+            draft_file = tmp / "03_标准初稿_topic-demo.md"
+            draft_file.write_text("## 标题\n\n正文", encoding="utf-8")
             write_json(
-                rewrite_dir / "rewrite_manifest.json",
+                tmp / "draft_manifest.json",
                 {
                     "run_id": "run-hardening-004",
-                    "stage": "rewrite",
-                    "output_root": str(rewrite_root),
-                },
-            )
-            write_json(
-                material_dir / "material_manifest.json",
-                {
-                    "run_id": "run-hardening-004",
-                    "stage": "material",
-                    "pack_root": str(pack_root),
+                    "stage": "draft",
+                    "drafts": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "发布决策门测试",
+                            "draft_file": str(draft_file),
+                        }
+                    ],
                 },
             )
             proc = subprocess.run(
                 [
                     PYTHON,
                     str(ROOT / "scripts/publish_video_supplement.py"),
-                    "--rewrite-manifest",
-                    str(rewrite_dir / "rewrite_manifest.json"),
-                    "--material-manifest",
-                    str(material_dir / "material_manifest.json"),
+                    "--draft-manifest",
+                    str(tmp / "draft_manifest.json"),
                     "--publish-decision",
                     str(tmp / "missing_publish_decision.json"),
                 ],
@@ -314,6 +316,23 @@ class MainlineHardeningTests(unittest.TestCase):
                         no_ai=False,
                     )
                 )
+
+    def test_mainline_runner_no_longer_exposes_material_or_rewrite_stages(self):
+        for retired_stage in ["material", "rewrite"]:
+            proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/run_mainline_stage.py"),
+                    retired_stage,
+                    "--run-id",
+                    "run-retired-stage",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertNotEqual(proc.returncode, 0)
+            self.assertIn("invalid choice", proc.stderr or proc.stdout)
 
     def test_material_parallel_launcher_material_manifest_is_canonical_entry(self):
         with project_tempdir() as tmpdir:
@@ -519,6 +538,59 @@ class MainlineHardeningTests(unittest.TestCase):
             self.assertEqual(publish_manifest["channel_packs"][0]["channels"], ["wechat_article", "xiaohongshu_video", "bilibili_video"])
             self.assertIn("publish_skill_stack", publish_manifest)
             self.assertIn("wechat", publish_manifest["publish_skill_stack"])
+
+    def test_publish_supports_draft_manifest_as_formal_input(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            draft_file = tmp / "03_标准初稿_topic-demo.md"
+            draft_file.write_text("## 标题\n\n正文", encoding="utf-8")
+            draft_manifest_path = tmp / "draft_manifest.json"
+            draft_manifest = {
+                "run_id": "run-hardening-draft-publish",
+                "stage": "draft",
+                "drafts": [
+                    {
+                        "topic_id": "topic-demo",
+                        "title": "Draft 直发测试",
+                        "draft_file": str(draft_file),
+                    }
+                ],
+            }
+
+            with load_script_module("publish_draft_input_test", ROOT / "scripts/publish_video_supplement.py") as module:
+                publish_manifest, rewrite_root = module.build_draft_publish_manifest(draft_manifest, draft_manifest_path)
+                topics = module.extract_rewrite_topic_sources(publish_manifest, rewrite_root)
+                decision = {
+                    "run_id": "run-hardening-draft-publish",
+                    "gate": "Channel Gate",
+                    "status": "ready",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "topic_name": "Draft 直发测试",
+                            "channels": ["wechat_article"],
+                        }
+                    ],
+                }
+                outputs = module.build_publish_stage_outputs(
+                    run_id="run-hardening-draft-publish",
+                    rewrite_manifest_path=draft_manifest_path,
+                    material_manifest_path=None,
+                    publish_decision_path=tmp / "publish_decision.json",
+                    rewrite_manifest=publish_manifest,
+                    publish_decision=decision,
+                    topic_manifests=[
+                        module.build_minimal_topic_manifest(topics[0], tmp / "video_supplement")
+                    ],
+                    video_supplement_manifest_path=tmp / "publish_video_supplement_manifest.json",
+                    video_supplement_report_path=tmp / "publish_video_supplement_report.md",
+                )
+
+            self.assertEqual(topics[0].rewrite_source.resolve(), draft_file.resolve())
+            channel_pack = outputs["adaptation_manifest"]["topics"][0]["channel_packs"][0]
+            self.assertEqual(channel_pack["variant"], "draft_publish")
+            self.assertEqual(Path(channel_pack["variant_file"]).resolve(), draft_file.resolve())
+            self.assertIsNone(outputs["publish_manifest"]["material_manifest"])
 
     def test_publish_can_load_existing_topic_video_manifests(self):
         with project_tempdir() as tmpdir:

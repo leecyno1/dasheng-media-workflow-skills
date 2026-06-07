@@ -108,9 +108,11 @@ CHAIN_STOPWORDS = {
 }
 
 STRUCTURE_KEYS = ("opening", "part_1", "part_2", "part_3", "ending")
+CHINESE_TOPIC_FIELDS = ("title", "one_line_judgment", "core_proposition", "why_now", "reader_payoff", "source_material_summary")
 MIN_TOPIC_COUNT = 8
 MAX_TOPIC_COUNT = 10
 DEFAULT_CANDIDATE_COUNT = 10
+LAST_AI_ERROR = ""
 
 
 @dataclass
@@ -134,6 +136,10 @@ class IntakeRecord:
     source_freshness_weight: float
     source_timeliness_weight: float
     source_authority_weight: float
+    radar_macro_policy_score: float = 0.0
+    radar_source_role: str = ""
+    radar_capture_role: str = ""
+    radar_kept_by: str = ""
 
 
 def read_json_if_exists(path: Path) -> Any:
@@ -152,6 +158,15 @@ def normalize_text(*parts: str) -> str:
     text = " ".join(str(part or "") for part in parts if part)
     text = re.sub(r"\s+", " ", text).strip().lower()
     return text
+
+
+def is_chinese_dominant_text(text: str) -> bool:
+    raw = str(text or "").strip()
+    if not raw:
+        return False
+    chinese_count = sum(1 for char in raw if "\u4e00" <= char <= "\u9fff")
+    latin_count = sum(1 for char in raw if "a" <= char.lower() <= "z")
+    return chinese_count >= 2 and latin_count <= chinese_count * 1.2
 
 
 def slugify(text: str) -> str:
@@ -199,6 +214,30 @@ def entity_values(record: IntakeRecord) -> list[str]:
     return values
 
 
+def normalized_record_radar(item: dict[str, Any]) -> dict[str, Any]:
+    radar: dict[str, Any] = {}
+    for container in (item, item.get("raw_payload") or {}):
+        candidate = container.get("radar") if isinstance(container, dict) else {}
+        if isinstance(candidate, dict):
+            radar.update(candidate)
+    raw_heat = item.get("raw_heat_signals") or {}
+    if isinstance(raw_heat, dict):
+        if "hotspot_macro_policy_score" in raw_heat and "macro_policy_score" not in radar:
+            radar["macro_policy_score"] = raw_heat.get("hotspot_macro_policy_score")
+        if "hotspot_source_role" in raw_heat and "source_role" not in radar:
+            radar["source_role"] = raw_heat.get("hotspot_source_role")
+    try:
+        macro_policy_score = float(radar.get("macro_policy_score") or 0.0)
+    except (TypeError, ValueError):
+        macro_policy_score = 0.0
+    return {
+        "capture_role": str(radar.get("capture_role") or ""),
+        "source_role": str(radar.get("source_role") or ""),
+        "macro_policy_score": round(max(0.0, min(macro_policy_score, 1.0)), 4),
+        "kept_by": str(radar.get("kept_by") or ""),
+    }
+
+
 def meaningful_tokens(*parts: str) -> list[str]:
     tokens = re.findall(r"[\u4e00-\u9fffA-Za-z0-9]{2,}", " ".join(part for part in parts if part))
     result: list[str] = []
@@ -244,9 +283,10 @@ def record_signal_score(record: IntakeRecord) -> float:
     timeliness_component = record.source_timeliness_weight * 2.0
     authority_component = record.source_authority_weight * 2.2
     trend_component = 1.0 if record.trendradar_signal else 0.0
+    radar_component = min(record.radar_macro_policy_score, 1.0) * 1.4
     label_component = 0.8 if any(label in SERIOUS_LABELS for label in record.editor_labels) else 0.0
     penalty = title_noise_score(record.title, record.summary, record.noise_tags) * 1.25
-    return round(tier_weight * 2.6 + heat_component + timeliness_component + authority_component + trend_component + label_component - penalty, 3)
+    return round(tier_weight * 2.6 + heat_component + timeliness_component + authority_component + trend_component + radar_component + label_component - penalty, 3)
 
 
 def record_editorial_relevance(record: IntakeRecord) -> float:
@@ -264,6 +304,8 @@ def record_editorial_relevance(record: IntakeRecord) -> float:
     )
     channel_bonus = CHANNEL_EDITORIAL_WEIGHT.get(record.source.split("/")[-1], CHANNEL_EDITORIAL_WEIGHT.get(record.source, 0.7))
     trend_bonus = 1.0 if record.trendradar_signal else 0.0
+    radar_role_bonus = 0.35 if record.radar_source_role in {"macro_finance_wire", "global_market_wire", "global_policy_wire", "market_industry_wire"} else 0.0
+    radar_bonus = min(record.radar_macro_policy_score, 1.0) * 2.1 + radar_role_bonus
     penalty = title_noise_score(record.title, record.summary, record.noise_tags) * 1.6
     return round(
         record_signal_score(record) * 0.55
@@ -272,6 +314,7 @@ def record_editorial_relevance(record: IntakeRecord) -> float:
         + macro_hits * 0.28
         + channel_bonus
         + trend_bonus
+        + radar_bonus
         - penalty,
         3,
     )
@@ -289,6 +332,8 @@ def record_to_evidence(record: IntakeRecord) -> dict[str, Any]:
         "heat_level": record.heat_level,
         "heat_score": record.heat_score,
         "trendradar_signal": record.trendradar_signal,
+        "radar_macro_policy_score": record.radar_macro_policy_score,
+        "radar_source_role": record.radar_source_role,
         "signal_score": record_signal_score(record),
     }
 
@@ -299,6 +344,7 @@ def load_records(path: Path) -> list[IntakeRecord]:
         payload = payload.get("items") or payload.get("data") or []
     records: list[IntakeRecord] = []
     for item in payload:
+        radar = normalized_record_radar(item)
         records.append(
             IntakeRecord(
                 title=str(item.get("title") or "").strip(),
@@ -320,6 +366,10 @@ def load_records(path: Path) -> list[IntakeRecord]:
                 source_freshness_weight=float(item.get("source_freshness_weight") or item.get("freshness_score") or 1.0),
                 source_timeliness_weight=float(item.get("source_timeliness_weight") or item.get("freshness_score") or 1.0),
                 source_authority_weight=float(item.get("source_authority_weight") or 1.0),
+                radar_macro_policy_score=float(radar.get("macro_policy_score") or 0.0),
+                radar_source_role=str(radar.get("source_role") or ""),
+                radar_capture_role=str(radar.get("capture_role") or ""),
+                radar_kept_by=str(radar.get("kept_by") or ""),
             )
         )
     return records
@@ -405,6 +455,7 @@ def filter_event_clusters(event_clusters: list[dict[str, Any]]) -> list[dict[str
         summary = str(cluster.get("cluster_summary") or "")
         noise_ratio = float(cluster.get("noise_ratio") or 0.0)
         authority = float(cluster.get("authority_score") or 0.0)
+        macro_policy_score = float(cluster.get("hotspot_macro_policy_score") or cluster.get("avg_macro_policy_score") or 0.0)
         count = int(cluster.get("count") or 0)
         entities = cluster.get("dominant_entities") or []
         actions = cluster.get("dominant_actions") or []
@@ -432,6 +483,8 @@ def filter_event_clusters(event_clusters: list[dict[str, Any]]) -> list[dict[str
                 "freshness_score": float(cluster.get("freshness_score") or 0.0),
                 "timeliness_score": float(cluster.get("timeliness_score") or 0.0),
                 "authority_score": authority,
+                "hotspot_macro_policy_score": macro_policy_score,
+                "hotspot_source_roles": cluster.get("hotspot_source_roles") or {},
                 "noise_ratio": noise_ratio,
                 "avg_heat_score": float(cluster.get("avg_heat_score") or 0.0),
             }
@@ -439,6 +492,7 @@ def filter_event_clusters(event_clusters: list[dict[str, Any]]) -> list[dict[str
     kept.sort(
         key=lambda item: (
             item["authority_score"],
+            item["hotspot_macro_policy_score"],
             item["timeliness_score"],
             item["trendradar_coverage"],
             item["avg_heat_score"],
@@ -463,6 +517,7 @@ def build_cross_channel_events(channel_top10: dict[str, list[dict[str, Any]]], e
                 "channels": sorted(sources.keys()),
                 "count": cluster.get("count") or 0,
                 "authority_score": cluster.get("authority_score") or 0.0,
+                "hotspot_macro_policy_score": cluster.get("hotspot_macro_policy_score") or 0.0,
                 "trendradar_coverage": cluster.get("trendradar_coverage") or 0.0,
                 "representative_links": (cluster.get("representative_links") or [])[:3],
             }
@@ -785,7 +840,7 @@ def build_brief_signal_bundle(
             "不要把一个事件拆成两个近义词命题占两个题位。",
         ],
         "notes": {
-            "rule": "代码只负责证据编排、显性噪音剔除、结构校验与落盘；命题与题卡内容由 AI 生成。",
+            "rule": "代码只负责证据编排、显性噪音剔除、结构校验与落盘；命题与题卡内容由当前 Agent 生成。",
             "evidence_boundary": "所有题卡必须能回指 intake 证据池中的真实标题和真实链接。",
         },
         "stats": stats,
@@ -836,9 +891,23 @@ def parse_json_object_from_text(text: str) -> dict[str, Any] | None:
     return parsed if isinstance(parsed, dict) else None
 
 
+def describe_ai_error(exc: Exception) -> str:
+    if isinstance(exc, urllib_error.HTTPError):
+        try:
+            body = exc.read().decode("utf-8", errors="ignore")
+        except Exception:
+            body = ""
+        detail = f"HTTP {exc.code} {exc.reason}"
+        return f"{detail}: {body[:800]}" if body else detail
+    return f"{type(exc).__name__}: {exc}"
+
+
 def request_ai_json(system_prompt: str, user_prompt: str) -> dict[str, Any] | None:
+    global LAST_AI_ERROR
+    LAST_AI_ERROR = ""
     config = resolve_brief_ai_config()
     if not config:
+        LAST_AI_ERROR = "未解析到可用 Brief AI provider 配置"
         return None
     body = {
         "model": config["model"],
@@ -876,11 +945,13 @@ def request_ai_json(system_prompt: str, user_prompt: str) -> dict[str, Any] | No
             http.client.RemoteDisconnected,
         ) as exc:
             last_error = exc
+            LAST_AI_ERROR = describe_ai_error(exc)
             if attempt >= 2:
                 break
             time.sleep(2 * (attempt + 1))
     if last_error:
         return None
+    LAST_AI_ERROR = "AI 响应为空或无法解析为 JSON 对象"
     return None
 
 
@@ -893,6 +964,8 @@ def build_brief_brainstorm_payload(signal_bundle: dict[str, Any], prompt_bundle:
             "may_synthesize_across_signals": True,
             "must_not_copy_raw_titles": True,
             "must_not_output_duplicate_topics": True,
+            "must_write_topic_fields_in_chinese": True,
+            "allowed_non_chinese_text": "OpenAI、Google、Bloomberg、公司名、人名、产品名等专有名词可以保留原文；标题和判断句的主体必须是中文。",
         },
         "prompt_reference": prompt_bundle.get("brief_ai_prompt", ""),
         "signal_bundle": {
@@ -936,6 +1009,8 @@ def build_brief_cards_payload(signal_bundle: dict[str, Any], brainstorm: dict[st
             "must_not_keep_near_duplicates": True,
             "must_not_lift_raw_titles": True,
             "max_same_logic_chain_share": 0.5,
+            "must_write_topic_fields_in_chinese": True,
+            "allowed_non_chinese_text": "OpenAI、Google、Bloomberg、公司名、人名、产品名等专有名词可以保留原文；标题和判断句的主体必须是中文。",
         },
         "prompt_reference": prompt_bundle.get("brief_ai_prompt", ""),
         "schema": prompt_bundle.get("brief_card_schema", {}),
@@ -952,6 +1027,7 @@ def request_ai_brief_brainstorm(signal_bundle: dict[str, Any], prompt_bundle: di
         "你是资深编辑会里的主编。你要基于 intake 证据池，先发散提出一组值得继续讨论的命题候选。"
         "你可以跨渠道、跨事件、跨来源综合提炼，但不能脱离输入证据池臆造题目。"
         "优先抓真正有编辑价值的结构命题，而不是把资讯条目改写成问答题。"
+        "所有候选标题、核心判断、why_now 等输出字段必须使用中文表达；专有名词可保留原文。"
         "输出必须是 JSON 对象，根键为 candidate_seeds。"
     )
     user_prompt = (
@@ -961,6 +1037,7 @@ def request_ai_brief_brainstorm(signal_bundle: dict[str, Any], prompt_bundle: di
         "优先选择那些能上升到宏观、地缘、产业链、技术落地、市场定价这类更大命题的方向。"
         "如果一个信号只是单条社会新闻、消费维权、地方政策小事、社交平台口水仗，除非它能清晰升级成更大的制度或市场命题，否则不要挤进主榜。"
         "同一命题不要换词重复。标题优先陈述式判断，不要大面积使用“是否/如何/影响”这类考试题口吻。"
+        "所有 working_title、core_judgment、why_now、source_basis、distinct_signal 必须用中文写；只允许专有名词保留英文。"
         "好标题通常能看出“表面事件 / 真正主线”“短期催化 / 长期变量”“局部热闹 / 全局重估”这类关系。"
         "每个候选至少给出 working_title、core_judgment、why_now、source_basis、distinct_signal、priority。\n\n"
         f"{json.dumps(payload, ensure_ascii=False, indent=2)}"
@@ -980,6 +1057,8 @@ def request_ai_brief_cards(
         "代码只负责证据编排与结构校验，你负责生成最终候选题卡。"
         "请基于真实信号，输出 8-10 个独立候选题卡。"
         "题卡要像成熟编辑给编辑部的建议，不像研报标题，也不像百科问答。"
+        "题卡必须记录来源材料的大致内容、争议点和已见观点，供 draft 环节讨论热点时防止漂移。"
+        "所有题卡字段必须使用中文表达；只允许专有名词、人名、机构名、产品名保留原文。"
         "输出必须是 JSON 对象，根键为 topic_cards。"
     )
     user_prompt = (
@@ -996,6 +1075,9 @@ def request_ai_brief_cards(
         "9）优先使用 editorial_priority_pool 作为主要证据来源；"
         "10）标题尽量短，尽量一眼看出逻辑关系，少用“加剧、彰显、推动、反映”这种空泛官样词；"
         "11）同一逻辑链的题不能超过总题数的一半，若出现主链过多，必须主动回补其它高价值链条。"
+        "12）title、one_line_judgment、core_proposition、why_now、reader_payoff 必须是中文主体，不能输出英文标题或英文段落。"
+        "13）每题必须填写 source_material_summary、controversy_points、viewpoint_notes：它们记录来源材料讲了什么、分歧在哪里、已有观点是什么；不要把这三项写成文章大纲。"
+        "14）每题必须填写 question_units、opinion_units、case_units、solution_units：分别记录核心问题、可讨论观点、可复述案例、证明或写作方案。"
         "如果你输出了消费琐事、社交口水仗、弱相关生活方式话题，就说明你没有正确理解这一阶段。\n\n"
         f"{feedback + chr(10) if feedback else ''}{json.dumps(payload, ensure_ascii=False, indent=2)}"
     )
@@ -1182,6 +1264,64 @@ def normalize_structure_hint(value: Any, title: str) -> dict[str, str]:
     }
 
 
+def derive_source_material_summary(title: str, evidence_items: list[dict[str, Any]]) -> str:
+    evidence_titles = [str(item.get("title") or "").strip() for item in evidence_items if str(item.get("title") or "").strip()]
+    if not evidence_titles:
+        return f"当前题卡《{title}》尚未匹配到足够明确的来源摘要，draft 需要先回到证据池核对原始材料。"
+    joined = "；".join(evidence_titles[:3])
+    return f"现有来源主要来自：{joined}。draft 讨论应从这些材料的事实、表述和分歧出发，避免只按标题外推。"
+
+
+def derive_controversy_points(evidence_items: list[dict[str, Any]]) -> list[str]:
+    if not evidence_items:
+        return ["原始来源尚未沉淀明确争议点，draft 需先补齐多方材料。"]
+    return [
+        "事实层：原始材料描述的是短期事件、政策口径还是市场定价变化。",
+        "解释层：不同来源是否把同一事件理解为情绪波动、结构变化或政策信号。",
+    ]
+
+
+def derive_viewpoint_notes(evidence_items: list[dict[str, Any]]) -> list[str]:
+    notes = [str(item.get("note") or "").strip() for item in evidence_items if str(item.get("note") or "").strip()]
+    if notes:
+        return [f"来源提示：{note}" for note in notes[:3]]
+    return ["当前材料以事实标题为主，draft 需要补充官方、市场和行业侧观点差异。"]
+
+
+def derive_content_units(card: dict[str, Any], evidence_items: list[dict[str, Any]]) -> dict[str, list[str]]:
+    title = str(card.get("title") or "").strip()
+    core = str(card.get("core_proposition") or card.get("one_line_judgment") or title).strip()
+    evidence_titles = [str(item.get("title") or "").strip() for item in evidence_items if str(item.get("title") or "").strip()]
+    question_units = normalize_list(
+        card.get("question_units"),
+        5,
+        [f"这个选题真正要回答的问题：{core}"] if core else [f"围绕《{title}》补齐核心问题。"],
+    )
+    opinion_units = normalize_list(
+        card.get("opinion_units"),
+        5,
+        unique_preserve_order([card.get("one_line_judgment", ""), *card.get("viewpoint_notes", [])]),
+    )
+    case_units = normalize_list(
+        card.get("case_units"),
+        5,
+        evidence_titles[:3] or [f"当前缺少可复述案例，draft 需从证据池为《{title}》补案例。"],
+    )
+    solution_units = normalize_list(
+        card.get("solution_units"),
+        5,
+        unique_preserve_order([*card.get("proof_requirements", []), *card.get("recommended_data_angles", [])])[:5],
+    )
+    if not solution_units:
+        solution_units = ["围绕事实、机制、分歧和证据缺口组织 draft，不按标题自由外推。"]
+    return {
+        "question_units": question_units,
+        "opinion_units": opinion_units,
+        "case_units": case_units,
+        "solution_units": solution_units,
+    }
+
+
 def normalize_card_title(title: str) -> str:
     value = re.sub(r"\s+", " ", str(title or "")).strip()
     value = re.sub(r"^(分析|剖析|关注|观察)[:：]?", "", value).strip()
@@ -1246,6 +1386,15 @@ def validate_logic_chain_balance(cards: list[dict[str, Any]], signal_bundle: dic
     return True, ""
 
 
+def validate_chinese_topic_language(cards: list[dict[str, Any]]) -> tuple[bool, str]:
+    for index, card in enumerate(cards, start=1):
+        for field in CHINESE_TOPIC_FIELDS:
+            value = str(card.get(field) or "").strip()
+            if not is_chinese_dominant_text(value):
+                return False, f"第 {index} 题字段 {field} 必须使用中文主体表达：{value[:80]}"
+    return True, ""
+
+
 def normalize_ai_brief_cards(
     ai_result: dict[str, Any] | None,
     signal_bundle: dict[str, Any],
@@ -1274,6 +1423,7 @@ def normalize_ai_brief_cards(
         one_line_judgment = str(raw.get("one_line_judgment") or "").strip()
         why_now = str(raw.get("why_now") or "").strip()
         reader_payoff = str(raw.get("reader_payoff") or "").strip()
+        source_material_summary = str(raw.get("source_material_summary") or raw.get("source_context") or raw.get("source_digest") or "").strip()
         distinctiveness_reason = str(raw.get("distinctiveness_reason") or "").strip()
         evidence_gap_summary = str(raw.get("evidence_gap_summary") or "").strip()
         article_use = str(raw.get("article_use") or "").strip() or "判断稿"
@@ -1297,6 +1447,13 @@ def normalize_ai_brief_cards(
             "core_proposition": core_proposition,
             "why_now": why_now,
             "reader_payoff": reader_payoff,
+            "source_material_summary": source_material_summary,
+            "controversy_points": normalize_list(raw.get("controversy_points") or raw.get("dispute_points"), 5),
+            "viewpoint_notes": normalize_list(raw.get("viewpoint_notes") or raw.get("observed_viewpoints"), 5),
+            "question_units": normalize_list(raw.get("question_units"), 5),
+            "opinion_units": normalize_list(raw.get("opinion_units"), 5),
+            "case_units": normalize_list(raw.get("case_units"), 5),
+            "solution_units": normalize_list(raw.get("solution_units"), 5),
             "article_use": article_use,
             "distinctiveness_reason": distinctiveness_reason,
             "evidence_gap_summary": evidence_gap_summary,
@@ -1316,6 +1473,13 @@ def normalize_ai_brief_cards(
         if not evidence_items:
             evidence_items = select_supporting_evidence(card, evidence_pool, limit=4)
         card["existing_evidence"] = evidence_items
+        if not card["source_material_summary"]:
+            card["source_material_summary"] = derive_source_material_summary(title, evidence_items)
+        if not card["controversy_points"]:
+            card["controversy_points"] = derive_controversy_points(evidence_items)
+        if not card["viewpoint_notes"]:
+            card["viewpoint_notes"] = derive_viewpoint_notes(evidence_items)
+        card.update(derive_content_units(card, evidence_items))
         normalized_cards.append(card)
 
     normalized_cards = normalized_cards[: signal_bundle["requested_topic_count"]]
@@ -1340,7 +1504,7 @@ def write_editor_brief(output_dir: Path, run_id: str, intake_file: Path, cards: 
         "",
         "## 使用说明",
         "",
-        "- 本轮候选题全部由 AI 基于 intake 证据池综合提炼生成。",
+        "- 本轮候选题全部由当前 Agent 基于 intake 证据池综合提炼生成。",
         "- 代码只做输入装配、显性噪音隔离、结构校验和落盘，不再使用规则模板硬造题。",
         "- 下游只需基于这些独立题卡做人工选题，不需要再先删一轮近义词换壳题。",
         "",
@@ -1355,6 +1519,30 @@ def write_editor_brief(output_dir: Path, run_id: str, intake_file: Path, cards: 
                 f"- 一句话判断：{card['one_line_judgment']}",
                 f"- 核心命题：{card['core_proposition']}",
                 f"- 为什么现在值得写：{card['why_now']}",
+                f"- 来源内容记录：{card['source_material_summary']}",
+                "- 争议 / 分歧点：",
+            ]
+        )
+        for item in card["controversy_points"]:
+            lines.append(f"  - {item}")
+        lines.extend(
+            [
+                "- 已见观点 / 讨论口径：",
+            ]
+        )
+        for item in card["viewpoint_notes"]:
+            lines.append(f"  - {item}")
+        lines.append("- 内容单元：")
+        for label, key in (
+            ("问题", "question_units"),
+            ("观点", "opinion_units"),
+            ("案例", "case_units"),
+            ("方案", "solution_units"),
+        ):
+            values = card.get(key) or []
+            lines.append(f"  - {label}：{'；'.join(values) if values else '待补'}")
+        lines.extend(
+            [
                 f"- 读者收益：{card['reader_payoff']}",
                 f"- 文章用途：{card['article_use']}",
                 f"- 不重复理由：{card['distinctiveness_reason']}",
@@ -1378,12 +1566,6 @@ def write_editor_brief(output_dir: Path, run_id: str, intake_file: Path, cards: 
         lines.append("- 关键来源：")
         for item in card["existing_evidence"]:
             lines.append(f"  - {item['title']}｜{item['url']}")
-        lines.append("- 结构提示：")
-        lines.append(f"  - 开头：{card['structure_hint']['opening']}")
-        lines.append(f"  - 第一段：{card['structure_hint']['part_1']}")
-        lines.append(f"  - 第二段：{card['structure_hint']['part_2']}")
-        lines.append(f"  - 第三段：{card['structure_hint']['part_3']}")
-        lines.append(f"  - 结尾：{card['structure_hint']['ending']}")
         lines.append("")
     target = output_dir / "02_编辑Brief库.md"
     target.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
@@ -1406,6 +1588,30 @@ def write_research_brief(output_dir: Path, run_id: str, cards: list[dict[str, An
                 f"- 核心命题：{card['core_proposition']}",
                 f"- 一句话判断：{card['one_line_judgment']}",
                 f"- 为什么现在值得写：{card['why_now']}",
+                f"- 来源内容记录：{card['source_material_summary']}",
+                "- 争议 / 分歧点：",
+            ]
+        )
+        for item in card["controversy_points"]:
+            lines.append(f"  - {item}")
+        lines.extend(
+            [
+                "- 已见观点 / 讨论口径：",
+            ]
+        )
+        for item in card["viewpoint_notes"]:
+            lines.append(f"  - {item}")
+        lines.append("- 内容单元：")
+        for label, key in (
+            ("问题", "question_units"),
+            ("观点", "opinion_units"),
+            ("案例", "case_units"),
+            ("方案", "solution_units"),
+        ):
+            values = card.get(key) or []
+            lines.append(f"  - {label}：{'；'.join(values) if values else '待补'}")
+        lines.extend(
+            [
                 f"- 读者收益：{card['reader_payoff']}",
                 f"- 证据缺口总述：{card['evidence_gap_summary']}",
                 "- 研究优先顺序：",
@@ -1455,7 +1661,7 @@ def write_report(
         "",
         "## 本轮口径",
         "",
-        "- 第二阶段改为 AI 原生生成：题卡内容由 AI 直接生成，代码只做接口与交付。",
+        "- 第二阶段改为 Agent 原生生成：题卡内容由当前 Agent 直接生成，代码只做证据编排、结构校验与交付。",
         "- intake 的事件簇只作为证据归纳参考，不再强制决定题名。",
         "- 候选题是平铺独立题卡，不再强制母题 / 变体结构。",
         "- 同一逻辑链只做弱去重，不做题材配额，但会避免单链路占满榜单。",
@@ -1468,7 +1674,7 @@ def write_report(
     lines.extend(
         [
             "",
-            "## AI 交付检查",
+            "## Agent 交付检查",
             "",
             f"- 手动指定题数：`{signal_bundle['stats']['manual_topic_count']}`",
             f"- TrendRadar 候选数：`{signal_bundle['stats']['trendradar_candidate_count']}`",
@@ -1486,7 +1692,6 @@ def write_report(
 
 
 def write_selected_topics_files(output_dir: Path, run_id: str, cards: list[dict[str, Any]]) -> tuple[Path, Path]:
-    # 为每个topic调用wechat-topic-outline-planner生成AI大纲
     enriched_candidates = []
     for card in cards:
         candidate = {
@@ -1498,30 +1703,15 @@ def write_selected_topics_files(output_dir: Path, run_id: str, cards: list[dict[
             "article_use": card["article_use"],
             "core_proposition": card["core_proposition"],
             "one_line_judgment": card["one_line_judgment"],
+            "source_material_summary": card["source_material_summary"],
+            "controversy_points": card["controversy_points"],
+            "viewpoint_notes": card["viewpoint_notes"],
+            "question_units": card["question_units"],
+            "opinion_units": card["opinion_units"],
+            "case_units": card["case_units"],
+            "solution_units": card["solution_units"],
+            "existing_evidence": card["existing_evidence"],
         }
-
-        # 尝试生成AI大纲（非阻塞，失败不影响主流程）
-        try:
-            from skill_invoker import invoke_skill
-            outline_result = invoke_skill(
-                "wechat-topic-outline-planner",
-                {
-                    "topic_card": {
-                        "title": card["title"],
-                        "core_proposition": card["core_proposition"],
-                        "article_use": card["article_use"],
-                    },
-                    "style": "wechat_article",
-                    "sections": 3,  # 严格限制3-4个H2
-                }
-            )
-
-            if outline_result.get("success"):
-                candidate["ai_outline"] = outline_result.get("outline", "")
-                candidate["structure_hint"] = outline_result.get("structure_template", "PCIS")
-        except Exception:
-            # outline生成失败不影响主流程
-            pass
 
         enriched_candidates.append(candidate)
 
@@ -1589,6 +1779,114 @@ def write_legacy_files(
     (output_dir / "phase2-brief-library.md").write_text(brief_file.read_text(encoding="utf-8"), encoding="utf-8")
 
 
+def build_agent_brief_prompt(run_id: str, signal_bundle: dict[str, Any], prompt_bundle: dict[str, Any]) -> str:
+    schema = json.dumps(prompt_bundle.get("brief_card_schema") or {}, ensure_ascii=False, indent=2)
+    return "\n".join(
+        [
+            "# Agent Brief 生成任务",
+            "",
+            f"运行批次：`{run_id}`",
+            "",
+            "你是当前 Agent，不需要再调用项目内置 provider。",
+            "请阅读 `brief_signal_bundle.json`，基于真实 intake 证据生成 8-10 个中文独立题卡。",
+            "",
+            "## 硬规则",
+            "",
+            "- 不要把采集标题原样抬升为编辑题。",
+            "- 不要用规则模板硬造题。",
+            "- 所有标题、判断句、核心命题、why_now、读者收益必须是中文主体。",
+            "- OpenAI、Google、Bloomberg、公司名、人名、产品名等专有名词可保留原文。",
+            "- 必须回指 `editorial_priority_pool` 或 `trusted_evidence_pool` 里的真实来源。",
+            "- 每题必须记录 `source_material_summary`、`controversy_points`、`viewpoint_notes`，用于 draft 讨论热点来源、争议和观点，不要生成文章大纲。",
+            "- 每题必须记录 `question_units`、`opinion_units`、`case_units`、`solution_units`，用于 draft 取用问题、观点、案例和证明方案。",
+            "- 不要让同一逻辑链占超过一半题位。",
+            "",
+            "## 输出",
+            "",
+            "请生成 JSON 对象，根键为 `topic_cards`。建议先写入 `topic_cards.agent.json`，再运行：",
+            "",
+            "```bash",
+            f"python3 scripts/phase2_rebuilder.py 产物/01_内容采集/{run_id}/raw/intake_records.json 产物/02_内容聚合及选题分析/{run_id} --run-id {run_id} --agent-cards-file 产物/02_内容聚合及选题分析/{run_id}/topic_cards.agent.json",
+            "```",
+            "",
+            "## Schema",
+            "",
+            "```json",
+            schema,
+            "```",
+            "",
+            "## 参考规则",
+            "",
+            str(prompt_bundle.get("brief_ai_prompt") or "").strip(),
+            "",
+        ]
+    ).rstrip() + "\n"
+
+
+def write_agent_brief_packet(
+    output_dir: Path,
+    run_id: str,
+    intake_file: Path,
+    signal_bundle: dict[str, Any],
+    prompt_bundle: dict[str, Any],
+) -> Path:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    signal_file = output_dir / "brief_signal_bundle.json"
+    prompt_file = output_dir / "brief_agent_prompt.md"
+    signal_file.write_text(json.dumps(signal_bundle, ensure_ascii=False, indent=2), encoding="utf-8")
+    prompt_file.write_text(build_agent_brief_prompt(run_id, signal_bundle, prompt_bundle), encoding="utf-8")
+    return write_manifest(
+        output_dir=output_dir,
+        run_id=run_id,
+        intake_file=intake_file,
+        cards=[],
+        generation_mode="agent",
+        status="pending_agent_generation",
+        failure_reason=None,
+        artifacts=[signal_file, prompt_file],
+    )
+
+
+def write_ready_brief_artifacts(
+    output_dir: Path,
+    run_id: str,
+    intake_file: Path,
+    cards: list[dict[str, Any]],
+    signal_bundle: dict[str, Any],
+    generation_mode: str,
+    top_n: int,
+) -> Path:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    topic_cards_file = output_dir / "topic_cards.json"
+    topic_cards_file.write_text(json.dumps(cards, ensure_ascii=False, indent=2), encoding="utf-8")
+    brief_file = write_editor_brief(output_dir, run_id, intake_file, cards, generation_mode)
+    research_file = write_research_brief(output_dir, run_id, cards)
+    report_file = write_report(output_dir, run_id, intake_file, cards, signal_bundle, generation_mode)
+    template_file, selected_file = write_selected_topics_files(output_dir, run_id, cards)
+    write_legacy_files(output_dir, run_id, cards, signal_bundle, brief_file, max(top_n, 1))
+    return write_manifest(
+        output_dir=output_dir,
+        run_id=run_id,
+        intake_file=intake_file,
+        cards=cards,
+        generation_mode=generation_mode,
+        status="ready",
+        failure_reason=None,
+        artifacts=[
+            brief_file,
+            research_file,
+            report_file,
+            topic_cards_file,
+            template_file,
+            selected_file,
+            output_dir / "phase2-clusters-summary.json",
+            output_dir / "phase2-topic-index.json",
+            output_dir / "phase2-editorial-briefs.json",
+            output_dir / "phase2-topn-for-confirmation.json",
+        ],
+    )
+
+
 def write_manifest(
     output_dir: Path,
     run_id: str,
@@ -1632,6 +1930,17 @@ def write_failure_manifest(output_dir: Path, run_id: str, intake_file: Path, fai
     )
 
 
+def validate_agent_brief_cards(ai_result: dict[str, Any], signal_bundle: dict[str, Any]) -> list[dict[str, Any]]:
+    cards = normalize_ai_brief_cards(ai_result, signal_bundle)
+    language_ok, language_reason = validate_chinese_topic_language(cards)
+    if not language_ok:
+        raise RuntimeError(language_reason)
+    balanced, reason = validate_logic_chain_balance(cards, signal_bundle)
+    if not balanced:
+        raise RuntimeError(reason)
+    return cards
+
+
 def run_ai_brief_pipeline(
     run_id: str,
     records: list[IntakeRecord],
@@ -1643,17 +1952,43 @@ def run_ai_brief_pipeline(
     prompt_bundle = load_brief_prompt_bundle()
     brainstorm = request_ai_brief_brainstorm(signal_bundle, prompt_bundle)
     if not brainstorm or not isinstance(brainstorm.get("candidate_seeds"), list):
-        raise RuntimeError("Pass A 发散生成失败")
+        detail = f"：{LAST_AI_ERROR}" if LAST_AI_ERROR else ""
+        raise RuntimeError(f"Pass A 发散生成失败{detail}")
     ai_result = request_ai_brief_cards(signal_bundle, brainstorm, prompt_bundle)
+    if not ai_result:
+        detail = f"：{LAST_AI_ERROR}" if LAST_AI_ERROR else ""
+        raise RuntimeError(f"Pass B 题卡生成失败{detail}")
     cards = normalize_ai_brief_cards(ai_result, signal_bundle)
+    language_ok, language_reason = validate_chinese_topic_language(cards)
+    if not language_ok:
+        feedback = (
+            f"上一轮结果未通过中文输出校验：{language_reason}。"
+            "请重新输出全部 8-10 个题卡，title、one_line_judgment、core_proposition、why_now、reader_payoff、source_material_summary 必须使用中文主体表达；"
+            "OpenAI、Google、Bloomberg、公司名、人名、产品名等专有名词可以保留原文，但不能输出英文标题或英文段落。"
+        )
+        ai_result = request_ai_brief_cards(signal_bundle, brainstorm, prompt_bundle, feedback=feedback)
+        if not ai_result:
+            detail = f"：{LAST_AI_ERROR}" if LAST_AI_ERROR else ""
+            raise RuntimeError(f"Pass B 中文重试失败{detail}")
+        cards = normalize_ai_brief_cards(ai_result, signal_bundle)
+        language_ok, language_reason = validate_chinese_topic_language(cards)
+        if not language_ok:
+            raise RuntimeError(language_reason)
     balanced, reason = validate_logic_chain_balance(cards, signal_bundle)
     if not balanced:
         feedback = (
             f"上一轮结果未通过逻辑链平衡校验：{reason}。"
             "请保留最强主线，但必须主动回补其它高价值逻辑链，避免同一家族题目占满榜单。"
+            "所有题卡字段必须继续使用中文主体表达。"
         )
         ai_result = request_ai_brief_cards(signal_bundle, brainstorm, prompt_bundle, feedback=feedback)
+        if not ai_result:
+            detail = f"：{LAST_AI_ERROR}" if LAST_AI_ERROR else ""
+            raise RuntimeError(f"Pass B 逻辑链重试失败{detail}")
         cards = normalize_ai_brief_cards(ai_result, signal_bundle)
+        language_ok, language_reason = validate_chinese_topic_language(cards)
+        if not language_ok:
+            raise RuntimeError(language_reason)
         balanced, reason = validate_logic_chain_balance(cards, signal_bundle)
         if not balanced:
             raise RuntimeError(reason)
@@ -1672,6 +2007,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-clusters")
     parser.add_argument("--top-n", type=int, default=3)
     parser.add_argument("--upstream-ref")
+    parser.add_argument("--mode", choices=["agent", "provider"], default=os.getenv("DASHENG_BRIEF_MODE", "agent"))
+    parser.add_argument("--agent-cards-file", help="Agent-generated JSON file with root key topic_cards.")
     return parser.parse_args()
 
 
@@ -1687,44 +2024,35 @@ def main() -> None:
 
     run_id = infer_run_id(records, args.run_id, intake_file)
     aux = collect_auxiliary(intake_file)
+    candidate_count = max(MIN_TOPIC_COUNT, min(args.candidate_count, MAX_TOPIC_COUNT))
 
     try:
-        cards, signal_bundle = run_ai_brief_pipeline(
-            run_id=run_id,
-            records=records,
-            aux=aux,
-            manual_topics=args.manual_topic,
-            candidate_count=max(MIN_TOPIC_COUNT, min(args.candidate_count, MAX_TOPIC_COUNT)),
-        )
-        topic_cards_file = output_dir / "topic_cards.json"
-        topic_cards_file.write_text(json.dumps(cards, ensure_ascii=False, indent=2), encoding="utf-8")
-        brief_file = write_editor_brief(output_dir, run_id, intake_file, cards, "ai_only")
-        research_file = write_research_brief(output_dir, run_id, cards)
-        report_file = write_report(output_dir, run_id, intake_file, cards, signal_bundle, "ai_only")
-        template_file, selected_file = write_selected_topics_files(output_dir, run_id, cards)
-        write_legacy_files(output_dir, run_id, cards, signal_bundle, brief_file, max(args.top_n, 1))
-        manifest_file = write_manifest(
-            output_dir=output_dir,
-            run_id=run_id,
-            intake_file=intake_file,
-            cards=cards,
-            generation_mode="ai_only",
-            status="ready",
-            failure_reason=None,
-            artifacts=[
-                brief_file,
-                research_file,
-                report_file,
-                topic_cards_file,
-                template_file,
-                selected_file,
-                output_dir / "phase2-clusters-summary.json",
-                output_dir / "phase2-topic-index.json",
-                output_dir / "phase2-editorial-briefs.json",
-                output_dir / "phase2-topn-for-confirmation.json",
-            ],
-        )
-        sync_brief_to_desktop(run_id, output_dir)
+        if args.agent_cards_file:
+            signal_bundle = build_brief_signal_bundle(run_id, records, aux, args.manual_topic, candidate_count)
+            ai_result = read_json_if_exists(Path(args.agent_cards_file).expanduser().resolve())
+            if not isinstance(ai_result, dict):
+                raise RuntimeError(f"agent cards 文件不是 JSON 对象：{args.agent_cards_file}")
+            cards = validate_agent_brief_cards(ai_result, signal_bundle)
+            manifest_file = write_ready_brief_artifacts(output_dir, run_id, intake_file, cards, signal_bundle, "agent", max(args.top_n, 1))
+            sync_brief_to_desktop(run_id, output_dir)
+            status = "ready"
+        elif args.mode == "provider":
+            cards, signal_bundle = run_ai_brief_pipeline(
+                run_id=run_id,
+                records=records,
+                aux=aux,
+                manual_topics=args.manual_topic,
+                candidate_count=candidate_count,
+            )
+            manifest_file = write_ready_brief_artifacts(output_dir, run_id, intake_file, cards, signal_bundle, "provider", max(args.top_n, 1))
+            sync_brief_to_desktop(run_id, output_dir)
+            status = "ready"
+        else:
+            signal_bundle = build_brief_signal_bundle(run_id, records, aux, args.manual_topic, candidate_count)
+            prompt_bundle = load_brief_prompt_bundle()
+            manifest_file = write_agent_brief_packet(output_dir, run_id, intake_file, signal_bundle, prompt_bundle)
+            cards = []
+            status = "pending_agent_generation"
     except Exception as exc:
         manifest_file = write_failure_manifest(output_dir, run_id, intake_file, str(exc))
         raise RuntimeError(str(exc)) from exc
@@ -1735,12 +2063,10 @@ def main() -> None:
                 "run_id": run_id,
                 "input_file": str(intake_file),
                 "output_dir": str(output_dir),
-                "brief_file": str(brief_file),
-                "research_file": str(research_file),
-                "report_file": str(report_file),
                 "manifest_file": str(manifest_file),
                 "candidate_count": len(cards),
-                "generation_mode": "ai_only",
+                "generation_mode": args.mode if not args.agent_cards_file else "agent",
+                "status": status,
                 "manual_topics": args.manual_topic,
             },
             ensure_ascii=False,

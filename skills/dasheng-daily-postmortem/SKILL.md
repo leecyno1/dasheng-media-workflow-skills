@@ -1,13 +1,13 @@
 ---
 name: dasheng-daily-postmortem
-description: Use when the workflow enters Stage 7 postmortem and published content needs to be evaluated with performance data, accuracy checks, and knowledge-base writeback suggestions.
+description: Use when the workflow enters Stage 5 postmortem and published content needs to be evaluated with performance data, accuracy checks, and knowledge-base writeback suggestions.
 ---
 
 # dasheng-daily-postmortem
 
 ## 状态
 
-`internal module / Stage 7 执行层`
+`internal module / Stage 5 执行层`
 
 ## 当前定位
 

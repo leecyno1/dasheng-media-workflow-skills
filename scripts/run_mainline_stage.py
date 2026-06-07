@@ -10,7 +10,6 @@ from canonical_workflow import (
     canonical_manifest_path,
     canonical_stage_dir,
     ensure_final_structure_gate,
-    ensure_material_acceptance_gate,
     ensure_publish_decision_gate,
     ensure_selected_topics_gate,
     ensure_stage_manifest,
@@ -56,7 +55,11 @@ def resolve_draft_inputs(run_id: str) -> tuple[str, str]:
     return str(selected_topics), str(topic_cards)
 
 
-def resolve_material_manifest(run_id: str | None, draft_manifest: str | None) -> str:
+def resolve_publish_manifests(
+    run_id: str | None,
+    draft_manifest: str | None,
+    publish_decision: str | None,
+) -> tuple[str, str]:
     manifest = (
         Path(draft_manifest).expanduser().resolve()
         if draft_manifest
@@ -64,45 +67,13 @@ def resolve_material_manifest(run_id: str | None, draft_manifest: str | None) ->
     )
     ensure_stage_manifest(manifest, "draft")
     ensure_final_structure_gate(manifest.parent / "final_structure_snapshot.json")
-    return str(manifest)
-
-
-def resolve_rewrite_manifest(run_id: str | None, material_manifest: str | None) -> str:
-    manifest = (
-        Path(material_manifest).expanduser().resolve()
-        if material_manifest
-        else canonical_manifest_path("material", run_id or "")
-    )
-    ensure_stage_manifest(manifest, "material")
-    ensure_material_acceptance_gate(manifest.parent / "material_acceptance.json")
-    return str(manifest)
-
-
-def resolve_publish_manifests(
-    run_id: str | None,
-    rewrite_manifest: str | None,
-    material_manifest: str | None,
-    publish_decision: str | None,
-) -> tuple[str, str, str]:
-    rewrite_path = (
-        Path(rewrite_manifest).expanduser().resolve()
-        if rewrite_manifest
-        else canonical_manifest_path("rewrite", run_id or "")
-    )
-    material_path = (
-        Path(material_manifest).expanduser().resolve()
-        if material_manifest
-        else canonical_manifest_path("material", run_id or "")
-    )
     decision_path = (
         Path(publish_decision).expanduser().resolve()
         if publish_decision
         else canonical_stage_dir("publish", run_id or "") / "publish_decision.json"
     )
-    ensure_stage_manifest(rewrite_path, "rewrite")
-    ensure_stage_manifest(material_path, "material")
     ensure_publish_decision_gate(decision_path)
-    return str(rewrite_path), str(material_path), str(decision_path)
+    return str(manifest), str(decision_path)
 
 
 def resolve_postmortem_manifest(run_id: str | None, publish_manifest: str | None) -> str:
@@ -166,25 +137,15 @@ def main() -> None:
     brief.add_argument("--run-id")
     brief.add_argument("--input-file")
     brief.add_argument("--manual-topic", action="append", default=[])
+    brief.add_argument("--agent-cards-file")
 
     draft = subparsers.add_parser("draft")
     draft.add_argument("--run-id", required=True)
     draft.add_argument("--output-dir")
 
-    material = subparsers.add_parser("material")
-    material.add_argument("--run-id")
-    material.add_argument("--draft-manifest")
-
-    rewrite = subparsers.add_parser("rewrite")
-    rewrite.add_argument("--run-id")
-    rewrite.add_argument("--material-manifest")
-    rewrite.add_argument("--source-root", required=True)
-    rewrite.add_argument("--final-structure")
-
     publish = subparsers.add_parser("publish")
     publish.add_argument("--run-id")
-    publish.add_argument("--rewrite-manifest")
-    publish.add_argument("--material-manifest")
+    publish.add_argument("--draft-manifest")
     publish.add_argument("--publish-decision")
     publish.add_argument("--reuse-existing-video-supplement", action="store_true")
 
@@ -221,6 +182,7 @@ def main() -> None:
                 "--run-id",
                 run_id,
                 *sum([["--manual-topic", topic] for topic in args.manual_topic], []),
+                *([] if not args.agent_cards_file else ["--agent-cards-file", args.agent_cards_file]),
             ]
         )
         return
@@ -238,47 +200,20 @@ def main() -> None:
         run_command(command)
         return
 
-    if args.stage == "material":
-        if not args.run_id and not args.draft_manifest:
-            raise WorkflowContractError("material 阶段必须提供 --run-id 或 --draft-manifest。")
-        draft_manifest = resolve_material_manifest(args.run_id, args.draft_manifest)
-        run_command(["python3", str(ROOT / "scripts/material_execute_pack.py"), "--draft-manifest", draft_manifest])
-        return
-
-    if args.stage == "rewrite":
-        if not args.run_id and not args.material_manifest:
-            raise WorkflowContractError("rewrite 阶段必须提供 --run-id 或 --material-manifest。")
-        material_manifest = resolve_rewrite_manifest(args.run_id, args.material_manifest)
-        run_command(
-            [
-                "python3",
-                str(ROOT / "scripts/rewrite_rerun_with_final_structure.py"),
-                "--material-manifest",
-                material_manifest,
-                "--source-root",
-                args.source_root,
-                *([] if not args.final_structure else ["--final-structure", args.final_structure]),
-            ]
-        )
-        return
-
     if args.stage == "publish":
-        if not args.run_id and not (args.rewrite_manifest and args.material_manifest and args.publish_decision):
-            raise WorkflowContractError("publish 阶段必须提供 --run-id，或同时提供 rewrite/material manifest 与 publish_decision。")
-        rewrite_manifest, material_manifest, publish_decision = resolve_publish_manifests(
+        if not args.run_id and not (args.draft_manifest and args.publish_decision):
+            raise WorkflowContractError("publish 阶段必须提供 --run-id，或同时提供 draft_manifest 与 publish_decision。")
+        draft_manifest, publish_decision = resolve_publish_manifests(
             args.run_id,
-            args.rewrite_manifest,
-            args.material_manifest,
+            args.draft_manifest,
             args.publish_decision,
         )
         run_command(
             [
                 "python3",
                 str(ROOT / "scripts/publish_video_supplement.py"),
-                "--rewrite-manifest",
-                rewrite_manifest,
-                "--material-manifest",
-                material_manifest,
+                "--draft-manifest",
+                draft_manifest,
                 "--publish-decision",
                 publish_decision,
                 *(["--reuse-existing-video-supplement"] if args.reuse_existing_video_supplement else []),

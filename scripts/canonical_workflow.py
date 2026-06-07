@@ -17,8 +17,6 @@ CANONICAL_STAGE_ROOTS: dict[str, Path] = {
     "intake": ROOT / "产物" / "01_内容采集",
     "brief": ROOT / "产物" / "02_内容聚合及选题分析",
     "draft": ROOT / "产物" / "05_初稿生成",
-    "material": ROOT / "产物" / "04_素材收集",
-    "rewrite": ROOT / "产物" / "06_改写",
     "publish": ROOT / "产物" / "07_渠道分发",
     "postmortem": ROOT / "产物" / "08_分析复盘",
 }
@@ -27,8 +25,6 @@ CANONICAL_MANIFEST_FILENAMES: dict[str, str] = {
     "intake": "intake_manifest.json",
     "brief": "brief_manifest.json",
     "draft": "draft_manifest.json",
-    "material": "material_manifest.json",
-    "rewrite": "rewrite_manifest.json",
     "publish": "publish_manifest.json",
     "postmortem": "postmortem_manifest.json",
 }
@@ -149,6 +145,7 @@ def ensure_final_structure_gate(path: Path) -> dict[str, Any]:
 
 
 def ensure_material_acceptance_gate(path: Path) -> dict[str, Any]:
+    # Retained for optional legacy material tools; no longer part of the canonical mainline.
     return ensure_gate_payload(
         path,
         "Material Gate",
@@ -212,7 +209,6 @@ def stage_contract_snapshot(run_id: str) -> dict[str, Any]:
         "intake": "intake_review.json",
         "brief": "selected_topics.json",
         "draft": "final_structure_snapshot.json",
-        "material": "material_acceptance.json",
         "publish": "publish_decision.json",
     }
     for stage, root in CANONICAL_STAGE_ROOTS.items():

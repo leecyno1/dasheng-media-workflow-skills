@@ -1,6 +1,6 @@
 ---
 name: dasheng-daily-phase2
-description: Use when the workflow enters Stage 2 Brief and the system must generate 8-10 AI-native candidate topic cards from canonical intake evidence under the current Dasheng mainline.
+description: Use when the workflow enters Stage 2 Brief and the current Agent must generate 8-10 candidate topic cards from canonical intake evidence under the Dasheng mainline.
 ---
 
 # dasheng-daily-phase2
@@ -12,7 +12,7 @@ description: Use when the workflow enters Stage 2 Brief and the system must gene
 职责只有两层：
 
 - 代码层：读取 intake、整理证据包、做显性噪音隔离、校验结构、落盘
-- AI 层：直接生成最终独立题卡
+- Agent 层：当前 Agent 直接阅读证据包并生成最终独立题卡
 
 失败就失败，不再回退规则造题。
 
@@ -49,32 +49,52 @@ description: Use when the workflow enters Stage 2 Brief and the system must gene
 
 - 输出是 **8-10 个平铺独立题卡**
 - 不再强制母题 / 变体作为业务主语义
-- AI 可以跨渠道、跨事件综合提炼，但不得脱离 intake 证据池
+- Agent 可以跨渠道、跨事件综合提炼，但不得脱离 intake 证据池
+- Agent 生成的选题标题、判断句和核心题卡字段必须使用中文主体表达；英文来源要先提炼成中文选题
+- Brief 记录来源材料大致内容、争议点和已见观点，供 draft 讨论热点，不在本阶段生成完整文章大纲
+- Brief 额外沉淀 `question_units` / `opinion_units` / `case_units` / `solution_units`，供 draft 直接取用问题、观点、案例和证明方案，防止只按标题发挥
 - 高优先证据池按 `信号强度 × 逻辑独立性 × 主题新颖度` 做弱重排
+- intake/hotspot 的 `radar.macro_policy_score` 与 `radar.source_role` 会作为排序元数据进入 Brief，但不得作为硬过滤器
 - 不做硬题材配额，但会对同一逻辑链和高重叠签名做边际递减
-- AI 返回的 `existing_evidence` 会回贴到 canonical evidence，并自动补齐 `logic_chain_id`
+- Agent 返回的 `existing_evidence` 会回贴到 canonical evidence，并自动补齐 `logic_chain_id`
 - 如果同一逻辑链占比超过半数，阶段直接失败
+- 默认不调用项目内置 provider；provider 仅作为显式 `--mode provider` 的 legacy/回滚路径
 
 ## 执行入口
 
-### 指定 run_id，按 canonical intake 衔接
+### 1）准备 Agent 证据包
 
 ```bash
-node ../dasheng-daily-phase2/index.js --run-id <run_id>
+python3 scripts/run_mainline_stage.py brief --run-id <run_id>
 ```
 
-### 指定 intake 文件
+该命令默认生成：
+
+- `brief_signal_bundle.json`
+- `brief_agent_prompt.md`
+- `brief_manifest.json`（`status=pending_agent_generation`）
+
+### 2）当前 Agent 生成题卡
+
+阅读 `brief_agent_prompt.md` 与 `brief_signal_bundle.json`，生成：
+
+- `topic_cards.agent.json`
+
+根键必须是 `topic_cards`。
+
+### 3）校验并落盘正式 Brief
 
 ```bash
-node ../dasheng-daily-phase2/index.js \
-  {DASHENG_ROOT}/产物/01_内容采集/<run_id>/raw/intake_records.json
+python3 scripts/run_mainline_stage.py brief \
+  --run-id <run_id> \
+  --agent-cards-file "产物/02_内容聚合及选题分析/<run_id>/topic_cards.agent.json"
 ```
 
 ### 带手动指定题
 
 ```bash
-node ../dasheng-daily-phase2/index.js \
-  {DASHENG_ROOT}/产物/01_内容采集/<run_id>/raw/intake_records.json \
+python3 scripts/run_mainline_stage.py brief \
+  --run-id <run_id> \
   --manual-topic "你的人工题目"
 ```
 
@@ -90,6 +110,7 @@ node ../dasheng-daily-phase2/index.js \
 
 - 主脚本：`../../scripts/phase2_rebuilder.py`
 - 主链入口：`python3 ../../scripts/run_mainline_stage.py brief --run-id <run_id>`
+- Agent finalize：`python3 ../../scripts/run_mainline_stage.py brief --run-id <run_id> --agent-cards-file <file>`
 - Schema：`brief_card_schema.json`
 - 正式阶段状态：以 `brief_manifest.json` 为准
 

@@ -2,9 +2,9 @@
 
 ## 目标
 
-把历史 `dasheng-daily-*` 运行时链路，收口到当前 7 阶段主链：
+把历史 `dasheng-daily-*` 运行时链路，收口到当前 5 阶段主链：
 
-`intake -> brief -> draft -> material -> rewrite -> publish -> postmortem`
+`intake -> brief -> draft -> publish -> postmortem`
 
 ## 保留为主入口
 
@@ -14,7 +14,7 @@
 
 - `dasheng-daily-intake`
 - `dasheng-daily-phase2`
-- `dasheng-daily-material`
+- `dasheng-daily-draft`
 - `dasheng-daily-postmortem`
 - `dasheng-daily-shared`
 
@@ -34,12 +34,14 @@
 
 - `dasheng-daily-outline`
 - `dasheng-daily-final`
+- `dasheng-daily-material`
+- `dasheng-stage-rewrite-v3`
 
 说明：
 
-- `outline` 在旧链路里位于 `material` 之后，不符合当前主链。
-- `final` 的职责已被 `rewrite + publish` 吸收，不再作为正式阶段保留。
-- 旧链路中的“rewrite 在 material 之前”也已作废，统一以当前主链为准。
+- `outline` 在旧链路里位于素材/终稿之后，不符合当前主链。
+- `final` 的职责已被 `draft + publish` 吸收，不再作为正式阶段保留。
+- `material` 和独立 `rewrite` 改为按需工具，只有补素材或多版本改写需求出现时调用。
 
 ## 归档为历史技能
 

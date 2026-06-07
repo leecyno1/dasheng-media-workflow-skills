@@ -6,13 +6,13 @@
 
 固定阶段顺序：
 
-`intake -> brief -> draft -> material -> rewrite -> publish -> postmortem`
+`intake -> brief -> draft -> publish -> postmortem`
 
-可选前置资产：`ParadigmProfile`。当用户提供标准文章、内容模板、爆款样本或渠道模板时，可先生成范式画像，再供 `brief / draft / rewrite / publish` 调用；它不改变正式主链顺序，也不作为强制 gate。
+可选前置资产：`ParadigmProfile`。当用户提供标准文章、内容模板、爆款样本或渠道模板时，可先生成范式画像，再供 `brief / draft / publish` 调用；它不改变正式主链顺序，也不作为强制 gate。
 
 固定对象链：
 
-`Run -> ParadigmProfile(optional) -> TopicPool -> SelectedTopic -> Draft -> FinalDoc -> MaterialPack -> RewritePack -> PublishPack -> Postmortem`
+`Run -> ParadigmProfile(optional) -> TopicPool -> SelectedTopic -> Draft/FinalDoc -> PublishPack -> Postmortem`
 
 文档只是交付视图，不是唯一状态源。唯一状态源必须同时满足：
 
@@ -31,7 +31,7 @@
 - `SelectedTopic`
   - 通过 `Brief Gate` 进入 draft 的正式题目
 - `Claim`
-  - 正文中的核心判断，material 必须围绕 claim 补证据
+  - 正文中的核心判断，供 Draft 论证与按需补证使用
 - `EvidenceItem`
   - 支撑 `Claim` 的链接、数据、截图、图表、视频
 - `AssetItem`
@@ -53,7 +53,7 @@
 - `skills/dasheng-daily-shared/schema/channel-pack.schema.json`
 - `skills/dasheng-daily-shared/schema/reasoning-sheet.schema.json`
 
-## 三、5 个强制 HITL Gate
+## 三、4 个强制 HITL Gate
 
 ### 1. Intake Gate
 
@@ -70,14 +70,9 @@
 ### 3. Final Structure Gate
 
 - 文件：`final_structure_snapshot.json`
-- 作用：锁定终稿结构，作为 material / rewrite 的共同上游
+- 作用：锁定终稿结构，确认后可直接进入 publish
 
-### 4. Material Gate
-
-- 文件：`material_acceptance.json`
-- 作用：确认可回填素材、待替换素材、弃用素材
-
-### 5. Channel Gate
+### 4. Channel Gate
 
 - 文件：`publish_decision.json`
 - 作用：确认标题、封面、平台版本、发布时间
@@ -104,7 +99,10 @@
 
 - 目标：采集当天热点样本，并升级为“事件-人物-议题”雷达
 - 推荐输入：
-  - `5173` / `reports` / `8001`
+  - 默认：本地 `8001` 的聊天记录 / 本地新闻流
+  - 公开新闻兜底：同花顺、华尔街见闻、彭博市场，保留热度、情绪和类别评价
+  - 公开热榜兜底：Reddit RSS、Hacker News、微博热搜、知乎热榜、抖音热榜、虎扑热榜、头条热榜、财经 RSS
+  - 回滚：`DASHENG_INTAKE_MODE=legacy` 时才启用旧 `5173` / `reports` / `8000 public wechat`
 - 正式产物：
   - `notes/01_内容采集_底稿.md`
   - `notes/01_内容采集_报告.md`
@@ -121,11 +119,11 @@
 - 关键要求：
   - 不做观点筛选，只做真实采集、热度评级、标准化与交接
   - `报告` 必须按渠道输出 Top10，且每条保留真实标题与真实链接
-  - `底稿` 必须保留全量标准化来源清单、重复/噪音池、TrendRadar 补充池
-  - 必须额外输出 `AI热点` Top10，来源至少覆盖 `Reddit RSS + Hacker News + B站 AI 样本`
+  - `底稿` 必须保留全量标准化来源清单、重复/噪音池和下游原始输入池
+  - 必须额外输出 `AI热点` Top10，默认从本地新闻流、公开新闻兜底与公开热榜中派生
   - `AI热点` 在 Brief handoff 中使用更高权重，但不能替代原始渠道样本
   - 热度评级采用渠道内相对分层：`S/A/B/C/D`
-  - 公众号正式走 `8000 public wechat API`，视为慢源，允许等待与补抓；最终稿必须记录补抓轮次与等待时长
+  - 旧 `8000 public wechat API` 仅属于 legacy 模式，默认不再主动调用
   - 去重要同时覆盖 URL、标题近似与同事件重复转载
 
 ### 2. Brief｜AI-only 选题库 + Research Brief
@@ -163,6 +161,7 @@
   - `priority_orgs`
   - `priority_news_queries`
   - `existing_evidence`
+  - `question_units` / `opinion_units` / `case_units` / `solution_units`
   - `structure_hint`
 - 关键规则：
   - Stage 2 正式模式为 `ai_only`
@@ -174,18 +173,24 @@
   - 如存在 `ParadigmProfile`，每个候选题必须标注推荐范式、适用场景、风险边界和不适用理由
   - 若同一逻辑链占比超过半数，阶段直接失败
 
-### 3. Draft｜Reasoning Sheet + 标准稿
+### 3. Draft｜Reasoning Sheet + 标准稿 + HTML 草稿
 
-- 目标：先完成论证结构，再产出标准初稿
+- 目标：先完成论证结构，再产出标准初稿，并同步生成可编辑、自包含 HTML 草稿
 - Draft 只读取：
   - `selected_topics.json`
   - `topic_cards.json`
+  - 可选：`draft_asset_specs.json` / `--asset-specs-file`（按 `topic_id` 提供 `chart_specs` / `image_specs`）
+  - 可选：`finance_chart_requests`（由 `dasheng-finance-data` 展开为金融行情 `chart_specs`）
   - 可选：`paradigm_profile.yaml`
 - 正式产物：
   - `03_ReasoningSheet_<topic>.md`
   - `03_ReasoningSheet_<topic>.json`
   - `03_标准初稿_<topic>.md`
+  - `03_HTML草稿_<topic>.html`
+  - `03_质量门禁_<topic>.json`
+  - `03_DraftAssets_<topic>.json`
   - `03_初稿_报告.md`
+  - `draft_quality_gate.json`
   - `final_structure_snapshot.template.json`
   - `draft_manifest.json`
 - 结构规则：
@@ -193,70 +198,33 @@
   - 一级结构必须继承选题本意，不能机械复制 Brief 列表
   - `Reasoning Sheet` 中每个 `Claim` 必须映射 `EvidenceItem / MissingProof / ChartNeed`
   - 可继承范式画像里的章节骨架、论证顺序和信息密度要求，但不得继承样本文风、情绪词或渠道包装语
+- HTML 规则：
+  - 单文件自包含，CSS/JS 内联，离线可用，不允许 CDN 或本地引用
+  - 有 Chart.js 图表时内联 v4.4.4 UMD；自写图表脚本必须 `DOMContentLoaded`、`typeof Chart` 降级、`responsive:false`、显式 canvas 宽高、`deepMerge` 合并配置
+  - log 坐标写 `type:'logarithmic'`，不得写 `type:'log'`
+  - 表格标签类放 `<td>` 内 `<span>`；根内容区 `contenteditable="true"`，支持编辑/预览切换、全选、保存下载
+  - 图表、配图、数据必须绑定 `claim_id` 与来源；未核验数据只留待补槽，不得伪造
+  - 图片压缩后 base64 嵌入，最长边不超过 1200px；微信公众号发布前 canvas 图表建议截图替换为静态图
+  - Draft 不得只输出 `chart_plan` / `image_plan`；需求锚点只能进入 `chart_requests` / `image_requests`，真正交付物必须是已嵌入 HTML 的 `chart_specs` / `image_specs`
+  - 如正文需要图表或配图但缺少可核验数据/图片，`draft_manifest.status` 必须标记为 `incomplete_assets`，不得伪装为完成稿
+  - 股票、指数、ETF、汇率、商品、股债跨资产走势与经济日历统计优先通过 `dasheng-finance-data` 生成 `chart_specs`，禁止凭记忆手填行情或宏观日历序列
 
-### 4. Material｜证据化素材包
+### 按需工具：Material Refill / Rewrite Variants
 
-- 目标：围绕 `Claim` 补充真正相关的图表、图片、视频、逻辑图
-- 优先输入：
-  - `draft_manifest.json`
-  - `03_ReasoningSheet_<topic>.json`
-- 标准执行：
-  - `python3 {DASHENG_ROOT}/scripts/material_execute_pack.py --draft-manifest <draft_manifest.json>`
-- 正式产物：
-  - `04_MaterialPack.md`
-  - `04_Material_报告.md`
-  - `material_manifest.json`
-  - `material_acceptance.json`
-  - `pack_assets/<topic>/...`
-- 素材必须绑定：
-  - `claim_id`
-  - `section_id`
-  - `usage_type`
-  - `relevance_score`
-  - `editor_status`
-- 子能力拆分：
-  - `Evidence Charts`
-  - `Visual References`
-  - `Generated Visuals`
-  - `Video Assets`
-- 强约束：
-  - 必须存在且通过 `Final Structure Gate`，否则 material 禁止执行
-  - 不再允许 `--pack-root`、旧 `content-briefs.json`、旧目录猜测作为正式入口
-  - AI provider 与图片 provider 统一读取 `configs/image_generation/providers.local.env`
+Material 和独立 Rewrite 已从正式主链删除。
 
-### 5. Rewrite｜结构继承改写
+- 补素材、封面、图表、视频素材：只在用户明确要求、或 Draft/Publish 明确缺口时调用 `dasheng-daily-material` / `dasheng-stage-material-refill`。
+- 多版本改写：只在需要额外作者口吻、平台变体或短视频脚本时调用 `dasheng-stage-rewrite-v3`。
+- 这些工具不得生成新的主链 gate，不得要求 `material_manifest.json` 或 `rewrite_manifest.json` 才能进入 publish。
+- 工具产物只能作为 `draft_manifest` / `publish_decision` 的附加资源引用。
+- 不允许新增隐藏的 Material AI provider；Draft 内需要真实数据、图表或配图时，由当前 Agent 主动搜索、核验、生成并写入 `draft_manifest`。
 
-- 目标：在不破坏终稿结构的前提下做渠道适配
-- 正式输入：
-  - `material_manifest.json`
-  - `material_acceptance.json`
-  - `final_structure_snapshot.json`
-  - 可选：`paradigm_profile.yaml`
-  - 可选：`Style DNA`
-- 正式产物：
-  - `<topic>__rewrite_bundle.md`
-  - `<topic>__wechat_luxun_hot.md`
-  - `<topic>__wechat_lemon_normal.md`
-  - `<topic>__xhs_video_luxun_hot.md`
-  - `<topic>__xhs_video_lemon_normal.md`
-  - `meta.json`
-  - `rewrite_manifest.json`
-- 必须记录：
-  - 继承了哪些一级标题
-  - 哪些二级结构被保留
-  - 哪些平台化改写是新增
-  - 哪些素材锚点被保留 / 删去 / 新增
-- 强约束：
-  - 不再允许硬编码 dated 目录、默认源目录或旧稿反推结构
-  - 没有 `Material Gate` 或 `Final Structure Gate`，rewrite 禁止执行
-  - 可组合使用 `ParadigmProfile` 与 `Style DNA`：前者控制组织方式，后者控制表达方式
-
-### 6. Publish｜渠道包与视频增强
+### 4. Publish｜渠道包与发布
 
 - 目标：输出真正可发的渠道包
 - 正式输入：
-  - `rewrite_manifest.json`
-  - `material_manifest.json`
+  - `draft_manifest.json`
+  - `final_structure_snapshot.json`
   - `publish_decision.json`
   - 可选：`paradigm_profile.yaml`
 - 正式产物：
@@ -275,10 +243,10 @@
   - 渠道版本矩阵
   - 发布时间建议
   - 风险检查清单
-  - 图表动效视频 / 叙事动效视频
+  - 可选：图表动效视频 / 叙事动效视频
 - 内部正式子层：
   - `Publish Gate`
-  - `Video Supplement`
+  - `Video Supplement`（可选）
   - `Channel Adaptation`
   - `Channel Execution`
   - `Publish Guard`
@@ -297,7 +265,7 @@
   - 缺少正式平台执行器的平台，只允许导出待人工发布包
   - 未经过 `Publish Guard` 验真，不得向用户汇报“已发布”
 
-### 7. Postmortem｜知识回写
+### 5. Postmortem｜知识回写
 
 - 目标：将结果回写为下一轮可复用知识
 - 正式输入：
@@ -332,6 +300,7 @@
 2. 飞书文档是协作视图，不是唯一状态源。
 3. 不允许依赖“猜最新目录”或旧命名习惯切阶段。
 4. `Brief Gate` 未选题，禁止进入 draft。
-5. `Material` 与 `Rewrite` 必须基于 `Final Structure Gate` 的结构快照。
-6. 多选题时，draft / material / rewrite 默认按题目并行、目录独立。
-7. 本文件一旦变更，相关 schema、skill 文档、Feishu 计划器必须同步更新。
+5. `Final Structure Gate` 通过后，主链直接进入 publish。
+6. 多选题时，draft / publish 默认按题目并行、目录独立。
+7. Material / Rewrite 只作为按需工具，不得再作为主链阶段或 gate。
+8. 本文件一旦变更，相关 schema、skill 文档、Feishu 计划器必须同步更新。

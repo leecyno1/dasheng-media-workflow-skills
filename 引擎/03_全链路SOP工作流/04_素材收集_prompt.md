@@ -24,12 +24,12 @@
 2. `05_Material_报告.md`
 3. `material_manifest.json`
 4. 结构化素材资产目录：
-   - `charts/csv`
-   - `charts/png`
-   - `images/generated`
-   - `images/web_search`
-   - `videos/source_links`
-   - `videos/web_search`
+   - topic 根目录下的 `图片_*`
+   - topic 根目录下的 `视频_*`
+   - topic 根目录下的 `图表_*`
+   - topic 根目录下的 `素材交付清单.md`
+   - `config/` 内部计划、候选、下载日志、失败诊断
+   - `charts/`、`images/`、`videos/` 仅作为内部执行缓存或生成来源
    - `prompts`
    - `layer5`
 5. 飞书协作与回填记录
@@ -51,7 +51,8 @@
 5. AI 图像必须作为“增强表达”而不是“替代证据”；遇到可用真实图片时，真实图片优先。
 6. 每个视频项目默认补一套连环画分镜，目标 10 张；同时补 2-3 张梗图增强趣味。
 7. 如需 Layer 5 增强交付，只输出结构化计划和接口文件，不强行修改主工作流正文。
-8. 本阶段结束时，必须把素材目录上传到飞书日期文件夹，并把关键图表、图片、数据图直接回填到飞书终稿文档对应锚点位置。
+8. 本阶段结束时，必须先执行交付整理：真实可用素材平铺到 topic 根目录，缺口写入 `素材交付清单.md/json`，再把素材目录上传到飞书日期文件夹，并把关键图表、图片、数据图直接回填到飞书终稿文档对应锚点位置。
+9. 只出现在 `config/`、provider 子目录或 JSON 日志中的图片/视频不算完成交付；要么提升为 `图片_` / `视频_` 文件，要么在清单里说明失败原因和下一步。
 
 【默认技术栈】
 - 硬数据：Python 3 + pandas + numpy + matplotlib + akshare + tushare

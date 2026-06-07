@@ -14,7 +14,7 @@ from canonical_workflow import (
     stage_contract_snapshot,
 )
 from desktop_delivery import DESKTOP_ROOT
-from provider_registry import resolve_chat_provider, resolve_material_image_provider_snapshot
+from provider_registry import resolve_chat_provider
 from path_config import (
     get_project_root,
     get_feishu_config_path,
@@ -135,12 +135,8 @@ def stage_issues(contract: dict[str, Any]) -> list[str]:
             previous_ready = bool(stages.get("intake", {}).get("manifest_exists"))
         elif stage == "draft":
             previous_ready = bool(stages.get("brief", {}).get("gate_exists"))
-        elif stage == "material":
-            previous_ready = bool(stages.get("draft", {}).get("gate_exists"))
-        elif stage == "rewrite":
-            previous_ready = bool(stages.get("material", {}).get("gate_exists"))
         elif stage == "publish":
-            previous_ready = bool(stages.get("rewrite", {}).get("manifest_exists"))
+            previous_ready = bool(stages.get("draft", {}).get("gate_exists"))
         elif stage == "postmortem":
             previous_ready = bool(stages.get("publish", {}).get("manifest_exists"))
         if previous_ready and not row.get("manifest_exists"):
@@ -161,12 +157,6 @@ def provider_summary() -> dict[str, Any]:
             payload["api_key_present"] = bool(provider.get("api_key"))
         return payload
 
-    image_snapshot = resolve_material_image_provider_snapshot()
-    image_snapshot["gemini_generate_content"] = {
-        **image_snapshot["gemini_generate_content"],
-        "api_key": mask_secret(image_snapshot["gemini_generate_content"].get("api_key")),
-        "api_key_present": bool(image_snapshot["gemini_generate_content"].get("api_key")),
-    }
     return {
         "brief": sanitize(resolve_chat_provider(
             custom_env_var="DASHENG_PHASE2_PROVIDER_ENV",
@@ -182,14 +172,10 @@ def provider_summary() -> dict[str, Any]:
             model_keys=["PHASE3_AI_MODEL", "DRAFT_AI_MODEL", "PHASE2_AI_MODEL"],
             timeout_keys=["PHASE3_AI_TIMEOUT_SECONDS", "DRAFT_AI_TIMEOUT_SECONDS"],
         )),
-        "material": sanitize(resolve_chat_provider(
-            custom_env_var="DASHENG_MATERIAL_PROVIDER_ENV",
-            base_url_keys=["MATERIAL_AI_BASE_URL", "QHAIGC_BASE_URL"],
-            api_key_keys=["MATERIAL_AI_API_KEY", "QHAIGC_API_KEY"],
-            model_keys=["MATERIAL_AI_MODEL", "PHASE4_AI_MODEL", "PHASE3_AI_MODEL", "DRAFT_AI_MODEL"],
-            timeout_keys=["MATERIAL_AI_TIMEOUT_SECONDS", "PHASE3_AI_TIMEOUT_SECONDS", "DRAFT_AI_TIMEOUT_SECONDS"],
-        )),
-        "image_generation": image_snapshot,
+        "optional_tools": {
+            "material_refill": "retired_from_mainline",
+            "rewrite_variants": "merged_into_draft_or_on_demand",
+        },
     }
 
 

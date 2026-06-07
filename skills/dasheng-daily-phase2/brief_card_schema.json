@@ -16,6 +16,13 @@
           "core_proposition",
           "why_now",
           "reader_payoff",
+          "source_material_summary",
+          "controversy_points",
+          "viewpoint_notes",
+          "question_units",
+          "opinion_units",
+          "case_units",
+          "solution_units",
           "article_use",
           "distinctiveness_reason",
           "evidence_gap_summary",
@@ -35,6 +42,31 @@
           "core_proposition": { "type": "string" },
           "why_now": { "type": "string" },
           "reader_payoff": { "type": "string" },
+          "source_material_summary": { "type": "string" },
+          "controversy_points": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "viewpoint_notes": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "question_units": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "opinion_units": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "case_units": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "solution_units": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
           "article_use": { "type": "string" },
           "distinctiveness_reason": { "type": "string" },
           "evidence_gap_summary": { "type": "string" },

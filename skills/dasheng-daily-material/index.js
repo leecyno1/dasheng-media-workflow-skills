@@ -41,6 +41,113 @@ function uniqueList(items = []) {
   return [...new Set(items.filter(Boolean).map(item => String(item).trim()).filter(Boolean))];
 }
 
+function queryText(item) {
+  return typeof item === 'string' ? item : String(item?.query || '').trim();
+}
+
+function pickClaimForPlanItem(claims, planItem, fallbackIndex = 0) {
+  const fallback = claims.length ? claims[fallbackIndex % claims.length] : { claim_id: 'claim-01', section_id: 'section-01' };
+  if (!planItem || !claims.length) return fallback;
+  const claimId = String(planItem.claim_id || '').trim();
+  const sectionId = String(planItem.section_id || '').trim();
+  return claims.find(claim => String(claim.claim_id || '') === claimId)
+    || claims.find(claim => String(claim.section_id || '') === sectionId)
+    || fallback;
+}
+
+function normalizeQueryRecord(item, index, defaults = {}) {
+  if (typeof item === 'string') {
+    return {
+      query: item,
+      entity_type: defaults.entity_type || 'topic',
+      entity: defaults.entity || '',
+      priority: Number(defaults.priority ?? (100 - index)),
+      channel: defaults.channel || 'image_search'
+    };
+  }
+  return {
+    query: item?.query || '',
+    entity_type: item?.entity_type || defaults.entity_type || 'topic',
+    entity: item?.entity || defaults.entity || '',
+    priority: Number(item?.priority ?? defaults.priority ?? (100 - index)),
+    channel: item?.channel || defaults.channel || 'image_search',
+    claim_id: item?.claim_id,
+    section_id: item?.section_id,
+    plan_id: item?.plan_id,
+    usage_type: item?.usage_type,
+    relevance_score: item?.relevance_score,
+    editor_status: item?.editor_status
+  };
+}
+
+function withClaimBinding(record, claim, planItem = {}) {
+  const next = { ...record };
+  next.claim_id = next.claim_id || claim?.claim_id || planItem.claim_id;
+  next.section_id = next.section_id || claim?.section_id || planItem.section_id;
+  next.plan_id = next.plan_id || planItem.plan_id;
+  next.usage_type = next.usage_type || planItem.usage_type || 'source_context';
+  if (next.relevance_score === undefined && planItem.relevance_score !== undefined) {
+    next.relevance_score = planItem.relevance_score;
+  }
+  next.editor_status = next.editor_status || planItem.editor_status || 'pending_review';
+  return next;
+}
+
+function queryAssetBinding(item = {}) {
+  if (!item || typeof item === 'string') return {};
+  return Object.fromEntries(
+    Object.entries({
+      claim_id: item.claim_id,
+      section_id: item.section_id,
+      plan_id: item.plan_id,
+      usage_type: item.usage_type,
+      relevance_score: item.relevance_score,
+      editor_status: item.editor_status
+    }).filter(([, value]) => value !== undefined && value !== null && value !== '')
+  );
+}
+
+function enrichQueriesWithMaterialPlan(plan) {
+  const claims = Array.isArray(plan.claim_bindings) && plan.claim_bindings.length
+    ? plan.claim_bindings
+    : [{ claim_id: 'claim-01', section_id: 'section-01', statement: plan.thesis }];
+  const planItems = asArray(plan.material_plan);
+  const byQuery = new Map();
+  planItems.forEach((item, index) => {
+    asArray(item.source_queries).forEach(query => {
+      const key = String(query || '').trim().toLowerCase();
+      if (!key || byQuery.has(key)) return;
+      const claim = pickClaimForPlanItem(claims, item, index);
+      byQuery.set(key, { claim, item });
+    });
+  });
+
+  const attach = (record, index, assetKind) => {
+    const key = String(record.query || '').trim().toLowerCase();
+    const matched = byQuery.get(key);
+    if (matched) {
+      return withClaimBinding(record, matched.claim, matched.item);
+    }
+    const claim = claims[index % claims.length];
+    return withClaimBinding(record, claim, {
+      usage_type: assetKind === 'video' ? 'context_b_roll' : assetKind === 'news_screenshot' ? 'source_screenshot' : 'source_context',
+      editor_status: 'pending_review'
+    });
+  };
+
+  plan.web_search.image_queries = asArray(plan.web_search.image_queries)
+    .map((item, index) => attach(normalizeQueryRecord(item, index, { channel: 'image_search' }), index, 'image'))
+    .filter(item => item.query);
+  plan.web_search.news_screenshot_queries = asArray(plan.web_search.news_screenshot_queries)
+    .map((item, index) => attach(normalizeQueryRecord(item, index, { channel: 'news_screenshot', priority: 180 - index }), index, 'news_screenshot'))
+    .filter(item => item.query);
+  plan.web_search.video_queries = asArray(plan.web_search.video_queries)
+    .map((item, index) => attach(normalizeQueryRecord(item, index, { channel: 'video_search', priority: 160 - index }), index, 'video'))
+    .filter(item => item.query)
+    .slice(0, MATERIAL_LIMITS.videoSearch);
+  return plan;
+}
+
 function normalizeEvidenceItem(item, index = 0, topicId = 'topic') {
   if (!item) {
     return {
@@ -117,6 +224,8 @@ function normalizeLegacyBrief(brief) {
     counterintuitive_angle: brief.counterintuitive_angle || null,
     claims,
     chart_anchors: asArray(brief.chart_anchors),
+    material_plan: asArray(brief.material_plan),
+    material_plan_file: brief.material_plan_file || null,
     image_queries: asArray(brief.image_queries),
     news_screenshot_queries: asArray(brief.news_screenshot_queries),
     video_queries: asArray(brief.video_queries),
@@ -168,6 +277,8 @@ function normalizeReasoningSheet(sheet) {
     claims,
     structure_contract: sheet.structure_contract || {},
     chart_anchors: asArray(sheet.chart_anchors),
+    material_plan: asArray(sheet.material_plan),
+    material_plan_file: sheet.material_plan_file || null,
     image_queries: asArray(sheet.image_queries),
     news_screenshot_queries: asArray(sheet.news_screenshot_queries),
     video_queries: asArray(sheet.video_queries),
@@ -418,6 +529,8 @@ function buildMaterialPack(brief, runId, packRoot) {
     topic_type: topicType,
     upstream_object_type: brief.upstream_object_type || brief.meta?.object_type || 'unknown',
     claim_bindings: plan.claim_bindings,
+    claim_asset_plan: plan.material_plan,
+    material_plan_file: brief.material_plan_file || null,
     materials: {
       images: buildImageMaterials(plan),
       videos: buildVideoMaterials(plan),
@@ -428,6 +541,7 @@ function buildMaterialPack(brief, runId, packRoot) {
     coverage_notes: [
       `生成依据：${plan.generation_basis || 'reasoning_sheet'}`,
       `已覆盖主张：${brief.core_claim}`,
+      `Claim-driven 素材计划：${plan.material_plan.length} 项`,
       `建议媒介：${(brief.recommended_media || []).join(', ') || 'article / video / infographic'}`,
       `AI 图像分支：连环画 ${plan.generated.comic_storyboard.length} 张 / 梗图 ${plan.generated.meme_prompts.length} 张 / 搞笑人物 ${(plan.generated.funny_comic_character_prompts || []).length} 张`,
       `Layer 5：${plan.layer5.template_id}`,
@@ -513,10 +627,6 @@ function ensureTopicDirectories(topicRoot) {
     'charts/markdown',
     'charts/config',
     'charts/png',
-    'images/generated',
-    'images/web_search',
-    'videos/source_links',
-    'videos/web_search',
     'prompts',
     'config',
     'layer5'
@@ -534,7 +644,7 @@ function buildTopicPlan(brief, topicType, topicSlug) {
   const generated = buildGeneratedVisualPlan(brief, topicType);
   const layer5 = buildLayer5Plan(topicType, chartAnchors, brief);
 
-  return {
+  const plan = {
     topic_slug: topicSlug,
     topic_type: topicType,
     title: brief.title,
@@ -543,6 +653,8 @@ function buildTopicPlan(brief, topicType, topicSlug) {
     article_source: brief.article_source || null,
     article_markdown: brief.article_markdown || '',
     material_decision_file: brief.material_decision_file || null,
+    material_plan: asArray(brief.material_plan),
+    material_plan_file: brief.material_plan_file || null,
     claim_bindings: claimBindings,
     evidence_items: evidenceItems,
     chart_anchors: chartAnchors,
@@ -559,6 +671,7 @@ function buildTopicPlan(brief, topicType, topicSlug) {
     recommended_sources: recommendDataSources(topicType, evidenceItems),
     scene_plan: buildScenePlan(brief, topicType)
   };
+  return enrichQueriesWithMaterialPlan(plan);
 }
 
 function buildClaimBindings(brief) {
@@ -595,11 +708,15 @@ function bindAsset(plan, index, assetType, payload = {}) {
     : [{ claim_id: 'claim-01', section_id: 'section-01', statement: plan.thesis }];
   const claim = claims[index % claims.length];
   const relevanceBase = assetType === 'chart' ? 0.96 : assetType === 'reference' ? 0.92 : assetType === 'video' ? 0.84 : 0.88;
+  const relevanceScore = Number(payload.relevance_score);
+  const resolvedRelevance = Number.isFinite(relevanceScore)
+    ? relevanceScore
+    : Math.max(0.55, relevanceBase - index * 0.03);
   return {
     claim_id: claim.claim_id,
     section_id: claim.section_id,
     usage_type: payload.usage_type || assetType,
-    relevance_score: Number((payload.relevance_score || Math.max(0.55, relevanceBase - index * 0.03)).toFixed(2)),
+    relevance_score: Number(resolvedRelevance.toFixed(2)),
     editor_status: payload.editor_status || 'pending_review',
     ...payload
   };
@@ -775,24 +892,10 @@ function buildImageQueries(brief, topicType) {
   if (imageOverride.length || screenshotOverride.length) {
     return {
       image_queries: imageOverride.map((item, index) => (
-        typeof item === 'string'
-          ? { query: item, entity_type: 'topic', entity: '', priority: 100 - index, channel: 'wikimedia' }
-          : {
-              query: item.query || '',
-              entity_type: item.entity_type || 'topic',
-              entity: item.entity || '',
-              priority: Number(item.priority || (100 - index)),
-              channel: item.channel || 'wikimedia'
-            }
+        normalizeQueryRecord(item, index, { channel: 'image_search', priority: 100 - index })
       )).filter(item => item.query),
       news_screenshot_queries: screenshotOverride.map((item, index) => (
-        typeof item === 'string'
-          ? { query: item, channel: 'news_screenshot', priority: 180 - index }
-          : {
-              query: item.query || '',
-              channel: item.channel || 'news_screenshot',
-              priority: Number(item.priority || (180 - index))
-            }
+        normalizeQueryRecord(item, index, { channel: 'news_screenshot', priority: 180 - index })
       )).filter(item => item.query),
       entity_signals: entitySignals
     };
@@ -806,14 +909,14 @@ function buildImageQueries(brief, topicType) {
         entity_type: 'person',
         entity: item.name,
         priority: 300 - idx * 2,
-        channel: 'wikimedia'
+        channel: 'image_search'
       },
       {
         query: `${item.name} speech press conference`,
         entity_type: 'person',
         entity: item.name,
         priority: 299 - idx * 2,
-        channel: 'wikimedia'
+        channel: 'image_search'
       }
     ]));
   const countryOrgQueries = []
@@ -823,7 +926,7 @@ function buildImageQueries(brief, topicType) {
         entity_type: 'country',
         entity: item.name,
         priority: 220 - idx,
-        channel: 'wikimedia'
+        channel: 'image_search'
       }))
     )
     .concat(
@@ -832,7 +935,7 @@ function buildImageQueries(brief, topicType) {
         entity_type: 'org',
         entity: item.name,
         priority: 210 - idx,
-        channel: 'wikimedia'
+        channel: 'image_search'
       }))
     );
   const querySets = {
@@ -891,7 +994,7 @@ function buildImageQueries(brief, topicType) {
     entity_type: 'topic',
     entity: '',
     priority: 100 - idx,
-    channel: 'wikimedia'
+    channel: 'image_search'
   }));
 
   const dedup = new Map();
@@ -922,7 +1025,10 @@ function buildImageQueries(brief, topicType) {
 function buildVideoQueries(brief, topicType) {
   const override = asArray(brief.video_queries).filter(Boolean);
   if (override.length) {
-    return override.map(item => (typeof item === 'string' ? item : item.query || '')).filter(Boolean).slice(0, MATERIAL_LIMITS.videoSearch);
+    return override
+      .map((item, index) => normalizeQueryRecord(item, index, { channel: 'video_search', priority: 160 - index }))
+      .filter(item => item.query)
+      .slice(0, MATERIAL_LIMITS.videoSearch);
   }
   const base = extractKeywords(brief);
   const querySets = {
@@ -967,7 +1073,9 @@ function buildVideoQueries(brief, topicType) {
       `${base.primary} official briefing live stream`
     ]
   };
-  return (querySets[topicType] || querySets.general_commentary).slice(0, MATERIAL_LIMITS.videoSearch);
+  return (querySets[topicType] || querySets.general_commentary)
+    .slice(0, MATERIAL_LIMITS.videoSearch)
+    .map((query, index) => normalizeQueryRecord(query, index, { channel: 'video_search', priority: 160 - index }));
 }
 
 function buildVideoQualityPolicy() {
@@ -1392,14 +1500,14 @@ function writeTopicArtifacts(topicRoot, plan) {
   if (plan.article_markdown) {
     fs.writeFileSync(path.join(topicRoot, 'prompts', 'article.md'), `${plan.article_markdown}\n`, 'utf8');
   }
-  writeJson(path.join(topicRoot, 'images', 'web_search', 'image_search_queries.json'), plan.web_search.image_queries);
-  writeJson(path.join(topicRoot, 'images', 'web_search', 'news_screenshot_queries.json'), plan.web_search.news_screenshot_queries || []);
-  writeJson(path.join(topicRoot, 'videos', 'web_search', 'video_search_queries.json'), plan.web_search.video_queries);
-  writeJson(path.join(topicRoot, 'videos', 'source_links', 'source_link_candidates.json'), plan.evidence_items.filter(item => item.url));
-  writeJson(path.join(topicRoot, 'images', 'generated', 'ai_visual_plan.json'), plan.generated);
+  writeJson(path.join(topicRoot, 'config', 'image_search_queries.json'), plan.web_search.image_queries);
+  writeJson(path.join(topicRoot, 'config', 'news_screenshot_queries.json'), plan.web_search.news_screenshot_queries || []);
+  writeJson(path.join(topicRoot, 'config', 'video_search_queries.json'), plan.web_search.video_queries);
+  writeJson(path.join(topicRoot, 'config', 'source_link_candidates.json'), plan.evidence_items.filter(item => item.url));
+  writeJson(path.join(topicRoot, 'config', 'ai_visual_plan.json'), plan.generated);
   writeJson(path.join(topicRoot, 'layer5', 'layer5_delivery_plan.json'), plan.layer5);
   writeJson(path.join(topicRoot, 'layer5', 'layer5_delivery_inputs.json'), buildLayer5Inputs(plan));
-  writeJson(path.join(topicRoot, 'videos', 'scene_plan.json'), plan.scene_plan);
+  writeJson(path.join(topicRoot, 'config', 'scene_plan.json'), plan.scene_plan);
   writeJson(path.join(topicRoot, 'charts', 'config', 'chart_quality_gate.json'), plan.chart_quality_gate || {});
   fs.writeFileSync(
     path.join(topicRoot, 'charts', 'csv', 'chart_anchor_plan.csv'),
@@ -1438,8 +1546,8 @@ function buildLayer5Inputs(plan) {
       chart_anchor_ids: chartAnchorIds,
       chart_csvs: chartAnchorIds.map(anchorId => `charts/csv/${anchorId}.csv`),
       chart_pngs: chartAnchorIds.map(anchorId => `charts/png/${anchorId}.png`),
-      scene_plan: 'videos/scene_plan.json',
-      source_links: 'videos/source_links/source_link_candidates.json'
+      scene_plan: 'config/scene_plan.json',
+      source_links: 'config/source_link_candidates.json'
     },
     key_metrics_to_emit: plan.layer5.key_metrics_to_emit || [],
     risk_scenarios: plan.layer5.risk_scenarios || [],
@@ -1487,10 +1595,11 @@ function renderTopicRunbook(plan) {
     '1. 先按 `charts/csv/chart_anchor_plan.csv` + `charts/config/chart_quality_gate.json` 执行图表质量门控。',
     '   - 阈值：CV>=0.03、|slope|>=0.005、R²>=0.25、trend_strength>=0.30。',
     '   - 未达阈值时不生成图表 PNG，改输出逻辑关系表：`charts/csv/*.csv` + `charts/markdown/*.md`。',
-    '2. 再跑 `images/web_search` 与 `videos/web_search` 的下载，并检查 `videos/web_search/video_quality_audit_report.json`。',
-    '3. 关注 pack 根目录自动生成的 `video_quality_regression_report.json` / `video_quality_regression_report.md` 汇总。',
-    `4. AI 图像至少补齐连环画 ${plan.generated.comic_storyboard.length} 张，梗图 ${plan.generated.meme_prompts.length} 张，搞笑人物 ${(plan.generated.funny_comic_character_prompts || []).length} 张。`,
-    '5. 需要交互稿时，再按 `layer5/layer5_delivery_plan.json` 接入 worldmonitor。',
+    '2. 再跑图片与视频搜索；查询计划在 `config/image_search_queries.json`、`config/video_search_queries.json`，候选和诊断只放 `config/`。',
+    '3. 最后必须执行 `finalize`：把可直接使用的 `图片_`、`视频_`、`图表_` 文件平铺到 topic 根目录，并生成 `素材交付清单.md/json`。',
+    '4. 关注 pack 根目录自动生成的 `video_quality_regression_report.json` / `video_quality_regression_report.md` 汇总。',
+    `5. AI 图像至少补齐连环画 ${plan.generated.comic_storyboard.length} 张，梗图 ${plan.generated.meme_prompts.length} 张，搞笑人物 ${(plan.generated.funny_comic_character_prompts || []).length} 张。`,
+    '6. 需要交互稿时，再按 `layer5/layer5_delivery_plan.json` 接入 worldmonitor。',
     '',
     '## 视频质检规则',
     '',
@@ -1509,7 +1618,7 @@ function renderTopicRunbook(plan) {
     '',
     '## 执行命令',
     '',
-    `- 推荐主链命令：\`\${DASHENG_ROOT:-.}/scripts/material_execute_pack.sh --draft-manifest <draft_manifest.json> --topic-dir ${plan.topic_slug} --steps charts,image_search,video_search,ai_prep\``,
+    `- 推荐主链命令：\`\${DASHENG_ROOT:-.}/scripts/material_execute_pack.sh --draft-manifest <draft_manifest.json> --topic-dir ${plan.topic_slug} --steps charts,image_search,video_search,ai_prep,finalize\``,
     `- 正式命令：\`python3 \${DASHENG_ROOT:-.}/scripts/material_execute_pack.py --draft-manifest <draft_manifest.json>\``,
     ''
   ].join('\n');
@@ -1525,7 +1634,7 @@ function buildImageMaterials(plan) {
       title: '封面图',
       asset_type: 'image',
       source_type: 'ai_generated',
-      file: 'images/generated/ai_visual_plan.json',
+      file: 'config/ai_visual_plan.json',
       purpose: '主封面'
     })
   ];
@@ -1535,7 +1644,7 @@ function buildImageMaterials(plan) {
       asset_type: 'image',
       source_type: 'infographic_prompt',
       prompt,
-      file: 'images/generated/ai_visual_plan.json'
+      file: 'config/ai_visual_plan.json'
     }));
   });
   plan.generated.comic_storyboard.forEach(frame => {
@@ -1544,7 +1653,7 @@ function buildImageMaterials(plan) {
       asset_type: 'image',
       source_type: 'comic_frame',
       prompt: frame.visual_prompt,
-      file: 'images/generated/ai_visual_plan.json'
+      file: 'config/ai_visual_plan.json'
     }));
   });
   plan.generated.meme_prompts.forEach((prompt, index) => {
@@ -1553,7 +1662,7 @@ function buildImageMaterials(plan) {
       asset_type: 'image',
       source_type: 'meme_prompt',
       prompt,
-      file: 'images/generated/ai_visual_plan.json'
+      file: 'config/ai_visual_plan.json'
     }));
   });
   (plan.generated.funny_comic_character_prompts || []).forEach((prompt, index) => {
@@ -1562,7 +1671,7 @@ function buildImageMaterials(plan) {
       asset_type: 'image',
       source_type: 'funny_comic_character_prompt',
       prompt,
-      file: 'images/generated/ai_visual_plan.json'
+      file: 'config/ai_visual_plan.json'
     }));
   });
 
@@ -1571,14 +1680,16 @@ function buildImageMaterials(plan) {
       title: `图片检索 ${index + 1}`,
       asset_type: 'image',
       source_type: 'web_search',
-      query: typeof queryItem === 'string' ? queryItem : queryItem.query,
-      file: 'images/web_search/image_search_queries.json'
+      query: queryText(queryItem),
+      ...queryAssetBinding(queryItem),
+      file: 'config/image_search_queries.json'
     })).concat((plan.web_search.news_screenshot_queries || []).map((queryItem, index) => bindAsset(plan, index, 'news_screenshot', {
       title: `新闻截图检索 ${index + 1}`,
       asset_type: 'image',
       source_type: 'news_screenshot',
-      query: typeof queryItem === 'string' ? queryItem : queryItem.query,
-      file: 'images/web_search/news_screenshot_queries.json'
+      query: queryText(queryItem),
+      ...queryAssetBinding(queryItem),
+      file: 'config/news_screenshot_queries.json'
     })))
   );
 }
@@ -1594,12 +1705,13 @@ function buildVideoMaterials(plan) {
       url: item.url,
       source: item.source
     }));
-  const searches = plan.web_search.video_queries.map((query, index) => bindAsset(plan, index, 'video_search', {
+  const searches = plan.web_search.video_queries.map((queryItem, index) => bindAsset(plan, index, 'video_search', {
     title: `视频检索 ${index + 1}`,
     asset_type: 'video',
     source_type: 'web_search',
-    query,
-    file: 'videos/web_search/video_search_queries.json'
+    query: queryText(queryItem),
+    ...queryAssetBinding(queryItem),
+    file: 'config/video_search_queries.json'
   }));
   return sources.concat(searches);
 }
@@ -1672,9 +1784,9 @@ function renderMaterialPackMarkdown(runId, upstream, materialPacks, packRoot) {
     '',
     '## 本轮标准',
     '',
-    '- Material 优先消费 `ReasoningSheet`；若未提供，则向后兼容旧 `ContentBrief`。',
-    '- 每个话题默认补：图表锚点、图片检索词、新闻截图检索词、视频检索词、AI 图像计划、Layer 5 交互交付计划。',
-    '- AI 图像默认包含：封面、信息图、连环画、梗图、搞笑漫画人物。',
+    '- Material 优先消费 `MaterialInput.material_plan` 与 `ReasoningSheet`，先确认素材服务哪条 Claim。',
+    '- 图表、图片、新闻截图、视频与生成图都必须有 `claim_id / section_id / usage_type` 绑定。',
+    '- AI 图像只作为 Claim 证明、结构解释或封面备选，不再默认补满装饰项。',
     '- 视频素材默认分两路：素材库原始链接 + 外网检索下载线索。',
     '- 视频质检默认：不设分辨率硬门槛，允许新闻直播/访谈，过滤口播自媒体，拦截截图拼视频。',
     '',
@@ -1689,6 +1801,7 @@ function renderMaterialPackMarkdown(runId, upstream, materialPacks, packRoot) {
     lines.push(`- 素材目录：\`${pack.asset_root}\``);
     lines.push(`- Layer 5 模板：\`${pack.layer5_delivery.template_id}\``);
     lines.push(`- Claim 绑定：${pack.claim_bindings.length} 条`);
+    lines.push(`- Claim-driven 素材计划：${pack.claim_asset_plan.length} 项`);
     lines.push(`- 图表锚点：${pack.materials.data_points.length} 个`);
     lines.push(`- 图片计划：${pack.materials.images.length} 项`);
     lines.push(`- 视频计划：${pack.materials.videos.length} 项`);
@@ -1705,6 +1818,7 @@ function renderMaterialReportMarkdown(runId, materialPacks, packRoot) {
   const layer5Topics = materialPacks.filter(item => item.layer5_delivery?.template_id).length;
   const totalComic = materialPacks.reduce((sum, item) => sum + (item.generated_visuals?.comic_storyboard?.length || 0), 0);
   const qualityPolicyTopics = materialPacks.filter(item => item.video_quality_policy).length;
+  const totalClaimAssetPlanItems = materialPacks.reduce((sum, item) => sum + (item.claim_asset_plan?.length || 0), 0);
 
   return [
     '# 第04环节 Material 报告',
@@ -1720,6 +1834,7 @@ function renderMaterialReportMarkdown(runId, materialPacks, packRoot) {
     `- 已生成 Layer 5 方案题目：${layer5Topics}`,
     `- 已生成连环画分镜：${totalComic} 张`,
     `- 已写入视频质检策略：${qualityPolicyTopics} 题`,
+    `- Claim-driven 素材计划：${totalClaimAssetPlanItems} 项`,
     `- AI 全文判材：${materialPacks.filter(item => item.coverage_notes.some(note => note.includes('final_doc_ai_reading'))).length} 题`,
     '',
     '## 当前判断',
@@ -1747,14 +1862,16 @@ function buildStageManifest(runId, upstream, materialPacks, packRoot) {
     upstream_entry: upstream.upstreamFile,
     upstream_files: upstream.upstreamFiles,
     pack_root: packRoot,
-    generation_basis: 'final_doc_ai_reading',
+    generation_basis: 'current_agent_local_material_planning',
     selected_topics: materialPacks.map(item => item.title),
+    material_plan_files: uniqueList(materialPacks.map(item => item.material_plan_file)),
     topic_types: materialPacks.map(item => ({
       topic_id: item.topic_id,
       topic_type: item.topic_type,
       layer5_template: item.layer5_delivery.template_id,
       video_quality_policy: item.video_quality_policy,
-      claim_bindings: item.claim_bindings.length
+      claim_bindings: item.claim_bindings.length,
+      claim_asset_plan_items: item.claim_asset_plan.length
     })),
     asset_counts: materialPacks.map(item => ({
       topic_id: item.topic_id,
@@ -1764,6 +1881,17 @@ function buildStageManifest(runId, upstream, materialPacks, packRoot) {
       reference_items: item.materials.references.length
     })),
     asset_binding_contract: ['claim_id', 'section_id', 'usage_type', 'relevance_score', 'editor_status'],
+    claim_asset_plan_contract: [
+      'plan_id',
+      'claim_id',
+      'section_id',
+      'asset_type',
+      'usage_type',
+      'need',
+      'source_queries',
+      'expected_outputs',
+      'source_quality'
+    ],
     quality_audit_expected_fields: [
       'source_category',
       'source_ok',

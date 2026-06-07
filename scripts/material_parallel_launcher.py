@@ -6,7 +6,7 @@
   python3 scripts/material_parallel_launcher.py \
     --draft-manifest " + str(Path(__file__).resolve().parents[1]) + "/tmp/upgrade_validation/draft/draft_manifest.json \
     --max-workers 3 \
-    --steps charts,image_search,video_search,ai_prep \
+    --steps charts,image_search,video_search,ai_prep,finalize \
     --video-download-limit 2
 """
 
@@ -38,7 +38,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--run-id", help="canonical run_id; resolve canonical material/draft manifests only")
     parser.add_argument("--topics", nargs="*", default=None, help="topic dir names, e.g. topic-6 topic-10")
     parser.add_argument("--max-workers", type=int, default=3, help="parallel workers")
-    parser.add_argument("--steps", default="charts,image_search,video_search,ai_prep", help="steps passed to executor")
+    parser.add_argument("--steps", default="charts,image_search,video_search,ai_prep,finalize", help="steps passed to executor")
     parser.add_argument("--video-download-limit", type=int, default=2, help="video download limit per topic")
     parser.add_argument("--layer5-only", action="store_true", help="only run layer5-only mode")
     parser.add_argument("--rebuild-material-plan", action="store_true", help="force rerunning Node material planner when using --draft-manifest")
@@ -105,16 +105,6 @@ def resolve_execution_entry(args: argparse.Namespace) -> tuple[Path, Path | None
     run_id = str(args.run_id).strip()
     if not run_id:
         raise SystemExit("run_id 不能为空")
-    material_manifest = canonical_manifest_path("material", run_id)
-    if material_manifest.exists():
-        pack_root = resolve_pack_root_from_material_manifest(material_manifest)
-        if pack_root:
-            draft_manifest = resolve_draft_manifest_from_material_manifest(material_manifest)
-            metadata["run_id"] = run_id
-            metadata["material_manifest"] = str(material_manifest)
-            metadata["draft_manifest"] = str(draft_manifest)
-            metadata["pack_root"] = str(pack_root)
-            return pack_root, draft_manifest, metadata
     draft_manifest = canonical_manifest_path("draft", run_id)
     ensure_stage_manifest(draft_manifest, "draft")
     pack_root, runtime_material_manifest = build_material_plan_from_draft_manifest(
@@ -123,7 +113,6 @@ def resolve_execution_entry(args: argparse.Namespace) -> tuple[Path, Path | None
     )
     metadata["run_id"] = run_id
     metadata["draft_manifest"] = str(draft_manifest)
-    metadata["material_manifest"] = str(canonical_manifest_path("material", run_id))
     metadata["runtime_material_manifest"] = str(runtime_material_manifest)
     metadata["pack_root"] = str(pack_root)
     return pack_root, draft_manifest, metadata

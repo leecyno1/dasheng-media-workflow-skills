@@ -1,9 +1,9 @@
 {
   "name": "dasheng-daily-postmortem",
   "version": "1.0.0",
-  "description": "Stage 7 Postmortem - 发布后复盘，反馈评分准确性，更新知识库",
+  "description": "Stage 5 Postmortem - 发布后复盘，反馈评分准确性，更新知识库",
   "stage": "postmortem",
-  "stage_number": 7,
+  "stage_number": 5,
   "runner": "python",
   "upstream_gate": "publish_manifest.json",
   "output_gate": null,
@@ -15,17 +15,17 @@
   "aliases": [
     "postmortem",
     "复盘",
-    "第七环节"
+    "第五环节"
   ],
   "dependencies": {
     "python": ">=3.10"
   },
   "inputs": {
     "required": [
-      "publish_manifest.json",
-      "rewrite_manifest.json"
+      "publish_manifest.json"
     ],
     "optional": [
+      "rewrite_manifest.json",
       "material_manifest.json"
     ]
   },

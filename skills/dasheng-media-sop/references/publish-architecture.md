@@ -12,19 +12,23 @@
 4. `Channel Execution`
 5. `Publish Guard`
 
-正式阶段顺序不变：
+正式阶段顺序：
 
-`intake -> brief -> draft -> material -> rewrite -> publish -> postmortem`
+`intake -> brief -> draft -> publish -> postmortem`
 
 `distribute` 的能力已并入 `publish`，不再单列正式阶段。
 
+`material` 和独立 `rewrite` 已退为按需工具，不再作为 publish 的上游 gate。
+
 ## 正式输入
 
-- `rewrite_manifest.json`
-- `material_manifest.json`
+- `draft_manifest.json`
+- `final_structure_snapshot.json`
 - `publish_decision.json`
 
 若缺少 `publish_decision.json`，`publish` 必须拒绝执行。
+
+兼容模式仍可读取旧 `rewrite_manifest.json` / `material_manifest.json`，但不得要求它们成为主链必需输入。
 
 ## 五层架构
 
@@ -55,14 +59,14 @@
 
 ### 2. Video Supplement
 
-发布前强制补两类视频：
+按渠道需要补两类视频。文字渠道不应因为未补视频而被阻塞：
 
 - `Chart Motion`
   - CSV / 表格 / 结构化数据
   - → `finance-motion-8787`
   - → `webm/mp4`
 - `Narrative Motion`
-  - 改写稿核心框架 + 关键数据
+  - 正文核心框架 + 关键数据
   - → motion / remotion 场景
   - → `webm/mp4`
 
@@ -73,7 +77,7 @@
 
 ### 3. Channel Adaptation
 
-这层负责把改写稿和视频转成“平台可发包”，不直接调用平台。
+这层负责把正文底稿和按需视频转成“平台可发包”，不直接调用平台。
 
 每个平台至少生成：
 

@@ -48,10 +48,10 @@ def main() -> None:
         "01_intake": Path(args.intake_dir) if args.intake_dir else None,
         "02_brief": Path(args.brief_dir) if args.brief_dir else None,
         "03_draft": Path(args.draft_dir) if args.draft_dir else None,
-        "04_rewrite": Path(args.rewrite_dir) if args.rewrite_dir else None,
-        "05_material": Path(args.material_dir) if args.material_dir else None,
-        "06_publish": Path(args.publish_dir) if args.publish_dir else None,
-        "07_postmortem": Path(args.postmortem_dir) if args.postmortem_dir else None,
+        "04_publish": Path(args.publish_dir) if args.publish_dir else None,
+        "05_postmortem": Path(args.postmortem_dir) if args.postmortem_dir else None,
+        "optional_material": Path(args.material_dir) if args.material_dir else None,
+        "optional_rewrite": Path(args.rewrite_dir) if args.rewrite_dir else None,
     }
 
     manifest: dict[str, dict[str, str | bool]] = {}
@@ -85,18 +85,18 @@ def main() -> None:
         "1. `intake`",
         "2. `brief`",
         "3. `draft`",
-        "4. `rewrite`",
-        "5. `material`（含补素材）",
-        "6. `publish`",
-        "7. `postmortem`",
+        "4. `publish`",
+        "5. `postmortem`",
+        "",
+        "按需工具：`material-refill`、`rewrite-variants`",
         "",
         stage_section("01 Intake", day_root / "01_intake", stages["01_intake"]),
         stage_section("02 Brief", day_root / "02_brief", stages["02_brief"]),
         stage_section("03 Draft", day_root / "03_draft", stages["03_draft"]),
-        stage_section("04 Rewrite", day_root / "04_rewrite", stages["04_rewrite"]),
-        stage_section("05 Material", day_root / "05_material", stages["05_material"]),
-        stage_section("06 Publish", day_root / "06_publish", stages["06_publish"]),
-        stage_section("07 Postmortem", day_root / "07_postmortem", stages["07_postmortem"]),
+        stage_section("04 Publish", day_root / "04_publish", stages["04_publish"]),
+        stage_section("05 Postmortem", day_root / "05_postmortem", stages["05_postmortem"]),
+        stage_section("Optional Material Refill", day_root / "optional_material", stages["optional_material"]),
+        stage_section("Optional Rewrite Variants", day_root / "optional_rewrite", stages["optional_rewrite"]),
     ]
     write_text(day_root / "00_今日交付导航.md", "\n".join(nav_lines).rstrip() + "\n")
     write_text(day_root / "delivery_manifest.json", json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")

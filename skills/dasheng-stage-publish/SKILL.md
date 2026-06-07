@@ -11,17 +11,21 @@ description: Use when entering the formal publish stage of Dasheng workflow to r
 
 正式阶段顺序：
 
-`intake -> brief -> draft -> material -> rewrite -> publish -> postmortem`
+`intake -> brief -> draft -> publish -> postmortem`
 
 `distribute` 已并入 `publish`，不再单列正式阶段。
 
+`material` 和独立 `rewrite` 已从主链删除；素材补充、多版本改写只作为按需工具。
+
 ## 正式输入
 
-- `rewrite_manifest.json`
-- `material_manifest.json`
+- `draft_manifest.json`
+- `final_structure_snapshot.json`
 - `publish_decision.json`
 
-缺少任一关键输入时，禁止执行。
+缺少 `draft_manifest.json` 或 `publish_decision.json` 时禁止执行；`final_structure_snapshot.json` 必须已确认后才能从统一 CLI 进入 publish。
+
+兼容模式可读取旧 `rewrite_manifest.json` / `material_manifest.json`，但它们不再是主链必需输入。
 
 若 `publish_decision.json` 已存在但字段不完整，当前 stage 会自动补齐最小默认矩阵：
 
@@ -46,6 +50,7 @@ description: Use when entering the formal publish stage of Dasheng workflow to r
 
 - `scripts/publish_video_supplement.py`
 - 外部参考：`dasheng-stage-publish-video`
+- 默认不强制生成视频；只有渠道要求视频或用户明确要求补视频时才进入视频补充。
 
 ### 公众号
 
@@ -118,7 +123,7 @@ description: Use when entering the formal publish stage of Dasheng workflow to r
 ## 强约束
 
 1. 没有 `publish_decision.json` 不得执行。
-2. 缺少视频补充产物时，视频平台包不得标记完成。
+2. 缺少视频补充产物时，视频平台包不得标记完成；文字渠道不能因此被阻塞。
 3. 微博短帖必须走 `Request -> Approve -> Execute`。
 4. 缺少正式执行器的平台只允许导出待人工发布包。
 5. 未经过 `Publish Guard` 验真，不得回报“已发布”。

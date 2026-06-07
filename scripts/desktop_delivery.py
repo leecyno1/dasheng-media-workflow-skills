@@ -95,11 +95,14 @@ def sync_draft_to_desktop(run_id: str, stage_dir: Path) -> Path:
     patterns = [
         "03_初稿_报告.md",
         "draft_manifest.json",
+        "draft_quality_gate.json",
         "final_structure_snapshot.json",
         "selected_topics_for_draft.json",
         "03_标准初稿_*.md",
+        "03_HTML草稿_*.html",
         "03_ReasoningSheet_*.md",
         "03_ReasoningSheet_*.json",
+        "03_质量门禁_*.json",
     ]
     for pattern in patterns:
         for src in sorted(stage_dir.glob(pattern)):
@@ -150,8 +153,8 @@ def sync_material_to_desktop(run_id: str, canonical_stage_dir: Path, runtime_mat
         runtime_material_dir / "04_MaterialPack.md",
         runtime_material_dir / "04_Material_报告.md",
         runtime_material_dir / "material-packs.json",
-        runtime_material_dir / "material_ai_inputs.json",
-        runtime_material_dir / "material_ai_decisions.json",
+        runtime_material_dir / "material_inputs.json",
+        runtime_material_dir / "material_decisions.json",
     ]:
         if src.exists():
             dst = run_root / f"{run_id}__{src.name}"
