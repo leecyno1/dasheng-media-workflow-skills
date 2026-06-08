@@ -35,7 +35,6 @@ def main() -> None:
     parser.add_argument("--brief-dir")
     parser.add_argument("--draft-dir")
     parser.add_argument("--rewrite-dir")
-    parser.add_argument("--material-dir")
     parser.add_argument("--publish-dir")
     parser.add_argument("--postmortem-dir")
     args = parser.parse_args()
@@ -50,7 +49,6 @@ def main() -> None:
         "03_draft": Path(args.draft_dir) if args.draft_dir else None,
         "04_publish": Path(args.publish_dir) if args.publish_dir else None,
         "05_postmortem": Path(args.postmortem_dir) if args.postmortem_dir else None,
-        "optional_material": Path(args.material_dir) if args.material_dir else None,
         "optional_rewrite": Path(args.rewrite_dir) if args.rewrite_dir else None,
     }
 
@@ -88,14 +86,13 @@ def main() -> None:
         "4. `publish`",
         "5. `postmortem`",
         "",
-        "按需工具：`material-refill`、`rewrite-variants`",
+        "按需工具：`rewrite-variants`",
         "",
         stage_section("01 Intake", day_root / "01_intake", stages["01_intake"]),
         stage_section("02 Brief", day_root / "02_brief", stages["02_brief"]),
         stage_section("03 Draft", day_root / "03_draft", stages["03_draft"]),
         stage_section("04 Publish", day_root / "04_publish", stages["04_publish"]),
         stage_section("05 Postmortem", day_root / "05_postmortem", stages["05_postmortem"]),
-        stage_section("Optional Material Refill", day_root / "optional_material", stages["optional_material"]),
         stage_section("Optional Rewrite Variants", day_root / "optional_rewrite", stages["optional_rewrite"]),
     ]
     write_text(day_root / "00_今日交付导航.md", "\n".join(nav_lines).rstrip() + "\n")

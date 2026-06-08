@@ -136,72 +136,13 @@ class MainlineHardeningTests(unittest.TestCase):
             stdout_payload = json.loads(proc.stdout)
             self.assertEqual(stdout_payload["html_files"], [str(html_file)])
 
-    def test_material_requires_final_structure_gate(self):
-        with project_tempdir() as tmpdir:
-            tmp = Path(tmpdir)
-            draft_manifest = tmp / "draft_manifest.json"
-            write_json(
-                draft_manifest,
-                {
-                    "run_id": "run-hardening-002",
-                    "stage": "draft",
-                    "drafts": [{"topic_id": "topic1"}],
-                },
-            )
-            proc = subprocess.run(
-                [
-                    PYTHON,
-                    str(ROOT / "scripts/material_execute_pack.py"),
-                    "--draft-manifest",
-                    str(draft_manifest),
-                ],
-                capture_output=True,
-                text=True,
-                check=False,
-            )
-            self.assertNotEqual(proc.returncode, 0)
-            self.assertIn("Final Structure Gate", proc.stderr or proc.stdout)
-
-    def test_rewrite_requires_final_structure_gate(self):
-        with project_tempdir() as tmpdir:
-            tmp = Path(tmpdir)
-            material_dir = tmp / "material"
-            source_root = tmp / "rewrite_source"
-            source_root.mkdir(parents=True, exist_ok=True)
-            write_json(
-                material_dir / "material_manifest.json",
-                {
-                    "run_id": "run-hardening-003",
-                    "stage": "material",
-                    "upstream": {},
-                    "pack_root": str(tmp / "pack_assets"),
-                },
-            )
-            write_json(
-                material_dir / "material_acceptance.json",
-                {
-                    "run_id": "run-hardening-003",
-                    "status": "approved",
-                    "topics": [{"topic_id": "topic1"}],
-                },
-            )
-            proc = subprocess.run(
-                [
-                    PYTHON,
-                    str(ROOT / "scripts/rewrite_rerun_with_final_structure.py"),
-                    "--material-manifest",
-                    str(material_dir / "material_manifest.json"),
-                    "--source-root",
-                    str(source_root),
-                    "--final-structure",
-                    str(tmp / "missing_final_structure.json"),
-                ],
-                capture_output=True,
-                text=True,
-                check=False,
-            )
-            self.assertNotEqual(proc.returncode, 0)
-            self.assertIn("Final Structure Gate", proc.stderr or proc.stdout)
+    def test_material_entrypoints_are_removed(self):
+        for rel_path in [
+            "scripts/material_execute_pack.py",
+            "scripts/material_parallel_launcher.py",
+            "skills/dasheng-daily-material/SKILL.md",
+        ]:
+            self.assertFalse((ROOT / rel_path).exists(), rel_path)
 
     def test_publish_requires_publish_decision_gate_from_draft_manifest(self):
         with project_tempdir() as tmpdir:
@@ -334,57 +275,6 @@ class MainlineHardeningTests(unittest.TestCase):
             self.assertNotEqual(proc.returncode, 0)
             self.assertIn("invalid choice", proc.stderr or proc.stdout)
 
-    def test_material_parallel_launcher_material_manifest_is_canonical_entry(self):
-        with project_tempdir() as tmpdir:
-            tmp = Path(tmpdir)
-            pack_root = tmp / "pack_assets"
-            (pack_root / "topic-1" / "config").mkdir(parents=True, exist_ok=True)
-            (pack_root / "topic-1" / "config" / "topic_config.json").write_text("{}", encoding="utf-8")
-
-            draft_manifest = tmp / "draft" / "draft_manifest.json"
-            material_manifest = tmp / "material" / "material_manifest.json"
-            write_json(draft_manifest, {"run_id": "run-hardening-005", "stage": "draft", "drafts": [{"topic_id": "t1"}]})
-            write_json(
-                material_manifest,
-                {
-                    "run_id": "run-hardening-005",
-                    "stage": "material",
-                    "upstream": {"draft_manifest": str(draft_manifest)},
-                    "pack_root": str(pack_root),
-                    "runtime_material_manifest": str(tmp / "runtime" / "material_manifest.json"),
-                },
-            )
-
-            with load_script_module("material_parallel_launcher_test", ROOT / "scripts/material_parallel_launcher.py") as module:
-                pack_root_result, draft_manifest_result, metadata = module.resolve_execution_entry(
-                    Namespace(
-                        draft_manifest=None,
-                        material_manifest=str(material_manifest),
-                        run_id=None,
-                        rebuild_material_plan=False,
-                    )
-                )
-
-            self.assertEqual(pack_root_result, pack_root.resolve())
-            self.assertEqual(draft_manifest_result, draft_manifest.resolve())
-            self.assertEqual(metadata["material_manifest"], str(material_manifest.resolve()))
-            self.assertEqual(metadata["draft_manifest"], str(draft_manifest.resolve()))
-
-    def test_material_parallel_launcher_no_longer_accepts_pack_root_flag(self):
-        proc = subprocess.run(
-            [
-                PYTHON,
-                str(ROOT / "scripts/material_parallel_launcher.py"),
-                "--pack-root",
-                "/tmp/fake-pack-root",
-            ],
-            capture_output=True,
-            text=True,
-            check=False,
-        )
-        self.assertNotEqual(proc.returncode, 0)
-        self.assertIn("--pack-root", proc.stderr or proc.stdout)
-
     def test_publish_supports_flat_rewrite_manifest_topics(self):
         with project_tempdir() as tmpdir:
             tmp = Path(tmpdir)
@@ -418,37 +308,6 @@ class MainlineHardeningTests(unittest.TestCase):
             self.assertEqual(topics[0].topic_id, "topic-flat-1")
             self.assertEqual(topics[0].topic_name, "扁平改写测试")
             self.assertEqual(topics[0].rewrite_source.resolve(), normal_file.resolve())
-
-    def test_publish_resolves_material_dir_from_manifest_topics(self):
-        with project_tempdir() as tmpdir:
-            tmp = Path(tmpdir)
-            pack_root = tmp / "pack_assets"
-            assets_dir = pack_root / "中文素材目录"
-            assets_dir.mkdir(parents=True, exist_ok=True)
-
-            material_manifest = {
-                "run_id": "run-hardening-007",
-                "stage": "material",
-                "pack_root": str(pack_root),
-                "topics": [
-                    {
-                        "topic_id": "topic-flat-2",
-                        "title": "素材映射测试",
-                        "assets_dir": str(assets_dir),
-                    }
-                ],
-            }
-
-            with load_script_module("publish_video_material_test", ROOT / "scripts/publish_video_supplement.py") as module:
-                topic = module.RewriteTopicSource(
-                    topic_id="topic-flat-2",
-                    topic_name="素材映射测试",
-                    topic_prefix="topic_flat_2",
-                    rewrite_source=tmp / "dummy.md",
-                )
-                resolved = module.resolve_material_pack_topic_dir(material_manifest, topic, pack_root)
-
-            self.assertEqual(resolved.resolve(), assets_dir.resolve())
 
     def test_publish_builds_channel_manifests_with_pending_execution_status(self):
         with project_tempdir() as tmpdir:
@@ -511,7 +370,6 @@ class MainlineHardeningTests(unittest.TestCase):
                 outputs = module.build_publish_stage_outputs(
                     run_id="run-hardening-008",
                     rewrite_manifest_path=tmp / "rewrite_manifest.json",
-                    material_manifest_path=tmp / "material_manifest.json",
                     publish_decision_path=tmp / "publish_decision.json",
                     rewrite_manifest=rewrite_manifest,
                     publish_decision=publish_decision,
@@ -575,7 +433,6 @@ class MainlineHardeningTests(unittest.TestCase):
                 outputs = module.build_publish_stage_outputs(
                     run_id="run-hardening-draft-publish",
                     rewrite_manifest_path=draft_manifest_path,
-                    material_manifest_path=None,
                     publish_decision_path=tmp / "publish_decision.json",
                     rewrite_manifest=publish_manifest,
                     publish_decision=decision,
@@ -590,7 +447,7 @@ class MainlineHardeningTests(unittest.TestCase):
             channel_pack = outputs["adaptation_manifest"]["topics"][0]["channel_packs"][0]
             self.assertEqual(channel_pack["variant"], "draft_publish")
             self.assertEqual(Path(channel_pack["variant_file"]).resolve(), draft_file.resolve())
-            self.assertIsNone(outputs["publish_manifest"]["material_manifest"])
+            self.assertNotIn("material_manifest", outputs["publish_manifest"])
 
     def test_publish_can_load_existing_topic_video_manifests(self):
         with project_tempdir() as tmpdir:
@@ -614,34 +471,23 @@ class MainlineHardeningTests(unittest.TestCase):
             self.assertEqual(manifests[0]["topic_id"], "topic-demo")
             self.assertEqual(manifests[0]["topic_video_manifest"], str(topic_dir / "topic_video_manifest.json"))
 
-    def test_build_for_topic_sets_topic_video_manifest_path(self):
+    def test_build_minimal_topic_manifest_sets_topic_video_manifest_path(self):
         with project_tempdir() as tmpdir:
             tmp = Path(tmpdir)
             rewrite_file = tmp / "rewrite.md"
             rewrite_file.write_text("## 一\n\n这是一段测试内容 123%。", encoding="utf-8")
-            topic_dir = tmp / "pack"
-            (topic_dir / "charts" / "csv").mkdir(parents=True, exist_ok=True)
             output_root = tmp / "out"
 
             with load_script_module("publish_build_topic_manifest_test", ROOT / "scripts/publish_video_supplement.py") as module:
-                prototypes = module.load_prototypes()
-                original_run_export = module.run_export
-                module.run_export = lambda deck_path, out_dir: {"ok": True, "command": "stub", "stdout": "", "stderr": "", "returncode": 0, "timed_out": False}
-                try:
-                    result = module.build_for_topic(
-                        module.RewriteTopicSource(
-                            topic_id="topic-demo",
-                            topic_name="测试题",
-                            topic_prefix="topic_demo",
-                            rewrite_source=rewrite_file,
-                        ),
-                        topic_dir,
-                        topic_dir,
-                        output_root,
-                        prototypes,
-                    )
-                finally:
-                    module.run_export = original_run_export
+                result = module.build_minimal_topic_manifest(
+                    module.RewriteTopicSource(
+                        topic_id="topic-demo",
+                        topic_name="测试题",
+                        topic_prefix="topic_demo",
+                        rewrite_source=rewrite_file,
+                    ),
+                    output_root,
+                )
 
             self.assertTrue(result["topic_video_manifest"].endswith("topic_video_manifest.json"))
             self.assertTrue(Path(result["topic_video_manifest"]).exists())
@@ -649,11 +495,6 @@ class MainlineHardeningTests(unittest.TestCase):
     def test_publish_autofill_default_channel_matrix(self):
         with project_tempdir() as tmpdir:
             tmp = Path(tmpdir)
-            assets_dir = tmp / "pack_assets" / "topic_demo"
-            assets_dir.mkdir(parents=True, exist_ok=True)
-            cover = assets_dir / "01_cover.jpg"
-            cover.write_text("fake", encoding="utf-8")
-
             rewrite_manifest = {
                 "run_id": "run-hardening-009",
                 "topics": [
@@ -664,18 +505,6 @@ class MainlineHardeningTests(unittest.TestCase):
                             {"variant": "wechat_luxun_hot", "file": str(tmp / "wechat.md")},
                             {"variant": "xhs_video_luxun_hot", "file": str(tmp / "xhs.md")},
                         ],
-                    }
-                ],
-            }
-            material_manifest = {
-                "run_id": "run-hardening-009",
-                "topics": [
-                    {
-                        "topic_id": "topic-demo",
-                        "assets_dir": str(assets_dir),
-                        "assets": {
-                            "images": [{"file": "01_cover.jpg"}],
-                        },
                     }
                 ],
             }
@@ -690,7 +519,6 @@ class MainlineHardeningTests(unittest.TestCase):
                 filled, changed = module.autofill_publish_decision(
                     publish_decision=publish_decision,
                     rewrite_manifest=rewrite_manifest,
-                    material_manifest=material_manifest,
                 )
 
             self.assertTrue(changed)
@@ -700,7 +528,7 @@ class MainlineHardeningTests(unittest.TestCase):
                 ["wechat_article", "weibo_post", "x_post", "xiaohongshu_video", "douyin_video", "bilibili_video"],
             )
             self.assertEqual(row["title_candidates"], ["测试发布默认矩阵"])
-            self.assertEqual(row["cover_candidates"], [str(cover)])
+            self.assertNotIn("cover_candidates", row)
             self.assertEqual(row["editor_status"], "auto_filled_publish_defaults")
 
     def test_publish_autofill_extends_legacy_auto_default_channels(self):
@@ -717,7 +545,6 @@ class MainlineHardeningTests(unittest.TestCase):
                 }
             ],
         }
-        material_manifest = {"run_id": "run-hardening-010", "topics": []}
         publish_decision = {
             "run_id": "run-hardening-010",
             "gate": "Channel Gate",
@@ -736,7 +563,6 @@ class MainlineHardeningTests(unittest.TestCase):
             filled, changed = module.autofill_publish_decision(
                 publish_decision=publish_decision,
                 rewrite_manifest=rewrite_manifest,
-                material_manifest=material_manifest,
             )
 
         self.assertTrue(changed)
@@ -810,13 +636,6 @@ class MainlineHardeningTests(unittest.TestCase):
             ["openclaw", "skill", "xiaohongshu-auto", "publish", "--title", "执行器调用测试", "--content-file", "/tmp/demo-xhs.md", "--video", "/tmp/demo.mp4"],
         )
         self.assertEqual(executions["zhihu_post"]["executor_invocation"]["type"], "browser_procedure")
-
-    def test_material_manifest_exposes_material_skill_stack(self):
-        with load_script_module("material_skill_stack_test", ROOT / "scripts/material_execute_pack.py") as module:
-            stack = module.MATERIAL_SKILL_STACK
-        self.assertIn("evidence_search", stack)
-        self.assertTrue(any(item["skill"] == "baoyu-image-gen" for item in stack["visual_generation"]))
-
 
 if __name__ == "__main__":
     unittest.main()

@@ -173,7 +173,7 @@ def provider_summary() -> dict[str, Any]:
             timeout_keys=["PHASE3_AI_TIMEOUT_SECONDS", "DRAFT_AI_TIMEOUT_SECONDS"],
         )),
         "optional_tools": {
-            "material_refill": "retired_from_mainline",
+            "draft_assets": "charts_images_and_data_are_generated_in_draft",
             "rewrite_variants": "merged_into_draft_or_on_demand",
         },
     }

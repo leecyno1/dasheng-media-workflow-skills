@@ -41,7 +41,7 @@
 | 04 Publish | 基于 draft 和发布决策生成渠道包并执行分发 | `dasheng-stage-publish` | `scripts/publish_video_supplement.py` + 渠道发布 skill | 发布包、发布时间、渠道成品、验真报告 |
 | 05 Postmortem | 回收发布数据并修正模型 | `dasheng-daily-postmortem` | `scripts/postmortem_writeback.py` | 复盘报告、知识库更新 |
 
-按需工具：`dasheng-daily-material` 只在需要补素材、封面、图表、视频素材时调用；`dasheng-stage-rewrite-v3` 只在需要额外多版本改写时调用。二者不再是正式主链阶段，也不得阻塞 Publish。
+独立素材环节已删除；数据、图表、配图和 HTML 嵌入都在 Draft 内完成。`dasheng-stage-rewrite-v3` 只在需要额外多版本改写时调用，不得阻塞 Publish。
 
 ## 可选前置能力：范式学习
 
@@ -50,7 +50,7 @@
 - **放在 Brief 前**：把样本文章提炼成选题适配规则、叙事角度、章节骨架、论证推进方式，帮助后续题卡直接匹配“该用哪种写法”。
 - **作用到 Draft**：标准初稿可采用范式的结构骨架和论证顺序，但不得提前注入作者口吻、情绪词或平台包装。
 - **作用到 Publish**：把同一内容按公众号、小红书、短视频脚本、社群帖等渠道拆成不同呈现框架。
-- **按需工具**：Material / Rewrite 只在具体缺口出现时调用，不单列为正式阶段。
+- **按需工具**：Rewrite 只在具体渠道变体缺口出现时调用，不单列为正式阶段。
 
 推荐对象链补充为：
 
@@ -145,10 +145,7 @@
 - 阶段 4 Publish：`引擎/03_全链路SOP工作流/07_渠道分发_prompt.md`
 - 阶段 4 模板：`引擎/03_全链路SOP工作流/07_渠道分发模板.md`
 - 阶段 5 Postmortem：`引擎/03_全链路SOP工作流/08_分析复盘_prompt.md`
-- 按需素材工具：`引擎/03_全链路SOP工作流/04_素材收集_prompt.md`
 - 按需多版本改写工具：`引擎/03_全链路SOP工作流/06_改写_prompt.md`
-- 按需 Layer 5 输入规范：`引擎/03_全链路SOP工作流/05_5_Layer5输入规范_FinanceMotionDeck.md`
-- 按需 Layer 5 输出规范：`引擎/03_全链路SOP工作流/05_5_Layer5输出规范_FinanceMotionDeck.md`
 - 阶段接口说明：`引擎/03_全链路SOP工作流/STAGE_INTERFACES.md`
 
 ## 执行硬规则

@@ -25,8 +25,7 @@
       "publish_manifest.json"
     ],
     "optional": [
-      "rewrite_manifest.json",
-      "material_manifest.json"
+      "rewrite_manifest.json"
     ]
   },
   "outputs": {

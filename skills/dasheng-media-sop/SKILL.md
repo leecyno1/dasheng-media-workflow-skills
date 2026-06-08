@@ -19,7 +19,7 @@ description: Use when running, resuming, auditing, or updating the Dasheng self-
 
 `distribute` 不再单列为正式阶段；平台适配与分发动作并入 `publish`。
 
-`material` 和独立 `rewrite` 已从正式主链删除。补素材、封面、图表、多版本改写仍可作为按需工具调用，但不得再作为默认 gate 阻塞主流程。
+独立素材环节已删除。数据、图表、配图和 HTML 嵌入由 Draft 负责；多版本改写仍可作为按需工具调用，但不得作为默认 gate 阻塞主流程。
 
 ## 何时使用
 
@@ -37,7 +37,7 @@ description: Use when running, resuming, auditing, or updating the Dasheng self-
 - 文档只是交付视图，不是唯一状态源；状态源以本地 manifest + gate 为准。
 - 阶段 1-3 直接形成可发布底稿，不把内部流程统计当正文论据。
 - `ParadigmProfile` 与 `Style DNA` 必须分离：前者控制结构范式、场景适配和渠道框架；后者控制作者口吻、语言节奏和表达习惯。
-- 补素材只作为 draft/publish 的按需工具，不能扩大成独立阶段。
+- 数据、图表和配图都在 Draft 内完成，不能扩大成独立阶段。
 - 多版本改写并入 draft/publish 的渠道适配，不再单独设置阶段。
 - `publish` 负责 `Channel Gate -> Video Supplement -> Channel Adaptation -> Channel Execution -> Publish Guard` 五层闭环。
 - 所有发布动作都必须绑定正式平台执行 skill，不允许把"生成了文案/视频"误报为"已发布"。

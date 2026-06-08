@@ -49,7 +49,7 @@
 - 常见输入：发布链接、平台数据、人工反馈。
 - 交付：`08_复盘报告.md`、`08_L1回写建议.md`、`postmortem_manifest.json`
 
-## 按需工具：Material / Rewrite
+## 按需工具：Rewrite
 
-- `material-refill`：只在正文确实缺图表、封面、图片、视频素材时调用，不能阻塞文字发布主链。
+- 独立素材环节已删除；图表、封面、图片、数据和 HTML 嵌入都在 Draft 内完成。
 - `rewrite-variants`：只在需要额外多版本稿时调用；常规渠道适配交给 Publish 处理。

@@ -78,7 +78,6 @@ python3 scripts/build_paradigm_profile.py sample.md --run-id 2026-05-06_120000 -
 - Draft：继承章节骨架、论证顺序、信息密度，但不注入文风和平台腔。
 - Rewrite：与 Style DNA 组合，范式管结构，DNA 管表达。
 - Publish：按渠道拆成不同发布框架。
-- Material：不接入。素材阶段只补证据和资产，不改变范式。
 
 ## 输出契约
 

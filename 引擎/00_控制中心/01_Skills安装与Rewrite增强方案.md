@@ -54,7 +54,7 @@
 - `wechat-draft-writer`
   - 来源：本地 `clawd/wechat-skills`
   - 安装位置：`/Users/lichengyin/.codex/skills/wechat-draft-writer`
-  - 用途：基于 Brief / Material / confirmed outline / 风格 DNA 生成公众号高保真初稿
+  - 用途：基于 Brief / Draft / confirmed outline / 风格 DNA 生成公众号高保真初稿
 
 - `wechat-multi-publisher`
   - 来源：本地 `OpenClaw` skill
@@ -84,7 +84,7 @@
 - `wechat-topic-outline-planner`
   - 来源：本地 `clawd/wechat-skills`
   - 安装位置：`/Users/lichengyin/.codex/skills/wechat-topic-outline-planner`
-  - 用途：基于 Brief / Material 规划公众号文章大纲
+  - 用途：基于 Brief / Draft 规划公众号文章大纲
 
 - `md2wechat`
   - 来源：`geekjourneyx/md2wechat-skill`
@@ -100,7 +100,7 @@
    - 价值：这是公众号 rewrite 能否“像”的前置资产，不是可选项
 
 2. `wechat-topic-outline-planner`
-   - 作用：把 Brief / Material 压成公众号可写大纲
+   - 作用：把 Brief / Draft 压成公众号可写大纲
    - 价值：如果前序大纲不是公众号导向，它能显著降低 rewrite 返工
 
 3. `wechat-draft-writer`

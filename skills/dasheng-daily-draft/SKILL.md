@@ -94,5 +94,5 @@ python3 scripts/build_stage3_draft.py \
 - 不得把多个选题混成一篇
 - 不得编造不存在的来源、数据和机构表态
 - `final_structure_snapshot.json` 确认后可直接进入 publish
-- 补素材、封面、图表、多版本改写只作为按需工具，不再是主链阶段
-- 不新增隐藏的 Material AI provider；真实搜索、取数、配图生成由当前 Agent 在 Draft 内完成
+- 数据、图表、配图和 HTML 嵌入必须由 Draft 内完成
+- 多版本改写只作为按需工具，不再是主链阶段

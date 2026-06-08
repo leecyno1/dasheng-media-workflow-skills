@@ -216,7 +216,7 @@ def test_evidence_pattern_extraction():
 
 def test_visual_pattern_extraction():
     """测试：视觉模式提取"""
-    material_manifest = {
+    draft_asset_manifest = {
         "topics": [
             {
                 "topic_id": "topic-001",
@@ -240,7 +240,7 @@ def test_visual_pattern_extraction():
 
     # 提取模式
     patterns = []
-    for topic in material_manifest["topics"]:
+    for topic in draft_asset_manifest["topics"]:
         for asset in topic["assets"]:
             if asset.get("editor_status") == "approved" and asset.get("relevance_score", 0) >= 0.8:
                 patterns.append({

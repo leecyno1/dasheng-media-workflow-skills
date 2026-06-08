@@ -378,7 +378,7 @@ def build_ai_draft_prompts(card: dict[str, Any], reasoning: dict[str, Any]) -> t
 - 引用外部数据或观点时，使用 {{ref:}} 标注来源
 - 提到具体案例或报告时，使用 {{link:}} 标注（如果有URL）
 
-这些锚点标注会进入 Draft HTML 和 manifest，供编辑、发布或按需补素材时直接定位。
+这些锚点标注会进入 Draft HTML 和 manifest，供编辑、发布或人工补证据时直接定位。
 """
 
     user_prompt = f"""请生成一篇标准初稿，要求如下：
@@ -866,7 +866,7 @@ def main() -> None:
             "status": "pending_editor_review",
             "instructions": [
                 "编辑完成标准稿修订后，在本文件写入最终保留的一级/二级结构。",
-                "确认后可直接进入 publish；补素材和多版本改写仅作为按需工具，不再是主链 gate。",
+                "确认后可直接进入 publish；数据、图表和配图缺口必须在 Draft 内处理，多版本改写仅作为按需工具。",
             ],
             "topics": [
                 {
@@ -937,7 +937,7 @@ def main() -> None:
             },
             "integrated_capabilities": {
                 "rewrite": "merged_into_draft_or_on_demand",
-                "material_refill": "optional_tool_only",
+                "assets": "generated_inside_draft",
             },
             "next_stage": "publish",
         },

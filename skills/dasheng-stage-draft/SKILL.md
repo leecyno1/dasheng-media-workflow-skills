@@ -51,7 +51,7 @@ Stage 3 Draft 是大声自媒体创作工作台的核心写作阶段，负责将
 - `draft_quality_gate.json` - 文字洁癖 / 质量门禁汇总
 
 ### 结构化数据
-- `03_ReasoningSheet_<topic>.json` - 论证结构JSON（供按需素材补充绑定 claim）
+- `03_ReasoningSheet_<topic>.json` - 论证结构JSON（供 Draft 资产绑定 claim）
 - `03_质量门禁_<topic>.json` - 单篇初稿质量门禁
 - `03_DraftAssets_<topic>.json` - Draft 内已嵌入图表与配图规格（`chart_specs` / `image_specs`）
 
@@ -143,13 +143,13 @@ Draft阶段支持人工+AI迭代循环：
 
 如果 Intake 阶段存在相关主题的文章或视频链接，须附在初稿末尾，供编辑回看和拓展思路。
 
-Draft 阶段如需真实数据、图表或配图，由当前运行 Agent 主动搜索、核验、生成并嵌入 HTML；不得新增隐藏的 Material AI provider，也不得把图表计划留给不存在的下游阶段。
+Draft 阶段如需真实数据、图表或配图，由当前运行 Agent 主动搜索、核验、生成并嵌入 HTML；不得把图表计划留给不存在的下游阶段。
 金融行情、指数走势、个股对比、跨资产市场数据、中国宏观/地产、经济日历统计图优先使用 `dasheng-finance-data` 生成 `chart_specs`，避免手写行情或宏观数据。
 
 ## 下游阶段
 
 - **Next Stage**: `dasheng-stage-publish`
-- **Optional Tools**: material refill / rewrite variants（按需调用，不作为主链 gate）
+- **Optional Tools**: rewrite variants（按需调用，不作为主链 gate）
 
 ## 技术实现
 

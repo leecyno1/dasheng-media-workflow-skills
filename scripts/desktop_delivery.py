@@ -133,36 +133,3 @@ def sync_rewrite_to_desktop(run_id: str, stage_dir: Path) -> Path:
             exported.append(str(dst))
     _write_manifest(run_root, "rewrite", exported)
     return run_root
-
-
-def sync_material_to_desktop(run_id: str, canonical_stage_dir: Path, runtime_material_dir: Path, pack_root: Path) -> Path:
-    run_root = ensure_run_root(run_id)
-    _remove_existing(
-        run_root,
-        [
-            f"{run_id}__04_Material*",
-            f"{run_id}__05_Material*",
-            f"{run_id}__material*",
-            "material__desktop_export_manifest.json",
-        ],
-    )
-    exported: list[str] = []
-    for src in [
-        canonical_stage_dir / "material_manifest.json",
-        canonical_stage_dir / "material_acceptance.json",
-        runtime_material_dir / "04_MaterialPack.md",
-        runtime_material_dir / "04_Material_报告.md",
-        runtime_material_dir / "material-packs.json",
-        runtime_material_dir / "material_inputs.json",
-        runtime_material_dir / "material_decisions.json",
-    ]:
-        if src.exists():
-            dst = run_root / f"{run_id}__{src.name}"
-            _copy_file(src, dst)
-            exported.append(str(dst))
-    for topic_dir in sorted([item for item in pack_root.iterdir() if item.is_dir()]):
-        dst = run_root / f"{run_id}__material__{topic_dir.name}"
-        _copy_dir(topic_dir, dst)
-        exported.append(str(dst))
-    _write_manifest(run_root, "material", exported)
-    return run_root

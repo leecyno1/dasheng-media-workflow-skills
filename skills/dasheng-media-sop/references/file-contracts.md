@@ -33,13 +33,8 @@
 
 ## 按需素材回填接口
 
-- Draft 正文可保留标准锚点，或至少保留稳定章节位置。
-- 只有用户明确要求补素材、或 Publish 渠道缺少必要素材时，才调用 `material-refill`。
-- `material-refill` 应产出真实图片、图表、表格、数据图。
-- 回填优先顺序：
-  1. 直接回填到飞书终稿文档对应锚点或章节位置
-  2. 同步更新 `05_MaterialPack`
-  3. 在群消息中说明本轮已回填 / 待人工筛选项
+- Draft 正文必须保留稳定章节位置，并在 HTML 内完成真实图片、图表、表格和数据图嵌入。
+- 若 Draft 缺少必要资产，`draft_manifest.status` 必须标记为 `incomplete_assets`，不得把缺口留给独立素材环节。
 
 ## 发布前审核门
 
@@ -48,7 +43,7 @@
   - 飞书群已发送审阅消息
   - `final_structure_snapshot.json` 已确认
   - `publish_decision.json` 已确认标题、封面、路由、发布时间
-  - 若渠道需要视频或封面，相关素材补充已完成并落盘：
+  - 若渠道需要视频补充，相关发布补充产物已完成并落盘：
     - `publish_video_supplement_report.md`
     - `publish_video_supplement_manifest.json`
 

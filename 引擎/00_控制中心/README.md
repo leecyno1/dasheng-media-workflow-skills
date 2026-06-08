@@ -13,9 +13,8 @@
 2. `brief`
 3. `draft`
 4. `rewrite`
-5. `material`（含补素材）
-6. `publish`
-7. `postmortem`
+5. `publish`
+6. `postmortem`
 
 ## 固定规则
 

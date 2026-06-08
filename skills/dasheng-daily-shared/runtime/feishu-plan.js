@@ -10,7 +10,7 @@ const PROJECT_ROOT = path.resolve(__dirname, '..', '..', '..');
 const OUTPUT_ROOT = path.join(PROJECT_ROOT, '产物');
 const CONFIG_FILE = path.join(PROJECT_ROOT, 'configs', 'feishu', 'stage_review_contract.json');
 
-const STAGE_SEQUENCE = ['intake', 'brief', 'draft', 'material', 'rewrite', 'publish', 'postmortem'];
+const STAGE_SEQUENCE = ['intake', 'brief', 'draft', 'rewrite', 'publish', 'postmortem'];
 
 const STAGE_META = {
   intake: {
@@ -33,14 +33,7 @@ const STAGE_META = {
     roots: [path.join(OUTPUT_ROOT, '05_初稿生成')],
     mainPatterns: [/03_标准初稿_.*\.md$/, /04_标准初稿_.*\.md$/, /05_标准初稿_.*\.md$/, /03_标准初稿\.md$/],
     reportPatterns: [/03_初稿_报告\.md$/, /04_初稿_报告\.md$/, /05_初稿生成_报告\.md$/],
-    excludeMainPatterns: [/已回填素材/]
-  },
-  material: {
-    folderName: '04_素材收集',
-    displayName: '素材收集',
-    roots: [path.join(OUTPUT_ROOT, '04_素材收集'), path.join(OUTPUT_ROOT, '03_素材收集')],
-    mainPatterns: [/05_MaterialPack\.md$/, /04_MaterialPack\.md$/, /03_MaterialPack\.md$/],
-    reportPatterns: [/05_Material_报告\.md$/, /04_Material_报告\.md$/, /03_Material_报告\.md$/]
+    excludeMainPatterns: []
   },
   rewrite: {
     folderName: '05_改写稿',
@@ -179,7 +172,6 @@ function discoverStageArtifacts(stage, runId, runDate) {
 
   const candidateDirs = unique([
     ...ensureArray(meta.roots).flatMap(root => collectCandidateDirs(root, runId, runDate)),
-    stage === 'material' ? path.join(BASE_DIR, 'runs', runId, 'artifacts', 'material') : null,
     stage === 'brief' ? path.join(BASE_DIR, 'runs', runId, 'artifacts', 'phase2') : null
   ]).filter(dir => fs.existsSync(dir) && fs.statSync(dir).isDirectory());
 
@@ -187,12 +179,8 @@ function discoverStageArtifacts(stage, runId, runDate) {
   const mainFiles = sortPathsNewest(filterFiles(candidateFiles, meta.mainPatterns, meta.excludeMainPatterns || []));
   const reportFiles = sortPathsNewest(filterFiles(candidateFiles, meta.reportPatterns, []));
   const manifestFiles = sortPathsNewest(candidateFiles.filter(file => /manifest\.json$/i.test(file)));
-  const assetRoot = stage === 'material'
-    ? unique(candidateDirs.map(dir => path.join(dir, 'pack_assets')).filter(dir => fs.existsSync(dir)))
-    : [];
-  const assetManifestFiles = stage === 'material'
-    ? sortPathsNewest(candidateFiles.filter(file => /pack_assets_manifest\.json$/i.test(file)))
-    : [];
+  const assetRoot = [];
+  const assetManifestFiles = [];
 
   return {
     stage,
@@ -255,7 +243,6 @@ function defaultManualReview(stage) {
     intake: ['删除噪音条目', '补充漏掉的原始链接', '修正去留建议'],
     brief: ['确认 8-10 个候选题优先级', '强制加入人工指定题', '删改单题结构骨架'],
     draft: ['删减冗余段落', '调整论证顺序', '修正事实或口径'],
-    material: ['筛掉弱证据与低质素材', '确认关键锚点已回填', '标出待替换 / 待确认项'],
     rewrite: ['确认结构继承是否正确', '确认渠道风格是否匹配', '保留或删去 CTA'],
     publish: ['确认标题、封面与发布时间', '确认渠道矩阵与素材齐备状态'],
     postmortem: ['修正结论口径', '确认是否回写知识库', '确认继续 / 停止 / 测试动作']
@@ -437,48 +424,7 @@ function buildFeishuSyncPlan(runId) {
   });
 
   const uploadActions = [];
-  const materialDiscovery = stageDiscovery.material;
-  if (config.material_folder?.upload_required && materialDiscovery?.asset_roots?.length) {
-    uploadActions.push({
-      action_type: 'upload',
-      key: 'upload:material:assets',
-      stage: 'material',
-      title: config.material_folder.name_pattern?.replace('YYYY-MM-DD', runDate) || `${runDate}_素材包`,
-      folder_key: 'folder:material',
-      source_path: materialDiscovery.asset_roots[0],
-      manifest_file: materialDiscovery.asset_manifest_files[0] || null,
-      description: '上传 Material 阶段素材包目录到飞书日期文件夹'
-    });
-  }
-
-  const refillActions = [];
-  const refillTargetStage = config.rewrite_refill?.target_stage || 'draft';
-  const refillDocs = docActions.filter(action => action.stage === refillTargetStage && action.role === 'main');
-  if (config.rewrite_refill?.enabled && refillDocs.length) {
-    refillDocs.forEach((docAction, index) => {
-      refillActions.push({
-        action_type: 'refill',
-        key: `refill:${refillTargetStage}:material:${index + 1}`,
-        stage: 'material',
-        title: `${refillTargetStage} 文档素材回填`,
-        target_doc_key: docAction.key,
-        upload_key: uploadActions[0]?.key || null,
-        asset_manifest_file: materialDiscovery?.asset_manifest_files?.[0] || null,
-        fill_types: ensureArray(config.rewrite_refill.fill_types),
-        pending_marker: config.rewrite_refill.pending_marker || '待替换 / 待确认',
-        refill_policy: {
-          clear_before_refill: Boolean(config.rewrite_refill.clear_before_refill),
-          clear_headings: ensureArray(config.rewrite_refill.clear_headings),
-          table_max_preview_rows: Number.isInteger(config.rewrite_refill.table_max_preview_rows)
-            ? config.rewrite_refill.table_max_preview_rows
-            : 12
-        },
-        anchors: extractRewriteAnchors(docAction.content)
-      });
-    });
-  }
-
-  const actions = [...folderActions, ...docActions, ...messageActions, ...uploadActions, ...refillActions];
+  const actions = [...folderActions, ...docActions, ...messageActions, ...uploadActions];
 
   return {
     run_id: runId,
@@ -493,7 +439,6 @@ function buildFeishuSyncPlan(runId) {
     docs: docActions,
     messages: messageActions,
     uploads: uploadActions,
-    refills: refillActions,
     actions
   };
 }

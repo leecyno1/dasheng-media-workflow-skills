@@ -18,7 +18,7 @@
 
 `distribute` 的能力已并入 `publish`，不再单列正式阶段。
 
-`material` 和独立 `rewrite` 已退为按需工具，不再作为 publish 的上游 gate。
+独立素材环节已删除；独立 `rewrite` 已退为按需工具，不再作为 publish 的上游 gate。
 
 ## 正式输入
 
@@ -28,7 +28,7 @@
 
 若缺少 `publish_decision.json`，`publish` 必须拒绝执行。
 
-兼容模式仍可读取旧 `rewrite_manifest.json` / `material_manifest.json`，但不得要求它们成为主链必需输入。
+兼容模式仍可读取旧 `rewrite_manifest.json`，但不得要求它成为主链必需输入。
 
 ## 五层架构
 
@@ -234,7 +234,7 @@
 ## 强约束
 
 1. 不允许恢复独立 `distribute` 正式阶段。
-2. 不允许通过旧目录猜测 `rewrite` 或 `material` 输入。
+2. 不允许通过旧目录猜测 `rewrite` 输入。
 3. 不允许没有 `publish_decision.json` 就执行发布。
 4. 不允许没有验真就向用户汇报“已发布”。
 5. 不允许把缺少正式执行器的平台伪装为自动发布完成。

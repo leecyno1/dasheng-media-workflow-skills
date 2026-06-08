@@ -20,9 +20,7 @@
       "draft_manifest.json",
       "final_structure_snapshot.json"
     ],
-    "optional": [
-      "material_manifest.json"
-    ]
+    "optional": []
   },
   "outputs": {
     "documents": [

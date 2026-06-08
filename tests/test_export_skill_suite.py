@@ -28,7 +28,7 @@ class ExportSkillSuiteTests(unittest.TestCase):
             self.assertTrue((export_root / "skills" / "dasheng-paradigm-profiler" / "config.json").exists())
             self.assertTrue((export_root / "skills" / "dasheng-stage-publish" / "SKILL.md").exists())
             self.assertTrue((export_root / "scripts" / "run_mainline_stage.py").exists())
-            self.assertTrue((export_root / "tests" / "test_mainline_hardening.py").exists())
+            self.assertFalse((export_root / "tests").exists())
             self.assertTrue((export_root / "README.md").exists())
             self.assertTrue((export_root / "ENV_TEMPLATE.env").exists())
             self.assertTrue((export_root / "install_to_openclaw.sh").exists())

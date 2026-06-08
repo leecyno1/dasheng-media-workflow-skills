@@ -209,15 +209,13 @@
   - 如正文需要图表或配图但缺少可核验数据/图片，`draft_manifest.status` 必须标记为 `incomplete_assets`，不得伪装为完成稿
   - 股票、指数、ETF、汇率、商品、股债跨资产走势与经济日历统计优先通过 `dasheng-finance-data` 生成 `chart_specs`，禁止凭记忆手填行情或宏观日历序列
 
-### 按需工具：Material Refill / Rewrite Variants
+### 按需工具：Rewrite Variants
 
-Material 和独立 Rewrite 已从正式主链删除。
+独立素材环节已删除；真实数据、图表、配图和 HTML 嵌入都必须在 Draft 内完成。
 
-- 补素材、封面、图表、视频素材：只在用户明确要求、或 Draft/Publish 明确缺口时调用 `dasheng-daily-material` / `dasheng-stage-material-refill`。
 - 多版本改写：只在需要额外作者口吻、平台变体或短视频脚本时调用 `dasheng-stage-rewrite-v3`。
-- 这些工具不得生成新的主链 gate，不得要求 `material_manifest.json` 或 `rewrite_manifest.json` 才能进入 publish。
+- 改写工具不得生成新的主链 gate，不得要求 `rewrite_manifest.json` 才能进入 publish。
 - 工具产物只能作为 `draft_manifest` / `publish_decision` 的附加资源引用。
-- 不允许新增隐藏的 Material AI provider；Draft 内需要真实数据、图表或配图时，由当前 Agent 主动搜索、核验、生成并写入 `draft_manifest`。
 
 ### 4. Publish｜渠道包与发布
 
@@ -302,5 +300,5 @@ Material 和独立 Rewrite 已从正式主链删除。
 4. `Brief Gate` 未选题，禁止进入 draft。
 5. `Final Structure Gate` 通过后，主链直接进入 publish。
 6. 多选题时，draft / publish 默认按题目并行、目录独立。
-7. Material / Rewrite 只作为按需工具，不得再作为主链阶段或 gate。
+7. 独立素材环节已删除；Rewrite 只作为按需工具，不得再作为主链阶段或 gate。
 8. 本文件一旦变更，相关 schema、skill 文档、Feishu 计划器必须同步更新。

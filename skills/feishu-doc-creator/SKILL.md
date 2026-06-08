@@ -25,5 +25,5 @@ description: Use when creating or updating Feishu docs from markdown in this rep
 ## 何时使用
 
 - 阶段报告要同步飞书
-- Rewrite / Material / Intake 文档要批量推送飞书
+- Intake / Brief / Draft / Publish 文档要批量推送飞书
 - 需要避免空白文档、invalid param、block 顺序错乱

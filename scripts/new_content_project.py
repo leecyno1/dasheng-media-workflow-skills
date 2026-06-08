@@ -37,9 +37,7 @@ def main() -> int:
         "02_内容聚合及选题分析/analysis_notes.md": "# 聚合分析笔记\n\n- 母题：\n- 子题：\n- 为什么现在值得写：\n",
         "03_选题生成/content_brief.md": "# Content Brief\n\n- 核心判断：\n- 目标读者：\n- 文章目标：\n- 可写角度：\n- 推荐角度：\n- 风险边界：\n",
         "03_选题生成/topic_decision.md": "# 选题决策\n\n- 入选主题：\n- 放弃主题：\n- 决策原因：\n",
-        "04_素材收集/materials_manifest.md": "# 素材清单\n\n- 文章链接：\n- 数据：\n- 图表：\n- 图片/视频：\n- 引文：\n- 缺口：\n",
-        "04_素材收集/evidence_notes.md": "# 证据笔记\n\n- 观点 1：\n- 证据：\n- 来源：\n",
-        "05_初稿生成/draft_generation_log.md": "# 初稿生成记录\n\n- 使用引擎：\n- 输入素材：\n- 输出版本：A / B / C\n- 主版本候选：\n",
+        "05_初稿生成/draft_generation_log.md": "# 初稿生成记录\n\n- 使用引擎：\n- 数据/图表/配图：\n- 输出版本：A / B / C\n- 主版本候选：\n",
         "06_改写/rewrite_notes.md": "# 改写说明\n\n- 选中版本：\n- 调整目标：\n- 删减内容：\n- 强化内容：\n- 合规检查：\n",
         "07_渠道分发/channel_distribution_plan.md": "# 渠道分发计划\n\n- 公众号：\n- 小红书：\n- 视频号/抖音：\n- 社群/朋友圈：\n",
         "07_渠道分发/publish_log.md": "# 发布记录\n\n| 渠道 | 标题 | 发布时间 | 链接 | 备注 |\n| --- | --- | --- | --- | --- |\n",
@@ -62,7 +60,6 @@ def main() -> int:
 - `01_内容采集/`
 - `02_内容聚合及选题分析/`
 - `03_选题生成/`
-- `04_素材收集/`
 - `05_初稿生成/`
 - `06_改写/`
 - `07_渠道分发/`
@@ -81,7 +78,7 @@ def main() -> int:
 """
     write_text(root / "README.md", readme)
 
-    write_text(root / "inputs" / "materials_manifest.md", "# 素材清单\n\n- 链接：\n- 数据：\n- 图表：\n- 备注：\n")
+    write_text(root / "inputs" / "evidence_manifest.md", "# 证据清单\n\n- 链接：\n- 数据：\n- 图表：\n- 备注：\n")
     write_text(root / "inputs" / "notes.md", "# 选题笔记\n\n- 核心结论：\n- 争议点：\n- 不写边界：\n")
     write_text(root / "research" / "README.md", "# 研究区\n\n- 存放聚类结果、数据表、图表源文件与中间底稿。\n")
     write_text(root / "outputs" / "A_标准平衡版.md", "# A 标准平衡版\n")
@@ -101,7 +98,6 @@ def main() -> int:
             "- [ ] 01 内容采集\n"
             "- [ ] 02 内容聚合及选题分析\n"
             "- [ ] 03 选题生成\n"
-            "- [ ] 04 素材收集\n"
             "- [ ] 05 初稿生成\n"
             "- [ ] 06 改写\n"
             "- [ ] 07 渠道分发\n"

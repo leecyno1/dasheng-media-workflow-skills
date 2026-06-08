@@ -71,7 +71,7 @@ def build_postmortem_payload(publish_manifest: dict[str, Any], publish_manifest_
                 "selected_channels": channels,
                 "selected_title_count": len(item.get("title_candidates") or []),
                 "selected_cover_count": len(item.get("cover_candidates") or []),
-                "material_usage": {
+                "asset_usage": {
                     "interactive_chart_video_ok": bool(item.get("interactive_chart_video_ok")),
                     "motion_narrative_video_ok": bool(item.get("motion_narrative_video_ok")),
                 },
@@ -142,8 +142,8 @@ def render_report(payload: dict[str, Any]) -> str:
                 f"- 渠道：`{item['selected_channels']}`",
                 f"- 标题候选数：`{item['selected_title_count']}`",
                 f"- 封面候选数：`{item['selected_cover_count']}`",
-                f"- 图表动效视频：`{item['material_usage']['interactive_chart_video_ok']}`",
-                f"- 叙事动效视频：`{item['material_usage']['motion_narrative_video_ok']}`",
+                f"- 图表动效视频：`{item['asset_usage']['interactive_chart_video_ok']}`",
+                f"- 叙事动效视频：`{item['asset_usage']['motion_narrative_video_ok']}`",
             ]
         )
 

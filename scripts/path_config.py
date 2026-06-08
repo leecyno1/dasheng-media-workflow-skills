@@ -64,7 +64,6 @@ def get_output_root(stage: str) -> Path:
         "intake": "01_内容采集",
         "brief": "02_Brief",
         "draft": "03_初稿生成",
-        "material": "04_素材收集",
         "rewrite": "06_改写",
         "publish": "07_渠道分发",
         "postmortem": "08_分析复盘"

@@ -24,7 +24,6 @@
 
 | 工具 | 对外语义 | 当前入口 | 交付接口 |
 | --- | --- | --- | --- |
-| `material-refill` | 补图表、封面、图片、视频素材 | `dasheng-daily-material` / `dasheng-stage-material-refill` | `material_plan.json` / `material_manifest.json` / 素材目录 |
 | `rewrite-variants` | 额外多版本改写 | `dasheng-stage-rewrite-v3` | `rewrite_manifest.json` / per-topic variant files |
 
 ## 入口原则
@@ -38,8 +37,8 @@
    - 总控 skill
    - 本映射表
    - `STAGE_INTERFACES.md`
-   - 对应技能矩阵（如 `material-skill-matrix.md` / `publish-skill-matrix.md`）
-4. `material` / `rewrite` 只能作为按需工具出现，不得重新变成主链 gate。
+   - 对应技能矩阵（如 `publish-skill-matrix.md`）
+4. `rewrite` 只能作为按需工具出现，不得重新变成主链 gate。
 
 ## 已退出主链的旧模块
 

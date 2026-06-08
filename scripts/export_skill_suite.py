@@ -42,7 +42,6 @@ FORMAL_SKILLS = [
     "dasheng-stage-publish",
     "dasheng-daily-intake",
     "dasheng-daily-phase2",
-    "dasheng-daily-material",
     "dasheng-daily-postmortem",
     "dasheng-style-profiler",
     "feishu-doc-creator",
@@ -54,7 +53,6 @@ LEGACY_REDIRECT_SKILLS = [
     "dasheng-daily-outline",
     "dasheng-daily-final",
     "dasheng-stage-draft",
-    "dasheng-stage-material-refill",
     "dasheng-stage-rewrite",
     "dasheng-stage-intake-brief-draft",
     "dasheng-stage-publish-video",
@@ -69,7 +67,6 @@ DOC_FILES = [
 ]
 BUNDLED_DIRECTORIES = [
     "scripts",
-    "tests",
 ]
 
 

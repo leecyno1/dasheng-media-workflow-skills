@@ -218,7 +218,7 @@ def send_stage_report(stage_name, report_content, run_id, stage_emoji="📄"):
     发送阶段报告到飞书群
 
     Args:
-        stage_name: 阶段名称（如 "intake", "brief", "draft", "material"）
+        stage_name: 阶段名称（如 "intake", "brief", "draft", "publish"）
         report_content: 报告内容（markdown 格式）
         run_id: 运行批次 ID
         stage_emoji: 阶段表情符号
@@ -248,7 +248,7 @@ def main():
     """命令行入口"""
     if len(sys.argv) < 4:
         print("用法: python3 send_feishu_report.py <stage_name> <report_file> <run_id> [emoji]")
-        print("示例: python3 send_feishu_report.py material /path/to/report.md 2026-04-07_141203 📦")
+        print("示例: python3 send_feishu_report.py publish /path/to/report.md 2026-04-07_141203 🚀")
         sys.exit(1)
 
     stage_name = sys.argv[1]

@@ -12,7 +12,7 @@
 - Publish: `publish_manifest.json` + `publish_decision.json`
 - Postmortem: `postmortem_manifest.json`
 
-Optional tools may emit `material_manifest.json` or `rewrite_manifest.json`, but these files are not required gates in the canonical mainline.
+Optional rewrite tools may emit `rewrite_manifest.json`, but it is not a required gate in the canonical mainline.
 
 ## Brief Contract
 

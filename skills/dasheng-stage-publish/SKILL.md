@@ -15,7 +15,7 @@ description: Use when entering the formal publish stage of Dasheng workflow to r
 
 `distribute` 已并入 `publish`，不再单列正式阶段。
 
-`material` 和独立 `rewrite` 已从主链删除；素材补充、多版本改写只作为按需工具。
+独立素材环节已删除；多版本改写只作为按需工具。
 
 ## 正式输入
 
@@ -25,7 +25,7 @@ description: Use when entering the formal publish stage of Dasheng workflow to r
 
 缺少 `draft_manifest.json` 或 `publish_decision.json` 时禁止执行；`final_structure_snapshot.json` 必须已确认后才能从统一 CLI 进入 publish。
 
-兼容模式可读取旧 `rewrite_manifest.json` / `material_manifest.json`，但它们不再是主链必需输入。
+兼容模式可读取旧 `rewrite_manifest.json`，但它不再是主链必需输入。
 
 若 `publish_decision.json` 已存在但字段不完整，当前 stage 会自动补齐最小默认矩阵：
 

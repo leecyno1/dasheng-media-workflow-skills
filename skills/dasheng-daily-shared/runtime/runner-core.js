@@ -6,7 +6,6 @@ const STEP_ORDER = [
   'intake',
   'clustering',
   'brief',
-  'material',
   'outline',
   'draft',
   'final',
@@ -40,8 +39,7 @@ function getStepInput(step, manifest) {
     intake: null,
     clustering: getArtifactFile(manifest, 'intake', 'IntakeRecord'),
     brief: getArtifactFile(manifest, 'clustering', 'ClusteredTopic'),
-    material: getArtifactFile(manifest, 'brief', 'ContentBrief'),
-    outline: getArtifactFile(manifest, 'material', 'MaterialPack'),
+    outline: getArtifactFile(manifest, 'brief', 'ContentBrief'),
     draft: getArtifactFile(manifest, 'outline', 'OutlinePlan'),
     final: getArtifactFile(manifest, 'draft', 'DraftPackage'),
     postmortem: getArtifactFile(manifest, 'final', 'FinalPackage')

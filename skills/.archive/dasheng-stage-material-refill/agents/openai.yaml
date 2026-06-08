@@ -1,5 +1,0 @@
-interface:
-  display_name: "补素材"
-  short_description: "生成图表/图片/视频并回填终稿。"
-  default_prompt: "Use $dasheng-stage-material-refill to build missing material assets from final-doc anchors and produce refill-ready packs."
-

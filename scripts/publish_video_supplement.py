@@ -384,35 +384,10 @@ def derive_publish_time(index: int) -> str:
     return scheduled.astimezone().isoformat(timespec="seconds")
 
 
-def derive_cover_candidates(material_topic: dict[str, Any]) -> list[str]:
-    assets_dir = Path(str(material_topic.get("assets_dir") or "")).expanduser()
-    if not assets_dir.exists():
-        return []
-    assets = material_topic.get("assets") or {}
-    ordered_names: list[str] = []
-    for bucket_name in ("images", "manga", "charts"):
-        for item in assets.get(bucket_name, []) or []:
-            file_name = str(item.get("file") or "").strip()
-            if file_name:
-                ordered_names.append(file_name)
-    candidates: list[str] = []
-    for file_name in ordered_names:
-        path = assets_dir / file_name
-        if path.exists():
-            candidates.append(str(path))
-    if candidates:
-        return candidates[:4]
-    fallback = []
-    for pattern in ("*.jpg", "*.jpeg", "*.png", "*.webp"):
-        fallback.extend(sorted(str(path) for path in assets_dir.glob(pattern) if path.is_file()))
-    return fallback[:4]
-
-
 def autofill_publish_decision(
     *,
     publish_decision: dict[str, Any],
     rewrite_manifest: dict[str, Any],
-    material_manifest: dict[str, Any],
 ) -> tuple[dict[str, Any], bool]:
     changed = False
     instructions = list(publish_decision.get("instructions") or [])
@@ -420,11 +395,6 @@ def autofill_publish_decision(
         item for item in (rewrite_manifest.get("topics") or [])
         if isinstance(item, dict) and str(item.get("topic_id") or "").strip()
     ]
-    material_index = {
-        str(item.get("topic_id") or "").strip(): item
-        for item in (material_manifest.get("topics") or [])
-        if isinstance(item, dict) and str(item.get("topic_id") or "").strip()
-    }
     existing_topics = {
         str(item.get("topic_id") or "").strip(): item
         for item in (publish_decision.get("topics") or [])
@@ -435,7 +405,6 @@ def autofill_publish_decision(
     for index, rewrite_topic in enumerate(rewrite_topics):
         topic_id = str(rewrite_topic.get("topic_id") or "").strip()
         topic_name = str(rewrite_topic.get("title") or rewrite_topic.get("topic_name") or topic_id).strip()
-        material_topic = material_index.get(topic_id, {})
         row = dict(existing_topics.get(topic_id) or {})
         if not row:
             changed = True
@@ -461,11 +430,6 @@ def autofill_publish_decision(
         if not (row.get("title_candidates") or []):
             row["title_candidates"] = derive_title_candidates(topic_name)
             changed = True
-        if not (row.get("cover_candidates") or []):
-            covers = derive_cover_candidates(material_topic)
-            if covers:
-                row["cover_candidates"] = covers
-                changed = True
         if not str(row.get("publish_time") or "").strip():
             row["publish_time"] = derive_publish_time(index)
             changed = True
@@ -868,117 +832,6 @@ def extract_publish_topic_sources(source_manifest: dict[str, Any], source_root: 
     return extract_rewrite_topic_sources(source_manifest, source_root)
 
 
-def resolve_material_pack_topic_dir(material_manifest: dict[str, Any], topic: RewriteTopicSource, material_root: Path) -> Path:
-    topics = material_manifest.get("topics") or []
-    for item in topics:
-        if not isinstance(item, dict):
-            continue
-        if str(item.get("topic_id") or "").strip() == topic.topic_id:
-            assets_dir = item.get("assets_dir")
-            if assets_dir:
-                path = Path(str(assets_dir)).expanduser().resolve()
-                if path.exists():
-                    return path
-    for item in topics:
-        if not isinstance(item, dict):
-            continue
-        if str(item.get("title") or "").strip() == topic.topic_name:
-            assets_dir = item.get("assets_dir")
-            if assets_dir:
-                path = Path(str(assets_dir)).expanduser().resolve()
-                if path.exists():
-                    return path
-    topic_num = re.sub(r"\D+", "", topic.topic_prefix)
-    if topic_num:
-        fallback = material_root / f"topic-{topic_num}"
-        if fallback.exists():
-            return fallback
-    raise WorkflowContractError(f"无法为 rewrite topic `{topic.topic_id}` 匹配素材目录")
-
-
-def load_chart_csvs(layer5_inputs_file: Path, topic_pack_dir: Path) -> list[Path]:
-    if layer5_inputs_file.exists():
-        payload = read_json(layer5_inputs_file)
-        csvs = [Path(item) for item in payload.get("assets", {}).get("chart_csvs", []) if str(item).endswith(".csv")]
-        csvs = [item for item in csvs if item.exists() and "chart_anchor_plan" not in item.name]
-        if csvs:
-            return csvs[:4]
-    csvs = sorted((topic_pack_dir / "charts/csv").glob("*.csv"))
-    csvs = [item for item in csvs if "chart_anchor_plan" not in item.name]
-    return csvs[:4]
-
-
-def build_for_topic(
-    rewrite_topic: RewriteTopicSource,
-    material_pack_topic_dir: Path,
-    material_pack_root: Path,
-    output_root: Path,
-    prototypes: Prototypes,
-) -> dict[str, Any]:
-    topic_name = rewrite_topic.topic_name
-    topic_prefix = rewrite_topic.topic_prefix
-    pack_topic_dir = material_pack_topic_dir
-    layer5_inputs_file = pack_topic_dir / "layer5/layer5_inputs.json"
-    rewrite_source = rewrite_topic.rewrite_source
-
-    chart_csvs = load_chart_csvs(layer5_inputs_file, pack_topic_dir)
-    chart_scenes = []
-    for index, csv_file in enumerate(chart_csvs, start=1):
-        scene = detect_chart_scene(csv_file, prototypes, scene_prefix=topic_prefix, index=index)
-        if scene:
-            chart_scenes.append(scene)
-
-    narrative_scenes = build_narrative_scenes(rewrite_source, prototypes, scene_prefix=topic_prefix)
-
-    topic_out = output_root / normalize_topic_prefix(topic_prefix)
-    inputs_dir = topic_out / "inputs"
-    videos_chart_dir = topic_out / "videos/interactive_charts"
-    videos_motion_dir = topic_out / "videos/motion_narrative"
-    inputs_dir.mkdir(parents=True, exist_ok=True)
-
-    chart_deck = build_deck(
-        meta_title=f"{topic_name}｜互动图表视频",
-        meta_desc="来自历史图表 CSV 的动态图表视频补充",
-        prototypes=prototypes,
-        scenes=chart_scenes,
-    )
-    narrative_deck = build_deck(
-        meta_title=f"{topic_name}｜改写稿框架动画",
-        meta_desc="基于改写稿框架精华与关键数据的 motion 动画视频",
-        prototypes=prototypes,
-        scenes=narrative_scenes,
-    )
-
-    chart_deck_path = inputs_dir / "interactive_charts_deck.json"
-    narrative_deck_path = inputs_dir / "motion_narrative_deck.json"
-    write_json(chart_deck_path, chart_deck)
-    write_json(narrative_deck_path, narrative_deck)
-
-    chart_export = run_export(chart_deck_path, videos_chart_dir)
-    narrative_export = run_export(narrative_deck_path, videos_motion_dir)
-
-    topic_manifest = {
-        "topic_id": rewrite_topic.topic_id,
-        "topic": topic_name,
-        "topic_prefix": topic_prefix,
-        "rewrite_source": str(rewrite_source),
-        "material_pack_topic_dir": str(pack_topic_dir),
-        "chart_csvs": [str(item) for item in chart_csvs],
-        "decks": {
-            "interactive_charts_deck": str(chart_deck_path),
-            "motion_narrative_deck": str(narrative_deck_path),
-        },
-        "exports": {
-            "interactive_charts": chart_export,
-            "motion_narrative": narrative_export,
-        },
-    }
-    topic_manifest_path = topic_out / "topic_video_manifest.json"
-    topic_manifest["topic_video_manifest"] = str(topic_manifest_path)
-    write_json(topic_manifest_path, topic_manifest)
-    return topic_manifest
-
-
 def build_minimal_topic_manifest(rewrite_topic: RewriteTopicSource, output_root: Path) -> dict[str, Any]:
     topic_out = output_root / normalize_topic_prefix(rewrite_topic.topic_prefix)
     topic_out.mkdir(parents=True, exist_ok=True)
@@ -988,11 +841,10 @@ def build_minimal_topic_manifest(rewrite_topic: RewriteTopicSource, output_root:
         "topic": rewrite_topic.topic_name,
         "topic_prefix": rewrite_topic.topic_prefix,
         "rewrite_source": str(rewrite_topic.rewrite_source),
-        "material_pack_topic_dir": "",
         "chart_csvs": [],
         "decks": {},
         "exports": {
-            "interactive_charts": {"ok": False, "skipped": True, "reason": "material stage retired from mainline"},
+            "interactive_charts": {"ok": False, "skipped": True, "reason": "charts are generated in draft html"},
             "motion_narrative": {"ok": False, "skipped": True, "reason": "video supplement is optional"},
         },
         "topic_video_manifest": str(topic_manifest_path),
@@ -1010,11 +862,11 @@ def _video_dir_line(topic_manifest: dict[str, Any], deck_key: str, video_subdir:
 
 def build_report(run_manifest: dict[str, Any], report_path: Path) -> None:
     lines = [
-        "# 发布环节素材补充报告",
+        "# 发布环节视频补充报告",
         "",
         f"- 生成时间：`{run_manifest['generated_at']}`",
         f"- 正文源目录：`{run_manifest['source_root']}`",
-        f"- 素材包目录：`{run_manifest.get('material_pack_root') or '主链已删除 Material，素材和视频按需补充'}`",
+        "- 图表与配图：Draft HTML 内生成，Publish 不再读取独立素材包",
         f"- 动态图表工程：`{run_manifest['finance_project']}`",
         f"- 线程对接：`{run_manifest['integration_thread']}`",
         "",
@@ -1463,7 +1315,6 @@ def build_publish_stage_outputs(
     *,
     run_id: str,
     rewrite_manifest_path: Path,
-    material_manifest_path: Path | None,
     publish_decision_path: Path,
     rewrite_manifest: dict[str, Any],
     publish_decision: dict[str, Any],
@@ -1520,7 +1371,6 @@ def build_publish_stage_outputs(
         "source_manifest": str(rewrite_manifest_path),
         "source_stage": str(rewrite_manifest.get("stage") or "unknown"),
         "rewrite_manifest": str(rewrite_manifest_path),
-        "material_manifest": str(material_manifest_path) if material_manifest_path else None,
         "publish_decision": str(publish_decision_path),
         "video_supplement_manifest": str(video_supplement_manifest_path),
         "video_supplement_report": str(video_supplement_report_path),
@@ -1543,7 +1393,6 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Canonical publish video supplement builder")
     parser.add_argument("--draft-manifest", help="Path to canonical draft_manifest.json; formal mainline input")
     parser.add_argument("--rewrite-manifest", help="Legacy path to canonical rewrite_manifest.json")
-    parser.add_argument("--material-manifest", help="Legacy path to canonical material_manifest.json")
     parser.add_argument("--publish-decision", required=True, help="Path to publish_decision.json")
     parser.add_argument("--output-dir", help="Output directory; default=产物/07_渠道分发/<run_id>")
     parser.add_argument("--reuse-existing-video-supplement", action="store_true", help="Reuse existing topic_video_manifest.json outputs instead of rerendering videos")
@@ -1556,36 +1405,21 @@ def main() -> None:
         draft_manifest = ensure_stage_manifest(draft_manifest_path, "draft")
         rewrite_manifest, rewrite_root = build_draft_publish_manifest(draft_manifest, draft_manifest_path)
         rewrite_manifest_path = draft_manifest_path
-        material_manifest: dict[str, Any] = {"run_id": draft_manifest["run_id"], "stage": "material_retired", "topics": [], "pack_root": ""}
-        material_manifest_path: Path | None = None
-        material_root: Path | None = None
     else:
         if not args.rewrite_manifest:
             raise WorkflowContractError("publish 阶段必须提供 --draft-manifest，或兼容模式下提供 --rewrite-manifest。")
         rewrite_manifest_path = Path(args.rewrite_manifest).expanduser().resolve()
         rewrite_manifest = ensure_stage_manifest(rewrite_manifest_path, "rewrite")
         rewrite_root = Path(rewrite_manifest["output_root"]).expanduser().resolve()
-        material_manifest_path = Path(args.material_manifest).expanduser().resolve() if args.material_manifest else None
-        if material_manifest_path:
-            material_manifest = ensure_stage_manifest(material_manifest_path, "material")
-            material_root = Path(material_manifest["pack_root"]).expanduser().resolve()
-        else:
-            material_manifest = {"run_id": rewrite_manifest["run_id"], "stage": "material_retired", "topics": [], "pack_root": ""}
-            material_root = None
 
     publish_decision = ensure_publish_decision_gate(publish_decision_path)
     run_id = str(rewrite_manifest["run_id"]).strip()
-    if material_manifest.get("run_id") and run_id != str(material_manifest["run_id"]).strip():
-        raise WorkflowContractError("rewrite/draft manifest 与 material_manifest 的 run_id 不一致")
     if not rewrite_root.exists():
         raise WorkflowContractError(f"rewrite_root 不存在：{rewrite_root}")
-    if material_root and not material_root.exists():
-        raise WorkflowContractError(f"material pack_root 不存在：{material_root}")
 
     publish_decision, decision_changed = autofill_publish_decision(
         publish_decision=publish_decision,
         rewrite_manifest=rewrite_manifest,
-        material_manifest=material_manifest,
     )
     if decision_changed:
         write_json(publish_decision_path, publish_decision)
@@ -1600,15 +1434,7 @@ def main() -> None:
             raise WorkflowContractError(f"未找到可复用的视频补充产物：{output_root}")
     else:
         rewrite_topics = extract_rewrite_topic_sources(rewrite_manifest, rewrite_root)
-        topic_manifests = []
-        prototypes = load_prototypes() if material_root else None
-        for rewrite_topic in rewrite_topics:
-            if material_root:
-                assert prototypes is not None
-                pack_topic_dir = resolve_material_pack_topic_dir(material_manifest, rewrite_topic, material_root)
-                topic_manifests.append(build_for_topic(rewrite_topic, pack_topic_dir, material_root, output_root, prototypes))
-            else:
-                topic_manifests.append(build_minimal_topic_manifest(rewrite_topic, output_root))
+        topic_manifests = [build_minimal_topic_manifest(rewrite_topic, output_root) for rewrite_topic in rewrite_topics]
 
     run_manifest = {
         "run_id": run_id,
@@ -1618,11 +1444,9 @@ def main() -> None:
         "source_manifest": str(rewrite_manifest_path),
         "source_stage": str(rewrite_manifest.get("stage") or "unknown"),
         "rewrite_manifest": str(rewrite_manifest_path),
-        "material_manifest": str(material_manifest_path) if material_manifest_path else None,
         "publish_decision": str(publish_decision_path),
         "source_root": str(rewrite_root),
         "rewrite_root": str(rewrite_root),
-        "material_pack_root": str(material_root) if material_root else "",
         "finance_project": str(FINANCE_PROJECT),
         "integration_thread": "codex://threads/019d31c5-bb7f-7a40-a087-9d219e9bd6ab",
         "reused_existing_video_supplement": bool(args.reuse_existing_video_supplement),
@@ -1637,7 +1461,6 @@ def main() -> None:
     stage_outputs = build_publish_stage_outputs(
         run_id=run_id,
         rewrite_manifest_path=rewrite_manifest_path,
-        material_manifest_path=material_manifest_path,
         publish_decision_path=publish_decision_path,
         rewrite_manifest=rewrite_manifest,
         publish_decision=publish_decision,

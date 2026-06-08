@@ -26,7 +26,7 @@
 | `baoyu-format-markdown` | 只做 markdown 排版与小修正 | 与 HTML 转换衔接 | rewrite 后 | 降级 |
 | `baoyu-markdown-to-html` | markdown 转 HTML | 与发布转换层重叠 | 发布前 | 移出 |
 | `wechat-title-generator` | 公众号标题生成 | 与正文排版有轻微交叉 | rewrite 后半段 | 保留 |
-| `wechat-draft-writer` | 基于 confirmed outline + material + DNA 写高保真稿 | 与通用写作流程重叠，但更契约化 | rewrite 核心 | 保留 |
+| `wechat-draft-writer` | 基于 confirmed outline + Draft 资产 + DNA 写高保真稿 | 与通用写作流程重叠，但更契约化 | rewrite 核心 | 保留 |
 | `wechat-topic-outline-planner` | 公众号文章结构规划 | 与内容战略、结构搭建重叠 | rewrite 前 | 保留但前置 |
 | `wechat-style-profiler` | 从样文提炼文风 DNA | 与正文风格执行互补，不替代 | rewrite 前 | 保留但前置 |
 

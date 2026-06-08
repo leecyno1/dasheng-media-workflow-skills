@@ -21,7 +21,6 @@
 
 | Skill 名称 | 状态 | 说明 |
 |------------|------|------|
-| `dasheng-daily-material` | 🧰 按需 | 补素材、封面、图表、视频素材，不再作为第 4 环节 |
 | `dasheng-stage-rewrite-v3` | 🧰 按需 | 多版本改写工具，能力并入 Draft/Publish 后按需调用 |
 
 ## 已废弃 Skill（请勿使用）
@@ -34,7 +33,6 @@
 | `dasheng-daily-outline` | `dasheng-daily-draft` | 与 draft 重复 |
 | `dasheng-daily-final` | `dasheng-daily-draft` | 与 draft 重复 |
 | `dasheng-stage-draft` | `dasheng-daily-draft` | 旧版本，已合并 |
-| `dasheng-stage-material-refill` | `dasheng-daily-material` | 已退为按需工具 |
 | `dasheng-stage-rewrite` | `dasheng-stage-rewrite-v3` | 已退为按需工具 |
 | `dasheng-stage-intake-brief-draft` | `dasheng-daily-intake` + `dasheng-daily-phase2` | 多阶段合并 |
 | `dasheng-stage-publish-video` | `dasheng-stage-publish` | 已并入 publish 阶段 |
@@ -55,7 +53,6 @@
     "dasheng-daily-outline": "dasheng-daily-draft",
     "dasheng-daily-final": "dasheng-daily-draft",
     "dasheng-stage-draft": "dasheng-daily-draft",
-    "dasheng-stage-material-refill": "dasheng-daily-material",
     "dasheng-stage-rewrite": "dasheng-stage-rewrite-v3",
     "dasheng-stage-intake-brief-draft": "dasheng-daily-intake",
     "dasheng-stage-publish-video": "dasheng-stage-publish",

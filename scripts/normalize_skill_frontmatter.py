@@ -19,7 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent.resolve()
 REQUIRED_FIELDS = ["name", "description", "version", "stage", "updated_at"]
-STAGE_VALUES = ["intake", "brief", "draft", "material", "rewrite", "publish", "postmortem", "utility", "sop"]
+STAGE_VALUES = ["intake", "brief", "draft", "rewrite", "publish", "postmortem", "utility", "sop"]
 
 def get_skill_dir_name(skill_dir: Path) -> str:
     """从目录名推导 skill name"""
@@ -34,8 +34,6 @@ def guess_stage(skill_dir: Path) -> str:
         return "brief"
     elif "draft" in name:
         return "draft"
-    elif "material" in name:
-        return "material"
     elif "rewrite" in name:
         return "rewrite"
     elif "publish" in name or "distribute" in name:

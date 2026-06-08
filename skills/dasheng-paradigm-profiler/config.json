@@ -44,7 +44,6 @@
   },
   "quality_requirements": {
     "separate_from_style_dna": "ParadigmProfile controls structure; Style DNA controls expression",
-    "no_sample_fact_reuse": "Never reuse sample facts as article evidence",
-    "no_material_stage_injection": "Material stage only fills evidence/assets and must not change paradigm"
+    "no_sample_fact_reuse": "Never reuse sample facts as article evidence"
   }
 }

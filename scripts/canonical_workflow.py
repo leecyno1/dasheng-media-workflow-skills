@@ -144,17 +144,6 @@ def ensure_final_structure_gate(path: Path) -> dict[str, Any]:
     )
 
 
-def ensure_material_acceptance_gate(path: Path) -> dict[str, Any]:
-    # Retained for optional legacy material tools; no longer part of the canonical mainline.
-    return ensure_gate_payload(
-        path,
-        "Material Gate",
-        required_key="topics",
-        require_nonempty=True,
-        allow_pending=False,
-    )
-
-
 def ensure_publish_decision_gate(path: Path) -> dict[str, Any]:
     return ensure_gate_payload(
         path,

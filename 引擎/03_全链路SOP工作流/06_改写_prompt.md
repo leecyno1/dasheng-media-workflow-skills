@@ -2,13 +2,12 @@
 
 ## 阶段目标
 
-把回填后终稿，按 `DNA × Channel × Emotion` 改写成多个可发布版本。
+把 Draft 产出的终稿基线，按 `DNA × Channel × Emotion` 改写成多个可发布版本。
 
 ## 适用输入
 
-- 回填后终稿
+- Draft 终稿基线
 - 可选 Brief
-- 可选 Material Pack
 - 目标 DNA
 - 目标 Channel
 - 目标 Emotion
@@ -103,14 +102,11 @@
 - 所属 bundle 文件名：
 
 【输入材料】
-- 回填后终稿：
+- Draft 终稿基线：
 <粘贴终稿>
 
 - 可选 Brief：
 <粘贴 brief，没有则写无>
-
-- 可选 Material Pack：
-<粘贴 material，没有则写无>
 
 - 用户补充要求：
 <粘贴用户额外要求，没有则写无>

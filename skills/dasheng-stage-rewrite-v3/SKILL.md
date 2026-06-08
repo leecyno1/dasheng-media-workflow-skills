@@ -26,7 +26,6 @@ Stage 5 Rewrite v3 是大声自媒体创作工作台的渠道改写阶段，负�
 - `final_structure_snapshot.json` - **MANDATORY GATE** - 最终结构快照（必须status=approved）
 
 ### 可选输入
-- `material_manifest.json` - 素材清单（如果Material阶段已完成）
 - `--run-id` - 自定义运行ID（默认从draft manifest读取）
 - `--output-dir` - 自定义输出目录
 - `--versions` - 自定义版本列表（默认：wechat_hot,wechat_normal,xiaohongshu_hot,xiaohongshu_normal）
@@ -131,7 +130,7 @@ python3 scripts/rewrite_execute_stage5.py \
 - 必须继承 `final_structure_snapshot.json` 中的结构
 - 追踪哪些顶层section被保留/删除/新增
 - 追踪哪些subsection被保留/删除/新增
-- 追踪哪些material锚点被保留/删除/新增
+- 追踪哪些 Draft 资产锚点被保留/删除/新增
 
 ## 核心模块
 

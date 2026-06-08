@@ -42,7 +42,7 @@
 ### `Claim`
 
 - 正文中的关键判断
-- Material 阶段所有图表、图像、视频都必须绑定到 Claim
+- Draft 阶段生成的图表、图像、视频锚点都必须绑定到 Claim
 
 ### `EvidenceItem`
 
@@ -64,7 +64,6 @@
 - `intake_review.json`
 - `selected_topics.json`
 - `final_structure_snapshot.json`
-- `material_acceptance.json`
 - `publish_decision.json`
 
 Gate 文件是人工介入写回系统的正式入口。
