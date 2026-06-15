@@ -1,6 +1,6 @@
 # Dasheng Media Workflow Skills
 
-**7阶段自媒体内容创作自动化系统**
+**6阶段自媒体内容创作自动化系统**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -39,7 +39,7 @@ ls 产物/01_内容采集/
 
 ## 核心特性
 
-- ✅ **5阶段标准化工作流** - Intake → Brief → Draft → Publish → Postmortem
+- ✅ **6阶段标准化工作流** - Intake → Brief → Draft → Transwrite → Publish → Postmortem
 - ✅ **HITL质量门** - 关键节点保留人工审核机制
 - ✅ **多平台适配** - 支持微信公众号、小红书、微博、抖音、B站
 - ✅ **AI驱动** - 基于Claude 4.6的智能内容生成与优化
@@ -56,11 +56,11 @@ ls 产物/01_内容采集/
 │  内容采集    │    │  选题分析    │    │  正文/HTML   │
 └─────────────┘    └─────────────┘    └─────────────┘
                                                 │
-┌─────────────┐    ┌─────────────┐              │
-│  Stage 5    │◀───│  Stage 4    │◀─────────────┘
-│ Postmortem  │    │  Publish    │
-│  分析复盘    │    │  渠道分发    │
-└─────────────┘    └─────────────┘
+┌─────────────┐    ┌─────────────┐    ┌─────────────┐
+│  Stage 6    │◀───│  Stage 5    │◀───│  Stage 4    │◀─────────────┘
+│ Postmortem  │    │  Publish    │    │ Transwrite  │
+│  分析复盘    │    │  发布执行    │    │  转写生产    │
+└─────────────┘    └─────────────┘    └─────────────┘
 ```
 
 ### Stage 1: Intake（内容采集）
@@ -72,17 +72,20 @@ AI生成5-10个选题候选，编辑确认后进入初稿阶段。
 ### Stage 3: Draft（初稿生成）
 基于选题生成正文、数据图表、配图和可编辑自包含 HTML，支持人工迭代修改。
 
-### Stage 4: Publish（渠道分发）
-生成各平台发布包，包含标题候选、封面图、发布时机建议。
+### Stage 4: Transwrite（转写生产）
+将确认后的 Draft 转为公众号文章、口播视频和播客生产包，负责 DNA/humanize、封面、视频视觉层和播客 API 请求体。
 
-### Stage 5: Postmortem（分析复盘）
+### Stage 5: Publish（发布执行）
+验收转写包，生成发布包，推草稿或导出人工发布包，并回收发布链接。
+
+### Stage 6: Postmortem（分析复盘）
 回收发布数据并回写选题、证据、结构和渠道经验。
 
 ## 文档
 
 - [安装指南](INSTALLATION.md) - 详细安装步骤
 - [快速开始](docs/guides/quick-start.md) - 5分钟快速上手
-- [阶段详解](docs/guides/stage-by-stage.md) - 7个阶段的详细说明
+- [阶段详解](docs/guides/stage-by-stage.md) - 6个阶段的详细说明
 - [架构设计](docs/technical/architecture.md) - 系统架构与设计决策
 - [阶段接口](docs/STAGE_INTERFACES.md) - 各阶段输入输出规范
 - [完整文档](docs/README_FULL.md) - 原完整README

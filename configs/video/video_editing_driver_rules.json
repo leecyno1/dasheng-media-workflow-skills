@@ -1,0 +1,125 @@
+{
+  "schema_version": "dasheng.video_editing_driver_rules.v1",
+  "created_at": "2026-06-13",
+  "reference_styles": {
+    "xiaolin_talking_head": {
+      "role": "human_trust_anchor",
+      "median_segment_sec": [2.5, 4.0],
+      "evidence_ratio": [0.45, 0.65],
+      "speaker_return_interval_sec": [8, 20],
+      "default_transition": "hard_cut",
+      "signature": "speaker returns frequently while evidence, documents, charts, and B-roll carry most visual progress"
+    },
+    "wizard_explainer": {
+      "role": "narrated_visual_documentary",
+      "median_segment_sec": [4.0, 5.0],
+      "avg_segment_sec": [5.0, 7.0],
+      "evidence_interval_sec": [20, 35],
+      "chapter_interval_sec": [45, 90],
+      "default_transition": "fade_or_push",
+      "signature": "continuous voiceover drives a cinematic evidence chain; visuals replace the speaker as attention anchor"
+    }
+  },
+  "beat_classes": {
+    "hook": {
+      "triggers": ["反常识", "冲突", "问题", "不是", "真正", "为什么", "可能"],
+      "preferred_shots": ["glitch_title", "liquid_hero", "typewriter_quote"],
+      "duration_sec": [3, 8],
+      "transition": "impact_cut"
+    },
+    "claim": {
+      "triggers": ["判断", "核心", "我认为", "本质", "关键"],
+      "preferred_shots": ["speaker_punch_in", "bold_statement", "quote_card"],
+      "duration_sec": [4, 8],
+      "transition": "hard_cut"
+    },
+    "evidence_data": {
+      "triggers": ["数字", "%", "万亿", "亿美元", "利率", "指数", "财报", "IPO", "同比", "环比"],
+      "preferred_shots": ["data_chart", "data_rollup", "stat_card", "table_scene"],
+      "duration_sec": [6, 15],
+      "transition": "data_reveal"
+    },
+    "evidence_document": {
+      "triggers": ["公告", "文件", "新闻", "报告", "政策", "来源", "截图"],
+      "preferred_shots": ["document_zoom", "browser_capture", "source_card"],
+      "duration_sec": [5, 12],
+      "transition": "push_zoom"
+    },
+    "logic_chain": {
+      "triggers": ["导致", "传导", "链条", "因为", "所以", "首先", "其次", "最后"],
+      "preferred_shots": ["decision_tree", "flowchart", "swiss_grid"],
+      "duration_sec": [6, 12],
+      "transition": "path_highlight"
+    },
+    "objection": {
+      "triggers": ["有人说", "问题是", "是不是", "但", "然而"],
+      "preferred_shots": ["speaker_full", "social_feedback", "electric_quote"],
+      "duration_sec": [4, 9],
+      "transition": "counter_cut"
+    },
+    "chapter": {
+      "triggers": ["第一", "第二", "第三", "壹", "贰", "叁", "回到正题"],
+      "preferred_shots": ["bold_signal", "light_leak", "bold_poster"],
+      "duration_sec": [3, 6],
+      "transition": "chapter_hit"
+    },
+    "recap": {
+      "triggers": ["总结", "所以", "归根到底", "一句话"],
+      "preferred_shots": ["outline_recap", "speaker_full", "logo_outro"],
+      "duration_sec": [4, 8],
+      "transition": "resolve_fade"
+    }
+  },
+  "shot_selection_weights": {
+    "evidence_need": 0.34,
+    "attention_debt": 0.18,
+    "trust_debt": 0.16,
+    "cognitive_load": 0.14,
+    "novelty": 0.1,
+    "platform_readability": 0.08
+  },
+  "lane_a_talking_head_rules": {
+    "timeline_master": "human_audio",
+    "states": ["speaker_anchor", "claim_closeup", "evidence_fullscreen", "broll_with_pip", "document_zoom", "chart_card", "speaker_return"],
+    "speaker_return_if_sec_since_speaker_gt": 16,
+    "force_evidence_if_beat_has_data": true,
+    "force_document_if_beat_has_source": true,
+    "pip_size_ratio": [0.18, 0.24],
+    "subtitle_max_lines": 2,
+    "subtitle_max_chars_per_line": 24,
+    "safe_area_policy": "speaker_bottom_or_side_preserved; overlay must not cover face or subtitles"
+  },
+  "lane_b_explainer_rules": {
+    "timeline_master": "voiceover_audio",
+    "states": ["hook_card", "question_setup", "chapter_card", "evidence_scene", "logic_animation", "cinematic_bridge", "recap_card", "outro"],
+    "evidence_required_every_sec": 35,
+    "chapter_required_every_sec": 90,
+    "avoid_static_ppt_longer_than_sec": 8,
+    "per_scene_motion_required": ["entrance", "focus_change", "exit_or_continuous_motion"],
+    "data_policy": "reuse article charts/tables or verified data; no schematic chart unless marked schematic"
+  },
+  "transition_rules": {
+    "hard_cut": "default for talking-head and fast evidence switching",
+    "impact_cut": "use on hook, objection, contradiction, number shock",
+    "push_zoom": "use on document, webpage, screenshot, table highlight",
+    "data_reveal": "use on charts: axis first, mark second, annotation third",
+    "path_highlight": "use on causal chains and process diagrams",
+    "fade_or_push": "default for no-human cinematic explainer",
+    "chapter_hit": "short sound hit plus title card; no long ornamental transitions"
+  },
+  "audio_rules": {
+    "voice_lufs_target": -16,
+    "bgm_duck_under_voice_db": [-18, -24],
+    "transition_sfx": "only for chapter, number shock, document reveal, final CTA",
+    "silence_policy": "no mid-video dead air; replace pauses with J-cut/L-cut, broll, or music tail"
+  },
+  "qc_fail_conditions": [
+    "developer labels visible in final video",
+    "fake chart or unsourced number used as evidence",
+    "subtitle overlaps with face, chart, or bottom UI",
+    "speaker absent for more than 24 seconds in talking-head lane without strong evidence sequence",
+    "no evidence scene for more than 40 seconds in explainer lane",
+    "scene longer than 12 seconds with no motion or focus change",
+    "more than two visual systems mixed in one video without deliberate chapter reset"
+  ]
+}

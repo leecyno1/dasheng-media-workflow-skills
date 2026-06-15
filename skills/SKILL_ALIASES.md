@@ -11,17 +11,25 @@
 | `dasheng-daily-intake` | 1.0.0 | ✅ 正式 | 内容采集阶段 |
 | `dasheng-daily-phase2` | 1.0.0 | ✅ 正式 | 选题分析阶段（替代 dasheng-daily-brief） |
 | `dasheng-daily-draft` | 1.0.0 | ✅ 正式 | 写作与可发布底稿阶段 |
-| `dasheng-stage-publish` | 1.0.0 | ✅ 正式 | 内容发布阶段 |
+| `dasheng-stage-transwrite` | 1.0.0 | ✅ 正式 | 转写生产阶段，生成公众号/视频/播客包 |
+| `dasheng-stage-publish` | 1.0.0 | ✅ 正式 | 发布执行阶段 |
 | `dasheng-daily-postmortem` | 1.0.0 | ✅ 正式 | 复盘与知识回写 |
 | `dasheng-finance-data` | 0.1.0 | ✅ 正式 | Draft 金融数据增强工具，生成 Chart.js 图表规格 |
 | `dasheng-style-profiler` | 1.0.0 | ✅ 正式 | 文风 Style DNA 提炼 |
 | `feishu-doc-creator` | 1.0.0 | ✅ 正式 | 飞书文档创建辅助 |
+| `dasheng-html-video-bridge` | 0.1.0 | ✅ 正式 | 转写阶段调用本地 html-video 的口播视频桥接 skill |
+| `dasheng-html-anything-bridge` | 0.1.0 | ✅ 正式 | Draft/Transwrite 调用 HTML Anything 模板和视觉语言的桥接 skill |
+| `dasheng-video-talking-head` | 0.1.0 | ✅ 正式 | 真人出镜口播视频导演时间轴、证据层和包装工作流 |
+| `dasheng-video-explainer-html` | 0.1.0 | ✅ 正式 | HTML 文章转无真人竖版科普视频的分镜工作流 |
+| `social-auto-upload-bridge` | 0.1.0 | ✅ 正式 | Publish 阶段调用外部 social-auto-upload 的多视频平台上传桥 |
+| `bilibili-upload-bridge` | 0.1.0 | ✅ 正式 | Publish 阶段调用外部 B站上传工具的投稿桥 |
 
 ## 按需工具（不属于正式主链）
 
 | Skill 名称 | 状态 | 说明 |
 |------------|------|------|
 | `dasheng-stage-rewrite-v3` | 🧰 按需 | 多版本改写工具，能力并入 Draft/Publish 后按需调用 |
+| `dasheng-video-roughcut` | 🧰 按需 | 基于 FunASR + FFmpeg 的真人口播粗剪、字幕和审核页；现在作为 `dasheng-video-talking-head` 的前置子能力 |
 
 ## 已废弃 Skill（请勿使用）
 
@@ -35,7 +43,7 @@
 | `dasheng-stage-draft` | `dasheng-daily-draft` | 旧版本，已合并 |
 | `dasheng-stage-rewrite` | `dasheng-stage-rewrite-v3` | 已退为按需工具 |
 | `dasheng-stage-intake-brief-draft` | `dasheng-daily-intake` + `dasheng-daily-phase2` | 多阶段合并 |
-| `dasheng-stage-publish-video` | `dasheng-stage-publish` | 已并入 publish 阶段 |
+| `dasheng-stage-publish-video` | `dasheng-stage-transwrite` | 已并入口播视频转写生产 |
 | `dasheng-stage-distribute` | `dasheng-stage-publish` | 已并入 publish 阶段 |
 | `dasheng-collection-workflow` | `dasheng-daily-intake` | 能力已并入 intake |
 | `dasheng-sop-orchestrator` | `dasheng-media-sop` | 旧版本总控 |
@@ -55,7 +63,7 @@
     "dasheng-stage-draft": "dasheng-daily-draft",
     "dasheng-stage-rewrite": "dasheng-stage-rewrite-v3",
     "dasheng-stage-intake-brief-draft": "dasheng-daily-intake",
-    "dasheng-stage-publish-video": "dasheng-stage-publish",
+    "dasheng-stage-publish-video": "dasheng-stage-transwrite",
     "dasheng-stage-distribute": "dasheng-stage-publish",
     "dasheng-collection-workflow": "dasheng-daily-intake",
     "dasheng-sop-orchestrator": "dasheng-media-sop"

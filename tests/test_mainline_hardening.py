@@ -51,6 +51,12 @@ def load_script_module(name: str, path: Path):
 
 
 class MainlineHardeningTests(unittest.TestCase):
+    def test_runtime_outputs_reject_skills_directory(self):
+        with load_script_module("canonical_workflow_for_output_guard", ROOT / "scripts/canonical_workflow.py") as module:
+            forbidden = ROOT / "skills" / "dasheng-stage-transwrite" / "runtime-output"
+            with self.assertRaises(module.WorkflowContractError):
+                module.ensure_runtime_output_dir(forbidden, label="test output_dir")
+
     def test_build_stage3_draft_emits_final_structure_gate(self):
         with project_tempdir() as tmpdir:
             tmp = Path(tmpdir)
@@ -274,6 +280,1999 @@ class MainlineHardeningTests(unittest.TestCase):
             )
             self.assertNotEqual(proc.returncode, 0)
             self.assertIn("invalid choice", proc.stderr or proc.stdout)
+
+    def test_transwrite_builds_three_lane_package(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            draft_file = tmp / "03_标准初稿_topic-demo.md"
+            html_file = tmp / "03_HTML草稿_topic-demo.html"
+            draft_file.write_text("# 测试题\n\n## 第一部分\n\n这是用于转写测试的正文。", encoding="utf-8")
+            html_file.write_text("<html><body contenteditable=\"true\">正文</body></html>", encoding="utf-8")
+            write_json(
+                tmp / "draft_manifest.json",
+                {
+                    "run_id": "run-hardening-transwrite",
+                    "stage": "draft",
+                    "drafts": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "转写测试题",
+                            "draft_file": str(draft_file),
+                            "html_file": str(html_file),
+                        }
+                    ],
+                },
+            )
+            write_json(
+                tmp / "final_structure_snapshot.json",
+                {
+                    "run_id": "run-hardening-transwrite",
+                    "gate": "Final Structure Gate",
+                    "status": "approved",
+                    "topics": [{"topic_id": "topic-demo"}],
+                },
+            )
+            write_json(
+                tmp / "transwrite_decision.json",
+                {
+                    "run_id": "run-hardening-transwrite",
+                    "gate": "Transwrite Gate",
+                    "status": "approved",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "lanes": ["wechat_article", "talking_head_video", "podcast"],
+                            "wechat_article": {"humanize": True, "cover_generation": {"enabled": True}},
+                            "talking_head_video": {
+                                "visual_layer": {"background": "transparent"},
+                                "audio": {"mode": "synthetic_audio"},
+                            },
+                            "podcast": {"provider": "minimax", "mode": "solo"},
+                        }
+                    ],
+                },
+            )
+
+            proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/build_stage4_transwrite.py"),
+                    "--draft-manifest",
+                    str(tmp / "draft_manifest.json"),
+                    "--transwrite-decision",
+                    str(tmp / "transwrite_decision.json"),
+                    "--output-dir",
+                    str(tmp / "transwrite_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(proc.returncode, 0, msg=proc.stderr)
+            payload = json.loads(proc.stdout)
+            manifest = json.loads(Path(payload["manifest_file"]).read_text(encoding="utf-8"))
+            lanes = manifest["topics"][0]["lanes"]
+            self.assertIn("wechat_article", lanes)
+            self.assertIn("talking_head_video", lanes)
+            self.assertIn("podcast", lanes)
+            self.assertEqual(manifest["status"], "prepared_for_skill_execution")
+            self.assertEqual(lanes["wechat_article"]["status"], "ready_for_agent_execution")
+            self.assertEqual(lanes["talking_head_video"]["status"], "ready_for_skill_execution")
+            self.assertIn("execution_contract", lanes["wechat_article"])
+            self.assertIn("execution_contract", lanes["talking_head_video"])
+            self.assertIn("execution_contract", lanes["podcast"])
+            self.assertEqual(
+                lanes["talking_head_video"]["execution_contract"]["final_artifacts"]["video"],
+                str((tmp / "transwrite_out" / "topic-demo" / "talking_head_video" / "renders" / "topic-demo.mp4").resolve()),
+            )
+            self.assertTrue(Path(lanes["talking_head_video"]["html_overlay"]).exists())
+            self.assertEqual(lanes["talking_head_video"]["renderer"]["default"], "html-video")
+            self.assertTrue(Path(lanes["talking_head_video"]["html_video_project_plan"]).exists())
+            self.assertTrue(Path(lanes["talking_head_video"]["html_video_project_vars"]).exists())
+            self.assertTrue(Path(lanes["talking_head_video"]["html_video_commands"]).exists())
+            html_video_plan = json.loads(Path(lanes["talking_head_video"]["html_video_project_plan"]).read_text(encoding="utf-8"))
+            self.assertEqual(html_video_plan["renderer"], "html-video")
+            self.assertEqual(html_video_plan["template_id"], "frame-liquid-bg-hero")
+            bridge_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/transwrite_html_video_bridge.py"),
+                    "--video-manifest",
+                    lanes["talking_head_video"]["manifest"],
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(bridge_proc.returncode, 0, msg=bridge_proc.stderr)
+            bridge_payload = json.loads(bridge_proc.stdout)
+            self.assertEqual(bridge_payload["status"], "planned")
+            self.assertEqual(bridge_payload["plan"]["renderer"], "html-video")
+            self.assertEqual(manifest["next_stage"], "publish")
+
+    def test_publish_builds_slim_execution_pack_from_transwrite_manifest(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            wechat_manifest = tmp / "wechat_article_manifest.json"
+            video_manifest = tmp / "talking_head_video_manifest.json"
+            wechat_md = tmp / "wechat.md"
+            wechat_md.write_text("公众号正文", encoding="utf-8")
+            write_json(
+                wechat_manifest,
+                {
+                    "lane": "wechat_article",
+                    "status": "ready_base_package",
+                    "base_markdown": str(wechat_md),
+                    "final_html": str(tmp / "wechat.html"),
+                },
+            )
+            write_json(
+                video_manifest,
+                {
+                    "lane": "talking_head_video",
+                    "status": "planned_for_render",
+                    "render_plan": str(tmp / "render_plan.json"),
+                },
+            )
+            write_json(
+                tmp / "transwrite_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-slim",
+                    "stage": "transwrite",
+                    "status": "prepared_for_skill_execution",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "发布执行测试",
+                            "lanes": {
+                                "wechat_article": {
+                                    "status": "ready_base_package",
+                                    "manifest": str(wechat_manifest),
+                                    "base_markdown": str(wechat_md),
+                                },
+                                "talking_head_video": {
+                                    "status": "ready_for_skill_execution",
+                                    "manifest": str(video_manifest),
+                                    "render_plan": str(tmp / "render_plan.json"),
+                                },
+                            },
+                        }
+                    ],
+                },
+            )
+            write_json(
+                tmp / "publish_decision.json",
+                {
+                    "run_id": "run-hardening-publish-slim",
+                    "gate": "Channel Gate",
+                    "status": "approved",
+                    "topics": [{"topic_id": "topic-demo", "channels": ["wechat_article", "douyin_video"]}],
+                },
+            )
+
+            proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/build_stage5_publish.py"),
+                    "--transwrite-manifest",
+                    str(tmp / "transwrite_manifest.json"),
+                    "--publish-decision",
+                    str(tmp / "publish_decision.json"),
+                    "--output-dir",
+                    str(tmp / "publish_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(proc.returncode, 0, msg=proc.stderr)
+            payload = json.loads(proc.stdout)
+            self.assertEqual(payload["stage"], "publish")
+            self.assertEqual(payload["next_stage"], "postmortem")
+            self.assertEqual([pack["channel"] for pack in payload["channel_packs"]], ["wechat_article", "douyin_video"])
+            wechat_pack = next(pack for pack in payload["channel_packs"] if pack["channel"] == "wechat_article")
+            self.assertTrue(Path(wechat_pack["readme"]).exists())
+            wechat_readme = Path(wechat_pack["readme"]).read_text(encoding="utf-8")
+            self.assertIn("安全执行命令", wechat_readme)
+            self.assertIn("execute_publish_request.py", wechat_readme)
+            self.assertIn("--confirm-execute", wechat_readme)
+            video_pack = next(pack for pack in payload["channel_packs"] if pack["channel"] == "douyin_video")
+            self.assertEqual(video_pack["status"], "blocked_or_waiting")
+            self.assertEqual(video_pack["blocking_reason"], "lane_status_not_publish_ready:ready_for_skill_execution")
+            self.assertTrue(Path(video_pack["pack_manifest"]).exists())
+            self.assertTrue(Path(video_pack["readme"]).exists())
+            self.assertTrue((tmp / "publish_out" / "07_发布包.md").exists())
+
+    def test_publish_accepts_completed_transwrite_lane(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            video_manifest = tmp / "talking_head_video_manifest.json"
+            final_video = tmp / "final.mp4"
+            final_video.write_bytes(b"fake mp4")
+            write_json(video_manifest, {"lane": "talking_head_video", "status": "completed"})
+            write_json(
+                tmp / "transwrite_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-completed",
+                    "stage": "transwrite",
+                    "status": "prepared_for_skill_execution",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "完成态发布测试",
+                            "lanes": {
+                                "talking_head_video": {
+                                    "status": "completed",
+                                    "manifest": str(video_manifest),
+                                    "final_video": str(final_video),
+                                },
+                            },
+                        }
+                    ],
+                },
+            )
+            write_json(
+                tmp / "publish_decision.json",
+                {
+                    "run_id": "run-hardening-publish-completed",
+                    "gate": "Channel Gate",
+                    "status": "approved",
+                    "topics": [{"topic_id": "topic-demo", "channels": ["douyin_video"]}],
+                },
+            )
+
+            proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/build_stage5_publish.py"),
+                    "--transwrite-manifest",
+                    str(tmp / "transwrite_manifest.json"),
+                    "--publish-decision",
+                    str(tmp / "publish_decision.json"),
+                    "--output-dir",
+                    str(tmp / "publish_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(proc.returncode, 0, msg=proc.stderr)
+            payload = json.loads(proc.stdout)
+            self.assertEqual(payload["channel_packs"][0]["status"], "ready_for_execution")
+            self.assertIsNone(payload["channel_packs"][0]["blocking_reason"])
+            self.assertTrue(Path(payload["channel_packs"][0]["pack_manifest"]).exists())
+            browser_profile = payload["channel_packs"][0]["browser_profile"]
+            self.assertEqual(browser_profile["platform"], "douyin")
+            self.assertIn("DashengPublishProfiles/douyin", browser_profile["profile_dir"])
+            self.assertEqual(browser_profile["open_command"], "python3 scripts/open_publish_browser.py douyin_video")
+            pack_payload = json.loads(Path(payload["channel_packs"][0]["pack_manifest"]).read_text(encoding="utf-8"))
+            self.assertEqual(pack_payload["browser_profile"]["platform"], "douyin")
+            self.assertFalse(payload["channel_packs"][0]["execution_commands"]["confirm_execute_supported"])
+            self.assertIsNone(payload["channel_packs"][0]["execution_commands"]["confirmed_executor_command"])
+            execution_manifest = json.loads((tmp / "publish_out" / "channel_execution_manifest.json").read_text(encoding="utf-8"))
+            invocation = execution_manifest["executions"][0]["executor_invocation"]
+            self.assertIn("execute_publish_request.py", invocation["safe_executor_command"])
+            self.assertFalse(invocation["confirm_execute_supported"])
+            self.assertIsNone(invocation["confirmed_executor_command"])
+
+    def test_mainline_publish_dry_run_prepares_channel_execution_plans(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            wechat_manifest = tmp / "wechat_article_manifest.json"
+            video_manifest = tmp / "talking_head_video_manifest.json"
+            wechat_html = tmp / "wechat.html"
+            final_video = tmp / "final.mp4"
+            wechat_html.write_text("<html><body>公众号正文</body></html>", encoding="utf-8")
+            final_video.write_bytes(b"fake mp4")
+            write_json(wechat_manifest, {"lane": "wechat_article", "status": "completed"})
+            write_json(video_manifest, {"lane": "talking_head_video", "status": "completed"})
+            write_json(
+                tmp / "transwrite_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-dry-run",
+                    "stage": "transwrite",
+                    "status": "prepared_for_skill_execution",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "发布 dry-run 测试",
+                            "lanes": {
+                                "wechat_article": {
+                                    "status": "completed",
+                                    "manifest": str(wechat_manifest),
+                                    "final_html": str(wechat_html),
+                                },
+                                "talking_head_video": {
+                                    "status": "completed",
+                                    "manifest": str(video_manifest),
+                                    "final_video": str(final_video),
+                                },
+                            },
+                        }
+                    ],
+                },
+            )
+            write_json(
+                tmp / "publish_decision.json",
+                {
+                    "run_id": "run-hardening-publish-dry-run",
+                    "gate": "Channel Gate",
+                    "status": "approved",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "channels": ["wechat_article", "douyin_video", "bilibili_video"],
+                        }
+                    ],
+                },
+            )
+
+            proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/run_mainline_stage.py"),
+                    "publish",
+                    "--transwrite-manifest",
+                    str(tmp / "transwrite_manifest.json"),
+                    "--publish-decision",
+                    str(tmp / "publish_decision.json"),
+                    "--output-dir",
+                    str(tmp / "publish_out"),
+                    "--dry-run",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+
+            self.assertEqual(proc.returncode, 0, msg=proc.stderr)
+            payload = json.loads(proc.stdout)
+            self.assertEqual(payload["mode"], "dry_run")
+            self.assertTrue(payload["will_not_publish"])
+            self.assertEqual(len(payload["plans"]), 3)
+            self.assertTrue(Path(payload["report_file"]).exists())
+            self.assertTrue(Path(payload["preflight_report"]).exists())
+            self.assertEqual(payload["summary"]["total_channels"], 3)
+            self.assertGreaterEqual(payload["summary"]["missing_dependency_count"], 0)
+            preflight_text = Path(payload["preflight_report"]).read_text(encoding="utf-8")
+            self.assertIn("Publish 发布前总预检", preflight_text)
+            self.assertIn("不会触发真实发布", preflight_text)
+            self.assertIn("wechat_article", preflight_text)
+            self.assertIn("安全执行预演", preflight_text)
+            self.assertIn("确认后执行", preflight_text)
+            self.assertIn("execute_publish_request.py", preflight_text)
+            self.assertIn("--confirm-execute", preflight_text)
+            self.assertIn("safe_executor_command", payload["summary"]["channels"][0])
+            self.assertEqual({plan["channel"] for plan in payload["plans"]}, {"wechat_article", "douyin_video", "bilibili_video"})
+
+    def test_publish_xhs_video_uses_api_first_bridge_execution_request(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            video_manifest = tmp / "talking_head_video_manifest.json"
+            final_video = tmp / "final.mp4"
+            final_video.write_bytes(b"fake mp4")
+            write_json(video_manifest, {"lane": "talking_head_video", "status": "completed"})
+            write_json(
+                tmp / "transwrite_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-xhs-api-first",
+                    "stage": "transwrite",
+                    "status": "prepared_for_skill_execution",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "小红书桥接测试",
+                            "lanes": {
+                                "talking_head_video": {
+                                    "status": "completed",
+                                    "manifest": str(video_manifest),
+                                    "final_video": str(final_video),
+                                },
+                            },
+                        }
+                    ],
+                },
+            )
+            write_json(
+                tmp / "publish_decision.json",
+                {
+                    "run_id": "run-hardening-publish-xhs-api-first",
+                    "gate": "Channel Gate",
+                    "status": "approved",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "小红书桥接测试",
+                            "channels": ["xiaohongshu_video"],
+                            "tags": ["AI", "财经"],
+                        }
+                    ],
+                },
+            )
+
+            proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/build_stage5_publish.py"),
+                    "--transwrite-manifest",
+                    str(tmp / "transwrite_manifest.json"),
+                    "--publish-decision",
+                    str(tmp / "publish_decision.json"),
+                    "--output-dir",
+                    str(tmp / "publish_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+
+            self.assertEqual(proc.returncode, 0, msg=proc.stderr)
+            payload = json.loads(proc.stdout)
+            pack = payload["channel_packs"][0]
+            self.assertEqual(pack["executor_skill"], "dasheng-xhs-publish-bridge")
+            self.assertEqual(pack["execution_mode"], "api_first_with_browser_fallback")
+            self.assertFalse(pack["execution_commands"]["confirm_execute_supported"])
+            self.assertIsNone(pack["execution_commands"]["confirmed_executor_command"])
+            self.assertTrue(Path(pack["execution_request"]).exists())
+            self.assertTrue(Path(pack["verification_request"]).exists())
+
+            execution_request = json.loads(Path(pack["execution_request"]).read_text(encoding="utf-8"))
+            self.assertEqual(execution_request["platform"], "xiaohongshu")
+            self.assertEqual(execution_request["route_priority"][0]["route"], "all-in-one")
+            self.assertEqual(execution_request["route_priority"][-1]["route"], "browser-profile")
+            self.assertIn("aione xhs creator post-note", "\n".join(execution_request["route_priority"][0]["command_templates"]))
+
+    def test_record_publish_result_updates_channel_pack_and_verification_report(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            wechat_manifest = tmp / "wechat_article_manifest.json"
+            wechat_html = tmp / "wechat.html"
+            wechat_html.write_text("<html><body>公众号正文</body></html>", encoding="utf-8")
+            write_json(wechat_manifest, {"lane": "wechat_article", "status": "completed"})
+            write_json(
+                tmp / "transwrite_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-result",
+                    "stage": "transwrite",
+                    "status": "prepared_for_skill_execution",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "发布结果回收测试",
+                            "lanes": {
+                                "wechat_article": {
+                                    "status": "completed",
+                                    "manifest": str(wechat_manifest),
+                                    "final_html": str(wechat_html),
+                                },
+                            },
+                        }
+                    ],
+                },
+            )
+            write_json(
+                tmp / "publish_decision.json",
+                {
+                    "run_id": "run-hardening-publish-result",
+                    "gate": "Channel Gate",
+                    "status": "approved",
+                    "topics": [{"topic_id": "topic-demo", "channels": ["wechat_article"]}],
+                },
+            )
+            build_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/build_stage5_publish.py"),
+                    "--transwrite-manifest",
+                    str(tmp / "transwrite_manifest.json"),
+                    "--publish-decision",
+                    str(tmp / "publish_decision.json"),
+                    "--output-dir",
+                    str(tmp / "publish_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(build_proc.returncode, 0, msg=build_proc.stderr)
+            publish_payload = json.loads(build_proc.stdout)
+            self.assertEqual(publish_payload["publish_summary"]["status"], "pending_execution")
+            self.assertEqual(publish_payload["publish_summary"]["total_channels"], 1)
+            self.assertEqual(publish_payload["publish_summary"]["recorded_count"], 0)
+            self.assertEqual(publish_payload["publish_summary"]["pending_count"], 1)
+            self.assertEqual(publish_payload["publish_results"], [])
+            channel_pack = publish_payload["channel_packs"][0]["pack_manifest"]
+            initial_manifest = json.loads((tmp / "publish_out" / "publish_manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(initial_manifest["publish_summary"], publish_payload["publish_summary"])
+            initial_verification = json.loads((tmp / "publish_out" / "publish_verification_report.json").read_text(encoding="utf-8"))
+            self.assertEqual(initial_verification["publish_summary"], publish_payload["publish_summary"])
+            self.assertEqual(initial_verification["records"], [])
+            self.assertEqual(initial_verification["draft_records"], [])
+            result_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/record_publish_result.py"),
+                    "--channel-pack",
+                    channel_pack,
+                    "--success",
+                    "true",
+                    "--status",
+                    "draft",
+                    "--platform",
+                    "wechat",
+                    "--draft-id",
+                    "draft_123",
+                    "--verification-status",
+                    "verified",
+                    "--account",
+                    "dasheng-test",
+                    "--screenshot",
+                    str(tmp / "wechat_draft.png"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(result_proc.returncode, 0, msg=result_proc.stderr)
+            result_payload = json.loads(result_proc.stdout)
+            self.assertEqual(result_payload["status"], "recorded")
+            self.assertTrue(Path(result_payload["publish_result"]).exists())
+
+            pack_payload = json.loads(Path(channel_pack).read_text(encoding="utf-8"))
+            self.assertEqual(pack_payload["publish_status"], "draft")
+            self.assertEqual(pack_payload["draft_id"], "draft_123")
+            self.assertEqual(pack_payload["verification_status"], "verified")
+
+            verification = json.loads((tmp / "publish_out" / "publish_verification_report.json").read_text(encoding="utf-8"))
+            self.assertEqual(verification["status"], "all_drafted")
+            self.assertEqual(verification["publish_summary"]["draft_count"], 1)
+            self.assertEqual(verification["published_links"], [])
+            self.assertEqual(verification["draft_records"][0]["draft_id"], "draft_123")
+
+            execution = json.loads((tmp / "publish_out" / "channel_execution_manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(execution["executions"][0]["status"], "draft")
+            self.assertEqual(execution["executions"][0]["result"]["draft_id"], "draft_123")
+
+            manifest = json.loads((tmp / "publish_out" / "publish_manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(manifest["publish_results"][0]["draft_id"], "draft_123")
+            self.assertEqual(manifest["status"], "all_drafted")
+            self.assertEqual(manifest["publish_summary"]["pending_count"], 0)
+
+            postmortem_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/postmortem_writeback.py"),
+                    "--publish-manifest",
+                    str(tmp / "publish_out" / "publish_manifest.json"),
+                    "--output-dir",
+                    str(tmp / "postmortem_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(postmortem_proc.returncode, 0, msg=postmortem_proc.stderr)
+            postmortem = json.loads((tmp / "postmortem_out" / "postmortem_manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(postmortem["topics"][0]["publish_results"][0]["draft_id"], "draft_123")
+            self.assertTrue(postmortem["topics"][0]["drafted"])
+            self.assertEqual(postmortem["writeback"]["topic_pattern_library"]["drafted_topics"], 1)
+            report_text = (tmp / "postmortem_out" / "08_复盘报告.md").read_text(encoding="utf-8")
+            self.assertIn("draft_123", report_text)
+
+    def test_record_publish_result_reports_partial_when_other_channels_pending(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            wechat_manifest = tmp / "wechat_article_manifest.json"
+            video_manifest = tmp / "talking_head_video_manifest.json"
+            wechat_html = tmp / "wechat.html"
+            video = tmp / "video.mp4"
+            wechat_html.write_text("<html><body>公众号正文</body></html>", encoding="utf-8")
+            video.write_bytes(b"fake mp4")
+            write_json(wechat_manifest, {"lane": "wechat_article", "status": "completed"})
+            write_json(video_manifest, {"lane": "talking_head_video", "status": "completed"})
+            write_json(
+                tmp / "transwrite_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-partial",
+                    "stage": "transwrite",
+                    "status": "prepared_for_skill_execution",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "发布结果部分回填测试",
+                            "lanes": {
+                                "wechat_article": {
+                                    "status": "completed",
+                                    "manifest": str(wechat_manifest),
+                                    "final_html": str(wechat_html),
+                                },
+                                "talking_head_video": {
+                                    "status": "completed",
+                                    "manifest": str(video_manifest),
+                                    "final_video": str(video),
+                                },
+                            },
+                        }
+                    ],
+                },
+            )
+            write_json(
+                tmp / "publish_decision.json",
+                {
+                    "run_id": "run-hardening-publish-partial",
+                    "gate": "Channel Gate",
+                    "status": "approved",
+                    "topics": [{"topic_id": "topic-demo", "channels": ["wechat_article", "xiaohongshu_video"]}],
+                },
+            )
+            build_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/build_stage5_publish.py"),
+                    "--transwrite-manifest",
+                    str(tmp / "transwrite_manifest.json"),
+                    "--publish-decision",
+                    str(tmp / "publish_decision.json"),
+                    "--output-dir",
+                    str(tmp / "publish_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(build_proc.returncode, 0, msg=build_proc.stderr)
+            publish_payload = json.loads(build_proc.stdout)
+            channel_pack = next(
+                pack["pack_manifest"]
+                for pack in publish_payload["channel_packs"]
+                if pack["channel"] == "wechat_article"
+            )
+
+            result_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/record_publish_result.py"),
+                    "--channel-pack",
+                    channel_pack,
+                    "--success",
+                    "true",
+                    "--status",
+                    "draft",
+                    "--platform",
+                    "wechat",
+                    "--draft-id",
+                    "draft_partial",
+                    "--verification-status",
+                    "verified",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(result_proc.returncode, 0, msg=result_proc.stderr)
+
+            manifest = json.loads((tmp / "publish_out" / "publish_manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(manifest["status"], "partially_recorded")
+            self.assertEqual(manifest["publish_summary"]["total_channels"], 2)
+            self.assertEqual(manifest["publish_summary"]["recorded_count"], 1)
+            self.assertEqual(manifest["publish_summary"]["pending_count"], 1)
+            self.assertEqual(manifest["publish_summary"]["pending_channels"][0]["channel"], "xiaohongshu_video")
+
+            verification = json.loads((tmp / "publish_out" / "publish_verification_report.json").read_text(encoding="utf-8"))
+            self.assertEqual(verification["status"], "partially_recorded")
+            self.assertEqual(verification["publish_summary"]["draft_count"], 1)
+            self.assertEqual(verification["publish_summary"]["published_count"], 0)
+
+    def test_publish_record_and_postmortem_end_to_end_mixed_topic(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            wechat_manifest = tmp / "wechat_article_manifest.json"
+            video_manifest = tmp / "talking_head_video_manifest.json"
+            wechat_html = tmp / "wechat.final.html"
+            video = tmp / "talking_head.final.mp4"
+            wechat_html.write_text("<html><body>混合发布整链测试</body></html>", encoding="utf-8")
+            video.write_bytes(b"fake mp4")
+            write_json(wechat_manifest, {"lane": "wechat_article", "status": "completed"})
+            write_json(video_manifest, {"lane": "talking_head_video", "status": "completed"})
+            write_json(
+                tmp / "transwrite_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-e2e-mixed",
+                    "stage": "transwrite",
+                    "status": "prepared_for_skill_execution",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "发布整链混合状态测试",
+                            "lanes": {
+                                "wechat_article": {
+                                    "status": "completed",
+                                    "manifest": str(wechat_manifest),
+                                    "final_html": str(wechat_html),
+                                },
+                                "talking_head_video": {
+                                    "status": "completed",
+                                    "manifest": str(video_manifest),
+                                    "final_video": str(video),
+                                },
+                            },
+                        }
+                    ],
+                },
+            )
+            write_json(
+                tmp / "publish_decision.json",
+                {
+                    "run_id": "run-hardening-publish-e2e-mixed",
+                    "gate": "Channel Gate",
+                    "status": "approved",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "发布整链混合状态测试",
+                            "channels": ["wechat_article", "xiaohongshu_video"],
+                            "tags": ["AI", "市场"],
+                        }
+                    ],
+                },
+            )
+
+            build_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/build_stage5_publish.py"),
+                    "--transwrite-manifest",
+                    str(tmp / "transwrite_manifest.json"),
+                    "--publish-decision",
+                    str(tmp / "publish_decision.json"),
+                    "--output-dir",
+                    str(tmp / "publish_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(build_proc.returncode, 0, msg=build_proc.stderr)
+            publish_payload = json.loads(build_proc.stdout)
+            packs_by_channel = {pack["channel"]: pack["pack_manifest"] for pack in publish_payload["channel_packs"]}
+            self.assertEqual(set(packs_by_channel), {"wechat_article", "xiaohongshu_video"})
+
+            wechat_result = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/record_publish_result.py"),
+                    "--channel-pack",
+                    packs_by_channel["wechat_article"],
+                    "--success",
+                    "true",
+                    "--status",
+                    "draft",
+                    "--platform",
+                    "wechat",
+                    "--draft-id",
+                    "draft_e2e_001",
+                    "--draft-url",
+                    "https://mp.weixin.qq.com/cgi-bin/appmsg?t=media/appmsg_edit&appmsgid=draft_e2e_001",
+                    "--verification-status",
+                    "verified",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(wechat_result.returncode, 0, msg=wechat_result.stderr)
+
+            xhs_result = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/record_publish_result.py"),
+                    "--channel-pack",
+                    packs_by_channel["xiaohongshu_video"],
+                    "--success",
+                    "true",
+                    "--status",
+                    "published",
+                    "--platform",
+                    "xiaohongshu",
+                    "--platform-url",
+                    "https://www.xiaohongshu.com/explore/e2e001",
+                    "--platform-post-id",
+                    "e2e001",
+                    "--verification-status",
+                    "verified",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(xhs_result.returncode, 0, msg=xhs_result.stderr)
+
+            manifest = json.loads((tmp / "publish_out" / "publish_manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(manifest["status"], "completed_with_mixed_status")
+            self.assertEqual(manifest["publish_summary"]["total_channels"], 2)
+            self.assertEqual(manifest["publish_summary"]["recorded_count"], 2)
+            self.assertEqual(manifest["publish_summary"]["pending_count"], 0)
+            self.assertEqual(manifest["publish_summary"]["draft_count"], 1)
+            self.assertEqual(manifest["publish_summary"]["published_count"], 1)
+            self.assertEqual(manifest["publish_summary"]["verified_count"], 2)
+
+            verification = json.loads((tmp / "publish_out" / "publish_verification_report.json").read_text(encoding="utf-8"))
+            self.assertEqual(verification["status"], "completed_with_mixed_status")
+            self.assertEqual(len(verification["published_links"]), 1)
+            self.assertEqual(verification["published_links"][0]["channel"], "xiaohongshu_video")
+            self.assertEqual(verification["published_links"][0]["url"], "https://www.xiaohongshu.com/explore/e2e001")
+            self.assertEqual(len(verification["draft_records"]), 1)
+            self.assertEqual(verification["draft_records"][0]["channel"], "wechat_article")
+            self.assertEqual(verification["draft_records"][0]["draft_id"], "draft_e2e_001")
+
+            postmortem_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/postmortem_writeback.py"),
+                    "--publish-manifest",
+                    str(tmp / "publish_out" / "publish_manifest.json"),
+                    "--output-dir",
+                    str(tmp / "postmortem_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(postmortem_proc.returncode, 0, msg=postmortem_proc.stderr)
+            postmortem = json.loads((tmp / "postmortem_out" / "postmortem_manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(len(postmortem["topics"]), 1)
+            self.assertEqual(postmortem["topics"][0]["topic_id"], "topic-demo")
+            self.assertTrue(postmortem["topics"][0]["published"])
+            self.assertTrue(postmortem["topics"][0]["drafted"])
+            self.assertEqual(postmortem["topics"][0]["selected_channels"], ["wechat_article", "xiaohongshu_video"])
+            self.assertEqual(postmortem["writeback"]["topic_pattern_library"]["published_topics"], 1)
+            self.assertEqual(postmortem["writeback"]["topic_pattern_library"]["drafted_topics"], 1)
+
+    def test_publish_channel_pack_can_select_second_browser_profile(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            video_manifest = tmp / "talking_head_video_manifest.json"
+            video = tmp / "talking_head.final.mp4"
+            video.write_bytes(b"fake mp4")
+            write_json(video_manifest, {"lane": "talking_head_video", "status": "completed"})
+            write_json(
+                tmp / "transwrite_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-profile-slot",
+                    "stage": "transwrite",
+                    "status": "completed",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "多账号 Profile 测试",
+                            "lanes": {
+                                "talking_head_video": {
+                                    "status": "completed",
+                                    "manifest": str(video_manifest),
+                                    "final_video": str(video),
+                                }
+                            },
+                        }
+                    ],
+                },
+            )
+            write_json(
+                tmp / "publish_decision.json",
+                {
+                    "run_id": "run-hardening-publish-profile-slot",
+                    "gate": "Channel Gate",
+                    "status": "approved",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "channels": ["xiaohongshu_video"],
+                            "browser_profile_key": "xiaohongshu_video_2",
+                        }
+                    ],
+                },
+            )
+
+            build_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/build_stage5_publish.py"),
+                    "--transwrite-manifest",
+                    str(tmp / "transwrite_manifest.json"),
+                    "--publish-decision",
+                    str(tmp / "publish_decision.json"),
+                    "--output-dir",
+                    str(tmp / "publish_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+
+            self.assertEqual(build_proc.returncode, 0, msg=build_proc.stderr)
+            publish_payload = json.loads(build_proc.stdout)
+            pack_path = Path(publish_payload["channel_packs"][0]["pack_manifest"])
+            channel_pack = json.loads(pack_path.read_text(encoding="utf-8"))
+            self.assertEqual(channel_pack["browser_profile"]["profile_key"], "xiaohongshu_video_2")
+            self.assertIn("DashengPublishProfiles/xiaohongshu-2", channel_pack["browser_profile"]["profile_dir"])
+            self.assertEqual(
+                channel_pack["browser_profile"]["open_command"],
+                "python3 scripts/open_publish_browser.py xiaohongshu_video_2",
+            )
+
+    def test_record_publish_result_failed_status_wins_over_partial_progress(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            pack_dir = tmp / "publish_out" / "channel_packs" / "topic-demo" / "wechat_article"
+            pack_dir.mkdir(parents=True)
+            channel_pack = pack_dir / "channel_pack.json"
+            write_json(
+                channel_pack,
+                {
+                    "topic_id": "topic-demo",
+                    "title": "发布失败回填测试",
+                    "channel": "wechat_article",
+                    "platform": "wechat",
+                    "status": "ready_for_execution",
+                },
+            )
+            write_json(
+                tmp / "publish_out" / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-failed",
+                    "stage": "publish",
+                    "status": "pending_execution",
+                    "channel_packs": [json.loads(channel_pack.read_text(encoding="utf-8"))],
+                },
+            )
+            write_json(
+                tmp / "publish_out" / "publish_verification_report.json",
+                {"run_id": "run-hardening-publish-failed", "stage": "publish", "status": "pending_execution", "published_links": []},
+            )
+
+            result_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/record_publish_result.py"),
+                    "--channel-pack",
+                    str(channel_pack),
+                    "--success",
+                    "false",
+                    "--status",
+                    "failed",
+                    "--platform",
+                    "wechat",
+                    "--error",
+                    "login expired",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(result_proc.returncode, 0, msg=result_proc.stderr)
+
+            manifest = json.loads((tmp / "publish_out" / "publish_manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(manifest["status"], "failed")
+            self.assertEqual(manifest["publish_summary"]["failed_count"], 1)
+            verification = json.loads((tmp / "publish_out" / "publish_verification_report.json").read_text(encoding="utf-8"))
+            self.assertEqual(verification["status"], "failed")
+
+    def test_record_publish_result_requires_url_for_published_status(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            pack_dir = tmp / "publish_out" / "channel_packs" / "topic-demo" / "wechat_article"
+            pack_dir.mkdir(parents=True)
+            channel_pack = pack_dir / "channel_pack.json"
+            write_json(
+                channel_pack,
+                {
+                    "topic_id": "topic-demo",
+                    "title": "发布无链接测试",
+                    "channel": "wechat_article",
+                    "platform": "wechat",
+                    "status": "ready_for_execution",
+                },
+            )
+            write_json(
+                tmp / "publish_out" / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-url-required",
+                    "stage": "publish",
+                    "status": "pending_execution",
+                    "channel_packs": [json.loads(channel_pack.read_text(encoding="utf-8"))],
+                },
+            )
+            write_json(
+                tmp / "publish_out" / "publish_verification_report.json",
+                {"run_id": "run-hardening-publish-url-required", "stage": "publish", "status": "pending_execution", "published_links": []},
+            )
+
+            result_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/record_publish_result.py"),
+                    "--channel-pack",
+                    str(channel_pack),
+                    "--success",
+                    "true",
+                    "--status",
+                    "published",
+                    "--platform",
+                    "wechat",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(result_proc.returncode, 0, msg=result_proc.stderr)
+
+            verification = json.loads((tmp / "publish_out" / "publish_verification_report.json").read_text(encoding="utf-8"))
+            self.assertEqual(verification["status"], "needs_manual_verification")
+            self.assertEqual(verification["publish_summary"]["needs_manual_verification_count"], 1)
+            self.assertEqual(verification["published_links"], [])
+            self.assertEqual(verification["draft_records"], [])
+
+    def test_record_publish_result_requires_draft_id_for_draft_status(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            pack_dir = tmp / "publish_out" / "channel_packs" / "topic-demo" / "wechat_article"
+            pack_dir.mkdir(parents=True)
+            channel_pack = pack_dir / "channel_pack.json"
+            write_json(
+                channel_pack,
+                {
+                    "topic_id": "topic-demo",
+                    "title": "草稿无ID测试",
+                    "channel": "wechat_article",
+                    "platform": "wechat",
+                    "status": "ready_for_execution",
+                },
+            )
+            write_json(
+                tmp / "publish_out" / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-draft-id-required",
+                    "stage": "publish",
+                    "status": "pending_execution",
+                    "channel_packs": [json.loads(channel_pack.read_text(encoding="utf-8"))],
+                },
+            )
+            write_json(
+                tmp / "publish_out" / "publish_verification_report.json",
+                {"run_id": "run-hardening-publish-draft-id-required", "stage": "publish", "status": "pending_execution", "published_links": []},
+            )
+
+            result_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/record_publish_result.py"),
+                    "--channel-pack",
+                    str(channel_pack),
+                    "--success",
+                    "true",
+                    "--status",
+                    "draft",
+                    "--platform",
+                    "wechat",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(result_proc.returncode, 0, msg=result_proc.stderr)
+
+            verification = json.loads((tmp / "publish_out" / "publish_verification_report.json").read_text(encoding="utf-8"))
+            self.assertEqual(verification["status"], "needs_manual_verification")
+            self.assertEqual(verification["publish_summary"]["needs_manual_verification_count"], 1)
+            self.assertEqual(verification["published_links"], [])
+            self.assertEqual(verification["draft_records"], [])
+
+    def test_record_publish_result_requires_verified_status_for_published_links(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            pack_dir = tmp / "publish_out" / "channel_packs" / "topic-demo" / "wechat_article"
+            pack_dir.mkdir(parents=True)
+            channel_pack = pack_dir / "channel_pack.json"
+            write_json(
+                channel_pack,
+                {
+                    "topic_id": "topic-demo",
+                    "title": "未验真链接测试",
+                    "channel": "wechat_article",
+                    "platform": "wechat",
+                    "status": "ready_for_execution",
+                },
+            )
+            write_json(
+                tmp / "publish_out" / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-verified-required",
+                    "stage": "publish",
+                    "status": "pending_execution",
+                    "channel_packs": [json.loads(channel_pack.read_text(encoding="utf-8"))],
+                },
+            )
+            write_json(
+                tmp / "publish_out" / "publish_verification_report.json",
+                {"run_id": "run-hardening-publish-verified-required", "stage": "publish", "status": "pending_execution", "published_links": []},
+            )
+
+            result_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/record_publish_result.py"),
+                    "--channel-pack",
+                    str(channel_pack),
+                    "--success",
+                    "true",
+                    "--status",
+                    "published",
+                    "--platform",
+                    "wechat",
+                    "--platform-url",
+                    "https://mp.weixin.qq.com/s/not-yet-verified",
+                    "--verification-status",
+                    "needs_manual_verification",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(result_proc.returncode, 0, msg=result_proc.stderr)
+
+            verification = json.loads((tmp / "publish_out" / "publish_verification_report.json").read_text(encoding="utf-8"))
+            self.assertEqual(verification["status"], "needs_manual_verification")
+            self.assertEqual(verification["publish_summary"]["published_count"], 0)
+            self.assertEqual(verification["published_links"], [])
+
+    def test_record_publish_result_does_not_auto_verify_published_url(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            pack_dir = tmp / "publish_out" / "channel_packs" / "topic-demo" / "wechat_article"
+            pack_dir.mkdir(parents=True)
+            channel_pack = pack_dir / "channel_pack.json"
+            write_json(
+                channel_pack,
+                {
+                    "topic_id": "topic-demo",
+                    "title": "发布链接默认未验真测试",
+                    "channel": "wechat_article",
+                    "platform": "wechat",
+                    "status": "ready_for_execution",
+                },
+            )
+            write_json(
+                tmp / "publish_out" / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-no-auto-verify-url",
+                    "stage": "publish",
+                    "status": "pending_execution",
+                    "channel_packs": [json.loads(channel_pack.read_text(encoding="utf-8"))],
+                },
+            )
+            write_json(
+                tmp / "publish_out" / "publish_verification_report.json",
+                {"run_id": "run-hardening-publish-no-auto-verify-url", "stage": "publish", "status": "pending_execution", "published_links": []},
+            )
+
+            result_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/record_publish_result.py"),
+                    "--channel-pack",
+                    str(channel_pack),
+                    "--success",
+                    "true",
+                    "--status",
+                    "published",
+                    "--platform",
+                    "wechat",
+                    "--platform-url",
+                    "https://mp.weixin.qq.com/s/has-url-but-not-verified",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(result_proc.returncode, 0, msg=result_proc.stderr)
+
+            verification = json.loads((tmp / "publish_out" / "publish_verification_report.json").read_text(encoding="utf-8"))
+            self.assertEqual(verification["status"], "needs_manual_verification")
+            self.assertEqual(verification["publish_summary"]["published_count"], 0)
+            self.assertEqual(verification["publish_summary"]["needs_manual_verification_count"], 1)
+            self.assertEqual(verification["published_links"], [])
+
+    def test_record_publish_result_does_not_auto_verify_draft_id(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            pack_dir = tmp / "publish_out" / "channel_packs" / "topic-demo" / "wechat_article"
+            pack_dir.mkdir(parents=True)
+            channel_pack = pack_dir / "channel_pack.json"
+            write_json(
+                channel_pack,
+                {
+                    "topic_id": "topic-demo",
+                    "title": "草稿 ID 默认未验真测试",
+                    "channel": "wechat_article",
+                    "platform": "wechat",
+                    "status": "ready_for_execution",
+                },
+            )
+            write_json(
+                tmp / "publish_out" / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-no-auto-verify-draft",
+                    "stage": "publish",
+                    "status": "pending_execution",
+                    "channel_packs": [json.loads(channel_pack.read_text(encoding="utf-8"))],
+                },
+            )
+            write_json(
+                tmp / "publish_out" / "publish_verification_report.json",
+                {"run_id": "run-hardening-publish-no-auto-verify-draft", "stage": "publish", "status": "pending_execution", "published_links": []},
+            )
+
+            result_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/record_publish_result.py"),
+                    "--channel-pack",
+                    str(channel_pack),
+                    "--success",
+                    "true",
+                    "--status",
+                    "draft",
+                    "--platform",
+                    "wechat",
+                    "--draft-id",
+                    "draft_not_explicitly_verified",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(result_proc.returncode, 0, msg=result_proc.stderr)
+
+            verification = json.loads((tmp / "publish_out" / "publish_verification_report.json").read_text(encoding="utf-8"))
+            self.assertEqual(verification["status"], "needs_manual_verification")
+            self.assertEqual(verification["publish_summary"]["draft_count"], 0)
+            self.assertEqual(verification["publish_summary"]["needs_manual_verification_count"], 1)
+            self.assertEqual(verification["draft_records"], [])
+
+    def test_record_publish_result_keeps_draft_url_out_of_published_links(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            pack_dir = tmp / "publish_out" / "channel_packs" / "topic-demo" / "wechat_article"
+            pack_dir.mkdir(parents=True)
+            channel_pack = pack_dir / "channel_pack.json"
+            write_json(
+                channel_pack,
+                {
+                    "topic_id": "topic-demo",
+                    "title": "草稿链接隔离测试",
+                    "channel": "wechat_article",
+                    "platform": "wechat",
+                    "status": "ready_for_execution",
+                },
+            )
+            write_json(
+                tmp / "publish_out" / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-draft-url",
+                    "stage": "publish",
+                    "status": "pending_execution",
+                    "channel_packs": [json.loads(channel_pack.read_text(encoding="utf-8"))],
+                },
+            )
+            write_json(
+                tmp / "publish_out" / "publish_verification_report.json",
+                {"run_id": "run-hardening-publish-draft-url", "stage": "publish", "status": "pending_execution", "published_links": []},
+            )
+
+            result_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/record_publish_result.py"),
+                    "--channel-pack",
+                    str(channel_pack),
+                    "--success",
+                    "true",
+                    "--status",
+                    "draft",
+                    "--platform",
+                    "wechat",
+                    "--draft-id",
+                    "draft_url_123",
+                    "--draft-url",
+                    "https://mp.weixin.qq.com/cgi-bin/appmsg?t=media/appmsg_edit&action=edit&type=10&appmsgid=draft_url_123",
+                    "--verification-status",
+                    "verified",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(result_proc.returncode, 0, msg=result_proc.stderr)
+
+            verification = json.loads((tmp / "publish_out" / "publish_verification_report.json").read_text(encoding="utf-8"))
+            self.assertEqual(verification["status"], "all_drafted")
+            self.assertEqual(verification["published_links"], [])
+            self.assertEqual(verification["draft_records"][0]["draft_id"], "draft_url_123")
+            self.assertIn("appmsg_edit", verification["draft_records"][0]["draft_url"])
+
+    def test_postmortem_does_not_count_published_without_platform_url(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            write_json(
+                tmp / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-postmortem-published-url",
+                    "stage": "publish",
+                    "status": "needs_manual_verification",
+                    "channel_packs": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "复盘发布口径测试",
+                            "channel": "wechat_article",
+                        }
+                    ],
+                    "publish_results": [
+                        {
+                            "topic_id": "topic-demo",
+                            "channel": "wechat_article",
+                            "status": "published",
+                            "success": True,
+                            "verification_status": "needs_manual_verification",
+                        }
+                    ],
+                },
+            )
+
+            postmortem_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/postmortem_writeback.py"),
+                    "--publish-manifest",
+                    str(tmp / "publish_manifest.json"),
+                    "--output-dir",
+                    str(tmp / "postmortem_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(postmortem_proc.returncode, 0, msg=postmortem_proc.stderr)
+            postmortem = json.loads((tmp / "postmortem_out" / "postmortem_manifest.json").read_text(encoding="utf-8"))
+            self.assertFalse(postmortem["topics"][0]["published"])
+            self.assertEqual(postmortem["writeback"]["topic_pattern_library"]["published_topics"], 0)
+
+    def test_postmortem_does_not_count_unverified_published_url(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            write_json(
+                tmp / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-postmortem-published-verified",
+                    "stage": "publish",
+                    "status": "needs_manual_verification",
+                    "channel_packs": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "复盘验真口径测试",
+                            "channel": "wechat_article",
+                        }
+                    ],
+                    "publish_results": [
+                        {
+                            "topic_id": "topic-demo",
+                            "channel": "wechat_article",
+                            "status": "published",
+                            "success": True,
+                            "platform_url": "https://mp.weixin.qq.com/s/not-verified",
+                            "verification_status": "needs_manual_verification",
+                        }
+                    ],
+                },
+            )
+
+            postmortem_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/postmortem_writeback.py"),
+                    "--publish-manifest",
+                    str(tmp / "publish_manifest.json"),
+                    "--output-dir",
+                    str(tmp / "postmortem_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(postmortem_proc.returncode, 0, msg=postmortem_proc.stderr)
+            postmortem = json.loads((tmp / "postmortem_out" / "postmortem_manifest.json").read_text(encoding="utf-8"))
+            self.assertFalse(postmortem["topics"][0]["published"])
+            self.assertEqual(postmortem["writeback"]["topic_pattern_library"]["published_topics"], 0)
+
+    def test_postmortem_does_not_count_draft_without_draft_id(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            write_json(
+                tmp / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-postmortem-draft-id",
+                    "stage": "publish",
+                    "status": "needs_manual_verification",
+                    "channel_packs": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "复盘草稿口径测试",
+                            "channel": "wechat_article",
+                        }
+                    ],
+                    "publish_results": [
+                        {
+                            "topic_id": "topic-demo",
+                            "channel": "wechat_article",
+                            "status": "draft",
+                            "success": True,
+                            "verification_status": "needs_manual_verification",
+                        }
+                    ],
+                },
+            )
+
+            postmortem_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/postmortem_writeback.py"),
+                    "--publish-manifest",
+                    str(tmp / "publish_manifest.json"),
+                    "--output-dir",
+                    str(tmp / "postmortem_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(postmortem_proc.returncode, 0, msg=postmortem_proc.stderr)
+            postmortem = json.loads((tmp / "postmortem_out" / "postmortem_manifest.json").read_text(encoding="utf-8"))
+            self.assertFalse(postmortem["topics"][0]["drafted"])
+            self.assertEqual(postmortem["writeback"]["topic_pattern_library"]["drafted_topics"], 0)
+
+    def test_postmortem_does_not_count_unverified_draft_id(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            write_json(
+                tmp / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-postmortem-draft-verified",
+                    "stage": "publish",
+                    "status": "needs_manual_verification",
+                    "channel_packs": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "复盘草稿验真口径测试",
+                            "channel": "wechat_article",
+                        }
+                    ],
+                    "publish_results": [
+                        {
+                            "topic_id": "topic-demo",
+                            "channel": "wechat_article",
+                            "status": "draft",
+                            "success": True,
+                            "draft_id": "draft_not_verified",
+                            "verification_status": "needs_manual_verification",
+                        }
+                    ],
+                },
+            )
+
+            postmortem_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/postmortem_writeback.py"),
+                    "--publish-manifest",
+                    str(tmp / "publish_manifest.json"),
+                    "--output-dir",
+                    str(tmp / "postmortem_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(postmortem_proc.returncode, 0, msg=postmortem_proc.stderr)
+            postmortem = json.loads((tmp / "postmortem_out" / "postmortem_manifest.json").read_text(encoding="utf-8"))
+            self.assertFalse(postmortem["topics"][0]["drafted"])
+            self.assertEqual(postmortem["writeback"]["topic_pattern_library"]["drafted_topics"], 0)
+
+    def test_postmortem_ignores_legacy_wechat_article_url_without_verified_result(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            write_json(
+                tmp / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-postmortem-legacy-wechat-url",
+                    "stage": "publish",
+                    "status": "pending_execution",
+                    "channel_packs": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "旧公众号字段隔离测试",
+                            "channel": "wechat_article",
+                            "wechat_article_url": "https://mp.weixin.qq.com/s/legacy-url",
+                        }
+                    ],
+                    "publish_results": [],
+                },
+            )
+
+            postmortem_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/postmortem_writeback.py"),
+                    "--publish-manifest",
+                    str(tmp / "publish_manifest.json"),
+                    "--output-dir",
+                    str(tmp / "postmortem_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(postmortem_proc.returncode, 0, msg=postmortem_proc.stderr)
+            postmortem = json.loads((tmp / "postmortem_out" / "postmortem_manifest.json").read_text(encoding="utf-8"))
+            self.assertFalse(postmortem["topics"][0]["published"])
+            self.assertEqual(postmortem["performance_metrics"], [])
+
+    def test_postmortem_groups_multiple_channel_packs_by_topic_id(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            write_json(
+                tmp / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-postmortem-topic-group",
+                    "stage": "publish",
+                    "status": "completed_with_mixed_status",
+                    "channel_packs": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "复盘聚合测试",
+                            "channel": "wechat_article",
+                            "title_candidates": ["标题A"],
+                        },
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "复盘聚合测试",
+                            "channel": "xiaohongshu_video",
+                            "cover_candidates": ["cover-a.png"],
+                        },
+                    ],
+                    "publish_results": [
+                        {
+                            "topic_id": "topic-demo",
+                            "channel": "wechat_article",
+                            "status": "draft",
+                            "success": True,
+                            "draft_id": "draft_abc",
+                            "verification_status": "verified",
+                        },
+                        {
+                            "topic_id": "topic-demo",
+                            "channel": "xiaohongshu_video",
+                            "status": "published",
+                            "success": True,
+                            "platform_url": "https://www.xiaohongshu.com/explore/abc",
+                            "verification_status": "verified",
+                        },
+                    ],
+                },
+            )
+
+            postmortem_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/postmortem_writeback.py"),
+                    "--publish-manifest",
+                    str(tmp / "publish_manifest.json"),
+                    "--output-dir",
+                    str(tmp / "postmortem_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(postmortem_proc.returncode, 0, msg=postmortem_proc.stderr)
+            postmortem = json.loads((tmp / "postmortem_out" / "postmortem_manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(len(postmortem["topics"]), 1)
+            self.assertEqual(postmortem["topics"][0]["selected_channels"], ["wechat_article", "xiaohongshu_video"])
+            self.assertTrue(postmortem["topics"][0]["published"])
+            self.assertTrue(postmortem["topics"][0]["drafted"])
+            self.assertEqual(len(postmortem["topics"][0]["publish_results"]), 2)
+            self.assertEqual(postmortem["topics"][0]["selected_title_count"], 1)
+            self.assertEqual(postmortem["topics"][0]["selected_cover_count"], 1)
+            self.assertEqual(postmortem["writeback"]["topic_pattern_library"]["published_topics"], 1)
+            self.assertEqual(postmortem["writeback"]["topic_pattern_library"]["drafted_topics"], 1)
+
+    def test_postmortem_includes_publish_guard_summary(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            guard_json = tmp / "publish_guard_report.json"
+            guard_md = tmp / "publish_guard_report.md"
+            guard_json.write_text("{}", encoding="utf-8")
+            guard_md.write_text("# guard\n", encoding="utf-8")
+            write_json(
+                tmp / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-postmortem-guard",
+                    "stage": "publish",
+                    "status": "all_published",
+                    "publish_guard": {
+                        "status": "passed",
+                        "passed": True,
+                        "checked_at": "2026-06-14T12:00:00+08:00",
+                        "report_json": str(guard_json),
+                        "report_markdown": str(guard_md),
+                        "will_not_publish": True,
+                    },
+                    "channel_packs": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "复盘 Guard 测试",
+                            "channel": "xiaohongshu_video",
+                        }
+                    ],
+                    "publish_results": [
+                        {
+                            "topic_id": "topic-demo",
+                            "channel": "xiaohongshu_video",
+                            "status": "published",
+                            "success": True,
+                            "platform_url": "https://www.xiaohongshu.com/explore/guard-postmortem",
+                            "verification_status": "verified",
+                        }
+                    ],
+                },
+            )
+
+            postmortem_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/postmortem_writeback.py"),
+                    "--publish-manifest",
+                    str(tmp / "publish_manifest.json"),
+                    "--output-dir",
+                    str(tmp / "postmortem_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(postmortem_proc.returncode, 0, msg=postmortem_proc.stderr)
+            postmortem = json.loads((tmp / "postmortem_out" / "postmortem_manifest.json").read_text(encoding="utf-8"))
+            self.assertTrue(postmortem["publish_guard"]["present"])
+            self.assertTrue(postmortem["publish_guard"]["passed"])
+            self.assertEqual(postmortem["publish_guard"]["status"], "passed")
+            self.assertTrue(postmortem["writeback"]["channel_pattern_library"]["publish_guard_passed"])
+            report_text = (tmp / "postmortem_out" / "08_复盘报告.md").read_text(encoding="utf-8")
+            self.assertIn("Publish Guard", report_text)
+            self.assertIn("passed", report_text)
+
+    def test_postmortem_marks_missing_publish_guard_without_breaking_counts(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            write_json(
+                tmp / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-postmortem-guard-missing",
+                    "stage": "publish",
+                    "status": "all_drafted",
+                    "channel_packs": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "复盘缺 Guard 测试",
+                            "channel": "wechat_article",
+                        }
+                    ],
+                    "publish_results": [
+                        {
+                            "topic_id": "topic-demo",
+                            "channel": "wechat_article",
+                            "status": "draft",
+                            "success": True,
+                            "draft_id": "draft_guard_missing",
+                            "verification_status": "verified",
+                        }
+                    ],
+                },
+            )
+
+            postmortem_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/postmortem_writeback.py"),
+                    "--publish-manifest",
+                    str(tmp / "publish_manifest.json"),
+                    "--output-dir",
+                    str(tmp / "postmortem_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(postmortem_proc.returncode, 0, msg=postmortem_proc.stderr)
+            postmortem = json.loads((tmp / "postmortem_out" / "postmortem_manifest.json").read_text(encoding="utf-8"))
+            self.assertFalse(postmortem["publish_guard"]["present"])
+            self.assertEqual(postmortem["publish_guard"]["status"], "missing")
+            self.assertTrue(postmortem["topics"][0]["drafted"])
+            self.assertEqual(postmortem["writeback"]["topic_pattern_library"]["drafted_topics"], 1)
+            report_text = (tmp / "postmortem_out" / "08_复盘报告.md").read_text(encoding="utf-8")
+            self.assertIn("未发现 `publish_manifest.publish_guard`", report_text)
+
+    def test_postmortem_require_publish_guard_rejects_missing_guard(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            write_json(
+                tmp / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-postmortem-require-guard-missing",
+                    "stage": "publish",
+                    "status": "all_drafted",
+                    "channel_packs": [{"topic_id": "topic-demo", "title": "缺 Guard 强制门测试", "channel": "wechat_article"}],
+                    "publish_results": [
+                        {
+                            "topic_id": "topic-demo",
+                            "channel": "wechat_article",
+                            "status": "draft",
+                            "success": True,
+                            "draft_id": "draft_guard_required_missing",
+                            "verification_status": "verified",
+                        }
+                    ],
+                },
+            )
+
+            postmortem_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/postmortem_writeback.py"),
+                    "--publish-manifest",
+                    str(tmp / "publish_manifest.json"),
+                    "--require-publish-guard",
+                    "--output-dir",
+                    str(tmp / "postmortem_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertNotEqual(postmortem_proc.returncode, 0)
+            self.assertIn("publish_manifest.publish_guard 缺失", postmortem_proc.stderr)
+            self.assertFalse((tmp / "postmortem_out" / "postmortem_manifest.json").exists())
+
+    def test_postmortem_require_publish_guard_rejects_failed_guard(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            write_json(
+                tmp / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-postmortem-require-guard-failed",
+                    "stage": "publish",
+                    "status": "needs_manual_verification",
+                    "publish_guard": {
+                        "status": "failed",
+                        "passed": False,
+                        "checked_at": "2026-06-14T12:00:00+08:00",
+                        "report_json": str(tmp / "publish_guard_report.json"),
+                        "report_markdown": str(tmp / "publish_guard_report.md"),
+                    },
+                    "channel_packs": [{"topic_id": "topic-demo", "title": "Guard 失败强制门测试", "channel": "xiaohongshu_video"}],
+                    "publish_results": [
+                        {
+                            "topic_id": "topic-demo",
+                            "channel": "xiaohongshu_video",
+                            "status": "published",
+                            "success": True,
+                            "platform_url": "https://www.xiaohongshu.com/explore/guard-failed",
+                            "verification_status": "needs_manual_verification",
+                        }
+                    ],
+                },
+            )
+
+            postmortem_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/postmortem_writeback.py"),
+                    "--publish-manifest",
+                    str(tmp / "publish_manifest.json"),
+                    "--require-publish-guard",
+                    "--output-dir",
+                    str(tmp / "postmortem_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertNotEqual(postmortem_proc.returncode, 0)
+            self.assertIn("当前状态为 `failed`", postmortem_proc.stderr)
+            self.assertFalse((tmp / "postmortem_out" / "postmortem_manifest.json").exists())
+
+    def test_postmortem_require_publish_guard_rejects_missing_guard_report_files(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            write_json(
+                tmp / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-postmortem-require-guard-missing-files",
+                    "stage": "publish",
+                    "status": "all_published",
+                    "publish_guard": {
+                        "status": "passed",
+                        "passed": True,
+                        "checked_at": "2026-06-14T12:00:00+08:00",
+                        "report_json": str(tmp / "missing_publish_guard_report.json"),
+                        "report_markdown": str(tmp / "missing_publish_guard_report.md"),
+                    },
+                    "channel_packs": [{"topic_id": "topic-demo", "title": "Guard 报告缺失强制门测试", "channel": "xiaohongshu_video"}],
+                    "publish_results": [
+                        {
+                            "topic_id": "topic-demo",
+                            "channel": "xiaohongshu_video",
+                            "status": "published",
+                            "success": True,
+                            "platform_url": "https://www.xiaohongshu.com/explore/guard-missing-report-files",
+                            "verification_status": "verified",
+                        }
+                    ],
+                },
+            )
+
+            postmortem_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/postmortem_writeback.py"),
+                    "--publish-manifest",
+                    str(tmp / "publish_manifest.json"),
+                    "--require-publish-guard",
+                    "--output-dir",
+                    str(tmp / "postmortem_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+
+            self.assertNotEqual(postmortem_proc.returncode, 0)
+            self.assertIn("Publish Guard 报告文件存在", postmortem_proc.stderr)
+            self.assertFalse((tmp / "postmortem_out" / "postmortem_manifest.json").exists())
+
+    def test_mainline_postmortem_require_publish_guard_passes_when_guard_passed(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            publish_root = tmp / "publish_out"
+            publish_root.mkdir(parents=True)
+            (publish_root / "publish_guard_report.json").write_text("{}", encoding="utf-8")
+            (publish_root / "publish_guard_report.md").write_text("# guard\n", encoding="utf-8")
+            write_json(
+                publish_root / "publish_manifest.json",
+                {
+                    "run_id": "run-hardening-mainline-postmortem-guard",
+                    "stage": "publish",
+                    "status": "all_published",
+                    "publish_guard": {
+                        "status": "passed",
+                        "passed": True,
+                        "checked_at": "2026-06-14T12:00:00+08:00",
+                        "report_json": str(publish_root / "publish_guard_report.json"),
+                        "report_markdown": str(publish_root / "publish_guard_report.md"),
+                    },
+                    "channel_packs": [{"topic_id": "topic-demo", "title": "主入口 Guard 强制门测试", "channel": "xiaohongshu_video"}],
+                    "publish_results": [
+                        {
+                            "topic_id": "topic-demo",
+                            "channel": "xiaohongshu_video",
+                            "status": "published",
+                            "success": True,
+                            "platform_url": "https://www.xiaohongshu.com/explore/guard-mainline",
+                            "verification_status": "verified",
+                        }
+                    ],
+                },
+            )
+
+            postmortem_proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/run_mainline_stage.py"),
+                    "postmortem",
+                    "--publish-manifest",
+                    str(publish_root / "publish_manifest.json"),
+                    "--require-publish-guard",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(postmortem_proc.returncode, 0, msg=postmortem_proc.stderr)
+            postmortem_path = Path(postmortem_proc.stdout.strip())
+            self.assertTrue(postmortem_path.exists())
+            postmortem = json.loads(postmortem_path.read_text(encoding="utf-8"))
+            self.assertTrue(postmortem["publish_guard"]["passed"])
+
+    def test_open_publish_browser_dry_run_uses_persistent_profile(self):
+        proc = subprocess.run(
+            [
+                PYTHON,
+                str(ROOT / "scripts/open_publish_browser.py"),
+                "xiaohongshu_video",
+                "--dry-run",
+            ],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+
+        self.assertEqual(proc.returncode, 0, msg=proc.stderr)
+        payload = json.loads(proc.stdout)
+        self.assertEqual(payload["platform"], "xiaohongshu")
+        self.assertIn("DashengPublishProfiles/xiaohongshu", payload["profile_dir"])
+        self.assertIn("--user-data-dir=", payload["command"])
+
+    def test_publish_blocks_completed_lane_when_final_artifact_missing(self):
+        with project_tempdir() as tmpdir:
+            tmp = Path(tmpdir)
+            video_manifest = tmp / "talking_head_video_manifest.json"
+            write_json(video_manifest, {"lane": "talking_head_video", "status": "completed"})
+            write_json(
+                tmp / "transwrite_manifest.json",
+                {
+                    "run_id": "run-hardening-publish-missing-artifact",
+                    "stage": "transwrite",
+                    "status": "prepared_for_skill_execution",
+                    "topics": [
+                        {
+                            "topic_id": "topic-demo",
+                            "title": "缺产物发布测试",
+                            "lanes": {
+                                "talking_head_video": {
+                                    "status": "completed",
+                                    "manifest": str(video_manifest),
+                                    "final_video": str(tmp / "missing.mp4"),
+                                },
+                            },
+                        }
+                    ],
+                },
+            )
+            write_json(
+                tmp / "publish_decision.json",
+                {
+                    "run_id": "run-hardening-publish-missing-artifact",
+                    "gate": "Channel Gate",
+                    "status": "approved",
+                    "topics": [{"topic_id": "topic-demo", "channels": ["douyin_video"]}],
+                },
+            )
+
+            proc = subprocess.run(
+                [
+                    PYTHON,
+                    str(ROOT / "scripts/build_stage5_publish.py"),
+                    "--transwrite-manifest",
+                    str(tmp / "transwrite_manifest.json"),
+                    "--publish-decision",
+                    str(tmp / "publish_decision.json"),
+                    "--output-dir",
+                    str(tmp / "publish_out"),
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(proc.returncode, 0, msg=proc.stderr)
+            payload = json.loads(proc.stdout)
+            self.assertEqual(payload["channel_packs"][0]["status"], "blocked_or_waiting")
+            self.assertEqual(payload["channel_packs"][0]["blocking_reason"], "missing_required_artifacts:video")
 
     def test_publish_supports_flat_rewrite_manifest_topics(self):
         with project_tempdir() as tmpdir:

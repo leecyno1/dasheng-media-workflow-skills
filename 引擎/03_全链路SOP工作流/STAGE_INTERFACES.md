@@ -6,13 +6,13 @@
 
 固定阶段顺序：
 
-`intake -> brief -> draft -> publish -> postmortem`
+`intake -> brief -> draft -> transwrite -> publish -> postmortem`
 
-可选前置资产：`ParadigmProfile`。当用户提供标准文章、内容模板、爆款样本或渠道模板时，可先生成范式画像，再供 `brief / draft / publish` 调用；它不改变正式主链顺序，也不作为强制 gate。
+可选前置资产：`ParadigmProfile`。当用户提供标准文章、内容模板、爆款样本或渠道模板时，可先生成范式画像，再供 `brief / draft / transwrite / publish` 调用；它不改变正式主链顺序，也不作为强制 gate。
 
 固定对象链：
 
-`Run -> ParadigmProfile(optional) -> TopicPool -> SelectedTopic -> Draft/FinalDoc -> PublishPack -> Postmortem`
+`Run -> ParadigmProfile(optional) -> TopicPool -> SelectedTopic -> Draft/FinalDoc -> TranswritePack -> PublishPack -> Postmortem`
 
 文档只是交付视图，不是唯一状态源。唯一状态源必须同时满足：
 
@@ -53,7 +53,7 @@
 - `skills/dasheng-daily-shared/schema/channel-pack.schema.json`
 - `skills/dasheng-daily-shared/schema/reasoning-sheet.schema.json`
 
-## 三、4 个强制 HITL Gate
+## 三、5 个强制 HITL Gate
 
 ### 1. Intake Gate
 
@@ -70,9 +70,14 @@
 ### 3. Final Structure Gate
 
 - 文件：`final_structure_snapshot.json`
-- 作用：锁定终稿结构，确认后可直接进入 publish
+- 作用：锁定终稿结构，确认后进入 transwrite
 
-### 4. Channel Gate
+### 4. Transwrite Gate
+
+- 文件：`transwrite_decision.json`
+- 作用：确认每个题目需要走哪些转写通路：公众号文章、口播视频、播客
+
+### 5. Channel Gate
 
 - 文件：`publish_decision.json`
 - 作用：确认标题、封面、平台版本、发布时间
@@ -91,7 +96,7 @@
   - `paradigm_prompt_block.md`
   - `paradigm_manifest.json`
 - 关键规则：
-  - 默认放在 `brief` 前；如果用户在 `draft / rewrite / publish` 临时提供模板，也可即时生成并绑定当前 run
+  - 默认放在 `brief` 前；如果用户在 `draft / transwrite / publish` 临时提供模板，也可即时生成并绑定当前 run
   - 只提炼结构范式、章节框架、叙事路径、论证模型、信息密度、渠道适配和禁用项
   - 不替代事实来源，不搬运样本事实，不参与事实真伪判断
 
@@ -213,57 +218,69 @@
 
 独立素材环节已删除；真实数据、图表、配图和 HTML 嵌入都必须在 Draft 内完成。
 
-- 多版本改写：只在需要额外作者口吻、平台变体或短视频脚本时调用 `dasheng-stage-rewrite-v3`。
-- 改写工具不得生成新的主链 gate，不得要求 `rewrite_manifest.json` 才能进入 publish。
-- 工具产物只能作为 `draft_manifest` / `publish_decision` 的附加资源引用。
+- 多版本改写：只在 Transwrite 需要额外作者口吻、平台变体或短视频脚本时调用 `dasheng-stage-rewrite-v3`。
+- 改写工具不得生成新的主链 gate，不得要求 `rewrite_manifest.json` 才能进入 transwrite 或 publish。
+- 工具产物只能作为 `transwrite_manifest` / `publish_decision` 的附加资源引用。
 
-### 4. Publish｜渠道包与发布
+### 4. Transwrite｜转写生产
 
-- 目标：输出真正可发的渠道包
+- 目标：把确认后的 Draft 转为可验收的渠道生产包
 - 正式输入：
   - `draft_manifest.json`
   - `final_structure_snapshot.json`
-  - `publish_decision.json`
+  - `transwrite_decision.json`
   - 可选：`paradigm_profile.yaml`
 - 正式产物：
-  - `07_发布包.md`
+  - `04_转写计划.md`
+  - `transwrite_manifest.json`
+  - `wechat_article/wechat_article_manifest.json`
+  - `wechat_article/agent_rewrite_prompt.md`
+  - `wechat_article/cover_prompt.md`
+  - `talking_head_video/talking_head_video_manifest.json`
+  - `talking_head_video/video_storyboard.json`
+  - `talking_head_video/talking_head_script.md`
+  - `talking_head_video/html_overlay.html`
+  - `talking_head_video/render_plan.json`
+  - `podcast/podcast_manifest.json`
+  - `podcast/podcast_script.md`
+  - `podcast/provider_request.json`
+- 三条通路：
+  - `wechat_article`：DNA / humanize / 内容扩展 / 微信格式转写 / 封面生成
+  - `talking_head_video`：真人口播可选、视觉层透明/非透明、真人音频/合成音频、主动/被动对齐
+  - `podcast`：Coze / MiniMax API 请求包
+- 强约束：
+  - 不补事实、不补数据、不重做图表；缺口必须退回 Draft
+  - 外部 API、真人素材或渲染器缺失时必须写入状态
+  - 不得把计划或请求体误报为已生成视频/音频
+
+### 5. Publish｜发布执行
+
+- 目标：验收转写包，生成发布包，推草稿/人工包，回收链接
+- 正式输入：
+  - `transwrite_manifest.json`
+  - `publish_decision.json`
+- 正式产物：
   - `07_发布计划.md`
-  - `publish_video_supplement_report.md`
-  - `publish_video_supplement_manifest.json`
-  - `channel_adaptation_manifest.json`
+  - `07_发布包.md`
   - `channel_execution_manifest.json`
   - `publish_verification_report.json`
-  - `publish_decision.json`
   - `publish_manifest.json`
-- 发布前必须具备：
-  - 标题候选
-  - 封面候选
-  - 渠道版本矩阵
-  - 发布时间建议
-  - 风险检查清单
-  - 可选：图表动效视频 / 叙事动效视频
-- 内部正式子层：
-  - `Publish Gate`
-  - `Video Supplement`（可选）
-  - `Channel Adaptation`
-  - `Channel Execution`
-  - `Publish Guard`
 - 平台执行器矩阵：
   - 公众号：`baoyu-post-to-wechat`、`wechat-multi-publisher`、`md2wechat`
-  - 微博：`weibo-manager`、`baoyu-post-to-weibo`
+  - 微博：`baoyu-post-to-weibo`
   - X：`baoyu-post-to-x`
   - 小红书：`xiaohongshu-auto`（OpenClaw）
   - 抖音：`douyin-upload-skill`（OpenClaw）
-  - B站：当前无正式投稿 skill，只有研究辅助 `bilibili-youtube-watcher`
+  - B站：人工投稿包
+  - 播客：人工上传或音频平台 API
   - 验真：`publish-guard`
 - 强约束：
-  - 不再允许 `latest_dir(...)` 或历史目录猜测
   - 没有 `Channel Gate`，publish 禁止执行
-  - 渠道适配可消费范式画像中的平台框架，但必须以人工确认的发布决策为准
+  - Publish 不再生成正文、封面、视频或播客
   - 缺少正式平台执行器的平台，只允许导出待人工发布包
-  - 未经过 `Publish Guard` 验真，不得向用户汇报“已发布”
+  - 未经过链接回收和 `Publish Guard` 验真，不得向用户汇报“已发布”
 
-### 5. Postmortem｜知识回写
+### 6. Postmortem｜知识回写
 
 - 目标：将结果回写为下一轮可复用知识
 - 正式输入：
@@ -298,7 +315,7 @@
 2. 飞书文档是协作视图，不是唯一状态源。
 3. 不允许依赖“猜最新目录”或旧命名习惯切阶段。
 4. `Brief Gate` 未选题，禁止进入 draft。
-5. `Final Structure Gate` 通过后，主链直接进入 publish。
-6. 多选题时，draft / publish 默认按题目并行、目录独立。
-7. 独立素材环节已删除；Rewrite 只作为按需工具，不得再作为主链阶段或 gate。
+5. `Final Structure Gate` 通过后，主链进入 transwrite。
+6. 多选题时，draft / transwrite / publish 默认按题目并行、目录独立。
+7. 独立素材环节已删除；Rewrite 只作为 transwrite 的按需工具，不得再作为主链阶段或 gate。
 8. 本文件一旦变更，相关 schema、skill 文档、Feishu 计划器必须同步更新。

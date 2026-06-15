@@ -17,14 +17,21 @@ CANONICAL_STAGE_ROOTS: dict[str, Path] = {
     "intake": ROOT / "产物" / "01_内容采集",
     "brief": ROOT / "产物" / "02_内容聚合及选题分析",
     "draft": ROOT / "产物" / "05_初稿生成",
-    "publish": ROOT / "产物" / "07_渠道分发",
+    "transwrite": ROOT / "产物" / "06_转写生产",
+    "publish": ROOT / "产物" / "07_发布执行",
     "postmortem": ROOT / "产物" / "08_分析复盘",
 }
+
+FORBIDDEN_RUNTIME_OUTPUT_ROOTS: tuple[Path, ...] = (
+    ROOT / "skills",
+    ROOT / "openclaw-skill-exports",
+)
 
 CANONICAL_MANIFEST_FILENAMES: dict[str, str] = {
     "intake": "intake_manifest.json",
     "brief": "brief_manifest.json",
     "draft": "draft_manifest.json",
+    "transwrite": "transwrite_manifest.json",
     "publish": "publish_manifest.json",
     "postmortem": "postmortem_manifest.json",
 }
@@ -84,6 +91,17 @@ def canonical_stage_dir(stage: str, run_id: str) -> Path:
     if stage not in CANONICAL_STAGE_ROOTS:
         raise WorkflowContractError(f"未知 stage：{stage}")
     return CANONICAL_STAGE_ROOTS[stage] / run_id
+
+
+def ensure_runtime_output_dir(path: Path, *, label: str = "output_dir") -> Path:
+    candidate = path.expanduser().resolve()
+    for forbidden in FORBIDDEN_RUNTIME_OUTPUT_ROOTS:
+        forbidden_resolved = forbidden.resolve()
+        if candidate == forbidden_resolved or forbidden_resolved in candidate.parents:
+            raise WorkflowContractError(
+                f"{label} 不能位于 skill/export 目录下：{candidate}。运行产物必须写入 `产物/`、`tmp/` 或显式工作目录。"
+            )
+    return candidate
 
 
 def canonical_manifest_path(stage: str, run_id: str) -> Path:
@@ -154,6 +172,16 @@ def ensure_publish_decision_gate(path: Path) -> dict[str, Any]:
     )
 
 
+def ensure_transwrite_decision_gate(path: Path) -> dict[str, Any]:
+    return ensure_gate_payload(
+        path,
+        "Transwrite Gate",
+        required_key="topics",
+        require_nonempty=True,
+        allow_pending=False,
+    )
+
+
 def pending_gate_payload(
     *,
     run_id: str,
@@ -198,6 +226,7 @@ def stage_contract_snapshot(run_id: str) -> dict[str, Any]:
         "intake": "intake_review.json",
         "brief": "selected_topics.json",
         "draft": "final_structure_snapshot.json",
+        "transwrite": "transwrite_decision.json",
         "publish": "publish_decision.json",
     }
     for stage, root in CANONICAL_STAGE_ROOTS.items():

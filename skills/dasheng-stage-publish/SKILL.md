@@ -1,136 +1,205 @@
 ---
 name: dasheng-stage-publish
-description: Use when entering the formal publish stage of Dasheng workflow to run channel gating, video supplement, platform adaptation, platform execution, and publish verification.
+description: Use when entering the slim Dasheng publish execution stage to validate transwrite outputs, create publish packs, push drafts/manual packages, and recover published links.
 ---
 
-# Dasheng Stage: Publish
+# Dasheng Stage: Publish｜发布执行
 
 ## 定位
 
-这是 Dasheng 主链里 `publish` 阶段的正式 stage skill。
+这是 `transwrite` 之后的轻量执行层。
 
 正式阶段顺序：
 
-`intake -> brief -> draft -> publish -> postmortem`
+`intake -> brief -> draft -> transwrite -> publish -> postmortem`
 
-`distribute` 已并入 `publish`，不再单列正式阶段。
-
-独立素材环节已删除；多版本改写只作为按需工具。
+Publish 不再生成正文、封面、视频、播客或图表。上述生产动作全部归入 Draft / Transwrite。
 
 ## 正式输入
 
-- `draft_manifest.json`
-- `final_structure_snapshot.json`
+- `transwrite_manifest.json`
 - `publish_decision.json`
 
-缺少 `draft_manifest.json` 或 `publish_decision.json` 时禁止执行；`final_structure_snapshot.json` 必须已确认后才能从统一 CLI 进入 publish。
+缺少 `transwrite_manifest.json` 或 `publish_decision.json` 时禁止执行。
 
-兼容模式可读取旧 `rewrite_manifest.json`，但它不再是主链必需输入。
+## 职责
 
-若 `publish_decision.json` 已存在但字段不完整，当前 stage 会自动补齐最小默认矩阵：
+1. 验收转写包是否具备对应渠道所需材料。
+2. 生成公众号、微博、X、小红书、抖音、B站、播客等发布包。
+3. 对可自动/半自动发布的平台生成执行器调用计划。
+4. 对缺少执行器的平台导出人工发布包。
+5. 发布后回收草稿 ID、正式链接、发布时间、截图或错误状态。
 
-- `wechat_article`
-- `weibo_post`
-- `x_post`
-- `xiaohongshu_video`
-- `douyin_video`
-- `bilibili_video`（人工投稿包）
+## 验收规则
 
-## 五层执行
+Publish 不只看 lane `status`，还必须检查关键最终产物是否存在。
 
-1. `Publish Gate`
-2. `Video Supplement`
-3. `Channel Adaptation`
-4. `Channel Execution`
-5. `Publish Guard`
+- 文字渠道：需要 `wechat_article.final.html` 或 `wechat_article.final.md`。
+- 视频渠道：需要最终 MP4。
+- 播客渠道：需要最终音频文件。
+- 缺少关键产物时，即使 lane 标记为 `completed`，也必须写成 `blocked_or_waiting`。
 
-## 发布类 skill 编排
+## 标准命令
 
-### 视频补充
+```bash
+python3 scripts/build_stage5_publish.py \
+  --transwrite-manifest 产物/06_转写生产/<run_id>/transwrite_manifest.json \
+  --publish-decision 产物/07_发布执行/<run_id>/publish_decision.json
+```
 
-- `scripts/publish_video_supplement.py`
-- 外部参考：`dasheng-stage-publish-video`
-- 默认不强制生成视频；只有渠道要求视频或用户明确要求补视频时才进入视频补充。
+统一入口：
 
-### 公众号
+```bash
+python3 scripts/run_mainline_stage.py publish --run-id <run_id>
+```
 
-- 主执行：`baoyu-post-to-wechat`
-- 批量草稿：`wechat-multi-publisher`
-- 预处理：`md2wechat`
-- 备选 CLI：`wechat-public-cli`
+安全预演：
 
-### 微博
+```bash
+python3 scripts/run_mainline_stage.py publish \
+  --transwrite-manifest 产物/06_转写生产/<run_id>/transwrite_manifest.json \
+  --publish-decision 产物/07_发布执行/<run_id>/publish_decision.json \
+  --dry-run
+```
 
-- 短帖：`weibo-manager`
-- 头条文章 / 浏览器半自动：`baoyu-post-to-weibo`
+`--dry-run` 只会生成 `publish_dry_run_report.json` 和各渠道执行计划，不会触发真实发布。
 
-### X
+发布通路体检：
 
-- `baoyu-post-to-x`
+```bash
+python3 scripts/run_mainline_stage.py doctor --publish
+python3 scripts/run_mainline_stage.py doctor --publish --channel wechat_article --channel xiaohongshu_video
+```
 
-### 小红书
+`doctor --publish` 不需要 `transwrite_manifest.json`，只检查本地 skill、外部依赖根目录、CLI 二进制和持久化浏览器 Profile 配置，不会打开浏览器、读取 cookies 或发布内容。
 
-- `xiaohongshu-auto`
-- 运营辅助：`xiaohongshu-ops`
-- 来源：`/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/xiaohongshu-auto/SKILL.md`
+发布批次验收：
 
-### 抖音
+```bash
+python3 scripts/publish_guard.py \
+  --publish-manifest 产物/07_发布执行/<run_id>/publish_manifest.json
 
-- `douyin-upload-skill`
-- 来源：`/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/douyin-upload-skill/SKILL.md`
+python3 scripts/run_mainline_stage.py doctor \
+  --publish-manifest 产物/07_发布执行/<run_id>/publish_manifest.json
+```
 
-### B站
+`publish_guard.py` 只检查某个发布批次的回填结果是否自洽，不检查依赖安装，也不会打开浏览器、读取 cookies 或发布内容。它必须同时读取 `publish_manifest.json` 与 `publish_verification_report.json`；缺少验真报告时不得通过。每条回填结果都必须能追到磁盘上的 `publish_result.json`，且文件中的核心发布字段必须与 manifest/verification 记录一致。它会重算 `publish_summary`，校验两份文件中的 `records` / `publish_summary` 是否一致，并校验 `published_links`、`draft_records`、待执行渠道、未验真链接和草稿/正式 URL 隔离。
 
-- 当前无正式投稿执行器
-- 辅助研究：`/Volumes/PSSD/Projects/OpenClawInstaller/skills/default/bilibili-youtube-watcher/SKILL.md`
-- 只允许导出人工投稿包
+默认模式会写出报告并回填 `publish_manifest.publish_guard`，即使未通过也返回 0，方便人工查看报告。CI 或正式门禁必须追加 `--fail-on-error`，未通过时返回非 0：
 
-### 知乎
+```bash
+python3 scripts/publish_guard.py \
+  --publish-manifest 产物/07_发布执行/<run_id>/publish_manifest.json \
+  --fail-on-error
+```
 
-- `zhihu-post`
-- 用于专栏文章 / 想法发布
-- 默认不在自动补位矩阵中，仅在 `publish_decision.json` 明确配置时启用
+发布结果回填：
 
-### 视频号
+```bash
+python3 scripts/record_publish_result.py \
+  --channel-pack 产物/07_发布执行/<run_id>/channel_packs/<topic_id>/<channel>/channel_pack.json \
+  --success true \
+  --status draft \
+  --draft-id <draft_id> \
+  --verification-status verified \
+  --account <account_name>
+```
 
-- 当前无正式上传执行器
-- 只允许导出人工发布包
+执行器或人工发布完成后必须用该入口回填平台 URL、草稿 ID、截图或错误状态。它只写回结果文件和验真报告，不会触发发布。
 
-### 发后验真
+回填后 `publish_manifest.json` 与 `publish_verification_report.json` 会生成统一的 `publish_summary`：
 
-- `publish-guard`
+- `pending_execution`：尚无渠道回填。
+- `partially_recorded`：部分渠道已回填，仍有渠道待执行。
+- `failed`：任一渠道回填失败。
+- `all_drafted`：全部渠道只推送到草稿或定时草稿。
+- `all_published`：全部渠道均回收正式发布状态。
+- `completed_with_mixed_status`：全部渠道已回填，但草稿、正式发布、人工上传等状态混合。
+
+草稿 ID 只能说明“已推草稿”，不得对外汇报为“已发布”。
+
+`publish_verification_report.json` 中：
+
+- `published_links` 只允许记录 `status=published`、`verification_status=verified` 且有正式平台 URL 的结果。
+- `draft_records` 专门记录 `status=draft|scheduled`、`verification_status=verified` 且有草稿 ID 的结果。
+- `verification_status=verified` 是进入 `published_links` 或 `draft_records` 的必要条件。
+- `record_publish_result.py` 不会因为存在正式 URL 或草稿 ID 自动推断 `verified`；执行器或人工回填必须显式传入 `--verification-status verified`。
+- 不得把草稿 ID 塞进 `published_links`。
+- `status=published` 但没有正式 URL、或 `status=draft` 但没有草稿 ID 时，整体状态必须是 `needs_manual_verification`。
+
+执行器标准 payload：
+
+```bash
+python3 scripts/build_publish_payload.py \
+  --channel-pack 产物/07_发布执行/<run_id>/channel_packs/<topic_id>/<channel>/channel_pack.json
+```
+
+`publish_payload.json` 是平台执行器的统一输入，执行器完成后必须再调用 `record_publish_result.py` 回填结果。
+
+安全执行入口：
+
+```bash
+python3 scripts/execute_publish_request.py \
+  --execution-request 产物/07_发布执行/<run_id>/channel_packs/<topic_id>/<channel>/execution_request.json
+```
+
+默认只做 dry-run。只有当前会话明确确认后，才允许追加 `--confirm-execute` 调用受支持的本地 skill 路线；浏览器、人工包、外部 CLI 路线仍只输出下一步命令，不自动执行。
+
+`--confirm-execute` 目前只允许 `skill_draft_push` 类型的本地草稿推送路线，例如公众号草稿推送。`api_first_cli`、`external_cli`、`mcp_fallback`、`browser_confirm_fallback`、`manual_package` 即便依赖可用，也只能生成执行计划和命令，不得由该入口自动调用。
 
 ## 标准输出
 
 - `07_发布计划.md`
 - `07_发布包.md`
-- `publish_video_supplement_report.md`
-- `publish_video_supplement_manifest.json`
-- `channel_adaptation_manifest.json`
+- `publish_preflight_report.md`
+- `channel_packs/<topic_id>/<channel>/channel_pack.json`
+- `channel_packs/<topic_id>/<channel>/README.md`
+- `channel_packs/<topic_id>/<channel>/publish_payload.json`
+- `channel_packs/<topic_id>/<channel>/publish_result.json`
 - `channel_execution_manifest.json`
 - `publish_verification_report.json`
 - `publish_manifest.json`
+- `publish_guard_report.json`（可选，批次验收输出）
 
-## 执行器调用计划
+## 平台执行器矩阵
 
-`channel_execution_manifest.json` 现在不只记录 `executor_skill`，还必须记录：
+- 公众号：`baoyu-post-to-wechat` / `wechat-multi-publisher` / `md2wechat`
+- 微博：`baoyu-post-to-weibo`
+- X：`baoyu-post-to-x`
+- 小红书：`dasheng-xhs-publish-bridge` → `all-in-one` / `xhs-skills` / `spider-xhs` / `xiaohongshu-mcp` / `rednote-mcp`
+- 抖音：`douyin-upload-skill`
+- B站：`bilibili-upload-bridge`
+- 播客：人工上传或音频平台 API
+- 验真：`publish-guard`
 
-- `executor_invocation`：主执行器调用计划；可能是 CLI 命令、浏览器流程或人工导出。
-- `helper_invocations`：辅助 skill 调用计划，例如 `wechat-public-cli` 草稿命令、`xiaohongshu-ops` 发布前演练、`publish-guard` 发后验真。
+## 浏览器登录态
 
-默认仍不绕过人工确认：知乎、公众号、微博、X 等浏览器/审批型渠道只生成可调用计划，不直接点击发布。
+浏览器型发布必须使用持久化发布 Profile，不得使用 Chrome DevTools MCP 临时 profile、一次性自动化 profile 或项目目录保存 cookies。
+
+统一配置：
+
+```bash
+configs/publish/browser_profiles.json
+```
+
+统一打开命令：
+
+```bash
+python3 scripts/open_publish_browser.py xiaohongshu_video
+python3 scripts/open_publish_browser.py douyin_video
+python3 scripts/open_publish_browser.py wechat_article
+```
+
+每个 `channel_pack.json` 必须写入 `browser_profile`，包括 `profile_dir`、`entry_url` 和 `open_command`。Agent 只允许复用该 profile 目录，不允许读取、导出、复制或提交 cookies。
 
 ## 强约束
 
-1. 没有 `publish_decision.json` 不得执行。
-2. 缺少视频补充产物时，视频平台包不得标记完成；文字渠道不能因此被阻塞。
-3. 微博短帖必须走 `Request -> Approve -> Execute`。
-4. 缺少正式执行器的平台只允许导出待人工发布包。
-5. 未经过 `Publish Guard` 验真，不得回报“已发布”。
-6. `publish_manifest.json` 必须写出 `publish_skill_stack`，记录执行器与辅助 skill。
-
-## 参考
-
-- `/Volumes/PSSD/Projects/公众号文章/skills/dasheng-media-sop/references/publish-architecture.md`
-- `/Volumes/PSSD/Projects/公众号文章/skills/dasheng-media-sop/references/publish-skill-matrix.md`
-- `/Volumes/PSSD/Projects/公众号文章/引擎/03_全链路SOP工作流/STAGE_INTERFACES.md`
+1. 只允许 `completed` / `packageable` 的 transwrite lane 进入发布执行包；兼容旧文字包时 `ready_base_package` 可视为可打包。
+2. 不允许把 `planned_for_render`、`ready_for_agent_execution`、`ready_for_skill_execution`、`blocked_missing_api_key` 等状态误报为可发布。
+3. 没有正式执行器的平台，只能导出人工发布包。
+4. 任何浏览器/平台发布动作都必须经过人工确认。
+5. 未经过链接回收和 `Publish Guard` 验真，不得回报“已发布”。
+6. 旧 `scripts/publish_video_supplement.py` 仅作为兼容工具或视频补充参考，不再是正式 publish 主入口。
+7. 发布包、截图、平台回执、临时 HTML、上传素材副本不得写入 `skills/` 目录；默认写入 `产物/07_发布执行/<run_id>/...`。
+8. 小红书、抖音、公众号等需要登录的平台必须通过 `scripts/open_publish_browser.py` 打开持久化 Profile 完成登录和上传准备。
+9. 小红书主路径优先 API-first Skill/CLI/MCP，浏览器自动化只做 fallback；不要把它降级成纯手动搬运。

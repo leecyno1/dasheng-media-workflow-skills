@@ -2,9 +2,9 @@
 
 ## 目标
 
-把历史 `dasheng-daily-*` 运行时链路，收口到当前 5 阶段主链：
+把历史 `dasheng-daily-*` 运行时链路，收口到当前 6 阶段主链：
 
-`intake -> brief -> draft -> publish -> postmortem`
+`intake -> brief -> draft -> transwrite -> publish -> postmortem`
 
 ## 保留为主入口
 
@@ -39,8 +39,8 @@
 说明：
 
 - `outline` 在旧链路里位于素材/终稿之后，不符合当前主链。
-- `final` 的职责已被 `draft + publish` 吸收，不再作为正式阶段保留。
-- 独立素材环节删除；独立 `rewrite` 改为按需工具，只有多版本改写需求出现时调用。
+- `final` 的职责已被 `draft + transwrite` 吸收，不再作为正式阶段保留。
+- 独立素材环节删除；独立 `rewrite` 改为 Transwrite 按需工具，只有多版本改写需求出现时调用。
 
 ## 归档为历史技能
 

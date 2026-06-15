@@ -13,13 +13,13 @@ description: Use when running, resuming, auditing, or updating the Dasheng self-
 
 唯一正式主链：
 
-`intake -> brief -> draft -> publish -> postmortem`
+`intake -> brief -> draft -> transwrite -> publish -> postmortem`
 
-可选前置资产：`paradigm-learning` / `dasheng-paradigm-profiler`。用户提供标准文章、内容模板、爆款样本或渠道模板时，先生成 `ParadigmProfile`，再供 `brief / draft / publish` 消费；它不改变正式主链，也不是强制 gate。
+可选前置资产：`paradigm-learning` / `dasheng-paradigm-profiler`。用户提供标准文章、内容模板、爆款样本或渠道模板时，先生成 `ParadigmProfile`，再供 `brief / draft / transwrite / publish` 消费；它不改变正式主链，也不是强制 gate。
 
 `distribute` 不再单列为正式阶段；平台适配与分发动作并入 `publish`。
 
-独立素材环节已删除。数据、图表、配图和 HTML 嵌入由 Draft 负责；多版本改写仍可作为按需工具调用，但不得作为默认 gate 阻塞主流程。
+独立素材环节已删除。数据、图表、配图和 HTML 嵌入由 Draft 负责；公众号转写、口播视频、播客生产进入 `transwrite`；真正 `publish` 只负责验收、打包、推草稿/发布包和链接回收。
 
 ## 何时使用
 
@@ -38,9 +38,11 @@ description: Use when running, resuming, auditing, or updating the Dasheng self-
 - 阶段 1-3 直接形成可发布底稿，不把内部流程统计当正文论据。
 - `ParadigmProfile` 与 `Style DNA` 必须分离：前者控制结构范式、场景适配和渠道框架；后者控制作者口吻、语言节奏和表达习惯。
 - 数据、图表和配图都在 Draft 内完成，不能扩大成独立阶段。
-- 多版本改写并入 draft/publish 的渠道适配，不再单独设置阶段。
-- `publish` 负责 `Channel Gate -> Video Supplement -> Channel Adaptation -> Channel Execution -> Publish Guard` 五层闭环。
+- 多版本改写并入 `transwrite` 的渠道表达，不再单独设置阶段。
+- `transwrite` 负责 `WeChat Article -> Talking-head Video -> Podcast` 三路生产包。
+- `publish` 负责 `Publish Gate -> Package -> Draft Push/Manual Pack -> Link Recovery -> Publish Guard` 执行闭环。
 - 所有发布动作都必须绑定正式平台执行 skill，不允许把"生成了文案/视频"误报为"已发布"。
+- 所有运行产物、临时文章、HTML、图片、音频、视频、审核页都必须写入 `产物/`、`tmp/` 或用户显式指定的工作目录；不得写入 `skills/`、`openclaw-skill-exports/` 或任意 skill 根目录。
 
 ## 阶段路由
 
@@ -49,7 +51,8 @@ description: Use when running, resuming, auditing, or updating the Dasheng self-
 - `intake` → `dasheng-daily-intake` → `scripts/run_stage1_intake.py`
 - `brief` → `dasheng-daily-phase2` → `scripts/phase2_rebuilder.py`
 - `draft` → Draft 主链脚本 / Prompt / gate / 可选风格化
-- `publish` → `dasheng-stage-publish` → `scripts/publish_video_supplement.py` + 平台发布 skill 组合
+- `transwrite` → `dasheng-stage-transwrite` → `scripts/build_stage4_transwrite.py`
+- `publish` → `dasheng-stage-publish` → `scripts/build_stage5_publish.py` + 平台发布 skill 组合
 - `postmortem` → `dasheng-daily-postmortem` → `scripts/postmortem_writeback.py`
 
 ## 全链路CLI
@@ -87,7 +90,8 @@ description: Use when running, resuming, auditing, or updating the Dasheng self-
 │   ├── 01_内容采集/
 │   ├── 02_内容聚合及选题分析/
 │   ├── 05_初稿生成/
-│   ├── 07_渠道分发/
+│   ├── 06_转写生产/
+│   ├── 07_发布执行/
 │   └── 08_分析复盘/
 └── 引擎/             # SOP文档与规范
 ```

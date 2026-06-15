@@ -10,7 +10,7 @@ const PROJECT_ROOT = path.resolve(__dirname, '..', '..', '..');
 const OUTPUT_ROOT = path.join(PROJECT_ROOT, '产物');
 const CONFIG_FILE = path.join(PROJECT_ROOT, 'configs', 'feishu', 'stage_review_contract.json');
 
-const STAGE_SEQUENCE = ['intake', 'brief', 'draft', 'rewrite', 'publish', 'postmortem'];
+const STAGE_SEQUENCE = ['intake', 'brief', 'draft', 'transwrite', 'publish', 'postmortem'];
 
 const STAGE_META = {
   intake: {
@@ -35,23 +35,23 @@ const STAGE_META = {
     reportPatterns: [/03_初稿_报告\.md$/, /04_初稿_报告\.md$/, /05_初稿生成_报告\.md$/],
     excludeMainPatterns: []
   },
-  rewrite: {
-    folderName: '05_改写稿',
-    displayName: '改写稿',
-    roots: [path.join(OUTPUT_ROOT, '06_改写')],
-    mainPatterns: [/__rewrite_bundle\.md$/, /05_改写稿\.md$/, /06_终稿_可发布版\.md$/],
-    reportPatterns: [/05_改写_报告\.md$/, /06_改写_报告\.md$/],
-    excludeMainPatterns: [/06_删改说明\.md$/, /06_短内容拆分包\.md$/, /__wechat_.*\.md$/, /__xhs_.*\.md$/]
+  transwrite: {
+    folderName: '04_转写生产',
+    displayName: '转写生产',
+    roots: [path.join(OUTPUT_ROOT, '06_转写生产')],
+    mainPatterns: [/04_转写计划\.md$/, /wechat_article\.final\.md$/, /talking_head_script\.md$/, /podcast_script\.md$/],
+    reportPatterns: [/04_转写计划\.md$/],
+    excludeMainPatterns: []
   },
   publish: {
-    folderName: '06_渠道分发',
-    displayName: '渠道分发',
-    roots: [path.join(OUTPUT_ROOT, '07_渠道分发')],
+    folderName: '05_发布执行',
+    displayName: '发布执行',
+    roots: [path.join(OUTPUT_ROOT, '07_发布执行')],
     mainPatterns: [/07_发布包\.md$/, /06_发布包\.md$/],
-    reportPatterns: [/07_发布计划\.md$/, /06_发布计划\.md$/, /publish_video_supplement_report\.md$/]
+    reportPatterns: [/07_发布计划\.md$/, /06_发布计划\.md$/]
   },
   postmortem: {
-    folderName: '07_分析复盘',
+    folderName: '06_分析复盘',
     displayName: '分析复盘',
     roots: [path.join(OUTPUT_ROOT, '08_分析复盘')],
     mainPatterns: [/08_复盘报告\.md$/, /07_复盘报告\.md$/],

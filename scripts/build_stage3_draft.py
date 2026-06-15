@@ -14,7 +14,7 @@ from typing import Any
 from urllib import error as urllib_error
 from urllib import request as urllib_request
 
-from canonical_workflow import ensure_pending_gate_file
+from canonical_workflow import ensure_pending_gate_file, ensure_runtime_output_dir
 from desktop_delivery import sync_draft_to_desktop
 from draft_html_pack import write_draft_html_from_markdown
 from finance_data_adapter import build_finance_chart_specs_with_report
@@ -763,7 +763,10 @@ def main() -> None:
     cards = load_topic_cards(topic_cards_file)
     external_asset_specs = load_asset_specs(Path(args.asset_specs_file).expanduser().resolve() if args.asset_specs_file else None)
     run_id = infer_run_id(selected_payload, args.run_id, selected_topics_file)
-    output_dir = Path(args.output_dir).expanduser().resolve() if args.output_dir else OUTPUT_ROOT / run_id
+    output_dir = ensure_runtime_output_dir(
+        Path(args.output_dir).expanduser().resolve() if args.output_dir else OUTPUT_ROOT / run_id,
+        label="draft output_dir",
+    )
     output_dir.mkdir(parents=True, exist_ok=True)
 
     selected_topics_for_draft = []
@@ -866,7 +869,7 @@ def main() -> None:
             "status": "pending_editor_review",
             "instructions": [
                 "编辑完成标准稿修订后，在本文件写入最终保留的一级/二级结构。",
-                "确认后可直接进入 publish；数据、图表和配图缺口必须在 Draft 内处理，多版本改写仅作为按需工具。",
+                "确认后进入 transwrite；数据、图表和配图缺口必须在 Draft 内处理，多版本改写仅作为按需工具。",
             ],
             "topics": [
                 {
@@ -898,7 +901,7 @@ def main() -> None:
         ],
         instructions=[
             "编辑完成标准稿修订后，在本文件写入最终保留的一级/二级结构。",
-            "status 改为 approved / locked / finalized 后，可直接进入 publish。",
+            "status 改为 approved / locked / finalized 后，可进入 transwrite。",
         ],
     )
     write_text(output_dir / "03_初稿_报告.md", render_report(run_id, drafts))
@@ -936,10 +939,10 @@ def main() -> None:
                 "ai_cliche_total": aggregate_quality_gate["checks"]["ai_cliche_total"],
             },
             "integrated_capabilities": {
-                "rewrite": "merged_into_draft_or_on_demand",
+                "rewrite": "merged_into_transwrite_or_on_demand",
                 "assets": "generated_inside_draft",
             },
-            "next_stage": "publish",
+            "next_stage": "transwrite",
         },
     )
     sync_draft_to_desktop(run_id, output_dir)
@@ -956,7 +959,7 @@ def main() -> None:
                 "manifest_file": str((output_dir / "draft_manifest.json").resolve()),
                 "final_structure_snapshot": str((output_dir / "final_structure_snapshot.json").resolve()),
                 "drafts": drafts,
-                "next_step": "dasheng-stage-publish",
+                "next_step": "dasheng-stage-transwrite",
             },
             ensure_ascii=False,
             indent=2,

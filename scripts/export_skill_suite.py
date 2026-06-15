@@ -43,6 +43,11 @@ FORMAL_SKILLS = [
     "dasheng-daily-intake",
     "dasheng-daily-phase2",
     "dasheng-daily-postmortem",
+    "dasheng-finance-data",
+    "dasheng-html-video-bridge",
+    "dasheng-html-anything-bridge",
+    "dasheng-video-talking-head",
+    "dasheng-video-explainer-html",
     "dasheng-style-profiler",
     "feishu-doc-creator",
 ]

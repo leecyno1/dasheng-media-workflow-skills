@@ -282,7 +282,7 @@ python3 scripts/material_execute_pack.py \
     "failed_topics": 0,
     "versions": []
   },
-  "next_stage": "publish"
+  "next_stage": "transwrite"
 }
 ```
 
@@ -345,41 +345,59 @@ python3 scripts/rewrite_execute_stage5.py \
 
 ---
 
-### Stage 6: Publish (渠道分发)
+### Stage 6: Publish (发布执行)
 
 #### Input
-- `rewrite_manifest.json` (from Rewrite)
-- `material_manifest.json` (from Material)
+- `transwrite_manifest.json` (from Transwrite)
+- `publish_decision.json` - **MANDATORY GATE**
 
 #### Output Files
 - `publish_manifest.json` - Canonical publish state
-- `publish_decision.json` - **MANDATORY GATE**
-- `channel_adaptation_manifest.json` - Channel-specific adaptations
-- `channel_execution_manifest.json` - Execution results
+- `channel_packs/<topic_id>/<channel>/channel_pack.json` - Per-channel execution pack
+- `channel_packs/<topic_id>/<channel>/execution_request.json` - Safe execution plan
+- `channel_packs/<topic_id>/<channel>/verification_request.json` - Verification plan
+- `channel_packs/<topic_id>/<channel>/publish_payload.json` - Executor payload
+- `channel_packs/<topic_id>/<channel>/publish_result.json` - Recorded executor/manual result
+- `channel_execution_manifest.json` - Execution routing and result state
 - `publish_verification_report.json` - Post-publish verification
+- `publish_guard_report.json` - Batch verification report
+- `publish_guard_report.md` - Human-readable batch verification report
 
 #### Manifest Schema
 ```json
 {
   "run_id": "string",
   "stage": "publish",
-  "status": "completed|blocked",
+  "status": "pending_execution|partially_recorded|failed|needs_manual_verification|all_drafted|all_published|completed_with_mixed_status",
   "channel_packs": [
     {
-      "platform": "wechat|weibo|xhs|douyin|zhihu",
       "topic_id": "string",
-      "version": "string",
-      "url": "string",
-      "status": "draft|published|manual_required",
-      "msg_id": "string"
+      "title": "string",
+      "channel": "wechat_article|xiaohongshu_video|douyin_video|bilibili_video|x_post|weibo_post|podcast",
+      "platform": "string",
+      "status": "ready_for_execution|blocked_or_waiting",
+      "pack_manifest": "path"
     }
   ],
-  "publish_skill_stack": {
-    "wechat": [],
-    "weibo": [],
-    "xhs": [],
-    "douyin": [],
-    "zhihu": []
+  "publish_results": [],
+  "publish_summary": {
+    "total_channels": 0,
+    "recorded_count": 0,
+    "pending_count": 0,
+    "failed_count": 0,
+    "draft_count": 0,
+    "published_count": 0,
+    "verified_count": 0,
+    "needs_manual_verification_count": 0,
+    "pending_channels": []
+  },
+  "publish_guard": {
+    "status": "missing|pending_execution|failed|passed",
+    "passed": false,
+    "checked_at": "ISO8601|null",
+    "report_json": "path|null",
+    "report_markdown": "path|null",
+    "will_not_publish": true
   },
   "next_stage": "postmortem"
 }
@@ -390,13 +408,12 @@ python3 scripts/rewrite_execute_stage5.py \
 {
   "run_id": "string",
   "status": "approved",
-  "decisions": [
+  "topics": [
     {
       "topic_id": "string",
-      "platform": "string",
-      "version": "string",
-      "publish_mode": "draft|publish|skip",
-      "scheduled_time": "ISO8601|null"
+      "channels": ["wechat_article", "xiaohongshu_video"],
+      "scheduled_time": "ISO8601|null",
+      "notes": "string"
     }
   ]
 }
@@ -404,10 +421,50 @@ python3 scripts/rewrite_execute_stage5.py \
 
 #### CLI
 ```bash
-python3 scripts/publish_video_supplement.py \
-  --rewrite-manifest /path/to/rewrite_manifest.json \
-  --material-manifest /path/to/material_manifest.json
+python3 scripts/build_stage5_publish.py \
+  --transwrite-manifest /path/to/transwrite_manifest.json \
+  --publish-decision /path/to/publish_decision.json
 ```
+
+Result writeback:
+
+```bash
+python3 scripts/record_publish_result.py \
+  --channel-pack /path/to/channel_pack.json \
+  --success true \
+  --status draft \
+  --draft-id <draft_id> \
+  --verification-status verified
+```
+
+Publish Guard:
+
+```bash
+python3 scripts/publish_guard.py \
+  --publish-manifest /path/to/publish_manifest.json
+```
+
+Strict/CI gate:
+
+```bash
+python3 scripts/publish_guard.py \
+  --publish-manifest /path/to/publish_manifest.json \
+  --fail-on-error
+```
+
+Verification semantics:
+
+- `published_links` only contains `status=published` results with verified formal `platform_url`.
+- `draft_records` only contains `status=draft|scheduled` results with verified `draft_id`.
+- `draft_url` is separate from `platform_url`; draft links must not be reported as published links.
+- `record_publish_result.py` does not auto-verify based on URL or draft ID; callers must explicitly pass `--verification-status verified` when the platform has been checked.
+- `build_stage5_publish.py` writes an initial `publish_summary`; before any result is recorded, `recorded_count=0` and `pending_count=total_channels`.
+- `publish_guard.py` writes `publish_guard_report.json`, `publish_guard_report.md`, and `publish_manifest.publish_guard`.
+- `publish_guard.py` requires the sibling `publish_verification_report.json`; a manifest-only batch must not pass guard verification.
+- `publish_manifest.publish_results` must match `publish_verification_report.records`, and both `publish_summary` objects must match the recomputed state.
+- Every recorded publish result must reference an existing `publish_result.json` via `result_file`, and the file's core publish fields must match the recorded result.
+- Default Publish Guard writes reports and exits 0 even when the batch is not passed; `--fail-on-error` exits non-zero when `passed=false`.
+- No current-session confirmation means no real platform publishing.
 
 ---
 
@@ -415,8 +472,7 @@ python3 scripts/publish_video_supplement.py \
 
 #### Input
 - `publish_manifest.json` (from Publish)
-- `rewrite_manifest.json` (from Rewrite)
-- `material_manifest.json` (from Material)
+- Optional strict gate: `publish_manifest.publish_guard.passed=true`
 
 #### Output Files
 - `postmortem_manifest.json` - Canonical postmortem state
@@ -429,33 +485,45 @@ python3 scripts/publish_video_supplement.py \
   "run_id": "string",
   "stage": "postmortem",
   "status": "completed",
+  "publish_guard": {
+    "present": true,
+    "status": "passed",
+    "passed": true,
+    "report_json": "path|null",
+    "report_markdown": "path|null",
+    "checked_at": "ISO8601|null"
+  },
   "topics": [
     {
       "topic_id": "string",
-      "performance_metrics": {
-        "wechat": {
-          "read_count": 0,
-          "like_count": 0,
-          "share_count": 0,
-          "comment_count": 0
-        }
-      },
-      "quality_metrics": {
-        "wechat_hot": {
-          "score": 0.0,
-          "word_count": 0
-        }
-      }
+      "topic_name": "string",
+      "published": true,
+      "drafted": false,
+      "selected_channels": [],
+      "publish_results": [],
+      "performance": {}
     }
   ],
-  "pattern_updates": {
-    "topic_patterns": 0,
-    "evidence_patterns": 0,
-    "visual_patterns": 0,
-    "channel_patterns": 0
+  "writeback": {
+    "topic_pattern_library": {},
+    "evidence_pattern_library": {},
+    "visual_pattern_library": {},
+    "channel_pattern_library": {}
   }
 }
 ```
+
+Postmortem groups by `topic_id`, not channel pack count. A topic is counted as published only when at least one publish result is `status=published`, `verification_status=verified`, and has a formal `platform_url`.
+
+Strict Postmortem:
+
+```bash
+python3 scripts/postmortem_writeback.py \
+  --publish-manifest /path/to/publish_manifest.json \
+  --require-publish-guard
+```
+
+Default Postmortem may continue when Publish Guard is missing, but strict Postmortem must fail before writing outputs unless `publish_manifest.publish_guard.status=passed`, `passed=true`, and both Guard report files exist.
 
 ---
 
@@ -473,7 +541,7 @@ python3 scripts/publish_video_supplement.py \
   - `selected_topics.json` (Brief → Draft gate)
   - `final_structure_snapshot.json` (Draft → Material/Rewrite gate)
   - `material_acceptance.json` (Material → Rewrite gate)
-  - `publish_decision.json` (Rewrite → Publish gate)
+  - `publish_decision.json` (Transwrite → Publish gate)
 
 ### Run ID Format
 - Format: `YYYY-MM-DD_HHMMSS`

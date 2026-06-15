@@ -76,7 +76,7 @@ console.log(result);
 //   draft_files: ['...', '...', '...'],
 //   manifest_file: '.../draft_manifest.json',
 //   final_structure_snapshot: '.../final_structure_snapshot.json',
-//   next_step: 'dasheng-stage-publish'
+//   next_step: 'dasheng-stage-transwrite'
 // }
 ```
 

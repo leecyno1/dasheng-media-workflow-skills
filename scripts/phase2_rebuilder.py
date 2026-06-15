@@ -16,6 +16,7 @@ from typing import Any
 from urllib import error as urllib_error
 from urllib import request as urllib_request
 from desktop_delivery import sync_brief_to_desktop
+from canonical_workflow import ensure_runtime_output_dir
 from provider_registry import extract_chat_content, resolve_chat_provider
 
 WORKFLOW_ENGINE_DIR = Path("" + str(Path(__file__).resolve().parents[1]) + "/引擎/03_全链路SOP工作流")
@@ -2015,7 +2016,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     intake_file = Path(args.input_file).expanduser().resolve()
-    output_dir = Path(args.output_dir).expanduser().resolve()
+    output_dir = ensure_runtime_output_dir(Path(args.output_dir).expanduser().resolve(), label="brief output_dir")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     records = load_records(intake_file)

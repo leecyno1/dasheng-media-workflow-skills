@@ -121,7 +121,7 @@ def test_draft_generation_with_valid_input(valid_selected_topics, temp_output_di
     assert "draft_files" in output
     assert "manifest_file" in output
     assert "final_structure_snapshot" in output
-    assert output["next_step"] == "dasheng-stage-publish"
+    assert output["next_step"] == "dasheng-stage-transwrite"
 
 
 def test_draft_generation_with_empty_topics(empty_selected_topics, temp_output_dir):
@@ -160,7 +160,7 @@ def test_json_output_schema(valid_selected_topics, temp_output_dir):
                 "draft_file": str(temp_output_dir / "03_标准初稿_topic-001.md")
             }
         ],
-        "next_step": "dasheng-stage-publish"
+        "next_step": "dasheng-stage-transwrite"
     }
 
     # 验证schema
@@ -172,7 +172,7 @@ def test_json_output_schema(valid_selected_topics, temp_output_dir):
     assert "manifest_file" in mock_output
     assert "final_structure_snapshot" in mock_output
     assert "next_step" in mock_output
-    assert mock_output["next_step"] == "dasheng-stage-publish"
+    assert mock_output["next_step"] == "dasheng-stage-transwrite"
 
 
 def test_nodejs_wrapper_syntax():

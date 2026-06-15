@@ -1,0 +1,24 @@
+{
+  "name": "dasheng-video-roughcut",
+  "version": "0.1.0",
+  "stage": "video",
+  "description": "真人口播粗剪、FunASR 转写、候选删除、字幕和审核页子能力。",
+  "runner": "python",
+  "entry": "../../scripts/video_roughcut_funasr.py",
+  "inputs": {
+    "required": [
+      "speaker video"
+    ],
+    "optional": [
+      "hotwords",
+      "agent_plan.json"
+    ]
+  },
+  "outputs": [
+    "roughcut_manifest.json",
+    "review page",
+    "roughcut mp4",
+    "roughcut srt"
+  ],
+  "hitl": true
+}

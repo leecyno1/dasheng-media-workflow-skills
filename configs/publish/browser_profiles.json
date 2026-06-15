@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-06-14",
+  "policy": {
+    "purpose": "Persistent browser profiles for platform publishing login sessions.",
+    "do_not_use": [
+      "Chrome DevTools MCP temporary profiles",
+      "one-off automation profiles",
+      "project-local skills or output directories for cookies"
+    ],
+    "cookie_handling": "Do not read, export, commit, or copy cookies. Reuse the browser profile directory only.",
+    "final_publish_requires_confirmation": true
+  },
+  "chrome_binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "profile_parent": "~/Library/Application Support/DashengPublishProfiles",
+  "profiles": {
+    "wechat_article": {
+      "platform": "wechat",
+      "profile_dir": "~/Library/Application Support/DashengPublishProfiles/wechat",
+      "debug_port": 9331,
+      "entry_url": "https://mp.weixin.qq.com/",
+      "notes": "For WeChat browser fallback only. API draft remains preferred when credentials are valid."
+    },
+    "xiaohongshu_video": {
+      "platform": "xiaohongshu",
+      "profile_dir": "~/Library/Application Support/DashengPublishProfiles/xiaohongshu",
+      "debug_port": 9332,
+      "entry_url": "https://creator.xiaohongshu.com/publish/publish?source=official",
+      "notes": "Login once here so creator.xiaohongshu.com cookies can be reused in future publish runs."
+    },
+    "xiaohongshu_video_2": {
+      "platform": "xiaohongshu",
+      "profile_dir": "~/Library/Application Support/DashengPublishProfiles/xiaohongshu-2",
+      "debug_port": 9334,
+      "entry_url": "https://creator.xiaohongshu.com/publish/publish?source=official",
+      "notes": "Second Xiaohongshu account slot."
+    },
+    "douyin_video": {
+      "platform": "douyin",
+      "profile_dir": "~/Library/Application Support/DashengPublishProfiles/douyin",
+      "debug_port": 9333,
+      "entry_url": "https://creator.douyin.com/creator-micro/content/upload",
+      "notes": "Login once here so creator.douyin.com cookies can be reused in future publish runs."
+    },
+    "douyin_video_2": {
+      "platform": "douyin",
+      "profile_dir": "~/Library/Application Support/DashengPublishProfiles/douyin-2",
+      "debug_port": 9335,
+      "entry_url": "https://creator.douyin.com/creator-micro/content/upload",
+      "notes": "Second Douyin account slot."
+    }
+  }
+}

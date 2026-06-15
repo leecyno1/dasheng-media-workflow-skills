@@ -65,7 +65,8 @@ def get_output_root(stage: str) -> Path:
         "brief": "02_Brief",
         "draft": "03_初稿生成",
         "rewrite": "06_改写",
-        "publish": "07_渠道分发",
+        "transwrite": "06_转写生产",
+        "publish": "07_发布执行",
         "postmortem": "08_分析复盘"
     }
     stage_dir = stage_dirs.get(stage, stage)

@@ -33,7 +33,7 @@ class WorkflowDoctorTests(unittest.TestCase):
         snapshot = stage_contract_snapshot("non-existent-run")
         self.assertEqual(
             list(snapshot["stages"].keys()),
-            ["intake", "brief", "draft", "publish", "postmortem"],
+            ["intake", "brief", "draft", "transwrite", "publish", "postmortem"],
         )
         self.assertNotIn("paradigm", snapshot["stages"])
 
@@ -82,8 +82,8 @@ class WorkflowDoctorTests(unittest.TestCase):
             if asset_dir.parent.exists():
                 shutil.rmtree(asset_dir.parent)
 
-    def test_doctor_reports_missing_publish_manifest_after_draft_gate(self):
-        run_id = "run-doctor-missing-publish"
+    def test_doctor_reports_missing_transwrite_manifest_after_draft_gate(self):
+        run_id = "run-doctor-missing-transwrite"
         intake_dir = ROOT / "产物/01_内容采集" / run_id
         brief_dir = ROOT / "产物/02_内容聚合及选题分析" / run_id
         draft_dir = ROOT / "产物/05_初稿生成" / run_id
@@ -109,7 +109,7 @@ class WorkflowDoctorTests(unittest.TestCase):
             )
             self.assertEqual(proc.returncode, 0, msg=proc.stderr)
             payload = json.loads(proc.stdout)
-            self.assertTrue(any("publish" in issue for issue in payload["issues"]))
+            self.assertTrue(any("transwrite" in issue for issue in payload["issues"]))
             self.assertFalse(any("material" in issue or "rewrite" in issue for issue in payload["issues"]))
         finally:
             for target in cleanup_targets:

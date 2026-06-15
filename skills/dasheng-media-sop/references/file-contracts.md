@@ -18,7 +18,8 @@
 | Intake | 原始链接清单、来源摘要、采集结论 |
 | Brief | 独立题卡、核心判断、证据缺口、研究入口、来源包 |
 | Draft | 分题标准初稿、证据清单、待补证据项、最终结构确认 |
-| Publish | 按需视频补充包 + 各渠道成品包、平台路由、发布时间计划、执行结果、发布验真报告 |
+| Transwrite | 公众号、口播视频、播客生产包、Agent prompt、API 请求体、lane manifest |
+| Publish | 各渠道执行包、平台路由、发布时间计划、执行结果、发布验真报告 |
 | Postmortem | 效果结论、失效点、L1 回写建议 |
 
 ## 飞书协作最小集合（主链强制）
@@ -28,6 +29,7 @@
 | Intake | `01_内容采集_底稿` + `01_内容采集_报告` | 发送审阅摘要 + 文档链接 | 归入当日日期文件夹 |
 | Brief | `02_编辑Brief库` + `02_编辑Brief_报告` | 发送候选题摘要 + 文档链接 | 归入当日日期文件夹 |
 | Draft | `03_标准初稿_<topic>` + `03_初稿_报告` | 发送初稿摘要 + 全部文档链接 | 归入当日日期文件夹 |
+| Transwrite | `04_转写计划` + lane manifest | 发送转写生产状态 + 阻塞项 | 归入当日日期文件夹 |
 | Publish | `07_发布计划` + `07_发布包` | 发送发布计划 + 待人工确认项 | 归入当日日期文件夹 |
 | Postmortem | `08_复盘报告` + `08_L1回写建议` | 发送复盘结论 | 归入当日日期文件夹 |
 
@@ -38,20 +40,34 @@
 
 ## 发布前审核门
 
-- `publish` 之前，主链至少要满足：
+- `transwrite` 之前，主链至少要满足：
   - 飞书共享文档已创建
   - 飞书群已发送审阅消息
   - `final_structure_snapshot.json` 已确认
-  - `publish_decision.json` 已确认标题、封面、路由、发布时间
-  - 若渠道需要视频补充，相关发布补充产物已完成并落盘：
-    - `publish_video_supplement_report.md`
-    - `publish_video_supplement_manifest.json`
+  - `transwrite_decision.json` 已确认转写通路
+
+- `publish` 之前，主链至少要满足：
+  - `transwrite_manifest.json` 已存在
+  - `publish_decision.json` 已确认标题、路由、发布时间
+  - 视频/音频/封面缺口已在 lane manifest 中明确标记
+
+## Transwrite 最小交付集合
+
+- `04_转写计划.md`
+- `transwrite_manifest.json`
+- `wechat_article_manifest.json`
+- `talking_head_video_manifest.json`
+- `podcast_manifest.json`
 
 ## Publish 最小交付集合
 
 - `07_发布计划.md`
 - `07_发布包.md`
-- `channel_adaptation_manifest.json`
+- `channel_packs/<topic_id>/<channel>/channel_pack.json`
+- `channel_packs/<topic_id>/<channel>/execution_request.json`
+- `channel_packs/<topic_id>/<channel>/verification_request.json`
+- `channel_packs/<topic_id>/<channel>/publish_payload.json`（执行器统一输入）
+- `channel_packs/<topic_id>/<channel>/publish_result.json`（执行器或人工发布后回填）
 - `channel_execution_manifest.json`
 - `publish_verification_report.json`
 - `publish_manifest.json`
@@ -59,7 +75,13 @@
 说明：
 
 - 只有 `channel_execution_manifest.json` 不能视为发布成功。
-- 必须同时存在 `publish_verification_report.json`，并且平台状态通过验真，才能对外汇报“已发布”。
+- 必须通过 `scripts/record_publish_result.py` 写回平台 URL、草稿 ID、截图或错误状态。
+- 必须同时存在 `publish_verification_report.json`，并且平台状态通过验真，才能对外汇报“已发布”；草稿只能回报“已推草稿”。
+- `published_links` 只允许写入 `status=published`、`verification_status=verified` 且存在正式 `platform_url` 的结果。
+- `draft_records` 只允许写入 `status=draft|scheduled`、`verification_status=verified` 且存在 `draft_id` 的结果。
+- `draft_url` 必须与 `platform_url` 分离，草稿链接不得进入 `published_links`。
+- `publish_summary` 是唯一汇总口径，必须包含 `total_channels`、`recorded_count`、`pending_count`、`failed_count`、`draft_count`、`published_count`、`verified_count`、`needs_manual_verification_count`、`pending_channels`。
+- Postmortem 按 `topic_id` 聚合多渠道结果，只从已验真的 `publish_results` 中计算 `published/drafted`，不得读取旧 `channel_pack.wechat_article_url` 作为成功发布证据。
 
 ## 人工干预原则
 
@@ -78,4 +100,4 @@
 
 ## 当前默认顺序
 
-`intake -> brief -> draft -> publish -> postmortem`
+`intake -> brief -> draft -> transwrite -> publish -> postmortem`

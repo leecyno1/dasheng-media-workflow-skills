@@ -135,8 +135,10 @@ def stage_issues(contract: dict[str, Any]) -> list[str]:
             previous_ready = bool(stages.get("intake", {}).get("manifest_exists"))
         elif stage == "draft":
             previous_ready = bool(stages.get("brief", {}).get("gate_exists"))
-        elif stage == "publish":
+        elif stage == "transwrite":
             previous_ready = bool(stages.get("draft", {}).get("gate_exists"))
+        elif stage == "publish":
+            previous_ready = bool(stages.get("transwrite", {}).get("gate_exists"))
         elif stage == "postmortem":
             previous_ready = bool(stages.get("publish", {}).get("manifest_exists"))
         if previous_ready and not row.get("manifest_exists"):
@@ -174,7 +176,8 @@ def provider_summary() -> dict[str, Any]:
         )),
         "optional_tools": {
             "draft_assets": "charts_images_and_data_are_generated_in_draft",
-            "rewrite_variants": "merged_into_draft_or_on_demand",
+            "transwrite_lanes": "wechat_article_talking_head_video_podcast",
+            "rewrite_variants": "merged_into_transwrite_or_on_demand",
         },
     }
 

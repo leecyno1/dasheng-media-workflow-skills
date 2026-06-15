@@ -1,4 +1,6 @@
-# 07 发布 Prompt
+# 07 发布 Prompt（旧兼容）
+
+> 当前正式主链已拆成 `transwrite -> publish`。转写生产请使用 `skills/dasheng-stage-transwrite/SKILL.md`，发布执行请使用 `skills/dasheng-stage-publish/SKILL.md`。本文件仅保留历史参考。
 
 ## 阶段目标
 
@@ -6,8 +8,7 @@
 
 ## 适用输入
 
-- `draft_manifest.json`
-- `final_structure_snapshot.json`
+- `transwrite_manifest.json`
 - `publish_decision.json`
 - 标题池
 - 摘要
@@ -26,7 +27,7 @@
 ## Prompt
 
 ```text
-你现在负责自媒体创作 SOP 的第 4 阶段：发布。
+你现在负责自媒体创作 SOP 的第 5 阶段：发布执行。
 
 请基于同一选题的确认正文、目标渠道和按需素材结果，生成最终可执行的发布包。
 
@@ -36,11 +37,7 @@
 3. 不要简单复制粘贴全文，要体现渠道消费差异。
 4. 所有图片、图表、链接尽量保留为可点击形式。
 5. 发布阶段不再反向重写正文，只做发布适配与编排。
-6. 视频平台或用户明确要求时，再补齐两类视频素材：
-   - 互动图表视频：导入已有图表 CSV 至 `/Volumes/PSSD/Projects/finance-motion-8787` 生成动态视频。
-   - motion 叙事视频：基于正文提炼框架精华 + 关键数据生成动画视频。
-7. 视频补充执行脚本：`python3 /Volumes/PSSD/Projects/公众号文章/scripts/publish_video_supplement.py`
-8. 视频补充对接线程：`codex://threads/019d31c5-bb7f-7a40-a087-9d219e9bd6ab`
+6. 视频、播客、封面生产已前移到 Transwrite；本阶段只验收状态并打包。
 
 请按以下结构输出：
 

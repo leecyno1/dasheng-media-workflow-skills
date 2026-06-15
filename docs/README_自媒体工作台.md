@@ -44,25 +44,22 @@
    - 执行入口：`scripts/build_stage3_draft.py`
    - 产物：`Reasoning Sheet` + `03_标准初稿_<topic>.md`
    - Gate：`final_structure_snapshot.json`
-4. **素材收集（含补素材）**
-   - 执行器：`skills/dasheng-daily-material`
-   - 产物：围绕 `Claim` 绑定的图表、图片、视频、AI 视觉、Layer 5 增强资产
-   - Gate：`material_acceptance.json`
-5. **改写**
-   - 执行入口：`skills/dasheng-media-sop`
-   - 产物：每题 4 版渠道化改写、结构继承记录、`rewrite_bundle.md`
-6. **渠道分发**
-   - 模板：`引擎/03_全链路SOP工作流/07_渠道分发模板.md`
-   - 产物：渠道包、标题/封面候选、视频增强、发布时间建议
+4. **转写生产**
+   - 执行入口：`scripts/build_stage4_transwrite.py`
+   - 产物：公众号文章、口播视频、播客生产包，`transwrite_manifest.json`
+   - Gate：`transwrite_decision.json`
+5. **发布执行**
+   - 执行入口：`scripts/build_stage5_publish.py`
+   - 产物：发布包、执行清单、链接回收与验真报告
    - Gate：`publish_decision.json`
-7. **分析复盘**
+6. **分析复盘**
    - 执行器：`skills/dasheng-daily-postmortem`
    - 产物：复盘报告与 Pattern Library 回写
 
 ## 桌面交付
 
 - 对外审阅和每日协作，统一使用：`/Users/lichengyin/Desktop/自媒体创作/<run_id>/`
-- `intake / brief / draft / rewrite / material` 的报告、底稿、清单与素材，统一直接落在该 `run` 根目录，避免再分 stage 子目录
+- `intake / brief / draft / transwrite / publish` 的报告、底稿、清单与素材，统一直接落在该 `run` 根目录，避免再分 stage 子目录
 - 仓库内 `产物/` 继续保留为正式沉淀；桌面目录只承担“快速查看交付视图”
 - 当前自动导出由各阶段脚本内置完成，批量脚本 `scripts/export_daily_delivery.py` 仅保留为兼容工具
 

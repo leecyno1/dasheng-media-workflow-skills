@@ -93,6 +93,6 @@ python3 scripts/build_stage3_draft.py \
 - 必须继承 Brief 的来源内容、争议点、观点和内容单元
 - 不得把多个选题混成一篇
 - 不得编造不存在的来源、数据和机构表态
-- `final_structure_snapshot.json` 确认后可直接进入 publish
+- `final_structure_snapshot.json` 确认后进入 transwrite
 - 数据、图表、配图和 HTML 嵌入必须由 Draft 内完成
 - 多版本改写只作为按需工具，不再是主链阶段

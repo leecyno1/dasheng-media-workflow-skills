@@ -2,15 +2,16 @@
 
 本目录用于把现有两层引擎与 `openclaw-skill-exports` 导入的执行能力合并成一条可落地的创作流水线。
 
-当前采用的 5 阶段定义如下：
+当前采用的 6 阶段定义如下：
 
 1. Intake 内容采集
 2. Brief：AI-only 选题生成 + Research Brief + 来源确认
 3. Draft 写作、可发布底稿与 HTML 草稿
-4. Publish 发布
-5. Postmortem 复盘
+4. Transwrite 转写生产
+5. Publish 发布执行
+6. Postmortem 复盘
 
-补充能力：`Paradigm Profile 范式学习` 作为阶段 0.5 的可选预处理资产，不单列为正式主链阶段。用户可在正式生产前提供标准文章、爆款样本、渠道模板或内部内容模板，由系统提炼“文章范式与框架”，再按场景、渠道、风格注入 Brief / Draft / Publish 的约束中。
+补充能力：`Paradigm Profile 范式学习` 作为阶段 0.5 的可选预处理资产，不单列为正式主链阶段。用户可在正式生产前提供标准文章、爆款样本、渠道模板或内部内容模板，由系统提炼“文章范式与框架”，再按场景、渠道、风格注入 Brief / Draft / Transwrite / Publish 的约束中。
 
 统一原则：
 
@@ -22,7 +23,7 @@
 - 第 3 阶段要主动补数据与表格，不做被动复述型初稿。
 - 第 3 阶段同步生成可编辑、自包含、离线可用 HTML 草稿；真实图表和配图必须绑定 `claim_id` 与来源。
 - 日常对外交付统一导出到桌面：`/Users/lichengyin/Desktop/自媒体创作/<run_id>/`
-- `intake / brief / draft / publish` 的交付文件统一直接放在该 `run` 根目录，不再另建桌面 stage 子目录
+- `intake / brief / draft / transwrite / publish` 的交付文件统一直接放在该 `run` 根目录，不再另建桌面 stage 子目录
 
 ## 合并原则
 
@@ -31,17 +32,18 @@
 - `openclaw-skill-exports/` 是快照源；实际运行统一以根目录 `skills/` 为准
 - L1 负责风格知识沉淀，L2 负责改写与版本延展，L3 负责把前后环节串起来
 
-## 五阶段映射
+## 六阶段映射
 
 | 阶段 | 目标 | 主执行器 | 本地引擎/脚本 | 关键产物 |
 | --- | --- | --- | --- | --- |
 | 01 Intake 内容采集 | 本地 8001 优先采集聊天/新闻流，并用公开新闻与热榜源兜底 | `dasheng-daily-intake` | `scripts/run_stage1_intake.py` | 采集底稿、采集报告、`intake_records` |
 | 02 Brief | 基于 canonical intake 生成 8-10 个独立候选题卡，并给出研究入口 | `dasheng-daily-phase2` | `scripts/phase2_rebuilder.py` + `02_Brief_AI生成规则.md` | 编辑 Brief 库、研究 Brief、来源包 |
 | 03 Draft | 基于确认选题形成可审核正文底稿，并同步生成可编辑 HTML 草稿 | `dasheng-daily-draft` | `scripts/build_stage3_draft.py` + `05_初稿生成_prompt.md` | 分题正文、HTML 草稿、Reasoning Sheet、质量门禁、`draft_manifest` |
-| 04 Publish | 基于 draft 和发布决策生成渠道包并执行分发 | `dasheng-stage-publish` | `scripts/publish_video_supplement.py` + 渠道发布 skill | 发布包、发布时间、渠道成品、验真报告 |
-| 05 Postmortem | 回收发布数据并修正模型 | `dasheng-daily-postmortem` | `scripts/postmortem_writeback.py` | 复盘报告、知识库更新 |
+| 04 Transwrite | 基于确认 Draft 生成公众号、口播视频、播客生产包 | `dasheng-stage-transwrite` | `scripts/build_stage4_transwrite.py` | 转写计划、三路 lane manifest、Agent prompt、API 请求体 |
+| 05 Publish | 验收转写包，生成发布包，推草稿/人工包并回收链接 | `dasheng-stage-publish` | `scripts/build_stage5_publish.py` + 渠道发布 skill | 发布包、执行清单、验真报告 |
+| 06 Postmortem | 回收发布数据并修正模型 | `dasheng-daily-postmortem` | `scripts/postmortem_writeback.py` | 复盘报告、知识库更新 |
 
-独立素材环节已删除；数据、图表、配图和 HTML 嵌入都在 Draft 内完成。`dasheng-stage-rewrite-v3` 只在需要额外多版本改写时调用，不得阻塞 Publish。
+独立素材环节已删除；数据、图表、配图和 HTML 嵌入都在 Draft 内完成。`dasheng-stage-rewrite-v3` 只在 Transwrite 需要额外多版本改写时调用，不得阻塞 Publish。
 
 ## 可选前置能力：范式学习
 
@@ -49,12 +51,12 @@
 
 - **放在 Brief 前**：把样本文章提炼成选题适配规则、叙事角度、章节骨架、论证推进方式，帮助后续题卡直接匹配“该用哪种写法”。
 - **作用到 Draft**：标准初稿可采用范式的结构骨架和论证顺序，但不得提前注入作者口吻、情绪词或平台包装。
-- **作用到 Publish**：把同一内容按公众号、小红书、短视频脚本、社群帖等渠道拆成不同呈现框架。
+- **作用到 Transwrite / Publish**：Transwrite 使用范式拆渠道形态，Publish 只按人工确认的发布决策执行。
 - **按需工具**：Rewrite 只在具体渠道变体缺口出现时调用，不单列为正式阶段。
 
 推荐对象链补充为：
 
-`Run -> ParadigmProfile(optional) -> TopicPool -> SelectedTopic -> Draft -> PublishPack -> Postmortem`
+`Run -> ParadigmProfile(optional) -> TopicPool -> SelectedTopic -> Draft -> TranswritePack -> PublishPack -> Postmortem`
 
 `ParadigmProfile` 应与 `Style DNA` 分开管理：前者回答“这类文章怎么搭结构、怎么推进、适合什么场景”，后者回答“像谁写、用什么语气和句式”。
 
@@ -66,7 +68,8 @@
 | `ContentBrief` | `content-brief.schema.json` | 编辑 Brief 库中的单题卡片 | `02_内容聚合及选题分析/` |
 | `OutlinePlan` | `outline-plan.schema.json` | 初稿大纲 | `02_内容聚合及选题分析/` |
 | `DraftPackage` | `draft-package.schema.json` | 可审核、可发布正文底稿（每题一篇） | `05_初稿生成/` |
-| `PublishPackage` | 本项目补充约定 | 各渠道成品包 | `07_渠道分发/` |
+| `TranswritePackage` | 本项目补充约定 | 公众号、口播视频、播客生产包 | `06_转写生产/` |
+| `PublishPackage` | 本项目补充约定 | 各渠道执行包 | `07_发布执行/` |
 | `PostmortemRecord` | `postmortem-record.schema.json` | 复盘记录 | `08_分析复盘/` |
 
 ## 每一阶段必须回答的问题
@@ -94,14 +97,21 @@
 - 是否主动补充了必要数据表、时间线或对比表？
 - 是否生成了自包含 HTML，并把图表、配图、数据需求绑定到 `claim_id`？
 
-### 04 Publish
+### 04 Transwrite
 
-- 同一观点是否已按平台消费方式整理？
-- 首屏、标题、封面、摘要是否各自独立优化？
-- 是否保留统一判断，但改变表达密度和节奏？
-- 是否已生成渠道执行清单和发布验真报告？
+- 公众号版本是否已完成 DNA/humanize、封面提示和微信格式转写？
+- 有真人口播素材时，是否已经转成主动对齐的视觉层计划？
+- 没有真人口播素材时，是否已经形成合成音频与动画被动对齐计划？
+- 播客是否已经形成 Coze / MiniMax 请求体，并标注 API key 状态？
 
-### 05 Postmortem
+### 05 Publish
+
+- 转写包是否满足目标平台发布要求？
+- 哪些平台能推草稿，哪些只能导出人工包？
+- 是否已生成渠道执行清单、发布包和链接回收位？
+- 是否明确标记了未完成视频、音频或 API 的阻塞状态？
+
+### 06 Postmortem
 
 - 这篇内容为什么起量或不起量？
 - 是选题问题、结构问题、证据问题还是标题问题？
@@ -112,8 +122,9 @@
 1. 阶段 1 完成后，把原始链接和采集结论落到项目目录
 2. 阶段 2 形成 Brief、大纲和来源包
 3. 阶段 3 生成可审核、可发布正文底稿和可编辑 HTML 草稿
-4. 阶段 4 基于 draft 和发布决策生成渠道包并执行分发
-5. 阶段 5 复盘并回写 `引擎/01_调性分析引擎/STYLE_KNOWLEDGE_BASE.md`
+4. 阶段 4 基于确认 Draft 和转写决策生成公众号、口播视频、播客生产包
+5. 阶段 5 基于转写包和发布决策生成发布包并执行/半执行分发
+6. 阶段 6 复盘并回写 `引擎/01_调性分析引擎/STYLE_KNOWLEDGE_BASE.md`
 
 ## 飞书同步执行模式
 
@@ -142,9 +153,9 @@
 - 阶段 2 标准模板：`引擎/03_全链路SOP工作流/02_标准编辑Brief模板.md`
 - 阶段 3：`引擎/03_全链路SOP工作流/05_初稿生成_prompt.md`
 - 阶段 3 结构模板：`引擎/03_全链路SOP工作流/03_标准初稿结构模板.md`
-- 阶段 4 Publish：`引擎/03_全链路SOP工作流/07_渠道分发_prompt.md`
-- 阶段 4 模板：`引擎/03_全链路SOP工作流/07_渠道分发模板.md`
-- 阶段 5 Postmortem：`引擎/03_全链路SOP工作流/08_分析复盘_prompt.md`
+- 阶段 4 Transwrite：`skills/dasheng-stage-transwrite/SKILL.md`
+- 阶段 5 Publish：`skills/dasheng-stage-publish/SKILL.md`
+- 阶段 6 Postmortem：`引擎/03_全链路SOP工作流/08_分析复盘_prompt.md`
 - 按需多版本改写工具：`引擎/03_全链路SOP工作流/06_改写_prompt.md`
 - 阶段接口说明：`引擎/03_全链路SOP工作流/STAGE_INTERFACES.md`
 
@@ -155,6 +166,7 @@
 - 阶段 3 每个题目单独成文、单独建飞书文档
 - 阶段 3 HTML 禁止 CDN/本地引用；Chart.js 必须内联，canvas 图表发布前建议截图替换
 - 按需素材工具只补证据与素材，不允许借机改主判断
-- 按需多版本改写只在明确需要多渠道版本时调用，不再阻塞主链
-- 阶段 4 的发布包装不能改变核心判断
-- 阶段 5 必须给出“继续做 / 停止做 / 继续测试”的明确结论
+- 按需多版本改写只在 Transwrite 明确需要多渠道版本时调用，不再阻塞主链
+- 阶段 4 的转写生产不能改变核心判断
+- 阶段 5 不再生产正文、封面、视频或播客，只做验收、打包、执行和链接回收
+- 阶段 6 必须给出“继续做 / 停止做 / 继续测试”的明确结论

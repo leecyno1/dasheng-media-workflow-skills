@@ -188,20 +188,17 @@ python3 scripts/build_stage3_draft.py \
   --selected-topics /path/to/selected_topics.json \
   --run-id $(date +%Y-%m-%d_%H%M%S)
 
-# Stage 4: Material
-python3 scripts/material_execute_pack.py \
-  --draft-manifest /path/to/draft_manifest.json
-
-# Stage 5: Rewrite
-python3 scripts/rewrite_execute_stage5.py \
+# Stage 4: Transwrite
+python3 scripts/build_stage4_transwrite.py \
   --draft-manifest /path/to/draft_manifest.json \
-  --versions wechat_hot,wechat_normal,xiaohongshu_hot,xiaohongshu_normal
+  --transwrite-decision /path/to/transwrite_decision.json
 
-# Stage 6: Publish
-python3 scripts/publish_video_supplement.py \
-  --rewrite-manifest /path/to/rewrite_manifest.json
+# Stage 5: Publish
+python3 scripts/build_stage5_publish.py \
+  --transwrite-manifest /path/to/transwrite_manifest.json \
+  --publish-decision /path/to/publish_decision.json
 
-# Stage 7: Postmortem
+# Stage 6: Postmortem
 # Use dasheng-daily-postmortem skill
 ```
 
