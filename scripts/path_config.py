@@ -3,32 +3,37 @@
 Path Configuration Module
 统一管理所有硬编码路径，支持环境变量覆盖
 
-DEPRECATED: 此模块已废弃，请使用 core.path_resolver 替代
+COMPATIBILITY WRAPPER: get_project_root 已委托给 core.path_resolver，
+以消除项目根目录检测逻辑的重复。本模块保留其他历史辅助函数以兼容现有脚本。
+新代码建议直接使用 core.path_resolver。
 """
 
 import os
+import sys
 from pathlib import Path
+
+# 将项目根目录加入路径以导入 core.path_resolver（当从 scripts/ 运行时）
+_PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
+
+from core.path_resolver import PathResolver
 
 
 def get_project_root() -> Path:
     """
     获取项目根目录
 
+    基于 core.path_resolver.PathResolver，但优先尊重 DASHENG_PROJECT_ROOT 环境变量，
+    并在环境变量变化时重新解析，避免单例缓存导致测试失败。
     优先级：
     1. 环境变量 DASHENG_PROJECT_ROOT
     2. 自动检测（查找 CLAUDE.md）
     """
-    if "DASHENG_PROJECT_ROOT" in os.environ:
-        return Path(os.environ["DASHENG_PROJECT_ROOT"])
-
-    # 自动检测项目根目录
-    current = Path(__file__).resolve()
-    for parent in [current] + list(current.parents):
-        if (parent / 'CLAUDE.md').exists():
-            return parent
-
-    # Fallback（不应该到达这里）
-    raise RuntimeError("Cannot detect project root: CLAUDE.md not found")
+    env_root = os.environ.get("DASHENG_PROJECT_ROOT")
+    if env_root:
+        return Path(env_root).expanduser()
+    return PathResolver().get_project_root()
 
 
 def get_desktop_root() -> Path:
@@ -58,19 +63,25 @@ def get_feishu_stage_contract_path() -> Path:
 
 
 def get_output_root(stage: str) -> Path:
-    """获取指定阶段的输出根目录"""
-    root = get_project_root()
+    """获取指定阶段的输出根目录
+
+    默认输出到 ~/Desktop/自媒体创作/，避免产物堆积在项目目录下。
+    可通过 DASHENG_OUTPUT_ROOT 环境变量覆盖。
+    """
+    output_base = Path(os.getenv("DASHENG_OUTPUT_ROOT", str(Path.home() / "Desktop" / "自媒体创作")))
     stage_dirs = {
         "intake": "01_内容采集",
-        "brief": "02_Brief",
-        "draft": "03_初稿生成",
-        "rewrite": "06_改写",
+        "brief": "02_内容聚合及选题分析",
+        "draft": "05_初稿生成",
         "transwrite": "06_转写生产",
         "publish": "07_发布执行",
-        "postmortem": "08_分析复盘"
+        "postmortem": "08_分析复盘",
+        "paradigm": "00_范式学习",
+        "rewrite": "06_改写",
+        "hotspot": "00_热点捕捉",
     }
     stage_dir = stage_dirs.get(stage, stage)
-    return root / "产物" / stage_dir
+    return output_base / stage_dir
 
 
 def get_templates_dir() -> Path:
@@ -110,6 +121,7 @@ Path Configuration Environment Variables:
 Core Paths:
   DASHENG_PROJECT_ROOT          - 项目根目录 (default: auto-detect via CLAUDE.md)
   DASHENG_DESKTOP_ROOT          - 桌面交付目录 (default: ~/Desktop/自媒体创作)
+  DASHENG_OUTPUT_ROOT           - 产物输出根目录 (default: ~/Desktop/自媒体创作)
 
 Feishu Configuration:
   DASHENG_FEISHU_CONFIG         - 飞书API配置 (default: ~/clawd/configs/feishu_api.conf)
@@ -120,7 +132,7 @@ Usage:
   export DASHENG_PROJECT_ROOT=/path/to/project
   python3 scripts/workflow_doctor.py
 
-Note: This module is deprecated. Use core.path_resolver instead.
+Note: get_project_root now delegates to core.path_resolver. Prefer core.path_resolver for new code.
 """
 
 
@@ -128,7 +140,23 @@ if __name__ == "__main__":
     print("Current Path Configuration:")
     print(f"  Project Root: {get_project_root()}")
     print(f"  Desktop Root: {get_desktop_root()}")
+    print(f"  Output Root (intake): {get_output_root('intake')}")
+    print(f"  Output Root (publish): {get_output_root('publish')}")
     print(f"  Feishu Config: {get_feishu_config_path()}")
+    print(f"  Feishu Bot Config: {get_feishu_bot_config_path()}")
+    print(f"  Feishu Stage Contract: {get_feishu_stage_contract_path()}")
+    print(f"  Templates Dir: {get_templates_dir()}")
+    print(f"  Skills Dir: {get_skills_dir()}")
+    print(f"  DNA Config: {get_dna_config_path()}")
+    print()
+    print(ENV_VARS_HELP)
+    print(f"  Feishu Bot Config: {get_feishu_bot_config_path()}")
+    print(f"  Feishu Stage Contract: {get_feishu_stage_contract_path()}")
+    print(f"  Templates Dir: {get_templates_dir()}")
+    print(f"  Skills Dir: {get_skills_dir()}")
+    print(f"  DNA Config: {get_dna_config_path()}")
+    print()
+    print(ENV_VARS_HELP)
     print(f"  Feishu Bot Config: {get_feishu_bot_config_path()}")
     print(f"  Feishu Stage Contract: {get_feishu_stage_contract_path()}")
     print(f"  Templates Dir: {get_templates_dir()}")

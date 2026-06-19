@@ -2,12 +2,14 @@
 # 项目根目录（自动检测，无需配置）
 project_root: auto
 
-# 工作目录（相对于project_root）
+# 工作目录
+# outputs 默认输出到桌面，避免产物堆积在项目目录下
+# 可通过 DASHENG_OUTPUT_ROOT 环境变量覆盖
 work_dirs:
   materials: "素材"
   projects: "项目"
   engines: "引擎"
-  outputs: "产物"
+  outputs: "${DASHENG_OUTPUT_ROOT:-~/Desktop/自媒体创作}"
 
 # 外部依赖路径（通过环境变量覆盖）
 external:

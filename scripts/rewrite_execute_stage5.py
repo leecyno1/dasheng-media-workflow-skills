@@ -326,7 +326,7 @@ if __name__ == "__main__":
     if args.output_dir:
         output_dir = Path(args.output_dir)
     else:
-        output_dir = Path(__file__).parent.parent / "产物" / "06_改写" / run_id
+        from path_config import get_output_root; output_dir = get_output_root("rewrite") / run_id
 
     # 解析版本列表
     if args.versions:

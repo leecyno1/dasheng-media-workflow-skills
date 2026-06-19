@@ -1,4 +1,5 @@
 # local secrets
+.env
 .tushare_token
 
 # OS/editor noise
@@ -6,19 +7,40 @@
 
 # python
 .venv/
+.venv_media/
 __pycache__/
 *.pyc
 
 # local caches/runtime outputs
 .cache/
+.pytest_cache/
+.tmp/
+.tmp_test/
+.codex_work/
 skills/dasheng-daily-shared/runtime-data/runs/
 
 # generated charts
 figures/
 
-# generated workflow/content outputs
+# generated workflow/content outputs (now default to ~/Desktop/自媒体创作)
 /产物/
 /素材/
+
+# temporary files and build artifacts
+/tmp/
+/交付镜像/
+
+# one-off scripts (use scripts/ directory for project scripts)
+feishu_image_refill.py
+feishu_image_upload.py
+feishu_refill_final.py
+feishu_refill_v2.py
+generate_infographics.py
+scripts_wechat_fetch.py
+scripts_wechat_fetch_urls.py
+
+# archive exports
+dasheng-media-workflow-skills-*.tar.gz
 
 # data snapshots
 /data/tushare/

@@ -18,11 +18,14 @@ from urllib import request as urllib_request
 import yaml
 
 from canonical_workflow import optional_asset_dir, write_json
+from path_config import get_output_root
+from path_config import get_output_root
+from path_config import get_output_root
 from provider_registry import extract_chat_content, resolve_chat_provider
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_OUTPUT_ROOT = ROOT / "产物" / "00_范式学习"
+DEFAULT_OUTPUT_ROOT = get_output_root("paradigm")
 MAX_SAMPLE_CHARS_FOR_AI = 18000
 
 

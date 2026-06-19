@@ -4,22 +4,22 @@ import json
 from pathlib import Path
 from typing import Any
 
-from path_config import get_project_root
+from path_config import get_output_root, get_project_root
 
 
 ROOT = get_project_root()
 
 OPTIONAL_ASSET_ROOTS: dict[str, Path] = {
-    "paradigm": ROOT / "产物" / "00_范式学习",
+    "paradigm": get_output_root("paradigm"),
 }
 
 CANONICAL_STAGE_ROOTS: dict[str, Path] = {
-    "intake": ROOT / "产物" / "01_内容采集",
-    "brief": ROOT / "产物" / "02_内容聚合及选题分析",
-    "draft": ROOT / "产物" / "05_初稿生成",
-    "transwrite": ROOT / "产物" / "06_转写生产",
-    "publish": ROOT / "产物" / "07_发布执行",
-    "postmortem": ROOT / "产物" / "08_分析复盘",
+    "intake": get_output_root("intake"),
+    "brief": get_output_root("brief"),
+    "draft": get_output_root("draft"),
+    "transwrite": get_output_root("transwrite"),
+    "publish": get_output_root("publish"),
+    "postmortem": get_output_root("postmortem"),
 }
 
 FORBIDDEN_RUNTIME_OUTPUT_ROOTS: tuple[Path, ...] = (
@@ -99,7 +99,7 @@ def ensure_runtime_output_dir(path: Path, *, label: str = "output_dir") -> Path:
         forbidden_resolved = forbidden.resolve()
         if candidate == forbidden_resolved or forbidden_resolved in candidate.parents:
             raise WorkflowContractError(
-                f"{label} 不能位于 skill/export 目录下：{candidate}。运行产物必须写入 `产物/`、`tmp/` 或显式工作目录。"
+                f"{label} 不能位于 skill/export 目录下：{candidate}。运行产物必须写入桌面输出目录或显式工作目录。"
             )
     return candidate
 
