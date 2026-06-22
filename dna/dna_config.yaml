@@ -4,7 +4,7 @@
 project:
   name: "大声自媒体创作工作台"
   version: "2.0.0"
-  description: "高度自动化的7环节自媒体创作系统"
+  description: "高度自动化的6环节自媒体创作系统"
 
 # 默认风格配置
 default_style:
@@ -49,8 +49,7 @@ automation:
   intake_auto: true
   brief_auto: false      # Brief需要人工确认
   draft_auto: true
-  material_auto: false   # Material需要人工审核
-  rewrite_auto: false    # Rewrite需要人工选择
+  transwrite_auto: true
   publish_auto: true
   postmortem_auto: true
 
@@ -58,13 +57,7 @@ automation:
 hitl_gates:
   - stage: "brief"
     gate_type: "selection"
-    description: "编辑确认选题和大纲"
-  - stage: "material"
-    gate_type: "review"
-    description: "编辑审核素材质量"
-  - stage: "rewrite"
-    gate_type: "selection"
-    description: "编辑选择最终版本"
+    description: "编辑确认选题"
 
 # 平台配置
 platforms:

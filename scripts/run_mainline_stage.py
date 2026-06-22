@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import subprocess
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -22,12 +23,15 @@ from canonical_workflow import (
 ROOT = Path(__file__).resolve().parents[1]
 
 
+PYTHON = sys.executable
+
+
 def run_command(args: list[str]) -> None:
-    subprocess.run(args, cwd=str(ROOT), check=True)
+    subprocess.run([PYTHON, *args], cwd=str(ROOT), check=True)
 
 
 def run_json_command(args: list[str]) -> dict[str, Any]:
-    proc = subprocess.run(args, cwd=str(ROOT), check=True, capture_output=True, text=True)
+    proc = subprocess.run([PYTHON, *args], cwd=str(ROOT), check=True, capture_output=True, text=True)
     return json.loads(proc.stdout)
 
 
@@ -139,7 +143,6 @@ def build_publish_dry_run_report(publish_manifest: dict[str, Any]) -> dict[str, 
             continue
         plan = run_json_command(
             [
-                "python3",
                 str(ROOT / "scripts/prepare_publish_execution.py"),
                 "--execution-request",
                 str(execution_request),
@@ -288,7 +291,6 @@ def build_paradigm_command(args: argparse.Namespace) -> list[str]:
     if not args.samples:
         raise WorkflowContractError("paradigm 阶段必须至少提供一个样本文件。")
     command = [
-        "python3",
         str(ROOT / "scripts/build_paradigm_profile.py"),
         *args.samples,
         "--run-id",
@@ -371,7 +373,7 @@ def main() -> None:
     args = parser.parse_args()
 
     if args.stage == "intake":
-        command = ["python3", str(ROOT / "scripts/run_stage1_intake.py")]
+        command = [str(ROOT / "scripts/run_stage1_intake.py")]
         if args.run_id:
             command.extend(["--run-id", args.run_id])
         run_command(command)
@@ -385,7 +387,6 @@ def main() -> None:
         intake_file, run_id = resolve_intake_inputs(args.run_id, args.input_file)
         run_command(
             [
-                "python3",
                 str(ROOT / "scripts/phase2_rebuilder.py"),
                 intake_file,
                 str(canonical_stage_dir("brief", run_id)),
@@ -400,7 +401,6 @@ def main() -> None:
     if args.stage == "draft":
         selected_topics, topic_cards = resolve_draft_inputs(args.run_id)
         command = [
-            "python3",
             str(ROOT / "scripts/build_stage3_draft.py"),
             selected_topics,
             topic_cards,
@@ -419,7 +419,6 @@ def main() -> None:
             args.transwrite_decision,
         )
         command = [
-            "python3",
             str(ROOT / "scripts/build_stage4_transwrite.py"),
             "--draft-manifest",
             draft_manifest,
@@ -440,7 +439,6 @@ def main() -> None:
             args.publish_decision,
         )
         command = [
-            "python3",
             str(ROOT / "scripts/build_stage5_publish.py"),
             "--transwrite-manifest",
             transwrite_manifest,
@@ -468,7 +466,6 @@ def main() -> None:
             raise WorkflowContractError("postmortem 阶段必须提供 --run-id 或 --publish-manifest。")
         publish_manifest = resolve_postmortem_manifest(args.run_id, args.publish_manifest)
         command = [
-            "python3",
             str(ROOT / "scripts/postmortem_writeback.py"),
             "--publish-manifest",
             publish_manifest,
@@ -481,7 +478,6 @@ def main() -> None:
     if args.stage == "doctor":
         if args.publish_manifest:
             command = [
-                "python3",
                 str(ROOT / "scripts/publish_guard.py"),
                 "--publish-manifest",
                 args.publish_manifest,
@@ -495,7 +491,7 @@ def main() -> None:
             run_command(command)
             return
         if args.publish:
-            command = ["python3", str(ROOT / "scripts/publish_doctor.py")]
+            command = [str(ROOT / "scripts/publish_doctor.py")]
             for channel in args.channel:
                 command.extend(["--channel", channel])
             if args.output_json:
@@ -504,7 +500,7 @@ def main() -> None:
                 command.extend(["--output-md", args.output_md])
             run_command(command)
             return
-        command = ["python3", str(ROOT / "scripts/workflow_doctor.py")]
+        command = [str(ROOT / "scripts/workflow_doctor.py")]
         if args.run_id:
             command.extend(["--run-id", args.run_id])
         if args.latest:

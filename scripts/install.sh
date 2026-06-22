@@ -55,8 +55,8 @@ echo "安装Python依赖..."
 pip install --upgrade pip -q
 pip install -r requirements.txt -q
 
-# 安装Node.js依赖
-if command -v npm &> /dev/null; then
+# 安装Node.js依赖（仅当存在package.json时）
+if [ -f package.json ] && command -v npm &> /dev/null; then
     echo ""
     echo "安装Node.js依赖..."
     npm install --silent

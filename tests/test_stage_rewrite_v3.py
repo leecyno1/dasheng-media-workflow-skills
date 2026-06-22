@@ -11,9 +11,9 @@
 
 import json
 import os
+import subprocess
 import sys
 from pathlib import Path
-import subprocess
 import tempfile
 import pytest
 
@@ -116,7 +116,7 @@ def test_script_exists():
 def test_script_accepts_cli_arguments():
     """测试脚本接受CLI参数"""
     result = subprocess.run(
-        ["python3", str(SCRIPT_PATH), "--help"],
+        [sys.executable, str(SCRIPT_PATH), "--help"],
         capture_output=True,
         text=True
     )
@@ -134,7 +134,7 @@ def test_rewrite_with_valid_input(valid_draft_manifest, valid_final_structure_sn
 
     result = subprocess.run(
         [
-            "python3", str(SCRIPT_PATH),
+            sys.executable, str(SCRIPT_PATH),
             "--draft-manifest", str(valid_draft_manifest),
             "--output-dir", str(temp_output_dir),
             "--versions", "wechat_hot,wechat_normal",
@@ -160,7 +160,7 @@ def test_rewrite_without_draft_manifest(temp_output_dir):
     """测试：缺少draft_manifest.json → 应该失败"""
     result = subprocess.run(
         [
-            "python3", str(SCRIPT_PATH),
+            sys.executable, str(SCRIPT_PATH),
             "--draft-manifest", str(temp_output_dir / "nonexistent.json"),
             "--json-output"
         ],

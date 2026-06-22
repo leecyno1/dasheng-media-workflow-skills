@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
@@ -24,10 +25,21 @@ def now_iso() -> str:
     return datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds")
 
 
+def _expand_env_vars(value: str) -> str:
+    """展开 ${VAR:-default} 风格的环境变量。"""
+    pattern = r"\$\{([^:}]+)(?::-(.*?))?\}"
+
+    def replacer(match: re.Match[str]) -> str:
+        var_name, default = match.groups()
+        return os.environ.get(var_name, default or "")
+
+    return re.sub(pattern, replacer, value)
+
+
 def resolve_root(row: dict[str, Any]) -> Path:
     env_name = str(row.get("default_root_env") or "")
     value = os.getenv(env_name) if env_name else None
-    return Path(value or row.get("default_root") or "").expanduser()
+    return Path(value or _expand_env_vars(str(row.get("default_root") or "")) or "").expanduser()
 
 
 def git_output(args: list[str], *, cwd: Path | None = None, timeout: int = 20) -> str | None:

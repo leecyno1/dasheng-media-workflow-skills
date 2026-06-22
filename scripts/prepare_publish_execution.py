@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import shutil
 from datetime import datetime, timezone
 from pathlib import Path
@@ -43,13 +44,24 @@ def load_upstream_rows() -> dict[str, dict[str, Any]]:
     return {str(row.get("name")): row for row in registry.get("repositories") or [] if row.get("name")}
 
 
+def _expand_env_vars(value: str) -> str:
+    """展开 ${VAR:-default} 风格的环境变量。"""
+    pattern = r"\$\{([^:}]+)(?::-(.*?))?\}"
+
+    def replacer(match: re.Match[str]) -> str:
+        var_name, default = match.groups()
+        return os.environ.get(var_name, default or "")
+
+    return re.sub(pattern, replacer, value)
+
+
 def resolve_root(row: dict[str, Any] | None) -> Path | None:
     if not row:
         return None
     env_name = str(row.get("default_root_env") or "")
     value = os.getenv(env_name) if env_name else None
-    raw = value or row.get("default_root")
-    return Path(str(raw)).expanduser() if raw else None
+    raw = value or _expand_env_vars(str(row.get("default_root") or ""))
+    return Path(raw).expanduser() if raw else None
 
 
 def root_exists(rows: dict[str, dict[str, Any]], name: str) -> tuple[bool, str | None]:

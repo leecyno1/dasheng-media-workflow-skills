@@ -1,22 +1,40 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import hashlib
 import json
 import math
 import os
 import re
+import sys
 import time
 from collections import Counter, defaultdict
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
+from urllib.parse import urlparse
 from xml.etree import ElementTree as ET
+
+# 确保 scripts/ 目录在路径中，以便导入 intake 子包
+_SCRIPTS_DIR = Path(__file__).resolve().parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
 
 import requests
 from desktop_delivery import sync_intake_to_desktop
+from intake.text_utils import (
+    clean_text,
+    contains_keyword,
+    extract_report_links,
+    md_cell,
+    md_link,
+    normalize_slug,
+    normalize_text,
+    normalize_url,
+    sha1_text,
+    summarize_title,
+)
+from intake.wechat_cache import load_wechat_cache, save_wechat_cache
 from intake_collectors import collect_simple_intake
 from path_config import get_project_root, get_output_root
 
@@ -293,54 +311,6 @@ def post_form_json(url: str, data: dict[str, Any]) -> Any:
     return response.json()
 
 
-def get_cache_dir() -> Path:
-    """获取缓存目录"""
-    cache_dir = ROOT / ".cache" / "intake"
-    cache_dir.mkdir(parents=True, exist_ok=True)
-    return cache_dir
-
-
-def save_wechat_cache(channels: dict[str, Any], latest_articles: dict[str, Any], curated_articles: dict[str, dict[str, Any]]) -> None:
-    """保存微信采集缓存"""
-    try:
-        cache_dir = get_cache_dir()
-        cache_data = {
-            "timestamp": iso(now()),
-            "channels": channels,
-            "latest_articles": latest_articles,
-            "curated_articles": curated_articles,
-        }
-        dump_json(cache_dir / "wechat_last_success.json", cache_data)
-    except Exception as e:
-        print(f"Warning: Failed to save wechat cache: {e}")
-
-
-def load_wechat_cache() -> tuple[dict[str, Any], dict[str, Any], dict[str, dict[str, Any]]] | None:
-    """加载微信采集缓存"""
-    try:
-        cache_dir = get_cache_dir()
-        cache_file = cache_dir / "wechat_last_success.json"
-        if not cache_file.exists():
-            return None
-
-        cache_data = json.loads(cache_file.read_text(encoding="utf-8"))
-
-        # 检查缓存时间，超过7天的缓存不使用
-        cache_time = datetime.fromisoformat(cache_data.get("timestamp", ""))
-        if (now() - cache_time).days > 7:
-            print("Warning: Wechat cache is older than 7 days, ignoring")
-            return None
-
-        return (
-            cache_data.get("channels", {"data": {"total": 0, "list": []}}),
-            cache_data.get("latest_articles", {"data": {"total": 0, "list": []}}),
-            cache_data.get("curated_articles", {}),
-        )
-    except Exception as e:
-        print(f"Warning: Failed to load wechat cache: {e}")
-        return None
-
-
 
 def ai_keyword_hits(*parts: str) -> int:
     text = normalize_text(*parts)
@@ -424,77 +394,6 @@ def parse_datetime_any(value: Any) -> datetime | None:
         except Exception:
             continue
     return None
-
-
-def clean_text(text: str) -> str:
-    return re.sub(r"\s+", " ", text or "").strip()
-
-
-def md_cell(text: str) -> str:
-    return clean_text(text).replace("|", "\\|")
-
-
-def md_link(title: str, url: str) -> str:
-    label = clean_text(title) or url
-    return f"[{label}]({url})" if url else label
-
-
-def sha1_text(text: str) -> str:
-    return hashlib.sha1(text.encode("utf-8")).hexdigest()
-
-
-def normalize_slug(text: str) -> str:
-    value = re.sub(r"[^0-9A-Za-z\u4e00-\u9fa5]+", "-", text or "").strip("-").lower()
-    return value or "unknown"
-
-
-def normalize_text(*parts: str) -> str:
-    return clean_text(" ".join(part for part in parts if part)).lower()
-
-
-def contains_keyword(text: str, keyword: str) -> bool:
-    keyword_lower = keyword.lower()
-    if re.search(r"[A-Za-z]", keyword):
-        pattern = rf"(?<![A-Za-z0-9]){re.escape(keyword_lower)}(?![A-Za-z0-9])"
-        return re.search(pattern, text) is not None
-    return keyword_lower in text
-
-
-def summarize_title(title: str, extra: str = "") -> str:
-    title = clean_text(title)
-    extra = clean_text(extra)
-    if extra:
-        return f"{title}；{extra[:72]}"
-    return title[:96]
-
-
-def normalize_url(url: str) -> str:
-    parsed = urlparse((url or "").strip())
-    if not parsed.scheme or not parsed.netloc:
-        return (url or "").strip()
-    query_pairs = [(key, value) for key, value in parse_qsl(parsed.query, keep_blank_values=True) if key.lower() not in {"clicktime", "enterid", "sessionid", "subscene", "scene", "utm_source", "utm_medium", "utm_campaign", "spm"}]
-    clean_query = urlencode(query_pairs, doseq=True)
-    return urlunparse((parsed.scheme, parsed.netloc, parsed.path.rstrip("/"), "", clean_query, ""))
-
-
-def extract_report_links(html: str, limit: int = 12) -> list[dict[str, str]]:
-    pairs = re.findall(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', html, re.S)
-    results: list[dict[str, str]] = []
-    seen: set[str] = set()
-    for href, text in pairs:
-        if not href.startswith("http"):
-            continue
-        normalized = normalize_url(href)
-        if normalized in seen:
-            continue
-        title = clean_text(re.sub(r"<[^>]+>", "", text))
-        if not title:
-            continue
-        results.append({"title": title, "url": normalized})
-        seen.add(normalized)
-        if len(results) >= limit:
-            break
-    return results
 
 
 def classify_source_tier(source: str, title: str, payload: dict[str, Any]) -> str:
@@ -1619,7 +1518,7 @@ def fetch_wechat_task(raw_dir: Path) -> tuple[ChannelTaskResult, dict[str, Any],
                 task.status = "ok"
                 task.issues = []
                 # 保存成功的缓存
-                save_wechat_cache(channels, latest_articles, curated_articles)
+                save_wechat_cache(channels, latest_articles, curated_articles, ROOT)
                 break
             task.status = "partial"
             task.issues = issues
@@ -1683,7 +1582,7 @@ def fetch_wechat_task(raw_dir: Path) -> tuple[ChannelTaskResult, dict[str, Any],
                 continue
     if task.status == "error" and not curated_articles:
         # 尝试使用缓存降级
-        cached = load_wechat_cache()
+        cached = load_wechat_cache(ROOT)
         if cached:
             channels, latest_articles, curated_articles = cached
             task.items = list(latest_articles.get("data", {}).get("list", []) or [])
@@ -1698,7 +1597,7 @@ def fetch_wechat_task(raw_dir: Path) -> tuple[ChannelTaskResult, dict[str, Any],
             curated_articles = {channel_name: {"data": {"list": []}, "error": "; ".join(task.issues)} for channel_name in CURATED_CHANNELS}
     elif task.status == "ok":
         # 成功采集，保存缓存
-        save_wechat_cache(channels, latest_articles, curated_articles)
+        save_wechat_cache(channels, latest_articles, curated_articles, ROOT)
     dump_json(raw_dir / "wemprss_public_channels.json", channels)
     dump_json(raw_dir / "wemprss_articles_latest.json", latest_articles)
     return task, channels, latest_articles, curated_articles

@@ -9,6 +9,7 @@ from typing import Any
 from canonical_workflow import (
     CANONICAL_STAGE_ROOTS,
     OPTIONAL_ASSET_ROOTS,
+    CANONICAL_MANIFEST_FILENAMES,
     canonical_manifest_path,
     ensure_json_file,
     stage_contract_snapshot,
@@ -29,13 +30,35 @@ FEISHU_CONFIG_FILES = [
     get_feishu_bot_config_path(),
     get_feishu_stage_contract_path(),
 ]
-LEGACY_ENTRYPOINTS = [
-    ROOT / "skills" / "dasheng-daily-brief" / "index.js",
-    ROOT / "skills" / "dasheng-daily-clustering" / "index.js",
-    ROOT / "skills" / "dasheng-daily-draft" / "index.js",
-    ROOT / "skills" / "dasheng-daily-outline" / "index.js",
-    ROOT / "skills" / "dasheng-daily-final" / "index.js",
+LEGACY_SKILL_DIRS = [
+    ROOT / "skills" / "dasheng-stage-brief-ai",
+    ROOT / "skills" / "dasheng-daily-brief",
+    ROOT / "skills" / "dasheng-daily-clustering",
+    ROOT / "skills" / "dasheng-daily-outline",
+    ROOT / "skills" / "dasheng-daily-final",
+    ROOT / "skills" / "dasheng-stage-draft",
+    ROOT / "skills" / "dasheng-stage-distribute",
+    ROOT / "skills" / "dasheng-stage-intake-brief-draft",
+    ROOT / "skills" / "dasheng-stage-publish-video",
+    ROOT / "skills" / "dasheng-stage-rewrite",
+    ROOT / "skills" / "dasheng-collection-workflow",
+    ROOT / "skills" / "dasheng-sop-orchestrator",
 ]
+LEGACY_STAGE_ROOTS = {
+    stage: ROOT / "产物" / root.name
+    for stage, root in CANONICAL_STAGE_ROOTS.items()
+}
+LEGACY_OPTIONAL_ASSET_ROOTS = {
+    asset: ROOT / "产物" / root.name
+    for asset, root in OPTIONAL_ASSET_ROOTS.items()
+}
+GATE_FILENAMES = {
+    "intake": "intake_review.json",
+    "brief": "selected_topics.json",
+    "draft": "final_structure_snapshot.json",
+    "transwrite": "transwrite_decision.json",
+    "publish": "publish_decision.json",
+}
 
 
 def mask_secret(value: str | None) -> str | None:
@@ -49,7 +72,13 @@ def mask_secret(value: str | None) -> str | None:
 
 def discover_latest_run_id() -> str | None:
     candidates: dict[str, float] = {}
-    for root in [*CANONICAL_STAGE_ROOTS.values(), *OPTIONAL_ASSET_ROOTS.values()]:
+    search_roots = [
+        *CANONICAL_STAGE_ROOTS.values(),
+        *OPTIONAL_ASSET_ROOTS.values(),
+        *LEGACY_STAGE_ROOTS.values(),
+        *LEGACY_OPTIONAL_ASSET_ROOTS.values(),
+    ]
+    for root in search_roots:
         if not root.exists():
             continue
         for stage_dir in root.iterdir():
@@ -62,8 +91,49 @@ def discover_latest_run_id() -> str | None:
     return sorted(candidates.items(), key=lambda item: item[1], reverse=True)[0][0]
 
 
+def _stage_dir_candidates(stage: str, run_id: str) -> list[Path]:
+    return [
+        CANONICAL_STAGE_ROOTS[stage] / run_id,
+        LEGACY_STAGE_ROOTS[stage] / run_id,
+    ]
+
+
+def _optional_asset_dir_candidates(asset: str, run_id: str) -> list[Path]:
+    return [
+        OPTIONAL_ASSET_ROOTS[asset] / run_id,
+        LEGACY_OPTIONAL_ASSET_ROOTS[asset] / run_id,
+    ]
+
+
+def _first_existing_or_default(paths: list[Path]) -> Path:
+    for path in paths:
+        if path.exists():
+            return path
+    return paths[0]
+
+
+def doctor_stage_contract_snapshot(run_id: str) -> dict[str, Any]:
+    """Build a doctor view that can inspect current desktop outputs and legacy project outputs."""
+    contract = stage_contract_snapshot(run_id)
+    for stage in CANONICAL_STAGE_ROOTS:
+        stage_dir = _first_existing_or_default(_stage_dir_candidates(stage, run_id))
+        manifest_path = stage_dir / CANONICAL_MANIFEST_FILENAMES[stage]
+        gate_path = stage_dir / GATE_FILENAMES[stage] if stage in GATE_FILENAMES else None
+        contract["stages"][stage] = {
+            "stage_dir": str(stage_dir),
+            "manifest_path": str(manifest_path),
+            "manifest_exists": manifest_path.exists(),
+            "gate_path": str(gate_path) if gate_path else None,
+            "gate_exists": gate_path.exists() if gate_path else None,
+        }
+    return contract
+
+
 def load_manifest_if_exists(stage: str, run_id: str) -> dict[str, Any] | None:
-    path = canonical_manifest_path(stage, run_id)
+    path = _first_existing_or_default([
+        canonical_manifest_path(stage, run_id),
+        LEGACY_STAGE_ROOTS[stage] / run_id / CANONICAL_MANIFEST_FILENAMES[stage],
+    ])
     if not path.exists():
         return None
     try:
@@ -90,23 +160,28 @@ def load_optional_asset_manifest(path: Path, asset: str) -> dict[str, Any]:
 
 
 def discover_optional_asset_manifests(asset: str, run_id: str) -> list[dict[str, Any]]:
-    root = OPTIONAL_ASSET_ROOTS[asset] / run_id
-    if not root.exists():
-        return []
     manifest_name = f"{asset}_manifest.json"
     manifests: list[dict[str, Any]] = []
-    for path in sorted(root.glob(f"**/{manifest_name}")):
-        payload = load_optional_asset_manifest(path, asset)
-        manifests.append(
-            {
-                "path": str(path),
-                "status": payload.get("status"),
-                "profile_name": payload.get("profile_name"),
-                "analysis_mode": payload.get("analysis_mode"),
-                "invalid": bool(payload.get("_invalid")),
-                "error": payload.get("error"),
-            }
-        )
+    seen: set[Path] = set()
+    for root in _optional_asset_dir_candidates(asset, run_id):
+        if not root.exists():
+            continue
+        for path in sorted(root.glob(f"**/{manifest_name}")):
+            resolved = path.resolve()
+            if resolved in seen:
+                continue
+            seen.add(resolved)
+            payload = load_optional_asset_manifest(path, asset)
+            manifests.append(
+                {
+                    "path": str(path),
+                    "status": payload.get("status"),
+                    "profile_name": payload.get("profile_name"),
+                    "analysis_mode": payload.get("analysis_mode"),
+                    "invalid": bool(payload.get("_invalid")),
+                    "error": payload.get("error"),
+                }
+            )
     return manifests
 
 
@@ -114,8 +189,9 @@ def optional_assets_report(run_id: str) -> dict[str, Any]:
     report: dict[str, Any] = {}
     for asset, root in OPTIONAL_ASSET_ROOTS.items():
         manifests = discover_optional_asset_manifests(asset, run_id)
+        asset_dir = _first_existing_or_default(_optional_asset_dir_candidates(asset, run_id))
         report[asset] = {
-            "asset_dir": str(root / run_id),
+            "asset_dir": str(asset_dir),
             "manifest_exists": bool(manifests),
             "manifest_count": len(manifests),
             "manifest_status": manifests[0]["status"] if len(manifests) == 1 else None,
@@ -183,7 +259,7 @@ def provider_summary() -> dict[str, Any]:
 
 
 def build_report(run_id: str) -> dict[str, Any]:
-    contract = stage_contract_snapshot(run_id)
+    contract = doctor_stage_contract_snapshot(run_id)
     desktop_root = DESKTOP_ROOT / run_id
     manifests = {stage: load_manifest_if_exists(stage, run_id) for stage in CANONICAL_STAGE_ROOTS}
     optional_assets = optional_assets_report(run_id)
@@ -212,7 +288,7 @@ def build_report(run_id: str) -> dict[str, Any]:
             "files": [{"path": str(path), "exists": path.exists()} for path in FEISHU_CONFIG_FILES],
         },
         "providers": provider_summary(),
-        "legacy_entrypoints": [{"path": str(path), "exists": path.exists()} for path in LEGACY_ENTRYPOINTS],
+        "legacy_skill_dirs": [{"path": str(path), "exists": path.exists()} for path in LEGACY_SKILL_DIRS],
         "stage_status": {
             stage: {
                 "manifest_status": (manifest or {}).get("status"),

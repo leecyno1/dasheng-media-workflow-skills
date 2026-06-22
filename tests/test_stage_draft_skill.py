@@ -11,9 +11,9 @@
 
 import json
 import os
+import subprocess
 import sys
 from pathlib import Path
-import subprocess
 import tempfile
 import pytest
 
@@ -106,7 +106,7 @@ def test_draft_generation_with_valid_input(valid_selected_topics, temp_output_di
     pytest.skip("需要配置DASHENG_DRAFT_FAKE_RESPONSE环境变量")
 
     result = subprocess.run(
-        ["python3", str(SCRIPT_PATH), str(valid_selected_topics), "--output-dir", str(temp_output_dir)],
+        [sys.executable, str(SCRIPT_PATH), str(valid_selected_topics), "--output-dir", str(temp_output_dir)],
         capture_output=True,
         text=True,
         timeout=60
@@ -127,7 +127,7 @@ def test_draft_generation_with_valid_input(valid_selected_topics, temp_output_di
 def test_draft_generation_with_empty_topics(empty_selected_topics, temp_output_dir):
     """测试：空的selected_topics.json → 应该失败或返回空结果"""
     result = subprocess.run(
-        ["python3", str(SCRIPT_PATH), str(empty_selected_topics), "--output-dir", str(temp_output_dir)],
+        [sys.executable, str(SCRIPT_PATH), str(empty_selected_topics), "--output-dir", str(temp_output_dir)],
         capture_output=True,
         text=True,
         timeout=60

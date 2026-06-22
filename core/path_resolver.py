@@ -23,6 +23,9 @@ class PathResolver:
 
     def _detect_project_root(self) -> Path:
         """从当前文件向上查找包含 CLAUDE.md 的目录"""
+        env_root = os.environ.get("DASHENG_PROJECT_ROOT")
+        if env_root:
+            return Path(env_root).expanduser()
         current = Path(__file__).resolve()
         for parent in [current] + list(current.parents):
             if (parent / 'CLAUDE.md').exists():

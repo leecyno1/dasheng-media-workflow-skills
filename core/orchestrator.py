@@ -3,10 +3,12 @@
 Orchestrator - 流程编排器
 
 功能：
-1. 协调7个环节的执行
+1. 协调6个环节的执行
 2. 管理HITL检查点
 3. 自动化流程控制
 4. 错误处理和重试
+
+主链：intake -> brief -> draft -> transwrite -> publish -> postmortem
 """
 
 import json
@@ -89,32 +91,25 @@ class Orchestrator:
                 "name": "选题分析",
                 "auto": self.config["automation"]["brief_auto"],
                 "hitl": True,
-                "executor": "skills/dasheng-stage-brief-ai"
+                "executor": "skills/dasheng-daily-phase2"
             },
             {
                 "id": "draft",
                 "name": "初稿生成",
                 "auto": self.config["automation"]["draft_auto"],
                 "hitl": False,
-                "executor": "skills/dasheng-stage-draft"
+                "executor": "skills/dasheng-daily-draft"
             },
             {
-                "id": "material",
-                "name": "素材收集",
-                "auto": self.config["automation"]["material_auto"],
-                "hitl": True,
-                "executor": "scripts/material_execute_pack.py"
-            },
-            {
-                "id": "rewrite",
-                "name": "改写",
-                "auto": self.config["automation"]["rewrite_auto"],
-                "hitl": True,
-                "executor": "scripts/rewrite_execute_stage5.py"
+                "id": "transwrite",
+                "name": "转写生产",
+                "auto": self.config["automation"]["transwrite_auto"],
+                "hitl": False,
+                "executor": "skills/dasheng-stage-transwrite"
             },
             {
                 "id": "publish",
-                "name": "渠道分发",
+                "name": "发布执行",
                 "auto": self.config["automation"]["publish_auto"],
                 "hitl": False,
                 "executor": "skills/dasheng-stage-publish"
@@ -167,10 +162,8 @@ class Orchestrator:
                 outputs = self._execute_brief(ctx)
             elif stage_id == "draft":
                 outputs = self._execute_draft(ctx)
-            elif stage_id == "material":
-                outputs = self._execute_material(ctx)
-            elif stage_id == "rewrite":
-                outputs = self._execute_rewrite(ctx)
+            elif stage_id == "transwrite":
+                outputs = self._execute_transwrite(ctx)
             elif stage_id == "publish":
                 outputs = self._execute_publish(ctx)
             elif stage_id == "postmortem":
@@ -286,18 +279,12 @@ class Orchestrator:
             "reasoning_sheets": []
         }
 
-    def _execute_material(self, ctx: RunContext) -> Dict:
-        """执行Material环节"""
+    def _execute_transwrite(self, ctx: RunContext) -> Dict:
+        """执行Transwrite环节"""
         return {
-            "material_pack": {},
-            "assets": []
-        }
-
-    def _execute_rewrite(self, ctx: RunContext) -> Dict:
-        """执行Rewrite环节"""
-        return {
-            "rewrite_versions": [],
-            "quality_scores": []
+            "wechat_article": {},
+            "talking_head_video": {},
+            "podcast": {}
         }
 
     def _execute_publish(self, ctx: RunContext) -> Dict:

@@ -20,7 +20,7 @@
       "repo": "https://github.com/cv-cat/All-IN-ONE.git",
       "homepage": "https://github.com/cv-cat/All-IN-ONE",
       "default_root_env": "ALL_IN_ONE_ROOT",
-      "default_root": "/Volumes/PSSD/All-IN-ONE",
+      "default_root": "${ALL_IN_ONE_ROOT:-/Volumes/PSSD/All-IN-ONE}",
       "used_by_skills": [
         "dasheng-xhs-publish-bridge"
       ],
@@ -39,7 +39,7 @@
       "repo": "https://github.com/autoclaw-cc/xiaohongshu-skills.git",
       "homepage": "https://github.com/autoclaw-cc/xiaohongshu-skills",
       "default_root_env": "AUTOCLAW_XHS_SKILLS_ROOT",
-      "default_root": "/Volumes/PSSD/xiaohongshu-skills",
+      "default_root": "${AUTOCLAW_XHS_SKILLS_ROOT:-/Volumes/PSSD/xiaohongshu-skills}",
       "used_by_skills": [
         "dasheng-xhs-publish-bridge"
       ],
@@ -56,7 +56,7 @@
       "repo": "https://github.com/cv-cat/XhsSkills.git",
       "homepage": "https://github.com/cv-cat/XhsSkills",
       "default_root_env": "XHS_SKILLS_ROOT",
-      "default_root": "/Volumes/PSSD/XhsSkills",
+      "default_root": "${XHS_SKILLS_ROOT:-/Volumes/PSSD/XhsSkills}",
       "used_by_skills": [
         "dasheng-xhs-publish-bridge"
       ],
@@ -73,7 +73,7 @@
       "repo": "https://github.com/cv-cat/Spider_XHS.git",
       "homepage": "https://github.com/cv-cat/Spider_XHS",
       "default_root_env": "SPIDER_XHS_ROOT",
-      "default_root": "/Volumes/PSSD/Spider_XHS",
+      "default_root": "${SPIDER_XHS_ROOT:-/Volumes/PSSD/Spider_XHS}",
       "used_by_skills": [
         "dasheng-xhs-publish-bridge"
       ],
@@ -90,7 +90,7 @@
       "repo": "https://github.com/xpzouying/xiaohongshu-mcp.git",
       "homepage": "https://github.com/xpzouying/xiaohongshu-mcp",
       "default_root_env": "XIAOHONGSHU_MCP_ROOT",
-      "default_root": "/Volumes/PSSD/xiaohongshu-mcp",
+      "default_root": "${XIAOHONGSHU_MCP_ROOT:-/Volumes/PSSD/xiaohongshu-mcp}",
       "used_by_skills": [
         "dasheng-xhs-publish-bridge"
       ],
@@ -107,7 +107,7 @@
       "repo": "https://github.com/TimeCyber/mcp-xiaohongshu.git",
       "homepage": "https://github.com/TimeCyber/mcp-xiaohongshu",
       "default_root_env": "REDNOTE_MCP_ROOT",
-      "default_root": "/Volumes/PSSD/rednote-mcp",
+      "default_root": "${REDNOTE_MCP_ROOT:-/Volumes/PSSD/rednote-mcp}",
       "used_by_skills": [
         "dasheng-xhs-publish-bridge"
       ],
@@ -124,7 +124,7 @@
       "repo": "https://github.com/JoeanAmier/XHS-Downloader.git",
       "homepage": "https://github.com/JoeanAmier/XHS-Downloader",
       "default_root_env": "XHS_DOWNLOADER_ROOT",
-      "default_root": "/Volumes/PSSD/XHS-Downloader",
+      "default_root": "${XHS_DOWNLOADER_ROOT:-/Volumes/PSSD/XHS-Downloader}",
       "used_by_skills": [
         "dasheng-xhs-publish-bridge"
       ],
@@ -141,7 +141,7 @@
       "repo": "https://github.com/dreammis/social-auto-upload.git",
       "homepage": "https://github.com/dreammis/social-auto-upload",
       "default_root_env": "SOCIAL_AUTO_UPLOAD_ROOT",
-      "default_root": "/Volumes/PSSD/social-auto-upload",
+      "default_root": "${SOCIAL_AUTO_UPLOAD_ROOT:-/Volumes/PSSD/social-auto-upload}",
       "used_by_skills": [
         "social-auto-upload-bridge",
         "bilibili-upload-bridge"
@@ -166,7 +166,7 @@
       "repo": "https://github.com/biliup/biliup-rs.git",
       "homepage": "https://github.com/biliup/biliup-rs",
       "default_root_env": "BILIUP_RS_ROOT",
-      "default_root": "/Volumes/PSSD/biliup-rs",
+      "default_root": "${BILIUP_RS_ROOT:-/Volumes/PSSD/biliup-rs}",
       "used_by_skills": [
         "bilibili-upload-bridge"
       ],
@@ -183,7 +183,7 @@
       "repo": "https://github.com/gitroomhq/postiz-app.git",
       "homepage": "https://github.com/gitroomhq/postiz-app",
       "default_root_env": "POSTIZ_ROOT",
-      "default_root": "/Volumes/PSSD/postiz-app",
+      "default_root": "${POSTIZ_ROOT:-/Volumes/PSSD/postiz-app}",
       "used_by_skills": [],
       "role": "optional overseas social scheduling backend",
       "platforms": [
@@ -204,7 +204,7 @@
       "repo": "https://github.com/xdevplatform/xurl.git",
       "homepage": "https://github.com/xdevplatform/xurl",
       "default_root_env": "XURL_ROOT",
-      "default_root": "/Volumes/PSSD/xurl",
+      "default_root": "${XURL_ROOT:-/Volumes/PSSD/xurl}",
       "used_by_skills": [
         "baoyu-post-to-x"
       ],
@@ -221,7 +221,7 @@
       "repo": "https://github.com/Infatoshi/x-cli.git",
       "homepage": "https://github.com/Infatoshi/x-cli",
       "default_root_env": "X_CLI_ROOT",
-      "default_root": "/Volumes/PSSD/x-cli",
+      "default_root": "${X_CLI_ROOT:-/Volumes/PSSD/x-cli}",
       "used_by_skills": [
         "baoyu-post-to-x"
       ],

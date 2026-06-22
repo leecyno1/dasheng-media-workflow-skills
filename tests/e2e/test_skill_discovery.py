@@ -62,7 +62,11 @@ class TestSkillDiscovery(unittest.TestCase):
         missing_config = []
         for skill_dir in skills:
             config_json = skill_dir / "config.json"
+            skill_md = skill_dir / "SKILL.md"
             if not config_json.exists():
+                # OpenClaw/Hermes 外部 skill 通常只有 SKILL.md，允许缺少 config.json
+                if skill_md.exists():
+                    continue
                 missing_config.append(skill_dir.name)
 
         self.assertEqual(len(missing_config), 0,
