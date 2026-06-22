@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "policy": {
+    "default_action": "keep_local_untracked",
+    "promotion_rule": "Only track a candidate after it has a concrete Dasheng stage caller, a reviewed SKILL.md, no generated media/cache files, and an upstream or origin note.",
+    "bulk_vendor_rule": "Do not bulk-add downloaded third-party skills into this repository."
+  },
+  "priority_candidates": [
+    {
+      "name": "a-stock-data",
+      "local_path": "skills/a-stock-data",
+      "category": "finance_data",
+      "recommended_status": "candidate_for_draft_data",
+      "reason": "Useful A-share data source for draft evidence, charts, and market tables."
+    },
+    {
+      "name": "yfinance-data",
+      "local_path": "skills/yfinance-data",
+      "category": "finance_data",
+      "recommended_status": "candidate_for_draft_data",
+      "reason": "Useful Yahoo Finance wrapper for US/global market data, but should be routed through finance-data-router before promotion."
+    },
+    {
+      "name": "tushare-openclaw-skill",
+      "local_path": "skills/tushare-openclaw-skill",
+      "category": "finance_data",
+      "recommended_status": "candidate_for_draft_data",
+      "reason": "Useful China market API skill when a Tushare token is available; keep as optional provider."
+    },
+    {
+      "name": "html-anything",
+      "local_path": "skills/html-anything",
+      "category": "html_generation",
+      "recommended_status": "external_dependency",
+      "reason": "Useful upstream editor skill, but Dasheng should call it through dasheng-html-anything-bridge rather than vendoring the full skill."
+    },
+    {
+      "name": "media-downloader",
+      "local_path": "skills/media-downloader",
+      "category": "media_assets",
+      "recommended_status": "candidate_for_transwrite_video",
+      "reason": "Useful for video/image素材检索, but must be constrained to write outputs outside skills and repo root."
+    },
+    {
+      "name": "gemini-image-service",
+      "local_path": "skills/gemini-image-service",
+      "category": "image_generation",
+      "recommended_status": "candidate_for_cover_and_illustration",
+      "reason": "Useful optional image provider; promote only if provider config is moved to local env templates."
+    },
+    {
+      "name": "agent-browser",
+      "local_path": "skills/agent-browser",
+      "category": "browser_automation",
+      "recommended_status": "candidate_for_publish_fallback",
+      "reason": "Potential browser fallback for platform publishing, but overlaps with existing Chrome/Playwright tooling."
+    }
+  ],
+  "bulk_candidate_groups": [
+    {
+      "pattern": "skills/anthropic-fs-*",
+      "category": "financial_services_examples",
+      "recommended_status": "reference_only",
+      "reason": "Large set of financial-service example skills. Keep local for reference; promote only if a concrete workflow depends on one."
+    },
+    {
+      "pattern": "skills/llmquant-*",
+      "category": "quant_finance",
+      "recommended_status": "reference_or_router_input",
+      "reason": "Potential finance-data-router inputs; avoid direct stage coupling until provider quality is tested."
+    },
+    {
+      "pattern": "skills/alphaear-*",
+      "category": "market_intelligence",
+      "recommended_status": "reference_or_router_input",
+      "reason": "Market intelligence skills that may overlap with existing draft/news/data skills."
+    },
+    {
+      "pattern": "skills/edge-*",
+      "category": "strategy_pipeline",
+      "recommended_status": "reference_only",
+      "reason": "Strategy ideation pipeline skills; not currently part of Dasheng media production stages."
+    },
+    {
+      "pattern": "skills/skill-*",
+      "category": "skill_governance",
+      "recommended_status": "reference_only",
+      "reason": "Skill authoring/audit helpers; useful for local maintenance but not runtime dependencies."
+    }
+  ],
+  "local_generated": [
+    {
+      "path": ".qoder/",
+      "recommended_status": "ignore",
+      "reason": "Generated local repo wiki; should not be mixed into source control unless explicitly curated."
+    }
+  ]
+}
