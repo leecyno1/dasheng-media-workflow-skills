@@ -1,0 +1,173 @@
+schema_version: dasheng.video.pipeline.v1
+id: talking_head
+lane: talking_head_video
+title: 真人出镜口播导演流水线
+default_output_stage: video
+external_output_policy:
+  required_root: "~/Desktop/自媒体创作"
+  forbid_paths:
+    - "skills/"
+    - ".codex/skills/"
+    - "node_modules/"
+human_approval_default: true
+style_reference:
+  primary: 小林说类真人口播
+  principle: 人是信任锚点，证据画面承担推进；不能机械固定为左上素材加右下人物。
+stages:
+  - name: intake
+    description: 接收粗剪后真人视频、字幕或 ASR、剧本草稿和文章证据。
+    skill: dasheng-video-roughcut
+    required_artifacts_in:
+      - brief
+    produces:
+      - script
+    tools_available:
+      - video_roughcut_funasr
+      - video_roughcut_agent_align
+      - video_timeline_edl
+    checkpoint_required: true
+    review_focus:
+      - 粗剪门禁必须先通过，错话、废话、静音和口水词不得进入导演包装。
+      - 字幕应语义断句，数字优先使用阿拉伯数字。
+    success_criteria:
+      - schema-valid script artifact
+      - roughcut gate approved before scene planning
+  - name: scene_plan
+    description: 根据口播时间轴生成导演分镜、构图状态、证据插入和转场策略。
+    skill: dasheng-video-director
+    required_artifacts_in:
+      - script
+    produces:
+      - scene_plan
+      - tool_routing_plan
+    tools_available:
+      - video_director_tool_router
+      - video_director_timeline
+      - build_video_director_storyboard
+      - build_storyboard_template_review_table
+      - video_renderer_contract_gate
+    checkpoint_required: true
+    review_focus:
+      - 分镜必须覆盖完整口播，不丢失剧本核心意思。
+      - 读取 Draft illustration intents；原文比喻和举例按“设置、柠檬人动作、结果”三拍转成漫画分镜，不另造冲突比喻。
+      - 构图要包含 speaker_full、evidence_fullscreen_no_speaker、circle_pip、rounded_rect_pip、split_screen 等变化。
+      - 图表、数据、网页、图片必须明确绑定当前句子的证据或比喻。
+    success_criteria:
+      - schema-valid scene_plan artifact
+      - no more than two consecutive scenes use the same composition state
+      - every evidence scene has evidence_refs or verified asset source
+      - every scene has html_animation_behavior or explicit live motion plan
+  - name: claim_evidence
+    description: 将微分镜归并为 8-12 个可审核核心命题，并逐项确认直接证据、情境素材、作者假设和缺失证据。
+    skill: dasheng-video-director
+    required_artifacts_in:
+      - scene_plan
+    produces:
+      - claim_evidence_ledger
+      - spoken_revision_sheet
+      - review
+    tools_available:
+      - video_claim_evidence_ledger
+      - video_finance_evidence
+      - video_official_evidence
+      - video_model_evidence
+    checkpoint_required: true
+    review_focus:
+      - 每个微分镜必须且只能归属一个核心命题。
+      - 事实、估值比较、因果和历史命题必须有可定位的直接证据。
+      - 观点、传闻、预测和情景测算必须写明画面披露标签。
+      - 同一素材不得被当作多个无关命题的万能证据。
+      - 被反证、无定义或过度确定的原口播必须列入修订表，不能靠降级命题类型绕过。
+    success_criteria:
+      - schema-valid claim_evidence_ledger artifact
+      - claim_evidence_gate status is pass
+      - every scene carries one core_claim_id
+      - all evidence gaps resolved or explicitly disclosed before asset generation
+      - spoken_revision_sheet pending_count is 0
+  - name: asset_build
+    description: 生成透明背景 HTML/Remotion/Lottie 动画、证据图表、B-roll 和音频素材。
+    skill: dasheng-html-video-bridge
+    required_artifacts_in:
+      - scene_plan
+      - claim_evidence_ledger
+    produces:
+      - asset_manifest
+      - renderer_asset_gate
+    tools_available:
+      - build_remotion_renderer_pack
+      - render_html_anything_scene_pack_animated
+      - ensure_video_external_deps
+      - mmx_cli
+      - dasheng-lemon-illustrations
+    checkpoint_required: true
+    review_focus:
+      - 静态图片不得只做放大缩小；必须有淡入、飞入、扫描、圈注、路径或数据 reveal。
+      - 透明贴纸不得遮挡脸、字幕和关键数据。
+      - 抽象概念、流程和情绪转折默认使用柠檬人插画；事实图表、网页、表格和文档不得被卡通替代。
+      - 柠檬人图片必须分层进入 HTML/Remotion 动画，禁止只做静态缩放。
+      - 所有媒体素材必须写到桌面创作目录。
+    success_criteria:
+      - schema-valid asset_manifest artifact
+      - renderer_asset_gate status is pass
+      - production scenes contain no placeholder document, chart, valuation, table, or B-roll asset
+      - no generated media under project skills directory
+      - no static screenshot stitching as production animation
+  - name: edit_decisions
+    description: 将分镜和素材转成可执行剪辑决策，包含 PIP 形态、转场、字幕和 BGM。
+    skill: dasheng-video-director
+    required_artifacts_in:
+      - scene_plan
+      - asset_manifest
+    produces:
+      - edit_decisions
+    tools_available:
+      - convert_director_storyboard_to_video_timeline
+      - video_driver_rules
+    checkpoint_required: true
+    review_focus:
+      - 真人回归间隔 8-20 秒，密集证据段后必须回到真人。
+      - BGM duck 到人声下方，不抢口播。
+      - 转场由语义驱动，不机械缩放人物。
+    success_criteria:
+      - schema-valid edit_decisions artifact
+      - roughcut gate approved
+      - subtitle policy covers full spoken content
+  - name: render_qc
+    description: 渲染、接触表自检、导演复盘和交付剪映/发布包。
+    skill: dasheng-video-talking-head
+    required_artifacts_in:
+      - edit_decisions
+      - asset_manifest
+      - renderer_asset_gate
+    produces:
+      - render_report
+      - review
+    tools_available:
+      - build_remotion_renderer_pack
+      - render_html_anything_scene_pack_animated
+      - build_video_review_suite_strict
+      - video_render_qc
+      - video_renderer_contract_gate
+      - jianying_cloud_draft
+    checkpoint_required: true
+    human_approval_default: true
+    review_focus:
+      - 三轮导演视角检查：穿模、遮挡、字幕同步、模板重复、真实动效、证据密度。
+      - 最终视频不能出现开发标签、slot 名、position 名。
+      - 只有审核通过后才上传剪映云草稿。
+    success_criteria:
+      - schema-valid render_report artifact
+      - video_qc_report status is pass
+      - renderer contract gate status is pass
+      - no dark-frame run, flat transition frame, or timeline duration drift
+      - strong visual changes stay above the talking-head hard floor
+      - contact sheet reviewed before delivery
+fail_conditions:
+  - roughcut not approved before director render
+  - claim/evidence ledger not approved before asset generation
+  - static image zoompan used as production animation
+  - chart or number lacks article/data source
+  - production renderer contains placeholder evidence or placeholder B-roll
+  - repeated fixed upper-left material plus lower-right speaker layout
+  - final media written under skills directory
+  - captions omit spoken content or drift from voice

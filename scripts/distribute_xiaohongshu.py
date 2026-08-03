@@ -13,9 +13,11 @@ import subprocess
 from pathlib import Path
 from datetime import datetime
 
+from path_config import get_output_root
+
 def load_rewrite_manifest(run_id: str, workspace: str) -> dict:
     """加载 rewrite manifest"""
-    manifest_path = Path(workspace) / "产物/06_改写" / run_id / "rewrite_manifest.json"
+    manifest_path = Path(workspace) / "06_改写" / run_id / "rewrite_manifest.json"
 
     if not manifest_path.exists():
         raise FileNotFoundError(f"Rewrite manifest not found: {manifest_path}")
@@ -25,7 +27,7 @@ def load_rewrite_manifest(run_id: str, workspace: str) -> dict:
 
 def load_video_manifest(run_id: str, workspace: str) -> dict:
     """加载 video manifest（可选）"""
-    manifest_path = Path(workspace) / "产物/07_Publish" / run_id / "publish_video_supplement_manifest.json"
+    manifest_path = Path(workspace) / "07_发布执行" / run_id / "publish_video_supplement_manifest.json"
 
     if not manifest_path.exists():
         print(f"⚠️  Video manifest not found: {manifest_path}")
@@ -137,7 +139,7 @@ def main():
     run_id = sys.argv[1]
     dry_run = "--dry-run" in sys.argv
 
-    workspace = os.getenv("DASHENG_WORKSPACE", "" + str(Path(__file__).resolve().parents[1]) + "")
+    workspace = os.getenv("DASHENG_WORKSPACE", str(get_output_root("publish").parent))
 
     print(f"🚀 开始小红书分发流程")
     print(f"   Run ID: {run_id}")
@@ -261,7 +263,7 @@ def main():
             time.sleep(wait_seconds)
 
     # 6. 保存结果
-    output_dir = Path(workspace) / "产物/08_Distribute" / run_id
+    output_dir = Path(workspace) / "08_渠道分发" / run_id
     output_dir.mkdir(parents=True, exist_ok=True)
 
     output_file = output_dir / "xiaohongshu_distribute_result.json"

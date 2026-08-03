@@ -1,142 +1,134 @@
 # Dasheng Media Workflow Skills
 
-**6阶段自媒体内容创作自动化系统**
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Workflow: 6 stages](https://img.shields.io/badge/workflow-6%20stages-5b67f1.svg)](configs/workflow/module_registry.json)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![Node.js 18+](https://img.shields.io/badge/node-18+-green.svg)](https://nodejs.org/)
+面向中文自媒体团队的内容生产、无头口播视频和多平台发布工作流。项目以 Manifest 与质量门禁为核心，把采集、研究、写作、视频导演、动画渲染、账号路由、发布验真和复盘连接成一条可恢复、可审计的生产链。
 
-端到端的中文社交媒体内容创作自动化系统，支持微信公众号、小红书、微博等多平台内容生产与分发。
+- GitHub：[leecyno1/dasheng-media-workflow-skills](https://github.com/leecyno1/dasheng-media-workflow-skills)
+- Gitee：[leecyno1/dasheng-media-workflow-skills](https://gitee.com/leecyno1/dasheng-media-workflow-skills)
+- 完整项目、Skill、储备与依赖目录：[docs/PROJECT_CATALOG.md](docs/PROJECT_CATALOG.md)
+
+## 主流程
+
+```text
+Intake -> Brief -> Draft -> Transwrite -> Publish -> Postmortem
+  采集      选题      初稿       多通路生产       发布        复盘
+```
+
+| 阶段 | 核心职责 | 主要产物 |
+| --- | --- | --- |
+| Intake | 采集、标准化、去重、聚类、保留来源 | `intake_manifest.json` |
+| Brief | 事件归并、选题卡、证据缺口、角度排序 | `brief_manifest.json`、`selected_topics.json` |
+| Draft | 事实底稿、数据图表、长文与 HTML | `draft_manifest.json`、结构快照 |
+| Transwrite | 公众号、真人口播、无头视频、播客 | `transwrite_manifest.json`、各通路生产包 |
+| Publish | 平台包装、账号矩阵、表单校验、发布验真 | `publish_manifest.json`、平台回执 |
+| Postmortem | 数据聚合、差异归因、规则与 DNA 回写 | `postmortem_manifest.json`、复盘报告 |
+
+可选的范式学习、视频风格训练和视频自学习只提供知识资产，不改变六阶段主链。
+
+## 功能模块
+
+- 总控与契约：统一入口、Manifest、Gate、失败恢复。
+- 内容与证据：热点采集、选题、写作、财经数据、命题—证据台账。
+- 视频导演：口播节奏、真实 B-roll、分镜、构图、工具路由和导演审片。
+- 动画与剪辑：HTML Video、Remotion、HyperFrames、GSAP/Lottie、ASR、FFmpeg、EDL 和渲染 QC。
+- 发布中心：多账号、多平台、封面、标签、原创声明、活动字段、发布队列和链接回收。
+- 学习与治理：范式画像、视频 DNA、导演记忆、契约测试和公开仓库卫生。
+
+机器可读的模块注册表位于 [configs/workflow/module_registry.json](configs/workflow/module_registry.json)。
 
 ## 快速开始
-
-### 安装
 
 ```bash
 git clone https://github.com/leecyno1/dasheng-media-workflow-skills.git
 cd dasheng-media-workflow-skills
 ./scripts/install.sh
+source .venv/bin/activate
 ```
 
-### 配置API密钥
+复制环境模板并填写自己需要的服务：
 
 ```bash
-# 创建.env文件
-echo "ANTHROPIC_API_KEY=your_api_key_here" > .env
+cp .env.template .env
+cp configs/paths.default.yaml configs/paths.local.yaml
 ```
 
-### 运行第一个工作流
+安装项目 Skills：
 
 ```bash
-# Stage 1: 内容采集
-python3 scripts/run_stage1_intake.py
-
-# 查看采集结果
-ls 产物/01_内容采集/
+bash install_to_openclaw.sh
 ```
 
-详细安装指南请参考 [INSTALLATION.md](INSTALLATION.md)
+检查或克隆外部储备，并应用兼容补丁：
 
-## 核心特性
-
-- ✅ **6阶段标准化工作流** - Intake → Brief → Draft → Transwrite → Publish → Postmortem
-- ✅ **HITL质量门** - 关键节点保留人工审核机制
-- ✅ **多平台适配** - 支持微信公众号、小红书、微博、抖音、B站
-- ✅ **AI驱动** - 基于Claude 4.6的智能内容生成与优化
-- ✅ **DNA系统** - 可配置的风格、结构、质量标准
-- ✅ **完整测试覆盖** - 87个单元测试 + 集成测试 + E2E测试
-- ✅ **飞书协作** - 与飞书深度集成，支持团队协作
-
-## 工作流概览
-
-```
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│  Stage 1    │───▶│  Stage 2    │───▶│  Stage 3    │
-│   Intake    │    │   Brief     │    │   Draft     │
-│  内容采集    │    │  选题分析    │    │  正文/HTML   │
-└─────────────┘    └─────────────┘    └─────────────┘
-                                                │
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│  Stage 6    │◀───│  Stage 5    │◀───│  Stage 4    │◀─────────────┘
-│ Postmortem  │    │  Publish    │    │ Transwrite  │
-│  分析复盘    │    │  发布执行    │    │  转写生产    │
-└─────────────┘    └─────────────┘    └─────────────┘
+```bash
+python scripts/sync_reserved_projects.py --mode check
+python scripts/sync_reserved_projects.py --mode clone
+python scripts/apply_upstream_patches.py --mode apply
 ```
 
-### Stage 1: Intake（内容采集）
-从多个数据源采集每日热点内容，进行去重、聚类、排序。
+按需安装媒体依赖：
 
-### Stage 2: Brief（选题分析）
-AI生成5-10个选题候选，编辑确认后进入初稿阶段。
+```bash
+python -m pip install -r requirements-media.txt
+python scripts/ensure_video_external_deps.py --dep all --mode check
+```
 
-### Stage 3: Draft（初稿生成）
-基于选题生成正文、数据图表、配图和可编辑自包含 HTML，支持人工迭代修改。
+## 运行
 
-### Stage 4: Transwrite（转写生产）
-将确认后的 Draft 转为公众号文章、口播视频和播客生产包，负责 DNA/humanize、封面、视频视觉层和播客 API 请求体。
+统一入口：
 
-### Stage 5: Publish（发布执行）
-验收转写包，生成发布包，推草稿或导出人工发布包，并回收发布链接。
+```bash
+python scripts/run_mainline_stage.py doctor --strict
+python scripts/run_mainline_stage.py intake --run-id 2026-08-03_demo
+python scripts/run_mainline_stage.py brief --run-id 2026-08-03_demo
+python scripts/run_mainline_stage.py draft --run-id 2026-08-03_demo
+python scripts/run_mainline_stage.py transwrite --run-id 2026-08-03_demo
+python scripts/run_mainline_stage.py publish --run-id 2026-08-03_demo
+python scripts/run_mainline_stage.py postmortem --run-id 2026-08-03_demo
+```
 
-### Stage 6: Postmortem（分析复盘）
-回收发布数据并回写选题、证据、结构和渠道经验。
+每个下游阶段都从上游 Manifest 解析输入，并校验对应 Gate。不要用“最新目录”或手写临时路径绕开契约。
 
-## 文档
+## 发布路线
 
-- [安装指南](INSTALLATION.md) - 详细安装步骤
-- [快速开始](docs/guides/quick-start.md) - 5分钟快速上手
-- [阶段详解](docs/guides/stage-by-stage.md) - 6个阶段的详细说明
-- [架构设计](docs/technical/architecture.md) - 系统架构与设计决策
-- [阶段接口](docs/STAGE_INTERFACES.md) - 各阶段输入输出规范
-- [完整文档](docs/README_FULL.md) - 原完整README
-- [贡献指南](CONTRIBUTING.md) - 如何参与开发
+当前默认采用千帆云递本地 API：
 
-## 系统要求
+```text
+channel pack -> local API -> platform adapter -> CloakBrowser/Playwright -> receipt verification
+```
 
-- Python 3.10+
-- Node.js 18+
-- 8GB RAM
-- 5GB 磁盘空间
+批量场景可走千帆异步队列，`social-auto-upload` CLI 作为后备。账号 Cookie、浏览器 Profile、验证码和平台回执保存在仓库外；有头发布浏览器默认小窗、优先附属屏、禁止最大化，并尽量恢复原前台应用焦点。
 
-## 技术栈
+## 外部项目与储备
 
-- **AI模型**: Claude 4.6 (Opus/Sonnet)
-- **语言**: Python 3.10+, Node.js 18+
-- **数据**: Tushare (金融数据), AkShare (市场数据)
-- **协作**: 飞书API
-- **测试**: pytest, jest
-- **图像**: DALL-E 3, Stable Diffusion
+本项目登记 42 个保留上游项目和 4 个候选储备。第三方源码不会被复制进公开 Git 历史，而是由 [configs/external/reserved_projects.json](configs/external/reserved_projects.json) 和 `scripts/sync_reserved_projects.py` 复现。Dasheng 对上游的必要兼容修改保存在 `patches/upstreams/`。
 
 ## 测试
 
 ```bash
-# 运行所有测试
-python3 -m pytest tests/ -v
-
-# 检查系统健康
-python3 scripts/workflow_doctor.py
-
-# 验证安装
-python3 scripts/verify_installation.py
+python -m pytest tests -q
+python scripts/verify_installation.py
+python scripts/build_project_catalog.py --check
+python scripts/apply_upstream_patches.py --mode check
 ```
 
-## 贡献
+## 安全与公开边界
 
-欢迎贡献！请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与项目开发。
+公开仓库只包含自研代码、Skills、非敏感配置、契约、测试、文档、上游注册表和补丁。不要提交 API 密钥、Cookie、OTP、浏览器 Profile、抓取快照、成品视频、运行产物、虚拟环境、`node_modules` 或第三方源码副本。详见 [SECURITY.md](SECURITY.md)。
 
-## 更新日志
+## 文档
 
-查看 [CHANGELOG.md](CHANGELOG.md) 了解版本历史和变更记录。
+- [安装指南](INSTALLATION.md)
+- [项目目录](docs/PROJECT_CATALOG.md)
+- [新成员上手](docs/ONBOARDING.md)
+- [阶段接口](docs/STAGE_INTERFACES.md)
+- [API 参考](docs/API_REFERENCE.md)
+- [贡献指南](CONTRIBUTING.md)
+- [更新日志](CHANGELOG.md)
 
 ## 许可证
 
-本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
-
-## 联系方式
-
-- **问题反馈**: [GitHub Issues](https://github.com/leecyno1/dasheng-media-workflow-skills/issues)
-- **功能建议**: [GitHub Discussions](https://github.com/leecyno1/dasheng-media-workflow-skills/discussions)
-
----
-
-**注意**: 本项目仅供学习和研究使用。使用本系统生成的内容需遵守各平台的内容政策和法律法规。
+自研部分采用 [MIT License](LICENSE)。外部项目及素材仍受各自上游许可证和平台条款约束。

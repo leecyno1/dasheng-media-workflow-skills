@@ -7,6 +7,7 @@ import json
 import os
 import re
 import shutil
+from argparse import Namespace
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -20,28 +21,33 @@ from canonical_workflow import (
     ensure_runtime_output_dir,
     write_json,
 )
+from dasheng_video_director import build_explainer_package, build_talking_head_package
 
 
 DEFAULT_LANES = ["wechat_article"]
 SUPPORTED_LANES = {"wechat_article", "talking_head_video", "podcast"}
 LANE_STATUS_LIFECYCLE = [
     "planned",
+    "pending_director_review",
     "ready_for_agent_execution",
     "ready_for_skill_execution",
     "rendered",
     "packageable",
     "completed",
     "blocked_missing_provider",
+    "blocked_missing_director_source",
     "blocked_missing_human_media",
     "failed_qc",
 ]
 LANE_COMPLETION_STATUSES = ["completed", "packageable"]
 LANE_PUBLISH_BLOCKING_STATUSES = [
     "planned",
+    "pending_director_review",
     "ready_for_agent_execution",
     "ready_for_skill_execution",
     "waiting_for_human_media",
     "blocked_missing_provider",
+    "blocked_missing_director_source",
     "blocked_missing_audio_provider",
     "blocked_missing_human_media",
     "failed_qc",
@@ -49,10 +55,17 @@ LANE_PUBLISH_BLOCKING_STATUSES = [
 PODCAST_PROVIDER_ENVS = {
     "coze": ["COZE_API_KEY", "COZE_WORKFLOW_ID", "COZE_BOT_ID"],
 }
-DEFAULT_HTML_VIDEO_ROOT = "/Volumes/PSSD/html-video"
-DEFAULT_HTML_VIDEO_CLI = "/Volumes/PSSD/html-video/packages/cli/dist/bin.js"
-DEFAULT_HTML_ANYTHING_ROOT = "/Users/lichengyin/Documents/html一切"
 ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_HTML_VIDEO_ROOT = os.environ.get("HTML_VIDEO_ROOT", str(ROOT / "vendor/reserved/render/html-video"))
+DEFAULT_HTML_VIDEO_CLI = os.environ.get(
+    "HTML_VIDEO_CLI",
+    str(Path(DEFAULT_HTML_VIDEO_ROOT) / "packages/cli/dist/bin.js"),
+)
+DEFAULT_HTML_ANYTHING_ROOT = os.environ.get(
+    "HTML_ANYTHING_ROOT",
+    str(ROOT / "vendor/reserved/render/html-anything"),
+)
+DEFAULT_TEMPLATE_ROUTER = ROOT / "configs" / "video" / "html_anything_template_router.json"
 
 
 def read_json(path: Path) -> Any:
@@ -237,6 +250,65 @@ def build_html_video_plan(
     return {**plan, "plan_file": str(plan_path.resolve())}
 
 
+def build_director_package_for_video_lane(
+    *,
+    topic: dict[str, Any],
+    decision: dict[str, Any],
+    lane_dir: Path,
+    title: str,
+    base_video: str | None,
+) -> dict[str, Any]:
+    director_dir = lane_dir / "director_scene_plan"
+    srt = decision.get("srt") or decision.get("agent_proofread_srt") or decision.get("subtitle_srt")
+    captions_json = decision.get("captions_json") or decision.get("captions")
+    roughcut_gate = decision.get("roughcut_gate") or decision.get("roughcut_gate_report")
+    template_preview_roots = decision.get("template_preview_roots") or []
+    if isinstance(template_preview_roots, str):
+        template_preview_roots = [template_preview_roots]
+
+    if path_exists(captions_json) or path_exists(srt):
+        args = Namespace(
+            captions_json=captions_json if path_exists(captions_json) else None,
+            srt=srt if path_exists(srt) else None,
+            source_video=base_video,
+            duration=decision.get("duration"),
+            title=title,
+            roughcut_gate=roughcut_gate if path_exists(roughcut_gate) else None,
+            template_preview_root=template_preview_roots,
+        )
+        outputs = build_talking_head_package(args, director_dir)
+        mode = "talking_head_video"
+    elif path_exists(topic.get("html_file")):
+        args = Namespace(
+            article_html=topic.get("html_file"),
+            duration_target_sec=int((decision.get("director") or {}).get("duration_target_sec") or decision.get("duration_target_sec") or 180),
+            template_router=str((decision.get("director") or {}).get("template_router") or DEFAULT_TEMPLATE_ROUTER),
+            template_preview_root=template_preview_roots,
+        )
+        outputs = build_explainer_package(args, director_dir)
+        mode = "explainer_html_video"
+    else:
+        return {
+            "status": "blocked_missing_director_source",
+            "mode": "unavailable",
+            "reason": "Need agent_proofread_srt/captions_json for talking-head director, or Draft html_file for no-human director.",
+            "output_dir": str(director_dir.resolve()),
+        }
+
+    return {
+        "status": "pending_review",
+        "mode": mode,
+        "output_dir": str(director_dir.resolve()),
+        "scene_plan": str(outputs["scene_plan"].resolve()),
+        "review_html": str(outputs["review_html"].resolve()),
+        "checkpoint": str(outputs["checkpoint"].resolve()),
+        "raw_storyboard": str(outputs["raw_storyboard"].resolve()) if "raw_storyboard" in outputs else None,
+        "raw_timeline": str(outputs["raw_timeline"].resolve()) if "raw_timeline" in outputs else None,
+        "preview_html": str(outputs["preview_html"].resolve()) if "preview_html" in outputs else None,
+        "next_step": "Review storyboard_template_review.html and export storyboard_review_decision.json before material generation.",
+    }
+
+
 def normalize_topic_rows(decision: dict[str, Any]) -> list[dict[str, Any]]:
     rows = decision.get("topics") or []
     if not isinstance(rows, list) or not rows:
@@ -287,6 +359,44 @@ def copy_if_exists(src: str | None, dst: Path) -> str | None:
     return str(dst.resolve())
 
 
+def build_illustration_contract(topic: dict[str, Any], lane_dir: Path) -> dict[str, Any]:
+    intents = topic.get("illustration_intents") if isinstance(topic.get("illustration_intents"), list) else []
+    specs = topic.get("illustration_specs") if isinstance(topic.get("illustration_specs"), list) else []
+    unresolved = []
+    asset_specs_path = topic.get("asset_specs_file")
+    if asset_specs_path and Path(asset_specs_path).expanduser().exists():
+        asset_specs = read_json(Path(asset_specs_path).expanduser())
+        intents = intents or (asset_specs.get("illustration_intents") or [])
+        specs = specs or (asset_specs.get("illustration_specs") or [])
+        unresolved = asset_specs.get("unresolved_illustration_intents") or []
+    if not unresolved:
+        resolved_ids = {
+            str(spec.get("intent_id"))
+            for spec in specs
+            if isinstance(spec, dict) and spec.get("intent_id")
+        }
+        unresolved = [
+            intent
+            for intent in intents
+            if isinstance(intent, dict)
+            and intent.get("required")
+            and str(intent.get("intent_id")) not in resolved_ids
+        ]
+    contract_path = lane_dir / "illustration_intents.json"
+    payload = {
+        "schema_version": "dasheng.lemon_illustration_intents.v1",
+        "topic_id": topic.get("topic_id"),
+        "skill": "dasheng-lemon-illustrations",
+        "status": "pending_agent_generation" if unresolved else "ready",
+        "intents": intents,
+        "specs": specs,
+        "unresolved": unresolved,
+        "output_dir": str((lane_dir / "lemon_illustrations").resolve()),
+    }
+    write_json(contract_path, payload)
+    return {**payload, "file": str(contract_path.resolve())}
+
+
 def build_wechat_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir: Path) -> dict[str, Any]:
     lane_dir = topic_dir / "wechat_article"
     title = str(topic.get("title") or topic.get("topic_name") or topic.get("topic_id"))
@@ -296,6 +406,7 @@ def build_wechat_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir
     if not wechat_md:
         write_text(lane_dir / "wechat_article.base.md", f"# {title}\n\n待 Agent 基于 Draft 完成公众号转写。")
         wechat_md = str((lane_dir / "wechat_article.base.md").resolve())
+    illustration_contract = build_illustration_contract(topic, lane_dir)
 
     cover_enabled = bool((decision.get("cover_generation") or {}).get("enabled", True))
     humanize_enabled = bool(decision.get("humanize", True))
@@ -315,6 +426,9 @@ def build_wechat_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir
 - 继承 Style DNA：`{dna_profile}`；如缺少画像，优先调用 `dasheng-style-profiler` 或 `wechat-style-profiler` 从用户历史稿提取。
 - 执行 humanize 清洗：减少模板句、口号句和“不是...而是...”这类机械对偶句。
 - 保留 Draft 中已嵌入的图表、表格和图片；不得把图表计划留给下游。
+- 读取 `{illustration_contract["file"]}`。原文中的比喻、举例、类比、拟人或抽象机制如被列为 illustration intent，调用 `dasheng-lemon-illustrations` 生成柠檬人漫画，并紧跟对应段落插入；不得统一堆到文末。
+- 如果 humanize 新增了一个重要比喻或举例，也必须补充 illustration intent；只有能增加理解的场景才生成，不把每段都画成卡通。
+- 漫画属于概念解释，不得替代真实图表、网页、表格、文档或来源证据。
 - 公众号排版遵守 `configs/publish/wechat_layout_rules.json`：H2 使用阿拉伯数字大标题并左对齐；不要居中块状标题；表格内文字压到 12px 左右，减小 padding，避免手机端换行挤压。
 - 需要封面时调用 `baoyu-cover-image` / `baoyu-imagine`，产物写入 `cover/`。
 - 输出 `wechat_article.final.md` 与 `wechat_article.final.html`，再更新 `wechat_article_manifest.json`。
@@ -348,6 +462,7 @@ def build_wechat_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir
             "Apply Style DNA / humanize through dasheng-style-profiler or wechat-style-profiler when requested.",
             "Generate final Markdown and WeChat-compatible HTML through baoyu-markdown-to-html when needed.",
             "Apply WeChat layout hard rules from configs/publish/wechat_layout_rules.json before packaging.",
+            "Consume illustration_intents.json and generate/place lemon-person comics after the matching metaphor or example paragraph.",
             "Generate cover assets through baoyu-cover-image / baoyu-imagine when requested.",
             "Run article QC before marking this lane packageable or completed.",
         ],
@@ -355,6 +470,7 @@ def build_wechat_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir
             "markdown": str((lane_dir / "wechat_article.final.md").resolve()),
             "html": str((lane_dir / "wechat_article.final.html").resolve()),
             "cover": str((lane_dir / "cover").resolve()) if cover_enabled else None,
+            "illustrations": illustration_contract["output_dir"],
         },
         qc_report=str((lane_dir / "wechat_article_qc_report.json").resolve()),
     )
@@ -379,7 +495,13 @@ def build_wechat_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir
             {"skill": "wechat-style-profiler", "purpose": "公众号风格画像补充", "required": False},
             {"skill": "baoyu-markdown-to-html", "purpose": "将最终 Markdown 转微信兼容 HTML", "required": not bool(source_html)},
             {"skill": "baoyu-cover-image", "purpose": "生成封面", "required": cover_enabled},
+            {
+                "skill": "dasheng-lemon-illustrations",
+                "purpose": "将原文比喻、举例和抽象机制转成柠檬人正文漫画",
+                "required": bool(illustration_contract["unresolved"]),
+            },
         ],
+        "illustration_contract": illustration_contract,
         "agent_prompt": str(prompt_path.resolve()),
         "humanize_rules": {
             "enabled": humanize_enabled,
@@ -483,12 +605,14 @@ def build_video_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir:
     audio_mode = audio.get("mode") or ("human_audio" if has_human_media else "synthetic_audio")
     alignment_mode = alignment.get("mode") or ("active_to_existing_audio" if audio_mode == "human_audio" else "passive_to_generated_audio")
     transparent = str(visual.get("background") or "transparent").lower() == "transparent"
+    illustration_contract = build_illustration_contract(topic, lane_dir)
 
     storyboard = {
         "topic_id": topic.get("topic_id"),
         "title": title,
         "beats": beats,
         "source_draft": topic.get("draft_file"),
+        "illustration_intents": illustration_contract["intents"],
     }
     storyboard_path = lane_dir / "video_storyboard.json"
     write_json(storyboard_path, storyboard)
@@ -544,13 +668,28 @@ def build_video_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir:
         base_video=base_video,
         human_audio=human_audio,
     )
+    director_package = build_director_package_for_video_lane(
+        topic=topic,
+        decision=decision,
+        lane_dir=lane_dir,
+        title=title,
+        base_video=base_video,
+    )
+    if director_package["status"] == "pending_review":
+        lane_status = "pending_director_review"
+    elif director_package["status"].startswith("blocked"):
+        lane_status = director_package["status"]
+    else:
+        lane_status = "ready_for_skill_execution" if has_human_media or audio_mode == "synthetic_audio" else "blocked_missing_human_media"
     execution_contract = build_execution_contract(
         lane="talking_head_video",
         owner="agent+video-skills",
         required_steps=[
             "Choose talking-head or no-human mode from decision inputs.",
+            "Review director scene_plan through storyboard_template_review.html before TTS, material generation, or final render.",
             "Use human footage/audio when supplied; otherwise generate voiceover with MiniMax CLI.",
             "Build timeline, HTML visual layer, subtitles, and data-backed charts/stickers through video skills.",
+            "Route source metaphors and examples from illustration_intents.json to lemon-person full-canvas or transparent-overlay scenes, then animate setup, action, and result as separate beats.",
             "Render preview/final video through html-video, HTML Anything bridge, Remotion, or FFmpeg as selected.",
             "Run video QC for duration, audio loudness, subtitle alignment, missing media, and final render existence.",
         ],
@@ -558,18 +697,22 @@ def build_video_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir:
             "video": str((lane_dir / "renders" / f"{safe_slug(topic.get('topic_id') or title)}.mp4").resolve()),
             "srt": str((lane_dir / "renders" / f"{safe_slug(topic.get('topic_id') or title)}.srt").resolve()),
             "timeline": str((lane_dir / "render_plan.json").resolve()),
+            "scene_plan": director_package.get("scene_plan"),
+            "storyboard_review": director_package.get("review_html"),
+            "illustrations": illustration_contract["output_dir"],
         },
         qc_report=str((lane_dir / "video_qc_report.json").resolve()),
     )
     manifest = {
         "lane": "talking_head_video",
-        "status": "ready_for_skill_execution" if has_human_media or audio_mode == "synthetic_audio" else "blocked_missing_human_media",
+        "status": lane_status,
         "topic_id": topic.get("topic_id"),
         "title": title,
         "storyboard": str(storyboard_path.resolve()),
         "script": str(script_path.resolve()),
         "html_overlay": str(overlay_path.resolve()),
         "render_plan": str(render_plan_path.resolve()),
+        "director_package": director_package,
         "html_video_project_plan": html_video_plan["plan_file"],
         "html_video_project_vars": html_video_plan["vars_file"],
         "html_video_commands": html_video_plan["commands_file"],
@@ -592,7 +735,13 @@ def build_video_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir:
             {"skill": "dasheng-html-anything-bridge", "purpose": "参考 HTML Anything 的 video-hyperframes / motion-frames 视觉语言", "required": False},
             {"skill": "remotion-best-practices", "purpose": "复杂自定义透明合成兜底", "required": render_plan["engine"] == "remotion"},
             {"skill": "dasheng-stage-publish-video", "purpose": "兼容旧 motion 视频补充能力", "required": False},
+            {
+                "skill": "dasheng-lemon-illustrations",
+                "purpose": "将原文比喻、举例和抽象机制转成柠檬人分镜素材",
+                "required": bool(illustration_contract["intents"]),
+            },
         ],
+        "illustration_contract": illustration_contract,
         "final_artifacts": execution_contract["final_artifacts"],
         "qc": execution_contract["qc"],
         "execution_contract": execution_contract,

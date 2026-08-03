@@ -177,7 +177,7 @@ Publish
 
 ## 联系方式
 
-- 完整规划：`/Users/lichengyin/.claude/plans/gleaming-rolling-petal.md`
+- 完整规划：`${HOME}/.claude/plans/gleaming-rolling-petal.md`
 - 详细总结：`AI_UPGRADE_PHASE1_SUMMARY.md`
 - 问题分析：`BRIEF_PROBLEM_ANALYSIS.md`
 - 测试报告：`BRIEF_AI_TEST_REPORT.md`

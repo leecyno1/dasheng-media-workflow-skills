@@ -26,7 +26,7 @@ def test_talking_head_timeline_contains_director_layers():
 
     assert timeline["schema_version"] == "dasheng.talking_head_timeline.v1"
     assert timeline["lane"] == "talking_head_video"
-    assert timeline["aspect"] == "9:16"
+    assert timeline["aspect"] == "16:9"
     assert timeline["segments"]
     assert any(segment["overlay"]["type"] == "real_data_chart_or_table" for segment in timeline["segments"])
     assert any(segment["beat_class"] == "evidence_data" for segment in timeline["segments"])

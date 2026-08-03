@@ -29,7 +29,7 @@
 - 总控 Skill：`skills/dasheng-media-sop/SKILL.md`
 - 重构路线图：`10_大圣daily重构路线图.md`
 - 模块迁移表：`11_大圣daily模块迁移表.md`
-- 阶段模块映射：`/Volumes/PSSD/Projects/公众号文章/skills/dasheng-media-sop/references/stage-module-map.md`
+- 阶段模块映射：`${DASHENG_PROJECT_ROOT}/skills/dasheng-media-sop/references/stage-module-map.md`
 
 ## 当前默认总控 Skill
 
@@ -54,8 +54,8 @@
 
 ## 桌面交付目录
 
-- 默认根目录：`/Users/lichengyin/Desktop/自媒体创作临时交付`
-- 每日目录示例：`/Users/lichengyin/Desktop/自媒体创作临时交付/2026-03-26`
+- 默认根目录：`${HOME}/Desktop/自媒体创作临时交付`
+- 每日目录示例：`${HOME}/Desktop/自媒体创作临时交付/2026-03-26`
 
 ## 一键导出脚本
 

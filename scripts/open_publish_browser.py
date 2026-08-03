@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from path_config import get_project_root
+from publish_window_policy import chrome_window_args, resolve_publish_window
 
 
 ROOT = get_project_root()
@@ -24,7 +25,7 @@ def known_profile_keys() -> list[str]:
     return sorted(profiles) if isinstance(profiles, dict) else []
 
 
-def resolve_profile(channel: str, *, url: str | None = None) -> dict[str, str]:
+def resolve_profile(channel: str, *, url: str | None = None) -> dict[str, Any]:
     payload = read_json(CONFIG_PATH)
     profiles = payload.get("profiles") or {}
     if channel not in profiles:
@@ -40,6 +41,7 @@ def resolve_profile(channel: str, *, url: str | None = None) -> dict[str, str]:
         "chrome_binary": str(chrome),
         "profile_dir": str(profile_dir),
         "entry_url": entry_url,
+        "window": resolve_publish_window(payload.get("window_policy") if isinstance(payload, dict) else None),
     }
     if row.get("debug_port"):
         profile["debug_port"] = str(row["debug_port"])
@@ -57,14 +59,17 @@ def platform_profile_keys(platform: str) -> list[str]:
     )
 
 
-def open_profile(channel: str, *, url: str | None = None, dry_run: bool = False) -> dict[str, str]:
+def open_profile(channel: str, *, url: str | None = None, dry_run: bool = False) -> dict[str, Any]:
     profile = resolve_profile(channel, url=url)
     profile_dir = Path(profile["profile_dir"])
     profile_dir.mkdir(parents=True, exist_ok=True)
     chrome_binary = profile["chrome_binary"]
+    window = profile["window"]
+    window_args = chrome_window_args(window)
     if Path(chrome_binary).exists() and Path(chrome_binary).name.lower() == "google chrome":
         command = [
             "open",
+            "-g",
             "-na",
             chrome_binary,
             "--args",
@@ -72,6 +77,7 @@ def open_profile(channel: str, *, url: str | None = None, dry_run: bool = False)
             "--no-first-run",
             "--no-default-browser-check",
             "--new-window",
+            *window_args,
             profile["entry_url"],
         ]
     else:
@@ -81,6 +87,7 @@ def open_profile(channel: str, *, url: str | None = None, dry_run: bool = False)
             "--no-first-run",
             "--no-default-browser-check",
             "--new-window",
+            *window_args,
             profile["entry_url"],
         ]
     if profile.get("debug_port"):

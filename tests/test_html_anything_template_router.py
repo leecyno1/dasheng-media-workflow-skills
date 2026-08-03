@@ -9,6 +9,7 @@ sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
 from build_html_anything_template_router import build_part_router, build_template_roles
 from build_html_anything_video_timeline import build_timeline, extract_numeric_metrics
 from render_html_anything_timeline_pack import build_pack
+from render_html_anything_scene_pack_animated import bgm_volume_filter
 
 
 def test_router_maps_core_article_video_parts():
@@ -221,7 +222,7 @@ def test_scene_pack_renderer_outputs_html_files(tmp_path):
     assert manifest["scenes"][1]["beat_class"] == "evidence_data"
     assert manifest["scenes"][1]["director_state"] == "evidence_scene"
     assert manifest["scenes"][1]["transition_to_next"] == "data_reveal"
-    assert "数据经核验" in Path(manifest["scenes"][1]["html"]).read_text(encoding="utf-8")
+    assert "情景数字不构成预测" in Path(manifest["scenes"][1]["html"]).read_text(encoding="utf-8")
     assert manifest["scenes"][1]["motion_policy"]["framework"] == "hyperframes"
     html = Path(manifest["scenes"][1]["html"]).read_text(encoding="utf-8")
     assert "window.gsap" in html
@@ -231,3 +232,132 @@ def test_scene_pack_renderer_outputs_html_files(tmp_path):
     assert "data-lottie-role" in html
     assert 'id="lottie-data"' in html
     assert 'data-motion-runtime="dasheng"' in html
+
+
+def test_flowchart_keeps_outline_visible_without_fullscreen_focus_resets(tmp_path):
+    timeline_path = tmp_path / "timeline.json"
+    timeline_path.write_text(
+        json.dumps(
+            {
+                "schema_version": "dasheng.html_anything_video_timeline.v2",
+                "title": "提纲测试",
+                "aspect": "16:9",
+                "duration_estimate_sec": 9,
+                "timeline": [
+                    {
+                        "id": "outline_001",
+                        "content_part": "overall_outline",
+                        "beat_class": "logic_chain",
+                        "template_id": "frame-flowchart-sticky",
+                        "start_sec": 0,
+                        "end_sec": 9,
+                        "duration_sec": 9,
+                        "title": "总提纲",
+                        "narration": "先看三个问题。",
+                        "variables": {"headings": ["第一部分", "第二部分", "第三部分"]},
+                    }
+                ],
+            },
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+
+    manifest = build_pack(timeline_path, tmp_path / "pack")
+    html = Path(manifest["scenes"][0]["html"]).read_text(encoding="utf-8")
+
+    assert "focus-stage" not in html
+    assert "focusSequence" not in html
+    assert "nodeReveal" in html
+    assert "--node-delay" in html
+
+
+def test_semantic_director_templates_render_distinct_components(tmp_path):
+    evidence = tmp_path / "evidence.png"
+    evidence.write_bytes(b"fake-image-for-html-reference")
+    templates = [
+        ("route-map-seven", {"headings": [f"问题 {index}" for index in range(1, 8)]}, "route-grid"),
+        ("source-web-evidence", {"sources": [{"src": str(evidence), "label": "官网", "url": "https://example.com", "claim": "来源命题"}]}, "web-grid"),
+        ("business-flywheel", {"items": ["发射", "卫星", "服务", "现金流"]}, "wheel-stage"),
+        ("customer-concentration-funnel", {"suppliers": ["甲", "乙"], "buyers": ["核心客户"]}, "funnel-layout"),
+        ("valuation-waterfall", {}, "valuation-chain"),
+        ("commercial-proof-ladder", {}, "proof-ladder"),
+        ("value-chain-profit-map", {}, "chain-lane"),
+        ("investment-signal-gate", {}, "signal-gate"),
+        ("direction-price-balance", {}, "balance-beam"),
+        ("evidence-discipline-meter", {}, "evidence-level"),
+        ("recurring-revenue-streams", {}, "network-core"),
+        ("business-model-split", {}, "model-compare"),
+        ("value-chain-chapter-bridge", {}, "chain-bridge"),
+    ]
+    timeline = []
+    for index, (template_id, variables, _marker) in enumerate(templates):
+        timeline.append(
+            {
+                "id": f"scene_{index:03d}",
+                "content_part": "logic_chain",
+                "beat_class": "evidence_data",
+                "template_id": template_id,
+                "start_sec": index * 6,
+                "end_sec": (index + 1) * 6,
+                "duration_sec": 6,
+                "title": template_id,
+                "narration": "用于验证不同导演组件。",
+                "variables": variables,
+            }
+        )
+    timeline_path = tmp_path / "timeline.json"
+    timeline_path.write_text(
+        json.dumps({"schema_version": "dasheng.html_anything_video_timeline.v2", "title": "导演组件", "aspect": "16:9", "timeline": timeline}, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    manifest = build_pack(timeline_path, tmp_path / "pack")
+
+    assert manifest["scene_count"] == len(templates)
+    for scene, (_template_id, _variables, marker) in zip(manifest["scenes"], templates):
+        html = Path(scene["html"]).read_text(encoding="utf-8")
+        assert marker in html
+    route_html = Path(manifest["scenes"][0]["html"]).read_text(encoding="utf-8")
+    assert route_html.count('class="route-card"') == 7
+
+
+def test_bgm_policy_raises_chapters_and_recaps_without_flat_full_video_level():
+    expression = bgm_volume_filter([(10, 13), (40, 42)], [(90, 100)])
+
+    assert "between(t,10.000,13.000)" in expression
+    assert "between(t,90.000,100.000)" in expression
+    assert "0.120" in expression
+    assert "0.105" in expression
+    assert "0.075" in expression
+
+
+def test_timeline_preserves_storyboard_title_and_aspect(tmp_path):
+    article = tmp_path / "article.html"
+    article.write_text("<p>商业模式决定估值。</p>", encoding="utf-8")
+    router = {
+        "schema_version": "test.router.v1",
+        "part_router": {
+            "article_title": {"primary": "frame-liquid-bg-hero", "candidates": [{"reason": "title"}]},
+            "opening_hook": {"primary": "frame-glitch-title", "candidates": [{"reason": "hook"}]},
+            "overall_outline": {"primary": "frame-flowchart-sticky", "candidates": [{"reason": "outline"}]},
+            "chapter_divider": {"primary": "frame-light-leak-cinema", "candidates": [{"reason": "chapter"}]},
+            "closing_outro": {"primary": "frame-logo-outro", "candidates": [{"reason": "outro"}]},
+            "brand_mark": {"primary": "frame-logo-outro", "candidates": [{"reason": "brand"}]},
+        },
+    }
+    storyboard = {
+        "schema_version": "dasheng.explainer_storyboard.v1",
+        "title": "横版测试",
+        "aspect": "16:9",
+        "scenes": [
+            {"id": "scene_001", "type": "hook", "title": "横版测试", "narration": "开头"},
+            {"id": "scene_002", "type": "section", "title": "第一章", "narration": "商业模式决定估值。"},
+            {"id": "scene_003", "type": "outro", "title": "结论", "narration": "结束"},
+        ],
+    }
+
+    timeline = build_timeline(storyboard, router, article)
+
+    assert timeline["title"] == "横版测试"
+    assert timeline["aspect"] == "16:9"

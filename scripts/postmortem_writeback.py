@@ -348,7 +348,7 @@ def render_l1_writeback(payload: dict[str, Any]) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Canonical postmortem writeback")
     parser.add_argument("--publish-manifest", required=True, help="Path to canonical publish_manifest.json")
-    parser.add_argument("--output-dir", help="Output directory; default=产物/08_分析复盘/<run_id>")
+    parser.add_argument("--output-dir", help="Output directory; default=~/Desktop/自媒体创作/08_分析复盘/<run_id>")
     parser.add_argument("--require-publish-guard", action="store_true", help="Fail if publish_manifest.publish_guard is missing or not passed.")
     args = parser.parse_args()
 

@@ -4,11 +4,24 @@ Date: 2026-06-13
 
 本文件定义当前 video 环节的两条主链路。目标是把视频从 publish 补充物升级为 transwrite/video 生产能力，同时保持 publish 只做验收、打包、推草稿和回收链接。
 
+流水线治理、阶段产物契约、工具注册表和审核门见 [video-pipeline-governance.md](video-pipeline-governance.md)。视频生产不再直接从脚本跳到渲染，而是按：
+
+`project run manifest -> pipeline manifest -> stage artifact -> tool registry -> checkpoint/review -> render/publish`
+
+执行。对应配置位于：
+
+- `configs/video/pipelines/talking_head.yaml`
+- `configs/video/pipelines/explainer_html.yaml`
+- `configs/video/pipelines/style_training.yaml`
+- `configs/video/artifact_schemas/*.schema.json`
+- `configs/video/tool_registry.json`
+- `configs/workflow/project_run_manifest.schema.json`
+
 ## Lane A: 真人出镜口播
 
 定位：用户提供真人口播素材，系统完成粗剪、音频优化、字幕校对、导演时间轴、证据层、HTML 贴纸/图表、转场与质检。
 
-导演机制见 [video-editing-driving-mechanism.md](video-editing-driving-mechanism.md)。Lane A 不按“每句话贴一个模板”执行，而按 `speaker_anchor -> claim_closeup -> evidence_fullscreen -> broll_with_pip -> speaker_return` 状态机执行。
+导演机制见 [video-editing-driving-mechanism.md](video-editing-driving-mechanism.md)。Lane A 不按“每句话贴一个模板”执行，而按 `speaker_anchor -> claim_closeup -> evidence_fullscreen -> broll_with_pip -> speaker_return` 状态机执行。编辑微镜头生成后，必须先归并为 8-12 个核心命题并通过 Claim/Evidence Ledger，才允许生成正式素材。
 
 外部依赖：
 
@@ -30,9 +43,11 @@ python3 scripts/video_director_timeline.py \
 关键约束：
 
 - 真人音频/视频是主时间轴。
+- Remotion 是主时间轴与合成器；HTML Video、HyperFrames、GSAP 和 Lottie 负责具体场景动画。
 - HTML 动画只做证据层、标题卡、图表卡或素材层，不替代真人层。
 - 字幕必须先经过 Agent 语义校对，再进入终版渲染。
 - 图表和数据必须来自 Draft 文章或已验证数据源，不允许假图。
+- 事实、估值比较、因果与历史命题必须有逐项直接证据；传闻、预测和测算必须在画面中披露。
 - 最终视频不允许出现开发说明、slot 名、position 名等工作流标签。
 
 参考节奏：
@@ -133,6 +148,8 @@ python3 scripts/build_html_anything_video_timeline.py \
 | Skill | 责任 |
 | --- | --- |
 | `dasheng-video-talking-head` | Lane A 导演时间轴和真人包装规则 |
+| `scripts/video_claim_evidence_ledger.py` | 将微分镜归并为核心命题，生成证据缺口门禁和 HTML 审核页 |
+| `scripts/build_remotion_renderer_pack.py` | 生成 10 个生产级渲染器族及 Remotion 主时间轴工程 |
 | `dasheng-video-explainer-html` | Lane B HTML 文章分镜和无真人科普规则 |
 | `dasheng-html-video-bridge` | 调用 html-video 创建/预览/渲染项目 |
 | `dasheng-html-anything-bridge` | 借用 HTML Anything 的视觉模板和文章 HTML 经验 |
@@ -153,4 +170,4 @@ python3 scripts/build_html_anything_video_timeline.py \
 - `tests/test_video_production_schemas.py`
 - `tests/test_html_anything_template_router.py`
 
-这些文件先稳定中间结构。`video_driver_rules.py` 已把 `video_editing_driver_rules.json` 接入真人口播和无真人分镜，输出包含 `beat_class`、`driver_scores`、`director_state/shot`、`transition_to_next`、`audio`。`render_html_anything_timeline_pack.py` 与 `render_html_anything_scene_pack_video.py` 已读取这些字段，用于 scene HTML 状态类、转场动效、Ken Burns 运动、render report、SRT 与 MiniMax TTS 合成。后续剪映路径、html-video 项目生成都应读取 `talking_head_timeline.json`、`explainer_storyboard.json` 或 `html_anything_video_timeline.json`，不要各自重新发明分镜格式。
+这些文件先稳定中间结构。`video_driver_rules.py` 已把 `video_editing_driver_rules.json` 接入真人口播和无真人分镜，输出包含 `beat_class`、`driver_scores`、`director_state/shot`、`transition_to_next`、`audio`。`render_html_anything_timeline_pack.py` 负责生成 scene HTML 状态类、转场动效和分镜包；最终视频必须走 `render_html_anything_scene_pack_animated.py` 逐场景录制真实 HTML/GSAP/Lottie 动画。旧的静态截图、PNG 拼接和 Ken Burns/zoompan 路径已从生产链路删除。后续剪映路径、html-video 项目生成都应读取 `talking_head_timeline.json`、`explainer_storyboard.json` 或 `html_anything_video_timeline.json`，不要各自重新发明分镜格式。

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dasheng.video.edit_decisions.v1",
+  "title": "Dasheng Video Edit Decisions",
+  "type": "object",
+  "required": ["schema_version", "lane", "decisions"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "dasheng.video.edit_decisions.v1"
+    },
+    "lane": {
+      "type": "string",
+      "enum": ["talking_head_video", "explainer_html_video"]
+    },
+    "roughcut_gate": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["approved", "blocked", "not_required"]
+        },
+        "report_path": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "decisions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["scene_id", "composition", "transition_in", "transition_out"],
+        "properties": {
+          "scene_id": {
+            "type": "string"
+          },
+          "composition": {
+            "type": "string"
+          },
+          "transition_in": {
+            "type": "string"
+          },
+          "transition_out": {
+            "type": "string"
+          },
+          "bgm_policy": {
+            "type": "string"
+          },
+          "subtitle_policy": {
+            "type": "string"
+          },
+          "safe_area_notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

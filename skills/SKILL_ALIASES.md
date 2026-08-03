@@ -19,9 +19,14 @@
 | `feishu-doc-creator` | 1.0.0 | ✅ 正式 | 飞书文档创建辅助 |
 | `dasheng-html-video-bridge` | 0.1.0 | ✅ 正式 | 转写阶段调用本地 html-video 的口播视频桥接 skill |
 | `dasheng-html-anything-bridge` | 0.1.0 | ✅ 正式 | Draft/Transwrite 调用 HTML Anything 模板和视觉语言的桥接 skill |
+| `dasheng-lemon-illustrations` | 0.1.0 | ✅ 正式 | 口播视频默认概念卡通插画系统，使用柠檬人替代上游角色 |
 | `dasheng-video-talking-head` | 0.1.0 | ✅ 正式 | 真人出镜口播视频导演时间轴、证据层和包装工作流 |
 | `dasheng-video-explainer-html` | 0.1.0 | ✅ 正式 | HTML 文章转无真人竖版科普视频的分镜工作流 |
-| `social-auto-upload-bridge` | 0.1.0 | ✅ 正式 | Publish 阶段调用外部 social-auto-upload 的多视频平台上传桥 |
+| `dasheng-video-broll-generator` | 0.1.0 | 🧰 按需 | B-roll、Vox 拼贴、生成式插入片段和贴纸动画的证据安全路由 |
+| `dasheng-caption-motion` | 0.1.0 | 🧰 按需 | 将 SRT/词级时间戳路由为 HyperFrames 或 Remotion 字幕动效 |
+| `dasheng-video-editing-bridge` | 0.1.0 | 🧰 按需 | 内部管线、剪映、chengfeng-videocut 与 video-use 的全流程剪辑路由 |
+| `dasheng-ffmpeg-toolkit` | 0.1.0 | 🧰 按需 | 受控媒体探测、转码、裁剪、音频提取和图片水印工具 |
+| `social-auto-upload-bridge` | 0.2.0 | ✅ 正式 | Publish 阶段调用外部 social-auto-upload，支持四平台预演、登录检查、确认执行与结果回填 |
 | `bilibili-upload-bridge` | 0.1.0 | ✅ 正式 | Publish 阶段调用外部 B站上传工具的投稿桥 |
 
 ## 按需工具（不属于正式主链）

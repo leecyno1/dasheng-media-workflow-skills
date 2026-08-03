@@ -20,8 +20,8 @@
 
 ## 默认工作区
 
-- 主工作区：`/Volumes/PSSD/Projects/公众号文章`
-- 动画图表工程：`/Volumes/PSSD/Projects/finance-motion-8787`
+- 主工作区：`${DASHENG_PROJECT_ROOT}`
+- 动画图表工程：`${PROJECTS_ROOT}/finance-motion-8787`
 - 可通过环境变量覆盖：
   - `DASHENG_WORKSPACE`
   - `FINANCE_MOTION_WORKSPACE`

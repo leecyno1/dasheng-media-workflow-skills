@@ -356,8 +356,13 @@ python3 scripts/rewrite_execute_stage5.py \
 - `channel_packs/<topic_id>/<channel>/channel_pack.json` - Per-channel execution pack
 - `channel_packs/<topic_id>/<channel>/execution_request.json` - Safe execution plan
 - `channel_packs/<topic_id>/<channel>/verification_request.json` - Verification plan
+- `channel_packs/<topic_id>/<channel>/platform_form_validation.json` - Platform-specific preflight validation
 - `channel_packs/<topic_id>/<channel>/publish_payload.json` - Executor payload
 - `channel_packs/<topic_id>/<channel>/publish_result.json` - Recorded executor/manual result
+- `channel_packs/<topic_id>/<channel>/<task_id>/channel_pack.json` - Independent matrix task pack
+- `channel_packs/<topic_id>/<channel>/<task_id>/publish_result_history.json` - Append-only retry history
+- `channel_packs/<topic_id>/<channel>/<task_id>/publish_results/attempt-XXXX.json` - Per-attempt receipt
+- `channel_packs/<topic_id>/<channel>/<task_id>/publish_retry_request.json` - Classified, confirmation-gated retry plan
 - `channel_execution_manifest.json` - Execution routing and result state
 - `publish_verification_report.json` - Post-publish verification
 - `publish_guard_report.json` - Batch verification report
@@ -371,9 +376,13 @@ python3 scripts/rewrite_execute_stage5.py \
   "status": "pending_execution|partially_recorded|failed|needs_manual_verification|all_drafted|all_published|completed_with_mixed_status",
   "channel_packs": [
     {
+      "task_id": "string|null",
+      "batch_id": "string|null",
       "topic_id": "string",
+      "variant_id": "string",
       "title": "string",
       "channel": "wechat_article|xiaohongshu_video|douyin_video|bilibili_video|x_post|weibo_post|podcast",
+      "account_slot": "slot-1",
       "platform": "string",
       "status": "ready_for_execution|blocked_or_waiting",
       "pack_manifest": "path"
@@ -402,6 +411,10 @@ python3 scripts/rewrite_execute_stage5.py \
   "next_stage": "postmortem"
 }
 ```
+
+For batch publishing, define `publish_matrix.json` with content variants and target account slots, then run `scripts/expand_publish_matrix.py`. When `publish_decision.tasks` exists, Stage Publish creates one independent pack per `task_id`; legacy decisions without tasks retain the old directory shape and `(topic_id, channel)` identity. Metadata precedence is matrix defaults, matrix channel defaults, registry channel presets, content variant, registry account presets, then target override.
+
+Account presets are non-secret configuration only. Sensitive-looking fields such as passwords, cookies, tokens, API keys, secrets, or proxy passwords are stripped and block matrix approval.
 
 #### Gate Schema (publish_decision.json)
 ```json
@@ -463,6 +476,8 @@ Verification semantics:
 - `publish_guard.py` requires the sibling `publish_verification_report.json`; a manifest-only batch must not pass guard verification.
 - `publish_manifest.publish_results` must match `publish_verification_report.records`, and both `publish_summary` objects must match the recomputed state.
 - Every recorded publish result must reference an existing `publish_result.json` via `result_file`, and the file's core publish fields must match the recorded result.
+- Every retry appends a numbered attempt receipt and updates only that task's latest result. Results with `task_id` are never deduplicated by channel alone.
+- Failed attempts are classified and produce `publish_retry_request.json`. Backoff never authorizes publishing: every retry request keeps `automatic_execution=false` and requires current-session confirmation.
 - Default Publish Guard writes reports and exits 0 even when the batch is not passed; `--fail-on-error` exits non-zero when `passed=false`.
 - No current-session confirmation means no real platform publishing.
 
@@ -531,8 +546,8 @@ Default Postmortem may continue when Publish Guard is missing, but strict Postmo
 
 ### Manifest File Naming
 - Format: `<stage>_manifest.json`
-- Location: `产物/<stage_number>_<stage_name>/<run_id>/`
-- Example: `产物/06_改写/2026-04-17_120000/rewrite_manifest.json`
+- Location: `~/Desktop/自媒体创作/<stage_number>_<stage_name>/<run_id>/`
+- Example: `~/Desktop/自媒体创作/06_改写/2026-04-17_120000/rewrite_manifest.json`
 
 ### Gate File Naming
 - Format: `<gate_name>.json`

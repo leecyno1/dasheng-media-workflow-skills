@@ -206,7 +206,7 @@ MINIMAX_API_KEY=xxx
 GEMINI_API_KEY=xxx
 
 # 配置文件路径
-IMAGE_CONFIG_DIR=/Volumes/PSSD/Projects/公众号文章/configs/image_generation
+IMAGE_CONFIG_DIR=${DASHENG_PROJECT_ROOT}/configs/image_generation
 ```
 
 ---
@@ -216,7 +216,7 @@ IMAGE_CONFIG_DIR=/Volumes/PSSD/Projects/公众号文章/configs/image_generation
 ### 单个选题执行
 
 ```bash
-cd /Volumes/PSSD/Projects/公众号文章
+cd ${DASHENG_PROJECT_ROOT}
 
 # 执行所有步骤
 python3 scripts/material_execute_pack.py \
@@ -242,7 +242,7 @@ python3 scripts/material_execute_pack.py \
 ### 并行执行多个选题
 
 ```bash
-cd /Volumes/PSSD/Projects/公众号文章
+cd ${DASHENG_PROJECT_ROOT}
 
 # 并行执行所有选题
 python3 scripts/material_parallel_launcher.py \
@@ -430,10 +430,10 @@ python3 scripts/material_parallel_launcher.py \
 
 ```bash
 # 检查 token 文件
-cat /Volumes/PSSD/Projects/公众号文章/.tushare_token
+cat ${DASHENG_PROJECT_ROOT}/.tushare_token
 
 # 更新 token
-echo "your_token_here" > /Volumes/PSSD/Projects/公众号文章/.tushare_token
+echo "your_token_here" > ${DASHENG_PROJECT_ROOT}/.tushare_token
 ```
 
 ### 问题 2: 图片下载失败
@@ -463,7 +463,7 @@ pip install yt-dlp
 echo $MINIMAX_API_KEY
 
 # 检查配置文件
-cat /Volumes/PSSD/Projects/公众号文章/configs/image_generation/providers.local.env
+cat ${DASHENG_PROJECT_ROOT}/configs/image_generation/providers.local.env
 
 # 使用 fallback 文字面板
 # 脚本会自动生成纯文字图片

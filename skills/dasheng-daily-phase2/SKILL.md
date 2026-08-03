@@ -27,13 +27,13 @@ description: Use when the workflow enters Stage 2 Brief and the current Agent mu
 
 默认来源目录：
 
-- `{DASHENG_ROOT}/产物/01_内容采集/{run_id}/`
+- `${DASHENG_OUTPUT_ROOT:-~/Desktop/自媒体创作}/01_内容采集/{run_id}/`
 
 ## canonical 输出
 
 输出目录：
 
-- `{DASHENG_ROOT}/产物/02_内容聚合及选题分析/{run_id}/`
+- `${DASHENG_OUTPUT_ROOT:-~/Desktop/自媒体创作}/02_内容聚合及选题分析/{run_id}/`
 
 标准产物：
 
@@ -87,7 +87,7 @@ python3 scripts/run_mainline_stage.py brief --run-id <run_id>
 ```bash
 python3 scripts/run_mainline_stage.py brief \
   --run-id <run_id> \
-  --agent-cards-file "产物/02_内容聚合及选题分析/<run_id>/topic_cards.agent.json"
+  --agent-cards-file "~/Desktop/自媒体创作/02_内容聚合及选题分析/<run_id>/topic_cards.agent.json"
 ```
 
 ### 带手动指定题

@@ -100,6 +100,27 @@
   - 只提炼结构范式、章节框架、叙事路径、论证模型、信息密度、渠道适配和禁用项
   - 不替代事实来源，不搬运样本事实，不参与事实真伪判断
 
+### 0.6 Video Style Training｜可选视频训练
+
+- 目标：把用户提供的大量样板视频沉淀为可复用的 `Video Style DNA`，供真人口播和无真人科普视频生产引用
+- 推荐输入：
+  - 样板视频目录
+  - `style_id`
+  - 博主名、平台名、目标使用场景
+- 正式产物：
+  - `training_manifest.json`
+  - `per_video/*/analysis.json`
+  - `style_profile.json`
+  - `style_profile.md`
+- 默认目录：
+  - `~/Desktop/自媒体创作/00_范式学习/视频训练/<style_id>/`
+- 关键规则：
+  - 这是独立可选资产，不改变主链顺序，不作为 transwrite 必需 gate
+  - 只学习剪辑节奏、场景结构、转场、动效、模板偏好、声音氛围和证据密度
+  - 不生成市场事实、不替代 Draft 数据图表、不复制样片脚本或画面
+  - 样板源视频只记录路径；压缩上传缓存写入 `<style_id>/_upload_cache/`
+  - 禁止把视频、音频、字幕、审核页、训练缓存写入项目根目录或 `skills/`
+
 ### 1. Intake｜内容采集 / 话题雷达
 
 - 目标：采集当天热点样本，并升级为“事件-人物-议题”雷达
@@ -194,6 +215,7 @@
   - `03_HTML草稿_<topic>.html`
   - `03_质量门禁_<topic>.json`
   - `03_DraftAssets_<topic>.json`
+  - `03_IllustrationIntents_<topic>.json`
   - `03_初稿_报告.md`
   - `draft_quality_gate.json`
   - `final_structure_snapshot.template.json`
@@ -213,6 +235,9 @@
   - Draft 不得只输出 `chart_plan` / `image_plan`；需求锚点只能进入 `chart_requests` / `image_requests`，真正交付物必须是已嵌入 HTML 的 `chart_specs` / `image_specs`
   - 如正文需要图表或配图但缺少可核验数据/图片，`draft_manifest.status` 必须标记为 `incomplete_assets`，不得伪装为完成稿
   - 股票、指数、ETF、汇率、商品、股债跨资产走势与经济日历统计优先通过 `dasheng-finance-data` 生成 `chart_specs`，禁止凭记忆手填行情或宏观日历序列
+  - 正文出现有认知价值的比喻、举例、类比、拟人或抽象机制时，Draft 调用 `dasheng-lemon-illustrations` 输出 illustration intent；关键词命中只负责召回，Agent 决定是否值得画
+  - 必需漫画使用柠檬人，紧跟原段落嵌入 HTML；不得集中堆到文末，不得替代真实图表、网页、表格、文档、地图或来源证据
+  - 必需 illustration intent 未生成对应 `illustration_specs` 时，`illustration_status` 与 Draft 资产状态不得标记 complete
 
 ### 按需工具：Rewrite Variants
 
@@ -230,28 +255,32 @@
   - `final_structure_snapshot.json`
   - `transwrite_decision.json`
   - 可选：`paradigm_profile.yaml`
+  - 可选：`video-style-training/style_profile.json`
 - 正式产物：
   - `04_转写计划.md`
   - `transwrite_manifest.json`
   - `wechat_article/wechat_article_manifest.json`
   - `wechat_article/agent_rewrite_prompt.md`
   - `wechat_article/cover_prompt.md`
+  - `wechat_article/illustration_intents.json`
   - `talking_head_video/talking_head_video_manifest.json`
   - `talking_head_video/video_storyboard.json`
   - `talking_head_video/talking_head_script.md`
   - `talking_head_video/html_overlay.html`
   - `talking_head_video/render_plan.json`
+  - `talking_head_video/illustration_intents.json`
   - `podcast/podcast_manifest.json`
   - `podcast/podcast_script.md`
   - `podcast/provider_request.json`
 - 三条通路：
-  - `wechat_article`：DNA / humanize / 内容扩展 / 微信格式转写 / 封面生成
-  - `talking_head_video`：真人口播可选、视觉层透明/非透明、真人音频/合成音频、主动/被动对齐
+  - `wechat_article`：DNA / humanize / 内容扩展 / 微信格式转写 / 封面生成 / 原比喻与举例的段后柠檬漫画
+  - `talking_head_video`：真人口播可选、视觉层透明/非透明、真人音频/合成音频、主动/被动对齐 / illustration intent 动态分镜
   - `podcast`：Coze / MiniMax API 请求包
 - 强约束：
   - 不补事实、不补数据、不重做图表；缺口必须退回 Draft
   - 外部 API、真人素材或渲染器缺失时必须写入状态
   - 不得把计划或请求体误报为已生成视频/音频
+  - 公众号与视频必须消费同一 Draft illustration intent；视频按“设置 -> 柠檬人动作 -> 结果”改造成动态分镜，不得重新发明冲突比喻
 
 ### 5. Publish｜发布执行
 

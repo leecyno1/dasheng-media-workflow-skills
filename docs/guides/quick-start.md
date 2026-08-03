@@ -16,7 +16,7 @@ export OPENAI_API_KEY="your-openai-key"
 ### Step 2: 测试DNA引擎
 
 ```bash
-cd /Volumes/PSSD/Projects/公众号文章
+cd ${DASHENG_PROJECT_ROOT}
 python3 core/dna_engine.py
 ```
 
@@ -141,7 +141,7 @@ print(f"图片URL: {result['url']}")
 
 ```bash
 python3 skill_package/installer.py install \
-  /Volumes/PSSD/Projects/lobster-world/skills/dasheng-media-platform
+  ${PROJECTS_ROOT}/lobster-world/skills/dasheng-media-platform
 ```
 
 ### 验证安装
@@ -306,7 +306,7 @@ print(f"✅ 流程完成")
 
 ```bash
 # 克隆项目
-cd /Volumes/PSSD/Projects/公众号文章
+cd ${DASHENG_PROJECT_ROOT}
 
 # 设置API密钥
 export ANTHROPIC_API_KEY="your-key"

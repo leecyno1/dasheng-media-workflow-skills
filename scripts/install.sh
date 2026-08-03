@@ -1,99 +1,101 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -euo pipefail
 
-echo "=== Dasheng Media Workflow Skills 安装程序 ==="
-echo ""
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+PYTHON_BIN="${DASHENG_PYTHON_BIN:-python3}"
+WITH_MEDIA=0
+WITH_RESERVES=0
+INSTALL_SKILLS=0
 
-# 检测操作系统
-OS=$(uname -s)
-echo "检测到操作系统: $OS"
+usage() {
+  cat <<'EOF'
+Usage: ./scripts/install.sh [options]
 
-# 检查Python版本
-if ! command -v python3 &> /dev/null; then
-    echo "❌ 错误: 未找到python3，请先安装Python 3.10+"
-    exit 1
+Options:
+  --with-media       Install ASR and media Python dependencies.
+  --with-reserves    Clone all retained/candidate upstream projects and apply patches.
+  --install-skills   Copy project Skills into the OpenClaw Skills directory.
+  -h, --help         Show this help.
+EOF
+}
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --with-media) WITH_MEDIA=1 ;;
+    --with-reserves) WITH_RESERVES=1 ;;
+    --install-skills) INSTALL_SKILLS=1 ;;
+    -h|--help) usage; exit 0 ;;
+    *) echo "Unknown option: $1" >&2; usage >&2; exit 2 ;;
+  esac
+  shift
+done
+
+cd "$PROJECT_ROOT"
+
+echo "=== Dasheng Media Workflow Skills installer ==="
+
+if ! command -v "$PYTHON_BIN" >/dev/null 2>&1; then
+  echo "Python not found: $PYTHON_BIN" >&2
+  exit 1
 fi
 
-PYTHON_VERSION=$(python3 --version | cut -d' ' -f2)
-echo "Python版本: $PYTHON_VERSION"
+"$PYTHON_BIN" - <<'PY'
+import sys
+if sys.version_info < (3, 10):
+    raise SystemExit(f"Python 3.10+ required; current: {sys.version.split()[0]}")
+print(f"Python: {sys.version.split()[0]}")
+PY
 
-# 简单版本比较（检查主版本号和次版本号）
-PYTHON_MAJOR=$(echo $PYTHON_VERSION | cut -d'.' -f1)
-PYTHON_MINOR=$(echo $PYTHON_VERSION | cut -d'.' -f2)
-
-if [ "$PYTHON_MAJOR" -lt 3 ] || ([ "$PYTHON_MAJOR" -eq 3 ] && [ "$PYTHON_MINOR" -lt 10 ]); then
-    echo "❌ 错误: 需要Python 3.10+，当前版本: $PYTHON_VERSION"
-    exit 1
+if ! command -v git >/dev/null 2>&1; then
+  echo "Git 2.x is required." >&2
+  exit 1
 fi
 
-# 检查Node.js版本
-if ! command -v node &> /dev/null; then
-    echo "⚠️  警告: 未找到node，部分功能可能不可用"
-    echo "   建议安装Node.js 18+: https://nodejs.org/"
+if command -v node >/dev/null 2>&1; then
+  echo "Node: $(node --version)"
 else
-    NODE_VERSION=$(node --version | cut -d'v' -f2)
-    echo "Node.js版本: $NODE_VERSION"
+  echo "Node.js 18+ not found; animation and browser publishing remain optional."
 fi
 
-# 创建虚拟环境
-echo ""
-echo "创建Python虚拟环境..."
-python3 -m venv .venv
-
-# 激活虚拟环境
-if [ "$OS" = "Darwin" ] || [ "$OS" = "Linux" ]; then
-    source .venv/bin/activate
-else
-    echo "⚠️  警告: 未知操作系统，请手动激活虚拟环境"
-    echo "   Windows: .venv\\Scripts\\activate"
-    echo "   macOS/Linux: source .venv/bin/activate"
+if [[ ! -d .venv ]]; then
+  "$PYTHON_BIN" -m venv .venv
 fi
 
-# 安装Python依赖
-echo ""
-echo "安装Python依赖..."
-pip install --upgrade pip -q
-pip install -r requirements.txt -q
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 
-# 安装Node.js依赖（仅当存在package.json时）
-if [ -f package.json ] && command -v npm &> /dev/null; then
-    echo ""
-    echo "安装Node.js依赖..."
-    npm install --silent
+if [[ "$WITH_MEDIA" -eq 1 ]]; then
+  python -m pip install -r requirements-media.txt
 fi
 
-# 创建配置文件
-echo ""
-echo "创建配置文件..."
-if [ ! -f configs/paths.local.yaml ]; then
-    cp configs/paths.default.yaml configs/paths.local.yaml
-    echo "✅ 已创建 configs/paths.local.yaml"
-else
-    echo "⚠️  configs/paths.local.yaml 已存在，跳过"
+if [[ ! -f configs/paths.local.yaml ]]; then
+  cp configs/paths.default.yaml configs/paths.local.yaml
+  echo "Created configs/paths.local.yaml"
 fi
 
-# 创建必要目录
-PROJECT_ROOT=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
-echo ""
-echo "创建工作目录..."
-mkdir -p "$PROJECT_ROOT/素材" "$PROJECT_ROOT/项目" "$PROJECT_ROOT/产物"
+DASHENG_INSTALL_OUTPUT_ROOT="${DASHENG_OUTPUT_ROOT:-${HOME}/Desktop/自媒体创作}"
+mkdir -p \
+  "$DASHENG_INSTALL_OUTPUT_ROOT/素材" \
+  "$DASHENG_INSTALL_OUTPUT_ROOT/00_范式学习/视频训练" \
+  "$DASHENG_INSTALL_OUTPUT_ROOT/05_初稿生成" \
+  "$DASHENG_INSTALL_OUTPUT_ROOT/06_转写生产" \
+  "$DASHENG_INSTALL_OUTPUT_ROOT/07_发布执行" \
+  "$DASHENG_INSTALL_OUTPUT_ROOT/_tmp"
 
-# 运行验证
-echo ""
-echo "验证安装..."
-python3 "$PROJECT_ROOT/scripts/verify_installation.py"
+if [[ "$WITH_RESERVES" -eq 1 ]]; then
+  python scripts/sync_reserved_projects.py --mode clone
+  python scripts/apply_upstream_patches.py --mode apply
+fi
 
-echo ""
-echo "=== 安装完成 ==="
-echo ""
-echo "下一步："
-echo "1. 配置API密钥:"
-echo "   echo 'ANTHROPIC_API_KEY=your_key' > .env"
-echo ""
-echo "2. 运行测试:"
-echo "   python3 -m pytest tests/ -v"
-echo ""
-echo "3. 运行第一个工作流:"
-echo "   python3 scripts/run_stage1_intake.py"
-echo ""
-echo "详细文档: INSTALLATION.md"
+if [[ "$INSTALL_SKILLS" -eq 1 ]]; then
+  bash install_to_openclaw.sh
+fi
+
+python scripts/verify_installation.py
+
+echo
+echo "Installation complete."
+echo "Activate: source .venv/bin/activate"
+echo "Configure: cp .env.template .env"
+echo "Diagnose: python scripts/run_mainline_stage.py doctor --strict"

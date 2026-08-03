@@ -3,13 +3,17 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
 
-DEFAULT_HTML_ANYTHING_ROOT = Path("/Users/lichengyin/Documents/html一切")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_HTML_ANYTHING_ROOT = Path(
+    os.environ.get("HTML_ANYTHING_ROOT", str(PROJECT_ROOT / "vendor/reserved/render/html-anything"))
+).expanduser()
 
 
 PART_RULES: list[tuple[str, list[str]]] = [
@@ -198,8 +202,8 @@ def template_index(html_anything_root: Path) -> list[dict[str, Any]]:
                 "tags": fm.get("tags", ""),
                 "featured": fm.get("featured", ""),
                 "recommended": fm.get("recommended", ""),
-                "skill_path": str(skill_md),
-                "example_html": str(skill_md.parent / "example.html") if (skill_md.parent / "example.html").exists() else None,
+                "skill_path": str(skill_md.relative_to(html_anything_root)),
+                "example_html": str((skill_md.parent / "example.html").relative_to(html_anything_root)) if (skill_md.parent / "example.html").exists() else None,
             }
         )
     return items
@@ -372,7 +376,8 @@ def main() -> None:
     payload = {
         "schema_version": "dasheng.html_anything_template_router.v1",
         "created_at": datetime.now().astimezone().isoformat(timespec="seconds"),
-        "html_anything_root": str(root),
+        "html_anything_root": "${HTML_ANYTHING_ROOT:-vendor/reserved/render/html-anything}",
+        "template_paths_relative_to_root": True,
         "template_count": len(templates),
         "routing_policy": {
             "principle": "content_part -> template candidates -> storyboard scene -> renderer",

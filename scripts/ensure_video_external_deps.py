@@ -11,6 +11,10 @@ from pathlib import Path
 from typing import Any
 
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+RESERVED_ROOT = PROJECT_ROOT / "vendor" / "reserved"
+
+
 @dataclass(frozen=True)
 class ExternalDependency:
     name: str
@@ -26,7 +30,7 @@ DEPENDENCIES: dict[str, ExternalDependency] = {
         name="html-video",
         repo="https://github.com/nexu-io/html-video.git",
         default_path_env="HTML_VIDEO_ROOT",
-        default_path=Path("/Volumes/PSSD/html-video"),
+        default_path=RESERVED_ROOT / "render" / "html-video",
         package_manager="pnpm",
         build_after_install=True,
     ),
@@ -34,9 +38,82 @@ DEPENDENCIES: dict[str, ExternalDependency] = {
         name="html-anything",
         repo="https://github.com/nexu-io/html-anything.git",
         default_path_env="HTML_ANYTHING_ROOT",
-        default_path=Path.home() / "Documents" / "html一切",
+        default_path=RESERVED_ROOT / "render" / "html-anything",
         package_manager="pnpm",
         build_after_install=False,
+    ),
+    "text-to-lottie": ExternalDependency(
+        name="text-to-lottie",
+        repo="https://github.com/diffusionstudio/lottie.git",
+        default_path_env="TEXT_TO_LOTTIE_ROOT",
+        default_path=RESERVED_ROOT / "video" / "text-to-lottie",
+        package_manager="npm",
+        build_after_install=False,
+    ),
+    "claude-real-video": ExternalDependency(
+        name="claude-real-video",
+        repo="https://github.com/HUANGCHIHHUNGLeo/claude-real-video.git",
+        default_path_env="CLAUDE_REAL_VIDEO_ROOT",
+        default_path=RESERVED_ROOT / "video" / "claude-real-video",
+        package_manager="python",
+        build_after_install=False,
+    ),
+    "palmier-pro": ExternalDependency(
+        name="palmier-pro",
+        repo="https://github.com/palmier-io/palmier-pro.git",
+        default_path_env="PALMIER_PRO_ROOT",
+        default_path=RESERVED_ROOT / "video" / "palmier-pro",
+        package_manager="xcode",
+        build_after_install=False,
+    ),
+    "video-use": ExternalDependency(
+        name="video-use",
+        repo="https://github.com/browser-use/video-use.git",
+        default_path_env="VIDEO_USE_ROOT",
+        default_path=RESERVED_ROOT / "video" / "video-use",
+        package_manager="python",
+    ),
+    "freecut": ExternalDependency(
+        name="freecut",
+        repo="https://github.com/Moh4696/freecut.git",
+        default_path_env="FREECUT_ROOT",
+        default_path=RESERVED_ROOT / "video" / "freecut",
+        package_manager="python",
+    ),
+    "video-wrapper": ExternalDependency(
+        name="video-wrapper",
+        repo="https://github.com/op7418/Video-Wrapper-Skills.git",
+        default_path_env="VIDEO_WRAPPER_ROOT",
+        default_path=RESERVED_ROOT / "video" / "video-wrapper",
+        package_manager="python",
+    ),
+    "claude-shorts": ExternalDependency(
+        name="claude-shorts",
+        repo="https://github.com/AgriciDaniel/claude-shorts.git",
+        default_path_env="CLAUDE_SHORTS_ROOT",
+        default_path=RESERVED_ROOT / "video" / "claude-shorts",
+        package_manager="python",
+    ),
+    "hyperframes": ExternalDependency(
+        name="hyperframes",
+        repo="https://github.com/heygen-com/hyperframes.git",
+        default_path_env="HYPERFRAMES_ROOT",
+        default_path=RESERVED_ROOT / "video" / "hyperframes",
+        package_manager="bun",
+    ),
+    "talking-head-editor": ExternalDependency(
+        name="talking-head-editor",
+        repo="https://github.com/chrislema/videoeditor.git",
+        default_path_env="TALKING_HEAD_EDITOR_ROOT",
+        default_path=RESERVED_ROOT / "video" / "talking-head-editor",
+        package_manager="python",
+    ),
+    "vox-director": ExternalDependency(
+        name="vox-director",
+        repo="https://github.com/Alisa0808/vox-director.git",
+        default_path_env="VOX_DIRECTOR_ROOT",
+        default_path=RESERVED_ROOT / "video" / "vox-director",
+        package_manager="python",
     ),
 }
 
@@ -112,7 +189,8 @@ def motion_library_status(path: Path) -> dict[str, Any]:
 
 def inspect_dependency(spec: ExternalDependency) -> dict[str, Any]:
     path = dependency_path(spec)
-    package_manager = package_manager_from_package_json(path)
+    package_manager = package_manager_from_package_json(path) or spec.package_manager
+    pyproject_exists = (path / "pyproject.toml").exists()
     payload = {
         "name": spec.name,
         "repo": spec.repo,
@@ -121,10 +199,27 @@ def inspect_dependency(spec: ExternalDependency) -> dict[str, Any]:
         "exists": path.exists(),
         "is_git_repo": (path / ".git").exists(),
         "package_json": (path / "package.json").exists(),
+        "pyproject_toml": pyproject_exists,
         "package_manager": package_manager,
         "git_head": git_head(path),
-        "status": "ready" if path.exists() and (path / "package.json").exists() else "missing",
+        "status": "ready" if path.exists() and ((path / "package.json").exists() or pyproject_exists) else "missing",
     }
+    payload["venv_python"] = str(path / ".venv" / "bin" / "python")
+    payload["venv_ready"] = (path / ".venv" / "bin" / "python").exists()
+    payload["node_modules_ready"] = (path / "node_modules").exists()
+    if package_manager == "python":
+        payload["dependency_ready"] = payload["venv_ready"]
+        if payload["is_git_repo"] and payload["venv_ready"]:
+            payload["status"] = "ready"
+    elif package_manager in {"npm", "pnpm", "bun"}:
+        payload["dependency_ready"] = payload["node_modules_ready"]
+    if spec.name == "claude-real-video":
+        payload["source_package"] = (path / "src" / "claude_real_video").exists()
+    if spec.name == "palmier-pro":
+        payload["mcp_url"] = os.getenv("PALMIER_MCP_URL", "http://127.0.0.1:19789/mcp")
+        payload["desktop_app"] = str(Path("/Applications/PalmierPro.app"))
+        payload["desktop_app_exists"] = Path("/Applications/PalmierPro.app").exists()
+        payload["status"] = "ready" if payload["is_git_repo"] and payload["desktop_app_exists"] else "missing"
     if spec.name == "html-video":
         payload["motion_libraries"] = motion_library_status(path)
     return payload
@@ -149,6 +244,14 @@ def ensure_dependency(
     if mode == "update" and (path / ".git").exists():
         proc = run(["git", "pull", "--ff-only"], cwd=path)
         actions.append({"action": "git_pull_ff_only", "returncode": proc.returncode, "stderr": proc.stderr[-1200:]})
+        if proc.returncode != 0:
+            return {**inspect_dependency(spec), "actions": actions, "status": "error"}
+
+    if install_node_deps and spec.package_manager == "python" and path.exists() and (path / "pyproject.toml").exists():
+        python = Path(".venv_media/bin/python")
+        python_bin = str(python) if python.exists() else "python3"
+        proc = run([python_bin, "-m", "pip", "install", "-e", str(path)])
+        actions.append({"action": "pip_install_editable", "returncode": proc.returncode, "stderr": proc.stderr[-1200:]})
         if proc.returncode != 0:
             return {**inspect_dependency(spec), "actions": actions, "status": "error"}
 

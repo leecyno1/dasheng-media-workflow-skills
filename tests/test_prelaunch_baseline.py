@@ -175,7 +175,7 @@ class TestPrelaunchBaseline(TestCase):
         hardcoded = [
             line.strip()
             for line in content.splitlines()
-            if "/Volumes/PSSD/Projects/公众号文章" in line
+            if any(prefix in line for prefix in ("/Users/", "/Volumes/"))
             and not line.strip().startswith("#")
         ]
         self.assertEqual(

@@ -133,7 +133,7 @@ parser.add_argument("--video-download-limit", type=int, default=3)  # 改为 3
 
 ### Step 1: 修改默认下载限制
 
-**文件**: `/Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py`
+**文件**: `${DASHENG_PROJECT_ROOT}/scripts/material_execute_pack.py`
 
 ```python
 # Line 3235
@@ -233,7 +233,7 @@ elif task_id.startswith("frame_"):
 ### 测试用例 1: 视频自动下载
 
 ```bash
-cd /Volumes/PSSD/Projects/公众号文章
+cd ${DASHENG_PROJECT_ROOT}
 
 # 不指定 --video-download-limit，应该自动下载 3 个视频
 python3 scripts/material_execute_pack.py \

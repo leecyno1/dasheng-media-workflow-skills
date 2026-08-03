@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dasheng.video.script.v1",
+  "title": "Dasheng Video Script",
+  "type": "object",
+  "required": ["schema_version", "title", "lane", "segments"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "dasheng.video.script.v1"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lane": {
+      "type": "string",
+      "enum": ["talking_head_video", "explainer_html_video"]
+    },
+    "voice": {
+      "type": "object",
+      "properties": {
+        "provider": {
+          "type": "string"
+        },
+        "voice_id": {
+          "type": "string"
+        },
+        "speed": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 2
+        }
+      },
+      "additionalProperties": true
+    },
+    "segments": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "text", "beat_class"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "beat_class": {
+            "type": "string",
+            "enum": ["hook", "claim", "evidence_data", "evidence_document", "logic_chain", "objection", "chapter", "recap"]
+          },
+          "start_sec": {
+            "type": "number",
+            "minimum": 0
+          },
+          "end_sec": {
+            "type": "number",
+            "minimum": 0
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

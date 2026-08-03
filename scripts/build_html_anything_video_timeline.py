@@ -143,6 +143,17 @@ def motion_policy_for_part(part: str) -> dict[str, Any]:
     return policy
 
 
+def evidence_authenticity_for_part(part: str, variables: dict[str, Any] | None = None) -> str | None:
+    variables = variables or {}
+    if part in {"article_image", "news_or_document", "source_citation"}:
+        return "source_screenshot"
+    if part in {"data_chart", "financial_chart", "data_table", "kpi_card"}:
+        return "real_data" if variables.get("verified") is True else "user_claim_card"
+    if part in {"logic_chain", "overall_outline"}:
+        return "schematic"
+    return None
+
+
 class QuoteParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__()
@@ -328,6 +339,7 @@ def make_scene(
         if preserve_source_driver and source_scene.get("director_state")
         else explainer_state_for_beat(beat_class, index=index, seconds_since_evidence=0.0)
     )
+    scene_variables = variables or {}
     return {
         "id": scene_id,
         "source_scene_id": source_scene_id,
@@ -350,7 +362,8 @@ def make_scene(
         "transition_to_next": source_scene.get("transition_to_next") if preserve_source_driver and source_scene.get("transition_to_next") else transition_for_beat(beat_class, lane="explainer", duration=duration),
         "audio": source_scene.get("audio") if preserve_source_driver and source_scene.get("audio") else audio_for_beat(beat_class),
         "source_motion": source_scene.get("motion") if source_scene else None,
-        "variables": variables or {},
+        "variables": scene_variables,
+        "evidence_authenticity": evidence_authenticity_for_part(part, scene_variables),
     }
 
 
@@ -386,7 +399,7 @@ def build_timeline(storyboard: dict[str, Any], router: dict[str, Any], article_h
     add(
         "overall_outline",
         "今天这条线怎么走",
-        "这期视频按三层推进：先看市场发生了什么，再拆三把刀，最后看它怎么传导到中国资产。",
+        "这期沿着四层推进：先看事件与核心判断，再拆商业模式和产业结构，然后验证数据与风险，最后回到结论和行动条件。",
         None,
         min_sec=5.0,
         max_sec=9.0,
@@ -395,34 +408,37 @@ def build_timeline(storyboard: dict[str, Any], router: dict[str, Any], article_h
 
     quote_cursor = 0
     transition_count = 0
+    section_counter = 0
     for scene in scenes:
         source_id = scene.get("id")
         scene_type = scene.get("type")
-        title = str(scene.get("title") or "")
-        narration = str(scene.get("narration") or title)
+        scene_title = str(scene.get("title") or "")
+        narration = str(scene.get("narration") or scene_title)
         if scene_type == "hook":
             continue
         if scene_type == "outro":
             continue
         if scene_type == "table":
-            add("data_table", title, narration, source_id, min_sec=4.0, max_sec=8.0, variables=scene.get("variables") or {})
+            add("data_table", scene_title, narration, source_id, min_sec=4.0, max_sec=8.0, variables=scene.get("variables") or {})
             table = (scene.get("variables") or {}).get("table") or []
             if should_add_companion_chart(table):
-                add("data_chart", title + " 图表化", "把这组表格转成可读的数据图表，用来支撑刚才的判断。", source_id, min_sec=4.0, max_sec=7.0, variables=scene.get("variables") or {})
+                add("data_chart", scene_title + " 图表化", "把这组表格转成可读的数据图表，用来支撑刚才的判断。", source_id, min_sec=4.0, max_sec=7.0, variables=scene.get("variables") or {})
             continue
         if scene_type == "image":
-            add("article_image", title, narration, source_id, min_sec=4.0, max_sec=8.0, variables=scene.get("variables") or {})
+            add("article_image", scene_title, narration, source_id, min_sec=4.0, max_sec=8.0, variables=scene.get("variables") or {})
             continue
 
-        add("chapter_divider", title, title, source_id, min_sec=2.5, max_sec=4.0)
+        section_counter += 1
+        if section_counter == 1 or (section_counter - 1) % 4 == 0:
+            add("chapter_divider", scene_title, scene_title, source_id, min_sec=2.5, max_sec=4.0)
         part = classify_section_part(scene)
-        add(part, title, narration, source_id, min_sec=6.0, max_sec=14.0, variables=scene.get("variables") or {})
-        metrics = extract_numeric_metrics(f"{title}。{narration}")
+        add(part, scene_title, narration, source_id, min_sec=6.0, max_sec=14.0, variables=scene.get("variables") or {})
+        metrics = extract_numeric_metrics(f"{scene_title}。{narration}")
         if metrics:
             metric_text = "；".join(f"{item['label']} {item['display']}" for item in metrics[:4])
             add(
                 "financial_chart",
-                title + "：关键数字",
+                scene_title + "：关键数字",
                 f"这里不靠情绪，直接看这组数字：{metric_text}。",
                 source_id,
                 min_sec=4.0,
@@ -442,6 +458,13 @@ def build_timeline(storyboard: dict[str, Any], router: dict[str, Any], article_h
         add("closing_outro", str(outro.get("title") or "结论"), str(outro.get("narration") or "结论"), outro.get("id"), min_sec=3.0, max_sec=7.0)
     add("brand_mark", "大圣财经", "关注我，下一期继续拆市场里的信号和噪音。", None, min_sec=3.0, max_sec=5.0)
 
+    target_duration = float(storyboard.get("duration_estimate_sec") or 0.0)
+    raw_duration = sum(float(item["duration_sec"]) for item in timeline)
+    if target_duration > 0 and raw_duration > target_duration:
+        scale = target_duration / raw_duration
+        for item in timeline:
+            item["duration_sec"] = round(float(item["duration_sec"]) * scale, 3)
+
     cursor = 0.0
     for item in timeline:
         item["start_sec"] = round(cursor, 3)
@@ -455,7 +478,7 @@ def build_timeline(storyboard: dict[str, Any], router: dict[str, Any], article_h
         "template_router_schema": router.get("schema_version"),
         "driver_rules_schema": rules.get("schema_version"),
         "title": title,
-        "aspect": "9:16",
+        "aspect": storyboard.get("aspect") or "9:16",
         "duration_estimate_sec": round(cursor, 3),
         "scene_count": len(timeline),
         "timeline": timeline,

@@ -7,8 +7,8 @@ description: Use when entering publish stage and needing the mandatory pre-publi
 
 ## 默认路径
 
-- `DASHENG_WORKSPACE=${DASHENG_WORKSPACE:-/Volumes/PSSD/Projects/公众号文章}`
-- `FINANCE_MOTION_WORKSPACE=${FINANCE_MOTION_WORKSPACE:-/Volumes/PSSD/Projects/finance-motion-8787}`
+- `DASHENG_WORKSPACE=${DASHENG_WORKSPACE:-${DASHENG_PROJECT_ROOT}}`
+- `FINANCE_MOTION_WORKSPACE=${FINANCE_MOTION_WORKSPACE:-${PROJECTS_ROOT}/finance-motion-8787}`
 
 ## 阶段目标
 
@@ -87,7 +87,7 @@ python3 scripts/publish_video_supplement.py --style anime-light
 
 ```bash
 # 启动 Finance Motion 8787
-cd /Volumes/PSSD/Projects/finance-motion-8787
+cd ${PROJECTS_ROOT}/finance-motion-8787
 npm run dev
 # 访问 http://127.0.0.1:8787
 
@@ -99,19 +99,19 @@ npm run scenes:build
 ### Step 3: 转换为 Remotion 配置
 
 ```bash
-cd /Volumes/PSSD/Projects/dasheng-media-workflow-skills
+cd ${PROJECTS_ROOT}/dasheng-media-workflow-skills
 
 # 转换 Finance Motion 配置到 Remotion
 python3 scripts/convert_finance_motion_to_remotion.py \
-  --input /Volumes/PSSD/Projects/finance-motion-8787/dashboard/scenes.json \
-  --output /Users/lichengyin/clawd/remotion-video-starter/src/compositions/generated-config.json \
+  --input ${PROJECTS_ROOT}/finance-motion-8787/dashboard/scenes.json \
+  --output ${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/compositions/generated-config.json \
   --style claude-purple
 ```
 
 ### Step 4: Remotion 渲染
 
 ```bash
-cd /Users/lichengyin/clawd/remotion-video-starter
+cd ${LEGACY_OPENCLAW_ROOT}/remotion-video-starter
 
 # 预览（可选）
 npm start
@@ -144,6 +144,6 @@ npx remotion render FinanceNewsXhs out/video.mp4 --quality=100
 ## 相关文档
 
 - [视频模板风格定义](references/template-styles.md)
-- [Motion 系统整合指南](/Volumes/PSSD/Projects/dasheng-media-workflow-skills/docs/MOTION_INTEGRATION_GUIDE.md)
-- [Finance Motion 到 Remotion 转换器使用说明](/Volumes/PSSD/Projects/dasheng-media-workflow-skills/scripts/convert_finance_motion_to_remotion.py)
+- [Motion 系统整合指南](${PROJECTS_ROOT}/dasheng-media-workflow-skills/docs/MOTION_INTEGRATION_GUIDE.md)
+- [Finance Motion 到 Remotion 转换器使用说明](${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/convert_finance_motion_to_remotion.py)
 

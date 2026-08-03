@@ -54,8 +54,8 @@
   "metadata": {
     "phase2": {
       "script": "${OPENCLAW_WORKSPACE}/scripts/phase2_rebuilder.py",
-      "input_stage_root": "${OPENCLAW_WORKSPACE}/产物/01_内容采集",
-      "output_stage_root": "${OPENCLAW_WORKSPACE}/产物/02_内容聚合及选题分析",
+      "input_stage_root": "${DASHENG_OUTPUT_ROOT:-~/Desktop/自媒体创作}/01_内容采集",
+      "output_stage_root": "${DASHENG_OUTPUT_ROOT:-~/Desktop/自媒体创作}/02_内容聚合及选题分析",
       "default_candidate_count": 10,
       "manual_topic_flag": "--manual-topic",
       "manual_topic_supported": true

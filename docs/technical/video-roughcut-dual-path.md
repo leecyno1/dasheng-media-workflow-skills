@@ -1,8 +1,51 @@
-# 口播粗剪双路径实验记录
+# 口播粗剪多路径实验记录
 
 ## 目标
 
-在一段时间内并行保留两条口播粗剪路径，按真实素材比较质量、效率和稳定性，再决定后续合并、保留或删除。
+并行保留 Agent/FFmpeg、Palmier MCP 和剪映路径，按真实素材比较质量、效率和稳定性，再决定后续提升或降级。
+
+## 路径路由结论（2026-07-12）
+
+| 路径 | 当前级别 | 负责内容 |
+| --- | --- | --- |
+| Agent + FFmpeg | 基准主链 | ASR、语义删除清单、可追溯渲染、响度和 QC |
+| Palmier MCP | 对照实验，默认关闭 | 审核后区间的波纹删除、基础调色、H.264 导出 |
+| 剪映 + Replay | 生产默认 | 智能粗剪、智能剪口播、人工复听、美颜滤镜、音频和工作拷贝 |
+
+Palmier 不再通过 Computer Use 操作。Agent 可直接调用本地 MCP 做对照实验；但在自动删词、静音检测、撤销、逐片段降噪和工程持久化问题修复前，不得替代剪映生产链路。
+
+生产决策：粗剪全部回归“剪映 + Record & Replay”。Replay 必须覆盖导入、智能粗剪、智能剪口播、人工抽听、第一版导出、重新导入、视频音频处理和最终导出。不得跳过“碎片时间线导出后重新导入”这一步。
+
+## Palmier 受控样本
+
+- 测试版本：Palmier Pro `v0.6.5`，源码 HEAD `f0f5b47374a72295b5b169a57541ea5c0b2ce3d4`。
+- 测试原片：`${HOME}/Desktop/2026-7-11 21.11拍摄的影片.mov`。
+- 审核文件：`${HOME}/Desktop/自媒体创作/20260712_Palmier粗剪测试/palmier_roughcut_review_normalized.mp4`。
+- 原片 `625.868s`，最终 `563.067s`；42 个删除区间，共 1,797 帧/59.9 秒。
+- 安全链路：`ASR/Agent EDL -> ripple_delete_ranges -> apply_color -> export -> FFmpeg loudness/QC`。
+- 已发现缺陷：`remove_words` 删除量不一致、`undo` 破坏时间线、`remove_silence` 漏检、碎片降噪导出卡死、工程重开丢失、缺少人脸美颜、无响度归一化、本地中文 ASR 不适合终字幕。
+
+## 粗剪环节定义
+
+粗剪只负责让真人口播“可听、可接、可继续包装”，不负责最终视觉包装。
+
+必须产出：
+
+| 产物 | 用途 |
+| --- | --- |
+| `source_profile` | 原片路径、时长、分辨率、音频状态、是否已有字幕 |
+| `delete_candidates` | 水词、重复、长停顿、错话重启、自我修正等删除候选 |
+| `roughcut_review` | 用户/Agent 审核记录，高风险删除不能静默通过 |
+| `roughcut_video` | 审核后的粗剪视频或剪映草稿 |
+| `roughcut_gate_report` | 是否允许进入导演剪辑的门禁报告 |
+
+门禁原则：
+
+- 废话、错话、重说没处理完，不进导演剪辑。
+- 专名、年份、数字明显识别错，不进终片渲染。
+- 剪后出现吞字、突兀硬切、逻辑断裂，不进终片渲染。
+- 剪映路径也必须记录识别数量、分类、阈值、剪后时长和抽查结果。
+- 门禁不过关时，只允许生成待处理清单和分镜审阅页。
 
 ## 路径 A：Agent + 开源媒体链路
 
@@ -15,7 +58,6 @@
 - 时间轴映射：`scripts/video_roughcut_agent_align.py`
 - 渲染剪辑：FFmpeg
 - 音频增强：`highpass -> lowpass -> afftdn -> dynaudnorm -> acompressor -> loudnorm -> alimiter`
-- 视觉增强：`scripts/video_open_filter.py`，基于 FFmpeg 开源滤镜做暖光、柔化、增白和低风险轻拉瘦
 - 审核：本地 HTML 审核页和 manifest
 
 优点：
@@ -39,6 +81,7 @@
 - 不把剪映路径改造成复杂自动导出系统；当前痛点不是导出。
 - 允许使用 Computer Use 操作剪映专业版完成导入、智能剪口播、保存草稿。
 - 助理可通过剪映云端草稿继续处理，因此本地草稿可作为交付物。
+- 如果要固化新的剪映 UI 路径，必须先用 Record & Replay 录完整链路，再把稳定步骤写回 skill。
 
 技术栈：
 
@@ -73,22 +116,36 @@
 - 粗剪后时长变化。
 - 口水词和重复句去除效果。
 - 句子连续性和断句自然度。
+- 错话重说和自我修正是否被删除。
+- 专名、年份、数字是否需要二次字幕校对。
+- 剪映路径的识别数量、分类、静音/停顿阈值。
 - 字幕时间轴是否重叠、延迟或截断语义。
 - 音量、降噪和响度是否可直接审看。
 - 交付物是否方便人工助理继续接力。
 
+## Record & Replay 更新流程
+
+当重新录制剪映粗剪 workflow：
+
+1. 开启 Record & Replay。
+2. 完整执行：导入素材 -> 放入时间线 -> 粗剪 -> 智能剪口播 -> 检查删除结果 -> 导出或保存草稿。
+3. 停止录制后生成录屏摘要，记录 session、events、metadata 路径。
+4. 把稳定 UI 标签和可靠操作顺序写入全局 `video-rough-cut/references/recorded-workflow-summary.md`。
+5. 把抽象规则和门禁同步回 `skills/dasheng-video-roughcut/SKILL.md`。
+6. 不把一次录屏里的探索性误点写成可复用步骤。
+
 ## 当前样本
 
-- 原始素材备份：`/Users/lichengyin/Desktop/6月11日_双路径实验/input/6月11日_source.mov`
-- 现有路径 A 粗剪：`/Users/lichengyin/Desktop/6月11日_粗剪交付/6月11日_剪辑师安全版.mp4`
-- 现有路径 A 滤镜版：`/Users/lichengyin/Desktop/6月11日_滤镜交付/final/6月11日_剪辑师安全版_warm_cinema_medium.mp4`
-- 已发现剪映草稿：`/Users/lichengyin/Movies/JianyingPro/User Data/Projects/com.lveditor.draft/6月11日`
+- 原始素材备份：`${HOME}/Desktop/6月11日_双路径实验/input/6月11日_source.mov`
+- 现有路径 A 粗剪：`${HOME}/Desktop/6月11日_粗剪交付/6月11日_剪辑师安全版.mp4`
+- 现有路径 A 滤镜版：`${HOME}/Desktop/6月11日_滤镜交付/final/6月11日_剪辑师安全版_warm_cinema_medium.mp4`
+- 已发现剪映草稿：`${HOME}/Movies/JianyingPro/User Data/Projects/com.lveditor.draft/6月11日`
 
 ## 2026-06-12 实验记录：6月11日口播
 
 路径 A 基准：
 
-- 输入：`/Users/lichengyin/Desktop/6月11日_粗剪交付/6月11日_剪辑师安全版.mp4`
+- 输入：`${HOME}/Desktop/6月11日_粗剪交付/6月11日_剪辑师安全版.mp4`
 - 时长：`00:17:32.80`
 - 视频：`1920x1080 H.264`
 - 音频：`AAC`
@@ -97,8 +154,8 @@
 
 路径 B 剪映实验：
 
-- 输入：`/Users/lichengyin/Desktop/6月11日_双路径实验/input/6月11日_source.mov`
-- 草稿：`/Users/lichengyin/Movies/JianyingPro/User Data/Projects/com.lveditor.draft/6月12日`
+- 输入：`${HOME}/Desktop/6月11日_双路径实验/input/6月11日_source.mov`
+- 草稿：`${HOME}/Movies/JianyingPro/User Data/Projects/com.lveditor.draft/6月12日`
 - 操作方式：新建干净草稿 -> 导入原片 -> 根据选中素材新建时间线 -> 在时间线片段右键触发 `智能剪口播`
 - 剪映识别：`503` 个无效词
 - 剪映分类：约 `364` 个语气词、`25` 个重复、`54` 个停顿

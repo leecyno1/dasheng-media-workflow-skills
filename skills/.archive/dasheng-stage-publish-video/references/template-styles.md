@@ -85,7 +85,7 @@
 
 ### Remotion 组件
 
-文件：`/Users/lichengyin/clawd/remotion-video-starter/src/templates/ClaudePurple.jsx`
+文件：`${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/templates/ClaudePurple.jsx`
 
 已实现（基于 FinanceNewsXhs 组件）
 
@@ -163,7 +163,7 @@
 
 ### Remotion 组件
 
-文件：`/Users/lichengyin/clawd/remotion-video-starter/src/templates/Cyberpunk.jsx`
+文件：`${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/templates/Cyberpunk.jsx`
 
 待创建
 
@@ -238,7 +238,7 @@
 
 ### Remotion 组件
 
-文件：`/Users/lichengyin/clawd/remotion-video-starter/src/templates/FinanceBusiness.jsx`
+文件：`${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/templates/FinanceBusiness.jsx`
 
 待创建
 
@@ -319,7 +319,7 @@
 
 ### Remotion 组件
 
-文件：`/Users/lichengyin/clawd/remotion-video-starter/src/templates/MedicalLancet.jsx`
+文件：`${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/templates/MedicalLancet.jsx`
 
 待创建
 
@@ -401,7 +401,7 @@
 
 ### Remotion 组件
 
-文件：`/Users/lichengyin/clawd/remotion-video-starter/src/templates/AnimeLight.jsx`
+文件：`${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/templates/AnimeLight.jsx`
 
 待创建
 
@@ -470,9 +470,9 @@ python3 scripts/publish_video_supplement.py \
 
 ## 相关文档
 
-- [Motion 系统整合指南](/Volumes/PSSD/Projects/dasheng-media-workflow-skills/docs/MOTION_INTEGRATION_GUIDE.md)
-- [平台元数据规则](/Volumes/PSSD/Projects/dasheng-media-workflow-skills/skills/dasheng-stage-rewrite/references/platform-metadata.md)
-- [Publish 阶段说明](/Volumes/PSSD/Projects/dasheng-media-workflow-skills/skills/dasheng-stage-publish-video/SKILL.md)
+- [Motion 系统整合指南](${PROJECTS_ROOT}/dasheng-media-workflow-skills/docs/MOTION_INTEGRATION_GUIDE.md)
+- [平台元数据规则](${PROJECTS_ROOT}/dasheng-media-workflow-skills/skills/dasheng-stage-rewrite/references/platform-metadata.md)
+- [Publish 阶段说明](${PROJECTS_ROOT}/dasheng-media-workflow-skills/skills/dasheng-stage-publish-video/SKILL.md)
 
 ---
 

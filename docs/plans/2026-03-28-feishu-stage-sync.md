@@ -13,8 +13,8 @@
 ### Task 1: Expand token/config helpers
 
 **Files:**
-- Modify: `/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime/doc-registry.js`
-- Modify: `/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime/feishu-plan.js`
+- Modify: `${DASHENG_PROJECT_ROOT}/skills/dasheng-daily-shared/runtime/doc-registry.js`
+- Modify: `${DASHENG_PROJECT_ROOT}/skills/dasheng-daily-shared/runtime/feishu-plan.js`
 
 **Step 1:** Add folder token extraction and stage review config loading.
 **Step 2:** Add file discovery helpers that resolve stage markdown/report/material asset paths from both runtime-data and `产物/` outputs.
@@ -23,7 +23,7 @@
 ### Task 2: Replace docs-only plan with action model
 
 **Files:**
-- Modify: `/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime/feishu-plan.js`
+- Modify: `${DASHENG_PROJECT_ROOT}/skills/dasheng-daily-shared/runtime/feishu-plan.js`
 
 **Step 1:** Build date folder + stage folder plan from the Feishu config.
 **Step 2:** Build stage docs plan for intake/brief/draft/rewrite/material with local file bindings.
@@ -33,10 +33,10 @@
 ### Task 3: Update prepare/apply/finalize scripts
 
 **Files:**
-- Modify: `/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime/feishu-bridge.js`
-- Modify: `/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime/feishu-create-run.js`
-- Modify: `/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime/feishu-exec.js`
-- Modify: `/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime/runner.js`
+- Modify: `${DASHENG_PROJECT_ROOT}/skills/dasheng-daily-shared/runtime/feishu-bridge.js`
+- Modify: `${DASHENG_PROJECT_ROOT}/skills/dasheng-daily-shared/runtime/feishu-create-run.js`
+- Modify: `${DASHENG_PROJECT_ROOT}/skills/dasheng-daily-shared/runtime/feishu-exec.js`
+- Modify: `${DASHENG_PROJECT_ROOT}/skills/dasheng-daily-shared/runtime/runner.js`
 
 **Step 1:** Persist pending actions instead of pending docs.
 **Step 2:** Accept externally created resource maps and apply them back onto action requests.
@@ -46,8 +46,8 @@
 ### Task 4: Verify with representative runs
 
 **Files:**
-- Use run fixtures under `/Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime-data/runs`
-- Use outputs under `/Volumes/PSSD/Projects/公众号文章/产物`
+- Use run fixtures under `${DASHENG_PROJECT_ROOT}/skills/dasheng-daily-shared/runtime-data/runs`
+- Use outputs under `~/Desktop/自媒体创作`
 
 **Step 1:** Run `node feishu-plan.js` against a material-only run and a full content run.
 **Step 2:** Run `node feishu-exec.js --prepare` and bridge/materialize helpers.

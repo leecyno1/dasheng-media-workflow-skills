@@ -9,7 +9,8 @@ from pathlib import Path
 from typing import Any
 
 from path_config import get_project_root
-from prepare_publish_execution import check_route, choose_route, load_upstream_rows
+from prepare_publish_execution import check_route, choose_route, load_upstream_rows, resolve_root, route_can_be_confirm_executed
+from publish_accounts import build_report as build_account_report
 
 
 ROOT = get_project_root()
@@ -28,6 +29,7 @@ CHANNEL_ROUTE_TEMPLATES: dict[str, dict[str, Any]] = {
     "xiaohongshu_video": {
         "platform": "xiaohongshu",
         "route_priority": [
+            {"route": "social-auto-upload", "type": "external_uploader_fallback"},
             {"route": "all-in-one", "type": "api_first_cli"},
             {"route": "xhs-skills-spider-xhs", "type": "api_first_skill"},
             {"route": "xiaohongshu-mcp", "type": "mcp_fallback"},
@@ -46,9 +48,17 @@ CHANNEL_ROUTE_TEMPLATES: dict[str, dict[str, Any]] = {
     "bilibili_video": {
         "platform": "bilibili",
         "route_priority": [
+            {"route": "social-auto-upload", "type": "external_uploader_fallback"},
             {"route": "bilibili-upload-bridge", "type": "skill_bridge"},
             {"route": "biliup-rs", "type": "external_cli"},
+            {"route": "manual-package", "type": "manual_package"},
+        ],
+    },
+    "wechat_channels_video": {
+        "platform": "wechat_channels",
+        "route_priority": [
             {"route": "social-auto-upload", "type": "external_uploader_fallback"},
+            {"route": "browser-profile", "type": "browser_confirm_fallback"},
             {"route": "manual-package", "type": "manual_package"},
         ],
     },
@@ -65,6 +75,14 @@ CHANNEL_ROUTE_TEMPLATES: dict[str, dict[str, Any]] = {
             {"route": "xurl", "type": "external_api_cli_fallback"},
         ],
     },
+}
+
+ACCOUNT_OPERATIONS_SKILLS = {
+    "wechat_article": "wechat-account-launch-expert",
+    "xiaohongshu_video": "xiaohongshu-account-launch-expert",
+    "douyin_video": "douyin-account-launch-expert",
+    "wechat_channels_video": "channels-account-launch-expert",
+    "x_post": "x-twitter-cold-start-expert",
 }
 
 
@@ -164,11 +182,48 @@ def inspect_browser_profile(channel: str, profiles: dict[str, Any]) -> dict[str,
     }
 
 
+def inspect_account_operations(channel: str, rows: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    upstream_skill = ACCOUNT_OPERATIONS_SKILLS.get(channel)
+    if not upstream_skill:
+        return {
+            "applicable": False,
+            "available": False,
+            "reason": "no_account_operations_mapping",
+            "bridge_skill": "dasheng-publish-operations-bridge",
+            "upstream_skill": None,
+            "upstream_root": None,
+            "upstream_skill_path": None,
+        }
+    root = resolve_root(rows.get("agent-skills-launch-pack"))
+    skill_path = root / "skills" / upstream_skill / "SKILL.md" if root else None
+    bridge_path = ROOT / "skills" / "dasheng-publish-operations-bridge" / "SKILL.md"
+    upstream_available = bool(skill_path and skill_path.exists())
+    bridge_available = bridge_path.exists()
+    if upstream_available and bridge_available:
+        reason = "bridge_and_upstream_skill_found"
+    elif not bridge_available:
+        reason = "missing_publish_operations_bridge"
+    else:
+        reason = "missing_agent_skills_launch_pack_skill"
+    return {
+        "applicable": True,
+        "available": upstream_available and bridge_available,
+        "reason": reason,
+        "bridge_skill": "dasheng-publish-operations-bridge",
+        "bridge_skill_path": str(bridge_path),
+        "upstream_registry_name": "agent-skills-launch-pack",
+        "upstream_skill": upstream_skill,
+        "upstream_root": str(root) if root else None,
+        "upstream_skill_path": str(skill_path) if skill_path else None,
+    }
+
+
 def build_channel_report(channel: str, rows: dict[str, dict[str, Any]], profiles: dict[str, Any]) -> dict[str, Any]:
     request = build_dummy_request(channel, profiles)
     route_checks = [check_route(route, rows, request) for route in request["route_priority"]]
     selected = choose_route(route_checks)
     browser_profile = inspect_browser_profile(channel, profiles)
+    account_operations = inspect_account_operations(channel, rows)
     missing_dependencies = [
         {
             "route": check.get("route"),
@@ -191,24 +246,50 @@ def build_channel_report(channel: str, rows: dict[str, dict[str, Any]], profiles
         "selected_route_type": selected_type,
         "requires_user_confirmation": True,
         "will_not_publish": True,
+        "confirm_execute_supported": route_can_be_confirm_executed(selected),
         "available_browser_profiles": profile_keys_for_platform(str(request["platform"]), profiles),
         "browser_profile": browser_profile,
+        "account_operations": account_operations,
         "route_checks": route_checks,
         "missing_dependencies": missing_dependencies,
         "prepared_commands": selected.get("commands") if selected else [],
     }
 
 
-def build_report(channels: list[str]) -> dict[str, Any]:
+def build_report(channels: list[str], *, check_auth: bool = False) -> dict[str, Any]:
     rows = load_upstream_rows()
     profiles = browser_profiles()
     channel_reports = [build_channel_report(channel, rows, profiles) for channel in channels]
+    account_report = build_account_report(channels, check_auth=check_auth)
+    accounts_by_channel: dict[str, list[dict[str, Any]]] = {}
+    for account in account_report.get("accounts") or []:
+        accounts_by_channel.setdefault(str(account.get("channel")), []).append(account)
+    for channel_report in channel_reports:
+        account_slots = accounts_by_channel.get(str(channel_report.get("channel")), [])
+        channel_report["account_slots"] = account_slots
+        if check_auth and channel_report.get("selected_route") == "social-auto-upload":
+            selected_account = next((row for row in account_slots if row.get("default")), None)
+            if selected_account is None and account_slots:
+                selected_account = account_slots[0]
+            social_auth = next(
+                (
+                    item for item in (selected_account or {}).get("auth") or []
+                    if item.get("mode") == "social_auto_upload"
+                ),
+                None,
+            )
+            channel_report["selected_account_slot"] = (selected_account or {}).get("slot")
+            channel_report["selected_account_auth_status"] = (social_auth or {}).get("status") or "missing_account_registration"
+            if not social_auth or social_auth.get("status") != "valid":
+                channel_report["status"] = "blocked_auth_required"
+                channel_report["confirm_execute_supported"] = False
     return {
         "schema_version": "1.0",
         "created_at": now_iso(),
         "mode": "publish_doctor",
         "will_not_publish": True,
         "requires_user_confirmation": True,
+        "check_auth": check_auth,
         "channels": channel_reports,
         "summary": {
             "total_channels": len(channel_reports),
@@ -216,16 +297,32 @@ def build_report(channels: list[str]) -> dict[str, Any]:
             "blocked_count": sum(1 for item in channel_reports if str(item["status"]).startswith("blocked")),
             "missing_dependency_count": sum(len(item["missing_dependencies"]) for item in channel_reports),
             "browser_profile_configured_count": sum(1 for item in channel_reports if item["browser_profile"].get("configured")),
+            "operations_applicable_count": sum(1 for item in channel_reports if item["account_operations"].get("applicable")),
+            "operations_ready_count": sum(1 for item in channel_reports if item["account_operations"].get("available")),
+            "operations_missing_count": sum(
+                1
+                for item in channel_reports
+                if item["account_operations"].get("applicable") and not item["account_operations"].get("available")
+            ),
+            "account_slot_count": account_report["summary"]["account_slot_count"],
+            "account_login_required_count": account_report["summary"]["login_required_count"],
+            "cli_auth_valid_count": account_report["summary"]["cli_valid_count"],
+            "cli_auth_invalid_count": account_report["summary"]["cli_invalid_count"],
         },
         "safety": {
             "does_not_publish": True,
-            "does_not_read_cookies": True,
+            "does_not_read_cookies": not check_auth,
+            "does_not_export_cookies": True,
+            "does_not_expose_cookie_contents": True,
             "does_not_open_browser": True,
+            "auth_check_delegates_to_upstream": check_auth,
             "checks_only": [
                 "local skill SKILL.md presence",
                 "external upstream root presence",
+                "external account operations skill presence",
                 "CLI binary presence",
                 "persistent browser profile configuration",
+                "non-secret account slot registry",
             ],
         },
     }
@@ -245,12 +342,18 @@ def render_markdown(report: dict[str, Any]) -> str:
         f"- 阻塞：`{summary['blocked_count']}`",
         f"- 缺失依赖项：`{summary['missing_dependency_count']}`",
         f"- 已配置浏览器 Profile：`{summary['browser_profile_configured_count']}`",
+        f"- 可用账号运营 Skill：`{summary['operations_ready_count']}/{summary['operations_applicable_count']}`",
+        f"- 注册账号槽：`{summary['account_slot_count']}`",
+        f"- 需要登录账号槽：`{summary['account_login_required_count']}`",
+        f"- CLI 登录有效/失效：`{summary['cli_auth_valid_count']}/{summary['cli_auth_invalid_count']}`",
         "",
         "## 渠道明细",
         "",
     ]
     for channel in report["channels"]:
         profile = channel["browser_profile"]
+        operations = channel["account_operations"]
+        account_slots = channel.get("account_slots") or []
         lines.extend(
             [
                 f"### {channel['channel']}",
@@ -265,8 +368,20 @@ def render_markdown(report: dict[str, Any]) -> str:
                 f"- Profile 目录：`{profile.get('profile_dir') or 'none'}`",
                 f"- Profile 已创建：`{profile.get('profile_dir_exists', False)}`",
                 f"- 打开命令：`{profile.get('open_command') or 'none'}`",
+                f"- 默认账号槽：`{channel.get('selected_account_slot') or 'none'}`",
+                f"- 默认账号认证：`{channel.get('selected_account_auth_status') or 'not_checked'}`",
+                f"- 运营桥接：`{operations.get('reason')}`",
+                f"- 运营上游 Skill：`{operations.get('upstream_skill') or 'none'}`",
+                f"- 运营 Skill 路径：`{operations.get('upstream_skill_path') or 'none'}`",
             ]
         )
+        if account_slots:
+            lines.extend(["", "账号槽："])
+            for account in account_slots:
+                auth_status = ", ".join(
+                    f"{item.get('mode')}={item.get('status')}" for item in account.get("auth") or []
+                )
+                lines.append(f"- `{account.get('slot')}` {account.get('label')}：`{account.get('status')}` ({auth_status})")
         missing = channel.get("missing_dependencies") or []
         if missing:
             lines.extend(["", "缺失依赖："])
@@ -297,9 +412,10 @@ def main() -> None:
     parser.add_argument("--channel", action="append", help="Channel to check; may be repeated or comma-separated.")
     parser.add_argument("--output-json", help="Optional JSON report path.")
     parser.add_argument("--output-md", help="Optional Markdown report path.")
+    parser.add_argument("--check-auth", action="store_true", help="Delegate CLI account login validation without publishing.")
     args = parser.parse_args()
 
-    report = build_report(parse_channels(args.channel))
+    report = build_report(parse_channels(args.channel), check_auth=args.check_auth)
     if args.output_json:
         write_json(Path(args.output_json).expanduser().resolve(), report)
     if args.output_md:

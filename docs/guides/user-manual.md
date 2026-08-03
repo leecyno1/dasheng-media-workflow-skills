@@ -566,10 +566,10 @@ new_style = StyleDNAConfig(
 
 ```bash
 # 查看最新执行报告
-cat 产物/runs/latest/execution_report.json
+cat ~/Desktop/自媒体创作/runs/latest/execution_report.json
 
 # 查看特定Run的报告
-cat 产物/runs/2026-04-13_123456/execution_report.json
+cat ~/Desktop/自媒体创作/runs/2026-04-13_123456/execution_report.json
 ```
 
 ### Q5: 如何导出到飞书？

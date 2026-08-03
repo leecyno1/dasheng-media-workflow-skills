@@ -7,9 +7,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from validate_publish_form import validate_channel_pack
+
 
 TEXT_CHANNELS = {"wechat_article", "weibo_post", "x_post"}
-VIDEO_CHANNELS = {"xiaohongshu_video", "douyin_video", "bilibili_video"}
+VIDEO_CHANNELS = {"xiaohongshu_video", "douyin_video", "bilibili_video", "wechat_channels_video"}
 
 
 def now_iso() -> str:
@@ -35,7 +37,11 @@ def existing_or_raw(value: Any) -> str | None:
 def common_metadata(pack: dict[str, Any]) -> dict[str, Any]:
     metadata = pack.get("publish_metadata") or {}
     return {
+        "task_id": pack.get("task_id"),
+        "batch_id": pack.get("batch_id"),
         "topic_id": pack.get("topic_id"),
+        "variant_id": pack.get("variant_id"),
+        "account_slot": pack.get("account_slot"),
         "title": metadata.get("title") or pack.get("title"),
         "summary": metadata.get("summary") or metadata.get("description") or "",
         "tags": metadata.get("tags") or [],
@@ -44,22 +50,6 @@ def common_metadata(pack: dict[str, Any]) -> dict[str, Any]:
         "cover": existing_or_raw(metadata.get("cover")),
         "platform_notes": metadata.get("platform_notes") or {},
     }
-
-
-def validate_pack(pack: dict[str, Any]) -> list[str]:
-    channel = pack.get("channel")
-    errors: list[str] = []
-    metadata = common_metadata(pack)
-    artifacts = pack.get("artifact_hint") or {}
-    if not channel:
-        errors.append("missing_channel")
-    if not metadata["title"]:
-        errors.append("missing_title")
-    if channel in TEXT_CHANNELS and not (artifacts.get("wechat_html") or artifacts.get("wechat_markdown")):
-        errors.append("missing_text_artifact")
-    if channel in VIDEO_CHANNELS and not artifacts.get("video"):
-        errors.append("missing_video_artifact")
-    return errors
 
 
 def build_wechat_payload(pack: dict[str, Any], channel_pack_path: Path) -> dict[str, Any]:
@@ -164,6 +154,11 @@ def build_payload(pack: dict[str, Any], channel_pack_path: Path) -> dict[str, An
         "will_not_publish": True,
         "requires_user_confirmation": True,
         "channel": channel,
+        "task_id": pack.get("task_id"),
+        "batch_id": pack.get("batch_id"),
+        "topic_id": pack.get("topic_id"),
+        "variant_id": pack.get("variant_id"),
+        "account_slot": pack.get("account_slot"),
         "platform": pack.get("platform") or channel,
         "payload": payload,
         "safety": {
@@ -176,8 +171,17 @@ def build_payload(pack: dict[str, Any], channel_pack_path: Path) -> dict[str, An
 
 def build_package(channel_pack_path: Path) -> dict[str, Any]:
     pack = read_json(channel_pack_path)
-    errors = validate_pack(pack)
+    validation = validate_channel_pack(pack, source_path=channel_pack_path)
+    validation_path = channel_pack_path.parent / "platform_form_validation.json"
+    write_json(validation_path, validation)
+    errors = [str(item.get("code")) for item in validation.get("blocking_errors") or []]
     payload = build_payload(pack, channel_pack_path)
+    payload["platform_form_validation"] = {
+        "status": validation["status"],
+        "report": str(validation_path.resolve()),
+        "blocking_error_count": validation["summary"]["blocking_error_count"],
+        "warning_count": validation["summary"]["warning_count"],
+    }
     if errors:
         payload["status"] = "blocked"
         payload["errors"] = errors
@@ -188,7 +192,9 @@ def build_package(channel_pack_path: Path) -> dict[str, Any]:
         "status": payload["status"],
         "channel_pack": str(channel_pack_path.resolve()),
         "publish_payload": str(output_path.resolve()),
+        "platform_form_validation": str(validation_path.resolve()),
         "errors": errors,
+        "warnings": [str(item.get("code")) for item in validation.get("warnings") or []],
         "will_not_publish": True,
     }
 

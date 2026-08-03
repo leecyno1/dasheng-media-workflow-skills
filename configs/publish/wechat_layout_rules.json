@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-15",
+  "updated_at": "2026-07-13",
   "default_variant": "editorial_blue_left",
   "available_variants": [
     "editorial_blue_left",
@@ -31,6 +31,20 @@
       "avoid": [
         "global_blue_text",
         "global_bold_text"
+      ]
+    },
+    "conceptual_illustrations": {
+      "skill": "dasheng-lemon-illustrations",
+      "intent_source": "03_IllustrationIntents_<topic>.json",
+      "placement": "immediately_after_matching_paragraph",
+      "aspect_ratio": "16:9",
+      "max_width_percent": 100,
+      "caption": "optional_one_line_without_repeating_paragraph",
+      "avoid": [
+        "all_illustrations_appended_at_article_end",
+        "cute_mascot_without_explanatory_action",
+        "comic_replacing_real_evidence",
+        "one_comic_per_paragraph"
       ]
     }
   },

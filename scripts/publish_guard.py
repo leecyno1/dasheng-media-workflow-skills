@@ -8,12 +8,21 @@ from pathlib import Path
 from typing import Any
 
 from canonical_workflow import WorkflowContractError, ensure_stage_manifest
-from record_publish_result import aggregate_publish_state, result_identity, result_is_draft, result_is_published
+from record_publish_result import aggregate_publish_state, identity_payload, result_identity, result_is_draft, result_is_published
 
 
 CORE_RESULT_FIELDS = {
+    "attempt_id",
+    "attempt_number",
+    "failure_category",
+    "retryable",
+    "retry_not_before",
+    "task_id",
+    "batch_id",
     "topic_id",
+    "variant_id",
     "channel",
+    "account_slot",
     "platform",
     "success",
     "status",
@@ -50,11 +59,11 @@ def publish_root_from_manifest(path: Path) -> Path:
     return path.expanduser().resolve().parent
 
 
-def latest_records(records: list[dict[str, Any]]) -> dict[tuple[str, str], dict[str, Any]]:
-    latest: dict[tuple[str, str], dict[str, Any]] = {}
+def latest_records(records: list[dict[str, Any]]) -> dict[tuple[str, str, str], dict[str, Any]]:
+    latest: dict[tuple[str, str, str], dict[str, Any]] = {}
     for record in records:
         key = result_identity(record)
-        if key == ("", ""):
+        if key == ("legacy", "", ""):
             continue
         latest[key] = record
     return latest
@@ -92,16 +101,15 @@ def result_file_issues(record: dict[str, Any]) -> list[str]:
 
 def target_rows(manifest: dict[str, Any]) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
-    seen: set[tuple[str, str]] = set()
+    seen: set[tuple[str, str, str]] = set()
     for pack in manifest.get("channel_packs") or []:
         key = result_identity(pack)
-        if key == ("", "") or key in seen:
+        if key == ("legacy", "", "") or key in seen:
             continue
         seen.add(key)
         rows.append(
             {
-                "topic_id": key[0],
-                "channel": key[1],
+                **identity_payload(pack),
                 "title": pack.get("title"),
                 "status": pack.get("status"),
                 "pack_manifest": pack.get("pack_manifest"),
@@ -143,8 +151,7 @@ def classify_record(record: dict[str, Any]) -> tuple[str, list[str]]:
 def expected_published_links(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return [
         {
-            "topic_id": item.get("topic_id"),
-            "channel": item.get("channel"),
+            **identity_payload(item),
             "platform": item.get("platform"),
             "url": item.get("platform_url"),
             "status": item.get("status"),
@@ -157,8 +164,7 @@ def expected_published_links(records: list[dict[str, Any]]) -> list[dict[str, An
 def expected_draft_records(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return [
         {
-            "topic_id": item.get("topic_id"),
-            "channel": item.get("channel"),
+            **identity_payload(item),
             "platform": item.get("platform"),
             "draft_id": item.get("draft_id"),
             "draft_url": item.get("draft_url") or (item.get("platform_url") if item.get("status") == "draft" else None),
@@ -170,7 +176,16 @@ def expected_draft_records(records: list[dict[str, Any]]) -> list[dict[str, Any]
 
 
 def simplified_links(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    return sorted(rows, key=lambda item: (str(item.get("topic_id")), str(item.get("channel")), str(item.get("url") or item.get("draft_id") or "")))
+    return sorted(
+        rows,
+        key=lambda item: (
+            str(item.get("task_id") or ""),
+            str(item.get("topic_id") or ""),
+            str(item.get("channel") or ""),
+            str(item.get("account_slot") or ""),
+            str(item.get("url") or item.get("draft_id") or ""),
+        ),
+    )
 
 
 def build_guard_report(publish_manifest_path: Path) -> dict[str, Any]:
@@ -283,7 +298,10 @@ def build_guard_report(publish_manifest_path: Path) -> dict[str, Any]:
             "blocking_issue_count": blocking_issue_count,
             "pending_guard_count": pending_count,
             "consistency_issues": consistency_issues,
-            "unexpected_record_keys": [{"topic_id": item[0], "channel": item[1]} for item in unexpected_record_keys],
+            "unexpected_record_keys": [
+                ({"task_id": item[1]} if item[0] == "task" else {"topic_id": item[1], "channel": item[2]})
+                for item in unexpected_record_keys
+            ],
         },
         "channel_checks": channel_checks,
         "expected_published_links": expected_links,

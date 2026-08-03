@@ -1,6 +1,11 @@
 # local secrets
 .env
 .tushare_token
+/configs/image_generation/providers.local.env
+/configs/image_generation/*.local.env
+/configs/feishu/*_bot_config.json
+/configs/feishu/*_migration_status_*.md
+/configs/publish/account_registry.local.json
 
 # OS/editor noise
 .DS_Store
@@ -9,6 +14,7 @@
 # python
 .venv/
 .venv_media/
+.venv-qc/
 __pycache__/
 *.pyc
 
@@ -23,13 +29,19 @@ skills/dasheng-daily-shared/runtime-data/runs/
 # generated charts
 figures/
 
-# generated workflow/content outputs (now default to ~/Desktop/自媒体创作)
+# generated workflow/content outputs (canonical output root: ~/Desktop/自媒体创作)
 /产物/
 /素材/
+/项目/运行产物/
+/项目/临时产物/
+/项目/视频产物/
+/项目/音频产物/
 
 # temporary files and build artifacts
 /tmp/
 /交付镜像/
+/scratch/
+/quarantine/
 
 # one-off scripts (use scripts/ directory for project scripts)
 feishu_image_refill.py
@@ -131,3 +143,24 @@ configs/paths.local.yaml
 /skills/weather/
 /skills/writing-skills/
 /skills/yfinance-data/
+
+# archived duplicate global skills kept out of active project skill surface
+/skills/.archive_global_duplicates/
+/skills/.archive_official_overlaps/
+/skills/.archive_external_candidates/
+
+# project-local upstream dependencies (independent repositories and runtime state)
+/vendor/publish/social-auto-upload/
+/vendor/reserved/
+
+# generated distributable mirrors; rebuild with scripts/export_skill_suite.py
+/openclaw-skill-exports/
+
+# local source snapshots and creator projects
+/data/wechat_scrapes/
+/data/xiaohongshu_scrapes/
+/项目/进行中/
+
+# generated local review sites
+/docs/technical/*.review.html
+/docs/technical/video-technical-stack-registry.html

@@ -306,7 +306,7 @@ class RewriteExecutor:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Rewrite Stage 5 - 改写执行")
     parser.add_argument("--draft-manifest", required=True, help="Draft manifest JSON文件路径")
-    parser.add_argument("--output-dir", help="输出目录（默认：产物/06_改写/<run_id>）")
+    parser.add_argument("--output-dir", help="输出目录（默认：~/Desktop/自媒体创作/06_改写/<run_id>）")
     parser.add_argument("--run-id", help="运行ID（默认：从draft manifest读取）")
     parser.add_argument("--versions", help="版本列表（逗号分隔，默认：wechat_hot,wechat_normal,xiaohongshu_hot,xiaohongshu_normal）")
     parser.add_argument("--json-output", action="store_true", help="输出JSON格式到stdout")

@@ -308,13 +308,49 @@ def map_time(t: float, deletes: list[dict[str, Any]]) -> float | None:
     return max(0.0, t - removed)
 
 
+def select_expression(keeps: list[dict[str, float]]) -> str:
+    if not keeps:
+        raise ValueError("At least one keep range is required")
+    return "+".join(
+        f"between(t\\,{float(keep['start']):.6f}\\,{float(keep['end']):.6f})"
+        for keep in keeps
+    )
+
+
+def timestamp_rebuild_expression(keeps: list[dict[str, float]]) -> str:
+    gap_terms = []
+    for previous, current in zip(keeps, keeps[1:]):
+        gap = max(0.0, float(current["start"]) - float(previous["end"]))
+        if gap <= 0:
+            continue
+        gap_terms.append(f"gte(T\\,{float(current['start']):.6f})*{gap:.6f}")
+    if not gap_terms:
+        return "PTS-STARTPTS"
+    return f"(PTS-STARTPTS)-({'+'.join(gap_terms)})/TB"
+
+
 def render_video(source: Path, keeps: list[dict[str, float]], output: Path, work_dir: Path) -> None:
-    concat_path = work_dir / "agent_keep_ranges.ffconcat"
-    escaped = str(source.resolve()).replace("'", "'\\''")
-    lines = ["ffconcat version 1.0"]
-    for keep in keeps:
-        lines.extend([f"file '{escaped}'", f"inpoint {keep['start']:.3f}", f"outpoint {keep['end']:.3f}"])
-    concat_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    # Repeated concat-demuxer in/out points on AAC sources can accumulate decoder
+    # priming samples. Select once from the original streams and rebuild both
+    # timelines so the consolidated rough cut stays sample-accurate.
+    expression = select_expression(keeps)
+    rebuilt_pts = timestamp_rebuild_expression(keeps)
+    filter_complex = (
+        f"[0:v:0]select={expression},setpts={rebuilt_pts}[v];"
+        f"[0:a:0]aselect={expression},asetpts={rebuilt_pts},"
+        f"aresample=48000,{AUDIO_ENHANCE_FILTER}[a]"
+    )
+    write_json(
+        work_dir / "agent_render_timeline.json",
+        {
+            "method": "single_decode_select_and_timestamp_rebuild",
+            "keep_ranges": keeps,
+            "expected_duration_sec": round(
+                sum(float(keep["end"]) - float(keep["start"]) for keep in keeps),
+                3,
+            ),
+        },
+    )
     output.parent.mkdir(parents=True, exist_ok=True)
     run(
         [
@@ -323,12 +359,14 @@ def render_video(source: Path, keeps: list[dict[str, float]], output: Path, work
             "-loglevel",
             "error",
             "-y",
-            "-safe",
-            "0",
-            "-f",
-            "concat",
             "-i",
-            str(concat_path),
+            str(source),
+            "-filter_complex",
+            filter_complex,
+            "-map",
+            "[v]",
+            "-map",
+            "[a]",
             "-c:v",
             "libx264",
             "-preset",
@@ -339,8 +377,8 @@ def render_video(source: Path, keeps: list[dict[str, float]], output: Path, work
             "aac",
             "-b:a",
             "192k",
-            "-af",
-            AUDIO_ENHANCE_FILTER,
+            "-ar",
+            "48000",
             "-movflags",
             "+faststart",
             str(output),

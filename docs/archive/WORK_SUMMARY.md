@@ -214,7 +214,7 @@ Intake → Brief (AI) → Draft (框架) → Material (AI) → Rewrite → Publi
 3. `README.md`
 
 ### 测试输出
-1. `/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-04_204231_ai/`
+1. `${DASHENG_PROJECT_ROOT}/产物/02_Brief/2026-04-04_204231_ai/`
    - `selected_topics.json`
    - `02_编辑Brief库.md`
    - `brief_manifest.json`

@@ -133,17 +133,17 @@ openclaw skills list | grep -E "social-copy|wechat-video|auto-publisher"
 
 ## Files Created
 
-1. `/Volumes/PSSD/Projects/dasheng-media-workflow-skills/docs/CLAWHUB_SKILLS_INSTALLATION.md`
+1. `${PROJECTS_ROOT}/dasheng-media-workflow-skills/docs/CLAWHUB_SKILLS_INSTALLATION.md`
    - ClawHub 技能安装指南
    - 3 个目标技能的详细信息
    - 安全验证步骤
 
-2. `/Volumes/PSSD/Projects/dasheng-media-workflow-skills/docs/MCP_SERVICES_COMPARISON.md`
+2. `${PROJECTS_ROOT}/dasheng-media-workflow-skills/docs/MCP_SERVICES_COMPARISON.md`
    - Postiz vs Aidelly 详细对比
    - 中国平台支持研究
    - 为何不迁移到 MCP 的分析
 
-3. `/Users/lichengyin/.claude/plans/ancient-jingling-mochi.md`
+3. `${HOME}/.claude/plans/ancient-jingling-mochi.md`
    - 完整研究计划和发现
    - 原始 MCP 迁移方案（已取消）
    - 修订后的实施计划

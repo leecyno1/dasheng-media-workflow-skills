@@ -453,7 +453,7 @@ python3 scripts/rewrite_rerun_with_final_structure.py
 
 ## 相关文档
 
-- 完整规划：`/Users/lichengyin/.claude/plans/gleaming-rolling-petal.md`
+- 完整规划：`${HOME}/.claude/plans/gleaming-rolling-petal.md`
 - 问题分析：`BRIEF_PROBLEM_ANALYSIS.md`
 - 测试报告：`BRIEF_AI_TEST_REPORT.md`
 - 对比文档：`BRIEF_AI_COMPARISON.md`

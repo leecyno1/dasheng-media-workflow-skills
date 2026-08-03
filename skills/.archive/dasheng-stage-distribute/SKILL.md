@@ -7,8 +7,8 @@ description: Use when entering the distribute stage to publish rewritten content
 
 ## 默认路径
 
-- `DASHENG_WORKSPACE=${DASHENG_WORKSPACE:-/Volumes/PSSD/Projects/公众号文章}`
-- `OPENCLAW_SKILLS=${OPENCLAW_SKILLS:-/Users/lichengyin/.openclaw/skills}`
+- `DASHENG_WORKSPACE=${DASHENG_WORKSPACE:-${DASHENG_PROJECT_ROOT}}`
+- `OPENCLAW_SKILLS=${OPENCLAW_SKILLS:-${HOME}/.openclaw/skills}`
 
 ## 阶段目标
 
@@ -157,7 +157,7 @@ npx -y bun scripts/x-browser.ts "{主推文内容}" --image "产物/04_Material/
 使用自动化脚本 `distribute_xiaohongshu.py`：
 
 ```bash
-cd /Volumes/PSSD/Projects/dasheng-media-workflow-skills
+cd ${PROJECTS_ROOT}/dasheng-media-workflow-skills
 
 # 预览发布计划（dry run）
 python3 scripts/distribute_xiaohongshu.py {run_id} --dry-run

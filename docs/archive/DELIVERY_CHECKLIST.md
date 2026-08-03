@@ -257,7 +257,7 @@ print(f'✅ 系统就绪: {ctx.run_id}')
 
 ```bash
 python3 skill_package/installer.py install \
-  /Volumes/PSSD/Projects/lobster-world/skills/dasheng-media-platform
+  ${PROJECTS_ROOT}/lobster-world/skills/dasheng-media-platform
 ```
 
 ---

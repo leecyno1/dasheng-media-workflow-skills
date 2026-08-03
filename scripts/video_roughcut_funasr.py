@@ -417,13 +417,46 @@ def complement_ranges(deletes: list[dict[str, Any]], duration: float, min_keep: 
     return keep
 
 
+def select_expression(keep_ranges: list[dict[str, float]]) -> str:
+    if not keep_ranges:
+        raise ValueError("At least one keep range is required")
+    return "+".join(
+        f"between(t\\,{float(keep['start']):.6f}\\,{float(keep['end']):.6f})"
+        for keep in keep_ranges
+    )
+
+
+def timestamp_rebuild_expression(keep_ranges: list[dict[str, float]]) -> str:
+    gap_terms = []
+    for previous, current in zip(keep_ranges, keep_ranges[1:]):
+        gap = max(0.0, float(current["start"]) - float(previous["end"]))
+        if gap <= 0:
+            continue
+        gap_terms.append(f"gte(T\\,{float(current['start']):.6f})*{gap:.6f}")
+    if not gap_terms:
+        return "PTS-STARTPTS"
+    return f"(PTS-STARTPTS)-({'+'.join(gap_terms)})/TB"
+
+
 def render_concat(video: Path, keep_ranges: list[dict[str, float]], output: Path, work_dir: Path) -> None:
-    concat_path = work_dir / "keep_ranges.ffconcat"
-    escaped = str(video.resolve()).replace("'", "'\\''")
-    lines = ["ffconcat version 1.0"]
-    for keep in keep_ranges:
-        lines.extend([f"file '{escaped}'", f"inpoint {keep['start']:.3f}", f"outpoint {keep['end']:.3f}"])
-    write_text(concat_path, "\n".join(lines))
+    expression = select_expression(keep_ranges)
+    rebuilt_pts = timestamp_rebuild_expression(keep_ranges)
+    filter_complex = (
+        f"[0:v:0]select={expression},setpts={rebuilt_pts}[v];"
+        f"[0:a:0]aselect={expression},asetpts={rebuilt_pts},"
+        f"aresample=48000,{AUDIO_ENHANCE_FILTER}[a]"
+    )
+    write_json(
+        work_dir / "render_timeline.json",
+        {
+            "method": "single_decode_select_and_timestamp_rebuild",
+            "keep_ranges": keep_ranges,
+            "expected_duration_sec": round(
+                sum(float(keep["end"]) - float(keep["start"]) for keep in keep_ranges),
+                3,
+            ),
+        },
+    )
     output.parent.mkdir(parents=True, exist_ok=True)
     run(
         [
@@ -432,12 +465,14 @@ def render_concat(video: Path, keep_ranges: list[dict[str, float]], output: Path
             "-loglevel",
             "error",
             "-y",
-            "-safe",
-            "0",
-            "-f",
-            "concat",
             "-i",
-            str(concat_path),
+            str(video),
+            "-filter_complex",
+            filter_complex,
+            "-map",
+            "[v]",
+            "-map",
+            "[a]",
             "-c:v",
             "libx264",
             "-preset",
@@ -448,8 +483,8 @@ def render_concat(video: Path, keep_ranges: list[dict[str, float]], output: Path
             "aac",
             "-b:a",
             "160k",
-            "-af",
-            AUDIO_ENHANCE_FILTER,
+            "-ar",
+            "48000",
             "-movflags",
             "+faststart",
             str(output),
@@ -1330,6 +1365,11 @@ def main() -> None:
     parser.add_argument("--silence-padding", type=float, default=0.16)
     parser.add_argument("--max-silence-remove-ratio", type=float, default=0.35)
     parser.add_argument("--mode", choices=["conservative", "balanced"], default="balanced")
+    parser.add_argument(
+        "--transcribe-only",
+        action="store_true",
+        help="Generate aligned ASR artifacts without rendering another video copy.",
+    )
     args = parser.parse_args()
 
     source = Path(args.input_video).expanduser().resolve()
@@ -1349,6 +1389,26 @@ def main() -> None:
     segments, asr_payload, timebase_correction = align_asr_timebase(segments, asr_payload, source_duration)
     write_json(work_dir / "funasr_raw.json", asr_payload)
     write_json(work_dir / "segments.json", [seg.as_dict() for seg in segments])
+
+    if args.transcribe_only:
+        srt = out_dir / f"{source.stem}_funasr_locked.srt"
+        write_srt(srt, segments, [])
+        manifest = {
+            "stage": "video_transcription_lock",
+            "status": "transcribed",
+            "engine": "funasr_paraformer_zh_fsmn_vad_ct_punc",
+            "created_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
+            "source_video": str(source.resolve()),
+            "source_duration_sec": round(source_duration, 3),
+            "segment_count": len(segments),
+            "segments": str((work_dir / "segments.json").resolve()),
+            "funasr_raw": str((work_dir / "funasr_raw.json").resolve()),
+            "subtitle_srt": str(srt.resolve()),
+            "asr_timebase_correction": timebase_correction,
+        }
+        write_json(out_dir / "transcription_manifest.json", manifest)
+        print(json.dumps(manifest, ensure_ascii=False, indent=2))
+        return
 
     silence = silence_ranges(audio, source_duration, args.silence_threshold, args.min_silence, args.silence_padding)
     semantic = semantic_candidates(segments)

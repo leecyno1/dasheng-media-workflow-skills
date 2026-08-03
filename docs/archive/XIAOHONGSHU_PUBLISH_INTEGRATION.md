@@ -76,7 +76,7 @@ openclaw skill xiaohongshu-auto list
 #### 2.1 Dry Run（预览模式）
 
 ```bash
-cd /Volumes/PSSD/Projects/dasheng-media-workflow-skills
+cd ${PROJECTS_ROOT}/dasheng-media-workflow-skills
 
 # 预览发布计划，不实际发布
 python3 scripts/distribute_xiaohongshu.py 2026-04-05_075240_ai --dry-run
@@ -86,7 +86,7 @@ python3 scripts/distribute_xiaohongshu.py 2026-04-05_075240_ai --dry-run
 ```
 🚀 开始小红书分发流程
    Run ID: 2026-04-05_075240_ai
-   Workspace: /Volumes/PSSD/Projects/公众号文章
+   Workspace: ${DASHENG_PROJECT_ROOT}
    Dry Run: True
 
 📖 加载 manifests...
@@ -129,7 +129,7 @@ python3 scripts/distribute_xiaohongshu.py 2026-04-05_075240_ai
 
 ```bash
 # 查看发布结果
-cat /Volumes/PSSD/Projects/公众号文章/产物/08_Distribute/2026-04-05_075240_ai/xiaohongshu_distribute_result.json
+cat ${DASHENG_PROJECT_ROOT}/产物/08_Distribute/2026-04-05_075240_ai/xiaohongshu_distribute_result.json
 ```
 
 结果格式：
@@ -258,7 +258,7 @@ openclaw browser start --profile openclaw
 
 ```bash
 # 查看详细错误日志
-cat /Volumes/PSSD/Projects/公众号文章/产物/08_Distribute/{run_id}/xiaohongshu_distribute_result.json
+cat ${DASHENG_PROJECT_ROOT}/产物/08_Distribute/{run_id}/xiaohongshu_distribute_result.json
 
 # 检查 xiaohongshu-auto 日志
 tail -f ~/.openclaw/logs/xiaohongshu-auto.log
@@ -268,7 +268,7 @@ tail -f ~/.openclaw/logs/xiaohongshu-auto.log
 
 ```bash
 # 检查 publish 阶段是否完成
-ls /Volumes/PSSD/Projects/公众号文章/产物/07_Publish/{run_id}/videos/motion_narrative/
+ls ${DASHENG_PROJECT_ROOT}/产物/07_Publish/{run_id}/videos/motion_narrative/
 
 # 如果视频未生成，先运行 publish 阶段
 ```

@@ -114,9 +114,10 @@ CHANNEL_ALIASES = {
     "wechat_mp": "wechat_article",
     "public_wechat": "wechat_article",
     "wechat_official_account": "wechat_article",
-    "wechat_video": "wechat_video",
-    "video_channel": "wechat_video",
-    "shipinhao": "wechat_video",
+    "wechat_video": "wechat_channels_video",
+    "wechat_channels_video": "wechat_channels_video",
+    "video_channel": "wechat_channels_video",
+    "shipinhao": "wechat_channels_video",
     "xhs": "xiaohongshu_video",
     "xiaohongshu": "xiaohongshu_video",
     "xiaohongshu_video": "xiaohongshu_video",
@@ -184,13 +185,14 @@ CHANNEL_EXECUTION_RULES = {
         "requires_video": False,
         "helper_skills": ["wechat-multi-publisher", "md2wechat", "wechat-public-cli", "publish-guard"],
     },
-    "wechat_video": {
-        "executor_skill": None,
+    "wechat_channels_video": {
+        "executor_skill": "social-auto-upload-bridge",
         "source_skill_path": None,
-        "supporting_skill": None,
-        "automation_level": "manual_only",
-        "mode": "export_only",
+        "supporting_skill": "publish-guard",
+        "automation_level": "guarded_external_cli",
+        "mode": "dry_run_then_confirm_execute",
         "requires_video": True,
+        "helper_skills": ["publish-guard"],
     },
     "xiaohongshu_video": {
         "executor_skill": "xiaohongshu-auto",
@@ -270,7 +272,7 @@ CHANNEL_EXECUTION_RULES = {
 
 CHANNEL_VARIANT_PREFERENCES = {
     "wechat_article": ["draft_publish", "wechat_luxun_hot", "wechat_lemon_normal"],
-    "wechat_video": ["xhs_video_luxun_hot", "xhs_video_lemon_normal"],
+    "wechat_channels_video": ["xhs_video_luxun_hot", "xhs_video_lemon_normal"],
     "xiaohongshu_video": ["xhs_video_luxun_hot", "xhs_video_lemon_normal"],
     "xiaohongshu_image": ["draft_publish", "xhs_video_luxun_hot", "xhs_video_lemon_normal", "wechat_luxun_hot"],
     "douyin_video": ["xhs_video_luxun_hot", "xhs_video_lemon_normal"],
@@ -1394,7 +1396,7 @@ def main() -> None:
     parser.add_argument("--draft-manifest", help="Path to canonical draft_manifest.json; formal mainline input")
     parser.add_argument("--rewrite-manifest", help="Legacy path to canonical rewrite_manifest.json")
     parser.add_argument("--publish-decision", required=True, help="Path to publish_decision.json")
-    parser.add_argument("--output-dir", help="Output directory; default=产物/07_渠道分发/<run_id>")
+    parser.add_argument("--output-dir", help="Output directory; default=~/Desktop/自媒体创作/07_发布执行/<run_id>/video_supplement")
     parser.add_argument("--reuse-existing-video-supplement", action="store_true", help="Reuse existing topic_video_manifest.json outputs instead of rerendering videos")
     args = parser.parse_args()
 

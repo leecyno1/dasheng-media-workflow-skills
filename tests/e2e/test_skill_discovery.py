@@ -29,7 +29,7 @@ class TestSkillDiscovery(unittest.TestCase):
         exclude_dirs = {'.archive', 'dasheng-daily-shared', 'dasheng-media-rewrite-v2'}
 
         skills = [d for d in self.skills_dir.iterdir()
-                 if d.is_dir() and d.name not in exclude_dirs]
+                 if d.is_dir() and not d.name.startswith('.') and d.name not in exclude_dirs]
 
         self.assertGreater(len(skills), 0, "No skills found")
 
@@ -57,7 +57,7 @@ class TestSkillDiscovery(unittest.TestCase):
         }
 
         skills = [d for d in self.skills_dir.iterdir()
-                 if d.is_dir() and d.name not in exclude_dirs]
+                 if d.is_dir() and not d.name.startswith('.') and d.name not in exclude_dirs]
 
         missing_config = []
         for skill_dir in skills:

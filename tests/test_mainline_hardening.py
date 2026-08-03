@@ -17,7 +17,6 @@ from path_config import get_project_root
 
 ROOT = get_project_root()
 PYTHON = sys.executable
-TMP_ROOT = ROOT / ".tmp_test"
 
 
 def write_json(path: Path, payload: dict) -> None:
@@ -26,8 +25,7 @@ def write_json(path: Path, payload: dict) -> None:
 
 
 def project_tempdir():
-    TMP_ROOT.mkdir(parents=True, exist_ok=True)
-    return tempfile.TemporaryDirectory(dir=TMP_ROOT)
+    return tempfile.TemporaryDirectory(prefix="dasheng-mainline-test-")
 
 
 @contextmanager
@@ -357,7 +355,7 @@ class MainlineHardeningTests(unittest.TestCase):
             self.assertIn("podcast", lanes)
             self.assertEqual(manifest["status"], "prepared_for_skill_execution")
             self.assertEqual(lanes["wechat_article"]["status"], "ready_for_agent_execution")
-            self.assertEqual(lanes["talking_head_video"]["status"], "ready_for_skill_execution")
+            self.assertEqual(lanes["talking_head_video"]["status"], "pending_director_review")
             self.assertIn("execution_contract", lanes["wechat_article"])
             self.assertIn("execution_contract", lanes["talking_head_video"])
             self.assertIn("execution_contract", lanes["podcast"])
@@ -547,13 +545,13 @@ class MainlineHardeningTests(unittest.TestCase):
             self.assertEqual(browser_profile["open_command"], "python3 scripts/open_publish_browser.py douyin_video")
             pack_payload = json.loads(Path(payload["channel_packs"][0]["pack_manifest"]).read_text(encoding="utf-8"))
             self.assertEqual(pack_payload["browser_profile"]["platform"], "douyin")
-            self.assertFalse(payload["channel_packs"][0]["execution_commands"]["confirm_execute_supported"])
-            self.assertIsNone(payload["channel_packs"][0]["execution_commands"]["confirmed_executor_command"])
+            self.assertTrue(payload["channel_packs"][0]["execution_commands"]["confirm_execute_supported"])
+            self.assertIsNotNone(payload["channel_packs"][0]["execution_commands"]["confirmed_executor_command"])
             execution_manifest = json.loads((tmp / "publish_out" / "channel_execution_manifest.json").read_text(encoding="utf-8"))
             invocation = execution_manifest["executions"][0]["executor_invocation"]
             self.assertIn("execute_publish_request.py", invocation["safe_executor_command"])
-            self.assertFalse(invocation["confirm_execute_supported"])
-            self.assertIsNone(invocation["confirmed_executor_command"])
+            self.assertTrue(invocation["confirm_execute_supported"])
+            self.assertIsNotNone(invocation["confirmed_executor_command"])
 
     def test_mainline_publish_dry_run_prepares_channel_execution_plans(self):
         with project_tempdir() as tmpdir:
@@ -711,16 +709,18 @@ class MainlineHardeningTests(unittest.TestCase):
             pack = payload["channel_packs"][0]
             self.assertEqual(pack["executor_skill"], "dasheng-xhs-publish-bridge")
             self.assertEqual(pack["execution_mode"], "api_first_with_browser_fallback")
-            self.assertFalse(pack["execution_commands"]["confirm_execute_supported"])
-            self.assertIsNone(pack["execution_commands"]["confirmed_executor_command"])
+            self.assertTrue(pack["execution_commands"]["confirm_execute_supported"])
+            self.assertIsNotNone(pack["execution_commands"]["confirmed_executor_command"])
             self.assertTrue(Path(pack["execution_request"]).exists())
             self.assertTrue(Path(pack["verification_request"]).exists())
 
             execution_request = json.loads(Path(pack["execution_request"]).read_text(encoding="utf-8"))
             self.assertEqual(execution_request["platform"], "xiaohongshu")
-            self.assertEqual(execution_request["route_priority"][0]["route"], "all-in-one")
+            self.assertEqual(execution_request["route_priority"][0]["route"], "qianfan-local-api")
+            self.assertEqual(execution_request["route_priority"][1]["route"], "social-auto-upload")
             self.assertEqual(execution_request["route_priority"][-1]["route"], "browser-profile")
-            self.assertIn("aione xhs creator post-note", "\n".join(execution_request["route_priority"][0]["command_templates"]))
+            all_in_one = next(route for route in execution_request["route_priority"] if route["route"] == "all-in-one")
+            self.assertIn("aione xhs creator post-note", "\n".join(all_in_one["command_templates"]))
 
     def test_record_publish_result_updates_channel_pack_and_verification_report(self):
         with project_tempdir() as tmpdir:
@@ -2217,6 +2217,10 @@ class MainlineHardeningTests(unittest.TestCase):
         self.assertEqual(payload["platform"], "xiaohongshu")
         self.assertIn("DashengPublishProfiles/xiaohongshu", payload["profile_dir"])
         self.assertIn("--user-data-dir=", payload["command"])
+        self.assertIn("open -g", payload["command"])
+        self.assertIn("--window-size=", payload["command"])
+        self.assertIn("--window-position=", payload["command"])
+        self.assertTrue(payload["window"]["never_maximize"])
 
     def test_publish_blocks_completed_lane_when_final_artifact_missing(self):
         with project_tempdir() as tmpdir:

@@ -239,7 +239,7 @@ export PYTHONPATH="$DASHENG_PROJECT_ROOT/scripts:$PYTHONPATH"
 ```
 
 #### 2. Path Not Found Errors
-**Problem**: `FileNotFoundError: /Volumes/PSSD/Projects/公众号文章/...`
+**Problem**: `FileNotFoundError: ${DASHENG_PROJECT_ROOT}/...`
 
 **Solution**:
 ```bash

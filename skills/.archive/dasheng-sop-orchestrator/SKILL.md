@@ -11,7 +11,7 @@ description: Use when running, resuming, or auditing the full Dasheng 8-stage me
 
 ## 默认路径
 
-- `DASHENG_WORKSPACE=${DASHENG_WORKSPACE:-/Volumes/PSSD/Projects/公众号文章}`
+- `DASHENG_WORKSPACE=${DASHENG_WORKSPACE:-${DASHENG_PROJECT_ROOT}}`
 
 ## 固定主链
 

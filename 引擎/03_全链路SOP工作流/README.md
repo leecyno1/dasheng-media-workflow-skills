@@ -22,7 +22,7 @@
 - 第 3 阶段可继承 `Paradigm Profile` 中的结构范式；轻量润色和渠道源稿整理并入本环节。
 - 第 3 阶段要主动补数据与表格，不做被动复述型初稿。
 - 第 3 阶段同步生成可编辑、自包含、离线可用 HTML 草稿；真实图表和配图必须绑定 `claim_id` 与来源。
-- 日常对外交付统一导出到桌面：`/Users/lichengyin/Desktop/自媒体创作/<run_id>/`
+- 日常对外交付统一导出到桌面：`${HOME}/Desktop/自媒体创作/<run_id>/`
 - `intake / brief / draft / transwrite / publish` 的交付文件统一直接放在该 `run` 根目录，不再另建桌面 stage 子目录
 
 ## 合并原则
@@ -129,15 +129,15 @@
 ## 飞书同步执行模式
 
 - 常规模式：
-  - `python3 /Volumes/PSSD/Projects/公众号文章/scripts/feishu_stage_sync.py <run_id>`
-  - `python3 /Volumes/PSSD/Projects/公众号文章/scripts/feishu_stage_sync.py --latest`
+  - `python3 ${DASHENG_PROJECT_ROOT}/scripts/feishu_stage_sync.py <run_id>`
+  - `python3 ${DASHENG_PROJECT_ROOT}/scripts/feishu_stage_sync.py --latest`
 - 断点续跑：
-  - `python3 /Volumes/PSSD/Projects/公众号文章/scripts/feishu_stage_sync.py --resume-only <run_id>`
+  - `python3 ${DASHENG_PROJECT_ROOT}/scripts/feishu_stage_sync.py --resume-only <run_id>`
   - 适用于飞书同步中断、超时、Node 进程退出、素材上传做到一半的场景
   - 会读取 `skills/dasheng-daily-shared/runtime-data/runs/<run_id>/bridge/live-execution-progress.json`
   - 已完成的 action 会跳过，只继续未完成部分
 - 强制重跑：
-  - `python3 /Volumes/PSSD/Projects/公众号文章/scripts/feishu_stage_sync.py --fresh <run_id>`
+  - `python3 ${DASHENG_PROJECT_ROOT}/scripts/feishu_stage_sync.py --fresh <run_id>`
   - 适用于旧进度错误、文档映射错乱、确认需要整套重建的场景
   - 会清理本次 run 的 live 进度与同步摘要，再重新执行
 - 执行原则：

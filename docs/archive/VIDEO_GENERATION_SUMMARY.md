@@ -4,7 +4,7 @@
 
 ### 1. ✅ 更新 Publish 阶段 Skill
 
-**文件**：`/Volumes/PSSD/Projects/dasheng-media-workflow-skills/skills/dasheng-stage-publish-video/SKILL.md`
+**文件**：`${PROJECTS_ROOT}/dasheng-media-workflow-skills/skills/dasheng-stage-publish-video/SKILL.md`
 
 **更新内容**：
 - 添加 5 套视频风格模板说明
@@ -14,11 +14,11 @@
 
 ### 2. ✅ 创建视频组件
 
-**文件**：`/Users/lichengyin/clawd/remotion-video-starter/src/AIMergersXhs.tsx`
+**文件**：`${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/AIMergersXhs.tsx`
 
 **视频信息**：
 - 标题：1.2万亿美元AI并购狂潮
-- 基于：`/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-05_075240_ai/topic-ai-ma-boom-q1-2026/xhs_video_luxun_hot.md`
+- 基于：`${DASHENG_PROJECT_ROOT}/产物/06_改写/2026-04-05_075240_ai/topic-ai-ma-boom-q1-2026/xhs_video_luxun_hot.md`
 - 时长：25秒（750帧 @ 30fps）
 - 分辨率：1080x1920（竖版，适合小红书）
 - 风格：Claude Purple（紫粉科技风）
@@ -41,7 +41,7 @@
 
 ### 3. ✅ 注册组件到 Root
 
-**文件**：`/Users/lichengyin/clawd/remotion-video-starter/src/Root.jsx`
+**文件**：`${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/Root.jsx`
 
 添加了 `AIMergersXhs` 组合，配置：
 - ID: `AIMergersXhs`
@@ -51,7 +51,7 @@
 
 ### 4. ✅ 创建渲染脚本
 
-**文件**：`/Volumes/PSSD/Projects/dasheng-media-workflow-skills/scripts/render_ai_mergers_video.sh`
+**文件**：`${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/render_ai_mergers_video.sh`
 
 **功能**：
 - 自动创建输出目录
@@ -74,10 +74,10 @@
 
 ```bash
 # 使用渲染脚本（推荐）
-bash /Volumes/PSSD/Projects/dasheng-media-workflow-skills/scripts/render_ai_mergers_video.sh
+bash ${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/render_ai_mergers_video.sh
 
 # 或手动渲染
-cd /Users/lichengyin/clawd/remotion-video-starter
+cd ${LEGACY_OPENCLAW_ROOT}/remotion-video-starter
 npx remotion render AIMergersXhs out/ai-mergers-xhs.mp4 --quality=100
 ```
 
@@ -85,10 +85,10 @@ npx remotion render AIMergersXhs out/ai-mergers-xhs.mp4 --quality=100
 
 ```bash
 # 视频将保存到
-/Volumes/PSSD/Projects/公众号文章/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/ai-mergers-xhs-claude-purple.mp4
+${DASHENG_PROJECT_ROOT}/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/ai-mergers-xhs-claude-purple.mp4
 
 # 预览视频
-open "/Volumes/PSSD/Projects/公众号文章/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/ai-mergers-xhs-claude-purple.mp4"
+open "${DASHENG_PROJECT_ROOT}/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/ai-mergers-xhs-claude-purple.mp4"
 ```
 
 ## 下一步
@@ -119,25 +119,25 @@ open "/Volumes/PSSD/Projects/公众号文章/产物/07_Publish/2026-04-05_075240
 ## 文件清单
 
 ### 新建文件（3个）
-1. `/Users/lichengyin/clawd/remotion-video-starter/src/AIMergersXhs.tsx` - 视频组件
-2. `/Volumes/PSSD/Projects/dasheng-media-workflow-skills/scripts/render_ai_mergers_video.sh` - 渲染脚本
+1. `${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/AIMergersXhs.tsx` - 视频组件
+2. `${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/render_ai_mergers_video.sh` - 渲染脚本
 3. 本文档
 
 ### 更新文件（2个）
-1. `/Users/lichengyin/clawd/remotion-video-starter/src/Root.jsx` - 注册组件
-2. `/Volumes/PSSD/Projects/dasheng-media-workflow-skills/skills/dasheng-stage-publish-video/SKILL.md` - 更新说明
+1. `${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/Root.jsx` - 注册组件
+2. `${PROJECTS_ROOT}/dasheng-media-workflow-skills/skills/dasheng-stage-publish-video/SKILL.md` - 更新说明
 
 ## 实际输出
 
 - 视频文件：2.6MB（25秒，1080x1920，H.264编码）
 - 渲染时间：约 9 秒（750帧，4x并发）
 - 视频质量：高质量（quality=100）
-- 文件位置：`/Volumes/PSSD/Projects/公众号文章/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/ai-mergers-xhs-claude-purple.mp4`
+- 文件位置：`${DASHENG_PROJECT_ROOT}/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/ai-mergers-xhs-claude-purple.mp4`
 
 ## 预览视频
 
 ```bash
-open "/Volumes/PSSD/Projects/公众号文章/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/ai-mergers-xhs-claude-purple.mp4"
+open "${DASHENG_PROJECT_ROOT}/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/ai-mergers-xhs-claude-purple.mp4"
 ```
 
 ---

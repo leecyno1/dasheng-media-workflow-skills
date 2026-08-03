@@ -7,7 +7,7 @@ description: Use when executing the upstream stages (intake, brief, draft) of Da
 
 ## 默认路径
 
-- `DASHENG_WORKSPACE=${DASHENG_WORKSPACE:-/Volumes/PSSD/Projects/公众号文章}`
+- `DASHENG_WORKSPACE=${DASHENG_WORKSPACE:-${DASHENG_PROJECT_ROOT}}`
 
 ## 阶段目标
 

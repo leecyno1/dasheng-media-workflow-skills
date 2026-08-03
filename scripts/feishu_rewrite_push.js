@@ -6,11 +6,13 @@ const {
   sendTextMessage
 } = require('../skills/dasheng-daily-shared/runtime/feishu-client.js');
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const runDate = process.argv[2] || new Date().toISOString().slice(0, 10);
-const REWRITE_ROOT = path.join(ROOT, '产物', '06_改写', `${runDate}_三篇独立改写`);
+const OUTPUT_ROOT = process.env.DASHENG_OUTPUT_ROOT || path.join(os.homedir(), 'Desktop', '自媒体创作');
+const REWRITE_ROOT = path.join(OUTPUT_ROOT, '06_改写', `${runDate}_三篇独立改写`);
 const TARGET_FOLDER = 'SpRqfe0VKlTUWzd313KczxKHngd';
 
 const TOPICS = [

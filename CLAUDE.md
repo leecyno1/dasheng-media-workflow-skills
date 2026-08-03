@@ -1,252 +1,93 @@
-# CLAUDE.md
+# Project Instructions
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+## Overview
 
-## Project Overview
+Dasheng is a manifest-driven Chinese self-media workflow. The canonical six-stage chain is:
 
-A suite of OpenClaw/Codex skills that drive a daily self-media production workflow for a Chinese-language content team. The pipeline is fixed, manifest-driven, and integrated with Feishu for HITL review across multiple operators.
-
-**Canonical chain (6 stages)**:
 `intake -> brief -> draft -> transwrite -> publish -> postmortem`
 
-**Optional pre-work asset**: `paradigm-learning` (skill `dasheng-paradigm-profiler`). Produces a `ParadigmProfile` from sample articles/templates and feeds Brief/Draft/Transwrite/Publish. It is NOT a formal gate.
+Optional paradigm learning, video style training, and video self-learning produce reusable assets but are not formal gates.
 
-> ⚠️ The chain was previously documented as 7 stages with separate `material` and `rewrite`. As of commit `3b0e9c2` (`chore: remove material stage`), material has been absorbed into Draft (data/charts/HTML embedding live there), and rewrite has been renamed and reshaped into `transwrite` (3 channel outputs: WeChat article / talking-head video / podcast). Do not regenerate the old layout.
+## Canonical entry points
 
-### Tooling history
+- Orchestrator CLI: `scripts/run_mainline_stage.py`
+- Orchestrator Skill: `skills/dasheng-media-sop/SKILL.md`
+- Workflow contracts: `skills/dasheng-media-sop/references/`
+- Module registry: `configs/workflow/module_registry.json`
+- Skill registry: `skills/SKILL_ALIASES.md`
+- External project registry: `configs/external/reserved_projects.json`
+- Upstream patches: `configs/external/upstream_patches.json`
+- Diagnostics: `scripts/workflow_doctor.py` and `scripts/verify_installation.py`
 
-This repo was originally developed against **OpenAI Codex CLI** and later migrated to **Claude Code**. Residual Codex artifacts you may encounter:
+## Critical invariants
 
-- `.codex_work/` — empty session scratch dir, safe to ignore.
-- `skills/*/agents/openai.yaml` — empty stub files from the Codex agent convention (`skills/dasheng-media-sop/agents/`, `dasheng-stage-brief-ai/agents/`, `dasheng-style-profiler/agents/`, `jiebang/agents/`). Not consumed by the current runtime.
-- `skills/.archive/` — deprecated Codex-era skill directories kept for reference (`dasheng-sop-orchestrator`, `dasheng-stage-intake-brief-draft`, `dasheng-stage-publish-video`, `dasheng-stage-rewrite`). Mapped to current names in `skills/SKILL_ALIASES.md`.
-- No `AGENTS.md` exists; **this `CLAUDE.md` is the single agent guide**. If a Codex run is ever revived, mirror this file to `AGENTS.md` rather than maintaining two sources of truth.
+- Do not restore the retired seven-stage layout. Material is part of Draft; rewrite production is Transwrite.
+- Do not skip stages or bypass gates with a hand-written “latest directory” path.
+- Every stage writes a human-readable deliverable and a canonical Manifest JSON.
+- Keep every topic isolated in its own directory.
+- Draft structure is inherited by Transwrite; do not impose a fixed three-part outline.
+- Paradigm Profile controls structure; Style DNA controls voice. Keep them separate.
+- Reference samples are not evidence. Claims require source records or evidence-ledger entries.
+- Runtime outputs must stay outside `skills/`, source configs, and external dependency checkouts.
 
-## Architecture
+## Video direction rules
 
-### Canonical entry points
+- Treat the source article as the narration base; never say “the article mentions…” unless the content itself requires that viewpoint.
+- Prefer real, topic-matched footage for openings and evidence-heavy scenes. Combine footage, titles, animated charts and motion graphics within one composition.
+- News anchors and interview subjects are primary or picture-in-picture material, not low-opacity full-screen backgrounds.
+- Background footage should favor locations, crowds, social situations, factories, landscapes or contextual interviews.
+- Preserve complete charts and source images; never crop away labels, legends or key values.
+- Avoid end-of-sentence flashes and scene-gap blank frames. Render QC must check every transition.
+- Narration timing should sound conversational, with semantic pauses rather than uniform sentence gaps.
 
-- **Unified CLI (preferred)**: `scripts/run_mainline_stage.py <stage>` — single subcommand dispatcher that resolves inputs from the previous stage's manifest, validates gates, and shells out to the per-stage builder. Subcommands: `intake | paradigm | brief | draft | transwrite | publish | postmortem | doctor`.
-- **Diagnostics**: `scripts/workflow_doctor.py --latest` — verifies environment, paths, credentials, and stage contract compliance. Run this any time the workflow gets wedged.
-- **Per-stage builders** (do not call directly unless you know what you're doing): `run_stage1_intake.py`, `phase2_rebuilder.py`, `build_stage3_draft.py` (+ `draft_with_framework.py`, `draft_html_pack.py`), `build_stage4_transwrite.py`, `build_stage5_publish.py`, `postmortem_writeback.py`, `build_paradigm_profile.py`.
-- **Orchestration skill**: `skills/dasheng-media-sop/SKILL.md` — the only formal orchestration entry. Always route via this skill in agentic flows.
+## Publish rules
 
-### Skill registry
+- Default route: Qianfan local API; async Qianfan queue is the batch candidate; Social Auto Upload CLI is fallback.
+- Store cookies, profiles, OTPs, credentials and receipts outside Git.
+- Visible publish browsers must be small, never maximized, prefer the secondary display, and restore the previous foreground app when possible.
+- Normal in-flow dialogs may be handled automatically. Never log OTP values or session material.
+- A successful click is not a verified publish; require platform receipt, draft ID or public URL.
 
-Source of truth: `skills/SKILL_ALIASES.md`. Formal skills (✅) currently in production:
+## External projects
 
-| Skill | Role |
-|---|---|
-| `dasheng-media-sop` | Single orchestration controller / stage router |
-| `dasheng-paradigm-profiler` | Optional `ParadigmProfile` pre-work asset |
-| `dasheng-daily-intake` | Stage 1 — content intake & source aggregation |
-| `dasheng-daily-phase2` | Stage 2 — AI brief / topic card generation (replaces deprecated `dasheng-stage-brief-ai` / `dasheng-daily-brief`) |
-| `dasheng-daily-draft` | Stage 3 — draft + data + charts + cover images + self-contained HTML |
-| `dasheng-stage-transwrite` | Stage 4 — channel-specific production: WeChat article, talking-head video, podcast |
-| `dasheng-stage-publish` | Stage 5 — verification, packaging, draft push / manual pack, link recovery |
-| `dasheng-daily-postmortem` | Stage 6 — review + knowledge writeback |
-| `dasheng-finance-data` | Draft-time financial data + Chart.js spec generation |
-| `dasheng-style-profiler` | Personal Style DNA extraction (14-dimensional) |
-| `dasheng-html-anything-bridge` | Draft/Transwrite bridge into HTML Anything templates |
-| `dasheng-html-video-bridge` | Transwrite bridge into local html-video for talking-head clips |
-| `feishu-doc-creator` | Feishu document creation helper |
-
-On-demand tools (🧰, not part of the formal chain): `dasheng-stage-rewrite-v3` (multi-variant rewrite, called from Draft/Publish when needed), `dasheng-video-roughcut` (FunASR + FFmpeg rough cut + subtitles).
-
-Deprecated skill directories still present under `skills/` for back-compat (e.g. `dasheng-stage-brief-ai`, `dasheng-daily-clustering`, `dasheng-daily-outline`, `dasheng-stage-draft`, `dasheng-stage-publish-video`). Do not author against them — consult `skills/SKILL_ALIASES.md` for the mapping.
-
-### State model: manifests + gates, not "latest directory"
-
-The runtime is driven by canonical JSON files, not by directory mtimes or naming conventions. Code lives in `scripts/canonical_workflow.py`.
-
-- **Stage roots** (`canonical_workflow.CANONICAL_STAGE_ROOTS`):
-  - `intake` → `产物/01_内容采集/<run_id>/`
-  - `brief` → `产物/02_内容聚合及选题分析/<run_id>/`
-  - `draft` → `产物/05_初稿生成/<run_id>/`
-  - `transwrite` → `产物/06_转写生产/<run_id>/`
-  - `publish` → `产物/07_发布执行/<run_id>/`
-  - `postmortem` → `产物/08_分析复盘/<run_id>/`
-  - Optional `paradigm` → `产物/00_范式学习/<run_id>/`
-- **Stage manifests** (required for every stage): `<stage>_manifest.json` with `stage` field matching the expected value. `ensure_stage_manifest()` enforces this.
-- **Gate files** (must be `approved`/`accepted`/`confirmed`/`ready`/`locked`/`finalized`/`completed`/`done` to unblock the next stage):
-  - `brief → draft`: `selected_topics.json`
-  - `draft → transwrite`: `final_structure_snapshot.json` + `transwrite_decision.json`
-  - `transwrite → publish`: `publish_decision.json`
-- Stages refuse to run if the upstream manifest or gate is missing/invalid — never short-circuit by passing a hand-rolled path; let the dispatcher resolve it from `--run-id`.
-
-### Critical invariants
-
-- **Stage order is immutable** — no skipping, no producing downstream artifacts pre-gate.
-- **`ParadigmProfile` is optional** and never a gate. It informs Brief/Draft/Transwrite/Publish prompts only.
-- **Per-topic isolation** — each topic gets its own subdirectory; never merge content across topics.
-- **Every stage produces (a) human-readable doc(s) AND a manifest JSON**.
-- **Rewrite/transwrite inherits the draft's final structure** — never force a fixed three-part skeleton.
-- **`ParadigmProfile` ≠ Style DNA** — Paradigm controls structure/narrative path/argument model/channel framework; Style DNA controls voice/vocabulary/sentence rhythm. They must stay separated.
-- **Sample facts in `ParadigmProfile` are reference only** — never quote sample sentences or unverified data as article evidence.
-
-### Writing system
-
-The Draft (and on-demand Rewrite) stages apply two orthogonal layers:
-
-- **Writing frameworks** (7): Painpoint / Story / Checklist / Comparison / Hot-topic / Opinion / Retrospective. See `skills/dasheng-stage-rewrite-v3/references/` and the Draft skill's framework loader (`scripts/framework_strategy_loader.py`).
-- **Content enhancement strategies** (4): Angle Discovery, Density Boost, Detail Anchoring, Real Experience.
-- **Style DNA**:
-  - Preset: `luxun` (sharp/data-driven), `lemon` (warm/narrative).
-  - Personal: extracted by `dasheng-style-profiler` from 3–10 historical articles in `${DASHENG_WORKSPACE}/风格参考/{author}/` using a 14-dimensional analysis. See `skills/dasheng-style-profiler/references/style-14d-framework.md`.
-
-Brief recommends framework + strategy per topic; Draft generates following them; on-demand rewrite (`dasheng-stage-rewrite-v3`) can produce platform variants when Publish needs them.
-
-### Core engine (`core/`)
-
-- `core/orchestrator.py` — stage status enum + HITL checkpoint logic (PENDING / RUNNING / COMPLETED / FAILED / WAITING_HITL / HITL_APPROVED / HITL_REJECTED).
-- `core/dna_engine.py` — Style DNA loader and application.
-- `core/ai_integrator.py` — AI provider routing.
-- `core/path_resolver.py` — workspace-relative path resolution paired with `scripts/path_config.py`.
-
-## Environment setup
-
-Two env templates exist; pick the one matching your shell setup:
-
-1. `.env.template` — newer, uses `DASHENG_PROJECT_ROOT` / `DASHENG_DESKTOP_ROOT` / `DASHENG_FEISHU_CONFIG`. Recommended.
-2. `ENV_TEMPLATE.env` — legacy, uses `DASHENG_WORKSPACE` / `DASHENG_OUTPUT_ROOT` / `FEISHU_APP_ID`/`FEISHU_APP_SECRET` directly. Still consumed by some scripts.
-
-Copy and fill in:
-```bash
-cp .env.template ~/.openclaw/dasheng.env     # or: cp ENV_TEMPLATE.env ~/.openclaw/dasheng.env
-set -a; source ~/.openclaw/dasheng.env; set +a
-```
-
-Required-ish variables (cross-check both templates against your runtime):
-- `DASHENG_PROJECT_ROOT` / `DASHENG_WORKSPACE` — repo root
-- `DASHENG_OUTPUT_ROOT` — daily run output (default `产物/` under repo root)
-- `DASHENG_FEISHU_*` — Feishu config paths or `FEISHU_APP_ID` / `FEISHU_APP_SECRET` / `DASHENG_FEISHU_ROOT_URL` / `DASHENG_FEISHU_CHAT_ID`
-- `TUSHARE_TOKEN` — financial data API
-- `FINANCE_MOTION_WORKSPACE` — video generation workspace (optional)
-- Image provider keys: `QHAIGC_*`, `MOLI_*`, `VECTOR_IMAGE_*`, `MINIMAX_API_KEY`
-
-## Installation
-
-Install skills into OpenClaw:
-```bash
-bash install_to_openclaw.sh                  # default: ~/.openclaw/skills
-bash install_to_openclaw.sh /path/to/skills  # custom target
-```
-
-Python + Node deps:
-```bash
-pip install -r requirements.txt              # core
-pip install -r requirements-media.txt        # media pipeline extras
-npm install                                  # Feishu/JS helpers
-```
-
-Verify after install:
-```bash
-python3 scripts/verify_installation.py
-```
-
-## Daily workflow
-
-### Mandatory pre-run check
-
-Run smoke tests from `SMOKE_PROMPTS.md` at the start of each production day. They verify paths, credentials, every stage delivery interface, and the publish video pipeline; output goes to `smoke_report.md`.
-
-### Stage execution (preferred unified CLI)
+Third-party source is ignored under `vendor/`. Reproduce it with:
 
 ```bash
-cd "${DASHENG_PROJECT_ROOT:-$DASHENG_WORKSPACE}"
-
-# Sanity check before anything
-python3 scripts/workflow_doctor.py --latest
-
-# Optional pre-work
-python3 scripts/run_mainline_stage.py paradigm <sample.md> \
-  --run-id "$(date +%F_%H%M%S)" \
-  --profile-name 结构变化解读 --scenario 行业解读 --channel 公众号
-
-# Mainline (each subcommand auto-resolves the prior stage by --run-id)
-python3 scripts/run_mainline_stage.py intake     --run-id <run_id>
-python3 scripts/run_mainline_stage.py brief      --run-id <run_id>
-python3 scripts/run_mainline_stage.py draft      --run-id <run_id>
-python3 scripts/run_mainline_stage.py transwrite --run-id <run_id>
-python3 scripts/run_mainline_stage.py publish    --run-id <run_id>
-python3 scripts/run_mainline_stage.py postmortem --run-id <run_id>
-
-# Diagnostic on a specific run
-python3 scripts/run_mainline_stage.py doctor --run-id <run_id> --strict
+python scripts/sync_reserved_projects.py --mode clone
+python scripts/apply_upstream_patches.py --mode apply
 ```
 
-### Stage deliverables
+Do not commit nested `.git`, `node_modules`, virtual environments, models or generated media. Do not update a dirty external checkout; export local changes as a registered patch first.
 
-| Stage | Required artifacts |
-|---|---|
-| paradigm (opt) | `00_范式画像.md`, `paradigm_profile.yaml`, `paradigm_prompt_block.md`, `paradigm_manifest.json` |
-| intake | `intake_manifest.json`, `raw/intake_records.json` |
-| brief | `brief_manifest.json`, `selected_topics.json`, `topic_cards.json` |
-| draft | `draft_manifest.json`, per-topic doc + HTML + data/chart specs, `final_structure_snapshot.json` |
-| transwrite | `transwrite_manifest.json`, per-topic `wechat_article.final.{md,html}`, talking-head + podcast packs, `transwrite_decision.json` |
-| publish | `publish_manifest.json`, channel adaptation/execution manifests, `publish_verification_report.json`, video files under `videos/` |
-| postmortem | `postmortem_manifest.json`, knowledge writeback notes |
+## Project map
 
-### Common single-purpose commands
+- `core/`: shared orchestration, AI, DNA and path logic
+- `scripts/`: executable builders, routers, checks and generators
+- `skills/`: project-local agent skills
+- `configs/`: machine-readable contracts and registries
+- `templates/`: reusable video and content templates
+- `tests/`: pytest contract, regression and hygiene tests
+- `docs/`: onboarding, architecture, research and generated catalog
+- `patches/upstreams/`: reproducible third-party compatibility patches
 
-Framework-driven Draft (called by the dispatcher; runnable standalone):
-```bash
-python3 scripts/draft_with_framework.py \
-  --brief-dir "产物/02_内容聚合及选题分析/<run_id>" \
-  --output-dir "产物/05_初稿生成/<run_id>"
-```
+## Development conventions
 
-Publish video supplement (5 motion templates: `claude-purple`, `cyberpunk`, `finance-business`, `medical-lancet`, `anime-light`):
-```bash
-python3 scripts/publish_video_supplement.py --style claude-purple
-```
+- Python: 3.10+, type hints, `pathlib`, JSON/YAML contracts, explicit error messages.
+- Prefer repository-relative paths and environment overrides; never add personal absolute paths.
+- Add or update tests when changing a contract, registry, generator, gate or route.
+- Generated docs must have a `--check` mode and a single machine-readable source of truth.
+- Preserve unrelated working-tree changes. Never reset or overwrite user work.
+- Use Conventional Commits for public changes.
 
-Push transwrite to Feishu:
-```bash
-node scripts/feishu_rewrite_push.js "$(date +%F)"
-```
-
-On-demand multi-variant rewrite (when Publish needs platform metadata regenerated):
-```bash
-python3 scripts/rewrite_execute_stage5.py     # consult dasheng-stage-rewrite-v3 SKILL.md
-```
-
-## Testing
+## Verification
 
 ```bash
-python3 -m pytest tests/ -v                  # full unit suite
-python3 -m pytest tests/test_<name>.py -v    # single file
-python3 -m pytest tests/test_<name>.py::test_<func> -v  # single test
-python3 scripts/workflow_doctor.py           # end-to-end health
+source .venv/bin/activate
+python -m pytest tests -q
+python scripts/verify_installation.py
+python scripts/build_project_catalog.py --check
+python scripts/apply_upstream_patches.py --mode check
+git diff --check
 ```
 
-Test files cover stage skills, contract enforcement, intake scoring, postmortem writeback, the Feishu sync paths, paradigm profile, and `phase2` AI brief generation.
-
-## Version management
-
-Tarball naming: `dasheng-media-workflow-skills-YYYYMMDD-vX`. Same-day iterations bump `v1` → `v2` → … . Never overwrite a published tarball — rollback depends on history.
-
-## Important references
-
-Pipeline contracts (use these first):
-- `docs/STAGE_INTERFACES.md` — input/output spec per stage
-- `skills/dasheng-media-sop/references/stage-contract.md` — formal contract
-- `skills/dasheng-media-sop/references/stage-map.md` / `stage-module-map.md` — stage ↔ script ↔ skill map
-- `skills/dasheng-media-sop/references/file-contracts.md` — delivery interface
-- `skills/dasheng-media-sop/references/legacy-migration-map.md` — old-name → new-name mapping
-- `skills/dasheng-media-sop/references/publish-architecture.md` / `publish-skill-matrix.md` — Publish internals
-- `skills/dasheng-media-sop/references/update-protocol.md` — how to evolve the chain
-
-Skill internals:
-- `skills/dasheng-stage-transwrite/SKILL.md` — three-channel transwrite spec
-- `skills/dasheng-stage-rewrite-v3/references/` — writing frameworks + enhancement strategies
-- `skills/dasheng-style-profiler/references/style-14d-framework.md` — 14-dimensional style analysis
-- `skills/dasheng-paradigm-profiler/SKILL.md` — paradigm extraction
-
-Setup / ops:
-- `INSTALLATION.md` — install walkthrough
-- `SMOKE_PROMPTS.md` — daily smoke test
-- `docs/CONFIGURATION.md` — env + config reference
-- `docs/PRELAUNCH_CHECKLIST.md` — pre-launch checks
-- `docs/technical/architecture.md` — system architecture
-- `docs/guides/stage-by-stage.md` — operator walkthrough
+See `docs/ONBOARDING.md` for architecture and common tasks, and `docs/PROJECT_CATALOG.md` for the complete module, Skill, dependency and reserve list.

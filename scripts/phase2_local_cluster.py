@@ -14,6 +14,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from path_config import get_output_root
+
 
 CLUSTER_RULES = [
     {
@@ -579,7 +581,11 @@ def write_stage2_notes(output_dir: Path, run_id: str) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Local phase2 clustering for stage1 intake output")
     parser.add_argument("--stage1-dir", required=True, help="Path to stage1 output directory")
-    parser.add_argument("--output-root", default="产物/02_内容聚合及选题分析", help="Output root directory")
+    parser.add_argument(
+        "--output-root",
+        default=str(get_output_root("brief")),
+        help="Output root directory, default=~/Desktop/自媒体创作/02_内容聚合及选题分析",
+    )
     args = parser.parse_args()
 
     stage1_dir = Path(args.stage1_dir).expanduser().resolve()

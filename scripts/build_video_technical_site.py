@@ -1,0 +1,138 @@
+#!/usr/bin/env python3
+"""Build a self-contained technical registry site for the video director stack."""
+
+from __future__ import annotations
+
+import argparse
+import html
+import json
+from pathlib import Path
+from typing import Any
+
+from video_director_tool_router import DEFAULT_PROJECT_REGISTRY, DEFAULT_TOOL_REGISTRY, build_stage_routes, load_unified_registry
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_OUTPUT = PROJECT_ROOT / "docs" / "technical" / "video-technical-stack-registry.html"
+
+
+def esc(value: Any) -> str:
+    return html.escape(str(value or ""))
+
+
+def badges(values: list[str]) -> str:
+    return "".join(f'<span class="badge">{esc(value)}</span>' for value in values)
+
+
+def entry_location(entry: dict[str, Any]) -> str:
+    return str(entry.get("path") or entry.get("root") or entry.get("local_path") or entry.get("command") or entry.get("endpoint") or "")
+
+
+def table_rows(entries: list[dict[str, Any]]) -> str:
+    rows = []
+    for entry in entries:
+        search = " ".join(
+            [
+                str(entry.get("name") or ""),
+                str(entry.get("kind") or ""),
+                str(entry.get("status") or ""),
+                " ".join(entry.get("capabilities") or []),
+                " ".join(entry.get("route_stages") or []),
+            ]
+        ).lower()
+        rows.append(
+            f'''<tr data-search="{esc(search)}" data-kind="{esc(entry.get('kind'))}">
+  <td><strong>{esc(entry.get('name'))}</strong><div class="muted">{esc(entry.get('scope') or entry.get('execution_mode'))}</div></td>
+  <td>{esc(entry.get('kind'))}</td>
+  <td>{esc(entry.get('tier'))}</td>
+  <td><code>{esc(entry.get('status'))}</code></td>
+  <td>{badges(entry.get('capabilities') or [])}</td>
+  <td>{badges(entry.get('route_stages') or entry.get('lanes') or [])}</td>
+  <td class="location">{esc(entry_location(entry))}</td>
+</tr>'''
+        )
+    return "\n".join(rows)
+
+
+def stage_cards(registry: dict[str, Any], lane: str) -> str:
+    cards = []
+    for stage, route in build_stage_routes(registry, lane=lane).items():
+        primary = ", ".join(item["name"] for item in route["primary_stack"]) or "未解析"
+        fallback = ", ".join(item["name"] for item in route["fallback_stack"][:6]) or "—"
+        unresolved = ", ".join(route["unresolved_capabilities"]) or "—"
+        blocked = ", ".join(route.get("blocked_capabilities") or []) or "—"
+        cards.append(
+            f'''<article class="route-card">
+  <h3>{esc(stage)}</h3>
+  <p><b>主路由</b> {esc(primary)}</p>
+  <p><b>后备</b> {esc(fallback)}</p>
+  <p><b>受阻能力</b> {esc(blocked)}</p>
+  <p><b>未解析能力</b> {esc(unresolved)}</p>
+</article>'''
+        )
+    return "\n".join(cards)
+
+
+def build_html(registry: dict[str, Any]) -> str:
+    entries = [*registry["tools"], *registry["skills"], *registry["projects"], *registry["reserve_candidates"]]
+    return f'''<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>视频导演技术注册站</title>
+<style>
+:root{{--bg:#f3f0e8;--ink:#171717;--muted:#6e6b63;--card:#fffdf8;--line:#d8d2c5;--accent:#143cff;--good:#0a7a45}}
+*{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}}
+header{{padding:48px clamp(22px,5vw,76px) 30px;border-bottom:1px solid var(--line);background:linear-gradient(120deg,#fffdf8,#e8ecff)}}
+h1{{font-size:clamp(34px,6vw,72px);line-height:.96;letter-spacing:-.055em;margin:0 0 18px;max-width:900px}}header p{{max-width:780px;color:var(--muted);font-size:17px}}
+.stats{{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}}.stat{{background:#fff;border:1px solid var(--line);padding:12px 16px;min-width:130px}}.stat b{{font-size:27px;display:block}}
+main{{padding:30px clamp(18px,4vw,64px) 80px}}h2{{font-size:27px;margin:38px 0 16px}}.routes{{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}}
+.route-card{{background:var(--card);border:1px solid var(--line);padding:18px}}.route-card h3{{margin:0 0 12px;color:var(--accent)}}.route-card p{{margin:8px 0}}
+.toolbar{{position:sticky;top:0;z-index:2;background:rgba(243,240,232,.94);backdrop-filter:blur(14px);padding:12px 0;display:flex;gap:8px;flex-wrap:wrap}}
+input,select{{background:#fff;border:1px solid var(--line);padding:11px 13px;font:inherit}}input{{min-width:min(460px,100%)}}
+.table-wrap{{overflow:auto;border:1px solid var(--line);background:var(--card)}}table{{border-collapse:collapse;width:100%;min-width:1200px}}th,td{{padding:12px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}}th{{background:#ece8de;position:sticky;top:59px}}
+.badge{{display:inline-block;border:1px solid #c8c4ba;background:#fff;padding:2px 7px;margin:1px 3px 3px 0;font-size:12px}}code{{color:var(--good)}}.muted,.location{{color:var(--muted);font-size:12px}}tr[hidden]{{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <h1>视频导演技术注册站</h1>
+  <p>导演在分镜、素材、渲染、字幕、质检和发布阶段使用的统一项目、Skill 与工具索引。主路由只选择已就绪且允许默认调用的执行项；API、登录、实验和参考项目进入后备或受阻队列。</p>
+  <div class="stats"><div class="stat"><b>{len(registry['tools'])}</b>工具</div><div class="stat"><b>{len(registry['skills'])}</b>Skills</div><div class="stat"><b>{len(registry['projects'])}</b>项目</div><div class="stat"><b>{len(registry['reserve_candidates'])}</b>待晋级储备</div><div class="stat"><b>{len(registry['upstream_records'])}</b>上游记录</div><div class="stat"><b>{len(registry['rejected_projects'])}</b>剔除项</div></div>
+</header>
+<main>
+  <h2>无头口播 / HTML 科普路由</h2><div class="routes">{stage_cards(registry,'explainer_html_video')}</div>
+  <h2>真人口播路由</h2><div class="routes">{stage_cards(registry,'talking_head_video')}</div>
+  <h2>完整登记表</h2>
+  <div class="toolbar"><input id="q" placeholder="搜索工具、能力、状态或路径"><select id="kind"><option value="">全部类型</option><option>tool</option><option>skill</option><option>project</option><option>reserve</option></select></div>
+  <div class="table-wrap"><table><thead><tr><th>名称</th><th>类型</th><th>级别</th><th>状态</th><th>能力</th><th>阶段/线路</th><th>入口</th></tr></thead><tbody>{table_rows(entries)}</tbody></table></div>
+</main>
+<script>
+const q=document.querySelector('#q'),kind=document.querySelector('#kind'),rows=[...document.querySelectorAll('tbody tr')];
+function filter(){{const needle=q.value.trim().toLowerCase(),k=kind.value;for(const row of rows)row.hidden=(needle&&!row.dataset.search.includes(needle))||(k&&row.dataset.kind!==k)}}
+q.addEventListener('input',filter);kind.addEventListener('change',filter);
+</script>
+</body></html>'''
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Build the Dasheng video technical registry HTML site.")
+    parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
+    parser.add_argument("--tool-registry", default=str(DEFAULT_TOOL_REGISTRY))
+    parser.add_argument("--project-registry", default=str(DEFAULT_PROJECT_REGISTRY))
+    return parser.parse_args()
+
+
+def main() -> int:
+    args = parse_args()
+    registry = load_unified_registry(Path(args.tool_registry).expanduser().resolve(), Path(args.project_registry).expanduser().resolve())
+    output = Path(args.output).expanduser().resolve()
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(build_html(registry), encoding="utf-8")
+    print(json.dumps({"status":"ok","output":str(output),"tools":len(registry['tools']),"skills":len(registry['skills']),"projects":len(registry['projects']),"reserve_candidates":len(registry['reserve_candidates'])}, ensure_ascii=False))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

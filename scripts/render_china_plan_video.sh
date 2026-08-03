@@ -21,7 +21,8 @@ echo ""
 
 # 配置
 COMPOSITION_ID="ChinaPlanXhs"
-OUTPUT_DIR="${ROOT}/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative"
+OUTPUT_BASE="${DASHENG_OUTPUT_ROOT:-${HOME}/Desktop/自媒体创作}"
+OUTPUT_DIR="${OUTPUT_BASE}/07_发布执行/2026-04-05_075240_ai/videos/motion_narrative"
 OUTPUT_FILE="${OUTPUT_DIR}/china-plan-xhs-claude-purple.mp4"
 
 # 创建输出目录

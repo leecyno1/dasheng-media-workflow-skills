@@ -20,6 +20,10 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 WIDTH = 1080
 HEIGHT = 1920
 FPS = 30
+REMOVED_STATIC_RENDERER_MESSAGE = (
+    "The local static storyboard preview renderer has been removed from production. "
+    "Use scripts/render_html_anything_scene_pack_animated.py for live HTML animation recording."
+)
 BG = (9, 14, 25)
 PANEL = (18, 28, 46)
 PANEL_2 = (23, 37, 61)
@@ -269,38 +273,7 @@ def synthesize_audio(text: str, output: Path, voice: str, rate: int) -> AudioCli
 
 
 def render_scene_video(image: Path, audio: Path, duration: float, output: Path) -> None:
-    output.parent.mkdir(parents=True, exist_ok=True)
-    run(
-        [
-            "ffmpeg",
-            "-hide_banner",
-            "-loglevel",
-            "error",
-            "-y",
-            "-loop",
-            "1",
-            "-i",
-            str(image),
-            "-i",
-            str(audio),
-            "-t",
-            f"{duration:.3f}",
-            "-vf",
-            f"zoompan=z='min(zoom+0.00035,1.045)':d={max(1, int(duration * FPS))}:s={WIDTH}x{HEIGHT}:fps={FPS},format=yuv420p",
-            "-c:v",
-            "libx264",
-            "-preset",
-            "veryfast",
-            "-crf",
-            "20",
-            "-c:a",
-            "aac",
-            "-b:a",
-            "160k",
-            "-shortest",
-            str(output),
-        ]
-    )
+    raise RuntimeError(REMOVED_STATIC_RENDERER_MESSAGE)
 
 
 def format_srt_time(seconds: float) -> str:
@@ -392,6 +365,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    raise SystemExit(REMOVED_STATIC_RENDERER_MESSAGE)
     if not shutil.which("say"):
         raise SystemExit("macOS say is required for local preview narration")
     if not shutil.which("ffmpeg"):

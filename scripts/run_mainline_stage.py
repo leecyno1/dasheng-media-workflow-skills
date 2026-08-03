@@ -18,12 +18,26 @@ from canonical_workflow import (
     ensure_stage_manifest,
     ensure_transwrite_decision_gate,
 )
+from path_config import get_desktop_root
+from project_run_manifest import (
+    add_artifact,
+    build_manifest,
+    load_manifest,
+    save_manifest,
+    set_stage_status,
+    validate_manifest,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 PYTHON = sys.executable
+MAINLINE_STAGES = {"intake", "brief", "draft", "transwrite", "publish", "postmortem"}
+
+
+def default_project_manifest_path(run_id: str) -> Path:
+    return get_desktop_root() / run_id / "project_run_manifest.json"
 
 
 def run_command(args: list[str]) -> None:
@@ -43,6 +57,79 @@ def write_json(path: Path, payload: Any) -> None:
 def write_text(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content.rstrip() + "\n", encoding="utf-8")
+
+
+def resolve_project_manifest_path(args: argparse.Namespace, run_id: str | None) -> Path | None:
+    explicit = getattr(args, "project_manifest", None)
+    if explicit:
+        return Path(explicit).expanduser().resolve()
+    if run_id:
+        return default_project_manifest_path(run_id).expanduser().resolve()
+    return None
+
+
+def load_or_create_project_manifest(
+    *,
+    args: argparse.Namespace,
+    run_id: str | None,
+    title: str | None = None,
+    source_materials: list[dict[str, str]] | None = None,
+) -> tuple[Path, dict[str, Any]] | tuple[None, None]:
+    if getattr(args, "no_project_manifest", False):
+        return None, None
+    manifest_path = resolve_project_manifest_path(args, run_id)
+    if not manifest_path:
+        return None, None
+    if manifest_path.exists():
+        return manifest_path, load_manifest(manifest_path)
+    if not run_id:
+        return None, None
+    manifest = build_manifest(
+        title=title or run_id,
+        pipeline_id="mainline",
+        output_root=manifest_path.parent,
+        source_materials=source_materials or [],
+        run_id=run_id,
+    )
+    save_manifest(manifest, manifest_path)
+    return manifest_path, manifest
+
+
+def update_project_manifest_stage(
+    *,
+    args: argparse.Namespace,
+    run_id: str | None,
+    stage: str,
+    status: str,
+    artifact_paths: list[tuple[str, Path]] | None = None,
+    notes: str = "",
+    title: str | None = None,
+    source_materials: list[dict[str, str]] | None = None,
+) -> None:
+    if stage not in MAINLINE_STAGES:
+        return
+    manifest_path, manifest = load_or_create_project_manifest(
+        args=args,
+        run_id=run_id,
+        title=title,
+        source_materials=source_materials,
+    )
+    if not manifest_path or not manifest:
+        return
+    set_stage_status(manifest, stage_name=stage, status=status, notes=notes)
+    for artifact_type, artifact_path in artifact_paths or []:
+        candidate = Path(artifact_path).expanduser().resolve()
+        if candidate.exists():
+            add_artifact(manifest, stage_name=stage, artifact_type=artifact_type, path=str(candidate))
+    errors = validate_manifest(manifest)
+    if errors:
+        raise WorkflowContractError(f"project_run_manifest 校验失败：{json.dumps(errors, ensure_ascii=False)}")
+    save_manifest(manifest, manifest_path)
+
+
+def add_project_manifest_args(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument("--project-manifest", help="显式指定 project_run_manifest.json；默认写入 ~/Desktop/自媒体创作/<run_id>/")
+    parser.add_argument("--no-project-manifest", action="store_true", help="跳过 project_run_manifest 回写。")
 
 
 def resolve_intake_inputs(run_id: str | None, intake_file: str | None) -> tuple[str, str]:
@@ -313,12 +400,53 @@ def build_paradigm_command(args: argparse.Namespace) -> list[str]:
     return command
 
 
+def build_video_train_command(args: argparse.Namespace) -> list[str]:
+    command = [
+        str(ROOT / "scripts/learn_blogger_video_style_local.py"),
+        "--video-dir",
+        args.video_dir,
+        "--style-id",
+        args.style_id,
+    ]
+    if args.blogger_name:
+        command.extend(["--blogger-name", args.blogger_name])
+    if args.blogger_platform:
+        command.extend(["--blogger-platform", args.blogger_platform])
+    if args.output_dir:
+        command.extend(["--output-dir", args.output_dir])
+    if args.skip_aggregate:
+        command.append("--skip-aggregate")
+    return command
+
+
+def build_video_self_learning_command(args: argparse.Namespace) -> list[str]:
+    command = [
+        str(ROOT / "scripts" / "run_video_creator_self_learning.py"),
+        "--config",
+        args.config,
+    ]
+    if args.output_root:
+        command.extend(["--output-root", args.output_root])
+    for creator_id in args.creator_id:
+        command.extend(["--creator-id", creator_id])
+    if args.discover_only:
+        command.append("--discover-only")
+    if args.dry_run:
+        command.append("--dry-run")
+    if args.backfill_latest:
+        command.extend(["--backfill-latest", str(args.backfill_latest)])
+    if args.skip_agent:
+        command.append("--skip-agent")
+    return command
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Canonical 大圣 Daily mainline stage runner")
     subparsers = parser.add_subparsers(dest="stage", required=True)
 
     intake = subparsers.add_parser("intake")
     intake.add_argument("--run-id")
+    add_project_manifest_args(intake)
 
     paradigm = subparsers.add_parser("paradigm")
     paradigm.add_argument("samples", nargs="*")
@@ -331,21 +459,44 @@ def main() -> None:
     paradigm.add_argument("--output-dir")
     paradigm.add_argument("--no-ai", action="store_true")
 
+    video_train = subparsers.add_parser("video-train")
+    video_train.add_argument("--video-dir", required=True, help="包含样板视频的目录")
+    video_train.add_argument("--style-id", required=True, help="输出风格 DNA 的唯一标识")
+    video_train.add_argument("--blogger-name", default="")
+    video_train.add_argument("--blogger-platform", default="")
+    video_train.add_argument("--output-dir", help="默认：~/Desktop/自媒体创作/00_范式学习/视频训练")
+    video_train.add_argument("--skip-aggregate", action="store_true")
+
+    video_self_learn = subparsers.add_parser("video-self-learn")
+    video_self_learn.add_argument(
+        "--config",
+        default=str(ROOT / "configs" / "video" / "creator_learning_watchlist.json"),
+    )
+    video_self_learn.add_argument("--output-root")
+    video_self_learn.add_argument("--creator-id", action="append", default=[])
+    video_self_learn.add_argument("--discover-only", action="store_true")
+    video_self_learn.add_argument("--dry-run", action="store_true")
+    video_self_learn.add_argument("--backfill-latest", type=int, default=0)
+    video_self_learn.add_argument("--skip-agent", action="store_true")
+
     brief = subparsers.add_parser("brief")
     brief.add_argument("--run-id")
     brief.add_argument("--input-file")
     brief.add_argument("--manual-topic", action="append", default=[])
     brief.add_argument("--agent-cards-file")
+    add_project_manifest_args(brief)
 
     draft = subparsers.add_parser("draft")
     draft.add_argument("--run-id", required=True)
     draft.add_argument("--output-dir")
+    add_project_manifest_args(draft)
 
     transwrite = subparsers.add_parser("transwrite")
     transwrite.add_argument("--run-id")
     transwrite.add_argument("--draft-manifest")
     transwrite.add_argument("--transwrite-decision")
     transwrite.add_argument("--output-dir")
+    add_project_manifest_args(transwrite)
 
     publish = subparsers.add_parser("publish")
     publish.add_argument("--run-id")
@@ -353,11 +504,13 @@ def main() -> None:
     publish.add_argument("--publish-decision")
     publish.add_argument("--output-dir")
     publish.add_argument("--dry-run", action="store_true", help="Build publish packs and prepare per-channel execution plans without publishing.")
+    add_project_manifest_args(publish)
 
     postmortem = subparsers.add_parser("postmortem")
     postmortem.add_argument("--run-id")
     postmortem.add_argument("--publish-manifest")
     postmortem.add_argument("--require-publish-guard", action="store_true", help="Fail unless publish_manifest.publish_guard is present and passed.")
+    add_project_manifest_args(postmortem)
 
     doctor = subparsers.add_parser("doctor")
     doctor.add_argument("--run-id")
@@ -366,6 +519,7 @@ def main() -> None:
     doctor.add_argument("--publish", action="store_true", help="Run publish route readiness doctor without publishing.")
     doctor.add_argument("--publish-manifest", help="Run publish batch guard against a publish_manifest.json without publishing.")
     doctor.add_argument("--channel", action="append", default=[], help="Publish channel to check with --publish; may be repeated.")
+    doctor.add_argument("--check-auth", action="store_true", help="With --publish, validate registered CLI account sessions without publishing.")
     doctor.add_argument("--output-json", help="Optional publish doctor JSON report path.")
     doctor.add_argument("--output-md", help="Optional publish doctor Markdown report path.")
     doctor.add_argument("--fail-on-error", action="store_true", help="With --publish-manifest, exit non-zero when Publish Guard does not pass.")
@@ -377,10 +531,27 @@ def main() -> None:
         if args.run_id:
             command.extend(["--run-id", args.run_id])
         run_command(command)
+        if args.run_id:
+            update_project_manifest_stage(
+                args=args,
+                run_id=args.run_id,
+                stage="intake",
+                status="complete",
+                artifact_paths=[("intake_manifest", canonical_manifest_path("intake", args.run_id))],
+                title=args.run_id,
+            )
         return
 
     if args.stage == "paradigm":
         run_command(build_paradigm_command(args))
+        return
+
+    if args.stage == "video-train":
+        run_command(build_video_train_command(args))
+        return
+
+    if args.stage == "video-self-learn":
+        run_command(build_video_self_learning_command(args))
         return
 
     if args.stage == "brief":
@@ -396,6 +567,19 @@ def main() -> None:
                 *([] if not args.agent_cards_file else ["--agent-cards-file", args.agent_cards_file]),
             ]
         )
+        update_project_manifest_stage(
+            args=args,
+            run_id=run_id,
+            stage="brief",
+            status="complete",
+            artifact_paths=[
+                ("brief_manifest", canonical_manifest_path("brief", run_id)),
+                ("selected_topics", canonical_stage_dir("brief", run_id) / "selected_topics.json"),
+                ("topic_cards", canonical_stage_dir("brief", run_id) / "topic_cards.json"),
+            ],
+            title=run_id,
+            source_materials=[{"type": "intake_records", "path": intake_file}],
+        )
         return
 
     if args.stage == "draft":
@@ -408,6 +592,23 @@ def main() -> None:
         if args.output_dir:
             command.extend(["--output-dir", args.output_dir])
         run_command(command)
+        draft_dir = Path(args.output_dir).expanduser().resolve() if args.output_dir else canonical_stage_dir("draft", args.run_id)
+        update_project_manifest_stage(
+            args=args,
+            run_id=args.run_id,
+            stage="draft",
+            status="complete",
+            artifact_paths=[
+                ("draft_manifest", draft_dir / "draft_manifest.json"),
+                ("final_structure_snapshot", draft_dir / "final_structure_snapshot.json"),
+                ("draft_quality_gate", draft_dir / "draft_quality_gate.json"),
+            ],
+            title=args.run_id,
+            source_materials=[
+                {"type": "selected_topics", "path": selected_topics},
+                {"type": "topic_cards", "path": topic_cards},
+            ],
+        )
         return
 
     if args.stage == "transwrite":
@@ -428,6 +629,24 @@ def main() -> None:
         if args.output_dir:
             command.extend(["--output-dir", args.output_dir])
         run_command(command)
+        transwrite_run_id = args.run_id or json.loads(Path(draft_manifest).read_text(encoding="utf-8")).get("run_id")
+        transwrite_dir = (
+            Path(args.output_dir).expanduser().resolve()
+            if args.output_dir
+            else canonical_stage_dir("transwrite", str(transwrite_run_id))
+        )
+        update_project_manifest_stage(
+            args=args,
+            run_id=str(transwrite_run_id),
+            stage="transwrite",
+            status="complete",
+            artifact_paths=[
+                ("transwrite_manifest", transwrite_dir / "transwrite_manifest.json"),
+                ("transwrite_decision", Path(transwrite_decision)),
+            ],
+            title=str(transwrite_run_id),
+            source_materials=[{"type": "draft_manifest", "path": draft_manifest}],
+        )
         return
 
     if args.stage == "publish":
@@ -449,6 +668,24 @@ def main() -> None:
             command.extend(["--output-dir", args.output_dir])
         if not args.dry_run:
             run_command(command)
+            publish_run_id = args.run_id or json.loads(Path(transwrite_manifest).read_text(encoding="utf-8")).get("run_id")
+            publish_dir = (
+                Path(args.output_dir).expanduser().resolve()
+                if args.output_dir
+                else canonical_stage_dir("publish", str(publish_run_id))
+            )
+            update_project_manifest_stage(
+                args=args,
+                run_id=str(publish_run_id),
+                stage="publish",
+                status="complete",
+                artifact_paths=[
+                    ("publish_manifest", publish_dir / "publish_manifest.json"),
+                    ("publish_decision", Path(publish_decision)),
+                ],
+                title=str(publish_run_id),
+                source_materials=[{"type": "transwrite_manifest", "path": transwrite_manifest}],
+            )
             return
         publish_manifest = run_json_command(command)
         dry_run_report = build_publish_dry_run_report(publish_manifest)
@@ -458,6 +695,19 @@ def main() -> None:
         write_text(preflight_path, render_publish_preflight_markdown(dry_run_report))
         dry_run_report["report_file"] = str(report_path.resolve())
         dry_run_report["preflight_report"] = str(preflight_path.resolve())
+        update_project_manifest_stage(
+            args=args,
+            run_id=str(publish_manifest.get("run_id") or args.run_id or ""),
+            stage="publish",
+            status="pending_review",
+            artifact_paths=[
+                ("publish_manifest", Path(publish_manifest["manifest_file"])),
+                ("publish_dry_run_report", report_path),
+                ("publish_preflight_report", preflight_path),
+            ],
+            title=str(publish_manifest.get("run_id") or args.run_id or ""),
+            source_materials=[{"type": "transwrite_manifest", "path": transwrite_manifest}],
+        )
         print(json.dumps(dry_run_report, ensure_ascii=False, indent=2))
         return
 
@@ -473,6 +723,16 @@ def main() -> None:
         if args.require_publish_guard:
             command.append("--require-publish-guard")
         run_command(command)
+        postmortem_run_id = args.run_id or json.loads(Path(publish_manifest).read_text(encoding="utf-8")).get("run_id")
+        update_project_manifest_stage(
+            args=args,
+            run_id=str(postmortem_run_id),
+            stage="postmortem",
+            status="complete",
+            artifact_paths=[("postmortem_manifest", canonical_manifest_path("postmortem", str(postmortem_run_id)))],
+            title=str(postmortem_run_id),
+            source_materials=[{"type": "publish_manifest", "path": publish_manifest}],
+        )
         return
 
     if args.stage == "doctor":
@@ -494,6 +754,8 @@ def main() -> None:
             command = [str(ROOT / "scripts/publish_doctor.py")]
             for channel in args.channel:
                 command.extend(["--channel", channel])
+            if args.check_auth:
+                command.append("--check-auth")
             if args.output_json:
                 command.extend(["--output-json", args.output_json])
             if args.output_md:

@@ -10,19 +10,19 @@ Date: 2026-06-13
 
 | Lane | BV | Title | Local file |
 | --- | --- | --- | --- |
-| 真人出镜口播参考 | `BV1maE169Eng` | `SpaceX上市，背后在玩什么资本游戏?` | `/Users/lichengyin/Desktop/dasheng_video_references/bilibili_samples/BV1maE169Eng/SpaceX上市，背后在玩什么资本游戏？.mp4` |
-| 无真人科普参考 | `BV1ViEg6PESR` | `【巫师】人类最大IPO来了，行内视角看背后的算计` | `/Users/lichengyin/Desktop/dasheng_video_references/bilibili_samples/BV1ViEg6PESR/【巫师】人类最大IPO来了，行内视角看背后的算计.mp4` |
+| 真人出镜口播参考 | `BV1maE169Eng` | `SpaceX上市，背后在玩什么资本游戏?` | `${HOME}/Desktop/dasheng_video_references/bilibili_samples/BV1maE169Eng/SpaceX上市，背后在玩什么资本游戏？.mp4` |
+| 无真人科普参考 | `BV1ViEg6PESR` | `【巫师】人类最大IPO来了，行内视角看背后的算计` | `${HOME}/Desktop/dasheng_video_references/bilibili_samples/BV1ViEg6PESR/【巫师】人类最大IPO来了，行内视角看背后的算计.mp4` |
 
 Generated analysis artifacts:
 
 | Lane | Artifacts |
 | --- | --- |
-| 真人出镜口播参考 | `/Users/lichengyin/Desktop/dasheng_video_references/analysis/talking_head_ref/analysis_summary.json` |
-| 真人出镜口播参考 | `/Users/lichengyin/Desktop/dasheng_video_references/analysis/talking_head_ref/contact_sheet_first80.jpg` |
-| 真人出镜口播参考 | `/Users/lichengyin/Desktop/dasheng_video_references/analysis/talking_head_ref/contact_sheet_next80.jpg` |
-| 无真人科普参考 | `/Users/lichengyin/Desktop/dasheng_video_references/analysis/explainer_ref/analysis_summary.json` |
-| 无真人科普参考 | `/Users/lichengyin/Desktop/dasheng_video_references/analysis/explainer_ref/contact_sheet_first80.jpg` |
-| 无真人科普参考 | `/Users/lichengyin/Desktop/dasheng_video_references/analysis/explainer_ref/contact_sheet_next80.jpg` |
+| 真人出镜口播参考 | `${HOME}/Desktop/dasheng_video_references/analysis/talking_head_ref/analysis_summary.json` |
+| 真人出镜口播参考 | `${HOME}/Desktop/dasheng_video_references/analysis/talking_head_ref/contact_sheet_first80.jpg` |
+| 真人出镜口播参考 | `${HOME}/Desktop/dasheng_video_references/analysis/talking_head_ref/contact_sheet_next80.jpg` |
+| 无真人科普参考 | `${HOME}/Desktop/dasheng_video_references/analysis/explainer_ref/analysis_summary.json` |
+| 无真人科普参考 | `${HOME}/Desktop/dasheng_video_references/analysis/explainer_ref/contact_sheet_first80.jpg` |
+| 无真人科普参考 | `${HOME}/Desktop/dasheng_video_references/analysis/explainer_ref/contact_sheet_next80.jpg` |
 
 ## Quantitative Findings
 

@@ -12,7 +12,7 @@ from path_config import get_output_root
 
 def default_output_dir() -> Path:
     run_id = datetime.now().strftime("%Y-%m-%d_%H%M%S")
-    return get_output_root() / "00_热点捕捉" / run_id
+    return get_output_root("hotspot") / run_id
 
 
 def run_hotspot_radar(output_dir: Path) -> dict:
@@ -44,7 +44,7 @@ def run_hotspot_radar(output_dir: Path) -> dict:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run standalone Dasheng hotspot radar capture")
-    parser.add_argument("--output-dir", help="Output directory. Defaults to 产物/00_热点捕捉/<timestamp>.")
+    parser.add_argument("--output-dir", help="Output directory. Defaults to ~/Desktop/自媒体创作/00_热点捕捉/<timestamp>.")
     return parser.parse_args()
 
 

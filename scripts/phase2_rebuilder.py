@@ -1807,7 +1807,7 @@ def build_agent_brief_prompt(run_id: str, signal_bundle: dict[str, Any], prompt_
             "请生成 JSON 对象，根键为 `topic_cards`。建议先写入 `topic_cards.agent.json`，再运行：",
             "",
             "```bash",
-            f"python3 scripts/phase2_rebuilder.py 产物/01_内容采集/{run_id}/raw/intake_records.json 产物/02_内容聚合及选题分析/{run_id} --run-id {run_id} --agent-cards-file 产物/02_内容聚合及选题分析/{run_id}/topic_cards.agent.json",
+            f"python3 scripts/phase2_rebuilder.py ~/Desktop/自媒体创作/01_内容采集/{run_id}/raw/intake_records.json ~/Desktop/自媒体创作/02_内容聚合及选题分析/{run_id} --run-id {run_id} --agent-cards-file ~/Desktop/自媒体创作/02_内容聚合及选题分析/{run_id}/topic_cards.agent.json",
             "```",
             "",
             "## Schema",

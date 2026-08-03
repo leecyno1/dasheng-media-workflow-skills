@@ -25,7 +25,7 @@
 **验证**:
 ```bash
 # 核心代码无硬编码路径（仅外部项目引用和输出目录保留）
-grep -r "/Volumes/PSSD" . --include="*.py" --include="*.js" --include="*.sh" \
+grep -r "${EXTERNAL_VOLUME}" . --include="*.py" --include="*.js" --include="*.sh" \
   | grep -v ".venv" | grep -v "产物/" | grep -v "交付镜像/" | grep -v "tmp/" \
   | wc -l
 # 结果: 11 (仅 worldmonitor 外部项目引用和测试检查代码)

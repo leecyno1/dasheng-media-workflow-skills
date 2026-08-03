@@ -7,7 +7,7 @@ description: Use when generating the 4-variant rewrite set per topic with hard w
 
 ## 默认路径
 
-- `DASHENG_WORKSPACE=${DASHENG_WORKSPACE:-/Volumes/PSSD/Projects/公众号文章}`
+- `DASHENG_WORKSPACE=${DASHENG_WORKSPACE:-${DASHENG_PROJECT_ROOT}}`
 
 ## 阶段目标
 

@@ -7,18 +7,18 @@
 
 ### 1. 视频自动下载优化（P0 - 已完成）
 
-**修改文件**: `/Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py`
+**修改文件**: `${DASHENG_PROJECT_ROOT}/scripts/material_execute_pack.py`
 
 **修改内容**:
 - Line 3235: `--video-download-limit` 默认值从 0 改为 3
 - 每个查询自动下载前 3 个合格视频
 
 **备份文件**: 
-- `/Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py.backup.{timestamp}`
+- `${DASHENG_PROJECT_ROOT}/scripts/material_execute_pack.py.backup.{timestamp}`
 
 ### 2. 扁平化文件结构（P1 - 已完成）
 
-**修改文件**: `/Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py`
+**修改文件**: `${DASHENG_PROJECT_ROOT}/scripts/material_execute_pack.py`
 
 **修改内容**:
 
@@ -87,11 +87,11 @@
 
 创建了两个补丁脚本：
 
-1. **视频下载优化**: `/Volumes/PSSD/Projects/dasheng-media-workflow-skills/scripts/patch_material_video_optimization.sh`
+1. **视频下载优化**: `${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/patch_material_video_optimization.sh`
    - Bash 脚本
    - 修改默认参数值
 
-2. **扁平化结构**: `/Volumes/PSSD/Projects/dasheng-media-workflow-skills/scripts/apply_flat_structure.py`
+2. **扁平化结构**: `${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/apply_flat_structure.py`
    - Python 脚本
    - 使用正则表达式批量替换
    - 包含验证和回滚机制
@@ -117,7 +117,7 @@ python3 scripts/apply_flat_structure.py
 ### 测试命令
 
 ```bash
-cd /Volumes/PSSD/Projects/公众号文章
+cd ${DASHENG_PROJECT_ROOT}
 
 # 测试图表生成
 python3 scripts/material_execute_pack.py \
@@ -195,8 +195,8 @@ python3 scripts/material_execute_pack.py \
 
 ```bash
 # 恢复备份文件
-cp /Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py.backup.1775446489 \
-   /Volumes/PSSD/Projects/公众号文章/scripts/material_execute_pack.py
+cp ${DASHENG_PROJECT_ROOT}/scripts/material_execute_pack.py.backup.1775446489 \
+   ${DASHENG_PROJECT_ROOT}/scripts/material_execute_pack.py
 ```
 
 ## 后续工作

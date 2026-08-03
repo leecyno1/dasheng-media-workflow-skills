@@ -42,8 +42,8 @@ class FeishuRewriteSync:
         self.tenant_access_token = None
         self.run_id = "2026-04-11_085602"
         # 使用相对路径或从参数获取
-        from path_config import get_project_root
-        self.output_dir = get_project_root() / "产物" / "06_改写" / self.run_id
+        from path_config import get_output_root
+        self.output_dir = get_output_root("rewrite") / self.run_id
 
     def get_tenant_access_token(self):
         """获取租户级别的访问令牌"""
@@ -183,7 +183,7 @@ class FeishuRewriteSync:
   3. 日本士兵闯使馆事件背后-个体极端行为还是系统性问题
 
 💾 输出位置：
-/产物/06_改写/2026-04-11_085602/
+~/Desktop/自媒体创作/06_改写/2026-04-11_085602/
 
 📄 产出文件：
   • rewrite_manifest.json - 改写清单

@@ -1,6 +1,6 @@
 # Transwrite -> Publish 阶段链路
 
-更新时间：2026-06-14
+更新时间：2026-07-12
 
 ## 主链边界
 
@@ -10,7 +10,7 @@
 
 - Draft：完成事实、数据、图表、配图、自包含 HTML。
 - Transwrite：把确认 Draft 转成渠道表达形态，采用轻内核，真正生产由 Agent/技能执行。
-- Publish：只做验收、打包、推草稿/人工发布包、链接回收和验真。
+- Publish：只做验收、打包、账号运营审查、推草稿/人工发布包、链接回收和验真。
 
 ## Transwrite 执行模型
 
@@ -89,11 +89,11 @@ Publish 必须阻塞：
 
 默认落点：
 
-- Draft：`产物/05_初稿生成/<run_id>/`
-- Transwrite：`产物/06_转写生产/<run_id>/`
-- Publish：`产物/07_发布执行/<run_id>/`
-- 实验缓存：`tmp/`
-- 历史误放素材迁移：`产物/_legacy_skill_runtime_data/`
+- Draft：`~/Desktop/自媒体创作/05_初稿生成/<run_id>/`
+- Transwrite：`~/Desktop/自媒体创作/06_转写生产/<run_id>/`
+- Publish：`~/Desktop/自媒体创作/07_发布执行/<run_id>/`
+- 实验缓存：`~/Desktop/自媒体创作/_tmp/`
+- 历史误放素材迁移：`~/Desktop/自媒体创作/_legacy_skill_runtime_data/`
 
 代码守卫：
 
@@ -112,12 +112,18 @@ Publish 必须阻塞：
   - 默认写出 `publish_guard_report.json` / `publish_guard_report.md`
   - 回写 `publish_manifest.publish_guard`
   - Postmortem 正式门控可用 `--require-publish-guard`
+- 账号运营 advisory 已接入：
+  - `dasheng-publish-operations-bridge`
+  - external `agent-skills-launch-pack`
+  - 渠道包自动生成 `account_operations_request.json`
+  - 冷启动/低流量/沉寂/风险/矩阵实验号等待 `account_operations_advice.json` 后才恢复受控执行
 
 下一阶段要攻：
 
 - 每个平台的必需字段校验：标题、摘要、标签、封面、正文、视频、音频。
 - 发布包结构化导出：公众号包、视频平台包、播客包、人工 B 站包。
 - 执行器路由：自动、半自动、人工包三类明确分流。
-- 外部依赖桥：B站优先 `biliup-rs`，多视频平台统一上传参考 `social-auto-upload`，海外排程候选 `Postiz`。
+- 外部依赖桥：小红书、抖音、B站和视频号统一通过受控 `social-auto-upload` 路线执行，B站内部继续复用 `biliup`，海外排程候选为 `Postiz`。
 - Link Recovery：草稿 ID、正式链接、账号、截图、错误状态回填。
 - Publish Guard：验真报告不得为空，未验真不得标记已发布；`draft_url` 与 `platform_url` 必须分离。
+- Operations Advice Recovery：发布后把曝光、打开/完播、互动、关注、转化等指标回收到 Postmortem，为下一轮选题和发布实验提供证据。

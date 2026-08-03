@@ -8,24 +8,24 @@
 
 - `wechat`
   - 来源：`huangdijia/wechat-skills`
-  - 安装位置：`/Users/lichengyin/.codex/skills/wechat`
+  - 安装位置：`${HOME}/.codex/skills/wechat`
   - 用途：macOS 桌面微信发消息/发图自动化
 
 - `baoyu-post-to-wechat`
   - 来源：`JimLiu/baoyu-skills`
-  - 安装位置：`/Users/lichengyin/.codex/skills/baoyu-post-to-wechat`
+  - 安装位置：`${HOME}/.codex/skills/baoyu-post-to-wechat`
   - 用途：公众号文章/图文发布
 
 ### 2. 素材与视频
 
 - `media-downloader`
   - 来源：`yizhiyanhua-ai/media-downloader`
-  - 安装位置：`/Users/lichengyin/.codex/skills/media-downloader`
+  - 安装位置：`${HOME}/.codex/skills/media-downloader`
   - 用途：按描述搜索并下载图片/视频/YouTube 片段
 
 - `remotion-best-practices`
   - 来源：本机已有 skill 镜像到 Codex
-  - 安装位置：`/Users/lichengyin/.codex/skills/remotion-best-practices`
+  - 安装位置：`${HOME}/.codex/skills/remotion-best-practices`
   - 用途：将文章改写成视频脚本、镜头、字幕、动画结构
 
 ### 3. Baoyu 内容产出与分发
@@ -42,53 +42,53 @@
 - `baoyu-translate`
 - `baoyu-xhs-images`
 
-以上均安装在：`/Users/lichengyin/.codex/skills/`
+以上均安装在：`${HOME}/.codex/skills/`
 
 ### 4. 第二批微信专项 Skills
 
 - `wechat-article-extractor-skill`
   - 来源：本地 `OpenClaw` skill
-  - 安装位置：`/Users/lichengyin/.codex/skills/wechat-article-extractor-skill`
+  - 安装位置：`${HOME}/.codex/skills/wechat-article-extractor-skill`
   - 用途：提取公众号文章元数据与正文内容
 
 - `wechat-draft-writer`
   - 来源：本地 `clawd/wechat-skills`
-  - 安装位置：`/Users/lichengyin/.codex/skills/wechat-draft-writer`
+  - 安装位置：`${HOME}/.codex/skills/wechat-draft-writer`
   - 用途：基于 Brief / Draft / confirmed outline / 风格 DNA 生成公众号高保真初稿
 
 - `wechat-multi-publisher`
   - 来源：本地 `OpenClaw` skill
-  - 安装位置：`/Users/lichengyin/.codex/skills/wechat-multi-publisher`
+  - 安装位置：`${HOME}/.codex/skills/wechat-multi-publisher`
   - 用途：多篇 Markdown 批量推送到公众号草稿箱
 
 - `wechat-public-cli`
   - 来源：本地 `OpenClaw` skill
-  - 安装位置：`/Users/lichengyin/.codex/skills/wechat-public-cli`
+  - 安装位置：`${HOME}/.codex/skills/wechat-public-cli`
   - 用途：调用本地 CLI 进行公众号/百家号发布下载
 
 - `wechat-search`
   - 来源：本地 `OpenClaw` skill
-  - 安装位置：`/Users/lichengyin/.codex/skills/wechat-search`
+  - 安装位置：`${HOME}/.codex/skills/wechat-search`
   - 用途：搜公众号文章
 
 - `wechat-style-profiler`
   - 来源：本地 `clawd/wechat-skills`
-  - 安装位置：`/Users/lichengyin/.codex/skills/wechat-style-profiler`
+  - 安装位置：`${HOME}/.codex/skills/wechat-style-profiler`
   - 用途：建立公众号作者风格 DNA
 
 - `wechat-title-generator`
   - 来源：本地 `clawd/wechat-skills`
-  - 安装位置：`/Users/lichengyin/.codex/skills/wechat-title-generator`
+  - 安装位置：`${HOME}/.codex/skills/wechat-title-generator`
   - 用途：基于 brief / outline / 初稿生成标题候选
 
 - `wechat-topic-outline-planner`
   - 来源：本地 `clawd/wechat-skills`
-  - 安装位置：`/Users/lichengyin/.codex/skills/wechat-topic-outline-planner`
+  - 安装位置：`${HOME}/.codex/skills/wechat-topic-outline-planner`
   - 用途：基于 Brief / Draft 规划公众号文章大纲
 
 - `md2wechat`
   - 来源：`geekjourneyx/md2wechat-skill`
-  - 安装位置：`/Users/lichengyin/.codex/skills/md2wechat`
+  - 安装位置：`${HOME}/.codex/skills/md2wechat`
   - 用途：Markdown 转公众号 HTML、上传草稿、图片生成、风格化处理
 
 ## 二、Rewrite 环节最有价值的 Skills

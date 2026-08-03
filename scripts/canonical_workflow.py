@@ -11,6 +11,7 @@ ROOT = get_project_root()
 
 OPTIONAL_ASSET_ROOTS: dict[str, Path] = {
     "paradigm": get_output_root("paradigm"),
+    "video_training": get_output_root("video_training"),
 }
 
 CANONICAL_STAGE_ROOTS: dict[str, Path] = {
@@ -23,6 +24,7 @@ CANONICAL_STAGE_ROOTS: dict[str, Path] = {
 }
 
 FORBIDDEN_RUNTIME_OUTPUT_ROOTS: tuple[Path, ...] = (
+    ROOT,
     ROOT / "skills",
     ROOT / "openclaw-skill-exports",
 )
@@ -99,7 +101,7 @@ def ensure_runtime_output_dir(path: Path, *, label: str = "output_dir") -> Path:
         forbidden_resolved = forbidden.resolve()
         if candidate == forbidden_resolved or forbidden_resolved in candidate.parents:
             raise WorkflowContractError(
-                f"{label} 不能位于 skill/export 目录下：{candidate}。运行产物必须写入桌面输出目录或显式工作目录。"
+                f"{label} 不能位于项目仓库、skill 或 export 目录下：{candidate}。运行产物必须写入桌面创作目录或用户显式指定的外部工作目录。"
             )
     return candidate
 

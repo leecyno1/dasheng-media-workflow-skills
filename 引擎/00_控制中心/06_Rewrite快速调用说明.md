@@ -71,4 +71,4 @@
 
 日常输出统一放到：
 
-`/Users/lichengyin/Desktop/自媒体创作临时交付/<日期>/04_rewrite/`
+`${HOME}/Desktop/自媒体创作临时交付/<日期>/04_rewrite/`

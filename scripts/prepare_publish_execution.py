@@ -130,10 +130,22 @@ def route_commands(route_name: str, request: dict[str, Any]) -> list[str]:
             f"python3 scripts/build_publish_payload.py --channel-pack {channel_pack}",
             "python3 scripts/skill_invoker.py invoke douyin-upload-skill --payload-file <publish_payload.json>",
         ]
+    if route_name == "opencli-douyin":
+        return [
+            "vendor/reserved/publish/opencli/dist/src/main.js douyin activities -f json",
+            f"vendor/reserved/publish/opencli/dist/src/main.js douyin publish <video> --title <title> --schedule <schedule> -f json",
+            "Only add --activity <id> after live discovery and editor confirmation.",
+        ]
     if route_name == "social-auto-upload":
         return [
             f"python3 scripts/build_video_upload_package.py --channel-pack {channel_pack}",
             "python3 scripts/check_publish_upstreams.py --name social-auto-upload",
+            f"python3 scripts/execute_social_auto_upload.py --channel-pack {channel_pack}",
+        ]
+    if route_name == "qianfan-local-api":
+        return [
+            "python3 scripts/start_publish_console.py",
+            f"python3 scripts/execute_qianfan_publish.py --channel-pack {channel_pack}",
         ]
     if route_name == "bilibili-upload-bridge":
         return [
@@ -190,6 +202,18 @@ def check_route(route: dict[str, Any], rows: dict[str, dict[str, Any]], request:
         })
         return check
 
+    if route_name == "opencli-douyin":
+        exists, root = root_exists(rows, "opencli")
+        root_path = Path(root).expanduser() if root else None
+        binary = root_path / "dist" / "src" / "main.js" if root_path else None
+        check.update({
+            "available": bool(exists and binary and binary.exists()),
+            "reason": "opencli_douyin_adapter_found" if exists and binary and binary.exists() else "missing_opencli_build",
+            "binary": str(binary) if binary else None,
+            "upstream_root": root,
+        })
+        return check
+
     if route_name == "all-in-one":
         binary = shutil.which("aione")
         exists, root = root_exists(rows, "all-in-one")
@@ -231,19 +255,56 @@ def check_route(route: dict[str, Any], rows: dict[str, dict[str, Any]], request:
 
     if route_name == "social-auto-upload":
         exists, root = root_exists(rows, "social-auto-upload")
+        root_path = Path(root).expanduser() if root else None
+        configured_cli = os.getenv("SOCIAL_AUTO_UPLOAD_CLI")
+        configured_cli_path = Path(configured_cli).expanduser() if configured_cli else None
+        binary = str(configured_cli_path.resolve()) if configured_cli_path and configured_cli_path.exists() else shutil.which("sau")
+        upstream_cli = None
+        if root_path:
+            for candidate in (root_path / ".venv" / "bin" / "sau", root_path / "sau_cli.py"):
+                if candidate.exists():
+                    upstream_cli = str(candidate)
+                    break
         check.update({
-            "available": exists,
-            "reason": "upstream_root_found" if exists else "missing_social_auto_upload_root",
+            "available": bool(exists and (binary or upstream_cli)),
+            "reason": (
+                "configured_sau_cli_found"
+                if configured_cli_path and configured_cli_path.exists()
+                else (
+                    "sau_binary_found"
+                    if binary
+                    else (
+                        "upstream_cli_found"
+                        if exists and upstream_cli
+                        else ("missing_sau_cli" if exists else "missing_social_auto_upload_root")
+                    )
+                )
+            ),
+            "binary": binary,
+            "upstream_cli": upstream_cli,
             "upstream_root": root,
+        })
+        return check
+
+    if route_name == "qianfan-local-api":
+        exists, root = root_exists(rows, "qianfan-sync")
+        root_path = Path(root).expanduser() if root else None
+        backend = root_path / "backend" / "app.py" if root_path else None
+        check.update({
+            "available": bool(exists and backend and backend.exists()),
+            "reason": "qianfan_backend_found" if exists and backend and backend.exists() else "missing_qianfan_backend",
+            "upstream_root": root,
+            "api_base": os.getenv("QIANFAN_API_BASE", "http://127.0.0.1:5409"),
         })
         return check
 
     if route_name == "biliup-rs":
         binary = shutil.which("biliup")
         exists, root = root_exists(rows, "biliup-rs")
+        archived = bool((rows.get("biliup-rs") or {}).get("lifecycle") == "archived")
         check.update({
-            "available": bool(binary or exists),
-            "reason": "biliup_binary_found" if binary else ("upstream_root_found" if exists else "missing_biliup_rs"),
+            "available": bool((binary or exists) and not archived),
+            "reason": "archived_upstream_disabled" if archived else ("biliup_binary_found" if binary else ("upstream_root_found" if exists else "missing_biliup_rs")),
             "binary": binary,
             "upstream_root": root,
         })
@@ -294,10 +355,13 @@ def choose_route(route_checks: list[dict[str, Any]]) -> dict[str, Any] | None:
 def route_can_be_confirm_executed(route: dict[str, Any] | None) -> bool:
     if not route:
         return False
-    # Only local draft-push skills are allowed through execute_publish_request.
-    # Browser, manual package, MCP, external CLI, and direct API uploader routes
-    # must remain plan-only until a dedicated guarded adapter exists.
-    return str(route.get("type") or "") == "skill_draft_push"
+    route_name = str(route.get("route") or "")
+    route_type = str(route.get("type") or "")
+    if route_type == "skill_draft_push":
+        return True
+    if route_name == "qianfan-local-api" and route_type == "qianfan_local_api":
+        return True
+    return route_name == "social-auto-upload" and route_type == "external_uploader_fallback"
 
 
 def build_plan(execution_request_path: Path) -> dict[str, Any]:
@@ -308,15 +372,21 @@ def build_plan(execution_request_path: Path) -> dict[str, Any]:
     status = "ready_for_user_confirmation" if selected else "blocked_missing_executor"
     if request.get("status") == "blocked":
         status = "blocked_by_channel_pack"
+    elif request.get("status") == "waiting_for_operations_review":
+        status = "waiting_for_operations_review"
     return {
         "schema_version": "1.0",
         "created_at": now_iso(),
         "dry_run": True,
         "source_execution_request": str(execution_request_path.resolve()),
+        "task_id": request.get("task_id"),
+        "batch_id": request.get("batch_id"),
         "topic_id": request.get("topic_id"),
+        "variant_id": request.get("variant_id"),
         "title": request.get("title"),
         "platform": request.get("platform"),
         "channel": request.get("channel"),
+        "account_slot": request.get("account_slot"),
         "status": status,
         "selected_route": selected.get("route") if selected else None,
         "selected_route_type": selected.get("type") if selected else None,
@@ -331,14 +401,18 @@ def build_plan(execution_request_path: Path) -> dict[str, Any]:
         ),
         "confirmed_executor_command": (
             f"python3 scripts/execute_publish_request.py --execution-request {execution_request_path.resolve()} --confirm-execute"
-            if route_can_be_confirm_executed(selected)
+            if status == "ready_for_user_confirmation" and route_can_be_confirm_executed(selected)
             else None
         ),
-        "confirm_execute_supported": route_can_be_confirm_executed(selected),
+        "confirm_execute_supported": status == "ready_for_user_confirmation" and route_can_be_confirm_executed(selected),
         "next_step": (
-            "Ask user to confirm route and login state before executing any publish command."
-            if selected
-            else "Install/configure one upstream route or use a manual package."
+            "Complete the required account operations review, rebuild the publish pack, then request execution confirmation."
+            if status == "waiting_for_operations_review"
+            else (
+                "Ask user to confirm route and login state before executing any publish command."
+                if selected
+                else "Install/configure one upstream route or use a manual package."
+            )
         ),
     }
 

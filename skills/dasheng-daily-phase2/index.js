@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
 const { spawnSync } = require('child_process');
 
 const WORKSPACE = process.env.DASHENG_ROOT || path.join(__dirname, '../..');
+const OUTPUT_ROOT = process.env.DASHENG_OUTPUT_ROOT || path.join(os.homedir(), 'Desktop', '自媒体创作');
 const PHASE2_SCRIPT = path.join(WORKSPACE, 'scripts', 'phase2_rebuilder.py');
-const INTAKE_ROOT = path.join(WORKSPACE, '产物', '01_内容采集');
-const BRIEF_ROOT = path.join(WORKSPACE, '产物', '02_内容聚合及选题分析');
+const INTAKE_ROOT = path.join(OUTPUT_ROOT, '01_内容采集');
+const BRIEF_ROOT = path.join(OUTPUT_ROOT, '02_内容聚合及选题分析');
 
 function fileExists(file) {
   return !!file && fs.existsSync(file);

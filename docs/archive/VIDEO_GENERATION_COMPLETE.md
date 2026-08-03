@@ -3,22 +3,22 @@
 ## 已完成视频
 
 ### 1. AI 并购视频
-- **文件**: `/Volumes/PSSD/Projects/公众号文章/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/ai-mergers-xhs-claude-purple.mp4`
+- **文件**: `${DASHENG_PROJECT_ROOT}/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/ai-mergers-xhs-claude-purple.mp4`
 - **大小**: 2.6MB
 - **时长**: 25秒（750帧 @ 30fps）
 - **分辨率**: 1080x1920（竖版）
 - **风格**: Claude Purple
 - **内容**: 1.2万亿美元AI并购狂潮
-- **组件**: `/Users/lichengyin/clawd/remotion-video-starter/src/AIMergersXhs.tsx`
+- **组件**: `${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/AIMergersXhs.tsx`
 
 ### 2. 中国十五五规划视频
-- **文件**: `/Volumes/PSSD/Projects/公众号文章/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/china-plan-xhs-claude-purple.mp4`
+- **文件**: `${DASHENG_PROJECT_ROOT}/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/china-plan-xhs-claude-purple.mp4`
 - **大小**: 1.9MB
 - **时长**: 25秒（750帧 @ 30fps）
 - **分辨率**: 1080x1920（竖版）
 - **风格**: Claude Purple
 - **内容**: 全球媒体都误读了中国的4.5%
-- **组件**: `/Users/lichengyin/clawd/remotion-video-starter/src/ChinaPlanXhs.tsx`
+- **组件**: `${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/ChinaPlanXhs.tsx`
 
 ## 视频场景结构
 
@@ -49,10 +49,10 @@
 
 ```bash
 # AI 并购视频
-open "/Volumes/PSSD/Projects/公众号文章/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/ai-mergers-xhs-claude-purple.mp4"
+open "${DASHENG_PROJECT_ROOT}/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/ai-mergers-xhs-claude-purple.mp4"
 
 # 中国十五五规划视频
-open "/Volumes/PSSD/Projects/公众号文章/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/china-plan-xhs-claude-purple.mp4"
+open "${DASHENG_PROJECT_ROOT}/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/china-plan-xhs-claude-purple.mp4"
 ```
 
 ## 技术栈
@@ -66,14 +66,14 @@ open "/Volumes/PSSD/Projects/公众号文章/产物/07_Publish/2026-04-05_075240
 ## 文件清单
 
 ### 新建文件
-1. `/Users/lichengyin/clawd/remotion-video-starter/src/AIMergersXhs.tsx` - AI并购视频组件
-2. `/Users/lichengyin/clawd/remotion-video-starter/src/ChinaPlanXhs.tsx` - 十五五规划视频组件
-3. `/Volumes/PSSD/Projects/dasheng-media-workflow-skills/scripts/render_ai_mergers_video.sh` - AI并购渲染脚本
-4. `/Volumes/PSSD/Projects/dasheng-media-workflow-skills/scripts/render_china_plan_video.sh` - 十五五规划渲染脚本
+1. `${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/AIMergersXhs.tsx` - AI并购视频组件
+2. `${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/ChinaPlanXhs.tsx` - 十五五规划视频组件
+3. `${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/render_ai_mergers_video.sh` - AI并购渲染脚本
+4. `${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/render_china_plan_video.sh` - 十五五规划渲染脚本
 
 ### 更新文件
-1. `/Users/lichengyin/clawd/remotion-video-starter/src/Root.jsx` - 注册两个新组件
-2. `/Volumes/PSSD/Projects/dasheng-media-workflow-skills/VIDEO_GENERATION_SUMMARY.md` - 更新完成状态
+1. `${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/Root.jsx` - 注册两个新组件
+2. `${PROJECTS_ROOT}/dasheng-media-workflow-skills/VIDEO_GENERATION_SUMMARY.md` - 更新完成状态
 
 ## 下一步建议
 

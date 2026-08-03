@@ -1,336 +1,172 @@
 # 安装指南
 
-Dasheng Media Workflow Skills - 7阶段自媒体内容创作自动化系统
+Dasheng Media Workflow Skills 的核心工作流只要求 Python 与 Git；视频渲染、ASR、浏览器发布和外部储备按需安装。
 
-## 系统要求
+## 1. 系统要求
 
-### 必需
-- **Python**: 3.10 或更高版本
-- **Node.js**: 18.0 或更高版本
-- **内存**: 至少 8GB RAM
-- **磁盘空间**: 至少 5GB 可用空间
+| 依赖 | 要求 | 用途 |
+| --- | --- | --- |
+| Python | 3.10+ | 主流程、注册表、测试 |
+| Git | 2.x | 主仓库与外部储备同步 |
+| Node.js | 18+，可选 | Remotion、HTML 动画、发布控制台 |
+| FFmpeg / ffprobe | 5+，可选 | 音视频探测、剪辑、转码、QC |
+| pnpm / bun | 可选 | 部分上游项目的依赖管理 |
+| yt-dlp | 可选 | 公开素材下载与参考视频采集 |
 
-### 可选
-- **Git**: 用于版本控制和更新
-- **Docker**: 用于容器化部署（可选）
+建议预留 15 GB 以上空间。ASR 模型、浏览器、Node 依赖和 46 个外部项目不会进入主仓库，但会占用本地磁盘。
 
-## 快速安装（推荐）
-
-### 1. 克隆仓库
+## 2. 安装核心项目
 
 ```bash
 git clone https://github.com/leecyno1/dasheng-media-workflow-skills.git
 cd dasheng-media-workflow-skills
-```
-
-### 2. 运行安装脚本
-
-```bash
 chmod +x scripts/install.sh
 ./scripts/install.sh
+source .venv/bin/activate
 ```
 
-安装脚本会自动：
-- 检查系统要求
-- 创建Python虚拟环境
-- 安装所有依赖
-- 创建必要的工作目录
-- 生成配置文件模板
-- 验证安装完整性
+安装脚本会创建 `.venv`、安装 `requirements.txt`、复制本地路径配置模板并运行基础验证。仓库根目录没有统一的 Node 包，因此不会执行无意义的根目录 `npm install`。
 
-### 3. 验证安装
-
-```bash
-python3 scripts/verify_installation.py
-```
-
-如果看到所有检查项都显示 ✅，说明安装成功。
-
-## 手动安装
-
-如果自动安装脚本失败，可以按以下步骤手动安装：
-
-### 1. 克隆仓库
-
-```bash
-git clone https://github.com/leecyno1/dasheng-media-workflow-skills.git
-cd dasheng-media-workflow-skills
-```
-
-### 2. 创建Python虚拟环境
+手动安装等价命令：
 
 ```bash
 python3 -m venv .venv
-source .venv/bin/activate  # macOS/Linux
-# 或
-.venv\Scripts\activate  # Windows
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+cp configs/paths.default.yaml configs/paths.local.yaml
+python scripts/verify_installation.py
 ```
 
-### 3. 安装Python依赖
+## 3. 配置环境
 
 ```bash
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-### 4. 安装Node.js依赖
-
-```bash
-npm install
-```
-
-### 5. 创建配置文件
-
-```bash
+cp .env.template .env
 cp configs/paths.default.yaml configs/paths.local.yaml
 ```
 
-### 6. 创建工作目录
+最常用的路径变量：
 
 ```bash
-mkdir -p 素材 项目 产物
+export DASHENG_PROJECT_ROOT="$PWD"
+export DASHENG_OUTPUT_ROOT="$HOME/Desktop/自媒体创作"
 ```
 
-### 7. 验证安装
+只填写当前实际使用的服务。财经数据、飞书、图片模型、MiniMax、发布平台等均为可选集成。密钥应放在 `.env`、系统钥匙串或仓库外的配置文件中，不要写入被 Git 跟踪的 JSON、Markdown 或 Skill。
+
+## 4. 安装 Skills
 
 ```bash
-python3 scripts/verify_installation.py
+bash install_to_openclaw.sh
 ```
 
-## 配置
-
-### 必需配置
-
-#### 1. API密钥配置
-
-创建 `.env` 文件（或设置环境变量）：
+默认复制到 `~/.openclaw/skills` 和 `~/.openclaw/workspace`。也可指定目标：
 
 ```bash
-# Anthropic API密钥（用于AI生成）
-ANTHROPIC_API_KEY=your_api_key_here
-
-# Tushare Token（用于金融数据，可选）
-TUSHARE_TOKEN=your_token_here
+bash install_to_openclaw.sh /path/to/skills /path/to/workspace
 ```
 
-#### 2. 路径配置
+总控 Skill 是 `dasheng-media-sop`，完整登记见 `skills/SKILL_ALIASES.md`。
 
-编辑 `configs/paths.local.yaml`：
+## 5. 同步外部储备
 
-```yaml
-# 项目根目录（通常无需修改，自动检测）
-project_root: auto
-
-# 工作目录（相对于project_root）
-work_dirs:
-  materials: "素材"
-  projects: "项目"
-  engines: "引擎"
-  outputs: "产物"
-
-# 外部依赖路径
-external:
-  feishu_config: "${FEISHU_CONFIG_PATH:-~/.config/feishu/api.conf}"
-  openclaw_skills: "${OPENCLAW_SKILLS_DIR:-~/.openclaw/skills}"
-
-# 数据源端点
-data_sources:
-  intake_5173: "${DASHENG_INTAKE_5173_BASE:-http://127.0.0.1:18000}"
-  intake_reports: "${DASHENG_INTAKE_REPORTS_BASE:-http://45.197.148.64:8080}"
-  intake_8001: "${DASHENG_INTAKE_8001_BASE:-http://45.197.148.64:8001}"
-```
-
-### 可选配置
-
-#### 飞书集成（可选）
-
-如果需要使用飞书协作功能，创建飞书配置文件：
+检查本地状态：
 
 ```bash
-mkdir -p ~/.config/feishu
-cat > ~/.config/feishu/api.conf << EOF
-APP_ID="your_app_id"
-APP_SECRET="your_app_secret"
-CHAT_ID="your_chat_id"
-EOF
+python scripts/sync_reserved_projects.py --mode check
 ```
 
-#### 图像生成服务（可选）
-
-如果需要使用AI图像生成，配置图像生成服务：
+克隆全部保留项目与候选储备：
 
 ```bash
-# 编辑 configs/image_generation/providers.local.env
-VIVIAI_IMAGE_API_KEY=your_key
-VECTORENGINE_API_KEY=your_key
+python scripts/sync_reserved_projects.py --mode clone
 ```
 
-## 验证安装
-
-运行以下命令验证各组件：
+也可按类别或名称安装：
 
 ```bash
-# 1. 验证路径解析
-python3 core/path_resolver.py
-
-# 2. 验证完整安装
-python3 scripts/verify_installation.py
-
-# 3. 运行测试套件
-python3 -m pytest tests/ -v
-
-# 4. 检查数据源健康
-python3 scripts/check_data_sources.py
+python scripts/sync_reserved_projects.py --mode clone --category video
+python scripts/sync_reserved_projects.py --mode clone --name qianfan-sync
 ```
 
-## 运行第一个工作流
-
-安装完成后，运行Stage 1（内容采集）测试：
+更新只允许干净工作树的快进合并：
 
 ```bash
-python3 scripts/run_stage1_intake.py
+python scripts/sync_reserved_projects.py --mode update --name opencli
 ```
 
-如果成功，会在 `产物/01_内容采集/` 目录下生成采集报告。
+外部源码默认位于 `vendor/reserved/` 或 `vendor/publish/`，并被主仓库忽略。
 
-## Docker安装（可选）
-
-### 使用Docker Compose
+## 6. 应用上游兼容补丁
 
 ```bash
-docker-compose up -d
-docker-compose exec app python3 scripts/verify_installation.py
+python scripts/apply_upstream_patches.py --mode check
+python scripts/apply_upstream_patches.py --mode apply
 ```
 
-### 手动构建Docker镜像
+补丁包括千帆发布窗口策略、B 站封面假超时修复、HTML Video 动画依赖和若干本地构建兼容项。补丁登记见 `configs/external/upstream_patches.json`。
+
+更新上游前，先确认其工作树是否包含本地修改；不要对有修改的外部仓库直接执行更新。
+
+## 7. 视频与发布依赖
+
+ASR 与媒体扩展：
 
 ```bash
-docker build -t dasheng-workflow .
-docker run -it dasheng-workflow python3 scripts/verify_installation.py
+python -m pip install -r requirements-media.txt
 ```
 
-## 故障排除
-
-### 问题1：Python版本过低
-
-**错误**：`需要Python 3.10+，当前版本: 3.9.x`
-
-**解决**：
-```bash
-# macOS (使用Homebrew)
-brew install python@3.11
-
-# Ubuntu/Debian
-sudo apt-get install python3.11
-
-# 验证版本
-python3 --version
-```
-
-### 问题2：Node.js版本过低
-
-**错误**：`需要Node.js 18+`
-
-**解决**：
-```bash
-# 使用nvm安装
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-nvm install 18
-nvm use 18
-```
-
-### 问题3：依赖安装失败
-
-**错误**：`pip install` 或 `npm install` 失败
-
-**解决**：
-```bash
-# 清理缓存
-pip cache purge
-npm cache clean --force
-
-# 使用国内镜像（中国用户）
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-npm install --registry=https://registry.npmmirror.com
-```
-
-### 问题4：路径解析失败
-
-**错误**：`Cannot detect project root: CLAUDE.md not found`
-
-**解决**：
-- 确保在项目根目录运行命令
-- 确保 `CLAUDE.md` 文件存在
-- 或手动设置环境变量：
-  ```bash
-  export DASHENG_PROJECT_ROOT=/path/to/project
-  ```
-
-### 问题5：权限错误
-
-**错误**：`Permission denied`
-
-**解决**：
-```bash
-# 给脚本添加执行权限
-chmod +x scripts/*.sh
-chmod +x scripts/*.py
-
-# 或使用sudo（不推荐）
-sudo python3 scripts/install.sh
-```
-
-## 更新
-
-### 更新到最新版本
+检查视频外部依赖：
 
 ```bash
-git pull origin main
-pip install -r requirements.txt --upgrade
-npm install
-python3 scripts/verify_installation.py
+python scripts/ensure_video_external_deps.py --dep all --mode check
 ```
 
-### 查看版本信息
+发布相关上游检查：
 
 ```bash
-cat VERSION
-git log --oneline -5
+python scripts/check_publish_upstreams.py
+python scripts/publish_doctor.py
 ```
 
-## 卸载
+千帆、Social Auto Upload、PostBot 和 OpenCLI 各自拥有独立依赖与登录会话。账号状态应保存在仓库外的命名 Session 目录中。
+
+千帆作为默认视频发布路线时，复制一份本地账号映射并填写每个平台槽位的 `qianfan_account_id` 或 `qianfan_account_name`：
 
 ```bash
-# 删除虚拟环境
-rm -rf .venv
-
-# 删除Node模块
-rm -rf node_modules
-
-# 删除生成的数据（可选）
-rm -rf 产物/* 素材/* 项目/*
-
-# 删除项目目录
-cd ..
-rm -rf dasheng-media-workflow-skills
+cp configs/publish/account_registry.json configs/publish/account_registry.local.json
+export DASHENG_PUBLISH_ACCOUNT_REGISTRY="$PWD/configs/publish/account_registry.local.json"
+export QIANFAN_API_BASE="http://127.0.0.1:5409"
 ```
 
-## 下一步
+本地映射文件被 Git 忽略，不要把真实账号名称和 ID 写回公开模板。
 
-安装完成后，请阅读：
+## 8. 验证
 
-- [快速开始指南](docs/guides/quick-start.md) - 5分钟快速上手
-- [阶段详解](docs/guides/stage-by-stage.md) - 了解7个工作流阶段
-- [架构设计](docs/technical/architecture.md) - 深入理解系统架构
-- [阶段接口规范](docs/STAGE_INTERFACES.md) - 各阶段输入输出接口定义
-- [贡献指南](CONTRIBUTING.md) - 参与项目开发
+```bash
+python scripts/verify_installation.py
+python scripts/run_mainline_stage.py doctor --strict
+python scripts/build_project_catalog.py --check
+python -m pytest tests -q
+```
 
-## 获取帮助
+## 9. 更新
 
-- **文档**: [docs/](docs/)
-- **问题反馈**: [GitHub Issues](https://github.com/leecyno1/dasheng-media-workflow-skills/issues)
-- **更新日志**: [CHANGELOG.md](CHANGELOG.md)
+```bash
+git pull --ff-only origin main
+source .venv/bin/activate
+python -m pip install -r requirements.txt --upgrade
+python scripts/sync_reserved_projects.py --mode check
+python scripts/apply_upstream_patches.py --mode check
+python scripts/verify_installation.py
+```
 
-## 许可证
+外部储备与主仓库分开更新。不要使用会覆盖本地补丁或账号会话的递归重置命令。
 
-MIT License - 详见 [LICENSE](LICENSE) 文件
+## 常见问题
+
+- `missing_checkout`：运行储备克隆命令，或只克隆所需项目。
+- `patch conflict`：上游文件已经变化；对照补丁目的手工迁移后重新导出补丁。
+- FFmpeg 不可用：先安装 FFmpeg，再重跑媒体依赖检查。
+- 发布登录失效：在对应命名账号 Session 中重新登录，不要把 Cookie 导出到仓库。
+- 路径错误：设置 `DASHENG_PROJECT_ROOT` 和 `DASHENG_OUTPUT_ROOT`，再运行 doctor。

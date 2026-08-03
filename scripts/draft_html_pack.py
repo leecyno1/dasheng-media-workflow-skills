@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import os
 import re
 from pathlib import Path
 from urllib import request as urllib_request
@@ -30,8 +31,10 @@ def load_chart_js(chartjs_file: str | None = None, *, required: bool = False) ->
         [
             ROOT / "vendor/chart.umd.min.js",
             ROOT / "assets/vendor/chart.umd.min.js",
-            Path("/Users/lichengyin/Documents/html一切/next/node_modules/chart.js/dist/chart.umd.min.js"),
-            Path("/Users/lichengyin/Documents/html一切/node_modules/chart.js/dist/chart.umd.min.js"),
+            Path(os.environ.get("HTML_ANYTHING_ROOT", str(ROOT / "vendor/reserved/render/html-anything"))).expanduser()
+            / "next/node_modules/chart.js/dist/chart.umd.min.js",
+            Path(os.environ.get("HTML_ANYTHING_ROOT", str(ROOT / "vendor/reserved/render/html-anything"))).expanduser()
+            / "node_modules/chart.js/dist/chart.umd.min.js",
         ]
     )
     for candidate in candidates:

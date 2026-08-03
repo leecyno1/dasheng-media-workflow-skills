@@ -11,12 +11,12 @@
 
 ### 1. AI 并购狂潮视频
 
-**源文件**: `/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-05_075240_ai/topic-ai-ma-boom-q1-2026/xhs_video_luxun_hot.md`
+**源文件**: `${DASHENG_PROJECT_ROOT}/产物/06_改写/2026-04-05_075240_ai/topic-ai-ma-boom-q1-2026/xhs_video_luxun_hot.md`
 
 **Remotion 组件**: `AIMergersXhs.tsx`
 
 **输出视频**: 
-- `/Volumes/PSSD/Projects/公众号文章/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/ai-mergers-xhs.mp4`
+- `${DASHENG_PROJECT_ROOT}/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/ai-mergers-xhs.mp4`
 - 文件大小: 2.6 MB
 - 分辨率: 1080x1920 (9:16 竖版)
 - 时长: 25 秒 (750 帧 @ 30fps)
@@ -32,12 +32,12 @@
 
 ### 2. 中国十五五规划视频
 
-**源文件**: `/Volumes/PSSD/Projects/公众号文章/产物/06_改写/2026-04-05_075240_ai/topic-china-15th-five-year-plan-2026/xhs_video_luxun_hot.md`
+**源文件**: `${DASHENG_PROJECT_ROOT}/产物/06_改写/2026-04-05_075240_ai/topic-china-15th-five-year-plan-2026/xhs_video_luxun_hot.md`
 
 **Remotion 组件**: `ChinaPlanXhs.tsx`
 
 **输出视频**:
-- `/Volumes/PSSD/Projects/公众号文章/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/china-plan-xhs.mp4`
+- `${DASHENG_PROJECT_ROOT}/产物/07_Publish/2026-04-05_075240_ai/videos/motion_narrative/china-plan-xhs.mp4`
 - 文件大小: 1.9 MB
 - 分辨率: 1080x1920 (9:16 竖版)
 - 时长: 25 秒 (750 帧 @ 30fps)
@@ -67,7 +67,7 @@
 ### 渲染命令
 
 ```bash
-cd /Users/lichengyin/clawd/remotion-video-starter
+cd ${LEGACY_OPENCLAW_ROOT}/remotion-video-starter
 
 # 渲染 AI 并购视频
 npx remotion render src/index.jsx AIMergersXhs out/ai-mergers-xhs.mp4
@@ -178,7 +178,7 @@ rewrite → **publish (video generation)** → distribute
 ### 推荐命令
 
 ```bash
-cd /Users/lichengyin/clawd/remotion-video-starter
+cd ${LEGACY_OPENCLAW_ROOT}/remotion-video-starter
 
 # 为指定 run_id 生成所有视频
 ./scripts/render_all_xhs_videos.sh 2026-04-05_075240_ai

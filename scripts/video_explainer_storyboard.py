@@ -146,7 +146,7 @@ def section_summaries(article: HtmlArticle) -> list[dict[str, Any]]:
             )
     for section in sections:
         section["paragraphs"] = section.get("paragraphs", [])[:3]
-    return sections[:8]
+    return sections[:16]
 
 
 def load_router(path: Path | None) -> dict[str, Any]:
@@ -240,6 +240,7 @@ def build_explainer_storyboard(
     source_html: str | None = None,
     duration_target_sec: int = 180,
     router: dict[str, Any] | None = None,
+    aspect: str = "9:16",
 ) -> dict[str, Any]:
     rules = load_driver_rules()
     scenes: list[dict[str, Any]] = []
@@ -377,7 +378,7 @@ def build_explainer_storyboard(
         "created_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "source_html": source_html,
         "title": article.title,
-        "aspect": "9:16",
+        "aspect": aspect,
         "renderer": "html-video",
         "template_router_schema": router.get("schema_version"),
         "driver_rules_schema": rules.get("schema_version"),
@@ -393,7 +394,7 @@ def build_explainer_storyboard(
         ],
         "duration_estimate_sec": round(sum(scene["duration_sec"] for scene in scenes), 3),
         "style": {
-            "direction": "finance_documentary_vertical",
+            "direction": "finance_documentary_horizontal" if aspect == "16:9" else "finance_documentary_vertical",
             "avoid": ["ppt_bullet_dump", "fake_chart", "developer_overlay_labels"],
             "use": ["real_tables", "article_charts", "document_zoom", "kinetic_title"],
         },
@@ -432,6 +433,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--preview-html")
     parser.add_argument("--duration-target-sec", type=int, default=180)
     parser.add_argument("--template-router", default=str(DEFAULT_ROUTER_PATH))
+    parser.add_argument("--aspect", choices=["9:16", "16:9", "3:4"], default="9:16")
     return parser.parse_args()
 
 
@@ -445,6 +447,7 @@ def main() -> None:
         source_html=str(source),
         duration_target_sec=args.duration_target_sec,
         router=router,
+        aspect=args.aspect,
     )
     output = Path(args.output).expanduser().resolve()
     write_json(output, storyboard)

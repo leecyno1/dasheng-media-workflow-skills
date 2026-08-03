@@ -6,8 +6,8 @@ Date: 2026-06-13
 
 当前模板池来自两个外部仓库：
 
-- HTML Anything：`/Users/lichengyin/Documents/html一切`，当前路由扫描到 78 个模板。
-- html-video：`/Volumes/PSSD/html-video`，当前 CLI 扫描到 23 个可执行视频模板。
+- HTML Anything：`${HOME}/Documents/html一切`，当前路由扫描到 78 个模板。
+- html-video：`${EXTERNAL_VOLUME}/html-video`，当前 CLI 扫描到 23 个可执行视频模板。
 - 重名交集 6 个：`frame-data-chart-nyt`、`frame-glitch-title`、`frame-light-leak-cinema`、`frame-liquid-bg-hero`、`frame-logo-outro`、`vfx-text-cursor`。
 - 去重后当前是 95 个模板，不是固定 100 个。后续 skill 必须每次扫描外部仓库生成候选池，不能硬编码数量。
 

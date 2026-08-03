@@ -84,6 +84,92 @@ def collect_visual_needs(card: dict[str, Any], reasoning: dict[str, Any]) -> lis
     return unique_texts(values)
 
 
+LEMON_ILLUSTRATION_TRIGGERS = {
+    "example": re.compile(r"(?:比如|例如|举个例子|举例来说|假设一下|想象一下|试想|打个比方)"),
+    "metaphor": re.compile(r"(?:就像|好比|仿佛|如同|可以把.+?看[作成]|把.+?比作|这就像)"),
+    "financial_metaphor": re.compile(
+        r"(?:抽血|虹吸|踩刹车|开闸|蓄水池|地心引力|安全绳|接力|吞噬|黑洞|跷跷板|温度计|发动机|传送带|漏斗|闸门)"
+    ),
+}
+
+
+def detect_lemon_illustration_intents(text: str, max_intents: int = 8) -> list[dict[str, Any]]:
+    """Find explicit metaphor/example beats for later Agent enrichment and generation."""
+    if not text:
+        return []
+    candidates: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    chunks = re.split(r"(?<=[。！？!?])\s*|\n+", text)
+    for raw in chunks:
+        sentence = re.sub(r"\s+", " ", raw).strip(" #-*\t")
+        if len(sentence) < 8 or len(sentence) > 260 or sentence.startswith(("{{", "|")):
+            continue
+        matched_type = None
+        matched_terms: list[str] = []
+        for trigger_type, pattern in LEMON_ILLUSTRATION_TRIGGERS.items():
+            terms = pattern.findall(sentence)
+            if terms:
+                matched_type = trigger_type
+                matched_terms = [str(term) for term in terms]
+                break
+        if not matched_type:
+            continue
+        signature = re.sub(r"\W+", "", sentence)
+        if not signature or signature in seen:
+            continue
+        seen.add(signature)
+        index = len(candidates) + 1
+        candidates.append(
+            {
+                "intent_id": f"lemon-illustration-{index:02d}",
+                "trigger_type": matched_type,
+                "trigger_terms": matched_terms,
+                "source_text": sentence,
+                "core_meaning": "",
+                "visual_metaphor_brief": "",
+                "character_action": "",
+                "skill": "dasheng-lemon-illustrations",
+                "evidence_authenticity": "schematic",
+                "status": "triggered_pending_agent_enrichment",
+                "required": matched_type in {"example", "metaphor"},
+                "channel_adaptation": {
+                    "wechat_article": {
+                        "mode": "full_canvas",
+                        "placement": "after_source_paragraph",
+                    },
+                    "talking_head_video": {
+                        "mode": "transparent_overlay_or_full_canvas",
+                        "motion": "setup_action_result",
+                    },
+                    "explainer_html_video": {
+                        "mode": "full_canvas",
+                        "motion": "setup_action_result",
+                    },
+                },
+            }
+        )
+        if len(candidates) >= max_intents:
+            break
+    return candidates
+
+
+def merge_illustration_intents(*groups: Any) -> list[dict[str, Any]]:
+    merged: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for group in groups:
+        if not isinstance(group, list):
+            continue
+        for raw in group:
+            if not isinstance(raw, dict):
+                continue
+            signature = str(raw.get("intent_id") or raw.get("source_text") or "").strip()
+            if not signature or signature in seen:
+                continue
+            seen.add(signature)
+            merged.append(raw)
+    return merged
+
+
 def load_asset_specs(path: Path | None) -> dict[str, dict[str, Any]]:
     if not path:
         return {}
@@ -111,6 +197,7 @@ def resolve_asset_specs(
     card: dict[str, Any],
     reasoning: dict[str, Any],
     external_asset_specs: dict[str, dict[str, Any]] | None = None,
+    draft_text: str | None = None,
 ) -> dict[str, Any]:
     topic_id = str(card.get("topic_id") or reasoning.get("topic_id"))
     external = (external_asset_specs or {}).get(topic_id) or {}
@@ -139,6 +226,18 @@ def resolve_asset_specs(
         or card.get("draft_image_specs")
         or []
     )
+    illustration_specs = (
+        external.get("illustration_specs")
+        or external.get("comic_specs")
+        or card.get("illustration_specs")
+        or card.get("lemon_illustration_specs")
+        or []
+    )
+    illustration_intents = merge_illustration_intents(
+        external.get("illustration_intents"),
+        card.get("illustration_intents"),
+        detect_lemon_illustration_intents(draft_text or ""),
+    )
     chart_specs = chart_specs if isinstance(chart_specs, list) else []
     finance_chart_requests = finance_chart_requests if isinstance(finance_chart_requests, list) else []
     finance_report = build_finance_chart_specs_with_report(finance_chart_requests)
@@ -147,6 +246,18 @@ def resolve_asset_specs(
     data_validation = finance_report.get("validation_report") or {}
     chart_specs = chart_specs + finance_chart_specs
     image_specs = image_specs if isinstance(image_specs, list) else []
+    illustration_specs = illustration_specs if isinstance(illustration_specs, list) else []
+    image_specs = image_specs + illustration_specs
+    resolved_intent_ids = {
+        str(spec.get("intent_id"))
+        for spec in illustration_specs
+        if isinstance(spec, dict) and spec.get("intent_id")
+    }
+    unresolved_illustration_intents = [
+        intent
+        for intent in illustration_intents
+        if intent.get("required") and str(intent.get("intent_id")) not in resolved_intent_ids
+    ]
     missing = []
     if (chart_requests or finance_chart_requests) and not chart_specs:
         missing.append("chart_specs")
@@ -154,6 +265,8 @@ def resolve_asset_specs(
         missing.append("finance_chart_specs")
     if image_requests and not image_specs:
         missing.append("image_specs")
+    if unresolved_illustration_intents:
+        missing.append("illustration_specs")
     return {
         "chart_requests": chart_requests,
         "image_requests": image_requests,
@@ -162,6 +275,10 @@ def resolve_asset_specs(
         "finance_chart_failures": finance_failures,
         "data_validation": data_validation,
         "image_specs": image_specs,
+        "illustration_intents": illustration_intents,
+        "illustration_specs": illustration_specs,
+        "unresolved_illustration_intents": unresolved_illustration_intents,
+        "illustration_status": "complete" if not unresolved_illustration_intents else "pending_agent_generation",
         "asset_status": "complete" if not missing else "incomplete",
         "asset_missing": sorted(set(missing)),
     }
@@ -751,7 +868,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Build canonical stage-3 drafts from selected topics")
     parser.add_argument("selected_topics_file", help="Path to selected_topics.json")
     parser.add_argument("topic_cards_file", help="Path to topic_cards.json")
-    parser.add_argument("--output-dir", help="Output dir, default=产物/05_初稿生成/<run_id>")
+    parser.add_argument("--output-dir", help="Output dir, default=~/Desktop/自媒体创作/05_初稿生成/<run_id>")
     parser.add_argument("--run-id")
     parser.add_argument("--asset-specs-file", help="Optional topic_id keyed chart_specs/image_specs for final HTML assets")
     parser.add_argument("--chartjs-file", help="Optional local Chart.js v4.4.4 UMD file for offline HTML packing")
@@ -785,13 +902,25 @@ def main() -> None:
         html_file = output_dir / f"03_HTML草稿_{slug}.html"
         quality_file = output_dir / f"03_质量门禁_{slug}.json"
         asset_specs_file = output_dir / f"03_DraftAssets_{slug}.json"
+        illustration_intents_file = output_dir / f"03_IllustrationIntents_{slug}.json"
         write_json(reasoning_json_file, reasoning)
         write_text(reasoning_md_file, render_reasoning_sheet_md(reasoning, card))
         draft_text = generate_ai_draft(card, reasoning)
         quality_gate = inspect_draft_quality(draft_text, card, reasoning)
         write_text(draft_file, draft_text)
-        asset_specs = resolve_asset_specs(card, reasoning, external_asset_specs)
+        asset_specs = resolve_asset_specs(card, reasoning, external_asset_specs, draft_text=draft_text)
         write_json(asset_specs_file, asset_specs)
+        write_json(
+            illustration_intents_file,
+            {
+                "schema_version": "dasheng.lemon_illustration_intents.v1",
+                "topic_id": topic_id,
+                "skill": "dasheng-lemon-illustrations",
+                "status": asset_specs["illustration_status"],
+                "intents": asset_specs["illustration_intents"],
+                "unresolved": asset_specs["unresolved_illustration_intents"],
+            },
+        )
         write_draft_html_from_markdown(
             draft_file,
             html_file,
@@ -812,6 +941,7 @@ def main() -> None:
                 "draft_file": str(draft_file),
                 "html_file": str(html_file),
                 "asset_specs_file": str(asset_specs_file),
+                "illustration_intents_file": str(illustration_intents_file),
                 "asset_status": asset_specs["asset_status"],
                 "asset_missing": asset_specs["asset_missing"],
                 "asset_failures": {
@@ -822,10 +952,14 @@ def main() -> None:
                 },
                 "chart_specs": asset_specs["chart_specs"],
                 "image_specs": asset_specs["image_specs"],
+                "illustration_intents": asset_specs["illustration_intents"],
+                "illustration_specs": asset_specs["illustration_specs"],
+                "illustration_status": asset_specs["illustration_status"],
                 "asset_requests": {
                     "charts": asset_specs["chart_requests"],
                     "images": asset_specs["image_requests"],
                     "finance_charts": asset_specs["finance_chart_requests"],
+                    "lemon_illustrations": asset_specs["unresolved_illustration_intents"],
                 },
                 "html_contract": {
                     "self_contained": True,

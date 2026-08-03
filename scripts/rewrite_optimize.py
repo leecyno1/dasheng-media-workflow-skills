@@ -24,11 +24,10 @@ from core.anchor_mapper import AnchorMapper
 from core.version_generator import VersionGenerator
 
 # 配置
-from path_config import get_project_root
-PROJECT_ROOT = get_project_root()
+from path_config import get_output_root
 RUN_ID = "2026-04-11_085602"
-DRAFT_DIR = PROJECT_ROOT / "产物" / "05_初稿生成" / RUN_ID
-OUTPUT_DIR = PROJECT_ROOT / "产物" / "06_改写" / RUN_ID
+DRAFT_DIR = get_output_root("draft") / RUN_ID
+OUTPUT_DIR = get_output_root("rewrite") / RUN_ID
 MANIFEST_FILE = OUTPUT_DIR / "rewrite_manifest.json"
 
 class RewriteOptimizer:

@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
 const { readJsonIfExists } = require('./manifest');
 const { extractFolderToken } = require('./doc-registry');
 
 const BASE_DIR = path.join(__dirname, '..', 'runtime-data');
 const PROJECT_ROOT = path.resolve(__dirname, '..', '..', '..');
-const OUTPUT_ROOT = path.join(PROJECT_ROOT, '产物');
+const OUTPUT_ROOT = process.env.DASHENG_OUTPUT_ROOT || path.join(os.homedir(), 'Desktop', '自媒体创作');
 const CONFIG_FILE = path.join(PROJECT_ROOT, 'configs', 'feishu', 'stage_review_contract.json');
 
 const STAGE_SEQUENCE = ['intake', 'brief', 'draft', 'transwrite', 'publish', 'postmortem'];

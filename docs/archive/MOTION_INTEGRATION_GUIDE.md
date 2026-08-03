@@ -20,7 +20,7 @@
 
 **运行环境**：
 - URL: http://127.0.0.1:8787
-- 启动命令：`cd /Volumes/PSSD/Projects/finance-motion-8787 && npm run dev`
+- 启动命令：`cd ${PROJECTS_ROOT}/finance-motion-8787 && npm run dev`
 
 ### Remotion Video Starter
 
@@ -35,7 +35,7 @@
 
 **运行环境**：
 - URL: http://localhost:3000
-- 启动命令：`cd /Users/lichengyin/clawd/remotion-video-starter && npm start`
+- 启动命令：`cd ${LEGACY_OPENCLAW_ROOT}/remotion-video-starter && npm start`
 
 ---
 
@@ -126,7 +126,7 @@ Step 4: Remotion - 高质量渲染
 
 1. **启动 Finance Motion 8787**
 ```bash
-cd /Volumes/PSSD/Projects/finance-motion-8787
+cd ${PROJECTS_ROOT}/finance-motion-8787
 npm run dev
 # 访问 http://127.0.0.1:8787
 ```
@@ -156,11 +156,11 @@ npm run scenes:check
 
 1. **运行转换脚本**
 ```bash
-cd /Volumes/PSSD/Projects/dasheng-media-workflow-skills
+cd ${PROJECTS_ROOT}/dasheng-media-workflow-skills
 
 python3 scripts/convert_finance_motion_to_remotion.py \
-  --input /Volumes/PSSD/Projects/finance-motion-8787/dashboard/scenes.json \
-  --output /Users/lichengyin/clawd/remotion-video-starter/src/compositions/generated-config.json \
+  --input ${PROJECTS_ROOT}/finance-motion-8787/dashboard/scenes.json \
+  --output ${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/compositions/generated-config.json \
   --style claude-purple
 ```
 
@@ -174,7 +174,7 @@ python3 scripts/convert_finance_motion_to_remotion.py \
 
 1. **启动 Remotion Studio（可选，用于预览）**
 ```bash
-cd /Users/lichengyin/clawd/remotion-video-starter
+cd ${LEGACY_OPENCLAW_ROOT}/remotion-video-starter
 npm start
 # 访问 http://localhost:3000
 ```
@@ -234,7 +234,7 @@ npx remotion render FinanceNewsXhs out/video.mp4 --concurrency=4
 ### 自动化脚本
 
 ```bash
-cd /Volumes/PSSD/Projects/dasheng-media-workflow-skills
+cd ${PROJECTS_ROOT}/dasheng-media-workflow-skills
 
 # 完整的 publish 流程
 python3 scripts/publish_video_supplement.py \
@@ -286,7 +286,7 @@ python3 scripts/publish_video_supplement.py \
 
 ### 映射配置文件
 
-`/Users/lichengyin/clawd/remotion-video-starter/src/templates/template-mapping.json`
+`${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/templates/template-mapping.json`
 
 ```json
 {
@@ -370,22 +370,22 @@ python3 scripts/convert_finance_motion_to_remotion.py \
 ```bash
 # 使用 Claude 紫色风格
 python3 scripts/convert_finance_motion_to_remotion.py \
-  --input /Volumes/PSSD/Projects/finance-motion-8787/dashboard/scenes.json \
-  --output /Users/lichengyin/clawd/remotion-video-starter/src/compositions/config.json \
+  --input ${PROJECTS_ROOT}/finance-motion-8787/dashboard/scenes.json \
+  --output ${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/compositions/config.json \
   --style claude-purple
 
 # 使用赛博朋克风格，横版视频
 python3 scripts/convert_finance_motion_to_remotion.py \
-  --input /Volumes/PSSD/Projects/finance-motion-8787/dashboard/scenes.json \
-  --output /Users/lichengyin/clawd/remotion-video-starter/src/compositions/config.json \
+  --input ${PROJECTS_ROOT}/finance-motion-8787/dashboard/scenes.json \
+  --output ${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/compositions/config.json \
   --style cyberpunk \
   --width 1920 \
   --height 1080
 
 # 指定特定模板组件
 python3 scripts/convert_finance_motion_to_remotion.py \
-  --input /Volumes/PSSD/Projects/finance-motion-8787/dashboard/scenes.json \
-  --output /Users/lichengyin/clawd/remotion-video-starter/src/compositions/config.json \
+  --input ${PROJECTS_ROOT}/finance-motion-8787/dashboard/scenes.json \
+  --output ${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/compositions/config.json \
   --template FinanceBusiness
 ```
 
@@ -457,10 +457,10 @@ python3 scripts/convert_finance_motion_to_remotion.py \
 
 ## 相关文档
 
-- [Finance Motion 8787 README](/Volumes/PSSD/Projects/finance-motion-8787/README.md)
+- [Finance Motion 8787 README](${PROJECTS_ROOT}/finance-motion-8787/README.md)
 - [Remotion 官方文档](https://www.remotion.dev/docs)
-- [模板风格文档](/Volumes/PSSD/Projects/dasheng-media-workflow-skills/skills/dasheng-stage-publish-video/references/template-styles.md)
-- [平台元数据规则](/Volumes/PSSD/Projects/dasheng-media-workflow-skills/skills/dasheng-stage-rewrite/references/platform-metadata.md)
+- [模板风格文档](${PROJECTS_ROOT}/dasheng-media-workflow-skills/skills/dasheng-stage-publish-video/references/template-styles.md)
+- [平台元数据规则](${PROJECTS_ROOT}/dasheng-media-workflow-skills/skills/dasheng-stage-rewrite/references/platform-metadata.md)
 
 ---
 

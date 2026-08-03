@@ -40,12 +40,14 @@ FORMAL_SKILLS = [
     "dasheng-media-sop",
     "dasheng-paradigm-profiler",
     "dasheng-stage-publish",
+    "dasheng-publish-operations-bridge",
     "dasheng-daily-intake",
     "dasheng-daily-phase2",
     "dasheng-daily-postmortem",
     "dasheng-finance-data",
     "dasheng-html-video-bridge",
     "dasheng-html-anything-bridge",
+    "dasheng-lemon-illustrations",
     "dasheng-video-talking-head",
     "dasheng-video-explainer-html",
     "dasheng-style-profiler",
@@ -72,6 +74,7 @@ DOC_FILES = [
 ]
 BUNDLED_DIRECTORIES = [
     "scripts",
+    "configs/creative",
 ]
 
 

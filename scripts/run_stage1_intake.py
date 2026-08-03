@@ -44,9 +44,9 @@ OUT_ROOT = get_output_root("intake")
 TIME_FMT = "%Y-%m-%d_%H%M%S"
 
 PORT_5173 = os.getenv("DASHENG_INTAKE_5173_BASE", "http://127.0.0.1:18000").rstrip("/")
-PORT_REPORTS = os.getenv("DASHENG_INTAKE_REPORTS_BASE", "http://45.197.148.64:8080").rstrip("/")
+PORT_REPORTS = os.getenv("DASHENG_INTAKE_REPORTS_BASE", "http://127.0.0.1:8080").rstrip("/")
 PORT_REPORTS_FALLBACK = os.getenv("DASHENG_INTAKE_REPORTS_FALLBACK", "").rstrip("/")
-PORT_8000 = os.getenv("DASHENG_INTAKE_8000_BASE", "http://45.197.148.64:8000").rstrip("/")
+PORT_8000 = os.getenv("DASHENG_INTAKE_8000_BASE", "http://127.0.0.1:8000").rstrip("/")
 PORT_8000_API = f"{PORT_8000}/api/v1"
 INTAKE_MODE = os.getenv("DASHENG_INTAKE_MODE", "simple").strip().lower()
 

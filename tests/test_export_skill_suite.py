@@ -27,7 +27,11 @@ class ExportSkillSuiteTests(unittest.TestCase):
             self.assertTrue((export_root / "skills" / "dasheng-paradigm-profiler" / "SKILL.md").exists())
             self.assertTrue((export_root / "skills" / "dasheng-paradigm-profiler" / "config.json").exists())
             self.assertTrue((export_root / "skills" / "dasheng-stage-publish" / "SKILL.md").exists())
+            self.assertTrue((export_root / "skills" / "dasheng-publish-operations-bridge" / "SKILL.md").exists())
             self.assertTrue((export_root / "skills" / "dasheng-html-video-bridge" / "SKILL.md").exists())
+            self.assertTrue((export_root / "skills" / "dasheng-lemon-illustrations" / "SKILL.md").exists())
+            self.assertTrue((export_root / "configs" / "creative" / "lemon_illustration_router.json").exists())
+            self.assertTrue((export_root / "configs" / "creative" / "lemon_illustration_intents.schema.json").exists())
             self.assertTrue((export_root / "skills" / "dasheng-video-talking-head" / "SKILL.md").exists())
             self.assertTrue((export_root / "skills" / "dasheng-video-explainer-html" / "SKILL.md").exists())
             self.assertTrue((export_root / "scripts" / "run_mainline_stage.py").exists())
@@ -57,9 +61,12 @@ class ExportSkillSuiteTests(unittest.TestCase):
             self.assertIn("dasheng-paradigm-profiler", manifest["formal_skills"])
             self.assertIn("dasheng-video-talking-head", manifest["formal_skills"])
             self.assertIn("dasheng-video-explainer-html", manifest["formal_skills"])
+            self.assertIn("dasheng-lemon-illustrations", manifest["formal_skills"])
+            self.assertIn("dasheng-publish-operations-bridge", manifest["formal_skills"])
             self.assertIn("dasheng-daily-draft", manifest["legacy_redirect_skills"])
             self.assertEqual(manifest["installation"]["openclaw"]["script"], "install_to_openclaw.sh")
             self.assertIn("scripts", manifest["bundled_directories"])
+            self.assertIn("configs/creative", manifest["bundled_directories"])
 
 
 if __name__ == "__main__":

@@ -1,8 +1,9 @@
 {
   "schema_version": "dasheng.html_anything_template_router.v1",
-  "created_at": "2026-06-13T13:10:49+08:00",
-  "html_anything_root": "/Users/lichengyin/Documents/html一切",
-  "template_count": 78,
+  "created_at": "2026-08-03T06:58:58+08:00",
+  "html_anything_root": "${HTML_ANYTHING_ROOT:-vendor/reserved/render/html-anything}",
+  "template_paths_relative_to_root": true,
+  "template_count": 81,
   "routing_policy": {
     "principle": "content_part -> template candidates -> storyboard scene -> renderer",
     "version_locking": false,
@@ -291,6 +292,13 @@
           "reason": "适合章节卡、段落切换和节奏重置。 模板说明：黑底 + CRT 网格扫描线 + $ 命令行标题 + 薄荷绿大字 + 三档 tag"
         },
         {
+          "template_id": "deck-ljg-present",
+          "zh_name": "宣言式演讲（Outline-Faithful）",
+          "category": "slides",
+          "aspect_hint": "16:9 横向翻页",
+          "reason": "适合章节卡、段落切换和节奏重置。 模板说明：把 outline 1:1 铸成色块大字宣言 deck, 原文不动只做美化。三档主题 black / red / yellow"
+        },
+        {
           "template_id": "deck-magazine-web",
           "zh_name": "杂志风网页 PPT",
           "category": "slides",
@@ -464,6 +472,13 @@
           "category": "slides",
           "aspect_hint": "16:9",
           "reason": "适合总架构、大纲、提纲和章节地图。 模板说明：黑底 + CRT 网格扫描线 + $ 命令行标题 + 薄荷绿大字 + 三档 tag"
+        },
+        {
+          "template_id": "deck-ljg-present",
+          "zh_name": "宣言式演讲（Outline-Faithful）",
+          "category": "slides",
+          "aspect_hint": "16:9 横向翻页",
+          "reason": "适合总架构、大纲、提纲和章节地图。 模板说明：把 outline 1:1 铸成色块大字宣言 deck, 原文不动只做美化。三档主题 black / red / yellow"
         },
         {
           "template_id": "deck-magazine-web",
@@ -745,6 +760,13 @@
           "reason": "适合折线/柱状/范围带等数据图表。 模板说明：数字故障 / 像散偏移 / 数据腐败标题, 适合视频转场 / cyberpunk hero"
         },
         {
+          "template_id": "info-funnel",
+          "zh_name": "漏斗信息图",
+          "category": "data",
+          "aspect_hint": "1080×1920 (9:16) 竖屏",
+          "reason": "适合折线/柱状/范围带等数据图表。 模板说明：3-6 阶递减漏斗, 突出转化率 / 筛选比例 / 流量损耗。竖图适合 IG Story / 小红书"
+        },
+        {
           "template_id": "social-x-post-card",
           "zh_name": "X (Twitter) 帖子卡",
           "category": "card",
@@ -904,6 +926,13 @@
           "category": "video",
           "aspect_hint": "1920×1080 (16:9)",
           "reason": "适合表格、指标清单和财务明细。 模板说明：NYT-newsroom 排版 + 错峰揭示动画 + 编辑级图表 (折线/柱/范围带)"
+        },
+        {
+          "template_id": "info-funnel",
+          "zh_name": "漏斗信息图",
+          "category": "data",
+          "aspect_hint": "1080×1920 (9:16) 竖屏",
+          "reason": "适合表格、指标清单和财务明细。 模板说明：3-6 阶递减漏斗, 突出转化率 / 筛选比例 / 流量损耗。竖图适合 IG Story / 小红书"
         },
         {
           "template_id": "kanban-board",
@@ -1209,7 +1238,7 @@
         "article-magazine",
         "card-twitter",
         "deck-guizang-editorial",
-        "digital-eguide"
+        "article-sketchnote-editorial"
       ],
       "candidates": [
         {
@@ -1239,6 +1268,13 @@
           "category": "slides",
           "aspect_hint": "16:9 横向翻页",
           "reason": "适合正文中的放大引语和强调句。 模板说明：电子杂志 × 电子墨水; 10 个版面 + 5 套调色板 (墨水/靛蓝瓷/森林墨/牛皮纸/沙丘)"
+        },
+        {
+          "template_id": "article-sketchnote-editorial",
+          "zh_name": "编辑式视觉笔记",
+          "category": "article",
+          "aspect_hint": "1080 × 自适应（竖向长图）",
+          "reason": "适合正文中的放大引语和强调句。 模板说明：把一个概念铸成杂志专题档案——真问题→失败→转折→顿悟→命名, 6 个 layout 模具 + 4 字族对比 + 探案档案细节"
         },
         {
           "template_id": "digital-eguide",
@@ -1307,7 +1343,7 @@
         "article-magazine",
         "docs-page",
         "blog-post",
-        "competitive-teardown"
+        "article-sketchnote-editorial"
       ],
       "candidates": [
         {
@@ -1337,6 +1373,13 @@
           "category": "article",
           "aspect_hint": "长页面",
           "reason": "适合新闻、文档、截图和来源材料展示。 模板说明：杂志感长文, 含 masthead、hero、figures、pull quote、作者署名"
+        },
+        {
+          "template_id": "article-sketchnote-editorial",
+          "zh_name": "编辑式视觉笔记",
+          "category": "article",
+          "aspect_hint": "1080 × 自适应（竖向长图）",
+          "reason": "适合新闻、文档、截图和来源材料展示。 模板说明：把一个概念铸成杂志专题档案——真问题→失败→转折→顿悟→命名, 6 个 layout 模具 + 4 字族对比 + 探案档案细节"
         },
         {
           "template_id": "competitive-teardown",
@@ -2287,6 +2330,13 @@
           "reason": "适合把多段内容组织成连续解释帧。 模板说明：黑底 + CRT 网格扫描线 + $ 命令行标题 + 薄荷绿大字 + 三档 tag"
         },
         {
+          "template_id": "deck-ljg-present",
+          "zh_name": "宣言式演讲（Outline-Faithful）",
+          "category": "slides",
+          "aspect_hint": "16:9 横向翻页",
+          "reason": "适合把多段内容组织成连续解释帧。 模板说明：把 outline 1:1 铸成色块大字宣言 deck, 原文不动只做美化。三档主题 black / red / yellow"
+        },
+        {
           "template_id": "deck-obsidian-claude",
           "zh_name": "GitHub Dark 紫渐变 Deck",
           "category": "slides",
@@ -2428,6 +2478,7 @@
       "deck-graphify-dark",
       "deck-guizang-editorial",
       "deck-hermes-cyber",
+      "deck-ljg-present",
       "deck-magazine-web",
       "deck-obsidian-claude",
       "deck-open-slide-canvas",
@@ -2453,6 +2504,7 @@
       "deck-dir-key-nav",
       "deck-graphify-dark",
       "deck-hermes-cyber",
+      "deck-ljg-present",
       "deck-magazine-web",
       "deck-obsidian-claude",
       "deck-open-slide-canvas",
@@ -2493,6 +2545,7 @@
       "experiment-readout",
       "flowai-team-dashboard",
       "frame-glitch-title",
+      "info-funnel",
       "social-x-post-card",
       "wireframe-sketch"
     ],
@@ -2516,6 +2569,7 @@
       "experiment-readout",
       "flowai-team-dashboard",
       "frame-data-chart-nyt",
+      "info-funnel",
       "kanban-board",
       "live-dashboard",
       "pricing-page",
@@ -2564,6 +2618,7 @@
       "article-magazine",
       "card-twitter",
       "deck-guizang-editorial",
+      "article-sketchnote-editorial",
       "digital-eguide"
     ],
     "warning_or_risk": [
@@ -2578,6 +2633,7 @@
       "article-magazine",
       "docs-page",
       "blog-post",
+      "article-sketchnote-editorial",
       "competitive-teardown",
       "digital-eguide",
       "email-marketing",
@@ -2714,6 +2770,7 @@
       "deck-dir-key-nav",
       "deck-graphify-dark",
       "deck-hermes-cyber",
+      "deck-ljg-present",
       "deck-obsidian-claude",
       "deck-open-slide-canvas",
       "deck-pitch",
@@ -2754,6 +2811,25 @@
       ],
       "recommended_trigger": "文章内图片、截图、资料图、报告截屏。",
       "timing_policy": "4-8s，配合放大/裁切/标注，不要静止堆图。",
+      "fill_requirements": "必须复用文章图片、截图、报告或来源材料；需要局部标注。"
+    },
+    {
+      "template_id": "article-sketchnote-editorial",
+      "zh_name": "编辑式视觉笔记",
+      "en_name": "Editorial Sketchnote",
+      "category": "article",
+      "aspect_hint": "1080 × 自适应（竖向长图）",
+      "primary_content_part": "news_or_document",
+      "content_parts": [
+        "news_or_document",
+        "pull_quote"
+      ],
+      "article_slots": [
+        "新闻 / 文档证据",
+        "正文金句"
+      ],
+      "recommended_trigger": "新闻事实、官方文件、研究报告、公告。",
+      "timing_policy": "5-9s，证据画面可做局部 zoom。",
       "fill_requirements": "必须复用文章图片、截图、报告或来源材料；需要局部标注。"
     },
     {
@@ -3058,6 +3134,27 @@
       "recommended_trigger": "风险、暴跌、踩踏、政策红线、反转信号。",
       "timing_policy": "4-8s，适合突然转折或风险提示。",
       "fill_requirements": "按内容部件填入标题、短句、要点或画面素材。"
+    },
+    {
+      "template_id": "deck-ljg-present",
+      "zh_name": "宣言式演讲（Outline-Faithful）",
+      "en_name": "Outline-Faithful Manifesto Deck",
+      "category": "slides",
+      "aspect_hint": "16:9 横向翻页",
+      "primary_content_part": "chapter_divider",
+      "content_parts": [
+        "chapter_divider",
+        "overall_outline",
+        "deck_explainer"
+      ],
+      "article_slots": [
+        "章节标题",
+        "文章总纲 / 大纲",
+        "连续解释 Deck"
+      ],
+      "recommended_trigger": "一、二、三等章节切换，或口播进入下一段。",
+      "timing_policy": "2-4s，短，不抢正文。",
+      "fill_requirements": "填入标题、章节名、结论或转场词；画面只服务节奏。"
     },
     {
       "template_id": "deck-magazine-web",
@@ -3786,6 +3883,25 @@
       "fill_requirements": "必须复用文章图片、截图、报告或来源材料；需要局部标注。"
     },
     {
+      "template_id": "info-funnel",
+      "zh_name": "漏斗信息图",
+      "en_name": "Funnel Infographic",
+      "category": "data",
+      "aspect_hint": "1080×1920 (9:16) 竖屏",
+      "primary_content_part": "data_chart",
+      "content_parts": [
+        "data_chart",
+        "data_table"
+      ],
+      "article_slots": [
+        "图表 / 数据可视化",
+        "表格 / 指标清单"
+      ],
+      "recommended_trigger": "折线、柱状、对比、散点、范围带等真实数据。",
+      "timing_policy": "6-12s，先出现坐标/指标，再 reveal 数据结论。",
+      "fill_requirements": "必须使用文章已验证数据、表格或图表；禁止虚构指标。"
+    },
+    {
       "template_id": "invoice",
       "zh_name": "可打印发票",
       "en_name": "Printable Invoice",
@@ -4476,14 +4592,32 @@
       "tags": "[\"blog\", \"essay\", \"newsletter\", \"公众号\", \"博客\", \"文章\"]",
       "featured": "11",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/article-magazine/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/article-magazine/example.html",
+      "skill_path": "next/src/lib/templates/skills/article-magazine/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/article-magazine/example.html",
       "roles": [
         "article_image",
         "quote",
         "pull_quote",
         "news_or_document",
         "source_citation"
+      ]
+    },
+    {
+      "id": "article-sketchnote-editorial",
+      "zh_name": "编辑式视觉笔记",
+      "en_name": "Editorial Sketchnote",
+      "category": "article",
+      "scenario": "education",
+      "aspect_hint": "1080 × 自适应（竖向长图）",
+      "description": "把一个概念铸成杂志专题档案——真问题→失败→转折→顿悟→命名, 6 个 layout 模具 + 4 字族对比 + 探案档案细节",
+      "tags": "[\"sketchnote\", \"magazine\", \"editorial\", \"档案\", \"杂志\", \"视觉笔记\", \"narrative\", \"叙事\", \"concept-history\", \"概念史\"]",
+      "featured": "",
+      "recommended": "",
+      "skill_path": "next/src/lib/templates/skills/article-sketchnote-editorial/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/article-sketchnote-editorial/example.html",
+      "roles": [
+        "news_or_document",
+        "pull_quote"
       ]
     },
     {
@@ -4497,8 +4631,8 @@
       "tags": "[\"blog\", \"essay\", \"case study\", \"长文\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/blog-post/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/blog-post/example.html",
+      "skill_path": "next/src/lib/templates/skills/blog-post/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/blog-post/example.html",
       "roles": [
         "quote",
         "pull_quote",
@@ -4516,8 +4650,8 @@
       "tags": "[\"twitter\", \"x\", \"quote\", \"金句\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/card-twitter/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/card-twitter/example.html",
+      "skill_path": "next/src/lib/templates/skills/card-twitter/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/card-twitter/example.html",
       "roles": [
         "closing_outro",
         "quote",
@@ -4539,8 +4673,8 @@
       "tags": "[\"xhs\", \"小红书\", \"carousel\", \"图文\"]",
       "featured": "24",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/card-xiaohongshu/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/card-xiaohongshu/example.html",
+      "skill_path": "next/src/lib/templates/skills/card-xiaohongshu/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/card-xiaohongshu/example.html",
       "roles": [
         "xiaohongshu_card",
         "quote",
@@ -4559,8 +4693,8 @@
       "tags": "[\"competitive\", \"teardown\", \"strategy\", \"product\", \"竞品\", \"拆解\"]",
       "featured": "8",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/competitive-teardown/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/competitive-teardown/example.html",
+      "skill_path": "next/src/lib/templates/skills/competitive-teardown/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/competitive-teardown/example.html",
       "roles": [
         "news_or_document",
         "source_citation"
@@ -4577,8 +4711,8 @@
       "tags": "[\"dashboard\", \"admin\", \"analytics\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/dashboard/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/dashboard/example.html",
+      "skill_path": "next/src/lib/templates/skills/dashboard/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/dashboard/example.html",
       "roles": [
         "financial_chart",
         "data_table",
@@ -4597,8 +4731,8 @@
       "tags": "[\"data\", \"report\", \"chart\", \"数据\", \"报告\"]",
       "featured": "10",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/data-report/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/data-report/example.html",
+      "skill_path": "next/src/lib/templates/skills/data-report/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/data-report/example.html",
       "roles": [
         "data_chart",
         "financial_chart",
@@ -4617,8 +4751,8 @@
       "tags": "[\"dating\", \"community\", \"consumer\"]",
       "featured": "5",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/dating-web/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/dating-web/example.html",
+      "skill_path": "next/src/lib/templates/skills/dating-web/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/dating-web/example.html",
       "roles": [
         "dashboard_screen",
         "data_table",
@@ -4637,8 +4771,8 @@
       "tags": "[\"blueprint\", \"architecture\", \"engineering\"]",
       "featured": "29",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-blueprint/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-blueprint/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-blueprint/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-blueprint/example.html",
       "roles": [
         "overall_outline",
         "logic_chain",
@@ -4658,8 +4792,8 @@
       "tags": "[\"course\", \"workshop\", \"training\", \"教学\"]",
       "featured": "25",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-course-module/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-course-module/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-course-module/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-course-module/example.html",
       "roles": [
         "chapter_divider",
         "overall_outline",
@@ -4677,8 +4811,8 @@
       "tags": "[\"minimal\", \"kbd\", \"monocolor\"]",
       "featured": "34",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-dir-key-nav/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-dir-key-nav/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-dir-key-nav/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-dir-key-nav/example.html",
       "roles": [
         "chapter_divider",
         "timeline",
@@ -4698,8 +4832,8 @@
       "tags": "[\"graph\", \"dev tool\", \"ai\", \"cli\"]",
       "featured": "28",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-graphify-dark/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-graphify-dark/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-graphify-dark/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-graphify-dark/example.html",
       "roles": [
         "logic_chain",
         "chapter_divider",
@@ -4718,8 +4852,8 @@
       "tags": "[\"editorial\", \"e-ink\", \"magazine\", \"narrative\", \"guizang\"]",
       "featured": "49",
       "recommended": "1",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-guizang-editorial/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-guizang-editorial/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-guizang-editorial/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-guizang-editorial/example.html",
       "roles": [
         "article_subtitle",
         "overall_outline",
@@ -4739,10 +4873,29 @@
       "tags": "[\"cyber\", \"terminal\", \"review\", \"cli\"]",
       "featured": "30",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-hermes-cyber/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-hermes-cyber/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-hermes-cyber/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-hermes-cyber/example.html",
       "roles": [
         "warning_or_risk",
+        "chapter_divider",
+        "overall_outline",
+        "deck_explainer"
+      ]
+    },
+    {
+      "id": "deck-ljg-present",
+      "zh_name": "宣言式演讲（Outline-Faithful）",
+      "en_name": "Outline-Faithful Manifesto Deck",
+      "category": "slides",
+      "scenario": "creator",
+      "aspect_hint": "16:9 横向翻页",
+      "description": "把 outline 1:1 铸成色块大字宣言 deck, 原文不动只做美化。三档主题 black / red / yellow",
+      "tags": "[\"deck\", \"manifesto\", \"slogan\", \"outline\", \"宣言\", \"演讲\", \"色块\", \"大字\", \"ultra-bold\"]",
+      "featured": "",
+      "recommended": "",
+      "skill_path": "next/src/lib/templates/skills/deck-ljg-present/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-ljg-present/example.html",
+      "roles": [
         "chapter_divider",
         "overall_outline",
         "deck_explainer"
@@ -4759,8 +4912,8 @@
       "tags": "[\"magazine\", \"editorial\", \"e-ink\", \"horizontal swipe\"]",
       "featured": "9",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-magazine-web/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-magazine-web/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-magazine-web/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-magazine-web/example.html",
       "roles": [
         "deck_explainer",
         "chapter_divider",
@@ -4778,8 +4931,8 @@
       "tags": "[\"github\", \"dark\", \"purple\", \"mcp\", \"agent\"]",
       "featured": "31",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-obsidian-claude/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-obsidian-claude/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-obsidian-claude/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-obsidian-claude/example.html",
       "roles": [
         "chapter_divider",
         "overall_outline",
@@ -4797,8 +4950,8 @@
       "tags": "[\"canvas\", \"open-slide\", \"freeform\", \"1920\", \"react\"]",
       "featured": "35",
       "recommended": "9",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-open-slide-canvas/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-open-slide-canvas/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-open-slide-canvas/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-open-slide-canvas/example.html",
       "roles": [
         "chapter_divider",
         "overall_outline",
@@ -4816,8 +4969,8 @@
       "tags": "[\"pitch\", \"investor\", \"seed\", \"vc\"]",
       "featured": "20",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-pitch/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-pitch/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-pitch/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-pitch/example.html",
       "roles": [
         "chapter_divider",
         "overall_outline",
@@ -4835,8 +4988,8 @@
       "tags": "[\"presenter\", \"notes\", \"提词\", \"teleprompter\"]",
       "featured": "26",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-presenter-mode/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-presenter-mode/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-presenter-mode/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-presenter-mode/example.html",
       "roles": [
         "chapter_divider",
         "overall_outline",
@@ -4854,8 +5007,8 @@
       "tags": "[\"launch\", \"keynote\", \"product\"]",
       "featured": "21",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-product-launch/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-product-launch/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-product-launch/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-product-launch/example.html",
       "roles": [
         "chapter_divider",
         "overall_outline",
@@ -4873,8 +5026,8 @@
       "tags": "[\"replit\", \"themed\", \"memo\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-replit/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-replit/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-replit/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-replit/example.html",
       "roles": [
         "chapter_divider",
         "overall_outline",
@@ -4892,8 +5045,8 @@
       "tags": "[\"safety\", \"security\", \"policy\", \"incident\"]",
       "featured": "32",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-safety-alert/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-safety-alert/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-safety-alert/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-safety-alert/example.html",
       "roles": [
         "warning_or_risk",
         "chapter_divider",
@@ -4912,8 +5065,8 @@
       "tags": "[\"deck\", \"simple\", \"swipe\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-simple/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-simple/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-simple/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-simple/example.html",
       "roles": [
         "chapter_divider",
         "overall_outline",
@@ -4931,8 +5084,8 @@
       "tags": "[\"swiss\", \"grid\", \"international\", \"ikb\", \"editorial\", \"facts\"]",
       "featured": "50",
       "recommended": "2",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-swiss-international/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-swiss-international/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-swiss-international/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-swiss-international/example.html",
       "roles": [
         "article_subtitle",
         "chapter_divider",
@@ -4952,8 +5105,8 @@
       "tags": "[\"tech talk\", \"conference\", \"engineering\"]",
       "featured": "22",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-tech-sharing/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-tech-sharing/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-tech-sharing/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-tech-sharing/example.html",
       "roles": [
         "chapter_divider",
         "overall_outline",
@@ -4971,8 +5124,8 @@
       "tags": "[\"xhs\", \"pastel\", \"lifestyle\", \"lifestyle\"]",
       "featured": "33",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-xhs-pastel/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-xhs-pastel/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-xhs-pastel/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-xhs-pastel/example.html",
       "roles": [
         "xiaohongshu_card",
         "chapter_divider",
@@ -4991,8 +5144,8 @@
       "tags": "[\"xhs\", \"instagram\", \"carousel\"]",
       "featured": "24",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-xhs-post/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-xhs-post/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-xhs-post/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-xhs-post/example.html",
       "roles": [
         "xiaohongshu_card",
         "chapter_divider",
@@ -5011,8 +5164,8 @@
       "tags": "[\"editorial\", \"rainbow\", \"macaron\"]",
       "featured": "27",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-xhs-white/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/deck-xhs-white/example.html",
+      "skill_path": "next/src/lib/templates/skills/deck-xhs-white/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/deck-xhs-white/example.html",
       "roles": [
         "xiaohongshu_card",
         "chapter_divider",
@@ -5031,8 +5184,8 @@
       "tags": "[\"eguide\", \"lookbook\", \"lead magnet\", \"playbook\"]",
       "featured": "6",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/digital-eguide/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/digital-eguide/example.html",
+      "skill_path": "next/src/lib/templates/skills/digital-eguide/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/digital-eguide/example.html",
       "roles": [
         "news_or_document",
         "pull_quote",
@@ -5051,8 +5204,8 @@
       "tags": "[\"kami\", \"parchment\", \"serif\", \"editorial\", \"report\", \"letter\", \"one-pager\"]",
       "featured": "48",
       "recommended": "3",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/doc-kami-parchment/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/doc-kami-parchment/example.html",
+      "skill_path": "next/src/lib/templates/skills/doc-kami-parchment/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/doc-kami-parchment/example.html",
       "roles": [
         "article_image",
         "quote",
@@ -5071,8 +5224,8 @@
       "tags": "[\"docs\", \"api\", \"tutorial\", \"guide\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/docs-page/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/docs-page/example.html",
+      "skill_path": "next/src/lib/templates/skills/docs-page/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/docs-page/example.html",
       "roles": [
         "news_or_document",
         "source_citation"
@@ -5089,8 +5242,8 @@
       "tags": "[\"email\", \"newsletter\", \"mjml\"]",
       "featured": "7",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/email-marketing/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/email-marketing/example.html",
+      "skill_path": "next/src/lib/templates/skills/email-marketing/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/email-marketing/example.html",
       "roles": [
         "news_or_document",
         "data_table"
@@ -5107,8 +5260,8 @@
       "tags": "[\"runbook\", \"ops\", \"oncall\", \"sre\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/eng-runbook/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/eng-runbook/example.html",
+      "skill_path": "next/src/lib/templates/skills/eng-runbook/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/eng-runbook/example.html",
       "roles": [
         "source_citation",
         "kanban_or_process",
@@ -5128,8 +5281,8 @@
       "tags": "[\"executive\", \"briefing\", \"memo\", \"decision\", \"strategy\", \"简报\", \"决策\"]",
       "featured": "8",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/exec-briefing-memo/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/exec-briefing-memo/example.html",
+      "skill_path": "next/src/lib/templates/skills/exec-briefing-memo/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/exec-briefing-memo/example.html",
       "roles": [
         "news_or_document",
         "source_citation"
@@ -5146,8 +5299,8 @@
       "tags": "[\"experiment\", \"ab-test\", \"growth\", \"product\", \"data\", \"实验\", \"复盘\"]",
       "featured": "8",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/experiment-readout/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/experiment-readout/example.html",
+      "skill_path": "next/src/lib/templates/skills/experiment-readout/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/experiment-readout/example.html",
       "roles": [
         "data_chart",
         "data_table"
@@ -5164,8 +5317,8 @@
       "tags": "[\"financial\", \"p&l\", \"mrr\", \"财报\"]",
       "featured": "10",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/finance-report/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/finance-report/example.html",
+      "skill_path": "next/src/lib/templates/skills/finance-report/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/finance-report/example.html",
       "roles": [
         "data_chart",
         "financial_chart",
@@ -5184,8 +5337,8 @@
       "tags": "[\"flowai\", \"team\", \"members\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/flowai-team-dashboard/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/flowai-team-dashboard/example.html",
+      "skill_path": "next/src/lib/templates/skills/flowai-team-dashboard/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/flowai-team-dashboard/example.html",
       "roles": [
         "dashboard_screen",
         "data_table",
@@ -5204,8 +5357,8 @@
       "tags": "[\"data\", \"chart\", \"nyt\", \"editorial\", \"frame\"]",
       "featured": "46",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/frame-data-chart-nyt/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/frame-data-chart-nyt/example.html",
+      "skill_path": "next/src/lib/templates/skills/frame-data-chart-nyt/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/frame-data-chart-nyt/example.html",
       "roles": [
         "data_chart",
         "financial_chart",
@@ -5227,8 +5380,8 @@
       "tags": "[\"flowchart\", \"diagram\", \"sticky\", \"whiteboard\", \"frame\"]",
       "featured": "45",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/frame-flowchart-sticky/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/frame-flowchart-sticky/example.html",
+      "skill_path": "next/src/lib/templates/skills/frame-flowchart-sticky/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/frame-flowchart-sticky/example.html",
       "roles": [
         "overall_outline",
         "logic_chain",
@@ -5250,8 +5403,8 @@
       "tags": "[\"glitch\", \"cyberpunk\", \"title\", \"transition\", \"vfx\", \"frame\"]",
       "featured": "37",
       "recommended": "6",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/frame-glitch-title/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/frame-glitch-title/example.html",
+      "skill_path": "next/src/lib/templates/skills/frame-glitch-title/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/frame-glitch-title/example.html",
       "roles": [
         "article_title",
         "opening_hook",
@@ -5273,8 +5426,8 @@
       "tags": "[\"cinema\", \"film\", \"light-leak\", \"grain\", \"letterbox\", \"frame\"]",
       "featured": "36",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/frame-light-leak-cinema/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/frame-light-leak-cinema/example.html",
+      "skill_path": "next/src/lib/templates/skills/frame-light-leak-cinema/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/frame-light-leak-cinema/example.html",
       "roles": [
         "article_subtitle",
         "chapter_divider",
@@ -5295,8 +5448,8 @@
       "tags": "[\"liquid\", \"fluid\", \"background\", \"hero\", \"html-in-canvas\", \"vfx\"]",
       "featured": "39",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/frame-liquid-bg-hero/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/frame-liquid-bg-hero/example.html",
+      "skill_path": "next/src/lib/templates/skills/frame-liquid-bg-hero/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/frame-liquid-bg-hero/example.html",
       "roles": [
         "article_title",
         "opening_hook",
@@ -5316,8 +5469,8 @@
       "tags": "[\"logo\", \"outro\", \"branding\", \"end-card\", \"frame\"]",
       "featured": "40",
       "recommended": "8",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/frame-logo-outro/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/frame-logo-outro/example.html",
+      "skill_path": "next/src/lib/templates/skills/frame-logo-outro/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/frame-logo-outro/example.html",
       "roles": [
         "closing_outro",
         "brand_mark",
@@ -5337,8 +5490,8 @@
       "tags": "[\"macos\", \"notification\", \"banner\", \"overlay\", \"frame\"]",
       "featured": "41",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/frame-macos-notification/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/frame-macos-notification/example.html",
+      "skill_path": "next/src/lib/templates/skills/frame-macos-notification/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/frame-macos-notification/example.html",
       "roles": [
         "chat_box",
         "quote",
@@ -5358,8 +5511,8 @@
       "tags": "[\"gamified\", \"habit\", \"rpg\", \"quest\", \"xp\"]",
       "featured": "12",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/gamified-app/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/gamified-app/example.html",
+      "skill_path": "next/src/lib/templates/skills/gamified-app/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/gamified-app/example.html",
       "roles": [
         "phone_mockup",
         "product_or_app_ui"
@@ -5376,11 +5529,29 @@
       "tags": "[\"onboarding\", \"入职\", \"first week\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/hr-onboarding/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/hr-onboarding/example.html",
+      "skill_path": "next/src/lib/templates/skills/hr-onboarding/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/hr-onboarding/example.html",
       "roles": [
         "news_or_document",
         "source_citation"
+      ]
+    },
+    {
+      "id": "info-funnel",
+      "zh_name": "漏斗信息图",
+      "en_name": "Funnel Infographic",
+      "category": "data",
+      "scenario": "marketing",
+      "aspect_hint": "1080×1920 (9:16) 竖屏",
+      "description": "3-6 阶递减漏斗, 突出转化率 / 筛选比例 / 流量损耗。竖图适合 IG Story / 小红书",
+      "tags": "[\"funnel\", \"conversion\", \"漏斗\", \"转化率\", \"marketing\", \"infographic\", \"social\", \"story\"]",
+      "featured": "",
+      "recommended": "",
+      "skill_path": "next/src/lib/templates/skills/info-funnel/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/info-funnel/example.html",
+      "roles": [
+        "data_chart",
+        "data_table"
       ]
     },
     {
@@ -5394,8 +5565,8 @@
       "tags": "[\"invoice\", \"bill\", \"发票\"]",
       "featured": "",
       "recommended": "13",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/invoice/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/invoice/example.html",
+      "skill_path": "next/src/lib/templates/skills/invoice/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/invoice/example.html",
       "roles": [
         "data_table",
         "financial_chart",
@@ -5413,8 +5584,8 @@
       "tags": "[\"kanban\", \"trello\", \"sprint\", \"看板\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/kanban-board/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/kanban-board/example.html",
+      "skill_path": "next/src/lib/templates/skills/kanban-board/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/kanban-board/example.html",
       "roles": [
         "kanban_or_process",
         "dashboard_screen",
@@ -5433,8 +5604,8 @@
       "tags": "[\"notion\", \"team\", \"live\", \"dashboard\"]",
       "featured": "1",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/live-dashboard/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/live-dashboard/example.html",
+      "skill_path": "next/src/lib/templates/skills/live-dashboard/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/live-dashboard/example.html",
       "roles": [
         "dashboard_screen",
         "data_table",
@@ -5452,8 +5623,8 @@
       "tags": "[\"magazine\", \"newsprint\", \"editorial\", \"manifesto\"]",
       "featured": "",
       "recommended": "4",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/magazine-poster/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/magazine-poster/example.html",
+      "skill_path": "next/src/lib/templates/skills/magazine-poster/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/magazine-poster/example.html",
       "roles": [
         "article_title",
         "broll_mood"
@@ -5470,8 +5641,8 @@
       "tags": "[\"minutes\", \"meeting\", \"1:1\", \"纪要\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/meeting-notes/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/meeting-notes/example.html",
+      "skill_path": "next/src/lib/templates/skills/meeting-notes/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/meeting-notes/example.html",
       "roles": [
         "news_or_document",
         "source_citation"
@@ -5488,8 +5659,8 @@
       "tags": "[\"mobile\", \"ios\", \"app\", \"phone\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/mobile-app/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/mobile-app/example.html",
+      "skill_path": "next/src/lib/templates/skills/mobile-app/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/mobile-app/example.html",
       "roles": [
         "phone_mockup",
         "product_or_app_ui"
@@ -5506,8 +5677,8 @@
       "tags": "[\"onboarding\", \"ios\", \"signup\", \"引导\"]",
       "featured": "13",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/mobile-onboarding/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/mobile-onboarding/example.html",
+      "skill_path": "next/src/lib/templates/skills/mobile-onboarding/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/mobile-onboarding/example.html",
       "roles": [
         "phone_mockup",
         "product_or_app_ui"
@@ -5524,8 +5695,8 @@
       "tags": "[\"device\", \"mockup\", \"iphone\", \"macbook\", \"html-in-canvas\", \"product\"]",
       "featured": "47",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/mockup-device-3d/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/mockup-device-3d/example.html",
+      "skill_path": "next/src/lib/templates/skills/mockup-device-3d/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/mockup-device-3d/example.html",
       "roles": [
         "article_image",
         "phone_mockup",
@@ -5545,8 +5716,8 @@
       "tags": "[\"motion\", \"title card\", \"loop\", \"video poster\"]",
       "featured": "6",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/motion-frames/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/motion-frames/example.html",
+      "skill_path": "next/src/lib/templates/skills/motion-frames/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/motion-frames/example.html",
       "roles": [
         "opening_hook",
         "broll_mood",
@@ -5564,8 +5735,8 @@
       "tags": "[\"prd\", \"spec\", \"需求\", \"product\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/pm-spec/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/pm-spec/example.html",
+      "skill_path": "next/src/lib/templates/skills/pm-spec/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/pm-spec/example.html",
       "roles": [
         "kanban_or_process",
         "news_or_document",
@@ -5583,8 +5754,8 @@
       "tags": "[\"poster\", \"海报\", \"朋友圈\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/poster-hero/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/poster-hero/example.html",
+      "skill_path": "next/src/lib/templates/skills/poster-hero/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/poster-hero/example.html",
       "roles": [
         "article_title",
         "closing_outro",
@@ -5603,8 +5774,8 @@
       "tags": "[\"slides\", \"deck\", \"presentation\", \"幻灯片\", \"演讲\"]",
       "featured": "19",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/ppt-keynote/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/ppt-keynote/example.html",
+      "skill_path": "next/src/lib/templates/skills/ppt-keynote/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/ppt-keynote/example.html",
       "roles": [
         "chapter_divider",
         "overall_outline",
@@ -5622,8 +5793,8 @@
       "tags": "[\"pricing\", \"plans\", \"定价\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/pricing-page/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/pricing-page/example.html",
+      "skill_path": "next/src/lib/templates/skills/pricing-page/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/pricing-page/example.html",
       "roles": [
         "desktop_mockup",
         "product_or_app_ui",
@@ -5641,8 +5812,8 @@
       "tags": "[\"prototype\", \"landing\", \"原型\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/prototype-web/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/prototype-web/example.html",
+      "skill_path": "next/src/lib/templates/skills/prototype-web/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/prototype-web/example.html",
       "roles": [
         "desktop_mockup",
         "product_or_app_ui"
@@ -5659,8 +5830,8 @@
       "tags": "[\"resume\", \"cv\", \"简历\"]",
       "featured": "",
       "recommended": "12",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/resume-modern/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/resume-modern/example.html",
+      "skill_path": "next/src/lib/templates/skills/resume-modern/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/resume-modern/example.html",
       "roles": [
         "news_or_document"
       ]
@@ -5676,8 +5847,8 @@
       "tags": "[\"saas\", \"landing\", \"marketing\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/saas-landing/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/saas-landing/example.html",
+      "skill_path": "next/src/lib/templates/skills/saas-landing/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/saas-landing/example.html",
       "roles": [
         "product_or_app_ui",
         "desktop_mockup"
@@ -5694,8 +5865,8 @@
       "tags": "[\"instagram\", \"linkedin\", \"thread\", \"carousel\", \"三联\"]",
       "featured": "7",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/social-carousel/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/social-carousel/example.html",
+      "skill_path": "next/src/lib/templates/skills/social-carousel/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/social-carousel/example.html",
       "roles": [
         "social_post",
         "quote",
@@ -5713,8 +5884,8 @@
       "tags": "[\"social\", \"creator\", \"analytics\", \"x\", \"linkedin\", \"tiktok\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/social-media-dashboard/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/social-media-dashboard/example.html",
+      "skill_path": "next/src/lib/templates/skills/social-media-dashboard/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/social-media-dashboard/example.html",
       "roles": [
         "dashboard_screen",
         "data_table",
@@ -5732,8 +5903,8 @@
       "tags": "[\"matrix\", \"tracker\", \"multi-platform\"]",
       "featured": "1",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/social-media-matrix/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/social-media-matrix/example.html",
+      "skill_path": "next/src/lib/templates/skills/social-media-matrix/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/social-media-matrix/example.html",
       "roles": [
         "dashboard_screen",
         "data_table",
@@ -5751,8 +5922,8 @@
       "tags": "[\"reddit\", \"social\", \"card\", \"overlay\", \"story\"]",
       "featured": "42",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/social-reddit-card/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/social-reddit-card/example.html",
+      "skill_path": "next/src/lib/templates/skills/social-reddit-card/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/social-reddit-card/example.html",
       "roles": [
         "chat_box",
         "social_post",
@@ -5770,8 +5941,8 @@
       "tags": "[\"spotify\", \"music\", \"now-playing\", \"card\", \"overlay\"]",
       "featured": "43",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/social-spotify-card/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/social-spotify-card/example.html",
+      "skill_path": "next/src/lib/templates/skills/social-spotify-card/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/social-spotify-card/example.html",
       "roles": [
         "quote",
         "social_post",
@@ -5790,8 +5961,8 @@
       "tags": "[\"twitter\", \"x\", \"social\", \"card\", \"overlay\"]",
       "featured": "44",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/social-x-post-card/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/social-x-post-card/example.html",
+      "skill_path": "next/src/lib/templates/skills/social-x-post-card/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/social-x-post-card/example.html",
       "roles": [
         "chat_box",
         "social_post",
@@ -5810,8 +5981,8 @@
       "tags": "[\"pixel\", \"8-bit\", \"复古\", \"explainer\"]",
       "featured": "8",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/sprite-animation/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/sprite-animation/example.html",
+      "skill_path": "next/src/lib/templates/skills/sprite-animation/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/sprite-animation/example.html",
       "roles": [
         "broll_mood",
         "article_title"
@@ -5828,8 +5999,8 @@
       "tags": "[\"okr\", \"objectives\", \"key results\", \"目标\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/team-okrs/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/team-okrs/example.html",
+      "skill_path": "next/src/lib/templates/skills/team-okrs/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/team-okrs/example.html",
       "roles": [
         "kanban_or_process",
         "dashboard_screen",
@@ -5849,8 +6020,8 @@
       "tags": "[\"vfx\", \"text\", \"cursor\", \"chromatic\", \"reveal\", \"frame\"]",
       "featured": "38",
       "recommended": "7",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/vfx-text-cursor/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/vfx-text-cursor/example.html",
+      "skill_path": "next/src/lib/templates/skills/vfx-text-cursor/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/vfx-text-cursor/example.html",
       "roles": [
         "article_title",
         "opening_hook",
@@ -5870,8 +6041,8 @@
       "tags": "[\"video\", \"hyperframes\", \"remotion\", \"视频\"]",
       "featured": "",
       "recommended": "5",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/video-hyperframes/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/video-hyperframes/example.html",
+      "skill_path": "next/src/lib/templates/skills/video-hyperframes/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/video-hyperframes/example.html",
       "roles": [
         "deck_explainer",
         "transition",
@@ -5890,8 +6061,8 @@
       "tags": "[\"waitlist\", \"launch\", \"预发布\"]",
       "featured": "1",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/waitlist-page/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/waitlist-page/example.html",
+      "skill_path": "next/src/lib/templates/skills/waitlist-page/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/waitlist-page/example.html",
       "roles": [
         "desktop_mockup",
         "product_or_app_ui"
@@ -5908,8 +6079,8 @@
       "tags": "[\"brutalist\", \"swiss\", \"industrial\", \"hairline\"]",
       "featured": "",
       "recommended": "10",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/web-proto-brutalist/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/web-proto-brutalist/example.html",
+      "skill_path": "next/src/lib/templates/skills/web-proto-brutalist/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/web-proto-brutalist/example.html",
       "roles": [
         "desktop_mockup",
         "product_or_app_ui"
@@ -5926,8 +6097,8 @@
       "tags": "[\"editorial\", \"minimalist\", \"serif\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/web-proto-editorial/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/web-proto-editorial/example.html",
+      "skill_path": "next/src/lib/templates/skills/web-proto-editorial/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/web-proto-editorial/example.html",
       "roles": [
         "desktop_mockup",
         "product_or_app_ui"
@@ -5944,8 +6115,8 @@
       "tags": "[\"apple\", \"soft\", \"squircle\", \"spring\"]",
       "featured": "",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/web-proto-soft/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/web-proto-soft/example.html",
+      "skill_path": "next/src/lib/templates/skills/web-proto-soft/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/web-proto-soft/example.html",
       "roles": [
         "desktop_mockup",
         "product_or_app_ui",
@@ -5963,8 +6134,8 @@
       "tags": "[\"weekly\", \"周报\", \"status\"]",
       "featured": "23",
       "recommended": "",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/weekly-update/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/weekly-update/example.html",
+      "skill_path": "next/src/lib/templates/skills/weekly-update/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/weekly-update/example.html",
       "roles": [
         "timeline",
         "chapter_divider",
@@ -5983,8 +6154,8 @@
       "tags": "[\"wireframe\", \"lo-fi\", \"sketch\", \"草稿\", \"手绘\"]",
       "featured": "",
       "recommended": "11",
-      "skill_path": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/wireframe-sketch/SKILL.md",
-      "example_html": "/Users/lichengyin/Documents/html一切/next/src/lib/templates/skills/wireframe-sketch/example.html",
+      "skill_path": "next/src/lib/templates/skills/wireframe-sketch/SKILL.md",
+      "example_html": "next/src/lib/templates/skills/wireframe-sketch/example.html",
       "roles": [
         "logic_chain",
         "desktop_mockup",

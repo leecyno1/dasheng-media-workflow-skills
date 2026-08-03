@@ -77,6 +77,7 @@ def get_output_root(stage: str) -> Path:
         "publish": "07_发布执行",
         "postmortem": "08_分析复盘",
         "paradigm": "00_范式学习",
+        "video_training": "00_范式学习/视频训练",
         "rewrite": "06_改写",
         "hotspot": "00_热点捕捉",
     }

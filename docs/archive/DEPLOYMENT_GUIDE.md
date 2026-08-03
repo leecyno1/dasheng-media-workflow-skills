@@ -5,7 +5,7 @@
 ### 方法1: 使用安装器（推荐）
 
 ```bash
-cd /Volumes/PSSD/Projects/公众号文章
+cd ${DASHENG_PROJECT_ROOT}
 python3 skill_package/installer.py install
 ```
 
@@ -13,7 +13,7 @@ python3 skill_package/installer.py install
 
 ```bash
 # 1. 克隆或复制项目
-cp -r /Volumes/PSSD/Projects/公众号文章 /path/to/target
+cp -r ${DASHENG_PROJECT_ROOT} /path/to/target
 
 # 2. 安装依赖
 pip install anthropic openai pyyaml pillow requests
@@ -33,14 +33,14 @@ python3 core/dna_engine.py
 ### 步骤1: 准备龙虾环境
 
 ```bash
-cd /Volumes/PSSD/Projects/lobster-world
+cd ${PROJECTS_ROOT}/lobster-world
 ```
 
 ### 步骤2: 安装Skill
 
 ```bash
-python3 /Volumes/PSSD/Projects/公众号文章/skill_package/installer.py install \
-  /Volumes/PSSD/Projects/lobster-world/skills/dasheng-media-platform
+python3 ${DASHENG_PROJECT_ROOT}/skill_package/installer.py install \
+  ${PROJECTS_ROOT}/lobster-world/skills/dasheng-media-platform
 ```
 
 ### 步骤3: 注册Skill到龙虾

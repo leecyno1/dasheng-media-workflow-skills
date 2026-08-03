@@ -242,8 +242,8 @@ title = f"{object_phrase}这条线，{conflict_axis}"
 
 ## 文件位置
 
-- **旧系统输出**：`/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-04_204231/`
-- **新系统输出**：`/Volumes/PSSD/Projects/公众号文章/产物/02_Brief/2026-04-04_204231_ai/`
+- **旧系统输出**：`${DASHENG_PROJECT_ROOT}/产物/02_Brief/2026-04-04_204231/`
+- **新系统输出**：`${DASHENG_PROJECT_ROOT}/产物/02_Brief/2026-04-04_204231_ai/`
 - **对比文件**：
   - 旧：`02_Brief/2026-04-04_204231/02_编辑Brief库.md`
   - 新：`02_Brief/2026-04-04_204231_ai/02_编辑Brief库.md`

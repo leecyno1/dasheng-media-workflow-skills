@@ -1,4 +1,5 @@
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -68,6 +69,7 @@ class FeishuPostmortemSyncTests(unittest.TestCase):
             [NODE, str(ROOT / "skills/dasheng-daily-shared/runtime/feishu-plan.js"), self.run_id],
             capture_output=True,
             text=True,
+            env={**os.environ, "DASHENG_OUTPUT_ROOT": str(ROOT / "产物")},
             check=False,
         )
         self.assertEqual(proc.returncode, 0, msg=proc.stderr)
@@ -100,6 +102,7 @@ class FeishuPostmortemSyncTests(unittest.TestCase):
             cwd=str(ROOT),
             capture_output=True,
             text=True,
+            env={**os.environ, "DASHENG_OUTPUT_ROOT": str(ROOT / "产物")},
             check=False,
         )
         self.assertEqual(proc.returncode, 0, msg=proc.stderr)

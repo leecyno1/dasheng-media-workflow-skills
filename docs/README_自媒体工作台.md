@@ -58,26 +58,27 @@
 
 ## 桌面交付
 
-- 对外审阅和每日协作，统一使用：`/Users/lichengyin/Desktop/自媒体创作/<run_id>/`
-- `intake / brief / draft / transwrite / publish` 的报告、底稿、清单与素材，统一直接落在该 `run` 根目录，避免再分 stage 子目录
-- 仓库内 `产物/` 继续保留为正式沉淀；桌面目录只承担“快速查看交付视图”
+- 对外审阅、每日协作和正式内容沉淀，统一使用：`${HOME}/Desktop/自媒体创作/`
+- `intake / brief / draft / transwrite / publish / postmortem` 的报告、底稿、清单与素材，按阶段目录落盘
+- 视频、音频、字幕、审核页、图片、HTML 文章、训练缓存全部放在桌面创作目录
+- 仓库只放代码、配置、SOP、skills 与测试；不再把 `产物/` 作为正式沉淀层
 - 当前自动导出由各阶段脚本内置完成，批量脚本 `scripts/export_daily_delivery.py` 仅保留为兼容工具
 
 ## 飞书协作执行入口
 
-- 统一配置：`/Users/lichengyin/clawd/configs/feishu_api.conf`
-- 阶段契约：`/Volumes/PSSD/Projects/公众号文章/configs/feishu/stage_review_contract.json`
+- 统一配置：`${LEGACY_OPENCLAW_ROOT}/configs/feishu_api.conf`
+- 阶段契约：`${DASHENG_PROJECT_ROOT}/configs/feishu/stage_review_contract.json`
 - 直接执行 live 同步：
-  - `node /Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime/feishu-live.js <run_id>`
+  - `node ${DASHENG_PROJECT_ROOT}/skills/dasheng-daily-shared/runtime/feishu-live.js <run_id>`
 - 直接执行 live 断点续跑：
-  - `node /Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime/feishu-live.js <run_id> --resume-only`
+  - `node ${DASHENG_PROJECT_ROOT}/skills/dasheng-daily-shared/runtime/feishu-live.js <run_id> --resume-only`
 - 直接执行 live 强制重跑：
-  - `node /Volumes/PSSD/Projects/公众号文章/skills/dasheng-daily-shared/runtime/feishu-live.js <run_id> --fresh`
+  - `node ${DASHENG_PROJECT_ROOT}/skills/dasheng-daily-shared/runtime/feishu-live.js <run_id> --fresh`
 - 推荐包装入口：
-  - `python3 /Volumes/PSSD/Projects/公众号文章/scripts/feishu_stage_sync.py --latest`
-  - `python3 /Volumes/PSSD/Projects/公众号文章/scripts/feishu_stage_sync.py <run_id>`
-  - `python3 /Volumes/PSSD/Projects/公众号文章/scripts/feishu_stage_sync.py --resume-only <run_id>`
-  - `python3 /Volumes/PSSD/Projects/公众号文章/scripts/feishu_stage_sync.py --fresh <run_id>`
+  - `python3 ${DASHENG_PROJECT_ROOT}/scripts/feishu_stage_sync.py --latest`
+  - `python3 ${DASHENG_PROJECT_ROOT}/scripts/feishu_stage_sync.py <run_id>`
+  - `python3 ${DASHENG_PROJECT_ROOT}/scripts/feishu_stage_sync.py --resume-only <run_id>`
+  - `python3 ${DASHENG_PROJECT_ROOT}/scripts/feishu_stage_sync.py --fresh <run_id>`
 - 包装入口会把摘要写回：
   - `skills/dasheng-daily-shared/runtime-data/runs/<run_id>/bridge/feishu-sync-summary.json`
   - `skills/dasheng-daily-shared/runtime-data/runs/<run_id>/bridge/feishu-sync-summary.md`
@@ -104,7 +105,7 @@
 ## 合并原则
 
 - 不再并存多套阶段定义；主链与阶段顺序以 `STAGE_INTERFACES.md` 为准
-- `skills/` 是执行层，`引擎/` 是方法层，`产物/` 是正式沉淀层
+- `skills/` 是执行层，`引擎/` 是方法层，`~/Desktop/自媒体创作/` 是正式内容沉淀层
 - `openclaw-skill-exports/` 仅保留为快照来源，不作为运行真相
 - `intake/brief/draft/material` 解决“值不值得写、能不能证明、素材够不够”
 - `rewrite/publish` 解决“怎么发、发到哪、如何适配渠道”
@@ -113,6 +114,6 @@
 ## 兼容说明
 
 - 历史目录 `data/` 与 `figures/` 继续保留，不破坏旧脚本
-- 历史 `产物/` 目录不重命名，避免打断已有引用
+- 历史 `产物/` 目录只作为迁移兼容，不再写入新内容
 - `03_选题生成_prompt.md` 保留但不再作为独立阶段
 - `dasheng-daily-clustering`、`dasheng-daily-outline`、`dasheng-daily-brief`、`dasheng-daily-draft`、`dasheng-daily-final` 均已降级为迁移提示入口

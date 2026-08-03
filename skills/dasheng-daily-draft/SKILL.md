@@ -43,6 +43,7 @@ runner: python
 - `final_structure_snapshot.template.json`
 - `draft_quality_gate.json`
 - `draft_manifest.json`
+- `03_IllustrationIntents_<topic>.json`
 
 ## 执行方式
 
@@ -54,8 +55,8 @@ python3 scripts/run_mainline_stage.py draft --run-id <run_id>
 
 ```bash
 python3 scripts/build_stage3_draft.py \
-  产物/02_内容聚合及选题分析/<run_id>/selected_topics.json \
-  产物/02_内容聚合及选题分析/<run_id>/topic_cards.json \
+  ~/Desktop/自媒体创作/02_内容聚合及选题分析/<run_id>/selected_topics.json \
+  ~/Desktop/自媒体创作/02_内容聚合及选题分析/<run_id>/topic_cards.json \
   --run-id <run_id>
 ```
 
@@ -86,6 +87,8 @@ python3 scripts/build_stage3_draft.py \
 - 表格标签类放 `<td>` 内 `<span>`，根内容区 `contenteditable="true"`，必须支持编辑/预览切换、全选、保存下载。
 - 图表、配图、数据来源必须绑定 `claim_id`；未核验数据只能留下待补槽，不能生成假走势或假来源。
 - 配图可由运行 Agent 调用 image 工具生成，压缩后 base64 嵌入；发布前 canvas 图表建议截图替换成静态图。
+- 对正文执行比喻/举例语义扫描：明确例子、类比、拟人和抽象机制优先进入 `dasheng-lemon-illustrations`。生成的柠檬漫画必须紧跟对应段落，并记录 intent id、原文句子、核心意思和角色动作。
+- 关键词命中不等于必须生成。只有漫画能提高理解、形成认知锚点时才保留；真实证据场景仍使用图表、网页、表格和文档。
 
 ## 硬规则
 
@@ -95,4 +98,5 @@ python3 scripts/build_stage3_draft.py \
 - 不得编造不存在的来源、数据和机构表态
 - `final_structure_snapshot.json` 确认后进入 transwrite
 - 数据、图表、配图和 HTML 嵌入必须由 Draft 内完成
+- 必需的柠檬漫画未生成并嵌入时，Draft 资产门禁不得标记 complete
 - 多版本改写只作为按需工具，不再是主链阶段

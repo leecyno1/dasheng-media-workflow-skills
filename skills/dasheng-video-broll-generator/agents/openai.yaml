@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dasheng Video B-roll Generator"
+  short_description: "Route B-roll and animated inserts for Dasheng videos"
+  default_prompt: "Plan and generate evidence-safe B-roll, sticker animation, and editorial inserts for a Dasheng video."

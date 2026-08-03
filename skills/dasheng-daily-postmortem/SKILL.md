@@ -17,9 +17,9 @@ description: Use when the workflow enters Postmortem after Publish and published
 
 ## 当前标准入口
 
-- 总控入口：`/Volumes/PSSD/Projects/公众号文章/skills/dasheng-media-sop/SKILL.md`
-- 脚本入口：`python3 scripts/postmortem_writeback.py --publish-manifest 产物/07_发布执行/<run_id>/publish_manifest.json`
-- 正式门控入口：`python3 scripts/postmortem_writeback.py --publish-manifest 产物/07_发布执行/<run_id>/publish_manifest.json --require-publish-guard`
+- 总控入口：`${DASHENG_PROJECT_ROOT:-.}/skills/dasheng-media-sop/SKILL.md`
+- 脚本入口：`python3 scripts/postmortem_writeback.py --publish-manifest ~/Desktop/自媒体创作/07_发布执行/<run_id>/publish_manifest.json`
+- 正式门控入口：`python3 scripts/postmortem_writeback.py --publish-manifest ~/Desktop/自媒体创作/07_发布执行/<run_id>/publish_manifest.json --require-publish-guard`
 
 ## 标准职责
 
