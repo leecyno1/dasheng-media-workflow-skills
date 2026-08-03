@@ -1,4 +1,4 @@
-# 大圣媒体工作流项目目录
+# Newma Media Studio项目目录
 
 > 本文件由 `scripts/build_project_catalog.py` 根据机器注册表生成，请不要手工维护列表。
 

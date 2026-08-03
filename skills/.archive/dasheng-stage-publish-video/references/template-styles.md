@@ -470,9 +470,9 @@ python3 scripts/publish_video_supplement.py \
 
 ## 相关文档
 
-- [Motion 系统整合指南](${PROJECTS_ROOT}/dasheng-media-workflow-skills/docs/MOTION_INTEGRATION_GUIDE.md)
-- [平台元数据规则](${PROJECTS_ROOT}/dasheng-media-workflow-skills/skills/dasheng-stage-rewrite/references/platform-metadata.md)
-- [Publish 阶段说明](${PROJECTS_ROOT}/dasheng-media-workflow-skills/skills/dasheng-stage-publish-video/SKILL.md)
+- [Motion 系统整合指南](${PROJECTS_ROOT}/newma-media-studio/docs/MOTION_INTEGRATION_GUIDE.md)
+- [平台元数据规则](${PROJECTS_ROOT}/newma-media-studio/skills/dasheng-stage-rewrite/references/platform-metadata.md)
+- [Publish 阶段说明](${PROJECTS_ROOT}/newma-media-studio/skills/dasheng-stage-publish-video/SKILL.md)
 
 ---
 

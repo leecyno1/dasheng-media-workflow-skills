@@ -157,7 +157,7 @@ npx -y bun scripts/x-browser.ts "{主推文内容}" --image "产物/04_Material/
 使用自动化脚本 `distribute_xiaohongshu.py`：
 
 ```bash
-cd ${PROJECTS_ROOT}/dasheng-media-workflow-skills
+cd ${PROJECTS_ROOT}/newma-media-studio
 
 # 预览发布计划（dry run）
 python3 scripts/distribute_xiaohongshu.py {run_id} --dry-run

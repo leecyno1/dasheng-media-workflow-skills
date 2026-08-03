@@ -1,4 +1,4 @@
-# 工作总结：Dasheng Media Workflow Skills 全面升级
+# 工作总结：Newma Media Studio 全面升级
 
 ## 任务背景
 
@@ -265,7 +265,7 @@ Intake → Brief (AI) → Draft (框架) → Material (AI) → Rewrite → Publi
 
 ## 总结
 
-本次升级成功实现了 Dasheng Media Workflow Skills 从 Brief 到 Material 的全面 AI 化：
+本次升级成功实现了 Newma Media Studio 从 Brief 到 Material 的全面 AI 化：
 
 1. **第一阶段**：Brief AI 化，解决了"标题生硬"的核心问题
 2. **第二阶段**：Draft 和 Material 优化，实现了端到端的智能化工作流

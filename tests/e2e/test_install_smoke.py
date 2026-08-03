@@ -70,7 +70,7 @@ class TestInstallSmoke(unittest.TestCase):
     def test_export_manifest_exists(self):
         """验证导出清单存在"""
         manifest = self.project_root / "openclaw-skill-exports" / \
-                   "dasheng-media-workflow-skills-current" / "EXPORT_MANIFEST.json"
+                   "newma-media-studio-current" / "EXPORT_MANIFEST.json"
 
         self.assertTrue(manifest.exists(),
                        "EXPORT_MANIFEST.json not found")
@@ -78,7 +78,7 @@ class TestInstallSmoke(unittest.TestCase):
     def test_env_template_exists(self):
         """验证环境变量模板存在"""
         env_template = self.project_root / "openclaw-skill-exports" / \
-                      "dasheng-media-workflow-skills-current" / "ENV_TEMPLATE.env"
+                      "newma-media-studio-current" / "ENV_TEMPLATE.env"
 
         self.assertTrue(env_template.exists(),
                        "ENV_TEMPLATE.env not found")

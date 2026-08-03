@@ -1,6 +1,6 @@
 # 安装指南
 
-Dasheng Media Workflow Skills 的核心工作流只要求 Python 与 Git；视频渲染、ASR、浏览器发布和外部储备按需安装。
+Newma Media Studio 的核心工作流只要求 Python 与 Git；视频渲染、ASR、浏览器发布和外部储备按需安装。
 
 ## 1. 系统要求
 
@@ -18,8 +18,8 @@ Dasheng Media Workflow Skills 的核心工作流只要求 Python 与 Git；视�
 ## 2. 安装核心项目
 
 ```bash
-git clone https://github.com/leecyno1/dasheng-media-workflow-skills.git
-cd dasheng-media-workflow-skills
+git clone https://github.com/leecyno1/newma-media-studio.git
+cd newma-media-studio
 chmod +x scripts/install.sh
 ./scripts/install.sh
 source .venv/bin/activate

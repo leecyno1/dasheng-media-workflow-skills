@@ -118,5 +118,5 @@
 
 ---
 
-[2.0.0]: https://github.com/leecyno1/dasheng-media-workflow-skills/compare/v1.0.0...v2.0.0
-[1.0.0]: https://github.com/leecyno1/dasheng-media-workflow-skills/releases/tag/v1.0.0
+[2.0.0]: https://github.com/leecyno1/newma-media-studio/compare/v1.0.0...v2.0.0
+[1.0.0]: https://github.com/leecyno1/newma-media-studio/releases/tag/v1.0.0

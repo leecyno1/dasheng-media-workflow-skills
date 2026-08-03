@@ -32,7 +32,7 @@ done
 
 cd "$PROJECT_ROOT"
 
-echo "=== Dasheng Media Workflow Skills installer ==="
+echo "=== Newma Media Studio installer ==="
 
 if ! command -v "$PYTHON_BIN" >/dev/null 2>&1; then
   echo "Python not found: $PYTHON_BIN" >&2

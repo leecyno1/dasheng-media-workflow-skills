@@ -1,4 +1,4 @@
-# 大圣媒体工作流 AI 升级总结
+# Newma Media Studio AI 升级总结
 
 ## 升级概览
 

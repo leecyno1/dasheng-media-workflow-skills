@@ -87,11 +87,11 @@
 
 创建了两个补丁脚本：
 
-1. **视频下载优化**: `${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/patch_material_video_optimization.sh`
+1. **视频下载优化**: `${PROJECTS_ROOT}/newma-media-studio/scripts/patch_material_video_optimization.sh`
    - Bash 脚本
    - 修改默认参数值
 
-2. **扁平化结构**: `${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/apply_flat_structure.py`
+2. **扁平化结构**: `${PROJECTS_ROOT}/newma-media-studio/scripts/apply_flat_structure.py`
    - Python 脚本
    - 使用正则表达式批量替换
    - 包含验证和回滚机制

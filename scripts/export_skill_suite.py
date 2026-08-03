@@ -143,14 +143,14 @@ def export_suite(target_dir: Path) -> Path:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="导出当前正式 Dasheng skill 套件")
-    parser.add_argument("--target-dir", help="目标目录；默认 openclaw-skill-exports/dasheng-media-workflow-skills-current")
+    parser = argparse.ArgumentParser(description="导出 Newma Media Studio 正式 Skill 套件")
+    parser.add_argument("--target-dir", help="目标目录；默认 openclaw-skill-exports/newma-media-studio-current")
     args = parser.parse_args()
 
     target_dir = (
         Path(args.target_dir).expanduser().resolve()
         if args.target_dir
-        else (DEFAULT_EXPORT_ROOT / "dasheng-media-workflow-skills-current")
+        else (DEFAULT_EXPORT_ROOT / "newma-media-studio-current")
     )
     exported_dir = export_suite(target_dir)
     print(str(exported_dir))

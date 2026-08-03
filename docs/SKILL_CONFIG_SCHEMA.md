@@ -1,6 +1,6 @@
 # Skill Config Schema - Unified Standard
 
-This document defines the unified `config.json` schema for all OpenClaw/Hermes skills in the Dasheng Media Workflow system.
+This document defines the unified `config.json` schema for all OpenClaw/Hermes skills in the Newma Media Studio.
 
 ## Schema Version
 

@@ -1,6 +1,6 @@
 # Installation Guide - OpenClaw/Hermes Deployment
 
-This guide covers installing the Dasheng Media Workflow system into OpenClaw or Hermes agent frameworks.
+This guide covers installing the Newma Media Studio into OpenClaw or Hermes agent frameworks.
 
 ## System Requirements
 

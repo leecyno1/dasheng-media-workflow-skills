@@ -195,12 +195,12 @@
 
 1. **OpenClaw Installation**:
    ```bash
-   openclaw skill install dasheng-media-workflow-skills-current
+   openclaw skill install newma-media-studio-current
    ```
 
 2. **Hermes Installation**:
    ```bash
-   hermes module install dasheng-media-workflow-skills-current
+   hermes module install newma-media-studio-current
    ```
 
 3. **Configuration**:

@@ -1,4 +1,4 @@
-# 大圣自媒体工作流系统 (Dasheng Media Workflow)
+# 大圣自媒体工作流系统 (Newma Media Studio)
 
 [![Production Ready](https://img.shields.io/badge/production-ready-brightgreen.svg)](docs/PRODUCTION_READINESS_STATUS.md)
 [![Tests](https://img.shields.io/badge/tests-87%20passed-success.svg)](tests/)

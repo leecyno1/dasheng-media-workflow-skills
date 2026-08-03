@@ -1,9 +1,9 @@
-# Dasheng Media Workflow Skills Export v2 (2026-04-01)
+# Newma Media Studio Export v2 (2026-04-01)
 
 ## 版本命名规范
 
-- 导出目录：`dasheng-media-workflow-skills-YYYYMMDD-vX`
-- 压缩包：`dasheng-media-workflow-skills-YYYYMMDD-vX.tar.gz`
+- 导出目录：`newma-media-studio-YYYYMMDD-vX`
+- 压缩包：`newma-media-studio-YYYYMMDD-vX.tar.gz`
 - 当天多次导出按 `v1/v2/v3` 递增，禁止覆盖历史版本
 
 ## 包含技能

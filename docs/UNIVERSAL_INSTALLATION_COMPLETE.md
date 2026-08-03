@@ -1,7 +1,7 @@
-# 大圣媒体工作流 Skills - 通用安装化改造完成报告
+# Newma Media Studio - 通用安装化改造完成报告
 
 **完成时间**: 2026-04-23  
-**仓库地址**: https://github.com/leecyno1/dasheng-media-workflow-skills
+**仓库地址**: https://github.com/leecyno1/newma-media-studio
 
 ---
 
@@ -156,7 +156,7 @@ python3 -m pytest tests/e2e/ -v
 
 ## Git 提交历史
 
-1. **d7f1e84**: fix: 大圣媒体工作流技能包 - 通用安装化改造
+1. **d7f1e84**: fix: Newma Media Studio技能包 - 通用安装化改造
    - 归档 13 个废弃 skills
    - 修复 EXPORT_MANIFEST.json 硬编码路径
    - 创建 ENV_TEMPLATE.env
@@ -234,7 +234,7 @@ assert str(project_root) == tmpdir
 ✅ **容错性**: 缓存降级，降低外部依赖  
 ✅ **可验证性**: 16 个 e2e 测试确保质量  
 
-**仓库地址**: https://github.com/leecyno1/dasheng-media-workflow-skills
+**仓库地址**: https://github.com/leecyno1/newma-media-studio
 
 ---
 

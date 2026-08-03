@@ -2,6 +2,14 @@
 
 重要变更遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/) 与语义化版本。
 
+## [Unreleased]
+
+### 变更
+
+- 项目品牌由 Dasheng Media Workflow Skills 更名为 Newma Media Studio。
+- 公开仓库、安装目录与导出包统一使用 `newma-media-studio`。
+- 保留 `dasheng-*` Skill ID、`DASHENG_*` 环境变量与 `dasheng.*` schema，避免破坏现有调用。
+
 ## [3.0.0] - 2026-08-03
 
 ### 新增
@@ -27,4 +35,4 @@
 
 完整历史见 [docs/CHANGELOG.md](docs/CHANGELOG.md)。
 
-[3.0.0]: https://github.com/leecyno1/dasheng-media-workflow-skills/releases/tag/v3.0.0
+[3.0.0]: https://github.com/leecyno1/newma-media-studio/releases/tag/v3.0.0

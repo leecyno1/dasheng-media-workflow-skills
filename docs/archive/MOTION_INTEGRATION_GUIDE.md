@@ -156,7 +156,7 @@ npm run scenes:check
 
 1. **运行转换脚本**
 ```bash
-cd ${PROJECTS_ROOT}/dasheng-media-workflow-skills
+cd ${PROJECTS_ROOT}/newma-media-studio
 
 python3 scripts/convert_finance_motion_to_remotion.py \
   --input ${PROJECTS_ROOT}/finance-motion-8787/dashboard/scenes.json \
@@ -234,7 +234,7 @@ npx remotion render FinanceNewsXhs out/video.mp4 --concurrency=4
 ### 自动化脚本
 
 ```bash
-cd ${PROJECTS_ROOT}/dasheng-media-workflow-skills
+cd ${PROJECTS_ROOT}/newma-media-studio
 
 # 完整的 publish 流程
 python3 scripts/publish_video_supplement.py \
@@ -459,8 +459,8 @@ python3 scripts/convert_finance_motion_to_remotion.py \
 
 - [Finance Motion 8787 README](${PROJECTS_ROOT}/finance-motion-8787/README.md)
 - [Remotion 官方文档](https://www.remotion.dev/docs)
-- [模板风格文档](${PROJECTS_ROOT}/dasheng-media-workflow-skills/skills/dasheng-stage-publish-video/references/template-styles.md)
-- [平台元数据规则](${PROJECTS_ROOT}/dasheng-media-workflow-skills/skills/dasheng-stage-rewrite/references/platform-metadata.md)
+- [模板风格文档](${PROJECTS_ROOT}/newma-media-studio/skills/dasheng-stage-publish-video/references/template-styles.md)
+- [平台元数据规则](${PROJECTS_ROOT}/newma-media-studio/skills/dasheng-stage-rewrite/references/platform-metadata.md)
 
 ---
 

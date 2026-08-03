@@ -1,6 +1,6 @@
 # 贡献指南
 
-感谢您对 Dasheng Media Workflow Skills 项目的关注！我们欢迎各种形式的贡献。
+感谢您对 Newma Media Studio 项目的关注！我们欢迎各种形式的贡献。
 
 ## 贡献方式
 
@@ -8,7 +8,7 @@
 
 如果您发现bug或有功能建议：
 
-1. 在 [GitHub Issues](https://github.com/leecyno1/dasheng-media-workflow-skills/issues) 搜索是否已有相关issue
+1. 在 [GitHub Issues](https://github.com/leecyno1/newma-media-studio/issues) 搜索是否已有相关issue
 2. 如果没有，创建新issue，提供：
    - 清晰的标题和描述
    - 复现步骤（如果是bug）
@@ -21,8 +21,8 @@
 1. **Fork项目**
    ```bash
    # 在GitHub上fork项目
-   git clone https://github.com/YOUR_USERNAME/dasheng-media-workflow-skills.git
-   cd dasheng-media-workflow-skills
+   git clone https://github.com/YOUR_USERNAME/newma-media-studio.git
+   cd newma-media-studio
    ```
 
 2. **创建分支**
@@ -195,8 +195,8 @@ def test_intake_to_brief_integration():
 
 ```bash
 # 克隆仓库
-git clone https://github.com/leecyno1/dasheng-media-workflow-skills.git
-cd dasheng-media-workflow-skills
+git clone https://github.com/leecyno1/newma-media-studio.git
+cd newma-media-studio
 
 # 安装依赖
 ./scripts/install.sh
@@ -213,8 +213,8 @@ pre-commit install
 如果您在贡献过程中遇到问题：
 
 - 查看 [文档](docs/)
-- 在 [GitHub Discussions](https://github.com/leecyno1/dasheng-media-workflow-skills/discussions) 提问
-- 在 [GitHub Issues](https://github.com/leecyno1/dasheng-media-workflow-skills/issues) 报告问题
+- 在 [GitHub Discussions](https://github.com/leecyno1/newma-media-studio/discussions) 提问
+- 在 [GitHub Issues](https://github.com/leecyno1/newma-media-studio/issues) 报告问题
 
 ## 行为准则
 

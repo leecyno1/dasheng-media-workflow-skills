@@ -1,6 +1,6 @@
 # API Reference
 
-Complete API reference for the Dasheng Media Workflow system.
+Complete API reference for the Newma Media Studio.
 
 ## Overview
 

@@ -53,7 +53,7 @@ scripts_wechat_fetch.py
 scripts_wechat_fetch_urls.py
 
 # archive exports
-dasheng-media-workflow-skills-*.tar.gz
+newma-media-studio-*.tar.gz
 
 # data snapshots
 /data/tushare/

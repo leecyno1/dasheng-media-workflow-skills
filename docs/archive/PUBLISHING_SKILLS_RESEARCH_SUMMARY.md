@@ -2,7 +2,7 @@
 
 ## 任务概述
 
-用户要求调研全网（ClawHub、GitHub、awesome-claude-skills、skill.sh）的发布相关 skills，分析优劣势，并将最佳方案集成到当前的 dasheng-media-workflow-skills 包中。
+用户要求调研全网（ClawHub、GitHub、awesome-claude-skills、skill.sh）的发布相关 skills，分析优劣势，并将最佳方案集成到当前的 newma-media-studio 包中。
 
 ---
 

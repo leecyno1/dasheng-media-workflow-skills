@@ -76,7 +76,7 @@ openclaw skill xiaohongshu-auto list
 #### 2.1 Dry Run（预览模式）
 
 ```bash
-cd ${PROJECTS_ROOT}/dasheng-media-workflow-skills
+cd ${PROJECTS_ROOT}/newma-media-studio
 
 # 预览发布计划，不实际发布
 python3 scripts/distribute_xiaohongshu.py 2026-04-05_075240_ai --dry-run

@@ -68,12 +68,12 @@ open "${DASHENG_PROJECT_ROOT}/产物/07_Publish/2026-04-05_075240_ai/videos/moti
 ### 新建文件
 1. `${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/AIMergersXhs.tsx` - AI并购视频组件
 2. `${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/ChinaPlanXhs.tsx` - 十五五规划视频组件
-3. `${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/render_ai_mergers_video.sh` - AI并购渲染脚本
-4. `${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/render_china_plan_video.sh` - 十五五规划渲染脚本
+3. `${PROJECTS_ROOT}/newma-media-studio/scripts/render_ai_mergers_video.sh` - AI并购渲染脚本
+4. `${PROJECTS_ROOT}/newma-media-studio/scripts/render_china_plan_video.sh` - 十五五规划渲染脚本
 
 ### 更新文件
 1. `${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/Root.jsx` - 注册两个新组件
-2. `${PROJECTS_ROOT}/dasheng-media-workflow-skills/VIDEO_GENERATION_SUMMARY.md` - 更新完成状态
+2. `${PROJECTS_ROOT}/newma-media-studio/VIDEO_GENERATION_SUMMARY.md` - 更新完成状态
 
 ## 下一步建议
 

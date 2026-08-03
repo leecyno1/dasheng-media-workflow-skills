@@ -4,7 +4,7 @@
 
 ### 1. ✅ 更新 Publish 阶段 Skill
 
-**文件**：`${PROJECTS_ROOT}/dasheng-media-workflow-skills/skills/dasheng-stage-publish-video/SKILL.md`
+**文件**：`${PROJECTS_ROOT}/newma-media-studio/skills/dasheng-stage-publish-video/SKILL.md`
 
 **更新内容**：
 - 添加 5 套视频风格模板说明
@@ -51,7 +51,7 @@
 
 ### 4. ✅ 创建渲染脚本
 
-**文件**：`${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/render_ai_mergers_video.sh`
+**文件**：`${PROJECTS_ROOT}/newma-media-studio/scripts/render_ai_mergers_video.sh`
 
 **功能**：
 - 自动创建输出目录
@@ -74,7 +74,7 @@
 
 ```bash
 # 使用渲染脚本（推荐）
-bash ${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/render_ai_mergers_video.sh
+bash ${PROJECTS_ROOT}/newma-media-studio/scripts/render_ai_mergers_video.sh
 
 # 或手动渲染
 cd ${LEGACY_OPENCLAW_ROOT}/remotion-video-starter
@@ -120,12 +120,12 @@ open "${DASHENG_PROJECT_ROOT}/产物/07_Publish/2026-04-05_075240_ai/videos/moti
 
 ### 新建文件（3个）
 1. `${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/AIMergersXhs.tsx` - 视频组件
-2. `${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/render_ai_mergers_video.sh` - 渲染脚本
+2. `${PROJECTS_ROOT}/newma-media-studio/scripts/render_ai_mergers_video.sh` - 渲染脚本
 3. 本文档
 
 ### 更新文件（2个）
 1. `${LEGACY_OPENCLAW_ROOT}/remotion-video-starter/src/Root.jsx` - 注册组件
-2. `${PROJECTS_ROOT}/dasheng-media-workflow-skills/skills/dasheng-stage-publish-video/SKILL.md` - 更新说明
+2. `${PROJECTS_ROOT}/newma-media-studio/skills/dasheng-stage-publish-video/SKILL.md` - 更新说明
 
 ## 实际输出
 

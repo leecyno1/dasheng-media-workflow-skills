@@ -1,4 +1,4 @@
-# Dasheng Media Workflow Skills - 完整升级报告
+# Newma Media Studio - 完整升级报告
 
 ## 项目概述
 
@@ -359,7 +359,7 @@ python3 scripts/publish_video_supplement.py
 
 ## 总结
 
-通过两个阶段的升级，Dasheng Media Workflow Skills 实现了从 Brief 到 Material 的全面 AI 化：
+通过两个阶段的升级，Newma Media Studio 实现了从 Brief 到 Material 的全面 AI 化：
 
 1. **第一阶段**：Brief AI 化，解决了"标题生硬"的核心问题
 2. **第二阶段**：Draft 和 Material 优化，实现了端到端的智能化工作流

@@ -5,8 +5,8 @@
 ## 开发流程
 
 ```bash
-git clone https://github.com/YOUR_NAME/dasheng-media-workflow-skills.git
-cd dasheng-media-workflow-skills
+git clone https://github.com/YOUR_NAME/newma-media-studio.git
+cd newma-media-studio
 git switch -c feat/short-description
 ./scripts/install.sh
 source .venv/bin/activate

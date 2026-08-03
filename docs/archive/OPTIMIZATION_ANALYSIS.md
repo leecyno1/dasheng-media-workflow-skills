@@ -49,7 +49,7 @@
 - 质量红线明确
 - 适配微信阅读体验
 
-### 3. dasheng-media-workflow-skills (本地仓库)
+### 3. newma-media-studio (本地仓库)
 
 **定位**：多人协作的7阶段媒体生产流水线
 

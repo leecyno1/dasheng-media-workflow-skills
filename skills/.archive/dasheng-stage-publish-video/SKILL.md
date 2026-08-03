@@ -99,7 +99,7 @@ npm run scenes:build
 ### Step 3: 转换为 Remotion 配置
 
 ```bash
-cd ${PROJECTS_ROOT}/dasheng-media-workflow-skills
+cd ${PROJECTS_ROOT}/newma-media-studio
 
 # 转换 Finance Motion 配置到 Remotion
 python3 scripts/convert_finance_motion_to_remotion.py \
@@ -144,6 +144,6 @@ npx remotion render FinanceNewsXhs out/video.mp4 --quality=100
 ## 相关文档
 
 - [视频模板风格定义](references/template-styles.md)
-- [Motion 系统整合指南](${PROJECTS_ROOT}/dasheng-media-workflow-skills/docs/MOTION_INTEGRATION_GUIDE.md)
-- [Finance Motion 到 Remotion 转换器使用说明](${PROJECTS_ROOT}/dasheng-media-workflow-skills/scripts/convert_finance_motion_to_remotion.py)
+- [Motion 系统整合指南](${PROJECTS_ROOT}/newma-media-studio/docs/MOTION_INTEGRATION_GUIDE.md)
+- [Finance Motion 到 Remotion 转换器使用说明](${PROJECTS_ROOT}/newma-media-studio/scripts/convert_finance_motion_to_remotion.py)
 

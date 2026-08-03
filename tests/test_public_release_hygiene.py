@@ -6,6 +6,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+CANONICAL_REPOSITORY = "leecyno1/newma-media-studio"
+CANONICAL_REPOSITORY_SLUG = "newma-media-studio"
+LEGACY_REPOSITORY = "leecyno1/" + "dasheng-media-workflow-skills"
 
 FORBIDDEN_EXACT = {
     "configs/image_generation/providers.local.env",
@@ -82,3 +85,21 @@ def test_tracked_text_has_no_obvious_provider_secrets():
         if any(pattern.search(text) for pattern in OBVIOUS_SECRET_PATTERNS):
             hits.append(relative)
     assert hits == []
+
+
+def test_public_entrypoints_use_newma_repository_name():
+    entrypoints = (
+        "README.md",
+        "INSTALLATION.md",
+        "CONTRIBUTING.md",
+        "configs/workflow/module_registry.json",
+    )
+    for relative in entrypoints:
+        text = (ROOT / relative).read_text(encoding="utf-8")
+        assert CANONICAL_REPOSITORY_SLUG in text
+        assert LEGACY_REPOSITORY not in text
+
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    registry = (ROOT / "configs/workflow/module_registry.json").read_text(encoding="utf-8")
+    assert CANONICAL_REPOSITORY in readme
+    assert CANONICAL_REPOSITORY in registry

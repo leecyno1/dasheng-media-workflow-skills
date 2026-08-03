@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Dasheng Media Workflow - Hermes 安装脚本
+# Newma Media Studio - Hermes 安装脚本
 #
 # 用法: install_to_hermes.sh [SKILLS_DIR] [WORKSPACE_DIR] [OPTIONS]
 #

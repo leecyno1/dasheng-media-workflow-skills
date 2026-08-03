@@ -1,4 +1,4 @@
-# Onboarding Guide: Dasheng Media Workflow Skills
+# Onboarding Guide: Newma Media Studio
 
 ## 项目概览
 

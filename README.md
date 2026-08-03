@@ -1,4 +1,4 @@
-# Dasheng Media Workflow Skills
+# Newma Media Studio
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
@@ -6,9 +6,11 @@
 
 面向中文自媒体团队的内容生产、无头口播视频和多平台发布工作流。项目以 Manifest 与质量门禁为核心，把采集、研究、写作、视频导演、动画渲染、账号路由、发布验真和复盘连接成一条可恢复、可审计的生产链。
 
-- GitHub：[leecyno1/dasheng-media-workflow-skills](https://github.com/leecyno1/dasheng-media-workflow-skills)
-- Gitee：[leecyno1/dasheng-media-workflow-skills](https://gitee.com/leecyno1/dasheng-media-workflow-skills)
+- GitHub：[leecyno1/newma-media-studio](https://github.com/leecyno1/newma-media-studio)
+- Gitee：[leecyno1/newma-media-studio](https://gitee.com/leecyno1/newma-media-studio)
 - 完整项目、Skill、储备与依赖目录：[docs/PROJECT_CATALOG.md](docs/PROJECT_CATALOG.md)
+
+Newma Media Studio 是完整系统名称，不是单个 Skill。`skills/` 下的能力单元仍以 Skill 形式安装和路由。为保持现有自动化兼容，`dasheng-*` Skill ID、`DASHENG_*` 环境变量和 `dasheng.*` schema 命名空间在当前大版本继续保留；它们是稳定接口，不再作为对外项目品牌。
 
 ## 主流程
 
@@ -42,8 +44,8 @@ Intake -> Brief -> Draft -> Transwrite -> Publish -> Postmortem
 ## 快速开始
 
 ```bash
-git clone https://github.com/leecyno1/dasheng-media-workflow-skills.git
-cd dasheng-media-workflow-skills
+git clone https://github.com/leecyno1/newma-media-studio.git
+cd newma-media-studio
 ./scripts/install.sh
 source .venv/bin/activate
 ```
@@ -104,7 +106,7 @@ channel pack -> local API -> platform adapter -> CloakBrowser/Playwright -> rece
 
 ## 外部项目与储备
 
-本项目登记 42 个保留上游项目和 4 个候选储备。第三方源码不会被复制进公开 Git 历史，而是由 [configs/external/reserved_projects.json](configs/external/reserved_projects.json) 和 `scripts/sync_reserved_projects.py` 复现。Dasheng 对上游的必要兼容修改保存在 `patches/upstreams/`。
+本项目登记 42 个保留上游项目和 4 个候选储备。第三方源码不会被复制进公开 Git 历史，而是由 [configs/external/reserved_projects.json](configs/external/reserved_projects.json) 和 `scripts/sync_reserved_projects.py` 复现。Newma 对上游的必要兼容修改保存在 `patches/upstreams/`。
 
 ## 测试
 
