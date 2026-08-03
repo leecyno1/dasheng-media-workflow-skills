@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import argparse
 import json
 import math
 import os
@@ -42,6 +43,7 @@ from path_config import get_project_root, get_output_root
 ROOT = get_project_root()
 OUT_ROOT = get_output_root("intake")
 TIME_FMT = "%Y-%m-%d_%H%M%S"
+RUN_ID_PATTERN = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{0,127}")
 
 PORT_5173 = os.getenv("DASHENG_INTAKE_5173_BASE", "http://127.0.0.1:18000").rstrip("/")
 PORT_REPORTS = os.getenv("DASHENG_INTAKE_REPORTS_BASE", "http://127.0.0.1:8080").rstrip("/")
@@ -2577,9 +2579,19 @@ def build_simple_intake_tasks(raw_dir: Path) -> tuple[
     )
 
 
-def main() -> int:
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Run the Intake stage and write its canonical manifest.")
+    parser.add_argument("--run-id", help="Stable run identifier shared by all mainline stages.")
+    args = parser.parse_args(argv)
+    if args.run_id and RUN_ID_PATTERN.fullmatch(args.run_id) is None:
+        parser.error("--run-id must contain only letters, digits, dots, underscores, and hyphens")
+    return args
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = parse_args(argv)
     started = now()
-    run_id = started.strftime(TIME_FMT)
+    run_id = args.run_id or started.strftime(TIME_FMT)
     run_label = started.strftime("%Y-%m-%d %H:%M:%S")
     generated_at = iso(started)
     base = OUT_ROOT / run_id
