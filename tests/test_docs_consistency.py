@@ -45,6 +45,12 @@ class DocsConsistencyTests(unittest.TestCase):
             target = (ROOT / link).resolve()
             self.assertTrue(target.exists(), msg=f"README link target missing: {link}")
 
+    def test_documented_mainline_doctor_selects_a_run(self):
+        for target in [ROOT / "README.md", ROOT / "docs" / "ONBOARDING.md"]:
+            content = target.read_text(encoding="utf-8")
+            self.assertNotIn("run_mainline_stage.py doctor --strict", content)
+            self.assertIn("run_mainline_stage.py doctor --latest --strict", content)
+
 
 if __name__ == "__main__":
     unittest.main()

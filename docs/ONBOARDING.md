@@ -72,7 +72,7 @@ docs/                 使用说明、技术研究和生成目录
 # 安装和诊断
 ./scripts/install.sh
 source .venv/bin/activate
-python scripts/run_mainline_stage.py doctor --strict
+python scripts/run_mainline_stage.py doctor --latest --strict
 
 # 外部储备
 python scripts/sync_reserved_projects.py --mode check

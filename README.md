@@ -83,7 +83,7 @@ python scripts/ensure_video_external_deps.py --dep all --mode check
 统一入口：
 
 ```bash
-python scripts/run_mainline_stage.py doctor --strict
+python scripts/run_mainline_stage.py doctor --latest --strict
 python scripts/run_mainline_stage.py intake --run-id 2026-08-03_demo
 python scripts/run_mainline_stage.py brief --run-id 2026-08-03_demo
 python scripts/run_mainline_stage.py draft --run-id 2026-08-03_demo
