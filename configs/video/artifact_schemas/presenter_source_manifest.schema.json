@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dasheng.presenter_source_manifest.v1",
+  "title": "Dasheng Presenter Source Manifest",
+  "type": "object",
+  "required": ["schema_version", "status", "kind", "engine", "video", "master_audio"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "dasheng.presenter_source_manifest.v1"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["planned", "generated_pending_qc", "approved", "rejected"]
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["human_video", "digital_human"]
+    },
+    "engine": {
+      "type": "string",
+      "minLength": 1
+    },
+    "video": {
+      "type": ["string", "null"]
+    },
+    "master_audio": {
+      "type": ["string", "null"]
+    },
+    "portrait": {
+      "type": ["string", "null"]
+    },
+    "consent": {
+      "type": "object",
+      "properties": {
+        "status": {"type": "string", "enum": ["confirmed", "not_required", "not_confirmed"]},
+        "scope": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "ai_disclosure_required": {
+      "type": "boolean"
+    },
+    "duration_sec": {
+      "type": "number",
+      "minimum": 0
+    },
+    "segment_manifest": {
+      "type": ["string", "null"]
+    },
+    "presenter_video_audio_policy": {
+      "type": "string",
+      "enum": ["source_audio", "silent_visual_layer"]
+    },
+    "qc": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": true
+}

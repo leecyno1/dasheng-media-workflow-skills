@@ -26,6 +26,7 @@ from video_explainer_storyboard import build_explainer_storyboard, load_router, 
 from video_pipeline_governance import build_checkpoint, load_pipeline, validate_artifact
 from video_director_tool_router import apply_routes_to_scene_plan
 from video_scene_plan_quality_gate import audit_scene_plan
+from video_vox_storyboard import build_vox_storyboard
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -102,6 +103,23 @@ def normalize_explainer_scene_plan(storyboard: dict[str, Any]) -> dict[str, Any]
         "style": storyboard.get("style"),
         "scenes": scenes,
     }
+
+
+def normalize_vox_scene_plan(storyboard: dict[str, Any]) -> dict[str, Any]:
+    scene_plan = normalize_explainer_scene_plan(storyboard)
+    scene_plan.update(
+        {
+            "lane": "vox_explainer_video",
+            "title": storyboard.get("title") or "VOX 调查解释视频",
+            "aspect": storyboard.get("aspect") or "16:9",
+            "narrative_mode": storyboard.get("narrative_mode"),
+            "central_question": storyboard.get("central_question"),
+            "evidence_map": storyboard.get("evidence_map"),
+            "research_contract": storyboard.get("research_contract"),
+            "visual_bible": storyboard.get("visual_bible"),
+        }
+    )
+    return scene_plan
 
 
 def segment_index(segment: dict[str, Any]) -> int:
@@ -303,6 +321,80 @@ def build_explainer_package(args: argparse.Namespace, output_dir: Path) -> dict[
     }
 
 
+def build_vox_package(args: argparse.Namespace, output_dir: Path) -> dict[str, Path]:
+    article_html = Path(args.article_html).expanduser().resolve()
+    router = load_router(Path(args.template_router).expanduser().resolve() if args.template_router else None)
+    storyboard = build_vox_storyboard(
+        parse_html_article(article_html),
+        source_html=str(article_html),
+        duration_target_sec=args.duration_target_sec,
+        router=router,
+        aspect="16:9",
+        central_question=getattr(args, "central_question", None),
+    )
+    raw_storyboard_path = output_dir / "vox_storyboard.raw.json"
+    scene_plan_path = output_dir / "scene_plan.json"
+    quality_gate_path = output_dir / "scene_plan_quality_gate.json"
+    preview_path = output_dir / "storyboard_preview.html"
+    review_path = output_dir / "storyboard_template_review.html"
+    checkpoint_path = output_dir / "director_checkpoint.json"
+    routing_plan_path = output_dir / "tool_routing_plan.json"
+    visual_bible_path = output_dir / "vox_visual_bible.json"
+
+    scene_plan = normalize_vox_scene_plan(storyboard)
+    disable_tool_routing = bool(getattr(args, "disable_tool_routing", False))
+    if not disable_tool_routing:
+        tool_registry = getattr(args, "tool_registry", str(PROJECT_ROOT / "configs/video/tool_registry.json"))
+        project_registry = getattr(args, "project_registry", str(PROJECT_ROOT / "configs/external/reserved_projects.json"))
+        scene_plan, routing_plan = apply_routes_to_scene_plan(
+            scene_plan,
+            tool_registry_path=Path(tool_registry).expanduser().resolve(),
+            project_registry_path=Path(project_registry).expanduser().resolve(),
+        )
+        write_json(routing_plan_path, routing_plan)
+    errors = validate_artifact("scene_plan", scene_plan)
+    if errors:
+        raise RuntimeError(f"scene_plan invalid: {json.dumps(errors, ensure_ascii=False)}")
+    write_json(raw_storyboard_path, storyboard)
+    write_json(scene_plan_path, scene_plan)
+    write_json(visual_bible_path, storyboard.get("visual_bible") or {})
+    write_json(quality_gate_path, audit_scene_plan(scene_plan))
+    write_preview_html(preview_path, scene_plan)
+    review_path.write_text(
+        build_review_html(
+            scene_plan,
+            output=review_path,
+            preview_roots=[Path(item).expanduser().resolve() for item in args.template_preview_root],
+            source_storyboard=scene_plan_path,
+        ),
+        encoding="utf-8",
+    )
+    checkpoint = build_checkpoint(
+        load_pipeline("vox_explainer"),
+        "scene_plan",
+        artifact_paths={
+            "scene_plan": str(scene_plan_path),
+            "quality_gate": str(quality_gate_path),
+            "review": str(review_path),
+            "visual_bible": str(visual_bible_path),
+            **({"tool_routing_plan": str(routing_plan_path)} if not disable_tool_routing else {}),
+        },
+        status="pending_review",
+        notes="Review the central question, evidence map, counterargument, and qualified conclusion before asset production.",
+    )
+    write_json(checkpoint_path, checkpoint)
+    return {
+        "raw_storyboard": raw_storyboard_path,
+        "scene_plan": scene_plan_path,
+        "scene_plan_quality_gate": quality_gate_path,
+        "preview_html": preview_path,
+        "review_html": review_path,
+        "visual_bible": visual_bible_path,
+        "checkpoint": checkpoint_path,
+        **({"tool_routing_plan": routing_plan_path} if not disable_tool_routing else {}),
+    }
+
+
 def build_talking_head_package(args: argparse.Namespace, output_dir: Path) -> dict[str, Path]:
     if args.captions_json:
         captions = load_captions_json(Path(args.captions_json).expanduser().resolve())
@@ -382,7 +474,7 @@ def build_talking_head_package(args: argparse.Namespace, output_dir: Path) -> di
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build a governed Dasheng video director scene_plan package.")
-    parser.add_argument("--lane", choices=["explainer_html_video", "talking_head_video"], required=True)
+    parser.add_argument("--lane", choices=["explainer_html_video", "vox_explainer_video", "talking_head_video"], required=True)
     parser.add_argument("--output-dir", required=True)
     parser.add_argument("--project-manifest", default="")
     parser.add_argument("--title", default="未命名视频")
@@ -391,8 +483,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--project-registry", default=str(PROJECT_ROOT / "configs" / "external" / "reserved_projects.json"))
     parser.add_argument("--disable-tool-routing", action="store_true", help="Build a scene plan without director tool routing annotations.")
 
-    parser.add_argument("--article-html", help="Required for explainer_html_video.")
+    parser.add_argument("--article-html", help="Required for explainer_html_video and vox_explainer_video.")
     parser.add_argument("--duration-target-sec", type=int, default=180)
+    parser.add_argument("--central-question", default="", help="Optional central question override for vox_explainer_video.")
     parser.add_argument("--template-router", default=str(PROJECT_ROOT / "configs" / "video" / "html_anything_template_router.json"))
 
     caption_group = parser.add_mutually_exclusive_group()
@@ -411,10 +504,10 @@ def main() -> int:
     if not is_safe_output_root(output_dir):
         raise SystemExit(f"Unsafe output-dir: {output_dir}. Use ~/Desktop/自媒体创作 or another creator output root.")
     output_dir.mkdir(parents=True, exist_ok=True)
-    if args.lane == "explainer_html_video":
+    if args.lane in {"explainer_html_video", "vox_explainer_video"}:
         if not args.article_html:
-            raise SystemExit("--article-html is required for explainer_html_video")
-        outputs = build_explainer_package(args, output_dir)
+            raise SystemExit("--article-html is required for explainer_html_video and vox_explainer_video")
+        outputs = build_vox_package(args, output_dir) if args.lane == "vox_explainer_video" else build_explainer_package(args, output_dir)
     else:
         if not args.captions_json and not args.srt:
             raise SystemExit("--captions-json or --srt is required for talking_head_video")

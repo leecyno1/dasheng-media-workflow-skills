@@ -1,6 +1,6 @@
 ---
 name: dasheng-video-broll-generator
-description: Use when a Dasheng video needs B-roll, editorial collage inserts, animated stickers, visual metaphors, or generated cutaways. Routes each shot to sourced footage, internal motion assets, Vox Director, or seedance2 without replacing factual evidence.
+description: Use when a Dasheng video needs B-roll, editorial collage inserts, animated stickers, visual metaphors, or generated cutaways. Routes each shot to sourced footage, local motion/illustration tools, or allowlisted first-party video models without replacing factual evidence.
 ---
 
 # Dasheng Video B-roll Generator
@@ -20,9 +20,10 @@ Turn a reviewed scene plan into a B-roll manifest. This is a routing and quality
 
 1. Use real charts, filings, screenshots, source video, or licensed stock when the shot carries evidence.
 2. Use internal HTML/Remotion/HyperFrames motion for data-native diagrams, text, UI, and repeatable graphic systems.
-3. Use `Vox Director` as an optional provider for paper-collage explainers and editorial cutaways.
-4. Use `seedance2` as an optional provider for short generated B-roll or animated sticker shots when no factual identity, exact product state, or real event must be preserved.
-5. Use `dasheng-lemon-illustrations` for conceptual metaphors that should match the channel IP.
+3. For the VOX lane, Codex built-in `imagegen` makes each approved flat paper-collage object map, then `dasheng-video-omni-browser` uses the signed-in Chrome Gemini session only to generate one 10-second video clip per shot.
+4. Use internal HTML/Remotion/HyperFrames for exact text, charts, UI, repeatable systems and final compositing.
+5. Use `seedance2-skill` only as a shot-level reserve when no factual identity, exact product state, or real event must be preserved.
+6. Use `dasheng-lemon-illustrations` for conceptual metaphors that should match the channel IP.
 
 Read [references/provider-routing.md](references/provider-routing.md) before selecting an external provider.
 

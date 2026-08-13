@@ -12,7 +12,8 @@ from ensure_video_external_deps import DEPENDENCIES, inspect_dependency
 def test_video_external_dependencies_are_unlocked():
     assert DEPENDENCIES["html-video"].repo == "https://github.com/nexu-io/html-video.git"
     assert DEPENDENCIES["html-anything"].repo == "https://github.com/nexu-io/html-anything.git"
-    assert DEPENDENCIES["palmier-pro"].repo == "https://github.com/palmier-io/palmier-pro.git"
+    assert "palmier-pro" not in DEPENDENCIES
+    assert "vox-director" not in DEPENDENCIES
     for spec in DEPENDENCIES.values():
         assert "commit" not in spec.__dict__
         assert "tag" not in spec.__dict__

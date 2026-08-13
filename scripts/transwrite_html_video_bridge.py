@@ -13,6 +13,9 @@ class BridgeError(RuntimeError):
     pass
 
 
+SUPPORTED_VIDEO_LANES = {"talking_head_video", "explainer_html_video", "vox_explainer_video"}
+
+
 def read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -28,11 +31,11 @@ def now_iso() -> str:
 
 def load_plan(video_manifest_path: Path) -> tuple[dict[str, Any], Path, dict[str, Any]]:
     manifest = read_json(video_manifest_path)
-    if not isinstance(manifest, dict) or manifest.get("lane") != "talking_head_video":
-        raise BridgeError(f"不是 talking_head_video manifest：{video_manifest_path}")
+    if not isinstance(manifest, dict) or manifest.get("lane") not in SUPPORTED_VIDEO_LANES:
+        raise BridgeError(f"不是受支持的视频 lane manifest：{video_manifest_path}")
     plan_file = manifest.get("html_video_project_plan")
     if not plan_file:
-        raise BridgeError("talking_head_video_manifest.json 缺少 html_video_project_plan")
+        raise BridgeError("video lane manifest 缺少 html_video_project_plan")
     plan_path = Path(str(plan_file)).expanduser().resolve()
     if not plan_path.exists():
         raise BridgeError(f"html_video_project_plan 不存在：{plan_path}")
@@ -140,14 +143,15 @@ def build_bridge_result(
     if execute == "render":
         active_project_id = str(result["html_video_project"]["project_id"])
         rendered = render_project(plan, active_project_id)
-        result["status"] = "rendered"
+        result["status"] = "scene_assets_rendered"
         result["html_video_render"] = rendered
         update_video_manifest(
             video_manifest_path,
             {
-                "status": "rendered",
+                "status": "scene_assets_rendered",
                 "html_video_project_id": active_project_id,
-                "final_video": rendered["output"],
+                "html_video_scene_render": rendered["output"],
+                "next_step": "Compose scene assets on the Remotion master timeline, then run full QC.",
             },
         )
     output_path = video_manifest_path.parent / "html_video_execution.json"

@@ -4,7 +4,7 @@
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Workflow: 6 stages](https://img.shields.io/badge/workflow-6%20stages-5b67f1.svg)](configs/workflow/module_registry.json)
 
-面向中文自媒体团队的内容生产、无头口播视频和多平台发布工作流。项目以 Manifest 与质量门禁为核心，把采集、研究、写作、视频导演、动画渲染、账号路由、发布验真和复盘连接成一条可恢复、可审计的生产链。
+面向中文自媒体团队的内容生产、普通无头口播、VOX 调查解释视频、真人口播和多平台发布工作流。项目以 Manifest 与质量门禁为核心，把采集、研究、写作、视频导演、动画渲染、账号路由、发布验真和复盘连接成一条可恢复、可审计的生产链。
 
 - GitHub：[leecyno1/newma-media-studio](https://github.com/leecyno1/newma-media-studio)
 - Gitee：[leecyno1/newma-media-studio](https://gitee.com/leecyno1/newma-media-studio)
@@ -94,6 +94,8 @@ python scripts/run_mainline_stage.py postmortem --run-id 2026-08-03_demo
 
 每个下游阶段都从上游 Manifest 解析输入，并校验对应 Gate。不要用“最新目录”或手写临时路径绕开契约。
 
+统一入口生成待审核产物后，项目 Manifest 会保持 `pending_review`；只有人工批准对应 Gate、完成渠道执行并验真后，才算阶段完成。
+
 ## 发布路线
 
 当前默认采用千帆云递本地 API：
@@ -106,7 +108,7 @@ channel pack -> local API -> platform adapter -> CloakBrowser/Playwright -> rece
 
 ## 外部项目与储备
 
-本项目登记 42 个保留上游项目和 4 个候选储备。第三方源码不会被复制进公开 Git 历史，而是由 [configs/external/reserved_projects.json](configs/external/reserved_projects.json) 和 `scripts/sync_reserved_projects.py` 复现。Newma 对上游的必要兼容修改保存在 `patches/upstreams/`。
+本项目登记 40 个保留上游项目和 4 个候选储备。第三方源码不会被复制进公开 Git 历史，而是由 [configs/external/reserved_projects.json](configs/external/reserved_projects.json) 和 `scripts/sync_reserved_projects.py` 复现。Newma 对上游的必要兼容修改保存在 `patches/upstreams/`。
 
 ## 测试
 

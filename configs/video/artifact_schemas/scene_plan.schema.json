@@ -11,7 +11,18 @@
     },
     "lane": {
       "type": "string",
-      "enum": ["talking_head_video", "explainer_html_video"]
+      "enum": ["talking_head_video", "explainer_html_video", "vox_explainer_video"]
+    },
+    "presenter_source": {
+      "type": "object",
+      "properties": {
+        "kind": {"type": "string", "enum": ["human_video", "digital_human"]},
+        "engine": {"type": "string"},
+        "manifest": {"type": "string"},
+        "master_audio": {"type": "string"},
+        "ai_disclosure_required": {"type": "boolean"}
+      },
+      "additionalProperties": true
     },
     "aspect": {
       "type": "string",

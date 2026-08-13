@@ -27,7 +27,7 @@
 - `qc.status`
 - `qc.report`
 
-## 三条 Lane
+## 五条 Lane
 
 ### wechat_article
 
@@ -38,16 +38,35 @@
 - 可选调用 `baoyu-cover-image` / `baoyu-imagine`
 - 输出 `wechat_article.final.md`、`wechat_article.final.html`、封面和 `wechat_article_qc_report.json`
 
+### explainer_html_video
+
+职责：
+
+- 无真人财经默认横版 `16:9` 母版，`1:1`、`9:16` 为独立适配。
+- Draft HTML 是事实底板；MiniMax 音频驱动时间轴。
+- 真实素材和 HTML/GSAP 场景进入 Remotion 主时间轴，再由 FFmpeg 完成 QC 与封装。
+- 输出 MP4、SRT、Claim/Evidence、renderer gates、`video_render_qc.json` 和 `final_delivery_manifest.json`。
+
 ### talking_head_video
 
 职责：
 
-- 真人口播：人声/视频为主时间轴，HTML 视觉层主动对齐
-- 无真人出镜：Draft 生成口播稿，MiniMax CLI 生成连续配音，HTML/GSAP/Lottie/HyperFrames 被动对齐
-- 调用 `dasheng-video-talking-head`、`dasheng-video-explainer-html`、`dasheng-html-video-bridge`、`dasheng-html-anything-bridge`
+- 真人口播：人声/视频为主时间轴，HTML 视觉层主动对齐，Remotion 负责总合成。
+- 调用 `dasheng-video-talking-head`、`dasheng-html-video-bridge`、`dasheng-html-anything-bridge`。
 - 输出 MP4、SRT、timeline、`video_qc_report.json`
 
+### vox_explainer_video
+
+职责：
+
+- 从 Draft 提炼一个中心问题和 3-6 个证据支柱。
+- 调用 `dasheng-video-vox`，组织历史、机制、真实新闻/访谈/现场资料、数据、反证和有限结论。
+- 默认横版 16:9；Remotion 为主时间轴，HTML/GSAP/HyperFrames 为场景层，FFmpeg 做 QC 和封装。
+- 输出 MP4、SRT、证据账本、素材来源、renderer gates、`video_render_qc.json` 和 `final_delivery_manifest.json`。
+
 ### podcast
+
+默认关闭；只有决策同时包含 `podcast` 且 `podcast.enabled=true` 才生成任务包。
 
 职责：
 

@@ -49,6 +49,7 @@ FORMAL_SKILLS = [
     "dasheng-html-anything-bridge",
     "dasheng-lemon-illustrations",
     "dasheng-video-talking-head",
+    "dasheng-digital-human-talking-head",
     "dasheng-video-explainer-html",
     "dasheng-style-profiler",
     "feishu-doc-creator",

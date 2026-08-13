@@ -1,0 +1,21 @@
+{
+  "name": "dasheng-digital-human-talking-head",
+  "version": "0.2.0",
+  "stage": "video",
+  "description": "用 imagegen 将授权真人照片改成写实动物头，再用 Luma 生成口型视频并接入导演链。",
+  "runner": "python",
+  "entry": "scripts/build_digital_human_job.py",
+  "inputs": {
+    "required": ["authorized portrait image", "Codex imagegen animal-head edit", "MiniMax narration audio", "Luma signed-in session"],
+    "optional": ["subtitle timestamps", "animal type", "article evidence"]
+  },
+  "outputs": [
+    "digital_human_job.json",
+    "presenter_source_manifest.json",
+    "digital_human_source.mp4",
+    "digital_human_qc.json"
+  ],
+  "hitl": true,
+  "local_video_api_required": false,
+  "video_provider": "luma_dream_machine_browser"
+}

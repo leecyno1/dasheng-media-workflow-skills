@@ -24,6 +24,11 @@ ARTIFACT_SCHEMAS = {
     "brief": "brief.schema.json",
     "script": "script.schema.json",
     "scene_plan": "scene_plan.schema.json",
+    "presenter_source_manifest": "presenter_source_manifest.schema.json",
+    "digital_human_job": "digital_human_job.schema.json",
+    "visual_bible": "visual_bible.schema.json",
+    "image2_shot_manifest": "image2_shot_manifest.schema.json",
+    "omni_shot_manifest": "omni_shot_manifest.schema.json",
     "tool_routing_plan": "tool_routing_plan.schema.json",
     "claim_evidence_ledger": "claim_evidence_ledger.schema.json",
     "spoken_revision_sheet": "spoken_revision_sheet.schema.json",
@@ -94,7 +99,7 @@ def validate_pipeline_manifest(
         failures.append({"code": "bad_schema_version", "message": "Pipeline schema_version must be dasheng.video.pipeline.v1."})
     if not pipeline.get("id"):
         failures.append({"code": "missing_id", "message": "Pipeline id is required."})
-    if pipeline.get("lane") not in {"talking_head_video", "explainer_html_video", "style_training"}:
+    if pipeline.get("lane") not in {"talking_head_video", "explainer_html_video", "vox_explainer_video", "style_training"}:
         failures.append({"code": "bad_lane", "message": "Pipeline lane is not recognized."})
     if not pipeline.get("fail_conditions"):
         failures.append({"code": "missing_fail_conditions", "message": "Pipeline must define fail_conditions."})

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import html
+import importlib.util
 import json
 import os
 import re
@@ -21,13 +22,15 @@ from canonical_workflow import (
     ensure_runtime_output_dir,
     write_json,
 )
-from dasheng_video_director import build_explainer_package, build_talking_head_package
+from dasheng_video_director import build_explainer_package, build_talking_head_package, build_vox_package
 
 
 DEFAULT_LANES = ["wechat_article"]
-SUPPORTED_LANES = {"wechat_article", "talking_head_video", "podcast"}
+VIDEO_LANES = {"talking_head_video", "explainer_html_video", "vox_explainer_video"}
+SUPPORTED_LANES = {"wechat_article", *VIDEO_LANES, "podcast"}
 LANE_STATUS_LIFECYCLE = [
     "planned",
+    "pending_presenter_source_review",
     "pending_director_review",
     "ready_for_agent_execution",
     "ready_for_skill_execution",
@@ -37,11 +40,15 @@ LANE_STATUS_LIFECYCLE = [
     "blocked_missing_provider",
     "blocked_missing_director_source",
     "blocked_missing_human_media",
+    "blocked_missing_portrait",
+    "blocked_missing_master_audio",
+    "blocked_missing_consent",
     "failed_qc",
 ]
 LANE_COMPLETION_STATUSES = ["completed", "packageable"]
 LANE_PUBLISH_BLOCKING_STATUSES = [
     "planned",
+    "pending_presenter_source_review",
     "pending_director_review",
     "ready_for_agent_execution",
     "ready_for_skill_execution",
@@ -50,6 +57,9 @@ LANE_PUBLISH_BLOCKING_STATUSES = [
     "blocked_missing_director_source",
     "blocked_missing_audio_provider",
     "blocked_missing_human_media",
+    "blocked_missing_portrait",
+    "blocked_missing_master_audio",
+    "blocked_missing_consent",
     "failed_qc",
 ]
 PODCAST_PROVIDER_ENVS = {
@@ -66,10 +76,11 @@ DEFAULT_HTML_ANYTHING_ROOT = os.environ.get(
     str(ROOT / "vendor/reserved/render/html-anything"),
 )
 DEFAULT_TEMPLATE_ROUTER = ROOT / "configs" / "video" / "html_anything_template_router.json"
+DIGITAL_HUMAN_JOB_BUILDER = ROOT / "skills" / "dasheng-digital-human-talking-head" / "scripts" / "build_digital_human_job.py"
 
 
-def read_json(path: Path) -> Any:
-    return json.loads(path.read_text(encoding="utf-8"))
+def read_json(path: str | Path) -> Any:
+    return json.loads(Path(path).expanduser().read_text(encoding="utf-8"))
 
 
 def write_text(path: Path, content: str) -> None:
@@ -88,6 +99,98 @@ def now_iso() -> str:
 
 def path_exists(path: str | None) -> bool:
     return bool(path and Path(path).expanduser().exists())
+
+
+def load_python_module(path: Path, name: str) -> Any:
+    spec = importlib.util.spec_from_file_location(name, path)
+    if not spec or not spec.loader:
+        raise WorkflowContractError(f"无法加载模块：{path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def write_human_presenter_manifest(
+    lane_dir: Path,
+    *,
+    base_video: str | None,
+    master_audio: str | None,
+    roughcut_gate: str | None,
+) -> dict[str, Any]:
+    manifest_path = lane_dir / "presenter_source_manifest.json"
+    payload = {
+        "schema_version": "dasheng.presenter_source_manifest.v1",
+        "status": "approved" if path_exists(base_video) else "planned",
+        "kind": "human_video",
+        "engine": "camera",
+        "video": str(Path(base_video).expanduser().resolve()) if path_exists(base_video) else None,
+        "master_audio": str(Path(master_audio).expanduser().resolve()) if path_exists(master_audio) else None,
+        "consent": {"status": "not_required", "scope": "self_or_governed_source"},
+        "roughcut_gate": str(Path(roughcut_gate).expanduser().resolve()) if path_exists(roughcut_gate) else None,
+        "presenter_video_audio_policy": "source_audio",
+        "ai_disclosure_required": False,
+    }
+    write_json(manifest_path, payload)
+    return {**payload, "manifest": str(manifest_path.resolve()), "job": None, "qc": None}
+
+
+def build_presenter_source_package(
+    decision: dict[str, Any],
+    lane_dir: Path,
+    *,
+    title: str,
+    base_video: str | None,
+    master_audio: str | None,
+) -> dict[str, Any]:
+    source = decision.get("presenter_source") or {}
+    kind = str(source.get("kind") or decision.get("presenter_source_kind") or "").strip()
+    portrait = source.get("portrait") or source.get("image") or decision.get("portrait")
+    consent = str(source.get("consent_status") or source.get("consent") or decision.get("consent") or "not_confirmed")
+    subtitle = decision.get("srt") or decision.get("agent_proofread_srt") or decision.get("subtitle_srt")
+    if kind == "digital_human" or path_exists(portrait):
+        if not path_exists(portrait):
+            return {"kind": "digital_human", "status": "blocked_missing_portrait", "manifest": None, "job": None, "qc": None}
+        if not path_exists(master_audio):
+            return {"kind": "digital_human", "status": "blocked_missing_master_audio", "manifest": None, "job": None, "qc": None}
+        if consent != "confirmed":
+            return {"kind": "digital_human", "status": "blocked_missing_consent", "manifest": None, "job": None, "qc": None}
+        output_dir = lane_dir / "digital_human_source"
+        builder = load_python_module(DIGITAL_HUMAN_JOB_BUILDER, "dasheng_digital_human_job_builder")
+        job_path = builder.build_job(
+            image=Path(portrait).expanduser().resolve(),
+            audio=Path(master_audio).expanduser().resolve(),
+            output_dir=output_dir,
+            consent="confirmed",
+            engine=str(source.get("engine") or "luma_dream_machine"),
+            profile=str(source.get("profile") or "animal_presenter"),
+            subtitle=Path(subtitle).expanduser().resolve() if path_exists(subtitle) else None,
+            title=title,
+            subject=str(source.get("subject") or "authorized_presenter"),
+            minimax_model=str(source.get("minimax_model") or "speech-2.8-hd"),
+            minimax_voice=str(source.get("minimax_voice") or "tianxin_xiaoling"),
+            minimax_speed=float(source.get("minimax_speed") or 1.0),
+            max_segment_sec=float(source.get("max_segment_sec") or 35.0),
+            status="planned_pending_short_sample",
+        )
+        job = read_json(job_path)
+        return {
+            "kind": "digital_human",
+            "status": "planned_pending_short_sample",
+            "manifest": job["outputs"]["presenter_manifest"],
+            "job": str(job_path),
+            "qc": job["outputs"]["qc"],
+            "video": job["outputs"]["presenter_video"],
+            "master_audio": job["inputs"]["audio"],
+            "duration_sec": job["inputs"].get("audio_duration_sec"),
+        }
+
+    roughcut_gate = decision.get("roughcut_gate") or decision.get("roughcut_gate_report")
+    return write_human_presenter_manifest(
+        lane_dir,
+        base_video=base_video,
+        master_audio=master_audio,
+        roughcut_gate=roughcut_gate,
+    )
 
 
 def short_text(text: str, limit: int = 180) -> str:
@@ -170,6 +273,7 @@ def build_execution_contract(
 
 def build_html_video_plan(
     *,
+    lane: str,
     title: str,
     topic_id: str | None,
     lane_dir: Path,
@@ -182,7 +286,8 @@ def build_html_video_plan(
 ) -> dict[str, Any]:
     html_video_root = str(render.get("html_video_root") or os.getenv("HTML_VIDEO_ROOT") or DEFAULT_HTML_VIDEO_ROOT)
     html_video_cli = str(render.get("html_video_cli") or os.getenv("HTML_VIDEO_CLI") or DEFAULT_HTML_VIDEO_CLI)
-    aspect = str((render.get("aspect_ratios") or ["9:16"])[0])
+    default_aspects = ["16:9", "1:1", "9:16"] if lane in {"explainer_html_video", "vox_explainer_video"} else ["9:16", "16:9", "1:1"]
+    aspect = str(render.get("aspect") or (render.get("aspect_ratios") or default_aspects)[0])
     template_id = str(render.get("template_id") or "frame-liquid-bg-hero")
     vars_path = lane_dir / "html_video_project_vars.json"
     project_name = f"dasheng-{safe_slug(topic_id or title)}"
@@ -199,8 +304,12 @@ def build_html_video_plan(
     ]
     command_path = lane_dir / "html_video_commands.sh"
     write_text(command_path, "#!/usr/bin/env bash\nset -euo pipefail\n\n" + "\n".join(commands))
+    video_manifest = lane_dir / f"{lane}_manifest.json"
     plan = {
         "renderer": "html-video",
+        "renderer_role": "scene_renderer",
+        "master_timeline": "remotion",
+        "finalizer": "ffmpeg",
         "status": "ready_for_bridge",
         "topic_id": topic_id,
         "title": title,
@@ -231,16 +340,16 @@ def build_html_video_plan(
             },
         ],
         "bridge_command": [
-            "python3",
+            ".venv/bin/python",
             "scripts/transwrite_html_video_bridge.py",
             "--video-manifest",
-            str((lane_dir / "talking_head_video_manifest.json").resolve()),
+            str(video_manifest.resolve()),
         ],
         "render_command": [
-            "python3",
+            ".venv/bin/python",
             "scripts/transwrite_html_video_bridge.py",
             "--video-manifest",
-            str((lane_dir / "talking_head_video_manifest.json").resolve()),
+            str(video_manifest.resolve()),
             "--execute",
             "render",
         ],
@@ -252,11 +361,13 @@ def build_html_video_plan(
 
 def build_director_package_for_video_lane(
     *,
+    lane: str,
     topic: dict[str, Any],
     decision: dict[str, Any],
     lane_dir: Path,
     title: str,
     base_video: str | None,
+    presenter_source: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     director_dir = lane_dir / "director_scene_plan"
     srt = decision.get("srt") or decision.get("agent_proofread_srt") or decision.get("subtitle_srt")
@@ -266,19 +377,30 @@ def build_director_package_for_video_lane(
     if isinstance(template_preview_roots, str):
         template_preview_roots = [template_preview_roots]
 
-    if path_exists(captions_json) or path_exists(srt):
+    if lane == "talking_head_video" and (path_exists(captions_json) or path_exists(srt)):
         args = Namespace(
             captions_json=captions_json if path_exists(captions_json) else None,
             srt=srt if path_exists(srt) else None,
-            source_video=base_video,
-            duration=decision.get("duration"),
+            source_video=base_video if path_exists(base_video) else None,
+            duration=decision.get("duration") or (presenter_source or {}).get("duration_sec"),
             title=title,
             roughcut_gate=roughcut_gate if path_exists(roughcut_gate) else None,
             template_preview_root=template_preview_roots,
         )
         outputs = build_talking_head_package(args, director_dir)
         mode = "talking_head_video"
-    elif path_exists(topic.get("html_file")):
+        if presenter_source:
+            scene_plan_path = outputs["scene_plan"]
+            scene_plan = read_json(scene_plan_path)
+            scene_plan["presenter_source"] = {
+                "kind": presenter_source.get("kind"),
+                "engine": str((read_json(presenter_source["job"]).get("presenter_source") or {}).get("engine") or "luma_dream_machine") if presenter_source.get("kind") == "digital_human" and presenter_source.get("job") else "camera",
+                "manifest": presenter_source.get("manifest"),
+                "master_audio": presenter_source.get("master_audio"),
+                "ai_disclosure_required": presenter_source.get("kind") == "digital_human",
+            }
+            write_json(scene_plan_path, scene_plan)
+    elif lane == "explainer_html_video" and path_exists(topic.get("html_file")):
         args = Namespace(
             article_html=topic.get("html_file"),
             duration_target_sec=int((decision.get("director") or {}).get("duration_target_sec") or decision.get("duration_target_sec") or 180),
@@ -287,11 +409,26 @@ def build_director_package_for_video_lane(
         )
         outputs = build_explainer_package(args, director_dir)
         mode = "explainer_html_video"
+    elif lane == "vox_explainer_video" and path_exists(topic.get("html_file")):
+        director = decision.get("director") or {}
+        args = Namespace(
+            article_html=topic.get("html_file"),
+            duration_target_sec=int(director.get("duration_target_sec") or decision.get("duration_target_sec") or 300),
+            central_question=director.get("central_question") or decision.get("central_question") or "",
+            template_router=str(director.get("template_router") or DEFAULT_TEMPLATE_ROUTER),
+            template_preview_root=template_preview_roots,
+        )
+        outputs = build_vox_package(args, director_dir)
+        mode = "vox_explainer_video"
     else:
         return {
             "status": "blocked_missing_director_source",
-            "mode": "unavailable",
-            "reason": "Need agent_proofread_srt/captions_json for talking-head director, or Draft html_file for no-human director.",
+            "mode": lane,
+            "reason": (
+                "Need agent_proofread_srt/captions_json for talking-head director."
+                if lane == "talking_head_video"
+                else "Need Draft html_file for no-human or VOX director."
+            ),
             "output_dir": str(director_dir.resolve()),
         }
 
@@ -321,6 +458,10 @@ def normalize_topic_rows(decision: dict[str, Any]) -> list[dict[str, Any]]:
         if isinstance(lanes, str):
             lanes = [lanes]
         selected_lanes = [lane for lane in lanes if lane in SUPPORTED_LANES]
+        podcast_config = row.get("podcast")
+        podcast_enabled = isinstance(podcast_config, dict) and podcast_config.get("enabled") is True
+        if "podcast" in selected_lanes and not podcast_enabled:
+            selected_lanes.remove("podcast")
         if not selected_lanes:
             selected_lanes = list(DEFAULT_LANES)
         normalized.append({**row, "lanes": selected_lanes})
@@ -430,7 +571,7 @@ def build_wechat_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir
 - 如果 humanize 新增了一个重要比喻或举例，也必须补充 illustration intent；只有能增加理解的场景才生成，不把每段都画成卡通。
 - 漫画属于概念解释，不得替代真实图表、网页、表格、文档或来源证据。
 - 公众号排版遵守 `configs/publish/wechat_layout_rules.json`：H2 使用阿拉伯数字大标题并左对齐；不要居中块状标题；表格内文字压到 12px 左右，减小 padding，避免手机端换行挤压。
-- 需要封面时调用 `baoyu-cover-image` / `baoyu-imagine`，产物写入 `cover/`。
+- 需要封面时调用已就绪的 MiniMax CLI `mmx image generate`，产物写入 `cover/`。
 - 输出 `wechat_article.final.md` 与 `wechat_article.final.html`，再更新 `wechat_article_manifest.json`。
 
 ## 输入
@@ -450,7 +591,7 @@ def build_wechat_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir
 建议调用：
 
 ```bash
-/baoyu-cover-image {wechat_md} --quick --aspect 16:9 --type conceptual --text title-only
+mmx image generate --prompt "{title}，微信公众号财经头图，清晰、克制、有记忆点，少量标题文字，避免复杂逻辑图" --aspect-ratio 16:9 --out-dir "{lane_dir / "cover"}"
 ```
 """,
     )
@@ -463,7 +604,7 @@ def build_wechat_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir
             "Generate final Markdown and WeChat-compatible HTML through baoyu-markdown-to-html when needed.",
             "Apply WeChat layout hard rules from configs/publish/wechat_layout_rules.json before packaging.",
             "Consume illustration_intents.json and generate/place lemon-person comics after the matching metaphor or example paragraph.",
-            "Generate cover assets through baoyu-cover-image / baoyu-imagine when requested.",
+            "Generate cover assets through the ready MiniMax CLI mmx route when requested.",
             "Run article QC before marking this lane packageable or completed.",
         ],
         final_artifacts={
@@ -488,13 +629,13 @@ def build_wechat_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir
             "enabled": cover_enabled,
             "prompt_file": str(cover_prompt_path.resolve()),
             "output_dir": str((lane_dir / "cover").resolve()),
-            "skill": "baoyu-cover-image",
+            "provider": "mmx_cli",
         },
         "skill_invocations": [
             {"skill": "dasheng-style-profiler", "purpose": "提取或加载作者 Style DNA", "required": dna_profile == "project_or_user_default"},
             {"skill": "wechat-style-profiler", "purpose": "公众号风格画像补充", "required": False},
             {"skill": "baoyu-markdown-to-html", "purpose": "将最终 Markdown 转微信兼容 HTML", "required": not bool(source_html)},
-            {"skill": "baoyu-cover-image", "purpose": "生成封面", "required": cover_enabled},
+            {"tool": "mmx_cli", "purpose": "生成封面", "required": cover_enabled},
             {
                 "skill": "dasheng-lemon-illustrations",
                 "purpose": "将原文比喻、举例和抽象机制转成柠檬人正文漫画",
@@ -590,8 +731,38 @@ document.addEventListener('keydown', function(event) {{
 </html>"""
 
 
-def build_video_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir: Path) -> dict[str, Any]:
-    lane_dir = topic_dir / "talking_head_video"
+def resolve_video_lane(topic: dict[str, Any], decision: dict[str, Any], requested_lane: str) -> str:
+    if requested_lane in {"explainer_html_video", "vox_explainer_video"}:
+        return requested_lane
+    audio = decision.get("audio") or {}
+    presenter_source = decision.get("presenter_source") or {}
+    human_inputs = [
+        decision.get("base_video"),
+        decision.get("human_video"),
+        decision.get("human_audio"),
+        audio.get("file"),
+        presenter_source.get("portrait"),
+        presenter_source.get("image"),
+        decision.get("srt"),
+        decision.get("agent_proofread_srt"),
+        decision.get("subtitle_srt"),
+        decision.get("captions_json"),
+        decision.get("captions"),
+    ]
+    if not any(path_exists(path) for path in human_inputs) and path_exists(topic.get("html_file")):
+        return "explainer_html_video"
+    return "talking_head_video"
+
+
+def build_video_lane(
+    topic: dict[str, Any],
+    decision: dict[str, Any],
+    topic_dir: Path,
+    *,
+    requested_lane: str,
+) -> dict[str, Any]:
+    lane = resolve_video_lane(topic, decision, requested_lane)
+    lane_dir = topic_dir / lane
     title = str(topic.get("title") or topic.get("topic_name") or topic.get("topic_id"))
     markdown = read_optional_text(topic.get("draft_file"))
     beats = extract_markdown_beats(markdown, title)
@@ -601,22 +772,67 @@ def build_video_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir:
     render = decision.get("render") or {}
     base_video = decision.get("base_video") or decision.get("human_video")
     human_audio = audio.get("file") or decision.get("human_audio")
+    presenter_source = (
+        build_presenter_source_package(
+            decision,
+            lane_dir,
+            title=title,
+            base_video=base_video,
+            master_audio=human_audio,
+        )
+        if lane == "talking_head_video"
+        else None
+    )
+    if presenter_source and presenter_source.get("kind") == "digital_human":
+        base_video = presenter_source.get("video")
+        human_audio = presenter_source.get("master_audio")
     has_human_media = path_exists(base_video) or path_exists(human_audio)
-    audio_mode = audio.get("mode") or ("human_audio" if has_human_media else "synthetic_audio")
-    alignment_mode = alignment.get("mode") or ("active_to_existing_audio" if audio_mode == "human_audio" else "passive_to_generated_audio")
-    transparent = str(visual.get("background") or "transparent").lower() == "transparent"
+    source_inputs_ready = has_human_media or bool(
+        presenter_source and presenter_source.get("kind") == "digital_human" and presenter_source.get("status") == "planned_pending_short_sample"
+    )
+    presenter_kind = str((presenter_source or {}).get("kind") or "")
+    audio_mode = audio.get("mode") or (
+        "synthetic_audio" if presenter_kind == "digital_human" else ("human_audio" if has_human_media else "synthetic_audio")
+    )
+    alignment_mode = alignment.get("mode") or (
+        "active_to_existing_audio" if path_exists(human_audio) else "passive_to_generated_audio"
+    )
+    default_background = "opaque" if lane in {"explainer_html_video", "vox_explainer_video"} else "transparent"
+    transparent = str(visual.get("background") or default_background).lower() == "transparent"
+    default_aspects = ["16:9", "1:1", "9:16"] if lane in {"explainer_html_video", "vox_explainer_video"} else ["9:16", "16:9", "1:1"]
     illustration_contract = build_illustration_contract(topic, lane_dir)
 
     storyboard = {
+        "lane": lane,
         "topic_id": topic.get("topic_id"),
         "title": title,
         "beats": beats,
         "source_draft": topic.get("draft_file"),
         "illustration_intents": illustration_contract["intents"],
+        **({"presenter_source": presenter_source} if presenter_source else {}),
+        **(
+            {
+                "narrative_mode": "question_led_investigation",
+                "central_question": (decision.get("director") or {}).get("central_question") or decision.get("central_question"),
+                "required_states": [
+                    "cold_open",
+                    "central_question",
+                    "evidence_map",
+                    "historical_context",
+                    "mechanism_explainer",
+                    "field_or_human_evidence",
+                    "counterargument",
+                    "data_resolution",
+                    "qualified_conclusion",
+                ],
+            }
+            if lane == "vox_explainer_video"
+            else {}
+        ),
     }
     storyboard_path = lane_dir / "video_storyboard.json"
     write_json(storyboard_path, storyboard)
-    script_path = lane_dir / "talking_head_script.md"
+    script_path = lane_dir / ("talking_head_script.md" if lane == "talking_head_video" else "voiceover_script.md")
     write_text(
         script_path,
         "# " + title + "\n\n"
@@ -626,13 +842,20 @@ def build_video_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir:
     overlay_path = lane_dir / "html_overlay.html"
     write_text(overlay_path, render_overlay_html(title, beats, transparent))
     render_plan = {
-        "engine": render.get("engine") or "html-video",
-        "fallback_engine": "remotion",
-        "aspect_ratios": render.get("aspect_ratios") or ["9:16", "16:9"],
+        "engine": "remotion",
+        "master_timeline": "remotion",
+        "scene_renderer": render.get("scene_renderer") or "html-video",
+        "finalizer": "ffmpeg",
+        "backup_renderers": render.get("backup_renderers") or ["hyperframes", "lottie", "video-use", "freecut"],
+        "aspect_ratios": render.get("aspect_ratios") or default_aspects,
         "transparent_overlay": transparent,
         "composition": {
             "base_video": base_video,
             "human_audio": human_audio,
+            "presenter_source_manifest": (presenter_source or {}).get("manifest"),
+            "presenter_video_audio_policy": (
+                "silent_visual_layer" if presenter_kind == "digital_human" else "source_audio"
+            ),
             "html_overlay": str(overlay_path.resolve()),
             "output_dir": str((lane_dir / "renders").resolve()),
         },
@@ -641,16 +864,21 @@ def build_video_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir:
                 "name": "transcribe_human_audio",
                 "when": "audio.mode == human_audio",
                 "tool": alignment.get("engine") or "whisperx",
-                "status": "ready" if has_human_media else "waiting_for_human_media",
+                "status": "ready" if source_inputs_ready else "waiting_for_human_media",
             },
             {
-                "name": "render_overlay",
-                "tool": render.get("engine") or "remotion",
+                "name": "render_scene_assets",
+                "tool": render.get("scene_renderer") or "html-video",
                 "status": "planned",
             },
             {
-                "name": "compose_final_video",
-                "tool": "ffmpeg",
+                "name": "compose_master_timeline",
+                "tool": "remotion",
+                "status": "planned",
+            },
+            {
+                "name": "finalize_and_qc",
+                "tool": "ffmpeg+video_render_qc",
                 "status": "planned",
             },
         ],
@@ -658,6 +886,7 @@ def build_video_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir:
     render_plan_path = lane_dir / "render_plan.json"
     write_json(render_plan_path, render_plan)
     html_video_plan = build_html_video_plan(
+        lane=lane,
         title=title,
         topic_id=topic.get("topic_id"),
         lane_dir=lane_dir,
@@ -669,42 +898,145 @@ def build_video_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir:
         human_audio=human_audio,
     )
     director_package = build_director_package_for_video_lane(
+        lane=lane,
         topic=topic,
         decision=decision,
         lane_dir=lane_dir,
         title=title,
         base_video=base_video,
+        presenter_source=presenter_source,
     )
-    if director_package["status"] == "pending_review":
+    if presenter_source and str(presenter_source.get("status") or "").startswith("blocked"):
+        lane_status = presenter_source["status"]
+    elif presenter_kind == "digital_human" and presenter_source.get("status") == "planned_pending_short_sample":
+        lane_status = "pending_presenter_source_review"
+    elif director_package["status"] == "pending_review":
         lane_status = "pending_director_review"
     elif director_package["status"].startswith("blocked"):
         lane_status = director_package["status"]
     else:
-        lane_status = "ready_for_skill_execution" if has_human_media or audio_mode == "synthetic_audio" else "blocked_missing_human_media"
+        lane_status = "ready_for_skill_execution" if source_inputs_ready or audio_mode == "synthetic_audio" else "blocked_missing_human_media"
+    final_slug = safe_slug(topic.get("topic_id") or title)
+    qc_report_path = lane_dir / "qc" / "video_render_qc.json"
+    final_manifest_path = lane_dir / "delivery" / "final_delivery_manifest.json"
+    claim_ledger_path = lane_dir / "claim_evidence" / "claim_evidence_ledger.json"
+    claim_gate_path = lane_dir / "claim_evidence" / "claim_evidence_gate.json"
+    renderer_gate_path = lane_dir / "qc" / "renderer_contract_gate.json"
+    asset_gate_path = lane_dir / "qc" / "renderer_asset_gate.json"
+    production_contract = {
+        "schema_version": "dasheng.video.production_contract.v1",
+        "lane": lane,
+        "requested_lane": requested_lane,
+        "default_aspect": default_aspects[0],
+        "master_timeline": "remotion",
+        "scene_renderer": "html-video",
+        "finalizer": "ffmpeg",
+        "required_gate_order": [
+            *(["presenter_source_qc"] if presenter_kind == "digital_human" else []),
+            "storyboard_review_gate",
+            "claim_evidence_gate",
+            "renderer_asset_gate",
+            "renderer_contract_gate",
+            "video_render_qc",
+            "final_delivery_manifest",
+        ],
+        "final_delivery_command": [
+            ".venv/bin/python",
+            "scripts/video_final_delivery.py",
+            "--lane",
+            lane,
+            "--video",
+            str((lane_dir / "delivery" / f"{final_slug}.mp4").resolve()),
+            "--qc-report",
+            str(qc_report_path.resolve()),
+            "--storyboard-gate",
+            str((lane_dir / "director_scene_plan/storyboard_review_gate.json").resolve()),
+            "--claim-evidence-gate",
+            str(claim_gate_path.resolve()),
+            "--renderer-asset-gate",
+            str(asset_gate_path.resolve()),
+            "--renderer-contract-gate",
+            str(renderer_gate_path.resolve()),
+            "--output",
+            str(final_manifest_path.resolve()),
+        ],
+        "reserve_registry": str((ROOT / "configs/video/tool_registry.json").resolve()),
+        "reserve_policy": "Keep registered alternatives available; activate only when the director routes a specific scene or the primary route fails.",
+    }
+    production_contract_path = lane_dir / "video_production_contract.json"
+    write_json(production_contract_path, production_contract)
+    final_delivery_template_path = lane_dir / "delivery" / "final_delivery_manifest.template.json"
+    write_json(
+        final_delivery_template_path,
+        {
+            "schema_version": "dasheng.video.final_delivery_manifest.v1",
+            "status": "pending_qc",
+            "lane": lane,
+            "video": str((lane_dir / "delivery" / f"{final_slug}.mp4").resolve()),
+            "subtitle": str((lane_dir / "delivery" / f"{final_slug}.srt").resolve()),
+            "qc_report": str(qc_report_path.resolve()),
+            "storyboard_review_gate": str((lane_dir / "director_scene_plan/storyboard_review_gate.json").resolve()),
+            "claim_evidence_gate": str(claim_gate_path.resolve()),
+            "renderer_asset_gate": str(asset_gate_path.resolve()),
+            "renderer_contract_gate": str(renderer_gate_path.resolve()),
+            "sha256": None,
+            "duration_sec": None,
+            "width": None,
+            "height": None,
+            "fps": None,
+        },
+    )
+    lane_specific_steps = (
+        [
+            "Lock one central question and three to six evidence pillars; do not recite article chapters.",
+            "Include direct news/interview/archival or on-site evidence, one counterargument or boundary, and a qualified conclusion.",
+        ]
+        if lane == "vox_explainer_video"
+        else []
+    )
     execution_contract = build_execution_contract(
-        lane="talking_head_video",
+        lane=lane,
         owner="agent+video-skills",
         required_steps=[
-            "Choose talking-head or no-human mode from decision inputs.",
+            *(
+                [
+                    "Render and approve a 6-10 second digital-human short sample before the full presenter source.",
+                    "Pass digital_human_qc; keep presenter MP4 silent and mount the original MiniMax audio once at the Remotion root.",
+                ]
+                if presenter_kind == "digital_human"
+                else []
+            ),
             "Review director scene_plan through storyboard_template_review.html before TTS, material generation, or final render.",
+            *lane_specific_steps,
+            "Pass claim_evidence_gate before generating production assets.",
             "Use human footage/audio when supplied; otherwise generate voiceover with MiniMax CLI.",
             "Build timeline, HTML visual layer, subtitles, and data-backed charts/stickers through video skills.",
             "Route source metaphors and examples from illustration_intents.json to lemon-person full-canvas or transparent-overlay scenes, then animate setup, action, and result as separate beats.",
-            "Render preview/final video through html-video, HTML Anything bridge, Remotion, or FFmpeg as selected.",
-            "Run video QC for duration, audio loudness, subtitle alignment, missing media, and final render existence.",
+            "Render live HTML scenes, then compose visible captions, charts, PIP, audio, and transitions on the Remotion master timeline.",
+            "Run renderer gates and full video QC, then write final_delivery_manifest.json with the exact QC-passed file hash.",
         ],
         final_artifacts={
-            "video": str((lane_dir / "renders" / f"{safe_slug(topic.get('topic_id') or title)}.mp4").resolve()),
-            "srt": str((lane_dir / "renders" / f"{safe_slug(topic.get('topic_id') or title)}.srt").resolve()),
+            "video": str((lane_dir / "delivery" / f"{final_slug}.mp4").resolve()),
+            "srt": str((lane_dir / "delivery" / f"{final_slug}.srt").resolve()),
             "timeline": str((lane_dir / "render_plan.json").resolve()),
             "scene_plan": director_package.get("scene_plan"),
             "storyboard_review": director_package.get("review_html"),
+            "claim_evidence_ledger": str(claim_ledger_path.resolve()),
+            "claim_evidence_gate": str(claim_gate_path.resolve()),
+            "renderer_asset_gate": str(asset_gate_path.resolve()),
+            "renderer_contract_gate": str(renderer_gate_path.resolve()),
+            "video_qc": str(qc_report_path.resolve()),
+            "final_delivery_manifest": str(final_manifest_path.resolve()),
             "illustrations": illustration_contract["output_dir"],
+            "presenter_source_manifest": (presenter_source or {}).get("manifest"),
+            "digital_human_job": (presenter_source or {}).get("job"),
+            "digital_human_qc": (presenter_source or {}).get("qc"),
         },
-        qc_report=str((lane_dir / "video_qc_report.json").resolve()),
+        qc_report=str(qc_report_path.resolve()),
     )
     manifest = {
-        "lane": "talking_head_video",
+        "lane": lane,
+        "requested_lane": requested_lane,
         "status": lane_status,
         "topic_id": topic.get("topic_id"),
         "title": title,
@@ -712,18 +1044,26 @@ def build_video_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir:
         "script": str(script_path.resolve()),
         "html_overlay": str(overlay_path.resolve()),
         "render_plan": str(render_plan_path.resolve()),
+        "production_contract": str(production_contract_path.resolve()),
+        "final_delivery_manifest_template": str(final_delivery_template_path.resolve()),
         "director_package": director_package,
+        "presenter_source": presenter_source,
         "html_video_project_plan": html_video_plan["plan_file"],
         "html_video_project_vars": html_video_plan["vars_file"],
         "html_video_commands": html_video_plan["commands_file"],
         "workflow_modes": {
             "human_media_present": has_human_media,
+            "presenter_source_inputs_ready": source_inputs_ready,
+            "presenter_source_kind": presenter_kind or None,
             "audio_mode": audio_mode,
             "alignment_mode": alignment_mode,
             "visual_background": "transparent" if transparent else "opaque",
         },
         "renderer": {
-            "default": "html-video",
+            "default": "remotion",
+            "scene_renderer": "html-video",
+            "finalizer": "ffmpeg",
+            "backup": render_plan["backup_renderers"],
             "html_video_root": html_video_plan["html_video_root"],
             "template_id": html_video_plan["template_id"],
             "aspect": html_video_plan["aspect"],
@@ -731,9 +1071,25 @@ def build_video_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir:
         },
         "template_references": html_video_plan["template_references"],
         "skill_invocations": [
+            *(
+                [
+                    {
+                        "skill": "dasheng-digital-human-talking-head",
+                        "purpose": "在本地把授权肖像和 MiniMax 主音频生成无声数字人视觉层",
+                        "required": True,
+                    }
+                ]
+                if presenter_kind == "digital_human"
+                else []
+            ),
+            *(
+                [{"skill": "dasheng-video-vox", "purpose": "执行中心问题、证据地图、反证和有限结论驱动的 VOX 调查视频链路", "required": True}]
+                if lane == "vox_explainer_video"
+                else []
+            ),
             {"skill": "dasheng-html-video-bridge", "purpose": "调用本地 html-video 创建、预览和渲染口播视频", "required": True},
             {"skill": "dasheng-html-anything-bridge", "purpose": "参考 HTML Anything 的 video-hyperframes / motion-frames 视觉语言", "required": False},
-            {"skill": "remotion-best-practices", "purpose": "复杂自定义透明合成兜底", "required": render_plan["engine"] == "remotion"},
+            {"skill": "remotion-best-practices", "purpose": "帧级字幕、图表、PIP、音频和总时间轴合成", "required": True},
             {"skill": "dasheng-stage-publish-video", "purpose": "兼容旧 motion 视频补充能力", "required": False},
             {
                 "skill": "dasheng-lemon-illustrations",
@@ -746,7 +1102,7 @@ def build_video_lane(topic: dict[str, Any], decision: dict[str, Any], topic_dir:
         "qc": execution_contract["qc"],
         "execution_contract": execution_contract,
     }
-    manifest_path = lane_dir / "talking_head_video_manifest.json"
+    manifest_path = lane_dir / f"{lane}_manifest.json"
     write_json(manifest_path, manifest)
     return {**manifest, "manifest": str(manifest_path.resolve())}
 
@@ -863,8 +1219,16 @@ def build_topic_lanes(topic: dict[str, Any], decision_row: dict[str, Any], outpu
     lanes: dict[str, Any] = {}
     if "wechat_article" in decision_row["lanes"]:
         lanes["wechat_article"] = build_wechat_lane(topic, decision_row.get("wechat_article") or decision_row, topic_dir)
-    if "talking_head_video" in decision_row["lanes"]:
-        lanes["talking_head_video"] = build_video_lane(topic, decision_row.get("talking_head_video") or decision_row, topic_dir)
+    for requested_lane in ("explainer_html_video", "vox_explainer_video", "talking_head_video"):
+        if requested_lane not in decision_row["lanes"]:
+            continue
+        lane = build_video_lane(
+            topic,
+            decision_row.get(requested_lane) or decision_row,
+            topic_dir,
+            requested_lane=requested_lane,
+        )
+        lanes.setdefault(lane["lane"], lane)
     if "podcast" in decision_row["lanes"]:
         lanes["podcast"] = build_podcast_lane(topic, decision_row.get("podcast") or decision_row, topic_dir)
     return {
@@ -924,7 +1288,9 @@ def build_transwrite_outputs(
         "topics": topics,
         "lane_contract": {
             "wechat_article": "DNA/humanize/封面/公众号 HTML 转写",
-            "talking_head_video": "真人口播可选 + 视觉层 + 音频 + 主动/被动对齐 + 渲染计划",
+            "explainer_html_video": "无真人财经横版默认 + 真实素材 + HTML 场景 + Remotion 主时间轴 + 完整 QC",
+            "vox_explainer_video": "中心问题 + 证据地图 + 真实资料 + 反证边界 + Remotion 主时间轴 + 完整 QC",
+            "talking_head_video": "真人粗剪 + 证据层 + Remotion 主时间轴 + 完整 QC",
             "podcast": "MiniMax CLI / Coze 工作流请求包，不重复造轮子",
         },
         "execution_model": {

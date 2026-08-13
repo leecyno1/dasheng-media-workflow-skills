@@ -22,8 +22,8 @@
 - 第 3 阶段可继承 `Paradigm Profile` 中的结构范式；轻量润色和渠道源稿整理并入本环节。
 - 第 3 阶段要主动补数据与表格，不做被动复述型初稿。
 - 第 3 阶段同步生成可编辑、自包含、离线可用 HTML 草稿；真实图表和配图必须绑定 `claim_id` 与来源。
-- 日常对外交付统一导出到桌面：`${HOME}/Desktop/自媒体创作/<run_id>/`
-- `intake / brief / draft / transwrite / publish` 的交付文件统一直接放在该 `run` 根目录，不再另建桌面 stage 子目录
+- 所有运行产物统一写入 `${DASHENG_OUTPUT_ROOT:-${HOME}/Desktop/自媒体创作}/` 下的正式阶段目录。
+- `intake / brief / draft / transwrite / publish` 分别写入 `01_内容采集/<run_id>/`、`02_内容聚合及选题分析/<run_id>/`、`05_初稿生成/<run_id>/`、`06_转写生产/<run_id>/`、`07_发布执行/<run_id>/`；不得把运行产物写入项目仓库或 skill 目录。
 
 ## 合并原则
 
@@ -36,7 +36,7 @@
 
 | 阶段 | 目标 | 主执行器 | 本地引擎/脚本 | 关键产物 |
 | --- | --- | --- | --- | --- |
-| 01 Intake 内容采集 | 本地 8001 优先采集聊天/新闻流，并用公开新闻与热榜源兜底 | `dasheng-daily-intake` | `scripts/run_stage1_intake.py` | 采集底稿、采集报告、`intake_records` |
+| 01 Intake 内容采集 | 本地 0913/8001 必抓微信聊天、公众号文章、自媒体文章和新闻流；本地/公开新闻合并去重后再入库，热榜源作为补充 | `dasheng-daily-intake` | `scripts/run_stage1_intake.py` | 采集底稿、采集报告、`intake_records` |
 | 02 Brief | 基于 canonical intake 生成 8-10 个独立候选题卡，并给出研究入口 | `dasheng-daily-phase2` | `scripts/phase2_rebuilder.py` + `02_Brief_AI生成规则.md` | 编辑 Brief 库、研究 Brief、来源包 |
 | 03 Draft | 基于确认选题形成可审核正文底稿，并同步生成可编辑 HTML 草稿 | `dasheng-daily-draft` | `scripts/build_stage3_draft.py` + `05_初稿生成_prompt.md` | 分题正文、HTML 草稿、Reasoning Sheet、质量门禁、`draft_manifest` |
 | 04 Transwrite | 基于确认 Draft 生成公众号、口播视频、播客生产包 | `dasheng-stage-transwrite` | `scripts/build_stage4_transwrite.py` | 转写计划、三路 lane manifest、Agent prompt、API 请求体 |
@@ -163,6 +163,8 @@
 
 - 阶段 1-3 只进事实与编辑决策，不写定稿口吻
 - 阶段 3 只写标准初稿，不做风格 DNA 注入，不得把内部流程统计写进正文
+- 阶段 3 只生产内容资产，不生成公众号渠道终稿或封面，不登录账号、不上传草稿、不执行发布
+- 阶段 3 的完成结果必须写明 `next_stage=transwrite` 且 `next_stage_authorized=false`，等待用户明确批准后才能切换阶段
 - 阶段 3 每个题目单独成文、单独建飞书文档
 - 阶段 3 HTML 禁止 CDN/本地引用；Chart.js 必须内联，canvas 图表发布前建议截图替换
 - 按需素材工具只补证据与素材，不允许借机改主判断

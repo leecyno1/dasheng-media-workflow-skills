@@ -252,7 +252,7 @@ def provider_summary() -> dict[str, Any]:
         )),
         "optional_tools": {
             "draft_assets": "charts_images_and_data_are_generated_in_draft",
-            "transwrite_lanes": "wechat_article_talking_head_video_podcast",
+            "transwrite_lanes": "wechat_article_explainer_html_video_vox_explainer_video_talking_head_video_podcast",
             "rewrite_variants": "merged_into_transwrite_or_on_demand",
         },
     }

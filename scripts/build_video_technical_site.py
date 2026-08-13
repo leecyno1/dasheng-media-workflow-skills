@@ -14,6 +14,7 @@ from video_director_tool_router import DEFAULT_PROJECT_REGISTRY, DEFAULT_TOOL_RE
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = PROJECT_ROOT / "docs" / "technical" / "video-technical-stack-registry.html"
+DEFAULT_CREATOR_CANDIDATES = PROJECT_ROOT / "configs" / "workflow" / "creator_technology_candidates.json"
 
 
 def esc(value: Any) -> str:
@@ -54,6 +55,37 @@ def table_rows(entries: list[dict[str, Any]]) -> str:
     return "\n".join(rows)
 
 
+def candidate_rows(entries: list[dict[str, Any]]) -> str:
+    rows = []
+    for entry in entries:
+        search = " ".join(
+            [
+                str(entry.get("name") or ""),
+                str(entry.get("category") or ""),
+                str(entry.get("availability") or ""),
+                " ".join(entry.get("capabilities") or []),
+                " ".join(entry.get("route_stages") or []),
+                " ".join(entry.get("dependencies") or []),
+                " ".join(entry.get("blockers") or []),
+            ]
+        ).lower()
+        repo = str(entry.get("repo") or "")
+        repo_link = f'<a href="{esc(repo)}">upstream</a>' if repo else "—"
+        rows.append(
+            f'''<tr data-search="{esc(search)}" data-kind="candidate">
+  <td><strong>{esc(entry.get('name'))}</strong><div class="muted">{esc(entry.get('category'))}</div></td>
+  <td><strong>{esc(entry.get('score'))}</strong>/100<div class="muted">{esc(entry.get('stars'))} stars</div></td>
+  <td><code>{esc(entry.get('availability'))}</code><div class="muted">{esc(entry.get('execution_mode'))}</div></td>
+  <td>{badges(entry.get('route_stages') or [])}</td>
+  <td>{badges(entry.get('capabilities') or [])}</td>
+  <td>{badges(entry.get('dependencies') or [])}</td>
+  <td>{badges(entry.get('blockers') or [])}</td>
+  <td>{esc(entry.get('recommendation'))}<div class="muted">{repo_link}</div></td>
+</tr>'''
+        )
+    return "\n".join(rows)
+
+
 def stage_cards(registry: dict[str, Any], lane: str) -> str:
     cards = []
     for stage, route in build_stage_routes(registry, lane=lane).items():
@@ -73,7 +105,15 @@ def stage_cards(registry: dict[str, Any], lane: str) -> str:
     return "\n".join(cards)
 
 
-def build_html(registry: dict[str, Any]) -> str:
+def load_creator_candidates(path: Path = DEFAULT_CREATOR_CANDIDATES) -> dict[str, Any]:
+    if not path.exists():
+        return {"candidates": [], "selection_policy": {}}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def build_html(registry: dict[str, Any], creator_candidates: dict[str, Any] | None = None) -> str:
+    creator_candidates = creator_candidates or load_creator_candidates()
+    candidate_entries = creator_candidates.get("candidates") or []
     entries = [*registry["tools"], *registry["skills"], *registry["projects"], *registry["reserve_candidates"]]
     return f'''<!doctype html>
 <html lang="zh-CN">
@@ -98,14 +138,18 @@ input,select{{background:#fff;border:1px solid var(--line);padding:11px 13px;fon
 <body>
 <header>
   <h1>视频导演技术注册站</h1>
-  <p>导演在分镜、素材、渲染、字幕、质检和发布阶段使用的统一项目、Skill 与工具索引。主路由只选择已就绪且允许默认调用的执行项；API、登录、实验和参考项目进入后备或受阻队列。</p>
-  <div class="stats"><div class="stat"><b>{len(registry['tools'])}</b>工具</div><div class="stat"><b>{len(registry['skills'])}</b>Skills</div><div class="stat"><b>{len(registry['projects'])}</b>项目</div><div class="stat"><b>{len(registry['reserve_candidates'])}</b>待晋级储备</div><div class="stat"><b>{len(registry['upstream_records'])}</b>上游记录</div><div class="stat"><b>{len(registry['rejected_projects'])}</b>剔除项</div></div>
+  <p>导演在分镜、素材、渲染、字幕、质检和发布阶段使用的统一项目、Skill 与工具索引。GPT、Kimi、Gemini、Seedance/即梦/Seedream 与 MiniMax 等官方模型能力可以保留并按凭据状态路由；额外第三方网站服务、桌面 App、登录、实验和参考项目不会自动进入生产主路由。</p>
+  <div class="stats"><div class="stat"><b>{len(registry['tools'])}</b>工具</div><div class="stat"><b>{len(registry['skills'])}</b>Skills</div><div class="stat"><b>{len(registry['projects'])}</b>项目</div><div class="stat"><b>{len(registry['reserve_candidates'])}</b>待晋级储备</div><div class="stat"><b>{len(candidate_entries)}</b>高分创作候选</div><div class="stat"><b>{len(registry['rejected_projects'])}</b>剔除项</div></div>
 </header>
 <main>
   <h2>无头口播 / HTML 科普路由</h2><div class="routes">{stage_cards(registry,'explainer_html_video')}</div>
+  <h2>VOX 调查解释路由</h2><div class="routes">{stage_cards(registry,'vox_explainer_video')}</div>
   <h2>真人口播路由</h2><div class="routes">{stage_cards(registry,'talking_head_video')}</div>
+  <h2>高分自媒体创作备选</h2>
+  <p class="muted">来自 Boutique Skills 评分与人工复核，最低分 {esc((creator_candidates.get('selection_policy') or {}).get('minimum_score'))}/100。这里仅供导演发现和安排适配；候选不会自动进入生产主路由。</p>
+  <div class="table-wrap"><table><thead><tr><th>项目</th><th>评分</th><th>可用性</th><th>主链环节</th><th>能力</th><th>依赖</th><th>阻断项</th><th>建议</th></tr></thead><tbody>{candidate_rows(candidate_entries)}</tbody></table></div>
   <h2>完整登记表</h2>
-  <div class="toolbar"><input id="q" placeholder="搜索工具、能力、状态或路径"><select id="kind"><option value="">全部类型</option><option>tool</option><option>skill</option><option>project</option><option>reserve</option></select></div>
+  <div class="toolbar"><input id="q" placeholder="搜索工具、能力、状态、依赖或路径"><select id="kind"><option value="">全部类型</option><option>candidate</option><option>tool</option><option>skill</option><option>project</option><option>reserve</option></select></div>
   <div class="table-wrap"><table><thead><tr><th>名称</th><th>类型</th><th>级别</th><th>状态</th><th>能力</th><th>阶段/线路</th><th>入口</th></tr></thead><tbody>{table_rows(entries)}</tbody></table></div>
 </main>
 <script>
@@ -121,16 +165,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
     parser.add_argument("--tool-registry", default=str(DEFAULT_TOOL_REGISTRY))
     parser.add_argument("--project-registry", default=str(DEFAULT_PROJECT_REGISTRY))
+    parser.add_argument("--creator-candidates", default=str(DEFAULT_CREATOR_CANDIDATES))
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
     registry = load_unified_registry(Path(args.tool_registry).expanduser().resolve(), Path(args.project_registry).expanduser().resolve())
+    creator_candidates = load_creator_candidates(Path(args.creator_candidates).expanduser().resolve())
     output = Path(args.output).expanduser().resolve()
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(build_html(registry), encoding="utf-8")
-    print(json.dumps({"status":"ok","output":str(output),"tools":len(registry['tools']),"skills":len(registry['skills']),"projects":len(registry['projects']),"reserve_candidates":len(registry['reserve_candidates'])}, ensure_ascii=False))
+    output.write_text(build_html(registry, creator_candidates), encoding="utf-8")
+    print(json.dumps({"status":"ok","output":str(output),"tools":len(registry['tools']),"skills":len(registry['skills']),"projects":len(registry['projects']),"reserve_candidates":len(registry['reserve_candidates']),"creator_candidates":len(creator_candidates.get('candidates') or [])}, ensure_ascii=False))
     return 0
 
 

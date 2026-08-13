@@ -1,0 +1,4 @@
+interface:
+  display_name: "大圣 VOX 视频制作"
+  short_description: "统一编排 VOX 分镜、Gemini 生成、二剪与质检"
+  default_prompt: "使用 $dasheng-vox-skills 将这篇内容制作成 VOX 风格视频，自动选择 Gemini 路由，并确保字幕对齐旁白、重点有花字、人物和关键贴纸有同步说明标签。"

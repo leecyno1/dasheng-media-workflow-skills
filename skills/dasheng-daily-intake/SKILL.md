@@ -28,20 +28,38 @@ description: Use when running the canonical Dasheng intake stage for the current
 
 ## 数据源
 
-默认执行模式为 `DASHENG_INTAKE_MODE=simple`，数据源采用 **本地 8001 优先 + 公开免登录热点捕捉**。旧的 5173 / reports / 8000 远程链路只作为显式 legacy 回滚口，不再作为日常默认采集方式。
+默认执行模式为 `DASHENG_INTAKE_MODE=simple`，数据源采用 **本地 0913 / 8001 优先 + 公开免登录热点捕捉**。旧的 5173 / reports / 8000 远程链路只作为显式 legacy 回滚口，不再作为日常默认采集方式。
 
-### 1）本地 8001
+### 1）本地 0913 / 8001 内容中心
 
-用途：优先读取本地聊天记录、公众号/自媒体/会议线索和本地新闻流。
+用途：通过 `${DASHENG_0913_ROOT:-../0913}` 提供的本地聚合 API，优先读取微信聊天记录、公众号文章、自媒体文章和本地新闻流。
 
 固定要求：
 - 健康检查：`GET /api/health`
 - 聊天会话：`GET /api/chats`
-- 聊天消息：`GET /api/messages`
+- 微信聊天记录：`GET /api/messages?direction=in&fast=true&include_meta=true&include_mp_messages=false`
+- 公众号文章：`GET /api/mp/articles?filter_spam=true`
+- 自媒体文章：`GET /api/media/items?filter_noise=true`
 - 新闻流：`GET /api/newsfeed/items`
+- 以上三类核心内容源必须每次都发起采集；某路不可用时可降级继续，但必须在 `channel_tasks.json` 和 `intake_manifest.json` 记录错误，不得静默跳过
+- 本机 `127.0.0.1` 请求必须绕过系统 HTTP/HTTPS 代理，避免误走 `7890` 导致超时
 - 本地消息必须生成可追溯锚点：`dasheng-local://messages/<id>`
+- 公众号文章无原始 URL 时必须生成：`dasheng-local://mp/<id>`
+- 自媒体内容无原始 URL 时必须生成：`dasheng-local://media/<id>`
 - 本地新闻没有原始 URL 时，必须生成：`dasheng-local://news/<id>`
 - 每条进入标准化池的样本都要保留标题、来源、摘要、时间和原始 payload
+
+原始落盘：
+- `raw/local_messages.json`
+- `raw/local_mp_articles.json`
+- `raw/local_media_items.json`
+- `raw/local_newsfeed.json`
+
+可调参数：
+- `DASHENG_LOCAL_CHAT_INTAKE_BASE`：默认 `http://127.0.0.1:8001`
+- `DASHENG_LOCAL_CHAT_LIMIT`：默认 `120`
+- `DASHENG_LOCAL_MP_LIMIT`：默认 `200`
+- `DASHENG_LOCAL_MEDIA_LIMIT`：默认 `300`
 
 ### 2）公开热点捕捉模块
 
@@ -64,7 +82,19 @@ description: Use when running the canonical Dasheng intake stage for the current
 - 输出渠道为 `public_news`，并写入 `raw/public_news_fallback_items.json`
 - `AI热点` 可从该新闻池派生，但不能替代原始 `public_news` 全量记录
 
-### 4）公开热榜池
+### 4）合并新闻源
+
+用途：把 0913 的本地新闻流与公开财经新闻池合并成单一 `news` 渠道，避免同一条快讯在 Intake 中重复入库。
+
+固定要求：
+- 原始 `raw/local_newsfeed.json` 和 `raw/public_news_fallback_items.json` 仍分别保留，用于源健康追溯
+- 标准化入库前必须按 `source_id + item_id`、去参数 URL、规范化标题和近似标题合并
+- 合并后优先保留原始 HTTP 链接、更高热度和更完整摘要的代表条目
+- 每个合并条目必须保留 `merged_sources`、`merged_count` 和各上游链接
+- 合并产物写入 `raw/merged_news_items.json`
+- `channel_top10.json` 只输出一个“合并新闻源” Top10，不再分别输出本地新闻和公开新闻重复榜单
+
+### 5）公开热榜池
 
 用途：当本地 8001 不足或不可用时，补充不依赖 API key、不依赖登录态的公开热点池。
 
@@ -74,16 +104,16 @@ description: Use when running the canonical Dasheng intake stage for the current
 - 所有公开源必须写入 `raw/public_fallback_items.json`
 - 每条都要带原链接
 
-### 5）AI 热点汇总
+### 6）AI 热点汇总
 
-用途：从本地新闻流、公开新闻兜底与公开热榜中派生 AI / Agent / Skill / Workflow 方向的高时效证据池。
+用途：从微信聊天、公众号、自媒体、本地新闻、公开新闻与公开热榜中派生 AI / Agent / Skill / Workflow 方向的高时效证据池。
 
 固定要求：
 - 固定输出最多 `10` 条 `AI热点` 汇总
 - 这些样本进入 intake 分析池与 brief handoff 时使用更高权重
 - 但不替代全量原始采集底稿
 
-### 6）Legacy 远程链路
+### 7）Legacy 远程链路
 
 用途：仅在需要回滚或对比旧采集结果时显式启用。
 
@@ -99,24 +129,32 @@ description: Use when running the canonical Dasheng intake stage for the current
 1. `notes/01_内容采集_报告.md`
 2. `notes/01_内容采集_底稿.md`
 3. `raw/intake_records.json`
-4. `ai_hot_topics.json`
-5. `channel_top10.json`
-6. `event_clusters.json`
-7. `brief_input.json`
-8. `intake_manifest.json`
+4. `raw/local_messages.json`
+5. `raw/local_mp_articles.json`
+6. `raw/local_media_items.json`
+7. `ai_hot_topics.json`
+8. `raw/merged_news_items.json`
+9. `channel_top10.json`
+10. `event_clusters.json`
+11. `source_quality_report.json`
+12. `channel_tasks.json`
+13. `brief_input.json`
+14. `intake_manifest.json`
 
 ---
 
 ## 执行顺序
 
-1. 检查本地 8001，采集 chats / messages / newsfeed
-2. 无论本地是否成功，都执行 `hotspot_radar` 公开热点捕捉
-3. 合并 `local_chat`、`local_news`、`public_news`、`public_hot`
-4. 从本地新闻流、公开新闻兜底与公开热榜中派生 `AI热点` Top10
-5. 对各渠道样本做真实标题清洗、去重、渠道内热度评级
-6. 生成渠道 Top10、底稿全量清单、重复/噪音池与 Brief handoff
-7. 落盘 canonical manifest 与 handoff 文件
-8. 如启用飞书同步，再把 canonical 产物映射到飞书
+1. 检查本地 0913 / 8001 健康状态
+2. 分别采集微信聊天 `/api/messages`、公众号 `/api/mp/articles`、自媒体 `/api/media/items`和新闻流 `/api/newsfeed/items`
+3. 无论本地是否成功，都执行 `hotspot_radar` 公开热点捕捉
+4. 把 `local_news` 与 `public_news` 合并去重为单一 `news` 渠道
+5. 合并 `local_chat`、`wechat`、`content_research`、`news`、`public_hot`
+6. 从全部本地内容源、合并新闻源和公开热榜中派生 `AI热点` Top10
+7. 对各渠道样本做真实标题清洗、去重、渠道内热度评级
+8. 生成渠道 Top10、底稿全量清单、重复/噪音池与 Brief handoff
+9. 落盘 canonical manifest 与 handoff 文件
+10. 如启用飞书同步，再把 canonical 产物映射到飞书
 
 ---
 
@@ -126,6 +164,9 @@ description: Use when running the canonical Dasheng intake stage for the current
 - **报告与底稿必须只出现真实抓取标题**
 - **以上内容都必须带原始链接**
 - **默认模式不得主动依赖 5173 / reports / 8000 远程接口**
+- **默认模式必须尝试采集微信聊天记录、公众号文章和自媒体文章**
+- **0913 三类内容源不得用空任务占位；必须真实请求并记录状态**
+- **本地新闻与公开财经新闻必须合并去重后才进入正式 Intake 池**
 - **legacy 远程接口只能通过 `DASHENG_INTAKE_MODE=legacy` 显式启用**
 - **每个渠道都要单独产出 Top10；不足 10 条如实展示**
 - **`AI热点` 必须单列产出 Top10，并进入 `brief_input.json.ai_hot_candidates`**

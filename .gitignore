@@ -9,6 +9,8 @@
 
 # OS/editor noise
 .DS_Store
+._*
+.playwright-cli/
 .qoder/
 
 # python
@@ -51,6 +53,15 @@ feishu_refill_v2.py
 generate_infographics.py
 scripts_wechat_fetch.py
 scripts_wechat_fetch_urls.py
+/director_samples_*.tsx
+/scripts/build_conversational_video_production.py
+/scripts/build_director_samples_v3.py
+/scripts/build_wechat_article_v3.py
+/scripts/clean_stage3_outputs.py
+/scripts/extract_imagegen_from_session.py
+/scripts/refine_caption_timing_from_silence.py
+/scripts/render_current_article_diagrams.py
+/scripts/render_wechat_assets.py
 
 # archive exports
 newma-media-studio-*.tar.gz

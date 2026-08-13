@@ -7,7 +7,7 @@
   "properties": {
     "schema_version": {"const": "dasheng.video.tool_routing_plan.v1"},
     "created_at": {"type": "string"},
-    "lane": {"enum": ["talking_head_video", "explainer_html_video", "style_training"]},
+    "lane": {"enum": ["talking_head_video", "explainer_html_video", "vox_explainer_video", "style_training"]},
     "registry_summary": {
       "type": "object",
       "required": ["tools", "skills", "projects", "rejected_projects"],

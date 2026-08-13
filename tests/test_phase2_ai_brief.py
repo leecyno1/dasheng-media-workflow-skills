@@ -191,6 +191,48 @@ class Phase2AIBriefTests(unittest.TestCase):
         cards = mod.normalize_ai_brief_cards(ai_result, self.signal_bundle)
         self.assertEqual(cards[0]["existing_evidence"][0]["logic_chain_id"], "oil-fed-chain")
 
+    def test_normalize_ai_brief_cards_can_use_event_cluster_representative_evidence(self):
+        signal_bundle = dict(self.signal_bundle)
+        signal_bundle["editorial_priority_pool"] = [
+            {
+                **self.signal_bundle["editorial_priority_pool"][0],
+                "title": "机器人需要肢体和灵魂",
+                "url": "https://mp.weixin.qq.com/s?__biz=robot&mid=1&idx=1&sn=aaa",
+            }
+        ]
+        signal_bundle["trusted_evidence_pool"] = signal_bundle["editorial_priority_pool"]
+        signal_bundle["event_clusters"] = [
+            {
+                "cluster_id": "a-share-sentiment",
+                "cluster_summary": "A股开户、ETF资金流与赚钱效应修复形成同一事件簇。",
+                "representative_titles": ["A股又到击球区"],
+                "representative_links": ["https://mp.weixin.qq.com/s?__biz=market&mid=2&idx=1&sn=bbb"],
+                "dominant_entities": ["A股", "ETF"],
+                "avg_heat_score": 56.0,
+            }
+        ]
+        ai_result = self.sample_ai_cards()
+        ai_result["topic_cards"][0]["existing_evidence"] = [
+            {
+                "title": "A股又到击球区",
+                "url": "https://mp.weixin.qq.com/s?__biz=market&mid=2&idx=1&sn=bbb",
+            }
+        ]
+
+        cards = mod.normalize_ai_brief_cards(ai_result, signal_bundle)
+
+        self.assertEqual(cards[0]["existing_evidence"][0]["url"], "https://mp.weixin.qq.com/s?__biz=market&mid=2&idx=1&sn=bbb")
+        self.assertEqual(cards[0]["existing_evidence"][0]["source_type"], "事件簇代表材料")
+        self.assertEqual(cards[0]["existing_evidence"][0]["logic_chain_id"], "a-share-sentiment")
+
+    def test_canonicalize_url_keeps_distinct_wechat_article_ids(self):
+        first = mod.canonicalize_url("https://mp.weixin.qq.com/s?__biz=robot&mid=1&idx=1&sn=aaa&mpshare=1")
+        second = mod.canonicalize_url("http://mp.weixin.qq.com/s?__biz=market&mid=2&idx=1&sn=bbb&xtrack=1")
+
+        self.assertNotEqual(first, second)
+        self.assertNotIn("mpshare", first)
+        self.assertNotIn("xtrack", second)
+
     def test_infer_card_logic_chain_prefers_enriched_evidence_vote(self):
         card = {
             "title": "再通胀不是事件，而是主线",

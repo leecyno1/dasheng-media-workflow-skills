@@ -1,7 +1,7 @@
 schema_version: dasheng.video.pipeline.v1
 id: talking_head
 lane: talking_head_video
-title: 真人出镜口播导演流水线
+title: 真人与数字人有头口播导演流水线
 default_output_stage: video
 external_output_policy:
   required_root: "~/Desktop/自媒体创作"
@@ -11,11 +11,11 @@ external_output_policy:
     - "node_modules/"
 human_approval_default: true
 style_reference:
-  primary: 小林说类真人口播
+  primary: 小林说类有头口播
   principle: 人是信任锚点，证据画面承担推进；不能机械固定为左上素材加右下人物。
 stages:
   - name: intake
-    description: 接收粗剪后真人视频、字幕或 ASR、剧本草稿和文章证据。
+    description: 接收真人粗剪，或数字人所需的授权肖像、MiniMax 音频、字幕、剧本草稿和文章证据。
     skill: dasheng-video-roughcut
     required_artifacts_in:
       - brief
@@ -31,12 +31,38 @@ stages:
       - 字幕应语义断句，数字优先使用阿拉伯数字。
     success_criteria:
       - schema-valid script artifact
-      - roughcut gate approved before scene planning
+      - human source has approved roughcut gate before scene planning
+      - digital-human source has locked script and MiniMax master audio
+  - name: presenter_source
+    description: 将真人粗剪，或 imagegen 动物换头加 Luma 口型视频，统一成导演可消费的人物主视频和唯一主音频。
+    skill: dasheng-digital-human-talking-head
+    required_artifacts_in:
+      - script
+    produces:
+      - presenter_source_manifest
+      - digital_human_job
+      - review
+    tools_available:
+      - digital_human_preflight
+      - build_digital_human_job
+      - luma_dream_machine_browser
+      - digital_human_qc
+    checkpoint_required: true
+    review_focus:
+      - 真人模式必须使用已批准粗剪；数字人模式必须有肖像授权。
+      - 先审核 imagegen 动物换头图，再生成 6-10 秒 Luma 短样，检查身份、口型、眼睛、牙齿、头颈、手部和背景稳定性。
+      - MiniMax 音频是数字人模式唯一主音频，数字人视频不得重复出声。
+      - 需要明显手势或半身动作时，不得用默认头像档冒充完成。
+    success_criteria:
+      - schema-valid presenter_source_manifest artifact
+      - consent and source QC pass
+      - one locked master audio track
   - name: scene_plan
     description: 根据口播时间轴生成导演分镜、构图状态、证据插入和转场策略。
     skill: dasheng-video-director
     required_artifacts_in:
       - script
+      - presenter_source_manifest
     produces:
       - scene_plan
       - tool_routing_plan
@@ -149,6 +175,7 @@ stages:
       - video_render_qc
       - video_renderer_contract_gate
       - jianying_cloud_draft
+      - video_final_delivery
     checkpoint_required: true
     human_approval_default: true
     review_focus:
@@ -164,6 +191,9 @@ stages:
       - contact sheet reviewed before delivery
 fail_conditions:
   - roughcut not approved before director render
+  - portrait consent not confirmed for digital-human generation
+  - digital-human short sample or source QC not approved
+  - digital-human video contains a second audible narration track in the master composition
   - claim/evidence ledger not approved before asset generation
   - static image zoompan used as production animation
   - chart or number lacks article/data source

@@ -29,8 +29,11 @@ project run manifest -> pipeline manifest -> stage artifact -> tool registry -> 
 | Pipeline | 用途 | 关键审核门 |
 | --- | --- | --- |
 | `talking_head` | 真人出镜口播，粗剪后进入导演包装、证据动画、PIP 和转场 | 粗剪门禁、核心命题/证据审核、渲染器契约、成片 QC |
-| `explainer_html` | HTML 文章转无真人科普视频 | storyboard 模板表审核、live HTML 动画渲染、字幕音频对齐 |
+| `explainer_html` | HTML 文章转无真人财经视频，默认横版 16:9 | storyboard、Claim/Evidence、live HTML 场景、Remotion 主时间轴、完整 QC |
+| `vox_explainer` | 问题驱动的调查解释视频，默认横版 16:9 | 中心问题、证据地图、反证/边界、真实资料来源、完整 QC |
 | `style_training` | 样片学习和训练 | 只学习形式，不复制事实/文案/专属视觉；素材放桌面训练目录 |
+
+Transwrite 对外使用三个独立视频 Lane：`explainer_html_video`、`vox_explainer_video` 和 `talking_head_video`。旧决策中“没有真人素材的 talking_head_video”仅做兼容迁移，新任务不得继续混用命名。
 
 ## 项目总账本
 
@@ -39,7 +42,7 @@ project run manifest -> pipeline manifest -> stage artifact -> tool registry -> 
 初始化一条生产：
 
 ```bash
-python3 scripts/project_run_manifest.py init \
+.venv/bin/python scripts/project_run_manifest.py init \
   --title "地产周期论无头科普" \
   --pipeline explainer_html \
   --source article_html=/path/to/article.html
@@ -54,7 +57,7 @@ python3 scripts/project_run_manifest.py init \
 回写阶段状态和关键 manifest。也可以显式指定：
 
 ```bash
-python3 scripts/run_mainline_stage.py draft \
+.venv/bin/python scripts/run_mainline_stage.py draft \
   --run-id <run_id> \
   --project-manifest ~/Desktop/自媒体创作/<run_id>/project_run_manifest.json
 ```
@@ -62,13 +65,13 @@ python3 scripts/run_mainline_stage.py draft \
 临时调试时可关闭：
 
 ```bash
-python3 scripts/run_mainline_stage.py draft --run-id <run_id> --no-project-manifest
+.venv/bin/python scripts/run_mainline_stage.py draft --run-id <run_id> --no-project-manifest
 ```
 
 注册阶段产物：
 
 ```bash
-python3 scripts/project_run_manifest.py add-artifact <project_run_manifest.json> \
+.venv/bin/python scripts/project_run_manifest.py add-artifact <project_run_manifest.json> \
   --stage scene_plan \
   --type scene_plan \
   --path <scene_plan.json>
@@ -77,7 +80,7 @@ python3 scripts/project_run_manifest.py add-artifact <project_run_manifest.json>
 更新阶段状态：
 
 ```bash
-python3 scripts/project_run_manifest.py set-stage <project_run_manifest.json> \
+.venv/bin/python scripts/project_run_manifest.py set-stage <project_run_manifest.json> \
   --stage scene_plan \
   --status pending_review \
   --checkpoint <director_checkpoint.json>
@@ -86,7 +89,7 @@ python3 scripts/project_run_manifest.py set-stage <project_run_manifest.json> \
 检查总账本：
 
 ```bash
-python3 scripts/project_run_manifest.py validate <project_run_manifest.json>
+.venv/bin/python scripts/project_run_manifest.py validate <project_run_manifest.json>
 ```
 
 默认输出目录必须在 `~/Desktop/自媒体创作` 下。总账本会拒绝把媒体产物放进项目根目录、`skills/`、`.codex/skills/` 或 `node_modules/`。
@@ -106,6 +109,7 @@ python3 scripts/project_run_manifest.py validate <project_run_manifest.json>
 | `edit_decisions` | 可执行剪辑决策：构图、PIP、转场、BGM、字幕策略 |
 | `render_report` | 渲染结果、终片路径、警告和失败项 |
 | `review` | 人审/机审结果，是否允许继续 |
+| `final_delivery_manifest` | 绑定最终视频、字幕、全部门禁、完整 QC、尺寸、时长和 SHA-256 |
 
 真人口播还必须在阶段产物中保留三项可追溯信息：
 
@@ -121,28 +125,29 @@ python3 scripts/project_run_manifest.py validate <project_run_manifest.json>
 列出当前视频流水线：
 
 ```bash
-python3 scripts/video_pipeline_governance.py list
+.venv/bin/python scripts/video_pipeline_governance.py list
 ```
 
 检查某条流水线是否完整：
 
 ```bash
-python3 scripts/video_pipeline_governance.py validate-pipeline talking_head
-python3 scripts/video_pipeline_governance.py validate-pipeline explainer_html
-python3 scripts/video_pipeline_governance.py validate-pipeline style_training
+.venv/bin/python scripts/video_pipeline_governance.py validate-pipeline talking_head
+.venv/bin/python scripts/video_pipeline_governance.py validate-pipeline explainer_html
+.venv/bin/python scripts/video_pipeline_governance.py validate-pipeline vox_explainer
+.venv/bin/python scripts/video_pipeline_governance.py validate-pipeline style_training
 ```
 
 检查阶段产物：
 
 ```bash
-python3 scripts/video_pipeline_governance.py validate-artifact scene_plan <scene_plan.json>
-python3 scripts/video_pipeline_governance.py validate-artifact claim_evidence_ledger <claim_evidence_ledger.json>
+.venv/bin/python scripts/video_pipeline_governance.py validate-artifact scene_plan <scene_plan.json>
+.venv/bin/python scripts/video_pipeline_governance.py validate-artifact claim_evidence_ledger <claim_evidence_ledger.json>
 ```
 
 建立核心命题和证据账本：
 
 ```bash
-python3 scripts/video_claim_evidence_ledger.py \
+.venv/bin/python scripts/video_claim_evidence_ledger.py \
   --scene-plan <scene_plan.real_evidence.json> \
   --claim-spec <claim_spec.json> \
   --output-dir ~/Desktop/自媒体创作/<run_id>/claim_evidence
@@ -153,16 +158,25 @@ python3 scripts/video_claim_evidence_ledger.py \
 生成导演分镜包：
 
 ```bash
-python3 scripts/dasheng_video_director.py \
+.venv/bin/python scripts/dasheng_video_director.py \
   --lane explainer_html_video \
   --article-html <article.html> \
   --output-dir ~/Desktop/自媒体创作/<run_id>/video_director
 ```
 
+VOX 调查分镜包：
+
+```bash
+.venv/bin/python scripts/dasheng_video_director.py \
+  --lane vox_explainer_video \
+  --article-html <article.html> \
+  --output-dir ~/Desktop/自媒体创作/<run_id>/vox_director
+```
+
 如果字幕来自粗剪前素材，先锁定离散时间轴：
 
 ```bash
-python3 scripts/video_timeline_edl.py \
+.venv/bin/python scripts/video_timeline_edl.py \
   --scene-plan <precut_scene_plan.json> \
   --edl <roughcut_edl.json> \
   --output <scene_plan.timeline_locked.json>
@@ -171,7 +185,7 @@ python3 scripts/video_timeline_edl.py \
 渲染前检查模板是否真正实现：
 
 ```bash
-python3 scripts/video_renderer_contract_gate.py \
+.venv/bin/python scripts/video_renderer_contract_gate.py \
   --scene-plan <scene_plan.json> \
   --renderer-contract <renderer_contract.json> \
   --output <renderer_contract_gate.json>
@@ -180,7 +194,7 @@ python3 scripts/video_renderer_contract_gate.py \
 生成 Remotion 主时间轴渲染工程：
 
 ```bash
-python3 scripts/build_remotion_renderer_pack.py \
+.venv/bin/python scripts/build_remotion_renderer_pack.py \
   --scene-plan <scene_plan.claim_bound.json> \
   --source-video <roughcut.mp4> \
   --bgm <bgm.mp3> \
@@ -190,16 +204,30 @@ python3 scripts/build_remotion_renderer_pack.py \
 渲染后检查暗场脉冲、纯色空白转场、强视觉变化密度、时长漂移和响度：
 
 ```bash
-python3 scripts/video_render_qc.py \
+.venv/bin/python scripts/video_render_qc.py \
   --video <final.mp4> \
   --scene-plan <scene_plan.json> \
   --output <render_qc_report.json>
 ```
 
+完整 QC 通过后，绑定最终文件和全部门禁，生成唯一交付清单：
+
+```bash
+.venv/bin/python scripts/video_final_delivery.py \
+  --lane explainer_html_video \
+  --video <final.mp4> \
+  --qc-report <render_qc_report.json> \
+  --storyboard-gate <storyboard_review_gate.json> \
+  --claim-evidence-gate <claim_evidence_gate.json> \
+  --renderer-asset-gate <renderer_asset_gate.json> \
+  --renderer-contract-gate <renderer_contract_gate.json> \
+  --output <final_delivery_manifest.json>
+```
+
 真人口播分镜包：
 
 ```bash
-python3 scripts/dasheng_video_director.py \
+.venv/bin/python scripts/dasheng_video_director.py \
   --lane talking_head_video \
   --srt <agent_proofread.srt> \
   --source-video <roughcut.mp4> \
@@ -218,7 +246,7 @@ python3 scripts/dasheng_video_director.py \
 生成某阶段 checkpoint：
 
 ```bash
-python3 scripts/video_pipeline_governance.py checkpoint explainer_html scene_plan \
+.venv/bin/python scripts/video_pipeline_governance.py checkpoint explainer_html scene_plan \
   --artifact script=<script.json> \
   --artifact scene_plan=<storyboard.json> \
   --status pending_review \
@@ -228,15 +256,17 @@ python3 scripts/video_pipeline_governance.py checkpoint explainer_html scene_pla
 检查视频工具注册表：
 
 ```bash
-python3 scripts/video_tool_registry.py --check
-python3 scripts/video_tool_registry.py --capability live_html_animation_recording
+.venv/bin/python scripts/video_tool_registry.py --check
+.venv/bin/python scripts/video_tool_registry.py --capability live_html_animation_recording
 ```
 
 生成可浏览的技术注册站：
 
 ```bash
-python3 scripts/build_video_technical_site.py
+.venv/bin/python scripts/build_video_technical_site.py
 ```
+
+技术站同时读取 `configs/workflow/creator_technology_candidates.json`，展示经过 Boutique Skills 评分和人工复核、且与自媒体生产直接相关的高分候选。候选仅用于发现和适配排期，不会自动进入生产主路由。
 
 导演入口默认会读取全部工具、Skill 和保留项目登记，为每个分镜写入 `tool_routing`，并单独输出 `tool_routing_plan.json`。缺 API Key、模型权限、登录态、桌面 App 或标记为 `reference_only` 的项目只能进入后备/受阻列表，不能成为主路由。
 
@@ -254,6 +284,7 @@ python3 scripts/build_video_technical_site.py
 - 模板名称只有在映射到生产级组件、变体和动效签名后才计入多样性。
 - Remotion 是真人口播主时间轴；HTML Video、HyperFrames、GSAP 和 Lottie 作为场景动画工人或素材来源接入。
 - 成片出现重复低亮度入场脉冲、分镜时长漂移或响度不达标时不得交付。
+- `final_delivery_manifest.json` 指向的视频必须与完整 QC 实际检查文件完全一致；只有闪屏报告、旧版本 QC 或不同哈希均不得进入 Publish。
 - 字幕必须覆盖完整口播/旁白，年份、数量、百分比优先使用阿拉伯数字，最终版不能只按字数比例粗分时间。
 
 ## 与 Skills 的关系

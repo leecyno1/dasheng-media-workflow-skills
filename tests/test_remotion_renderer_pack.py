@@ -42,15 +42,15 @@ def base_scene(scene_id: str, **overrides) -> dict:
     return item
 
 
-def test_renderer_pack_has_ten_real_families_and_consumes_director_fields():
+def test_renderer_pack_has_distinct_real_families_and_consumes_director_fields():
     contract = build_renderer_contract()
     signatures = {
         (item["component"], item["variant"], item["motion_signature"])
         for item in contract["templates"].values()
     }
 
-    assert len(CANONICAL_FAMILIES) == 10
-    assert len(signatures) == 10
+    assert len(CANONICAL_FAMILIES) == 11
+    assert len(signatures) == 11
     assert REQUIRED_CONSUMED_FIELDS <= set(contract["consumed_scene_fields"])
     assert contract["audio_architecture"] == {
         "voice": "single_continuous_root_track",
@@ -104,7 +104,7 @@ def test_routed_scene_plan_passes_renderer_contract_gate_for_all_families():
     report = audit_renderer_contract(plan, build_renderer_contract())
 
     assert report["status"] == "pass"
-    assert report["metrics"]["implementation_signature_count"] == 10
+    assert report["metrics"]["implementation_signature_count"] == 11
 
 
 def test_route_scene_plan_preserves_source_template_and_adds_family():
@@ -119,6 +119,54 @@ def test_route_scene_plan_preserves_source_template_and_adds_family():
     assert routed["scenes"][0]["source_template_id"] == "legacy-template"
     assert routed["scenes"][0]["template_id"] == "recap-outro"
     assert routed["scenes"][0]["renderer_family"] == "recap-outro"
+
+
+def test_vox_route_uses_dedicated_continuous_collage_renderer():
+    plan = {
+        "schema_version": "dasheng.video.scene_plan.v1",
+        "lane": "vox_explainer_video",
+        "scenes": [
+            base_scene(
+                "vox",
+                type="evidence_map",
+                narrative_function="evidence_map",
+                visual={"nodes": ["央行", "ETF", "实物"]},
+            )
+        ],
+    }
+
+    routed = route_scene_plan(plan)
+    scene = routed["scenes"][0]
+
+    assert routed["renderer"] == "dasheng-remotion-vox-collage.v2"
+    assert scene["renderer_family"] == "vox-editorial-collage"
+    assert scene["vox_state"] == "evidence_map"
+    assert scene["visual"]["world_id"] == "shared_paper_evidence_world"
+
+
+def test_vox_route_preserves_timed_subtitles_emphasis_and_entity_labels():
+    plan = {
+        "schema_version": "dasheng.video.scene_plan.v1",
+        "lane": "vox_explainer_video",
+        "scenes": [
+            base_scene(
+                "vox-text",
+                type="mechanism_explainer",
+                narrative_function="mechanism_explainer",
+                subtitle_timing_source="asr-aligned-to-script",
+                subtitle_cues=[{"text": "央行开始增持。", "startMs": 120, "endMs": 1320, "timingSource": "asr-aligned-to-script"}],
+                emphasis_cues=[{"text": "定价权换手", "startMs": 850, "endMs": 1800, "x": 50, "y": 18}],
+                entity_labels=[{"text": "央行", "entityType": "organization", "startMs": 200, "endMs": 2600, "x": 32, "y": 44}],
+            )
+        ],
+    }
+
+    scene = route_scene_plan(plan)["scenes"][0]
+
+    assert scene["captions"][0]["startMs"] == 120
+    assert scene["subtitle_timing_source"] == "asr-aligned-to-script"
+    assert scene["visual"]["emphasis_cues"][0]["text"] == "定价权换手"
+    assert scene["visual"]["entity_labels"][0]["text"] == "央行"
 
 
 def test_route_scene_plan_hydrates_claim_assets_into_renderer_visuals(tmp_path):
@@ -662,6 +710,74 @@ def test_project_writer_links_scene_media_and_emits_asset_gate(tmp_path):
     assert linked.samefile(document)
     assert result["asset_gate"].exists()
     assert json.loads(result["asset_gate"].read_text(encoding="utf-8"))["status"] == "pass"
+
+
+def test_vox_layered_scene_gate_and_recursive_asset_linking(tmp_path):
+    cutout = tmp_path / "gold-bars.png"
+    cutout.write_bytes(b"image")
+    layers = [
+        {
+            "id": f"layer_{index}",
+            "asset_type": "image" if index == 0 else "paper",
+            "src": str(cutout) if index == 0 else None,
+            "depth": index * 40,
+            "entry_path": [
+                {"at": 0, "x": -80 + index, "y": 40, "z": -30, "rotation": -4, "scale": 0.8, "opacity": 0},
+                {"at": 0.3, "x": 0, "y": 0, "z": 0, "rotation": 0, "scale": 1, "opacity": 1},
+            ],
+        }
+        for index in range(8)
+    ]
+    plan = {
+        "schema_version": "dasheng.video.scene_plan.v1",
+        "lane": "vox_explainer_video",
+        "render_mode": "production",
+        "scenes": [
+            base_scene(
+                "vox",
+                speaker_state="hidden",
+                visual={
+                    "scene_layers": layers,
+                    "camera_keyframes": [{"at": 0, "z": 0}, {"at": 1, "z": 280}],
+                },
+            )
+        ],
+    }
+
+    routed = route_scene_plan(plan)
+    report = renderer_pack.audit_renderer_assets(routed)
+    assert report["status"] == "pass"
+
+    result = write_renderer_project(tmp_path / "renderer", routed)
+    payload = json.loads(result["scene_plan"].read_text(encoding="utf-8"))
+    linked_src = payload["scenes"][0]["visual"]["scene_layers"][0]["src"]
+    assert linked_src.startswith("assets/scenes/001_vox/layers/")
+    assert (result["project_dir"] / "public" / linked_src).samefile(cutout)
+
+
+def test_vox_layered_scene_gate_rejects_flat_whole_image_motion(tmp_path):
+    still = tmp_path / "whole-frame.png"
+    still.write_bytes(b"image")
+    plan = {
+        "schema_version": "dasheng.video.scene_plan.v1",
+        "lane": "vox_explainer_video",
+        "render_mode": "production",
+        "scenes": [
+            base_scene(
+                "vox",
+                speaker_state="hidden",
+                visual={
+                    "scene_layers": [{"id": "whole", "asset_type": "image", "src": str(still)}],
+                    "camera_keyframes": [{"at": 0, "z": 0}, {"at": 1, "z": 40}],
+                },
+            )
+        ],
+    }
+
+    report = renderer_pack.audit_renderer_assets(route_scene_plan(plan))
+    codes = {item["code"] for item in report["failures"]}
+    assert "vox_independent_layer_count_low" in codes
+    assert "vox_motion_vocabulary_low" in codes
 
 
 def test_project_writer_blocks_production_placeholders(tmp_path):

@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Any
 from urllib import error as urllib_error
 from urllib import request as urllib_request
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from desktop_delivery import sync_brief_to_desktop
 from canonical_workflow import ensure_runtime_output_dir
 from provider_registry import extract_chat_content, resolve_chat_provider
@@ -178,7 +179,23 @@ def slugify(text: str) -> str:
 def canonicalize_url(url: str) -> str:
     if not url:
         return ""
-    return re.sub(r"[?#].*$", "", str(url).strip())
+    value = str(url).strip()
+    parsed = urlsplit(value)
+    host = parsed.netloc.lower()
+    if host in {"mp.weixin.qq.com", "www.mp.weixin.qq.com"}:
+        stable_query_keys = ("__biz", "mid", "idx", "sn")
+        query = dict(parse_qsl(parsed.query, keep_blank_values=True))
+        stable_query = [(key, query[key]) for key in stable_query_keys if query.get(key)]
+        return urlunsplit(
+            (
+                "https",
+                "mp.weixin.qq.com",
+                parsed.path.rstrip("/") or "/",
+                urlencode(stable_query),
+                "",
+            )
+        )
+    return re.sub(r"[?#].*$", "", value)
 
 
 def source_type(source: str) -> str:
@@ -1412,6 +1429,33 @@ def normalize_ai_brief_cards(
                 continue
             seen_evidence_keys.add(key)
             evidence_pool.append(item)
+    # Manual topics are often selected from an event cluster whose individual
+    # records are not promoted into the trusted/priority pools. Keep the
+    # cluster's canonical representative materials available for evidence
+    # matching so a manually selected topic cannot be backfilled with an
+    # unrelated high-score item.
+    for cluster in signal_bundle.get("event_clusters", []):
+        titles = cluster.get("representative_titles") or []
+        links = cluster.get("representative_links") or []
+        for index, title in enumerate(titles):
+            url = str(links[index] if index < len(links) else "").strip()
+            title = str(title or "").strip()
+            key = canonicalize_url(url) or normalize_text(title)
+            if not key or key in seen_evidence_keys:
+                continue
+            seen_evidence_keys.add(key)
+            evidence_pool.append(
+                {
+                    "title": title,
+                    "url": url,
+                    "source_type": "事件簇代表材料",
+                    "source_tier": "intake_cluster",
+                    "note": str(cluster.get("cluster_summary") or "").strip(),
+                    "entities": cluster.get("dominant_entities") or [],
+                    "signal_score": float(cluster.get("avg_heat_score") or 0.0) / 10.0,
+                    "logic_chain_id": str(cluster.get("cluster_id") or "misc"),
+                }
+            )
     normalized_cards: list[dict[str, Any]] = []
     seen_titles: set[str] = set()
     seen_props: set[str] = set()

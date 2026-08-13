@@ -15,7 +15,7 @@
     },
     "lane": {
       "type": "string",
-      "enum": ["talking_head_video", "explainer_html_video", "style_training"]
+      "enum": ["talking_head_video", "explainer_html_video", "vox_explainer_video", "style_training"]
     },
     "source_materials": {
       "type": "array",

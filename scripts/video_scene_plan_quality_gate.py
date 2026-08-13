@@ -112,7 +112,8 @@ def audit_scene_plan(plan: dict[str, Any]) -> dict[str, Any]:
     if not lane and schema_version.startswith("dasheng.html_anything_video_timeline."):
         lane = "explainer_html_video"
     is_talking_head = lane == "talking_head_video" or plan.get("schema_version") == "dasheng.talking_head_timeline.v1"
-    is_explainer = lane == "explainer_html_video"
+    is_vox = lane == "vox_explainer_video"
+    is_explainer = lane in {"explainer_html_video", "vox_explainer_video"}
     is_bound_evidence_plan = "real_evidence" in schema_version or bool(plan.get("evidence_policy"))
 
     timeline_alignment = plan.get("timeline_alignment") or {}
@@ -215,6 +216,44 @@ def audit_scene_plan(plan: dict[str, Any]) -> dict[str, Any]:
                     "code": "explainer_long_scene_without_motion",
                     "message": "无头科普超过14秒的镜头必须有明确的内部动画行为。",
                     "scene_ids": long_without_motion[:20],
+                }
+            )
+
+    if is_vox:
+        narrative_functions = {str(scene.get("narrative_function") or scene.get("type") or "") for scene in scenes}
+        required_functions = {
+            "cold_open",
+            "central_question",
+            "evidence_map",
+            "historical_context",
+            "mechanism_explainer",
+            "counterargument",
+            "data_resolution",
+            "qualified_conclusion",
+        }
+        missing_functions = sorted(required_functions - narrative_functions)
+        if not str(plan.get("central_question") or "").strip():
+            failures.append(
+                {
+                    "code": "vox_central_question_missing",
+                    "message": "VOX 调查型视频必须由一个明确中心问题驱动。",
+                }
+            )
+        if missing_functions:
+            failures.append(
+                {
+                    "code": "vox_narrative_state_missing",
+                    "message": "VOX 调查状态机不完整。",
+                    "missing": missing_functions,
+                }
+            )
+        evidence_map = plan.get("evidence_map") or []
+        if len(evidence_map) < 3:
+            failures.append(
+                {
+                    "code": "vox_evidence_map_too_small",
+                    "message": "VOX 证据地图默认需要 3-6 个证据支柱；不足时必须回到研究设计补齐。",
+                    "actual": len(evidence_map),
                 }
             )
 

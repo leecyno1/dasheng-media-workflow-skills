@@ -12,6 +12,8 @@ import shutil
 from pathlib import Path
 from typing import Any
 
+from video_vox_storyboard import vox_micro_shots
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 TEMPLATE_ROOT = PROJECT_ROOT / "templates" / "video" / "remotion-director"
@@ -67,12 +69,24 @@ CANONICAL_FAMILIES: dict[str, dict[str, str]] = {
         "variant": "thesis_recap",
         "motion_signature": "thesis_stack_progressive_lock_clean_exit",
     },
+    "vox-editorial-collage": {
+        "component": "VoxEditorialCollageFamily",
+        "variant": "continuous_paper_evidence_world",
+        "motion_signature": "camera_tracks_shared_world_objects_transform_evidence_resolves",
+    },
 }
 
 SCENE_MEDIA_FIELDS = {
     "document_src": ".png",
     "broll_src": ".mp4",
+    "background_video_src": ".mp4",
+    "pip_video_src": ".mp4",
+    "motion_plate_src": ".mp4",
+    "keyframe_start_src": ".png",
+    "keyframe_end_src": ".png",
 }
+
+VOX_LAYER_ASSET_TYPES = {"image", "video"}
 
 CHART_COLORS = ["#0d766e", "#d65c45", "#396b88", "#c6933a", "#7257a8"]
 IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".webp"}
@@ -822,15 +836,33 @@ def route_scene_plan(
     scene_plan: dict[str, Any], *, claim_ledger: dict[str, Any] | None = None
 ) -> dict[str, Any]:
     routed = hydrate_scene_plan_from_claim_ledger(scene_plan, claim_ledger)
-    routed["renderer"] = "dasheng-remotion-director-pack.v1"
+    is_vox = routed.get("lane") == "vox_explainer_video"
+    routed["renderer"] = "dasheng-remotion-vox-collage.v2" if is_vox else "dasheng-remotion-director-pack.v1"
     if routed.get("lane") == "talking_head_video":
         routed.setdefault("voice_gain", 0.9)
     for scene in routed.get("scenes") or routed.get("segments") or []:
         source_template = str(scene.get("template_id") or "")
-        family = assign_renderer_family(scene)
+        family = "vox-editorial-collage" if is_vox else assign_renderer_family(scene)
         scene["source_template_id"] = source_template
         scene["template_id"] = family
         scene["renderer_family"] = family
+        if is_vox:
+            scene["vox_state"] = str(scene.get("narrative_function") or scene.get("type") or "mechanism_explainer")
+            scene.setdefault("visual_system", "vox_editorial_paper_collage")
+            scene.setdefault("world_id", "shared_paper_evidence_world")
+            scene.setdefault("micro_shots", vox_micro_shots(str(scene.get("id") or "scene"), scene["vox_state"]))
+            visual = scene.setdefault("visual", {})
+            visual.setdefault("collage_style", "paper_diorama")
+            visual.setdefault("world_id", str(scene.get("world_id") or "shared_paper_evidence_world"))
+            visual.setdefault("micro_shots", scene.get("micro_shots") or [])
+            if scene.get("emphasis_cues") and not visual.get("emphasis_cues"):
+                visual["emphasis_cues"] = copy.deepcopy(scene["emphasis_cues"])
+            if scene.get("entity_labels") and not visual.get("entity_labels"):
+                visual["entity_labels"] = copy.deepcopy(scene["entity_labels"])
+            if scene.get("subtitle_cues") and not scene.get("captions"):
+                scene["captions"] = copy.deepcopy(scene["subtitle_cues"])
+            if scene.get("subtitle_timing_source"):
+                scene["subtitle_timing_source"] = str(scene["subtitle_timing_source"])
     return routed
 
 
@@ -954,6 +986,79 @@ def audit_renderer_assets(scene_plan: dict[str, Any]) -> dict[str, Any]:
                         }
                     )
 
+            if family == "vox-editorial-collage":
+                layers = [item for item in visual.get("scene_layers") or [] if isinstance(item, dict)]
+                if len(layers) < 8:
+                    failures.append(
+                        {
+                            "code": "vox_independent_layer_count_low",
+                            "scene_id": scene_id,
+                            "actual": len(layers),
+                            "minimum": 8,
+                            "message": "Production VOX scenes require at least eight independently animated layers.",
+                        }
+                    )
+                motion_fields: set[str] = set()
+                depths: set[float] = set()
+                for layer in layers:
+                    layer_id = str(layer.get("id") or "unknown")
+                    asset_type = str(layer.get("asset_type") or "")
+                    source_value = layer.get("src")
+                    if asset_type in VOX_LAYER_ASSET_TYPES and not source_value:
+                        failures.append(
+                            {
+                                "code": "vox_layer_asset_missing",
+                                "scene_id": scene_id,
+                                "layer_id": layer_id,
+                                "message": "Image and video VOX layers require src.",
+                            }
+                        )
+                    elif source_value and not Path(str(source_value)).expanduser().exists():
+                        failures.append(
+                            {
+                                "code": "vox_layer_asset_file_missing",
+                                "scene_id": scene_id,
+                                "layer_id": layer_id,
+                                "path": str(source_value),
+                                "message": "VOX layer asset path does not exist.",
+                            }
+                        )
+                    depths.add(float(layer.get("depth") or 0))
+                    keyframes = [
+                        item
+                        for field in ("entry_path", "motion_path", "exit_path")
+                        for item in layer.get(field) or []
+                        if isinstance(item, dict)
+                    ]
+                    for field in ("x", "y", "z", "rotation", "rotate_x", "rotate_y", "scale", "opacity"):
+                        values = [item.get(field) for item in keyframes if isinstance(item.get(field), (int, float))]
+                        if len(set(values)) > 1 or any(value not in {0, 1} for value in values):
+                            motion_fields.add(field)
+                    if len({item.get("value") for item in layer.get("rotation_keyframes") or []}) > 1:
+                        motion_fields.add("rotation")
+                    if len({item.get("value") for item in layer.get("scale_keyframes") or []}) > 1:
+                        motion_fields.add("scale")
+                if len(motion_fields) < 3:
+                    failures.append(
+                        {
+                            "code": "vox_motion_vocabulary_low",
+                            "scene_id": scene_id,
+                            "actual": sorted(motion_fields),
+                            "minimum": 3,
+                            "message": "Production VOX scenes require at least three independent motion dimensions.",
+                        }
+                    )
+                camera_keys = [item for item in visual.get("camera_keyframes") or [] if isinstance(item, dict)]
+                camera_z = {item.get("z") for item in camera_keys if isinstance(item.get("z"), (int, float))}
+                if len(camera_keys) < 2 or (len(camera_z) < 2 and len(depths) < 2):
+                    failures.append(
+                        {
+                            "code": "vox_depth_camera_missing",
+                            "scene_id": scene_id,
+                            "message": "Production VOX scenes require camera keyframes and real depth separation.",
+                        }
+                    )
+
     return {
         "schema_version": "dasheng.video.renderer_asset_gate.v1",
         "status": "pass" if not failures else "fail",
@@ -1012,6 +1117,7 @@ def build_showcase_plan() -> dict[str, Any]:
         "broll-fullscreen": ("hidden", "broll_fullscreen", "none"),
         "split-comparison": ("half_right", "split_screen", "none"),
         "recap-outro": ("hidden", "evidence_fullscreen", "none"),
+        "vox-editorial-collage": ("hidden", "evidence_fullscreen", "none"),
     }
     demo_visuals = {
         "data-line-chart": {
@@ -1047,6 +1153,11 @@ def build_showcase_plan() -> dict[str, Any]:
         },
         "recap-outro": {"points": ["先核验证据", "再生成素材", "最后进入渲染"]},
         "speaker-anchor": {"keywords": ["问题", "证据", "结论"]},
+        "vox-editorial-collage": {
+            "eyebrow": "VOX EVIDENCE WORLD",
+            "nodes": ["风格板", "微分镜", "起止关键帧", "连续纸张世界"],
+            "source": "Renderer showcase",
+        },
     }
     for index, template_id in enumerate(CANONICAL_FAMILIES, start=1):
         duration = 3.6
@@ -1150,6 +1261,17 @@ def write_renderer_project(
             visual[field] = link_public_asset(
                 str(source_value),
                 f"scenes/{index:03d}_{scene_slug}/{field}",
+                fallback_suffix,
+            )
+        for layer_index, layer in enumerate(visual.get("scene_layers") or [], start=1):
+            if not isinstance(layer, dict) or not layer.get("src"):
+                continue
+            source_value = str(layer["src"])
+            fallback_suffix = ".mp4" if layer.get("asset_type") == "video" else ".png"
+            layer_slug = re.sub(r"[^0-9A-Za-z_-]+", "_", str(layer.get("id") or layer_index)).strip("_") or str(layer_index)
+            layer["src"] = link_public_asset(
+                source_value,
+                f"scenes/{index:03d}_{scene_slug}/layers/{layer_index:02d}_{layer_slug}",
                 fallback_suffix,
             )
         if visual:

@@ -15,7 +15,7 @@
     },
     "lane": {
       "type": "string",
-      "enum": ["talking_head_video", "explainer_html_video"]
+      "enum": ["talking_head_video", "explainer_html_video", "vox_explainer_video"]
     },
     "voice": {
       "type": "object",
@@ -31,6 +31,16 @@
           "minimum": 0.5,
           "maximum": 2
         }
+      },
+      "additionalProperties": true
+    },
+    "presenter_source": {
+      "type": "object",
+      "properties": {
+        "kind": {"type": "string", "enum": ["human_video", "digital_human"]},
+        "engine": {"type": "string"},
+        "portrait": {"type": "string"},
+        "consent_status": {"type": "string", "enum": ["confirmed", "not_required", "not_confirmed"]}
       },
       "additionalProperties": true
     },

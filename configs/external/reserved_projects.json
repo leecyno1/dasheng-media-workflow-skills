@@ -1,19 +1,25 @@
 {
   "schema_version": "dasheng.reserved_projects.v1",
-  "updated_at": "2026-08-03",
+  "updated_at": "2026-08-06",
   "project_root": ".",
   "policy": {
     "source_root": "vendor/reserved",
     "ignored_by_git": true,
     "selection": ["stable_upstream", "distinct_capability", "usable_license_or_explicit_backup", "local_invocability"],
     "runtime_outputs_forbidden": ["vendor/reserved", "skills", ".codex/skills"],
-    "promotion_requires": ["smoke_test", "evidence_guard", "output_path_guard", "human_review"]
+    "promotion_requires": ["smoke_test", "evidence_guard", "output_path_guard", "human_review"],
+    "provider_selection": {
+      "retain_official_model_credentials": ["openai", "gpt", "codex", "moonshot", "kimi", "google", "gemini", "seedance", "jimeng", "seedream", "minimax", "mmx"],
+      "exclude_third_party_service_credentials": ["atlascloud", "openrouter", "replicate", "runpod", "modal", "elevenlabs", "higgsfield"],
+      "exclude_additional_apps": true,
+      "notes": "Provider keys and model access are valid dependencies for approved first-party model providers; they are not project deletion criteria."
+    }
   },
   "summary": {
-    "retained_projects": 42,
-    "newly_cloned_projects": 41,
+    "retained_projects": 40,
+    "newly_cloned_projects": 39,
     "existing_retained_projects": 1,
-    "installed_new_skills": 33,
+    "installed_new_skills": 34,
     "reserve_candidates": 4,
     "cloned_reserve_candidates": 4,
     "reviewed_existing_projects": 1
@@ -105,6 +111,7 @@
     {"name":"postiz","category":"publish","repo":"https://github.com/gitroomhq/postiz-app.git","local_path":"vendor/reserved/publish/postiz","git_head":"c90b6c625bc0","tier":"backup","dependency_status":"cloned_server_stack_not_installed"},
     {"name":"xurl","category":"publish","repo":"https://github.com/xdevplatform/xurl.git","local_path":"vendor/reserved/publish/xurl","git_head":"41259e8aef85","tier":"backup","dependency_status":"cloned_needs_api_credentials"},
 
+
     {"name":"html-video","category":"render","repo":"https://github.com/nexu-io/html-video.git","local_path":"vendor/reserved/render/html-video","git_head":"c414ecc07f79","tier":"production_candidate","dependency_status":"dependency_ready","installed_skills":["dasheng-html-video-bridge"]},
     {"name":"html-anything","category":"render","repo":"https://github.com/nexu-io/html-anything.git","local_path":"vendor/reserved/render/html-anything","git_head":"d0efb1eaa3b6","tier":"production_candidate","dependency_status":"dependency_ready"},
 
@@ -116,22 +123,20 @@
     {"name":"remotion-video-skill","category":"video","repo":"https://github.com/wshuyi/remotion-video-skill.git","local_path":"vendor/reserved/video/remotion-video-skill","git_head":"d16ebd9ca330","tier":"reference","dependency_status":"skill_ready_runtime_not_promoted","installed_skills":["remotion-video-skill"]},
     {"name":"text-to-lottie","category":"video","repo":"https://github.com/diffusionstudio/lottie.git","local_path":"vendor/reserved/video/text-to-lottie","git_head":"d8973f96fb45","tier":"production_candidate","dependency_status":"built_with_local_skip_lib_check_for_upstream_kobalte_types","installed_skills":["gif-sticker-maker"]},
     {"name":"claude-real-video","category":"video","repo":"https://github.com/HUANGCHIHHUNGLeo/claude-real-video.git","local_path":"vendor/reserved/video/claude-real-video","git_head":"e34161691c9e","tier":"production_candidate","dependency_status":"dependency_ready","installed_skills":["video-frames"]},
-    {"name":"claude-code-video-toolkit","category":"video","repo":"https://github.com/digitalsamba/claude-code-video-toolkit.git","local_path":"vendor/reserved/video/claude-code-video-toolkit","git_head":"9826feb491cf","tier":"reference","dependency_status":"dependency_ready_needs_provider_keys"},
+    {"name":"claude-code-video-toolkit","category":"video","repo":"https://github.com/digitalsamba/claude-code-video-toolkit.git","local_path":"vendor/reserved/video/claude-code-video-toolkit","git_head":"9826feb491cf","tier":"reference","dependency_status":"local_reference_ready","notes":"Retain only the local Remotion templates, transitions, components, data-visualization examples and browser-recording patterns. Modal, RunPod, ElevenLabs, R2 and other third-party cloud routes are excluded from routing."},
     {"name":"ian-xiaohei-illustrations","category":"video","repo":"https://github.com/helloianneo/ian-xiaohei-illustrations.git","local_path":"vendor/reserved/video/ian-xiaohei-illustrations","git_head":"91b560849e8f","tier":"production_candidate","dependency_status":"skill_ready","installed_skills":["ian-xiaohei-illustrations"]},
-    {"name":"vox-director","category":"video","repo":"https://github.com/Alisa0808/vox-director.git","local_path":"vendor/reserved/video/vox-director","git_head":"987be2f42332","tier":"backup","dependency_status":"installed_needs_api_key","required_env":["ATLASCLOUD_API_KEY"],"installed_skills":["vox-director"]},
-    {"name":"seedance2-skill","category":"video","repo":"https://github.com/dexhunter/seedance2-skill.git","local_path":"vendor/reserved/video/seedance2-skill","git_head":"e06c7c63a766","tier":"backup","dependency_status":"skill_ready_needs_model_access","installed_skills":["seedance2-skill"]},
+    {"name":"seedance2-skill","category":"video","repo":"https://github.com/dexhunter/seedance2-skill.git","local_path":"vendor/reserved/video/seedance2-skill","git_head":"e06c7c63a766","tier":"backup","dependency_status":"skill_ready_official_model_access_optional","provider_class":"first_party_model","allowed_providers":["seedance","jimeng"],"installed_skills":["seedance2-skill"]},
     {"name":"hyperframes","category":"video","repo":"https://github.com/heygen-com/hyperframes.git","local_path":"vendor/reserved/video/hyperframes","git_head":"688500f2d6bb","tier":"production_candidate","dependency_status":"dependency_ready","installed_skills":["animated-financial-display"]},
     {"name":"auto-editor","category":"video","repo":"https://github.com/WyattBlue/auto-editor.git","local_path":"vendor/reserved/video/auto-editor","git_head":"0af63dea136c","tier":"backup","dependency_status":"cli_ready_uv_tool_29.3.1"},
     {"name":"chengfeng-videocut-skills","category":"video","repo":"https://github.com/Agentchengfeng/chengfeng-videocut-skills.git","local_path":"vendor/reserved/video/chengfeng-videocut-skills","git_head":"e2cc73dce613","tier":"experimental","dependency_status":"runtime_incomplete"},
-    {"name":"palmier-pro","category":"video","repo":"https://github.com/palmier-io/palmier-pro.git","local_path":"vendor/reserved/video/palmier-pro","git_head":"ab6beea7084d","tier":"experimental","dependency_status":"source_ready_needs_desktop_app"},
 
     {"name":"remotion-video-toolkit","category":"design","repo":"https://github.com/shreefentsar/remotion-video-toolkit.git","local_path":"vendor/reserved/design/remotion-video-toolkit","git_head":"81a412e7872f","tier":"production_candidate","dependency_status":"skill_ready","installed_skills":["remotion-video-toolkit"]},
     {"name":"taste-skill","category":"design","repo":"https://github.com/Leonxlnx/taste-skill.git","local_path":"vendor/reserved/design/taste-skill","git_head":"e988add20dab","tier":"production_candidate","dependency_status":"skill_ready","installed_skills":["design-taste-frontend"],"reviewed_at":"2026-08-02","notes":"Already retained and installed. Reuse as the anti-slop art-direction advisor; do not duplicate it from the newer catalog."},
     {"name":"emilkowalski-skills","category":"design","repo":"https://github.com/emilkowalski/skills.git","local_path":"vendor/reserved/design/emilkowalski-skills","git_head":"e695d13cb298","tier":"production_candidate","dependency_status":"skill_ready","installed_skills":["animation-vocabulary","emil-design-eng","find-animation-opportunities","improve-animations","review-animations"]},
-    {"name":"baoyu-skills","category":"design","repo":"https://github.com/JimLiu/baoyu-skills.git","local_path":"vendor/reserved/design/baoyu-skills","git_head":"6b7a2e417500","tier":"production_candidate","dependency_status":"dependency_ready_with_local_missing_package_workaround"},
-    {"name":"minimax-skills","category":"design","repo":"https://github.com/MiniMax-AI/skills.git","local_path":"vendor/reserved/design/minimax-skills","git_head":"60aaae52bb2a","tier":"backup","dependency_status":"skill_ready_needs_api_key","installed_skills":["brandkit","high-end-visual-design","image-to-code","minimalist-ui"]},
+    {"name":"baoyu-skills","category":"design","repo":"https://github.com/JimLiu/baoyu-skills.git","local_path":"vendor/reserved/design/baoyu-skills","git_head":"6b7a2e417500","tier":"production_candidate","dependency_status":"dependency_ready_with_official_provider_allowlist","provider_class":"first_party_model","allowed_providers":["codex","openai","google","gemini","minimax","jimeng","seedream"],"blocked_providers":["openrouter","replicate"],"installed_skills":["baoyu-imagine","baoyu-cover-image","baoyu-article-illustrator","baoyu-infographic"],"notes":"Image, cover and infographic routes are retained. Director calls must explicitly select an allowed first-party provider and must not auto-route to third-party aggregators."},
+    {"name":"minimax-skills","category":"design","repo":"https://github.com/MiniMax-AI/skills.git","local_path":"vendor/reserved/design/minimax-skills","git_head":"60aaae52bb2a","tier":"backup","dependency_status":"skill_ready_official_provider_optional","provider_class":"first_party_model","allowed_providers":["minimax","mmx","codex","openai","google","gemini"],"installed_skills":["brandkit","high-end-visual-design","image-to-code","minimalist-ui"],"notes":"Retain both local design guidance and model-backed BrandKit/image-to-code workflows. Official MiniMax or other allowlisted model access is valid; third-party aggregators are excluded."},
     {"name":"anthropics-skills","category":"design","repo":"https://github.com/anthropics/skills.git","local_path":"vendor/reserved/design/anthropics-skills","git_head":"1f630fdf9259","tier":"production_candidate","dependency_status":"skill_ready","installed_skills":["canvas-design","algorithmic-art","brand-guidelines"]},
-    {"name":"inference-skills","category":"design","repo":"https://github.com/inference-sh/skills.git","local_path":"vendor/reserved/design/inference-skills","git_head":"fbe0aa4ac8f4","tier":"backup","dependency_status":"skill_ready_needs_model_access","installed_skills":["apple-design","pick-ui-library","web-animation-design"]},
+    {"name":"inference-skills","category":"design","repo":"https://github.com/inference-sh/skills.git","local_path":"vendor/reserved/design/inference-skills","git_head":"fbe0aa4ac8f4","tier":"advisory","dependency_status":"local_advisory_skills_ready","installed_skills":["apple-design","pick-ui-library","web-animation-design"],"notes":"Registered only for local design and animation guidance; external inference model routes are excluded."},
     {"name":"media-downloader","category":"design","repo":"https://github.com/yizhiyanhua-ai/media-downloader.git","local_path":"vendor/reserved/design/media-downloader","git_head":"e94a3ce3ed18","tier":"production_candidate","dependency_status":"dependency_ready","installed_skills":["media-downloader"]},
     {"name":"guizang-social-card-skill","category":"design","repo":"https://github.com/op7418/guizang-social-card-skill.git","local_path":"vendor/reserved/design/guizang-social-card-skill","git_head":"cf4b810fac1c","tier":"production_candidate","dependency_status":"dependency_ready","installed_skills":["guizang-social-card-skill"]}
   ],
@@ -153,6 +158,7 @@
     "postiz": {"capabilities":["platform_upload","social_scheduling","multi_platform_publish"],"route_stages":["distribution"],"execution_mode":"server"},
     "xurl": {"capabilities":["platform_upload","x_publish"],"route_stages":["distribution"],"execution_mode":"cli"},
 
+
     "html-video": {"capabilities":["html_video","remotion_render","gsap_motion","lottie_overlay","dynamic_chart","final_render"],"route_stages":["render_and_composite","caption_and_audio"],"execution_mode":"pnpm"},
     "html-anything": {"capabilities":["html_template","visual_design","document_visualization","social_card"],"route_stages":["scene_design","asset_generation","render_and_composite"],"execution_mode":"pnpm"},
 
@@ -164,20 +170,18 @@
     "remotion-video-skill": {"capabilities":["remotion_render","programmatic_video","tts","caption_render","final_render"],"route_stages":["render_and_composite","caption_and_audio"],"execution_mode":"skill_reference"},
     "text-to-lottie": {"capabilities":["lottie_asset","animated_sticker","transparent_overlay","motion_graphic"],"route_stages":["asset_generation","render_and_composite"],"execution_mode":"npm"},
     "claude-real-video": {"capabilities":["video_reading","scene_detection","keyframes","contact_sheet","transcript"],"route_stages":["intake_and_analysis","quality_control"],"execution_mode":"python"},
-    "claude-code-video-toolkit": {"capabilities":["programmatic_video","image_generation","tts","data_visualization","youtube_publish"],"route_stages":["asset_generation","render_and_composite","distribution"],"execution_mode":"reference_and_python"},
+    "claude-code-video-toolkit": {"capabilities":["programmatic_video","remotion_template","transition_library","data_visualization","browser_recording_reference"],"route_stages":["scene_design","render_and_composite"],"execution_mode":"local_reference_only","excluded_capabilities":["cloud_gpu","third_party_tts","third_party_image_generation","third_party_music_generation","youtube_publish"]},
     "ian-xiaohei-illustrations": {"capabilities":["conceptual_illustration","hand_drawn_illustration","shot_list","transparent_overlay"],"route_stages":["scene_design","asset_generation"],"execution_mode":"skill"},
-    "vox-director": {"capabilities":["editorial_collage","generated_broll","motion_explainer","tts","bgm","final_render"],"route_stages":["asset_generation","render_and_composite","caption_and_audio"],"execution_mode":"python_api"},
-    "seedance2-skill": {"capabilities":["generated_broll","video_prompt_design","reference_to_video"],"route_stages":["asset_generation"],"execution_mode":"skill_api"},
+    "seedance2-skill": {"capabilities":["generated_broll","video_prompt_design","reference_to_video"],"route_stages":["asset_generation"],"execution_mode":"official_model_skill"},
     "hyperframes": {"capabilities":["html_video","gsap_motion","timed_caption","dynamic_chart","final_render"],"route_stages":["render_and_composite","caption_and_audio"],"execution_mode":"bun"},
     "auto-editor": {"capabilities":["silence_cleanup","pacing_cleanup","roughcut_plan"],"route_stages":["roughcut"],"execution_mode":"cli"},
     "chengfeng-videocut-skills": {"capabilities":["video_edit","roughcut_plan","full_edit_provider_routing"],"route_stages":["roughcut","render_and_composite"],"execution_mode":"experimental_skill"},
-    "palmier-pro": {"capabilities":["timeline_edit","ripple_delete","color_grade","final_render"],"route_stages":["roughcut","render_and_composite"],"execution_mode":"desktop_mcp"},
 
     "remotion-video-toolkit": {"capabilities":["remotion_render","programmatic_video","dynamic_chart","caption_render","three_d","final_render"],"route_stages":["scene_design","render_and_composite","caption_and_audio"],"execution_mode":"skill"},
     "taste-skill": {"capabilities":["visual_design","art_direction","layout_design","anti_slop_review"],"route_stages":["scene_design","quality_control"],"execution_mode":"advisory_skill"},
     "emilkowalski-skills": {"capabilities":["motion_design","motion_review","animation_audit","visual_polish"],"route_stages":["scene_design","quality_control"],"execution_mode":"advisory_and_review_skills"},
-    "baoyu-skills": {"capabilities":["article_illustration","cover_design","infographic","social_card","image_generation","wechat_publish"],"route_stages":["asset_generation","distribution"],"execution_mode":"skill_collection"},
-    "minimax-skills": {"capabilities":["visual_design","brand_system","image_generation","image_to_html"],"route_stages":["scene_design","asset_generation"],"execution_mode":"skill_api"},
+    "baoyu-skills": {"capabilities":["article_illustration","cover_design","infographic","social_card","image_generation","markdown_format","markdown_to_html","wechat_html_layout"],"route_stages":["scene_design","asset_generation","distribution"],"execution_mode":"skill_collection_with_first_party_provider_allowlist"},
+    "minimax-skills": {"capabilities":["visual_design","art_direction","editorial_layout","motion_design","brand_system","image_generation","image_to_html"],"route_stages":["scene_design","asset_generation","quality_control"],"execution_mode":"official_model_and_local_skills"},
     "anthropics-skills": {"capabilities":["visual_design","poster_design","algorithmic_art","brand_system"],"route_stages":["scene_design","asset_generation"],"execution_mode":"skill_collection"},
     "inference-skills": {"capabilities":["visual_design","motion_design","renderer_library_selection","web_animation"],"route_stages":["scene_design","render_and_composite"],"execution_mode":"skill_collection"},
     "media-downloader": {"capabilities":["reference_download","public_asset_collection","video_download"],"route_stages":["intake_and_analysis","asset_generation"],"execution_mode":"skill_cli"},

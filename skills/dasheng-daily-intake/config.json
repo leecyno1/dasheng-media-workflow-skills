@@ -1,6 +1,6 @@
 {
   "name": "dasheng-daily-intake",
-  "version": "4.1.0",
+  "version": "4.3.0",
   "description": "Stage 1 Intake - 大圣自媒体工作流的 Intake 环节：执行 canonical Stage 1 采集",
   "stage": "intake",
   "stage_number": 1,
@@ -25,7 +25,12 @@
   },
   "inputs": {
     "required": [],
-    "optional": []
+    "optional": [
+      "DASHENG_LOCAL_CHAT_INTAKE_BASE",
+      "DASHENG_LOCAL_CHAT_LIMIT",
+      "DASHENG_LOCAL_MP_LIMIT",
+      "DASHENG_LOCAL_MEDIA_LIMIT"
+    ]
   },
   "outputs": {
     "documents": [
@@ -35,9 +40,15 @@
     "manifests": [
       "intake_manifest.json",
       "raw/intake_records.json",
+      "raw/local_messages.json",
+      "raw/local_mp_articles.json",
+      "raw/local_media_items.json",
+      "raw/merged_news_items.json",
       "entity_rankings.json",
       "event_clusters.json",
+      "source_quality_report.json",
       "channel_top10.json",
+      "channel_tasks.json",
       "brief_input.json"
     ],
     "gates": [
@@ -56,13 +67,15 @@
       "manifest": "intake_manifest.json"
     },
     "data_sources": [
-      "5173",
-      "reports",
-      "8000-public-wechat",
+      "0913-wechat-messages-api",
+      "0913-mp-articles-api",
+      "0913-media-items-api",
+      "0913-newsfeed-api",
+      "merged-news-pool",
       "reddit-rss",
       "hacker-news",
       "ai-hot-aggregate",
-      "trendradar"
+      "public-news-radar"
     ],
     "output": {
       "stage_dir": "${DASHENG_OUTPUT_ROOT:-~/Desktop/自媒体创作}/01_内容采集/{run_id}",
@@ -84,7 +97,21 @@
       "other_platform_quota": 50,
       "wechat_slow_source": true,
       "ai_hot_topics_limit": 10,
-      "ai_hot_priority_bias": "high"
+      "ai_hot_priority_bias": "high",
+      "required_local_attempts": [
+        "/api/messages",
+        "/api/mp/articles",
+        "/api/media/items"
+      ],
+      "local_failures_must_be_reported": true,
+      "loopback_proxy_bypass": true,
+      "merge_news_sources": true,
+      "news_dedupe_keys": [
+        "source_id+item_id",
+        "canonical_url",
+        "normalized_title",
+        "near_title"
+      ]
     }
   }
 }

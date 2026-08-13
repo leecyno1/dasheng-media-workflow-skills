@@ -6,13 +6,15 @@ import os
 import re
 import time
 import hashlib
+from copy import deepcopy
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timedelta
 from email.utils import parsedate_to_datetime
+from difflib import SequenceMatcher
 from html import unescape
 from pathlib import Path
 from typing import Any
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
 from xml.etree import ElementTree as ET
 
 import requests
@@ -26,6 +28,9 @@ REQUEST_USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
 )
+
+LOOPBACK_HTTP_SESSION = requests.Session()
+LOOPBACK_HTTP_SESSION.trust_env = False
 
 PUBLIC_RSS_SOURCES = {
     "reddit_local_llama": "https://www.reddit.com/r/LocalLLaMA/.rss",
@@ -246,7 +251,9 @@ def to_iso(value: Any) -> str:
 
 
 def safe_get_json(url: str, *, timeout: int = 12, params: dict[str, Any] | None = None) -> Any:
-    response = requests.get(
+    hostname = (urlparse(url).hostname or "").lower()
+    client = LOOPBACK_HTTP_SESSION if hostname in {"127.0.0.1", "localhost", "::1"} else requests
+    response = client.get(
         url,
         params=params,
         timeout=timeout,
@@ -257,7 +264,9 @@ def safe_get_json(url: str, *, timeout: int = 12, params: dict[str, Any] | None 
 
 
 def safe_get_text(url: str, *, timeout: int = 12) -> str:
-    response = requests.get(
+    hostname = (urlparse(url).hostname or "").lower()
+    client = LOOPBACK_HTTP_SESSION if hostname in {"127.0.0.1", "localhost", "::1"} else requests
+    response = client.get(
         url,
         timeout=timeout,
         headers={"User-Agent": REQUEST_USER_AGENT, "Accept": "application/rss+xml,application/xml,text/html,*/*", "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.7"},
@@ -374,10 +383,170 @@ def news_to_item(row: dict[str, Any], local_base: str) -> CollectedItem | None:
     )
 
 
+def mp_article_to_item(row: dict[str, Any], local_base: str) -> CollectedItem | None:
+    title = clean_text(row.get("title") or "")
+    if not title:
+        return None
+    item_id = clean_text(row.get("id") or row.get("message_id") or "")
+    url = clean_text(row.get("url") or "")
+    if not url and item_id:
+        url = f"dasheng-local://mp/{quote(item_id)}"
+    if not url:
+        url = f"{local_base}/api/mp/articles"
+    return CollectedItem(
+        source="local_mp/8001",
+        channel="wechat",
+        title=title,
+        url=url,
+        author_name=clean_text(row.get("channel_name") or row.get("mp_name") or "公众号"),
+        created_at=to_iso(row.get("publish_time") or row.get("created_at") or row.get("time")),
+        summary=clean_text(row.get("summary") or row.get("description") or row.get("content") or title),
+        score=heat_to_float(
+            row.get("heat")
+            or row.get("read_count")
+            or row.get("recommend_count")
+            or row.get("like_count")
+        ),
+        raw=row,
+    )
+
+
+def media_item_to_item(row: dict[str, Any], local_base: str) -> CollectedItem | None:
+    title = clean_text(row.get("title") or row.get("description") or "")
+    if not title:
+        return None
+    item_id = clean_text(row.get("id") or "")
+    url = clean_text(row.get("url") or row.get("link") or "")
+    if not url and item_id:
+        url = f"dasheng-local://media/{quote(item_id)}"
+    if not url:
+        url = f"{local_base}/api/media/items"
+    stats = row.get("stats") if isinstance(row.get("stats"), dict) else {}
+    platform = clean_text(row.get("platform") or stats.get("source_name") or "self_media")
+    return CollectedItem(
+        source=f"local_media/{platform or '8001'}",
+        channel="content_research",
+        title=title,
+        url=url,
+        author_name=clean_text(row.get("author") or row.get("nickname") or platform or "自媒体"),
+        created_at=to_iso(row.get("time") or row.get("created_at") or row.get("publish_time")),
+        summary=clean_text(row.get("summary") or row.get("description") or title),
+        score=heat_to_float(
+            row.get("heat")
+            or stats.get("heat")
+            or stats.get("like")
+            or stats.get("collect")
+            or stats.get("share")
+        ),
+        raw=row,
+    )
+
+
+def normalize_news_title(value: str) -> str:
+    return re.sub(r"[^a-z0-9\u4e00-\u9fff]+", "", clean_text(value).lower())
+
+
+def canonical_news_url(value: str) -> str:
+    url = clean_text(value)
+    if not url.startswith(("http://", "https://")):
+        return ""
+    return url.split("#", 1)[0].split("?", 1)[0].rstrip("/")
+
+
+def news_source_identity(item: CollectedItem) -> str:
+    source_id = clean_text(item.raw.get("source_id") or "")
+    item_id = clean_text(item.raw.get("id") or "")
+    return f"{source_id}:{item_id}" if source_id and item_id else ""
+
+
+def news_items_match(left: CollectedItem, right: CollectedItem) -> bool:
+    left_identity = news_source_identity(left)
+    right_identity = news_source_identity(right)
+    if left_identity and left_identity == right_identity:
+        return True
+
+    left_url = canonical_news_url(left.url)
+    right_url = canonical_news_url(right.url)
+    if left_url and left_url == right_url:
+        return True
+
+    left_title = normalize_news_title(left.title)
+    right_title = normalize_news_title(right.title)
+    if not left_title or not right_title:
+        return False
+    if left_title == right_title:
+        return True
+
+    shorter, longer = sorted((left_title, right_title), key=len)
+    if len(shorter) < 24:
+        return False
+    if shorter in longer and len(shorter) / max(len(longer), 1) >= 0.82:
+        return True
+    return SequenceMatcher(None, left_title, right_title).ratio() >= 0.93
+
+
+def news_item_quality(item: CollectedItem) -> tuple[float, float, int, int]:
+    return (
+        1.0 if canonical_news_url(item.url) else 0.0,
+        float(item.score or 0.0),
+        1 if item.created_at else 0,
+        len(clean_text(item.summary)),
+    )
+
+
+def news_source_ref(item: CollectedItem) -> dict[str, Any]:
+    return {
+        "source": item.source,
+        "source_id": clean_text(item.raw.get("source_id") or ""),
+        "item_id": clean_text(item.raw.get("id") or ""),
+        "title": item.title,
+        "url": item.url,
+        "author_name": item.author_name,
+        "created_at": item.created_at,
+        "score": item.score,
+    }
+
+
+def merge_news_items(*groups: list[CollectedItem]) -> list[CollectedItem]:
+    candidates = [item for group in groups for item in group]
+    candidates.sort(key=news_item_quality, reverse=True)
+    merged: list[CollectedItem] = []
+
+    for candidate in candidates:
+        existing = next((item for item in merged if news_items_match(item, candidate)), None)
+        if existing is None:
+            cloned = deepcopy(candidate)
+            cloned.channel = "news"
+            cloned.raw = {
+                **cloned.raw,
+                "merged_sources": [news_source_ref(candidate)],
+                "merged_count": 1,
+                "merged_channel": "news",
+            }
+            merged.append(cloned)
+            continue
+
+        refs = existing.raw.setdefault("merged_sources", [])
+        ref = news_source_ref(candidate)
+        ref_key = (ref["source"], ref["item_id"], ref["url"])
+        if ref_key not in {(row.get("source"), row.get("item_id"), row.get("url")) for row in refs}:
+            refs.append(ref)
+        existing.raw["merged_count"] = len(refs)
+        existing.score = max(float(existing.score or 0.0), float(candidate.score or 0.0))
+        if not existing.created_at and candidate.created_at:
+            existing.created_at = candidate.created_at
+        if len(clean_text(candidate.summary)) > len(clean_text(existing.summary)):
+            existing.summary = candidate.summary
+
+    return merged
+
+
 def collect_local_service(raw_dir: Path) -> CollectorRun:
     base = os.getenv("DASHENG_LOCAL_CHAT_INTAKE_BASE", DEFAULT_LOCAL_BASE).rstrip("/")
     days = env_int("DASHENG_LOCAL_CHAT_DAYS", DEFAULT_CHAT_DAYS)
     limit = env_int("DASHENG_LOCAL_CHAT_LIMIT", DEFAULT_LOCAL_LIMIT)
+    mp_limit = env_int("DASHENG_LOCAL_MP_LIMIT", 200)
+    media_limit = env_int("DASHENG_LOCAL_MEDIA_LIMIT", 300)
     run = CollectorRun()
 
     try:
@@ -401,8 +570,9 @@ def collect_local_service(raw_dir: Path) -> CollectorRun:
             "size": limit,
             "fast": "true",
             "include_meta": "true",
-            "include_mp_messages": "true",
+            "include_mp_messages": "false",
             "content_max_chars": 1200,
+            "direction": "in",
         }
         if days > 0:
             message_params["time_from"] = since_iso(days)
@@ -422,6 +592,70 @@ def collect_local_service(raw_dir: Path) -> CollectorRun:
         run.artifacts.append("raw/local_messages.json")
     except Exception as exc:
         run.add_task("local_chat", [], {"status": "error", "base": base, "error": str(exc)})
+
+    try:
+        mp_articles = safe_get_json(
+            f"{base}/api/mp/articles",
+            timeout=30,
+            params={"limit": mp_limit, "offset": 0, "filter_spam": "true"},
+        )
+        (raw_dir / "local_mp_articles.json").write_text(
+            json.dumps(mp_articles, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        rows = mp_articles.get("items") if isinstance(mp_articles, dict) else []
+        items = [
+            item
+            for row in rows or []
+            if isinstance(row, dict)
+            for item in [mp_article_to_item(row, base)]
+            if item
+        ]
+        run.add_task(
+            "wechat",
+            items[:mp_limit],
+            {
+                "status": "ready" if items else "empty",
+                "base": base,
+                "endpoint": "/api/mp/articles",
+                "upstream": mp_articles.get("source", {}) if isinstance(mp_articles, dict) else {},
+            },
+        )
+        run.artifacts.append("raw/local_mp_articles.json")
+    except Exception as exc:
+        run.add_task("wechat", [], {"status": "error", "base": base, "error": str(exc)})
+
+    try:
+        media_items = safe_get_json(
+            f"{base}/api/media/items",
+            timeout=45,
+            params={"limit": media_limit, "filter_noise": "true"},
+        )
+        (raw_dir / "local_media_items.json").write_text(
+            json.dumps(media_items, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        rows = media_items.get("items") if isinstance(media_items, dict) else []
+        items = [
+            item
+            for row in rows or []
+            if isinstance(row, dict)
+            for item in [media_item_to_item(row, base)]
+            if item
+        ]
+        run.add_task(
+            "content_research",
+            items[:media_limit],
+            {
+                "status": "ready" if items else "empty",
+                "base": base,
+                "endpoint": "/api/media/items",
+                "upstream": media_items.get("source", {}) if isinstance(media_items, dict) else {},
+            },
+        )
+        run.artifacts.append("raw/local_media_items.json")
+    except Exception as exc:
+        run.add_task("content_research", [], {"status": "error", "base": base, "error": str(exc)})
 
     try:
         news = safe_get_json(f"{base}/api/newsfeed/items", timeout=25, params={"limit": limit})

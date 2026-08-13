@@ -319,13 +319,13 @@ class MainlineHardeningTests(unittest.TestCase):
                     "topics": [
                         {
                             "topic_id": "topic-demo",
-                            "lanes": ["wechat_article", "talking_head_video", "podcast"],
+                            "lanes": ["wechat_article", "explainer_html_video", "podcast"],
                             "wechat_article": {"humanize": True, "cover_generation": {"enabled": True}},
-                            "talking_head_video": {
-                                "visual_layer": {"background": "transparent"},
+                            "explainer_html_video": {
+                                "visual_layer": {"background": "opaque"},
                                 "audio": {"mode": "synthetic_audio"},
                             },
-                            "podcast": {"provider": "minimax", "mode": "solo"},
+                            "podcast": {"enabled": True, "provider": "minimax", "mode": "solo"},
                         }
                     ],
                 },
@@ -351,32 +351,35 @@ class MainlineHardeningTests(unittest.TestCase):
             manifest = json.loads(Path(payload["manifest_file"]).read_text(encoding="utf-8"))
             lanes = manifest["topics"][0]["lanes"]
             self.assertIn("wechat_article", lanes)
-            self.assertIn("talking_head_video", lanes)
+            self.assertIn("explainer_html_video", lanes)
             self.assertIn("podcast", lanes)
             self.assertEqual(manifest["status"], "prepared_for_skill_execution")
             self.assertEqual(lanes["wechat_article"]["status"], "ready_for_agent_execution")
-            self.assertEqual(lanes["talking_head_video"]["status"], "pending_director_review")
+            self.assertEqual(lanes["explainer_html_video"]["status"], "pending_director_review")
             self.assertIn("execution_contract", lanes["wechat_article"])
-            self.assertIn("execution_contract", lanes["talking_head_video"])
+            self.assertIn("execution_contract", lanes["explainer_html_video"])
             self.assertIn("execution_contract", lanes["podcast"])
             self.assertEqual(
-                lanes["talking_head_video"]["execution_contract"]["final_artifacts"]["video"],
-                str((tmp / "transwrite_out" / "topic-demo" / "talking_head_video" / "renders" / "topic-demo.mp4").resolve()),
+                lanes["explainer_html_video"]["execution_contract"]["final_artifacts"]["video"],
+                str((tmp / "transwrite_out" / "topic-demo" / "explainer_html_video" / "delivery" / "topic-demo.mp4").resolve()),
             )
-            self.assertTrue(Path(lanes["talking_head_video"]["html_overlay"]).exists())
-            self.assertEqual(lanes["talking_head_video"]["renderer"]["default"], "html-video")
-            self.assertTrue(Path(lanes["talking_head_video"]["html_video_project_plan"]).exists())
-            self.assertTrue(Path(lanes["talking_head_video"]["html_video_project_vars"]).exists())
-            self.assertTrue(Path(lanes["talking_head_video"]["html_video_commands"]).exists())
-            html_video_plan = json.loads(Path(lanes["talking_head_video"]["html_video_project_plan"]).read_text(encoding="utf-8"))
+            self.assertTrue(Path(lanes["explainer_html_video"]["html_overlay"]).exists())
+            self.assertEqual(lanes["explainer_html_video"]["renderer"]["default"], "remotion")
+            self.assertEqual(lanes["explainer_html_video"]["renderer"]["aspect"], "16:9")
+            self.assertTrue(Path(lanes["explainer_html_video"]["html_video_project_plan"]).exists())
+            self.assertTrue(Path(lanes["explainer_html_video"]["html_video_project_vars"]).exists())
+            self.assertTrue(Path(lanes["explainer_html_video"]["html_video_commands"]).exists())
+            html_video_plan = json.loads(Path(lanes["explainer_html_video"]["html_video_project_plan"]).read_text(encoding="utf-8"))
             self.assertEqual(html_video_plan["renderer"], "html-video")
+            self.assertEqual(html_video_plan["renderer_role"], "scene_renderer")
+            self.assertEqual(html_video_plan["master_timeline"], "remotion")
             self.assertEqual(html_video_plan["template_id"], "frame-liquid-bg-hero")
             bridge_proc = subprocess.run(
                 [
                     PYTHON,
                     str(ROOT / "scripts/transwrite_html_video_bridge.py"),
                     "--video-manifest",
-                    lanes["talking_head_video"]["manifest"],
+                    lanes["explainer_html_video"]["manifest"],
                 ],
                 capture_output=True,
                 text=True,

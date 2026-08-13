@@ -571,7 +571,7 @@ def main() -> None:
             args=args,
             run_id=run_id,
             stage="brief",
-            status="complete",
+            status="pending_review",
             artifact_paths=[
                 ("brief_manifest", canonical_manifest_path("brief", run_id)),
                 ("selected_topics", canonical_stage_dir("brief", run_id) / "selected_topics.json"),
@@ -597,7 +597,7 @@ def main() -> None:
             args=args,
             run_id=args.run_id,
             stage="draft",
-            status="complete",
+            status="pending_review",
             artifact_paths=[
                 ("draft_manifest", draft_dir / "draft_manifest.json"),
                 ("final_structure_snapshot", draft_dir / "final_structure_snapshot.json"),
@@ -639,7 +639,7 @@ def main() -> None:
             args=args,
             run_id=str(transwrite_run_id),
             stage="transwrite",
-            status="complete",
+            status="pending_review",
             artifact_paths=[
                 ("transwrite_manifest", transwrite_dir / "transwrite_manifest.json"),
                 ("transwrite_decision", Path(transwrite_decision)),
@@ -678,7 +678,7 @@ def main() -> None:
                 args=args,
                 run_id=str(publish_run_id),
                 stage="publish",
-                status="complete",
+                status="pending_review",
                 artifact_paths=[
                     ("publish_manifest", publish_dir / "publish_manifest.json"),
                     ("publish_decision", Path(publish_decision)),

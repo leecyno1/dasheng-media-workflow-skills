@@ -58,14 +58,6 @@ DEPENDENCIES: dict[str, ExternalDependency] = {
         package_manager="python",
         build_after_install=False,
     ),
-    "palmier-pro": ExternalDependency(
-        name="palmier-pro",
-        repo="https://github.com/palmier-io/palmier-pro.git",
-        default_path_env="PALMIER_PRO_ROOT",
-        default_path=RESERVED_ROOT / "video" / "palmier-pro",
-        package_manager="xcode",
-        build_after_install=False,
-    ),
     "video-use": ExternalDependency(
         name="video-use",
         repo="https://github.com/browser-use/video-use.git",
@@ -106,13 +98,6 @@ DEPENDENCIES: dict[str, ExternalDependency] = {
         repo="https://github.com/chrislema/videoeditor.git",
         default_path_env="TALKING_HEAD_EDITOR_ROOT",
         default_path=RESERVED_ROOT / "video" / "talking-head-editor",
-        package_manager="python",
-    ),
-    "vox-director": ExternalDependency(
-        name="vox-director",
-        repo="https://github.com/Alisa0808/vox-director.git",
-        default_path_env="VOX_DIRECTOR_ROOT",
-        default_path=RESERVED_ROOT / "video" / "vox-director",
         package_manager="python",
     ),
 }
@@ -215,11 +200,6 @@ def inspect_dependency(spec: ExternalDependency) -> dict[str, Any]:
         payload["dependency_ready"] = payload["node_modules_ready"]
     if spec.name == "claude-real-video":
         payload["source_package"] = (path / "src" / "claude_real_video").exists()
-    if spec.name == "palmier-pro":
-        payload["mcp_url"] = os.getenv("PALMIER_MCP_URL", "http://127.0.0.1:19789/mcp")
-        payload["desktop_app"] = str(Path("/Applications/PalmierPro.app"))
-        payload["desktop_app_exists"] = Path("/Applications/PalmierPro.app").exists()
-        payload["status"] = "ready" if payload["is_git_repo"] and payload["desktop_app_exists"] else "missing"
     if spec.name == "html-video":
         payload["motion_libraries"] = motion_library_status(path)
     return payload

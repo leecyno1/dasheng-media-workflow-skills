@@ -125,8 +125,13 @@
 
 - 目标：采集当天热点样本，并升级为“事件-人物-议题”雷达
 - 推荐输入：
-  - 默认：本地 `8001` 的聊天记录 / 本地新闻流
+  - 默认：本地 `0913 / 8001` 内容中心
+    - 微信聊天记录：`GET /api/messages`
+    - 公众号文章：`GET /api/mp/articles`
+    - 自媒体文章：`GET /api/media/items`
+    - 本地新闻流：`GET /api/newsfeed/items`
   - 公开新闻兜底：同花顺、华尔街见闻、彭博市场，保留热度、情绪和类别评价
+  - 新闻合并：本地新闻流与公开财经新闻先按上游 ID、URL和标题指纹合并，再以单一 `news` 渠道进入 Intake
   - 公开热榜兜底：Reddit RSS、Hacker News、微博热搜、知乎热榜、抖音热榜、虎扑热榜、头条热榜、财经 RSS
   - 回滚：`DASHENG_INTAKE_MODE=legacy` 时才启用旧 `5173` / `reports` / `8000 public wechat`
 - 正式产物：
@@ -144,6 +149,8 @@
   - `intake_manifest.json`
 - 关键要求：
   - 不做观点筛选，只做真实采集、热度评级、标准化与交接
+  - 每次必须尝试采集微信聊天、公众号文章和自媒体文章；不可用 `skipped` 静默代替
+  - 单个 0913 接口失败可降级继续，但必须将 endpoint、错误和采集数写入 `channel_tasks.json` / `intake_manifest.json`
   - `报告` 必须按渠道输出 Top10，且每条保留真实标题与真实链接
   - `底稿` 必须保留全量标准化来源清单、重复/噪音池和下游原始输入池
   - 必须额外输出 `AI热点` Top10，默认从本地新闻流、公开新闻兜底与公开热榜中派生
@@ -151,6 +158,7 @@
   - 热度评级采用渠道内相对分层：`S/A/B/C/D`
   - 旧 `8000 public wechat API` 仅属于 legacy 模式，默认不再主动调用
   - 去重要同时覆盖 URL、标题近似与同事件重复转载
+  - 合并新闻条目必须保留 `merged_sources`，既避免重复入库，又不丢失多源交叉验证信息
 
 ### 2. Brief｜AI-only 选题库 + Research Brief
 
@@ -202,6 +210,7 @@
 ### 3. Draft｜Reasoning Sheet + 标准稿 + HTML 草稿
 
 - 目标：先完成论证结构，再产出标准初稿，并同步生成可编辑、自包含 HTML 草稿
+- 正式输出目录：`${DASHENG_OUTPUT_ROOT:-~/Desktop/自媒体创作}/05_初稿生成/<run_id>/`
 - Draft 只读取：
   - `selected_topics.json`
   - `topic_cards.json`
@@ -238,6 +247,11 @@
   - 正文出现有认知价值的比喻、举例、类比、拟人或抽象机制时，Draft 调用 `dasheng-lemon-illustrations` 输出 illustration intent；关键词命中只负责召回，Agent 决定是否值得画
   - 必需漫画使用柠檬人，紧跟原段落嵌入 HTML；不得集中堆到文末，不得替代真实图表、网页、表格、文档、地图或来源证据
   - 必需 illustration intent 未生成对应 `illustration_specs` 时，`illustration_status` 与 Draft 资产状态不得标记 complete
+- 阶段边界：
+  - Draft 只生产研究、数据、图表、正文配图、标准初稿和离线 HTML，不生成公众号渠道终稿、封面、口播视频、播客或平台变体
+  - Draft 禁止账号登录、草稿上传、平台发布和链接回收；这些动作只能由 Publish 在正式 gate 后执行
+  - 每题 `draft_result.json` 必须包含 `stage=draft`、`next_stage=transwrite`、`next_stage_authorized=false`
+  - Draft 完成不等于自动进入 Transwrite；必须等待用户或正式 gate 明确授权
 
 ### 按需工具：Rewrite Variants
 

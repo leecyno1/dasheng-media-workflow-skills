@@ -128,9 +128,48 @@ def missing_required_env(entry: dict[str, Any]) -> list[str]:
     return [name for name in entry.get("required_env", []) if not os.getenv(str(name))]
 
 
-def availability(entry: dict[str, Any]) -> dict[str, Any]:
+def allowed_provider_ids(policy: dict[str, Any]) -> set[str]:
+    ids: set[str] = set()
+    provider_policy = policy.get("provider_policy") or {}
+    for row in provider_policy.get("allowed_first_party_model_providers") or []:
+        ids.add(str(row.get("id") or "").lower())
+        ids.update(str(alias).lower() for alias in row.get("aliases") or [])
+    return {value for value in ids if value}
+
+
+def provider_policy_violation(entry: dict[str, Any], policy: dict[str, Any]) -> str | None:
+    if entry.get("requires_desktop_app") or entry.get("requires_local_app_backend"):
+        return "additional_app_required"
+
+    provider_policy = policy.get("provider_policy") or {}
+    blocked = {
+        str(value).lower()
+        for value in provider_policy.get("blocked_third_party_service_providers") or []
+    }
+    declared = {
+        str(value).lower()
+        for value in [entry.get("provider_family"), entry.get("provider"), *(entry.get("providers") or [])]
+        if value
+    }
+    if entry.get("provider_class") == "third_party_service" or declared.intersection(blocked):
+        return "third_party_service_provider"
+
+    if entry.get("provider_class") == "first_party_model":
+        allowed = allowed_provider_ids(policy)
+        eligible = {str(value).lower() for value in entry.get("allowed_providers") or []}
+        eligible.update(declared)
+        if eligible and not eligible.issubset(allowed):
+            return "provider_not_allowlisted"
+    return None
+
+
+def availability(entry: dict[str, Any], policy: dict[str, Any] | None = None) -> dict[str, Any]:
+    policy = policy or {}
     status = str(entry.get("status") or "ready").lower()
     missing_env = missing_required_env(entry)
+    provider_violation = provider_policy_violation(entry, policy)
+    if provider_violation:
+        return {"state": "blocked", "reason": provider_violation}
     if missing_env:
         return {"state": "blocked", "reason": f"missing_env:{','.join(missing_env)}"}
     if entry.get("kind") == "reserve":
@@ -144,6 +183,8 @@ def availability(entry: dict[str, Any]) -> dict[str, Any]:
             return {"state": "blocked", "reason": token}
     for token in ["needs_api_key", "needs_model_access", "needs_provider_keys", "needs_login"]:
         if token in status:
+            if token != "needs_login" and entry.get("provider_class") == "first_party_model":
+                continue
             if entry.get("required_env") and not missing_env:
                 continue
             return {"state": "blocked", "reason": token}
@@ -154,7 +195,7 @@ def availability(entry: dict[str, Any]) -> dict[str, Any]:
     return {"state": "ready", "reason": status}
 
 
-def score_entry(entry: dict[str, Any], *, lane: str) -> int:
+def score_entry(entry: dict[str, Any], *, lane: str, policy: dict[str, Any] | None = None) -> int:
     result = KIND_SCORE.get(str(entry.get("kind")), 0)
     result += TIER_SCORE.get(str(entry.get("tier") or "production_candidate"), 0)
     scope = str(entry.get("scope") or "execution")
@@ -168,14 +209,14 @@ def score_entry(entry: dict[str, Any], *, lane: str) -> int:
         result += 25
     if entry.get("enabled_by_default") is False:
         result -= 25
-    state = availability(entry)["state"]
+    state = availability(entry, policy)["state"]
     result += {"ready": 25, "fallback": 5, "reference": -30, "blocked": -100}.get(state, 0)
     result += int(entry.get("priority", 0) or 0)
     return result
 
 
-def compact_entry(entry: dict[str, Any], *, lane: str) -> dict[str, Any]:
-    state = availability(entry)
+def compact_entry(entry: dict[str, Any], *, lane: str, policy: dict[str, Any] | None = None) -> dict[str, Any]:
+    state = availability(entry, policy)
     payload = {
         "id": entry["id"],
         "name": entry["name"],
@@ -184,9 +225,9 @@ def compact_entry(entry: dict[str, Any], *, lane: str) -> dict[str, Any]:
         "status": entry.get("status", "ready"),
         "availability": state["state"],
         "reason": state["reason"],
-        "score": score_entry(entry, lane=lane),
+        "score": score_entry(entry, lane=lane, policy=policy),
     }
-    for key in ["path", "root", "local_path", "command", "python", "endpoint", "skill", "source_project", "required_env"]:
+    for key in ["path", "root", "local_path", "command", "python", "endpoint", "skill", "source_project", "required_env", "provider_class", "provider_family", "allowed_providers", "blocked_providers"]:
         value = entry.get(key)
         if value is not None and value != "" and value != []:
             payload[key] = value
@@ -194,39 +235,41 @@ def compact_entry(entry: dict[str, Any], *, lane: str) -> dict[str, Any]:
 
 
 def candidates_for_capability(registry: dict[str, Any], capability: str, *, lane: str) -> list[dict[str, Any]]:
+    policy = registry.get("routing_policy") or {}
     candidates = [
         entry
         for entry in registry["entries"]
         if capability in (entry.get("capabilities") or [])
         and (not entry.get("lanes") or lane in entry.get("lanes", []))
     ]
-    candidates.sort(key=lambda entry: (-score_entry(entry, lane=lane), str(entry.get("id"))))
+    candidates.sort(key=lambda entry: (-score_entry(entry, lane=lane, policy=policy), str(entry.get("id"))))
     return candidates
 
 
 def route_capability(registry: dict[str, Any], capability: str, *, lane: str) -> dict[str, Any]:
     candidates = candidates_for_capability(registry, capability, lane=lane)
+    policy = registry.get("routing_policy") or {}
     execution_ready = [
         entry
         for entry in candidates
-        if entry.get("scope", "execution") in {"execution", "review"} and availability(entry)["state"] == "ready"
+        if entry.get("scope", "execution") in {"execution", "review"} and availability(entry, policy)["state"] == "ready"
     ]
     fallback = [
         entry
         for entry in candidates
-        if entry.get("scope", "execution") in {"execution", "review"} and availability(entry)["state"] == "fallback"
+        if entry.get("scope", "execution") in {"execution", "review"} and availability(entry, policy)["state"] == "fallback"
     ]
-    advisors = [entry for entry in candidates if entry.get("scope") in {"advisory", "review"} and availability(entry)["state"] != "blocked"]
-    blocked = [entry for entry in candidates if availability(entry)["state"] in {"blocked", "reference"}]
+    advisors = [entry for entry in candidates if entry.get("scope") in {"advisory", "review"} and availability(entry, policy)["state"] != "blocked"]
+    blocked = [entry for entry in candidates if availability(entry, policy)["state"] in {"blocked", "reference"}]
 
-    primary = compact_entry(execution_ready[0], lane=lane) if execution_ready else None
+    primary = compact_entry(execution_ready[0], lane=lane, policy=policy) if execution_ready else None
     fallback_pool = [*execution_ready[1:], *fallback]
     return {
         "capability": capability,
         "primary": primary,
-        "fallbacks": [compact_entry(entry, lane=lane) for entry in fallback_pool[:4]],
-        "advisors": [compact_entry(entry, lane=lane) for entry in advisors[:3]],
-        "blocked": [compact_entry(entry, lane=lane) for entry in blocked[:4]],
+        "fallbacks": [compact_entry(entry, lane=lane, policy=policy) for entry in fallback_pool[:4]],
+        "advisors": [compact_entry(entry, lane=lane, policy=policy) for entry in advisors[:3]],
+        "blocked": [compact_entry(entry, lane=lane, policy=policy) for entry in blocked[:4]],
         "status": "ready" if primary else ("fallback_only" if fallback_pool else ("blocked_only" if blocked else "unresolved")),
     }
 
@@ -234,11 +277,13 @@ def route_capability(registry: dict[str, Any], capability: str, *, lane: str) ->
 def infer_scene_capabilities(scene: dict[str, Any], *, lane: str) -> list[str]:
     text = " ".join(
         str(scene.get(key) or "")
-        for key in ["title", "beat_class", "content_part", "shot", "template_id", "html_animation_behavior", "evidence_authenticity"]
+        for key in ["title", "beat_class", "content_part", "shot", "template_id", "html_animation_behavior", "evidence_authenticity", "narrative_function", "visual_grammar"]
     ).lower()
     capabilities = {"motion_design", "visual_design"}
     if lane == "explainer_html_video":
         capabilities.update({"html_video", "remotion_render", "final_render"})
+    elif lane == "vox_explainer_video":
+        capabilities.update({"html_video", "remotion_render", "final_render", "editorial_collage", "reference_download", "reusable_footage"})
     elif lane == "talking_head_video":
         capabilities.update({"talking_head_packaging", "subtitle_motion", "broll_routing"})
 

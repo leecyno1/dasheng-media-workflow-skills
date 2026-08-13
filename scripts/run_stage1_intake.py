@@ -36,7 +36,7 @@ from intake.text_utils import (
     summarize_title,
 )
 from intake.wechat_cache import load_wechat_cache, save_wechat_cache
-from intake_collectors import collect_simple_intake
+from intake_collectors import collect_simple_intake, merge_news_items
 from path_config import get_project_root, get_output_root
 
 
@@ -80,8 +80,9 @@ CHANNEL_DISPLAY_NAMES = {
     "ai_hot": "AI热点",
     "wechat": "公众号",
     "reports": "TrendRadar / Reports",
-    "content_research": "5173 Content Research",
+    "content_research": "自媒体文章",
     "local_chat": "本地聊天记录",
+    "news": "合并新闻源",
     "local_news": "本地新闻流",
     "public_news": "公开新闻兜底",
     "public_hot": "公开热榜兜底",
@@ -89,8 +90,7 @@ CHANNEL_DISPLAY_NAMES = {
 
 CHANNEL_ORDER = [
     "local_chat",
-    "local_news",
-    "public_news",
+    "news",
     "public_hot",
     "ai_hot",
     "wechat",
@@ -107,7 +107,16 @@ SOURCE_TIER_RULES = {
     "official": ["gov", "government", "新华社", "人民网", "央行", "国务院", "发改委", "外交部", "国家统计局", "fed", "federalreserve", "eia", "opec"],
     "mainstream_media": ["reuters", "bloomberg", "financial times", "wsj", "cnn", "bbc", "cnbc", "澎湃", "财新", "第一财经", "界面", "新华"],
     "platform_hotspot": ["5173/", "trendradar", "douyin", "xhs", "bili", "wb", "x", "ai_hot/", "public/", "public_news/", "local_news/"],
-    "self_media": ["wechat_curated", "wechat_latest", "公众号", "博主", "自媒体", "local_chat/"],
+    "self_media": [
+        "wechat_curated",
+        "wechat_latest",
+        "local_mp/",
+        "local_media/",
+        "公众号",
+        "博主",
+        "自媒体",
+        "local_chat/",
+    ],
 }
 
 NOISE_PATTERNS = {
@@ -208,6 +217,8 @@ SOURCE_FRESHNESS_WEIGHTS = {
     "5173/bili": 0.96,
     "8000/wechat_curated": 0.92,
     "8000/wechat_latest": 0.9,
+    "local_mp/8001": 1.18,
+    "local_media/": 1.16,
     "local_chat/messages": 1.45,
     "local_news/8001": 1.38,
     "public_news/": 1.28,
@@ -228,6 +239,8 @@ SOURCE_TIMELINESS_WEIGHTS = {
     "5173/bili": 0.96,
     "8000/wechat_curated": 0.9,
     "8000/wechat_latest": 0.88,
+    "local_mp/8001": 1.26,
+    "local_media/": 1.22,
     "local_chat/messages": 1.58,
     "local_news/8001": 1.42,
     "public_news/": 1.32,
@@ -1067,8 +1080,14 @@ def source_capture_mode(source: str, channel: str) -> str:
         return "local_chat"
     if source_value.startswith("local_news/") or channel_value == "local_news":
         return "local_news"
+    if source_value.startswith("local_mp/"):
+        return "local_mp_articles"
+    if source_value.startswith("local_media/"):
+        return "local_self_media"
     if source_value.startswith("public_news/") or channel_value == "public_news":
         return "public_news"
+    if channel_value == "news":
+        return "merged_news"
     if source_value.startswith("public/") or channel_value == "public_hot":
         return "public_hot"
     if source_value.startswith("ai_hot/") or channel_value == "ai_hot":
@@ -1079,6 +1098,10 @@ def source_capture_mode(source: str, channel: str) -> str:
         return "legacy_5173"
     if source_value.startswith("8000/"):
         return "legacy_8000"
+    if channel_value == "wechat":
+        return "wechat_articles"
+    if channel_value == "content_research":
+        return "self_media"
     return channel_value or "unknown"
 
 
@@ -1636,14 +1659,17 @@ def build_selected_items(
             if built:
                 selected.append(built)
     for item in content_task.items:
-        summary = summarize_title(item.get("title", ""), f"score={item.get('score')}")
+        summary = summarize_title(
+            item.get("title", ""),
+            item.get("summary") or f"score={item.get('score')}",
+        )
         built = build_item(
-            source="5173/content_research",
-            channel="content_research",
+            source=item.get("source") or content_task.source,
+            channel=item.get("channel") or content_task.channel,
             title=item.get("title", ""),
             url=item.get("url", ""),
-            author=item.get("platform") or "content_research",
-            published_at=to_dt_text(item.get("created_at")),
+            author=item.get("author_name") or item.get("author") or item.get("platform") or "自媒体",
+            published_at=to_dt_text(item.get("created_at") or item.get("time") or item.get("publish_time")),
             summary=summary,
             decision="待分流",
             raw_payload=item,
@@ -1683,13 +1709,13 @@ def build_selected_items(
             selected.append(built)
     for item in latest_articles.get("data", {}).get("list", []) or []:
         built = build_item(
-            source="8000/wechat_latest",
-            channel="wechat",
+            source=item.get("source") or "8000/wechat_latest",
+            channel=item.get("channel") or "wechat",
             title=item.get("title", ""),
             url=item.get("url", ""),
-            author=item.get("mp_name") or "公众号",
-            published_at=to_dt_text(item.get("publish_time")),
-            summary=summarize_title(item.get("title", ""), "公众号最新文章"),
+            author=item.get("author_name") or item.get("mp_name") or item.get("channel_name") or "公众号",
+            published_at=to_dt_text(item.get("created_at") or item.get("publish_time")),
+            summary=summarize_title(item.get("title", ""), item.get("summary") or "公众号最新文章"),
             decision="待分流",
             raw_payload=item,
             fetch_status=wechat_task.status,
@@ -2392,7 +2418,9 @@ def build_markdown(
             f"# 第一环节采集报告（{run_label}）",
             "",
             "## 1. 本轮采集概览",
-            f"- 渠道采集量：本地聊天={counts.get('local_chat_total', 0)}，本地新闻={counts.get('local_news_total', 0)}，公开新闻={counts.get('public_news_total', 0)}，公开热榜={counts.get('public_hot_total', 0)}，AI热点汇总={counts.get('ai_hot_total', 0)}，公众号定向样本={counts['curated_articles']}。",
+            f"- 0913 本地源：微信聊天={counts.get('wechat_chat_records_total', counts.get('local_chat_total', 0))}，公众号文章={counts.get('local_mp_articles_total', 0)}，自媒体文章={counts.get('local_media_articles_total', 0)}。",
+            f"- 合并新闻源：本地新闻原始={counts.get('local_news_total', 0)}，公开新闻原始={counts.get('public_news_total', 0)}，合并去重后={counts.get('news_total', 0)}，删除重复={counts.get('news_deduplicated_total', 0)}。",
+            f"- 公开补充源：公开热榜={counts.get('public_hot_total', 0)}，AI热点汇总={counts.get('ai_hot_total', 0)}，legacy 公众号定向样本={counts['curated_articles']}。",
             f"- 旧远程平台量：X={counts['x_total']}，微博={counts['wb_total']}，小红书={counts['xhs_total']}，抖音={counts['douyin_total']}，B站={counts['bili_total']}。",
             f"- 入库总量：`{counts['selected_records']}` 条；有效链接样本：`{counts['valid_linked_records']}` 条。",
             f"- 进入分析池：`{analysis_report['analysis_records']}` 条，占比 `{analysis_report['analysis_ratio']:.2%}`；该池仅用于事件簇、Brief 交接和热点横截面。",
@@ -2523,16 +2551,69 @@ def build_simple_intake_tasks(raw_dir: Path) -> tuple[
         platform: make_empty_task(platform, f"legacy/{platform}", channel_label(platform))
         for platform in PLATFORM_FETCH_LIMITS
     }
-    content_task = make_empty_task("content_research", "legacy/content_research", channel_label("content_research"))
+    content_task = task_from_collected(
+        "content_research",
+        "local_media/8001",
+        "content_research",
+        channel_label("content_research"),
+        simple_run,
+    )
     report_task = make_empty_task("reports", "legacy/reports", channel_label("reports"))
-    wechat_task = make_empty_task("wechat", "legacy/wechat", channel_label("wechat"))
+    wechat_task = task_from_collected(
+        "wechat",
+        "local_mp/8001",
+        "wechat",
+        channel_label("wechat"),
+        simple_run,
+    )
     local_chat_task = task_from_collected("local_chat", "local_chat/messages", "local_chat", channel_label("local_chat"), simple_run)
-    local_news_task = task_from_collected("local_news", "local_news/8001", "local_news", channel_label("local_news"), simple_run)
-    public_news_task = task_from_collected("public_news", "public_news/aggregate", "public_news", channel_label("public_news"), simple_run)
+    local_news_items = list(simple_run.tasks.get("local_news", []))
+    public_news_items = list(simple_run.tasks.get("public_news", []))
+    merged_news_items = merge_news_items(local_news_items, public_news_items)
+    local_news_status = simple_run.status.get("local_news", {})
+    public_news_status = simple_run.status.get("public_news", {})
+    news_input_total = len(local_news_items) + len(public_news_items)
+    news_task = ChannelTaskResult(
+        channel="news",
+        source="merged_news/local_and_public",
+        label=channel_label("news"),
+        items=[item.to_payload() for item in merged_news_items],
+        total=len(merged_news_items),
+        status="ready" if merged_news_items else "empty",
+        meta={
+            "input_total": news_input_total,
+            "deduplicated": max(0, news_input_total - len(merged_news_items)),
+            "source_totals": {
+                "local_news": len(local_news_items),
+                "public_news": len(public_news_items),
+            },
+            "source_status": {
+                "local_news": local_news_status,
+                "public_news": public_news_status,
+            },
+            "dedupe_rules": ["source_id+item_id", "canonical_url", "normalized_title", "near_title>=0.93"],
+        },
+    )
+    dump_json(
+        raw_dir / "merged_news_items.json",
+        {
+            "generated_at": iso(now()),
+            "input_total": news_input_total,
+            "deduplicated": news_task.meta["deduplicated"],
+            "items": news_task.items,
+        },
+    )
     public_hot_task = task_from_collected("public_hot", "public/aggregate", "public_hot", channel_label("public_hot"), simple_run)
 
     ai_hot_items = [
-        item for item in [*local_news_task.items, *public_news_task.items, *public_hot_task.items]
+        item
+        for item in [
+            *local_chat_task.items,
+            *news_task.items,
+            *content_task.items,
+            *wechat_task.items,
+            *public_hot_task.items,
+        ]
         if is_ai_topic(item.get("title", ""), item.get("summary", ""), item.get("author_name", ""))
     ][:AI_HOT_LIMIT]
     ai_hot_task = ChannelTaskResult(
@@ -2545,13 +2626,20 @@ def build_simple_intake_tasks(raw_dir: Path) -> tuple[
         ],
         total=len(ai_hot_items),
         status="ready" if ai_hot_items else "empty",
-        meta={"derived_from": ["local_news", "public_news", "public_hot"]},
+        meta={
+            "derived_from": [
+                "local_chat",
+                "news",
+                "content_research",
+                "wechat",
+                "public_hot",
+            ]
+        },
     )
 
     generic_tasks = {
         "local_chat": local_chat_task,
-        "local_news": local_news_task,
-        "public_news": public_news_task,
+        "news": news_task,
         "public_hot": public_hot_task,
     }
     ports_status = {
@@ -2561,8 +2649,25 @@ def build_simple_intake_tasks(raw_dir: Path) -> tuple[
             "sources": simple_run.status,
         }
     }
-    channels = {"data": {"total": 0, "list": []}}
-    latest_articles = {"data": {"total": 0, "list": []}}
+    wechat_accounts = sorted(
+        {
+            str(item.get("author_name") or item.get("channel_name") or "").strip()
+            for item in wechat_task.items
+            if str(item.get("author_name") or item.get("channel_name") or "").strip()
+        }
+    )
+    channels = {
+        "data": {
+            "total": len(wechat_accounts),
+            "list": [{"name": account} for account in wechat_accounts],
+        }
+    }
+    latest_articles = {
+        "data": {
+            "total": wechat_task.total,
+            "list": wechat_task.items,
+        }
+    }
     curated_articles: dict[str, dict[str, Any]] = {}
     return (
         platform_tasks,
@@ -2575,7 +2680,7 @@ def build_simple_intake_tasks(raw_dir: Path) -> tuple[
         curated_articles,
         generic_tasks,
         ports_status,
-        simple_run.artifacts,
+        [*simple_run.artifacts, "raw/merged_news_items.json"],
     )
 
 
@@ -2704,7 +2809,18 @@ def main(argv: list[str] | None = None) -> int:
         "selected_records": len(intake_records),
         "channel_top10_total": sum(len(items) for items in channel_top10.values()),
         "valid_linked_records": sum(1 for item in selected if item.title and item.url),
+        "wechat_chat_records_total": generic_tasks["local_chat"].total if "local_chat" in generic_tasks else 0,
+        "local_mp_articles_total": wechat_task.total,
+        "local_media_articles_total": content_task.total,
     }
+    simple_sources = ports_status.get("simple_intake", {}).get("sources", {})
+    if INTAKE_MODE != "legacy":
+        counts["local_news_total"] = int(simple_sources.get("local_news", {}).get("total") or 0)
+        counts["public_news_total"] = int(simple_sources.get("public_news", {}).get("total") or 0)
+        counts["news_total"] = generic_tasks["news"].total if "news" in generic_tasks else 0
+        counts["news_deduplicated_total"] = int(
+            (generic_tasks.get("news").meta if generic_tasks.get("news") else {}).get("deduplicated") or 0
+        )
 
     report_md, draft_md = build_markdown(
         run_label,

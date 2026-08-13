@@ -18,6 +18,7 @@
 
 当前首批 DNA：
 
+- `doctor-capital-sonata.yaml`（博士·资本奏鸣曲，公众号与视频/播客共用的前置独占 DNA）
 - `standard-neutral.yaml`
 - `biaoshu.yaml`
 - `hardcore-ji.yaml`

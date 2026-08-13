@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-08-02",
+  "updated_at": "2026-08-06",
   "source_notes": [
     {
       "name": "xiaohongshu-video-skill-note",
@@ -242,7 +242,7 @@
         "dasheng-video-explainer-html",
         "dasheng-video-talking-head"
       ],
-      "notes": "Good reference for workbench and templates. Do not install wholesale because it overlaps with Dasheng transwrite and html-video."
+      "notes": "Retain as a local reference for Remotion templates, transitions, reusable components, data visualization and browser recording. Do not register its Modal, RunPod, ElevenLabs, R2 or other third-party cloud routes."
     },
     {
       "name": "ian-xiaohei-illustrations",
@@ -267,22 +267,6 @@
       "notes": "Do not vendor or edit upstream. Dasheng replaces the recurring character with the serious lemon-person IP and uses this only for conceptual metaphors, transitions, workflows, and emotional beats. It never replaces real charts, tables, documents, screenshots, or sourced evidence."
     },
     {
-      "name": "vox-director",
-      "repo": "https://github.com/Alisa0808/vox-director.git",
-      "homepage": "https://github.com/Alisa0808/vox-director",
-      "xhs_label": "Vox Director",
-      "xhs_source": "https://www.xiaohongshu.com/explore/6a5f58990000000001002c01",
-      "confirmed": true,
-      "license": "MIT",
-      "head_checked": "987be2f42332247a3ad7a244c76e86fca92c1f1d",
-      "has_skill_md": true,
-      "role": "Vox-style editorial paper-collage explainer and B-roll generator",
-      "dasheng_fit": "optional_editorial_broll_provider",
-      "recommended_status": "reference_or_bridge",
-      "used_by_skills": ["dasheng-video-broll-generator"],
-      "notes": "Use only for illustrative editorial inserts. Generated shots cannot replace evidence, real screenshots, charts, filings, or event footage."
-    },
-    {
       "name": "seedance2-skill",
       "repo": "https://github.com/dexhunter/seedance2-skill.git",
       "homepage": "https://github.com/dexhunter/seedance2-skill",
@@ -292,11 +276,13 @@
       "license": "MIT",
       "head_checked": "e06c7c63a766d623004a2807881c30685ce517af",
       "has_skill_md": true,
-      "role": "generated short B-roll and animated sticker provider",
-      "dasheng_fit": "optional_generated_broll_provider",
-      "recommended_status": "reference_or_bridge",
+      "role": "official Seedance/Jimeng prompt design for generated short B-roll and animated cutaways",
+      "dasheng_fit": "optional_first_party_generated_broll_provider",
+      "recommended_status": "installed_official_model_optional",
+      "provider_class": "first_party_model",
+      "allowed_providers": ["seedance", "jimeng"],
       "used_by_skills": ["dasheng-video-broll-generator"],
-      "notes": "Keep optional because model access and output behavior may change. Never use synthetic footage to impersonate factual evidence."
+      "notes": "Keep model access as an allowed optional dependency. Never use synthetic footage to impersonate factual evidence."
     },
     {
       "name": "hyperframes",
@@ -328,7 +314,7 @@
       "dasheng_fit": "optional_roughcut_provider",
       "recommended_status": "reference_optional_provider",
       "used_by_skills": ["dasheng-video-roughcut"],
-      "notes": "Do not replace the reviewed FunASR, Jianying, or Palmier EDL routes. Evaluate deletion naturalness and semantic safety before promotion."
+      "notes": "Do not replace the reviewed FunASR or Jianying routes. Evaluate deletion naturalness and semantic safety before promotion."
     },
     {
       "name": "chengfeng-videocut-skills",
@@ -390,23 +376,6 @@
         "dasheng-video-explainer-html"
       ],
       "notes": "Keep FFmpeg as a direct external tool and document recipes in existing skills."
-    },
-    {
-      "name": "palmier-pro",
-      "repo": "https://github.com/palmier-io/palmier-pro.git",
-      "homepage": "https://github.com/palmier-io/palmier-pro",
-      "confirmed": true,
-      "license": "GPL-3.0",
-      "release_tested": "v0.6.5",
-      "head_tested": "f0f5b47374a72295b5b169a57541ea5c0b2ce3d4",
-      "has_skill_md": false,
-      "role": "Swift-native editor with local MCP timeline control",
-      "dasheng_fit": "experimental_computer_use_replacement_for_roughcut",
-      "recommended_status": "experimental_external_dependency",
-      "used_by_skills": ["dasheng-video-roughcut"],
-      "default_external_path": "${PALMIER_PRO_ROOT:-vendor/reserved/video/palmier-pro}",
-      "mcp_url": "${PALMIER_MCP_URL:-http://127.0.0.1:19789/mcp}",
-      "notes": "Use only the guarded EDL route: Agent-reviewed delete ranges -> ripple_delete_ranges -> basic color -> H.264 export -> FFmpeg loudness/QC. Keep Jianying for face-aware beauty, mature filters, listening review, subtitles and cloud drafts until Palmier regressions pass."
     },
     {
       "name": "video-shotcraft",

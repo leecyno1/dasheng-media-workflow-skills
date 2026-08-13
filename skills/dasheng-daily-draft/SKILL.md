@@ -23,6 +23,9 @@ runner: python
 
 不负责：
 - 微信排版
+- 公众号渠道稿、公众号封面和渠道标题包装
+- Transwrite 的口播视频、播客或多平台变体
+- 账号登录、草稿上传、平台发布和链接回收
 - 发布
 
 ## canonical 输入
@@ -59,6 +62,14 @@ python3 scripts/build_stage3_draft.py \
   ~/Desktop/自媒体创作/02_内容聚合及选题分析/<run_id>/topic_cards.json \
   --run-id <run_id>
 ```
+
+## Qoder 执行边界
+
+- Qoder 只负责当前选题目录内的研究、取数、图表、正文配图、Reasoning Sheet、标准初稿、离线 HTML、事实核查和质量门禁。
+- 多选题可以从同一写作引擎上下文分叉独立 Qoder 会话，但每个会话只能写自己的 `topic_id` 目录；阶段总 manifest 由主控统一生成。
+- Qoder 的 `draft_result.json` 必须写明 `stage=draft`、`next_stage=transwrite`、`next_stage_authorized=false`。
+- Qoder 不得调用公众号、社交媒体或账号管理工具，不得生成微信排版稿、封面和发布文案，也不得进入 Transwrite 或 Publish。
+- 所有运行产物必须写入 `${DASHENG_OUTPUT_ROOT:-~/Desktop/自媒体创作}/05_初稿生成/<run_id>/`；不得写入项目仓库、skill 目录或临时工作目录。
 
 ## 质量门禁
 

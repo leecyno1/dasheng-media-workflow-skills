@@ -11,7 +11,10 @@ from intake_collectors import (
     collect_simple_intake,
     collect_local_service,
     json_hot_items,
+    media_item_to_item,
+    merge_news_items,
     message_to_item,
+    mp_article_to_item,
     parse_html_hot_items,
     parse_atom_or_rss,
     parse_tophub_html,
@@ -89,6 +92,80 @@ def test_message_to_item_filters_raw_xml_payload_without_display_title():
     }
 
     assert message_to_item(row, "http://127.0.0.1:8001") is None
+
+
+def test_mp_article_to_item_maps_0913_article_payload():
+    item = mp_article_to_item(
+        {
+            "id": "local-gh-161085",
+            "channel_name": "财文社",
+            "publish_time": "2026-08-04T17:03:11",
+            "title": "财经时局分析",
+            "summary": "来自 0913 公众号聚合接口",
+            "url": "https://mp.weixin.qq.com/s/example",
+            "heat": 997,
+        },
+        "http://127.0.0.1:8001",
+    )
+
+    assert item is not None
+    assert item.source == "local_mp/8001"
+    assert item.channel == "wechat"
+    assert item.author_name == "财文社"
+    assert item.url == "https://mp.weixin.qq.com/s/example"
+    assert item.score == 997
+
+
+def test_media_item_to_item_maps_0913_self_media_payload():
+    item = media_item_to_item(
+        {
+            "id": "search-ai-newsnow-1",
+            "platform": "newsnow",
+            "time": "2026-08-04T05:01:35+08:00",
+            "title": "AI 办公市场正在变化",
+            "url": "https://www.zhihu.com/question/1",
+            "summary": "来自 0913 自媒体聚合接口",
+            "stats": {"heat": 88},
+        },
+        "http://127.0.0.1:8001",
+    )
+
+    assert item is not None
+    assert item.source == "local_media/newsnow"
+    assert item.channel == "content_research"
+    assert item.url == "https://www.zhihu.com/question/1"
+    assert item.score == 88
+
+
+def test_merge_news_items_combines_same_upstream_story_and_preserves_sources():
+    local = CollectedItem(
+        source="local_news/8001",
+        channel="local_news",
+        title="韩国央行时隔13年恢复购买实物黄金",
+        url="dasheng-local://news/3144057",
+        author_name="华尔街见闻",
+        raw={"source_id": "wallstreetcn-quick", "id": "3144057"},
+    )
+    public = CollectedItem(
+        source="public_news/wallstreetcn-quick",
+        channel="public_news",
+        title="韩国央行时隔 13 年后恢复购买实物黄金",
+        url="https://wallstreetcn.com/articles/3778584",
+        author_name="华尔街见闻",
+        score=80,
+        raw={"source_id": "wallstreetcn-quick", "id": "3144057"},
+    )
+
+    merged = merge_news_items([local], [public])
+
+    assert len(merged) == 1
+    assert merged[0].channel == "news"
+    assert merged[0].url == "https://wallstreetcn.com/articles/3778584"
+    assert merged[0].raw["merged_count"] == 2
+    assert {row["source"] for row in merged[0].raw["merged_sources"]} == {
+        "local_news/8001",
+        "public_news/wallstreetcn-quick",
+    }
 
 
 def test_parse_atom_or_rss_supports_atom_feed():
@@ -259,6 +336,33 @@ def test_build_simple_intake_tasks_maps_collectors_to_stage_channels(monkeypatch
         ],
         {"status": "ready"},
     )
+    fake.add_task(
+        "content_research",
+        [
+            CollectedItem(
+                source="local_media/weibo",
+                channel="content_research",
+                title="新能源车产业讨论",
+                url="https://example.com/media",
+                summary="0913 自媒体聚合",
+            )
+        ],
+        {"status": "ready", "base": "http://127.0.0.1:8001"},
+    )
+    fake.add_task(
+        "wechat",
+        [
+            CollectedItem(
+                source="local_mp/8001",
+                channel="wechat",
+                title="债券市场深度分析",
+                url="https://mp.weixin.qq.com/s/example",
+                author_name="投研公众号",
+                summary="0913 公众号聚合",
+            )
+        ],
+        {"status": "ready", "base": "http://127.0.0.1:8001"},
+    )
     fake.artifacts = ["raw/local_messages.json", "raw/public_fallback_items.json"]
 
     monkeypatch.setattr("run_stage1_intake.collect_simple_intake", lambda raw_dir: fake)
@@ -278,18 +382,22 @@ def test_build_simple_intake_tasks_maps_collectors_to_stage_channels(monkeypatch
     ) = build_simple_intake_tasks(tmp_path)
 
     assert platform_tasks["x"].status == "skipped"
-    assert content_task.status == "skipped"
+    assert content_task.status == "ready"
+    assert content_task.items[0]["source"] == "local_media/weibo"
     assert report_task.status == "skipped"
-    assert wechat_task.status == "skipped"
-    assert channels["data"]["total"] == 0
-    assert latest_articles["data"]["list"] == []
+    assert wechat_task.status == "ready"
+    assert channels["data"]["total"] == 1
+    assert latest_articles["data"]["list"][0]["source"] == "local_mp/8001"
     assert curated_articles == {}
     assert generic_tasks["local_chat"].total == 1
-    assert generic_tasks["local_news"].items[0]["url"] == "https://example.com/news"
+    assert generic_tasks["news"].items[0]["url"] == "https://example.com/news"
+    assert generic_tasks["news"].items[0]["channel"] == "news"
     assert generic_tasks["public_hot"].total == 1
-    assert ai_hot_task.total == 2
+    assert ai_hot_task.total == 3
+    assert "wechat" in ai_hot_task.meta["derived_from"]
     assert ports_status["simple_intake"]["mode"] == "simple"
-    assert artifacts == fake.artifacts
+    assert artifacts == [*fake.artifacts, "raw/merged_news_items.json"]
+    assert (tmp_path / "merged_news_items.json").exists()
 
 
 def test_collect_local_service_does_not_time_filter_messages_by_default(monkeypatch, tmp_path):
@@ -320,6 +428,32 @@ def test_collect_local_service_does_not_time_filter_messages_by_default(monkeypa
                     }
                 ]
             }
+        if url.endswith("/api/mp/articles"):
+            return {
+                "items": [
+                    {
+                        "id": "mp-1",
+                        "channel_name": "投研公众号",
+                        "title": "半导体周期跟踪",
+                        "url": "https://mp.weixin.qq.com/s/example",
+                        "summary": "公众号文章摘要",
+                    }
+                ],
+                "source": {"kind": "0913-mp"},
+            }
+        if url.endswith("/api/media/items"):
+            return {
+                "items": [
+                    {
+                        "id": "media-1",
+                        "platform": "weibo",
+                        "title": "半导体自媒体讨论",
+                        "url": "https://weibo.com/example",
+                        "summary": "自媒体摘要",
+                    }
+                ],
+                "source": {"kind": "0913-media"},
+            }
         if url.endswith("/api/newsfeed/items"):
             return {"items": []}
         raise AssertionError(url)
@@ -331,7 +465,11 @@ def test_collect_local_service_does_not_time_filter_messages_by_default(monkeypa
 
     message_params = [params for url, params in calls if url.endswith("/api/messages")][0]
     assert "time_from" not in message_params
+    assert message_params["direction"] == "in"
+    assert message_params["include_mp_messages"] == "false"
     assert run.status["local_chat"]["total"] == 1
+    assert run.status["wechat"]["total"] == 1
+    assert run.status["content_research"]["total"] == 1
 
 
 def test_collect_simple_intake_uses_hotspot_radar_module(monkeypatch, tmp_path):

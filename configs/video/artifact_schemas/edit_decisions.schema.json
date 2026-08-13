@@ -11,7 +11,7 @@
     },
     "lane": {
       "type": "string",
-      "enum": ["talking_head_video", "explainer_html_video"]
+      "enum": ["talking_head_video", "explainer_html_video", "vox_explainer_video"]
     },
     "roughcut_gate": {
       "type": "object",
@@ -50,6 +50,55 @@
           },
           "subtitle_policy": {
             "type": "string"
+          },
+          "subtitle_timing_source": {
+            "type": "string",
+            "enum": ["asr-aligned-to-script", "word-timestamps", "sentence-timestamps", "manual-reviewed"]
+          },
+          "subtitle_cues": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["text", "startMs", "endMs"],
+              "properties": {
+                "text": {"type": "string", "minLength": 1},
+                "startMs": {"type": "number", "minimum": 0},
+                "endMs": {"type": "number", "exclusiveMinimum": 0},
+                "timingSource": {"type": "string"}
+              },
+              "additionalProperties": true
+            }
+          },
+          "emphasis_cues": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["text", "startMs", "endMs"],
+              "properties": {
+                "text": {"type": "string", "minLength": 1, "maxLength": 8},
+                "startMs": {"type": "number", "minimum": 0},
+                "endMs": {"type": "number", "exclusiveMinimum": 0},
+                "x": {"type": "number", "minimum": 0, "maximum": 100},
+                "y": {"type": "number", "minimum": 0, "maximum": 100}
+              },
+              "additionalProperties": true
+            }
+          },
+          "entity_labels": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["text", "startMs", "endMs"],
+              "properties": {
+                "text": {"type": "string", "minLength": 1},
+                "entityType": {"enum": ["person", "organization", "place", "object"]},
+                "startMs": {"type": "number", "minimum": 0},
+                "endMs": {"type": "number", "exclusiveMinimum": 0},
+                "x": {"type": "number", "minimum": 0, "maximum": 100},
+                "y": {"type": "number", "minimum": 0, "maximum": 100}
+              },
+              "additionalProperties": true
+            }
           },
           "safe_area_notes": {
             "type": "string"

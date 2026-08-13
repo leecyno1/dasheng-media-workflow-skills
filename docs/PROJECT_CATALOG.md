@@ -2,13 +2,13 @@
 
 > 本文件由 `scripts/build_project_catalog.py` 根据机器注册表生成，请不要手工维护列表。
 
-更新日期：`2026-08-03`
+更新日期：`2026-08-06`
 
 ## 总览
 
 - 正式主链：`intake -> brief -> draft -> transwrite -> publish -> postmortem`
-- 正式/按需 Skill 登记：`22`
-- 已保留上游项目：`42`
+- 正式/按需 Skill 登记：`26`
+- 已保留上游项目：`40`
 - 候选储备：`4`
 - 已剔除项目：`13`
 - 内部功能模块：`9`
@@ -21,19 +21,20 @@
 | `design` | 9 |
 | `publish` | 14 |
 | `render` | 2 |
-| `video` | 16 |
+| `video` | 14 |
 
 ### 级别分布
 
 | 级别 | 数量 |
 | --- | ---: |
 | `account_management_console` | 1 |
+| `advisory` | 1 |
 | `archived_historical_fallback` | 1 |
-| `backup` | 15 |
+| `backup` | 13 |
 | `browser_cli_fallback` | 1 |
 | `browser_session_fallback` | 1 |
 | `catalog_source` | 1 |
-| `experimental` | 3 |
+| `experimental` | 2 |
 | `preferred_local_experiment` | 1 |
 | `primary_execution` | 1 |
 | `production_candidate` | 14 |
@@ -63,14 +64,14 @@
 - 入口：`dasheng-daily-draft` / `scripts/build_stage3_draft.py`
 - 输入：brief_manifest.json 、selected_topics.json
 - 处理：事实底稿 -> 数据/图表 -> 长文结构 -> HTML -> 封面与插图意图
-- 输出：draft_manifest.json 、final_structure_snapshot.json 、transwrite_decision.json 、每题 Markdown/HTML
-- 门禁：final_structure_snapshot.json + transwrite_decision.json
+- 输出：draft_manifest.json 、final_structure_snapshot.json 、每题 Markdown/HTML
+- 门禁：final_structure_snapshot.json
 
 ### 4. 多通路转写生产 (`transwrite`)
 
 - 入口：`dasheng-stage-transwrite` / `scripts/build_stage4_transwrite.py`
 - 输入：draft_manifest.json 、final_structure_snapshot.json 、transwrite_decision.json
-- 处理：公众号文章 -> 真人口播 -> 无头 HTML 视频 -> 播客包 -> 导演与渲染 QC
+- 处理：公众号文章 -> 普通无头 HTML 视频 -> VOX 调查解释视频 -> 真人或本地数字人口播 -> 播客包 -> 导演与渲染 QC
 - 输出：transwrite_manifest.json 、lane manifests 、可发布文章/视频/音频包
 - 门禁：publish_decision.json
 
@@ -90,6 +91,54 @@
 - 输出：postmortem_manifest.json 、08_复盘报告.md 、08_L1回写建议.md
 - 门禁：无
 
+## 六阶段储备路由
+
+> 储备路由只表示对应环节可以发现该项目；`cloned_not_promoted`、`blocked` 和 `methodology_only` 不会取代生产主路由。
+
+| 环节 | 项目 | 角色 | 可用性 | 执行方式 | 回退 | 阻断/约束 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 内容采集 (`intake`) | — | — | — | — | 未强行登记 | — |
+| 选题与研究 Brief (`brief`) | `governed-dcf-skill` | `auditable_valuation_methodology` | `methodology_only` | `reference_only` | anthropic-fs-financial-analysis-dcf-model | 禁止克隆、上游无许可证 |
+| 初稿与证据底稿 (`draft`) | `taste-skill` | `visual_language_and_anti_slop_review` | `ready` | `advisory_skill` | high-end-visual-design、brand-guidelines |  |
+| 初稿与证据底稿 (`draft`) | `impeccable` | `html_css_design_audit_reserve` | `cloned_not_promoted` | `reserve` | design-taste-frontend、review-animations | dasheng_adapter_required、browser_audit_smoke_test_required |
+| 初稿与证据底稿 (`draft`) | `governed-dcf-skill` | `dcf_assumption_audit_methodology` | `methodology_only` | `reference_only` | anthropic-fs-financial-analysis-dcf-model | 禁止克隆、上游无许可证 |
+| 多通路转写生产 (`transwrite`) | `baoyu-skills` | `article_visual_cover_and_infographic_suite` | `ready` | `skill_suite_with_first_party_provider_allowlist` | imagegen、dasheng-lemon-illustrations |  |
+| 多通路转写生产 (`transwrite`) | `minimax-skills` | `official_model_visual_and_brand_suite` | `ready` | `official_model_and_local_skills` | design-taste-frontend、brand-guidelines |  |
+| 多通路转写生产 (`transwrite`) | `seedance2-skill` | `official_generated_broll_prompt_route` | `ready` | `official_model_skill` | dasheng-video-broll-generator、remotion-video-toolkit |  |
+| 多通路转写生产 (`transwrite`) | `claude-code-video-toolkit` | `local_remotion_template_and_transition_reference` | `cloned_not_promoted` | `local_reference_only` | remotion-video-toolkit、dasheng-html-video-bridge | local_template_adapter_required |
+| 多通路转写生产 (`transwrite`) | `video-shotcraft` | `shot_design_and_remotion_reserve` | `cloned_not_promoted` | `reserve` | remotion-video-toolkit、dasheng-video-director | dasheng_adapter_required、remotion_smoke_render_required |
+| 多通路转写生产 (`transwrite`) | `video-autopilot-kit` | `batch_video_production_adapter_reserve` | `blocked` | `adapter_required` | dasheng-stage-transwrite、dasheng-video-editing-bridge | no_standard_skill_md、capcut_schema_review_required、output_contract_guard_required、smoke_test_required |
+| 多通路转写生产 (`transwrite`) | `gsap-skills` | `html_motion_suite_reserve` | `cloned_not_promoted` | `suite_router` | hyperframes:gsap、animation-vocabulary、improve-animations | suite_router_adapter_required、html_video_performance_smoke_test_required |
+| 多通路转写生产 (`transwrite`) | `taste-skill` | `scene_visual_review` | `ready` | `advisory_skill` | high-end-visual-design |  |
+| 多通路转写生产 (`transwrite`) | `impeccable` | `html_scene_browser_qc_reserve` | `cloned_not_promoted` | `reserve` | design-taste-frontend、review-animations | dasheng_adapter_required、browser_audit_smoke_test_required |
+| 账号路由与发布 (`publish`) | `impeccable` | `cover_and_publish_surface_visual_qc_reserve` | `cloned_not_promoted` | `reserve` | design-taste-frontend、dasheng-stage-publish | dasheng_adapter_required、browser_audit_smoke_test_required |
+| 账号路由与发布 (`publish`) | `video-autopilot-kit` | `batch_delivery_and_capcut_handoff_reserve` | `blocked` | `adapter_required` | dasheng-stage-publish、qianfan-sync | no_standard_skill_md、capcut_schema_review_required、output_contract_guard_required |
+| 复盘与知识回写 (`postmortem`) | — | — | — | — | 未强行登记 | — |
+
+## 高分自媒体创作备选技术
+
+> 候选项目供各环节导演发现与安排适配，不会绕过依赖、许可证、质量门禁或人工复核成为生产主路由。
+
+| 项目 | 评分 | 类别 | 环节 | 可用性 | 依赖 | 阻断项 |
+| --- | ---: | --- | --- | --- | --- | --- |
+| `codex-imagegen-luma-animal-presenter` | 96/100 | `animal_head_digital_human` | transwrite | `ready_requires_signed_in_luma` | codex_builtin_imagegen、luma_dream_machine_account、minimax_audio | portrait_consent_required、image_review_required、generation_credits_required、short_sample_review_required |
+| `joyvasa-liveportrait` | 94/100 | `local_digital_human` | transwrite | `ready_setup_on_first_use` | python_3_10、pytorch_mps、ffmpeg、local_model_weights、minimax_audio | portrait_consent_required、short_sample_review_required、insightface_weight_license_review_or_detector_swap |
+| `echomimic-v3` | 89/100 | `semi_body_digital_human` | transwrite | `cuda_experiment_only` | cuda_12_1、12gb_plus_vram、large_model_weights | current_machine_has_no_cuda、mac_port_not_supported、quality_benchmark_required |
+| `sadtalker` | 85/100 | `digital_human_fallback` | transwrite | `fallback_not_installed` | legacy_python_stack、ffmpeg、local_model_weights | older_visual_quality、modern_mac_dependency_compatibility、performance_benchmark_required |
+| `html-anything` | 96/100 | `html_publishing` | draft、transwrite、publish | `ready` | browser、node |  |
+| `taste-skill` | 92/100 | `visual_direction` | draft、transwrite、publish | `ready` |  |  |
+| `impeccable` | 92/100 | `visual_quality_control` | draft、transwrite、publish | `existing_reserve` | browser、node | newma_adapter_required、browser_audit_smoke_test_required |
+| `emilkowalski-skills` | 92/100 | `motion_design_review` | transwrite | `ready` |  |  |
+| `gsap-skills` | 92/100 | `html_motion` | transwrite | `existing_reserve` | node | suite_router_adapter_required、html_video_performance_smoke_test_required |
+| `ian-xiaohei-illustrations` | 92/100 | `article_illustration` | draft、transwrite | `ready` |  |  |
+| `baoyu-skills` | 92/100 | `article_visual_production` | draft、transwrite、publish | `ready` | codex_or_official_model_provider |  |
+| `humanizer-zh` | 92/100 | `chinese_copy_editing` | draft、transwrite | `candidate_not_cloned` |  | style_dna_compatibility_review_required、anchor_preservation_regression_required |
+| `khazix-skills` | 92/100 | `longform_writing` | brief、draft | `candidate_not_cloned` |  | qoder_context_compatibility_review_required、evidence_contract_regression_required、style_dna_regression_required |
+| `finance-skills-social-readers` | 92/100 | `multi_source_research` | intake、brief | `candidate_not_cloned` | opencli、browser_session_for_some_sources | read_only_adapter_required、source_dedupe_contract_required、cookie_source_policy_required |
+| `video-autopilot-kit` | 88/100 | `batch_video_production` | transwrite、publish、postmortem | `existing_reserve` | ffmpeg_with_libass、python、capcut_optional | newma_adapter_required、capcut_schema_review_required、output_contract_guard_required、smoke_test_required |
+| `uzi-skill` | 86/100 | `finance_content_research` | brief、draft、transwrite | `candidate_not_cloned` | python、optional_browser、multiple_public_data_sources | heavy_runtime_review_required、data_provenance_adapter_required、persona_authority_guard_required、browser_state_guard_required |
+| `agent-skills-launch-pack` | 85/100 | `account_growth_operations` | brief、publish、postmortem | `existing_retained` |  |  |
+
 ## 功能模块
 
 | 模块 | 主要路径 | 职责 |
@@ -97,7 +146,7 @@
 | 总控与契约 | `scripts/run_mainline_stage.py`<br>`scripts/canonical_workflow.py`<br>`skills/dasheng-media-sop` | 阶段路由、manifest/gate、输出路径、失败恢复 |
 | 采集、选题与写作 | `skills/dasheng-daily-intake`<br>`skills/dasheng-daily-phase2`<br>`skills/dasheng-daily-draft` | 来源池、题卡、研究底稿、文章 HTML |
 | 财经数据与证据 | `skills/dasheng-finance-data`<br>`scripts/video_claim_evidence_ledger.py`<br>`scripts/video_finance_evidence.py`<br>`scripts/video_official_evidence.py` | 数据表、图表、官方文档、命题-证据台账 |
-| 视频导演与分镜 | `skills/dasheng-video-director`<br>`configs/video/pipelines`<br>`scripts/dasheng_video_director.py` | 口播节奏、分镜、构图、真实 B-roll、工具路由 |
+| 视频导演与分镜 | `skills/dasheng-video-director`<br>`skills/dasheng-digital-human-talking-head`<br>`configs/video/pipelines`<br>`scripts/dasheng_video_director.py` | 真人/数字人人物源、口播节奏、分镜、构图、真实 B-roll、工具路由 |
 | 动画与渲染 | `skills/dasheng-html-video-bridge`<br>`skills/dasheng-caption-motion`<br>`scripts/build_remotion_renderer_pack.py` | HTML Video、Remotion、HyperFrames、GSAP/Lottie、字幕与动态图表 |
 | 剪辑与媒体处理 | `skills/dasheng-video-roughcut`<br>`skills/dasheng-ffmpeg-toolkit`<br>`skills/dasheng-video-editing-bridge` | ASR、粗剪、EDL、FFmpeg、媒体 QC |
 | 发布与账号中心 | `skills/dasheng-stage-publish`<br>`configs/publish`<br>`scripts/start_publish_console.py` | 多账号、多平台、封面/标签/声明、发布队列、链接回收 |
@@ -113,7 +162,7 @@
 | `dasheng-daily-intake` | 1.0.0 | ✅ 正式 | 内容采集阶段 |
 | `dasheng-daily-phase2` | 1.0.0 | ✅ 正式 | 选题分析阶段（替代 dasheng-daily-brief） |
 | `dasheng-daily-draft` | 1.0.0 | ✅ 正式 | 写作与可发布底稿阶段 |
-| `dasheng-stage-transwrite` | 1.0.0 | ✅ 正式 | 转写生产阶段，生成公众号/视频/播客包 |
+| `dasheng-stage-transwrite` | 1.0.0 | ✅ 正式 | 转写生产阶段，生成公众号/普通无头/VOX/真人/播客包 |
 | `dasheng-stage-publish` | 1.0.0 | ✅ 正式 | 发布执行阶段 |
 | `dasheng-daily-postmortem` | 1.0.0 | ✅ 正式 | 复盘与知识回写 |
 | `dasheng-finance-data` | 0.1.0 | ✅ 正式 | Draft 金融数据增强工具，生成 Chart.js 图表规格 |
@@ -122,8 +171,12 @@
 | `dasheng-html-video-bridge` | 0.1.0 | ✅ 正式 | 转写阶段调用本地 html-video 的口播视频桥接 skill |
 | `dasheng-html-anything-bridge` | 0.1.0 | ✅ 正式 | Draft/Transwrite 调用 HTML Anything 模板和视觉语言的桥接 skill |
 | `dasheng-lemon-illustrations` | 0.1.0 | ✅ 正式 | 口播视频默认概念卡通插画系统，使用柠檬人替代上游角色 |
-| `dasheng-video-talking-head` | 0.1.0 | ✅ 正式 | 真人出镜口播视频导演时间轴、证据层和包装工作流 |
-| `dasheng-video-explainer-html` | 0.1.0 | ✅ 正式 | HTML 文章转无真人竖版科普视频的分镜工作流 |
+| `dasheng-video-talking-head` | 0.2.0 | ✅ 正式 | 真人与数字人有头口播的导演时间轴、证据层和包装工作流 |
+| `dasheng-digital-human-talking-head` | 0.1.0 | ✅ 正式 | 一张授权照片加 MiniMax 音频，在本地生成数字人口播并接入真人导演链 |
+| `dasheng-video-explainer-html` | 0.1.0 | ✅ 正式 | HTML 文章转无真人财经视频，默认横版 16:9，支持方形和竖版适配 |
+| `dasheng-vox-skills` | 1.0.0 | ✅ 正式 | VOX 制作统一入口，编排导演分镜、Codex 参考图、Gemini API/浏览器、Remotion 二剪与质检 |
+| `dasheng-video-vox` | 1.3.0 | 🧰 内部 | `dasheng-vox-skills` 的调查结构、导演分镜与视觉语法组件 |
+| `dasheng-video-omni-browser` | 0.1.0 | 🧰 按需 | 通过 Chrome 已登录的 Gemini Omni 将参考图生成约 10 秒逐镜视频 |
 | `dasheng-video-broll-generator` | 0.1.0 | 🧰 按需 | B-roll、Vox 拼贴、生成式插入片段和贴纸动画的证据安全路由 |
 | `dasheng-caption-motion` | 0.1.0 | 🧰 按需 | 将 SRT/词级时间戳路由为 HyperFrames 或 Remotion 字幕动效 |
 | `dasheng-video-editing-bridge` | 0.1.0 | 🧰 按需 | 内部管线、剪映、chengfeng-videocut 与 video-use 的全流程剪辑路由 |
@@ -139,12 +192,12 @@
 | --- | --- | --- | --- | --- | --- |
 | `boutique-openclaw-skills` | `catalog` | `catalog_source` | `source_ready` | `vendor/reserved/catalog/boutique-openclaw-skills` | [upstream](https://github.com/leecyno1/boutique-openclaw-skills.git) |
 | `anthropics-skills` | `design` | `production_candidate` | `skill_ready` | `vendor/reserved/design/anthropics-skills` | [upstream](https://github.com/anthropics/skills.git) |
-| `baoyu-skills` | `design` | `production_candidate` | `dependency_ready_with_local_missing_package_workaround` | `vendor/reserved/design/baoyu-skills` | [upstream](https://github.com/JimLiu/baoyu-skills.git) |
+| `baoyu-skills` | `design` | `production_candidate` | `dependency_ready_with_official_provider_allowlist` | `vendor/reserved/design/baoyu-skills` | [upstream](https://github.com/JimLiu/baoyu-skills.git) |
 | `emilkowalski-skills` | `design` | `production_candidate` | `skill_ready` | `vendor/reserved/design/emilkowalski-skills` | [upstream](https://github.com/emilkowalski/skills.git) |
 | `guizang-social-card-skill` | `design` | `production_candidate` | `dependency_ready` | `vendor/reserved/design/guizang-social-card-skill` | [upstream](https://github.com/op7418/guizang-social-card-skill.git) |
-| `inference-skills` | `design` | `backup` | `skill_ready_needs_model_access` | `vendor/reserved/design/inference-skills` | [upstream](https://github.com/inference-sh/skills.git) |
+| `inference-skills` | `design` | `advisory` | `local_advisory_skills_ready` | `vendor/reserved/design/inference-skills` | [upstream](https://github.com/inference-sh/skills.git) |
 | `media-downloader` | `design` | `production_candidate` | `dependency_ready` | `vendor/reserved/design/media-downloader` | [upstream](https://github.com/yizhiyanhua-ai/media-downloader.git) |
-| `minimax-skills` | `design` | `backup` | `skill_ready_needs_api_key` | `vendor/reserved/design/minimax-skills` | [upstream](https://github.com/MiniMax-AI/skills.git) |
+| `minimax-skills` | `design` | `backup` | `skill_ready_official_provider_optional` | `vendor/reserved/design/minimax-skills` | [upstream](https://github.com/MiniMax-AI/skills.git) |
 | `remotion-video-toolkit` | `design` | `production_candidate` | `skill_ready` | `vendor/reserved/design/remotion-video-toolkit` | [upstream](https://github.com/shreefentsar/remotion-video-toolkit.git) |
 | `taste-skill` | `design` | `production_candidate` | `skill_ready` | `vendor/reserved/design/taste-skill` | [upstream](https://github.com/Leonxlnx/taste-skill.git) |
 | `agent-skills-launch-pack` | `publish` | `backup` | `cloned` | `vendor/reserved/publish/agent-skills-launch-pack` | [upstream](https://github.com/chenjin-cmd/agent-skills-launch-pack_.git) |
@@ -165,20 +218,18 @@
 | `html-video` | `render` | `production_candidate` | `dependency_ready` | `vendor/reserved/render/html-video` | [upstream](https://github.com/nexu-io/html-video.git) |
 | `auto-editor` | `video` | `backup` | `cli_ready_uv_tool_29.3.1` | `vendor/reserved/video/auto-editor` | [upstream](https://github.com/WyattBlue/auto-editor.git) |
 | `chengfeng-videocut-skills` | `video` | `experimental` | `runtime_incomplete` | `vendor/reserved/video/chengfeng-videocut-skills` | [upstream](https://github.com/Agentchengfeng/chengfeng-videocut-skills.git) |
-| `claude-code-video-toolkit` | `video` | `reference` | `dependency_ready_needs_provider_keys` | `vendor/reserved/video/claude-code-video-toolkit` | [upstream](https://github.com/digitalsamba/claude-code-video-toolkit.git) |
+| `claude-code-video-toolkit` | `video` | `reference` | `local_reference_ready` | `vendor/reserved/video/claude-code-video-toolkit` | [upstream](https://github.com/digitalsamba/claude-code-video-toolkit.git) |
 | `claude-real-video` | `video` | `production_candidate` | `dependency_ready` | `vendor/reserved/video/claude-real-video` | [upstream](https://github.com/HUANGCHIHHUNGLeo/claude-real-video.git) |
 | `claude-shorts` | `video` | `backup` | `dependency_ready_with_npm_audit_warnings` | `vendor/reserved/video/claude-shorts` | [upstream](https://github.com/AgriciDaniel/claude-shorts.git) |
 | `freecut` | `video` | `preferred_local_experiment` | `dependency_ready` | `vendor/reserved/video/freecut` | [upstream](https://github.com/Moh4696/freecut.git) |
 | `hyperframes` | `video` | `production_candidate` | `dependency_ready` | `vendor/reserved/video/hyperframes` | [upstream](https://github.com/heygen-com/hyperframes.git) |
 | `ian-xiaohei-illustrations` | `video` | `production_candidate` | `skill_ready` | `vendor/reserved/video/ian-xiaohei-illustrations` | [upstream](https://github.com/helloianneo/ian-xiaohei-illustrations.git) |
-| `palmier-pro` | `video` | `experimental` | `source_ready_needs_desktop_app` | `vendor/reserved/video/palmier-pro` | [upstream](https://github.com/palmier-io/palmier-pro.git) |
 | `remotion-video-skill` | `video` | `reference` | `skill_ready_runtime_not_promoted` | `vendor/reserved/video/remotion-video-skill` | [upstream](https://github.com/wshuyi/remotion-video-skill.git) |
-| `seedance2-skill` | `video` | `backup` | `skill_ready_needs_model_access` | `vendor/reserved/video/seedance2-skill` | [upstream](https://github.com/dexhunter/seedance2-skill.git) |
+| `seedance2-skill` | `video` | `backup` | `skill_ready_official_model_access_optional` | `vendor/reserved/video/seedance2-skill` | [upstream](https://github.com/dexhunter/seedance2-skill.git) |
 | `talking-head-editor` | `video` | `reference_only` | `reference_runtime_ready` | `vendor/reserved/video/talking-head-editor` | [upstream](https://github.com/chrislema/videoeditor.git) |
 | `text-to-lottie` | `video` | `production_candidate` | `built_with_local_skip_lib_check_for_upstream_kobalte_types` | `vendor/reserved/video/text-to-lottie` | [upstream](https://github.com/diffusionstudio/lottie.git) |
 | `video-use` | `video` | `experimental` | `dependency_ready` | `vendor/reserved/video/video-use` | [upstream](https://github.com/browser-use/video-use.git) |
 | `video-wrapper` | `video` | `production_candidate` | `dependency_ready` | `vendor/reserved/video/video-wrapper` | [upstream](https://github.com/op7418/Video-Wrapper-Skills.git) |
-| `vox-director` | `video` | `backup` | `installed_needs_api_key` | `vendor/reserved/video/vox-director` | [upstream](https://github.com/Alisa0808/vox-director.git) |
 
 ## 候选储备
 

@@ -11,7 +11,7 @@
 | `dasheng-daily-intake` | 1.0.0 | ✅ 正式 | 内容采集阶段 |
 | `dasheng-daily-phase2` | 1.0.0 | ✅ 正式 | 选题分析阶段（替代 dasheng-daily-brief） |
 | `dasheng-daily-draft` | 1.0.0 | ✅ 正式 | 写作与可发布底稿阶段 |
-| `dasheng-stage-transwrite` | 1.0.0 | ✅ 正式 | 转写生产阶段，生成公众号/视频/播客包 |
+| `dasheng-stage-transwrite` | 1.0.0 | ✅ 正式 | 转写生产阶段，生成公众号/普通无头/VOX/真人/播客包 |
 | `dasheng-stage-publish` | 1.0.0 | ✅ 正式 | 发布执行阶段 |
 | `dasheng-daily-postmortem` | 1.0.0 | ✅ 正式 | 复盘与知识回写 |
 | `dasheng-finance-data` | 0.1.0 | ✅ 正式 | Draft 金融数据增强工具，生成 Chart.js 图表规格 |
@@ -20,8 +20,12 @@
 | `dasheng-html-video-bridge` | 0.1.0 | ✅ 正式 | 转写阶段调用本地 html-video 的口播视频桥接 skill |
 | `dasheng-html-anything-bridge` | 0.1.0 | ✅ 正式 | Draft/Transwrite 调用 HTML Anything 模板和视觉语言的桥接 skill |
 | `dasheng-lemon-illustrations` | 0.1.0 | ✅ 正式 | 口播视频默认概念卡通插画系统，使用柠檬人替代上游角色 |
-| `dasheng-video-talking-head` | 0.1.0 | ✅ 正式 | 真人出镜口播视频导演时间轴、证据层和包装工作流 |
-| `dasheng-video-explainer-html` | 0.1.0 | ✅ 正式 | HTML 文章转无真人竖版科普视频的分镜工作流 |
+| `dasheng-video-talking-head` | 0.2.0 | ✅ 正式 | 真人与数字人有头口播的导演时间轴、证据层和包装工作流 |
+| `dasheng-digital-human-talking-head` | 0.1.0 | ✅ 正式 | 一张授权照片加 MiniMax 音频，在本地生成数字人口播并接入真人导演链 |
+| `dasheng-video-explainer-html` | 0.1.0 | ✅ 正式 | HTML 文章转无真人财经视频，默认横版 16:9，支持方形和竖版适配 |
+| `dasheng-vox-skills` | 1.0.0 | ✅ 正式 | VOX 制作统一入口，编排导演分镜、Codex 参考图、Gemini API/浏览器、Remotion 二剪与质检 |
+| `dasheng-video-vox` | 1.3.0 | 🧰 内部 | `dasheng-vox-skills` 的调查结构、导演分镜与视觉语法组件 |
+| `dasheng-video-omni-browser` | 0.1.0 | 🧰 按需 | 通过 Chrome 已登录的 Gemini Omni 将参考图生成约 10 秒逐镜视频 |
 | `dasheng-video-broll-generator` | 0.1.0 | 🧰 按需 | B-roll、Vox 拼贴、生成式插入片段和贴纸动画的证据安全路由 |
 | `dasheng-caption-motion` | 0.1.0 | 🧰 按需 | 将 SRT/词级时间戳路由为 HyperFrames 或 Remotion 字幕动效 |
 | `dasheng-video-editing-bridge` | 0.1.0 | 🧰 按需 | 内部管线、剪映、chengfeng-videocut 与 video-use 的全流程剪辑路由 |

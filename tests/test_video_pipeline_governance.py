@@ -178,7 +178,7 @@ def test_checkpoint_exposes_review_gate_fields():
 
 
 def test_video_pipelines_keep_media_outputs_outside_repo_skills():
-    for pipeline_id in ["talking_head", "explainer_html", "style_training"]:
+    for pipeline_id in ["talking_head", "explainer_html", "vox_explainer", "style_training"]:
         pipeline = load_pipeline(pipeline_id)
         policy = pipeline["external_output_policy"]
         assert "自媒体创作" in policy["required_root"]
@@ -189,12 +189,15 @@ def test_video_pipelines_keep_media_outputs_outside_repo_skills():
 def test_scene_plan_stages_use_director_skill():
     talking_head = load_pipeline("talking_head")
     explainer = load_pipeline("explainer_html")
+    vox = load_pipeline("vox_explainer")
     talking_head_stages = {stage["name"]: stage for stage in talking_head["stages"]}
     explainer_stages = {stage["name"]: stage for stage in explainer["stages"]}
+    vox_stages = {stage["name"]: stage for stage in vox["stages"]}
 
     assert talking_head_stages["scene_plan"]["skill"] == "dasheng-video-director"
     assert talking_head_stages["edit_decisions"]["skill"] == "dasheng-video-director"
     assert explainer_stages["scene_plan"]["skill"] == "dasheng-video-director"
+    assert vox_stages["scene_plan"]["skill"] == "dasheng-video-director"
 
 
 def test_talking_head_pipeline_gates_assets_on_claim_evidence_ledger():
@@ -209,3 +212,31 @@ def test_talking_head_pipeline_gates_assets_on_claim_evidence_ledger():
     assert "renderer_asset_gate" in stages["asset_build"]["produces"]
     assert "renderer_asset_gate" in stages["render_qc"]["required_artifacts_in"]
     assert any("placeholder" in item for item in pipeline["fail_conditions"])
+
+
+def test_explainer_pipeline_uses_horizontal_default_and_full_gate_chain():
+    pipeline = load_pipeline("explainer_html")
+    stage_names = [stage["name"] for stage in pipeline["stages"]]
+    stages = {stage["name"]: stage for stage in pipeline["stages"]}
+
+    assert pipeline["default_format"]["aspect_ratio"] == "16:9"
+    assert pipeline["default_format"]["width"] == 1920
+    assert stage_names.index("scene_plan") < stage_names.index("claim_evidence") < stage_names.index("asset_build")
+    assert "claim_evidence_ledger" in stages["asset_build"]["required_artifacts_in"]
+    assert "renderer_asset_gate" in stages["render_qc"]["required_artifacts_in"]
+    assert "build_remotion_renderer_pack" in stages["render_qc"]["tools_available"]
+    assert any("final delivery manifest" in item for item in pipeline["fail_conditions"])
+
+
+def test_vox_pipeline_is_independent_and_requires_counterargument():
+    pipeline = load_pipeline("vox_explainer")
+    stage_names = [stage["name"] for stage in pipeline["stages"]]
+    stages = {stage["name"]: stage for stage in pipeline["stages"]}
+
+    assert pipeline["lane"] == "vox_explainer_video"
+    assert pipeline["default_format"]["aspect_ratio"] == "16:9"
+    assert stage_names.index("scene_plan") < stage_names.index("claim_evidence") < stage_names.index("asset_build")
+    assert stages["investigation_intake"]["skill"] == "dasheng-video-vox"
+    assert stages["asset_build"]["skill"] == "dasheng-video-vox"
+    assert any("counterargument" in item for item in pipeline["fail_conditions"])
+    assert any("generated footage" in item for item in pipeline["fail_conditions"])

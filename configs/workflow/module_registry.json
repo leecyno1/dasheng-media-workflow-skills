@@ -1,6 +1,6 @@
 {
   "schema_version": "dasheng.module_registry.v1",
-  "updated_at": "2026-08-03",
+  "updated_at": "2026-08-06",
   "project": {
     "name": "Newma Media Studio",
     "slug": "newma-media-studio",
@@ -41,6 +41,13 @@
       "outputs": ["analysis.json", "style_profile.rolling.json", "run_manifest.json"]
     }
   ],
+  "workflow_registries": {
+    "stage_reserves": "configs/workflow/stage_reserve_registry.json",
+    "creator_technology_candidates": "configs/workflow/creator_technology_candidates.json",
+    "upstream_projects": "configs/external/reserved_projects.json",
+    "video_tools": "configs/video/tool_registry.json",
+    "video_upstreams": "configs/video/upstream_video_skills.json"
+  },
   "stages": [
     {
       "order": 1,
@@ -72,8 +79,8 @@
       "builder": "scripts/build_stage3_draft.py",
       "inputs": ["brief_manifest.json", "selected_topics.json"],
       "process": ["事实底稿", "数据/图表", "长文结构", "HTML", "封面与插图意图"],
-      "outputs": ["draft_manifest.json", "final_structure_snapshot.json", "transwrite_decision.json", "每题 Markdown/HTML"],
-      "gate": "final_structure_snapshot.json + transwrite_decision.json"
+      "outputs": ["draft_manifest.json", "final_structure_snapshot.json", "每题 Markdown/HTML"],
+      "gate": "final_structure_snapshot.json"
     },
     {
       "order": 4,
@@ -82,7 +89,7 @@
       "entry_skill": "dasheng-stage-transwrite",
       "builder": "scripts/build_stage4_transwrite.py",
       "inputs": ["draft_manifest.json", "final_structure_snapshot.json", "transwrite_decision.json"],
-      "process": ["公众号文章", "真人口播", "无头 HTML 视频", "播客包", "导演与渲染 QC"],
+      "process": ["公众号文章", "普通无头 HTML 视频", "VOX 调查解释视频", "真人或本地数字人口播", "播客包", "导演与渲染 QC"],
       "outputs": ["transwrite_manifest.json", "lane manifests", "可发布文章/视频/音频包"],
       "gate": "publish_decision.json"
     },
@@ -113,7 +120,7 @@
     {"id": "orchestration", "name": "总控与契约", "paths": ["scripts/run_mainline_stage.py", "scripts/canonical_workflow.py", "skills/dasheng-media-sop"], "responsibilities": ["阶段路由", "manifest/gate", "输出路径", "失败恢复"]},
     {"id": "content", "name": "采集、选题与写作", "paths": ["skills/dasheng-daily-intake", "skills/dasheng-daily-phase2", "skills/dasheng-daily-draft"], "responsibilities": ["来源池", "题卡", "研究底稿", "文章 HTML"]},
     {"id": "evidence", "name": "财经数据与证据", "paths": ["skills/dasheng-finance-data", "scripts/video_claim_evidence_ledger.py", "scripts/video_finance_evidence.py", "scripts/video_official_evidence.py"], "responsibilities": ["数据表", "图表", "官方文档", "命题-证据台账"]},
-    {"id": "video_director", "name": "视频导演与分镜", "paths": ["skills/dasheng-video-director", "configs/video/pipelines", "scripts/dasheng_video_director.py"], "responsibilities": ["口播节奏", "分镜", "构图", "真实 B-roll", "工具路由"]},
+    {"id": "video_director", "name": "视频导演与分镜", "paths": ["skills/dasheng-video-director", "skills/dasheng-digital-human-talking-head", "configs/video/pipelines", "scripts/dasheng_video_director.py"], "responsibilities": ["真人/数字人人物源", "口播节奏", "分镜", "构图", "真实 B-roll", "工具路由"]},
     {"id": "render", "name": "动画与渲染", "paths": ["skills/dasheng-html-video-bridge", "skills/dasheng-caption-motion", "scripts/build_remotion_renderer_pack.py"], "responsibilities": ["HTML Video", "Remotion", "HyperFrames", "GSAP/Lottie", "字幕与动态图表"]},
     {"id": "media", "name": "剪辑与媒体处理", "paths": ["skills/dasheng-video-roughcut", "skills/dasheng-ffmpeg-toolkit", "skills/dasheng-video-editing-bridge"], "responsibilities": ["ASR", "粗剪", "EDL", "FFmpeg", "媒体 QC"]},
     {"id": "publish", "name": "发布与账号中心", "paths": ["skills/dasheng-stage-publish", "configs/publish", "scripts/start_publish_console.py"], "responsibilities": ["多账号", "多平台", "封面/标签/声明", "发布队列", "链接回收"]},

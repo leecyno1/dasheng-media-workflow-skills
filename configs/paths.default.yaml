@@ -18,8 +18,6 @@ external:
   openclaw_skills: "${OPENCLAW_SKILLS_DIR:-~/.openclaw/skills}"
   worldmonitor_root: "${DASHENG_WORLDMONITOR_ROOT:-}"  # 可选：Layer 5 交互页面项目路径
   openclaw_installer: "${DASHENG_OPENCLAW_INSTALLER:-~/.openclaw/OpenClawInstaller}"
-  palmier_pro_root: "${PALMIER_PRO_ROOT:-vendor/reserved/video/palmier-pro}"
-  palmier_mcp_url: "${PALMIER_MCP_URL:-http://127.0.0.1:19789/mcp}"
 
 # 数据源端点
 data_sources:

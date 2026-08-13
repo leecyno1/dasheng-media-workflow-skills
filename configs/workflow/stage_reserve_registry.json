@@ -1,0 +1,208 @@
+{
+  "schema_version": "dasheng.stage_reserve_registry.v1",
+  "updated_at": "2026-08-06",
+  "purpose": "Register retained and reference-only upstream projects against the six-stage Newma Media Studio workflow without promoting unverified candidates into the production route.",
+  "valid_stages": ["intake", "brief", "draft", "transwrite", "publish", "postmortem"],
+  "routing_policy": {
+    "ready": "May be selected by the stage router within its declared execution mode.",
+    "cloned_not_promoted": "Visible to the director as a fallback candidate, but cannot become the primary route before its blockers are cleared.",
+    "blocked": "Registered for future adaptation only and must not be invoked directly.",
+    "methodology_only": "May inform analysis and review, but no upstream source or executable code may be copied or invoked.",
+    "license_guard": "Projects without a verified upstream license remain reference-only and are never cloned by reserve synchronization.",
+    "provider_guard": "Official GPT/OpenAI, Kimi/Moonshot, Gemini/Google, Seedance/Jimeng/Seedream and MiniMax model credentials are valid optional dependencies. Third-party service keys and additional desktop Apps are excluded from Transwrite routing."
+  },
+  "stages": {
+    "intake": [],
+    "brief": [
+      {
+        "project": "governed-dcf-skill",
+        "role": "auditable_valuation_methodology",
+        "availability": "methodology_only",
+        "execution_mode": "reference_only",
+        "license_status": "missing",
+        "clone_allowed": false,
+        "fallback": ["anthropic-fs-financial-analysis-dcf-model"],
+        "notes": "Use its governed-assumption and source-traceability principles when a topic requires DCF work; execute the model through the licensed Anthropic DCF Skill."
+      }
+    ],
+    "draft": [
+      {
+        "project": "taste-skill",
+        "role": "visual_language_and_anti_slop_review",
+        "availability": "ready",
+        "execution_mode": "advisory_skill",
+        "installed_skills": ["design-taste-frontend"],
+        "fallback": ["high-end-visual-design", "brand-guidelines"]
+      },
+      {
+        "project": "impeccable",
+        "role": "html_css_design_audit_reserve",
+        "availability": "cloned_not_promoted",
+        "execution_mode": "reserve",
+        "fallback": ["design-taste-frontend", "review-animations"],
+        "blockers": ["dasheng_adapter_required", "browser_audit_smoke_test_required"]
+      },
+      {
+        "project": "governed-dcf-skill",
+        "role": "dcf_assumption_audit_methodology",
+        "availability": "methodology_only",
+        "execution_mode": "reference_only",
+        "license_status": "missing",
+        "clone_allowed": false,
+        "fallback": ["anthropic-fs-financial-analysis-dcf-model"]
+      }
+    ],
+    "transwrite": [
+      {
+        "project": "baoyu-skills",
+        "role": "article_visual_cover_and_infographic_suite",
+        "availability": "ready",
+        "execution_mode": "skill_suite_with_first_party_provider_allowlist",
+        "installed_skills": [
+          "baoyu-imagine",
+          "baoyu-cover-image",
+          "baoyu-article-illustrator",
+          "baoyu-infographic"
+        ],
+        "allowed_providers": [
+          "codex",
+          "openai",
+          "google",
+          "gemini",
+          "minimax",
+          "jimeng",
+          "seedream"
+        ],
+        "blocked_providers": [
+          "openrouter",
+          "replicate"
+        ],
+        "fallback": [
+          "imagegen",
+          "dasheng-lemon-illustrations"
+        ]
+      },
+      {
+        "project": "minimax-skills",
+        "role": "official_model_visual_and_brand_suite",
+        "availability": "ready",
+        "execution_mode": "official_model_and_local_skills",
+        "installed_skills": [
+          "brandkit",
+          "high-end-visual-design",
+          "image-to-code",
+          "minimalist-ui"
+        ],
+        "allowed_providers": [
+          "minimax",
+          "mmx",
+          "codex",
+          "openai",
+          "google",
+          "gemini"
+        ],
+        "fallback": [
+          "design-taste-frontend",
+          "brand-guidelines"
+        ]
+      },
+      {
+        "project": "seedance2-skill",
+        "role": "official_generated_broll_prompt_route",
+        "availability": "ready",
+        "execution_mode": "official_model_skill",
+        "installed_skills": [
+          "seedance2-skill"
+        ],
+        "allowed_providers": [
+          "seedance",
+          "jimeng"
+        ],
+        "fallback": [
+          "dasheng-video-broll-generator",
+          "remotion-video-toolkit"
+        ],
+        "notes": "Model access is optional configuration; generated footage cannot replace factual evidence."
+      },
+      {
+        "project": "claude-code-video-toolkit",
+        "role": "local_remotion_template_and_transition_reference",
+        "availability": "cloned_not_promoted",
+        "execution_mode": "local_reference_only",
+        "fallback": [
+          "remotion-video-toolkit",
+          "dasheng-html-video-bridge"
+        ],
+        "excluded_routes": [
+          "modal",
+          "runpod",
+          "elevenlabs",
+          "cloudflare_r2"
+        ],
+        "blockers": [
+          "local_template_adapter_required"
+        ]
+      },
+      {
+        "project": "video-shotcraft",
+        "role": "shot_design_and_remotion_reserve",
+        "availability": "cloned_not_promoted",
+        "execution_mode": "reserve",
+        "fallback": ["remotion-video-toolkit", "dasheng-video-director"],
+        "blockers": ["dasheng_adapter_required", "remotion_smoke_render_required"]
+      },
+      {
+        "project": "video-autopilot-kit",
+        "role": "batch_video_production_adapter_reserve",
+        "availability": "blocked",
+        "execution_mode": "adapter_required",
+        "fallback": ["dasheng-stage-transwrite", "dasheng-video-editing-bridge"],
+        "blockers": ["no_standard_skill_md", "capcut_schema_review_required", "output_contract_guard_required", "smoke_test_required"]
+      },
+      {
+        "project": "gsap-skills",
+        "role": "html_motion_suite_reserve",
+        "availability": "cloned_not_promoted",
+        "execution_mode": "suite_router",
+        "suite_skills": ["gsap-core", "gsap-frameworks", "gsap-performance", "gsap-plugins", "gsap-react", "gsap-scrolltrigger", "gsap-timeline", "gsap-utils"],
+        "fallback": ["hyperframes:gsap", "animation-vocabulary", "improve-animations"],
+        "blockers": ["suite_router_adapter_required", "html_video_performance_smoke_test_required"]
+      },
+      {
+        "project": "taste-skill",
+        "role": "scene_visual_review",
+        "availability": "ready",
+        "execution_mode": "advisory_skill",
+        "installed_skills": ["design-taste-frontend"],
+        "fallback": ["high-end-visual-design"]
+      },
+      {
+        "project": "impeccable",
+        "role": "html_scene_browser_qc_reserve",
+        "availability": "cloned_not_promoted",
+        "execution_mode": "reserve",
+        "fallback": ["design-taste-frontend", "review-animations"],
+        "blockers": ["dasheng_adapter_required", "browser_audit_smoke_test_required"]
+      }
+    ],
+    "publish": [
+      {
+        "project": "impeccable",
+        "role": "cover_and_publish_surface_visual_qc_reserve",
+        "availability": "cloned_not_promoted",
+        "execution_mode": "reserve",
+        "fallback": ["design-taste-frontend", "dasheng-stage-publish"],
+        "blockers": ["dasheng_adapter_required", "browser_audit_smoke_test_required"]
+      },
+      {
+        "project": "video-autopilot-kit",
+        "role": "batch_delivery_and_capcut_handoff_reserve",
+        "availability": "blocked",
+        "execution_mode": "adapter_required",
+        "fallback": ["dasheng-stage-publish", "qianfan-sync"],
+        "blockers": ["no_standard_skill_md", "capcut_schema_review_required", "output_contract_guard_required"]
+      }
+    ],
+    "postmortem": []
+  }
+}

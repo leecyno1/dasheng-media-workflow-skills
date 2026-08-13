@@ -1,6 +1,6 @@
 {
   "schema_version": "dasheng.lemon_illustration_router.v1",
-  "updated_at": "2026-07-13",
+  "updated_at": "2026-08-10",
   "default_skill": "dasheng-lemon-illustrations",
   "trigger_policy": {
     "semantic_scan_required": true,
@@ -52,6 +52,13 @@
       "example_duration_sec": [7, 12],
       "motion": "setup -> character action -> result -> evidence or chapter continuation",
       "max_consecutive": 2
+    },
+    "vox_explainer_video": {
+      "modes": ["editorial_schematic", "transparent_overlay"],
+      "simple_duration_sec": [4, 7],
+      "example_duration_sec": [7, 12],
+      "motion": "setup -> character action -> result -> direct evidence return",
+      "max_consecutive": 1
     }
   },
   "evidence_policy": {

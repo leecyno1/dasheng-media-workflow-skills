@@ -10,6 +10,7 @@ import {
   useVideoConfig,
 } from 'remotion';
 import type {FamilyProps} from '../types';
+import {VoxEditorialCollageFamily} from './VoxEditorialCollageFamily';
 
 const P = {
   ink: '#14211d',
@@ -27,7 +28,8 @@ const progress = (frame: number, start: number, end: number) =>
   interpolate(frame, [start, end], [0, 1], {...clamp, easing: ease});
 const motionStage = (frame: number, duration: number, startRatio: number, endRatio: number) =>
   progress(frame, Math.round(duration * startRatio), Math.max(Math.round(duration * endRatio), Math.round(duration * startRatio) + 1));
-const pipSafeRight = (speakerState?: string) => {
+const pipSafeRight = (speakerState?: string, hasEvidencePip = false) => {
+  if (hasEvidencePip) return 535;
   if (speakerState === 'rounded_rect_pip') return 535;
   if (speakerState === 'circle_pip') return 405;
   if (speakerState === 'vertical_strip' || speakerState === 'half_right') return 525;
@@ -137,7 +139,46 @@ export const DataLineChartFamily: React.FC<FamilyProps> = ({scene, motionBehavio
   const primaryStart = primarySeries.values[0] || 0;
   const primaryEnd = primarySeries.values[primarySeries.values.length - 1] || 0;
   const primaryChange = primaryStart === 0 ? 0 : ((primaryEnd / primaryStart) - 1) * 100;
-  const safeRight = pipSafeRight(scene.speaker_state);
+  const safeRight = pipSafeRight(scene.speaker_state, Boolean(scene.visual?.pip_video_src));
+  if (scene.visual?.chart_type === 'bar') {
+    const plotMin = Math.min(0, ...allChartValues);
+    const plotMax = Math.max(0, ...allChartValues);
+    const plotRange = Math.max(1, plotMax - plotMin);
+    const plotWidth = 1360;
+    const plotHeight = 500;
+    const baselineY = ((plotMax - 0) / plotRange) * plotHeight + 55;
+    const groupWidth = plotWidth / Math.max(1, labels.length);
+    const barWidth = Math.min(82, Math.max(28, (groupWidth - 44) / Math.max(1, series.length)));
+    return (
+      <>
+        <SceneTitle eyebrow={scene.visual?.eyebrow || '真实数据'} title={scene.visual?.headline || scene.title} />
+        <svg viewBox="0 0 1500 650" style={{position: 'absolute', left: 120, top: 250, width: `calc(100% - ${120 + safeRight}px)`, height: 650, overflow: 'visible'}}>
+          {[0, 1, 2, 3, 4].map((row) => <line key={row} x1={70} y1={55 + row * 125} x2={1435} y2={55 + row * 125} stroke={P.line} strokeWidth={1} />)}
+          <line x1={70} y1={baselineY} x2={1435 * axisP} y2={baselineY} stroke={P.ink} strokeWidth={3} />
+          {labels.map((label, labelIndex) => {
+            const groupX = 80 + labelIndex * groupWidth;
+            return <g key={label}>
+              {series.map((item, seriesIndex) => {
+                const value = item.values[labelIndex] ?? 0;
+                const reveal = motionStage(frame, duration, 0.14 + labelIndex * 0.055 + seriesIndex * 0.03, 0.48 + labelIndex * 0.055 + seriesIndex * 0.03);
+                const valueHeight = Math.abs(value) / plotRange * plotHeight * reveal;
+                const x = groupX + (groupWidth - barWidth * series.length) / 2 + seriesIndex * barWidth;
+                const y = value >= 0 ? baselineY - valueHeight : baselineY;
+                const color = item.color ?? [P.green, P.coral, P.blue, P.gold][seriesIndex % 4];
+                return <g key={`${item.name}-${label}`}>
+                  <rect x={x} y={y} width={barWidth - 8} height={Math.max(2, valueHeight)} rx={10} fill={value < 0 ? P.coral : color} />
+                  <text x={x + (barWidth - 8) / 2} y={value >= 0 ? y - 14 : y + valueHeight + 30} textAnchor="middle" fill={value < 0 ? P.coral : P.ink} fontSize={23} fontWeight={850}>{value.toFixed(Math.abs(value) < 10 ? 2 : 1)}</text>
+                </g>;
+              })}
+              <text x={groupX + groupWidth / 2} y={610} textAnchor="middle" fill={P.muted} fontSize={23}>{label}</text>
+            </g>;
+          })}
+          {series.length > 1 ? series.map((item, index) => <g key={item.name} transform={`translate(${90 + index * 235},18)`}><rect width={22} height={8} rx={4} fill={item.color ?? [P.green, P.coral, P.blue][index % 3]} /><text x={32} y={10} fill={P.muted} fontSize={19}>{item.name}</text></g>) : null}
+        </svg>
+        <SourceTag text={scene.visual?.source} />
+      </>
+    );
+  }
   const chartSeries = series.map((item, seriesIndex) => {
     const points = chartPoints(item.values, 1300, 470, chartMin, chartMax).map((point) => ({x: point.x + 100, y: point.y + 70}));
     return {
@@ -205,7 +246,7 @@ export const ValuationCompareFamily: React.FC<FamilyProps> = ({scene, motionBeha
   const valueSuffix = scene.visual?.unit || 'x';
   const leadPeerValue = leadMetric.peer_value ?? 0;
   const relativeGap = leadPeerValue === 0 ? 0 : (1 - leadMetric.value / leadPeerValue) * 100;
-  const safeRight = pipSafeRight(scene.speaker_state);
+  const safeRight = pipSafeRight(scene.speaker_state, Boolean(scene.visual?.pip_video_src));
   if (metrics.length === 1) {
     const ownP = motionStage(frame, duration, 0.12, 0.48);
     const peerP = motionStage(frame, duration, 0.28, 0.64);
@@ -266,7 +307,7 @@ export const DocumentExactCropFamily: React.FC<FamilyProps> = ({scene, motionBeh
   const calloutP = motionStage(frame, duration, 0.58, 0.82);
   const documentLateCue = motionStage(frame, duration, 0.68, 0.9);
   const callouts = scene.visual?.callouts ?? ['精确页码', '精确行列'];
-  const safeRight = pipSafeRight(scene.speaker_state);
+  const safeRight = pipSafeRight(scene.speaker_state, Boolean(scene.visual?.pip_video_src));
   return (
     <>
       <SceneTitle eyebrow={scene.visual?.eyebrow || '公开资料'} title={scene.visual?.document_title || scene.visual?.headline || scene.title} />
@@ -287,7 +328,7 @@ export const EvidenceTableFamily: React.FC<FamilyProps> = ({scene, motionBehavio
   const duration = Math.max(1, Math.round(scene.duration_sec * fps));
   const columns = scene.visual?.columns ?? ['指标', '数值', '来源'];
   const rows = scene.visual?.rows?.length ? scene.visual.rows : [['待补', '待补', '待核验']];
-  const safeRight = pipSafeRight(scene.speaker_state);
+  const safeRight = pipSafeRight(scene.speaker_state, Boolean(scene.visual?.pip_video_src));
   return (
     <>
       <SceneTitle eyebrow={scene.visual?.eyebrow || '关键数据'} title={scene.visual?.headline || scene.title} />
@@ -312,7 +353,7 @@ export const LogicFlowFamily: React.FC<FamilyProps> = ({scene, motionBehavior}) 
   const nodes = scene.visual?.nodes?.length ? scene.visual.nodes : ['条件', '机制', '结果'];
   const conclusionLock = motionBehavior.includes('conclusion_lock') ? motionStage(frame, duration, 0.68, 0.88) : 0;
   const logicLateCue = motionStage(frame, duration, 0.72, 0.9);
-  const safeRight = pipSafeRight(scene.speaker_state);
+  const safeRight = pipSafeRight(scene.speaker_state, Boolean(scene.visual?.pip_video_src));
   return (
     <>
       <SceneTitle eyebrow={scene.visual?.eyebrow || '逻辑链条'} title={scene.title} />
@@ -424,4 +465,5 @@ export const FAMILY_COMPONENTS: Record<string, React.FC<FamilyProps>> = {
   'broll-fullscreen': BrollFullscreenFamily,
   'split-comparison': SplitComparisonFamily,
   'recap-outro': RecapOutroFamily,
+  'vox-editorial-collage': VoxEditorialCollageFamily,
 };

@@ -12,6 +12,8 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 MODULE_REGISTRY = ROOT / "configs/workflow/module_registry.json"
 RESERVED_REGISTRY = ROOT / "configs/external/reserved_projects.json"
+STAGE_RESERVE_REGISTRY = ROOT / "configs/workflow/stage_reserve_registry.json"
+CREATOR_CANDIDATE_REGISTRY = ROOT / "configs/workflow/creator_technology_candidates.json"
 SKILL_REGISTRY = ROOT / "skills/SKILL_ALIASES.md"
 DEFAULT_OUTPUT = ROOT / "docs/PROJECT_CATALOG.md"
 
@@ -49,6 +51,8 @@ def md_cell(value: Any) -> str:
 def build_catalog() -> str:
     module_registry = read_json(MODULE_REGISTRY)
     reserve = read_json(RESERVED_REGISTRY)
+    stage_reserve_registry = read_json(STAGE_RESERVE_REGISTRY)
+    creator_candidates = read_json(CREATOR_CANDIDATE_REGISTRY)
     projects = reserve.get("projects") or []
     candidates = reserve.get("reserve_candidates") or []
     rejected = reserve.get("rejected") or []
@@ -97,6 +101,52 @@ def build_catalog() -> str:
                 "",
             ]
         )
+
+    lines.extend(
+        [
+            "## 六阶段储备路由",
+            "",
+            "> 储备路由只表示对应环节可以发现该项目；`cloned_not_promoted`、`blocked` 和 `methodology_only` 不会取代生产主路由。",
+            "",
+            "| 环节 | 项目 | 角色 | 可用性 | 执行方式 | 回退 | 阻断/约束 |",
+            "| --- | --- | --- | --- | --- | --- | --- |",
+        ]
+    )
+    stage_names = {str(stage["id"]): str(stage["name"]) for stage in module_registry.get("stages") or []}
+    for stage_id in stage_reserve_registry.get("valid_stages") or []:
+        rows = (stage_reserve_registry.get("stages") or {}).get(stage_id) or []
+        for row in rows:
+            constraints = list(row.get("blockers") or [])
+            if row.get("clone_allowed") is False:
+                constraints.append("禁止克隆")
+            if row.get("license_status") == "missing":
+                constraints.append("上游无许可证")
+            lines.append(
+                f"| {md_cell(stage_names.get(stage_id, stage_id))} (`{md_cell(stage_id)}`) | `{md_cell(row.get('project'))}` | "
+                f"`{md_cell(row.get('role'))}` | `{md_cell(row.get('availability'))}` | `{md_cell(row.get('execution_mode'))}` | "
+                f"{md_cell('、'.join(row.get('fallback') or []))} | {md_cell('、'.join(constraints))} |"
+            )
+        if not rows:
+            lines.append(f"| {md_cell(stage_names.get(stage_id, stage_id))} (`{md_cell(stage_id)}`) | — | — | — | — | 未强行登记 | — |")
+    lines.append("")
+
+    lines.extend(
+        [
+            "## 高分自媒体创作备选技术",
+            "",
+            "> 候选项目供各环节导演发现与安排适配，不会绕过依赖、许可证、质量门禁或人工复核成为生产主路由。",
+            "",
+            "| 项目 | 评分 | 类别 | 环节 | 可用性 | 依赖 | 阻断项 |",
+            "| --- | ---: | --- | --- | --- | --- | --- |",
+        ]
+    )
+    for row in creator_candidates.get("candidates") or []:
+        lines.append(
+            f"| `{md_cell(row.get('name'))}` | {md_cell(row.get('score'))}/100 | `{md_cell(row.get('category'))}` | "
+            f"{md_cell('、'.join(row.get('route_stages') or []))} | `{md_cell(row.get('availability'))}` | "
+            f"{md_cell('、'.join(row.get('dependencies') or []))} | {md_cell('、'.join(row.get('blockers') or []))} |"
+        )
+    lines.append("")
 
     lines.extend(["## 功能模块", "", "| 模块 | 主要路径 | 职责 |", "| --- | --- | --- |"])
     for module in module_registry.get("modules") or []:

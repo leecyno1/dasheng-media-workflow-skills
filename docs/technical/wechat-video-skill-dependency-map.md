@@ -68,7 +68,7 @@
 
 | 场景 | 主 Skill / 脚本 | 职责 |
 | --- | --- | --- |
-| 视频转写总入口 | `dasheng-stage-transwrite` | 生成 `talking_head_video` / `no-human explainer` / `podcast` lane manifest。 |
+| 视频转写总入口 | `dasheng-stage-transwrite` | 生成普通无头、`vox_explainer_video`、`talking_head_video` 和可选 `podcast` lane manifest。 |
 | 真人口播粗剪 | `dasheng-video-roughcut` | FunASR + FFmpeg 粗剪、候选删除、审核页、字幕校对输入。 |
 | 剪映粗剪 | 全局 `video-rough-cut` | Computer Use 操作剪映：导入 -> 粗剪 -> 剪口播 -> 导出桌面 -> 进入导演剪辑。 |
 | 真人导演剪辑 | `dasheng-video-talking-head` | 按转录和剧本对齐，生成导演时间线、PIP、证据镜头、HTML 贴片、抽帧 QC。 |

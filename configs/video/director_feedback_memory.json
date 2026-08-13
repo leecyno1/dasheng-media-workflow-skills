@@ -1,8 +1,136 @@
 {
   "schema_version": "dasheng.video.director_feedback_memory.v1",
-  "updated_at": "2026-08-02",
+  "updated_at": "2026-08-12",
   "priority": "user_approved_default",
   "entries": [
+    {
+      "id": "2026-08-12-vox-text-sync-emphasis-entity-labels",
+      "scope": "vox_explainer_video",
+      "status": "active",
+      "feedback": "VOX 成片的文字层必须承担三种不同职责：底部字幕精确跟随原旁白；中心判断、反转、关键数字和结论用短花字强调；人物、机构、地点和关键物件出现时，在对应贴纸附近同步显示名称说明。三种文字不能互相替代。",
+      "director_defaults": {
+        "subtitle_policy": "Use original narration text with ASR word/sentence timestamps; never distribute caption chunks evenly across a shot.",
+        "subtitle_required_fields": ["text", "startMs", "endMs", "timingSource"],
+        "preferred_subtitle_timing_source": "asr-aligned-to-script",
+        "emphasis_policy": "Add concise 2-8 character emphasis cues for central claims, reversals, key numbers and conclusion beats; do not repeat full captions.",
+        "entity_label_policy": "Label each newly introduced person, institution, place and key object near its corresponding sticker while it is visible.",
+        "entity_label_examples": ["央行建筑 -> 央行", "人物贴纸 -> 真实姓名"],
+        "generated_text_policy": "Render subtitles, emphasis cues and entity labels only in Remotion; keep generated reference images and generated clips text-free."
+      },
+      "quality_guardrails": [
+        "Reject subtitles that visibly lead or lag the spoken phrase.",
+        "Reject a main claim, reversal, key number or conclusion with no emphasis cue.",
+        "Reject an introduced person or key sticker with no readable nearby label.",
+        "Labels must not cover faces, evidence, motion paths or bottom captions."
+      ]
+    },
+    {
+      "id": "2026-08-10-vox-question-led-investigation-lane",
+      "scope": "vox_explainer_video",
+      "status": "active",
+      "feedback": "VOX 必须成为平行于普通无头口播的独立调查解释线。全片由一个中心问题驱动，用证据地图、历史资料、机制动画、新闻/访谈/现场证据、反证或边界条件逐步收窄答案，最后只给有限结论。",
+      "director_defaults": {
+        "default_format": "1920x1080_16:9_30fps",
+        "narrative_state_machine": [
+          "cold_open",
+          "central_question",
+          "evidence_map",
+          "historical_context",
+          "mechanism_explainer",
+          "field_or_human_evidence",
+          "counterargument",
+          "data_resolution",
+          "qualified_conclusion"
+        ],
+        "evidence_pillars_target": [3, 6],
+        "real_material_runtime_share_target": [0.35, 0.55],
+        "direct_material_priority": [
+          "news_report",
+          "interview_or_speech",
+          "historical_archive",
+          "on_site_footage",
+          "source_document",
+          "verified_data"
+        ],
+        "counterargument_required": true,
+        "epistemic_labels_required": ["fact", "opinion", "inference", "unknown"],
+        "opening_grammar": "real_video + animated_title + central_question + evidence_map + data_or_rule_layer + captions",
+        "human_anchor_policy": "pip_or_split_by_default; fullscreen only when the original statement or lower third is direct evidence",
+        "technology_budget": "Use maps, timelines, shared elements, depth motion, annotations, and sound bridges only where they clarify evidence."
+      },
+      "evidence_guardrails": [
+        "Generic background footage cannot prove a named event, company, person, policy, price, valuation, or causal claim.",
+        "Generated footage may explain mechanisms or bridge scenes but must not impersonate real news, interviews, historical records, or on-site evidence.",
+        "A source chart must first appear complete and readable before any detail crop or animated reconstruction.",
+        "Contradictory evidence and boundary conditions cannot be removed merely to make the conclusion cleaner.",
+        "The final conclusion must state what is known, inferred, conditional, and still unknown."
+      ]
+    },
+    {
+      "id": "2026-08-10-vox-image2-scene-production",
+      "scope": "vox_explainer_video",
+      "status": "active",
+      "source": {
+        "platform": "xiaohongshu",
+        "reference_ids": [
+          "6a6436d7000000000f02ae8d",
+          "6a5efd4b000000001101568d",
+          "6a6ca0df0000000005020818",
+          "6a6745fd000000001c00fcbe",
+          "6a5f7d94000000000401ce65"
+        ]
+      },
+      "feedback": "VOX 第三条链路不能复用无头口播的卡片轮播。先生成风格板，锁定配色、纸张材质、字体、英雄物件和空间世界；再把口播拆成微分镜。每个微分镜先生成完整 Image2 场景图，再按焦点和景别裁切，导演必须在真实场景图和横方竖裁切接触表上审核；审核通过后才逐镜图生视频，最终由 Remotion 叠加精确文字、数据、图表和证据素材。",
+      "director_defaults": {
+        "visual_system": "continuous_editorial_paper_collage",
+        "style_board_required": true,
+        "micro_shots_per_scene_min": 3,
+        "micro_shot_duration_sec": [2.5, 5],
+        "spatial_mechanism_interval_sec": [12, 20],
+        "image2_scene_policy": "one complete scene still per micro-shot; first approved scene locks the world",
+        "crop_storyboard_policy": "review SOURCE + 16:9 + 1:1 + 9:16 before image-to-video",
+        "generated_motion_policy": "one approved crop drives one generated shot; Remotion remains the master compositor",
+        "continuity_anchors": [
+          "paper_material_family",
+          "palette",
+          "hero_objects",
+          "red_thread_relationships",
+          "tabletop_depth",
+          "camera_grammar"
+        ],
+        "chart_policy": "physicalize verified data inside the editorial world; do not cut to isolated white dashboards"
+      },
+      "quality_guardrails": [
+        "A style board is required before scene image or video generation.",
+        "Every approved micro-shot requires a complete Image2 scene still.",
+        "Image-to-video cannot start before SOURCE and aspect crops pass director review.",
+        "A normal VOX scene cannot hold one large card for the whole narration paragraph.",
+        "Generated motion plates cannot impersonate direct evidence.",
+        "Generated shot motion must preserve the approved scene subject, material system and spatial layout.",
+        "The final composite must visibly differ from explainer_html_video in scene grammar and renderer family."
+      ]
+    },
+    {
+      "id": "2026-08-11-vox-image2-20s-production-test",
+      "scope": "vox_explainer_video",
+      "status": "active",
+      "feedback": "20 秒黄金实测确认：VOX Image2 必须逐镜图生视频，再由 Remotion 加精确标题和字幕。模型原片不能整段照用，要抽查开头、中段、结尾并在后段强光、文字变形或物件漂移前裁切。同一证据世界优先干净切；需要叠化时只让入镜预叠 3-4 帧，避免双影，同时保持出镜不透明以消除黑白闪屏。",
+      "director_defaults": {
+        "mmx_preflight": "mmx --base-url https://api.minimaxi.com quota show",
+        "mmx_base_url_policy": "explicit root URL without /v1",
+        "image_to_video_fallback_model": "MiniMax-Hailuo-2.3-Fast when H3 returns TokenPlan/Credit code 2013",
+        "generated_clip_review_points": [0.05, 0.5, 0.95],
+        "generated_clip_policy": "trim to the semantic action before late drift or excessive effects; normalize to 1920x1080_30fps",
+        "transition_policy": "clean match cut by default; otherwise 3-4 incoming prelap frames over an opaque outgoing shot",
+        "text_policy": "generated paper labels stay blank; exact title, number and caption are fitted and rendered in Remotion"
+      },
+      "quality_guardrails": [
+        "Do not use a long dissolve between two detailed evidence tableaux.",
+        "Do not accept a title merely because it fits the source still; inspect the final rendered frame with captions present.",
+        "Do not keep the late portion of a generated clip when it introduces a flare, new object, mutated text or unstable ending.",
+        "Encoded delivery must pass black-frame, white-frame and freeze scans at every scene boundary."
+      ]
+    },
     {
       "id": "2026-07-25-real-video-depth-and-opening-composite",
       "scope": "explainer_html_video",

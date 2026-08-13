@@ -109,6 +109,109 @@ const SpeakerLayer: React.FC<{
   );
 };
 
+const SceneEvidenceMediaLayer: React.FC<{scene: DirectorScene}> = ({scene}) => {
+  const {fps} = useVideoConfig();
+  const visual = scene.visual || {};
+  const isVox = scene.template_id === 'vox-editorial-collage';
+  const backgroundStart = Math.max(0, Math.round((visual.background_video_start_sec || 0) * fps));
+  const pipStart = Math.max(0, Math.round((visual.pip_video_start_sec || 0) * fps));
+  return (
+    <>
+      {visual.background_video_src ? (
+        <AbsoluteFill style={{zIndex: 0, overflow: 'hidden'}}>
+          <OffthreadVideo
+            src={staticFile(visual.background_video_src)}
+            startFrom={backgroundStart}
+            muted
+            style={{width: '100%', height: '100%', objectFit: 'cover', opacity: visual.background_video_opacity ?? 0.72}}
+          />
+          <AbsoluteFill style={{background: `rgba(12,24,21,${visual.background_video_scrim ?? 0.24})`}} />
+        </AbsoluteFill>
+      ) : null}
+      {visual.pip_video_src && !isVox ? (
+        <div style={{position: 'absolute', right: 62, bottom: 62, width: 430, height: 252, zIndex: 4, overflow: 'hidden', borderRadius: 22, border: '3px solid rgba(255,255,255,.9)', background: '#14211d', boxShadow: '0 22px 70px rgba(10,22,18,.32)'}}>
+          <OffthreadVideo
+            src={staticFile(visual.pip_video_src)}
+            startFrom={pipStart}
+            muted
+            style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: visual.pip_video_object_position || '50% 50%'}}
+          />
+        </div>
+      ) : null}
+    </>
+  );
+};
+
+const captionChunks = (text: string) => {
+  const phrases = text.split(/(?<=[。！？；])/u).map((item) => item.trim()).filter(Boolean);
+  return phrases.flatMap((phrase) => {
+    if (phrase.length <= 24) return [phrase];
+    const parts = phrase.split(/(?<=[，、：])/u).map((item) => item.trim()).filter(Boolean);
+    return parts.length > 1 ? parts : [phrase];
+  });
+};
+
+const CaptionLayer: React.FC<{scene: DirectorScene; durationInFrames: number}> = ({scene, durationInFrames}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const localMs = frame / fps * 1000;
+  const timedCaption = scene.captions?.find((cue) => localMs >= cue.startMs && localMs < cue.endMs);
+  const chunks = captionChunks(scene.narration || '');
+  const fallbackIndex = chunks.length
+    ? Math.min(chunks.length - 1, Math.floor((frame / Math.max(1, durationInFrames)) * chunks.length))
+    : -1;
+  const text = timedCaption?.text || (fallbackIndex >= 0 ? chunks[fallbackIndex] : '');
+  if (!text) return null;
+  const isVox = scene.template_id === 'vox-editorial-collage';
+  return (
+    <div style={{position: 'absolute', left: isVox ? 230 : 180, right: isVox ? 230 : 180, bottom: 34, zIndex: 6, textAlign: 'center', pointerEvents: 'none'}}>
+      <span style={{display: 'inline', padding: isVox ? '6px 13px 8px' : '8px 16px 10px', borderRadius: isVox ? 4 : 12, background: isVox ? 'rgba(16,13,10,.62)' : 'rgba(10,18,16,.78)', color: 'white', fontSize: isVox ? 29 : 31, lineHeight: 1.55, fontWeight: 750, letterSpacing: '0.02em', boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone', textShadow: '0 2px 8px rgba(0,0,0,.55)'}}>
+        {text}
+      </span>
+    </div>
+  );
+};
+
+const cueVisible = (localMs: number, cue: {startMs: number; endMs: number}) =>
+  localMs >= cue.startMs && localMs < cue.endMs;
+
+const VoxTextOverlayLayer: React.FC<{scene: DirectorScene}> = ({scene}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  if (scene.template_id !== 'vox-editorial-collage') return null;
+  const localMs = frame / fps * 1000;
+  const visual = scene.visual || {};
+  const emphasis = (visual.emphasis_cues || []).filter((cue) => cueVisible(localMs, cue));
+  const labels = (visual.entity_labels || []).filter((cue) => cueVisible(localMs, cue));
+  const palette = {
+    red: {background: '#d84b3e', color: '#fff8e8'},
+    gold: {background: '#f2ca52', color: '#201a12'},
+    cream: {background: '#f4ead4', color: '#201a12'},
+    ink: {background: '#201a12', color: '#fff8e8'},
+  };
+  return (
+    <AbsoluteFill style={{zIndex: 5, pointerEvents: 'none'}}>
+      {emphasis.map((cue, index) => {
+        const style = palette[cue.tone || 'gold'];
+        const progress = spring({frame: Math.max(0, frame - Math.round(cue.startMs / 1000 * fps)), fps, config: {damping: 15, stiffness: 190}});
+        return (
+          <div key={`emphasis-${index}`} style={{position: 'absolute', left: `${cue.x ?? 50}%`, top: `${cue.y ?? 18}%`, transform: `translate(-50%, -50%) rotate(-2deg) scale(${0.82 + progress * 0.18})`, padding: '12px 22px 10px', border: '4px solid #201a12', boxShadow: '7px 7px 0 rgba(32,26,18,.28)', fontSize: 52, lineHeight: 1.08, fontWeight: 950, letterSpacing: '.04em', ...style}}>
+            {cue.text}
+          </div>
+        );
+      })}
+      {labels.map((cue, index) => {
+        const style = palette[cue.tone || 'cream'];
+        return (
+          <div key={`entity-${index}`} style={{position: 'absolute', left: `${cue.x ?? 50}%`, top: `${cue.y ?? 50}%`, transform: 'translate(-50%, -50%) rotate(-1deg)', padding: '7px 13px 6px', border: '3px solid #201a12', boxShadow: '4px 4px 0 rgba(32,26,18,.22)', fontSize: 27, lineHeight: 1.1, fontWeight: 900, ...style}}>
+            {cue.text}
+          </div>
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+
 const SceneClip: React.FC<{
   scene: DirectorScene;
   sourceVideo: string;
@@ -126,6 +229,7 @@ const SceneClip: React.FC<{
   const audio = scene.audio || {};
   return (
     <AbsoluteFill style={{...style, background: transparent ? 'transparent' : '#eef0e8'}}>
+      <SceneEvidenceMediaLayer scene={scene} />
       <SpeakerLayer
         scene={scene}
         sourceVideo={sourceVideo}
@@ -135,6 +239,8 @@ const SceneClip: React.FC<{
       <AbsoluteFill style={{zIndex: 2, pointerEvents: 'none'}}>
         <Family scene={scene} motionBehavior={html_animation_behavior} />
       </AbsoluteFill>
+      <VoxTextOverlayLayer scene={scene} />
+      <CaptionLayer scene={scene} durationInFrames={durationInFrames} />
       {audio.sfx_src ? <Audio src={staticFile(audio.sfx_src)} volume={0.2} /> : null}
     </AbsoluteFill>
   );

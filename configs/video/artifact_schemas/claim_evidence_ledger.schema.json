@@ -13,7 +13,7 @@
     },
     "lane": {
       "type": "string",
-      "enum": ["talking_head_video", "explainer_html_video"]
+      "enum": ["talking_head_video", "explainer_html_video", "vox_explainer_video"]
     },
     "source_scene_plan": {
       "type": "string"

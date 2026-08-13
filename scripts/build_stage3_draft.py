@@ -145,6 +145,10 @@ def detect_lemon_illustration_intents(text: str, max_intents: int = 8) -> list[d
                         "mode": "full_canvas",
                         "motion": "setup_action_result",
                     },
+                    "vox_explainer_video": {
+                        "mode": "editorial_schematic_or_transparent_overlay",
+                        "motion": "setup_action_result",
+                    },
                 },
             }
         )
@@ -419,7 +423,10 @@ def inspect_draft_quality(draft: str, card: dict[str, Any], reasoning: dict[str,
     claim_count = len(reasoning.get("claims") or [])
     has_reference_section = "引用与待补源" in (draft or "")
     status = "warning" if hits else "pass"
-    if cjk_chars < 2800 or h2_count > 5:
+    draft_contract = card.get("draft_contract") or {}
+    max_primary_sections = int(draft_contract.get("max_primary_sections") or 4)
+    max_h2_count = max_primary_sections + (1 if has_reference_section else 0)
+    if cjk_chars < int(draft_contract.get("quality_floor_cjk_chars") or 2800) or h2_count > max_h2_count:
         status = "warning"
     return {
         "topic_id": card.get("topic_id"),
@@ -429,10 +436,12 @@ def inspect_draft_quality(draft: str, card: dict[str, Any], reasoning: dict[str,
         "h2_count": h2_count,
         "claim_count": claim_count,
         "has_reference_section": has_reference_section,
+        "max_primary_sections": max_primary_sections,
+        "max_h2_count": max_h2_count,
         "ai_cliche_hits": hits,
         "checks": {
-            "length_floor_2800": cjk_chars >= 2800,
-            "primary_sections_lte_5": h2_count <= 5,
+            "length_floor_2800": cjk_chars >= int(draft_contract.get("quality_floor_cjk_chars") or 2800),
+            "primary_sections_lte_5": h2_count <= max_h2_count,
             "reference_section_present": has_reference_section,
         },
     }
@@ -479,6 +488,23 @@ def build_ai_draft_prompts(card: dict[str, Any], reasoning: dict[str, Any]) -> t
     hint_part2 = struct_hint['part_2']
     hint_part3 = struct_hint['part_3']
     hint_ending = struct_hint['ending']
+    draft_contract = card.get("draft_contract") or {}
+    primary_sections = draft_contract.get("primary_sections") or []
+    target_min = int(draft_contract.get("target_cjk_chars_min") or 4000)
+    target_max = int(draft_contract.get("target_cjk_chars_max") or 6000)
+    if primary_sections:
+        section_lines = "\n".join(
+            f"{index}. {item.get('title', '')}：{item.get('brief', '')}"
+            for index, item in enumerate(primary_sections, start=1)
+            if isinstance(item, dict) and item.get("title")
+        )
+        structure_constraint = (
+            "- 这是一篇合并市场点评，一级标题必须严格按以下章节各写一章；每章都要独立处理对应命题，不能把五章合并成三段：\n"
+            f"{section_lines}\n"
+            f"- 除上述章节外，只保留一个 `## 引用与待补源`，不要另加一级标题。"
+        )
+    else:
+        structure_constraint = "- 一级标题总数控制在 3-4 个，加结尾即可。"
 
     # Build anchor examples (avoid f-string issues with double braces)
     anchor_section = """
@@ -510,9 +536,9 @@ def build_ai_draft_prompts(card: dict[str, Any], reasoning: dict[str, Any]) -> t
 
 【结构约束】
 - 必须遵从当前终稿前的标准稿框架，不要写成七八个一级标题。
-- 一级标题总数控制在 3-4 个，加结尾即可。
+{structure_constraint}
 - 可以在一级标题下使用二级标题增强层次。
-- 文章总长度目标 4000-6000 字中文正文，不能短。
+- 文章总长度目标 {target_min}-{target_max} 字中文正文，不能短。
 - 不要写成平台改写稿，这是一篇标准长文初稿。
 
 【结构提示】
@@ -562,9 +588,18 @@ def build_ai_draft_prompts(card: dict[str, Any], reasoning: dict[str, Any]) -> t
 
 
 def generate_ai_draft(card: dict[str, Any], reasoning: dict[str, Any]) -> str:
+    agent_draft_dir = (os.environ.get("DASHENG_DRAFT_AGENT_DIR") or "").strip()
+    if agent_draft_dir:
+        agent_draft_file = Path(agent_draft_dir).expanduser().resolve() / f"{card['topic_id']}.md"
+        if agent_draft_file.exists():
+            draft = agent_draft_file.read_text(encoding="utf-8").strip()
+            if count_cjk_chars(draft) < int((card.get("draft_contract") or {}).get("quality_floor_cjk_chars") or 2800):
+                raise RuntimeError(f"Agent 初稿长度不足：{count_cjk_chars(draft)} 字")
+            return draft
     system_prompt, user_prompt = build_ai_draft_prompts(card, reasoning)
-    draft = request_ai_markdown(system_prompt, user_prompt, max_tokens=9000).strip()
-    min_chars = 4000
+    draft_contract = card.get("draft_contract") or {}
+    min_chars = int(draft_contract.get("target_cjk_chars_min") or 4000)
+    draft = request_ai_markdown(system_prompt, user_prompt, max_tokens=12000 if min_chars >= 8000 else 9000).strip()
     if count_cjk_chars(draft) >= min_chars:
         return draft
     for attempt in range(2):
@@ -573,13 +608,13 @@ def generate_ai_draft(card: dict[str, Any], reasoning: dict[str, Any]) -> str:
             + "\n\n下面是上一版初稿，请你在保留标题、主判断和一级结构约束的前提下继续扩写。"
             "重点补足事实层、机制层、比较层和读者框架，避免空话，直接输出完整修订版 Markdown。\n\n"
             f"{draft}\n\n"
-            "扩写后正文至少达到 4000 字中文左右，仍然控制在 3-4 个一级标题。"
+            f"扩写后正文至少达到 {min_chars} 字中文左右，仍然遵守上面的一级标题契约。"
         )
-        draft = request_ai_markdown(system_prompt, expand_prompt, max_tokens=12000).strip()
+        draft = request_ai_markdown(system_prompt, expand_prompt, max_tokens=16000 if min_chars >= 8000 else 12000).strip()
         if count_cjk_chars(draft) >= min_chars:
             return draft
         time.sleep(1 + attempt)
-    if count_cjk_chars(draft) < 2800:
+    if count_cjk_chars(draft) < int(draft_contract.get("quality_floor_cjk_chars") or 2800):
         raise RuntimeError(f"AI 初稿长度不足：{count_cjk_chars(draft)} 字")
     return draft
 

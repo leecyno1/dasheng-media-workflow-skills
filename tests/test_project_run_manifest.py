@@ -33,7 +33,13 @@ def test_build_manifest_initializes_pipeline_stages(tmp_path):
     assert manifest["schema_version"] == "dasheng.project_run_manifest.v1"
     assert manifest["run_id"] == "test_run"
     assert manifest["lane"] == "explainer_html_video"
-    assert [stage["name"] for stage in manifest["stages"]] == ["intake", "scene_plan", "asset_build", "render_qc"]
+    assert [stage["name"] for stage in manifest["stages"]] == [
+        "intake",
+        "scene_plan",
+        "claim_evidence",
+        "asset_build",
+        "render_qc",
+    ]
     assert validate_manifest(manifest) == []
 
 
