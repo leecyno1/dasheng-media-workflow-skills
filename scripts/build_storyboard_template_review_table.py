@@ -124,7 +124,16 @@ def template_preview_cell(template_id: str, roots: list[Path]) -> str:
     )
 
 
-def review_controls_cell(scene_identifier: str, template_id: str) -> str:
+def review_controls_cell(scene_identifier: str, template_id: str, *, narrative: bool = False) -> str:
+    if narrative:
+        return f"""
+      <div class="decision-box" data-for="{esc(scene_identifier)}">
+        <label><input type="radio" name="decision-{esc(scene_identifier)}" value="approved"> 通过</label>
+        <label><input type="radio" name="decision-{esc(scene_identifier)}" value="edit_content"> 改内容</label>
+        <label><input type="radio" name="decision-{esc(scene_identifier)}" value="delete"> 删除本段</label>
+        <textarea class="review-note" rows="3" placeholder="口吻、论证、证据或留存修改点"></textarea>
+      </div>
+    """
     return f"""
       <div class="decision-box" data-for="{esc(scene_identifier)}">
         <label><input type="radio" name="decision-{esc(scene_identifier)}" value="approved"> 通过</label>
@@ -137,13 +146,19 @@ def review_controls_cell(scene_identifier: str, template_id: str) -> str:
     """
 
 
-def review_page_script(scenes_payload: list[dict[str, Any]], source_storyboard: Path | None) -> str:
+def review_page_script(
+    scenes_payload: list[dict[str, Any]],
+    source_storyboard: Path | None,
+    *,
+    approved_label: str = "可进入素材生成",
+) -> str:
     payload = json.dumps(scenes_payload, ensure_ascii=False)
     source = str(source_storyboard.resolve()) if source_storyboard else ""
     return f"""
   <script>
     const REVIEW_SCENES = {payload};
     const SOURCE_STORYBOARD = {json.dumps(source, ensure_ascii=False)};
+    const APPROVED_LABEL = {json.dumps(approved_label, ensure_ascii=False)};
     const STORAGE_KEY = 'dasheng_storyboard_review:' + (SOURCE_STORYBOARD || location.pathname);
 
     function getSceneDecision(scene) {{
@@ -187,7 +202,7 @@ def review_page_script(scenes_payload: list[dict[str, Any]], source_storyboard: 
       document.querySelector('#approvedCount').textContent = payload.approved_count;
       document.querySelector('#pendingCount').textContent = payload.pending_count;
       document.querySelector('#blockerCount').textContent = payload.blocker_count;
-      document.querySelector('#gateStatus').textContent = payload.status === 'approved' ? '可进入素材生成' : '仍需修改';
+      document.querySelector('#gateStatus').textContent = payload.status === 'approved' ? APPROVED_LABEL : '仍需修改';
       document.querySelector('#gateStatus').className = payload.status === 'approved' ? 'ok' : 'warn';
       localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
     }}
@@ -270,6 +285,7 @@ def review_page_script(scenes_payload: list[dict[str, Any]], source_storyboard: 
 def build_html(storyboard: dict[str, Any], *, output: Path, preview_roots: list[Path], source_storyboard: Path | None = None) -> str:
     scenes = storyboard.get("scenes") or storyboard.get("timeline") or []
     title = storyboard.get("title") or storyboard.get("name") or "视频分镜模板审核表"
+    narrative = storyboard.get("review_mode") == "narrative"
     rows = []
     scene_payload = []
     for fallback, scene in enumerate(scenes, 1):
@@ -291,27 +307,59 @@ def build_html(storyboard: dict[str, Any], *, output: Path, preview_roots: list[
                 "template_id": template_id,
             }
         )
-        rows.append(
-            f'<tr data-scene-id="{esc(identifier)}">'
-            f"<td class=\"num\">{esc(index)}</td>"
-            f"<td class=\"time\">{esc(scene_time(scene))}</td>"
-            f"<td>{template_preview_cell(template_id, preview_roots)}</td>"
-            f"<td><code>{esc(template_id)}</code><br><small>{esc(scene.get('content_part') or scene.get('visualFamily') or scene.get('beat_class') or '')}</small></td>"
-            f"<td><b>{esc(scene_title(scene))}</b><p>{esc(scene_voice(scene))}</p></td>"
-            f"<td>{esc(core)}<br><small>{esc(visual)}</small><br><small>{esc(motion_text)}</small></td>"
-            f"<td>{esc(scene_evidence(scene))}</td>"
-            f"<td class=\"routing\">{esc(scene_tool_routing(scene))}</td>"
-            f"<td>{esc(scene_risks(scene))}</td>"
-            f'<td class="decision">{review_controls_cell(identifier, template_id)}</td>'
-            "</tr>"
-        )
+        if narrative:
+            real_inserts = "、".join(map(str, scene.get("real_insert_plan") or []))
+            emphasis = "、".join(str(item) for item in [scene.get("emphasis_text"), *(scene.get("entity_labels") or [])] if item)
+            retention = "、".join(map(str, scene.get("interaction_or_retention") or []))
+            coverage = "、".join(map(str, [*(scene.get("core_claim_refs") or []), *(scene.get("evidence_refs") or [])]))
+            rows.append(
+                f'<tr data-scene-id="{esc(identifier)}">'
+                f"<td class=\"num\">{esc(index)}</td>"
+                f"<td class=\"time\">{esc(scene_time(scene))}</td>"
+                f"<td><b>{esc(scene.get('narrative_function') or scene.get('beat_class') or '')}</b><br><small>{esc(scene_title(scene))}</small></td>"
+                f"<td><p>{esc(scene_voice(scene))}</p></td>"
+                f"<td>{esc(coverage)}</td>"
+                f"<td>{esc(scene.get('main_visual') or visual)}<br><small>{esc(real_inserts)}</small></td>"
+                f"<td>{esc(emphasis)}</td>"
+                f"<td>{esc(retention)}</td>"
+                f"<td>{esc(scene_risks(scene))}</td>"
+                f'<td class="decision">{review_controls_cell(identifier, template_id, narrative=True)}</td>'
+                "</tr>"
+            )
+        else:
+            rows.append(
+                f'<tr data-scene-id="{esc(identifier)}">'
+                f"<td class=\"num\">{esc(index)}</td>"
+                f"<td class=\"time\">{esc(scene_time(scene))}</td>"
+                f"<td>{template_preview_cell(template_id, preview_roots)}</td>"
+                f"<td><code>{esc(template_id)}</code><br><small>{esc(scene.get('content_part') or scene.get('visualFamily') or scene.get('beat_class') or '')}</small></td>"
+                f"<td><b>{esc(scene_title(scene))}</b><p>{esc(scene_voice(scene))}</p></td>"
+                f"<td>{esc(core)}<br><small>{esc(visual)}</small><br><small>{esc(motion_text)}</small></td>"
+                f"<td>{esc(scene_evidence(scene))}</td>"
+                f"<td class=\"routing\">{esc(scene_tool_routing(scene))}</td>"
+                f"<td>{esc(scene_risks(scene))}</td>"
+                f'<td class="decision">{review_controls_cell(identifier, template_id)}</td>'
+                "</tr>"
+            )
+
+    page_label = "叙事分镜审核表" if narrative else "分镜模板审核表"
+    page_note = (
+        "先确认完整口播、论点、证据、画面方向、花字和留存，再拆生产镜并生成视觉资产。"
+        if narrative
+        else "先确认每个分镜的模板、口播、证据和风险，再进入配音、素材生成、渲染。"
+    )
+    table_head = (
+        "<tr><th>#</th><th>时间</th><th>叙事作用</th><th>完整口播</th><th>观点/证据</th><th>主画面/真实素材</th><th>花字/标签</th><th>互动/留存</th><th>风险点</th><th>审核</th></tr>"
+        if narrative
+        else "<tr><th>#</th><th>时间</th><th>模板截图</th><th>模板/类型</th><th>分镜与口播</th><th>核心/画面/动效</th><th>证据资产</th><th>工具路由</th><th>风险点</th><th>审核</th></tr>"
+    )
 
     return f"""<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{esc(title)} · 分镜模板审核表</title>
+  <title>{esc(title)} · {page_label}</title>
   <style>
     :root {{
       --bg:#08111f; --panel:#101d30; --line:rgba(215,168,79,.24);
@@ -349,8 +397,8 @@ def build_html(storyboard: dict[str, Any], *, output: Path, preview_roots: list[
 </head>
 <body>
   <header>
-    <h1>{esc(title)} · 分镜模板审核表</h1>
-    <div class="note">生成时间：{esc(datetime.now().astimezone().isoformat(timespec="seconds"))}。这是视频生成前的审核门禁表：先确认每个分镜的模板、口播、证据和风险，再进入配音、素材生成、渲染。</div>
+    <h1>{esc(title)} · {page_label}</h1>
+    <div class="note">生成时间：{esc(datetime.now().astimezone().isoformat(timespec="seconds"))}。这是视频生成前的审核门禁表：{page_note}</div>
   </header>
   <section class="toolbar">
     <b>审核门禁：</b><span id="gateStatus" class="warn">仍需修改</span>
@@ -364,11 +412,11 @@ def build_html(storyboard: dict[str, Any], *, output: Path, preview_roots: list[
   </section>
   <table>
     <thead>
-      <tr><th>#</th><th>时间</th><th>模板截图</th><th>模板/类型</th><th>分镜与口播</th><th>核心/画面/动效</th><th>证据资产</th><th>工具路由</th><th>风险点</th><th>审核</th></tr>
+      {table_head}
     </thead>
     <tbody>{''.join(rows)}</tbody>
   </table>
-  {review_page_script(scene_payload, source_storyboard)}
+  {review_page_script(scene_payload, source_storyboard, approved_label="可拆生产镜" if narrative else "可进入素材生成")}
 </body>
 </html>
 """

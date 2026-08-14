@@ -55,6 +55,29 @@ def test_manifest_builds_one_image2_job_per_micro_shot(tmp_path):
     assert validate_artifact("image2_shot_manifest", manifest) == []
 
 
+def test_manifest_prefers_approved_director_shots(tmp_path):
+    plan = sample_plan()
+    plan["scenes"][0]["director_shots"] = [
+        {
+            "id": "scene_001_shot_01",
+            "start_ratio": 0,
+            "end_ratio": 1,
+            "shot_size": "MEDIUM",
+            "focus": {"x": 0.5, "y": 0.5},
+            "visual_mechanism": "gold bars arrive, then evidence arrows connect",
+            "assembly_order": ["gold bars arrive", "evidence arrows connect"],
+            "camera_move": "slow push in",
+        }
+    ]
+
+    manifest = build_manifest(plan, tmp_path)
+
+    assert len(manifest["jobs"]) == 1
+    assert manifest["jobs"][0]["shot_id"] == "scene_001_shot_01"
+    assert "exact target composition" in manifest["jobs"][0]["video_prompt"]
+    assert "Generated camera: locked" in manifest["jobs"][0]["video_prompt"]
+
+
 def test_crop_outputs_all_aspects_and_real_shot_sizes(tmp_path):
     manifest = build_manifest(sample_plan(), tmp_path)
     first_job = manifest["jobs"][0]

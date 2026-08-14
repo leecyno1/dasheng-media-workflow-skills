@@ -3,8 +3,10 @@
 
 from __future__ import annotations
 
+import math
 import re
 from datetime import datetime
+from pathlib import Path
 from typing import Any
 
 from video_explainer_storyboard import HtmlArticle, clean_text, section_summaries, short_script, template_match
@@ -128,6 +130,352 @@ def find_section(sections: list[dict[str, Any]], pattern: str) -> dict[str, Any]
     )
 
 
+def vox_director_shots(scene_id: str, narrative_function: str, duration: float) -> list[dict[str, Any]]:
+    minimum_count = math.ceil(duration / 12)
+    maximum_count = math.floor(duration / 8)
+    count = minimum_count if maximum_count >= minimum_count else 1
+    blueprints = VOX_SHOT_BLUEPRINTS[narrative_function]
+    framings = VOX_SHOT_FRAMING[narrative_function]
+    shots: list[dict[str, Any]] = []
+    for shot_index in range(count):
+        start_ratio = shot_index / count
+        end_ratio = (shot_index + 1) / count
+        shot_duration = duration / count
+        beat_count = 3 if shot_duration >= 10 else 2
+        beats = []
+        for beat_index in range(beat_count):
+            blueprint_index = (shot_index * beat_count + beat_index) % len(blueprints)
+            phase, visual_mechanism, camera_move = blueprints[blueprint_index]
+            beats.append(
+                {
+                    "id": f"{scene_id}_shot_{shot_index + 1:02d}_beat_{beat_index + 1:02d}",
+                    "phase": phase,
+                    "visual_mechanism": visual_mechanism,
+                    "camera_move": camera_move,
+                    "start_ratio": round(beat_index / beat_count, 3),
+                    "end_ratio": round((beat_index + 1) / beat_count, 3),
+                    "duration_sec": round(shot_duration / beat_count, 3),
+                    "sound_cue": "paper slide, marker stroke or restrained mechanical click",
+                }
+            )
+        framing = framings[shot_index % len(framings)]
+        shot = {
+            "id": f"{scene_id}_shot_{shot_index + 1:02d}",
+            "story_segment_id": scene_id,
+            "start_ratio": round(start_ratio, 3),
+            "end_ratio": round(end_ratio, 3),
+            "duration_sec": round(shot_duration, 3),
+            "visual_mechanism": " -> ".join(str(item["visual_mechanism"]) for item in beats),
+            "camera_move": str(beats[0]["camera_move"]),
+            "shot_size": framing[0],
+            "focus": {"x": 0.5, "y": 0.5},
+            "crop_scale": framing[1],
+            "sound_cue": str(beats[0]["sound_cue"]),
+            "assembly_order": [str(item["visual_mechanism"]) for item in beats],
+            "micro_beats": beats,
+            "continuity_anchor": "shared_paper_evidence_world",
+        }
+        if shot_duration > 12:
+            shot["duration_exception"] = "single approved story segment cannot split into two shots of at least eight seconds"
+        shots.append(shot)
+    return shots
+
+
+def flatten_micro_beats(director_shots: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    beats: list[dict[str, Any]] = []
+    for shot in director_shots:
+        shot_start = float(shot["start_ratio"])
+        shot_span = float(shot["end_ratio"]) - shot_start
+        for beat in shot.get("micro_beats") or []:
+            beats.append(
+                {
+                    **beat,
+                    "director_shot_id": shot["id"],
+                    "start_ratio": round(shot_start + shot_span * float(beat["start_ratio"]), 3),
+                    "end_ratio": round(shot_start + shot_span * float(beat["end_ratio"]), 3),
+                    "continuity_anchor": "shared_paper_evidence_world",
+                }
+            )
+    return beats
+
+
+def build_vox_script_artifact(storyboard: dict[str, Any], *, creator_intro: str) -> dict[str, Any]:
+    segments: list[dict[str, Any]] = []
+
+    def add_segment(
+        scene: dict[str, Any],
+        text: str,
+        beat_class: str,
+        *,
+        retention_function: str = "",
+        viewer_prompt: str = "",
+    ) -> None:
+        segments.append(
+            {
+                "id": f"segment_{len(segments) + 1:03d}",
+                "story_segment_id": scene["id"],
+                "text": clean_text(text),
+                "beat_class": beat_class,
+                "narrative_role": scene.get("narrative_function"),
+                "source_claim_refs": [str(item) for item in scene.get("evidence_refs") or []],
+                "evidence_refs": [str(item) for item in scene.get("evidence_refs") or []],
+                **({"retention_function": retention_function} if retention_function else {}),
+                **({"viewer_prompt": viewer_prompt} if viewer_prompt else {}),
+            }
+        )
+
+    question = clean_text(storyboard.get("central_question"))
+    for scene in storyboard.get("scenes") or []:
+        narrative_function = str(scene.get("narrative_function") or "")
+        narration = clean_text(scene.get("narration"))
+        if narrative_function == "cold_open":
+            hook = f"{short_script(narration, 18)}。{short_script(question, 24)}"
+            add_segment(scene, hook, "hook", retention_function="opening_question")
+            add_segment(scene, creator_intro, "creator_intro")
+            continue
+        beat_class = str(scene.get("beat_class") or "claim")
+        if narrative_function == "counterargument":
+            beat_class = "counterargument"
+        elif narrative_function == "qualified_conclusion":
+            beat_class = "conclusion"
+        add_segment(
+            scene,
+            narration,
+            beat_class,
+            retention_function="cognitive_refresh" if narrative_function in {"counterargument", "data_resolution"} else "",
+        )
+        if narrative_function == "mechanism_explainer":
+            prompt = "先做个判断：如果只看这条机制，你会认为答案已经成立，还是还需要现场证据？"
+            add_segment(scene, prompt, "audience_interaction", viewer_prompt=prompt, retention_function="prediction_before_evidence")
+        if narrative_function == "counterargument":
+            add_segment(
+                scene,
+                "反例出现不等于前面的机制失效，接下来要找的是它真正成立的边界。",
+                "retention_bridge",
+                retention_function="counterargument_payoff",
+            )
+            prompt = "换你判断：这个反例是在推翻主结论，还是只是在缩小它的适用范围？"
+            add_segment(scene, prompt, "audience_interaction", viewer_prompt=prompt, retention_function="boundary_choice")
+
+    core_claims = [clean_text(item.get("title")) for item in (storyboard.get("evidence_map") or [])[:5]]
+    return {
+        "schema_version": "dasheng.video.script.v1",
+        "created_at": datetime.now().astimezone().isoformat(timespec="seconds"),
+        "title": storyboard.get("title") or "VOX 调查解释视频",
+        "lane": "vox_explainer_video",
+        "central_question": question,
+        "editorial_mode": "core_alignment",
+        "core_claims": core_claims,
+        "retention_plan": {
+            "hook_window_sec": 8,
+            "creator_intro_after_first_value": True,
+            "interaction_interval_sec": [45, 60],
+            "required_refreshes": 2,
+            "opening_payoff": "qualified_conclusion",
+        },
+        "segments": segments,
+    }
+
+
+def audit_vox_script(script: dict[str, Any]) -> dict[str, Any]:
+    segments = script.get("segments") or []
+    beats = [str(item.get("beat_class") or "") for item in segments]
+    failures: list[dict[str, str]] = []
+    if not beats or beats[0] != "hook":
+        failures.append({"code": "hook_missing", "message": "前 8 秒必须先给出钩子。"})
+    elif len(clean_text(segments[0].get("text"))) > 48:
+        failures.append({"code": "hook_too_long", "message": "开场钩子过长，无法在约 8 秒内成立。"})
+    if "creator_intro" not in beats or "hook" not in beats or beats.index("creator_intro") <= beats.index("hook"):
+        failures.append({"code": "creator_intro_position", "message": "博主介绍必须位于首条有效信息之后。"})
+    if beats.count("audience_interaction") < 2:
+        failures.append({"code": "interaction_missing", "message": "长视频至少需要两次推动叙事的观众互动。"})
+    if "counterargument" not in beats:
+        failures.append({"code": "counterargument_missing", "message": "缺少可信反方或边界条件。"})
+    if "conclusion" not in beats:
+        failures.append({"code": "conclusion_missing", "message": "缺少带条件的结论。"})
+    refreshes = [item for item in segments if item.get("retention_function") in {"cognitive_refresh", "counterargument_payoff"}]
+    if len(refreshes) < 2:
+        failures.append({"code": "retention_refresh_missing", "message": "至少需要两次认知刷新或悬念兑现。"})
+    if len(script.get("core_claims") or []) < 3:
+        failures.append({"code": "core_claims_too_few", "message": "核心递进观点少于三层。"})
+    return {
+        "schema_version": "dasheng.video.script_rewrite_gate.v1",
+        "created_at": datetime.now().astimezone().isoformat(timespec="seconds"),
+        "status": "pass" if not failures else "fail",
+        "script_review_allowed": not failures,
+        "failures": failures,
+    }
+
+
+def build_vox_storyboard_review(storyboard: dict[str, Any], script: dict[str, Any]) -> dict[str, Any]:
+    by_story_segment: dict[str, list[dict[str, Any]]] = {}
+    for segment in script.get("segments") or []:
+        by_story_segment.setdefault(str(segment.get("story_segment_id") or ""), []).append(segment)
+    pillar_titles = {str(item.get("source_locator")): str(item.get("title")) for item in storyboard.get("evidence_map") or []}
+    pillar_ids = {str(item.get("source_locator")): str(item.get("id")) for item in storyboard.get("evidence_map") or []}
+    pillar_list = storyboard.get("evidence_map") or [{}]
+    scenes: list[dict[str, Any]] = []
+    cursor = 0.0
+    for index, scene in enumerate(storyboard.get("scenes") or [], 1):
+        grouped = by_story_segment.get(str(scene.get("id"))) or []
+        narration = " ".join(clean_text(item.get("text")) for item in grouped)
+        duration = min(25.0, max(10.0, len(narration) / 4.2))
+        evidence_refs = [str(item) for item in scene.get("evidence_refs") or []]
+        core_refs = [pillar_ids[item] for item in evidence_refs if item in pillar_ids]
+        if not core_refs:
+            core_refs = [str(pillar_list[min(index - 1, len(pillar_list) - 1)].get("id") or "")]
+        retention = [str(item.get("retention_function")) for item in grouped if item.get("retention_function")]
+        prompts = [str(item.get("viewer_prompt")) for item in grouped if item.get("viewer_prompt")]
+        variables = scene.get("variables") or {}
+        real_inserts = list(map(str, variables.get("preferred_assets") or []))
+        if variables.get("archive_footage_required"):
+            real_inserts.append("archival_footage")
+        scenes.append(
+            {
+                "id": str(scene.get("id") or f"story_segment_{index:03d}"),
+                "index": index,
+                "title": scene.get("title") or f"叙事段 {index}",
+                "narrative_function": scene.get("narrative_function"),
+                "start_sec": round(cursor, 3),
+                "end_sec": round(cursor + duration, 3),
+                "duration_sec": round(duration, 3),
+                "beat_class": grouped[0].get("beat_class") if grouped else scene.get("beat_class") or "claim",
+                "narration": narration,
+                "core_meaning_lock": scene.get("title") or "",
+                "core_claim_refs": [item for item in core_refs if item],
+                "evidence_refs": evidence_refs,
+                "main_visual": scene.get("visual_grammar") or "",
+                "visual_intent": scene.get("visual_grammar") or "",
+                "real_insert_plan": real_inserts,
+                "emphasis_text": clean_text(scene.get("title"))[:8],
+                "entity_labels": [pillar_titles[item] for item in evidence_refs if item in pillar_titles],
+                "interaction_or_retention": prompts + retention,
+                "core_coverage_refs": [item for item in core_refs if item],
+                "content_part": scene.get("content_part"),
+                "risk_notes": scene.get("risk_notes") or [],
+            }
+        )
+        cursor += duration
+    return {
+        "schema_version": "dasheng.video.narrative_storyboard.v1",
+        "created_at": datetime.now().astimezone().isoformat(timespec="seconds"),
+        "status": "pending_review",
+        "review_mode": "narrative",
+        "lane": "vox_explainer_video",
+        "title": storyboard.get("title") or "VOX 调查解释视频",
+        "source_html": storyboard.get("source_html"),
+        "central_question": storyboard.get("central_question"),
+        "editorial_mode": "core_alignment",
+        "scenes": scenes,
+    }
+
+
+def apply_approved_storyboard(storyboard: dict[str, Any], review: dict[str, Any], gate_path: Path) -> dict[str, Any]:
+    reviewed = {str(scene.get("id")): scene for scene in review.get("scenes") or []}
+    cursor = 0.0
+    for scene in storyboard.get("scenes") or []:
+        approved = reviewed.get(str(scene.get("id")))
+        if not approved:
+            raise ValueError(f"approved narrative storyboard is missing {scene.get('id')}")
+        duration = float(approved.get("duration_sec") or 10.0)
+        scene.update(
+            {
+                "story_segment_id": approved["id"],
+                "narration": approved.get("narration") or scene.get("narration"),
+                "start_sec": round(cursor, 3),
+                "end_sec": round(cursor + duration, 3),
+                "duration_sec": round(duration, 3),
+                "core_claim_id": next(iter(approved.get("core_claim_refs") or []), ""),
+                "approved_storyboard_gate": str(gate_path),
+            }
+        )
+        director_shots = vox_director_shots(str(scene["id"]), str(scene["narrative_function"]), duration)
+        for shot in director_shots:
+            shot["core_claim_id"] = scene.get("core_claim_id")
+            shot["evidence_refs"] = scene.get("evidence_refs") or []
+            shot["start_sec"] = round(cursor + duration * float(shot["start_ratio"]), 3)
+            shot["end_sec"] = round(cursor + duration * float(shot["end_ratio"]), 3)
+        scene["director_shots"] = director_shots
+        scene["micro_shots"] = flatten_micro_beats(director_shots)
+        cursor += duration
+    storyboard["duration_estimate_sec"] = round(cursor, 3)
+    storyboard["storyboard_review_gate"] = str(gate_path)
+    return storyboard
+
+
+def vox_content_brief_markdown(storyboard: dict[str, Any]) -> str:
+    pillars = storyboard.get("evidence_map") or []
+    counter = next((scene for scene in storyboard.get("scenes") or [] if scene.get("narrative_function") == "counterargument"), {})
+    conclusion = next((scene for scene in storyboard.get("scenes") or [] if scene.get("narrative_function") == "qualified_conclusion"), {})
+    lines = [
+        f"# {storyboard.get('title') or 'VOX 内容提炼'}",
+        "",
+        "## 中心问题",
+        "",
+        str(storyboard.get("central_question") or ""),
+        "",
+        "## 一句话核心回答",
+        "",
+        clean_text(conclusion.get("narration")) or "结论需在证据与反证审核后收敛。",
+        "",
+        "## 递进观点与关键证据",
+        "",
+    ]
+    for index, pillar in enumerate(pillars[:5], 1):
+        lines.append(f"{index}. **{clean_text(pillar.get('title'))}**：{clean_text(pillar.get('summary'))}（{pillar.get('source_locator')}）")
+    lines.extend(
+        [
+            "",
+            "## 反方与边界",
+            "",
+            clean_text(counter.get("narration")) or "需要补充反例与适用边界。",
+            "",
+            "## 后续观察指标",
+            "",
+        ]
+    )
+    for pillar in pillars[:5]:
+        lines.append(f"- {clean_text(pillar.get('title'))}")
+    return "\n".join(lines) + "\n"
+
+
+def vox_script_markdown(script: dict[str, Any]) -> str:
+    paragraphs = [clean_text(segment.get("text")) for segment in script.get("segments") or []]
+    return f"# {script.get('title') or 'VOX 口播稿'}\n\n" + "\n\n".join(paragraphs) + "\n"
+
+
+def vox_storyboard_review_markdown(review: dict[str, Any]) -> str:
+    def cell(value: Any) -> str:
+        if isinstance(value, list):
+            value = "、".join(map(str, value))
+        return str(value or "").replace("|", "｜").replace("\n", " ")
+
+    lines = [
+        f"# {review.get('title') or 'VOX 审核分镜'}",
+        "",
+        "| 段 | 时间 | 叙事作用 | 完整口播 | 观点/证据 | 主画面/真实素材 | 花字/标签 | 互动或留存 |",
+        "|---|---|---|---|---|---|---|---|",
+    ]
+    for scene in review.get("scenes") or []:
+        lines.append(
+            "| "
+            + " | ".join(
+                [
+                    cell(scene.get("id")),
+                    f"{float(scene.get('start_sec') or 0):.1f}-{float(scene.get('end_sec') or 0):.1f}s",
+                    cell(scene.get("narrative_function")),
+                    cell(scene.get("narration")),
+                    cell((scene.get("core_claim_refs") or []) + (scene.get("evidence_refs") or [])),
+                    cell([scene.get("main_visual"), *(scene.get("real_insert_plan") or [])]),
+                    cell([scene.get("emphasis_text"), *(scene.get("entity_labels") or [])]),
+                    cell(scene.get("interaction_or_retention")),
+                ]
+            )
+            + " |"
+        )
+    return "\n".join(lines) + "\n"
+
+
 def build_vox_storyboard(
     article: HtmlArticle,
     *,
@@ -136,6 +484,7 @@ def build_vox_storyboard(
     router: dict[str, Any] | None = None,
     aspect: str = "16:9",
     central_question: str | None = None,
+    include_production_shots: bool = True,
 ) -> dict[str, Any]:
     router = router or {"part_router": {}}
     sections = section_summaries(article)
@@ -183,8 +532,7 @@ def build_vox_storyboard(
         scene_duration = max(duration, speech_sec)
         match = template_match(router, content_part, fallback_template)
         scene_id = f"scene_{len(scenes) + 1:03d}"
-        scenes.append(
-            {
+        scene = {
                 "id": scene_id,
                 "type": narrative_function,
                 "narrative_function": narrative_function,
@@ -220,25 +568,6 @@ def build_vox_storyboard(
                     "focus_change": visual_grammar,
                     "exit": "overlap_protected_cut",
                 },
-                "micro_shots": vox_micro_shots(scene_id, narrative_function),
-                "image2_scene_policy": {
-                    "mode": "one_complete_scene_still_per_micro_shot",
-                    "master_reference": "first_approved_scene_or_external_reference",
-                    "crop_review_required": True,
-                    "must_preserve_shared_world": True,
-                },
-                "image2_shot_packet": {
-                    "mode": "image2_scene_to_video",
-                    "style_reference_required": True,
-                    "image_prompt_required": True,
-                    "scene_still_required": True,
-                    "crop_outputs_required": ["16:9", "1:1", "9:16"],
-                    "motion_prompt_required": True,
-                    "duration_sec": round(scene_duration / max(3, len(VOX_SHOT_BLUEPRINTS[narrative_function])), 3),
-                    "sound_cue_required": True,
-                    "exact_text_overlay": "remotion_only",
-                    "evidence_role": "illustrative",
-                },
                 "html_animation_behavior": f"live_{visual_grammar}_with_source_annotations",
                 "transition_to_next": "semantic_match_cut_without_blank_frame",
                 "risk_notes": [
@@ -246,7 +575,33 @@ def build_vox_storyboard(
                     "Do not present contextual footage as direct proof.",
                 ],
             }
-        )
+        if include_production_shots:
+            director_shots = vox_director_shots(scene_id, narrative_function, scene_duration)
+            scene.update(
+                {
+                    "director_shots": director_shots,
+                    "micro_shots": flatten_micro_beats(director_shots),
+                    "image2_scene_policy": {
+                        "mode": "one_complete_scene_still_per_director_shot",
+                        "master_reference": "first_approved_scene_or_external_reference",
+                        "crop_review_required": True,
+                        "must_preserve_shared_world": True,
+                    },
+                    "image2_shot_packet": {
+                        "mode": "image2_scene_to_video",
+                        "style_reference_required": True,
+                        "image_prompt_required": True,
+                        "scene_still_required": True,
+                        "crop_outputs_required": ["16:9", "1:1", "9:16"],
+                        "motion_prompt_required": True,
+                        "duration_sec": round(scene_duration / max(1, len(director_shots)), 3),
+                        "sound_cue_required": True,
+                        "exact_text_overlay": "remotion_only",
+                        "evidence_role": "illustrative",
+                    },
+                }
+            )
+        scenes.append(scene)
         cursor += scene_duration
 
     first_summary = short_script(section_text(sections[0]), 120)
@@ -380,9 +735,14 @@ def build_vox_storyboard(
             scene["start_sec"] = round(cursor, 3)
             scene["duration_sec"] = round(duration, 3)
             scene["end_sec"] = round(cursor + duration, 3)
+            if include_production_shots:
+                director_shots = vox_director_shots(str(scene["id"]), str(scene["narrative_function"]), duration)
+                scene["director_shots"] = director_shots
+                scene["micro_shots"] = flatten_micro_beats(director_shots)
+                scene["image2_shot_packet"]["duration_sec"] = round(duration / max(1, len(director_shots)), 3)
             cursor += duration
 
-    return {
+    payload = {
         "schema_version": "dasheng.vox_storyboard.v1",
         "lane": "vox_explainer_video",
         "created_at": datetime.now().astimezone().isoformat(timespec="seconds"),
@@ -400,7 +760,16 @@ def build_vox_storyboard(
             "separate_fact_opinion_inference_unknown": True,
             "direct_audiovisual_evidence_priority": True,
         },
-        "visual_bible": {
+        "duration_estimate_sec": round(max((scene["end_sec"] for scene in scenes), default=0.0), 3),
+        "style": {
+            "direction": "continuous_editorial_paper_world_horizontal",
+            "use": ["paper_diorama", "physicalized_data", "archival_collage", "maps", "timelines", "documents", "interviews", "source_annotations", "camera_choreography"],
+            "avoid": ["article_chapter_recitation", "generic_broll_as_proof", "static_screenshot_slideshow", "isolated_white_chart_cards", "absolute_conclusion", "effect_overuse"],
+        },
+        "scenes": scenes,
+    }
+    if include_production_shots:
+        payload["visual_bible"] = {
             "schema_version": "dasheng.video.vox_visual_bible.v1",
             "system": "vox_editorial_paper_collage",
             "world": "one_continuous_tabletop_evidence_world",
@@ -430,12 +799,7 @@ def build_vox_storyboard(
                 "exact_text_overlay": "remotion_only",
                 "default_compositor": "remotion",
             },
-        },
-        "duration_estimate_sec": round(max((scene["end_sec"] for scene in scenes), default=0.0), 3),
-        "style": {
-            "direction": "continuous_editorial_paper_world_horizontal",
-            "use": ["paper_diorama", "physicalized_data", "archival_collage", "maps", "timelines", "documents", "interviews", "source_annotations", "camera_choreography"],
-            "avoid": ["article_chapter_recitation", "generic_broll_as_proof", "static_screenshot_slideshow", "isolated_white_chart_cards", "absolute_conclusion", "effect_overuse"],
-        },
-        "scenes": scenes,
-    }
+        }
+    else:
+        payload["production_state"] = "narrative_storyboard_review_pending"
+    return payload

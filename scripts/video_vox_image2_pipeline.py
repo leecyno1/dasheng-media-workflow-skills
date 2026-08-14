@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Image2 still, crop, storyboard and image-to-video jobs for VOX shots."""
+"""Build Image2 still, crop, storyboard and image-to-video jobs for VOX director shots."""
 
 from __future__ import annotations
 
@@ -116,14 +116,14 @@ def shot_prompt(
     return "\n".join(
         [
             "Use case: stylized-concept",
-            "Asset type: Image2 VOX micro-shot scene still, horizontal 2048x1152 master canvas",
+            "Asset type: Image2 VOX director-shot scene still, horizontal 2048x1152 master canvas",
             f"Primary request: {scene.get('title')}. Narration beat: {narration}",
             reference + style,
             f"Scene mechanism: {mechanism or 'assemble the evidence into one readable causal composition'}.",
             f"Evidence objects: {', '.join(map(str, nodes[:5])) or 'source documents, physical evidence objects and one clear causal path'}.",
             f"Composition/framing: {shot_size}; focal point near normalized position ({focus_x:.2f}, {focus_y:.2f}). Keep the main action inside the central 45% so 1:1 and 9:16 crops remain usable.",
             f"Crop intent: preserve a clean editorial crop at scale {crop_scale:.2f}; keep the primary evidence object, faces, hands and causal path fully visible after reframing.",
-            "Lighting/mood: cinematic desk lighting, deep shadows around the edges, readable foreground separation, tactile paper depth.",
+            "Lighting/mood: flat editorial paper collage, tactile fibers, crisp cut edges, short paper shadows and clear negative space; no room, desk or realistic 3D diorama.",
             "Text policy: do not render final headlines, numbers, dates, citations or chart labels. Use blank paper labels and empty title areas; exact text will be added in Remotion.",
             "Constraints: one finished scene, not a mood board; no split-screen UI, no white dashboard, no watermark, no logo, no black frame, no border.",
         ]
@@ -137,14 +137,21 @@ def resolve_sound_cue(micro: dict[str, Any]) -> str:
 def motion_prompt(micro: dict[str, Any], duration: float, sound_cue: str) -> str:
     camera = clean(micro.get("camera_move") or "slow controlled push-in")
     action = clean(micro.get("visual_mechanism") or micro.get("action") or "evidence objects assemble and the causal path activates")
+    assembly_order = [clean(item) for item in micro.get("assembly_order") or [] if clean(item)]
+    generation_contract = (
+        "Use the generated scene still as the exact target composition. Start with the same matte background and optional base panel, "
+        f"then assemble each named group once in this order: {'; '.join(assembly_order)}. Keep every arrived object visible. "
+        if assembly_order
+        else "Use the generated scene still as the locked composition and animate only the declared local evidence action. "
+    )
     return " ".join(
         [
-            f"Use the generated scene still as the first frame. Duration {duration:.2f} seconds.",
-            f"Camera: {camera}.",
+            f"{generation_contract}Duration {duration:.2f} seconds.",
+            f"Generated camera: locked, no pan or zoom. Remotion camera cue after generation: {camera}.",
             f"Object action: {action}.",
-            "Treat the still as a layout reference, not one flat animation plate. Hero objects are separate layers in Remotion; generated motion may animate only local atmosphere or evidence footage.",
-            "No new objects, no text mutation, no camera teleport, no full-frame fade, no black or white transition frame.",
-            f"End on a stable readable frame for the next Remotion match cut. Sound cue: {sound_cue}, matched to the main action.",
+            "Treat the still as a target object map, not one flat animation plate. Finish the meaningful motion before the last second and hold the completed composition.",
+            "No new objects, object disappearance, text mutation, camera teleport, full-frame fade, black or white transition frame, readable text, logo, watermark or generated sound.",
+            f"End on a stable readable frame for the next Remotion match cut. Remotion sound cue: {sound_cue}.",
         ]
     )
 
@@ -155,7 +162,7 @@ def build_manifest(plan: dict[str, Any], output_dir: Path, style_reference: str 
     master_reference_image = ""
     master_reference_shot_id = ""
     for scene_index, scene in enumerate(plan.get("scenes") or [], start=1):
-        micros = scene.get("micro_shots") or (scene.get("visual") or {}).get("micro_shots") or []
+        micros = scene.get("director_shots") or scene.get("micro_shots") or (scene.get("visual") or {}).get("micro_shots") or []
         if not micros:
             micros = [{"id": f"{scene.get('id')}_{index + 1:02d}", "action": "build the evidence"} for index in range(3)]
         chunks = narration_chunks(clean(scene.get("narration")), len(micros))

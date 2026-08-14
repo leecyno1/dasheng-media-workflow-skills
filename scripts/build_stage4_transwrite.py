@@ -415,6 +415,8 @@ def build_director_package_for_video_lane(
             article_html=topic.get("html_file"),
             duration_target_sec=int(director.get("duration_target_sec") or decision.get("duration_target_sec") or 300),
             central_question=director.get("central_question") or decision.get("central_question") or "",
+            creator_intro=director.get("creator_intro") or decision.get("creator_intro") or "这里是大圣，我们用证据把答案一步步收窄。",
+            storyboard_review_gate=director.get("storyboard_review_gate") or decision.get("storyboard_review_gate") or "",
             template_router=str(director.get("template_router") or DEFAULT_TEMPLATE_ROUTER),
             template_preview_root=template_preview_roots,
         )
@@ -432,17 +434,29 @@ def build_director_package_for_video_lane(
             "output_dir": str(director_dir.resolve()),
         }
 
+    scene_plan = outputs.get("scene_plan")
+    script_gate_status = (
+        read_json(outputs["script_rewrite_gate"]).get("status")
+        if mode == "vox_explainer_video" and "script_rewrite_gate" in outputs
+        else "pass"
+    )
     return {
-        "status": "pending_review",
+        "status": "needs_revision" if script_gate_status != "pass" else "pending_review",
         "mode": mode,
         "output_dir": str(director_dir.resolve()),
-        "scene_plan": str(outputs["scene_plan"].resolve()),
+        "scene_plan": str(scene_plan.resolve()) if scene_plan else None,
         "review_html": str(outputs["review_html"].resolve()),
         "checkpoint": str(outputs["checkpoint"].resolve()),
+        "script": str(outputs["script"].resolve()) if "script" in outputs else None,
+        "narrative_storyboard": str(outputs["narrative_storyboard"].resolve()) if "narrative_storyboard" in outputs else None,
         "raw_storyboard": str(outputs["raw_storyboard"].resolve()) if "raw_storyboard" in outputs else None,
         "raw_timeline": str(outputs["raw_timeline"].resolve()) if "raw_timeline" in outputs else None,
         "preview_html": str(outputs["preview_html"].resolve()) if "preview_html" in outputs else None,
-        "next_step": "Review storyboard_template_review.html and export storyboard_review_decision.json before material generation.",
+        "next_step": (
+            "Review storyboard_review.html and export storyboard_review_decision.json before production-shot splitting."
+            if mode == "vox_explainer_video" and not scene_plan
+            else "Review storyboard_template_review.html and export storyboard_review_decision.json before material generation."
+        ),
     }
 
 
@@ -910,8 +924,8 @@ def build_video_lane(
         lane_status = presenter_source["status"]
     elif presenter_kind == "digital_human" and presenter_source.get("status") == "planned_pending_short_sample":
         lane_status = "pending_presenter_source_review"
-    elif director_package["status"] == "pending_review":
-        lane_status = "pending_director_review"
+    elif director_package["status"] in {"pending_review", "needs_revision"}:
+        lane_status = "needs_director_revision" if director_package["status"] == "needs_revision" else "pending_director_review"
     elif director_package["status"].startswith("blocked"):
         lane_status = director_package["status"]
     else:

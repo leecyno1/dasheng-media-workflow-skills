@@ -201,12 +201,18 @@ def test_transwrite_vox_lane_stays_independent_and_horizontal(tmp_path):
     lanes = manifest["topics"][0]["lanes"]
     assert set(lanes) == {"vox_explainer_video"}
     lane = lanes["vox_explainer_video"]
-    scene_plan = json.loads(Path(lane["director_package"]["scene_plan"]).read_text(encoding="utf-8"))
+    director_package = lane["director_package"]
+    narrative_storyboard = json.loads(Path(director_package["narrative_storyboard"]).read_text(encoding="utf-8"))
+    script = json.loads(Path(director_package["script"]).read_text(encoding="utf-8"))
     assert lane["requested_lane"] == "vox_explainer_video"
     assert lane["renderer"]["aspect"] == "16:9"
-    assert lane["director_package"]["mode"] == "vox_explainer_video"
-    assert scene_plan["lane"] == "vox_explainer_video"
-    assert scene_plan["central_question"] == "这组数据为什么变化？"
+    assert director_package["mode"] == "vox_explainer_video"
+    assert director_package["status"] == "needs_revision"
+    assert lane["status"] == "needs_director_revision"
+    assert director_package["scene_plan"] is None
+    assert narrative_storyboard["lane"] == "vox_explainer_video"
+    assert narrative_storyboard["central_question"] == "这组数据为什么变化？"
+    assert script["editorial_mode"] == "core_alignment"
     assert any(item["skill"] == "dasheng-video-vox" for item in lane["skill_invocations"])
 
 

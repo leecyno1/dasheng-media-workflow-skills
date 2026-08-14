@@ -46,9 +46,9 @@
       }
     },
     "stage_capabilities": {
-      "intake_and_analysis": ["video_reading", "scene_detection", "transcript", "contact_sheet", "reference_download"],
+      "intake_and_analysis": ["video_reading", "scene_detection", "transcript", "contact_sheet", "reference_download", "content_distillation", "creator_script_rewrite", "retention_design"],
       "roughcut": ["talking_head_cut", "roughcut_plan", "local_asr", "silence_cleanup", "timeline_edit"],
-      "scene_design": ["director_scene_plan", "motion_design", "visual_design", "storyboard_review"],
+      "scene_design": ["director_scene_plan", "motion_design", "visual_design", "storyboard_review", "story_segment_storyboard", "production_shot_split"],
       "asset_generation": ["conceptual_illustration", "generated_broll", "lottie_asset", "social_card", "reusable_footage"],
       "render_and_composite": ["html_video", "remotion_render", "dynamic_chart", "talking_head_packaging", "final_render"],
       "caption_and_audio": ["subtitle_motion", "vertical_caption_render", "tts", "bgm", "audio_mastering"],
@@ -66,8 +66,8 @@
         "distribution": ["platform_upload", "cloud_draft", "short_clip_distribution"]
       },
       "vox_explainer_video": {
-        "intake_and_analysis": ["reference_download", "video_reading", "transcript", "contact_sheet", "vox_investigation"],
-        "scene_design": ["director_scene_plan", "storyboard_review", "visual_bible", "image2_shot_design", "crop_storyboard", "continuous_editorial_world", "editorial_collage", "document_visualization", "camera_choreography", "motion_design"],
+        "intake_and_analysis": ["reference_download", "video_reading", "transcript", "contact_sheet", "vox_investigation", "content_distillation", "creator_script_rewrite", "retention_design"],
+        "scene_design": ["director_scene_plan", "storyboard_review", "story_segment_storyboard", "production_shot_split", "visual_bible", "image2_shot_design", "crop_storyboard", "continuous_editorial_world", "editorial_collage", "document_visualization", "camera_choreography", "motion_design"],
         "asset_generation": ["video_download", "archive_footage", "reusable_footage", "dynamic_chart", "conceptual_illustration", "reference_image_generation", "storyboard_contact_sheet", "omni_browser_shot_generation", "image_to_video_shots"],
         "render_and_composite": ["html_video", "remotion_render", "dynamic_chart", "final_render"],
         "caption_and_audio": ["subtitle_motion", "tts", "bgm", "audio_mastering"],
@@ -93,8 +93,8 @@
     {"name":"dasheng-video-talking-head","path":"skills/dasheng-video-talking-head/SKILL.md","scope":"execution","capabilities":["presenter_source_routing","talking_head_packaging","speaker_pip","subtitle_motion","final_render"],"lanes":["talking_head_video"],"status":"ready"},
     {"name":"dasheng-digital-human-talking-head","path":"skills/dasheng-digital-human-talking-head/SKILL.md","scope":"execution","capabilities":["portrait_consent","animal_head_image_edit","luma_audio_lip_sync","portrait_audio_animation","minimax_audio_master","identity_review","lip_sync_review","presenter_source_manifest"],"lanes":["talking_head_video"],"status":"ready_requires_signed_in_luma"},
     {"name":"dasheng-video-explainer-html","path":"skills/dasheng-video-explainer-html/SKILL.md","scope":"execution","capabilities":["html_video","motion_design","motion_explainer","dynamic_chart","final_render"],"lanes":["explainer_html_video"],"status":"ready"},
-    {"name":"dasheng-vox-skills","path":"skills/dasheng-vox-skills/SKILL.md","scope":"execution","capabilities":["vox_orchestration","provider_routing","generation_resume","gemini_api_video","omni_browser_shot_generation","remotion_reedit","vox_qc"],"lanes":["vox_explainer_video"],"status":"ready"},
-    {"name":"dasheng-video-vox","path":"skills/dasheng-video-vox/SKILL.md","scope":"component","capabilities":["vox_investigation","visual_bible","image2_scene_generation","shot_crop","storyboard_contact_sheet","image_to_video_shots","continuous_editorial_world","camera_choreography","editorial_collage","archive_footage","document_visualization","counterargument_design","qualified_conclusion"],"lanes":["vox_explainer_video"],"status":"ready_internal_component"},
+    {"name":"dasheng-vox-skills","path":"skills/dasheng-vox-skills/SKILL.md","scope":"execution","capabilities":["vox_orchestration","content_distillation","creator_script_rewrite","retention_design","story_segment_storyboard","production_shot_split","provider_routing","generation_resume","gemini_api_video","omni_browser_shot_generation","remotion_reedit","vox_qc"],"lanes":["vox_explainer_video"],"status":"ready"},
+    {"name":"dasheng-video-vox","path":"skills/dasheng-video-vox/SKILL.md","scope":"component","capabilities":["vox_investigation","content_distillation","creator_script_rewrite","retention_design","story_segment_storyboard","production_shot_split","visual_bible","image2_scene_generation","shot_crop","storyboard_contact_sheet","image_to_video_shots","continuous_editorial_world","camera_choreography","editorial_collage","archive_footage","document_visualization","counterargument_design","qualified_conclusion"],"lanes":["vox_explainer_video"],"status":"ready_internal_component"},
     {"name":"dasheng-video-omni-browser","path":"skills/dasheng-video-omni-browser/SKILL.md","scope":"execution","capabilities":["omni_browser_shot_generation","signed_in_chrome_session","reference_image_to_video","shot_download"],"lanes":["vox_explainer_video"],"status":"ready_requires_signed_in_chrome"},
     {"name":"dasheng-html-video-bridge","path":"skills/dasheng-html-video-bridge/SKILL.md","scope":"execution","capabilities":["html_video","motion_design","remotion_render","gsap_motion","lottie_overlay"],"lanes":["talking_head_video","explainer_html_video","vox_explainer_video"],"status":"ready"},
     {"name":"dasheng-html-anything-bridge","path":"skills/dasheng-html-anything-bridge/SKILL.md","scope":"execution","capabilities":["html_template","visual_design","social_card","document_visualization"],"lanes":["talking_head_video","explainer_html_video","vox_explainer_video"],"status":"ready"},

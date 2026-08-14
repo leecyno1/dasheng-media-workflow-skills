@@ -17,6 +17,25 @@
       "type": "string",
       "enum": ["talking_head_video", "explainer_html_video", "vox_explainer_video"]
     },
+    "central_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "editorial_mode": {
+      "type": "string",
+      "enum": ["core_alignment", "paragraph_alignment"]
+    },
+    "core_claims": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "retention_plan": {
+      "type": "object",
+      "additionalProperties": true
+    },
     "voice": {
       "type": "object",
       "properties": {
@@ -61,7 +80,22 @@
           },
           "beat_class": {
             "type": "string",
-            "enum": ["hook", "claim", "evidence_data", "evidence_document", "logic_chain", "objection", "chapter", "recap"]
+            "enum": ["hook", "creator_intro", "claim", "evidence_data", "evidence_document", "logic_chain", "audience_interaction", "retention_bridge", "objection", "counterargument", "chapter", "recap", "conclusion"]
+          },
+          "narrative_role": {
+            "type": "string"
+          },
+          "viewer_prompt": {
+            "type": "string"
+          },
+          "retention_function": {
+            "type": "string"
+          },
+          "source_claim_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "start_sec": {
             "type": "number",
@@ -82,5 +116,19 @@
       }
     }
   },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "lane": {
+            "const": "vox_explainer_video"
+          }
+        }
+      },
+      "then": {
+        "required": ["central_question", "editorial_mode", "core_claims", "retention_plan"]
+      }
+    }
+  ],
   "additionalProperties": true
 }

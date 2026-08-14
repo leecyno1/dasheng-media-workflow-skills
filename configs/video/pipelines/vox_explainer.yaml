@@ -22,9 +22,14 @@ human_approval_default: true
 style_reference:
   primary: VOX 类问题驱动调查解释片
   principle: 先提出一个可调查的问题，再用资料、人物、历史、机制、数据和反证逐步收窄答案。
+stage_groups:
+  director:
+    includes: [investigation_intake, scene_plan]
+    sequence: [content_distillation, script_rewrite, retention_design, story_segment_storyboard, approval, production_shot_split]
+    approval_rule: 重写口播和 10-25 秒审核分镜获批前，不得拆生产镜或生成视觉资产。
 stages:
   - name: investigation_intake
-    description: 从 Draft 提炼中心问题、3-6 个证据支柱、事实边界和检索词。
+    description: 从 Draft 提炼中心问题、递进观点和关键证据，并重写为带钩子、博主介绍、互动和留存兑现的自然口播稿。
     skill: dasheng-video-vox
     required_artifacts_in: [brief]
     produces: [script]
@@ -34,12 +39,19 @@ stages:
       - 全片只能有一个中心问题。
       - 事实、观点、推演和未知项必须分开。
       - 不能把文章章节目录直接当 VOX 结构。
+      - 默认核心对应，不逐段复述文章；逐段对齐稿只用于查漏。
+      - 前 8 秒有钩子，首条有效信息之后才用一句话介绍博主。
+      - 每 45-60 秒有一次推动叙事的互动或认知刷新，至少两次留存兑现。
+      - 每个关键数据后解释比较对象、量级和它意味着什么。
     success_criteria:
       - schema-valid script artifact
-      - one central question and three to six evidence pillars
+      - approved independently rewritten narration
+      - one central question and three to five progressive claims
+      - four to eight decisive evidence items with meaning explained
+      - hook, creator introduction, interaction and retention plan are present
       - counterargument or boundary condition is planned
   - name: scene_plan
-    description: 先锁定视觉圣经，再按调查状态机设计连续纸张证据世界；最终导演分镜平均 8-12 秒，每镜对应一张完成参考图和一条 Omni 组装提示词。
+    description: 先把重写口播整理为 10-25 秒审核叙事段；用户批准后才拆成平均 8-12 秒生产导演镜，并建立视觉圣经和 Omni 组装方案。
     skill: dasheng-video-director
     required_artifacts_in: [script]
     produces: [scene_plan, visual_bible, review, tool_routing_plan]
@@ -52,14 +64,18 @@ stages:
     checkpoint_required: true
     review_focus:
       - 状态机必须覆盖 cold_open、central_question、evidence_map、historical_context、mechanism_explainer、counterargument、data_resolution、qualified_conclusion。
-      - 先生成风格板，锁定配色、纸张材质、字体、英雄物件、空间世界、相机语言和声音词汇。
-      - 每个导演分镜平均 8-12 秒，并声明完成构图、物件清单、组装顺序和连续性锚点。
+      - 先审核 10-25 秒叙事段的完整口播、论点、证据、主画面、插入素材、花字、实体标签和留存作用。
+      - 审核分镜批准后，才拆平均 8-12 秒生产镜；每镜回指叙事段、核心观点和证据编号。
+      - 内容获批后再生成风格板，锁定配色、纸张材质、字体、英雄物件、空间世界、相机语言和声音词汇。
+      - 每个生产导演镜声明完成构图、物件清单、组装顺序和连续性锚点。
       - 开头优先真实视频、动画标题、问题地图、数据层和完整字幕同镜头合成。
       - 新闻主播默认 PIP 或分屏；只有原始发言本身是证据时才全屏。
       - 地图、时间线、圈注和共享元素服务解释，不得全片炫技。
     success_criteria:
       - schema-valid scene_plan artifact
-      - storyboard review decision approved
+      - rewritten narration review decision approved
+      - story-segment storyboard review decision approved
+      - every production shot traces to an approved story segment, core claim and evidence
       - one visual bible controls the complete film
       - every director shot has a completed composition and ordered assembly choreography
       - counterargument and qualified conclusion scenes exist
@@ -200,7 +216,13 @@ stages:
       - final delivery manifest points to the exact QC-passed video hash
 fail_conditions:
   - no single central question
+  - no independently rewritten narration
+  - article paragraph or chapter mapping is used as the default storyboard
   - article chapter list is used as the final VOX narrative
+  - creator introduction appears before the first useful information
+  - audience interaction is an empty prompt that does not advance the narrative
+  - opening hook or promised retention payoff is missing
+  - assets or visual bible are generated before rewritten narration and story-segment storyboard approval
   - evidence map has fewer than three pillars without a documented source limitation
   - counterargument or boundary condition is missing
   - generic background footage is presented as direct evidence

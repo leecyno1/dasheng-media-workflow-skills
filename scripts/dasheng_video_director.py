@@ -26,7 +26,16 @@ from video_explainer_storyboard import build_explainer_storyboard, load_router, 
 from video_pipeline_governance import build_checkpoint, load_pipeline, validate_artifact
 from video_director_tool_router import apply_routes_to_scene_plan
 from video_scene_plan_quality_gate import audit_scene_plan
-from video_vox_storyboard import build_vox_storyboard
+from video_vox_storyboard import (
+    apply_approved_storyboard,
+    audit_vox_script,
+    build_vox_script_artifact,
+    build_vox_storyboard,
+    build_vox_storyboard_review,
+    vox_content_brief_markdown,
+    vox_script_markdown,
+    vox_storyboard_review_markdown,
+)
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -39,6 +48,18 @@ def write_json(path: Path, payload: Any) -> None:
 
 def read_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def require_approved_storyboard_gate(gate_path: Path, storyboard_path: Path, scene_count: int) -> dict[str, Any]:
+    gate = read_json(gate_path)
+    if gate.get("status") != "approved" or gate.get("render_allowed") is not True:
+        raise RuntimeError("Narrative storyboard gate is not approved.")
+    approved_source = str((gate.get("paths") or {}).get("storyboard") or "")
+    if not approved_source or Path(approved_source).expanduser().resolve() != storyboard_path.resolve():
+        raise RuntimeError("Narrative storyboard gate does not point to this project's narrative_storyboard.json.")
+    if int(gate.get("scene_count") or 0) != scene_count:
+        raise RuntimeError("Narrative storyboard gate scene count does not match the reviewed storyboard.")
+    return gate
 
 
 def scene_end(scene: dict[str, Any]) -> float:
@@ -324,20 +345,114 @@ def build_explainer_package(args: argparse.Namespace, output_dir: Path) -> dict[
 def build_vox_package(args: argparse.Namespace, output_dir: Path) -> dict[str, Path]:
     article_html = Path(args.article_html).expanduser().resolve()
     router = load_router(Path(args.template_router).expanduser().resolve() if args.template_router else None)
+    article = parse_html_article(article_html)
+    content_brief_path = output_dir / "video_content_brief.md"
+    script_path = output_dir / "script.json"
+    script_markdown_path = output_dir / "narration_script.rewritten.md"
+    script_gate_path = output_dir / "script_rewrite_gate.json"
+    narrative_storyboard_path = output_dir / "narrative_storyboard.json"
+    storyboard_markdown_path = output_dir / "storyboard_review.md"
+    review_path = output_dir / "storyboard_review.html"
+    checkpoint_path = output_dir / "director_checkpoint.json"
+
+    gate_arg = str(getattr(args, "storyboard_review_gate", "") or "").strip()
+    if not gate_arg:
+        review_storyboard = build_vox_storyboard(
+            article,
+            source_html=str(article_html),
+            duration_target_sec=args.duration_target_sec,
+            router=router,
+            aspect="16:9",
+            central_question=getattr(args, "central_question", None),
+            include_production_shots=False,
+        )
+        script = build_vox_script_artifact(
+            review_storyboard,
+            creator_intro=getattr(args, "creator_intro", "这里是大圣，我们用证据把答案一步步收窄。"),
+        )
+        script_errors = validate_artifact("script", script)
+        if script_errors:
+            raise RuntimeError(f"script invalid: {json.dumps(script_errors, ensure_ascii=False)}")
+        script_gate = audit_vox_script(script)
+        narrative_storyboard = build_vox_storyboard_review(review_storyboard, script)
+        write_json(script_path, script)
+        write_json(script_gate_path, script_gate)
+        write_json(narrative_storyboard_path, narrative_storyboard)
+        content_brief_path.write_text(vox_content_brief_markdown(review_storyboard), encoding="utf-8")
+        script_markdown_path.write_text(vox_script_markdown(script), encoding="utf-8")
+        storyboard_markdown_path.write_text(vox_storyboard_review_markdown(narrative_storyboard), encoding="utf-8")
+        review_path.write_text(
+            build_review_html(
+                narrative_storyboard,
+                output=review_path,
+                preview_roots=[Path(item).expanduser().resolve() for item in args.template_preview_root],
+                source_storyboard=narrative_storyboard_path,
+            ),
+            encoding="utf-8",
+        )
+        checkpoint = build_checkpoint(
+            load_pipeline("vox_explainer"),
+            "scene_plan",
+            artifact_paths={
+                "script": str(script_path),
+                "script_rewrite_gate": str(script_gate_path),
+                "review": str(review_path),
+                "narrative_storyboard": str(narrative_storyboard_path),
+            },
+            status="pending_review" if script_gate["status"] == "pass" else "needs_revision",
+            notes=(
+                "Approve the rewritten narration and 10-25 second narrative storyboard before production-shot splitting."
+                if script_gate["status"] == "pass"
+                else "Revise the script until script_rewrite_gate.json passes before storyboard approval."
+            ),
+        )
+        write_json(checkpoint_path, checkpoint)
+        return {
+            "video_content_brief": content_brief_path,
+            "script": script_path,
+            "narration_script": script_markdown_path,
+            "script_rewrite_gate": script_gate_path,
+            "narrative_storyboard": narrative_storyboard_path,
+            "storyboard_markdown": storyboard_markdown_path,
+            "review_html": review_path,
+            "checkpoint": checkpoint_path,
+        }
+
+    required_preproduction = [script_path, script_gate_path, narrative_storyboard_path, review_path]
+    missing = [str(path) for path in required_preproduction if not path.exists()]
+    if missing:
+        raise RuntimeError(f"Run the narrative review phase first; missing: {', '.join(missing)}")
+    script = read_json(script_path)
+    script_errors = validate_artifact("script", script)
+    if script_errors:
+        raise RuntimeError(f"script invalid: {json.dumps(script_errors, ensure_ascii=False)}")
+    if read_json(script_gate_path).get("status") != "pass":
+        raise RuntimeError("script_rewrite_gate.json is not pass.")
+    narrative_storyboard = read_json(narrative_storyboard_path)
+    source_html = str(narrative_storyboard.get("source_html") or "")
+    if not source_html or Path(source_html).expanduser().resolve() != article_html:
+        raise RuntimeError("The reviewed narrative storyboard belongs to a different article.")
+    approved_gate_path = Path(gate_arg).expanduser().resolve()
+    require_approved_storyboard_gate(
+        approved_gate_path,
+        narrative_storyboard_path,
+        len(narrative_storyboard.get("scenes") or []),
+    )
+
     storyboard = build_vox_storyboard(
-        parse_html_article(article_html),
+        article,
         source_html=str(article_html),
         duration_target_sec=args.duration_target_sec,
         router=router,
         aspect="16:9",
-        central_question=getattr(args, "central_question", None),
+        central_question=str(narrative_storyboard.get("central_question") or getattr(args, "central_question", None) or ""),
+        include_production_shots=True,
     )
+    storyboard = apply_approved_storyboard(storyboard, narrative_storyboard, approved_gate_path)
     raw_storyboard_path = output_dir / "vox_storyboard.raw.json"
     scene_plan_path = output_dir / "scene_plan.json"
     quality_gate_path = output_dir / "scene_plan_quality_gate.json"
     preview_path = output_dir / "storyboard_preview.html"
-    review_path = output_dir / "storyboard_template_review.html"
-    checkpoint_path = output_dir / "director_checkpoint.json"
     routing_plan_path = output_dir / "tool_routing_plan.json"
     visual_bible_path = output_dir / "vox_visual_bible.json"
 
@@ -358,32 +473,39 @@ def build_vox_package(args: argparse.Namespace, output_dir: Path) -> dict[str, P
     write_json(raw_storyboard_path, storyboard)
     write_json(scene_plan_path, scene_plan)
     write_json(visual_bible_path, storyboard.get("visual_bible") or {})
-    write_json(quality_gate_path, audit_scene_plan(scene_plan))
+    quality_report = audit_scene_plan(scene_plan)
+    write_json(quality_gate_path, quality_report)
     write_preview_html(preview_path, scene_plan)
-    review_path.write_text(
-        build_review_html(
-            scene_plan,
-            output=review_path,
-            preview_roots=[Path(item).expanduser().resolve() for item in args.template_preview_root],
-            source_storyboard=scene_plan_path,
-        ),
-        encoding="utf-8",
-    )
     checkpoint = build_checkpoint(
         load_pipeline("vox_explainer"),
         "scene_plan",
         artifact_paths={
+            "script": str(script_path),
+            "script_rewrite_gate": str(script_gate_path),
+            "narrative_storyboard": str(narrative_storyboard_path),
+            "storyboard_review_gate": str(approved_gate_path),
             "scene_plan": str(scene_plan_path),
             "quality_gate": str(quality_gate_path),
             "review": str(review_path),
             "visual_bible": str(visual_bible_path),
             **({"tool_routing_plan": str(routing_plan_path)} if not disable_tool_routing else {}),
         },
-        status="pending_review",
-        notes="Review the central question, evidence map, counterargument, and qualified conclusion before asset production.",
+        status="approved" if quality_report["status"] == "pass" else "needs_revision",
+        notes=(
+            "Narrative storyboard approved. Production shots, micro-beats, visual bible and tool routing are ready for reference-image production."
+            if quality_report["status"] == "pass"
+            else "Production scene plan failed scene_plan_quality_gate.json and must be revised before reference-image production."
+        ),
     )
     write_json(checkpoint_path, checkpoint)
     return {
+        "video_content_brief": content_brief_path,
+        "script": script_path,
+        "narration_script": script_markdown_path,
+        "script_rewrite_gate": script_gate_path,
+        "narrative_storyboard": narrative_storyboard_path,
+        "storyboard_markdown": storyboard_markdown_path,
+        "storyboard_review_gate": approved_gate_path,
         "raw_storyboard": raw_storyboard_path,
         "scene_plan": scene_plan_path,
         "scene_plan_quality_gate": quality_gate_path,
@@ -486,6 +608,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--article-html", help="Required for explainer_html_video and vox_explainer_video.")
     parser.add_argument("--duration-target-sec", type=int, default=180)
     parser.add_argument("--central-question", default="", help="Optional central question override for vox_explainer_video.")
+    parser.add_argument("--creator-intro", default="这里是大圣，我们用证据把答案一步步收窄。")
+    parser.add_argument("--storyboard-review-gate", default="", help="Approved gate report for the narrative_storyboard.json emitted by the first VOX pass.")
     parser.add_argument("--template-router", default=str(PROJECT_ROOT / "configs" / "video" / "html_anything_template_router.json"))
 
     caption_group = parser.add_mutually_exclusive_group()
@@ -513,15 +637,46 @@ def main() -> int:
             raise SystemExit("--captions-json or --srt is required for talking_head_video")
         outputs = build_talking_head_package(args, output_dir)
 
+    vox_scene_plan_needs_revision = False
+    if args.lane == "vox_explainer_video" and "scene_plan_quality_gate" in outputs:
+        vox_scene_plan_needs_revision = read_json(outputs["scene_plan_quality_gate"]).get("status") != "pass"
+    vox_production_ready = args.lane == "vox_explainer_video" and "scene_plan" in outputs and not vox_scene_plan_needs_revision
+    vox_script_needs_revision = False
+    if args.lane == "vox_explainer_video" and "script_rewrite_gate" in outputs:
+        vox_script_needs_revision = read_json(outputs["script_rewrite_gate"]).get("status") != "pass"
     if args.project_manifest:
-        register_outputs_to_project_manifest(Path(args.project_manifest).expanduser().resolve(), outputs, stage_status="pending_review")
+        register_outputs_to_project_manifest(
+            Path(args.project_manifest).expanduser().resolve(),
+            outputs,
+            stage_status="approved" if vox_production_ready else "needs_revision" if vox_script_needs_revision or vox_scene_plan_needs_revision else "pending_review",
+        )
 
     result = {
-        "status": "pending_review",
+        "status": (
+            "production_plan_ready"
+            if vox_production_ready
+            else "needs_scene_plan_revision"
+            if vox_scene_plan_needs_revision
+            else "needs_script_revision"
+            if vox_script_needs_revision
+            else "pending_storyboard_review"
+            if args.lane == "vox_explainer_video"
+            else "pending_review"
+        ),
         "lane": args.lane,
         "output_dir": str(output_dir),
         "outputs": {key: str(path) for key, path in outputs.items()},
-        "next_step": "Open storyboard_template_review.html, export storyboard_review_decision.json, then validate the review gate.",
+        "next_step": (
+            "Generate Codex reference images from the approved production shots."
+            if vox_production_ready
+            else "Revise scene_plan.json until scene_plan_quality_gate.json passes."
+            if vox_scene_plan_needs_revision
+            else "Revise narration_script.rewritten.md until script_rewrite_gate.json passes."
+            if vox_script_needs_revision
+            else "Open storyboard_review.html, export storyboard_review_decision.json, validate it, then rerun with --storyboard-review-gate."
+            if args.lane == "vox_explainer_video"
+            else "Open storyboard_template_review.html, export storyboard_review_decision.json, then validate the review gate."
+        ),
     }
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0

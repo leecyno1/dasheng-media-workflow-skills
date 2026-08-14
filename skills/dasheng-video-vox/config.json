@@ -1,6 +1,6 @@
 {
   "name": "dasheng-video-vox",
-  "version": "1.3.0",
+  "version": "1.5.0",
   "lane": "vox_explainer_video",
   "pipeline": "configs/video/pipelines/vox_explainer.yaml",
   "director_entry": "scripts/dasheng_video_director.py",
@@ -27,6 +27,7 @@
     "qualified_conclusion"
   ],
   "required_gates": [
+    "script_rewrite_gate",
     "storyboard_review_gate",
     "claim_evidence_gate",
     "image2_scene_still_gate",
